@@ -1,7 +1,7 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
-const SCENES: Record<string, { sky: string; ground: string; accent: string }> = {
+export const SCENES: Record<string, { sky: string; ground: string; accent: string }> = {
   garden: { sky: '#e8f2ea', ground: '#acc89d', accent: '#6e9a70' },
   cooking: { sky: '#f4eadc', ground: '#d9c3a5', accent: '#dd9664' },
   cycling: { sky: '#e3eef4', ground: '#b6cfaa', accent: '#4c8291' },
@@ -15,7 +15,7 @@ const SCENES: Record<string, { sky: string; ground: string; accent: string }> = 
   market: { sky: '#e8eee1', ground: '#c7c394', accent: '#809246' },
   park: { sky: '#e1eef0', ground: '#afc69e', accent: '#6d9673' },
 };
-const FALLBACK = SCENES['park'];
+export const FALLBACK_SCENE = SCENES['park'];
 
 /**
  * Simple original illustration for a speaking prompt (the scenes of the React version), drawn as
@@ -242,7 +242,7 @@ export class SceneIllustration {
   readonly scene = input.required<string>();
   readonly alt = input.required<string>();
 
-  protected readonly colours = computed(() => SCENES[this.scene()] ?? FALLBACK);
+  protected readonly colours = computed(() => SCENES[this.scene()] ?? FALLBACK_SCENE);
   protected readonly kind = computed(() => {
     const scene = this.scene();
     if (scene === 'train' || scene === 'beach') return scene;

@@ -12,6 +12,7 @@ import {
   Icon,
   ProgressBar,
   ProgressRing,
+  SegmentedControl,
   ToastService,
 } from '../../shared/ui';
 import { MARKED_SKILLS, buildSectionReport, type SectionReport } from './engine/report';
@@ -20,6 +21,8 @@ import { partPrompts } from './parts/part-registry';
 import { isResponded } from './parts/speaking-prompts';
 import { RUBRIC, writingSummary, type WritingPartSummary } from './parts/writing-prompts';
 import { ExamSessionStore } from './session/exam-session.store';
+import { ResultExportService, type ExportTarget } from './export/result-export.service';
+import { currentAttemptId } from '../../core/audio-db.service';
 
 interface AttemptView {
   id: string;
@@ -54,6 +57,7 @@ interface AttemptView {
     Icon,
     ProgressBar,
     ProgressRing,
+    SegmentedControl,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -272,6 +276,50 @@ interface AttemptView {
             }
           </ul>
         </section>
+
+        <section class="export" aria-labelledby="export-title">
+          <h3 id="export-title">Export {{ v.label }}</h3>
+          <p class="muted">
+            A PDF report of the attempt you are viewing, or a ZIP with the PDF, the exam, your
+            answers and your speaking recordings. Nothing leaves your device.
+          </p>
+          <app-segmented-control
+            label="Report type"
+            [options]="reportTypes"
+            [(value)]="reportType"
+          />
+          @if (reportType() === 'full') {
+            <label class="check">
+              <input
+                type="checkbox"
+                [checked]="includeSources()"
+                (change)="toggleSources($event)"
+              />
+              Add the reading texts and listening scripts at the end
+            </label>
+          }
+          <div class="export-actions">
+            <button
+              appButton
+              variant="primary"
+              type="button"
+              [disabled]="exporting() !== null"
+              (click)="exportPdf(v)"
+            >
+              <app-icon name="download" [size]="18" />
+              {{ exporting() === 'pdf' ? 'Preparing PDF...' : 'Download PDF' }}
+            </button>
+            <button
+              appButton
+              type="button"
+              [disabled]="exporting() !== null"
+              (click)="exportZip(v)"
+            >
+              <app-icon name="download" [size]="18" />
+              {{ exporting() === 'zip' ? 'Preparing ZIP...' : 'Download ZIP' }}
+            </button>
+          </div>
+        </section>
       } @else {
         <app-empty-state
           heading="No results yet"
@@ -455,6 +503,22 @@ interface AttemptView {
       border-color: var(--border);
       background: var(--surface);
     }
+    .export {
+      margin-top: var(--space-7);
+    }
+    .export .check {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      min-height: var(--target);
+      margin-top: var(--space-3);
+    }
+    .export-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-4);
+    }
     .retry {
       margin-top: var(--space-6);
     }
@@ -469,6 +533,61 @@ export class ResultsPage {
   protected readonly selectedId = signal<string | null>(null);
   protected readonly confirmRetry = signal(false);
   protected readonly criteria = RUBRIC;
+
+  private readonly exporter = inject(ResultExportService);
+  protected readonly reportTypes = [
+    { value: 'full', label: 'Full report' },
+    { value: 'answers', label: 'Answer sheet only' },
+  ];
+  protected readonly reportType = signal('full');
+  protected readonly includeSources = signal(false);
+  protected readonly exporting = signal<'pdf' | 'zip' | null>(null);
+
+  protected toggleSources(event: Event): void {
+    this.includeSources.set((event.target as HTMLInputElement).checked);
+  }
+
+  protected exportPdf(view: AttemptView): Promise<void> {
+    return this.runExport('pdf', view, (target) =>
+      this.exporter.downloadPdf(target, {
+        mode: this.reportType() === 'answers' ? 'answers' : 'full',
+        includeSources: this.reportType() === 'full' && this.includeSources(),
+      }),
+    );
+  }
+
+  protected exportZip(view: AttemptView): Promise<void> {
+    return this.runExport('zip', view, (target) => this.exporter.downloadZip(target));
+  }
+
+  private async runExport(
+    kind: 'pdf' | 'zip',
+    view: AttemptView,
+    run: (target: ExportTarget) => Promise<void>,
+  ): Promise<void> {
+    const exam = this.store.exam();
+    const progress = this.store.progress();
+    if (!exam || !progress) return;
+    const index = this.views().findIndex((v) => v.id === view.id);
+    const number = index + 1;
+    this.exporting.set(kind);
+    try {
+      await run({
+        exam,
+        attemptId: view.current ? currentAttemptId(exam.id, progress.attempts.length) : view.id,
+        attemptNumber: number,
+        label: view.label,
+        current: view.current,
+        data: view.data,
+        date: view.date,
+      });
+      this.toast.show(kind === 'pdf' ? 'PDF downloaded.' : 'ZIP downloaded.', 'success');
+    } catch {
+      this.toast.show('Could not create the file. Please try again.', 'danger');
+    } finally {
+      this.exporting.set(null);
+    }
+  }
 
   /** Every attempt with content: earlier ones first, the current one last. */
   protected readonly views = computed<AttemptView[]>(() => {
