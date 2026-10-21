@@ -4,6 +4,7 @@ import { examStatus, type ExamStatus } from '../../core/progress';
 import { LocalStorageService } from '../../core/storage.service';
 import { ExamCatalogueService } from '../../data/exam-catalogue.service';
 import type { ExamSummary } from '../../models/exam';
+import { ProgressSummary } from '../progress/progress-summary';
 import {
   Badge,
   Button,
@@ -33,7 +34,16 @@ interface ExamCard {
 /** `/b1`: exams grouped by board, filterable by format, with saved progress for each. */
 @Component({
   selector: 'app-level-page',
-  imports: [RouterLink, Badge, Button, Chip, EmptyState, ProgressRing, SegmentedControl],
+  imports: [
+    RouterLink,
+    Badge,
+    Button,
+    Chip,
+    EmptyState,
+    ProgressRing,
+    ProgressSummary,
+    SegmentedControl,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="container page">
@@ -42,6 +52,10 @@ interface ExamCard {
       <p class="lede">
         Pick an exam. Your answers are saved on this device, so you can stop and come back.
       </p>
+
+      <div class="summary">
+        <app-progress-summary [exams]="allExams()" />
+      </div>
 
       <div class="filter">
         <app-segmented-control label="Exam format" [options]="formats" [(value)]="format" />
@@ -88,7 +102,9 @@ interface ExamCard {
                   </h3>
                   <p class="muted">{{ card.exam.subtitle }}</p>
                   <div class="meta">
-                    <app-chip [command]="true">{{ card.exam.estimatedMinutes }} min</app-chip>
+                    <app-chip [command]="true" [prompt]="false"
+                      >{{ card.exam.estimatedMinutes }} min</app-chip
+                    >
                     @switch (card.status.status) {
                       @case ('completed') {
                         <app-badge tone="success">
@@ -100,6 +116,9 @@ interface ExamCard {
                       }
                       @case ('in-progress') {
                         <app-badge tone="accent">In progress</app-badge>
+                        @if (card.status.scorePercent !== null) {
+                          <app-badge>Last score {{ card.status.scorePercent }}%</app-badge>
+                        }
                       }
                       @default {
                         <app-badge>Not started</app-badge>
@@ -115,6 +134,9 @@ interface ExamCard {
     </div>
   `,
   styles: `
+    .summary {
+      margin-top: var(--space-5);
+    }
     .filter {
       margin-block: var(--space-5) var(--space-7);
     }
@@ -200,6 +222,10 @@ export class LevelPage {
   protected readonly index = inject(ExamCatalogueService).levelIndex(this.level);
   protected readonly formats = FORMATS;
   protected readonly format = signal('all');
+
+  protected readonly allExams = computed(() =>
+    this.index.hasValue() ? this.index.value().exams : [],
+  );
 
   protected readonly groups = computed(() => {
     const data = this.index.hasValue() ? this.index.value() : undefined;

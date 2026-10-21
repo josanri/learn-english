@@ -1,9 +1,23 @@
 import type { Routes } from '@angular/router';
 
-const skillRoute = (skill: string) => ({
+const titleOf = (skill: string) =>
+  `${skill.charAt(0).toUpperCase()}${skill.slice(1)} | Learn English`;
+
+/** Reading and Listening: the exam engine. */
+const markedRoute = (skill: string) => ({
   path: skill,
+  title: titleOf(skill),
   data: { skill },
   loadComponent: () => import('./features/exam/section-page').then((m) => m.SectionPage),
+});
+
+/** Writing, Speaking and Mediation: navigation and a placeholder until their own phases. */
+const placeholderRoute = (skill: string) => ({
+  path: skill,
+  title: titleOf(skill),
+  data: { skill },
+  loadComponent: () =>
+    import('./features/exam/placeholder-section-page').then((m) => m.PlaceholderSectionPage),
 });
 
 export const routes: Routes = [
@@ -29,13 +43,14 @@ export const routes: Routes = [
         loadComponent: () => import('./features/exam/exam-shell').then((m) => m.ExamShell),
         children: [
           { path: '', pathMatch: 'full', redirectTo: 'reading' },
-          skillRoute('reading'),
-          skillRoute('writing'),
-          skillRoute('listening'),
-          skillRoute('speaking'),
-          skillRoute('mediation'),
+          markedRoute('reading'),
+          placeholderRoute('writing'),
+          markedRoute('listening'),
+          placeholderRoute('speaking'),
+          placeholderRoute('mediation'),
           {
             path: 'results',
+            title: 'Results | Learn English',
             loadComponent: () => import('./features/exam/results-page').then((m) => m.ResultsPage),
           },
         ],

@@ -1,0 +1,273 @@
+/*
+ * Building blocks shared by the exam part renderers (questions, options, gaps, passages, feedback).
+ * Colours come only from tokens whose contrast is checked by `npm run check:contrast`
+ * (text, success, danger on --bg and --surface).
+ */
+
+/* Question card: <fieldset class="q"><legend>...</legend> ... </fieldset> */
+.q {
+  min-width: 0;
+  margin: 0 0 var(--space-5);
+  padding: var(--space-4);
+  border: var(--bw) solid var(--border-muted);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.q > legend {
+  float: left;
+  width: 100%;
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.q > legend + * {
+  clear: both;
+}
+.q .num {
+  display: inline-block;
+  min-width: 1.9rem;
+  margin-right: var(--space-2);
+  padding: 0.05rem 0.45rem;
+  border: var(--bw) solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  text-align: center;
+}
+
+/* Radio cards on native radios */
+.opt {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  min-height: var(--target);
+  margin-bottom: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border: var(--bw) solid var(--border-muted);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+}
+.opt:hover {
+  background: var(--surface-2);
+}
+.opt:has(input:checked) {
+  border-color: var(--border);
+  background: var(--surface-2);
+}
+.opt:has(input:focus-visible) {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+.opt input {
+  display: grid;
+  flex: none;
+  place-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.1rem 0 0;
+  border: var(--bw) solid var(--border);
+  border-radius: 50%;
+  background: var(--bg);
+  appearance: none;
+  cursor: pointer;
+}
+.opt input::before {
+  content: '';
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--on-accent);
+  transform: scale(0);
+  transition: transform var(--dur);
+}
+.opt input:checked {
+  border-color: var(--accent-strong);
+  background: var(--accent-strong);
+}
+.opt input:checked::before {
+  transform: scale(1);
+}
+.opt input:disabled {
+  cursor: default;
+}
+.opt .letter {
+  flex: none;
+  min-width: 1.2rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+.opt .label {
+  flex: 1;
+  min-width: 0;
+}
+.opt .tag {
+  flex: none;
+  align-self: center;
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+.opt[data-mark='correct'] {
+  border-color: var(--success);
+}
+.opt[data-mark='correct'] .tag {
+  color: var(--success);
+}
+.opt[data-mark='wrong'] {
+  border-color: var(--danger);
+}
+.opt[data-mark='wrong'] .tag {
+  color: var(--danger);
+}
+
+/* Feedback under a question or beside a gap. Text always says correct/incorrect. */
+.fb {
+  margin: var(--space-3) 0 0;
+  padding: var(--space-2) var(--space-3);
+  border-left: 4px solid var(--border-muted);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-size: var(--step--1);
+}
+.fb[data-ok='true'] {
+  border-left-color: var(--success);
+}
+.fb[data-ok='false'] {
+  border-left-color: var(--danger);
+}
+.fb .verdict {
+  font-weight: 800;
+}
+.fb[data-ok='true'] .verdict {
+  color: var(--success);
+}
+.fb[data-ok='false'] .verdict {
+  color: var(--danger);
+}
+.fb p {
+  margin: var(--space-1) 0 0;
+}
+
+/* Flag-for-review toggle */
+.flag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--target);
+  margin-top: var(--space-2);
+  padding: 0 var(--space-3);
+  border: var(--bw) solid var(--border-muted);
+  border-radius: var(--radius);
+  background: transparent;
+  font-size: var(--step--1);
+  font-weight: 700;
+  cursor: pointer;
+}
+.flag:hover {
+  background: var(--surface-2);
+}
+.flag[aria-pressed='true'] {
+  border-color: var(--border);
+  background: var(--surface-2);
+}
+.flag:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+/* Passages */
+.passage {
+  max-width: 68ch;
+}
+.passage p {
+  margin-bottom: var(--space-4);
+  line-height: 1.7;
+  white-space: pre-line;
+}
+.passage .marker {
+  display: inline-block;
+  padding: 0 0.4rem;
+  border: var(--bw) solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+.text-card {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: var(--bw) solid var(--border-muted);
+  border-radius: var(--radius);
+  background: var(--surface);
+  white-space: pre-line;
+}
+.text-card h3 {
+  margin: 0 0 var(--space-1);
+  font-size: var(--step-0);
+  letter-spacing: 0;
+}
+.text-card .tag {
+  margin-right: var(--space-2);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+/* Inline gap controls inside passages */
+.gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-2);
+  margin-block: 0.2rem;
+  vertical-align: middle;
+}
+.gap input[type='text'],
+.gap select {
+  width: auto;
+  min-width: 6rem;
+  max-width: 100%;
+}
+.gap input[type='text'] {
+  width: 8rem;
+}
+.gap [data-state='correct'] {
+  border-color: var(--success);
+}
+.gap [data-state='wrong'] {
+  border-color: var(--danger);
+}
+.gap .gap-fb {
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+.gap .gap-fb[data-ok='true'] {
+  color: var(--success);
+}
+.gap .gap-fb[data-ok='false'] {
+  color: var(--danger);
+}
+
+/* A row with a label and a select/input (matching, headings, notes) */
+.row-field {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: var(--bw) solid var(--border-muted);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.row-field > label,
+.row-field > .label {
+  font-weight: 600;
+}
+.row-field select,
+.row-field input[type='text'] {
+  max-width: 28rem;
+}

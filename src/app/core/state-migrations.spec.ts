@@ -60,4 +60,35 @@ describe('state migrations', () => {
     });
     expect(state.settings).toEqual({ ...DEFAULT_SETTINGS, theme: 'dark' });
   });
+
+  it('upgrades a version 1 document: adds attempts and derives activity days', () => {
+    const state = migrateState({
+      schemaVersion: 1,
+      settings: {},
+      progress: {
+        'cambridge-pet-01': {
+          answers: { 'r1-1': 1 },
+          results: {},
+          startedAt: '2026-03-02T10:00:00',
+          updatedAt: '2026-03-04T10:00:00',
+          sectionStatus: {},
+        },
+      },
+      migrations: {},
+    });
+    expect(state.schemaVersion).toBe(CURRENT_SCHEMA_VERSION);
+    expect(state.progress['cambridge-pet-01'].attempts).toEqual([]);
+    expect(state.progress['cambridge-pet-01'].answers).toEqual({ 'r1-1': 1 });
+    expect(state.activity).toEqual(['2026-03-02', '2026-03-04']);
+  });
+
+  it('repairs progress entries that miss containers', () => {
+    const state = migrateState({
+      schemaVersion: CURRENT_SCHEMA_VERSION,
+      progress: { x: { answers: { a: 1 } } },
+    });
+    expect(state.progress['x'].attempts).toEqual([]);
+    expect(state.progress['x'].results).toEqual({});
+    expect(state.activity).toEqual([]);
+  });
 });

@@ -12,7 +12,7 @@ export const STORAGE_KEY = 'learn-english:v1';
 /** localStorage key written by the React version ("Northstar B1"). Kept untouched after migration. */
 export const LEGACY_STORAGE_KEY = 'northstar-practice-v3';
 /** Version of the `PersistedState` document. Bump it and add a step to `STEPS` to change the shape. */
-export const CURRENT_SCHEMA_VERSION = 1;
+export const CURRENT_SCHEMA_VERSION = 2;
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
@@ -62,12 +62,36 @@ export function emptyState(): PersistedState {
     schemaVersion: CURRENT_SCHEMA_VERSION,
     settings: { ...DEFAULT_SETTINGS },
     progress: {},
+    activity: [],
     migrations: {},
   };
 }
 
 /** Upgrades from version N to N + 1. Add entries here when the stored shape changes. */
-const STEPS: Record<number, (state: Record<string, unknown>) => Record<string, unknown>> = {};
+const STEPS: Record<number, (state: Record<string, unknown>) => Record<string, unknown>> = {
+  // v1 -> v2: attempts history and activity days (derived from the timestamps already saved).
+  1: (state) => {
+    const progress = isRecord(state['progress']) ? state['progress'] : {};
+    const days = new Set<string>();
+    const next: Record<string, unknown> = {};
+    for (const [id, value] of Object.entries(progress)) {
+      if (!isRecord(value)) continue;
+      next[id] = { ...value, attempts: [] };
+      for (const stamp of [value['startedAt'], value['updatedAt']]) {
+        const day = typeof stamp === 'string' ? localDay(new Date(stamp)) : null;
+        if (day) days.add(day);
+      }
+    }
+    return { ...state, progress: next, activity: [...days].sort() };
+  },
+};
+
+/** Local calendar day as `YYYY-MM-DD`, or null for an invalid date. */
+export function localDay(date: Date): string | null {
+  if (Number.isNaN(date.getTime())) return null;
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+}
 
 export function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
@@ -87,12 +111,38 @@ export function migrateState(raw: unknown): PersistedState {
   const settings = isRecord(current['settings']) ? current['settings'] : {};
   const progress = isRecord(current['progress']) ? current['progress'] : {};
   const migrations = isRecord(current['migrations']) ? current['migrations'] : {};
+  const activity = Array.isArray(current['activity'])
+    ? current['activity'].filter((d): d is string => typeof d === 'string').slice(-400)
+    : [];
   return {
     schemaVersion: CURRENT_SCHEMA_VERSION,
     settings: sanitizeSettings(settings),
-    progress: progress as PersistedState['progress'],
+    progress: sanitizeProgress(progress),
+    activity,
     migrations: migrations as PersistedState['migrations'],
   };
+}
+
+/** Makes sure every saved exam has the containers the app reads (older or hand-edited files may miss them). */
+function sanitizeProgress(raw: Record<string, unknown>): PersistedState['progress'] {
+  const result: PersistedState['progress'] = {};
+  const now = new Date(0).toISOString();
+  for (const [id, value] of Object.entries(raw)) {
+    if (!isRecord(value)) continue;
+    const obj = (key: string) => (isRecord(value[key]) ? value[key] : {});
+    result[id] = {
+      ...(value as unknown as ExamProgress),
+      answers: obj('answers') as ExamProgress['answers'],
+      results: obj('results') as ExamProgress['results'],
+      sectionStatus: obj('sectionStatus') as ExamProgress['sectionStatus'],
+      startedAt: typeof value['startedAt'] === 'string' ? value['startedAt'] : now,
+      updatedAt: typeof value['updatedAt'] === 'string' ? value['updatedAt'] : now,
+      attempts: Array.isArray(value['attempts'])
+        ? (value['attempts'] as ExamProgress['attempts'])
+        : [],
+    };
+  }
+  return result;
 }
 
 /** `exam-03` (React app id) becomes `cambridge-pet-03`. Other ids are returned unchanged. */
@@ -139,6 +189,7 @@ export function migrateLegacyData(raw: unknown, now = new Date().toISOString()):
       speaking: hasSpeaking ? 'in-progress' : 'not-started',
     };
     const progress: ExamProgress = {
+      attempts: [],
       answers: examAnswers,
       results: result ? { objective: result } : {},
       startedAt: result?.completedAt ?? now,

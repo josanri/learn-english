@@ -1,16 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { examStatus } from '../../core/progress';
-import { LocalStorageService } from '../../core/storage.service';
 import { ExamCatalogueService } from '../../data/exam-catalogue.service';
+import { ProgressSummary } from '../progress/progress-summary';
 import {
   BrushStroke,
   Button,
-  Card,
   Chip,
   Icon,
   IllustratedCard,
-  ProgressRing,
   SkillArt,
   type ArtKind,
   type CardTone,
@@ -31,12 +28,11 @@ interface SkillCard {
     RouterLink,
     BrushStroke,
     Button,
-    Card,
     Chip,
     Icon,
     IllustratedCard,
-    ProgressRing,
     SkillArt,
+    ProgressSummary,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -66,31 +62,9 @@ interface SkillCard {
       </div>
     </section>
 
-    @if (hasProgress()) {
-      <section class="container progress" aria-labelledby="progress-title">
-        <app-card [raised]="true">
-          <div class="progress-grid">
-            <app-progress-ring
-              [value]="overallFraction()"
-              [size]="96"
-              [text]="completed() + '/' + total()"
-              label="B1 exams completed"
-            />
-            <div>
-              <h2 id="progress-title">Your progress</h2>
-              <p class="muted">
-                {{ started() }} {{ started() === 1 ? 'exam' : 'exams' }} started,
-                {{ completed() }} completed
-                @if (averageScore() !== null) {
-                  &middot; average score <span class="mono">{{ averageScore() }}%</span>
-                }
-              </p>
-              <a appButton size="sm" routerLink="/b1">Continue practising</a>
-            </div>
-          </div>
-        </app-card>
-      </section>
-    }
+    <section class="container progress">
+      <app-progress-summary [exams]="exams()" />
+    </section>
 
     <section class="container skills" aria-labelledby="skills-title">
       <h2 id="skills-title" class="section-title">Practise every skill.</h2>
@@ -153,17 +127,8 @@ interface SkillCard {
       flex-wrap: wrap;
       gap: var(--space-4);
     }
-    .progress {
+    .progress:has(app-card) {
       padding-bottom: var(--space-8);
-    }
-    .progress-grid {
-      display: flex;
-      align-items: center;
-      gap: var(--space-5);
-    }
-    .progress h2 {
-      margin-bottom: var(--space-2);
-      font-size: var(--step-2);
     }
     .skills {
       padding-bottom: var(--space-9);
@@ -174,16 +139,9 @@ interface SkillCard {
       gap: var(--space-6);
       padding-right: 6px;
     }
-    @media (max-width: 30rem) {
-      .progress-grid {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
   `,
 })
 export class HomePage {
-  private readonly store = inject(LocalStorageService);
   private readonly level = signal('b1');
   private readonly index = inject(ExamCatalogueService).levelIndex(this.level);
 
@@ -225,27 +183,7 @@ export class HomePage {
     },
   ];
 
-  private readonly statuses = computed(() => {
-    const exams = this.index.hasValue() ? this.index.value().exams : [];
-    const progress = this.store.progress();
-    return exams.map((exam) => examStatus(exam, progress[exam.id]));
-  });
-
-  protected readonly total = computed(() => this.statuses().length);
-  protected readonly started = computed(
-    () => this.statuses().filter((s) => s.status !== 'not-started').length,
+  protected readonly exams = computed(() =>
+    this.index.hasValue() ? this.index.value().exams : [],
   );
-  protected readonly completed = computed(
-    () => this.statuses().filter((s) => s.status === 'completed').length,
-  );
-  protected readonly hasProgress = computed(() => this.started() > 0);
-  protected readonly overallFraction = computed(() =>
-    this.total() ? this.completed() / this.total() : 0,
-  );
-  protected readonly averageScore = computed(() => {
-    const scores = this.statuses()
-      .map((s) => s.scorePercent)
-      .filter((s): s is number => s !== null);
-    return scores.length ? Math.round(scores.reduce((sum, s) => sum + s, 0) / scores.length) : null;
-  });
 }

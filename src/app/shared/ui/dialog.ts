@@ -16,12 +16,18 @@ let nextId = 0;
 /**
  * Modal dialog on the native `<dialog>`: the browser traps focus, makes the page inert, closes on Escape
  * and returns focus to the opener. Bind `[(open)]`. Project the body as content and buttons into `<div actions>`.
+ * Use `placement="sheet"` for a bottom sheet on phones.
  */
 @Component({
   selector: 'app-dialog',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <dialog #dialog [attr.aria-labelledby]="titleId" (close)="open.set(false)">
+    <dialog
+      #dialog
+      [attr.aria-labelledby]="titleId"
+      [attr.data-placement]="placement()"
+      (close)="open.set(false)"
+    >
       <div class="panel">
         <h2 [id]="titleId">{{ heading() }}</h2>
         <div class="body"><ng-content /></div>
@@ -39,6 +45,25 @@ let nextId = 0;
       background: var(--bg);
       color: var(--text);
       box-shadow: 8px 8px 0 var(--shadow-solid);
+    }
+    dialog[data-placement='sheet'] {
+      width: 100%;
+      max-width: none;
+      max-height: 85dvh;
+      margin: auto 0 0;
+      border-width: var(--bw-card) 0 0;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      box-shadow: none;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    @media (min-width: 48rem) {
+      dialog[data-placement='sheet'] {
+        width: min(32rem, calc(100vw - 2rem));
+        margin: auto;
+        border-width: var(--bw-card);
+        border-radius: var(--radius-lg);
+        box-shadow: 8px 8px 0 var(--shadow-solid);
+      }
     }
     dialog::backdrop {
       background: var(--overlay);
@@ -61,6 +86,8 @@ let nextId = 0;
 export class Dialog {
   readonly heading = input.required<string>();
   readonly open = model(false);
+  /** `sheet` slides up from the bottom edge on phones and is centred on larger screens. */
+  readonly placement = input<'center' | 'sheet'>('center');
   protected readonly titleId = `dialog-title-${nextId++}`;
   private readonly dialog = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
 

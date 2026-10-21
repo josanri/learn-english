@@ -1,11 +1,14 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
-/** Small label. `command` renders a monospace "terminal" chip with a prompt sign, for IDs and timers. */
+/**
+ * Small label. `command` renders a monospace "terminal" chip; its `$` prompt sign is on by default
+ * and `[prompt]="false"` removes it (use that for durations, timers and counters).
+ */
 @Component({
   selector: 'app-chip',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { '[class.command]': 'command()' },
-  template: `@if (command()) {
+  template: `@if (command() && prompt()) {
       <span class="prompt" aria-hidden="true">$</span>
     }
     <ng-content />`,
@@ -35,4 +38,5 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 })
 export class Chip {
   readonly command = input(false);
+  readonly prompt = input(true);
 }

@@ -8,6 +8,7 @@ const base: ExamProgress = {
   startedAt: '',
   updatedAt: '',
   sectionStatus: {},
+  attempts: [],
 };
 
 describe('examStatus', () => {
@@ -16,6 +17,7 @@ describe('examStatus', () => {
       status: 'not-started',
       fraction: 0,
       scorePercent: null,
+      everCompleted: false,
     });
   });
 
@@ -29,6 +31,57 @@ describe('examStatus', () => {
       sectionStatus: { reading: 'completed', writing: 'completed' },
       results: { objective: { correct: 18, total: 24, completedAt: '' } },
     });
-    expect(result).toEqual({ status: 'completed', fraction: 1, scorePercent: 75 });
+    expect(result).toEqual({
+      status: 'completed',
+      fraction: 1,
+      scorePercent: 75,
+      everCompleted: true,
+    });
+  });
+
+  it('ignores sections that cannot be practised yet when deciding completion', () => {
+    const result = examStatus(exam, {
+      ...base,
+      sectionStatus: { reading: 'completed' },
+    });
+    expect(result.status).toBe('completed');
+  });
+
+  it('adds up the per-skill results', () => {
+    const both = {
+      skills: ['reading', 'listening'] as ('reading' | 'listening')[],
+    };
+    const result = examStatus(both, {
+      ...base,
+      sectionStatus: { reading: 'completed' },
+      results: { reading: { correct: 20, total: 30, completedAt: '' } },
+    });
+    expect(result.status).toBe('in-progress');
+    expect(result.fraction).toBe(0.5);
+    expect(result.scorePercent).toBe(67);
+  });
+
+  it('keeps the earlier score and completion after a retry', () => {
+    const both = {
+      skills: ['reading', 'listening'] as ('reading' | 'listening')[],
+    };
+    const result = examStatus(both, {
+      ...base,
+      answers: { 'r1-1': 0 },
+      attempts: [
+        {
+          id: 'x-1',
+          startedAt: '',
+          finishedAt: '',
+          answers: {},
+          sectionStatus: { reading: 'completed', listening: 'completed' },
+          results: {
+            reading: { correct: 15, total: 30, completedAt: '' },
+            listening: { correct: 15, total: 30, completedAt: '' },
+          },
+        },
+      ],
+    });
+    expect(result).toMatchObject({ status: 'in-progress', everCompleted: true, scorePercent: 50 });
   });
 });

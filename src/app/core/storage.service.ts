@@ -2,7 +2,9 @@ import { DOCUMENT } from '@angular/common';
 import { Injectable, computed, effect, inject, signal } from '@angular/core';
 import type { Skill } from '../models/exam';
 import type {
+  Attempt,
   ExamProgress,
+  ExamSession,
   ObjectiveResult,
   PersistedState,
   SectionStatus,
@@ -12,6 +14,7 @@ import {
   LEGACY_STORAGE_KEY,
   STORAGE_KEY,
   emptyState,
+  localDay,
   migrateLegacyData,
   migrateState,
 } from './state-migrations';
@@ -32,6 +35,8 @@ export class LocalStorageService {
   readonly state = this._state.asReadonly();
   readonly settings = computed(() => this._state().settings);
   readonly progress = computed(() => this._state().progress);
+  /** Local days (`YYYY-MM-DD`) with practice, oldest first. */
+  readonly activity = computed(() => this._state().activity);
 
   constructor() {
     effect((onCleanup) => {
@@ -75,6 +80,56 @@ export class LocalStorageService {
     this.updateProgress(examId, (p) => ({ ...p, results: { ...p.results, [key]: result } }));
   }
 
+  /** Merges a change into the session (position, flags, listens, timers) of an exam. */
+  updateSession(examId: string, change: (session: ExamSession) => ExamSession, skill: Skill): void {
+    this.updateProgress(examId, (p) => ({
+      ...p,
+      session: change(p.session ?? emptySession(skill)),
+    }));
+  }
+
+  /**
+   * Moves the current attempt into the history and starts a clean one. Nothing is deleted: the old
+   * answers and scores stay in `attempts`.
+   */
+  startNewAttempt(examId: string): void {
+    const now = new Date().toISOString();
+    this._state.update((s) => {
+      const current = s.progress[examId];
+      if (!current) return s;
+      const hasContent =
+        Object.keys(current.answers).length > 0 || Object.keys(current.results).length > 0;
+      const attempts: Attempt[] = hasContent
+        ? [
+            ...current.attempts,
+            {
+              id: `${examId}-${current.attempts.length + 1}`,
+              startedAt: current.startedAt,
+              finishedAt: current.updatedAt,
+              answers: current.answers,
+              results: current.results,
+              sectionStatus: current.sectionStatus,
+            },
+          ]
+        : current.attempts;
+      return {
+        ...s,
+        progress: {
+          ...s.progress,
+          [examId]: {
+            attempts,
+            answers: {},
+            results: {},
+            startedAt: now,
+            updatedAt: now,
+            sectionStatus: {},
+          },
+        },
+        activity: addDay(s.activity, now),
+      };
+    });
+  }
+
   private updateProgress(examId: string, change: (current: ExamProgress) => ExamProgress): void {
     const now = new Date().toISOString();
     this._state.update((s) => {
@@ -84,10 +139,12 @@ export class LocalStorageService {
         startedAt: now,
         updatedAt: now,
         sectionStatus: {},
+        attempts: [],
       };
       return {
         ...s,
         progress: { ...s.progress, [examId]: { ...change(current), updatedAt: now } },
+        activity: addDay(s.activity, now),
       };
     });
   }
@@ -119,4 +176,15 @@ export class LocalStorageService {
       /* Keep the session usable when storage is full or blocked. */
     }
   }
+}
+
+export function emptySession(skill: Skill): ExamSession {
+  return { skill, parts: {}, flagged: [], checked: [], listens: {}, elapsed: {} };
+}
+
+/** Appends the local day of `iso` to the activity list when it is new (keeps the last 400 days). */
+function addDay(days: string[], iso: string): string[] {
+  const day = localDay(new Date(iso));
+  if (!day || days.includes(day)) return days;
+  return [...days, day].sort().slice(-400);
 }
