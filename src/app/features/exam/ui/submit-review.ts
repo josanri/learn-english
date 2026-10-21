@@ -64,6 +64,12 @@ import { ExamSessionStore } from '../session/exam-session.store';
           After you submit, your answers are locked and you will see your marks. You can start again
           later with Retry.
         </p>
+      } @else if (store.skill() === 'writing') {
+        <p class="warn">
+          After you submit, your text is locked. There is no mark for this section: use the
+          suggestions, the checklist and your own rating. You can start again later with Retry; your
+          earlier texts are kept.
+        </p>
       } @else {
         <p class="warn">
           After you submit, your recordings and transcripts are locked, but you can still play them

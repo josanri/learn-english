@@ -47,7 +47,12 @@ describe('computeStats', () => {
     activity: ['2026-10-20', '2026-10-21'],
     progress: {
       a: progress({
-        sectionStatus: { reading: 'completed', listening: 'completed', speaking: 'completed' },
+        sectionStatus: {
+          reading: 'completed',
+          writing: 'completed',
+          listening: 'completed',
+          speaking: 'completed',
+        },
         results: {
           reading: { correct: 24, total: 30, ...done },
           listening: { correct: 10, total: 25, ...done },
@@ -66,7 +71,12 @@ describe('computeStats', () => {
             startedAt: '',
             finishedAt: '',
             answers: {},
-            sectionStatus: { reading: 'completed', listening: 'completed', speaking: 'completed' },
+            sectionStatus: {
+              reading: 'completed',
+              writing: 'completed',
+              listening: 'completed',
+              speaking: 'completed',
+            },
             results: { reading: { correct: 15, total: 30, ...done } },
           },
         ],

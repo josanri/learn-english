@@ -271,3 +271,21 @@
 .row-field input[type='text'] {
   max-width: 28rem;
 }
+
+/*
+ * While an exam section is open, two bars stick to the top (site header and exam header) and, on
+ * phones, the bottom bar sticks to the bottom. Keep the caret of long answers (writing) out from
+ * under them when the browser scrolls to it.
+ */
+html:has(app-exam-header) {
+  scroll-padding-top: calc(var(--header-height) + 7.5rem);
+  scroll-padding-bottom: calc(var(--space-6));
+}
+@media (max-width: 47.99rem) {
+  html:has(app-exam-header) {
+    scroll-padding-bottom: calc(var(--bottom-nav-height) + var(--space-6));
+  }
+}
+html[data-text-size='xlarge']:has(app-exam-header) {
+  scroll-padding-top: calc(var(--header-height) + var(--space-4));
+}

@@ -163,7 +163,7 @@ export class HomePage {
     {
       kind: 'writing',
       title: 'Practise writing',
-      text: 'Emails, stories and articles with a checklist for each task.',
+      text: 'Emails, stories and articles, with spelling and grammar hints as you type.',
       tone: 'green',
       tilt: -1,
     },

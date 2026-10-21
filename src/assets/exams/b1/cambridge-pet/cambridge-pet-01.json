@@ -458,7 +458,85 @@
               "body": "I’m so excited that you’re coming next month! I’d like to plan a day out together. Is there somewhere special you want to visit? What should I pack? Ask me anything else you’d like to know. See you soon!",
               "from": "Alex",
               "subject": "Your visit"
-            }
+            },
+            "contentPoints": [
+              {
+                "text": "Say which place you would like to visit.",
+                "keywords": [
+                  "visit",
+                  "place",
+                  "museum",
+                  "park",
+                  "beach",
+                  "city",
+                  "town",
+                  "castle",
+                  "lake",
+                  "mountain",
+                  "market",
+                  "old town",
+                  "go to",
+                  "see the"
+                ]
+              },
+              {
+                "text": "Explain why you chose it.",
+                "keywords": [
+                  "because",
+                  "so that",
+                  "since",
+                  "reason",
+                  "that is why",
+                  "that's why",
+                  "as it",
+                  "as the",
+                  "beautiful",
+                  "interesting",
+                  "love",
+                  "enjoy",
+                  "famous",
+                  "fun",
+                  "relax",
+                  "always wanted"
+                ]
+              },
+              {
+                "text": "Suggest what Alex should bring.",
+                "keywords": [
+                  "bring",
+                  "pack",
+                  "take",
+                  "wear",
+                  "umbrella",
+                  "jacket",
+                  "coat",
+                  "boots",
+                  "shoes",
+                  "camera",
+                  "sunscreen",
+                  "clothes",
+                  "bag",
+                  "water",
+                  "map",
+                  "charger"
+                ]
+              },
+              {
+                "text": "Ask Alex one question about the visit.",
+                "keywords": [
+                  "do you",
+                  "would you",
+                  "can you",
+                  "could you",
+                  "what",
+                  "when",
+                  "where",
+                  "how",
+                  "are you"
+                ],
+                "question": true
+              }
+            ]
           }
         },
         {
@@ -472,14 +550,99 @@
               "kind": "article",
               "title": "An article for a school website",
               "prompt": "Articles wanted! A weekend I enjoyed. What did you do? Who were you with? Why was it special? Write an article for the website.",
-              "wordCount": "about 100 words"
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what you did.",
+                  "keywords": [
+                    "we went",
+                    "i went",
+                    "we visited",
+                    "we played",
+                    "we walked",
+                    "we had",
+                    "we ate",
+                    "did",
+                    "spent",
+                    "watched",
+                    "cooked",
+                    "visited"
+                  ]
+                },
+                {
+                  "text": "Say who you were with.",
+                  "keywords": [
+                    "with my",
+                    "with a",
+                    "friends",
+                    "family",
+                    "brother",
+                    "sister",
+                    "cousin",
+                    "parents",
+                    "mother",
+                    "father",
+                    "classmates",
+                    "together"
+                  ]
+                },
+                {
+                  "text": "Explain why it was special.",
+                  "keywords": [
+                    "special",
+                    "because",
+                    "enjoy",
+                    "fun",
+                    "happy",
+                    "best",
+                    "amazing",
+                    "unforgettable",
+                    "remember",
+                    "favourite",
+                    "love"
+                  ]
+                }
+              ]
             },
             {
               "kind": "story",
               "title": "A story",
               "prompt": "Write a story about a day when a plan changed unexpectedly.",
               "openingSentence": "I was just about to leave when the phone rang.",
-              "wordCount": "about 100 words"
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say how the plan changed.",
+                  "keywords": [
+                    "change",
+                    "instead",
+                    "cancel",
+                    "suddenly",
+                    "unexpected",
+                    "surprise",
+                    "but",
+                    "however",
+                    "problem",
+                    "call",
+                    "phone"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "in the end",
+                    "finally",
+                    "at last",
+                    "eventually",
+                    "after that",
+                    "so we",
+                    "then we",
+                    "ended",
+                    "happy",
+                    "lesson"
+                  ]
+                }
+              ]
             }
           ]
         }

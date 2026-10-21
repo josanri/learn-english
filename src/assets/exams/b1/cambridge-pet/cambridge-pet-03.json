@@ -461,7 +461,86 @@
               "body": "I’m hoping to visit your area for a few days. Where would you recommend I go? How can I get there? Is there anything I should pack? I’m not sure how long I can stay, so tell me how much time I’ll need!",
               "from": "Sam",
               "subject": "A short trip"
-            }
+            },
+            "contentPoints": [
+              {
+                "text": "Recommend a place to visit.",
+                "keywords": [
+                  "visit",
+                  "place",
+                  "museum",
+                  "park",
+                  "beach",
+                  "city",
+                  "town",
+                  "castle",
+                  "lake",
+                  "mountain",
+                  "market",
+                  "old town",
+                  "go to",
+                  "see the",
+                  "recommend",
+                  "suggest",
+                  "you should",
+                  "you could",
+                  "best"
+                ]
+              },
+              {
+                "text": "Explain how to get there.",
+                "keywords": [
+                  "train",
+                  "bus",
+                  "coach",
+                  "car",
+                  "plane",
+                  "airport",
+                  "station",
+                  "walk",
+                  "tram",
+                  "metro",
+                  "taxi",
+                  "get there",
+                  "take the",
+                  "by "
+                ]
+              },
+              {
+                "text": "Say what Sam should bring.",
+                "keywords": [
+                  "bring",
+                  "pack",
+                  "take",
+                  "wear",
+                  "umbrella",
+                  "jacket",
+                  "coat",
+                  "boots",
+                  "shoes",
+                  "camera",
+                  "sunscreen",
+                  "clothes",
+                  "bag",
+                  "water",
+                  "map",
+                  "charger"
+                ]
+              },
+              {
+                "text": "Ask Sam how long they can stay.",
+                "keywords": [
+                  "how long",
+                  "how many days",
+                  "how much time",
+                  "how many nights",
+                  "stay",
+                  "can you stay",
+                  "will you stay"
+                ],
+                "question": true
+              }
+            ]
           }
         },
         {
@@ -475,14 +554,109 @@
               "kind": "article",
               "title": "An article for a travel website",
               "prompt": "Articles wanted! The best place to visit near your home. What can visitors see? What can they do there? Why do you like it? Write an article.",
-              "wordCount": "about 100 words"
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what visitors can see.",
+                  "keywords": [
+                    "see",
+                    "visit",
+                    "view",
+                    "building",
+                    "museum",
+                    "church",
+                    "castle",
+                    "park",
+                    "beach",
+                    "statue",
+                    "mountain",
+                    "lake",
+                    "river",
+                    "street",
+                    "market"
+                  ]
+                },
+                {
+                  "text": "Say what visitors can do there.",
+                  "keywords": [
+                    "do",
+                    "walk",
+                    "swim",
+                    "eat",
+                    "shop",
+                    "hike",
+                    "take photos",
+                    "relax",
+                    "try",
+                    "enjoy",
+                    "climb",
+                    "cycle",
+                    "boat",
+                    "taste",
+                    "play"
+                  ]
+                },
+                {
+                  "text": "Explain why you like it.",
+                  "keywords": [
+                    "like",
+                    "love",
+                    "because",
+                    "favourite",
+                    "beautiful",
+                    "peaceful",
+                    "special",
+                    "friendly",
+                    "relax",
+                    "enjoy",
+                    "best"
+                  ]
+                }
+              ]
             },
             {
               "kind": "story",
               "title": "A story",
               "prompt": "Write a story about a journey that did not go as planned.",
               "openingSentence": "We had been travelling for an hour when the train suddenly stopped.",
-              "wordCount": "about 100 words"
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what went wrong on the journey.",
+                  "keywords": [
+                    "delay",
+                    "late",
+                    "lost",
+                    "missed",
+                    "broke",
+                    "cancel",
+                    "stopped",
+                    "problem",
+                    "wrong",
+                    "rain",
+                    "storm",
+                    "traffic",
+                    "strike",
+                    "forgot",
+                    "unfortunately"
+                  ]
+                },
+                {
+                  "text": "Say how it ended.",
+                  "keywords": [
+                    "in the end",
+                    "finally",
+                    "at last",
+                    "eventually",
+                    "arrived",
+                    "reached",
+                    "got there",
+                    "after that",
+                    "lesson",
+                    "happy"
+                  ]
+                }
+              ]
             }
           ]
         }

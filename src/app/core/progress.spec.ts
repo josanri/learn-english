@@ -39,8 +39,17 @@ describe('examStatus', () => {
     });
   });
 
+  it('needs the writing section too, which has no score', () => {
+    const partial = examStatus(exam, {
+      ...base,
+      sectionStatus: { reading: 'completed' },
+    });
+    expect(partial).toMatchObject({ status: 'in-progress', fraction: 0.5 });
+  });
+
   it('ignores sections that cannot be practised yet when deciding completion', () => {
-    const result = examStatus(exam, {
+    const withMediation = { skills: ['reading', 'mediation'] as ('reading' | 'mediation')[] };
+    const result = examStatus(withMediation, {
       ...base,
       sectionStatus: { reading: 'completed' },
     });

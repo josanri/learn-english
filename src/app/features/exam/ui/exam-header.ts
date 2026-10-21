@@ -65,14 +65,19 @@ export function formatClock(totalSeconds: number): string {
       border-bottom: var(--bw) solid var(--border-muted);
       background: var(--bg);
     }
+    /* Very large text: a sticky bar this tall would hide the writing box, so it scrolls away. */
+    :host-context(html[data-text-size='xlarge']) {
+      position: static;
+    }
     .bar {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      gap: var(--space-3);
+      gap: var(--space-2) var(--space-3);
       padding-block: var(--space-2);
     }
     .where {
-      flex: 1;
+      flex: 1 1 9rem;
       min-width: 0;
     }
     .eyebrow {

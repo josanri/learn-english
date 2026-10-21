@@ -3,10 +3,10 @@ import type { ExamProgress, ObjectiveResult, SectionStatus } from '../models/sto
 
 /**
  * Skills that can be completed in this build. An exam counts as completed when all of these that it
- * contains are done; add `writing` here when its phase ships, and it joins the check. Speaking is
- * completed when the learner submits the section; it has no score.
+ * contains are done. Writing and Speaking are completed when the learner submits the section; they
+ * have no score.
  */
-export const COMPLETABLE_SKILLS: readonly Skill[] = ['reading', 'listening', 'speaking'];
+export const COMPLETABLE_SKILLS: readonly Skill[] = ['reading', 'writing', 'listening', 'speaking'];
 
 /** Skills marked automatically: only these have a score (`results[skill]`). */
 export const SCORED_SKILLS: readonly Skill[] = ['reading', 'listening'];

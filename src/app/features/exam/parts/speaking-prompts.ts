@@ -41,10 +41,16 @@ export function speakingPrompts(part: SpeakingPart): PromptRef[] {
   }
 }
 
-/** True once the learner has recorded something or typed a transcript for the prompt. */
+/**
+ * True once the learner has recorded something or typed a transcript for the prompt. Writing
+ * prompts count too: a written answer is stored under the part id itself (`writing-1`).
+ */
 export function isResponded(answers: Answers, id: string): boolean {
   const text = answers[transcriptKey(id)];
+  const written = answers[id];
   return (
-    (typeof text === 'string' && text.trim().length > 0) || answers[durationKey(id)] !== undefined
+    (typeof text === 'string' && text.trim().length > 0) ||
+    answers[durationKey(id)] !== undefined ||
+    (typeof written === 'string' && written.trim().length > 0)
   );
 }

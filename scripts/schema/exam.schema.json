@@ -902,6 +902,13 @@
           },
           "description": "Content points the answer must cover."
         },
+        "contentPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentPoint"
+          },
+          "description": "What the checker looks for in the answer (required for every writing task by `validate:exams`)."
+        },
         "openingSentence": {
           "type": "string",
           "description": "Exact first sentence for a story."
@@ -918,6 +925,29 @@
         "wordCount"
       ],
       "additionalProperties": false
+    },
+    "ContentPoint": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "question": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "text",
+        "keywords"
+      ],
+      "additionalProperties": false,
+      "description": "One thing the answer must cover. The writing checker looks for the `keywords` in the learner's text to tell whether the point seems to be covered: a keyword without spaces matches the start of a word (`recycl` finds recycle, recycling), a keyword with spaces matches that phrase. Keywords are lower case. `question` means the point is covered only if the text also contains a question."
     },
     "ChoiceTaskPart": {
       "type": "object",

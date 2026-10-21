@@ -156,6 +156,60 @@ const LANGUAGES: SegmentOption[] = [
         </app-card>
 
         <app-card>
+          <h2>Writing</h2>
+          <div class="field">
+            <app-segmented-control
+              label="Spelling dictionary"
+              [options]="languages"
+              [value]="settings().spellingLang"
+              (valueChange)="choose('spellingLang', $event)"
+            />
+            <p class="hint">
+              The spelling checker runs on this device. Its dictionary is downloaded the first time
+              you open a Writing task.
+            </p>
+          </div>
+          <label class="switch">
+            <input
+              type="checkbox"
+              role="switch"
+              [checked]="settings().nativeSpellcheck"
+              (change)="set({ nativeSpellcheck: checked($event) })"
+            />
+            <span class="track" aria-hidden="true"></span>
+            <span class="text">
+              Browser spellcheck
+              <small>
+                Also let your browser underline spelling mistakes in the writing box. You may see
+                two kinds of underline.
+              </small>
+            </span>
+          </label>
+          <label class="switch">
+            <input
+              type="checkbox"
+              role="switch"
+              [checked]="settings().languageTool"
+              (change)="set({ languageTool: checked($event) })"
+              aria-describedby="lt-warning"
+            />
+            <span class="track" aria-hidden="true"></span>
+            <span class="text">
+              Extra grammar suggestions from LanguageTool
+              <small>
+                Optional and off by default. When it is on, everything you type in a Writing task is
+                sent over the internet to the public LanguageTool service (api.languagetool.org),
+                which is run by another company.
+              </small>
+            </span>
+          </label>
+          <p id="lt-warning" class="warning" role="note">
+            <strong>Privacy:</strong> do not turn this on if your text contains personal details.
+            The checks built into this app never send your text anywhere.
+          </p>
+        </app-card>
+
+        <app-card>
           <h2>Exam</h2>
           <label class="switch">
             <input
@@ -278,6 +332,13 @@ const LANGUAGES: SegmentOption[] = [
     .visually-hidden {
       position: absolute;
     }
+    .warning {
+      margin: var(--space-3) 0 0;
+      padding: var(--space-3) var(--space-4);
+      border: var(--bw) solid var(--warning);
+      border-radius: var(--radius-sm);
+      font-size: var(--step--1);
+    }
   `,
 })
 export class SettingsPage {
@@ -301,7 +362,10 @@ export class SettingsPage {
   }
 
   /** Segmented controls report plain strings; `update` validates them against the allowed values. */
-  protected choose(key: 'theme' | 'textSize' | 'recognitionLang', value: string): void {
+  protected choose(
+    key: 'theme' | 'textSize' | 'recognitionLang' | 'spellingLang',
+    value: string,
+  ): void {
     this.service.update({ [key]: value } as Partial<Settings>);
   }
 

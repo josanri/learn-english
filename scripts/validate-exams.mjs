@@ -251,9 +251,37 @@ function checkPart(part, error, useId) {
     case 'monologue-topic':
       [...part.topics, ...part.followUpQuestions].forEach((q) => useId(q.id, 'a prompt'));
       break;
+    case 'email':
+    case 'short-message':
+    case 'opinion-essay':
+      checkWritingTask(part.task, part.id, error);
+      break;
+    case 'choice-task':
+      if (part.options.length < 2) error(`${part.id} needs at least two tasks to choose from`);
+      for (const task of part.options) checkWritingTask(task, `${part.id} (${task.kind})`, error);
+      break;
     default:
-      break; // email, choice-task, short-message, opinion-essay, role-play, mediation-text: schema is enough.
+      break; // role-play, mediation-text: schema is enough.
   }
+}
+
+/** Every writing task lists the points the checker looks for (`contentPoints`, each with keywords). */
+function checkWritingTask(task, where, error) {
+  if (!task.prompt.trim()) error(`${where} needs a prompt`);
+  const points = task.contentPoints;
+  if (!Array.isArray(points) || points.length === 0) {
+    error(`${where} needs contentPoints (what the answer must cover, with keywords)`);
+    return;
+  }
+  points.forEach((point, i) => {
+    if (!point.text.trim()) error(`${where} content point ${i + 1} has no text`);
+    if (point.keywords.length < 2)
+      error(`${where} content point ${i + 1} needs at least two keywords`);
+    for (const k of point.keywords)
+      if (k !== k.toLowerCase() || !k.trim()) error(`${where} keyword "${k}" must be lower case`);
+  });
+  if (task.notes && task.notes.length > 0 && points.length < task.notes.length)
+    error(`${where} has ${task.notes.length} notes but only ${points.length} content points`);
 }
 
 /** Original paper-shape rules for Cambridge B1 Preliminary, ported from the v1 validator. */

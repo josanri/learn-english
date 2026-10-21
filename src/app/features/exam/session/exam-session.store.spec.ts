@@ -77,6 +77,26 @@ const exam: Exam = {
       ],
     },
     {
+      skill: 'writing',
+      timeLimitMinutes: 10,
+      parts: [
+        {
+          type: 'email',
+          id: 'writing-1',
+          number: 1,
+          title: 'Email',
+          instructions: '',
+          task: {
+            kind: 'email',
+            title: 'Reply',
+            prompt: 'Write.',
+            wordCount: 'about 50 words',
+            contentPoints: [{ text: 'Say hi.', keywords: ['hi', 'hello'] }],
+          },
+        },
+      ],
+    },
+    {
       skill: 'speaking',
       timeLimitMinutes: 4,
       parts: [
@@ -251,6 +271,33 @@ describe('ExamSessionStore', () => {
     store.retry();
     expect(store.attemptId()).toBe('test-01-2');
     expect(store.progress()?.attempts[0].answers['speaking:s1-1']).toBe('I live in Valencia.');
+  });
+
+  it('counts a written answer as progress, completes without a score and keeps it per attempt', () => {
+    const store = setup();
+    store.skill.set('writing');
+    expect(store.sectionItems()).toEqual([]);
+    expect(store.totalCount()).toBe(1);
+    expect(store.unansweredPrompts().map((p) => p.id)).toEqual(['writing-1']);
+
+    store.setAnswer('writing-1', '   ');
+    expect(store.answeredCount()).toBe(0);
+    store.setAnswer('writing-1', 'Hello Alex, how are you?');
+    store.setAnswer('writing-rubric:writing-1:content', 4);
+    expect(store.answeredCount()).toBe(1);
+    expect(store.partScore('writing-1')).toEqual({ correct: 0, total: 1, answered: 1 });
+
+    store.submitSection();
+    expect(store.locked()).toBe(true);
+    expect(store.progress()?.sectionStatus['writing']).toBe('completed');
+    expect(store.progress()?.results['writing']).toBeUndefined();
+    store.setAnswer('writing-1', 'changed');
+    expect(store.answer('writing-1')).toBe('Hello Alex, how are you?');
+
+    store.retry();
+    expect(store.progress()?.attempts[0].answers['writing-1']).toBe('Hello Alex, how are you?');
+    expect(store.progress()?.attempts[0].answers['writing-rubric:writing-1:content']).toBe(4);
+    expect(store.answer('writing-1')).toBeUndefined();
   });
 
   it('removes an answer', () => {

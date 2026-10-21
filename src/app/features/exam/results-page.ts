@@ -1,7 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import type { Part, Section } from '../../models/exam';
+import type { Part, Section, WritingSection } from '../../models/exam';
 import type { AttemptData } from '../../models/storage';
 import {
   Badge,
@@ -18,6 +18,7 @@ import { MARKED_SKILLS, buildSectionReport, type SectionReport } from './engine/
 import { percent, practiceBand } from './engine/scoring';
 import { partPrompts } from './parts/part-registry';
 import { isResponded } from './parts/speaking-prompts';
+import { RUBRIC, writingSummary, type WritingPartSummary } from './parts/writing-prompts';
 import { ExamSessionStore } from './session/exam-session.store';
 
 interface AttemptView {
@@ -29,6 +30,8 @@ interface AttemptView {
   reports: SectionReport[];
   /** Speaking has no score: how many tasks got a recording or transcript. */
   speaking: { done: number; total: number; submitted: boolean } | null;
+  /** Writing has no score: the texts, word counts, checker counts and the learner's own rubric. */
+  writing: { parts: WritingPartSummary[]; submitted: boolean } | null;
   correct: number;
   total: number;
   percent: number | null;
@@ -179,6 +182,65 @@ interface AttemptView {
             @if (v.current) {
               <a appButton size="sm" [routerLink]="['..', 'speaking']">{{
                 sp.submitted ? 'Review speaking' : 'Go to speaking'
+              }}</a>
+            }
+          </app-card>
+        }
+
+        @if (v.writing; as wr) {
+          <app-card class="writing">
+            <h3>Writing</h3>
+            <p>
+              @if (wr.submitted) {
+                <app-badge tone="success">Submitted</app-badge>
+              } @else {
+                <app-badge>Not submitted</app-badge>
+              }
+            </p>
+            @for (part of wr.parts; track part.partId) {
+              <section class="wpart" [attr.aria-label]="part.title">
+                <h4>{{ part.title }}: {{ part.task.title }}</h4>
+                <p>
+                  <span class="mono">{{ part.words }} words</span>
+                  <span class="muted"> (aim for {{ part.target }})</span>
+                  <app-badge [tone]="part.state === 'good' ? 'success' : 'neutral'">{{
+                    lengthLabel(part.state)
+                  }}</app-badge>
+                </p>
+                @if (part.check; as check) {
+                  <p class="muted">
+                    Last check: <span class="mono">{{ check.spelling }}</span> spelling,
+                    <span class="mono">{{ check.grammar }}</span> grammar,
+                    <span class="mono">{{ check.vocabulary }}</span> vocabulary hints;
+                    <span class="mono">{{ check.checklistDone }}/{{ check.checklistTotal }}</span>
+                    checklist items done.
+                  </p>
+                }
+                <dl class="rubric">
+                  @for (c of criteria; track c.id) {
+                    <div>
+                      <dt>{{ c.name }}</dt>
+                      <dd class="mono">
+                        {{ part.rubric[c.id] === null ? 'not rated' : part.rubric[c.id] + '/5' }}
+                      </dd>
+                    </div>
+                  }
+                </dl>
+                @if (part.text) {
+                  <details>
+                    <summary>Show my text</summary>
+                    <p class="yourtext">{{ part.text }}</p>
+                  </details>
+                }
+              </section>
+            }
+            <p class="muted">
+              Writing has no score here. The suggestions are automatic and can be wrong, and the
+              ratings are your own: neither is an official mark.
+            </p>
+            @if (v.current) {
+              <a appButton size="sm" [routerLink]="['..', 'writing']">{{
+                wr.submitted ? 'Review writing' : 'Go to writing'
               }}</a>
             }
           </app-card>
@@ -336,11 +398,41 @@ interface AttemptView {
     .pending {
       margin: 0;
     }
-    .speaking {
+    .speaking,
+    .writing {
       margin-top: var(--space-5);
     }
-    .speaking h3 {
+    .speaking h3,
+    .writing h3 {
       margin-top: 0;
+    }
+    .wpart {
+      margin-bottom: var(--space-4);
+      padding-top: var(--space-3);
+      border-top: var(--bw) solid var(--border-muted);
+    }
+    .wpart h4 {
+      margin: 0 0 var(--space-2);
+      letter-spacing: 0;
+    }
+    .rubric {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+      gap: var(--space-2);
+      margin: var(--space-3) 0;
+    }
+    .rubric dt {
+      color: var(--text-muted);
+      font-size: var(--step--1);
+    }
+    .rubric dd {
+      margin: 0;
+      font-weight: 700;
+    }
+    .yourtext {
+      margin: var(--space-2) 0 0;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
     }
     .cap {
       text-transform: capitalize;
@@ -376,6 +468,7 @@ export class ResultsPage {
 
   protected readonly selectedId = signal<string | null>(null);
   protected readonly confirmRetry = signal(false);
+  protected readonly criteria = RUBRIC;
 
   /** Every attempt with content: earlier ones first, the current one last. */
   protected readonly views = computed<AttemptView[]>(() => {
@@ -401,6 +494,7 @@ export class ResultsPage {
       const prompts = speakingSection
         ? (speakingSection.parts as Part[]).flatMap((part) => partPrompts(part))
         : [];
+      const writingSection = exam.sections.find((s): s is WritingSection => s.skill === 'writing');
       return {
         id,
         label,
@@ -408,6 +502,12 @@ export class ResultsPage {
         data,
         date,
         reports,
+        writing: writingSection
+          ? {
+              parts: writingSummary(writingSection, data.answers),
+              submitted: data.sectionStatus['writing'] === 'completed',
+            }
+          : null,
         speaking: speakingSection
           ? {
               done: prompts.filter((p) => isResponded(data.answers, p.id)).length,
@@ -447,6 +547,12 @@ export class ResultsPage {
     (this.store.exam()?.board ?? '').toString().startsWith('cambridge'),
   );
   protected readonly canRetry = computed(() => this.views().some((v) => v.current));
+
+  protected lengthLabel(state: string): string {
+    return (
+      { empty: 'No text', short: 'Too short', good: 'Good length', long: 'Too long' }[state] ?? ''
+    );
+  }
 
   protected band(value: number) {
     return practiceBand(value);

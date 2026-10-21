@@ -1,7 +1,14 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { Exam, Part } from '../../../models/exam';
-import { PART_REGISTRY, partDef, partItems, partPrompts, type PartType } from './part-registry';
+import type { Exam, Part, WritingPart } from '../../../models/exam';
+import {
+  PART_REGISTRY,
+  isInteractivePart,
+  partDef,
+  partItems,
+  partPrompts,
+  type PartType,
+} from './part-registry';
 
 const EXAMS_DIR = join(process.cwd(), 'src', 'assets', 'exams', 'b1');
 
@@ -101,6 +108,34 @@ describe('part registry', () => {
       const def = PART_REGISTRY[type];
       expect(def.prompts, type).toBeDefined();
       expect(await def.load(), type).toBeTruthy();
+    }
+  });
+
+  it('has a real renderer and a prompt for every writing type', async () => {
+    const writing: PartType[] = ['email', 'choice-task', 'short-message', 'opinion-essay'];
+    for (const type of writing) {
+      const def = PART_REGISTRY[type];
+      expect(def.prompts, type).toBeDefined();
+      expect(isInteractivePart({ type } as Part), type).toBe(true);
+      expect(await def.load(), type).toBeTruthy();
+    }
+  });
+
+  it('gives every writing task of the exams content points with keywords', () => {
+    for (const exam of loadExams()) {
+      const writing = exam.sections.find((s) => s.skill === 'writing');
+      expect(writing, exam.id).toBeDefined();
+      for (const part of (writing?.parts ?? []) as WritingPart[]) {
+        const tasks = part.type === 'choice-task' ? part.options : [part.task];
+        for (const task of tasks) {
+          expect(task.contentPoints?.length, `${exam.id} ${part.id} ${task.kind}`).toBeGreaterThan(
+            0,
+          );
+          for (const point of task.contentPoints ?? []) {
+            expect(point.keywords.length).toBeGreaterThanOrEqual(2);
+          }
+        }
+      }
     }
   });
 

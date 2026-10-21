@@ -22,6 +22,12 @@ export interface Settings {
   recognitionLang: RecognitionLang;
   /** Browsers may send audio to an online service for recognition. */
   onlineRecognition: boolean;
+  /** Dictionary used by the writing checker (spelling). */
+  spellingLang: RecognitionLang;
+  /** Send writing to the public LanguageTool service for extra suggestions. Off by default. */
+  languageTool: boolean;
+  /** Let the browser underline mistakes in the writing box too (off: only the app's own highlights). */
+  nativeSpellcheck: boolean;
   showTimer: boolean;
   /** Hide hints and explanations until the exam is finished. */
   examMode: boolean;

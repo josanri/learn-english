@@ -273,6 +273,18 @@ export type ListeningPart =
 
 // ----- Writing -----
 
+/**
+ * One thing the answer must cover. The writing checker looks for the `keywords` in the learner's
+ * text to tell whether the point seems to be covered: a keyword without spaces matches the start of
+ * a word (`recycl` finds recycle, recycling), a keyword with spaces matches that phrase. Keywords
+ * are lower case. `question` means the point is covered only if the text also contains a question.
+ */
+export interface ContentPoint {
+  text: string;
+  keywords: string[];
+  question?: boolean;
+}
+
 export interface WritingTask {
   /** Kind of text requested. */
   kind: 'email' | 'article' | 'story' | 'message' | 'essay' | 'letter' | 'review';
@@ -281,6 +293,8 @@ export interface WritingTask {
   sourceEmail?: { from: string; subject: string; body: string };
   /** Content points the answer must cover. */
   notes?: string[];
+  /** What the checker looks for in the answer (required for every writing task by `validate:exams`). */
+  contentPoints?: ContentPoint[];
   /** Exact first sentence for a story. */
   openingSentence?: string;
   /** Target length, for example `about 100 words`. */

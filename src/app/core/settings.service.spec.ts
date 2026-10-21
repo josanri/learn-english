@@ -24,6 +24,19 @@ describe('SettingsService', () => {
     expect(service.settings().recognitionLang).toBe('en-GB');
   });
 
+  it('keeps the writing checker private by default and validates its settings', () => {
+    const service = TestBed.inject(SettingsService);
+    expect(service.settings()).toMatchObject({
+      languageTool: false,
+      nativeSpellcheck: false,
+      spellingLang: 'en-GB',
+    });
+    service.update({ spellingLang: 'en-US', languageTool: true });
+    expect(service.settings()).toMatchObject({ spellingLang: 'en-US', languageTool: true });
+    service.update({ spellingLang: 'es-ES' as never, languageTool: 'yes' as never });
+    expect(service.settings()).toMatchObject({ spellingLang: 'en-GB', languageTool: false });
+  });
+
   it('exports and imports progress, and rejects other files', () => {
     const service = TestBed.inject(SettingsService);
     service.update({ studentName: 'Ana', examMode: true });

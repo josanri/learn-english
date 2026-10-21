@@ -1,6 +1,7 @@
 import type { Type } from '@angular/core';
 import type { Part } from '../../../models/exam';
 import { speakingPrompts, type PromptRef } from './speaking-prompts';
+import { writingPrompts } from './writing-prompts';
 import {
   choiceItems,
   gapItems,
@@ -39,6 +40,7 @@ const sentenceCompletion = () =>
   import('./sentence-completion-part').then((m) => m.SentenceCompletionPart);
 const trueFalse = () => import('./true-false-part').then((m) => m.TrueFalsePart);
 const questions = () => import('../speaking/questions-part').then((m) => m.QuestionsPart);
+const writing = () => import('../writing/writing-part').then((m) => m.WritingPartView);
 const clips = () => import('./clips-part').then((m) => m.ClipsPart);
 
 /**
@@ -97,11 +99,11 @@ export const PART_REGISTRY: { [T in PartType]: PartDef<PartOf<T>> } = {
     load: () => import('./opinion-matching-part').then((m) => m.OpinionMatchingPart),
     items: (p) => letterGapItems(p.gaps, p.options, (g) => ('prompt' in g ? g.prompt : g.id)),
   },
-  // Writing and mediation have their own phase: placeholder only, nothing auto-marked.
-  email: { load: placeholder, items: noItems },
-  'choice-task': { load: placeholder, items: noItems },
-  'short-message': { load: placeholder, items: noItems },
-  'opinion-essay': { load: placeholder, items: noItems },
+  // Writing: a text typed by the learner, never marked automatically (the checker only suggests).
+  email: { load: writing, items: noItems, prompts: writingPrompts },
+  'choice-task': { load: writing, items: noItems, prompts: writingPrompts },
+  'short-message': { load: writing, items: noItems, prompts: writingPrompts },
+  'opinion-essay': { load: writing, items: noItems, prompts: writingPrompts },
   // Speaking: recorded or typed responses, never marked automatically.
   interview: { load: questions, items: noItems, prompts: speakingPrompts },
   discussion: { load: questions, items: noItems, prompts: speakingPrompts },

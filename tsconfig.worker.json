@@ -1,0 +1,10 @@
+/* Web Worker code is compiled on its own: it has no DOM, only the worker globals. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "webworker"],
+    "types": ["node"]
+  },
+  "include": ["src/**/*.worker.ts"],
+  "exclude": ["src/**/*.spec.ts"]
+}

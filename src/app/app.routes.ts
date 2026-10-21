@@ -3,7 +3,7 @@ import type { Routes } from '@angular/router';
 const titleOf = (skill: string) =>
   `${skill.charAt(0).toUpperCase()}${skill.slice(1)} | Learn English`;
 
-/** Sections rendered by the exam engine (Reading, Listening, Speaking). */
+/** Sections rendered by the exam engine (Reading, Writing, Listening, Speaking). */
 const markedRoute = (skill: string) => ({
   path: skill,
   title: titleOf(skill),
@@ -11,7 +11,7 @@ const markedRoute = (skill: string) => ({
   loadComponent: () => import('./features/exam/section-page').then((m) => m.SectionPage),
 });
 
-/** Writing and Mediation: navigation and a placeholder until their own phases. */
+/** Mediation: navigation and a placeholder until its own phase. */
 const placeholderRoute = (skill: string) => ({
   path: skill,
   title: titleOf(skill),
@@ -44,7 +44,7 @@ export const routes: Routes = [
         children: [
           { path: '', pathMatch: 'full', redirectTo: 'reading' },
           markedRoute('reading'),
-          placeholderRoute('writing'),
+          markedRoute('writing'),
           markedRoute('listening'),
           markedRoute('speaking'),
           placeholderRoute('mediation'),

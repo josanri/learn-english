@@ -42,6 +42,8 @@ import { SubmitReview } from './ui/submit-review';
               @if (marked()) {
                 Submitted: {{ store.score().correct }} of {{ store.score().total }} correct. You are
                 reviewing your answers.
+              } @else if (store.skill() === 'writing') {
+                Submitted. Your writing is locked, and you can read it again here.
               } @else {
                 Submitted. You can play back your recordings and read your transcripts.
               }
@@ -50,9 +52,16 @@ import { SubmitReview } from './ui/submit-review';
           }
           @if (!marked()) {
             <p class="notice">
-              <strong>Practice only.</strong> Speaking feedback here is a guide to help you
-              practise, not an exam score. Recordings stay on this device. Speech recognition may
-              use your browser's online service if you allow it in Settings.
+              @if (store.skill() === 'writing') {
+                <strong>Practice only.</strong> The suggestions and the checklist are a guide to
+                help you practise, not an exam mark. Your text stays on this device. The checker
+                runs in your browser and only uses the internet if you turn on LanguageTool in
+                Settings.
+              } @else {
+                <strong>Practice only.</strong> Speaking feedback here is a guide to help you
+                practise, not an exam score. Recordings stay on this device. Speech recognition may
+                use your browser's online service if you allow it in Settings.
+              }
             </p>
           }
           @if (marked()) {
