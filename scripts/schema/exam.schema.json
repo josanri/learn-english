@@ -1,0 +1,1990 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Exam",
+  "definitions": {
+    "Exam": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "type": "number",
+          "const": 2
+        },
+        "id": {
+          "type": "string"
+        },
+        "level": {
+          "$ref": "#/definitions/ExamLevel"
+        },
+        "board": {
+          "$ref": "#/definitions/ExamBoard"
+        },
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "estimatedMinutes": {
+          "type": "number"
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Section"
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "level",
+        "board",
+        "title",
+        "subtitle",
+        "theme",
+        "estimatedMinutes",
+        "sections"
+      ],
+      "additionalProperties": false
+    },
+    "ExamLevel": {
+      "type": "string",
+      "const": "B1",
+      "description": "Exam data model, schema version 2.\n\nThis file is the single source of truth for the shape of every exam JSON in `src/assets/exams/`. `npm run schema:generate` derives a JSON Schema from it and `npm run validate:exams` checks every exam against that schema plus board-specific rules. Keep this file free of Angular imports and use only plain interfaces and type aliases so the schema generator can read it."
+    },
+    "ExamBoard": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/KnownExamBoard"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "KnownExamBoard": {
+      "type": "string",
+      "enum": [
+        "cambridge-pet",
+        "eoi",
+        "trinity-ise1",
+        "aptis-b1",
+        "languagecert-b1",
+        "oxford-test-b1"
+      ],
+      "description": "Boards/formats the app knows about. The type is open: any other string is also accepted."
+    },
+    "Section": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ReadingSection"
+        },
+        {
+          "$ref": "#/definitions/WritingSection"
+        },
+        {
+          "$ref": "#/definitions/ListeningSection"
+        },
+        {
+          "$ref": "#/definitions/SpeakingSection"
+        },
+        {
+          "$ref": "#/definitions/MediationSection"
+        }
+      ]
+    },
+    "ReadingSection": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "type": "string",
+          "const": "reading"
+        },
+        "timeLimitMinutes": {
+          "type": "number"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ReadingPart"
+          }
+        }
+      },
+      "required": [
+        "skill",
+        "timeLimitMinutes",
+        "parts"
+      ],
+      "additionalProperties": false
+    },
+    "ReadingPart": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/NoticesPart"
+        },
+        {
+          "$ref": "#/definitions/MatchingPart"
+        },
+        {
+          "$ref": "#/definitions/MultipleChoiceTextPart"
+        },
+        {
+          "$ref": "#/definitions/GappedTextPart"
+        },
+        {
+          "$ref": "#/definitions/MultipleChoiceClozePart"
+        },
+        {
+          "$ref": "#/definitions/OpenClozePart"
+        },
+        {
+          "$ref": "#/definitions/TrueFalseNotGivenPart"
+        },
+        {
+          "$ref": "#/definitions/SentenceCompletionPart"
+        },
+        {
+          "$ref": "#/definitions/GapFillWordBankPart"
+        },
+        {
+          "$ref": "#/definitions/HeadingMatchingPart"
+        }
+      ]
+    },
+    "NoticesPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "notices"
+        },
+        "notices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChoiceQuestion"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "notices",
+        "number",
+        "questions",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Several short notices/messages, one multiple-choice question per notice."
+    },
+    "ChoiceQuestion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "answer": {
+          "type": "number"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "prompt",
+        "options",
+        "answer"
+      ],
+      "additionalProperties": false,
+      "description": "Multiple choice item. `answer` is the zero-based index into `options`."
+    },
+    "MatchingPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "matching"
+        },
+        "people": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "texts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChoiceQuestion"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "people",
+        "questions",
+        "texts",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Match people (`questions`, options are letters) to short texts."
+    },
+    "MultipleChoiceTextPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "multiple-choice"
+        },
+        "passage": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChoiceQuestion"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "passage",
+        "questions",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "One long text followed by multiple-choice questions."
+    },
+    "GappedTextPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "gapped-text"
+        },
+        "passage": {
+          "type": "string"
+        },
+        "sentences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GapItem"
+          }
+        }
+      },
+      "required": [
+        "gaps",
+        "id",
+        "instructions",
+        "number",
+        "passage",
+        "sentences",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Text with numbered gaps `[1]`..`[n]` to fill with lettered sentences; `gaps[].answer` is a letter."
+    },
+    "GapItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "answer": {
+          "type": "string"
+        },
+        "accepted": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "answer"
+      ],
+      "additionalProperties": false,
+      "description": "A gap whose key is a single word/short phrase typed by the learner (or a letter for gapped text)."
+    },
+    "MultipleChoiceClozePart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "multiple-choice-cloze"
+        },
+        "passage": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChoiceQuestion"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "passage",
+        "questions",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Text with numbered gaps; each gap is a multiple-choice question (vocabulary in context)."
+    },
+    "OpenClozePart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "open-cloze"
+        },
+        "passage": {
+          "type": "string"
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GapItem"
+          }
+        }
+      },
+      "required": [
+        "gaps",
+        "id",
+        "instructions",
+        "number",
+        "passage",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Text with numbered gaps; the learner types one word per gap."
+    },
+    "TrueFalseNotGivenPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "true-false-notgiven"
+        },
+        "passage": {
+          "type": "string"
+        },
+        "statements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/StatementItem"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "passage",
+        "statements",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Judge statements against a text as true, false or not given (EOI, Aptis, Oxford)."
+    },
+    "StatementItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "answer": {
+          "type": "string",
+          "enum": [
+            "true",
+            "false",
+            "not-given"
+          ]
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "answer"
+      ],
+      "additionalProperties": false,
+      "description": "A statement judged true/false (and optionally \"not given\")."
+    },
+    "SentenceCompletionPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "sentence-completion"
+        },
+        "passage": {
+          "type": "string"
+        },
+        "maxWords": {
+          "type": "number",
+          "description": "Maximum number of words allowed per gap."
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PromptedGap"
+          }
+        }
+      },
+      "required": [
+        "gaps",
+        "id",
+        "instructions",
+        "number",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Complete sentences with a word or short phrase taken from the text."
+    },
+    "PromptedGap": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "answer": {
+          "type": "string"
+        },
+        "accepted": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prompt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "answer",
+        "id",
+        "prompt"
+      ],
+      "additionalProperties": false,
+      "description": "A gap with a visible prompt, for note/sentence completion."
+    },
+    "GapFillWordBankPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "gap-fill-word-bank"
+        },
+        "passage": {
+          "type": "string"
+        },
+        "wordBank": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GapItem"
+          }
+        }
+      },
+      "required": [
+        "gaps",
+        "id",
+        "instructions",
+        "number",
+        "passage",
+        "title",
+        "type",
+        "wordBank"
+      ],
+      "additionalProperties": false,
+      "description": "Text with numbered gaps filled from a shared word bank (more words than gaps)."
+    },
+    "HeadingMatchingPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "heading-matching"
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "text"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "headings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GapItem"
+          }
+        }
+      },
+      "required": [
+        "gaps",
+        "headings",
+        "id",
+        "instructions",
+        "number",
+        "paragraphs",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Match a heading to each paragraph (`gaps[].answer` is the heading letter)."
+    },
+    "WritingSection": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "type": "string",
+          "const": "writing"
+        },
+        "timeLimitMinutes": {
+          "type": "number"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/WritingPart"
+          }
+        }
+      },
+      "required": [
+        "skill",
+        "timeLimitMinutes",
+        "parts"
+      ],
+      "additionalProperties": false
+    },
+    "WritingPart": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/EmailPart"
+        },
+        {
+          "$ref": "#/definitions/ChoiceTaskPart"
+        },
+        {
+          "$ref": "#/definitions/ShortMessagePart"
+        },
+        {
+          "$ref": "#/definitions/OpinionEssayPart"
+        }
+      ]
+    },
+    "EmailPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "email"
+        },
+        "task": {
+          "$ref": "#/definitions/WritingTask"
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "task",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Reply to a message (compulsory email)."
+    },
+    "WritingTask": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "email",
+            "article",
+            "story",
+            "message",
+            "essay",
+            "letter",
+            "review"
+          ],
+          "description": "Kind of text requested."
+        },
+        "title": {
+          "type": "string"
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "sourceEmail": {
+          "type": "object",
+          "properties": {
+            "from": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "from",
+            "subject",
+            "body"
+          ],
+          "additionalProperties": false
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Content points the answer must cover."
+        },
+        "openingSentence": {
+          "type": "string",
+          "description": "Exact first sentence for a story."
+        },
+        "wordCount": {
+          "type": "string",
+          "description": "Target length, for example `about 100 words`."
+        }
+      },
+      "required": [
+        "kind",
+        "title",
+        "prompt",
+        "wordCount"
+      ],
+      "additionalProperties": false
+    },
+    "ChoiceTaskPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "choice-task"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/WritingTask"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "options",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Choose one of several tasks (for example an article or a story)."
+    },
+    "ShortMessagePart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "short-message"
+        },
+        "task": {
+          "$ref": "#/definitions/WritingTask"
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "task",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Very short message/note (20-50 words) such as a text or a postcard."
+    },
+    "OpinionEssayPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "opinion-essay"
+        },
+        "task": {
+          "$ref": "#/definitions/WritingTask"
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "task",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Opinion or discursive essay with a thesis and reasons."
+    },
+    "ListeningSection": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "type": "string",
+          "const": "listening"
+        },
+        "timeLimitMinutes": {
+          "type": "number"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ListeningPart"
+          }
+        }
+      },
+      "required": [
+        "skill",
+        "timeLimitMinutes",
+        "parts"
+      ],
+      "additionalProperties": false
+    },
+    "ListeningPart": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ShortDialoguesPart"
+        },
+        {
+          "$ref": "#/definitions/GistDialoguesPart"
+        },
+        {
+          "$ref": "#/definitions/NoteCompletionPart"
+        },
+        {
+          "$ref": "#/definitions/ListeningInterviewPart"
+        },
+        {
+          "$ref": "#/definitions/ListeningMultipleChoicePart"
+        },
+        {
+          "$ref": "#/definitions/ListeningTrueFalsePart"
+        },
+        {
+          "$ref": "#/definitions/OpinionMatchingPart"
+        }
+      ]
+    },
+    "ShortDialoguesPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "short-dialogues"
+        },
+        "clips": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ListeningClip"
+          }
+        }
+      },
+      "required": [
+        "clips",
+        "id",
+        "instructions",
+        "number",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Seven short monologues/dialogues, one question each (Cambridge Part 1)."
+    },
+    "ListeningClip": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "recording": {
+          "$ref": "#/definitions/Recording"
+        },
+        "question": {
+          "$ref": "#/definitions/ChoiceQuestion"
+        }
+      },
+      "required": [
+        "id",
+        "recording",
+        "question"
+      ],
+      "additionalProperties": false,
+      "description": "One short recording with one multiple-choice question (several clips per part)."
+    },
+    "Recording": {
+      "type": "object",
+      "properties": {
+        "speakers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Speaker"
+          }
+        },
+        "turns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ScriptTurn"
+          }
+        }
+      },
+      "required": [
+        "speakers",
+        "turns"
+      ],
+      "additionalProperties": false,
+      "description": "A recording: who speaks and what they say, turn by turn."
+    },
+    "Speaker": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "voice": {
+          "$ref": "#/definitions/SpeakerVoice"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "voice"
+      ],
+      "additionalProperties": false
+    },
+    "SpeakerVoice": {
+      "type": "object",
+      "properties": {
+        "lang": {
+          "type": "string",
+          "enum": [
+            "en-GB",
+            "en-US",
+            "en-AU",
+            "en-IE",
+            "en-CA",
+            "en-IN",
+            "en-ZA"
+          ],
+          "description": "BCP 47 language tag used to pick a speech-synthesis voice."
+        },
+        "gender": {
+          "type": "string",
+          "enum": [
+            "female",
+            "male"
+          ]
+        },
+        "rate": {
+          "type": "number",
+          "description": "Speech rate multiplier (1 is normal)."
+        },
+        "pitch": {
+          "type": "number",
+          "description": "Speech pitch multiplier (1 is normal)."
+        }
+      },
+      "required": [
+        "lang"
+      ],
+      "additionalProperties": false
+    },
+    "ScriptTurn": {
+      "type": "object",
+      "properties": {
+        "speaker": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "speaker",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "GistDialoguesPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "gist-dialogues"
+        },
+        "clips": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ListeningClip"
+          }
+        }
+      },
+      "required": [
+        "clips",
+        "id",
+        "instructions",
+        "number",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Six short dialogues focusing on gist (Cambridge Part 2)."
+    },
+    "NoteCompletionPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "note-completion"
+        },
+        "recording": {
+          "$ref": "#/definitions/Recording"
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PromptedGap"
+          }
+        }
+      },
+      "required": [
+        "gaps",
+        "id",
+        "instructions",
+        "number",
+        "recording",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "One monologue; the learner completes notes with one word per gap."
+    },
+    "ListeningInterviewPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "listening-interview"
+        },
+        "recording": {
+          "$ref": "#/definitions/Recording"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChoiceQuestion"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "questions",
+        "recording",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "A longer interview with several multiple-choice questions."
+    },
+    "ListeningMultipleChoicePart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "listening-multiple-choice"
+        },
+        "recording": {
+          "$ref": "#/definitions/Recording"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ChoiceQuestion"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "questions",
+        "recording",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Any recording followed by multiple-choice questions (EOI, Trinity, Oxford)."
+    },
+    "ListeningTrueFalsePart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "listening-true-false"
+        },
+        "recording": {
+          "$ref": "#/definitions/Recording"
+        },
+        "statements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/StatementItem"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "recording",
+        "statements",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "A recording followed by true/false statements."
+    },
+    "OpinionMatchingPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "opinion-matching"
+        },
+        "recording": {
+          "$ref": "#/definitions/Recording"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PromptedGap"
+          }
+        }
+      },
+      "required": [
+        "gaps",
+        "id",
+        "instructions",
+        "number",
+        "options",
+        "recording",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Match speakers to opinions/topics (Aptis style); `gaps[].answer` is the letter of the option."
+    },
+    "SpeakingSection": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "type": "string",
+          "const": "speaking"
+        },
+        "timeLimitMinutes": {
+          "type": "number"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SpeakingPart"
+          }
+        }
+      },
+      "required": [
+        "skill",
+        "timeLimitMinutes",
+        "parts"
+      ],
+      "additionalProperties": false
+    },
+    "SpeakingPart": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/InterviewSpeakingPart"
+        },
+        {
+          "$ref": "#/definitions/PhotoDescriptionPart"
+        },
+        {
+          "$ref": "#/definitions/CollaborativeTaskPart"
+        },
+        {
+          "$ref": "#/definitions/DiscussionPart"
+        },
+        {
+          "$ref": "#/definitions/MonologueTopicPart"
+        },
+        {
+          "$ref": "#/definitions/RolePlayPart"
+        }
+      ]
+    },
+    "InterviewSpeakingPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "interview"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SpeakingPrompt"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "questions",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Personal questions on familiar topics."
+    },
+    "SpeakingPrompt": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "prompt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "prompt"
+      ],
+      "additionalProperties": false
+    },
+    "PhotoDescriptionPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "photo-description"
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SpeakingVisual"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "images",
+        "instructions",
+        "number",
+        "prompt",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Describe one photograph for about a minute."
+    },
+    "SpeakingVisual": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        },
+        "illustration": {
+          "type": "string",
+          "description": "Name of a built-in illustration scene (replaced by photos in a later phase)."
+        },
+        "image": {
+          "$ref": "#/definitions/ImageAsset",
+          "description": "A licensed photograph."
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "alt"
+      ],
+      "additionalProperties": false,
+      "description": "A visual prompt. Legacy items draw an illustration (`illustration`); real photos use `image`."
+    },
+    "ImageAsset": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "src": {
+          "type": "string",
+          "description": "Local path under `assets/` (for example `assets/images/b1/cafe.jpg`)."
+        },
+        "alt": {
+          "type": "string"
+        },
+        "credit": {
+          "$ref": "#/definitions/ImageCredit"
+        }
+      },
+      "required": [
+        "id",
+        "src",
+        "alt",
+        "credit"
+      ],
+      "additionalProperties": false,
+      "description": "A picture stored in the repository (or, for legacy items, a remote URL) with licence details."
+    },
+    "ImageCredit": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "licenseUrl": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "author",
+        "license",
+        "licenseUrl",
+        "sourceUrl"
+      ],
+      "additionalProperties": false
+    },
+    "CollaborativeTaskPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "collaborative-task"
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SpeakingVisual"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "images",
+        "instructions",
+        "number",
+        "prompt",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Discuss a situation using several visual prompts and reach a decision."
+    },
+    "DiscussionPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "discussion"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SpeakingPrompt"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "instructions",
+        "number",
+        "questions",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Open follow-up questions on the topic."
+    },
+    "MonologueTopicPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "monologue-topic"
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SpeakingPrompt"
+          }
+        },
+        "preparationSeconds": {
+          "type": "number"
+        },
+        "speakingSeconds": {
+          "type": "number"
+        },
+        "followUpQuestions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SpeakingPrompt"
+          }
+        }
+      },
+      "required": [
+        "followUpQuestions",
+        "id",
+        "instructions",
+        "number",
+        "preparationSeconds",
+        "speakingSeconds",
+        "title",
+        "topics",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Prepared talk on a topic chosen from a list, followed by questions (Trinity ISE I)."
+    },
+    "RolePlayPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "role-play"
+        },
+        "situation": {
+          "type": "string"
+        },
+        "roleDescription": {
+          "type": "string"
+        },
+        "cues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "cues",
+        "id",
+        "instructions",
+        "number",
+        "roleDescription",
+        "situation",
+        "title",
+        "type"
+      ],
+      "additionalProperties": false,
+      "description": "Simulated conversation in a situation (shop, hotel, phone call) with cue cards."
+    },
+    "MediationSection": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "type": "string",
+          "const": "mediation"
+        },
+        "timeLimitMinutes": {
+          "type": "number"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MediationPart"
+          }
+        }
+      },
+      "required": [
+        "skill",
+        "timeLimitMinutes",
+        "parts"
+      ],
+      "additionalProperties": false
+    },
+    "MediationPart": {
+      "$ref": "#/definitions/MediationTextPart"
+    },
+    "MediationTextPart": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable id such as `reading-3`; unique inside the exam."
+        },
+        "number": {
+          "type": "number",
+          "description": "Position inside its section, starting at 1."
+        },
+        "title": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "mediation-text"
+        },
+        "sourceText": {
+          "type": "string"
+        },
+        "audience": {
+          "type": "string",
+          "description": "Who the learner is writing/speaking for, and why."
+        },
+        "task": {
+          "type": "string"
+        },
+        "keyPoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Key points a good answer should relay."
+        },
+        "wordCount": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "audience",
+        "id",
+        "instructions",
+        "keyPoints",
+        "number",
+        "sourceText",
+        "task",
+        "title",
+        "type",
+        "wordCount"
+      ],
+      "additionalProperties": false,
+      "description": "Read a source text and explain/summarise its key points for a given audience (CEFR mediation)."
+    }
+  }
+}

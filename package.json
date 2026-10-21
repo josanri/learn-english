@@ -1,24 +1,52 @@
 {
-  "name": "northstar-b1-practice",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
+  "name": "learn-english",
+  "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "build:pages": "node scripts/build-pages.mjs",
+    "test": "ng test --no-watch",
+    "lint": "ng lint && prettier --check .",
+    "format": "prettier --write .",
+    "schema:generate": "node scripts/generate-schema.mjs",
+    "exams:index": "node scripts/generate-index.mjs",
+    "exams:migrate-v1": "node scripts/migrate-v1-to-v2.mjs",
     "validate:exams": "node scripts/validate-exams.mjs"
   },
+  "private": true,
+  "packageManager": "npm@10.9.9",
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "@angular/common": "^22.2.0",
+    "@angular/compiler": "^22.2.0",
+    "@angular/core": "^22.2.0",
+    "@angular/forms": "^22.2.0",
+    "@angular/platform-browser": "^22.2.0",
+    "@angular/router": "^22.2.0",
+    "@angular/service-worker": "^22.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.0",
-    "@types/node": "^22.15.0",
-    "@vitejs/plugin-react": "^4.6.0",
-    "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "@angular/build": "^22.2.3",
+    "@angular/cli": "^22.2.3",
+    "@angular/compiler-cli": "^22.2.0",
+    "@angular/pwa": "^22.2.3",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.20.5",
+    "ajv": "^8.20.0",
+    "angular-eslint": "22.6.0",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "jsdom": "^30.0.0",
+    "prettier": "^3.8.1",
+    "ts-json-schema-generator": "^2.9.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "8.71.0",
+    "vitest": "^5.0.0"
+  },
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
   }
 }

@@ -1,36 +1,47 @@
-# Northstar B1 English Practice
+# Learn English
 
-A React + TypeScript + Vite app with three original B1 Preliminary-style practice papers. The learner-facing interface is in English. Exam content lives in individual JSON files under `src/data/` and is rendered by reusable React components.
+Free, original English practice exams that run in the browser. The first section is **B1**, with five Cambridge B1 Preliminary-style papers (Reading, Writing, Listening and Speaking). More boards and levels are planned.
 
-## Run locally
+The app is built with Angular 22 (zoneless, standalone components, signals). Exam content lives in static JSON files, and learner progress is stored only in the browser (localStorage and IndexedDB).
 
-Install dependencies once, then start the development server:
+## Requirements
+
+- Node.js `^22.22.3`, `^24.15.0` or newer (required by Angular 22).
+- npm 10 or newer.
+
+## Commands
 
 ```bash
 npm install
-npm run dev
+npm start               # dev server on http://localhost:4200
+npm run lint            # angular-eslint + Prettier check
+npm test                # unit tests (Vitest through the Angular CLI)
+npm run validate:exams  # JSON Schema + content rules for every exam
+npm run build           # production build in dist/learn-english/browser
+npm run build:pages -- /repo-name/   # build for GitHub Pages (base href + 404.html)
 ```
 
-Run the production build with `npm run build`, preview it with `npm run preview`, and check exam-data structure with `npm run validate:exams`.
+Other scripts: `npm run schema:generate` (JSON Schema from `src/app/models/exam.ts`), `npm run exams:index` (regenerate `index.json`), `npm run exams:migrate-v1` (one-off conversion of the original React exams, kept in `scripts/legacy-v1/`).
 
-## Exam content
+## Exams
 
-Each paper includes practice activities for all four B1 Preliminary skills:
+Exams are JSON files in `src/assets/exams/<level>/<board>/<id>.json` (schema version 2, see `src/app/models/exam.ts`). Each level has a generated `index.json` used by the listing page. Supported boards: Cambridge B1 Preliminary today; the model also covers EOI, Trinity ISE I, Aptis, LanguageCert and Oxford Test formats.
 
-- Reading: 6 parts, 32 objective questions.
-- Writing: a compulsory email plus a choice of article or story (about 100 words each).
-- Listening: 4 parts, 25 questions; audio is generated from original scripts using the browser's English speech synthesis voice.
-- Speaking: 4 parts, with a separate response for each interview question or visual prompt. The original practice illustrations are not Cambridge exam photographs.
+To add an exam:
 
-Objective answers, writing drafts and editable speaking transcripts are stored in browser local storage. Speaking recordings are saved in this browser's IndexedDB and can be played back or deleted. Speech recognition support depends on the browser. The app prefers on-device recognition when available; the learner must explicitly allow recognition that may be processed online. Recording still works if speech recognition is unavailable, and transcripts can be typed or edited. Automated scoring covers objective reading and listening items. Speaking and writing are not given an automated Cambridge score.
+1. Create `src/assets/exams/b1/<board>/<board>-NN.json` following the schema (use an existing exam as a template).
+2. Run `npm run exams:index` and `npm run validate:exams`.
+3. Run `npm run build`.
 
-## Add another exam
+Use the project skill in `.claude/skills/b1-preliminary-exam-author/` for authoring rules. All materials are original practice items, not official exam papers.
 
-1. Create `src/data/exam-04.json` following `src/types/exam.ts` and the existing papers.
-2. Import and append it in `src/data/index.ts`.
-3. Run `npm run validate:exams` and `npm run build`.
+## Saved data
 
-Use the project skill in `.cursor/skills/b1-preliminary-exam-author/` for the public task shape, vocabulary guidance and authoring checklist. Materials in this project are original practice items; they are not official Cambridge English papers.
+Everything is saved in the browser: answers, writing drafts, speaking transcripts and scores in one localStorage key (`learn-english:v1`), and speaking recordings in IndexedDB (`learn-english-audio`). Data saved by the earlier React version (`northstar-practice-v3` and the `northstar-speech-recordings` database) is copied automatically on first load and left untouched as a backup.
+
+## Deployment
+
+`.github/workflows/deploy.yml` lints, tests, validates and builds, then publishes to GitHub Pages. The build uses `--base-href /<repository>/` and copies `index.html` to `404.html`, so deep links such as `/b1/cambridge-pet/cambridge-pet-01/reading` work with clean URLs. The app is also an installable PWA that works offline after the first visit.
 
 ## Reference sources
 
