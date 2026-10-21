@@ -1,7 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import type { Section } from '../../models/exam';
+import type { Part, Section } from '../../models/exam';
 import type { AttemptData } from '../../models/storage';
 import {
   Badge,
@@ -16,6 +16,8 @@ import {
 } from '../../shared/ui';
 import { MARKED_SKILLS, buildSectionReport, type SectionReport } from './engine/report';
 import { percent, practiceBand } from './engine/scoring';
+import { partPrompts } from './parts/part-registry';
+import { isResponded } from './parts/speaking-prompts';
 import { ExamSessionStore } from './session/exam-session.store';
 
 interface AttemptView {
@@ -25,6 +27,8 @@ interface AttemptView {
   data: AttemptData;
   date: string;
   reports: SectionReport[];
+  /** Speaking has no score: how many tasks got a recording or transcript. */
+  speaking: { done: number; total: number; submitted: boolean } | null;
   correct: number;
   total: number;
   percent: number | null;
@@ -153,6 +157,30 @@ interface AttemptView {
                 <a [routerLink]="['..', skill]">Go to {{ skill }}</a>
               }
             </p>
+          </app-card>
+        }
+
+        @if (v.speaking; as sp) {
+          <app-card class="speaking">
+            <h3>Speaking</h3>
+            <p>
+              <span class="mono">{{ sp.done }} / {{ sp.total }}</span> tasks with a recording or
+              transcript.
+              @if (sp.submitted) {
+                <app-badge tone="success">Submitted</app-badge>
+              } @else {
+                <app-badge>Not submitted</app-badge>
+              }
+            </p>
+            <p class="muted">
+              Speaking has no score here: the app cannot judge pronunciation or grammar. Use the
+              practice feedback next to each answer as a guide.
+            </p>
+            @if (v.current) {
+              <a appButton size="sm" [routerLink]="['..', 'speaking']">{{
+                sp.submitted ? 'Review speaking' : 'Go to speaking'
+              }}</a>
+            }
           </app-card>
         }
 
@@ -308,6 +336,12 @@ interface AttemptView {
     .pending {
       margin: 0;
     }
+    .speaking {
+      margin-top: var(--space-5);
+    }
+    .speaking h3 {
+      margin-top: 0;
+    }
     .cap {
       text-transform: capitalize;
     }
@@ -363,6 +397,10 @@ export class ResultsPage {
         .map((s) => buildSectionReport(s, data.answers));
       const correct = reports.reduce((n, r) => n + r.score.correct, 0);
       const total = reports.reduce((n, r) => n + r.score.total, 0);
+      const speakingSection = exam.sections.find((s) => s.skill === 'speaking');
+      const prompts = speakingSection
+        ? (speakingSection.parts as Part[]).flatMap((part) => partPrompts(part))
+        : [];
       return {
         id,
         label,
@@ -370,6 +408,13 @@ export class ResultsPage {
         data,
         date,
         reports,
+        speaking: speakingSection
+          ? {
+              done: prompts.filter((p) => isResponded(data.answers, p.id)).length,
+              total: prompts.length,
+              submitted: data.sectionStatus['speaking'] === 'completed',
+            }
+          : null,
         correct,
         total,
         percent: total > 0 ? percent({ correct, total }) : null,

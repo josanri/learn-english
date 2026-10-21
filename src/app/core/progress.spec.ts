@@ -47,6 +47,23 @@ describe('examStatus', () => {
     expect(result.status).toBe('completed');
   });
 
+  it('needs the speaking section too, which has no score', () => {
+    const withSpeaking = { skills: ['reading', 'speaking'] as ('reading' | 'speaking')[] };
+    const reading = { correct: 9, total: 10, completedAt: '' };
+    const partial = examStatus(withSpeaking, {
+      ...base,
+      sectionStatus: { reading: 'completed' },
+      results: { reading },
+    });
+    expect(partial).toMatchObject({ status: 'in-progress', fraction: 0.5, everCompleted: false });
+    const full = examStatus(withSpeaking, {
+      ...base,
+      sectionStatus: { reading: 'completed', speaking: 'completed' },
+      results: { reading },
+    });
+    expect(full).toMatchObject({ status: 'completed', scorePercent: 90, everCompleted: true });
+  });
+
   it('adds up the per-skill results', () => {
     const both = {
       skills: ['reading', 'listening'] as ('reading' | 'listening')[],

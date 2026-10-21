@@ -23,8 +23,9 @@ import { ExamSessionStore } from '../session/exam-session.store';
     <app-card [raised]="true">
       <h2 #heading tabindex="-1">Review and submit {{ store.skill() }}</h2>
       <p>
-        You have answered <strong>{{ store.answeredCount() }}</strong> of
-        <strong>{{ store.totalCount() }}</strong> questions.
+        You have {{ marked() ? 'answered' : 'responded to' }}
+        <strong>{{ store.answeredCount() }}</strong> of <strong>{{ store.totalCount() }}</strong>
+        {{ marked() ? 'questions' : 'tasks' }}.
       </p>
 
       @if (unanswered().length > 0) {
@@ -33,13 +34,16 @@ import { ExamSessionStore } from '../session/exam-session.store';
           @for (u of unanswered(); track u.id) {
             <li>
               <button appButton size="sm" type="button" (click)="jump.emit(u)">
-                Part {{ u.part }}, question {{ u.n }}
+                Part {{ u.part }}, {{ marked() ? 'question' : 'task' }} {{ u.n }}
               </button>
             </li>
           }
         </ul>
       } @else {
-        <p class="ok"><app-icon name="check" [size]="18" /> Every question has an answer.</p>
+        <p class="ok">
+          <app-icon name="check" [size]="18" />
+          {{ marked() ? 'Every question has an answer.' : 'Every task has a response.' }}
+        </p>
       }
 
       @if (flagged().length > 0) {
@@ -55,10 +59,18 @@ import { ExamSessionStore } from '../session/exam-session.store';
         </ul>
       }
 
-      <p class="warn">
-        After you submit, your answers are locked and you will see your marks. You can start again
-        later with Retry.
-      </p>
+      @if (marked()) {
+        <p class="warn">
+          After you submit, your answers are locked and you will see your marks. You can start again
+          later with Retry.
+        </p>
+      } @else {
+        <p class="warn">
+          After you submit, your recordings and transcripts are locked, but you can still play them
+          back. There is no score for this section. You can start again later with Retry; your
+          earlier recordings are kept.
+        </p>
+      }
       <div class="actions">
         <button appButton type="button" (click)="back.emit()">Back to questions</button>
         <button appButton variant="primary" type="button" (click)="confirmed.emit()">
@@ -116,13 +128,21 @@ export class SubmitReview {
   private readonly partIndexOf = computed(
     () => new Map(this.store.parts().map((p, i) => [p.id, i])),
   );
+  protected readonly marked = computed(() => this.store.sectionItems().length > 0);
   protected readonly unanswered = computed(() =>
-    this.store.unanswered().map((p) => ({
-      id: p.item.id,
-      part: p.partNumber,
-      partIndex: this.partIndexOf().get(p.partId) ?? 0,
-      n: p.n,
-    })),
+    this.marked()
+      ? this.store.unanswered().map((p) => ({
+          id: p.item.id,
+          part: p.partNumber,
+          partIndex: this.partIndexOf().get(p.partId) ?? 0,
+          n: p.n,
+        }))
+      : this.store.unansweredPrompts().map((p) => ({
+          id: p.id,
+          part: p.partNumber,
+          partIndex: p.partIndex,
+          n: p.n,
+        })),
   );
   protected readonly flagged = computed(() =>
     this.store.flaggedItems().map((p) => ({

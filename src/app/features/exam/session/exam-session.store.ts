@@ -1,10 +1,13 @@
 import { DestroyRef, Injectable, computed, effect, inject, signal, untracked } from '@angular/core';
+import { currentAttemptId } from '../../../core/audio-db.service';
 import { SettingsService } from '../../../core/settings.service';
 import { emptySession, LocalStorageService } from '../../../core/storage.service';
 import { ExamCatalogueService } from '../../../data/exam-catalogue.service';
 import type { Part, Skill } from '../../../models/exam';
 import type { ExamSession, SectionStatus } from '../../../models/storage';
 import { placedItems, type PlacedItem } from '../engine/report';
+import { partPrompts } from '../parts/part-registry';
+import { isResponded } from '../parts/speaking-prompts';
 import {
   formatCorrect,
   isAnswered,
@@ -103,14 +106,43 @@ export class ExamSessionStore {
     return groups;
   });
 
+  /** A free-response prompt together with where it lives in the section. */
+  readonly prompts = computed(() =>
+    this.parts().flatMap((part, partIndex) =>
+      partPrompts(part).map((prompt, i) => ({
+        ...prompt,
+        partId: part.id,
+        partNumber: part.number,
+        partIndex,
+        n: i + 1,
+      })),
+    ),
+  );
+  readonly unansweredPrompts = computed(() =>
+    this.prompts().filter((p) => !isResponded(this.answers(), p.id)),
+  );
+
+  /** Id of the attempt being taken (earlier ones are archived as `<examId>-1..n`). */
+  readonly attemptId = computed(() => {
+    const id = this.examId();
+    return id ? currentAttemptId(id, this.progress()?.attempts.length ?? 0) : '';
+  });
+
   readonly score = computed<Score>(() =>
     scoreItems(
       this.sectionItems().map((p) => p.item),
       this.answers(),
     ),
   );
-  readonly answeredCount = computed(() => this.score().answered);
-  readonly totalCount = computed(() => this.score().total);
+  /** Marked items when the section has some, else free-response prompts (speaking). */
+  readonly answeredCount = computed(() =>
+    this.sectionItems().length > 0
+      ? this.score().answered
+      : this.prompts().length - this.unansweredPrompts().length,
+  );
+  readonly totalCount = computed(() =>
+    this.sectionItems().length > 0 ? this.score().total : this.prompts().length,
+  );
   readonly unanswered = computed(() =>
     this.sectionItems().filter((p) => !isAnswered(this.answers()[p.item.id])),
   );
@@ -240,6 +272,12 @@ export class ExamSessionStore {
     }
   }
 
+  removeAnswer(itemId: string): void {
+    const id = this.examId();
+    if (!id || this.locked()) return;
+    this.storage.removeAnswer(id, itemId);
+  }
+
   toggleFlag(itemId: string): void {
     const id = this.examId();
     if (!id || this.locked()) return;
@@ -279,8 +317,14 @@ export class ExamSessionStore {
   }
 
   partScore(partId: string): Score {
+    const items = this.itemsByPart().get(partId) ?? [];
+    if (items.length === 0) {
+      const prompts = this.prompts().filter((p) => p.partId === partId);
+      const answered = prompts.filter((p) => isResponded(this.answers(), p.id)).length;
+      return { correct: 0, total: prompts.length, answered };
+    }
     return scoreItems(
-      (this.itemsByPart().get(partId) ?? []).map((p) => p.item),
+      items.map((p) => p.item),
       this.answers(),
     );
   }
@@ -302,11 +346,14 @@ export class ExamSessionStore {
     if (!id || this.locked()) return;
     this.persistElapsed();
     const { correct, total } = this.score();
-    this.storage.setResult(id, this.skill(), {
-      correct,
-      total,
-      completedAt: new Date().toISOString(),
-    });
+    // Sections without marked items (speaking) are only marked as completed; they have no score.
+    if (total > 0) {
+      this.storage.setResult(id, this.skill(), {
+        correct,
+        total,
+        completedAt: new Date().toISOString(),
+      });
+    }
     this.storage.setSectionStatus(id, this.skill(), 'completed');
   }
 

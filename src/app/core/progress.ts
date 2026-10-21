@@ -3,9 +3,13 @@ import type { ExamProgress, ObjectiveResult, SectionStatus } from '../models/sto
 
 /**
  * Skills that can be completed in this build. An exam counts as completed when all of these that it
- * contains are done; add `writing` and `speaking` here when their phases ship, and they join the check.
+ * contains are done; add `writing` here when its phase ships, and it joins the check. Speaking is
+ * completed when the learner submits the section; it has no score.
  */
-export const COMPLETABLE_SKILLS: readonly Skill[] = ['reading', 'listening'];
+export const COMPLETABLE_SKILLS: readonly Skill[] = ['reading', 'listening', 'speaking'];
+
+/** Skills marked automatically: only these have a score (`results[skill]`). */
+export const SCORED_SKILLS: readonly Skill[] = ['reading', 'listening'];
 
 export interface ExamStatus {
   status: SectionStatus;
@@ -19,7 +23,7 @@ export interface ExamStatus {
 
 /** Results of the auto-marked sections, keyed by skill (`objective` is the legacy combined result). */
 export function resultsOf(source: Pick<ExamProgress, 'results'>): ObjectiveResult[] {
-  const bySkill = COMPLETABLE_SKILLS.map((s) => source.results[s]).filter(
+  const bySkill = SCORED_SKILLS.map((s) => source.results[s]).filter(
     (r): r is ObjectiveResult => !!r,
   );
   if (bySkill.length > 0) return bySkill;

@@ -29,9 +29,12 @@ export function formatClock(totalSeconds: number): string {
         </p>
         <app-progress-bar
           [value]="progress()"
-          [label]="'Answered ' + store.answeredCount() + ' of ' + store.totalCount()"
+          [label]="'Completed ' + store.answeredCount() + ' of ' + store.totalCount()"
         />
-        <p class="count mono">{{ store.answeredCount() }}/{{ store.totalCount() }} answered</p>
+        <p class="count mono">
+          {{ store.answeredCount() }}/{{ store.totalCount() }}
+          {{ store.sectionItems().length > 0 ? 'answered' : 'done' }}
+        </p>
       </div>
       @if (store.showTimer() && !store.locked()) {
         <app-chip

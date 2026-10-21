@@ -155,6 +155,16 @@ export function upgradeLegacyAudioKey(key: string): string {
   return key.replace(/^exam-(\d+):/, 'cambridge-pet-$1:');
 }
 
+/**
+ * `<examId>:<promptId>` (two parts) becomes `<examId>:<attemptId>:<promptId>`; keys that already
+ * have three parts are returned unchanged. `attemptOf` gives the attempt id to use for an exam.
+ */
+export function attemptKeyFor(key: string, attemptOf: (examId: string) => string): string {
+  const parts = key.split(':');
+  if (parts.length !== 2 || !parts[0] || !parts[1]) return key;
+  return `${parts[0]}:${attemptOf(parts[0])}:${parts[1]}`;
+}
+
 /** Shape of the document the React app stored under `northstar-practice-v3`. */
 interface LegacySavedData {
   answers?: Record<string, Record<string, string | number>>;

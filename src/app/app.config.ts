@@ -26,8 +26,8 @@ export const appConfig: ApplicationConfig = {
     ),
     provideAppInitializer(() => {
       inject(ThemeService);
-      // One-off copy of recordings made with the React version; failures are ignored and retried later.
-      void inject(AudioDbService).migrateLegacyRecordings();
+      // One-off recording migrations (React-era copy, then attempt ids in keys); failures are ignored and retried later.
+      void inject(AudioDbService).runMigrations();
     }),
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),

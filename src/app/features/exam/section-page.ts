@@ -39,12 +39,25 @@ import { SubmitReview } from './ui/submit-review';
           @if (store.locked()) {
             <p class="banner" role="status">
               <app-icon name="check" [size]="18" />
-              Submitted: {{ store.score().correct }} of {{ store.score().total }} correct. You are
-              reviewing your answers.
+              @if (marked()) {
+                Submitted: {{ store.score().correct }} of {{ store.score().total }} correct. You are
+                reviewing your answers.
+              } @else {
+                Submitted. You can play back your recordings and read your transcripts.
+              }
               <a routerLink="../results">See results</a>
             </p>
           }
-          <app-question-navigator />
+          @if (!marked()) {
+            <p class="notice">
+              <strong>Practice only.</strong> Speaking feedback here is a guide to help you
+              practise, not an exam score. Recordings stay on this device. Speech recognition may
+              use your browser's online service if you allow it in Settings.
+            </p>
+          }
+          @if (marked()) {
+            <app-question-navigator />
+          }
           <nav aria-label="Parts of this section">
             <ol class="parts">
               @for (tab of tabs(); track tab.id) {
@@ -120,6 +133,15 @@ import { SubmitReview } from './ui/submit-review';
       background: var(--surface);
       font-weight: 600;
     }
+    .notice {
+      margin: 0 0 var(--space-4);
+      padding: var(--space-3) var(--space-4);
+      border: var(--bw) solid var(--border-muted);
+      border-left-width: 6px;
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      font-size: var(--step--1);
+    }
     .parts {
       display: flex;
       gap: var(--space-2);
@@ -172,6 +194,8 @@ export class SectionPage {
   private readonly toast = inject(ToastService);
 
   protected readonly reviewing = signal(false);
+  /** Sections with marked items get the question navigator; free-response ones (speaking) do not. */
+  protected readonly marked = computed(() => this.store.sectionItems().length > 0);
 
   protected readonly tabs = computed(() =>
     this.store.parts().map((part, index) => {

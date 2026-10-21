@@ -88,5 +88,5 @@ export interface PersistedState {
   /** Local calendar days (`YYYY-MM-DD`) on which the learner practised; feeds the streak. */
   activity: string[];
   /** Flags recording which one-off data migrations have already run. */
-  migrations: { audioDb?: string };
+  migrations: { audioDb?: string; audioKeys?: string };
 }

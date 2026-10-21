@@ -44,6 +44,39 @@ export class SpeechService {
     synth.speak(utterance);
   }
 
+  /**
+   * Speaks one short text with the examiner voice (British English, current voice and speed
+   * settings). Resolves when it ends, fails or a safety timeout passes; `cancelSpeech()` ends it.
+   */
+  speakText(text: string): Promise<void> {
+    const synth = this.synth;
+    if (!synth || !this.supported) return Promise.resolve();
+    synth.cancel();
+    return new Promise<void>((resolve) => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-GB';
+      utterance.rate = this.settings.settings().speechRate;
+      const voiceUri = this.settings.settings().voiceUri;
+      const voice =
+        this.voices().find((v) => v.voiceURI === voiceUri) ??
+        this.voices().find((v) => v.lang === 'en-GB');
+      if (voice) utterance.voice = voice;
+      // Some browsers never fire `end`; do not leave the caller waiting.
+      const watchdog = setTimeout(done, 3000 + text.length * 120);
+      function done(): void {
+        clearTimeout(watchdog);
+        resolve();
+      }
+      utterance.onend = done;
+      utterance.onerror = done;
+      synth.speak(utterance);
+    });
+  }
+
+  cancelSpeech(): void {
+    this.synth?.cancel();
+  }
+
   /** A controller that plays the recording turn by turn. Call `stop()` when the view goes away. */
   createPlayback(recording: Recording): ScriptPlayback {
     const synth = this.synth;

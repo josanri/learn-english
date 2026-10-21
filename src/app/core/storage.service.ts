@@ -69,6 +69,14 @@ export class LocalStorageService {
     this.updateProgress(examId, (p) => ({ ...p, answers: { ...p.answers, [key]: value } }));
   }
 
+  removeAnswer(examId: string, key: string): void {
+    this.updateProgress(examId, (p) => {
+      const answers = { ...p.answers };
+      delete answers[key];
+      return { ...p, answers };
+    });
+  }
+
   setSectionStatus(examId: string, skill: Skill, status: SectionStatus): void {
     this.updateProgress(examId, (p) => ({
       ...p,

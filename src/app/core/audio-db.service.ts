@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, inject } from '@angular/core';
-import { upgradeLegacyAudioKey } from './state-migrations';
+import { attemptKeyFor, upgradeLegacyAudioKey } from './state-migrations';
 import { LocalStorageService } from './storage.service';
 
 export const AUDIO_DATABASE = 'learn-english-audio';
@@ -16,13 +16,40 @@ function request<T>(req: IDBRequest<T>, message: string): Promise<T> {
   });
 }
 
-/** IndexedDB storage for speaking recordings (one Blob per prompt, keyed `<examId>:<promptId>`). */
+/** Id of the attempt being taken: archived attempts are `<examId>-1..n`, so the current one is `n + 1`. */
+export function currentAttemptId(examId: string, archivedAttempts: number): string {
+  return `${examId}-${archivedAttempts + 1}`;
+}
+
+/** IndexedDB key of one recording: `<examId>:<attemptId>:<itemId>`. */
+export function recordingKey(examId: string, attemptId: string, itemId: string): string {
+  return `${examId}:${attemptId}:${itemId}`;
+}
+
+/**
+ * IndexedDB storage for speaking recordings (one Blob per prompt and attempt, keyed
+ * `<examId>:<attemptId>:<itemId>`). Retry starts a new attempt id, so earlier recordings are kept.
+ */
 @Injectable({ providedIn: 'root' })
 export class AudioDbService {
   private readonly idb = inject(DOCUMENT).defaultView?.indexedDB;
   private readonly store = inject(LocalStorageService);
 
+  /** Resolves when the one-off key migrations have finished (reads and writes wait for it). */
+  private migrations: Promise<unknown> = Promise.resolve();
+
+  /** Runs the one-off migrations in order: copy React-era clips, then add attempt ids to keys. */
+  runMigrations(): Promise<void> {
+    const run = this.migrateLegacyRecordings()
+      .then(() => this.migrateKeysToAttempts())
+      .then(() => undefined)
+      .catch(() => undefined);
+    this.migrations = run;
+    return run;
+  }
+
   async save(key: string, blob: Blob): Promise<void> {
+    await this.migrations;
     const db = await this.open(AUDIO_DATABASE, AUDIO_STORE);
     try {
       await request(
@@ -35,6 +62,7 @@ export class AudioDbService {
   }
 
   async load(key: string): Promise<Blob | null> {
+    await this.migrations;
     const db = await this.open(AUDIO_DATABASE, AUDIO_STORE);
     try {
       const value = await request<Blob | undefined>(
@@ -48,6 +76,7 @@ export class AudioDbService {
   }
 
   async delete(key: string): Promise<void> {
+    await this.migrations;
     const db = await this.open(AUDIO_DATABASE, AUDIO_STORE);
     try {
       await request(
@@ -116,6 +145,49 @@ export class AudioDbService {
       /* Leave the flag unset so the migration is retried next time. */
     }
     return copied;
+  }
+
+  /**
+   * Renames two-part keys (`<examId>:<promptId>`, used until phase 03) to `<examId>:<attemptId>:<itemId>`,
+   * assigning them to the attempt that is current now. Runs once.
+   */
+  async migrateKeysToAttempts(): Promise<number> {
+    if (!this.idb || this.store.state().migrations.audioKeys) return 0;
+    let moved = 0;
+    try {
+      const db = await this.open(AUDIO_DATABASE, AUDIO_STORE);
+      try {
+        const keys = (
+          await request(
+            db.transaction(AUDIO_STORE, 'readonly').objectStore(AUDIO_STORE).getAllKeys(),
+            'Could not read recordings.',
+          )
+        ).map(String);
+        const progress = this.store.progress();
+        for (const key of keys) {
+          const next = attemptKeyFor(key, (examId) =>
+            currentAttemptId(examId, progress[examId]?.attempts.length ?? 0),
+          );
+          if (next === key) continue;
+          const tx = db.transaction(AUDIO_STORE, 'readwrite');
+          const objects = tx.objectStore(AUDIO_STORE);
+          const value = await request(objects.get(key), 'Could not read a recording.');
+          if (value !== undefined) objects.put(value, next);
+          objects.delete(key);
+          await new Promise<void>((resolve, reject) => {
+            tx.oncomplete = () => resolve();
+            tx.onerror = () => reject(tx.error ?? new Error('Could not move a recording.'));
+          });
+          moved += 1;
+        }
+      } finally {
+        db.close();
+      }
+      this.store.markMigration('audioKeys', new Date().toISOString());
+    } catch {
+      /* Leave the flag unset so the migration is retried next time. */
+    }
+    return moved;
   }
 
   private open(name: string, storeName: string): Promise<IDBDatabase> {

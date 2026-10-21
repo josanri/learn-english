@@ -1,5 +1,6 @@
 import type { Type } from '@angular/core';
 import type { Part } from '../../../models/exam';
+import { speakingPrompts, type PromptRef } from './speaking-prompts';
 import {
   choiceItems,
   gapItems,
@@ -24,6 +25,11 @@ type PartOf<T extends PartType> = Extract<Part, { type: T }>;
 export interface PartDef<P extends Part = Part> {
   load: () => Promise<Type<unknown>>;
   items: (part: P) => ScoreItem[];
+  /**
+   * Free-response prompts of the part (speaking, later writing): progress and the submit review
+   * count them, but nothing is marked.
+   */
+  prompts?: (part: P) => PromptRef[];
 }
 
 const noItems = () => [] as ScoreItem[];
@@ -32,6 +38,7 @@ const textQuestions = () => import('./text-questions-part').then((m) => m.TextQu
 const sentenceCompletion = () =>
   import('./sentence-completion-part').then((m) => m.SentenceCompletionPart);
 const trueFalse = () => import('./true-false-part').then((m) => m.TrueFalsePart);
+const questions = () => import('../speaking/questions-part').then((m) => m.QuestionsPart);
 const clips = () => import('./clips-part').then((m) => m.ClipsPart);
 
 /**
@@ -90,17 +97,34 @@ export const PART_REGISTRY: { [T in PartType]: PartDef<PartOf<T>> } = {
     load: () => import('./opinion-matching-part').then((m) => m.OpinionMatchingPart),
     items: (p) => letterGapItems(p.gaps, p.options, (g) => ('prompt' in g ? g.prompt : g.id)),
   },
-  // Writing, speaking and mediation have their own phases: placeholder only, nothing auto-marked.
+  // Writing and mediation have their own phase: placeholder only, nothing auto-marked.
   email: { load: placeholder, items: noItems },
   'choice-task': { load: placeholder, items: noItems },
   'short-message': { load: placeholder, items: noItems },
   'opinion-essay': { load: placeholder, items: noItems },
-  interview: { load: placeholder, items: noItems },
-  'photo-description': { load: placeholder, items: noItems },
-  'collaborative-task': { load: placeholder, items: noItems },
-  discussion: { load: placeholder, items: noItems },
-  'monologue-topic': { load: placeholder, items: noItems },
-  'role-play': { load: placeholder, items: noItems },
+  // Speaking: recorded or typed responses, never marked automatically.
+  interview: { load: questions, items: noItems, prompts: speakingPrompts },
+  discussion: { load: questions, items: noItems, prompts: speakingPrompts },
+  'photo-description': {
+    load: () => import('../speaking/photo-part').then((m) => m.PhotoPart),
+    items: noItems,
+    prompts: speakingPrompts,
+  },
+  'collaborative-task': {
+    load: () => import('../speaking/collaborative-part').then((m) => m.CollaborativePart),
+    items: noItems,
+    prompts: speakingPrompts,
+  },
+  'monologue-topic': {
+    load: () => import('../speaking/monologue-part').then((m) => m.MonologuePart),
+    items: noItems,
+    prompts: speakingPrompts,
+  },
+  'role-play': {
+    load: () => import('../speaking/role-play-part').then((m) => m.RolePlayPart),
+    items: noItems,
+    prompts: speakingPrompts,
+  },
   'mediation-text': { load: placeholder, items: noItems },
 };
 
@@ -112,6 +136,12 @@ export function partDef(type: string): PartDef | undefined {
 /** Markable items of a part in display order. Unknown types have none. */
 export function partItems(part: Part): ScoreItem[] {
   return partDef(part.type)?.items(part) ?? [];
+}
+
+/** Free-response prompts of a part (empty for marked parts and unknown types). */
+export function partPrompts(part: Part): PromptRef[] {
+  const def = partDef(part.type);
+  return def?.prompts ? (def.prompts as (p: Part) => PromptRef[])(part) : [];
 }
 
 /** Part types with a real (non-placeholder) renderer. */

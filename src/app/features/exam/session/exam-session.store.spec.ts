@@ -76,6 +76,23 @@ const exam: Exam = {
         },
       ],
     },
+    {
+      skill: 'speaking',
+      timeLimitMinutes: 4,
+      parts: [
+        {
+          type: 'interview',
+          id: 'speaking-1',
+          number: 1,
+          title: 'Interview',
+          instructions: '',
+          questions: [
+            { id: 's1-1', prompt: 'Where do you live?' },
+            { id: 's1-2', prompt: 'What do you do?' },
+          ],
+        },
+      ],
+    },
   ],
 };
 
@@ -211,6 +228,36 @@ describe('ExamSessionStore', () => {
     expect(progress?.attempts).toHaveLength(1);
     expect(progress?.attempts[0].answers).toEqual({ 'r1-1': 1 });
     expect(progress?.attempts[0].results['reading']).toBeDefined();
+  });
+
+  it('counts speaking prompts as progress, completes without a score and names the attempt', () => {
+    const store = setup();
+    store.skill.set('speaking');
+    expect(store.totalCount()).toBe(2);
+    expect(store.answeredCount()).toBe(0);
+    expect(store.attemptId()).toBe('test-01-1');
+    expect(store.unansweredPrompts().map((p) => p.id)).toEqual(['s1-1', 's1-2']);
+
+    store.setAnswer('speaking:s1-1', 'I live in Valencia.');
+    store.setAnswer('speaking-dur:s1-2', 12.5);
+    expect(store.answeredCount()).toBe(2);
+    expect(store.partScore('speaking-1')).toEqual({ correct: 0, total: 2, answered: 2 });
+
+    store.submitSection();
+    expect(store.locked()).toBe(true);
+    expect(store.progress()?.sectionStatus['speaking']).toBe('completed');
+    expect(store.progress()?.results['speaking']).toBeUndefined();
+
+    store.retry();
+    expect(store.attemptId()).toBe('test-01-2');
+    expect(store.progress()?.attempts[0].answers['speaking:s1-1']).toBe('I live in Valencia.');
+  });
+
+  it('removes an answer', () => {
+    const store = setup();
+    store.setAnswer('speaking-dur:s1-1', 5);
+    store.removeAnswer('speaking-dur:s1-1');
+    expect(store.answer('speaking-dur:s1-1')).toBeUndefined();
   });
 
   it('counts time, warns at 5 and 1 minutes and saves elapsed seconds', async () => {

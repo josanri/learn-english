@@ -4,6 +4,7 @@ import {
   emptyState,
   migrateLegacyData,
   migrateState,
+  attemptKeyFor,
   upgradeLegacyAudioKey,
   upgradeLegacyExamId,
 } from './state-migrations';
@@ -13,6 +14,17 @@ describe('state migrations', () => {
     expect(upgradeLegacyExamId('exam-03')).toBe('cambridge-pet-03');
     expect(upgradeLegacyExamId('other')).toBe('other');
     expect(upgradeLegacyAudioKey('exam-04:s4-1-2')).toBe('cambridge-pet-04:s4-1-2');
+  });
+
+  it('adds the attempt id to two-part recording keys only', () => {
+    const attempt = (examId: string) => `${examId}-2`;
+    expect(attemptKeyFor('cambridge-pet-01:s1-1-1', attempt)).toBe(
+      'cambridge-pet-01:cambridge-pet-01-2:s1-1-1',
+    );
+    expect(attemptKeyFor('cambridge-pet-01:cambridge-pet-01-1:s1-1-1', attempt)).toBe(
+      'cambridge-pet-01:cambridge-pet-01-1:s1-1-1',
+    );
+    expect(attemptKeyFor('plain', attempt)).toBe('plain');
   });
 
   it('keeps answers, drafts, transcripts and scores from the legacy document', () => {

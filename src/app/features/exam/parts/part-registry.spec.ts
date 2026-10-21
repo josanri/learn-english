@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Exam, Part } from '../../../models/exam';
-import { PART_REGISTRY, partDef, partItems, type PartType } from './part-registry';
+import { PART_REGISTRY, partDef, partItems, partPrompts, type PartType } from './part-registry';
 
 const EXAMS_DIR = join(process.cwd(), 'src', 'assets', 'exams', 'b1');
 
@@ -85,6 +85,37 @@ describe('part registry', () => {
     for (const type of READING_AND_LISTENING) {
       const component = await PART_REGISTRY[type].load();
       expect(component, type).toBeTruthy();
+    }
+  });
+
+  it('has a real renderer and prompts for every speaking type', async () => {
+    const speaking: PartType[] = [
+      'interview',
+      'photo-description',
+      'collaborative-task',
+      'discussion',
+      'monologue-topic',
+      'role-play',
+    ];
+    for (const type of speaking) {
+      const def = PART_REGISTRY[type];
+      expect(def.prompts, type).toBeDefined();
+      expect(await def.load(), type).toBeTruthy();
+    }
+  });
+
+  it('lists unique speaking prompts per exam', () => {
+    for (const exam of loadExams()) {
+      const ids = new Set<string>();
+      for (const section of exam.sections) {
+        for (const part of section.parts as Part[]) {
+          for (const prompt of partPrompts(part)) {
+            expect(ids.has(prompt.id), `${exam.id} duplicate ${prompt.id}`).toBe(false);
+            ids.add(prompt.id);
+          }
+        }
+      }
+      expect(ids.size, exam.id).toBeGreaterThanOrEqual(10);
     }
   });
 
