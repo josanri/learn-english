@@ -14,7 +14,48 @@ export const LEGACY_STORAGE_KEY = 'northstar-practice-v3';
 /** Version of the `PersistedState` document. Bump it and add a step to `STEPS` to change the shape. */
 export const CURRENT_SCHEMA_VERSION = 1;
 
-export const DEFAULT_SETTINGS: Settings = { theme: 'system', speechRate: 0.9 };
+export const DEFAULT_SETTINGS: Settings = {
+  theme: 'system',
+  textSize: 'normal',
+  reduceMotion: false,
+  highContrast: false,
+  voiceUri: null,
+  speechRate: 1,
+  recognitionLang: 'en-GB',
+  onlineRecognition: true,
+  showTimer: true,
+  examMode: false,
+  studentName: '',
+};
+
+export const SPEECH_RATE_MIN = 0.8;
+export const SPEECH_RATE_MAX = 1.2;
+
+/** Keeps only valid values of known settings; anything else falls back to the default. */
+export function sanitizeSettings(raw: unknown): Settings {
+  const r = isRecord(raw) ? raw : {};
+  const d = DEFAULT_SETTINGS;
+  const oneOf = <T extends string>(v: unknown, allowed: readonly T[], fallback: T): T =>
+    allowed.includes(v as T) ? (v as T) : fallback;
+  const bool = (v: unknown, fallback: boolean) => (typeof v === 'boolean' ? v : fallback);
+  const rate =
+    typeof r['speechRate'] === 'number' && Number.isFinite(r['speechRate'])
+      ? r['speechRate']
+      : d.speechRate;
+  return {
+    theme: oneOf(r['theme'], ['system', 'light', 'dark'], d.theme),
+    textSize: oneOf(r['textSize'], ['normal', 'large', 'xlarge'], d.textSize),
+    reduceMotion: bool(r['reduceMotion'], d.reduceMotion),
+    highContrast: bool(r['highContrast'], d.highContrast),
+    voiceUri: typeof r['voiceUri'] === 'string' ? r['voiceUri'] : null,
+    speechRate: Math.min(SPEECH_RATE_MAX, Math.max(SPEECH_RATE_MIN, rate)),
+    recognitionLang: oneOf(r['recognitionLang'], ['en-GB', 'en-US'], d.recognitionLang),
+    onlineRecognition: bool(r['onlineRecognition'], d.onlineRecognition),
+    showTimer: bool(r['showTimer'], d.showTimer),
+    examMode: bool(r['examMode'], d.examMode),
+    studentName: typeof r['studentName'] === 'string' ? r['studentName'].slice(0, 80) : '',
+  };
+}
 
 export function emptyState(): PersistedState {
   return {
@@ -28,7 +69,7 @@ export function emptyState(): PersistedState {
 /** Upgrades from version N to N + 1. Add entries here when the stored shape changes. */
 const STEPS: Record<number, (state: Record<string, unknown>) => Record<string, unknown>> = {};
 
-function isRecord(value: unknown): value is Record<string, unknown> {
+export function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
@@ -48,7 +89,7 @@ export function migrateState(raw: unknown): PersistedState {
   const migrations = isRecord(current['migrations']) ? current['migrations'] : {};
   return {
     schemaVersion: CURRENT_SCHEMA_VERSION,
-    settings: { ...DEFAULT_SETTINGS, ...(settings as Partial<Settings>) },
+    settings: sanitizeSettings(settings),
     progress: progress as PersistedState['progress'],
     migrations: migrations as PersistedState['migrations'],
   };

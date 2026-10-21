@@ -9,7 +9,24 @@
     />
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#1e3a5f" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1c1c" media="(prefers-color-scheme: dark)" />
+    <script>
+      // Applies saved appearance settings before first paint (keep in sync with ThemeService).
+      (function () {
+        try {
+          var s = JSON.parse(localStorage.getItem('learn-english:v1') || '{}').settings || {};
+          var d = document.documentElement.dataset;
+          if (s.theme === 'light' || s.theme === 'dark') {
+            d.theme = s.theme;
+            document.documentElement.style.colorScheme = s.theme;
+          }
+          if (s.textSize === 'large' || s.textSize === 'xlarge') d.textSize = s.textSize;
+          if (s.reduceMotion === true) d.motion = 'reduce';
+          if (s.highContrast === true) d.contrast = 'high';
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>

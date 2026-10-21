@@ -20,7 +20,7 @@ src/app/
   data/       exam catalogue service (lazy JSON loading)
   models/     exam.ts (schema v2 types, source of truth), storage.ts (persisted state)
   features/   home, level (/b1), exam (shell + section pages + results), settings
-  shared/     reusable UI (empty for now)
+  shared/ui/  design-system components (import from 'shared/ui')
 src/assets/exams/<level>/<board>/<id>.json   exam data; <level>/index.json is generated
 scripts/      validate-exams, generate-schema, generate-index, migrate-v1-to-v2, build-pages; legacy-v1/ holds the old JSON
 ```
@@ -29,9 +29,22 @@ Routes: `/`, `/b1`, `/b1/:board/:examId/(reading|writing|listening|speaking|medi
 
 ## Commands
 
-`npm start`, `npm run lint`, `npm test`, `npm run validate:exams`, `npm run build`, `npm run build:pages -- /repo/`, `npm run schema:generate`, `npm run exams:index`.
+`npm start`, `npm run lint`, `npm test`, `npm run validate:exams`, `npm run build`, `npm run build:pages -- /repo/`, `npm run schema:generate`, `npm run exams:index`, `npm run check:contrast`.
 
 Before committing: lint, test, validate:exams and build must all pass.
+
+## Design system
+
+Style: own take on a bold, tactile look (huge tight headlines, flat colour cards with thick borders and solid offset shadows, key-like buttons). Fonts are bundled (Bricolage Grotesque Variable for display and body, JetBrains Mono Variable for chips, timers and counters), imported in `src/styles.css`.
+
+- Tokens live in `src/styles/tokens.css` (CSS custom properties): colour (`--bg --surface --surface-2 --text --text-muted --border --border-muted --accent --accent-strong --on-accent --accent-text --success --warning --danger --focus-ring`), `--paper-*` card colours, `--radius-*`, `--space-1..9`, `--step--1..6` fluid type, `--font-display/body/mono`, `--target` (44px min touch size), `--dur` (motion, 0s when reduced). Never hard-code colours or px sizes; use rem and tokens. Brand blue `--accent` is for graphics only; text uses `--accent-text`, buttons `--accent-strong` + `--on-accent`.
+- Themes: light in `:root`, dark in `:root[data-theme='dark']` and (identical copy) `@media (prefers-color-scheme: dark) :root:not([data-theme])`. Other settings set `data-text-size`, `data-motion='reduce'`, `data-contrast='high'` on `<html>`. `ThemeService` applies them; an inline script in `index.html` does it before first paint. If you add or change a token, edit both dark copies and run `npm run check:contrast` (WCAG 2.2 AA table for every pair, fails the build on regressions; add new pairs in `scripts/check-contrast.mjs`).
+- Utilities in `src/styles/base.css`: `.container`, `.page`, `.eyebrow`, `.lede`, `.muted`, `.section-title`, `.visually-hidden`, `.field`, `.hint`, `.switch` (checkbox toggle markup is documented there).
+- Components (`src/app/shared/ui`, barrel `index.ts`): `appButton` on native `<button>`/`<a>` (variant primary|secondary|ghost|danger, size sm|md|lg, block), `app-chip` (`[command]` for mono chips), `app-card` (`[raised]`), `app-illustrated-card` (heading, tone, rotate, link; project `<app-skill-art art kind="reading">`), `app-badge` (tone), `app-progress-ring` / `app-progress-bar` (value 0..1, label), `app-segmented-control` (native radios, `[(value)]`, options, label), `app-dialog` (`[(open)]`, heading, buttons in `<ng-container actions>`; native `<dialog>`), `ToastService.show()` (host `app-toast-host` is in the shell), `app-skip-link`, `app-icon` (names in `icon.ts`), `app-empty-state`, `app-brush-stroke`, `app-skill-art`. Use these instead of ad-hoc markup; every interactive element needs a visible focus ring, a 44px target and a real accessible name.
+- Shell: sticky header, one `<nav aria-label="Main">` that becomes a fixed bottom bar under 48rem (safe-area aware). Pages wrap content in `<div class="container page">`; the main landmark is `#main`.
+- Settings (`Settings` in `models/storage.ts`, defaults and validation in `core/state-migrations.ts`, access through `SettingsService.update()`): theme, textSize, reduceMotion, highContrast, voiceUri, speechRate (0.8-1.2), recognitionLang, onlineRecognition, showTimer, examMode, studentName. Exam pages must honour `showTimer`, `examMode` (no hints or explanations until finished) and `recognitionLang`/`onlineRecognition`.
+- `core/progress.ts` `examStatus()` derives not-started / in-progress / completed, section fraction and score percent from saved progress; completed means every section of the exam has `sectionStatus` completed.
+- Accessibility check: run `ng serve` and axe via `@axe-core/playwright` (installed as dev dependency; system Chrome works with `channel: 'chrome'`). Home, /b1, /settings had no violations in either theme at 360 and 1280 px.
 
 ## Persistence
 

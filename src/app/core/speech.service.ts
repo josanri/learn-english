@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Injectable, inject, signal } from '@angular/core';
+import { Injectable, computed, inject, signal } from '@angular/core';
 import type { Recording, Speaker } from '../models/exam';
 import { SettingsService } from './settings.service';
 
@@ -17,10 +17,33 @@ export class SpeechService {
   readonly speaking = signal(false);
   private readonly voices = signal<SpeechSynthesisVoice[]>(this.synth?.getVoices() ?? []);
 
+  /** English voices installed on this device, for the voice picker in Settings. */
+  readonly englishVoices = computed(() =>
+    this.voices()
+      .filter((v) => v.lang.toLowerCase().startsWith('en'))
+      .sort((a, b) => a.name.localeCompare(b.name)),
+  );
+
   constructor() {
     this.synth?.addEventListener('voiceschanged', () =>
       this.voices.set(this.synth?.getVoices() ?? []),
     );
+  }
+
+  /** Speaks a short sample with the current voice and speed settings. */
+  preview(): void {
+    const synth = this.synth;
+    if (!synth) return;
+    synth.cancel();
+    const utterance = new SpeechSynthesisUtterance(
+      'This is how the listening recordings will sound.',
+    );
+    utterance.lang = 'en-GB';
+    utterance.rate = this.settings.settings().speechRate;
+    const voiceUri = this.settings.settings().voiceUri;
+    const voice = this.voices().find((v) => v.voiceURI === voiceUri);
+    if (voice) utterance.voice = voice;
+    synth.speak(utterance);
   }
 
   /** Plays every turn of a recording in order. Resolves when playback ends or is cancelled. */
@@ -59,9 +82,10 @@ export class SpeechService {
   private configure(utterance: SpeechSynthesisUtterance, speaker: Speaker): void {
     const { voice } = speaker;
     utterance.lang = voice.lang;
-    utterance.rate = (voice.rate ?? 1) * (this.settings.settings().speechRate / 0.9);
+    utterance.rate = (voice.rate ?? 1) * this.settings.settings().speechRate;
     utterance.pitch = voice.pitch ?? 1;
-    const match = this.pickVoice(voice.lang, voice.gender);
+    const preferred = this.voices().find((v) => v.voiceURI === this.settings.settings().voiceUri);
+    const match = preferred ?? this.pickVoice(voice.lang, voice.gender);
     if (match) utterance.voice = match;
   }
 

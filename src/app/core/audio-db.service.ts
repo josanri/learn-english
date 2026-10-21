@@ -59,6 +59,19 @@ export class AudioDbService {
     }
   }
 
+  /** Removes every saved recording (the React-era backup database is left alone). */
+  async clear(): Promise<void> {
+    const db = await this.open(AUDIO_DATABASE, AUDIO_STORE);
+    try {
+      await request(
+        db.transaction(AUDIO_STORE, 'readwrite').objectStore(AUDIO_STORE).clear(),
+        'Could not delete the recordings.',
+      );
+    } finally {
+      db.close();
+    }
+  }
+
   /**
    * Copies recordings from the React app database into the new one (renaming `exam-0N:` keys to
    * `cambridge-pet-0N:`). Runs once; the old database is left in place as a backup.

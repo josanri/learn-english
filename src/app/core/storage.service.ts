@@ -47,6 +47,11 @@ export class LocalStorageService {
     this._state.update((s) => ({ ...s, settings: { ...s.settings, ...patch } }));
   }
 
+  /** Replaces everything (used by import and reset). */
+  replaceState(state: PersistedState): void {
+    this._state.set(state);
+  }
+
   markMigration(name: keyof PersistedState['migrations'], value: string): void {
     this._state.update((s) => ({ ...s, migrations: { ...s.migrations, [name]: value } }));
   }

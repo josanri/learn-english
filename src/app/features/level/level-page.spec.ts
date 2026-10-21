@@ -47,5 +47,7 @@ describe('LevelPage', () => {
     expect(element.querySelector('.exam-list a')?.getAttribute('href')).toBe(
       '/b1/cambridge-pet/cambridge-pet-01/reading',
     );
+    expect(element.textContent).toContain('Not started');
+    expect(element.textContent).toContain('137 min');
   });
 });

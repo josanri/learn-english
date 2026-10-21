@@ -1,5 +1,6 @@
 import {
   CURRENT_SCHEMA_VERSION,
+  DEFAULT_SETTINGS,
   emptyState,
   migrateLegacyData,
   migrateState,
@@ -57,6 +58,6 @@ describe('state migrations', () => {
       settings: { theme: 'dark' },
       progress: {},
     });
-    expect(state.settings).toEqual({ theme: 'dark', speechRate: 0.9 });
+    expect(state.settings).toEqual({ ...DEFAULT_SETTINGS, theme: 'dark' });
   });
 });
