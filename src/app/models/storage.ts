@@ -1,4 +1,5 @@
 import type { Skill } from './exam';
+import type { GrammarProgress } from './grammar';
 
 /** Colour theme chosen by the learner. `system` follows the operating system. */
 export type ThemePreference = 'system' | 'light' | 'dark';
@@ -93,6 +94,8 @@ export interface PersistedState {
   progress: Record<string, ExamProgress>;
   /** Local calendar days (`YYYY-MM-DD`) on which the learner practised; feeds the streak. */
   activity: string[];
+  /** Practice record of the irregular verbs. */
+  grammar: GrammarProgress;
   /** Flags recording which one-off data migrations have already run. */
   migrations: { audioDb?: string; audioKeys?: string };
 }

@@ -94,6 +94,47 @@ describe('state migrations', () => {
     expect(state.activity).toEqual(['2026-03-02', '2026-03-04']);
   });
 
+  it('adds an empty grammar record when it upgrades a version 2 document', () => {
+    const state = migrateState({
+      schemaVersion: 2,
+      progress: {},
+      activity: ['2026-03-02'],
+      settings: {},
+      migrations: {},
+    });
+    expect(state.schemaVersion).toBe(CURRENT_SCHEMA_VERSION);
+    expect(state.grammar).toEqual({ verbs: {} });
+    expect(state.activity).toEqual(['2026-03-02']);
+  });
+
+  it('keeps valid verb records and drops broken ones', () => {
+    const state = migrateState({
+      schemaVersion: CURRENT_SCHEMA_VERSION,
+      grammar: {
+        verbs: {
+          go: { right: 3, wrong: 1.9, lastSeen: '2026-03-02', known: true, starred: true },
+          bad: 'nope',
+          odd: { right: -4, wrong: 'x' },
+        },
+      },
+    });
+    expect(state.grammar.verbs['go']).toEqual({
+      right: 3,
+      wrong: 1,
+      lastSeen: '2026-03-02',
+      known: true,
+      starred: true,
+    });
+    expect(state.grammar.verbs['bad']).toBeUndefined();
+    expect(state.grammar.verbs['odd']).toEqual({
+      right: 0,
+      wrong: 0,
+      lastSeen: '',
+      known: false,
+      starred: false,
+    });
+  });
+
   it('repairs progress entries that miss containers', () => {
     const state = migrateState({
       schemaVersion: CURRENT_SCHEMA_VERSION,

@@ -1,4 +1,5 @@
 import type { Skill } from '../models/exam';
+import type { GrammarProgress } from '../models/grammar';
 import type {
   ExamProgress,
   ObjectiveResult,
@@ -12,7 +13,7 @@ export const STORAGE_KEY = 'learn-english:v1';
 /** localStorage key written by the React version ("Northstar B1"). Kept untouched after migration. */
 export const LEGACY_STORAGE_KEY = 'northstar-practice-v3';
 /** Version of the `PersistedState` document. Bump it and add a step to `STEPS` to change the shape. */
-export const CURRENT_SCHEMA_VERSION = 2;
+export const CURRENT_SCHEMA_VERSION = 3;
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
@@ -69,8 +70,31 @@ export function emptyState(): PersistedState {
     settings: { ...DEFAULT_SETTINGS },
     progress: {},
     activity: [],
+    grammar: emptyGrammar(),
     migrations: {},
   };
+}
+
+export function emptyGrammar(): GrammarProgress {
+  return { verbs: {} };
+}
+
+/** Keeps only well-formed verb records; counts become non-negative integers. */
+function sanitizeGrammar(raw: unknown): GrammarProgress {
+  const verbs: GrammarProgress['verbs'] = {};
+  const source = isRecord(raw) && isRecord(raw['verbs']) ? raw['verbs'] : {};
+  const count = (v: unknown) => (typeof v === 'number' && v > 0 ? Math.floor(v) : 0);
+  for (const [id, value] of Object.entries(source)) {
+    if (!isRecord(value)) continue;
+    verbs[id] = {
+      right: count(value['right']),
+      wrong: count(value['wrong']),
+      lastSeen: typeof value['lastSeen'] === 'string' ? value['lastSeen'] : '',
+      known: value['known'] === true,
+      starred: value['starred'] === true,
+    };
+  }
+  return { verbs };
 }
 
 /** Upgrades from version N to N + 1. Add entries here when the stored shape changes. */
@@ -90,6 +114,8 @@ const STEPS: Record<number, (state: Record<string, unknown>) => Record<string, u
     }
     return { ...state, progress: next, activity: [...days].sort() };
   },
+  // v2 -> v3: practice record of the irregular verbs.
+  2: (state) => ({ ...state, grammar: emptyGrammar() }),
 };
 
 /** Local calendar day as `YYYY-MM-DD`, or null for an invalid date. */
@@ -125,6 +151,7 @@ export function migrateState(raw: unknown): PersistedState {
     settings: sanitizeSettings(settings),
     progress: sanitizeProgress(progress),
     activity,
+    grammar: sanitizeGrammar(current['grammar']),
     migrations: migrations as PersistedState['migrations'],
   };
 }

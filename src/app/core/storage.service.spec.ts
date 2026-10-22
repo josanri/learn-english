@@ -27,6 +27,22 @@ describe('LocalStorageService', () => {
     expect(localStorage.getItem(LEGACY_STORAGE_KEY)).not.toBeNull(); // old data is left as a backup
   });
 
+  it('records verb practice and adds today to the activity days', () => {
+    const service = TestBed.inject(LocalStorageService);
+    service.recordVerbResult('go', true);
+    service.recordVerbResult('go', false);
+    service.setVerbKnown('go', true);
+    service.toggleVerbStar('go');
+    const go = service.grammar().verbs['go'];
+    expect(go).toMatchObject({ right: 1, wrong: 1, known: true, starred: true });
+    expect(go.lastSeen).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(service.activity()).toEqual([go.lastSeen]);
+    service.toggleVerbStar('go');
+    expect(service.grammar().verbs['go'].starred).toBe(false);
+    service.resetGrammar();
+    expect(service.grammar().verbs).toEqual({});
+  });
+
   it('debounces writes and stores answers with timestamps', async () => {
     const service = TestBed.inject(LocalStorageService);
     service.setAnswer('cambridge-pet-01', 'r1-1', 2);

@@ -19,19 +19,20 @@ src/app/
   core/       storage (single localStorage doc + migrations), settings, theme, speech (TTS), audio-db (IndexedDB)
   data/       exam catalogue service (lazy JSON loading)
   models/     exam.ts (schema v2 types, source of truth), storage.ts (persisted state)
-  features/   home, level (/b1), progress (summary card), exam (shell, section pages, results; see Exam engine), settings
+  features/   home, level (/b1), progress (summary card), exam (shell, section pages, results; see Exam engine), grammar (see Grammar), settings
   shared/ui/  design-system components (import from 'shared/ui')
 src/assets/exams/<level>/<board>/<id>.json   exam data; <level>/index.json is generated
-scripts/      validate-exams, generate-schema, generate-index, migrate-v1-to-v2, build-pages; legacy-v1/ holds the old JSON
+src/assets/grammar/   irregular-verbs.json, verb-forms.json
+scripts/      validate-grammar, validate-exams, generate-schema, generate-index, migrate-v1-to-v2, build-pages; legacy-v1/ holds the old JSON
 ```
 
-Routes: `/`, `/b1`, `/b1/:board/:examId/(reading|writing|listening|speaking|mediation|results)`, `/settings`.
+Routes: `/`, `/b1`, `/b1/:board/:examId/(reading|writing|listening|speaking|mediation|results)`, `/grammar`, `/grammar/irregular-verbs`, `/grammar/verb-forms`, `/settings`, `/credits`.
 
 ## Commands
 
-`npm start`, `npm run lint`, `npm test`, `npm run validate:exams`, `npm run test:scripts`, `npm run build`, `npm run build:pages -- /repo/`, `npm run schema:generate`, `npm run exams:index`, `npm run check:contrast`, `npm run icons:generate`.
+`npm start`, `npm run lint`, `npm test`, `npm run validate:exams`, `npm run validate:grammar`, `npm run test:scripts`, `npm run build`, `npm run build:pages -- /repo/`, `npm run schema:generate`, `npm run exams:index`, `npm run check:contrast`, `npm run icons:generate`.
 
-Before committing: lint, test, test:scripts, validate:exams and build must all pass.
+Before committing: lint, test, test:scripts, validate:exams, validate:grammar and build must all pass.
 
 ## Design system
 
@@ -79,9 +80,18 @@ Style: own take on a bold, tactile look (huge tight headlines, flat colour cards
 - ZIP: `exam.json`, `answers.json` (learner data, scores, writing, transcripts, recording paths, `allAnswers`), `results.pdf` (full report), `recordings/<partId>-<promptId>.<ext>`, `README.txt`. Time used and flagged items exist only for the current attempt (`session`).
 - Page breaks: tables use `headerRows` + `keepWithHeaderRows` + `dontBreakRows`; cards are `unbreakable`; a heading is grouped with the block that follows it.
 
+## Grammar (`features/grammar`, `data/grammar-catalogue.service.ts`)
+
+- Data is static JSON loaded with `httpResource` through `GrammarCatalogueService` (not bundled; lazy asset group `grammar` in `ngsw-config.json`). Types in `models/grammar.ts` are the source of truth. `npm run validate:grammar` (rules in `scripts/lib/grammar-rules.mjs`, tests in `grammar-rules.test.mjs`) checks unique ids and bases, one `{{past}}` / `{{participle}}` marker per sentence, regular verbs not in the list, table widths, two checks per guide section.
+- `irregular-verbs.json`: `{ id, base, past, participle, alt?: { past?, participle? }, example, exampleParticiple, note? }`. The pattern (AAA, ABA, ABB, ABC) is derived by `patternOf()`, not stored. Verb ids are progress keys: never rename them. `alt` holds extra accepted spellings (British and American forms).
+- `verb-forms.json`: sections `{ id, title, summary, tables, uses, signals, examples, mistakes, checks }` for the verb forms guide.
+- Pages: `GrammarPage` (hub), `IrregularVerbsPage` (Glossary / Practice switch), `VerbFormsPage` (guide with contents list, tables, mistakes and `<details>` answers). Glossary: `VerbGlossary` (search, pattern filter, starred filter, spoken forms, table that stacks under 48rem). Practice: `VerbPractice` (setup, 10-verb session, summary) with `TypeCard`, `GapCard`, `FlashCard` in `practice-cards.ts`.
+- Pure logic in `irregular-verbs/verb-engine.ts`: `isCorrectForm` (uses `normalizeAnswer`, accepts `alt`), gap helpers, `selectVerbs` (weighted: wrong answers raise the chance, known verbs lower it, no repeats, injectable `random`), `verbsToReview`.
+- Progress: `PersistedState.grammar.verbs[verbId] = { right, wrong, lastSeen, known, starred }`, written through `LocalStorageService.recordVerbResult / setVerbKnown / toggleVerbStar / resetGrammar`. Practice also adds the day to `activity` (streak). Feedback is a practice aid, never a score.
+
 ## Persistence
 
-One localStorage key `learn-english:v1` (schemaVersion 2) = `{ schemaVersion, settings, progress: { [examId]: ExamProgress }, activity: string[], migrations }`. `ExamProgress` is the CURRENT attempt as flat fields `{ answers, results, startedAt, updatedAt, sectionStatus }` plus `session?: { skill, parts: {skill: partId}, flagged, checked, listens: {recordingKey: n}, elapsed: {skill: seconds} }` and `attempts: Attempt[]` (archived earlier tries `{ id, startedAt, finishedAt, answers, results, sectionStatus }`; `Retry` = `LocalStorageService.startNewAttempt()` moves the current attempt there and empties the current one). `results` is keyed by skill (`reading`, `listening`: `{ correct, total, completedAt }`); legacy migrated data may only have `objective`. `activity` lists local days (`YYYY-MM-DD`) with practice and feeds the streak. Answer keys added by speaking: `speaking-dur:<id>` (seconds recorded) and `speaking-topic:<partId>` (chosen topic). `LocalStorageService` is signal-based, debounces writes with an effect and reads with try/catch. To change the shape, bump `CURRENT_SCHEMA_VERSION` and add a step in `core/state-migrations.ts`. Answer keys inside `answers` keep the original format: item id (`r1-1`), `writing-1`, `writing-2`, `writing-2-type`, `speaking:<promptId>`. Recordings live in IndexedDB `learn-english-audio` keyed `<examId>:<attemptId>:<itemId>`; the current attempt id is `<examId>-<archivedAttempts+1>` (`currentAttemptId()`), so Retry keeps old recordings under the archived attempt id. Old two-part keys are renamed once to the current attempt (`AudioDbService.migrateKeysToAttempts`, flag `migrations.audioKeys`). Never rename exam or item ids that are already published.
+One localStorage key `learn-english:v1` (schemaVersion 3) = `{ schemaVersion, settings, progress: { [examId]: ExamProgress }, activity: string[], grammar: { verbs }, migrations }`. `ExamProgress` is the CURRENT attempt as flat fields `{ answers, results, startedAt, updatedAt, sectionStatus }` plus `session?: { skill, parts: {skill: partId}, flagged, checked, listens: {recordingKey: n}, elapsed: {skill: seconds} }` and `attempts: Attempt[]` (archived earlier tries `{ id, startedAt, finishedAt, answers, results, sectionStatus }`; `Retry` = `LocalStorageService.startNewAttempt()` moves the current attempt there and empties the current one). `results` is keyed by skill (`reading`, `listening`: `{ correct, total, completedAt }`); legacy migrated data may only have `objective`. `activity` lists local days (`YYYY-MM-DD`) with practice and feeds the streak. Answer keys added by speaking: `speaking-dur:<id>` (seconds recorded) and `speaking-topic:<partId>` (chosen topic). `LocalStorageService` is signal-based, debounces writes with an effect and reads with try/catch. To change the shape, bump `CURRENT_SCHEMA_VERSION` and add a step in `core/state-migrations.ts`. Answer keys inside `answers` keep the original format: item id (`r1-1`), `writing-1`, `writing-2`, `writing-2-type`, `speaking:<promptId>`. Recordings live in IndexedDB `learn-english-audio` keyed `<examId>:<attemptId>:<itemId>`; the current attempt id is `<examId>-<archivedAttempts+1>` (`currentAttemptId()`), so Retry keeps old recordings under the archived attempt id. Old two-part keys are renamed once to the current attempt (`AudioDbService.migrateKeysToAttempts`, flag `migrations.audioKeys`). Never rename exam or item ids that are already published.
 
 ## Adding an exam
 

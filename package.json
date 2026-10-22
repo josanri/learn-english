@@ -15,7 +15,8 @@
     "exams:migrate-v1": "node scripts/migrate-v1-to-v2.mjs",
     "check:contrast": "node scripts/check-contrast.mjs",
     "validate:exams": "node scripts/validate-exams.mjs",
-    "test:scripts": "node --test scripts/lib/exam-rules.test.mjs",
+    "validate:grammar": "node scripts/validate-grammar.mjs",
+    "test:scripts": "node --test scripts/lib/exam-rules.test.mjs scripts/lib/grammar-rules.test.mjs",
     "icons:generate": "node scripts/generate-icons.mjs"
   },
   "private": true,

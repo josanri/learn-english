@@ -58,6 +58,31 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'grammar',
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        title: 'Grammar | Learn English',
+        loadComponent: () => import('./features/grammar/grammar-page').then((m) => m.GrammarPage),
+      },
+      {
+        path: 'irregular-verbs',
+        title: 'Irregular verbs | Learn English',
+        loadComponent: () =>
+          import('./features/grammar/irregular-verbs/irregular-verbs-page').then(
+            (m) => m.IrregularVerbsPage,
+          ),
+      },
+      {
+        path: 'verb-forms',
+        title: 'Guide to verb forms | Learn English',
+        loadComponent: () =>
+          import('./features/grammar/verb-forms/verb-forms-page').then((m) => m.VerbFormsPage),
+      },
+    ],
+  },
+  {
     path: 'settings',
     title: 'Settings | Learn English',
     loadComponent: () => import('./features/settings/settings-page').then((m) => m.SettingsPage),

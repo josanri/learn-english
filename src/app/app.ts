@@ -43,6 +43,10 @@ const THEME_NAME: Record<ThemePreference, string> = {
             <app-icon name="list" />
             <span>B1 exams</span>
           </a>
+          <a routerLink="/grammar" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <app-icon name="book" />
+            <span>Grammar</span>
+          </a>
           <a routerLink="/settings" routerLinkActive="active" ariaCurrentWhenActive="page">
             <app-icon name="settings" />
             <span>Settings</span>

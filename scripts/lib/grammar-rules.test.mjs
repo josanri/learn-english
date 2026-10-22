@@ -1,0 +1,93 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { test } from 'node:test';
+import { checkIrregularVerbs, checkVerbForms } from './grammar-rules.mjs';
+
+const verb = (patch = {}) => ({
+  id: 'sing',
+  base: 'sing',
+  past: 'sang',
+  participle: 'sung',
+  example: 'She {{past}} well.',
+  exampleParticiple: 'She has {{participle}} well.',
+  ...patch,
+});
+
+const section = (patch = {}) => ({
+  id: 'x',
+  title: 'X',
+  summary: 'S',
+  tables: [{ caption: 'C', head: ['a', 'b'], rows: [['1', '2']] }],
+  uses: ['u'],
+  signals: [],
+  examples: [{ text: 'e' }],
+  mistakes: [{ wrong: 'a', right: 'b', why: 'w' }],
+  checks: [
+    { question: 'q', answer: 'a', explanation: 'e' },
+    { question: 'q2', answer: 'a', explanation: 'e' },
+  ],
+  ...patch,
+});
+
+test('a good verb passes', () => {
+  assert.deepEqual(checkIrregularVerbs({ verbs: [verb()] }), []);
+});
+
+test('duplicate ids and base forms fail', () => {
+  const errors = checkIrregularVerbs({ verbs: [verb(), verb()] });
+  assert.ok(errors.some((e) => e.includes('duplicate id')));
+  assert.ok(errors.some((e) => e.includes('duplicate base')));
+});
+
+test('missing or doubled markers fail', () => {
+  const errors = checkIrregularVerbs({
+    verbs: [verb({ example: 'She sang.', exampleParticiple: '{{participle}} {{participle}}' })],
+  });
+  assert.equal(errors.filter((e) => e.includes('exactly once')).length, 2);
+});
+
+test('a regular verb fails', () => {
+  const errors = checkIrregularVerbs({
+    verbs: [verb({ id: 'walk', base: 'walk', past: 'walked', participle: 'walked' })],
+  });
+  assert.ok(errors.some((e) => e.includes('regular')));
+});
+
+test('hear-heard-heard is irregular, but love-loved-loved is regular', () => {
+  const hear = verb({ id: 'hear', base: 'hear', past: 'heard', participle: 'heard' });
+  assert.deepEqual(checkIrregularVerbs({ verbs: [hear] }), []);
+  const love = verb({ id: 'love', base: 'love', past: 'loved', participle: 'loved' });
+  assert.ok(checkIrregularVerbs({ verbs: [love] }).some((e) => e.includes('regular')));
+});
+
+test('a verb with a regular past but an irregular participle is allowed', () => {
+  const show = verb({ id: 'show', base: 'show', past: 'showed', participle: 'shown' });
+  assert.deepEqual(checkIrregularVerbs({ verbs: [show] }), []);
+});
+
+test('an alternative that repeats the main form fails', () => {
+  const errors = checkIrregularVerbs({ verbs: [verb({ alt: { past: ['sang'] } })] });
+  assert.ok(errors.some((e) => e.includes('repeats')));
+});
+
+test('a table row with the wrong width fails', () => {
+  const bad = section({ tables: [{ caption: 'C', head: ['a', 'b'], rows: [['1']] }] });
+  assert.ok(checkVerbForms({ sections: [bad] }).some((e) => e.includes('expected 2')));
+});
+
+test('a section needs two checks and different wrong and right sentences', () => {
+  const bad = section({
+    checks: [{ question: 'q', answer: 'a', explanation: 'e' }],
+    mistakes: [{ wrong: 'same', right: 'same', why: 'w' }],
+  });
+  const errors = checkVerbForms({ sections: [bad] });
+  assert.ok(errors.some((e) => e.includes('two checks')));
+  assert.ok(errors.some((e) => e.includes('same wrong and right')));
+});
+
+test('the shipped grammar files are valid', () => {
+  const read = (name) =>
+    JSON.parse(readFileSync(new URL(`../../src/assets/grammar/${name}`, import.meta.url), 'utf8'));
+  assert.deepEqual(checkIrregularVerbs(read('irregular-verbs.json')), []);
+  assert.deepEqual(checkVerbForms(read('verb-forms.json')), []);
+});

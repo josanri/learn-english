@@ -15,6 +15,6 @@ describe('App', () => {
     await fixture.whenStable();
     const element = fixture.nativeElement as HTMLElement;
     expect(element.querySelector('.brand')?.textContent).toContain('Learn English');
-    expect(element.querySelectorAll('nav a').length).toBe(3);
+    expect(element.querySelectorAll('nav a').length).toBe(4);
   });
 });

@@ -1,0 +1,98 @@
+// Content rules for the grammar data (src/assets/grammar/*.json). Pure functions: they return a list of
+// error messages and never read files, so they can be tested (grammar-rules.test.mjs).
+
+const text = (value) => typeof value === 'string' && value.trim().length > 0;
+const count = (haystack, needle) => haystack.split(needle).length - 1;
+
+/** A verb whose past simple and past participle both end in -ed is regular and does not belong in the list. */
+function isRegular(verb) {
+  const regularForm = verb.base.endsWith('e') ? `${verb.base}d` : `${verb.base}ed`;
+  const regular = (form) => form === regularForm;
+  return regular(verb.past) && regular(verb.participle);
+}
+
+export function checkIrregularVerbs(file) {
+  const errors = [];
+  const verbs = file?.verbs;
+  if (!Array.isArray(verbs) || verbs.length === 0) return ['"verbs" must be a non-empty list.'];
+  const ids = new Set();
+  const bases = new Set();
+  for (const verb of verbs) {
+    const where = `verb "${verb?.id ?? '?'}"`;
+    for (const field of ['id', 'base', 'past', 'participle', 'example', 'exampleParticiple']) {
+      if (!text(verb[field])) errors.push(`${where}: "${field}" is missing or empty.`);
+    }
+    if (ids.has(verb.id)) errors.push(`${where}: duplicate id.`);
+    ids.add(verb.id);
+    if (bases.has(verb.base)) errors.push(`${where}: duplicate base form.`);
+    bases.add(verb.base);
+    if (text(verb.example) && count(verb.example, '{{past}}') !== 1) {
+      errors.push(`${where}: "example" must contain {{past}} exactly once.`);
+    }
+    if (text(verb.exampleParticiple) && count(verb.exampleParticiple, '{{participle}}') !== 1) {
+      errors.push(`${where}: "exampleParticiple" must contain {{participle}} exactly once.`);
+    }
+    if (text(verb.base) && text(verb.past) && text(verb.participle) && isRegular(verb)) {
+      errors.push(`${where}: the verb is regular (-ed). Only irregular verbs belong in the list.`);
+    }
+    for (const kind of ['past', 'participle']) {
+      for (const alt of verb.alt?.[kind] ?? []) {
+        if (!text(alt)) errors.push(`${where}: empty alternative in alt.${kind}.`);
+        else if (alt === verb[kind])
+          errors.push(`${where}: alt.${kind} repeats the main form "${alt}".`);
+      }
+    }
+  }
+  return errors;
+}
+
+export function checkVerbForms(file) {
+  const errors = [];
+  const sections = file?.sections;
+  if (!Array.isArray(sections) || sections.length === 0) {
+    return ['"sections" must be a non-empty list.'];
+  }
+  const ids = new Set();
+  for (const section of sections) {
+    const where = `section "${section?.id ?? '?'}"`;
+    for (const field of ['id', 'title', 'summary']) {
+      if (!text(section[field])) errors.push(`${where}: "${field}" is missing or empty.`);
+    }
+    if (ids.has(section.id)) errors.push(`${where}: duplicate id.`);
+    ids.add(section.id);
+    for (const field of ['tables', 'uses', 'examples', 'mistakes']) {
+      if (!Array.isArray(section[field]) || section[field].length === 0) {
+        errors.push(`${where}: "${field}" must be a non-empty list.`);
+      }
+    }
+    if (!Array.isArray(section.signals)) errors.push(`${where}: "signals" must be a list.`);
+    for (const table of section.tables ?? []) {
+      if (!text(table.caption)) errors.push(`${where}: a table has no caption.`);
+      const width = table.head?.length ?? 0;
+      if (width === 0) errors.push(`${where}: table "${table.caption}" has no head.`);
+      for (const row of table.rows ?? []) {
+        if (row.length !== width) {
+          errors.push(
+            `${where}: table "${table.caption}" has a row with ${row.length} cells, expected ${width}.`,
+          );
+        }
+      }
+    }
+    for (const mistake of section.mistakes ?? []) {
+      if (!text(mistake.wrong) || !text(mistake.right) || !text(mistake.why)) {
+        errors.push(`${where}: a mistake needs "wrong", "right" and "why".`);
+      } else if (mistake.wrong === mistake.right) {
+        errors.push(`${where}: a mistake has the same wrong and right sentence.`);
+      }
+    }
+    if (!Array.isArray(section.checks) || section.checks.length < 2) {
+      errors.push(`${where}: needs at least two checks.`);
+    }
+    for (const check of section.checks ?? []) {
+      if (!text(check.question) || !text(check.answer) || !text(check.explanation)) {
+        errors.push(`${where}: a check needs "question", "answer" and "explanation".`);
+      }
+    }
+  }
+  return errors;
+}

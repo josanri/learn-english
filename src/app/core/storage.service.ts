@@ -1,6 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, computed, effect, inject, signal } from '@angular/core';
 import type { Skill } from '../models/exam';
+import type { VerbProgress } from '../models/grammar';
 import type {
   Attempt,
   ExamProgress,
@@ -13,6 +14,7 @@ import type {
 import {
   LEGACY_STORAGE_KEY,
   STORAGE_KEY,
+  emptyGrammar,
   emptyState,
   localDay,
   migrateLegacyData,
@@ -46,6 +48,64 @@ export class LocalStorageService {
     });
     // Do not lose the last change when the tab is closed during the debounce window.
     this.view?.addEventListener('pagehide', () => this.write(this._state()));
+  }
+
+  /** Practice record of the irregular verbs, keyed by verb id. */
+  readonly grammar = computed(() => this._state().grammar);
+
+  /** Counts one checked answer for a verb and marks today as a practice day. */
+  recordVerbResult(verbId: string, correct: boolean): void {
+    const now = new Date().toISOString();
+    this.updateVerb(
+      verbId,
+      (v) => ({
+        ...v,
+        right: v.right + (correct ? 1 : 0),
+        wrong: v.wrong + (correct ? 0 : 1),
+        lastSeen: localDay(new Date(now)) ?? v.lastSeen,
+      }),
+      now,
+    );
+  }
+
+  /** Sets the "known" flag (flashcards) and marks today as a practice day. */
+  setVerbKnown(verbId: string, known: boolean): void {
+    const now = new Date().toISOString();
+    this.updateVerb(
+      verbId,
+      (v) => ({ ...v, known, lastSeen: localDay(new Date(now)) ?? v.lastSeen }),
+      now,
+    );
+  }
+
+  toggleVerbStar(verbId: string): void {
+    this.updateVerb(verbId, (v) => ({ ...v, starred: !v.starred }));
+  }
+
+  /** Forgets all verb practice (used by the reset button). */
+  resetGrammar(): void {
+    this._state.update((s) => ({ ...s, grammar: emptyGrammar() }));
+  }
+
+  private updateVerb(
+    verbId: string,
+    change: (current: VerbProgress) => VerbProgress,
+    practisedAt?: string,
+  ): void {
+    this._state.update((s) => {
+      const current = s.grammar.verbs[verbId] ?? {
+        right: 0,
+        wrong: 0,
+        lastSeen: '',
+        known: false,
+        starred: false,
+      };
+      return {
+        ...s,
+        grammar: { verbs: { ...s.grammar.verbs, [verbId]: change(current) } },
+        activity: practisedAt ? addDay(s.activity, practisedAt) : s.activity,
+      };
+    });
   }
 
   updateSettings(patch: Partial<Settings>): void {
