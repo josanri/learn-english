@@ -7,13 +7,20 @@ import { copyFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const raw = process.argv[2] ?? process.env.BASE_HREF ?? '/learn-english/';
+// Git Bash rewrites "/my-repo/" into "C:/Program Files/Git/my-repo/"; run with MSYS_NO_PATHCONV=1 or pass "my-repo".
+if (/^[A-Za-z]:[\\/]/.test(raw)) {
+  console.error(
+    `Base href looks like a Windows path (${raw}). Pass the repository name, e.g. "my-repo".`,
+  );
+  process.exit(1);
+}
 const baseHref = `/${raw.replace(/^\/+|\/+$/g, '')}/`.replace('//', '/');
 const outDir = fileURLToPath(new URL('../dist/learn-english/browser/', import.meta.url));
+const ngCli = fileURLToPath(new URL('../node_modules/@angular/cli/bin/ng.js', import.meta.url));
 
 console.log(`Building with base href ${baseHref}`);
-const build = spawnSync('npx', ['ng', 'build', `--base-href=${baseHref}`], {
+const build = spawnSync(process.execPath, [ngCli, 'build', `--base-href=${baseHref}`], {
   stdio: 'inherit',
-  shell: true,
 });
 if (build.status !== 0) process.exit(build.status ?? 1);
 
