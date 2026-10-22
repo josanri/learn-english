@@ -140,6 +140,9 @@ interface ExamCard {
     .group {
       margin-bottom: var(--space-8);
     }
+    .summary + .group {
+      margin-top: var(--space-7);
+    }
     .group .section-title {
       font-size: var(--step-3);
       margin-bottom: var(--space-2);
