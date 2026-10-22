@@ -7,7 +7,12 @@ import {
   provideZonelessChangeDetection,
   isDevMode,
 } from '@angular/core';
-import { provideRouter, withComponentInputBinding, withRouterConfig } from '@angular/router';
+import {
+  provideRouter,
+  withComponentInputBinding,
+  withInMemoryScrolling,
+  withRouterConfig,
+} from '@angular/router';
 import { AudioDbService } from './core/audio-db.service';
 import { InstallService } from './core/install.service';
 import { ThemeService } from './core/theme.service';
@@ -23,6 +28,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withComponentInputBinding(),
+      // A new page opens at the top; Back returns to the old position.
+      withInMemoryScrolling({ scrollPositionRestoration: 'enabled' }),
       withRouterConfig({ paramsInheritanceStrategy: 'always' }),
     ),
     provideAppInitializer(() => {
