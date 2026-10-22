@@ -5,7 +5,7 @@
 `ExamShell` provides `ExamSessionStore` (one per open exam). It loads the exam JSON and exposes:
 
 - `skill` (open section, set by the section page), `parts`, `part`, `answers`, `session`, `itemsByPart`, `score`, `unanswered`.
-- Timer: `elapsed`, `remaining`, `timerNotice`, `paused`. `togglePause()` stops the clock only; answers stay editable. The pause is not saved (a reload resumes the clock). The header shows a "Pause timer / Resume timer" button next to the clock when `showTimer` is on.
+- Timer: `elapsed`, `remaining`, `timerNotice`, `paused`. `togglePause()` stops the clock only; answers stay editable. The pause is not saved (a reload resumes the clock). The header shows a pause / play icon button (accessible name "Pause timer" / "Resume timer") next to the clock when `showTimer` is on.
 - `locked` (section submitted = read-only), `feedback(itemId)` (null until revealed: section submitted, or part checked in practice mode; never before submit when `examMode`).
 - Writers: `setAnswer`, `toggleFlag`, `goToPart`, `checkPart`, `addListen`, `submitSection`, `retry`.
 
