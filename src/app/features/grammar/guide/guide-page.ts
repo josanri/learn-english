@@ -3,11 +3,12 @@ import { ChangeDetectionStrategy, Component, computed, inject, input } from '@an
 import { RouterLink } from '@angular/router';
 import { GrammarCatalogueService } from '../../../data/grammar-catalogue.service';
 import { Badge, Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui';
+import { TenseTimeline } from './tense-timeline';
 
 /** `/grammar/:guide`: one grammar guide (contents list, tables, uses, mistakes and quick checks) loaded from `assets/grammar/guides/<id>.json`. */
 @Component({
   selector: 'app-guide-page',
-  imports: [RouterLink, Badge, Button, Card, Chip, EmptyState, Icon],
+  imports: [RouterLink, Badge, Button, Card, Chip, EmptyState, Icon, TenseTimeline],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="container page">
@@ -33,6 +34,9 @@ import { Badge, Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui'
           <button appButton type="button" (click)="resource.reload()">Try again</button>
         </app-empty-state>
       } @else {
+        @if (data()?.timeline; as rows) {
+          <app-tense-timeline [rows]="rows" (go)="go($event)" />
+        }
         <div class="layout">
           <nav class="contents" aria-label="Contents">
             <ol>

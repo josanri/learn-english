@@ -71,6 +71,35 @@ export interface GuideSection {
   checks: VerbFormCheck[];
 }
 
+/**
+ * Drawing of a tense on the timeline. Keep in step with `TIMELINE_SHAPES` in
+ * scripts/lib/grammar-rules.mjs.
+ */
+export type TimelineShape =
+  | 'habit'
+  | 'now-progress'
+  | 'past-point'
+  | 'past-progress'
+  | 'past-to-now'
+  | 'past-to-now-progress'
+  | 'before-past'
+  | 'past-habit'
+  | 'future-point'
+  | 'now-to-future'
+  | 'future-progress'
+  | 'before-future';
+
+/** One tense on the timeline at the top of a guide. Several rows can point to the same section. */
+export interface GuideTimelineRow {
+  /** Id of the section that explains the tense. */
+  section: string;
+  label: string;
+  shape: TimelineShape;
+  example: string;
+  /** Text version of the drawing, for screen readers and as a caption. */
+  description: string;
+}
+
 /** A page of the grammar area (`assets/grammar/guides/<id>.json`). */
 export interface GuideFile {
   id: string;
@@ -80,6 +109,8 @@ export interface GuideFile {
   intro: string;
   /** Pages the content was based on or that are worth reading next. */
   sources?: { label: string; url: string }[];
+  /** Tenses of the guide on one timeline, shown above the sections. */
+  timeline?: GuideTimelineRow[];
   sections: GuideSection[];
 }
 
