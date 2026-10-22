@@ -36,9 +36,9 @@ export interface ImageCredit {
 /** A picture stored in the repository (or, for legacy items, a remote URL) with licence details. */
 export interface ImageAsset {
   id: string;
-  /** Local WebP, 1200 px wide, under `assets/images/exams/<examId>/` (relative to the site root). */
+  /** Local WebP, 1000 px wide, under `assets/images/exams/<examId>/` (relative to the site root). */
   src: string;
-  /** Local WebP, 600 px wide, used in `srcset` for small screens. */
+  /** Local WebP, 480 px wide, used in `srcset` for small screens. */
   srcSmall?: string;
   width?: number;
   height?: number;

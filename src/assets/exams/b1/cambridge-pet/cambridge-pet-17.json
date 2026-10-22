@@ -1,0 +1,1746 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-17",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Pets and Animals",
+  "subtitle": "Looking after animals at home, on farms and in the wild",
+  "theme": "Pets and animals",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "FERNDALE ANIMAL SHELTER: Our dogs need walkers every morning! Come to the front desk at 8 a.m. No experience needed, but anyone under 16 must come with an adult.",
+            "PET SUPPLIES, Mill Road: Buy any bag of dog food and get a free toy. This offer ends on Sunday. Cat food is not included.",
+            "KIT: Can you feed Biscuit tonight? I'm stuck at the dentist's. Half a tin only, because he is on a diet! The key is under the blue flowerpot.",
+            "RIVERSIDE FARM OPEN DAY: Meet the lambs, ponies and hens. Children can feed the animals with food bought at the gate. Dogs are not allowed, even on a lead.",
+            "LOST: Grey rabbit with white ears, last seen near the park gates. Very friendly. Please phone Maya on 07700 900123 if you find him. Reward offered!"
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What does the shelter need?",
+              "options": [
+                "Gifts of cat food and bowls",
+                "Money to repair the building",
+                "Volunteers to walk the dogs"
+              ],
+              "answer": 2,
+              "explanation": "The dogs need walkers every morning, so the shelter wants volunteers to take them out."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What is true about the offer in the shop?",
+              "options": [
+                "Cat food is cheaper this week.",
+                "A free toy comes with dog food.",
+                "It continues after Sunday."
+              ],
+              "answer": 1,
+              "explanation": "Anyone who buys a bag of dog food gets a free toy; the offer ends on Sunday and cat food is excluded."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What does Kit ask a friend to do?",
+              "options": [
+                "Give Biscuit a small meal",
+                "Take Biscuit to see a vet",
+                "Buy a tin of food for Biscuit"
+              ],
+              "answer": 0,
+              "explanation": "Kit asks for half a tin only because Biscuit is on a diet, so the friend should give a small meal."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What can visitors do at the farm?",
+              "options": [
+                "Bring their dogs on leads",
+                "Buy food for the animals at the gate",
+                "Ride the ponies for free"
+              ],
+              "answer": 1,
+              "explanation": "Children can feed the animals with food bought at the gate; dogs are not allowed."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What does Maya say in her notice?",
+              "options": [
+                "A rabbit was found in the park.",
+                "She wants to buy a grey rabbit.",
+                "She will reward the person who helps."
+              ],
+              "answer": 2,
+              "explanation": "The rabbit is lost, and Maya offers a reward to anyone who finds him."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Activities with animals",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Ivy has never been near a horse, but she would love to learn to ride at the weekend, with all the equipment provided."
+            },
+            {
+              "id": "p2",
+              "text": "Duncan enjoys wild birds and wants to go out very early with a guide who can tell him what he is seeing."
+            },
+            {
+              "id": "p3",
+              "text": "Greta would like to give a home to a cat. It must be calm, because she has two small children."
+            },
+            {
+              "id": "p4",
+              "text": "Rashid's dog pulls on the lead and jumps at visitors. He wants lessons so that it learns to behave."
+            },
+            {
+              "id": "p5",
+              "text": "Pilar is fifteen and would like to help on a farm during the school holidays, looking after newborn animals."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Aquarium Night",
+              "text": "Sleep next to the sharks and turtles! A night for families, with torches and a late-night snack. Children from eight."
+            },
+            {
+              "id": "B",
+              "title": "Sunny Stables",
+              "text": "Beginners' riding lessons every Saturday morning. Helmets and boots are lent to you. No experience is needed."
+            },
+            {
+              "id": "C",
+              "title": "Whiskers Home",
+              "text": "Meet our cats and kittens. The staff will tell you which ones are quiet and good with children before you choose."
+            },
+            {
+              "id": "D",
+              "title": "Pet Photo Day",
+              "text": "Bring your pet to the park on Sunday for a free portrait. Prizes for the funniest picture."
+            },
+            {
+              "id": "E",
+              "title": "Dawn Birdwatch",
+              "text": "A walk through the marshes at 5.30 a.m. with an expert guide who names every bird you see. Binoculars can be borrowed."
+            },
+            {
+              "id": "F",
+              "title": "Rabbit and Hamster Show",
+              "text": "See more than two hundred small animals in the town hall. Judges give prizes for the best coat. Entry £3."
+            },
+            {
+              "id": "G",
+              "title": "Lambing Helpers",
+              "text": "Fifteen-year-olds and older can join us for a week of the lambing season to feed, clean and care for the newborn lambs."
+            },
+            {
+              "id": "H",
+              "title": "Paws and Learn",
+              "text": "Six-week courses to teach your dog to walk on a lead, sit and stay calm when meeting people. Dogs of all ages."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Ivy",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Ivy is a complete beginner who wants a weekend lesson with equipment; text B offers beginners' riding on Saturdays with helmets and boots lent."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Duncan",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Duncan wants an early outing with a bird expert; text E is a 5.30 a.m. walk with a guide who names every bird."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Greta",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Greta wants a calm cat; in text C the staff say which cats are quiet and good with children."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Rashid",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "Rashid wants his dog to learn to behave; text H is a course on walking on a lead and staying calm with people."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Pilar",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "Pilar is fifteen and wants to help with newborn animals; text G is for fifteen-year-olds and older to care for newborn lambs."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "The parrot who came to stay",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "When my grandfather moved to a small flat last spring, he could not take his parrot with him. The landlord did not allow pets, and Pepper, who is thirty years old and bright green, needed a new home. My parents said that he could stay with us for a few weeks. That was eight months ago, and nobody has mentioned him leaving since.\n\nAt first, I was not happy about it. Pepper talks, and not only in a polite way. He copies the sound of the doorbell, the washing machine and my mother's mobile phone, so the whole family keeps running to answer things that do not exist. He also learned to say \"Dinner's ready!\" in my father's voice, which is very confusing when you are hungry.\n\nHowever, I slowly began to enjoy his company. In the afternoons, when I came home from school, the house was always silent, and Pepper would shout \"Hello, you!\" as soon as he heard my key. I started to talk to him about my day. He cannot give advice, of course, but he is a very patient listener, and sometimes he says \"Really?\" at exactly the right moment.\n\nLast week, my grandfather called to say that his new landlord had changed his mind about pets. He asked if we would like him to take Pepper back. My whole family said no at the same time, and my mother was the first.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did Pepper come to live with the writer's family?",
+              "options": [
+                "Her grandfather could not keep him.",
+                "He had been ill for some weeks recently.",
+                "Her parents had always wanted a pet."
+              ],
+              "answer": 0,
+              "explanation": "The landlord of the grandfather's flat did not allow pets, so Pepper needed a new home."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What was the problem with the way Pepper talked?",
+              "options": [
+                "He copied sounds that confused the family.",
+                "He said rude words to the visitors who came.",
+                "He only spoke at night when everyone was asleep."
+              ],
+              "answer": 0,
+              "explanation": "He copies the doorbell, the washing machine and phones, so the family run to answer things that do not exist."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "How did the writer's feelings change?",
+              "options": [
+                "She began to teach him new words.",
+                "She enjoyed having a listener at home.",
+                "She became angry with her father."
+              ],
+              "answer": 1,
+              "explanation": "She started to talk to Pepper about her day and appreciated that he was a patient listener."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What happened when Pepper's owner phoned last week?",
+              "options": [
+                "He asked for a few more weeks of time.",
+                "He offered to send Pepper's food.",
+                "He said he could take Pepper back."
+              ],
+              "answer": 2,
+              "explanation": "The grandfather said his new landlord had changed his mind and asked if the family wanted him to take Pepper back."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How did the family react to the offer?",
+              "options": [
+                "They argued about it for days.",
+                "They asked to keep him for longer.",
+                "They all refused immediately."
+              ],
+              "answer": 2,
+              "explanation": "They all said no at the same time, which means they refused straight away."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "Dogs that work",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Many people think that dogs are simply pets, but some dogs have a very serious job. Assistance dogs help people who have problems seeing, hearing or moving. [1] The training takes about two years, and it begins when the puppies are only a few weeks old.\n\nAt first, the puppies live with volunteer families. [2] They learn to walk calmly on a lead, to sit quietly in shops and to ignore food on the floor. These lessons are not easy for a young dog.\n\nAt about twelve months, the dogs move to a training centre. [3] For example, a dog may learn to open doors, pick up a dropped phone or press the button at a pedestrian crossing.\n\nNot every puppy passes the course. [4] Some are too nervous, and others find it hard to stay calm near traffic. These dogs are not failures: most of them find loving homes as family pets.\n\nWhen a dog finally meets its new owner, the first meeting is often emotional. [5] \"It changed my life,\" says one owner. \"I go out on my own now.\"",
+          "sentences": [
+            "Trainers teach them useful tasks that match each owner's needs.",
+            "Their job is to give the dogs experience of everyday life.",
+            "Some dogs also work for the police.",
+            "The dogs must also like working and be happy to learn.",
+            "Within weeks, the two usually become a close team.",
+            "These clever animals are trained to be calm and to obey many commands."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "F",
+              "explanation": "\"Assistance dogs help people...\" leads to sentence F, which explains how the dogs are trained to be calm and obey commands; the next sentence is about the training."
+            },
+            {
+              "id": "r4-2",
+              "answer": "B",
+              "explanation": "\"The puppies live with volunteer families\" is followed by their job: to learn about everyday life, which links to the lessons that follow."
+            },
+            {
+              "id": "r4-3",
+              "answer": "A",
+              "explanation": "\"The dogs move to a training centre\" leads to trainers teaching useful tasks; the next sentence begins \"For example\"."
+            },
+            {
+              "id": "r4-4",
+              "answer": "D",
+              "explanation": "\"Not every puppy passes\" continues with other conditions: the dog must like the work, and the next sentence gives reasons why some do not."
+            },
+            {
+              "id": "r4-5",
+              "answer": "E",
+              "explanation": "The first meeting with the owner is followed by what happens within weeks, and then by the owner's comment on how it changed life."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "Why do cats purr?",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Most people believe that cats purr when they are happy, and that is often [1]. A cat that is lying on your knee and feels safe will usually purr. However, cats also purr in other situations. Vets have noticed that some cats purr when they are in [2], or even when they are afraid. Scientists think that purring may help cats to feel better, because the gentle sound [3] a kind of comfort. Mother cats purr to guide their kittens, which are born blind and cannot [4] their mother's face. Many cats also learn to use purring to get what they want. They make a special, higher sound [5] they are hungry, and owners find it difficult to ignore. It is not [6] to tell what a purr means, but it is always interesting to listen.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "wrong",
+                "true",
+                "late",
+                "clear"
+              ],
+              "answer": 1,
+              "explanation": "\"That is often true\" confirms that cats purr when they are happy."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "pain",
+                "bed",
+                "luck",
+                "fun"
+              ],
+              "answer": 0,
+              "explanation": "Vets have seen cats purr when they are in pain; this fits the idea of comfort in difficult situations."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "spends",
+                "gets",
+                "tells",
+                "gives"
+              ],
+              "answer": 3,
+              "explanation": "The sound \"gives a kind of comfort\" means it provides comfort."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "hear",
+                "visit",
+                "recognise",
+                "follow"
+              ],
+              "answer": 2,
+              "explanation": "Newborn kittens are blind, so they cannot recognise their mother's face."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "unless",
+                "until",
+                "when",
+                "while"
+              ],
+              "answer": 2,
+              "explanation": "\"When they are hungry\" says the time that the special sound is made."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "fast",
+                "easy",
+                "free",
+                "polite"
+              ],
+              "answer": 1,
+              "explanation": "The writer means it is not easy to understand the meaning of a purr."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Thinking about a puppy",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Dear Mum and Dad,\nI know you said that we cannot have a dog, but please read this before you decide. I have looked [1] the shelter website, and there is a small puppy called Mochi who needs a home. I promise to walk him [2] day before school and to clean up after him. The garden is big enough for him to play [3], and he will be good company when I am alone. If you say yes, I will use my pocket money to buy [4] own food and toys. I have already asked Grandma, and she has offered to look after him [5] we are on holiday. Please think about it, [6] I will do anything you ask!\nLove, Nico",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "at",
+              "accepted": [
+                "on"
+              ],
+              "explanation": "We say \"look at a website\"; \"on\" is also possible with a website."
+            },
+            {
+              "id": "r6-2",
+              "answer": "every",
+              "accepted": [
+                "each"
+              ],
+              "explanation": "\"Every day\" describes a daily routine."
+            },
+            {
+              "id": "r6-3",
+              "answer": "in",
+              "explanation": "We play in the garden: the preposition shows the place."
+            },
+            {
+              "id": "r6-4",
+              "answer": "his",
+              "explanation": "The possessive adjective refers to the puppy: his food and toys."
+            },
+            {
+              "id": "r6-5",
+              "answer": "when",
+              "accepted": [
+                "while"
+              ],
+              "explanation": "\"When we are on holiday\" gives the time that Grandma will look after him."
+            },
+            {
+              "id": "r6-6",
+              "answer": "and",
+              "accepted": [
+                "because"
+              ],
+              "explanation": "\"And\" adds the promise to do anything they ask."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Joss is thinking about getting a pet. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Say which pet you recommend.",
+              "Explain why it is a good choice.",
+              "Give advice about looking after it.",
+              "Ask a question about his home."
+            ],
+            "sourceEmail": {
+              "from": "Joss",
+              "subject": "Which pet?",
+              "body": "My parents have finally said that I can have a pet! I would like a dog, but my flat is small and I am out at school all day. What do you think I should choose? Is it expensive to look after an animal? And what do I need to buy first?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say which pet you recommend.",
+                "keywords": [
+                  "cat",
+                  "dog",
+                  "rabbit",
+                  "fish",
+                  "hamster",
+                  "bird",
+                  "pet",
+                  "choose",
+                  "recommend",
+                  "suggest"
+                ]
+              },
+              {
+                "text": "Explain why it is a good choice.",
+                "keywords": [
+                  "because",
+                  "easy",
+                  "small",
+                  "cheap",
+                  "quiet",
+                  "friendly",
+                  "good",
+                  "alone",
+                  "space",
+                  "so"
+                ]
+              },
+              {
+                "text": "Give advice about looking after it.",
+                "keywords": [
+                  "food",
+                  "feed",
+                  "water",
+                  "walk",
+                  "clean",
+                  "vet",
+                  "play",
+                  "should",
+                  "need",
+                  "buy",
+                  "cage"
+                ]
+              },
+              {
+                "text": "Ask a question about his home.",
+                "keywords": [
+                  "do you",
+                  "is your",
+                  "does your",
+                  "have you",
+                  "garden",
+                  "balcony",
+                  "how big",
+                  "where",
+                  "who"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a school website",
+              "prompt": "Articles wanted! An animal I find interesting. What is it? What is special about it? Why do you like it? Write an article for the school website.",
+              "contentPoints": [
+                {
+                  "text": "Say what the animal is.",
+                  "keywords": [
+                    "animal",
+                    "dog",
+                    "cat",
+                    "horse",
+                    "elephant",
+                    "dolphin",
+                    "owl",
+                    "bird",
+                    "fish",
+                    "snake",
+                    "monkey"
+                  ]
+                },
+                {
+                  "text": "Say what is special about it.",
+                  "keywords": [
+                    "special",
+                    "can",
+                    "big",
+                    "fast",
+                    "clever",
+                    "smart",
+                    "live",
+                    "eat",
+                    "sleep",
+                    "fly",
+                    "swim",
+                    "unusual"
+                  ]
+                },
+                {
+                  "text": "Explain why you like it.",
+                  "keywords": [
+                    "because",
+                    "like",
+                    "love",
+                    "interesting",
+                    "beautiful",
+                    "funny",
+                    "favourite",
+                    "amazing",
+                    "enjoy"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about an unusual visitor to a school.",
+              "openingSentence": "Nobody knew how the goat got into the classroom.",
+              "contentPoints": [
+                {
+                  "text": "Say what happened with the goat.",
+                  "keywords": [
+                    "goat",
+                    "classroom",
+                    "teacher",
+                    "students",
+                    "ran",
+                    "laughed",
+                    "shouted",
+                    "ate",
+                    "chased",
+                    "caught",
+                    "found"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "in the end",
+                    "finally",
+                    "at last",
+                    "eventually",
+                    "then",
+                    "farmer",
+                    "owner",
+                    "returned",
+                    "took",
+                    "back",
+                    "so"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "leocadia",
+                    "name": "Leocadia",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "fitzgerald",
+                    "name": "Fitzgerald",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "leocadia",
+                    "text": "Hello, I'd like to book an appointment for my cat. He's been sneezing all week."
+                  },
+                  {
+                    "speaker": "fitzgerald",
+                    "text": "We can see him tomorrow at ten, or on Friday afternoon."
+                  },
+                  {
+                    "speaker": "leocadia",
+                    "text": "Tomorrow is better. I work on Friday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "When will the woman take her cat to the vet?",
+                "options": [
+                  "On Friday afternoon",
+                  "Tomorrow morning",
+                  "This evening"
+                ],
+                "answer": 1,
+                "explanation": "She chooses tomorrow at ten because she works on Friday."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "maren",
+                    "name": "Maren",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "torvald",
+                    "name": "Torvald",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "torvald",
+                    "text": "Did you buy the goldfish in the end?"
+                  },
+                  {
+                    "speaker": "maren",
+                    "text": "No, I wanted one, but the tank costs too much. I got a pair of rabbits from my neighbour instead."
+                  },
+                  {
+                    "speaker": "torvald",
+                    "text": "Rabbits? Won't they eat your garden?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What pets did the woman get?",
+                "options": [
+                  "Two rabbits",
+                  "A cat and a dog",
+                  "Two goldfish"
+                ],
+                "answer": 0,
+                "explanation": "She says she got a pair of rabbits from her neighbour."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "bettina",
+                    "name": "Bettina",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "cyprian",
+                    "name": "Cyprian",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "cyprian",
+                    "text": "Shall we take Rex along the river path today?"
+                  },
+                  {
+                    "speaker": "bettina",
+                    "text": "It's muddy after the rain. Let's go through the park instead; the paths are dry there."
+                  },
+                  {
+                    "speaker": "cyprian",
+                    "text": "Fine. And the lead? I think it's in the car."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Where will they walk the dog?",
+                "options": [
+                  "Around the park",
+                  "By the river",
+                  "Along the street"
+                ],
+                "answer": 0,
+                "explanation": "Bettina says the river path is muddy and suggests the park, where the paths are dry."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "odile",
+                    "name": "Odile",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "rupert",
+                    "name": "Rupert",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "rupert",
+                    "text": "What's your dog called, by the way?"
+                  },
+                  {
+                    "speaker": "odile",
+                    "text": "Bella. My brother wanted to call her Rocket, but she's so slow and lazy that it didn't suit her."
+                  },
+                  {
+                    "speaker": "rupert",
+                    "text": "Ha! Bella is a lovely name."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What is the dog's name?",
+                "options": [
+                  "Rocket",
+                  "Bella",
+                  "Biscuit"
+                ],
+                "answer": 1,
+                "explanation": "Odile says the dog is called Bella; Rocket was her brother's idea."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "saskia",
+                    "name": "Saskia",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "isidore",
+                    "name": "Isidore",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "saskia",
+                    "text": "How much is this bag of cat food?"
+                  },
+                  {
+                    "speaker": "isidore",
+                    "text": "It's nine pounds, but if you buy two, the second is half price."
+                  },
+                  {
+                    "speaker": "saskia",
+                    "text": "Then I'll take two, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Why does the woman buy two bags?",
+                "options": [
+                  "The bags are very small this week.",
+                  "She has two cats and a rabbit at home.",
+                  "The second bag is half price."
+                ],
+                "answer": 2,
+                "explanation": "The second bag is half price, so buying two is cheaper."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "marguerite",
+                    "name": "Marguerite",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "evander",
+                    "name": "Evander",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "evander",
+                    "text": "Where did you put the hamster's cage?"
+                  },
+                  {
+                    "speaker": "marguerite",
+                    "text": "In my bedroom, but he's noisy at night, running on his wheel. I'm going to move it to the hall."
+                  },
+                  {
+                    "speaker": "evander",
+                    "text": "Good idea. He'll be warmer there too, near the radiator."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "Where will the hamster's cage go?",
+                "options": [
+                  "In the hall",
+                  "In the bedroom",
+                  "In the kitchen"
+                ],
+                "answer": 0,
+                "explanation": "She is going to move the cage from her bedroom to the hall."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "philippa",
+                    "name": "Philippa",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "casimir",
+                    "name": "Casimir",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "casimir",
+                    "text": "Are you free on Saturday? The farm is having a sheep show."
+                  },
+                  {
+                    "speaker": "philippa",
+                    "text": "I'd love to, but I'm looking after my aunt's dog all weekend."
+                  },
+                  {
+                    "speaker": "casimir",
+                    "text": "Bring him! Dogs are allowed if they're on a lead."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "Why can't the woman go to the farm easily?",
+                "options": [
+                  "She does not like sheep.",
+                  "She has to look after a dog.",
+                  "She has no car."
+                ],
+                "answer": 1,
+                "explanation": "She is looking after her aunt's dog all weekend."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "winifred",
+                    "name": "Winifred",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "lucan",
+                    "name": "Lucan",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "lucan",
+                    "text": "Mum, the neighbours' cat is in our garden again, digging up your flowers."
+                  },
+                  {
+                    "speaker": "winifred",
+                    "text": "Oh, no! I only planted them on Sunday."
+                  },
+                  {
+                    "speaker": "lucan",
+                    "text": "I'll put the net back over the flower bed."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What is the problem?",
+                "options": [
+                  "A neighbour is angry.",
+                  "The flowers are dying.",
+                  "A cat is damaging the garden."
+                ],
+                "answer": 2,
+                "explanation": "The neighbours' cat is digging up the newly planted flowers."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "henrietta",
+                    "name": "Henrietta",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "ptolemy",
+                    "name": "Ptolemy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "ptolemy",
+                    "text": "Our dog hasn't eaten since yesterday morning, and he's very quiet."
+                  },
+                  {
+                    "speaker": "henrietta",
+                    "text": "I'll phone the vet now. Don't give him anything else until we know what's wrong."
+                  },
+                  {
+                    "speaker": "ptolemy",
+                    "text": "Good, I'm worried."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What are they going to do?",
+                "options": [
+                  "Take the dog to a new home",
+                  "Phone a vet for advice",
+                  "Buy a different food"
+                ],
+                "answer": 1,
+                "explanation": "Henrietta says she will phone the vet to find out what is wrong."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "octavia",
+                    "name": "Octavia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "leopold",
+                    "name": "Leopold",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "octavia",
+                    "text": "I'd love a horse, but you have to feed it twice a day, even in winter."
+                  },
+                  {
+                    "speaker": "leopold",
+                    "text": "And pay for the stable, and the vet. It costs a fortune."
+                  },
+                  {
+                    "speaker": "octavia",
+                    "text": "Maybe I'll just keep going to riding lessons."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What have the speakers decided?",
+                "options": [
+                  "Not to own a horse",
+                  "To keep a horse at a friend's house",
+                  "To buy a horse in the winter"
+                ],
+                "answer": 0,
+                "explanation": "They talk about the work and costs, and Octavia says she will just keep taking lessons."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "cordelia",
+                    "name": "Cordelia",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "bartholomew",
+                    "name": "Bartholomew",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "cordelia",
+                    "text": "Did you see the TV programme about owls last night?"
+                  },
+                  {
+                    "speaker": "bartholomew",
+                    "text": "Yes! I didn't know they could turn their heads almost all the way round."
+                  },
+                  {
+                    "speaker": "cordelia",
+                    "text": "I want to visit the bird centre now."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What are they talking about?",
+                "options": [
+                  "A school project",
+                  "A holiday abroad",
+                  "A programme about birds"
+                ],
+                "answer": 2,
+                "explanation": "They discuss a television programme about owls."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "rosalind",
+                    "name": "Rosalind",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "anselm2",
+                    "name": "Anatole",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "rosalind",
+                    "text": "Can I stay with my dog in the hotel room?"
+                  },
+                  {
+                    "speaker": "anselm2",
+                    "text": "Yes, but there is a charge of ten pounds a night, and he can't be left alone in the room."
+                  },
+                  {
+                    "speaker": "rosalind",
+                    "text": "That's fine. He goes everywhere with me."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the receptionist say about dogs?",
+                "options": [
+                  "They can stay for a fee.",
+                  "They are not allowed.",
+                  "They must sleep downstairs."
+                ],
+                "answer": 0,
+                "explanation": "Dogs can stay, but there is a charge of ten pounds a night."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "tabitha",
+                    "name": "Tabitha",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "ignatius",
+                    "name": "Ignatius",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "ignatius",
+                    "text": "You look tired. Were you up all night?"
+                  },
+                  {
+                    "speaker": "tabitha",
+                    "text": "The puppy cried every hour. He misses his mother, I think."
+                  },
+                  {
+                    "speaker": "ignatius",
+                    "text": "It'll get better in a few days. Put a warm blanket in his bed."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "Why is the woman tired?",
+                "options": [
+                  "She has been working late.",
+                  "She went for a long walk.",
+                  "Her new puppy kept her awake."
+                ],
+                "answer": 2,
+                "explanation": "The puppy cried every hour, so she did not sleep."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a school zoo trip",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "speaker-1",
+                "name": "Gideon",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "speaker-1",
+                "text": "Hello, everyone. I'm Gideon, and I'll be your guide on Thursday's visit to Hillside Zoo. The coach leaves school at nine o'clock, so please arrive ten minutes early. At the zoo, we will first meet the keepers in the penguin house, where you can watch the birds being fed. After lunch, there's a talk about snakes in the reptile centre, and you can touch one of the smaller ones if you want to. Please bring a packed lunch and a waterproof jacket, because it may rain. Remember to wear comfortable shoes, because we will walk about five kilometres altogether. If you would like to buy something at the gift shop, you can take up to five pounds. We expect to be back at school before four o'clock."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The trip is on ___",
+              "answer": "Thursday",
+              "explanation": "Gideon says it is on Thursday's visit to the zoo."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The coach leaves at ___ o'clock",
+              "answer": "nine",
+              "accepted": [
+                "9"
+              ],
+              "explanation": "The coach leaves school at nine o'clock."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "First, visitors watch the birds being fed in the ___ house",
+              "answer": "penguin",
+              "explanation": "The group meets keepers in the penguin house to watch the birds being fed."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "After lunch there is a talk about ___",
+              "answer": "snakes",
+              "explanation": "After lunch there is a talk about snakes."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Students should bring a waterproof ___",
+              "answer": "jacket",
+              "explanation": "Gideon says to bring a packed lunch and a waterproof jacket."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Students can spend up to ___ pounds in the gift shop",
+              "answer": "five",
+              "accepted": [
+                "5"
+              ],
+              "explanation": "Students can take up to five pounds to the gift shop."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a wildlife rescuer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "host",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "perdita",
+                "name": "Perdita",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "host",
+                "text": "Perdita, you run a rescue centre for wild animals. How did it start?"
+              },
+              {
+                "speaker": "perdita",
+                "text": "Quite by accident. Ten years ago, I found a baby hedgehog in my garden, and it was very weak. I took it to a vet, who showed me how to look after it. Soon, other people began to bring me animals that they had found."
+              },
+              {
+                "speaker": "host",
+                "text": "What kind of animals do you get?"
+              },
+              {
+                "speaker": "perdita",
+                "text": "Mostly hedgehogs, birds and the occasional fox. In the summer we also get a lot of young birds that have fallen out of nests."
+              },
+              {
+                "speaker": "host",
+                "text": "Should people pick up an animal when they find it?"
+              },
+              {
+                "speaker": "perdita",
+                "text": "Not always. If it is a baby bird with feathers, its parents are probably nearby. The best thing is to watch from a distance. We only need to be called if the animal is injured or in the road."
+              },
+              {
+                "speaker": "host",
+                "text": "What is the hardest part of your work?"
+              },
+              {
+                "speaker": "perdita",
+                "text": "Saying goodbye. I look after the animals for weeks, and I get attached to them. But the aim is always to put them back in the wild, so I know I've done my job well when they run away from me."
+              },
+              {
+                "speaker": "host",
+                "text": "Do you have any help?"
+              },
+              {
+                "speaker": "perdita",
+                "text": "Twenty volunteers. Some of them are teenagers who come after school, and they're very good with the animals. Yesterday one of them taught a nervous young fox to drink from a bottle."
+              },
+              {
+                "speaker": "host",
+                "text": "What would you like people to do?"
+              },
+              {
+                "speaker": "perdita",
+                "text": "Put out a shallow bowl of water in their gardens in hot weather. It is such a simple thing, but it saves many animals."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Perdita start her rescue centre?",
+              "options": [
+                "She trained as a vet at a big university.",
+                "She helped a hedgehog she found.",
+                "She inherited a farm from her uncle."
+              ],
+              "answer": 1,
+              "explanation": "She found a weak baby hedgehog in her garden, and other people began to bring her animals."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What does Perdita say about young birds on the ground?",
+              "options": [
+                "They need to be taken home at once.",
+                "Their parents are probably close.",
+                "They should be fed bread."
+              ],
+              "answer": 1,
+              "explanation": "She says that a baby bird with feathers probably has its parents nearby, so people should watch from a distance."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "When does she ask people to phone the centre?",
+              "options": [
+                "When the animal is hurt",
+                "When the weather is bad",
+                "When it is night"
+              ],
+              "answer": 0,
+              "explanation": "People should phone if the animal is injured or in the road."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What does she find most difficult?",
+              "options": [
+                "Cleaning the cages",
+                "Raising money",
+                "Letting the animals go"
+              ],
+              "answer": 2,
+              "explanation": "She says the hardest part is saying goodbye to animals she has looked after."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What do the teenage volunteers do?",
+              "options": [
+                "They collect money from visitors.",
+                "They help to care for young animals.",
+                "They drive the animals to the vet."
+              ],
+              "answer": 1,
+              "explanation": "One teenager taught a nervous young fox to drink from a bottle, so they look after the animals."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What is Perdita's advice for hot weather?",
+              "options": [
+                "Leave out a bowl of water",
+                "Give the birds some extra food",
+                "Keep all pets inside the house"
+              ],
+              "answer": 0,
+              "explanation": "She asks people to put out a shallow bowl of water in their gardens."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s17-1-1",
+              "prompt": "Do you have a pet, or would you like one? Why?"
+            },
+            {
+              "id": "s17-1-2",
+              "prompt": "Tell me about an animal you have seen that you will never forget."
+            },
+            {
+              "id": "s17-1-3",
+              "prompt": "Do you prefer cats or dogs? Why?"
+            },
+            {
+              "id": "s17-1-4",
+              "prompt": "Is there a place near you where you can see animals?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "Two children at a petting farm.",
+          "images": [
+            {
+              "id": "s17-2-farm",
+              "title": "Children at a petting farm",
+              "alt": "Two small children look at animals on a petting farm. A boy in a blue top crouches by a green crate, a child in orange stands behind it, and a fence and a horse are on the right.",
+              "describeHints": [
+                "two small children",
+                "the green crate",
+                "the fence and the path",
+                "the horse and other animals",
+                "what the children might be doing"
+              ],
+              "image": {
+                "id": "s17-2-farm",
+                "src": "assets/images/exams/cambridge-pet-17/s17-2-farm-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-17/s17-2-farm-600.webp",
+                "width": 1000,
+                "height": 673,
+                "alt": "Two small children look at animals on a petting farm. A boy in a blue top crouches by a green crate, a child in orange stands behind it, and a fence and a horse are on the right.",
+                "credit": {
+                  "author": "Don Woods",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:ClarksPettingFarm.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Choose a pet",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Which animal would be the best pet for a family with two children? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s17-3-cat",
+              "title": "A cat on a small sofa",
+              "alt": "A fluffy orange and white cat with its eyes closed rests on a cushion shaped like a small red sofa in a bright room.",
+              "describeHints": [
+                "an orange and white cat",
+                "the small red sofa",
+                "the cat's closed eyes",
+                "the bright room",
+                "what a cat needs at home"
+              ],
+              "image": {
+                "id": "s17-3-cat",
+                "src": "assets/images/exams/cambridge-pet-17/s17-3-cat-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-17/s17-3-cat-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A fluffy orange and white cat with its eyes closed rests on a cushion shaped like a small red sofa in a bright room.",
+                "credit": {
+                  "author": "Emma0mb",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_in_sofa_at_Cat_Cafe_Nyankoto.jpg"
+                }
+              }
+            },
+            {
+              "id": "s17-3-dog",
+              "title": "A dog with a tennis ball",
+              "alt": "A small brown dog wearing a purple harness runs across green grass with a yellow tennis ball in its mouth.",
+              "describeHints": [
+                "a small brown dog",
+                "the tennis ball",
+                "the green grass",
+                "the purple harness",
+                "how much exercise a dog needs"
+              ],
+              "image": {
+                "id": "s17-3-dog",
+                "src": "assets/images/exams/cambridge-pet-17/s17-3-dog-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-17/s17-3-dog-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A small brown dog wearing a purple harness runs across green grass with a yellow tennis ball in its mouth.",
+                "credit": {
+                  "author": "Rhododendrites",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maltipoo_dog_running_to_return_a_tennis_ball_(12012).jpg"
+                }
+              }
+            },
+            {
+              "id": "s17-3-rabbit",
+              "title": "A rabbit in a hutch",
+              "alt": "A dark rabbit lies inside a wooden hutch with a wire front, a water bottle hangs on the wire, and bags of food stand on top.",
+              "describeHints": [
+                "a dark rabbit",
+                "the wooden hutch",
+                "the water bottle",
+                "the bags of food",
+                "where you could keep it"
+              ],
+              "image": {
+                "id": "s17-3-rabbit",
+                "src": "assets/images/exams/cambridge-pet-17/s17-3-rabbit-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-17/s17-3-rabbit-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A dark rabbit lies inside a wooden hutch with a wire front, a water bottle hangs on the wire, and bags of food stand on top.",
+                "credit": {
+                  "author": "Unknown",
+                  "license": "CC BY-SA 2.5",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rabbit_in_hutch.jpg"
+                }
+              }
+            },
+            {
+              "id": "s17-3-fish",
+              "title": "Goldfish in a tank",
+              "alt": "Many orange, white and yellow goldfish swim in a tank with blue walls, and some of the fish are patterned.",
+              "describeHints": [
+                "orange and white fish",
+                "the blue tank",
+                "the different patterns",
+                "the bright blue tank walls",
+                "how to look after fish"
+              ],
+              "image": {
+                "id": "s17-3-fish",
+                "src": "assets/images/exams/cambridge-pet-17/s17-3-fish-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-17/s17-3-fish-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "Many orange, white and yellow goldfish swim in a tank with blue walls, and some of the fish are patterned.",
+                "credit": {
+                  "author": "AJ Gray",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_fish_tank_as_environment_for_freshwater_goldfish.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s17-4-1",
+              "prompt": "Do you think animals should live in zoos? Why, or why not?"
+            },
+            {
+              "id": "s17-4-2",
+              "prompt": "Is it right to keep animals as pets? Why?"
+            },
+            {
+              "id": "s17-4-3",
+              "prompt": "How can people help wild animals?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

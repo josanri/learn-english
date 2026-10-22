@@ -1,6 +1,6 @@
 import { httpResource } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import type { IrregularVerbsFile, VerbFormsFile } from '../models/grammar';
+import type { GuideFile, GuideIndex, IrregularVerbsFile } from '../models/grammar';
 
 /** Folder (relative to the base href) that contains the grammar JSON files. */
 export const GRAMMAR_ROOT = 'assets/grammar';
@@ -12,7 +12,13 @@ export class GrammarCatalogueService {
     return httpResource<IrregularVerbsFile>(() => `${GRAMMAR_ROOT}/irregular-verbs.json`);
   }
 
-  verbForms() {
-    return httpResource<VerbFormsFile>(() => `${GRAMMAR_ROOT}/verb-forms.json`);
+  /** Ordered list of the guides (title, level and a one-line summary). */
+  guideIndex() {
+    return httpResource<GuideIndex>(() => `${GRAMMAR_ROOT}/guides/index.json`);
+  }
+
+  /** One guide; reloads when the id signal changes. */
+  guide(id: () => string) {
+    return httpResource<GuideFile>(() => `${GRAMMAR_ROOT}/guides/${id()}.json`);
   }
 }

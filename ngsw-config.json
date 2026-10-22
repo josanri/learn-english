@@ -27,7 +27,7 @@
     },
     {
       "name": "exams",
-      "installMode": "prefetch",
+      "installMode": "lazy",
       "updateMode": "prefetch",
       "resources": {
         "files": ["/assets/exams/**/*.json"]
@@ -39,6 +39,14 @@
       "updateMode": "prefetch",
       "resources": {
         "files": ["/assets/grammar/*.json"]
+      }
+    },
+    {
+      "name": "vocabulary",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/vocabulary/*.json"]
       }
     },
     {

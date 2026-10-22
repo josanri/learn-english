@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { InstallService } from '../../core/install.service';
 import { ExamCatalogueService } from '../../data/exam-catalogue.service';
 import { ProgressSummary } from '../progress/progress-summary';
 import {
@@ -28,7 +29,6 @@ interface SkillCard {
   template: `
     <section class="hero container" aria-labelledby="hero-title">
       <ul class="chips" aria-label="About this app">
-        <li><app-chip [command]="true">B1</app-chip></li>
         <li><app-chip>Practice exams</app-chip></li>
         <li><app-chip>Works offline</app-chip></li>
       </ul>
@@ -50,6 +50,12 @@ interface SkillCard {
           Start B1
           <app-icon name="arrow" [size]="22" />
         </a>
+        @if (install.canInstall()) {
+          <button appButton size="lg" type="button" (click)="install.install()">
+            <app-icon name="download" [size]="22" />
+            Install app
+          </button>
+        }
         <a appButton size="lg" routerLink="/settings">Settings</a>
       </div>
     </section>
@@ -158,6 +164,7 @@ interface SkillCard {
   `,
 })
 export class HomePage {
+  protected readonly install = inject(InstallService);
   private readonly level = signal('b1');
   private readonly index = inject(ExamCatalogueService).levelIndex(this.level);
 

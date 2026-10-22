@@ -19,11 +19,6 @@ import {
 const FORMATS: SegmentOption[] = [
   { value: 'all', label: 'All formats' },
   { value: 'cambridge', label: 'Cambridge' },
-  { value: 'eoi', label: 'EOI' },
-  { value: 'trinity', label: 'Trinity' },
-  { value: 'aptis', label: 'Aptis' },
-  { value: 'languagecert', label: 'LanguageCert' },
-  { value: 'oxford', label: 'Oxford' },
 ];
 
 interface ExamCard {
@@ -57,9 +52,11 @@ interface ExamCard {
         <app-progress-summary [exams]="allExams()" />
       </div>
 
-      <div class="filter">
-        <app-segmented-control label="Exam format" [options]="formats" [(value)]="format" />
-      </div>
+      @if (formats.length > 2) {
+        <div class="filter">
+          <app-segmented-control label="Exam format" [options]="formats" [(value)]="format" />
+        </div>
+      }
 
       @if (index.isLoading()) {
         <p role="status" class="muted">Loading exams&hellip;</p>
@@ -142,6 +139,9 @@ interface ExamCard {
     }
     .group {
       margin-bottom: var(--space-8);
+    }
+    .summary + .group {
+      margin-top: var(--space-7);
     }
     .group .section-title {
       font-size: var(--step-3);

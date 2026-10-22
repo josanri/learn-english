@@ -17,11 +17,11 @@ import { SceneIllustration } from './scene-illustration';
         @if (photo(); as p) {
           <img
             [src]="p.src"
-            [attr.srcset]="p.srcSmall ? p.srcSmall + ' 600w, ' + p.src + ' 1200w' : null"
+            [attr.srcset]="p.srcSmall ? p.srcSmall + ' 480w, ' + p.src + ' 1000w' : null"
             sizes="(min-width: 60rem) 40rem, 100vw"
             [alt]="p.alt"
             [attr.loading]="eager() ? 'eager' : 'lazy'"
-            [attr.width]="p.width ?? 1200"
+            [attr.width]="p.width ?? 1000"
             [attr.height]="p.height ?? 800"
             (error)="failed.set(true)"
           />

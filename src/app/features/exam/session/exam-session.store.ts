@@ -158,6 +158,8 @@ export class ExamSessionStore {
   readonly remaining = computed(() => this.limitSeconds() - this.elapsed());
   /** Latest timer warning, for an `aria-live="polite"` region. */
   readonly timerNotice = signal('');
+  /** True while the learner has paused the clock. It is not saved: a reload resumes the timer. */
+  readonly paused = signal(false);
 
   /** The recording transcript may be shown after submitting, or any time in practice mode. */
   readonly transcriptAllowed = computed(() => this.locked() || !this.examMode());
@@ -174,6 +176,7 @@ export class ExamSessionStore {
       untracked(() => {
         this.elapsed.set(this.session().elapsed[this.skill()] ?? 0);
         this.timerNotice.set('');
+        this.paused.set(false);
       });
       const timer = setInterval(() => untracked(() => this.tick()), 1000);
       onCleanup(() => {
@@ -197,7 +200,7 @@ export class ExamSessionStore {
 
   /** Called once a second while a section is open and unlocked. */
   tick(): void {
-    if (typeof document !== 'undefined' && document.hidden) return;
+    if (this.paused() || (typeof document !== 'undefined' && document.hidden)) return;
     const next = this.elapsed() + 1;
     this.elapsed.set(next);
     const left = this.limitSeconds() - next;
@@ -207,6 +210,13 @@ export class ExamSessionStore {
       this.timerNotice.set('Time is up. You can finish your answers and submit.');
     }
     if (next % SAVE_EVERY_SECONDS === 0) this.persistElapsed();
+  }
+
+  /** Stops or restarts the clock. Only the timer stops; answers stay editable. */
+  togglePause(): void {
+    this.paused.update((value) => !value);
+    this.timerNotice.set(this.paused() ? 'Timer paused.' : 'Timer running.');
+    if (this.paused()) this.persistElapsed();
   }
 
   private persistElapsed(): void {

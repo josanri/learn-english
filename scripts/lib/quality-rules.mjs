@@ -306,7 +306,7 @@ export function checkImages(exam, exists) {
           ['srcSmall', img.srcSmall],
         ]) {
           if (label === 'srcSmall' && !p) {
-            warnings.push(`${where}: srcSmall (600 px) is missing`);
+            warnings.push(`${where}: srcSmall (480 px) is missing`);
             continue;
           }
           if (!exists(p)) errors.push(`${where}: ${label} file not found (${p})`);
@@ -469,7 +469,7 @@ export function checkAcrossExams(exams) {
   return result;
 }
 
-/** Texts whose heading does not match their content cannot be detected automatically; see docs/audit-2026.md. */
+/** Texts whose heading does not match their content cannot be detected automatically. */
 export function allQualityChecks(exam, { fileExists, known }) {
   const parts = [
     checkExplanations(exam),

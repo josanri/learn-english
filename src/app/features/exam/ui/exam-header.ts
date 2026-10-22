@@ -15,7 +15,7 @@ export function formatClock(totalSeconds: number): string {
 
 /**
  * Sticky bar of an open section: where you are, optional timer (mono, polite warnings at 5 and 1
- * minutes), progress and the save-and-exit button.
+ * minutes, pause and resume button), progress and the save-and-exit button.
  */
 @Component({
   selector: 'app-exam-header',
@@ -42,10 +42,24 @@ export function formatClock(totalSeconds: number): string {
           [prompt]="false"
           class="timer"
           [class.late]="store.remaining() <= 60"
+          [class.paused]="store.paused()"
         >
           <app-icon name="clock" [size]="16" />
           <span role="timer"><span class="visually-hidden">Time left: </span>{{ clock() }}</span>
+          @if (store.paused()) {
+            <span>(paused)</span>
+          }
         </app-chip>
+        <button
+          appButton
+          type="button"
+          size="sm"
+          variant="secondary"
+          [attr.aria-pressed]="store.paused()"
+          (click)="store.togglePause()"
+        >
+          {{ store.paused() ? 'Resume timer' : 'Pause timer' }}
+        </button>
       }
       <button appButton type="button" size="sm" (click)="exit.emit()">
         <app-icon name="back" [size]="16" />
@@ -91,6 +105,9 @@ export function formatClock(totalSeconds: number): string {
     }
     .timer {
       flex: none;
+    }
+    .timer.paused {
+      color: var(--text-muted);
     }
     .timer.late {
       color: var(--danger);

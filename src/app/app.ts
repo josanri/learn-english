@@ -47,6 +47,10 @@ const THEME_NAME: Record<ThemePreference, string> = {
             <app-icon name="book" />
             <span>Grammar</span>
           </a>
+          <a routerLink="/vocabulary" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <app-icon name="chat" />
+            <span>Words</span>
+          </a>
           <a routerLink="/settings" routerLinkActive="active" ariaCurrentWhenActive="page">
             <app-icon name="settings" />
             <span>Settings</span>
@@ -103,6 +107,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
       font-weight: 800;
       letter-spacing: -0.04em;
       text-decoration: none;
+      white-space: nowrap;
     }
     nav {
       display: flex;
@@ -114,7 +119,8 @@ const THEME_NAME: Record<ThemePreference, string> = {
       align-items: center;
       gap: var(--space-2);
       min-height: var(--target);
-      padding: 0 var(--space-4);
+      padding: 0 var(--space-3);
+      white-space: nowrap;
       border-radius: var(--radius);
       color: var(--text);
       font-weight: 700;
@@ -160,6 +166,12 @@ const THEME_NAME: Record<ThemePreference, string> = {
       font-weight: 700;
     }
 
+    @media (min-width: 48rem) and (max-width: 63.99rem) {
+      nav app-icon {
+        display: none;
+      }
+    }
+
     @media (max-width: 47.99rem) {
       .bar {
         justify-content: space-between;
@@ -178,13 +190,16 @@ const THEME_NAME: Record<ThemePreference, string> = {
         background: var(--bg);
       }
       nav a {
-        flex: 1;
+        flex: 1 1 0;
+        min-width: 0;
         flex-direction: column;
         justify-content: center;
         gap: 2px;
         min-height: 3.25rem;
-        padding: 0 var(--space-2);
-        font-size: var(--step--1);
+        padding: 0 var(--space-1);
+        font-size: 0.75rem;
+        white-space: nowrap;
+        text-align: center;
       }
       .site-footer {
         padding-bottom: calc(var(--bottom-nav-height) + var(--space-5));

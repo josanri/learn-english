@@ -75,12 +75,17 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'verb-forms',
-        title: 'Guide to verb forms | Learn English',
-        loadComponent: () =>
-          import('./features/grammar/verb-forms/verb-forms-page').then((m) => m.VerbFormsPage),
+        path: ':guide',
+        title: 'Grammar guide | Learn English',
+        loadComponent: () => import('./features/grammar/guide/guide-page').then((m) => m.GuidePage),
       },
     ],
+  },
+  {
+    path: 'vocabulary',
+    title: 'B1 vocabulary | Learn English',
+    loadComponent: () =>
+      import('./features/vocabulary/vocabulary-page').then((m) => m.VocabularyPage),
   },
   {
     path: 'settings',

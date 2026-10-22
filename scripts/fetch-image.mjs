@@ -1,5 +1,5 @@
 // Fetches a licensed photograph from Wikimedia Commons, verifies its licence against the whitelist,
-// converts it to WebP at 1200 px and 600 px wide (sharp) and registers it in an exam JSON.
+// converts it to WebP at 1000 px and 480 px wide (sharp) and registers it in an exam JSON.
 //
 // Source: Wikimedia Commons only (public API, no key). Unsplash and Pexels pages are rejected because
 // their licence cannot be verified without an API key.
@@ -103,6 +103,9 @@ function describe(page) {
   };
 }
 
+const TILE_W = 320;
+const TILE_H = 240;
+
 async function search(query) {
   const limit = Number(flag('limit', 8));
   const out = flag('out', join(tmpdir(), 'fetch-image-search'));
@@ -119,22 +122,53 @@ async function search(query) {
   });
   const pages = (data.query?.pages ?? []).sort((a, b) => a.index - b.index);
   let shown = 0;
+  const tiles = [];
   for (const page of pages) {
     const d = describe(page);
     if (!d || !d.licenseClass || !/jpeg|png/.test(d.mime) || d.width < 1200) continue;
-    const file = join(out, `${String(++shown).padStart(2, '0')}.jpg`);
-    await sharp(await download(d.thumb))
-      .jpeg({ quality: 70 })
-      .toFile(file);
+    tiles.push(
+      await sharp(await download(d.thumb))
+        .resize(TILE_W, TILE_H, { fit: 'cover' })
+        .toBuffer(),
+    );
     console.log(
-      `${String(shown).padStart(2, '0')}  ${d.licenseName}  ${d.width}x${d.height}  by ${d.author.slice(0, 40)}\n    ${d.pageUrl}\n    ${d.description}\n    preview: ${file}`,
+      `${String(++shown).padStart(2, '0')}  ${d.licenseName}  ${d.width}x${d.height}  by ${d.author.slice(0, 40)}
+    ${d.pageUrl}
+    ${d.description}`,
     );
     if (shown >= limit) break;
   }
-  if (!shown)
+  if (!shown) {
     console.log(
       'No accepted results (whitelisted licence, at least 1200 px wide). Try other words.',
     );
+    return;
+  }
+  // One contact sheet instead of one file per candidate: a single image to look at.
+  const sheet = join(out, 'contact-sheet.jpg');
+  const columns = Math.min(4, tiles.length);
+  const rows = Math.ceil(tiles.length / columns);
+  const labels = tiles.map(
+    (_, i) =>
+      `<svg xmlns="http://www.w3.org/2000/svg" width="${TILE_W}" height="${TILE_H}"><rect width="34" height="26" fill="#000"/><text x="17" y="19" font-size="18" font-family="Arial" fill="#fff" text-anchor="middle">${i + 1}</text></svg>`,
+  );
+  await sharp({
+    create: { width: columns * TILE_W, height: rows * TILE_H, channels: 3, background: '#fff' },
+  })
+    .composite(
+      tiles.flatMap((input, i) => {
+        const left = (i % columns) * TILE_W;
+        const top = Math.floor(i / columns) * TILE_H;
+        return [
+          { input, left, top },
+          { input: Buffer.from(labels[i]), left, top },
+        ];
+      }),
+    )
+    .jpeg({ quality: 60 })
+    .toFile(sheet);
+  console.log(`
+Contact sheet (numbers match the list): ${sheet}`);
 }
 
 function parseTitle(input) {
@@ -195,7 +229,7 @@ async function fetchOne(input) {
     );
   const preview = join(flag('out', join(tmpdir(), 'fetch-image-preview')), `${visualId}.jpg`);
   mkdirSync(join(preview, '..'), { recursive: true });
-  await base.clone().resize({ width: 900 }).jpeg({ quality: 78 }).toFile(preview);
+  await base.clone().resize({ width: 480 }).jpeg({ quality: 65 }).toFile(preview);
   console.log(`Preview ${preview}`);
   if (has('dry')) return console.log('(dry run: nothing written)');
 
@@ -203,13 +237,13 @@ async function fetchOne(input) {
   mkdirSync(dir, { recursive: true });
   const big = await base
     .clone()
-    .resize({ width: 1200, withoutEnlargement: true })
-    .webp({ quality: 78 })
+    .resize({ width: 1000, withoutEnlargement: true })
+    .webp({ quality: 62, effort: 6, smartSubsample: true })
     .toFile(join(dir, `${visualId}-1200.webp`));
   await base
     .clone()
-    .resize({ width: 600, withoutEnlargement: true })
-    .webp({ quality: 75 })
+    .resize({ width: 480, withoutEnlargement: true })
+    .webp({ quality: 58, effort: 6, smartSubsample: true })
     .toFile(join(dir, `${visualId}-600.webp`));
 
   const entry = listExamFiles().find((e) => e.file === `${examId}.json`);
@@ -242,7 +276,7 @@ async function fetchOne(input) {
       .filter(Boolean);
   delete visual.illustration;
   writeFileSync(entry.absolute, `${JSON.stringify(exam, null, 2)}\n`);
-  console.log(`Wrote ${big.width}x${big.height} WebP (1200 + 600) and updated ${entry.path}`);
+  console.log(`Wrote ${big.width}x${big.height} WebP (1000 + 480) and updated ${entry.path}`);
 }
 
 const [cmd, ...rest] = args;

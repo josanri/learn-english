@@ -1,6 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { InstallService } from '../../core/install.service';
 import { SettingsService } from '../../core/settings.service';
 import { SpeechService } from '../../core/speech.service';
 import type { Settings } from '../../models/storage';
@@ -286,6 +287,34 @@ const LANGUAGES: SegmentOption[] = [
           </div>
         </app-card>
         <app-card>
+          <h2>Install the app</h2>
+          @if (install.installed()) {
+            <p class="muted">The app is installed on this device. It also works offline.</p>
+          } @else if (install.canInstall()) {
+            <p class="muted">
+              Add Learn English to your home screen or desktop. It opens in its own window and works
+              offline.
+            </p>
+            <div class="buttons">
+              <button appButton variant="primary" type="button" (click)="installApp()">
+                <app-icon name="download" [size]="18" />
+                Install
+              </button>
+            </div>
+          } @else if (install.needsManualSteps()) {
+            <p class="muted">
+              On iPhone and iPad, tap the Share button in Safari, then choose &ldquo;Add to Home
+              Screen&rdquo;.
+            </p>
+          } @else {
+            <p class="muted">
+              Your browser has not offered the install yet. Open the browser menu and look for
+              &ldquo;Install app&rdquo; or &ldquo;Add to Home Screen&rdquo;. Use the app for a few
+              moments and try again.
+            </p>
+          }
+        </app-card>
+        <app-card>
           <h2>About</h2>
           <p>
             Pictures come from Wikimedia Commons under open licences.
@@ -354,12 +383,17 @@ export class SettingsPage {
   private readonly doc = inject(DOCUMENT);
   private readonly toast = inject(ToastService);
   protected readonly speech = inject(SpeechService);
+  protected readonly install = inject(InstallService);
 
   protected readonly settings = this.service.settings;
   protected readonly voices = this.speech.englishVoices;
   protected readonly themes = THEMES;
   protected readonly textSizes = TEXT_SIZES;
   protected readonly languages = LANGUAGES;
+
+  protected async installApp(): Promise<void> {
+    if (await this.install.install()) this.toast.show('The app is installed.');
+  }
 
   protected readonly confirmReset = signal(false);
   protected readonly confirmImport = signal(false);

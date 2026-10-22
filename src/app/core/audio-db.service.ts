@@ -1,13 +1,10 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, inject } from '@angular/core';
-import { attemptKeyFor, upgradeLegacyAudioKey } from './state-migrations';
+import { attemptKeyFor } from './state-migrations';
 import { LocalStorageService } from './storage.service';
 
 export const AUDIO_DATABASE = 'learn-english-audio';
 export const AUDIO_STORE = 'clips';
-/** Database and store used by the React app. They are copied, never modified or deleted. */
-export const LEGACY_AUDIO_DATABASE = 'northstar-speech-recordings';
-export const LEGACY_AUDIO_STORE = 'clips';
 
 function request<T>(req: IDBRequest<T>, message: string): Promise<T> {
   return new Promise((resolve, reject) => {
@@ -38,10 +35,9 @@ export class AudioDbService {
   /** Resolves when the one-off key migrations have finished (reads and writes wait for it). */
   private migrations: Promise<unknown> = Promise.resolve();
 
-  /** Runs the one-off migrations in order: copy React-era clips, then add attempt ids to keys. */
+  /** Runs the one-off migration that adds attempt ids to keys. */
   runMigrations(): Promise<void> {
-    const run = this.migrateLegacyRecordings()
-      .then(() => this.migrateKeysToAttempts())
+    const run = this.migrateKeysToAttempts()
       .then(() => undefined)
       .catch(() => undefined);
     this.migrations = run;
@@ -88,7 +84,7 @@ export class AudioDbService {
     }
   }
 
-  /** Removes every saved recording (the React-era backup database is left alone). */
+  /** Removes every saved recording. */
   async clear(): Promise<void> {
     const db = await this.open(AUDIO_DATABASE, AUDIO_STORE);
     try {
@@ -99,52 +95,6 @@ export class AudioDbService {
     } finally {
       db.close();
     }
-  }
-
-  /**
-   * Copies recordings from the React app database into the new one (renaming `exam-0N:` keys to
-   * `cambridge-pet-0N:`). Runs once; the old database is left in place as a backup.
-   * Returns how many clips were copied.
-   */
-  async migrateLegacyRecordings(): Promise<number> {
-    if (!this.idb || this.store.state().migrations.audioDb) return 0;
-    let copied = 0;
-    try {
-      const legacy = await this.openExisting(LEGACY_AUDIO_DATABASE, LEGACY_AUDIO_STORE);
-      if (legacy) {
-        try {
-          const source = legacy
-            .transaction(LEGACY_AUDIO_STORE, 'readonly')
-            .objectStore(LEGACY_AUDIO_STORE);
-          const [keys, values] = await Promise.all([
-            request(source.getAllKeys(), 'Could not read old recordings.'),
-            request(source.getAll(), 'Could not read old recordings.'),
-          ]);
-          const target = await this.open(AUDIO_DATABASE, AUDIO_STORE);
-          try {
-            const write = target.transaction(AUDIO_STORE, 'readwrite');
-            const out = write.objectStore(AUDIO_STORE);
-            keys.forEach((key, i) => {
-              out.put(values[i], upgradeLegacyAudioKey(String(key)));
-              copied += 1;
-            });
-            await new Promise<void>((resolve, reject) => {
-              write.oncomplete = () => resolve();
-              write.onerror = () =>
-                reject(write.error ?? new Error('Could not copy old recordings.'));
-            });
-          } finally {
-            target.close();
-          }
-        } finally {
-          legacy.close();
-        }
-      }
-      this.store.markMigration('audioDb', new Date().toISOString());
-    } catch {
-      /* Leave the flag unset so the migration is retried next time. */
-    }
-    return copied;
   }
 
   /**
@@ -200,27 +150,6 @@ export class AudioDbService {
       };
       req.onsuccess = () => resolve(req.result);
       req.onerror = () => reject(req.error ?? new Error('Could not open local audio storage.'));
-    });
-  }
-
-  /** Opens a database only if it already exists with the store; never creates the legacy database. */
-  private openExisting(name: string, storeName: string): Promise<IDBDatabase | null> {
-    return new Promise((resolve, reject) => {
-      if (!this.idb) return resolve(null);
-      let created = false;
-      const req = this.idb.open(name);
-      req.onupgradeneeded = () => {
-        created = true; // The database did not exist; abort so that nothing is created.
-        req.transaction?.abort();
-      };
-      req.onsuccess = () => {
-        const db = req.result;
-        if (db.objectStoreNames.contains(storeName)) return resolve(db);
-        db.close();
-        resolve(null);
-      };
-      req.onerror = () =>
-        created ? resolve(null) : reject(req.error ?? new Error('Could not open old recordings.'));
     });
   }
 }

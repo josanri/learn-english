@@ -1,7 +1,13 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
-import { checkIrregularVerbs, checkVerbForms } from './grammar-rules.mjs';
+import { readdirSync } from 'node:fs';
+import {
+  checkGuide,
+  checkGuideIndex,
+  checkIrregularVerbs,
+  checkSections,
+} from './grammar-rules.mjs';
 
 const verb = (patch = {}) => ({
   id: 'sing',
@@ -72,7 +78,7 @@ test('an alternative that repeats the main form fails', () => {
 
 test('a table row with the wrong width fails', () => {
   const bad = section({ tables: [{ caption: 'C', head: ['a', 'b'], rows: [['1']] }] });
-  assert.ok(checkVerbForms({ sections: [bad] }).some((e) => e.includes('expected 2')));
+  assert.ok(checkSections({ sections: [bad] }).some((e) => e.includes('expected 2')));
 });
 
 test('a section needs two checks and different wrong and right sentences', () => {
@@ -80,14 +86,32 @@ test('a section needs two checks and different wrong and right sentences', () =>
     checks: [{ question: 'q', answer: 'a', explanation: 'e' }],
     mistakes: [{ wrong: 'same', right: 'same', why: 'w' }],
   });
-  const errors = checkVerbForms({ sections: [bad] });
+  const errors = checkSections({ sections: [bad] });
   assert.ok(errors.some((e) => e.includes('two checks')));
   assert.ok(errors.some((e) => e.includes('same wrong and right')));
+});
+
+test('a guide needs a valid level and a matching id', () => {
+  const guide = { id: 'x', title: 'T', level: 'C1', intro: 'I', sections: [section()] };
+  const errors = checkGuide(guide, 'y');
+  assert.ok(errors.some((e) => e.includes('"id" must be "y"')));
+  assert.ok(errors.some((e) => e.includes('B1 or B2')));
+});
+
+test('the guide list must match the guide files', () => {
+  const index = { guides: [{ id: 'a', title: 'A', level: 'B1', summary: 's' }] };
+  assert.deepEqual(checkGuideIndex(index, ['a']), []);
+  assert.ok(checkGuideIndex(index, []).some((e) => e.includes('no file a.json')));
+  assert.ok(checkGuideIndex(index, ['a', 'b']).some((e) => e.includes('"b.json" is not listed')));
 });
 
 test('the shipped grammar files are valid', () => {
   const read = (name) =>
     JSON.parse(readFileSync(new URL(`../../src/assets/grammar/${name}`, import.meta.url), 'utf8'));
   assert.deepEqual(checkIrregularVerbs(read('irregular-verbs.json')), []);
-  assert.deepEqual(checkVerbForms(read('verb-forms.json')), []);
+  const ids = readdirSync(new URL('../../src/assets/grammar/guides/', import.meta.url))
+    .filter((name) => name.endsWith('.json') && name !== 'index.json')
+    .map((name) => name.replace(/\.json$/, ''));
+  assert.deepEqual(checkGuideIndex(read('guides/index.json'), ids), []);
+  for (const id of ids) assert.deepEqual(checkGuide(read(`guides/${id}.json`), id), [], id);
 });
