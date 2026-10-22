@@ -9,7 +9,8 @@
 One generic page, `GuidePage` (`/grammar/:guide`), renders every guide. Types are in `models/grammar.ts` (`GuideFile`, `GuideSection`, `GuideSummary`).
 
 ```
-GuideFile    { id, title, level: 'B1'|'B2', intro, sources?: [{ label, url }], sections }
+GuideFile    { id, title, level: 'B1'|'B2', intro, sources?: [{ label, url }], timeline?, sections }
+GuideTimelineRow { section, label, shape, example, description }
 GuideSection { id, level?, title, summary, tables, uses, signals, examples, mistakes, checks }
 ```
 
@@ -17,6 +18,7 @@ GuideSection { id, level?, title, summary, tables, uses, signals, examples, mist
 - `sources` are "Read more" links (mostly the British Council B1-B2 grammar pages). The text of the guides is original; only link a source, do not copy from it.
 - To add a guide: create `guides/<id>.json`, add a line to `guides/index.json` (the order is the teaching order) and run `npm run validate:grammar`. No code changes are needed.
 - Every section needs tables with equal row widths, at least one use, one example, one mistake (wrong and right must differ) and two checks.
+- `timeline` (optional) shows the tenses of the guide on one past-now-future line above the sections (`TenseTimeline` in `guide/tense-timeline.ts`). Each row points to a section id (two rows may share one, for example will and going to), has a `label`, a short original `example` and a `description` (the text version of the drawing). `shape` is one of the named drawings in `guide/timeline-shapes.ts` (`habit`, `now-progress`, `past-point`, `past-progress`, `past-to-now`, `past-to-now-progress`, `before-past`, `past-habit`, `future-point`, `now-to-future`, `future-progress`, `before-future`). To add a shape, add it to `TimelineShape` in `models/grammar.ts`, to the marks in `timeline-shapes.ts` and to `TIMELINE_SHAPES` in `scripts/lib/grammar-rules.mjs`.
 
 Current guides: verb forms, possessives and reflexives, questions and tags (B1); conditionals, adjectives, adverbs, phrasal verbs, linking words, verb patterns, relative clauses, modals, reported speech, more tenses (B2).
 
