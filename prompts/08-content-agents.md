@@ -9,8 +9,6 @@ PLAN DE CONTENIDO (ajústalo si el doc de formatos lo aconseja)
 - Cambridge B1 Preliminary: +10 exámenes (exam-06 … exam-15).
 - EOI B1 (España): 6 exámenes (comprensión de textos escritos y orales, producción y coproducción escrita y
   oral, mediación).
-- Trinity ISE I: 4 exámenes (Reading & Writing + Speaking & Listening).
-- Aptis B1: 4. LanguageCert B1: 4. Oxford Test of English B1: 4.
 - Opcional: 4 "Cambridge B1 Preliminary for Schools" etiquetados como tal, con temas adaptados a adolescentes.
 
 ANTES DE LANZAR AGENTES
