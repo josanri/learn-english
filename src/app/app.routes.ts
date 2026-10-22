@@ -75,10 +75,9 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'verb-forms',
-        title: 'Guide to verb forms | Learn English',
-        loadComponent: () =>
-          import('./features/grammar/verb-forms/verb-forms-page').then((m) => m.VerbFormsPage),
+        path: ':guide',
+        title: 'Grammar guide | Learn English',
+        loadComponent: () => import('./features/grammar/guide/guide-page').then((m) => m.GuidePage),
       },
     ],
   },

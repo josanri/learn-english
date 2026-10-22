@@ -1,22 +1,26 @@
 import { DOCUMENT } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { GrammarCatalogueService } from '../../../data/grammar-catalogue.service';
-import { Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui';
+import { Badge, Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui';
 
-/** `/grammar/verb-forms`: a guide to the five verb forms and the tenses a B1 learner needs. */
+/** `/grammar/:guide`: one grammar guide (contents list, tables, uses, mistakes and quick checks) loaded from `assets/grammar/guides/<id>.json`. */
 @Component({
-  selector: 'app-verb-forms-page',
-  imports: [RouterLink, Button, Card, Chip, EmptyState, Icon],
+  selector: 'app-guide-page',
+  imports: [RouterLink, Badge, Button, Card, Chip, EmptyState, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="container page">
-      <p class="eyebrow"><a routerLink="/grammar">Grammar</a> &middot; Verb forms</p>
-      <h1>Guide to verb forms</h1>
-      <p class="lede">
-        How to build the verb forms and tenses you need at B1, when to use them and which mistakes
-        to avoid. Each part ends with two questions to check yourself.
+      <p class="eyebrow">
+        <a routerLink="/grammar">Grammar</a>
+        @if (data(); as g) {
+          &middot; {{ g.level === 'B2' ? 'B1 to B2' : 'B1' }}
+        }
       </p>
+      <h1>{{ data()?.title ?? 'Grammar' }}</h1>
+      @if (data(); as g) {
+        <p class="lede">{{ g.intro }}</p>
+      }
 
       @if (resource.isLoading()) {
         <p role="status" class="muted">Loading the guide&hellip;</p>
@@ -43,7 +47,12 @@ import { Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui';
           <div class="sections">
             @for (section of sections(); track section.id) {
               <section class="section" [attr.aria-labelledby]="'h-' + section.id">
-                <h2 [id]="'h-' + section.id" tabindex="-1">{{ section.title }}</h2>
+                <h2 [id]="'h-' + section.id" tabindex="-1">
+                  {{ section.title }}
+                  @if (section.level) {
+                    <app-badge>{{ section.level }}</app-badge>
+                  }
+                </h2>
                 <p class="summary">{{ section.summary }}</p>
 
                 @for (table of section.tables; track table.caption) {
@@ -150,14 +159,26 @@ import { Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui';
           </div>
         </div>
 
-        <app-card class="cta">
-          <h2>Practise the irregular verbs</h2>
-          <p>The perfect tenses and the passive need the past participle. Learn the forms here.</p>
-          <a appButton variant="primary" routerLink="/grammar/irregular-verbs">
-            Irregular verbs
+        @if (data()?.sources?.length) {
+          <app-card class="cta">
+            <h2>Read more</h2>
+            <ul class="sources">
+              @for (source of data()?.sources; track source.url) {
+                <li>
+                  <a [href]="source.url" target="_blank" rel="noopener noreferrer">{{
+                    source.label
+                  }}</a>
+                </li>
+              }
+            </ul>
+          </app-card>
+        }
+        <p class="back">
+          <a appButton variant="primary" routerLink="/grammar">
+            All grammar guides
             <app-icon name="arrow" [size]="20" />
           </a>
-        </app-card>
+        </p>
       }
     </div>
   `,
@@ -295,6 +316,12 @@ import { Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui';
     .cta {
       margin-top: var(--space-7);
     }
+    .sources {
+      margin: 0;
+    }
+    .back {
+      margin-top: var(--space-6);
+    }
 
     @media (min-width: 64rem) {
       .layout {
@@ -316,13 +343,16 @@ import { Button, Card, Chip, EmptyState, Icon } from '../../../shared/ui';
     }
   `,
 })
-export class VerbFormsPage {
-  protected readonly resource = inject(GrammarCatalogueService).verbForms();
+export class GuidePage {
+  /** Bound from the route parameter `:guide`. */
+  readonly guide = input.required<string>();
   private readonly document = inject(DOCUMENT);
 
-  protected readonly sections = computed(() =>
-    this.resource.hasValue() ? this.resource.value().sections : [],
+  protected readonly resource = inject(GrammarCatalogueService).guide(() => this.guide());
+  protected readonly data = computed(() =>
+    this.resource.hasValue() ? this.resource.value() : undefined,
   );
+  protected readonly sections = computed(() => this.data()?.sections ?? []);
 
   /** Scrolls to a section and moves focus to its heading. */
   protected go(id: string): void {

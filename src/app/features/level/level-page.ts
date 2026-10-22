@@ -52,9 +52,11 @@ interface ExamCard {
         <app-progress-summary [exams]="allExams()" />
       </div>
 
-      <div class="filter">
-        <app-segmented-control label="Exam format" [options]="formats" [(value)]="format" />
-      </div>
+      @if (formats.length > 2) {
+        <div class="filter">
+          <app-segmented-control label="Exam format" [options]="formats" [(value)]="format" />
+        </div>
+      }
 
       @if (index.isLoading()) {
         <p role="status" class="muted">Loading exams&hellip;</p>

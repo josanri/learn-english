@@ -48,7 +48,7 @@ import { Button, Card, Icon, ProgressRing } from '../../shared/ui';
         @if (stats().continueTarget; as target) {
           <div class="continue">
             <p>
-              <span class="muted">In progress:</span> <strong>{{ target.exam.title }}</strong>
+              <span class="muted">In progress:&nbsp;</span><strong>{{ target.exam.title }}</strong>
             </p>
             <a
               appButton

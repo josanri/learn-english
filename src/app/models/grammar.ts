@@ -53,9 +53,14 @@ export interface VerbFormTable {
   rows: string[][];
 }
 
-/** One tense or structure in the verb forms guide. */
-export interface VerbFormSection {
+/** CEFR level of a guide or of one section of it. */
+export type GuideLevel = 'B1' | 'B2';
+
+/** One tense or structure in a grammar guide. */
+export interface GuideSection {
   id: string;
+  /** Set when the section is harder than the level of its guide (for example a B2 part in a B1 guide). */
+  level?: GuideLevel;
   title: string;
   summary: string;
   tables: VerbFormTable[];
@@ -66,8 +71,28 @@ export interface VerbFormSection {
   checks: VerbFormCheck[];
 }
 
-export interface VerbFormsFile {
-  sections: VerbFormSection[];
+/** A page of the grammar area (`assets/grammar/guides/<id>.json`). */
+export interface GuideFile {
+  id: string;
+  title: string;
+  /** Hardest level in the guide; sections can mark themselves as B2. */
+  level: GuideLevel;
+  intro: string;
+  /** Pages the content was based on or that are worth reading next. */
+  sources?: { label: string; url: string }[];
+  sections: GuideSection[];
+}
+
+/** One line of the guide list shown on the grammar hub, in teaching order. */
+export interface GuideSummary {
+  id: string;
+  title: string;
+  level: GuideLevel;
+  summary: string;
+}
+
+export interface GuideIndex {
+  guides: GuideSummary[];
 }
 
 /** Practice record for one irregular verb. */
