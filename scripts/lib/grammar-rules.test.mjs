@@ -98,6 +98,44 @@ test('a guide needs a valid level and a matching id', () => {
   assert.ok(errors.some((e) => e.includes('B1 or B2')));
 });
 
+const row = (patch = {}) => ({
+  section: 'x',
+  label: 'Past simple',
+  shape: 'past-point',
+  example: 'I saw it.',
+  description: 'One finished action in the past.',
+  ...patch,
+});
+const guideWith = (timeline) => ({
+  id: 'g',
+  title: 'T',
+  level: 'B1',
+  intro: 'I',
+  sections: [section()],
+  timeline,
+});
+
+test('a guide with a good timeline passes', () => {
+  assert.deepEqual(checkGuide(guideWith([row()]), 'g'), []);
+});
+
+test('a timeline row must point to a section of the guide and use a known shape', () => {
+  const errors = checkGuide(guideWith([row({ section: 'nope', shape: 'zigzag' })]), 'g');
+  assert.ok(errors.some((e) => e.includes('no section "nope"')));
+  assert.ok(errors.some((e) => e.includes('unknown shape "zigzag"')));
+});
+
+test('a timeline row needs a label, an example and a description', () => {
+  const errors = checkGuide(guideWith([row({ label: '', example: ' ', description: '' })]), 'g');
+  assert.equal(errors.filter((e) => e.includes('timeline row')).length, 3);
+});
+
+test('a timeline must be a non-empty list with unique labels', () => {
+  assert.ok(checkGuide(guideWith([]), 'g').some((e) => e.includes('"timeline"')));
+  const errors = checkGuide(guideWith([row(), row()]), 'g');
+  assert.ok(errors.some((e) => e.includes('duplicate label')));
+});
+
 test('the guide list must match the guide files', () => {
   const index = { guides: [{ id: 'a', title: 'A', level: 'B1', summary: 's' }] };
   assert.deepEqual(checkGuideIndex(index, ['a']), []);

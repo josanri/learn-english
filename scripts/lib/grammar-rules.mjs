@@ -66,7 +66,48 @@ export function checkGuide(file, expectedId) {
       errors.push(`section "${section.id}": "level" must be B1 or B2.`);
     }
   }
-  return [...errors, ...checkSections(file)];
+  return [...errors, ...checkSections(file), ...checkTimeline(file)];
+}
+
+/** Keep in step with `TimelineShape` in src/app/models/grammar.ts. */
+export const TIMELINE_SHAPES = [
+  'habit',
+  'now-progress',
+  'past-point',
+  'past-progress',
+  'past-to-now',
+  'past-to-now-progress',
+  'before-past',
+  'past-habit',
+  'future-point',
+  'now-to-future',
+  'future-progress',
+  'before-future',
+];
+
+/** The optional tense timeline: every row points to a section of the same guide. */
+export function checkTimeline(file) {
+  const timeline = file?.timeline;
+  if (timeline === undefined) return [];
+  if (!Array.isArray(timeline) || timeline.length === 0) {
+    return ['"timeline" must be a non-empty list when it is present.'];
+  }
+  const errors = [];
+  const sectionIds = new Set((file.sections ?? []).map((section) => section.id));
+  const labels = new Set();
+  for (const row of timeline) {
+    const where = `timeline row "${row?.label ?? '?'}"`;
+    for (const field of ['label', 'example', 'description']) {
+      if (!text(row[field])) errors.push(`${where}: "${field}" is missing or empty.`);
+    }
+    if (!sectionIds.has(row.section))
+      errors.push(`${where}: there is no section "${row.section}".`);
+    if (!TIMELINE_SHAPES.includes(row.shape))
+      errors.push(`${where}: unknown shape "${row.shape}".`);
+    if (labels.has(row.label)) errors.push(`${where}: duplicate label.`);
+    labels.add(row.label);
+  }
+  return errors;
 }
 
 /** The guide list: every entry has a file, every file has an entry, ids are unique. */
