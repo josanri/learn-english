@@ -206,10 +206,10 @@ interface AttemptView {
                 <h4>{{ part.title }}: {{ part.task.title }}</h4>
                 <p>
                   <span class="mono">{{ part.words }} words</span>
-                  <span class="muted"> (aim for {{ part.target }})</span>
-                  <app-badge [tone]="part.state === 'good' ? 'success' : 'neutral'">{{
-                    lengthLabel(part.state)
-                  }}</app-badge>
+                  <span class="muted"> (aim for {{ part.target }})</span>&ngsp;<app-badge
+                    [tone]="part.state === 'good' ? 'success' : 'neutral'"
+                    >{{ lengthLabel(part.state) }}</app-badge
+                  >
                 </p>
                 @if (part.check; as check) {
                   <p class="muted">
