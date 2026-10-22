@@ -107,6 +107,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
       font-weight: 800;
       letter-spacing: -0.04em;
       text-decoration: none;
+      white-space: nowrap;
     }
     nav {
       display: flex;
@@ -118,7 +119,8 @@ const THEME_NAME: Record<ThemePreference, string> = {
       align-items: center;
       gap: var(--space-2);
       min-height: var(--target);
-      padding: 0 var(--space-4);
+      padding: 0 var(--space-3);
+      white-space: nowrap;
       border-radius: var(--radius);
       color: var(--text);
       font-weight: 700;
@@ -162,6 +164,12 @@ const THEME_NAME: Record<ThemePreference, string> = {
       min-height: var(--target);
       color: var(--accent-text);
       font-weight: 700;
+    }
+
+    @media (min-width: 48rem) and (max-width: 63.99rem) {
+      nav app-icon {
+        display: none;
+      }
     }
 
     @media (max-width: 47.99rem) {
