@@ -1,5 +1,4 @@
 export { Badge } from './badge';
-export { BrushStroke } from './brush-stroke';
 export { Button } from './button';
 export { Card } from './card';
 export { Chip } from './chip';
@@ -7,6 +6,7 @@ export { Dialog } from './dialog';
 export { EmptyState } from './empty-state';
 export { Icon, type IconName } from './icon';
 export { IllustratedCard, type CardTone } from './illustrated-card';
+export { LogoMark } from './logo-mark';
 export { ProgressBar } from './progress-bar';
 export { ProgressRing } from './progress-ring';
 export { SegmentedControl, type SegmentOption } from './segmented-control';

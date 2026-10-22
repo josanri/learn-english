@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { SettingsService } from './core/settings.service';
 import type { ThemePreference } from './models/storage';
-import { Icon, SkipLink, ToastHost, type IconName } from './shared/ui';
+import { Icon, LogoMark, SkipLink, ToastHost, type IconName } from './shared/ui';
 
 const THEME_ORDER: ThemePreference[] = ['light', 'dark', 'system'];
 const THEME_ICON: Record<ThemePreference, IconName> = {
@@ -19,15 +19,15 @@ const THEME_NAME: Record<ThemePreference, string> = {
 /** App shell: sticky header with brand and theme toggle, main navigation (bottom bar on phones) and footer. */
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, Icon, SkipLink, ToastHost],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, Icon, LogoMark, SkipLink, ToastHost],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-skip-link target="main" />
     <header class="site-header">
       <div class="bar container">
         <a routerLink="/" class="brand" aria-label="Learn English, home">
-          <span class="mark" aria-hidden="true"></span>
-          <span class="word">Learn <em>English</em></span>
+          <app-logo-mark />
+          <span>Learn English</span>
         </a>
         <nav aria-label="Main">
           <a
@@ -99,18 +99,6 @@ const THEME_NAME: Record<ThemePreference, string> = {
       font-weight: 800;
       letter-spacing: -0.04em;
       text-decoration: none;
-    }
-    .mark {
-      width: 1.1rem;
-      height: 1.1rem;
-      border: var(--bw) solid var(--border);
-      border-radius: 40% 60% 55% 45%;
-      background: var(--accent);
-      transform: rotate(-12deg);
-    }
-    .word em {
-      font-style: normal;
-      background: linear-gradient(transparent 62%, var(--accent) 62% 92%, transparent 92%);
     }
     nav {
       display: flex;

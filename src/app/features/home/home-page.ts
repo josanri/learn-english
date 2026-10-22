@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 import { ExamCatalogueService } from '../../data/exam-catalogue.service';
 import { ProgressSummary } from '../progress/progress-summary';
 import {
-  BrushStroke,
   Button,
   Chip,
   Icon,
@@ -21,19 +20,10 @@ interface SkillCard {
   tilt: number;
 }
 
-/** Landing page: hero with the brush stroke, the five skills as illustrated cards, and overall progress. */
+/** Landing page: hero with the speech bubble, the five skills as illustrated cards, and overall progress. */
 @Component({
   selector: 'app-home-page',
-  imports: [
-    RouterLink,
-    BrushStroke,
-    Button,
-    Chip,
-    Icon,
-    IllustratedCard,
-    SkillArt,
-    ProgressSummary,
-  ],
+  imports: [RouterLink, Button, Chip, Icon, IllustratedCard, SkillArt, ProgressSummary],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="hero container" aria-labelledby="hero-title">
@@ -44,9 +34,11 @@ interface SkillCard {
       </ul>
       <h1 id="hero-title">
         <span class="line">Learn</span>
-        <span class="line hl">
-          <app-brush-stroke class="brush" />
-          <span class="hl-text">English</span>
+        <span class="bubble">
+          English
+          <svg class="tail" viewBox="0 0 40 32" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 0 L6 32 L34 0" />
+          </svg>
         </span>
       </h1>
       <p class="lede">
@@ -98,7 +90,7 @@ interface SkillCard {
     h1 {
       position: relative;
       isolation: isolate;
-      margin-bottom: var(--space-5);
+      margin-bottom: calc(0.34em + var(--space-4));
       font-size: var(--step-6);
       font-weight: 850;
       line-height: 0.92;
@@ -107,17 +99,41 @@ interface SkillCard {
     .line {
       display: block;
     }
-    .hl {
+    /* "English" in a speech bubble: same paper, border and offset shadow as the skill cards. */
+    .bubble {
       position: relative;
       display: inline-block;
+      margin-top: 0.08em;
+      padding: 0.02em 0.22em 0.1em;
+      border: var(--bw-card) solid var(--card-border);
+      border-radius: 0.22em;
+      background: var(--paper-blue);
+      box-shadow: 0.07em 0.07em 0 var(--shadow-solid);
+      color: var(--paper-ink);
+      transform: rotate(-2.5deg);
+      transform-origin: left bottom;
+      animation: pop calc(var(--dur-draw) * 0.45) cubic-bezier(0.3, 1.6, 0.5, 1) 0.15s both;
     }
-    .hl-text {
-      position: relative;
-    }
-    .brush {
+    .tail {
       position: absolute;
-      inset: 8% -6% -6% -4%;
-      z-index: -1;
+      top: calc(100% - var(--bw-card));
+      left: 0.45em;
+      width: 0.42em;
+      height: 0.34em;
+      overflow: visible;
+    }
+    .tail path {
+      fill: var(--paper-blue);
+      stroke: var(--card-border);
+      stroke-width: var(--bw-card);
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+    @keyframes pop {
+      from {
+        opacity: 0;
+        transform: rotate(-2.5deg) scale(0.6);
+      }
     }
     .lede {
       margin-bottom: var(--space-6);
