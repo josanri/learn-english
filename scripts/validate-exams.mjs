@@ -1,10 +1,19 @@
-// Validates every exam JSON under src/assets/exams/:
+// Validates every exam JSON under src/assets/exams/ (validator v2):
 //   1. structure against the JSON Schema generated from src/app/models/exam.ts (run `npm run schema:generate`),
-//   2. generic content rules (unique ids, valid answer keys, speakers referenced by turns, image credits),
-//   3. board rules (cambridge-pet keeps the original paper-shape checks),
-//   4. the per-level index.json is up to date.
-// Usage: node scripts/validate-exams.mjs
-import { readFileSync } from 'node:fs';
+//   2. generic content rules (unique ids, valid answer keys, speakers referenced by turns),
+//   3. board rules, one paper shape per board (scripts/lib/board-rules.mjs, documented in docs/exam-formats.md),
+//   4. quality rules (scripts/lib/quality-rules.mjs): explanations, key distribution, listening scripts, images, vocabulary,
+//   5. rules across exams of a board (repeated names, themes, copied texts),
+//   6. the per-level index.json is up to date.
+// Errors fail the run; warnings are printed and never fail it (use --strict to fail on warnings too).
+// Usage: node scripts/validate-exams.mjs [--strict] [path/to/exam.json ...]
+//   With file arguments only those exams are checked (the index check is skipped); cross-exam rules still compare
+//   them with every other exam of the board.
+import { existsSync, readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { resolve } from 'node:path';
+import { checkBoardRules } from './lib/board-rules.mjs';
+import { allQualityChecks, checkAcrossExams, knownVocabulary } from './lib/quality-rules.mjs';
 import Ajv from 'ajv';
 import {
   buildLevelIndex,
@@ -39,12 +48,30 @@ function validatePartShape(part) {
   return validate(part) ? [] : validate.errors.map((e) => `${e.instancePath || '/'} ${e.message}`);
 }
 
-const errors = [];
-const seenExamIds = new Set();
+const argv = process.argv.slice(2);
+const strict = argv.includes('--strict');
+const only = argv.filter((a) => !a.startsWith('--')).map((a) => resolve(a));
+const siteRoot = fileURLToPath(new URL('../src/', import.meta.url));
+const fileExists = (p) => existsSync(resolve(siteRoot, p));
 
-for (const entry of listExamFiles()) {
+const errors = [];
+const warnings = [];
+const seenExamIds = new Set();
+const parsed = [];
+const allEntries = listExamFiles();
+
+for (const entry of allEntries) {
+  if (only.length && !only.includes(resolve(entry.absolute))) {
+    try {
+      parsed.push({ exam: readExam(entry), checked: false });
+    } catch {
+      /* reported when the whole set is validated */
+    }
+    continue;
+  }
   const label = entry.path;
   const error = (message) => errors.push(`${label}: ${message}`);
+  const warn = (message) => warnings.push(`${label}: ${message}`);
   let exam;
   try {
     exam = readExam(entry);
@@ -105,12 +132,30 @@ for (const entry of listExamFiles()) {
     });
   }
 
-  // 4. Board rules.
-  if (exam.board === 'cambridge-pet') checkCambridgePet(exam, error);
+  parsed.push({ exam, checked: true, error, warn });
 }
 
-// 5. Index freshness.
-for (const level of levelDirs()) {
+// 4. Board rules and 5. quality rules (exams that passed the structure check).
+for (const item of parsed) {
+  if (!item.checked) continue;
+  const { exam, error, warn } = item;
+  const board = checkBoardRules(exam);
+  board.errors.forEach(error);
+  board.warnings.forEach(warn);
+  const known = knownVocabulary(parsed.filter((p) => p.exam !== exam).map((p) => p.exam));
+  const quality = allQualityChecks(exam, { fileExists, known });
+  quality.errors.forEach(error);
+  quality.warnings.forEach(warn);
+}
+const across = checkAcrossExams(parsed.map((p) => p.exam));
+for (const item of parsed) {
+  if (!item.checked) continue;
+  across[item.exam.id].errors.forEach(item.error);
+  across[item.exam.id].warnings.forEach(item.warn);
+}
+
+// 6. Index freshness.
+for (const level of only.length ? [] : levelDirs()) {
   let current;
   try {
     current = JSON.parse(
@@ -157,19 +202,12 @@ function checkRecording(recording, where, error) {
     if (!turn.text.trim()) error(`${where} has an empty turn`);
   }
 }
-function checkImage(image, error) {
-  if (!image.src.trim() || !image.alt.trim()) error(`${image.id} needs src and alt text`);
-  const c = image.credit;
-  if (![c.author, c.license, c.licenseUrl, c.sourceUrl].every((v) => v.trim()))
-    error(`${image.id} needs a complete credit`);
-}
 function checkVisuals(images, error, useId) {
   for (const image of images) {
     useId(image.id, 'a visual');
     if (!image.title.trim() || !image.alt.trim())
       error(`${image.id} needs a title and image description`);
     if (!image.illustration && !image.image) error(`${image.id} needs an illustration or an image`);
-    if (image.image) checkImage(image.image, error);
   }
 }
 
@@ -284,102 +322,15 @@ function checkWritingTask(task, where, error) {
     error(`${where} has ${task.notes.length} notes but only ${points.length} content points`);
 }
 
-/** Original paper-shape rules for Cambridge B1 Preliminary, ported from the v1 validator. */
-function checkCambridgePet(exam, error) {
-  const expectedSkills = ['reading', 'writing', 'listening', 'speaking'];
-  if (exam.sections.map((s) => s.skill).join() !== expectedSkills.join()) {
-    error('sections must be reading, writing, listening, speaking');
-    return;
-  }
-  const [reading, writing, listening, speaking] = exam.sections;
-
-  const readingTypes = [
-    'notices',
-    'matching',
-    'multiple-choice',
-    'gapped-text',
-    'multiple-choice-cloze',
-    'open-cloze',
-  ];
-  const readingCounts = [5, 5, 5, 5, 6, 6];
-  if (reading.parts.length !== 6) error('Reading must contain exactly 6 parts');
-  reading.parts.forEach((part, i) => {
-    if (part.type !== readingTypes[i]) error(`Reading part ${i + 1} should use ${readingTypes[i]}`);
-    const actual =
-      'questions' in part ? part.questions.length : 'gaps' in part ? part.gaps.length : 0;
-    if (actual !== readingCounts[i])
-      error(`Reading part ${i + 1} should have ${readingCounts[i]} items, found ${actual}`);
-    if (part.type === 'matching' && part.texts.length !== 8)
-      error('Reading Part 2 must have 8 matching texts');
-    if (part.type === 'gapped-text' && part.sentences.length !== 6)
-      error('Reading Part 4 needs 6 sentence options for 5 gaps');
-  });
-
-  const email = writing.parts.find((p) => p.type === 'email');
-  const choice = writing.parts.find((p) => p.type === 'choice-task');
-  if (
-    writing.parts.length !== 2 ||
-    !email ||
-    email.task.kind !== 'email' ||
-    !choice ||
-    choice.options.length !== 2
-  )
-    error('Writing needs one required email and two Part 2 choices');
-  if (choice) {
-    if (
-      choice.options
-        .map((t) => t.kind)
-        .sort()
-        .join(',') !== 'article,story'
-    )
-      error('Writing Part 2 choices must be one article and one story');
-    if (!choice.options.find((t) => t.kind === 'story')?.openingSentence)
-      error('story task needs an opening sentence');
-  }
-
-  const listeningTypes = [
-    'short-dialogues',
-    'gist-dialogues',
-    'note-completion',
-    'listening-interview',
-  ];
-  const listeningCounts = [7, 6, 6, 6];
-  if (listening.parts.length !== 4) error('Listening must contain exactly 4 parts');
-  listening.parts.forEach((part, i) => {
-    if (part.type !== listeningTypes[i])
-      error(`Listening part ${i + 1} should use ${listeningTypes[i]}`);
-    const actual =
-      'clips' in part
-        ? part.clips.length
-        : 'gaps' in part
-          ? part.gaps.length
-          : part.questions.length;
-    if (actual !== listeningCounts[i])
-      error(`Listening part ${i + 1} should have ${listeningCounts[i]} items, found ${actual}`);
-    if (part.type === 'note-completion')
-      part.gaps.forEach((g) => {
-        if (!g.answer) error(`${g.id} has no answer key`);
-      });
-  });
-
-  const speakingTypes = ['interview', 'photo-description', 'collaborative-task', 'discussion'];
-  if (speaking.parts.length !== 4) error('Speaking must contain exactly 4 parts');
-  speaking.parts.forEach((part, i) => {
-    if (part.type !== speakingTypes[i])
-      error(`Speaking part ${i + 1} should use ${speakingTypes[i]}`);
-    if ((part.type === 'interview' || part.type === 'discussion') && !part.questions.length)
-      error(`Speaking part ${i + 1} needs interview prompts`);
-    if (part.type === 'photo-description' && (!part.prompt.trim() || part.images.length !== 1))
-      error('Speaking Part 2 needs one photo prompt and one image');
-    if (part.type === 'collaborative-task' && (!part.prompt.trim() || part.images.length < 4))
-      error('Speaking Part 3 needs a collaborative task and at least four visual prompts');
-  });
-}
-
 if (!seenExamIds.size && !errors.length) errors.push('No exam files found in src/assets/exams');
-if (errors.length) {
-  console.error(errors.map((item) => `x ${item}`).join('\n'));
+if (warnings.length)
+  console.warn(warnings.map((item) => `! ${item}`).join(String.fromCharCode(10)));
+if (errors.length || (strict && warnings.length)) {
+  console.error(errors.map((item) => `x ${item}`).join(String.fromCharCode(10)));
+  console.error(`${errors.length} error(s), ${warnings.length} warning(s).`);
   process.exitCode = 1;
 } else {
-  console.log(`Validated ${seenExamIds.size} practice papers against schema v2.`);
+  console.log(
+    `Validated ${seenExamIds.size} practice papers against schema v2 (${warnings.length} warning(s)).`,
+  );
 }

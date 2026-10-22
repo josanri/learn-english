@@ -65,6 +65,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
     <footer class="site-footer container">
       <p>
         Original practice material. Results are for practice only and are not an official score.
+        <a routerLink="/credits">Image credits</a>
       </p>
     </footer>
     <app-toast-host />
@@ -158,6 +159,13 @@ const THEME_NAME: Record<ThemePreference, string> = {
       padding-block: var(--space-6);
       color: var(--text-muted);
       font-size: var(--step--1);
+    }
+    .site-footer a {
+      display: inline-flex;
+      align-items: center;
+      min-height: var(--target);
+      color: var(--accent-text);
+      font-weight: 700;
     }
 
     @media (max-width: 47.99rem) {

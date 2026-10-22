@@ -26,6 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
+      - run: npm run test:scripts
       - run: npm run validate:exams
       # Builds with --base-href /<repository-name>/ and copies index.html to 404.html (clean URLs on Pages).
       - run: npm run build:pages -- "/${{ github.event.repository.name }}/"

@@ -14,7 +14,8 @@
     "exams:index": "node scripts/generate-index.mjs",
     "exams:migrate-v1": "node scripts/migrate-v1-to-v2.mjs",
     "check:contrast": "node scripts/check-contrast.mjs",
-    "validate:exams": "node scripts/validate-exams.mjs"
+    "validate:exams": "node scripts/validate-exams.mjs",
+    "test:scripts": "node --test scripts/lib/exam-rules.test.mjs"
   },
   "private": true,
   "packageManager": "npm@10.9.9",
@@ -53,6 +54,7 @@
     "jsdom": "^30.0.0",
     "playwright": "^1.64.1",
     "prettier": "^3.8.1",
+    "sharp": "^0.35.5",
     "ts-json-schema-generator": "^2.9.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "8.71.0",

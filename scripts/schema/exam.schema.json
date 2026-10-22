@@ -421,6 +421,10 @@
           "items": {
             "type": "string"
           }
+        },
+        "explanation": {
+          "type": "string",
+          "description": "Why this is the answer, shown after marking (required by validate:exams)."
         }
       },
       "required": [
@@ -648,6 +652,10 @@
           "items": {
             "type": "string"
           }
+        },
+        "explanation": {
+          "type": "string",
+          "description": "Why this is the answer, shown after marking (required by validate:exams)."
         },
         "prompt": {
           "type": "string"
@@ -1689,6 +1697,13 @@
         "image": {
           "$ref": "#/definitions/ImageAsset",
           "description": "A licensed photograph."
+        },
+        "describeHints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "3-5 things a learner can describe in the picture (people, place, activity...)."
         }
       },
       "required": [
@@ -1707,7 +1722,17 @@
         },
         "src": {
           "type": "string",
-          "description": "Local path under `assets/` (for example `assets/images/b1/cafe.jpg`)."
+          "description": "Local WebP, 1200 px wide, under `assets/images/exams/<examId>/` (relative to the site root)."
+        },
+        "srcSmall": {
+          "type": "string",
+          "description": "Local WebP, 600 px wide, used in `srcset` for small screens."
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
         },
         "alt": {
           "type": "string"

@@ -31,30 +31,33 @@
               "prompt": "Where can students use a computer today?",
               "options": [
                 "In the café",
-                "In the library",
-                "In the classroom"
+                "In the classroom",
+                "In the library"
               ],
-              "answer": 1
+              "answer": 2,
+              "explanation": "Students may use the library computers until 5 p.m., because the computer room is unavailable today."
             },
             {
               "id": "r1-2",
               "prompt": "What should visitors bring to the job fair?",
               "options": [
-                "Copies of their CV",
                 "A laptop",
+                "Copies of their CV",
                 "A printed email"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "The notice says to bring several copies of your CV, because employers will not accept emailed applications."
             },
             {
               "id": "r1-3",
               "prompt": "What does Jamie want?",
               "options": [
-                "The teacher to return a folder",
+                "Someone to take a folder to the teacher",
                 "A new folder before lunch",
-                "Someone to take a folder to the teacher"
+                "The teacher to return a folder"
               ],
-              "answer": 2
+              "answer": 0,
+              "explanation": "Jamie asks someone to give the blue folder to the teacher before lunch, so he wants it taken to the teacher."
             },
             {
               "id": "r1-4",
@@ -64,17 +67,19 @@
                 "In a different room",
                 "In the library"
               ],
-              "answer": 1
+              "answer": 1,
+              "explanation": "The Friday meeting has moved to Room 12, so it is in a different room."
             },
             {
               "id": "r1-5",
               "prompt": "What should kitchen users do?",
               "options": [
-                "Put their name on food they keep",
+                "Clean the whole kitchen every Friday",
                 "Take all food home on Fridays",
-                "Clean the kitchen before lunch"
+                "Put their name on food they keep"
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "Food people want to keep must have their name on it, because unlabelled items are removed on Fridays."
             }
           ]
         },
@@ -162,7 +167,8 @@
                 "G",
                 "H"
               ],
-              "answer": 3
+              "answer": 3,
+              "explanation": "Aisha needs computer skills for an office job and is free after work; text D is a digital skills class on Monday evenings."
             },
             {
               "id": "r2-2",
@@ -177,7 +183,8 @@
                 "G",
                 "H"
               ],
-              "answer": 1
+              "answer": 1,
+              "explanation": "Ben needs help speaking confidently in front of a group; text B is a public speaking course with friendly feedback."
             },
             {
               "id": "r2-3",
@@ -192,7 +199,8 @@
                 "G",
                 "H"
               ],
-              "answer": 4
+              "answer": 4,
+              "explanation": "Clara wants a practical skill and something to use at home; in text E she makes a bowl and a mug."
             },
             {
               "id": "r2-4",
@@ -207,7 +215,8 @@
                 "G",
                 "H"
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "Diego wants to apply for work; text A teaches how to present your experience and practise interview questions."
             },
             {
               "id": "r2-5",
@@ -222,7 +231,8 @@
                 "G",
                 "H"
               ],
-              "answer": 2
+              "answer": 2,
+              "explanation": "Eva wants to improve her English by talking with other learners; text C is a small-group English conversation class."
             }
           ]
         },
@@ -238,51 +248,56 @@
               "id": "r3-1",
               "prompt": "What did the writer expect to do at work?",
               "options": [
-                "Design walking tours",
+                "Answer the phone most of the time",
                 "Write travel books",
-                "Answer the phone most of the time"
+                "Design walking tours"
               ],
-              "answer": 2
+              "answer": 0,
+              "explanation": "She says she expected to spend most of the day answering the phone."
             },
             {
               "id": "r3-2",
               "prompt": "Why was the writer nervous?",
               "options": [
-                "The website was broken",
-                "They had little experience making websites",
-                "Jo was difficult to work with"
+                "The company website was not working",
+                "Jo expected too much from them",
+                "They had little experience making websites"
               ],
-              "answer": 1
+              "answer": 2,
+              "explanation": "She was nervous because she had only made a school page before, so she had little experience."
             },
             {
               "id": "r3-3",
               "prompt": "How did Jo help the writer learn?",
               "options": [
-                "She asked them to try small tasks",
                 "She gave them a long manual",
+                "She asked them to try small tasks",
                 "She completed the work for them"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "Jo asked her to try one small change and then show it to her."
             },
             {
               "id": "r3-4",
               "prompt": "What did the writer do by Friday?",
               "options": [
-                "Led a group of visitors",
-                "Changed the company name",
-                "Added three tours to the website"
+                "Added three tours to the website",
+                "Changed the name of the company",
+                "Took a group of visitors around"
               ],
-              "answer": 2
+              "answer": 0,
+              "explanation": "By Friday she had added information about three new walking tours to the website."
             },
             {
               "id": "r3-5",
               "prompt": "How does the writer feel now?",
               "options": [
-                "Ready to become a manager",
                 "More confident about asking for help",
-                "Disappointed with the job"
+                "Ready to become a manager",
+                "Disappointed with the new colleagues"
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "She says she feels comfortable asking questions now, so she is more confident about asking for help."
             }
           ]
         },
@@ -294,33 +309,38 @@
           "type": "gapped-text",
           "passage": "Our school started a radio station last year. At first, only a few students were interested. [1] Then our English teacher suggested making a weekly programme about music and school news.\n\nWe had to learn how to use the recording equipment. [2] After a few attempts, we could edit the interviews ourselves.\n\nThe first programme was only ten minutes long. [3] Students began sending in questions and asking to hear their favourite songs.\n\nNow the radio team meets every Wednesday lunchtime. [4] We also record interviews with teachers and visitors.\n\nI have learned to plan ahead and speak clearly. [5] Next term, we hope to broadcast a live quiz.",
           "sentences": [
-            "That made the station much more popular.",
+            "Nearly everyone in school listened to it.",
             "We play it during lunch on Fridays.",
             "Most of us had never used a microphone before.",
             "Many people thought it would be difficult to manage.",
-            "It is a good way to share information with the whole school.",
+            "It has also made me much less shy in front of other people.",
             "The music was too loud for the classroom."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D"
+              "answer": "D",
+              "explanation": "“Many people thought it would be difficult to manage” explains why few students were interested at first, and “Then” introduces the teacher’s idea."
             },
             {
               "id": "r4-2",
-              "answer": "C"
+              "answer": "C",
+              "explanation": "“Most of us had never used a microphone before” explains why they had to learn the equipment, and “After a few attempts” follows."
             },
             {
               "id": "r4-3",
-              "answer": "A"
+              "answer": "A",
+              "explanation": "“Nearly everyone in school listened to it” fits after the short first programme and leads to students sending questions."
             },
             {
               "id": "r4-4",
-              "answer": "E"
+              "answer": "B",
+              "explanation": "“We play it during lunch on Fridays” follows the team’s Wednesday meeting; “it” is the programme. “We also record” adds more."
             },
             {
               "id": "r4-5",
-              "answer": "B"
+              "answer": "E",
+              "explanation": "“It has also made me much less shy” adds to what the writer has learned, before the plan for next term."
             }
           ]
         },
@@ -336,11 +356,13 @@
               "id": "r5-1",
               "prompt": "Gap 1",
               "options": [
-                "placement",
+                "lesson",
                 "journey",
-                "meeting"
+                "meeting",
+                "placement"
               ],
-              "answer": 0
+              "answer": 3,
+              "explanation": "A work placement is a period of work experience; the other nouns do not fit “do a work ...”."
             },
             {
               "id": "r5-2",
@@ -348,49 +370,59 @@
               "options": [
                 "win",
                 "earn",
-                "gain"
+                "gain",
+                "buy"
               ],
-              "answer": 2
+              "answer": 2,
+              "explanation": "You gain experience; you do not win, earn or buy it in this sense."
             },
             {
               "id": "r5-3",
               "prompt": "Gap 3",
               "options": [
-                "hope",
                 "welcome",
-                "expect"
+                "hope",
+                "expect",
+                "allow"
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "You welcome guests when they arrive and show them to their rooms."
             },
             {
               "id": "r5-4",
               "prompt": "Gap 4",
               "options": [
-                "used",
                 "known",
-                "ready"
+                "used",
+                "ready",
+                "sure"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "“Get used to” + -ing means become familiar with."
             },
             {
               "id": "r5-5",
               "prompt": "Gap 5",
               "options": [
                 "news",
+                "advice",
                 "permission",
-                "advice"
+                "luck"
               ],
-              "answer": 2
+              "answer": 1,
+              "explanation": "Colleagues give helpful advice; news, permission and luck do not fit “gave me helpful ...”."
             },
             {
               "id": "r5-6",
               "prompt": "Gap 6",
               "options": [
-                "suggest",
-                "recommend",
-                "explain"
+                "prefer",
+                "agree",
+                "explain",
+                "recommend"
               ],
-              "answer": 1
+              "answer": 3,
+              "explanation": "You recommend something to someone; the other verbs do not fit “the placement to anyone”."
             }
           ]
         },
@@ -404,30 +436,40 @@
           "gaps": [
             {
               "id": "r6-1",
-              "answer": "for"
+              "answer": "for",
+              "explanation": "We sign up for a course."
             },
             {
               "id": "r6-2",
-              "answer": "for"
+              "answer": "for",
+              "explanation": "A course lasts for six weeks."
             },
             {
               "id": "r6-3",
-              "answer": "which"
+              "answer": "which",
+              "explanation": "The relative pronoun “which” refers to the art room and starts a non-defining clause."
             },
             {
               "id": "r6-4",
-              "answer": "because"
+              "answer": "because",
+              "accepted": [
+                "as",
+                "since"
+              ],
+              "explanation": "“Because” gives the reason she is excited: she has wanted to learn."
             },
             {
               "id": "r6-5",
-              "answer": "with"
+              "answer": "with",
+              "explanation": "We say “come with me” when we invite someone to join us."
             },
             {
               "id": "r6-6",
               "answer": "that",
               "accepted": [
                 "which"
-              ]
+              ],
+              "explanation": "“Photos that we have taken ourselves” defines which photos."
             }
           ]
         }
@@ -655,18 +697,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Two colleagues",
+                    "id": "sophie",
+                    "name": "Sophie",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "marcus",
+                    "name": "Marcus",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Is the meeting in Room Five? It was, but they’ve moved it to Room Eight because the projector is broken."
+                    "speaker": "sophie",
+                    "text": "Is the meeting in Room Five?"
+                  },
+                  {
+                    "speaker": "marcus",
+                    "text": "It was, but they’ve moved it to Room Eight because the projector is broken."
                   }
                 ]
               },
@@ -674,11 +728,12 @@
                 "id": "l1-1q",
                 "prompt": "Where is the meeting?",
                 "options": [
-                  "Room Eight",
+                  "The main hall",
                   "Room Five",
-                  "The main hall"
+                  "Room Eight"
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "Marcus says the meeting has moved to Room Eight because the projector is broken."
               }
             },
             {
@@ -686,18 +741,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "A student",
+                    "id": "hugo",
+                    "name": "Mr Hugo",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "lena",
+                    "name": "Lena",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I’ve printed the report, but I forgot to bring the charts. I’ll email them to the teacher tonight."
+                    "speaker": "hugo",
+                    "text": "Where are the charts for your report, Lena?"
+                  },
+                  {
+                    "speaker": "lena",
+                    "text": "I’ve printed the report, but I forgot to bring the charts. I’ll email them to you tonight."
                   }
                 ]
               },
@@ -706,10 +773,11 @@
                 "prompt": "What will the student send later?",
                 "options": [
                   "The report",
-                  "The homework",
-                  "The charts"
+                  "The charts",
+                  "The homework"
                 ],
-                "answer": 2
+                "answer": 1,
+                "explanation": "Lena says she forgot the charts and will email them tonight; she has already printed the report."
               }
             },
             {
@@ -717,19 +785,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "A woman",
+                    "id": "chris",
+                    "name": "Chris",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "fatima",
+                    "name": "Fatima",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "female",
-                      "rate": 0.9
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I normally take the early train, but today I’m working from home. I’ll start at nine instead."
+                    "speaker": "chris",
+                    "text": "Aren’t you catching the early train today?"
+                  },
+                  {
+                    "speaker": "fatima",
+                    "text": "I normally do, but today I’m working from home. I’ll start at nine instead."
                   }
                 ]
               },
@@ -738,10 +817,11 @@
                 "prompt": "Where will the woman work today?",
                 "options": [
                   "On the train",
-                  "At home",
-                  "At the office"
+                  "At the office",
+                  "At home"
                 ],
-                "answer": 1
+                "answer": 2,
+                "explanation": "Fatima says she is working from home today instead of taking the early train."
               }
             },
             {
@@ -749,19 +829,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "A man",
+                    "id": "isla",
+                    "name": "Isla",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "omari",
+                    "name": "Omari",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "male",
-                      "rate": 0.9
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The job sounded interesting, but the office is too far away. I’ve decided to apply for the one near my house."
+                    "speaker": "isla",
+                    "text": "Did you decide about the two jobs?"
+                  },
+                  {
+                    "speaker": "omari",
+                    "text": "The first one sounded interesting, but the office is too far away. I’ve decided to apply for the one near my house."
                   }
                 ]
               },
@@ -769,11 +860,12 @@
                 "id": "l1-4q",
                 "prompt": "Which job will he apply for?",
                 "options": [
-                  "The nearby one",
                   "The interesting one",
+                  "The nearby one",
                   "Neither job"
                 ],
-                "answer": 0
+                "answer": 1,
+                "explanation": "Omari says the first office is too far away, so he will apply for the job near his house."
               }
             },
             {
@@ -781,18 +873,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "A teacher",
+                    "id": "bea",
+                    "name": "Ms Bea",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "jonas",
+                    "name": "Jonas",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Your presentation was clear. Next time, try to look at the audience more often instead of reading from your notes."
+                    "speaker": "bea",
+                    "text": "Your presentation was clear, Jonas. Next time, try to look at the audience more often instead of reading from your notes."
+                  },
+                  {
+                    "speaker": "jonas",
+                    "text": "OK, I’ll practise that."
                   }
                 ]
               },
@@ -800,11 +904,12 @@
                 "id": "l1-5q",
                 "prompt": "What should the student improve?",
                 "options": [
-                  "Speaking more loudly",
+                  "Looking at the audience",
                   "Writing shorter notes",
-                  "Looking at the audience"
+                  "Speaking more loudly"
                 ],
-                "answer": 2
+                "answer": 0,
+                "explanation": "The teacher tells Jonas to look at the audience more often instead of reading from his notes."
               }
             },
             {
@@ -812,30 +917,43 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Two friends",
+                    "id": "vikram",
+                    "name": "Vikram",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "rita",
+                    "name": "Rita",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I can help you with maths on Tuesday. I’m busy Wednesday, but Thursday after school is fine too."
+                    "speaker": "vikram",
+                    "text": "Can you help me with maths this week, Rita?"
+                  },
+                  {
+                    "speaker": "rita",
+                    "text": "I can help you on Tuesday. I’m busy on Wednesday, but Thursday after school is fine too."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "When can the friend help?",
+                "prompt": "When can Rita help Vikram?",
                 "options": [
                   "Wednesday only",
-                  "Tuesday or Thursday",
-                  "Thursday morning"
+                  "Thursday morning",
+                  "Tuesday or Thursday"
                 ],
-                "answer": 1
+                "answer": 2,
+                "explanation": "Rita can help on Tuesday and on Thursday after school; she is busy on Wednesday."
               }
             },
             {
@@ -843,19 +961,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "A receptionist",
+                    "id": "raj",
+                    "name": "Raj",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "female",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "daisy",
+                    "name": "Daisy",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The computer course begins next month, not this week. We’ll email the exact date to everyone who registered."
+                    "speaker": "raj",
+                    "text": "Does the computer course start this week?"
+                  },
+                  {
+                    "speaker": "daisy",
+                    "text": "No, it begins next month. We’ll email the exact date to everyone who registered."
                   }
                 ]
               },
@@ -867,7 +996,8 @@
                   "This week",
                   "Tomorrow"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Daisy says the course begins next month, not this week."
               }
             }
           ]
@@ -884,18 +1014,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Two students",
+                    "id": "ellen",
+                    "name": "Ellen",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "pavel",
+                    "name": "Pavel",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I’m worried about the science test. I’ve studied every evening this week. You’ll be fine; you know the material well."
+                    "speaker": "ellen",
+                    "text": "I’m worried about the science test. I’ve studied every evening this week."
+                  },
+                  {
+                    "speaker": "pavel",
+                    "text": "You’ll be fine, Ellen. You know the material well."
                   }
                 ]
               },
@@ -904,10 +1046,11 @@
                 "prompt": "What is the girl worried about?",
                 "options": [
                   "A project partner",
-                  "A new class",
-                  "A test"
+                  "A test",
+                  "A new class"
                 ],
-                "answer": 2
+                "answer": 1,
+                "explanation": "Ellen says she is worried about the science test."
               }
             },
             {
@@ -915,18 +1058,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "A manager and employee",
+                    "id": "holt",
+                    "name": "Mr Holt",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "anita",
+                    "name": "Anita",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Could you finish the posters by Friday? I can do that, but I need the final details today."
+                    "speaker": "holt",
+                    "text": "Could you finish the posters by Friday?"
+                  },
+                  {
+                    "speaker": "anita",
+                    "text": "I can do that, but I need the final details today."
                   }
                 ]
               },
@@ -934,11 +1089,12 @@
                 "id": "l2-2q",
                 "prompt": "What does the employee need?",
                 "options": [
-                  "More time",
                   "Some information",
+                  "More time",
                   "A new printer"
                 ],
-                "answer": 1
+                "answer": 0,
+                "explanation": "Anita can finish the posters but says she needs the final details today, which means information."
               }
             },
             {
@@ -946,18 +1102,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "dylan",
+                    "name": "Dylan",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "zara",
+                    "name": "Zara",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "This book is easier than the one we read last month. Yes, and the story is more exciting too."
+                    "speaker": "dylan",
+                    "text": "This book is easier than the one we read last month."
+                  },
+                  {
+                    "speaker": "zara",
+                    "text": "Yes, and the story is more exciting too."
                   }
                 ]
               },
@@ -965,11 +1133,12 @@
                 "id": "l2-3q",
                 "prompt": "What do they think about the book?",
                 "options": [
-                  "It is enjoyable",
                   "It is too difficult",
+                  "It is enjoyable",
                   "It is very short"
                 ],
-                "answer": 0
+                "answer": 1,
+                "explanation": "Both say the book is easier and more exciting than the last one, so they enjoy it."
               }
             },
             {
@@ -977,18 +1146,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "A student and tutor",
+                    "id": "carla",
+                    "name": "Carla",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "ross",
+                    "name": "Mr Ross",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I keep making mistakes with past tense verbs. Let’s practise them together before class tomorrow."
+                    "speaker": "carla",
+                    "text": "I keep making mistakes with past tense verbs."
+                  },
+                  {
+                    "speaker": "ross",
+                    "text": "Let’s practise them together before class tomorrow."
                   }
                 ]
               },
@@ -1000,7 +1181,8 @@
                   "Writing emails",
                   "Grammar"
                 ],
-                "answer": 2
+                "answer": 2,
+                "explanation": "Carla makes mistakes with past tense verbs and her tutor suggests practising them, so it is grammar."
               }
             },
             {
@@ -1008,18 +1190,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Two colleagues",
+                    "id": "nadia",
+                    "name": "Nadia",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "eddie",
+                    "name": "Eddie",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The new café is lovely, but it takes too long to get lunch there. We should bring food from home tomorrow."
+                    "speaker": "nadia",
+                    "text": "The new café is lovely, but it takes too long to get lunch there."
+                  },
+                  {
+                    "speaker": "eddie",
+                    "text": "We should bring food from home tomorrow."
                   }
                 ]
               },
@@ -1031,7 +1225,8 @@
                   "The service is slow",
                   "The food is cold"
                 ],
-                "answer": 1
+                "answer": 1,
+                "explanation": "Nadia says it takes too long to get lunch, which means the service is slow."
               }
             },
             {
@@ -1039,18 +1234,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "sean",
+                    "name": "Sean",
                     "voice": {
-                      "lang": "en-GB",
-                      "rate": 0.9
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "gina",
+                    "name": "Gina",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I thought the workshop was about painting. It was, but we also learned how to make a frame from old wood."
+                    "speaker": "sean",
+                    "text": "I thought the workshop was about painting."
+                  },
+                  {
+                    "speaker": "gina",
+                    "text": "It was, but we also learned how to make a frame from old wood."
                   }
                 ]
               },
@@ -1058,11 +1265,12 @@
                 "id": "l2-6q",
                 "prompt": "What else did they learn to do?",
                 "options": [
-                  "Make a frame",
+                  "Repair a chair",
                   "Take photos",
-                  "Repair a chair"
+                  "Make a frame"
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "Gina says they also learned how to make a frame from old wood."
               }
             }
           ]
@@ -1080,7 +1288,7 @@
                 "name": "Mark",
                 "voice": {
                   "lang": "en-GB",
-                  "rate": 0.9
+                  "gender": "male"
                 }
               }
             ],
@@ -1094,33 +1302,45 @@
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "First class: Monday at six",
-              "answer": "Monday"
+              "prompt": "First class: ___ at six",
+              "answer": "Monday",
+              "explanation": "Mark says the first class is on Monday at six o’clock."
             },
             {
               "id": "l3-2",
               "prompt": "Meet in the main ___",
-              "answer": "hall"
+              "answer": "hall",
+              "explanation": "He says to meet in the main hall."
             },
             {
               "id": "l3-3",
               "prompt": "Bring a notebook and a ___",
-              "answer": "pen"
+              "answer": "pen",
+              "explanation": "Students should bring a notebook and a pen."
             },
             {
               "id": "l3-4",
               "prompt": "Break time: half past ___",
-              "answer": "seven"
+              "answer": "seven",
+              "accepted": [
+                "7"
+              ],
+              "explanation": "The short break is at seven thirty, which is half past seven."
             },
             {
               "id": "l3-5",
               "prompt": "The café closes at ___",
-              "answer": "seven"
+              "answer": "seven",
+              "accepted": [
+                "7"
+              ],
+              "explanation": "The café on the ground floor closes at seven."
             },
             {
               "id": "l3-6",
               "prompt": "Course length: eight ___",
-              "answer": "weeks"
+              "answer": "weeks",
+              "explanation": "The course lasts for eight weeks."
             }
           ]
         },
@@ -1136,18 +1356,16 @@
                 "id": "interviewer",
                 "name": "Interviewer",
                 "voice": {
-                  "lang": "en-GB",
-                  "gender": "female",
-                  "rate": 0.9
+                  "lang": "en-US",
+                  "gender": "female"
                 }
               },
               {
-                "id": "guest",
+                "id": "tom",
                 "name": "Tom",
                 "voice": {
                   "lang": "en-GB",
-                  "gender": "male",
-                  "rate": 0.9
+                  "gender": "male"
                 }
               }
             ],
@@ -1157,7 +1375,7 @@
                 "text": "Tom, why did you become a teacher?"
               },
               {
-                "speaker": "guest",
+                "speaker": "tom",
                 "text": "At school, I had a teacher who made history interesting. I wanted to help other students feel the same way."
               },
               {
@@ -1165,7 +1383,7 @@
                 "text": "What was your first year like?"
               },
               {
-                "speaker": "guest",
+                "speaker": "tom",
                 "text": "Busy! I spent a lot of time preparing lessons at home. My colleagues helped me, and I learned to plan more carefully."
               },
               {
@@ -1173,7 +1391,7 @@
                 "text": "What do you enjoy about teaching now?"
               },
               {
-                "speaker": "guest",
+                "speaker": "tom",
                 "text": "I like seeing students understand something that seemed difficult at first. Every class is different, so the work never feels boring."
               },
               {
@@ -1181,7 +1399,7 @@
                 "text": "What is the most challenging part?"
               },
               {
-                "speaker": "guest",
+                "speaker": "tom",
                 "text": "Keeping everyone involved. Some students are confident, while others need more time. I try to use different activities so everybody can take part."
               },
               {
@@ -1189,7 +1407,7 @@
                 "text": "What advice would you give a new teacher?"
               },
               {
-                "speaker": "guest",
+                "speaker": "tom",
                 "text": "Listen to your students. They can tell you what is working. And don’t be afraid to change a lesson if the class needs something different."
               }
             ]
@@ -1199,61 +1417,67 @@
               "id": "l4-1",
               "prompt": "Why did Tom decide to teach?",
               "options": [
-                "His family asked him",
+                "A teacher inspired him",
                 "He wanted long holidays",
-                "A teacher inspired him"
+                "His family asked him"
               ],
-              "answer": 2
+              "answer": 0,
+              "explanation": "Tom says a history teacher at school made the subject interesting and inspired him."
             },
             {
               "id": "l4-2",
               "prompt": "What did Tom find difficult in his first year?",
               "options": [
-                "Finding a classroom",
                 "Preparing lessons",
+                "Finding a classroom",
                 "Learning history"
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "In his first year he spent a lot of time preparing lessons at home."
             },
             {
               "id": "l4-3",
               "prompt": "What does Tom enjoy most?",
               "options": [
-                "Helping students understand",
                 "Writing school reports",
+                "Helping students understand",
                 "Organising trips"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "He likes seeing students understand something that seemed difficult."
             },
             {
               "id": "l4-4",
               "prompt": "What is his biggest challenge?",
               "options": [
-                "Choosing a textbook",
-                "Starting lessons on time",
+                "Choosing a good textbook for each class",
+                "Starting every lesson exactly on time",
                 "Keeping all students involved"
               ],
-              "answer": 2
+              "answer": 2,
+              "explanation": "He says the most challenging part is keeping everyone involved."
             },
             {
               "id": "l4-5",
               "prompt": "How does Tom help different students?",
               "options": [
-                "He gives everyone extra homework",
                 "He uses different activities",
+                "He gives everyone extra homework",
                 "He teaches smaller groups"
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "He uses different activities so everybody can take part."
             },
             {
               "id": "l4-6",
               "prompt": "What should a new teacher do?",
               "options": [
-                "Listen to students and adapt",
                 "Follow every plan exactly",
+                "Listen to students and adapt",
                 "Avoid changing activities"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "He advises listening to students and changing a lesson if the class needs it."
             }
           ]
         }
@@ -1294,24 +1518,33 @@
           "title": "Describe a photograph",
           "instructions": "Look at the photograph and speak for about one minute. Describe what is happening and what the students might be learning.",
           "type": "photo-description",
-          "prompt": "Students working together on a project in a classroom.",
+          "prompt": "Adults studying together at a table full of books.",
           "images": [
             {
               "id": "s2-2-classroom",
-              "title": "A classroom project",
-              "alt": "Students discussing a project around a table in a bright classroom.",
-              "illustration": "classroom",
+              "title": "A study group",
+              "alt": "Three adults sit around a wooden table in a bookshop and look at books and a laptop. Shelves full of books are behind them.",
               "image": {
-                "id": "s2-2-classroom-photo",
-                "src": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=82",
-                "alt": "Students discussing a project around a table in a bright classroom.",
+                "id": "s2-2-classroom",
+                "src": "assets/images/exams/cambridge-pet-02/s2-2-classroom-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-02/s2-2-classroom-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "Three adults sit around a wooden table in a bookshop and look at books and a laptop. Shelves full of books are behind them.",
                 "credit": {
-                  "author": "Quilia",
-                  "license": "Unsplash License",
-                  "licenseUrl": "https://unsplash.com/license",
-                  "sourceUrl": "https://unsplash.com/photos/students-in-classroom-with-teacher-presenting-zFSo6bnZJTw"
+                  "author": "Wikimedia Foundation Staff and Contractors",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Photography_Collection_2023_006.jpg"
                 }
-              }
+              },
+              "describeHints": [
+                "three people working together",
+                "the books and the laptop",
+                "the bookshelves",
+                "what they might be studying",
+                "how they feel about the work"
+              ]
             }
           ]
         },
@@ -1326,26 +1559,106 @@
             {
               "id": "s2-3-computer",
               "title": "Computer skills",
-              "alt": "A learner practising computer skills at a desk.",
-              "illustration": "computer"
+              "alt": "Students sit at long wooden desks in a university library and use desktop computers. Lamps hang above the desks.",
+              "image": {
+                "id": "s2-3-computer",
+                "src": "assets/images/exams/cambridge-pet-02/s2-3-computer-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-02/s2-3-computer-600.webp",
+                "width": 1200,
+                "height": 799,
+                "alt": "Students sit at long wooden desks in a university library and use desktop computers. Lamps hang above the desks.",
+                "credit": {
+                  "author": "This is Edinburgh (edinburgh.org)",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_University_Library_Computers_(21572874396).jpg"
+                }
+              },
+              "describeHints": [
+                "students using computers",
+                "the long desks and lamps",
+                "the screens and keyboards",
+                "what they might be doing",
+                "why computer skills matter"
+              ]
             },
             {
               "id": "s2-3-cooking",
-              "title": "Cooking",
-              "alt": "A young person learning to prepare a meal in a kitchen.",
-              "illustration": "cooking"
+              "title": "Cooking at home",
+              "alt": "An older woman in an apron cuts red peppers on a chopping board next to a bright kitchen window. There is bread, a bowl of fruit and a roll of kitchen paper.",
+              "image": {
+                "id": "s2-3-cooking",
+                "src": "assets/images/exams/cambridge-pet-02/s2-3-cooking-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-02/s2-3-cooking-600.webp",
+                "width": 1200,
+                "height": 798,
+                "alt": "An older woman in an apron cuts red peppers on a chopping board next to a bright kitchen window. There is bread, a bowl of fruit and a roll of kitchen paper.",
+                "credit": {
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elderly_woman_prepares_vegetables_while_cooking_in_a_home_kitchen_during_the_day.jpg"
+                }
+              },
+              "describeHints": [
+                "a woman cooking at home",
+                "the vegetables and the bread",
+                "the kitchen window",
+                "the apron",
+                "what she might cook"
+              ]
             },
             {
               "id": "s2-3-music",
               "title": "Playing music",
-              "alt": "A young person practising music with friends.",
-              "illustration": "music"
+              "alt": "A man in a cap and sunglasses sings and plays a guitar in a street. A person in a wheelchair and other people are behind him.",
+              "image": {
+                "id": "s2-3-music",
+                "src": "assets/images/exams/cambridge-pet-02/s2-3-music-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-02/s2-3-music-600.webp",
+                "width": 1200,
+                "height": 797,
+                "alt": "A man in a cap and sunglasses sings and plays a guitar in a street. A person in a wheelchair and other people are behind him.",
+                "credit": {
+                  "author": "Wilfredor",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Singer_street_music_in_Olinda.jpg"
+                }
+              },
+              "describeHints": [
+                "a man playing and singing",
+                "the guitar",
+                "the people in the street",
+                "the old buildings",
+                "why people enjoy street music"
+              ]
             },
             {
               "id": "s2-3-garden",
               "title": "Gardening",
-              "alt": "A group learning to grow plants in a garden.",
-              "illustration": "garden"
+              "alt": "A gardener wearing gloves kneels beside young plants in a garden bed. A yellow bucket and a wooden fence are next to the plants.",
+              "image": {
+                "id": "s2-3-garden",
+                "src": "assets/images/exams/cambridge-pet-02/s2-3-garden-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-02/s2-3-garden-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "A gardener wearing gloves kneels beside young plants in a garden bed. A yellow bucket and a wooden fence are next to the plants.",
+                "credit": {
+                  "author": "vastateparksstaff",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volunteers_help_maintain_the_garden_throughout_the_year._-_AA_(13991451719).jpg"
+                }
+              },
+              "describeHints": [
+                "a person gardening",
+                "the gloves and the young plants",
+                "the yellow bucket",
+                "the season",
+                "what she is growing"
+              ]
             }
           ]
         },

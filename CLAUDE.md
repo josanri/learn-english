@@ -29,9 +29,9 @@ Routes: `/`, `/b1`, `/b1/:board/:examId/(reading|writing|listening|speaking|medi
 
 ## Commands
 
-`npm start`, `npm run lint`, `npm test`, `npm run validate:exams`, `npm run build`, `npm run build:pages -- /repo/`, `npm run schema:generate`, `npm run exams:index`, `npm run check:contrast`.
+`npm start`, `npm run lint`, `npm test`, `npm run validate:exams`, `npm run test:scripts`, `npm run build`, `npm run build:pages -- /repo/`, `npm run schema:generate`, `npm run exams:index`, `npm run check:contrast`.
 
-Before committing: lint, test, validate:exams and build must all pass.
+Before committing: lint, test, test:scripts, validate:exams and build must all pass.
 
 ## Design system
 
@@ -84,7 +84,12 @@ One localStorage key `learn-english:v1` (schemaVersion 2) = `{ schemaVersion, se
 
 ## Adding an exam
 
-Create the JSON under `src/assets/exams/<level>/<board>/`, run `npm run exams:index` and `npm run validate:exams`. If you change `src/app/models/exam.ts`, run `npm run schema:generate` first. New boards need an entry in `BOARD_INFO` (`scripts/lib/exam-files.mjs`) and, for fixed paper shapes, a rule function in `scripts/validate-exams.mjs`. The skill `.claude/skills/b1-preliminary-exam-author/` has the authoring rules.
+Create the JSON under `src/assets/exams/<level>/<board>/`, run `npm run exams:index` and `npm run validate:exams`. If you change `src/app/models/exam.ts`, run `npm run schema:generate` first. New boards need an entry in `BOARD_INFO` (`scripts/lib/exam-files.mjs`) and a spec in `BOARD_SPECS` (`scripts/lib/board-rules.mjs`, documented with sources in `docs/exam-formats.md`). The skill `.claude/skills/b1-exam-author/` has the authoring rules.
+
+## Validator v2 and images
+
+- `npm run validate:exams [-- file.json]` runs schema, board shape (`scripts/lib/board-rules.mjs`, sources in `docs/exam-formats.md`), quality rules (`scripts/lib/quality-rules.mjs`: explanations everywhere, key distribution, listening scripts and speakers, images, vocabulary heuristic) and cross-exam checks. Errors fail, warnings print (`--strict` fails on them). Logic is tested by `npm run test:scripts` (node:test, `scripts/lib/exam-rules.test.mjs`).
+- Speaking photos are real Wikimedia Commons images stored locally under `src/assets/images/exams/<examId>/` (1200 and 600 px WebP) with `image.credit`, `alt` and `describeHints`; add them with `node scripts/fetch-image.mjs` (licence whitelist in `scripts/lib/image-license.mjs`). `/credits` lists every photo. `docs/audit-2026.md` records the audit of the first five exams.
 
 ## Content rules
 

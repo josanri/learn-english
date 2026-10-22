@@ -33,7 +33,7 @@ To add an exam:
 2. Run `npm run exams:index` and `npm run validate:exams`.
 3. Run `npm run build`.
 
-Use the project skill in `.claude/skills/b1-preliminary-exam-author/` for authoring rules. All materials are original practice items, not official exam papers.
+Use the project skill in `.claude/skills/b1-exam-author/` for authoring rules. All materials are original practice items, not official exam papers.
 
 ## Saved data
 

@@ -63,6 +63,11 @@ export const routes: Routes = [
     loadComponent: () => import('./features/settings/settings-page').then((m) => m.SettingsPage),
   },
   {
+    path: 'credits',
+    title: 'Image credits | Learn English',
+    loadComponent: () => import('./features/credits/credits-page').then((m) => m.CreditsPage),
+  },
+  {
     path: '**',
     title: 'Not found | Learn English',
     loadComponent: () => import('./features/not-found-page').then((m) => m.NotFoundPage),

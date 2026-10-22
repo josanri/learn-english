@@ -136,6 +136,7 @@ export function gapItems(gaps: readonly (GapItem | PromptedGap)[]): ScoreItem[] 
     prompt: 'prompt' in g ? g.prompt : `Gap ${index + 1}`,
     correct: g.answer,
     accepted: g.accepted,
+    explanation: g.explanation,
   }));
 }
 
@@ -155,6 +156,7 @@ export function letterGapItems(
     prompt: promptOf(g, index),
     correct: g.answer.toUpperCase(),
     choices,
+    explanation: g.explanation,
   }));
 }
 

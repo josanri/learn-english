@@ -34,47 +34,52 @@
                 "Take the bikes to another station.",
                 "Pay for repairs to the riverside station."
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "The riverside station closes early for repairs, so bikes must be returned before the usual time (by 7 p.m.)."
             },
             {
               "id": "r4-1-2",
               "prompt": "What should Green Club members bring?",
               "options": [
                 "A plan for a town project.",
-                "A cup they can use again.",
-                "A friend who lives nearby."
+                "A friend who lives nearby.",
+                "A cup they can use again."
               ],
-              "answer": 1
+              "answer": 2,
+              "explanation": "Members must bring a reusable cup, which is a cup they can use again."
             },
             {
               "id": "r4-1-3",
               "prompt": "What does Jamie want his friend to do?",
               "options": [
                 "Wait at the bus stop.",
-                "Save him a seat on the bus.",
-                "Start ordering food."
+                "Start ordering food.",
+                "Save him a seat on the bus."
               ],
-              "answer": 2
+              "answer": 1,
+              "explanation": "Jamie will take the next bus and asks his friend to order without him, so the friend should start ordering."
             },
             {
               "id": "r4-1-4",
               "prompt": "What has changed about the park run?",
               "options": [
-                "The place where it begins.",
+                "The time it starts.",
                 "The distance participants run.",
-                "The time it starts."
+                "The place where it begins."
               ],
-              "answer": 2
+              "answer": 0,
+              "explanation": "The 5 km event now starts at 9:30, not 9:00, so the time has changed."
             },
             {
               "id": "r4-1-5",
               "prompt": "Who would be suitable for the room?",
               "options": [
-                "A person who wants a garden and does not smoke.",
+                "Someone who needs a room without bills.",
                 "A family looking for a house outside town.",
-                "Someone who needs a room without bills."
+                "A person who wants a garden and does not smoke."
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "The room has a garden and no smoking indoors, so it suits someone who wants a garden and does not smoke."
             }
           ]
         },
@@ -87,23 +92,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Mia wants to learn to repair her bicycle. She can only come on Wednesday evenings."
+              "text": "Hana wants to learn to repair her bicycle. She can only come on Wednesday evenings."
             },
             {
               "id": "p2",
-              "text": "Ben would like to help local wildlife and prefers being outdoors."
+              "text": "Joe would like to help local wildlife and prefers being outdoors."
             },
             {
               "id": "p3",
-              "text": "Rosa wants to learn about saving energy at home at the weekend."
+              "text": "Tilly wants to learn about saving energy at home at the weekend."
             },
             {
               "id": "p4",
-              "text": "Arun enjoys taking photographs and wants to explore the town on foot."
+              "text": "Kiran enjoys taking photographs and wants to explore the town on foot."
             },
             {
               "id": "p5",
-              "text": "Ellie wants to meet people while travelling to work by bus."
+              "text": "Ruby wants to meet people while travelling to work by bus."
             }
           ],
           "texts": [
@@ -151,7 +156,7 @@
           "questions": [
             {
               "id": "r4-2-1",
-              "prompt": "Mia",
+              "prompt": "Hana",
               "options": [
                 "A",
                 "B",
@@ -162,11 +167,12 @@
                 "G",
                 "H"
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "Hana can only come on Wednesday evenings and wants to repair her bike; text A is a bike repair workshop on Wednesday at 6 p.m."
             },
             {
               "id": "r4-2-2",
-              "prompt": "Ben",
+              "prompt": "Joe",
               "options": [
                 "A",
                 "B",
@@ -177,11 +183,12 @@
                 "G",
                 "H"
               ],
-              "answer": 1
+              "answer": 1,
+              "explanation": "Joe wants to help wildlife outdoors; text B counts birds and cleans the river path on Saturday mornings."
             },
             {
               "id": "r4-2-3",
-              "prompt": "Rosa",
+              "prompt": "Tilly",
               "options": [
                 "A",
                 "B",
@@ -192,11 +199,12 @@
                 "G",
                 "H"
               ],
-              "answer": 2
+              "answer": 2,
+              "explanation": "Tilly wants to learn about saving energy at home at the weekend; text C is a Sunday workshop about reducing energy use."
             },
             {
               "id": "r4-2-4",
-              "prompt": "Arun",
+              "prompt": "Kiran",
               "options": [
                 "A",
                 "B",
@@ -207,11 +215,12 @@
                 "G",
                 "H"
               ],
-              "answer": 3
+              "answer": 3,
+              "explanation": "Kiran likes photography and wants to explore on foot; text D is a photo walk through historic streets."
             },
             {
               "id": "r4-2-5",
-              "prompt": "Ellie",
+              "prompt": "Ruby",
               "options": [
                 "A",
                 "B",
@@ -222,7 +231,8 @@
                 "G",
                 "H"
               ],
-              "answer": 4
+              "answer": 4,
+              "explanation": "Ruby wants to meet people on the bus to work; text E is a book club for passengers on their journey."
             }
           ]
         },
@@ -242,7 +252,8 @@
                 "The writer wanted to repair a toaster.",
                 "The community centre was selling kitchen equipment."
               ],
-              "answer": 1
+              "answer": 1,
+              "explanation": "Her toaster stopped working and a neighbour told her about the café, so she went there to repair the toaster."
             },
             {
               "id": "r4-3-2",
@@ -252,17 +263,19 @@
                 "Replaced the toaster with another one.",
                 "Asked the writer to buy a new tool."
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "The volunteer showed her how to test the cable safely, and then the toaster worked again."
             },
             {
               "id": "r4-3-3",
               "prompt": "What happened to the two teenagers?",
               "options": [
                 "They started working as electricians.",
-                "They returned after repairing a radio themselves.",
-                "They opened a repair café at home."
+                "They opened a repair café at home.",
+                "They returned after repairing a radio themselves."
               ],
-              "answer": 1
+              "answer": 2,
+              "explanation": "The teenagers came back this week with a radio they had repaired at home."
             },
             {
               "id": "r4-3-4",
@@ -272,7 +285,8 @@
                 "It has a welcoming feeling.",
                 "It is open every weekend."
               ],
-              "answer": 1
+              "answer": 1,
+              "explanation": "Her favourite part is the friendly atmosphere, which means it is welcoming."
             },
             {
               "id": "r4-3-5",
@@ -282,7 +296,8 @@
                 "Move to a larger building.",
                 "Charge visitors for repairs."
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "They need more volunteers, which means additional helpers, before they can open two Saturdays a month."
             }
           ]
         },
@@ -304,23 +319,28 @@
           "gaps": [
             {
               "id": "r4-4-1",
-              "answer": "A"
+              "answer": "A",
+              "explanation": "“The most common suggestion was a protected route” follows the council asking residents and is followed by what many people said."
             },
             {
               "id": "r4-4-2",
-              "answer": "B"
+              "answer": "B",
+              "explanation": "“In response, they planned a route away from the main road” answers the residents’ worry about the busy shopping street."
             },
             {
               "id": "r4-4-3",
-              "answer": "C"
+              "answer": "C",
+              "explanation": "“Local cyclists were invited to test the lane” follows the work and leads to what happened in the first week."
             },
             {
               "id": "r4-4-4",
-              "answer": "F"
+              "answer": "F",
+              "explanation": "“That feedback helped the council make a small improvement” follows cyclists reporting problems and leads to the moved sign."
             },
             {
               "id": "r4-4-5",
-              "answer": "D"
+              "answer": "E",
+              "explanation": "“The council is also offering free bicycle lessons” follows the parents using the route and leads to the next plan. Sentence D would only fit straight after the sign was moved."
             }
           ]
         },
@@ -330,40 +350,43 @@
           "title": "Getting around without a car",
           "instructions": "Choose the correct word or phrase for each gap.",
           "type": "multiple-choice-cloze",
-          "passage": "More people in our town are choosing to [1] the bus to work. A new travel app makes it easier to [2] when buses arrive. The council has also [3] a lower price for weekly tickets. Some people still find the bus [4] at busy times, so extra services will start next month. If the plan is successful, traffic may become [5] and the air could feel [6].",
+          "passage": "More people in our town are choosing to [1] the bus to work. A new travel app makes it easier to [2] when buses arrive. The council has also [3] a lower price for weekly tickets. Some people still find the bus [4] at busy times, so extra services will start next month. If the plan is successful, there may be [5] cars on the road and the air could be much [6].",
           "questions": [
             {
               "id": "r4-5-1",
               "prompt": "Gap 1",
               "options": [
-                "take",
                 "do",
+                "take",
                 "make",
-                "get"
+                "go"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "We take the bus; do, make and go do not combine with “the bus” in this way."
             },
             {
               "id": "r4-5-2",
               "prompt": "Gap 2",
               "options": [
-                "check",
+                "spend",
                 "watch",
                 "look",
-                "see"
+                "check"
               ],
-              "answer": 0
+              "answer": 3,
+              "explanation": "You check when buses arrive using an app."
             },
             {
               "id": "r4-5-3",
               "prompt": "Gap 3",
               "options": [
-                "introduced",
-                "invited",
                 "invented",
-                "included"
+                "invited",
+                "introduced",
+                "imagined"
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "A council introduces a lower price; the other verbs do not fit."
             },
             {
               "id": "r4-5-4",
@@ -374,7 +397,8 @@
                 "quiet",
                 "weak"
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "At busy times a bus is crowded, which means full of people."
             },
             {
               "id": "r4-5-5",
@@ -382,21 +406,23 @@
               "options": [
                 "lighter",
                 "less",
-                "fewer",
-                "lower"
+                "lower",
+                "fewer"
               ],
-              "answer": 1
+              "answer": 3,
+              "explanation": "We use “fewer” with countable plural nouns such as cars."
             },
             {
               "id": "r4-5-6",
               "prompt": "Gap 6",
               "options": [
-                "cleaner",
-                "clearest",
                 "cleanly",
+                "clearest",
+                "cleaner",
                 "clean"
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "“Much cleaner” is the comparative form after “much”."
             }
           ]
         },
@@ -406,31 +432,45 @@
           "title": "A shared garden",
           "instructions": "Complete the text with one word in each gap.",
           "type": "open-cloze",
-          "passage": "Our street has a small garden [1] the library. It was empty [2] several years, so local people decided to use it. Everyone can help, even [3] they have only a little time. We usually meet [4] Saturday morning and share the jobs. Some neighbours grow flowers, [5] others look after the vegetables. We hope the garden will become a place [6] people can relax together.",
+          "passage": "Our street has a small garden [1] to the library. It was empty [2] several years, so local people decided to use it. Everyone can help, even [3] they have only a little time. We usually meet [4] Saturday morning and share the jobs. Some neighbours grow flowers, [5] others look after the vegetables. We hope the garden will become a place [6] people can relax together.",
           "gaps": [
             {
               "id": "r4-6-1",
-              "answer": "behind"
+              "answer": "next",
+              "explanation": "Next to the library means beside it."
             },
             {
               "id": "r4-6-2",
-              "answer": "for"
+              "answer": "for",
+              "explanation": "We say “empty for several years” to show how long."
             },
             {
               "id": "r4-6-3",
-              "answer": "if"
+              "answer": "if",
+              "accepted": [
+                "though"
+              ],
+              "explanation": "“Even if they have only a little time” means although it is possible that they do."
             },
             {
               "id": "r4-6-4",
-              "answer": "on"
+              "answer": "on",
+              "explanation": "We use “on” with days: on Saturday morning."
             },
             {
               "id": "r4-6-5",
-              "answer": "while"
+              "answer": "while",
+              "accepted": [
+                "and",
+                "but",
+                "whereas"
+              ],
+              "explanation": "“While” contrasts what two groups of neighbours do."
             },
             {
               "id": "r4-6-6",
-              "answer": "where"
+              "answer": "where",
+              "explanation": "“Where” refers to the place and begins the clause about relaxing there."
             }
           ]
         }
@@ -449,9 +489,9 @@
           "task": {
             "kind": "email",
             "title": "Write an email",
-            "prompt": "You have received an email from your English-speaking friend Sam. Write an email to Sam and answer the questions.",
+            "prompt": "You have received an email from your English-speaking friend Jo. Write an email to Jo and answer the questions.",
             "sourceEmail": {
-              "from": "Sam",
+              "from": "Jo",
               "subject": "Helping the town",
               "body": "Our class is going to help with an environment project next month. Have you ever helped with a project like this? What could we do to make our town greener? Would you like to join us? Why?"
             },
@@ -645,30 +685,43 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Passenger",
+                    "id": "peter",
+                    "name": "Peter",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "alina",
+                    "name": "Alina",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The bus is nearly here. Do you have the day ticket? I put it on the kitchen table."
+                    "speaker": "peter",
+                    "text": "The bus is nearly here. Do you have the day ticket?"
+                  },
+                  {
+                    "speaker": "alina",
+                    "text": "Oh no, I put it on the kitchen table."
                   }
                 ]
               },
               "question": {
                 "id": "l4-1",
-                "prompt": "What has the passenger forgotten?",
+                "prompt": "What has Alina forgotten?",
                 "options": [
-                  "A bus ticket",
+                  "A phone",
                   "A coat",
-                  "A phone"
+                  "A bus ticket"
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "Alina says she put the day ticket on the kitchen table, so she has forgotten it."
               }
             },
             {
@@ -676,18 +729,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Volunteer",
+                    "id": "rob",
+                    "name": "Rob",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "tessa",
+                    "name": "Tessa",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I thought we were planting flowers, but we are clearing rubbish by the river first."
+                    "speaker": "rob",
+                    "text": "I thought we were planting flowers today."
+                  },
+                  {
+                    "speaker": "tessa",
+                    "text": "We are, but first we’re clearing rubbish by the river."
                   }
                 ]
               },
@@ -699,7 +764,8 @@
                   "Clean the river path",
                   "Build a fence"
                 ],
-                "answer": 1
+                "answer": 1,
+                "explanation": "Tessa says that first they are clearing rubbish by the river."
               }
             },
             {
@@ -707,18 +773,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Cyclist",
+                    "id": "mei",
+                    "name": "Mei",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "idris",
+                    "name": "Idris",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "My front tyre is flat. I will walk the bike to the repair shop before it closes."
+                    "speaker": "mei",
+                    "text": "You’re walking your bike? What happened?"
+                  },
+                  {
+                    "speaker": "idris",
+                    "text": "My front tyre is flat. I’ll take it to the repair shop before it closes."
                   }
                 ]
               },
@@ -726,11 +804,12 @@
                 "id": "l4-3",
                 "prompt": "Why is the cyclist going to the shop?",
                 "options": [
-                  "To repair a bicycle",
+                  "To meet a friend",
                   "To buy a bus pass",
-                  "To meet a friend"
+                  "To repair a bicycle"
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "Idris’s front tyre is flat and he is taking the bike to the repair shop."
               }
             },
             {
@@ -738,19 +817,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Woman",
+                    "id": "stefan",
+                    "name": "Stefan",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "joan",
+                    "name": "Joan",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "female",
-                      "rate": 0.9
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I usually drive to work, but the train is faster when there is traffic. I took it today."
+                    "speaker": "stefan",
+                    "text": "Do you still drive to work?"
+                  },
+                  {
+                    "speaker": "joan",
+                    "text": "Usually, but the train is faster when there is traffic. I took it today."
                   }
                 ]
               },
@@ -762,7 +852,8 @@
                   "By train",
                   "By bicycle"
                 ],
-                "answer": 1
+                "answer": 1,
+                "explanation": "Joan took the train today because it is faster when there is traffic."
               }
             },
             {
@@ -770,18 +861,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Shop assistant",
+                    "id": "poppy",
+                    "name": "Poppy",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "hassan",
+                    "name": "Hassan",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "These bags are made from recycled material, and they fold into a pocket."
+                    "speaker": "poppy",
+                    "text": "What’s special about these bags?"
+                  },
+                  {
+                    "speaker": "hassan",
+                    "text": "They’re made from recycled material, and they fold up so small that they fit in your pocket."
                   }
                 ]
               },
@@ -793,7 +896,8 @@
                   "They keep food cold.",
                   "They are made by hand."
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "The bags fold up so small that they fit in a pocket, which makes them easy to carry."
               }
             },
             {
@@ -801,19 +905,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Man",
+                    "id": "gwen",
+                    "name": "Gwen",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "callum",
+                    "name": "Callum",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "male",
-                      "rate": 0.9
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The park is lovely, but it is going to rain. Let us have our picnic in the café."
+                    "speaker": "gwen",
+                    "text": "The park is lovely, but it’s going to rain."
+                  },
+                  {
+                    "speaker": "callum",
+                    "text": "Let’s have our picnic in the café instead."
                   }
                 ]
               },
@@ -825,7 +940,8 @@
                   "In the park",
                   "In a café"
                 ],
-                "answer": 2
+                "answer": 2,
+                "explanation": "Because it is going to rain, Callum suggests having the picnic in the café."
               }
             },
             {
@@ -833,19 +949,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Woman",
+                    "id": "ewan",
+                    "name": "Ewan",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "female",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "dot",
+                    "name": "Dot",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The new crossing is useful, although the traffic lights take a long time."
+                    "speaker": "ewan",
+                    "text": "What do you think of the new crossing?"
+                  },
+                  {
+                    "speaker": "dot",
+                    "text": "It’s useful, although the traffic lights take a long time."
                   }
                 ]
               },
@@ -857,7 +984,8 @@
                   "It is dangerous at night.",
                   "It is difficult to find."
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Dot says the crossing is useful but the traffic lights take a long time."
               }
             }
           ]
@@ -874,18 +1002,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Passenger",
+                    "id": "nell",
+                    "name": "Nell",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "barry",
+                    "name": "Barry",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Is this the bus for the sports centre? Yes, but it takes longer today because of roadworks."
+                    "speaker": "nell",
+                    "text": "Is this the bus for the sports centre?"
+                  },
+                  {
+                    "speaker": "barry",
+                    "text": "Yes, but it takes longer today because of roadworks."
                   }
                 ]
               },
@@ -893,11 +1033,12 @@
                 "id": "l4-8",
                 "prompt": "Why will the journey take longer?",
                 "options": [
-                  "There are road repairs.",
                   "The bus has broken down.",
+                  "There are road repairs.",
                   "The driver is taking another passenger."
                 ],
-                "answer": 0
+                "answer": 1,
+                "explanation": "Barry says it takes longer today because of roadworks, which are road repairs."
               }
             },
             {
@@ -905,18 +1046,34 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "ola",
+                    "name": "Ola",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "kurt",
+                    "name": "Kurt",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The market closes at four, so we should go now. I thought it stayed open until six. Not on Sundays."
+                    "speaker": "ola",
+                    "text": "The market closes at four, so we should go now."
+                  },
+                  {
+                    "speaker": "kurt",
+                    "text": "I thought it stayed open until six."
+                  },
+                  {
+                    "speaker": "ola",
+                    "text": "Not on Sundays."
                   }
                 ]
               },
@@ -925,10 +1082,11 @@
                 "prompt": "When must they visit the market?",
                 "options": [
                   "Before six today",
-                  "Before four today",
-                  "Tomorrow morning"
+                  "Tomorrow morning",
+                  "Before four today"
                 ],
-                "answer": 1
+                "answer": 2,
+                "explanation": "The market closes at four on Sundays, so they must go before four today."
               }
             },
             {
@@ -936,30 +1094,47 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Colleagues",
+                    "id": "glen",
+                    "name": "Glen",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "fay",
+                    "name": "Fay",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I sent the travel plan by email. I have not seen it. I will print a copy for you."
+                    "speaker": "glen",
+                    "text": "I sent you the travel plan by email."
+                  },
+                  {
+                    "speaker": "fay",
+                    "text": "I haven’t seen it."
+                  },
+                  {
+                    "speaker": "glen",
+                    "text": "Then I’ll print a copy for you."
                   }
                 ]
               },
               "question": {
                 "id": "l4-10",
-                "prompt": "What will the woman do?",
+                "prompt": "What will Glen do?",
                 "options": [
                   "Send another email",
                   "Print the plan",
                   "Change the journey"
                 ],
-                "answer": 1
+                "answer": 1,
+                "explanation": "When Fay says she has not seen the email, Glen says he will print a copy."
               }
             },
             {
@@ -967,18 +1142,34 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "vic",
+                    "name": "Vic",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "una",
+                    "name": "Una",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Let us walk to the cinema. It is only ten minutes away. But I am carrying these bags. We can take the bus."
+                    "speaker": "vic",
+                    "text": "Let’s walk to the cinema. It’s only ten minutes away."
+                  },
+                  {
+                    "speaker": "una",
+                    "text": "But I’m carrying these bags."
+                  },
+                  {
+                    "speaker": "vic",
+                    "text": "Then we can take the bus."
                   }
                 ]
               },
@@ -986,11 +1177,12 @@
                 "id": "l4-11",
                 "prompt": "How will they probably get there?",
                 "options": [
-                  "On foot",
                   "By bus",
+                  "On foot",
                   "By taxi"
                 ],
-                "answer": 1
+                "answer": 0,
+                "explanation": "Una is carrying bags, so Vic suggests taking the bus instead of walking."
               }
             },
             {
@@ -998,30 +1190,43 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Neighbours",
+                    "id": "mo",
+                    "name": "Mo",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "cora",
+                    "name": "Cora",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The light in the hall is still on. I will turn it off before we go out."
+                    "speaker": "mo",
+                    "text": "Don’t forget to switch off the hall light before we go out."
+                  },
+                  {
+                    "speaker": "cora",
+                    "text": "I’ll do it now."
                   }
                 ]
               },
               "question": {
                 "id": "l4-12",
-                "prompt": "What does the man remind his neighbour to do?",
+                "prompt": "What does the man remind his flatmate to do?",
                 "options": [
                   "Switch off a light",
                   "Close a window",
                   "Lock the garden gate"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Mo reminds Cora to switch off the hall light before they go out."
               }
             },
             {
@@ -1029,18 +1234,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "dan",
+                    "name": "Dan",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "rhea",
+                    "name": "Rhea",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Would you like tea? Yes, but no sugar, please. I am trying to eat less sweet food."
+                    "speaker": "dan",
+                    "text": "Would you like tea?"
+                  },
+                  {
+                    "speaker": "rhea",
+                    "text": "Yes, please, but no sugar. I’m trying to eat less sweet food."
                   }
                 ]
               },
@@ -1049,10 +1266,11 @@
                 "prompt": "What does the woman want in her tea?",
                 "options": [
                   "Sugar",
-                  "Milk only",
-                  "No sugar"
+                  "No sugar",
+                  "Milk only"
                 ],
-                "answer": 2
+                "answer": 1,
+                "explanation": "Rhea says “no sugar” because she is trying to eat less sweet food."
               }
             }
           ]
@@ -1066,18 +1284,18 @@
           "recording": {
             "speakers": [
               {
-                "id": "speaker-1",
-                "name": "Presenter",
+                "id": "gemma",
+                "name": "Gemma",
                 "voice": {
                   "lang": "en-GB",
-                  "rate": 0.9
+                  "gender": "female"
                 }
               }
             ],
             "turns": [
               {
-                "speaker": "speaker-1",
-                "text": "Hello, everyone. I am Priya, and I am organising our town clean-up day. We will meet at the library at nine o’clock on Saturday. Please wear old clothes because we will paint the wooden benches as well as collect litter. The council will provide bags and brushes. We will work in the park until one o’clock, then have lunch together. Bring a bottle of water, but sandwiches will be provided by the café. If you need to borrow gloves, tell me when you arrive."
+                "speaker": "gemma",
+                "text": "Hello, everyone. I am Gemma, and I am organising our town clean-up day. We will meet at the library at nine o’clock on Saturday. Please wear old clothes because we will paint the wooden benches as well as collect litter. The council will provide bags and brushes. We will work in the park until one o’clock, then have lunch together. Bring a bottle of water, but sandwiches will be provided by the café. If you need to borrow gloves, tell me when you arrive."
               }
             ]
           },
@@ -1085,27 +1303,32 @@
             {
               "id": "l4-14",
               "prompt": "Meeting place: the ___",
-              "answer": "library"
+              "answer": "library",
+              "explanation": "Gemma says they will meet at the library at nine on Saturday."
             },
             {
               "id": "l4-15",
               "prompt": "Day: ___",
-              "answer": "Saturday"
+              "answer": "Saturday",
+              "explanation": "The clean-up day is on Saturday."
             },
             {
               "id": "l4-16",
               "prompt": "Wear old ___",
-              "answer": "clothes"
+              "answer": "clothes",
+              "explanation": "She asks everyone to wear old clothes because they will paint."
             },
             {
               "id": "l4-17",
               "prompt": "Work includes painting ___",
-              "answer": "benches"
+              "answer": "benches",
+              "explanation": "They will paint the wooden benches as well as collect litter."
             },
             {
               "id": "l4-18",
               "prompt": "Bring a bottle of ___",
-              "answer": "water"
+              "answer": "water",
+              "explanation": "Volunteers should bring a bottle of water."
             },
             {
               "id": "l4-19",
@@ -1113,7 +1336,8 @@
               "answer": "café",
               "accepted": [
                 "cafe"
-              ]
+              ],
+              "explanation": "The sandwiches will be provided by the café."
             }
           ]
         },
@@ -1129,28 +1353,26 @@
                 "id": "interviewer",
                 "name": "Interviewer",
                 "voice": {
-                  "lang": "en-GB",
-                  "gender": "female",
-                  "rate": 0.9
+                  "lang": "en-US",
+                  "gender": "female"
                 }
               },
               {
-                "id": "guest",
-                "name": "Alex",
+                "id": "gareth",
+                "name": "Gareth",
                 "voice": {
                   "lang": "en-GB",
-                  "gender": "male",
-                  "rate": 0.9
+                  "gender": "male"
                 }
               }
             ],
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Alex, why did you become a town planner?"
+                "text": "Gareth, why did you become a town planner?"
               },
               {
-                "speaker": "guest",
+                "speaker": "gareth",
                 "text": "I studied geography at college. During a work placement, I helped improve a small square near a school. People used it more after we added seats and trees, and I wanted to do similar work."
               },
               {
@@ -1158,7 +1380,7 @@
                 "text": "What is your current project?"
               },
               {
-                "speaker": "guest",
+                "speaker": "gareth",
                 "text": "We are planning a safer route for people walking to the hospital. The main challenge is the busy morning traffic."
               },
               {
@@ -1166,7 +1388,7 @@
                 "text": "How do you know what local people need?"
               },
               {
-                "speaker": "guest",
+                "speaker": "gareth",
                 "text": "We organise meetings and ask residents to complete surveys. We also speak with shop owners because they understand how the area changes during the day."
               },
               {
@@ -1174,7 +1396,7 @@
                 "text": "What part of your work do you enjoy?"
               },
               {
-                "speaker": "guest",
+                "speaker": "gareth",
                 "text": "Seeing people use a place that we have improved. Even a small change can make a daily journey easier."
               },
               {
@@ -1182,7 +1404,7 @@
                 "text": "What advice would you give someone interested in this job?"
               },
               {
-                "speaker": "guest",
+                "speaker": "gareth",
                 "text": "Learn to listen carefully and explain your ideas clearly. Plans only work when people understand them."
               }
             ]
@@ -1192,11 +1414,12 @@
               "id": "l4-20-1",
               "prompt": "What first interested Alex in town planning?",
               "options": [
-                "Improving a square near a school",
+                "Working for a local shop",
                 "Building a new hospital",
-                "Working for a local shop"
+                "Improving a square near a school"
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "Gareth helped improve a small square near a school during a work placement."
             },
             {
               "id": "l4-20-2",
@@ -1206,47 +1429,52 @@
                 "A safer hospital route",
                 "A new school building"
               ],
-              "answer": 1
+              "answer": 1,
+              "explanation": "He is planning a safer route for people walking to the hospital."
             },
             {
               "id": "l4-20-3",
               "prompt": "What is the main difficulty with this project?",
               "options": [
-                "The morning traffic is heavy.",
+                "The road is too far away.",
                 "Residents do not use the hospital.",
-                "The road is too far away."
+                "The morning traffic is heavy."
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "He says the main challenge is the busy morning traffic."
             },
             {
               "id": "l4-20-4",
               "prompt": "Why does Alex talk to shop owners?",
               "options": [
-                "They can help choose trees.",
                 "They know how the area changes.",
+                "They can help choose trees.",
                 "They organise residents’ meetings."
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "Shop owners understand how the area changes during the day."
             },
             {
               "id": "l4-20-5",
               "prompt": "What does Alex enjoy most?",
               "options": [
-                "Presenting maps",
                 "Seeing people use improved places",
+                "Presenting maps",
                 "Finishing projects quickly"
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "He enjoys seeing people use a place that has been improved."
             },
             {
               "id": "l4-20-6",
               "prompt": "What advice does Alex give?",
               "options": [
-                "Listen and explain ideas clearly.",
+                "Avoid asking residents questions.",
                 "Study business instead.",
-                "Avoid asking residents questions."
+                "Listen and explain ideas clearly."
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "He advises learning to listen carefully and explain ideas clearly."
             }
           ]
         }
@@ -1292,19 +1520,28 @@
             {
               "id": "s4-2-garden",
               "title": "A community garden",
-              "alt": "A group of neighbours planting seeds together in an outdoor garden.",
-              "illustration": "garden",
+              "alt": "Colourful flower beds in the foreground and a group of volunteers working in a community garden next to a small building with a porch.",
               "image": {
-                "id": "s4-2-garden-photo",
-                "src": "https://images.unsplash.com/photo-1673252849129-d0acf9452c29?auto=format&fit=crop&w=1400&q=82",
-                "alt": "A group of neighbours planting seeds together in an outdoor garden.",
+                "id": "s4-2-garden",
+                "src": "assets/images/exams/cambridge-pet-04/s4-2-garden-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-04/s4-2-garden-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "Colourful flower beds in the foreground and a group of volunteers working in a community garden next to a small building with a porch.",
                 "credit": {
-                  "author": "Ridwan Abdurrohman",
-                  "license": "Unsplash License",
-                  "licenseUrl": "https://unsplash.com/license",
-                  "sourceUrl": "https://unsplash.com/photos/a-group-of-people-working-in-a-garden-jYJBC_S_Cps"
+                  "author": "Oceanflynn",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parkdale_Community_garden_volunteer_day.JPG"
                 }
-              }
+              },
+              "describeHints": [
+                "flower beds in many colours",
+                "volunteers working together",
+                "the buildings behind",
+                "the season",
+                "what they might be doing"
+              ]
             }
           ]
         },
@@ -1319,26 +1556,106 @@
             {
               "id": "s4-3-bus",
               "title": "More buses",
-              "alt": "Passengers waiting beside a local bus.",
-              "illustration": "train"
+              "alt": "A line of people in warm coats wait at a bus stop beside a wide pavement on a misty morning.",
+              "image": {
+                "id": "s4-3-bus",
+                "src": "assets/images/exams/cambridge-pet-04/s4-3-bus-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-04/s4-3-bus-600.webp",
+                "width": 1200,
+                "height": 676,
+                "alt": "A line of people in warm coats wait at a bus stop beside a wide pavement on a misty morning.",
+                "credit": {
+                  "author": "Anne Pietarinen",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:%27Herttoniemi_M_lait._18%27_bus_stop_by_It%C3%A4v%C3%A4yl%C3%A4_in_L%C3%A4nsi-Herttoniemi,_Helsinki,_Finland,_2024_April.jpg"
+                }
+              },
+              "describeHints": [
+                "people queuing at a bus stop",
+                "their warm clothes",
+                "the misty weather",
+                "the pavement and the street",
+                "why they use the bus"
+              ]
             },
             {
               "id": "s4-3-cycle",
               "title": "Cycle lanes",
-              "alt": "People cycling safely along a marked lane.",
-              "illustration": "cycling"
+              "alt": "Cyclists ride along a marked cycle lane on a bridge, with city buildings and a bus in the distance under a blue sky.",
+              "image": {
+                "id": "s4-3-cycle",
+                "src": "assets/images/exams/cambridge-pet-04/s4-3-cycle-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-04/s4-3-cycle-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "Cyclists ride along a marked cycle lane on a bridge, with city buildings and a bus in the distance under a blue sky.",
+                "credit": {
+                  "author": "Stephen Craven",
+                  "license": "CC BY-SA 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyclists_on_Waterloo_Bridge_-_geograph.org.uk_-_7222804.jpg"
+                }
+              },
+              "describeHints": [
+                "cyclists on a bridge",
+                "the marked lane",
+                "the buses and cars",
+                "the city skyline",
+                "why cycling is useful"
+              ]
             },
             {
               "id": "s4-3-walk",
               "title": "Walking routes",
-              "alt": "Neighbours walking along a green path.",
-              "illustration": "park"
+              "alt": "A person in a blue top walks along a narrow path through tall green grass and bushes towards a line of trees.",
+              "image": {
+                "id": "s4-3-walk",
+                "src": "assets/images/exams/cambridge-pet-04/s4-3-walk-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-04/s4-3-walk-600.webp",
+                "width": 1200,
+                "height": 799,
+                "alt": "A person in a blue top walks along a narrow path through tall green grass and bushes towards a line of trees.",
+                "credit": {
+                  "author": "Johan Neven",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiking_in_Green_-_Flickr_-_enneafive.jpg"
+                }
+              },
+              "describeHints": [
+                "a person walking alone",
+                "the narrow path",
+                "the tall green plants",
+                "the weather",
+                "how walking helps people"
+              ]
             },
             {
               "id": "s4-3-trees",
               "title": "More trees",
-              "alt": "People planting young trees in a city park.",
-              "illustration": "garden"
+              "alt": "Four volunteers bend over and plant young trees in a green field. A line of tall bare trees is behind them.",
+              "image": {
+                "id": "s4-3-trees",
+                "src": "assets/images/exams/cambridge-pet-04/s4-3-trees-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-04/s4-3-trees-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "Four volunteers bend over and plant young trees in a green field. A line of tall bare trees is behind them.",
+                "credit": {
+                  "author": "U.S. Fish and Wildlife Service, National Conservation Training Center",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Volunteers_Planting_Trees_on_the_Ankeny_National_Wildlife_Refuge_-_DPLA_-_34d3d852428a6bd0c316855d00d1d8ea.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volunteers_Planting_Trees_on_the_Ankeny_National_Wildlife_Refuge_-_DPLA_-_34d3d852428a6bd0c316855d00d1d8ea.jpg"
+                }
+              },
+              "describeHints": [
+                "volunteers planting trees",
+                "the spades and young trees",
+                "the field and the tall trees",
+                "the season",
+                "why trees matter"
+              ]
             }
           ]
         },

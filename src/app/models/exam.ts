@@ -36,8 +36,12 @@ export interface ImageCredit {
 /** A picture stored in the repository (or, for legacy items, a remote URL) with licence details. */
 export interface ImageAsset {
   id: string;
-  /** Local path under `assets/` (for example `assets/images/b1/cafe.jpg`). */
+  /** Local WebP, 1200 px wide, under `assets/images/exams/<examId>/` (relative to the site root). */
   src: string;
+  /** Local WebP, 600 px wide, used in `srcset` for small screens. */
+  srcSmall?: string;
+  width?: number;
+  height?: number;
   alt: string;
   credit: ImageCredit;
 }
@@ -56,6 +60,8 @@ export interface GapItem {
   id: string;
   answer: string;
   accepted?: string[];
+  /** Why this is the answer, shown after marking (required by validate:exams). */
+  explanation?: string;
 }
 
 /** A gap with a visible prompt, for note/sentence completion. */
@@ -343,6 +349,8 @@ export interface SpeakingVisual {
   illustration?: string;
   /** A licensed photograph. */
   image?: ImageAsset;
+  /** 3-5 things a learner can describe in the picture (people, place, activity...). */
+  describeHints?: string[];
 }
 
 /** Personal questions on familiar topics. */

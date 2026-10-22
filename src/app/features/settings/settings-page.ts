@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { SettingsService } from '../../core/settings.service';
 import { SpeechService } from '../../core/speech.service';
 import type { Settings } from '../../models/storage';
@@ -24,7 +25,7 @@ const LANGUAGES: SegmentOption[] = [
 /** `/settings`: appearance, listening, speaking, exam options and the learner's saved data. */
 @Component({
   selector: 'app-settings-page',
-  imports: [Button, Card, Dialog, Icon, SegmentedControl],
+  imports: [RouterLink, Button, Card, Dialog, Icon, SegmentedControl],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="container page">
@@ -283,6 +284,13 @@ const LANGUAGES: SegmentOption[] = [
               Delete everything
             </button>
           </div>
+        </app-card>
+        <app-card>
+          <h2>About</h2>
+          <p>
+            Pictures come from Wikimedia Commons under open licences.
+            <a routerLink="/credits">See the image credits</a>.
+          </p>
         </app-card>
       </div>
     </div>

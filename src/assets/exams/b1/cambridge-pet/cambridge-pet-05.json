@@ -31,10 +31,11 @@
               "prompt": "What should coach passengers do?",
               "options": [
                 "Buy a ticket on the bus.",
-                "Show a ticket on their phone.",
-                "Arrive before Friday."
+                "Arrive before Friday.",
+                "Show a ticket on their phone."
               ],
-              "answer": 1
+              "answer": 2,
+              "explanation": "The notice says to show the driver your ticket on your phone."
             },
             {
               "id": "r5-1-2",
@@ -44,114 +45,118 @@
                 "Eat breakfast before 7:30.",
                 "Clean their room."
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "Guests must leave their key at reception when they check out, which means they return it."
             },
             {
               "id": "r5-1-3",
               "prompt": "What should Lucy’s friend expect?",
               "options": [
                 "Lucy will arrive by train.",
-                "Lucy will meet them at the harbour.",
-                "Lucy will arrive at noon."
+                "Lucy will arrive at noon.",
+                "Lucy will meet them at the harbour."
               ],
-              "answer": 2
+              "answer": 1,
+              "explanation": "Lucy will take the coach and asks to meet outside the station at noon, so she will arrive around noon."
             },
             {
               "id": "r5-1-4",
               "prompt": "What can visitors do on Monday?",
               "options": [
                 "See the photography exhibition.",
-                "Visit other parts of the museum.",
-                "Join a guided bike tour."
+                "Join a guided bike tour.",
+                "Visit other parts of the museum."
               ],
-              "answer": 1
+              "answer": 2,
+              "explanation": "Only the photography exhibition is closed on Mondays; the rest of the museum opens as usual."
             },
             {
               "id": "r5-1-5",
               "prompt": "What is included in the bike tour?",
               "options": [
-                "A meal by the harbour.",
                 "A helmet and bicycle.",
+                "A meal by the harbour.",
                 "A train ticket."
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "Helmets and bikes are included in the price of the tour."
             }
           ]
         },
         {
           "id": "reading-2",
           "number": 2,
-          "title": "People and local activities",
+          "title": "Plan a weekend away",
           "instructions": "Read what each person is looking for. Match each person to the best activity. There are three extra activities.",
           "type": "matching",
           "people": [
             {
               "id": "p1",
-              "text": "Mia wants to learn to repair her bicycle. She can only come on Wednesday evenings."
+              "text": "Anouk has never been on a boat and would like to try something on the water on Saturday morning."
             },
             {
               "id": "p2",
-              "text": "Ben would like to help local wildlife and prefers being outdoors."
+              "text": "Bruno loves old streets and castles and wants a guided tour so that he can hear stories about the town."
             },
             {
               "id": "p3",
-              "text": "Rosa wants to learn about saving energy at home at the weekend."
+              "text": "Cleo is travelling with two young children and needs a free activity for a rainy day."
             },
             {
               "id": "p4",
-              "text": "Arun enjoys taking photographs and wants to explore the town on foot."
+              "text": "Dmitri enjoys good food and wants to taste dishes made with local ingredients."
             },
             {
               "id": "p5",
-              "text": "Ellie wants to meet people while travelling to work by bus."
+              "text": "Esme is very active and wants a long walk with great views of the coast."
             }
           ],
           "texts": [
             {
               "id": "A",
-              "title": "Bike repair basics",
-              "text": "Bring your bicycle to our workshop every Wednesday at 6 p.m. Learn to fix a puncture and check your brakes."
+              "title": "Old town walking tour",
+              "text": "Follow a local guide through narrow streets and hear stories about the castle, the harbour and the market. Tours leave daily at 11 a.m. and last 90 minutes."
             },
             {
               "id": "B",
-              "title": "River wildlife group",
-              "text": "Join us on Saturday mornings to count birds and clean the path beside the river. Gloves are provided."
+              "title": "Family library morning",
+              "text": "Rainy day? Come to the town library for free story time, drawing and games for children under ten. Open all weekend."
             },
             {
               "id": "C",
-              "title": "Warm homes workshop",
-              "text": "This Sunday, find out how insulation and simple daily habits can reduce the energy you use."
+              "title": "Beginner kayaking",
+              "text": "Never paddled before? Our friendly instructors will teach you the basics on the calm bay. Saturday and Sunday mornings, equipment included."
             },
             {
               "id": "D",
-              "title": "Photo walk",
-              "text": "Explore historic streets with a local photographer on Saturday afternoon. Bring a camera or phone."
+              "title": "Pottery workshop",
+              "text": "Make your own cup or plate in a two-hour class. Choose your colours and we will post your work to you after it has been fired."
             },
             {
               "id": "E",
-              "title": "Bus book club",
-              "text": "Read a short story on your journey, then meet other passengers for a friendly chat every month."
+              "title": "Harbour food market",
+              "text": "Taste cheese, fish and bread from nearby farms and boats. You can watch cooks prepare dishes and try them before you buy. Saturdays only."
             },
             {
               "id": "F",
-              "title": "Community choir",
-              "text": "Sing popular songs with a relaxed group on Monday evenings. You do not need experience."
+              "title": "Stars from the hill",
+              "text": "Join our astronomer on the hilltop to look at the stars. The evening starts at 10 p.m. on clear nights."
             },
             {
               "id": "G",
-              "title": "Kayaking lessons",
-              "text": "Learn to paddle safely on the lake during our three-day summer course."
+              "title": "Cliff path walk",
+              "text": "Walk twelve kilometres along the high cliffs and enjoy views of the whole coast. Wear strong shoes; there are no cafés on the way."
             },
             {
               "id": "H",
-              "title": "Weekend cooking",
-              "text": "Prepare quick meals using vegetables grown nearby. The class takes place on Friday evenings."
+              "title": "Lighthouse museum",
+              "text": "Learn how sailors used the lighthouse and climb to the top. Open 10 a.m. to 4 p.m., but closed on Mondays."
             }
           ],
           "questions": [
             {
               "id": "r5-2-1",
-              "prompt": "Mia",
+              "prompt": "Anouk",
               "options": [
                 "A",
                 "B",
@@ -162,11 +167,12 @@
                 "G",
                 "H"
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "Anouk wants to try something on the water; text C teaches beginners to paddle on the bay on Saturday morning."
             },
             {
               "id": "r5-2-2",
-              "prompt": "Ben",
+              "prompt": "Bruno",
               "options": [
                 "A",
                 "B",
@@ -177,11 +183,12 @@
                 "G",
                 "H"
               ],
-              "answer": 1
+              "answer": 0,
+              "explanation": "Bruno wants a guided tour with stories about old streets and castles; text A is a guided walk through the old town."
             },
             {
               "id": "r5-2-3",
-              "prompt": "Rosa",
+              "prompt": "Cleo",
               "options": [
                 "A",
                 "B",
@@ -192,11 +199,12 @@
                 "G",
                 "H"
               ],
-              "answer": 2
+              "answer": 1,
+              "explanation": "Cleo needs a free rainy-day activity for young children; text B is free story time and games at the library."
             },
             {
               "id": "r5-2-4",
-              "prompt": "Arun",
+              "prompt": "Dmitri",
               "options": [
                 "A",
                 "B",
@@ -207,11 +215,12 @@
                 "G",
                 "H"
               ],
-              "answer": 3
+              "answer": 4,
+              "explanation": "Dmitri wants to taste dishes made with local ingredients; text E is a market where you can try local food."
             },
             {
               "id": "r5-2-5",
-              "prompt": "Ellie",
+              "prompt": "Esme",
               "options": [
                 "A",
                 "B",
@@ -222,14 +231,15 @@
                 "G",
                 "H"
               ],
-              "answer": 4
+              "answer": 6,
+              "explanation": "Esme is active and wants a long walk with coastal views; text G is a twelve-kilometre cliff walk."
             }
           ]
         },
         {
           "id": "reading-3",
           "number": 3,
-          "title": "A repair café in town",
+          "title": "A weekend by the sea",
           "instructions": "Read the article and choose the best answer for each question.",
           "type": "multiple-choice",
           "passage": "Last summer, my cousin invited me to spend a weekend in a small seaside town. We travelled by coach because it was cheaper than the train, although the journey took longer. When we arrived, the weather was cloudy, so we visited the local museum first. I expected it to be rather boring, but a guide showed us old photographs of the harbour and explained how the fishing boats had changed over time.\n\nThe next morning was sunny. We hired bicycles and followed a path along the coast. The route was mostly flat, but we stopped several times to take photographs. At lunchtime, we bought sandwiches from a small shop and ate them on the beach. It was busy, but we found a quiet place near the rocks.\n\nOn Sunday, we planned to take a boat trip. Unfortunately, the sea was too rough, so the trip was cancelled. The owner gave everyone a refund and suggested a walk to a lighthouse instead. I was disappointed at first, but the view from the top was wonderful. I would happily return, especially if I could stay for a few more days.",
@@ -238,21 +248,23 @@
               "id": "r5-3-1",
               "prompt": "Why did the writer travel by coach?",
               "options": [
-                "It was less expensive.",
                 "It was faster.",
+                "It was less expensive.",
                 "It stopped at the museum."
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "The coach was cheaper than the train, so it was less expensive."
             },
             {
               "id": "r5-3-2",
               "prompt": "What surprised the writer at the museum?",
               "options": [
-                "How interesting the guide was.",
                 "How many boats were outside.",
+                "How interesting it was.",
                 "How new the photographs were."
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "She expected the museum to be boring, but the guide showed interesting old photographs, so she was surprised how interesting it was."
             },
             {
               "id": "r5-3-3",
@@ -262,75 +274,83 @@
                 "They bought bicycles.",
                 "They swam in the sea."
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "They stopped several times to take photographs along the coast path."
             },
             {
               "id": "r5-3-4",
               "prompt": "Why was the boat trip cancelled?",
               "options": [
-                "The weather at sea was unsafe.",
+                "The lighthouse was closed.",
                 "The owner had no passengers.",
-                "The lighthouse was closed."
+                "The weather at sea was unsafe."
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "The sea was too rough, so the weather at sea was unsafe."
             },
             {
               "id": "r5-3-5",
               "prompt": "What does the writer say about the weekend?",
               "options": [
-                "They would like a longer visit.",
                 "They did not enjoy the town.",
+                "They would like a longer visit.",
                 "They want to travel by train next time."
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "She says she would happily return and stay for a few more days, so she would like a longer visit."
             }
           ]
         },
         {
           "id": "reading-4",
           "number": 4,
-          "title": "A new cycle route",
+          "title": "The coastal path",
           "instructions": "Five sentences have been removed from the text. Choose the correct sentence for each gap. There is one extra sentence.",
           "type": "gapped-text",
-          "passage": "The coastal path is popular with visitors and local people. [1] It begins near the old harbour and continues past a small museum. [2] The town has added signs so walkers can find the route easily. There are benches at several points, and most of the path is flat. [3] Some families bring a picnic and stop beside the beach. The final section goes uphill towards a lighthouse. [4] On clear days, you can see several islands from the top. The council hopes to extend the path next year. [5]",
+          "passage": "The coastal path is popular with visitors and local people. [1] It begins near the old harbour and continues past a small museum. [2] The town has added signs so walkers can find the route easily, and volunteers clean the path every month. There are benches at several points, and most of the path is flat. [3] Some families bring a picnic and stop beside the beach. The final section goes uphill towards a lighthouse. [4] On clear days, you can see several islands from the top. The council hopes to extend the path next year. [5]",
           "sentences": [
-            "The guide recommended visiting it before the weekend.",
-            "It was the first time I had seen the harbour from the water.",
-            "They wanted to make the route safer for families.",
-            "A local group had cleaned the path the previous year.",
-            "The view was worth the climb.",
+            "It is steep in places, but the climb is worth it.",
+            "It is about eight kilometres long and takes most people three hours.",
+            "More walkers would then be able to reach the next village on foot.",
+            "Many walkers stop there to look at old photographs of the harbour.",
+            "This makes it a good walk for families with young children.",
             "We decided to stay indoors all afternoon."
           ],
           "gaps": [
             {
               "id": "r5-4-1",
-              "answer": "A"
+              "answer": "B",
+              "explanation": "“It is about eight kilometres long” gives the first facts about the path and leads to “It begins near the old harbour”."
             },
             {
               "id": "r5-4-2",
-              "answer": "B"
+              "answer": "D",
+              "explanation": "“Many walkers stop there to look at old photographs” follows “a small museum” (“there”) and leads to the signs."
             },
             {
               "id": "r5-4-3",
-              "answer": "C"
+              "answer": "E",
+              "explanation": "“This makes it a good walk for families” follows “most of the path is flat” and leads to families bringing a picnic."
             },
             {
               "id": "r5-4-4",
-              "answer": "D"
+              "answer": "A",
+              "explanation": "“It is steep in places, but the climb is worth it” follows the uphill section and leads to the view from the top."
             },
             {
               "id": "r5-4-5",
-              "answer": "E"
+              "answer": "C",
+              "explanation": "“More walkers would then be able to reach the next village” follows the hope to extend the path."
             }
           ]
         },
         {
           "id": "reading-5",
           "number": 5,
-          "title": "Getting around without a car",
+          "title": "A day trip by train",
           "instructions": "Choose the correct word or phrase for each gap.",
           "type": "multiple-choice-cloze",
-          "passage": "Many families [1] a day trip by train during the school holidays. It is useful to [2] the timetable before leaving home. Some tickets are [3] expensive if you book early. The station is [4] the town centre, so visitors can walk to the shops. If it rains, you can [5] the local museum. Remember to [6] a bottle of water for the journey.",
+          "passage": "Many families [1] a day trip by train during the school holidays. It is useful to [2] the timetable before leaving home. Some tickets are [3] expensive if you book early. The station is [4] the town centre, so visitors can walk to the shops. If it rains, you can [5] the local museum. Children usually enjoy the journey as much as the destination. Remember to [6] a bottle of water for the journey.",
           "questions": [
             {
               "id": "r5-5-1",
@@ -338,43 +358,47 @@
               "options": [
                 "take",
                 "do",
-                "make",
+                "spend",
                 "get"
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "We take a day trip; do, spend and get do not fit this phrase."
             },
             {
               "id": "r5-5-2",
               "prompt": "Gap 2",
               "options": [
-                "check",
-                "look",
                 "watch",
-                "see"
+                "look",
+                "check",
+                "ask"
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "You check a timetable before leaving home."
             },
             {
               "id": "r5-5-3",
               "prompt": "Gap 3",
               "options": [
-                "less",
+                "least",
                 "fewer",
                 "little",
-                "least"
+                "less"
               ],
-              "answer": 0
+              "answer": 3,
+              "explanation": "“Less expensive” compares the price; fewer, little and least do not fit before “expensive”."
             },
             {
               "id": "r5-5-4",
               "prompt": "Gap 4",
               "options": [
-                "near",
                 "between",
+                "near",
                 "through",
                 "across"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "“Near the town centre” shows where the station is."
             },
             {
               "id": "r5-5-5",
@@ -383,54 +407,72 @@
                 "visit",
                 "travel",
                 "arrive",
-                "reach"
+                "join"
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "You visit a museum; the other verbs do not take “the local museum” in this sense."
             },
             {
               "id": "r5-5-6",
               "prompt": "Gap 6",
               "options": [
-                "bring",
                 "carry on",
+                "bring",
                 "put",
                 "take off"
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "You bring a bottle of water with you; the other options are not used with “a bottle of water”."
             }
           ]
         },
         {
           "id": "reading-6",
           "number": 6,
-          "title": "A shared garden",
+          "title": "A day at the coast",
           "instructions": "Complete the text with one word in each gap.",
           "type": "open-cloze",
-          "passage": "We arrived [1] the coast before lunchtime. The weather was warmer [2] we had expected, so we left our coats in the car. My sister wanted to swim, [3] the water was too cold. We walked [4] the harbour and watched the boats. Later, we found a café [5] served fresh sandwiches. It was a day [6] we will remember.",
+          "passage": "We arrived [1] the coast before lunchtime. The weather was warmer [2] we had expected, so we left our coats in the car. My sister wanted to swim, [3] the water was too cold. We spent an hour looking [4] the boats in the harbour. After lunch we walked along the beach and collected shells. Later, we found a café [5] served fresh sandwiches. It was a day [6] we will remember for a long time.",
           "gaps": [
             {
               "id": "r5-6-1",
-              "answer": "at"
+              "answer": "at",
+              "explanation": "We say “arrive at” a place such as the coast."
             },
             {
               "id": "r5-6-2",
-              "answer": "than"
+              "answer": "than",
+              "explanation": "“Warmer than we had expected” is a comparison."
             },
             {
               "id": "r5-6-3",
-              "answer": "but"
+              "answer": "but",
+              "explanation": "“But” shows the contrast between wanting to swim and the cold water."
             },
             {
               "id": "r5-6-4",
-              "answer": "around"
+              "answer": "at",
+              "accepted": [
+                "around",
+                "round"
+              ],
+              "explanation": "“Looking at the boats” means watching them."
             },
             {
               "id": "r5-6-5",
-              "answer": "that"
+              "answer": "that",
+              "accepted": [
+                "which"
+              ],
+              "explanation": "“That” refers to the café and begins the clause “that served fresh sandwiches”."
             },
             {
               "id": "r5-6-6",
-              "answer": "which"
+              "answer": "which",
+              "accepted": [
+                "that"
+              ],
+              "explanation": "“Which” (or “that”) refers to the day and begins the clause about remembering it."
             }
           ]
         }
@@ -449,9 +491,9 @@
           "task": {
             "kind": "email",
             "title": "Write an email",
-            "prompt": "You have received an email from your English-speaking friend Alex. Write an email to Alex and answer the questions.",
+            "prompt": "You have received an email from your English-speaking friend Robin. Write an email to Robin and answer the questions.",
             "sourceEmail": {
-              "from": "Alex",
+              "from": "Robin",
               "subject": "A weekend trip",
               "body": "I am planning a weekend trip with my family. Where do you like going for a short break? What should we take with us? Would you prefer to travel by train or coach? Why?"
             },
@@ -663,18 +705,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Traveller",
+                    "id": "nathan",
+                    "name": "Nathan",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "olivia",
+                    "name": "Olivia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I thought the museum closed at five, but the sign says six. We have time to see the last room."
+                    "speaker": "nathan",
+                    "text": "I thought the museum closed at five, but the sign says six."
+                  },
+                  {
+                    "speaker": "olivia",
+                    "text": "Good. We have time to see the last room."
                   }
                 ]
               },
@@ -682,11 +736,12 @@
                 "id": "l5-1-1",
                 "prompt": "What does the traveller learn?",
                 "options": [
-                  "The museum closes later than expected.",
+                  "The museum is closed today.",
                   "The last room is not open.",
-                  "The museum is closed today."
+                  "The museum closes later than expected."
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "The sign says six, not five, so the museum closes later than expected."
               }
             },
             {
@@ -694,18 +749,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "rafael",
+                    "name": "Rafael",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "elsa",
+                    "name": "Elsa",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I booked the table for seven. Could we make it half past? The train gets in at six forty."
+                    "speaker": "rafael",
+                    "text": "I booked the table for seven. Could we make it half past?"
+                  },
+                  {
+                    "speaker": "elsa",
+                    "text": "Sure. My train gets in at six forty."
                   }
                 ]
               },
@@ -713,11 +780,12 @@
                 "id": "l5-1-2",
                 "prompt": "What time will they probably meet?",
                 "options": [
-                  "Seven o’clock.",
                   "Half past seven.",
+                  "Seven o’clock.",
                   "Six forty."
                 ],
-                "answer": 1
+                "answer": 0,
+                "explanation": "Rafael asks to make the table half past seven and Elsa agrees, because her train arrives at six forty."
               }
             },
             {
@@ -725,19 +793,34 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Woman",
+                    "id": "ivan",
+                    "name": "Ivan",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "cathy",
+                    "name": "Cathy",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "female",
-                      "rate": 0.9
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The beach is beautiful, but I forgot my towel. We can buy one in the shop near the car park."
+                    "speaker": "ivan",
+                    "text": "The beach is beautiful. Shall we swim?"
+                  },
+                  {
+                    "speaker": "cathy",
+                    "text": "I’d love to, but I forgot my towel."
+                  },
+                  {
+                    "speaker": "ivan",
+                    "text": "We can buy one in the shop near the car park."
                   }
                 ]
               },
@@ -745,11 +828,12 @@
                 "id": "l5-1-3",
                 "prompt": "What has the woman forgotten?",
                 "options": [
-                  "A towel.",
+                  "The car keys.",
                   "Her camera.",
-                  "The car keys."
+                  "A towel."
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "Cathy says she forgot her towel."
               }
             },
             {
@@ -757,19 +841,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Man",
+                    "id": "bridget",
+                    "name": "Bridget",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "jamal",
+                    "name": "Jamal",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "male",
-                      "rate": 0.9
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I usually go walking on Sundays, but this week I am taking my niece to the aquarium."
+                    "speaker": "bridget",
+                    "text": "Do you still go walking on Sundays?"
+                  },
+                  {
+                    "speaker": "jamal",
+                    "text": "I usually do, but this week I’m taking my niece to the aquarium."
                   }
                 ]
               },
@@ -781,7 +876,8 @@
                   "Visiting an aquarium.",
                   "Taking a train trip."
                 ],
-                "answer": 1
+                "answer": 1,
+                "explanation": "Jamal says he is taking his niece to the aquarium this week."
               }
             },
             {
@@ -789,18 +885,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Shop assistant",
+                    "id": "walt",
+                    "name": "Walt",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "sara",
+                    "name": "Sara",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The blue backpack has more pockets. The red one is lighter, though. I will take the red one for the trip."
+                    "speaker": "walt",
+                    "text": "The blue backpack has more pockets. The red one is lighter, though."
+                  },
+                  {
+                    "speaker": "sara",
+                    "text": "I’ll take the red one for the trip."
                   }
                 ]
               },
@@ -808,11 +916,12 @@
                 "id": "l5-1-5",
                 "prompt": "Which backpack does the customer choose?",
                 "options": [
-                  "The blue one.",
                   "The red one.",
+                  "The blue one.",
                   "Neither backpack."
                 ],
-                "answer": 1
+                "answer": 0,
+                "explanation": "Sara says she will take the red backpack, which is lighter."
               }
             },
             {
@@ -820,18 +929,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "lucas",
+                    "name": "Lucas",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "kim",
+                    "name": "Kim",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The boat leaves from the harbour at ten. We should get there by quarter to, just in case."
+                    "speaker": "lucas",
+                    "text": "The boat leaves from the harbour at ten."
+                  },
+                  {
+                    "speaker": "kim",
+                    "text": "Then we should get there by quarter to, just in case."
                   }
                 ]
               },
@@ -843,7 +964,8 @@
                   "At quarter past ten.",
                   "At quarter to ten."
                 ],
-                "answer": 2
+                "answer": 2,
+                "explanation": "Kim suggests getting there by quarter to ten, just in case."
               }
             },
             {
@@ -851,19 +973,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Woman",
+                    "id": "hugh",
+                    "name": "Hugh",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "female",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "dora",
+                    "name": "Dora",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The walk was longer than I expected, but the view from the hill made it worthwhile."
+                    "speaker": "hugh",
+                    "text": "Was the walk very long?"
+                  },
+                  {
+                    "speaker": "dora",
+                    "text": "Longer than I expected, but the view from the hill made it worthwhile."
                   }
                 ]
               },
@@ -871,11 +1004,12 @@
                 "id": "l5-1-7",
                 "prompt": "What did the woman enjoy?",
                 "options": [
-                  "The view.",
                   "The short distance.",
+                  "The view.",
                   "The weather."
                 ],
-                "answer": 0
+                "answer": 1,
+                "explanation": "Dora says the view from the hill made the long walk worthwhile."
               }
             }
           ]
@@ -892,18 +1026,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "theo",
+                    "name": "Theo",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "gabi",
+                    "name": "Gabi",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Shall we take the early train? It is cheaper, but we would have to get up before six."
+                    "speaker": "theo",
+                    "text": "Shall we take the early train? It’s cheaper."
+                  },
+                  {
+                    "speaker": "gabi",
+                    "text": "True, but we’d have to get up before six."
                   }
                 ]
               },
@@ -915,7 +1061,8 @@
                   "It is more comfortable.",
                   "It arrives after lunch."
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Theo says the early train is cheaper, so it costs less."
               }
             },
             {
@@ -923,18 +1070,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "pia",
+                    "name": "Pia",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "max",
+                    "name": "Max",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I wanted to sit outside, but all the tables are wet. Let us find a place inside."
+                    "speaker": "pia",
+                    "text": "I wanted to sit outside, but all the tables are wet."
+                  },
+                  {
+                    "speaker": "max",
+                    "text": "Let’s find a place inside."
                   }
                 ]
               },
@@ -946,7 +1105,8 @@
                   "Inside.",
                   "At home."
                 ],
-                "answer": 1
+                "answer": 1,
+                "explanation": "The tables outside are wet, so Max suggests finding a place inside."
               }
             },
             {
@@ -954,18 +1114,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Customer",
+                    "id": "fern",
+                    "name": "Fern",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "oli",
+                    "name": "Oli",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "Does the walking tour start here? It does, but you need to collect a map from reception first."
+                    "speaker": "fern",
+                    "text": "Does the walking tour start here?"
+                  },
+                  {
+                    "speaker": "oli",
+                    "text": "It does, but you need to collect a map from reception first."
                   }
                 ]
               },
@@ -973,11 +1145,12 @@
                 "id": "l5-2-3",
                 "prompt": "What must the customer do before the tour?",
                 "options": [
-                  "Get a map.",
+                  "Wait for the guide outside.",
                   "Buy a ticket on the bus.",
-                  "Wait for the guide outside."
+                  "Get a map."
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "Oli says Fern needs to collect a map from reception first."
               }
             },
             {
@@ -985,18 +1158,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "isabel",
+                    "name": "Isabel",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "joss",
+                    "name": "Joss",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "The lighthouse is a long way from here. We could rent bicycles, or take the local bus."
+                    "speaker": "isabel",
+                    "text": "The lighthouse is a long way from here."
+                  },
+                  {
+                    "speaker": "joss",
+                    "text": "We could rent bicycles, or take the local bus."
                   }
                 ]
               },
@@ -1008,7 +1193,8 @@
                   "By boat only.",
                   "On foot only."
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Joss suggests renting bicycles or taking the local bus."
               }
             },
             {
@@ -1016,19 +1202,30 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Man",
+                    "id": "tess",
+                    "name": "Tess",
                     "voice": {
                       "lang": "en-GB",
-                      "gender": "male",
-                      "rate": 0.9
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "abe",
+                    "name": "Abe",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I did not enjoy the hotel breakfast. It was fine, but there were not many choices."
+                    "speaker": "tess",
+                    "text": "How was the hotel breakfast?"
+                  },
+                  {
+                    "speaker": "abe",
+                    "text": "Fine, but there weren’t many choices."
                   }
                 ]
               },
@@ -1036,11 +1233,12 @@
                 "id": "l5-2-5",
                 "prompt": "What did the man think about breakfast?",
                 "options": [
-                  "There was a lot to choose from.",
                   "It was acceptable but limited.",
+                  "There was a lot to choose from.",
                   "It was excellent."
                 ],
-                "answer": 1
+                "answer": 0,
+                "explanation": "Abe says it was fine but there were not many choices, so it was acceptable but limited."
               }
             },
             {
@@ -1048,18 +1246,34 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "speaker-1",
-                    "name": "Friends",
+                    "id": "karl",
+                    "name": "Karl",
                     "voice": {
                       "lang": "en-GB",
-                      "rate": 0.9
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "noor",
+                    "name": "Noor",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
                     }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "speaker-1",
-                    "text": "I have the tickets on my phone. Great. I will keep the address in case we need it."
+                    "speaker": "karl",
+                    "text": "Have you got the tickets?"
+                  },
+                  {
+                    "speaker": "noor",
+                    "text": "Yes, they’re on my phone. Do you have the hotel address?"
+                  },
+                  {
+                    "speaker": "karl",
+                    "text": "I’ll keep it in case we need it."
                   }
                 ]
               },
@@ -1067,11 +1281,12 @@
                 "id": "l5-2-6",
                 "prompt": "What does the woman have?",
                 "options": [
-                  "The tickets.",
+                  "A paper map.",
                   "The hotel address.",
-                  "A paper map."
+                  "The tickets."
                 ],
-                "answer": 0
+                "answer": 2,
+                "explanation": "Noor says the tickets are on her phone."
               }
             }
           ]
@@ -1079,23 +1294,23 @@
         {
           "id": "listening-3",
           "number": 3,
-          "title": "A town clean-up day",
+          "title": "A welcome talk at a hostel",
           "instructions": "Listen and complete the notes with one word in each gap.",
           "type": "note-completion",
           "recording": {
             "speakers": [
               {
-                "id": "speaker-1",
-                "name": "Presenter",
+                "id": "manager",
+                "name": "Hostel manager",
                 "voice": {
-                  "lang": "en-GB",
-                  "rate": 0.9
+                  "lang": "en-AU",
+                  "gender": "female"
                 }
               }
             ],
             "turns": [
               {
-                "speaker": "speaker-1",
+                "speaker": "manager",
                 "text": "Welcome to the Hilltop Hostel. The front door is locked after eleven, so please take your key with you. Breakfast is served in the dining room from half past seven. If you want to join the guided walk, meet our guide, Mr Green, at the entrance at nine o’clock. The walk takes about two hours. You can leave your bags in the small room beside reception after you check out. There is a bus stop opposite the hostel, and buses to the station leave every twenty minutes."
               }
             ]
@@ -1104,39 +1319,57 @@
             {
               "id": "l5-3-1",
               "prompt": "Door is locked after ___",
-              "answer": "eleven"
+              "answer": "eleven",
+              "accepted": [
+                "11"
+              ],
+              "explanation": "The manager says the front door is locked after eleven."
             },
             {
               "id": "l5-3-2",
               "prompt": "Breakfast starts at half past ___",
-              "answer": "seven"
+              "answer": "seven",
+              "accepted": [
+                "7"
+              ],
+              "explanation": "Breakfast is served from half past seven."
             },
             {
               "id": "l5-3-3",
               "prompt": "Walk leader: Mr ___",
-              "answer": "Green"
+              "answer": "Green",
+              "explanation": "The guide is called Mr Green."
             },
             {
               "id": "l5-3-4",
               "prompt": "Walk lasts about ___ hours",
-              "answer": "two"
+              "answer": "two",
+              "accepted": [
+                "2"
+              ],
+              "explanation": "The walk takes about two hours."
             },
             {
               "id": "l5-3-5",
               "prompt": "Bags can be left beside ___",
-              "answer": "reception"
+              "answer": "reception",
+              "explanation": "Guests can leave bags in the small room beside reception."
             },
             {
               "id": "l5-3-6",
               "prompt": "Buses leave every ___ minutes",
-              "answer": "twenty"
+              "answer": "twenty",
+              "accepted": [
+                "20"
+              ],
+              "explanation": "Buses to the station leave every twenty minutes."
             }
           ]
         },
         {
           "id": "listening-4",
           "number": 4,
-          "title": "An interview with a town planner",
+          "title": "An interview with a hostel owner",
           "instructions": "Listen to the interview and choose the correct answer.",
           "type": "listening-interview",
           "recording": {
@@ -1145,124 +1378,136 @@
                 "id": "interviewer",
                 "name": "Interviewer",
                 "voice": {
-                  "lang": "en-GB",
-                  "gender": "female",
-                  "rate": 0.9
+                  "lang": "en-US",
+                  "gender": "female"
                 }
               },
               {
-                "id": "guest",
-                "name": "Nina",
+                "id": "carlos",
+                "name": "Carlos",
                 "voice": {
-                  "lang": "en-GB",
-                  "gender": "male",
-                  "rate": 0.9
+                  "lang": "en-IE",
+                  "gender": "male"
                 }
               }
             ],
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Nina, what do you write about?"
+                "text": "Carlos, why did you open a hostel?"
               },
               {
-                "speaker": "guest",
-                "text": "I write travel articles for a website. I started by sending photographs and short reports to a local newspaper."
-              },
-              {
-                "speaker": "interviewer",
-                "text": "How do you choose a place to visit?"
-              },
-              {
-                "speaker": "guest",
-                "text": "I read about its history first, but I also ask local people what they enjoy doing."
+                "speaker": "carlos",
+                "text": "I travelled a lot when I was young, and I always stayed in hostels. I met so many interesting people that I wanted to create the same friendly atmosphere in my own town."
               },
               {
                 "speaker": "interviewer",
-                "text": "What is the hardest part of your job?"
+                "text": "How did you choose the building?"
               },
               {
-                "speaker": "guest",
-                "text": "Sometimes the weather changes my plans. I once travelled to a village to write about a festival, but heavy rain meant the outdoor events were cancelled."
-              },
-              {
-                "speaker": "interviewer",
-                "text": "What do you enjoy most?"
-              },
-              {
-                "speaker": "guest",
-                "text": "Meeting people and discovering places I would never find in a guidebook."
+                "speaker": "carlos",
+                "text": "It used to be a fish factory near the harbour. It was cheap and it had lots of space, so I painted the walls and bought second-hand beds."
               },
               {
                 "speaker": "interviewer",
-                "text": "What advice would you give a new writer?"
+                "text": "What is the hardest part of the job?"
               },
               {
-                "speaker": "guest",
-                "text": "Keep a notebook, take clear photographs and check every detail before you publish."
+                "speaker": "carlos",
+                "text": "Summer weekends. Every bed is full, and guests often arrive earlier than expected. I’ve learned to keep a few clean rooms ready, just in case."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What do guests enjoy most?"
+              },
+              {
+                "speaker": "carlos",
+                "text": "The roof terrace. People sit there in the evening, share food and plan the next day. Many of them make new friends."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "How has the business done?"
+              },
+              {
+                "speaker": "carlos",
+                "text": "It took me two years before it made any money, but now we are busy from May to October."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What advice would you give someone who wants to open a hostel?"
+              },
+              {
+                "speaker": "carlos",
+                "text": "Visit lots of places first and ask guests what they like. That is the best way to learn."
               }
             ]
           },
           "questions": [
             {
               "id": "l5-4-1",
-              "prompt": "How did Nina begin writing?",
+              "prompt": "Why did Carlos open a hostel?",
               "options": [
-                "She sent reports to a newspaper.",
-                "She wrote a travel book.",
-                "She worked for a hotel."
+                "He inherited a family hotel in his town.",
+                "He wanted to recreate the friendly atmosphere he enjoyed as a traveller.",
+                "He needed a job near the harbour."
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "Carlos says he wanted to create the same friendly atmosphere he found in hostels as a traveller."
             },
             {
               "id": "l5-4-2",
-              "prompt": "How does Nina choose places?",
+              "prompt": "Why did Carlos choose the old building?",
               "options": [
-                "She asks local people and reads about them.",
-                "She only visits famous cities.",
-                "She follows a fixed list."
+                "It was close to the railway station.",
+                "It was cheap and had plenty of space.",
+                "It was already full of furniture."
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "He says the old fish factory was cheap and had lots of space."
             },
             {
               "id": "l5-4-3",
-              "prompt": "What once changed Nina’s plans?",
+              "prompt": "What is difficult about summer weekends?",
               "options": [
-                "Heavy rain.",
-                "A train delay.",
-                "A missing camera."
+                "Guests often arrive earlier than expected.",
+                "The rooms are too small for groups.",
+                "Many of the staff are on holiday."
               ],
-              "answer": 0
+              "answer": 0,
+              "explanation": "He says guests often arrive earlier than expected on summer weekends."
             },
             {
               "id": "l5-4-4",
-              "prompt": "What does Nina enjoy most?",
+              "prompt": "What do guests enjoy most?",
               "options": [
-                "Meeting people and finding new places.",
-                "Writing about hotels.",
-                "Travelling alone."
+                "Looking at the harbour boats.",
+                "Having a free breakfast.",
+                "Sitting on the roof terrace."
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "Guests enjoy the roof terrace most, where they share food and plan the next day."
             },
             {
               "id": "l5-4-5",
-              "prompt": "What should a new writer do?",
+              "prompt": "What does Carlos say about making money?",
               "options": [
-                "Check details before publishing.",
-                "Avoid taking photographs.",
-                "Write without a notebook."
+                "It happened in the first month.",
+                "It took about two years.",
+                "He has never made any."
               ],
-              "answer": 0
+              "answer": 1,
+              "explanation": "He says it took two years before the business made any money."
             },
             {
               "id": "l5-4-6",
-              "prompt": "Where does Nina work?",
+              "prompt": "What advice does Carlos give?",
               "options": [
-                "For a travel website.",
-                "At a newspaper office.",
-                "In a museum."
+                "Work alone so that costs stay low.",
+                "Buy the largest building you can find.",
+                "Visit many places and ask guests what they like."
               ],
-              "answer": 0
+              "answer": 2,
+              "explanation": "He advises visiting lots of places and asking guests what they like."
             }
           ]
         }
@@ -1301,26 +1546,35 @@
           "id": "speaking-2",
           "number": 2,
           "title": "Describe a photograph",
-          "instructions": "Look at the photograph and speak for about one minute. Describe the people, the place and what might happen next.",
+          "instructions": "Look at the photograph and speak for about one minute. Describe the food, the table and who the meal might be for.",
           "type": "photo-description",
-          "prompt": "Friends enjoying a day by the sea.",
+          "prompt": "Someone putting food on a table for a meal.",
           "images": [
             {
               "id": "s5-2-cooking",
               "title": "Preparing breakfast",
-              "alt": "A couple preparing breakfast together in a bright home kitchen.",
-              "illustration": "cooking",
+              "alt": "A person's hands put a bowl of food on a table with a yellow dish, a bowl of red sausages and an empty plate. The table has a lace cloth.",
               "image": {
-                "id": "s5-2-cooking-photo",
-                "src": "https://images.unsplash.com/photo-1758523417453-0536e7dc0f58?auto=format&fit=crop&w=1400&q=82",
-                "alt": "A couple preparing breakfast together in a bright home kitchen.",
+                "id": "s5-2-cooking",
+                "src": "assets/images/exams/cambridge-pet-05/s5-2-cooking-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-05/s5-2-cooking-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A person's hands put a bowl of food on a table with a yellow dish, a bowl of red sausages and an empty plate. The table has a lace cloth.",
                 "credit": {
-                  "author": "Vitaly Gariev",
-                  "license": "Unsplash License",
-                  "licenseUrl": "https://unsplash.com/license",
-                  "sourceUrl": "https://unsplash.com/photos/couple-preparing-food-together-in-a-modern-kitchen-scFRXTSAWfk"
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_Serbian_breakfast_preparing.jpg"
                 }
-              }
+              },
+              "describeHints": [
+                "hands putting food on the table",
+                "the dishes and the food",
+                "the table cloth",
+                "the time of day",
+                "who the meal is for"
+              ]
             }
           ]
         },
@@ -1335,26 +1589,106 @@
             {
               "id": "s5-3-walk",
               "title": "A country walk",
-              "alt": "Friends walking along a countryside path.",
-              "illustration": "park"
+              "alt": "Two walkers, one with an orange rucksack, follow a wide gravel path through a valley with mountains and clouds ahead.",
+              "image": {
+                "id": "s5-3-walk",
+                "src": "assets/images/exams/cambridge-pet-05/s5-3-walk-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-05/s5-3-walk-600.webp",
+                "width": 1200,
+                "height": 803,
+                "alt": "Two walkers, one with an orange rucksack, follow a wide gravel path through a valley with mountains and clouds ahead.",
+                "credit": {
+                  "author": "Stichting Saxifraga",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:N,_Oppland,_Sel,_Rondvassbu_16,_Saxifraga-Jan_van_der_Straaten.jpg"
+                }
+              },
+              "describeHints": [
+                "two people walking",
+                "the orange rucksack",
+                "the gravel path and mountains",
+                "the weather",
+                "what to take on a walk"
+              ]
             },
             {
               "id": "s5-3-museum",
               "title": "A museum visit",
-              "alt": "Visitors looking at an exhibition.",
-              "illustration": "museum"
+              "alt": "A group of visitors stand close together in a gallery. One holds up a phone to take a photo of colourful paintings on the wall.",
+              "image": {
+                "id": "s5-3-museum",
+                "src": "assets/images/exams/cambridge-pet-05/s5-3-museum-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-05/s5-3-museum-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A group of visitors stand close together in a gallery. One holds up a phone to take a photo of colourful paintings on the wall.",
+                "credit": {
+                  "author": "Anna Korcheva",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_at_Olga_Pilyuhina%27s_exhibition_%E2%80%9CMeta%E2%80%9D_at_Museum_of_Ukrainian_Diaspora.jpg"
+                }
+              },
+              "describeHints": [
+                "a group of visitors",
+                "the colourful paintings",
+                "a phone taking a photo",
+                "the crowded room",
+                "what visitors enjoy at a museum"
+              ]
             },
             {
               "id": "s5-3-music",
               "title": "Live music",
-              "alt": "Friends listening to live music.",
-              "illustration": "music"
+              "alt": "A man in a green jacket sits on a stool and plays two conga drums on a pavement beside a parked car and trees.",
+              "image": {
+                "id": "s5-3-music",
+                "src": "assets/images/exams/cambridge-pet-05/s5-3-music-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-05/s5-3-music-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A man in a green jacket sits on a stool and plays two conga drums on a pavement beside a parked car and trees.",
+                "credit": {
+                  "author": "Dwight Burdette",
+                  "license": "CC BY 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Street_Musician_North_Fourth_Street_Ann_Arbor_Michigan.JPG"
+                }
+              },
+              "describeHints": [
+                "a man playing drums",
+                "the street and the parked cars",
+                "the trees",
+                "who might listen",
+                "why people play in the street"
+              ]
             },
             {
               "id": "s5-3-beach",
-              "title": "A beach picnic",
-              "alt": "Friends having a picnic near the sea.",
-              "illustration": "beach"
+              "title": "A day at the beach",
+              "alt": "A sandy beach with a long stone wall into the sea. People paddle and walk in the bright waves under a blue sky.",
+              "image": {
+                "id": "s5-3-beach",
+                "src": "assets/images/exams/cambridge-pet-05/s5-3-beach-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-05/s5-3-beach-600.webp",
+                "width": 1200,
+                "height": 803,
+                "alt": "A sandy beach with a long stone wall into the sea. People paddle and walk in the bright waves under a blue sky.",
+                "credit": {
+                  "author": "Daryn Bartlett darynmae",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumer_holiday_in_Newport_beach_(Unsplash).jpg"
+                }
+              },
+              "describeHints": [
+                "the beach and the waves",
+                "people paddling",
+                "the stone wall",
+                "the sky",
+                "what to do on a beach day"
+              ]
             }
           ]
         },

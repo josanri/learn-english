@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, computed, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
+import { SettingsService } from '../../../core/settings.service';
 import type { SpeakingVisual } from '../../../models/exam';
 import { SceneIllustration } from './scene-illustration';
 
@@ -16,11 +17,12 @@ import { SceneIllustration } from './scene-illustration';
         @if (photo(); as p) {
           <img
             [src]="p.src"
+            [attr.srcset]="p.srcSmall ? p.srcSmall + ' 600w, ' + p.src + ' 1200w' : null"
+            sizes="(min-width: 60rem) 40rem, 100vw"
             [alt]="p.alt"
             [attr.loading]="eager() ? 'eager' : 'lazy'"
-            width="1400"
-            height="933"
-            referrerpolicy="no-referrer"
+            [attr.width]="p.width ?? 1200"
+            [attr.height]="p.height ?? 800"
             (error)="failed.set(true)"
           />
         } @else if (visual().illustration) {
@@ -46,6 +48,16 @@ import { SceneIllustration } from './scene-illustration';
           <span class="credit">Original practice illustration</span>
         }
       </figcaption>
+      @if (showHints() && visual().describeHints?.length) {
+        <details class="hints">
+          <summary>Need ideas?</summary>
+          <ul>
+            @for (hint of visual().describeHints; track hint) {
+              <li>{{ hint }}</li>
+            }
+          </ul>
+        </details>
+      }
     </figure>
   `,
   styles: `
@@ -77,6 +89,22 @@ import { SceneIllustration } from './scene-illustration';
       margin-top: var(--space-2);
       font-size: var(--step--1);
     }
+    .hints {
+      margin-top: var(--space-2);
+      font-size: var(--step--1);
+    }
+    .hints summary {
+      cursor: pointer;
+      min-height: var(--target);
+      display: flex;
+      align-items: center;
+      color: var(--accent-text);
+      font-weight: 600;
+    }
+    .hints ul {
+      margin: 0;
+      padding-left: var(--space-5);
+    }
     .credit {
       color: var(--text-muted);
     }
@@ -86,8 +114,12 @@ import { SceneIllustration } from './scene-illustration';
   `,
 })
 export class SpeakingImage {
+  private readonly settings = inject(SettingsService);
   readonly visual = input.required<SpeakingVisual>();
   readonly eager = input(false);
+
+  /** Ideas to describe the picture: not shown in exam mode (no hints until the exam is finished). */
+  protected readonly showHints = computed(() => !this.settings.settings().examMode);
 
   protected readonly failed = signal(false);
   /** The licensed photo, unless it failed to load. */
