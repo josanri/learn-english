@@ -1,0 +1,1741 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-20",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Volunteering and Charity",
+  "subtitle": "Giving time, money and kindness to others",
+  "theme": "Volunteering and charity",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "HARBOUR FOOD BANK: We need volunteers on Saturday mornings to pack food parcels. Wear comfortable shoes. Tea and biscuits provided. Please sign up at the desk.",
+            "CHARITY BOOK SALE, Town Library: All books £1 or less. Everything we earn goes to the children's hospital. Open until 4 p.m. on Saturday only.",
+            "ELLA: I can't come to the beach clean-up after all. My brother is ill. Could you tell Mr Dunn and take my gloves? They're on the shelf in the hall.",
+            "SPONSORED WALK: Collect your sponsor form from reception before Friday. Each walker should try to raise at least £20. The route is 8 kilometres and is suitable for families.",
+            "OLD CLOTHES BANK: Please put clean clothes in the blue containers only. Do not leave bags on the ground, as they may be taken by the weather or by animals."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What do volunteers at the food bank do?",
+              "options": [
+                "Cook meals for visitors",
+                "Collect money in the street",
+                "Put food into parcels"
+              ],
+              "answer": 2,
+              "explanation": "Volunteers pack food parcels on Saturday mornings."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What is special about the book sale?",
+              "options": [
+                "It continues for the whole weekend.",
+                "The money helps a hospital for children.",
+                "Books can be borrowed for a pound."
+              ],
+              "answer": 1,
+              "explanation": "All the money earned goes to the children's hospital; the sale is on Saturday only."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What does Ella ask her friend to do?",
+              "options": [
+                "Give a message and take her gloves",
+                "Take her place at the clean-up",
+                "Visit her brother in hospital"
+              ],
+              "answer": 0,
+              "explanation": "She asks her friend to tell Mr Dunn she cannot come and to take her gloves."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What should walkers do before Friday?",
+              "options": [
+                "Pay twenty pounds at reception",
+                "Collect a form to ask for money",
+                "Choose the length of the route"
+              ],
+              "answer": 1,
+              "explanation": "Walkers collect a sponsor form from reception and try to raise at least £20."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What does the notice ask people to do?",
+              "options": [
+                "Leave bags on the ground",
+                "Bring clothes to the shop",
+                "Put clean clothes in the containers"
+              ],
+              "answer": 2,
+              "explanation": "Clean clothes must go in the blue containers, not in bags on the ground."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Ways to help",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Leopoldine loves animals and would like to spend a few hours each week looking after dogs that have no home."
+            },
+            {
+              "id": "p2",
+              "text": "Mikkel is a retired teacher who would like to help children who find reading difficult."
+            },
+            {
+              "id": "p3",
+              "text": "Noor is good at cooking and would like to prepare meals for people who cannot leave their homes."
+            },
+            {
+              "id": "p4",
+              "text": "Osvaldo has a lot of energy and would like to take part in a sporting event to raise money for a charity."
+            },
+            {
+              "id": "p5",
+              "text": "Pernille is a student with an old laptop and would like to teach older people how to use the internet."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Wheels on Meals",
+              "text": "We deliver hot meals to people who cannot leave their homes. Volunteers are needed to cook in our kitchen every Tuesday and Thursday."
+            },
+            {
+              "id": "B",
+              "title": "Park Clean Team",
+              "text": "Join us on the first Sunday of the month to collect rubbish in the park. Gloves and bags are provided."
+            },
+            {
+              "id": "C",
+              "title": "Readers' Club",
+              "text": "Give one hour a week to listen to children read aloud at their school. A friendly adult makes a big difference."
+            },
+            {
+              "id": "D",
+              "title": "Sea Swim Challenge",
+              "text": "Swim 500 metres in the sea to raise money for the lifeboat. Prizes for the best costume and the most money collected."
+            },
+            {
+              "id": "E",
+              "title": "Silver Surfers",
+              "text": "Older people want to send emails and make video calls. Volunteers show them how, one afternoon a week at the community centre."
+            },
+            {
+              "id": "F",
+              "title": "Paws and Hearts",
+              "text": "A rescue centre for abandoned dogs. Walk the dogs, play with them and help to find them new homes. Mornings or afternoons."
+            },
+            {
+              "id": "G",
+              "title": "Winter Coat Collection",
+              "text": "We collect coats for people who cannot afford them. Drop your old coat at the library before 30 November."
+            },
+            {
+              "id": "H",
+              "title": "Quiz Night",
+              "text": "A fun evening at the Rose Pub every second Friday. All the money is given to a local children's charity."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Leopoldine",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "Leopoldine wants to look after dogs without homes; text F is a rescue centre where volunteers walk and play with abandoned dogs."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Mikkel",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Mikkel, a former teacher, wants to help children with reading; text C asks volunteers to listen to children read aloud at school."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Noor",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Noor likes cooking and wants to feed people who cannot leave their homes; text A needs volunteers to cook hot meals for them."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Osvaldo",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Osvaldo wants a sporting event for charity; text D is a sea swim to raise money for the lifeboat."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Pernille",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Pernille wants to teach older people to use the internet; text E has volunteers teach emails and video calls."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "My Saturdays at the care home",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "When I was thirteen, my mother suggested that I should do some volunteer work. I was not keen. I imagined myself doing boring jobs for people who would not even say thank you. However, my mother had already phoned the local care home, and the next Saturday I was standing in front of the door with a bunch of flowers I had bought, because I did not know what else to bring.\n\nThe manager, a cheerful woman called Mrs Adeyemi, took me to the lounge, where about ten residents were drinking tea. She asked me to talk to Mr Bellamy, who sat alone by the window. I was nervous, and my first question was stupid: I asked him if he was bored. He looked at me for a moment, and then he laughed. He told me that he had been a ship's cook for thirty years and had visited forty countries.\n\nAfter that, I went every Saturday. Mr Bellamy taught me to make a perfect omelette, and in return, I taught him to send photos on his phone. One day, his niece wrote to him from Canada, and he was so happy that he showed the message to everyone in the room.\n\nLast month, Mr Bellamy died, at the age of ninety-one. His family asked me to speak at the funeral, and I said that he had taught me more than any teacher. I am now training to help at a hospital, because I have learnt that listening to people is also a kind of help.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "How did the writer feel about volunteering at first?",
+              "options": [
+                "Not very interested",
+                "Keen to start",
+                "Afraid of old people"
+              ],
+              "answer": 0,
+              "explanation": "She says she was not keen and imagined boring jobs."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "Why did the writer's first question surprise Mr Bellamy?",
+              "options": [
+                "It was not a very polite question.",
+                "He had expected a longer speech.",
+                "He was not used to being asked anything."
+              ],
+              "answer": 0,
+              "explanation": "She asked him if he was bored, which was a stupid question; he looked at her and then laughed."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did the writer learn from Mr Bellamy?",
+              "options": [
+                "How to speak another language",
+                "How to cook a simple dish",
+                "How to play a game"
+              ],
+              "answer": 1,
+              "explanation": "He taught her to make a perfect omelette."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "Why was Mr Bellamy happy one day?",
+              "options": [
+                "He had a visit from a friend.",
+                "He won a prize at the home.",
+                "He received a message from a relative."
+              ],
+              "answer": 2,
+              "explanation": "His niece wrote to him from Canada and he showed the message to everyone."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What is the writer doing now?",
+              "options": [
+                "Working in a ship's kitchen",
+                "Writing a book about Mr Bellamy",
+                "Preparing to help in a hospital"
+              ],
+              "answer": 2,
+              "explanation": "She is training to help at a hospital because she has learnt that listening is a kind of help."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A moustache for charity",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Every November, thousands of people in the UK take part in a charity challenge called Movember. [1] The name comes from \"moustache\" and \"November\", and the aim is to raise money for men's health.\n\nThe idea began in Australia about twenty years ago, when two friends decided to grow moustaches for a month. [2] They wanted to start a conversation about health problems that men often do not like to discuss.\n\nToday, the challenge is one of the largest in the world. [3] Women can also take part by supporting the men in their lives, or by walking or running every day. Many companies encourage their staff to join in.\n\nThe money pays for research and for services such as telephone helplines. [4] Some of the people who call say that the helpline saved their lives.\n\nFor those who take part, it is also a chance to have fun. People send photos of their moustaches to friends, and offices play games. [5] As one volunteer says, \"It started as a joke, but it became something serious.\"",
+          "sentences": [
+            "Men start the month with a clean face and let their moustaches grow for thirty days.",
+            "The helplines are open all day and night, and anybody can call.",
+            "Millions of pounds have been raised since it began.",
+            "Doctors also advise men to visit them once a year.",
+            "They got a lot of attention, and people wanted to know why.",
+            "However, the competition also makes people think about serious problems."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "A",
+              "explanation": "\"Movember\" is introduced and then explained: men grow moustaches for thirty days; the next sentence explains the name."
+            },
+            {
+              "id": "r4-2",
+              "answer": "E",
+              "explanation": "The two friends grew moustaches; they got attention and people wanted to know why, so they wanted to start a conversation."
+            },
+            {
+              "id": "r4-3",
+              "answer": "C",
+              "explanation": "\"One of the largest in the world\" is supported by the fact that millions of pounds have been raised; the next sentence adds that women can join too."
+            },
+            {
+              "id": "r4-4",
+              "answer": "B",
+              "explanation": "The money pays for services such as helplines; the next sentence refers to the helplines being open day and night, and the callers."
+            },
+            {
+              "id": "r4-5",
+              "answer": "F",
+              "explanation": "\"However\" links the fun of competitions with the serious side; the volunteer's comment continues the contrast."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "Giving time and money",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Many young people want to help others, but they do not [1] where to begin. One easy way is to join a local charity shop. Volunteers there [2] donated clothes, sort books and serve customers. Another option is to take part in a sponsored event, such as a walk or a swim. Friends and family promise to give money for every kilometre that you [3]. If you prefer to work behind the scenes, you could help to [4] posters or write messages for social media. Charities are always looking for people with different skills, so there is [5] for everyone. Volunteering is not only good for the people you help; it also gives you new friends and experience, [6] can be useful when you look for a job.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "think",
+                "know",
+                "say",
+                "tell"
+              ],
+              "answer": 1,
+              "explanation": "\"Do not know where to begin\" is the natural expression."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "wash",
+                "build",
+                "drive",
+                "paint"
+              ],
+              "answer": 0,
+              "explanation": "Volunteers in a charity shop wash donated clothes before selling them."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "carry",
+                "bring",
+                "hold",
+                "walk"
+              ],
+              "answer": 3,
+              "explanation": "People give money for each kilometre that you walk in a sponsored walk."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "say",
+                "do",
+                "make",
+                "tell"
+              ],
+              "answer": 2,
+              "explanation": "You \"make posters\" for an event."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "nothing",
+                "anything",
+                "something",
+                "everything"
+              ],
+              "answer": 2,
+              "explanation": "\"Something for everyone\" means there is a suitable job for each person."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "who",
+                "which",
+                "what",
+                "where"
+              ],
+              "answer": 1,
+              "explanation": "\"Which\" refers to the whole idea of experience that can be useful."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "A letter to a charity",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Dear Sir or Madam,\nI am writing [1] ask about volunteering at your charity shop. I am sixteen years old, and I [2] free on Saturday mornings. I have worked [3] a waiter at my uncle's café for a year, so I am used to talking to people. I would be happy to help in any way [4] you need. Could you tell me [5] I should come for an interview? I look forward [6] hearing from you.\nYours faithfully,\nKalinda Reeve",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "to",
+              "explanation": "\"I am writing to ask\" is the standard way to give the purpose of a letter."
+            },
+            {
+              "id": "r6-2",
+              "answer": "am",
+              "explanation": "\"I am free\" uses the verb be with the adjective free."
+            },
+            {
+              "id": "r6-3",
+              "answer": "as",
+              "explanation": "\"Worked as a waiter\" names the job."
+            },
+            {
+              "id": "r6-4",
+              "answer": "that",
+              "accepted": [
+                "which"
+              ],
+              "explanation": "The relative pronoun links \"way\" with \"you need\"."
+            },
+            {
+              "id": "r6-5",
+              "answer": "when",
+              "accepted": [
+                "where"
+              ],
+              "explanation": "\"When I should come\" asks about the time of the interview."
+            },
+            {
+              "id": "r6-6",
+              "answer": "to",
+              "explanation": "\"Look forward to\" is followed by -ing; to is a preposition here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Quentin wants to do some volunteer work. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Suggest a kind of volunteer work.",
+              "Say why it is a good idea.",
+              "Say how he can start.",
+              "Ask a question about his free time."
+            ],
+            "sourceEmail": {
+              "from": "Quentin",
+              "subject": "Helping others",
+              "body": "I would like to do something useful in my free time, but I do not know what. I like being with people, and I do not mind hard work. What kind of volunteer work do you recommend? How can I find out about it? And how much time should I give?"
+            },
+            "contentPoints": [
+              {
+                "text": "Suggest a kind of volunteer work.",
+                "keywords": [
+                  "charity",
+                  "shop",
+                  "animal",
+                  "shelter",
+                  "food bank",
+                  "hospital",
+                  "care home",
+                  "library",
+                  "clean",
+                  "help",
+                  "volunteer"
+                ]
+              },
+              {
+                "text": "Say why it is a good idea.",
+                "keywords": [
+                  "because",
+                  "useful",
+                  "meet",
+                  "learn",
+                  "experience",
+                  "friends",
+                  "feel",
+                  "good",
+                  "enjoy",
+                  "proud"
+                ]
+              },
+              {
+                "text": "Say how he can start.",
+                "keywords": [
+                  "website",
+                  "phone",
+                  "email",
+                  "ask",
+                  "contact",
+                  "visit",
+                  "sign up",
+                  "form",
+                  "online",
+                  "school",
+                  "centre"
+                ]
+              },
+              {
+                "text": "Ask a question about his free time.",
+                "keywords": [
+                  "do you",
+                  "when",
+                  "how much",
+                  "how many",
+                  "what",
+                  "are you",
+                  "free time",
+                  "weekend",
+                  "evening"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a school website",
+              "prompt": "Articles wanted! A person who helps others. Who is it? What do they do? Why do you admire them? Write an article for the school website.",
+              "contentPoints": [
+                {
+                  "text": "Say who the person is.",
+                  "keywords": [
+                    "mother",
+                    "father",
+                    "teacher",
+                    "friend",
+                    "neighbour",
+                    "nurse",
+                    "doctor",
+                    "grandmother",
+                    "uncle",
+                    "aunt",
+                    "volunteer"
+                  ]
+                },
+                {
+                  "text": "Say what the person does.",
+                  "keywords": [
+                    "help",
+                    "work",
+                    "give",
+                    "cook",
+                    "visit",
+                    "teach",
+                    "look after",
+                    "collect",
+                    "support",
+                    "every"
+                  ]
+                },
+                {
+                  "text": "Explain why you admire them.",
+                  "keywords": [
+                    "because",
+                    "kind",
+                    "generous",
+                    "admire",
+                    "proud",
+                    "inspire",
+                    "example",
+                    "love",
+                    "respect",
+                    "special"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a day when you helped someone.",
+              "openingSentence": "When I saw the lost dog, I knew that I had to do something.",
+              "contentPoints": [
+                {
+                  "text": "Say what you did to help.",
+                  "keywords": [
+                    "dog",
+                    "owner",
+                    "called",
+                    "found",
+                    "took",
+                    "asked",
+                    "looked",
+                    "searched",
+                    "poster",
+                    "walked",
+                    "fed"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "in the end",
+                    "finally",
+                    "at last",
+                    "eventually",
+                    "then",
+                    "owner",
+                    "thanked",
+                    "happy",
+                    "home",
+                    "reward",
+                    "smiled"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "aurelio",
+                    "name": "Aurelio",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "benedikta",
+                    "name": "Benedikta",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "benedikta",
+                    "text": "Is the volunteers' meeting still at ten tomorrow?"
+                  },
+                  {
+                    "speaker": "aurelio",
+                    "text": "No, it's been put back an hour, to eleven, because the hall isn't free until then."
+                  },
+                  {
+                    "speaker": "benedikta",
+                    "text": "Fine, that gives me time to go to the bank."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "What time is the meeting now?",
+                "options": [
+                  "At ten o'clock",
+                  "At eleven o'clock",
+                  "At nine o'clock"
+                ],
+                "answer": 1,
+                "explanation": "It was at ten but has been put back an hour, so it is at eleven."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "cornelia",
+                    "name": "Cornelia",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "desmond",
+                    "name": "Desmond",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "cornelia",
+                    "text": "What do I need to bring for the beach clean-up?"
+                  },
+                  {
+                    "speaker": "desmond",
+                    "text": "Just a pair of strong gloves. We provide the bags and the pickers."
+                  },
+                  {
+                    "speaker": "cornelia",
+                    "text": "I have gardening gloves. Would they be OK?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What does the woman need to take?",
+                "options": [
+                  "Gloves",
+                  "Bags",
+                  "A picnic"
+                ],
+                "answer": 0,
+                "explanation": "Desmond says she only needs strong gloves; the bags are provided."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "ernesto",
+                    "name": "Ernesto",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "frederika",
+                    "name": "Frederika",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "ernesto",
+                    "text": "How much money did the sponsored walk raise?"
+                  },
+                  {
+                    "speaker": "frederika",
+                    "text": "More than we hoped. We were aiming for three hundred pounds, and we raised three hundred and forty."
+                  },
+                  {
+                    "speaker": "ernesto",
+                    "text": "Brilliant! That will pay for a lot of food."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "How much money did they raise?",
+                "options": [
+                  "£340",
+                  "£300",
+                  "£430"
+                ],
+                "answer": 0,
+                "explanation": "The target was three hundred pounds and they raised three hundred and forty."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "gustavo",
+                    "name": "Gustavo",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "hildegarde",
+                    "name": "Hildegarde",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "hildegarde",
+                    "text": "Where shall we meet for the clean-up on Saturday?"
+                  },
+                  {
+                    "speaker": "gustavo",
+                    "text": "By the lifeguard hut at the north end of the beach. It's easy to find."
+                  },
+                  {
+                    "speaker": "hildegarde",
+                    "text": "Good. I'll bring my little brother."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Where will they meet?",
+                "options": [
+                  "By the café",
+                  "At the north end of the beach",
+                  "At the car park"
+                ],
+                "answer": 1,
+                "explanation": "They agree to meet by the lifeguard hut at the north end of the beach."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "isadora",
+                    "name": "Isadora",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "jeremiah",
+                    "name": "Jeremiah",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "jeremiah",
+                    "text": "Which charity is your school supporting this year?"
+                  },
+                  {
+                    "speaker": "isadora",
+                    "text": "We're collecting money for the dog shelter. It's the one on the edge of town, with the red gate."
+                  },
+                  {
+                    "speaker": "jeremiah",
+                    "text": "I'd like to give them something too."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Who will the school's money help?",
+                "options": [
+                  "Elderly people",
+                  "Sick children",
+                  "Dogs in the shelter"
+                ],
+                "answer": 2,
+                "explanation": "The school is collecting money for the dog shelter."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "kasper",
+                    "name": "Kasper",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "lavinia",
+                    "name": "Lavinia",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "lavinia",
+                    "text": "How are we getting to the food bank on Saturday?"
+                  },
+                  {
+                    "speaker": "kasper",
+                    "text": "The minibus leaves from outside the school at eight sharp. Don't be late."
+                  },
+                  {
+                    "speaker": "lavinia",
+                    "text": "I'll set two alarms."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "How will the volunteers travel?",
+                "options": [
+                  "By minibus",
+                  "By bus",
+                  "By bicycle"
+                ],
+                "answer": 0,
+                "explanation": "Kasper says the minibus leaves from outside the school at eight."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "marcellus",
+                    "name": "Marcellus",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "nerissa",
+                    "name": "Nerissa",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "nerissa",
+                    "text": "What are you going to do at the community centre this afternoon?"
+                  },
+                  {
+                    "speaker": "marcellus",
+                    "text": "I'll be packing parcels with the others. Maybe I'll serve tea if they need me."
+                  },
+                  {
+                    "speaker": "nerissa",
+                    "text": "I'd love to help, but I have a lesson."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What will the boy mainly do?",
+                "options": [
+                  "Serve tea",
+                  "Pack parcels",
+                  "Clean the floor"
+                ],
+                "answer": 1,
+                "explanation": "He says he will be packing parcels and maybe serve tea if needed."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "octavian",
+                    "name": "Octavian",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "petra2",
+                    "name": "Petronella",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "octavian",
+                    "text": "I've been asked to help at the charity shop, but I'm not sure I'd be good at it."
+                  },
+                  {
+                    "speaker": "petra2",
+                    "text": "You're great with people. You'd be perfect. Just give it a try."
+                  },
+                  {
+                    "speaker": "octavian",
+                    "text": "I suppose it wouldn't hurt. I'll go on Saturday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What does the woman encourage the man to do?",
+                "options": [
+                  "Take a different job",
+                  "Ask for payment",
+                  "Give the work a try"
+                ],
+                "answer": 2,
+                "explanation": "She tells him to give it a try because he is great with people."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "quirina",
+                    "name": "Quirina",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "raphael",
+                    "name": "Raphael",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "raphael",
+                    "text": "I'm sorry, I can't do the shift on Sunday. My car has broken down, so can we change it?"
+                  },
+                  {
+                    "speaker": "quirina",
+                    "text": "Don't worry. I'll ask somebody else. Can you do next week instead?"
+                  },
+                  {
+                    "speaker": "raphael",
+                    "text": "Yes, I'll be fine by then."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "Why is the man phoning?",
+                "options": [
+                  "To make a complaint",
+                  "To change a plan",
+                  "To ask for directions"
+                ],
+                "answer": 1,
+                "explanation": "He cannot work on Sunday and agrees to do next week instead."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "sylvester",
+                    "name": "Sylvester",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "tabea",
+                    "name": "Tabea",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "tabea",
+                    "text": "I'd like to give some old books to the charity shop."
+                  },
+                  {
+                    "speaker": "sylvester",
+                    "text": "Thank you, but we can only take books in good condition: clean, without torn pages. Could I look at them first?"
+                  },
+                  {
+                    "speaker": "tabea",
+                    "text": "Of course. I'll go and get the box."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What does the man say about the books?",
+                "options": [
+                  "They must be in good condition.",
+                  "They are not needed.",
+                  "They must be bought."
+                ],
+                "answer": 0,
+                "explanation": "He says the shop can only take clean books without torn pages."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "ulysses",
+                    "name": "Ulysses",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "valentina",
+                    "name": "Valentina",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "valentina",
+                    "text": "It's so tiring to collect money in the street. People just walk past."
+                  },
+                  {
+                    "speaker": "ulysses",
+                    "text": "I know, but the woman in the red coat just gave us ten pounds."
+                  },
+                  {
+                    "speaker": "valentina",
+                    "text": "That made my day! I'm exhausted, but I'm pleased."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "How does the girl feel about collecting money?",
+                "options": [
+                  "Bored with the job",
+                  "Angry with people",
+                  "Exhausted but pleased"
+                ],
+                "answer": 2,
+                "explanation": "She finds it tiring, but she is delighted when someone gives ten pounds."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "winifred2",
+                    "name": "Wilhelmina",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "xavier",
+                    "name": "Xavier",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "xavier",
+                    "text": "Do you think volunteers should get paid?"
+                  },
+                  {
+                    "speaker": "winifred2",
+                    "text": "No, I think the point is to give your time freely. But the charity should pay for our bus tickets."
+                  },
+                  {
+                    "speaker": "xavier",
+                    "text": "That sounds fair to me."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What is the woman's opinion?",
+                "options": [
+                  "Volunteers should give their time free.",
+                  "Volunteers should receive a salary.",
+                  "Volunteers should work for fewer hours."
+                ],
+                "answer": 0,
+                "explanation": "She says the point of volunteering is to give your time freely."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "yolanda",
+                    "name": "Yolanda",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "zacharias",
+                    "name": "Zacharias",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "yolanda",
+                    "text": "Thank you so much for helping us today. We couldn't have done it without you."
+                  },
+                  {
+                    "speaker": "zacharias",
+                    "text": "It was my pleasure. I learned a lot about how the food bank works."
+                  },
+                  {
+                    "speaker": "yolanda",
+                    "text": "Would you like to come back next month?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Saying goodbye to a customer",
+                  "Asking for money",
+                  "Asking a helper to come back"
+                ],
+                "answer": 2,
+                "explanation": "She thanks him and asks if he would like to come again next month."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a charity run",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "speaker-1",
+                "name": "Dorothea",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "speaker-1",
+                "text": "Hello, everyone, and thank you for coming. I'm Dorothea, and I'm organising this year's Fun Run for the children's hospital. The run will take place on Sunday, and the distance is five kilometres. We will start in Millford Park, next to the lake, and finish at the same place. Everyone who takes part will receive a yellow T-shirt, so that you are easy to see. You can register online, on our website, and the entry is free, but we ask you to collect money from your friends and family. All the money we raise will be used to buy toys and books for the hospital. If you would like to help as a volunteer on the day, please speak to me after the talk."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The run takes place on ___",
+              "answer": "Sunday",
+              "explanation": "Dorothea says the run will take place on Sunday."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The run is ___ kilometres",
+              "answer": "five",
+              "accepted": [
+                "5"
+              ],
+              "explanation": "The distance is five kilometres."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "It starts in Millford ___",
+              "answer": "Park",
+              "explanation": "The run starts in Millford Park next to the lake."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Runners get a ___ T-shirt",
+              "answer": "yellow",
+              "explanation": "Everyone receives a yellow T-shirt."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "You can register on the ___",
+              "answer": "website",
+              "accepted": [
+                "internet",
+                "online"
+              ],
+              "explanation": "People can register online, on the website."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "The money will buy toys and ___",
+              "answer": "books",
+              "explanation": "The money will be used to buy toys and books for the hospital."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a soup kitchen manager",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "host",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "barnaby3",
+                "name": "Cuthbert",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "host",
+                "text": "Cuthbert, you manage a kitchen that gives free meals to people in need. How did it begin?"
+              },
+              {
+                "speaker": "barnaby3",
+                "text": "Fifteen years ago, I was a chef in a hotel. One winter night, I saw a hungry man in the street, looking for food in a bin. That shocked me. The next day I started to take the leftovers to the people who slept near the station."
+              },
+              {
+                "speaker": "host",
+                "text": "How many people come now?"
+              },
+              {
+                "speaker": "barnaby3",
+                "text": "About a hundred and fifty every evening. We have a team of forty volunteers, and some of them used to be customers themselves."
+              },
+              {
+                "speaker": "host",
+                "text": "Where does the food come from?"
+              },
+              {
+                "speaker": "barnaby3",
+                "text": "Mostly from supermarkets, which give us fruit and vegetables that are slightly damaged but perfectly good. Local restaurants also help, and farmers bring potatoes at harvest time."
+              },
+              {
+                "speaker": "host",
+                "text": "What is the hardest part of the work?"
+              },
+              {
+                "speaker": "barnaby3",
+                "text": "The cold. In winter, the queue is longer, and standing outside for an hour is hard for people. We are trying to find a bigger building with a waiting room."
+              },
+              {
+                "speaker": "host",
+                "text": "What do you want people to understand?"
+              },
+              {
+                "speaker": "barnaby3",
+                "text": "That anybody can end up in difficulty. A job loss, an illness, a family problem, and everything can change very quickly. The people who come here are not different from you or me."
+              },
+              {
+                "speaker": "host",
+                "text": "How can people help?"
+              },
+              {
+                "speaker": "barnaby3",
+                "text": "Money helps, of course, but time is even more valuable. Even two hours a month makes a difference. And a smile and a kind word cost nothing."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "What made Cuthbert start the kitchen?",
+              "options": [
+                "A request from a hotel manager",
+                "Seeing a hungry man in the street",
+                "A television programme"
+              ],
+              "answer": 1,
+              "explanation": "He saw a man looking for food in a bin and was shocked."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "Who works in the kitchen?",
+              "options": [
+                "Only trained chefs",
+                "A team of volunteers, some who were once customers",
+                "Staff from a local hotel"
+              ],
+              "answer": 1,
+              "explanation": "He has about forty volunteers, and some used to be customers."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "Where does most of the food come from?",
+              "options": [
+                "Supermarkets",
+                "Farmers' markets",
+                "Hotels"
+              ],
+              "answer": 0,
+              "explanation": "Mostly from supermarkets, which give slightly damaged but good fruit and vegetables."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What does he say about the winter?",
+              "options": [
+                "There is more food available.",
+                "Fewer people come.",
+                "People queue outside in the cold."
+              ],
+              "answer": 2,
+              "explanation": "In winter the queue is longer and standing outside for an hour is hard."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What does he want people to understand?",
+              "options": [
+                "Most customers do not want to work.",
+                "Anyone can end up needing help.",
+                "The service is only for local people."
+              ],
+              "answer": 1,
+              "explanation": "He says anybody can end up in difficulty after a job loss, an illness or a family problem."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What does he say is most useful for volunteers to give?",
+              "options": [
+                "Their time",
+                "Money",
+                "Old clothes"
+              ],
+              "answer": 0,
+              "explanation": "He says money helps, but time is even more valuable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s20-1-1",
+              "prompt": "Have you ever helped other people? What did you do?"
+            },
+            {
+              "id": "s20-1-2",
+              "prompt": "Which charities or causes do you think are important? Why?"
+            },
+            {
+              "id": "s20-1-3",
+              "prompt": "Tell me about someone you know who does volunteer work."
+            },
+            {
+              "id": "s20-1-4",
+              "prompt": "Would you like to be a volunteer in the future? Why, or why not?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "People planting young trees in a field.",
+          "images": [
+            {
+              "id": "s20-2-trees",
+              "title": "Volunteers planting trees",
+              "alt": "Volunteers plant young trees in a large field of dry yellow stalks. A man in a green jacket and blue cap carries two small trees, and others bend down to plant in the distance.",
+              "describeHints": [
+                "a man carrying young trees",
+                "the people planting",
+                "the large yellow field",
+                "the gloves and tools",
+                "why they are doing it"
+              ],
+              "image": {
+                "id": "s20-2-trees",
+                "src": "assets/images/exams/cambridge-pet-20/s20-2-trees-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-20/s20-2-trees-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "Volunteers plant young trees in a large field of dry yellow stalks. A man in a green jacket and blue cap carries two small trees, and others bend down to plant in the distance.",
+                "credit": {
+                  "author": "Department of the Interior. U.S. Fish and Wildlife Service. National Conservation Train...",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Walmart_volunteers_planting_trees_-_DPLA_-_072cbd0ae599f5a9edb4433beb047c76.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walmart_volunteers_planting_trees_-_DPLA_-_072cbd0ae599f5a9edb4433beb047c76.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Choose a way to help",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Which of these activities would be the best way to help your community? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s20-3-foodbank",
+              "title": "Shelves at a food bank",
+              "alt": "A woman in a dark jacket holds two cans of drink beside tall shelves full of cans, cartons and bottles of food.",
+              "describeHints": [
+                "a woman with cans",
+                "the full shelves",
+                "the food and drink",
+                "the warehouse",
+                "who gets this food"
+              ],
+              "image": {
+                "id": "s20-3-foodbank",
+                "src": "assets/images/exams/cambridge-pet-20/s20-3-foodbank-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-20/s20-3-foodbank-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A woman in a dark jacket holds two cans of drink beside tall shelves full of cans, cartons and bottles of food.",
+                "credit": {
+                  "author": "USDAgov",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:USDA_Foods_-_Community_FoodBank_of_New_Jersey_(20160120-FNS-LSC-0295).jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:USDA_Foods_-_Community_FoodBank_of_New_Jersey_(20160120-FNS-LSC-0295).jpg"
+                }
+              }
+            },
+            {
+              "id": "s20-3-shop",
+              "title": "A charity shop",
+              "alt": "The front of a small charity shop with a green frame and two large windows full of china and household items, on a quiet town street.",
+              "describeHints": [
+                "a small shop front",
+                "the windows with goods",
+                "the green frame",
+                "the quiet street",
+                "what you could buy there"
+              ],
+              "image": {
+                "id": "s20-3-shop",
+                "src": "assets/images/exams/cambridge-pet-20/s20-3-shop-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-20/s20-3-shop-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "The front of a small charity shop with a green frame and two large windows full of china and household items, on a quiet town street.",
+                "credit": {
+                  "author": "Bob Harvey",
+                  "license": "CC BY-SA 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charity_shop_-_geograph.org.uk_-_4614812.jpg"
+                }
+              }
+            },
+            {
+              "id": "s20-3-cleanup",
+              "title": "Cleaning up rubbish",
+              "alt": "Two people in gloves pick up bags and pieces of rubbish from a pile of rubble in front of a white wall, a man in a green top and a girl in a blue vest.",
+              "describeHints": [
+                "two people in gloves",
+                "the bags of rubbish",
+                "the pile of rubble",
+                "the blue vest",
+                "why clean-up days matter"
+              ],
+              "image": {
+                "id": "s20-3-cleanup",
+                "src": "assets/images/exams/cambridge-pet-20/s20-3-cleanup-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-20/s20-3-cleanup-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "Two people in gloves pick up bags and pieces of rubbish from a pile of rubble in front of a white wall, a man in a green top and a girl in a blue vest.",
+                "credit": {
+                  "author": "U.S. Marine Corps photo by Sgt. Samuel Qin",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:U_S_Navy_Sailors_clean_up_litter_on_a_beach_in_Panama_(9140921).jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:U_S_Navy_Sailors_clean_up_litter_on_a_beach_in_Panama_(9140921).jpg"
+                }
+              }
+            },
+            {
+              "id": "s20-3-shelter",
+              "title": "A dog at an animal shelter",
+              "alt": "A man in a black cap holds a small black dog in a purple harness while a woman in a grey shirt fills in a form at a desk in a bright room.",
+              "describeHints": [
+                "a man holding a dog",
+                "the woman with the form",
+                "the small black dog",
+                "the bright office",
+                "what happens to the dog"
+              ],
+              "image": {
+                "id": "s20-3-shelter",
+                "src": "assets/images/exams/cambridge-pet-20/s20-3-shelter-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-20/s20-3-shelter-600.webp",
+                "width": 1000,
+                "height": 666,
+                "alt": "A man in a black cap holds a small black dog in a purple harness while a woman in a grey shirt fills in a form at a desk in a bright room.",
+                "credit": {
+                  "author": "Jocelyn Augustino",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:FEMA_-_38421_-_A_Volunteer_holds_a_dog_being_checked_in_to_a_temporary_kennel_in_Texas.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:FEMA_-_38421_-_A_Volunteer_holds_a_dog_being_checked_in_to_a_temporary_kennel_in_Texas.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s20-4-1",
+              "prompt": "Why do you think some people give their time to help others?"
+            },
+            {
+              "id": "s20-4-2",
+              "prompt": "Should schools make students do volunteer work? Why, or why not?"
+            },
+            {
+              "id": "s20-4-3",
+              "prompt": "What can young people do to make their town a better place?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
