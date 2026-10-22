@@ -182,13 +182,16 @@ const THEME_NAME: Record<ThemePreference, string> = {
         background: var(--bg);
       }
       nav a {
-        flex: 1;
+        flex: 1 1 0;
+        min-width: 0;
         flex-direction: column;
         justify-content: center;
         gap: 2px;
         min-height: 3.25rem;
-        padding: 0 var(--space-2);
-        font-size: var(--step--1);
+        padding: 0 var(--space-1);
+        font-size: 0.75rem;
+        white-space: nowrap;
+        text-align: center;
       }
       .site-footer {
         padding-bottom: calc(var(--bottom-nav-height) + var(--space-5));

@@ -469,7 +469,7 @@ export function checkAcrossExams(exams) {
   return result;
 }
 
-/** Texts whose heading does not match their content cannot be detected automatically; see docs/audit-2026.md. */
+/** Texts whose heading does not match their content cannot be detected automatically. */
 export function allQualityChecks(exam, { fileExists, known }) {
   const parts = [
     checkExplanations(exam),

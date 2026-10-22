@@ -1,6 +1,6 @@
 # Learn English
 
-Free, original English practice exams that run in the browser. The first section is **B1**, with five Cambridge B1 Preliminary-style papers (Reading, Writing, Listening and Speaking). More boards and levels are planned.
+Free, original English practice exams that run in the browser. The first section is **B1**, with fifteen Cambridge B1 Preliminary-style papers (Reading, Writing, Listening and Speaking), grammar guides for B1 and B2, an irregular verbs trainer and the Cambridge B1 vocabulary list. It is an installable app (PWA) that works offline. More boards and levels are planned.
 
 The app is built with Angular 22 (zoneless, standalone components, signals). Exam content lives in static JSON files, and learner progress is stored only in the browser (localStorage and IndexedDB).
 
@@ -25,7 +25,7 @@ Other scripts: `npm run schema:generate` (JSON Schema from `src/app/models/exam.
 
 ## Exams
 
-Exams are JSON files in `src/assets/exams/<level>/<board>/<id>.json` (schema version 2, see `src/app/models/exam.ts`). Each level has a generated `index.json` used by the listing page. Supported boards: Cambridge B1 Preliminary today; the model also covers EOI, Trinity ISE I, Aptis, LanguageCert and Oxford Test formats.
+Exams are JSON files in `src/assets/exams/<level>/<board>/<id>.json` (schema version 2, see `src/app/models/exam.ts`). Each level has a generated `index.json` used by the listing page. Only Cambridge B1 Preliminary is offered today. The model and validators also cover EOI, Trinity ISE I, Aptis, LanguageCert and Oxford Test formats, but those boards are hidden until they have exams.
 
 To add an exam:
 
@@ -33,18 +33,22 @@ To add an exam:
 2. Run `npm run exams:index` and `npm run validate:exams`.
 3. Run `npm run build`.
 
-Use the project skill in `.claude/skills/b1-exam-author/` for authoring rules. All materials are original practice items, not official exam papers.
+Read `docs/authoring-exams.md` (or use the project skill in `.claude/skills/b1-exam-author/`) for the authoring rules and the low-token workflow (`node scripts/exam-tools.mjs`). All materials are original practice items, not official exam papers.
 
 ## Saved data
 
-Everything is saved in the browser: answers, writing drafts, speaking transcripts and scores in one localStorage key (`learn-english:v1`), and speaking recordings in IndexedDB (`learn-english-audio`). Data saved by the earlier React version (`northstar-practice-v3` and the `northstar-speech-recordings` database) is copied automatically on first load and left untouched as a backup.
+Everything is saved in the browser: answers, writing drafts, speaking transcripts and scores in one localStorage key (`learn-english:v1`), and speaking recordings in IndexedDB (`learn-english-audio`).
 
 ## Deployment
 
-`.github/workflows/deploy.yml` lints, tests, validates and builds, then publishes to GitHub Pages. The build uses `--base-href /<repository>/` and copies `index.html` to `404.html`, so deep links such as `/b1/cambridge-pet/cambridge-pet-01/reading` work with clean URLs. The app is also an installable PWA that works offline after the first visit.
+`.github/workflows/deploy.yml` lints, tests, validates and builds, then publishes to GitHub Pages. The build uses `--base-href /<repository>/` and copies `index.html` to `404.html`, so deep links such as `/b1/cambridge-pet/cambridge-pet-01/reading` work with clean URLs. The app is an installable PWA (Settings > Install the app, or the install button of the browser) and works offline after the first visit.
 
 ## Reference sources
 
 - [Cambridge B1 Preliminary exam format](https://www.cambridgeenglish.org/exams-and-tests/qualifications/preliminary/format/)
 - [B1 Preliminary Handbook for Teachers](https://www.cambridgeenglish.org/Images/168150-b1-preliminary-teachers-handbook.pdf)
 - [B1 Preliminary Vocabulary List (August 2025)](https://www.cambridgeenglish.org/Images/506887-b1-preliminary-vocabulary-list.pdf)
+
+## For contributors and AI agents
+
+Start with `AGENTS.md`. It links to one short document per topic in `docs/`.
