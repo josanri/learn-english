@@ -6,7 +6,7 @@ Only Cambridge B1 Preliminary (`cambridge-pet`) is offered in the UI. The other 
 
 ## Why this workflow exists (token cost)
 
-A full exam is about 65 KB of JSON (about 18,000 tokens). The old way (write the whole file, validate, reread it all to solve it blind, view eight preview images per photo) cost about 300,000 tokens to write and 300,000 to test, with almost no prompt-cache reuse because every step read different big files. The workflow below keeps each step small:
+A full exam is about 70 KB of JSON (about 18,000 tokens). The old way (write the whole file, validate, reread it all to solve it blind, view eight preview images per photo) cost about 300,000 tokens to write and 300,000 to test, with almost no prompt-cache reuse because every step read different big files. The workflow below keeps each step small:
 
 | Old habit                                   | Now                                                                                          | Saving    |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------- | --------- |
@@ -24,22 +24,36 @@ Rules for agents that keep the cache useful:
 4. Fix in place with small edits instead of rewriting a section.
 5. Look at images once: the contact sheet to choose, the 480 px preview to confirm.
 
-## Tools (`node scripts/exam-tools.mjs <command>`)
+## Tools
+
+`node scripts/exam-tools.mjs <command>`:
 
 ```
 brief <board> [--names]      paper shape, themes already used, key-letter totals
 split <examId>               exam -> work/<examId>/header.json + <skill>.json
 build <examId>               work/<examId>/* -> src/assets/exams/<level>/<board>/<examId>.json
+rebalance <examId>           spread the multiple-choice keys over A, B, C (and D) in work/<examId>
+longkeys <examId>            list multiple-choice items whose key is the longest option
 sheet <examId> [skill]       the exam without answer, accepted and explanation fields
 grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only the disagreements
 ```
 
+`scripts/lib/exam-builders.mjs` has compact builders (`notices`, `matching`, `multipleChoice`, `gappedText`, `cloze`, `openCloze`, `clip`, `shortDialogues`, `gistDialogues`, `noteCompletion`, `interview`, `writing`, `speaking`, `save`). Items are arrays (`[prompt, options, answerIndex, explanation]`) instead of repeated object keys, which saves about 40% of the output tokens. A test (`exam-builders.test.mjs`) proves that they reproduce a published exam exactly.
+
 `work/` is ignored by git. `header.json` holds the exam header and `sectionOrder`.
+
+### Fast path for a whole exam
+
+1. Write one author script in `work/` (not committed) that imports the builders and ends with `save('<examId>', { title, subtitle, theme }, reading(...), writing(...), listening(...), speaking(...))`. Run it with `node`.
+2. `rebalance <examId>`: you do not have to balance the key letters by hand, write the key in any position. Do not put "all of the above" or a letter in an explanation, because options move.
+3. Write distractors as long as the key, and put at least one word of the key in the script (the validator warns about both). `longkeys <examId>` shows which items still need work.
+4. `build <examId>`, `npm run exams:index`, `npm run validate:exams -- <file>`. Fix warnings with small string patches on the work files, then `build` again.
+5. Photos last (they are written into the built JSON). After this step edit the built JSON only, or `split` it again, or `build` will remove the photos.
 
 ## Workflow
 
 1. `node scripts/exam-tools.mjs brief cambridge-pet`. Pick a theme, names and photo topics that are not used. Check `docs/exam-formats.md` only if the board is not Cambridge.
-2. Copy `split cambridge-pet-01` into `work/<newId>/` (or create the files yourself), change `header.json` (`id`, `title`, `subtitle`, `theme`) and rewrite the skills one by one. Start with the skill that has the most dependencies (reading, then listening).
+2. Write the exam with the builders (see the fast path) or copy `split cambridge-pet-01` into `work/<newId>/` and rewrite the skills one by one. Start with reading, then listening.
 3. `build <newId>`, then `npm run exams:index` and `npm run validate:exams -- <file>`. Fix errors first, then warnings.
 4. Photos (see below).
 5. Blind solve (one skill at a time, only reading and listening):

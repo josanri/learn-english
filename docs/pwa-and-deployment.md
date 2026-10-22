@@ -31,4 +31,4 @@ Photos are the largest part of the repository, so the rules are:
 - Do not commit originals, previews or scratch files (use the `work/` folder, which git ignores).
 - Large data (exams, vocabulary, dictionaries, fonts) is loaded lazily and cached by the service worker; none of it is in the JS bundle. Keep it that way.
 - Budgets: initial bundle warning at 500 kB and error at 1 MB (`angular.json`).
-- Current sizes: photos about 5.6 MB for 15 exams (about 0.37 MB per exam), exam JSON about 70 KB each, production build about 11 MB. At this rate 100 exams add about 45 MB, mostly photos. If that becomes too much, the next steps are 800 px photos, AVIF, or fewer photos per exam.
+- Current sizes: photos about 11 MB for 25 exams (about 0.44 MB per exam, five photos each), exam JSON about 70 KB each. At this rate 100 exams add about 45 MB, mostly photos. If that becomes too much, the next steps are 800 px photos, AVIF, or fewer photos per exam.

@@ -1,6 +1,6 @@
 # Learn English
 
-Free, original English practice exams that run in the browser. The first section is **B1**, with fifteen Cambridge B1 Preliminary-style papers (Reading, Writing, Listening and Speaking), grammar guides for B1 and B2, an irregular verbs trainer and the Cambridge B1 vocabulary list. It is an installable app (PWA) that works offline. More boards and levels are planned.
+Free, original English practice exams that run in the browser. The first section is **B1**, with twenty-five Cambridge B1 Preliminary-style papers (Reading, Writing, Listening and Speaking), grammar guides for B1 and B2, an irregular verbs trainer and the Cambridge B1 vocabulary list. It is an installable app (PWA) that works offline. More boards and levels are planned.
 
 The app is built with Angular 22 (zoneless, standalone components, signals). Exam content lives in static JSON files, and learner progress is stored only in the browser (localStorage and IndexedDB).
 
