@@ -306,7 +306,7 @@ export function checkImages(exam, exists) {
           ['srcSmall', img.srcSmall],
         ]) {
           if (label === 'srcSmall' && !p) {
-            warnings.push(`${where}: srcSmall (600 px) is missing`);
+            warnings.push(`${where}: srcSmall (480 px) is missing`);
             continue;
           }
           if (!exists(p)) errors.push(`${where}: ${label} file not found (${p})`);

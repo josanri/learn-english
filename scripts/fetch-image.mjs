@@ -1,5 +1,5 @@
 // Fetches a licensed photograph from Wikimedia Commons, verifies its licence against the whitelist,
-// converts it to WebP at 1200 px and 600 px wide (sharp) and registers it in an exam JSON.
+// converts it to WebP at 1000 px and 480 px wide (sharp) and registers it in an exam JSON.
 //
 // Source: Wikimedia Commons only (public API, no key). Unsplash and Pexels pages are rejected because
 // their licence cannot be verified without an API key.
@@ -203,13 +203,13 @@ async function fetchOne(input) {
   mkdirSync(dir, { recursive: true });
   const big = await base
     .clone()
-    .resize({ width: 1200, withoutEnlargement: true })
-    .webp({ quality: 78 })
+    .resize({ width: 1000, withoutEnlargement: true })
+    .webp({ quality: 62, effort: 6, smartSubsample: true })
     .toFile(join(dir, `${visualId}-1200.webp`));
   await base
     .clone()
-    .resize({ width: 600, withoutEnlargement: true })
-    .webp({ quality: 75 })
+    .resize({ width: 480, withoutEnlargement: true })
+    .webp({ quality: 58, effort: 6, smartSubsample: true })
     .toFile(join(dir, `${visualId}-600.webp`));
 
   const entry = listExamFiles().find((e) => e.file === `${examId}.json`);
@@ -242,7 +242,7 @@ async function fetchOne(input) {
       .filter(Boolean);
   delete visual.illustration;
   writeFileSync(entry.absolute, `${JSON.stringify(exam, null, 2)}\n`);
-  console.log(`Wrote ${big.width}x${big.height} WebP (1200 + 600) and updated ${entry.path}`);
+  console.log(`Wrote ${big.width}x${big.height} WebP (1000 + 480) and updated ${entry.path}`);
 }
 
 const [cmd, ...rest] = args;
