@@ -303,8 +303,8 @@ const LANGUAGES: SegmentOption[] = [
             </div>
           } @else if (install.needsManualSteps()) {
             <p class="muted">
-              On iPhone and iPad, tap the Share button in Safari, then choose
-              &ldquo;Add to Home Screen&rdquo;.
+              On iPhone and iPad, tap the Share button in Safari, then choose &ldquo;Add to Home
+              Screen&rdquo;.
             </p>
           } @else {
             <p class="muted">

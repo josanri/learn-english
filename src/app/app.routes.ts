@@ -83,6 +83,12 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'vocabulary',
+    title: 'B1 vocabulary | Learn English',
+    loadComponent: () =>
+      import('./features/vocabulary/vocabulary-page').then((m) => m.VocabularyPage),
+  },
+  {
     path: 'settings',
     title: 'Settings | Learn English',
     loadComponent: () => import('./features/settings/settings-page').then((m) => m.SettingsPage),

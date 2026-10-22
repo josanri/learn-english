@@ -47,6 +47,10 @@ const THEME_NAME: Record<ThemePreference, string> = {
             <app-icon name="book" />
             <span>Grammar</span>
           </a>
+          <a routerLink="/vocabulary" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <app-icon name="chat" />
+            <span>Words</span>
+          </a>
           <a routerLink="/settings" routerLinkActive="active" ariaCurrentWhenActive="page">
             <app-icon name="settings" />
             <span>Settings</span>
