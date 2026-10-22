@@ -321,4 +321,16 @@ describe('ExamSessionStore', () => {
     expect(store.timerNotice()).toContain('Time is up');
     expect(store.remaining()).toBeLessThanOrEqual(0);
   });
+
+  it('stops counting while paused and continues after resume', async () => {
+    const store = setup();
+    await vi.advanceTimersByTimeAsync(3000);
+    store.togglePause();
+    await vi.advanceTimersByTimeAsync(10_000);
+    expect(store.elapsed()).toBe(3);
+    expect(store.timerNotice()).toBe('Timer paused.');
+    store.togglePause();
+    await vi.advanceTimersByTimeAsync(2000);
+    expect(store.elapsed()).toBe(5);
+  });
 });

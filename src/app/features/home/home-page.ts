@@ -28,7 +28,6 @@ interface SkillCard {
   template: `
     <section class="hero container" aria-labelledby="hero-title">
       <ul class="chips" aria-label="About this app">
-        <li><app-chip [command]="true">B1</app-chip></li>
         <li><app-chip>Practice exams</app-chip></li>
         <li><app-chip>Works offline</app-chip></li>
       </ul>

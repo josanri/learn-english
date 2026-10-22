@@ -183,11 +183,6 @@ export function upgradeLegacyExamId(id: string): string {
   return id.replace(/^exam-(\d+)$/, 'cambridge-pet-$1');
 }
 
-/** `exam-03:s3-1-1` (IndexedDB key of the React app) becomes `cambridge-pet-03:s3-1-1`. */
-export function upgradeLegacyAudioKey(key: string): string {
-  return key.replace(/^exam-(\d+):/, 'cambridge-pet-$1:');
-}
-
 /**
  * `<examId>:<promptId>` (two parts) becomes `<examId>:<attemptId>:<promptId>`; keys that already
  * have three parts are returned unchanged. `attemptOf` gives the attempt id to use for an exam.

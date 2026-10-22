@@ -19,11 +19,6 @@ import {
 const FORMATS: SegmentOption[] = [
   { value: 'all', label: 'All formats' },
   { value: 'cambridge', label: 'Cambridge' },
-  { value: 'eoi', label: 'EOI' },
-  { value: 'trinity', label: 'Trinity' },
-  { value: 'aptis', label: 'Aptis' },
-  { value: 'languagecert', label: 'LanguageCert' },
-  { value: 'oxford', label: 'Oxford' },
 ];
 
 interface ExamCard {

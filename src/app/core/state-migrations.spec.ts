@@ -5,15 +5,13 @@ import {
   migrateLegacyData,
   migrateState,
   attemptKeyFor,
-  upgradeLegacyAudioKey,
   upgradeLegacyExamId,
 } from './state-migrations';
 
 describe('state migrations', () => {
-  it('renames React-era exam ids and audio keys', () => {
+  it('renames React-era exam ids', () => {
     expect(upgradeLegacyExamId('exam-03')).toBe('cambridge-pet-03');
     expect(upgradeLegacyExamId('other')).toBe('other');
-    expect(upgradeLegacyAudioKey('exam-04:s4-1-2')).toBe('cambridge-pet-04:s4-1-2');
   });
 
   it('adds the attempt id to two-part recording keys only', () => {
