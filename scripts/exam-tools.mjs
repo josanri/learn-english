@@ -5,6 +5,8 @@
 //   node scripts/exam-tools.mjs split <examId>              exam -> work/<examId>/header.json + one file per skill
 //   node scripts/exam-tools.mjs build <examId>              work/<examId>/* -> the exam JSON (then validate it)
 //   node scripts/exam-tools.mjs sheet <examId> [skill]      the exam without keys, minified (for a blind solve)
+//   node scripts/exam-tools.mjs rebalance <examId>           spread the multiple-choice keys over A, B, C (D) in work/<examId>
+//   node scripts/exam-tools.mjs longkeys <examId>            multiple-choice items whose key is the longest option
 //   node scripts/exam-tools.mjs grade <examId> <file.json>  compare your answers {itemId: answer} with the keys
 //
 // The work folder is ignored by git. See docs/authoring-exams.md for the whole workflow.
@@ -206,7 +208,100 @@ function grade(examId, file) {
   }
 }
 
+/** Lists multiple-choice items whose key is the longest option (the validator warns above half). */
+function longkeys(examId) {
+  const entry = findEntry(examId);
+  if (!entry) fail(`No exam ${examId}`);
+  const exam = readExam(entry);
+  let total = 0;
+  const lines = [];
+  (function walk(n) {
+    if (Array.isArray(n)) n.forEach(walk);
+    else if (n && typeof n === 'object') {
+      if (
+        typeof n.id === 'string' &&
+        Array.isArray(n.options) &&
+        Number.isInteger(n.answer) &&
+        n.options.length >= 3 &&
+        n.options[0] !== 'A'
+      ) {
+        total += 1;
+        const lengths = n.options.map((o) => o.length);
+        const key = lengths[n.answer];
+        if (lengths.every((len, i) => i === n.answer || len < key)) {
+          lines.push(`  ${n.id}: key ${'ABCD'[n.answer]} (${key}) vs ${lengths.join('/')}`);
+        }
+      }
+      Object.values(n).forEach(walk);
+    }
+  })(exam.sections);
+  console.log(`${lines.length} of ${total} keys are the longest option (aim for fewer than half).`);
+  console.log(lines.join('\n'));
+}
+
+/**
+ * Moves the key of every text multiple-choice item to a balanced, pseudo-random letter by swapping two
+ * options (the explanations never name letters). Items keep their order; the result has no letter above
+ * about a third of the 3-option items and never four equal keys in a row. Writes work/<examId>/ files.
+ */
+function rebalance(examId) {
+  const dir = join(WORK, examId);
+  const skills = ['reading', 'listening'];
+  let seed = 7;
+  const random = () => {
+    seed = (seed * 16807) % 2147483647;
+    return seed / 2147483647;
+  };
+  const queue = (size) => {
+    const out = [];
+    while (out.length < 200) {
+      const block = [...Array(size).keys()];
+      for (let i = block.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(random() * (i + 1));
+        [block[i], block[j]] = [block[j], block[i]];
+      }
+      out.push(...block);
+    }
+    return out;
+  };
+  const queues = { 3: queue(3), 4: queue(4) };
+  let changed = 0;
+  for (const skill of skills) {
+    const file = join(dir, `${skill}.json`);
+    const section = JSON.parse(readFileSync(file, 'utf8'));
+    (function walk(node) {
+      if (Array.isArray(node)) node.forEach(walk);
+      else if (node && typeof node === 'object') {
+        const { options, answer } = node;
+        if (
+          typeof node.id === 'string' &&
+          Array.isArray(options) &&
+          Number.isInteger(answer) &&
+          (options.length === 3 || options.length === 4) &&
+          options[0] !== 'A'
+        ) {
+          const target = queues[options.length].shift();
+          if (target !== answer) {
+            [options[answer], options[target]] = [options[target], options[answer]];
+            node.answer = target;
+            changed += 1;
+          }
+        }
+        Object.values(node).forEach(walk);
+      }
+    })(section);
+    writeFileSync(file, JSON.stringify(section, null, 2) + '\n');
+  }
+  console.log(`Moved the key of ${changed} items. Run build, then validate.`);
+}
+
 switch (command) {
+  case 'rebalance':
+    rebalance(rest[0]);
+    break;
+  case 'longkeys':
+    longkeys(rest[0]);
+    break;
   case 'brief':
     brief(rest[0]);
     break;
