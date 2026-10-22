@@ -1,0 +1,1775 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-13",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Sport and Teamwork",
+  "subtitle": "Clubs, matches and playing together in Kelham",
+  "theme": "Sport & teamwork",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices at the sports club",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "KELHAM RANGERS: Saturday’s home match against Eastfield has been moved to Sunday at 11 a.m. because the pitch is too wet. Please tell the rest of the team.",
+            "CHANGING ROOMS: Keys are no longer kept in the office. Please ask at the pool desk, and bring the key back before you leave.",
+            "FERGUS: Training starts at 6.30 tomorrow, not 7. The coach has a meeting later. Bring your own water, as there is none in the hall.",
+            "LEAGUE TABLE: This board is updated every Monday morning. If you think a result is wrong, please speak to the office staff before Wednesday.",
+            "KIT SALE: Last season’s team shirts are half price at the club shop this weekend only. This season’s shirts cannot be reduced."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "Why has the match been moved?",
+              "options": [
+                "The pitch is in a poor state.",
+                "Eastfield cannot play on Saturday.",
+                "Too few of the players can come."
+              ],
+              "answer": 0,
+              "explanation": "The notice says the pitch is too wet, so the match is moved from Saturday to Sunday."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What must players do with the changing-room key?",
+              "options": [
+                "Return it before going home.",
+                "Give it to the office staff.",
+                "Keep it until the next session."
+              ],
+              "answer": 0,
+              "explanation": "The notice says to bring the key back before you leave; keys are no longer kept in the office."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What is Fergus telling his teammates?",
+              "options": [
+                "Training is cancelled tomorrow.",
+                "Everyone must bring a ball.",
+                "Training starts earlier."
+              ],
+              "answer": 2,
+              "explanation": "Training starts at 6.30 instead of 7, so it is earlier; he asks them to bring water, not a ball."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What should a team do if a result on the table looks wrong?",
+              "options": [
+                "Write the right score on the board.",
+                "Report it to the office staff.",
+                "Wait for next week’s table."
+              ],
+              "answer": 1,
+              "explanation": "The notice asks people to speak to the office staff before Wednesday if a result looks wrong."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What can members buy at a lower price this weekend?",
+              "options": [
+                "Shirts from the new range.",
+                "Older team shirts.",
+                "Sports shoes of all kinds."
+              ],
+              "answer": 1,
+              "explanation": "Last season’s shirts are half price; this season’s shirts cannot be reduced."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Choosing a sports club",
+          "instructions": "Read what each person is looking for. Match each person to the best club. There are three extra clubs.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Vanessa wants an indoor sport that she can play with a partner on weekday evenings. She likes fast games but has never played in a team."
+            },
+            {
+              "id": "p2",
+              "text": "Zane sits at a desk all week and wants a sport that makes him stronger and tests his courage. He is free on Friday evenings."
+            },
+            {
+              "id": "p3",
+              "text": "Kendall loves being on the water and would like to join a group that trains together before work."
+            },
+            {
+              "id": "p4",
+              "text": "Khalid is sixty-eight and misses playing football with friends, but his knees cannot cope with running. He would like a gentle form of the game."
+            },
+            {
+              "id": "p5",
+              "text": "Kayla is a student with very little money. She wants a cheap indoor sport for Saturday mornings, with the equipment provided."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Badminton evenings",
+              "text": "Play singles or doubles in the sports hall on Tuesday and Thursday evenings. Rackets can be borrowed and beginners are welcome."
+            },
+            {
+              "id": "B",
+              "title": "Climbing for all",
+              "text": "Our indoor wall has easy and difficult routes for every level. Safety training is included. Friday evenings."
+            },
+            {
+              "id": "C",
+              "title": "Park running group",
+              "text": "Meet at the park gate for an easy five-kilometre run on Sunday mornings. Bring a bottle of water."
+            },
+            {
+              "id": "D",
+              "title": "Adult swimming lessons",
+              "text": "Learn to swim in a small group with a friendly teacher. Monday evenings at the pool."
+            },
+            {
+              "id": "E",
+              "title": "Table tennis",
+              "text": "Tables and bats are provided. Come on Saturday mornings and pay just two pounds a session."
+            },
+            {
+              "id": "F",
+              "title": "Five-a-side football",
+              "text": "Fast games and a league for teams of five. Everyone must be able to run for an hour. Monday evenings."
+            },
+            {
+              "id": "G",
+              "title": "Walking football",
+              "text": "No running is allowed, so the game is gentle and friendly. Wednesday afternoons for players over fifty."
+            },
+            {
+              "id": "H",
+              "title": "Rowing crews",
+              "text": "Our crews train on the river at six o’clock every weekday morning. No experience is needed, because we teach you."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Vanessa",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Vanessa wants a weekday-evening indoor sport with a partner; text A is badminton on Tuesday and Thursday evenings. Text E is only on Saturdays."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Zane",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Zane wants a sport that makes him stronger and is free on Friday evenings; text B is climbing on Friday evenings."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Kendall",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "Kendall likes the water and wants to train before work; text H is rowing at six o’clock on weekday mornings."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Khalid",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "Khalid wants a gentle form of football without running; text G is walking football. Text F needs everyone to run."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Kayla",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Kayla wants a cheap indoor sport on Saturday mornings with equipment provided; text E offers table tennis for two pounds."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Joining a local team",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "When I moved to Kelham last year, I was the sort of person who watched sport on television but never played it. At school I was always chosen last for the team, and I had decided that I was simply not sporty. Then a colleague invited me to a Thursday-evening volleyball session at the sports hall. I said no three times before I finally went, mainly because she kept asking.\n\nThe first night I was terrified. Everyone seemed to know the rules, and I missed the ball almost every time. But nobody laughed. A retired teacher showed me how to hold my hands, and one of the older players told me about her first season, when she hit the ball into the ceiling. By the end of the evening, I was laughing too.\n\nSix months later, I am still not a very good player, but I never miss a session. What I like most is not winning, because we lost most of our matches this year. It is the feeling that other people are counting on me. Last month, when I had a cold and stayed at home, three teammates sent messages asking where I was. In my old job, nobody noticed if I was away for a week.\n\nThis autumn we have entered the town tournament. I do not think we will win, but I am already planning to buy a team T-shirt, which is something I never imagined I would say.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer first go to the volleyball session?",
+              "options": [
+                "She wanted to do better at sport.",
+                "She had always loved volleyball.",
+                "A colleague kept asking her."
+              ],
+              "answer": 2,
+              "explanation": "She says she went mainly because her colleague kept asking her, after saying no three times."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "How did she feel at her first session?",
+              "options": [
+                "She was embarrassed because people laughed.",
+                "She felt nervous and out of place.",
+                "She was bored with the other players."
+              ],
+              "answer": 1,
+              "explanation": "She says she was terrified and everyone seemed to know the rules; nobody laughed at her."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What does the writer like most about the team?",
+              "options": [
+                "Winning most of the matches.",
+                "Being needed by her team.",
+                "Learning the rules of the game."
+              ],
+              "answer": 1,
+              "explanation": "She likes the feeling that other people are counting on her, not winning, because the team lost most matches."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What happened when she stayed at home with a cold?",
+              "options": [
+                "Some teammates wrote to her.",
+                "The team lost an important match.",
+                "She missed a month of training."
+              ],
+              "answer": 0,
+              "explanation": "Three teammates sent messages asking where she was."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How does she feel about the tournament?",
+              "options": [
+                "She is happy to take part.",
+                "She is sure the team will win.",
+                "She is afraid of playing badly."
+              ],
+              "answer": 0,
+              "explanation": "She does not expect to win, but she is already planning to buy a team T-shirt, so she is looking forward to it."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A charity bike ride",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Every June, hundreds of cyclists leave Kelham at eight in the morning and ride eighty kilometres to the coast. The event started six years ago, when a teacher at the local school wanted to raise money for the children’s ward at the hospital. [1] They raised just over four hundred pounds, which bought toys and books for the ward.\n\nThe following year, the organisers put posters in shops and cafes. [2] By the third year, more than two hundred people had signed up.\n\nTaking part is not as hard as it sounds. [3] Riders can stop at three food points on the way, where volunteers give out fruit and water, and the route follows quiet roads and cycle paths.\n\nOf course, the weather is always a worry. [4] Last year it rained for the first twenty kilometres, but almost nobody gave up.\n\nThis year the target is ten thousand pounds, which would pay for a quiet room for families. [5] If you would like to join, you can register on the club website before the end of May.",
+          "sentences": [
+            "Word spread quickly, and many people asked to join.",
+            "To reach it, they will need more riders than ever before.",
+            "Some riders wear funny costumes for the day.",
+            "There is no race, and nobody has to hurry.",
+            "Only twelve friends took part in the first ride.",
+            "The organisers have never cancelled the ride, however."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "E",
+              "explanation": "“Only twelve friends took part in the first ride” follows the start of the event, and “They raised just over four hundred pounds” then tells the result of that first ride."
+            },
+            {
+              "id": "r4-2",
+              "answer": "A",
+              "explanation": "After the posters, “Word spread quickly” explains why, by the third year, more than two hundred people had signed up."
+            },
+            {
+              "id": "r4-3",
+              "answer": "D",
+              "explanation": "“There is no race, and nobody has to hurry” explains why taking part is not as hard as it sounds; the next sentence continues with “Riders” and more details about the ride itself."
+            },
+            {
+              "id": "r4-4",
+              "answer": "F",
+              "explanation": "“however” contrasts with the worry about the weather: the ride is never cancelled, and the next sentence gives an example of rain."
+            },
+            {
+              "id": "r4-5",
+              "answer": "B",
+              "explanation": "“To reach it” refers to the ten-thousand-pound target in the sentence before, and the next sentence invites readers to join the ride."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "The town cup final",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Last Saturday I went to the final of the town cup with my brother. We arrived early to [1] good seats near the front. The weather was dry, and the crowd was [2] of excitement. For most of the game, neither team could [3] a goal. Then, five minutes before the end, our captain kicked the ball into the net and everybody [4] to their feet. We won by one goal, and the captain was [5] the cup by the mayor. On the way home, we kept talking about the goal [6] we reached our street.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "borrow",
+                "spend",
+                "find",
+                "lend"
+              ],
+              "answer": 2,
+              "explanation": "You find good seats when you arrive early; you do not borrow, spend or lend seats."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "rich",
+                "busy",
+                "wide",
+                "full"
+              ],
+              "answer": 3,
+              "explanation": "“Full of” is the fixed phrase (“full of excitement”); rich, busy and wide do not form it."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "win",
+                "score",
+                "make",
+                "play"
+              ],
+              "answer": 1,
+              "explanation": "In football, a team scores a goal; you do not win, make or play a goal."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "jumped",
+                "pushed",
+                "fell",
+                "ran"
+              ],
+              "answer": 0,
+              "explanation": "People who are excited jump to their feet; “pushed”, “fell” and “ran” do not fit “to their feet”."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "taken",
+                "given",
+                "made",
+                "brought"
+              ],
+              "answer": 1,
+              "explanation": "The mayor gave the cup to the captain, so the captain “was given” it."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "until",
+                "during",
+                "while",
+                "since"
+              ],
+              "answer": 0,
+              "explanation": "“Until we reached our street” gives the end point of the talking."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "An email about sports day",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Hi Fergus,\nAre you coming to the sports day [1] Saturday? It starts at ten o’clock, and there will be races, a football match and a tug of war. I am taking part [2] the relay race with three of my colleagues. We have been practising [3] a month, so I hope we will win. [4] you want to watch, you can park behind the school. Bring a hat, [5] it might be sunny. Afterwards, we are going to have lunch together, so please come hungry! Call me if you have [6] questions.\nSee you soon,\nGrainne",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "on",
+              "accepted": [
+                "this",
+                "next"
+              ],
+              "explanation": "We use “on” with a day of the week: “on Saturday”. “This Saturday” or “next Saturday” also works."
+            },
+            {
+              "id": "r6-2",
+              "answer": "in",
+              "explanation": "We say “take part in” a race or an event."
+            },
+            {
+              "id": "r6-3",
+              "answer": "for",
+              "explanation": "“For a month” gives the length of time she has been practising."
+            },
+            {
+              "id": "r6-4",
+              "answer": "if",
+              "explanation": "“If you want to watch” introduces a condition, followed by what he can do."
+            },
+            {
+              "id": "r6-5",
+              "answer": "because",
+              "accepted": [
+                "as",
+                "since"
+              ],
+              "explanation": "The second part gives the reason for bringing a hat: it might be sunny."
+            },
+            {
+              "id": "r6-6",
+              "answer": "any",
+              "accepted": [
+                "more",
+                "some"
+              ],
+              "explanation": "“If you have any questions” is the usual phrase after “if”."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your friend Deniz has asked you to join a sports team. Read Deniz’s email and your notes, then write a reply.",
+            "notes": [
+              "Say whether you would like to join the team.",
+              "Explain why.",
+              "Say which day you could come to training.",
+              "Ask Deniz one question about the team."
+            ],
+            "wordCount": "about 100 words",
+            "sourceEmail": {
+              "body": "Our team needs one more player for the town league, and I thought of you! We train on Tuesdays and Thursdays after work, and we play matches on Sunday mornings. Would you like to join us? Let me know what you think.",
+              "from": "Deniz",
+              "subject": "Join our team?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say whether you would like to join the team.",
+                "keywords": [
+                  "join",
+                  "i would love",
+                  "i would like",
+                  "i'd love",
+                  "i'd like",
+                  "yes",
+                  "happy to",
+                  "sorry",
+                  "cannot",
+                  "can't",
+                  "team"
+                ]
+              },
+              {
+                "text": "Explain why.",
+                "keywords": [
+                  "because",
+                  "since",
+                  "reason",
+                  "so that",
+                  "that is why",
+                  "that's why",
+                  "fun",
+                  "fit",
+                  "healthy",
+                  "friends",
+                  "enjoy",
+                  "busy",
+                  "time"
+                ]
+              },
+              {
+                "text": "Say which day you could come to training.",
+                "keywords": [
+                  "monday",
+                  "tuesday",
+                  "wednesday",
+                  "thursday",
+                  "friday",
+                  "saturday",
+                  "sunday",
+                  "on tuesdays",
+                  "on thursdays",
+                  "after work",
+                  "i can come",
+                  "i could come",
+                  "free on"
+                ]
+              },
+              {
+                "text": "Ask Deniz one question about the team.",
+                "keywords": [
+                  "do you",
+                  "would you",
+                  "can you",
+                  "what",
+                  "when",
+                  "where",
+                  "how many",
+                  "how",
+                  "who",
+                  "which",
+                  "is there"
+                ],
+                "question": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a college magazine",
+              "prompt": "Articles wanted! A sport everyone should try. Which sport would you suggest? Why is it a good sport? What do people need to start? Write an article for the magazine.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say which sport people should try.",
+                  "keywords": [
+                    "football",
+                    "swimming",
+                    "tennis",
+                    "basketball",
+                    "running",
+                    "cycling",
+                    "climbing",
+                    "rowing",
+                    "badminton",
+                    "volleyball",
+                    "sport",
+                    "try",
+                    "i think"
+                  ]
+                },
+                {
+                  "text": "Explain why it is a good sport.",
+                  "keywords": [
+                    "because",
+                    "good for",
+                    "fit",
+                    "healthy",
+                    "fun",
+                    "friends",
+                    "team",
+                    "relax",
+                    "strong",
+                    "exciting",
+                    "enjoy",
+                    "easy"
+                  ]
+                },
+                {
+                  "text": "Say what people need to start.",
+                  "keywords": [
+                    "need",
+                    "start",
+                    "bring",
+                    "wear",
+                    "shoes",
+                    "ball",
+                    "club",
+                    "equipment",
+                    "kit",
+                    "lesson",
+                    "cheap",
+                    "you only"
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below. It should be about a very close match.",
+              "openingSentence": "There was only one minute left, and the score was still level.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what happened in the last minute.",
+                  "keywords": [
+                    "ball",
+                    "goal",
+                    "point",
+                    "score",
+                    "scored",
+                    "shot",
+                    "pass",
+                    "kick",
+                    "whistle",
+                    "suddenly",
+                    "last minute",
+                    "seconds"
+                  ]
+                },
+                {
+                  "text": "Say who won and how the players felt.",
+                  "keywords": [
+                    "won",
+                    "lost",
+                    "winner",
+                    "draw",
+                    "in the end",
+                    "finally",
+                    "happy",
+                    "proud",
+                    "excited",
+                    "sad",
+                    "celebrated",
+                    "cheered"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations about sport",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "eden",
+                    "name": "Eden",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "shane",
+                    "name": "Shane",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "shane",
+                    "text": "What time is training on Thursday?"
+                  },
+                  {
+                    "speaker": "eden",
+                    "text": "It used to start at six, but the coach has moved it to half past seven because the hall is busy."
+                  },
+                  {
+                    "speaker": "shane",
+                    "text": "Half past seven. That’s fine. Will we finish late?"
+                  },
+                  {
+                    "speaker": "eden",
+                    "text": "No, we finish at eight."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "What time does training start on Thursday?",
+                "options": [
+                  "6:00",
+                  "7:30",
+                  "8:00"
+                ],
+                "answer": 1,
+                "explanation": "Eden says training has been moved from six to half past seven; eight o’clock is when it finishes."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "stella",
+                    "name": "Stella",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "ismael",
+                    "name": "Ismael",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "ismael",
+                    "text": "Why are you limping?"
+                  },
+                  {
+                    "speaker": "stella",
+                    "text": "I twisted my ankle in the second half on Saturday. I thought it was nothing, but it’s a bit swollen today."
+                  },
+                  {
+                    "speaker": "ismael",
+                    "text": "You should show it to someone."
+                  },
+                  {
+                    "speaker": "stella",
+                    "text": "I’m seeing the club physio tomorrow."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What did Stella hurt?",
+                "options": [
+                  "Her knee",
+                  "Her wrist",
+                  "Her ankle"
+                ],
+                "answer": 2,
+                "explanation": "Stella says she twisted her ankle during the match."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "zofia",
+                    "name": "Zofia",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "mitchell",
+                    "name": "Mitchell",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "mitchell",
+                    "text": "Have you got your kit ready for tomorrow’s match?"
+                  },
+                  {
+                    "speaker": "zofia",
+                    "text": "Everything except my boots. I left them at my sister’s flat."
+                  },
+                  {
+                    "speaker": "mitchell",
+                    "text": "I’ve got an old pair you can borrow. What size are you?"
+                  },
+                  {
+                    "speaker": "zofia",
+                    "text": "Size five. Thanks, that would be great."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "What has Zofia forgotten to bring?",
+                "options": [
+                  "Boots",
+                  "A shirt",
+                  "Socks"
+                ],
+                "answer": 0,
+                "explanation": "She has everything except her boots, which she left at her sister’s flat."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "shannon",
+                    "name": "Shannon",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "imran",
+                    "name": "Imran",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "imran",
+                    "text": "Did your team win last night? What was the score?"
+                  },
+                  {
+                    "speaker": "shannon",
+                    "text": "Three–two in the end! We were losing one–nil at half time, and it was two–two with ten minutes left."
+                  },
+                  {
+                    "speaker": "imran",
+                    "text": "Wow. Who got the winning goal?"
+                  },
+                  {
+                    "speaker": "shannon",
+                    "text": "Our captain, in the last minute."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What was the final score?",
+                "options": [
+                  "2–2",
+                  "3–2",
+                  "1–0"
+                ],
+                "answer": 1,
+                "explanation": "The team lost the first half, equalised at two–two and then scored again to win three–two."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "imogen",
+                    "name": "Imogen",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "colton",
+                    "name": "Colton",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "colton",
+                    "text": "That referee was terrible today!"
+                  },
+                  {
+                    "speaker": "imogen",
+                    "text": "I don’t agree. I thought he was fair. The penalty against us was the right decision."
+                  },
+                  {
+                    "speaker": "colton",
+                    "text": "Maybe. I was too angry to see it clearly."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "What does Imogen think of the referee?",
+                "options": [
+                  "He was fair.",
+                  "He made too many mistakes.",
+                  "He was too strict."
+                ],
+                "answer": 0,
+                "explanation": "Imogen says she thought the referee was fair and that his penalty decision was right."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "shira",
+                    "name": "Shira",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "lawrence",
+                    "name": "Lawrence",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "shira",
+                    "text": "Can you give me a lift to the match on Sunday? My car is at the garage."
+                  },
+                  {
+                    "speaker": "lawrence",
+                    "text": "I’m sorry, I can’t. I’m going from my parents’ house. But the number nine bus stops right outside the ground."
+                  },
+                  {
+                    "speaker": "shira",
+                    "text": "Oh, good. I’ll take that."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "How will Shira get to the match on Sunday?",
+                "options": [
+                  "In Lawrence’s car",
+                  "By taxi",
+                  "By bus"
+                ],
+                "answer": 2,
+                "explanation": "Lawrence cannot give her a lift, but the number nine bus stops outside the ground, and she says she will take it."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "charlotte",
+                    "name": "Charlotte",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "adolfo",
+                    "name": "Adolfo",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "charlotte",
+                    "text": "Are you coming to the swimming lesson today?"
+                  },
+                  {
+                    "speaker": "adolfo",
+                    "text": "I can’t. I have to work late. Is there a class on Saturday?"
+                  },
+                  {
+                    "speaker": "charlotte",
+                    "text": "The Saturday class is full, but there is space on Friday at five."
+                  },
+                  {
+                    "speaker": "adolfo",
+                    "text": "Perfect. Put my name down for Friday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "When will Adolfo go swimming?",
+                "options": [
+                  "On Friday",
+                  "Today",
+                  "On Saturday"
+                ],
+                "answer": 0,
+                "explanation": "He cannot come today, the Saturday class is full, and he asks to be put down for Friday."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "What people say about sport",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "chiara",
+                    "name": "Chiara",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "cedric",
+                    "name": "Cedric",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "cedric",
+                    "text": "You look upset. Did you lose?"
+                  },
+                  {
+                    "speaker": "chiara",
+                    "text": "Six–nil. It’s our worst result this year. I could almost cry."
+                  },
+                  {
+                    "speaker": "cedric",
+                    "text": "Next week will be better. Everyone has a bad day."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "How does the woman feel?",
+                "options": [
+                  "Upset about the result",
+                  "Angry with her teammates",
+                  "Worried about next week"
+                ],
+                "answer": 0,
+                "explanation": "She says six–nil is the worst result this year and that she could almost cry."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "shreya",
+                    "name": "Shreya",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "nikhil",
+                    "name": "Nikhil",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "nikhil",
+                    "text": "The coach says I should pass the ball more and not try to do everything myself."
+                  },
+                  {
+                    "speaker": "shreya",
+                    "text": "He’s right. You always try to score on your own."
+                  },
+                  {
+                    "speaker": "nikhil",
+                    "text": "I know. I’ll try to change."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What does the coach want Nikhil to do?",
+                "options": [
+                  "Train more often",
+                  "Practise his shooting",
+                  "Pass the ball more"
+                ],
+                "answer": 2,
+                "explanation": "The coach says he should pass the ball more instead of doing everything himself."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "zainab",
+                    "name": "Zainab",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "rohan",
+                    "name": "Rohan",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "rohan",
+                    "text": "I’m trying to buy tickets for Saturday’s game, but the website says they’re sold out."
+                  },
+                  {
+                    "speaker": "zainab",
+                    "text": "Try the club shop. They keep some for people who come in person."
+                  },
+                  {
+                    "speaker": "rohan",
+                    "text": "Good idea. I’ll go this afternoon."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What does Zainab suggest?",
+                "options": [
+                  "Going to the club shop",
+                  "Waiting for the website",
+                  "Watching on television"
+                ],
+                "answer": 0,
+                "explanation": "She tells him to try the club shop, because they keep some tickets for people who come in person."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "colton",
+                    "name": "Colton",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "shannon",
+                    "name": "Shannon",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "colton",
+                    "text": "I’d like to join the gym. Is there a swimming pool?"
+                  },
+                  {
+                    "speaker": "shannon",
+                    "text": "No, I’m afraid not, but we have a climbing wall and a big weights room."
+                  },
+                  {
+                    "speaker": "colton",
+                    "text": "A climbing wall! That’s just what I was hoping for."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the man like about the gym?",
+                "options": [
+                  "It has a big swimming pool.",
+                  "There is a climbing wall.",
+                  "It is very close to his home."
+                ],
+                "answer": 1,
+                "explanation": "There is no pool, but there is a climbing wall, and he says it is just what he was hoping for."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "chiara",
+                    "name": "Chiara",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "ismael",
+                    "name": "Ismael",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "chiara",
+                    "text": "These running shoes feel a bit tight."
+                  },
+                  {
+                    "speaker": "ismael",
+                    "text": "Many runners need a bigger size, because feet get larger when you run. Try the next size up."
+                  },
+                  {
+                    "speaker": "chiara",
+                    "text": "All right, I’ll try those."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What will the customer do?",
+                "options": [
+                  "Choose another colour",
+                  "Try a bigger size",
+                  "Buy a different brand"
+                ],
+                "answer": 1,
+                "explanation": "The assistant suggests the next size up and the customer agrees to try it."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "adolfo",
+                    "name": "Adolfo",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "shreya",
+                    "name": "Shreya",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "adolfo",
+                    "text": "Come in a bit closer, please. I can’t fit all of you in the picture."
+                  },
+                  {
+                    "speaker": "shreya",
+                    "text": "Where should the goalkeeper stand?"
+                  },
+                  {
+                    "speaker": "adolfo",
+                    "text": "Kneel at the front. And could you hold the cup in the middle, captain?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does the photographer ask the players to do?",
+                "options": [
+                  "Put on their winter coats",
+                  "Hold the cup high",
+                  "Stand closer together"
+                ],
+                "answer": 2,
+                "explanation": "He says “Come in a bit closer” because he cannot fit everyone in the picture."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about joining a sports club",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "speaker-1",
+                "name": "Tolga",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "speaker-1",
+                "text": "Good evening, everyone, and welcome to the Kelham Community Sports Club. My name is Tolga, and I’m the club secretary. I’d like to tell you how to sign up for the new season. Registration opens on the first of September and closes two weeks later. You can fill in the form online, or you can come to the office, which is next to the swimming pool. The membership fee is forty pounds for adults, and students pay half the adult price. Every member also gets a club T-shirt in their team colour. Training for all teams starts on the second Monday of the month, at seven o’clock. If you have never played in a team before, don’t worry. We have a special group for beginners, and the coach is very patient. Please bring a water bottle and wear sports shoes to the first session."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "Registration opens on the first of ___",
+              "answer": "September",
+              "explanation": "Tolga says registration opens on the first of September."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The office is next to the swimming ___",
+              "answer": "pool",
+              "explanation": "The office is next to the swimming pool."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Students pay ___ the adult price",
+              "answer": "half",
+              "explanation": "Adults pay forty pounds and students pay half the adult price."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Training starts on the second ___ of the month",
+              "answer": "Monday",
+              "explanation": "Training for all teams starts on the second Monday of the month."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "There is a special group for ___",
+              "answer": "beginners",
+              "explanation": "He says there is a special group for beginners."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Please bring a water ___",
+              "answer": "bottle",
+              "explanation": "Members should bring a water bottle to the first session."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a basketball coach",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "interviewer",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "ulises",
+                "name": "Ulises",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "interviewer",
+                "text": "Ulises, you coach the Kelham under-eighteen basketball team. How did you get started?"
+              },
+              {
+                "speaker": "ulises",
+                "text": "I played as a teenager, but I was never very tall, so I wasn’t good enough to play professionally. When I stopped, a friend asked me to help with a children’s team for a few weeks. That was ten years ago, and I’m still here."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What is the most important thing in a team?"
+              },
+              {
+                "speaker": "ulises",
+                "text": "Talking. The best teams I’ve coached weren’t always the most skilful. They were the ones who talked to each other all the time, on the court and in the changing room. If players trust each other, they pass the ball instead of trying to do everything alone."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "How do you deal with a defeat?"
+              },
+              {
+                "speaker": "ulises",
+                "text": "Never straight after the game. When you’re angry, you say things you don’t mean. We meet the next day, and we watch the match together and choose two or three things to improve. I always begin with something positive."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Have you had any difficult moments?"
+              },
+              {
+                "speaker": "ulises",
+                "text": "Last year our best player broke her arm just before the final. We were all very sad, but she came to every training session anyway and gave advice from the side. In the end, we lost the final by one point, but I was proud of everyone."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What do you want young players to learn?"
+              },
+              {
+                "speaker": "ulises",
+                "text": "Winning is great, but it isn’t everything. I want them to enjoy playing and to be good teammates. Many of them will never play for a living, and that’s fine. Sport can teach you to be patient, to listen and to keep trying, which is useful in any job."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Do you have any advice for someone who wants to join a team?"
+              },
+              {
+                "speaker": "ulises",
+                "text": "Don’t be shy. Go to a training session and just watch if you want. Most clubs are happy to let you try before you pay. And choose a sport you enjoy, not one that your friends play."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Ulises become a coach?",
+              "options": [
+                "A friend asked him to help.",
+                "He stopped playing after an injury.",
+                "He replied to a job advert."
+              ],
+              "answer": 0,
+              "explanation": "When he stopped playing, a friend asked him to help with a children’s team for a few weeks."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What does Ulises think is most important in a team?",
+              "options": [
+                "Having tall players.",
+                "Talking to each other.",
+                "Winning the first games."
+              ],
+              "answer": 1,
+              "explanation": "He says “Talking” and explains that the best teams talk to each other all the time."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does Ulises do after a defeat?",
+              "options": [
+                "He speaks to every player that night.",
+                "He changes the team for the next match.",
+                "He holds a meeting the next day."
+              ],
+              "answer": 2,
+              "explanation": "He does not talk straight after the game; they meet the next day and watch the match together."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What happened before last year’s final?",
+              "options": [
+                "A player was injured.",
+                "The coach was ill.",
+                "The hall was closed."
+              ],
+              "answer": 0,
+              "explanation": "Their best player broke her arm just before the final."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What does Ulises want young players to learn?",
+              "options": [
+                "How to play for a living.",
+                "How to win every match.",
+                "To enjoy sport and work together."
+              ],
+              "answer": 2,
+              "explanation": "He wants them to enjoy playing and to be good teammates; winning and playing for a living are not the main aim."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What advice does he give to a newcomer?",
+              "options": [
+                "Choose the same sport as friends.",
+                "Try a session before joining.",
+                "Start with an individual sport."
+              ],
+              "answer": 1,
+              "explanation": "He says most clubs let you try a session before you pay, and that you should not choose a sport only because friends play it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Sports you play or watch",
+          "instructions": "Answer each question in your own words. Aim to speak for 20–30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s1-1-1",
+              "prompt": "Do you play any sports? Tell me about one of them."
+            },
+            {
+              "id": "s1-1-2",
+              "prompt": "Is there a sport that you like watching? Why do you enjoy it?"
+            },
+            {
+              "id": "s1-1-3",
+              "prompt": "When did you last do some exercise with other people?"
+            },
+            {
+              "id": "s1-1-4",
+              "prompt": "Would you rather play in a team or on your own? Why?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a football match",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say how the players might be feeling.",
+          "type": "photo-description",
+          "prompt": "Two women playing in a football match; one player kicks the ball while another runs beside her.",
+          "images": [
+            {
+              "id": "s13-2-football",
+              "title": "A women’s football match",
+              "alt": "Two women play in a football match on a green pitch. A player in a white and blue kit kicks the ball while a player in a red kit runs beside her. Spectators sit on steps behind them.",
+              "image": {
+                "id": "s13-2-football",
+                "src": "assets/images/exams/cambridge-pet-13/s13-2-football-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-13/s13-2-football-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "Two women play in a football match on a green pitch. A player in a white and blue kit kicks the ball while a player in a red kit runs beside her. Spectators sit on steps behind them.",
+                "credit": {
+                  "author": "Dylan Smith",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Air_Force%E2%80%99s_Addie_Doyle_shoots_the_ball_during_a_home_game_against_University_of_Denver_at_the_Academy%E2%80%99s_Cadet_Soccer_Stadium_in_Colorado_Springs,_Colorado,_August_14,_2025.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_Force%E2%80%99s_Addie_Doyle_shoots_the_ball_during_a_home_game_against_University_of_Denver_at_the_Academy%E2%80%99s_Cadet_Soccer_Stadium_in_Colorado_Springs,_Colorado,_August_14,_2025.jpg"
+                }
+              },
+              "describeHints": [
+                "two players in different coloured kits",
+                "the ball and the kick",
+                "the spectators on the steps",
+                "the pitch and the weather",
+                "how the players might feel"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Choose a sports club",
+          "instructions": "Look at the pictures. Talk about the clubs and decide which one you would recommend to a new student who wants to make friends.",
+          "type": "collaborative-task",
+          "prompt": "Which club would you recommend to the new student? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s13-3-climbing",
+              "title": "Indoor climbing",
+              "alt": "At an indoor climbing wall, a man in a black T-shirt holds a rope and a harness while a climber goes up the blue wall above him. Another man stands behind them.",
+              "image": {
+                "id": "s13-3-climbing",
+                "src": "assets/images/exams/cambridge-pet-13/s13-3-climbing-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-13/s13-3-climbing-600.webp",
+                "width": 1200,
+                "height": 798,
+                "alt": "At an indoor climbing wall, a man in a black T-shirt holds a rope and a harness while a climber goes up the blue wall above him. Another man stands behind them.",
+                "credit": {
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Climbers_practice_at_an_indoor_rock_climbing_facility_during_a_training_session.jpg"
+                }
+              },
+              "describeHints": [
+                "a blue indoor climbing wall",
+                "a climber with a rope",
+                "the man holding the rope",
+                "the harness and equipment",
+                "why this sport needs trust"
+              ]
+            },
+            {
+              "id": "s13-3-rowing",
+              "title": "Rowing",
+              "alt": "A rowing crew sits in a long thin boat on calm water in the evening light. A small motor boat follows them and brick buildings stand on the shore.",
+              "image": {
+                "id": "s13-3-rowing",
+                "src": "assets/images/exams/cambridge-pet-13/s13-3-rowing-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-13/s13-3-rowing-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "A rowing crew sits in a long thin boat on calm water in the evening light. A small motor boat follows them and brick buildings stand on the shore.",
+                "credit": {
+                  "author": "DanielPenfield",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:GeneseeRiverCrewPracticeCornhillLanding.jpg"
+                }
+              },
+              "describeHints": [
+                "a crew of rowers in a long boat",
+                "the calm water",
+                "the small boat behind them",
+                "the buildings on the shore",
+                "why rowing needs teamwork"
+              ]
+            },
+            {
+              "id": "s13-3-tabletennis",
+              "title": "Table tennis",
+              "alt": "Four people play a doubles game of table tennis on a blue table in a large hall with a metal roof. Other people stand and watch behind the table.",
+              "image": {
+                "id": "s13-3-tabletennis",
+                "src": "assets/images/exams/cambridge-pet-13/s13-3-tabletennis-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-13/s13-3-tabletennis-600.webp",
+                "width": 1200,
+                "height": 795,
+                "alt": "Four people play a doubles game of table tennis on a blue table in a large hall with a metal roof. Other people stand and watch behind the table.",
+                "credit": {
+                  "author": "Samson Ssemakadde",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Table_tennis_involving_two_players_each_side.jpg"
+                }
+              },
+              "describeHints": [
+                "a doubles game at a blue table",
+                "the bats and the net",
+                "the players on each side",
+                "the people watching",
+                "what you need to play"
+              ]
+            },
+            {
+              "id": "s13-3-badminton",
+              "title": "Badminton",
+              "alt": "Players take part in badminton games on several courts in a large old sports hall with green walls and a polished wooden floor. People sit at the sides and watch.",
+              "image": {
+                "id": "s13-3-badminton",
+                "src": "assets/images/exams/cambridge-pet-13/s13-3-badminton-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-13/s13-3-badminton-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "Players take part in badminton games on several courts in a large old sports hall with green walls and a polished wooden floor. People sit at the sides and watch.",
+                "credit": {
+                  "author": "Warofdreams",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:York_Railway_Institute_interior.jpg"
+                }
+              },
+              "describeHints": [
+                "badminton courts in a big hall",
+                "the players and the nets",
+                "the wooden floor and the green walls",
+                "people watching at the sides",
+                "what you need to play"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Competition or fun",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s1-4-1",
+              "prompt": "Is it more important to win or to enjoy a game? Why?"
+            },
+            {
+              "id": "s1-4-2",
+              "prompt": "What can people learn from playing in a team?"
+            },
+            {
+              "id": "s1-4-3",
+              "prompt": "Should all children have to do sport at school? Why or why not?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

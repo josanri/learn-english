@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-07",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Home Sweet Home",
+  "subtitle": "Flats, neighbours, repairs and homes in Fenwick Green",
+  "theme": "House and home",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "FENWICK GREEN HOUSING: Gas engineers will check all boilers in Block C on Tuesday between 9 a.m. and 5 p.m. If nobody will be at home, please leave a key at the office.",
+            "LIFT OUT OF ORDER until Friday. Please use the stairs. If you have heavy shopping or a pushchair, ask at the front desk for help.",
+            "CATHAL: Hi, I am in flat 12. A courier left your parcel with me this morning. I am home until eight tonight, so just knock on my door.",
+            "SHOPBOX: Your sofa will arrive between 2 and 4 p.m. tomorrow. Reply 1 if this suits you, or 2 to choose another day. Two people are needed to carry it.",
+            "FENWICK GREEN COUNCIL: Recycling bins are now collected every second Wednesday. Green waste is still taken every Monday. Please put your bins out the night before."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What should residents do if they are out on Tuesday?",
+              "options": [
+                "Ask the engineers to come back next week.",
+                "Switch off the gas before leaving.",
+                "Leave a key at the office."
+              ],
+              "answer": 2,
+              "explanation": "The notice asks people who will not be at home to leave a key at the office."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What can a person with heavy shopping do?",
+              "options": [
+                "Use the lift with a special key.",
+                "Ask the people at the front desk for help.",
+                "Leave the bags at the bottom of the stairs."
+              ],
+              "answer": 1,
+              "explanation": "The notice says that anyone with heavy shopping or a pushchair should ask at the front desk for help."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What does Cathal want the neighbour to do?",
+              "options": [
+                "Collect a parcel from his flat.",
+                "Take a parcel to the post office.",
+                "Sign for a delivery tomorrow."
+              ],
+              "answer": 0,
+              "explanation": "A courier left the neighbour's parcel with Cathal, who asks the neighbour to knock on his door."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What must the customer do?",
+              "options": [
+                "Reply to say whether the day is convenient.",
+                "Pay the driver when the sofa arrives.",
+                "Collect the sofa from the shop."
+              ],
+              "answer": 0,
+              "explanation": "The customer should reply 1 if the time suits them or 2 to choose another day."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "How often is recycling collected?",
+              "options": [
+                "Every Monday.",
+                "Every other Wednesday.",
+                "Every Wednesday."
+              ],
+              "answer": 1,
+              "explanation": "Recycling is collected every second Wednesday, which means every other week."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "People and home workshops",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Harriet wants to redecorate her living room by painting the walls herself for the first time. She needs to learn how to prepare the walls and use a roller."
+            },
+            {
+              "id": "p2",
+              "text": "Viktor has a sunny flat with empty shelves and would love some greenery, but every plant he buys seems to die."
+            },
+            {
+              "id": "p3",
+              "text": "Cassidy has a dripping tap and a slow sink. She would like to repair them herself instead of waiting for her landlord."
+            },
+            {
+              "id": "p4",
+              "text": "Takumi bought an old wooden chair at a market and wants to make it look new again, using paint and new handles."
+            },
+            {
+              "id": "p5",
+              "text": "Dani lives in a studio flat with very little space. Her clothes, books and boxes are everywhere, and she needs clever ideas for putting things away."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Furniture Makeover",
+              "text": "Give old tables and chairs a new life: sanding, painting and fitting new handles. Bring a small piece of furniture from home."
+            },
+            {
+              "id": "B",
+              "title": "Lamps and Lighting",
+              "text": "Learn to change bulbs safely, fit a shade and choose the right light for each room. Tuesday evenings."
+            },
+            {
+              "id": "C",
+              "title": "Fix It Yourself",
+              "text": "Stop a dripping tap, unblock a sink and learn where to turn the water off. Bring your own questions and a notebook."
+            },
+            {
+              "id": "D",
+              "title": "Space Savers",
+              "text": "Shelves, hooks and boxes: smart ways to store your things in a very small flat. Includes a visit to a tiny show flat."
+            },
+            {
+              "id": "E",
+              "title": "Wallpaper Skills",
+              "text": "Measure, cut and hang wallpaper without bubbles, and match patterns so that they line up on the wall."
+            },
+            {
+              "id": "F",
+              "title": "Plants for Beginners",
+              "text": "Choose houseplants that are easy to keep alive and learn how much light and water each one needs."
+            },
+            {
+              "id": "G",
+              "title": "Wall Painting",
+              "text": "Prepare walls, choose the right paint and learn how to use brushes and rollers for a smooth finish."
+            },
+            {
+              "id": "H",
+              "title": "Curtain Sewing",
+              "text": "Measure a window and sew simple curtains with a sewing machine. No experience needed; machines provided."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Harriet",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "Harriet wants to paint her walls and use a roller; text G teaches wall preparation, paint and rollers. Wallpaper (E) is a different job."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Viktor",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "Viktor wants plants that survive; text F is about easy houseplants and how much light and water they need."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Cassidy",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Cassidy wants to fix a tap and a sink herself; text C teaches both."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Takumi",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Takumi wants to renovate an old chair with paint and new handles; text A is about painting and fitting new handles on old furniture."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Dani",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Dani needs storage ideas for a tiny flat; text D is about shelves, hooks and boxes for small spaces."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "My first flat",
+          "instructions": "Read the text and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last month I moved into my first flat, a small one-bedroom place on the third floor of an old building in Fenwick Green. I had been dreaming about it for years, but the reality was a surprise. On the first night I sat on a box in the empty living room and ate pizza, and I suddenly realised that nobody was going to tell me when to go to bed or when to wash up.\n\nThe first week was harder than I had expected. I had a long list of furniture to buy, but the money disappeared quickly: the deposit, the first month's rent and the electricity account. In the end I borrowed a bed from my cousin and found a table on a neighbourhood website for ten pounds. The man upstairs even lent me a drill when I wanted to put up some shelves.\n\nWhat surprised me most was the silence. I grew up as the only girl in a house with three brothers, so I thought I would love the peace. Instead, I turned on the radio every evening, just to hear voices. Now, a month later, I have started to enjoy my own company, and I have stopped phoning my mum for cooking advice. I am learning to make three dishes properly, and next weekend I am having my first dinner guests. I am nervous, but also excited.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "What did the writer realise on the first night?",
+              "options": [
+                "She had become responsible for herself.",
+                "She had forgotten to buy any food.",
+                "Her new flat was far too small."
+              ],
+              "answer": 0,
+              "explanation": "She realised that nobody would tell her when to go to bed or wash up, so she was now responsible for herself."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "How did the writer deal with the lack of money?",
+              "options": [
+                "She asked her parents for a loan.",
+                "She used borrowed and cheap furniture.",
+                "She waited until she could buy everything new."
+              ],
+              "answer": 1,
+              "explanation": "She borrowed a bed from her cousin and bought a ten-pound table on a neighbourhood website."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What happened with the man upstairs?",
+              "options": [
+                "He complained about the noise she made.",
+                "He asked to borrow some of her furniture.",
+                "He helped her by lending a tool."
+              ],
+              "answer": 2,
+              "explanation": "The man upstairs lent her a drill when she wanted to put up shelves."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What surprised the writer most?",
+              "options": [
+                "How difficult it was to find furniture.",
+                "How silent the evenings felt.",
+                "How many neighbours came to visit."
+              ],
+              "answer": 1,
+              "explanation": "She says the silence surprised her most, and she turned on the radio to hear voices."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How does the writer feel now?",
+              "options": [
+                "More comfortable about living alone.",
+                "Lonely and ready to move back home.",
+                "Worried about paying for her dinner party."
+              ],
+              "answer": 0,
+              "explanation": "A month later she enjoys her own company and is looking forward to cooking for guests."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A garage becomes a studio",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "For years, the garage behind our house in Fenwick Green held only bicycles, boxes and a broken washing machine. We never parked a car there because the door was too narrow. [1] Then last winter my mother, who paints in her free time, said she needed a proper place to work.\n\nMy father liked the idea at once, and we spent two months turning the garage into a studio. The first job was clearing everything out. [2] We rented a small van to take the old machine to the recycling centre, and we gave the bikes a new home in the shed. After that, my uncle, who is a builder, helped us to fit a large window in the wall facing the garden. [3] But when it was finished, the room filled with natural light, which is exactly what a painter needs.\n\nThe walls were painted white, and my father built long shelves for brushes, paper and tins of paint. [4] We found a big wooden table in a charity shop and fixed its broken leg. On the last evening we all stood in the doorway and looked at the finished room. [5] My mother says she has never felt so happy at home, and she now gives painting lessons there every Thursday afternoon.",
+          "sentences": [
+            "There was one thing missing, though: a table big enough for large sheets of paper.",
+            "It took us three weekends, and we were surprised at how much we had kept.",
+            "In fact, it had become a place where nobody wanted to look.",
+            "Permission from the council was not needed for such a small change.",
+            "Fitting it was difficult, and it took us a whole weekend.",
+            "It was hard to believe it was the same place."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "C",
+              "explanation": "Sentence C explains why nobody used the garage and leads to \"Then last winter\" when the mother asked for a workplace."
+            },
+            {
+              "id": "r4-2",
+              "answer": "B",
+              "explanation": "\"It took us three weekends\" follows the first job of clearing everything out and leads to the van and the old machine."
+            },
+            {
+              "id": "r4-3",
+              "answer": "E",
+              "explanation": "\"Fitting it\" refers to the large window, and \"But when it was finished\" contrasts with the difficult work."
+            },
+            {
+              "id": "r4-4",
+              "answer": "A",
+              "explanation": "Sentence A introduces the missing table, which the family then finds in a charity shop."
+            },
+            {
+              "id": "r4-5",
+              "answer": "F",
+              "explanation": "\"It was hard to believe it was the same place\" follows looking at the finished room, before the mother's reaction. Sentence D is about permission and fits nowhere."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "Moving house without stress",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Moving to a new home can be stressful, but a good plan makes it easier. Start packing at least a month [1] the move. Begin with things you rarely use, such as books and winter clothes. Write on each box what is [2], so that the movers know where to put it. Remember to [3] the gas and electricity companies about your new address. On moving day, keep the keys, your phone and a few snacks in a bag that stays with you. When the last box has been [4] into the house, do not try to unpack everything at once. First make the beds and find the kettle, because after such a long day you will [5] need a cup of tea. Soon your new house will feel like [6].",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "before",
+                "until",
+                "since",
+                "during"
+              ],
+              "answer": 0,
+              "explanation": "You start packing a month before the move; \"until\", \"since\" and \"during\" do not fit this meaning."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "beside",
+                "behind",
+                "inside",
+                "under"
+              ],
+              "answer": 2,
+              "explanation": "You write on a box what is inside it; the other prepositions do not make sense here."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "tell",
+                "say",
+                "speak",
+                "talk"
+              ],
+              "answer": 0,
+              "explanation": "\"Tell someone about\" is correct; \"say\", \"speak\" and \"talk\" cannot be followed directly by \"the companies\"."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "thrown",
+                "carried",
+                "painted",
+                "dressed"
+              ],
+              "answer": 1,
+              "explanation": "Boxes are carried into a house; they are not painted or dressed."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "hardly",
+                "certainly",
+                "never",
+                "already"
+              ],
+              "answer": 1,
+              "explanation": "\"You will certainly need a cup of tea\" fits; \"hardly\" and \"never\" are negative and \"already\" does not fit a future need."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "a stranger",
+                "a visit",
+                "a trip",
+                "home"
+              ],
+              "answer": 3,
+              "explanation": "\"Feel like home\" is the fixed expression for feeling comfortable in a place."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "An email about a new flatmate",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Hi Haruto,\nGuess what? We have finally found someone [1] move into the spare room! She is a nurse [2] works at the hospital, [3] she will be out most days, but she will be there at weekends. We met her yesterday, and she seems very friendly. She does not have [4] furniture, only a bed and a desk, so the room will not look crowded. I am a little worried [5] the noise, because she starts work very early. If she has any problem, I hope she will tell us [6] soon as possible. Come and meet her on Sunday!\nBailey",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "to",
+              "explanation": "\"Someone to move in\" uses the infinitive with \"to\" after \"someone\"."
+            },
+            {
+              "id": "r6-2",
+              "answer": "who",
+              "accepted": [
+                "that"
+              ],
+              "explanation": "\"Who\" (or \"that\") links \"a nurse\" to what she does."
+            },
+            {
+              "id": "r6-3",
+              "answer": "so",
+              "accepted": [
+                "and"
+              ],
+              "explanation": "\"So\" shows the result: she works at the hospital, so she is out most days."
+            },
+            {
+              "id": "r6-4",
+              "answer": "much",
+              "accepted": [
+                "any"
+              ],
+              "explanation": "\"Does not have much furniture\" is the natural negative with an uncountable noun; \"any\" also fits."
+            },
+            {
+              "id": "r6-5",
+              "answer": "about",
+              "explanation": "We say \"worried about\" something."
+            },
+            {
+              "id": "r6-6",
+              "answer": "as",
+              "explanation": "\"As soon as possible\" is a fixed expression."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Viktor has asked about your new flat. Read Viktor's email and your notes, then write a reply.",
+            "notes": [
+              "Describe the flat and say where it is.",
+              "Say which room you like best and why.",
+              "Invite Viktor to visit and suggest a day.",
+              "Ask Viktor one question about his own home."
+            ],
+            "wordCount": "about 100 words",
+            "sourceEmail": {
+              "body": "I heard that you have moved into a new flat! Congratulations! What is it like? Is it near the city centre? I would love to see it when I have time. Write soon and tell me everything!",
+              "from": "Viktor",
+              "subject": "Your new flat"
+            },
+            "contentPoints": [
+              {
+                "text": "Describe the flat and say where it is.",
+                "keywords": [
+                  "flat",
+                  "apartment",
+                  "floor",
+                  "bedroom",
+                  "kitchen",
+                  "small",
+                  "big",
+                  "near",
+                  "centre",
+                  "street",
+                  "town",
+                  "city",
+                  "it is",
+                  "there is"
+                ]
+              },
+              {
+                "text": "Say which room you like best and why.",
+                "keywords": [
+                  "room",
+                  "living room",
+                  "kitchen",
+                  "balcony",
+                  "bedroom",
+                  "favourite",
+                  "best",
+                  "because",
+                  "like",
+                  "love",
+                  "light",
+                  "view",
+                  "cosy"
+                ]
+              },
+              {
+                "text": "Invite Viktor to visit and suggest a day.",
+                "keywords": [
+                  "visit",
+                  "come",
+                  "invite",
+                  "stay",
+                  "saturday",
+                  "sunday",
+                  "weekend",
+                  "next week",
+                  "friday",
+                  "would you like",
+                  "why don't you",
+                  "welcome"
+                ]
+              },
+              {
+                "text": "Ask Viktor one question about his own home.",
+                "keywords": [
+                  "do you",
+                  "does your",
+                  "is your",
+                  "what",
+                  "where",
+                  "how",
+                  "when",
+                  "would you",
+                  "are you",
+                  "your house",
+                  "your flat",
+                  "your home"
+                ],
+                "question": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a magazine",
+              "prompt": "Articles wanted! The perfect home. What would your perfect home be like? Where would it be, and who would live there? Why would it be perfect for you? Write an article for the magazine.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Describe what the perfect home would be like.",
+                  "keywords": [
+                    "perfect",
+                    "house",
+                    "flat",
+                    "home",
+                    "big",
+                    "small",
+                    "garden",
+                    "rooms",
+                    "kitchen",
+                    "bedroom",
+                    "it would",
+                    "would have"
+                  ]
+                },
+                {
+                  "text": "Say where it would be and who would live there.",
+                  "keywords": [
+                    "where",
+                    "near",
+                    "city",
+                    "countryside",
+                    "beach",
+                    "mountains",
+                    "sea",
+                    "live",
+                    "family",
+                    "friends",
+                    "with my",
+                    "by the"
+                  ]
+                },
+                {
+                  "text": "Explain why it would be perfect for you.",
+                  "keywords": [
+                    "because",
+                    "perfect",
+                    "happy",
+                    "relax",
+                    "quiet",
+                    "comfortable",
+                    "enjoy",
+                    "love",
+                    "reason",
+                    "so that"
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a surprise from a neighbour.",
+              "openingSentence": "I was making breakfast when somebody knocked loudly on the front door.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what the surprise from the neighbour was.",
+                  "keywords": [
+                    "neighbour",
+                    "surprise",
+                    "gift",
+                    "present",
+                    "cake",
+                    "box",
+                    "letter",
+                    "invitation",
+                    "smiled",
+                    "brought",
+                    "door",
+                    "opened"
+                  ]
+                },
+                {
+                  "text": "Say how you felt and how the story ended.",
+                  "keywords": [
+                    "felt",
+                    "happy",
+                    "excited",
+                    "thank",
+                    "in the end",
+                    "finally",
+                    "later",
+                    "after that",
+                    "ended",
+                    "friends",
+                    "lesson"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "garrett",
+                    "name": "Garrett",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "chidinma",
+                    "name": "Chidinma",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "garrett",
+                    "text": "I will look at the leaking pipe. I can come on Thursday morning between eight and ten, or on Friday afternoon."
+                  },
+                  {
+                    "speaker": "chidinma",
+                    "text": "Thursday morning is good, but I leave for work at nine. Can you be here by half past eight?"
+                  },
+                  {
+                    "speaker": "garrett",
+                    "text": "I will try. I will call you when I am ten minutes away."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "When will the plumber visit Chidinma?",
+                "options": [
+                  "On Thursday morning",
+                  "On Friday afternoon",
+                  "On Thursday evening"
+                ],
+                "answer": 0,
+                "explanation": "Chidinma chooses Thursday morning and asks him to be there by half past eight."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "farah",
+                    "name": "Farah",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "adrian",
+                    "name": "Adrian",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "farah",
+                    "text": "Oh no, the lamp is broken! Was it expensive?"
+                  },
+                  {
+                    "speaker": "adrian",
+                    "text": "Not really. It just needs a new switch. I watched a video and it looks easy. I will change the switch myself tonight."
+                  },
+                  {
+                    "speaker": "farah",
+                    "text": "Do not forget to unplug it first!"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What will Adrian do about the lamp?",
+                "options": [
+                  "Throw it away",
+                  "Take it to a repair shop",
+                  "Change the switch himself"
+                ],
+                "answer": 2,
+                "explanation": "Adrian says it only needs a new switch and that he will change it himself tonight."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "hunter",
+                    "name": "Hunter",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "lerato",
+                    "name": "Lerato",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "hunter",
+                    "text": "Hello, I am calling about the bookcase. Could you deliver it before lunch?"
+                  },
+                  {
+                    "speaker": "lerato",
+                    "text": "The morning slots are full. I can offer you something between one and five."
+                  },
+                  {
+                    "speaker": "hunter",
+                    "text": "All right, afternoon it is."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "When will the bookcase be delivered?",
+                "options": [
+                  "Before noon",
+                  "In the afternoon",
+                  "In the evening"
+                ],
+                "answer": 1,
+                "explanation": "The morning slots are full, so Hunter accepts a time between one and five in the afternoon."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "selin",
+                    "name": "Selin",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "rhodri",
+                    "name": "Rhodri",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "selin",
+                    "text": "I cannot find my keys anywhere."
+                  },
+                  {
+                    "speaker": "rhodri",
+                    "text": "Have you looked on the kitchen table?"
+                  },
+                  {
+                    "speaker": "selin",
+                    "text": "Yes, twice."
+                  },
+                  {
+                    "speaker": "rhodri",
+                    "text": "Have you tried your coat pocket?"
+                  },
+                  {
+                    "speaker": "selin",
+                    "text": "Oh, I wore my long coat yesterday. Found them!"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Where were Selin's keys?",
+                "options": [
+                  "In her coat",
+                  "On the table",
+                  "In the car"
+                ],
+                "answer": 0,
+                "explanation": "Selin finds the keys after checking the pocket of her long coat."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "joanna",
+                    "name": "Joanna",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "wojtek",
+                    "name": "Wojtek",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "joanna",
+                    "text": "Wojtek, I have to tell you that the rent is going up, from 580 to 620 pounds."
+                  },
+                  {
+                    "speaker": "wojtek",
+                    "text": "Oh. When does that start? In June?"
+                  },
+                  {
+                    "speaker": "joanna",
+                    "text": "No, from the first of May. I will send you a letter."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "When will Wojtek start paying the higher rent?",
+                "options": [
+                  "In April",
+                  "In May",
+                  "In June"
+                ],
+                "answer": 1,
+                "explanation": "Joanna says the new rent starts on the first of May, not in June."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "alba",
+                    "name": "Alba",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "fabian",
+                    "name": "Fabian",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "alba",
+                    "text": "Sorry to bother you, Fabian. I can hear your music through the wall, especially late at night."
+                  },
+                  {
+                    "speaker": "fabian",
+                    "text": "I am so sorry. I did not realise."
+                  },
+                  {
+                    "speaker": "alba",
+                    "text": "It is fine before ten, but could you turn it down after that? I start work very early."
+                  },
+                  {
+                    "speaker": "fabian",
+                    "text": "Of course."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What does Alba ask her neighbour to do?",
+                "options": [
+                  "Stop his dog barking",
+                  "Move his furniture",
+                  "Turn the music down after ten"
+                ],
+                "answer": 2,
+                "explanation": "She says it is fine before ten but asks him to turn it down after that."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "millie",
+                    "name": "Millie",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "simon",
+                    "name": "Simon",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "millie",
+                    "text": "The washing machine is leaking again."
+                  },
+                  {
+                    "speaker": "simon",
+                    "text": "Is the water coming from the door or from the pipe at the back?"
+                  },
+                  {
+                    "speaker": "millie",
+                    "text": "From the bottom of the door."
+                  },
+                  {
+                    "speaker": "simon",
+                    "text": "Then it is the rubber ring. It is old and worn. I will order a new one."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What does Simon think is wrong with the washing machine?",
+                "options": [
+                  "A worn rubber ring",
+                  "A broken pipe",
+                  "A blocked filter"
+                ],
+                "answer": 0,
+                "explanation": "The water comes from the door, so Simon says the old, worn rubber ring is the problem."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "tuan",
+                    "name": "Tuan",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "phoebe",
+                    "name": "Phoebe",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "tuan",
+                    "text": "Our sofa is so old. A new one costs a fortune, though."
+                  },
+                  {
+                    "speaker": "phoebe",
+                    "text": "There is a second-hand shop near the market with some really nice ones."
+                  },
+                  {
+                    "speaker": "tuan",
+                    "text": "Good idea. Let us go on Saturday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What do they agree to do?",
+                "options": [
+                  "Order a new sofa online",
+                  "Look at second-hand sofas",
+                  "Move the old sofa"
+                ],
+                "answer": 1,
+                "explanation": "Phoebe suggests the second-hand shop, and Tuan agrees to go on Saturday."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "delaney",
+                    "name": "Delaney",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "vito",
+                    "name": "Vito",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "delaney",
+                    "text": "I saw lovely wallpaper with birds on it for the bedroom."
+                  },
+                  {
+                    "speaker": "vito",
+                    "text": "It looks nice, but it is hard to put up, and we are not experts. Paint is easier."
+                  },
+                  {
+                    "speaker": "delaney",
+                    "text": "All right, pale blue paint, then, like we said."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What will they do with the bedroom walls?",
+                "options": [
+                  "Cover them with wallpaper",
+                  "Paint them pale blue",
+                  "Leave them white"
+                ],
+                "answer": 1,
+                "explanation": "Vito says paint is easier than wallpaper, and Delaney agrees to pale blue paint."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "kylie",
+                    "name": "Kylie",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "stefano",
+                    "name": "Stefano",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "kylie",
+                    "text": "The new flat has a garden!"
+                  },
+                  {
+                    "speaker": "stefano",
+                    "text": "Great, but I will be the one cutting the grass every weekend."
+                  },
+                  {
+                    "speaker": "kylie",
+                    "text": "It is tiny. Ten minutes at most."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What is Stefano worried about?",
+                "options": [
+                  "The work the garden needs",
+                  "The size of the garden",
+                  "The noise from neighbours"
+                ],
+                "answer": 0,
+                "explanation": "Stefano complains that he will have to cut the grass every weekend, so he worries about the work."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "hunter",
+                    "name": "Hunter",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "chidinma",
+                    "name": "Chidinma",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "hunter",
+                    "text": "My bin is still full. Did they skip our street?"
+                  },
+                  {
+                    "speaker": "chidinma",
+                    "text": "No, the collection was on Thursday this week because of the holiday, and you put yours out on Friday."
+                  },
+                  {
+                    "speaker": "hunter",
+                    "text": "Ah. I read the old calendar."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What mistake did Hunter make?",
+                "options": [
+                  "He missed the new collection day.",
+                  "He put the wrong things in the bin.",
+                  "He forgot to take the bin out."
+                ],
+                "answer": 0,
+                "explanation": "The collection was on Thursday because of the holiday, but Hunter put his bin out on Friday."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "selin",
+                    "name": "Selin",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "fabian",
+                    "name": "Fabian",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "selin",
+                    "text": "The internet is so slow tonight. I cannot even load a page."
+                  },
+                  {
+                    "speaker": "fabian",
+                    "text": "Is anyone else in the flat doing something online?"
+                  },
+                  {
+                    "speaker": "selin",
+                    "text": "My flatmate is downloading a film."
+                  },
+                  {
+                    "speaker": "fabian",
+                    "text": "Ah, that is why."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "Why is the internet slow?",
+                "options": [
+                  "The router is broken.",
+                  "There is a storm outside.",
+                  "Someone is downloading a film."
+                ],
+                "answer": 2,
+                "explanation": "Selin says her flatmate is downloading a film, which slows the connection."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "adrian",
+                    "name": "Adrian",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "joanna",
+                    "name": "Joanna",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "adrian",
+                    "text": "So, what did you think of the flat?"
+                  },
+                  {
+                    "speaker": "joanna",
+                    "text": "The kitchen is small and the price is a bit high, but the living room has huge windows, and it was full of sunshine at four in the afternoon."
+                  },
+                  {
+                    "speaker": "adrian",
+                    "text": "Light matters a lot. Shall we go back for a second look?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does Joanna like most about the flat?",
+                "options": [
+                  "The size of the kitchen",
+                  "The price",
+                  "The light in the living room"
+                ],
+                "answer": 2,
+                "explanation": "She criticises the kitchen and the price, but praises the huge windows and the sunshine in the living room."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "Welcome to a housing co-operative",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "malachy",
+                "name": "Malachy",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "malachy",
+                "text": "Hello, everyone, and welcome to Fenwick Green Housing Co-operative. I am Malachy, and I have lived in the co-op for nine years. Let me explain how things work. Everyone pays a monthly fee, and that covers repairs and the garden. On the first Tuesday of every month we hold a meeting in the community room at seven o'clock, and every member is asked to come. There is a shared laundry in the basement, which you can use from eight in the morning until ten at night. If you need to book the guest room for visitors, you do that on the notice board in the hallway, and it costs five pounds a night. Cars are not allowed inside the gates, but there is a bicycle shed next to the garden. Finally, each member agrees to give four hours every month to help, for example by cleaning the stairs or cutting the grass."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "Monthly meeting: the first ___ of the month",
+              "answer": "Tuesday",
+              "explanation": "The monthly meeting is held on the first Tuesday of every month."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Meeting place: the community ___",
+              "answer": "room",
+              "explanation": "The meetings take place in the community room at seven o'clock."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "The shared laundry is in the ___",
+              "answer": "basement",
+              "explanation": "Malachy says there is a shared laundry in the basement."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Guest room: five pounds a ___",
+              "answer": "night",
+              "accepted": [
+                "nights"
+              ],
+              "explanation": "Booking the guest room costs five pounds a night."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The bicycle shed is next to the ___",
+              "answer": "garden",
+              "explanation": "The bicycle shed stands next to the garden."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Every member helps for four hours every ___",
+              "answer": "month",
+              "explanation": "Each member gives four hours every month to help."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with an interior designer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "interviewer",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "adaeze",
+                "name": "Adaeze",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "interviewer",
+                "text": "Adaeze, you have designed many tiny flats. What do people get wrong most often?"
+              },
+              {
+                "speaker": "adaeze",
+                "text": "Usually they buy furniture before they measure. I have seen people fall in love with a huge sofa and then discover it will not go through the door."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "How did you get into this kind of work?"
+              },
+              {
+                "speaker": "adaeze",
+                "text": "I grew up in a flat above my parents' shop, and the three of us children shared one bedroom. We had to be clever with space. My dad built beds with drawers underneath, and I loved that. Later I trained as an architect, but I realised I preferred interiors."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What is your best tip for a small living room?"
+              },
+              {
+                "speaker": "adaeze",
+                "text": "Use mirrors, but opposite a window, never opposite a messy corner. And choose furniture with legs, so you can see the floor underneath. It makes the room look bigger."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Many people think white walls are the answer."
+              },
+              {
+                "speaker": "adaeze",
+                "text": "They can work, but white can feel cold. I prefer soft colours, such as warm grey or pale yellow. The important thing is to use the same colours in every room, so that the eye moves smoothly from one to the next."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "And storage?"
+              },
+              {
+                "speaker": "adaeze",
+                "text": "Look up. Most people forget the space above doors and cupboards. Put shelves high up for things you rarely need. But keep the floor and the kitchen table clear. Too many things in one place is the real enemy of a small space."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What is the happiest result you have had?"
+              },
+              {
+                "speaker": "adaeze",
+                "text": "A young couple with a baby in thirty-five square metres. They were so stressed when they called me. After the work, the mother sent me a message that said, \"We finally have a place for everything, and we have time to breathe.\" That is why I love this job."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "What mistake do people often make?",
+              "options": [
+                "Buying furniture without measuring",
+                "Choosing colours that are too dark",
+                "Keeping too many plants"
+              ],
+              "answer": 0,
+              "explanation": "Adaeze says people buy furniture before they measure."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What first gave Adaeze an interest in small spaces?",
+              "options": [
+                "Her training as an architect",
+                "Growing up in a crowded flat",
+                "A television programme about homes"
+              ],
+              "answer": 1,
+              "explanation": "She grew up sharing one bedroom with her brother and sister and learned to be clever with space; she says she preferred interiors to architecture."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does she say about furniture with legs?",
+              "options": [
+                "It makes a room look bigger.",
+                "It is cheaper than other kinds.",
+                "It is easier to clean."
+              ],
+              "answer": 0,
+              "explanation": "She says that seeing the floor underneath makes the room look bigger."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What does she recommend about colour?",
+              "options": [
+                "Using only white in every room",
+                "Painting every room a different colour",
+                "Using similar colours in all the rooms"
+              ],
+              "answer": 2,
+              "explanation": "She prefers soft colours used in every room, so that the eye moves smoothly from one to the next."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "Where should people keep things they rarely use?",
+              "options": [
+                "On the kitchen table",
+                "On the floor under the bed",
+                "On high shelves"
+              ],
+              "answer": 2,
+              "explanation": "She says to put shelves high up for things you rarely need and to keep the floor and the table clear."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "How did the couple feel after the work?",
+              "options": [
+                "Keen to sell the flat",
+                "Less stressed than before",
+                "Annoyed about the cost"
+              ],
+              "answer": 1,
+              "explanation": "They were very stressed at first; afterwards the mother's message says they have a place for everything and time to breathe, so they felt calmer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20–30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s07-1-1",
+              "prompt": "Tell me about the place where you live. What do you like about it?"
+            },
+            {
+              "id": "s07-1-2",
+              "prompt": "What are your neighbours like?"
+            },
+            {
+              "id": "s07-1-3",
+              "prompt": "Which jobs do you do around the house? Which one do you like least?"
+            },
+            {
+              "id": "s07-1-4",
+              "prompt": "Do you prefer a very tidy home or a more relaxed one?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the person might be thinking about.",
+          "type": "photo-description",
+          "prompt": "A painter on a ladder painting a wall.",
+          "images": [
+            {
+              "id": "s07-2-painting",
+              "title": "Painting a wall",
+              "alt": "A painter in white overalls stands on a tall ladder and paints a large grey wall with a small brush. He is seen from behind and his long shadow falls on the wall. A strip of blue paint is above him.",
+              "describeHints": [
+                "a painter on a ladder",
+                "his white overalls",
+                "the large grey wall and the blue strip",
+                "the brush in his hand",
+                "his long shadow"
+              ],
+              "image": {
+                "id": "s07-2-painting",
+                "src": "assets/images/exams/cambridge-pet-07/s07-2-painting-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-07/s07-2-painting-600.webp",
+                "width": 1200,
+                "height": 809,
+                "alt": "A painter in white overalls stands on a tall ladder and paints a large grey wall with a small brush. He is seen from behind and his long shadow falls on the wall. A strip of blue paint is above him.",
+                "credit": {
+                  "author": "Lukeroberts",
+                  "license": "CC BY-SA 2.5",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Modern-Trade-Painter.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Improving a shared flat",
+          "instructions": "Look at the pictures. Talk about how each idea could improve a home that friends share, and decide which one they should do first.",
+          "type": "collaborative-task",
+          "prompt": "Four friends share a home and have a small budget. Which of these parts of a home would you improve first? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s07-3-balcony",
+              "title": "A balcony with plants",
+              "alt": "A corner of a small balcony seen from above. Green plants grow in pots and long boxes: tomato plants, strawberries, fennel and a bush, beside a white wall.",
+              "describeHints": [
+                "a small balcony full of plants",
+                "the pots and long boxes",
+                "the green leaves",
+                "the white wall",
+                "how plants make a home nicer"
+              ],
+              "image": {
+                "id": "s07-3-balcony",
+                "src": "assets/images/exams/cambridge-pet-07/s07-3-balcony-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-07/s07-3-balcony-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "A corner of a small balcony seen from above. Green plants grow in pots and long boxes: tomato plants, strawberries, fennel and a bush, beside a white wall.",
+                "credit": {
+                  "author": "Tangopaso",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Plants_on_balcony_D220524.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plants_on_balcony_D220524.jpg"
+                }
+              }
+            },
+            {
+              "id": "s07-3-kitchen",
+              "title": "A kitchen with open shelves",
+              "alt": "A bright kitchen with white tiles and wooden open shelves holding cups and bowls. A wooden table with black mats and three stools stands in front, and a plant is on the table.",
+              "describeHints": [
+                "a modern kitchen",
+                "the open wooden shelves",
+                "the table and the stools",
+                "the fridge and the lamps",
+                "what you could cook or eat here"
+              ],
+              "image": {
+                "id": "s07-3-kitchen",
+                "src": "assets/images/exams/cambridge-pet-07/s07-3-kitchen-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-07/s07-3-kitchen-600.webp",
+                "width": 1200,
+                "height": 801,
+                "alt": "A bright kitchen with white tiles and wooden open shelves holding cups and bowls. A wooden table with black mats and three stools stands in front, and a plant is on the table.",
+                "credit": {
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Modern_kitchen_design_showcasing_open_shelves_and_stylish_decor_in_a_contemporary_home_setting.jpg"
+                }
+              }
+            },
+            {
+              "id": "s07-3-shed",
+              "title": "A garden shed with tools",
+              "alt": "Spades, forks and other long-handled garden tools stand against a white wall in the corner of a shed, on a wooden bench.",
+              "describeHints": [
+                "garden tools hanging on a wall",
+                "spades and forks",
+                "the wooden bench",
+                "the white walls",
+                "what you could do in the garden"
+              ],
+              "image": {
+                "id": "s07-3-shed",
+                "src": "assets/images/exams/cambridge-pet-07/s07-3-shed-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-07/s07-3-shed-600.webp",
+                "width": 1200,
+                "height": 896,
+                "alt": "Spades, forks and other long-handled garden tools stand against a white wall in the corner of a shed, on a wooden bench.",
+                "credit": {
+                  "author": "A J Paxton",
+                  "license": "CC BY-SA 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_tools,_Hill_Close_Gardens,_Warwick_-_geograph.org.uk_-_6845221.jpg"
+                }
+              }
+            },
+            {
+              "id": "s07-3-bookshelf",
+              "title": "A bookshelf",
+              "alt": "An old wooden bookcase with colourful books on its shelves stands against a pale wall. Two tall candlesticks and a framed portrait of a man are above it.",
+              "describeHints": [
+                "a wooden bookcase full of books",
+                "the colourful covers",
+                "the candlesticks on top",
+                "the framed portrait on the wall",
+                "what kind of books you would keep"
+              ],
+              "image": {
+                "id": "s07-3-bookshelf",
+                "src": "assets/images/exams/cambridge-pet-07/s07-3-bookshelf-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-07/s07-3-bookshelf-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "An old wooden bookcase with colourful books on its shelves stands against a pale wall. Two tall candlesticks and a framed portrait of a man are above it.",
+                "credit": {
+                  "author": "Steven Pavlov",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wickers_Building_%E2%80%94_Living_Room_%E2%80%94_004.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about where we live",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s07-4-1",
+              "prompt": "Would you prefer to live in a flat or in a house? Why?"
+            },
+            {
+              "id": "s07-4-2",
+              "prompt": "Is it a good idea to live alone when you are young?"
+            },
+            {
+              "id": "s07-4-3",
+              "prompt": "What makes a place feel like home?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1783 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-12",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Going Online",
+  "subtitle": "Phones, apps and everyday technology in Hartwell",
+  "theme": "Technology & communication",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices around Hartwell",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "HARTWELL LIBRARY: The Wi-Fi password changes every Monday. Please ask at the desk for the new one, or look for the card on the notice board.",
+            "PHONE DOCTOR, MARKET LANE: Screen repairs at half the usual price this week only. You do not need to book. Just bring your phone and your charger.",
+            "TEGID: I left my grey phone charger in the cafe on Friday. Has anyone seen it? I am at work until six, so text me, please. Do not call.",
+            "LEARNING CENTRE: Please book a computer at the desk before you sit down. Sessions last one hour, but you can stay longer if nobody is waiting.",
+            "COLLEGE IT NOTICE: The system will update tonight between 10 p.m. and midnight. Save your work and log out before you leave, or you may lose it."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "How can visitors find the new Wi-Fi password?",
+              "options": [
+                "Ask at the desk or check the board.",
+                "Send a message to the library website.",
+                "Wait for a text message on Monday."
+              ],
+              "answer": 0,
+              "explanation": "The notice says to ask at the desk or look for the card on the notice board."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What is special about the offer this week?",
+              "options": [
+                "Repairs are free for students.",
+                "Repairs cost less than normal.",
+                "Customers must book a time first."
+              ],
+              "answer": 1,
+              "explanation": "Screen repairs are half the usual price this week only, and booking is not necessary."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What does Tegid want people to do?",
+              "options": [
+                "Call him during the afternoon.",
+                "Message him if they find it.",
+                "Take the charger to his office."
+              ],
+              "answer": 1,
+              "explanation": "He asks people to text him, not call, because he is at work until six."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "When may someone use a computer for longer than an hour?",
+              "options": [
+                "When nobody else needs it.",
+                "When they have booked two sessions.",
+                "When a member of staff agrees."
+              ],
+              "answer": 0,
+              "explanation": "Sessions last one hour, but people can stay longer if nobody is waiting."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What should students do before they leave tonight?",
+              "options": [
+                "Switch off the computer at the wall.",
+                "Print any work they have finished.",
+                "Save their files and sign out."
+              ],
+              "answer": 2,
+              "explanation": "The notice tells them to save their work and log out, because the system will update."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Choosing a tech course",
+          "instructions": "Read what each person is looking for. Match each person to the best course. There are three extra courses.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Yetunde loves puzzle games and would like to learn how to write her own simple programs. She is free on Saturday mornings."
+            },
+            {
+              "id": "p2",
+              "text": "Chase enjoys talking to his friends and wants to record and share his own radio-style shows on the internet. He can only study in the evening."
+            },
+            {
+              "id": "p3",
+              "text": "Trinity is seventy and has never used a computer. She wants to see her family abroad on a screen and talk to them."
+            },
+            {
+              "id": "p4",
+              "text": "Leena was upset when a stranger used her email account without permission. She wants to learn how to protect her accounts."
+            },
+            {
+              "id": "p5",
+              "text": "Silvia has hundreds of holiday photos on her phone and wants to make them look better before she prints them."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Spreadsheets made simple",
+              "text": "Learn to add up costs and make clear tables for a club or a small business. We use free software. Wednesday afternoons."
+            },
+            {
+              "id": "B",
+              "title": "Photo editing for everyone",
+              "text": "Learn to crop, brighten and tidy your pictures, then get them ready to print or share. Bring your phone or camera. Monday evenings."
+            },
+            {
+              "id": "C",
+              "title": "Keep your accounts safe",
+              "text": "Choose strong passwords, spot false messages and find out what to do if someone gets into your account. Friday mornings."
+            },
+            {
+              "id": "D",
+              "title": "Social media for small shops",
+              "text": "Plan and post short messages and pictures that bring customers into your shop. Tuesday afternoons."
+            },
+            {
+              "id": "E",
+              "title": "Video calls made easy",
+              "text": "Gentle, step-by-step lessons for people who are new to computers. Learn how to start a call, see the other person and hear them clearly. Thursday mornings."
+            },
+            {
+              "id": "F",
+              "title": "Build a simple website",
+              "text": "Use ready-made tools to put a page about your hobby or business on the internet. No programming is needed. Wednesday evenings."
+            },
+            {
+              "id": "G",
+              "title": "Code your first game",
+              "text": "Write short programs and turn them into a simple game. Free software is provided and no experience is needed. Saturday mornings."
+            },
+            {
+              "id": "H",
+              "title": "Make your own podcast",
+              "text": "Plan, record and share a short audio show. Microphones are provided. Tuesday evenings."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Yetunde",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "Yetunde wants to write her own programs and is free on Saturday mornings; text G is a Saturday-morning coding course. Text F needs no programming."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Chase",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "Chase wants to record and share shows in the evening; text H is a podcast course on Tuesday evenings."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Trinity",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Trinity is new to computers and wants to see her family on a screen; text E teaches video calls to beginners."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Leena",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Leena wants to protect her accounts; text C is about passwords, false messages and getting into an account."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Silvia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Silvia wants to improve her holiday photos before printing; text B is about editing and printing pictures. Text D is about posting for a shop."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "A week without social media",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last month my cousin told me I spent too much time on my phone, and I laughed. Then she challenged me to stay off social media for a whole week, and I said yes before I could change my mind.\n\nOn the first day I kept picking up my phone to check things that were not there. I looked at the screen on the bus, in the queue at the shop, even in the middle of conversations. By Wednesday I was checking much less, and the week felt easier. I read half a book, which I had not done for months, and I cooked a proper dinner instead of watching videos while I ate.\n\nThe hardest part was not the free time. It was the messages. My friends use a group chat to plan everything, and I missed an invitation to a birthday meal because nobody phoned me. When I told them, they were surprised and a little sorry. We agreed that anything important would be sent to me by text as well.\n\nAt the end of the week I did not delete my accounts. I like seeing what my friends are doing, and I use the internet to learn new things. But now I put my phone on silent in the evening, and I leave my phone in another room when I go to bed. I am not sure my cousin was completely right about me, but I sleep better than I used to.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer accept the challenge?",
+              "options": [
+                "She wanted to spend more time with her cousin.",
+                "She agreed quickly without thinking much.",
+                "She had already decided to leave social media."
+              ],
+              "answer": 1,
+              "explanation": "She says she said yes before she could change her mind, so she agreed quickly."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "How did the writer feel by Wednesday?",
+              "options": [
+                "It was getting easier.",
+                "She was bored with her free time.",
+                "She wanted to give up."
+              ],
+              "answer": 0,
+              "explanation": "By Wednesday she was checking her phone much less and the week felt easier."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What problem did she have with her friends?",
+              "options": [
+                "They were angry about the challenge.",
+                "She missed an invitation.",
+                "They stopped using the group chat."
+              ],
+              "answer": 1,
+              "explanation": "She missed an invitation to a birthday meal because nobody phoned her."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What did her friends agree to do?",
+              "options": [
+                "Phone her every evening.",
+                "Send her important news by text too.",
+                "Plan fewer events together."
+              ],
+              "answer": 2,
+              "explanation": "They agreed that anything important would be sent to her by text as well."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How does the writer feel about social media now?",
+              "options": [
+                "It is useful if she controls it.",
+                "She should stop using it completely.",
+                "It is the main reason she cannot sleep."
+              ],
+              "answer": 0,
+              "explanation": "She kept her accounts because she likes them, but she puts her phone on silent in the evening."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A town app for bus times",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Hartwell is a small town with a big problem: the buses never seem to come when the timetable says they will. Passengers used to stand in the cold, not knowing whether the number 12 had already gone. [1] Last spring, a group of students from the college decided to change that.\n\nThey started by sitting at bus stops and writing down the real arrival times for six weeks. [2] With that information, they built a simple app that shows where each bus is on a map.\n\nThe app was ready by September, but the students needed help from the bus company. [3] He liked it at once and agreed to share the live position of every bus.\n\nThe app went live in November. [4] The students say that the best comments come from older passengers, who now stay at home until the bus is nearly at their stop.\n\nOf course, the app is not perfect. Sometimes the signal is weak and the map shows a bus in the wrong place. [5] The team reads every report and fixes problems within a few days.",
+          "sentences": [
+            "They discovered that many morning buses were ten minutes late or more.",
+            "Most of them had never written a computer program before.",
+            "Users can report these mistakes with one button.",
+            "Some of them gave up on the bus completely.",
+            "Within a month, more than a thousand people had downloaded it.",
+            "So they asked to meet the manager and show him a first version."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "D",
+              "explanation": "“Some of them” refers to the passengers who stood in the cold, and the next sentence moves on to the students who wanted to “change that”."
+            },
+            {
+              "id": "r4-2",
+              "answer": "A",
+              "explanation": "After writing down real arrival times, the students discovered that buses were late; “that information” in the next sentence refers to this discovery."
+            },
+            {
+              "id": "r4-3",
+              "answer": "F",
+              "explanation": "They needed help from the bus company, so they met the manager; “He” in the next sentence is the manager and “it” is the first version of the app."
+            },
+            {
+              "id": "r4-4",
+              "answer": "E",
+              "explanation": "“Within a month” continues from “went live in November”, and “it” is the app. The next sentence talks about comments from users."
+            },
+            {
+              "id": "r4-5",
+              "answer": "C",
+              "explanation": "“These mistakes” refers to the bus shown in the wrong place, and “every report” in the next sentence links to the report button."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "Buying a new laptop",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "My old laptop had become so slow that I finally decided to buy a new one. I wanted something light enough to [1] to college every day, so I spent a week reading reviews. I looked at several websites to [2] prices and found two I liked. There was a special [3] on laptops that week, so I went to the shop on Saturday. I paid by card, and the laptop was [4] to my house two days later. It was easy to set up, and the battery [5] much longer than my old one. I am really [6] with it.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "hold",
+                "carry",
+                "wear",
+                "hang"
+              ],
+              "answer": 1,
+              "explanation": "You carry a light laptop to college; you do not hold, wear or hang it every day."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "compare",
+                "divide",
+                "connect",
+                "count"
+              ],
+              "answer": 0,
+              "explanation": "To compare prices means to look at several prices and see which is best."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "gift",
+                "prize",
+                "bill",
+                "offer"
+              ],
+              "answer": 3,
+              "explanation": "An offer is a special price for a short time; a gift or prize is free and a bill is something you pay."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "delivered",
+                "received",
+                "collected",
+                "ordered"
+              ],
+              "answer": 0,
+              "explanation": "A shop delivers goods to a house; the laptop was delivered, not collected or ordered, by the shop."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "stays",
+                "stands",
+                "lasts",
+                "keeps"
+              ],
+              "answer": 2,
+              "explanation": "A battery lasts a long or a short time; stays, stands and keeps do not fit before “much longer than”."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "interested",
+                "pleased",
+                "amazed",
+                "keen"
+              ],
+              "answer": 1,
+              "explanation": "The adjective “pleased” is followed by “with”; the other adjectives take different prepositions."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "A message about a video call",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Hi Chase,\nThanks for your message. Sorry I [1] answer the call yesterday evening. I was [2] the train and the signal was very weak. Can we try again on Sunday? I never wake up early on Sundays, so any time [3] ten o’clock is fine for me. Please remember to [4] on your microphone, because last time I could not hear you [5] all. If it still does not work, we can just send voice messages [6] of talking live.\nBye for now,\nTyler",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "didn’t",
+              "accepted": [
+                "couldn’t",
+                "didn't",
+                "couldn't"
+              ],
+              "explanation": "A past action that did not happen needs a negative past form: “Sorry I didn’t answer”."
+            },
+            {
+              "id": "r6-2",
+              "answer": "on",
+              "explanation": "We say “on the train” for being a passenger on public transport."
+            },
+            {
+              "id": "r6-3",
+              "answer": "after",
+              "accepted": [
+                "past",
+                "from"
+              ],
+              "explanation": "He never wakes up early, so any time after ten o’clock suits him."
+            },
+            {
+              "id": "r6-4",
+              "answer": "turn",
+              "accepted": [
+                "switch"
+              ],
+              "explanation": "“Turn on” or “switch on” a microphone means to start it."
+            },
+            {
+              "id": "r6-5",
+              "answer": "at",
+              "explanation": "“Not … at all” is a fixed phrase meaning “not in any way”."
+            },
+            {
+              "id": "r6-6",
+              "answer": "instead",
+              "explanation": "“Instead of” means “in place of”: voice messages in place of talking live."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your friend Ryo wants to buy a new phone and has asked you for advice. Read Ryo’s email and your notes, then write a reply.",
+            "notes": [
+              "Say which phone or kind of phone you would choose.",
+              "Explain why you would choose it.",
+              "Say where Ryo can buy it.",
+              "Ask Ryo one question about how he uses his phone."
+            ],
+            "wordCount": "about 100 words",
+            "sourceEmail": {
+              "body": "My phone keeps freezing and I need a new one before the summer. You always know about these things! Which phone would you choose? Where is the best place to buy one? Tell me what you think. Thanks!",
+              "from": "Ryo",
+              "subject": "Which phone?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say which phone or kind of phone you would choose.",
+                "keywords": [
+                  "phone",
+                  "i would choose",
+                  "i would buy",
+                  "i suggest",
+                  "you should get",
+                  "i recommend",
+                  "smartphone",
+                  "model",
+                  "brand",
+                  "choose"
+                ]
+              },
+              {
+                "text": "Explain why you would choose it.",
+                "keywords": [
+                  "because",
+                  "since",
+                  "so that",
+                  "reason",
+                  "that is why",
+                  "that's why",
+                  "battery",
+                  "camera",
+                  "screen",
+                  "cheap",
+                  "price",
+                  "fast",
+                  "easy"
+                ]
+              },
+              {
+                "text": "Say where Ryo can buy it.",
+                "keywords": [
+                  "buy",
+                  "shop",
+                  "store",
+                  "online",
+                  "website",
+                  "market",
+                  "centre",
+                  "center",
+                  "order",
+                  "in town",
+                  "at the"
+                ]
+              },
+              {
+                "text": "Ask Ryo one question about how he uses his phone.",
+                "keywords": [
+                  "do you",
+                  "would you",
+                  "can you",
+                  "what",
+                  "how often",
+                  "how",
+                  "which",
+                  "are you",
+                  "use your"
+                ],
+                "question": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a school magazine",
+              "prompt": "Articles wanted! How technology helps me. What do you use? What do you use it for? Why is it useful in your life? Write an article for the school magazine.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what technology you use.",
+                  "keywords": [
+                    "phone",
+                    "computer",
+                    "laptop",
+                    "tablet",
+                    "app",
+                    "internet",
+                    "website",
+                    "video",
+                    "headphones",
+                    "i use",
+                    "watch",
+                    "speaker"
+                  ]
+                },
+                {
+                  "text": "Say what you use it for.",
+                  "keywords": [
+                    "for",
+                    "study",
+                    "homework",
+                    "learn",
+                    "talk",
+                    "message",
+                    "call",
+                    "music",
+                    "photos",
+                    "read",
+                    "work",
+                    "games",
+                    "find"
+                  ]
+                },
+                {
+                  "text": "Explain why it is useful.",
+                  "keywords": [
+                    "useful",
+                    "helps",
+                    "help",
+                    "because",
+                    "easy",
+                    "quick",
+                    "save",
+                    "time",
+                    "important",
+                    "without",
+                    "can",
+                    "so that"
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below. It should be about a message that went to the wrong person.",
+              "openingSentence": "I pressed “send”, and then I saw the name at the top of the message.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what was in the message and who received it.",
+                  "keywords": [
+                    "message",
+                    "text",
+                    "email",
+                    "wrong person",
+                    "wrong",
+                    "instead",
+                    "received",
+                    "sent",
+                    "photo",
+                    "secret",
+                    "plan",
+                    "surprise"
+                  ]
+                },
+                {
+                  "text": "Say what happened next and how the story ended.",
+                  "keywords": [
+                    "then",
+                    "after",
+                    "suddenly",
+                    "called",
+                    "phoned",
+                    "answered",
+                    "replied",
+                    "laughed",
+                    "sorry",
+                    "in the end",
+                    "finally",
+                    "later",
+                    "lesson"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations about technology",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "emilia",
+                    "name": "Emilia",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "tendai",
+                    "name": "Tendai",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "tendai",
+                    "text": "Hi there. Can I help you?"
+                  },
+                  {
+                    "speaker": "emilia",
+                    "text": "I dropped my phone on the pavement this morning. It still works, but the glass of the screen is in pieces and it cuts my finger."
+                  },
+                  {
+                    "speaker": "tendai",
+                    "text": "Oh dear. I can put on a new one in about an hour."
+                  },
+                  {
+                    "speaker": "emilia",
+                    "text": "That would be great. I’ll go and have a coffee."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "What does the woman need to have repaired?",
+                "options": [
+                  "The camera",
+                  "The charger socket",
+                  "The screen"
+                ],
+                "answer": 2,
+                "explanation": "She says the glass is in pieces, which means the screen is broken."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "salma",
+                    "name": "Salma",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "anton",
+                    "name": "Anton",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "anton",
+                    "text": "Is your phone dead again?"
+                  },
+                  {
+                    "speaker": "salma",
+                    "text": "It only lasts until lunchtime now. I have to charge it twice a day. I think I need a new phone."
+                  },
+                  {
+                    "speaker": "anton",
+                    "text": "Why not just change the battery? That’s much cheaper than buying a whole new phone."
+                  },
+                  {
+                    "speaker": "salma",
+                    "text": "Hmm, I hadn’t thought of that."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What does Anton suggest?",
+                "options": [
+                  "Changing the battery",
+                  "Buying a better phone",
+                  "Charging it at the office"
+                ],
+                "answer": 0,
+                "explanation": "Anton says she should change the battery because it is cheaper than a new phone."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "jenna",
+                    "name": "Jenna",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "faisal",
+                    "name": "Faisal",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "faisal",
+                    "text": "Which phone did you decide on, Jenna?"
+                  },
+                  {
+                    "speaker": "jenna",
+                    "text": "The red one is prettier, and it’s cheaper. But the black one costs forty pounds more, and the pictures are much better."
+                  },
+                  {
+                    "speaker": "faisal",
+                    "text": "So you took the black one?"
+                  },
+                  {
+                    "speaker": "jenna",
+                    "text": "Yes. I use my camera more than anything else."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Why did Jenna choose the black phone?",
+                "options": [
+                  "It costs less than the red one.",
+                  "It takes better photos.",
+                  "It looks nicer than the red one."
+                ],
+                "answer": 1,
+                "explanation": "The black phone costs more, but the pictures are much better and she uses her camera most."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "wanjiru",
+                    "name": "Wanjiru",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "joon",
+                    "name": "Joon",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "joon",
+                    "text": "The printer is making a strange noise, and nothing comes out properly."
+                  },
+                  {
+                    "speaker": "wanjiru",
+                    "text": "Is it connected to the computer?"
+                  },
+                  {
+                    "speaker": "joon",
+                    "text": "Yes, and there’s plenty of paper. The pages come out almost white."
+                  },
+                  {
+                    "speaker": "wanjiru",
+                    "text": "Then the ink has probably run out. I’ve got a spare cartridge in my desk."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What is wrong with the printer?",
+                "options": [
+                  "It has no paper.",
+                  "It is not connected.",
+                  "It has run out of ink."
+                ],
+                "answer": 2,
+                "explanation": "The pages come out almost white and Wanjiru says the ink has probably run out."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "oksana",
+                    "name": "Oksana",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "gonzalo",
+                    "name": "Gonzalo",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "oksana",
+                    "text": "I’m trying to book a table for Friday on the website, but the only time left is nine o’clock."
+                  },
+                  {
+                    "speaker": "gonzalo",
+                    "text": "That’s too late for the children."
+                  },
+                  {
+                    "speaker": "oksana",
+                    "text": "I know. What shall I do?"
+                  },
+                  {
+                    "speaker": "gonzalo",
+                    "text": "Why don’t you phone the restaurant? They might have a table earlier."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "What does Gonzalo suggest?",
+                "options": [
+                  "Phoning the restaurant",
+                  "Booking for a different day",
+                  "Cooking the meal at home"
+                ],
+                "answer": 0,
+                "explanation": "Gonzalo tells her to phone the restaurant because they might have an earlier table."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "tegan",
+                    "name": "Tegan",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "brady",
+                    "name": "Brady",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "brady",
+                    "text": "I can’t log in to my account. I’ve typed my password three times."
+                  },
+                  {
+                    "speaker": "tegan",
+                    "text": "Perhaps you’ve forgotten it. Click on the link that says “forgot password”."
+                  },
+                  {
+                    "speaker": "brady",
+                    "text": "And then?"
+                  },
+                  {
+                    "speaker": "tegan",
+                    "text": "They send you a new one by email. It only takes a minute."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What should Brady do?",
+                "options": [
+                  "Type it again carefully",
+                  "Ask for a new password",
+                  "Open another account"
+                ],
+                "answer": 1,
+                "explanation": "Tegan tells him to use the “forgot password” link, which sends a new password by email."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "keiko",
+                    "name": "Keiko",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "raul",
+                    "name": "Raul",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "raul",
+                    "text": "Did you get my email with the holiday photos?"
+                  },
+                  {
+                    "speaker": "keiko",
+                    "text": "Yes, it arrived, but I couldn’t open the files. Nothing happened when I clicked on them."
+                  },
+                  {
+                    "speaker": "raul",
+                    "text": "Oh. Maybe they’re too big. I’ll send you a link instead."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What problem did Keiko have?",
+                "options": [
+                  "She could not open them.",
+                  "She did not get the email.",
+                  "The photos were too dark."
+                ],
+                "answer": 0,
+                "explanation": "The email arrived, but the files would not open when she clicked on them."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Opinions about everyday technology",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "soledad",
+                    "name": "Soledad",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "ilan",
+                    "name": "Ilan",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "ilan",
+                    "text": "Is that a new smartwatch?"
+                  },
+                  {
+                    "speaker": "soledad",
+                    "text": "Yes, my sister gave it to me. At first I thought it was a waste of money, but now it counts my steps and I walk much more. I’m a lot more active."
+                  },
+                  {
+                    "speaker": "ilan",
+                    "text": "Maybe I should get one."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What does the woman say about her smartwatch?",
+                "options": [
+                  "It was far too expensive for her.",
+                  "It has made her more active.",
+                  "It is hard to learn how to use."
+                ],
+                "answer": 1,
+                "explanation": "She says it counts her steps and she walks much more, so it has made her more active."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "paige",
+                    "name": "Paige",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "chidi",
+                    "name": "Chidi",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "paige",
+                    "text": "Are you still playing that game every night?"
+                  },
+                  {
+                    "speaker": "chidi",
+                    "text": "Only for an hour. I want to get to level ten, and then I’ll stop. I have an exam next week."
+                  },
+                  {
+                    "speaker": "paige",
+                    "text": "I’ll believe that when I see it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "How does the woman feel about Chidi’s game?",
+                "options": [
+                  "She wants to play it too.",
+                  "She is angry about the noise.",
+                  "She doubts he will stop."
+                ],
+                "answer": 2,
+                "explanation": "“I’ll believe that when I see it” shows that she does not think he will stop."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "summer",
+                    "name": "Summer",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "abiodun",
+                    "name": "Abiodun",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "summer",
+                    "text": "Did you see the photos from the party? Everyone has posted them."
+                  },
+                  {
+                    "speaker": "abiodun",
+                    "text": "I try not to look. I spend half my evening on social media, and it takes up so much time, and I never feel better afterwards."
+                  },
+                  {
+                    "speaker": "summer",
+                    "text": "I know what you mean. I might delete the app for a month."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What do the speakers feel about social media?",
+                "options": [
+                  "It helps them make friends.",
+                  "It takes up too much time.",
+                  "It is better than television."
+                ],
+                "answer": 1,
+                "explanation": "He spends half his evening on it and she is thinking of deleting the app, so both think it takes too much time."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "salma",
+                    "name": "Salma",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "faisal",
+                    "name": "Faisal",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "faisal",
+                    "text": "Have you tried switching the router off and on again?"
+                  },
+                  {
+                    "speaker": "salma",
+                    "text": "Twice. The internet is still slow, especially in the evening."
+                  },
+                  {
+                    "speaker": "faisal",
+                    "text": "Then there may be a problem on your street. I can book an engineer to visit on Thursday."
+                  },
+                  {
+                    "speaker": "salma",
+                    "text": "Yes, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What will the adviser do?",
+                "options": [
+                  "Post her a new router",
+                  "Offer her a cheaper contract",
+                  "Book an engineer to visit"
+                ],
+                "answer": 2,
+                "explanation": "He says he can book an engineer to visit on Thursday, and she accepts."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "wanjiru",
+                    "name": "Wanjiru",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "gonzalo",
+                    "name": "Gonzalo",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "wanjiru",
+                    "text": "Sorry I’m late. My video wouldn’t start."
+                  },
+                  {
+                    "speaker": "gonzalo",
+                    "text": "No problem. Can you hear me?"
+                  },
+                  {
+                    "speaker": "wanjiru",
+                    "text": "Yes, but the picture is frozen."
+                  },
+                  {
+                    "speaker": "gonzalo",
+                    "text": "Then let’s turn off our cameras and just use sound for today."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What will they do?",
+                "options": [
+                  "Have the class without video",
+                  "Move the class to another day",
+                  "Use a different program"
+                ],
+                "answer": 0,
+                "explanation": "The teacher suggests switching off the cameras and using only sound."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "keiko",
+                    "name": "Keiko",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "anton",
+                    "name": "Anton",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "keiko",
+                    "text": "Hello, I saw your bike on the website. Is it still for sale?"
+                  },
+                  {
+                    "speaker": "anton",
+                    "text": "Yes, but someone else is coming to look at it this afternoon."
+                  },
+                  {
+                    "speaker": "keiko",
+                    "text": "Could I come at lunchtime instead? I can pay in cash."
+                  },
+                  {
+                    "speaker": "anton",
+                    "text": "OK, half past twelve then."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "Why is the woman phoning?",
+                "options": [
+                  "To arrange to see a bike",
+                  "To sell her own bike",
+                  "To complain about a price"
+                ],
+                "answer": 0,
+                "explanation": "She asks if the bike is for sale and arranges to come at lunchtime to see it."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a tech club",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "speaker-1",
+                "name": "Kyle",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "speaker-1",
+                "text": "Hello, everyone, and welcome to the Hartwell Tech Club. I’m Kyle, and I’m going to tell you about our new series of workshops, which starts next month. The workshops take place every Wednesday evening in the community hall, behind the bus station. Each session begins at half past six and lasts ninety minutes. In the first workshop, we’ll learn how to build a simple website, and in the second we’ll look at video editing. You don’t need to bring a laptop, because we have twelve computers, but please bring headphones if you can. There is a small charge of five pounds for each session, which pays for the room, and tea and biscuits are included. If you’d like to join, please book a place on our website before the end of this week, because places are limited."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "Workshops are every ___ evening",
+              "answer": "Wednesday",
+              "explanation": "Kyle says the workshops take place every Wednesday evening."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Place: the community ___, behind the bus station",
+              "answer": "hall",
+              "explanation": "The workshops are in the community hall, behind the bus station."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Each session lasts ninety ___",
+              "answer": "minutes",
+              "explanation": "Each session begins at half past six and lasts ninety minutes."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "The first workshop is about building a ___",
+              "answer": "website",
+              "explanation": "In the first workshop they will learn how to build a simple website."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Please bring ___ if you can",
+              "answer": "headphones",
+              "explanation": "Kyle says you do not need a laptop, but please bring headphones."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Each session costs five ___",
+              "answer": "pounds",
+              "accepted": [
+                "pound",
+                "£"
+              ],
+              "explanation": "There is a small charge of five pounds for each session."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a web designer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "interviewer",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "aaliyah",
+                "name": "Aaliyah",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "interviewer",
+                "text": "Aaliyah, you design websites for small businesses. How did you start?"
+              },
+              {
+                "speaker": "aaliyah",
+                "text": "At school I made a website for my brother’s football team, just for fun. I didn’t think of it as a job, but then other parents asked if I could make one for their shops. So I started working on them after lessons and at weekends."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What do you do first with a new customer?"
+              },
+              {
+                "speaker": "aaliyah",
+                "text": "I listen. Many people arrive with a long list of ideas, but when I ask what they want visitors to do, the answer is usually very simple: find the opening hours, see the prices, or send a message. So I begin by deciding what visitors need most."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What is the most common mistake?"
+              },
+              {
+                "speaker": "aaliyah",
+                "text": "Too much text. People read on their phones, often while they are walking, so short sentences and big buttons work much better than long paragraphs. Also, a page must load quickly. If it takes more than a few seconds, most visitors simply leave."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Has your job changed since you started?"
+              },
+              {
+                "speaker": "aaliyah",
+                "text": "A lot. Now there are tools that let anyone build a basic page, so some people say my job will disappear. I don’t think so. People still want someone who understands their business and can give advice. What I do now is more like teaching than designing."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What advice would you give to someone who wants to do this work?"
+              },
+              {
+                "speaker": "aaliyah",
+                "text": "Start with a small real project for someone you know. Don’t wait until you feel ready, because you learn most by finishing things. And look at websites you like and ask yourself why they work."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Aaliyah begin designing websites?",
+              "options": [
+                "She took a web design course at college.",
+                "She replied to a job advert from a shop.",
+                "She built a website for a football team."
+              ],
+              "answer": 2,
+              "explanation": "She made a website for her brother’s football team at school, and then other parents asked her for one."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What does Aaliyah do first with a new customer?",
+              "options": [
+                "She shows them other websites.",
+                "She finds out what visitors need.",
+                "She chooses colours and pictures."
+              ],
+              "answer": 1,
+              "explanation": "She listens and asks what visitors should do, then decides what visitors need most."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What is the most common mistake on websites?",
+              "options": [
+                "Putting too many words on a page.",
+                "Using pictures that are too small.",
+                "Choosing a name that is too long."
+              ],
+              "answer": 0,
+              "explanation": "She says “Too much text” is the most common mistake."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "Why must a page load quickly?",
+              "options": [
+                "Slow pages cost more to build.",
+                "People will not wait long.",
+                "Phones cannot show long pages."
+              ],
+              "answer": 1,
+              "explanation": "If a page takes more than a few seconds, most visitors simply leave."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "How does Aaliyah feel about changes in her job?",
+              "options": [
+                "She expects to still have work.",
+                "She is worried about the new tools.",
+                "She would like to stop designing."
+              ],
+              "answer": 0,
+              "explanation": "She does not think her job will disappear, because people still want someone who can give advice."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What advice does Aaliyah give?",
+              "options": [
+                "Study for several years first.",
+                "Read about famous designers.",
+                "Start with a small project."
+              ],
+              "answer": 2,
+              "explanation": "She says to start with a small real project and not to wait until you feel ready."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Phones and the internet",
+          "instructions": "Answer each question in your own words. Aim to speak for 20–30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s1-1-1",
+              "prompt": "How often do you use your phone in a day, and what do you use it for?"
+            },
+            {
+              "id": "s1-1-2",
+              "prompt": "Tell me about a website or an app that you use every day."
+            },
+            {
+              "id": "s1-1-3",
+              "prompt": "Do you prefer sending messages or talking on the phone? Why?"
+            },
+            {
+              "id": "s1-1-4",
+              "prompt": "What did you last do online with a friend or a member of your family?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a video call",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say how the person might be feeling.",
+          "type": "photo-description",
+          "prompt": "A woman talking to someone on a video call at a table in a wooden house.",
+          "images": [
+            {
+              "id": "s12-2-videocall",
+              "title": "A video call at home",
+              "alt": "A woman with long dark hair sits at a wooden table and smiles at a laptop while she talks with her hands. Bookshelves are behind her, and a bowl of oranges is in the foreground on the right.",
+              "image": {
+                "id": "s12-2-videocall",
+                "src": "assets/images/exams/cambridge-pet-12/s12-2-videocall-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-12/s12-2-videocall-600.webp",
+                "width": 1200,
+                "height": 798,
+                "alt": "A woman with long dark hair sits at a wooden table and smiles at a laptop while she talks with her hands. Bookshelves are behind her, and a bowl of oranges is in the foreground on the right.",
+                "credit": {
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woman_smiling_and_using_laptop_during_video_call_in_cozy_wooden_room.jpg"
+                }
+              },
+              "describeHints": [
+                "a woman on a video call",
+                "the laptop on the table",
+                "the wooden room and bookshelves",
+                "the bowl of fruit",
+                "who she might be talking to"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Choose a gadget as a present",
+          "instructions": "Look at the pictures. Talk about the gadgets and decide which one would be the best present for a friend who likes learning new things.",
+          "type": "collaborative-task",
+          "prompt": "Which gadget would you give your friend? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s12-3-phone",
+              "title": "A smartphone",
+              "alt": "A hand with white-tipped nails touches the screen of a smartphone that lies flat on a white table. A green apple is next to it.",
+              "image": {
+                "id": "s12-3-phone",
+                "src": "assets/images/exams/cambridge-pet-12/s12-3-phone-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-12/s12-3-phone-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A hand with white-tipped nails touches the screen of a smartphone that lies flat on a white table. A green apple is next to it.",
+                "credit": {
+                  "author": "Unknown authorUnknown author",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smartphone-mobile-hand-technology-internet-finger.jpg"
+                }
+              },
+              "describeHints": [
+                "a hand touching a phone",
+                "the screen and the lock screen",
+                "the white table and the apple",
+                "what the person might be doing",
+                "why a phone is a good present"
+              ]
+            },
+            {
+              "id": "s12-3-laptop",
+              "title": "A laptop",
+              "alt": "A silver laptop stands on a light wooden desk beside a pile of books. A yellow-green chair is in front of it.",
+              "image": {
+                "id": "s12-3-laptop",
+                "src": "assets/images/exams/cambridge-pet-12/s12-3-laptop-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-12/s12-3-laptop-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A silver laptop stands on a light wooden desk beside a pile of books. A yellow-green chair is in front of it.",
+                "credit": {
+                  "author": "Kari Shea karishea",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laptop_and_books_(Unsplash).jpg"
+                }
+              },
+              "describeHints": [
+                "a laptop on a desk",
+                "the pile of books",
+                "the chair",
+                "where the desk might be",
+                "what you could do with it"
+              ]
+            },
+            {
+              "id": "s12-3-headphones",
+              "title": "Headphones and a tablet",
+              "alt": "A pair of brown over-ear headphones lies on a light wooden table next to a tablet that shows app icons. A small speaker stands behind the headphones.",
+              "image": {
+                "id": "s12-3-headphones",
+                "src": "assets/images/exams/cambridge-pet-12/s12-3-headphones-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-12/s12-3-headphones-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A pair of brown over-ear headphones lies on a light wooden table next to a tablet that shows app icons. A small speaker stands behind the headphones.",
+                "credit": {
+                  "author": "Alphacolor 13 duck58cth",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_headphones_iPad_(Unsplash).jpg"
+                }
+              },
+              "describeHints": [
+                "a pair of headphones",
+                "a tablet on the table",
+                "the wooden table",
+                "what you could listen to or watch",
+                "who might like this present"
+              ]
+            },
+            {
+              "id": "s12-3-printer",
+              "title": "A 3D printer",
+              "alt": "A 3D printer with a metal frame and red parts stands on a white table next to an open laptop. A reel of purple plastic thread and two small red and blue plastic models lie on the table.",
+              "image": {
+                "id": "s12-3-printer",
+                "src": "assets/images/exams/cambridge-pet-12/s12-3-printer-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-12/s12-3-printer-600.webp",
+                "width": 1200,
+                "height": 812,
+                "alt": "A 3D printer with a metal frame and red parts stands on a white table next to an open laptop. A reel of purple plastic thread and two small red and blue plastic models lie on the table.",
+                "credit": {
+                  "author": "Jonathan Juursema",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Felix_3D_Printer_-_Printing_Set-up_With_Examples.JPG"
+                }
+              },
+              "describeHints": [
+                "a 3D printer with a metal frame",
+                "the laptop next to it",
+                "the reel of plastic thread",
+                "the small plastic models",
+                "what you could make with it"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Technology and children",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s1-4-1",
+              "prompt": "At what age should children get their first phone? Why?"
+            },
+            {
+              "id": "s1-4-2",
+              "prompt": "Is it a good idea for children to learn at school with tablets and computers?"
+            },
+            {
+              "id": "s1-4-3",
+              "prompt": "How can parents help children to use the internet safely?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

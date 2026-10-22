@@ -1,0 +1,1790 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-09",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Shop Smart",
+  "subtitle": "Shopping, prices and choices in Calder Vale",
+  "theme": "Shopping & money",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Sale, returns and delivery notices",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "CALDER VALE HOME STORE: Our winter sale ends this Sunday at 5 p.m. Everything in the lamp and rug department is half price while stocks last.",
+            "RETURNS: Goods can be brought back within 28 days with a receipt. Without a receipt we can only offer a gift card. Items must be unworn, with labels still attached.",
+            "CAI: Flatmate, tracking says my parcel was delivered at 11, but I can’t find it anywhere. I’m in meetings until six. Could you look behind the bins and in the porch when you get in?",
+            "NEW AT MARKET FOODS: Scan your shopping with our app as you walk round, then pay at the self-service desk by the exit. No more queues! Ask a member of staff if you need help setting up.",
+            "THANK YOU FOR YOUR ORDER! Use code SAVE10 on your next purchase to get ten per cent off. The code works online only and ends on 30 June. It cannot be used with other offers."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What does the notice say about the sale?",
+              "options": [
+                "It begins on Sunday afternoon.",
+                "Only the rugs are cheaper now.",
+                "It finishes at the weekend."
+              ],
+              "answer": 2,
+              "explanation": "The winter sale ends on Sunday at 5 p.m., so it finishes at the weekend. Lamps as well as rugs are half price, and the sale is already running."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What can a customer do without a receipt?",
+              "options": [
+                "Get the money back in cash.",
+                "Choose a gift card instead.",
+                "Swap the item for another size."
+              ],
+              "answer": 1,
+              "explanation": "Without a receipt the shop can only offer a gift card, so the customer cannot have cash or an exchange."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What does Cai want his flatmate to do?",
+              "options": [
+                "Search around the house for the parcel.",
+                "Call the delivery company at lunchtime.",
+                "Collect the parcel from a nearby shop."
+              ],
+              "answer": 0,
+              "explanation": "Cai cannot find the parcel and asks his flatmate to look behind the bins and in the porch when they get home."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What are shoppers told they can do?",
+              "options": [
+                "Pay without waiting in a long line.",
+                "Get help carrying their bags.",
+                "Order their food before they arrive."
+              ],
+              "answer": 0,
+              "explanation": "Customers scan items with the app and pay at a self-service desk by the exit, so they avoid a long wait at the till."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What must customers do to get the discount?",
+              "options": [
+                "Spend at least ten pounds in a shop.",
+                "Enter a code when they buy online.",
+                "Show this message at the shop till."
+              ],
+              "answer": 1,
+              "explanation": "The code SAVE10 works online only, so customers have to type it in when they buy on the website."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Choosing a shop in Calder Vale",
+          "instructions": "Read what each person needs. Match each person to the best shop. There are three extra shops.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Rania is going to a 1970s-style party and wants a dress with some history. She does not want to spend much money."
+            },
+            {
+              "id": "p2",
+              "text": "Gopal has just moved to a flat with a small terrace. He would like advice on which plants will survive the winter."
+            },
+            {
+              "id": "p3",
+              "text": "Klara needs a birthday cake for her sister. It must be nut-free, and she can only collect it early on Saturday morning."
+            },
+            {
+              "id": "p4",
+              "text": "Brendan loves detective novels but has little money. He would like to exchange books he has finished for something new."
+            },
+            {
+              "id": "p5",
+              "text": "Amir’s laptop screen is cracked. He does not want to buy a new one and needs it working again by the end of the week."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Paws and Claws",
+              "text": "Food, beds and toys for dogs, cats and small animals. Our staff can help you choose the right diet for your pet."
+            },
+            {
+              "id": "B",
+              "title": "The Book Barn",
+              "text": "Over 5,000 second-hand novels, most under four pounds. Bring back books you have finished and we will give you store credit to spend on others."
+            },
+            {
+              "id": "C",
+              "title": "Garden Corner",
+              "text": "Plants for every season, with free advice from our team on what to grow on balconies and terraces, even in cold weather. Open weekdays 9 to 5."
+            },
+            {
+              "id": "D",
+              "title": "Inkwell",
+              "text": "Notebooks, pens and art supplies for students and artists. Ask about our discount for school groups."
+            },
+            {
+              "id": "E",
+              "title": "Golden Crust Bakery",
+              "text": "Fresh bread and cakes made every morning, all of them nut-free. Order special cakes 48 hours ahead; we open at 6.30 a.m. on Saturdays."
+            },
+            {
+              "id": "F",
+              "title": "Toy Chest",
+              "text": "Wooden toys and board games for children of all ages. Free gift wrapping on request."
+            },
+            {
+              "id": "G",
+              "title": "Fix-It Corner",
+              "text": "We repair phones, tablets and laptops. Most jobs take two days, and the first check is free. No need to throw it away."
+            },
+            {
+              "id": "H",
+              "title": "Retro Rails",
+              "text": "Dresses, coats and jewellery from the 1960s to the 1990s at friendly prices. Every piece is one of a kind, so come early."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Rania",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "Rania wants a dress with history that is not expensive; Retro Rails sells vintage dresses at friendly prices."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Gopal",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Gopal needs advice on plants for a terrace in cold weather; Garden Corner gives free advice on exactly that."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Klara",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Klara needs a nut-free cake she can collect early on Saturday; Golden Crust makes nut-free cakes and opens at 6.30 a.m. that day."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Brendan",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Brendan loves novels and wants to swap finished books; The Book Barn gives store credit for books brought back."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Amir",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "Amir wants his cracked laptop repaired quickly; Fix-It Corner repairs laptops, usually within two days."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Saving up for a new bike",
+          "instructions": "Read the text and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last spring my old bike finally fell apart, and I decided to buy a better one. The one I wanted cost almost three hundred pounds, which is a lot when you only have pocket money and a little from a weekend job. My dad said he would pay half for my birthday, but I felt I should try to save the money on my own.\n\nI started by writing down everything I spent for a month. I was shocked. Nearly a quarter of my money went on snacks, drinks and small things I did not really need. I also sold some old games, a pair of trainers and my guitar, which I had hardly touched since I was twelve. That brought in almost eighty pounds.\n\nAfter four months, I had enough, and I went to the shop on a Saturday, feeling very pleased with myself. The assistant told me that the model I wanted was last year’s, and that the new colours would arrive in a few weeks, so the price would drop. She suggested I wait. It was hard to be patient, but I did, and in the end I paid forty pounds less.\n\nI ride the bike to school every day now. I am proud of it, and I am much more careful about where my money goes.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer decide to save the money herself?",
+              "options": [
+                "Her father refused to give her anything.",
+                "She wanted to manage without help.",
+                "The shop gave discounts for savers."
+              ],
+              "answer": 1,
+              "explanation": "Her dad offered to pay half, but she felt she should save the money on her own."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did she find when she wrote down her spending?",
+              "options": [
+                "A lot of money went on small things.",
+                "She spent more on clothes than anything else.",
+                "She was already saving a lot each month."
+              ],
+              "answer": 0,
+              "explanation": "She was shocked that nearly a quarter of her money went on snacks, drinks and small things she did not need."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "How did she get extra money?",
+              "options": [
+                "By selling things she no longer used.",
+                "By walking dogs for her neighbours.",
+                "By working in a shop at the weekend."
+              ],
+              "answer": 0,
+              "explanation": "She sold old games, trainers and her guitar, which she had hardly used."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "Why did she wait before buying the bike?",
+              "options": [
+                "She still did not have enough money yet.",
+                "She learned that it would soon be cheaper.",
+                "The bike she wanted was not in the shop."
+              ],
+              "answer": 1,
+              "explanation": "The assistant said the new colours would arrive in a few weeks and the price of last year’s model would drop."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How does the writer feel now?",
+              "options": [
+                "Sorry that she did not buy it sooner.",
+                "Worried about the cost of the repairs.",
+                "Proud, and more careful with money."
+              ],
+              "answer": 2,
+              "explanation": "She says she is proud of the bike and much more careful about where her money goes."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A week of online shopping",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Last month, our consumer studies teacher set us an unusual project: to spend a week shopping online for a present that cost less than twenty pounds, and then report back to the class. I thought it would be simple because I order things on the internet all the time. [1] I had already looked at six different websites by Monday evening.\n\nMy first problem was choosing. I wanted a present for my grandmother, who loves puzzles. [2] Some had four stars, others had four and a half, and the information all seemed to say the same thing. In the end, I decided to read the customers’ comments properly.\n\nThat helped a lot. [3] One reviewer said the pieces were so small that her father needed a magnifying glass. I chose a puzzle with larger pieces.\n\nWhen I compared prices, I noticed that delivery was sometimes very expensive. [4] That would have taken me over my budget, so I picked a site with free delivery on orders over fifteen pounds.\n\nThe parcel arrived on Friday, a day before the deadline. [5] The lesson I took from the week was simple: slow down before you click “buy”.",
+          "sentences": [
+            "There were dozens of puzzles, and they all looked almost the same.",
+            "Several people had written about details that the product pages left out.",
+            "My grandmother loved it and finished it in two evenings.",
+            "It turned out to be much harder than I expected.",
+            "One website wanted ten pounds to send a puzzle that cost twelve.",
+            "Some of my classmates chose to buy books or sweets instead."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "D",
+              "explanation": "“It turned out to be much harder than I expected” contrasts with “I thought it would be simple” and explains why she had already visited six websites."
+            },
+            {
+              "id": "r4-2",
+              "answer": "A",
+              "explanation": "“There were dozens of puzzles” explains “Some had four stars, others had four and a half”: “Some” and “others” refer to the puzzles."
+            },
+            {
+              "id": "r4-3",
+              "answer": "B",
+              "explanation": "The comments “helped a lot” because people wrote about details missing from the product pages; the next sentence gives one example."
+            },
+            {
+              "id": "r4-4",
+              "answer": "E",
+              "explanation": "Ten pounds delivery for a twelve-pound puzzle is the example, and “That would have taken me over my budget” refers to it."
+            },
+            {
+              "id": "r4-5",
+              "answer": "C",
+              "explanation": "After the parcel arrives, the grandmother’s reaction to the present comes naturally before the final lesson. Sentence F is about classmates and fits no gap."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "Buying new trainers",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "My old trainers had a hole in one side, so they were no longer [1] for running, and I decided to buy a new pair. At the first shop, the assistant [2] my feet and told me I needed a bigger size than I thought. I tried on six pairs, but they were all too [3] for me. In the second shop, I found some in the sale that were half [4]. They felt very comfortable, so I took them to the [5] and paid by card. When I got home, I saw that they were a different colour from the photo on the website, but I decided to [6] them anyway.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "fashionable",
+                "suitable",
+                "possible",
+                "popular"
+              ],
+              "answer": 1,
+              "explanation": "“Suitable for running” is the correct collocation; the shoes had a hole, so they were no longer right for the job."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "weighed",
+                "counted",
+                "pressed",
+                "measured"
+              ],
+              "answer": 3,
+              "explanation": "A shoe-shop assistant measures your feet to find your size; you do not weigh, count or press them."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "expensive",
+                "careful",
+                "healthy",
+                "useful"
+              ],
+              "answer": 0,
+              "explanation": "“Too expensive for me” fits the shopper’s budget; “too careful”, “too healthy” and “too useful” make no sense for shoes that she rejects."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "cost",
+                "price",
+                "money",
+                "value"
+              ],
+              "answer": 1,
+              "explanation": "“Half price” is the fixed expression for a sale reduction of fifty per cent."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "office",
+                "manager",
+                "till",
+                "bill"
+              ],
+              "answer": 2,
+              "explanation": "You take what you want to buy to the till and pay there."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "keep",
+                "save",
+                "stay",
+                "borrow"
+              ],
+              "answer": 0,
+              "explanation": "“Keep them anyway” means she decided not to take them back even though the colour was different."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "A message about a jacket to return",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Hi Andres,\nI bought this jacket [1] Saturday, but it is [2] big that the sleeves cover my hands. Could you come with [3] to the shop tomorrow after lunch? I [4] the receipt in my bag, so they should give me my money back. If they do [5] have a smaller size, I will choose something [6] instead. I really like the colour, but I do not want to spend money on a jacket I cannot wear.\nThanks!\nVera",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "on",
+              "accepted": [
+                "last"
+              ],
+              "explanation": "We use “on” with a day of the week: “on Saturday”."
+            },
+            {
+              "id": "r6-2",
+              "answer": "so",
+              "explanation": "“So big that” introduces the result: the sleeves cover her hands."
+            },
+            {
+              "id": "r6-3",
+              "answer": "me",
+              "explanation": "“Come with me” needs an object pronoun after the preposition."
+            },
+            {
+              "id": "r6-4",
+              "answer": "have",
+              "accepted": [
+                "kept",
+                "got",
+                "put",
+                "left"
+              ],
+              "explanation": "She still has the receipt, so “I have the receipt”."
+            },
+            {
+              "id": "r6-5",
+              "answer": "not",
+              "explanation": "“If they do not have” is the negative form after “do”."
+            },
+            {
+              "id": "r6-6",
+              "answer": "else",
+              "accepted": [
+                "different",
+                "new",
+                "similar"
+              ],
+              "explanation": "“Something else instead” means a different jacket if there is no smaller size."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Siobhan needs help choosing a birthday present for her brother. Read Siobhan’s email and your notes, then write a reply.",
+            "notes": [
+              "Suggest something she could buy.",
+              "Say where she could buy it.",
+              "Explain why it would be a good present.",
+              "Ask Siobhan one question about her brother."
+            ],
+            "wordCount": "about 100 words",
+            "sourceEmail": {
+              "from": "Siobhan",
+              "subject": "Help with a present!",
+              "body": "My brother is sixteen next month and I have no idea what to buy him. He likes music and football, but I can only spend about thirty pounds. Could you help me decide? Where would you go shopping? Thanks!"
+            },
+            "contentPoints": [
+              {
+                "text": "Suggest something she could buy.",
+                "keywords": [
+                  "buy",
+                  "get",
+                  "present",
+                  "gift",
+                  "headphones",
+                  "shirt",
+                  "ticket",
+                  "voucher",
+                  "book",
+                  "ball",
+                  "you could",
+                  "how about",
+                  "why not",
+                  "i suggest",
+                  "idea"
+                ]
+              },
+              {
+                "text": "Say where she could buy it.",
+                "keywords": [
+                  "shop",
+                  "store",
+                  "market",
+                  "online",
+                  "website",
+                  "mall",
+                  "centre",
+                  "high street",
+                  "in town",
+                  "at the",
+                  "go to"
+                ]
+              },
+              {
+                "text": "Explain why it would be a good present.",
+                "keywords": [
+                  "because",
+                  "since",
+                  "so that",
+                  "reason",
+                  "useful",
+                  "cheap",
+                  "love",
+                  "like",
+                  "enjoy",
+                  "perfect",
+                  "fits",
+                  "popular"
+                ]
+              },
+              {
+                "text": "Ask Siobhan one question about her brother.",
+                "keywords": [
+                  "do you",
+                  "does he",
+                  "is he",
+                  "has he",
+                  "what",
+                  "when",
+                  "which",
+                  "how",
+                  "would he",
+                  "will he"
+                ],
+                "question": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a school magazine",
+              "prompt": "Articles wanted! A good place to shop. Where is it? What can you buy there? Why do you like it? Write an article for the school magazine.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say where the place is.",
+                  "keywords": [
+                    "it is",
+                    "it’s",
+                    "in the",
+                    "near",
+                    "next to",
+                    "opposite",
+                    "town",
+                    "centre",
+                    "street",
+                    "mall",
+                    "market",
+                    "online"
+                  ]
+                },
+                {
+                  "text": "Say what you can buy there.",
+                  "keywords": [
+                    "you can buy",
+                    "they sell",
+                    "sells",
+                    "clothes",
+                    "food",
+                    "books",
+                    "shoes",
+                    "gifts",
+                    "fruit",
+                    "things",
+                    "products"
+                  ]
+                },
+                {
+                  "text": "Explain why you like it.",
+                  "keywords": [
+                    "because",
+                    "i like",
+                    "i love",
+                    "friendly",
+                    "cheap",
+                    "prices",
+                    "staff",
+                    "choice",
+                    "quality",
+                    "enjoy",
+                    "favourite",
+                    "best"
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a shopping trip that ended with a surprise.",
+              "openingSentence": "The shop was almost empty when I walked in.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what you were looking for.",
+                  "keywords": [
+                    "looking for",
+                    "wanted",
+                    "needed",
+                    "buy",
+                    "present",
+                    "shoes",
+                    "coat",
+                    "gift",
+                    "search"
+                  ]
+                },
+                {
+                  "text": "Say what the surprise was.",
+                  "keywords": [
+                    "surprise",
+                    "suddenly",
+                    "unexpected",
+                    "found",
+                    "noticed",
+                    "saw",
+                    "discovered",
+                    "meet",
+                    "met",
+                    "prize",
+                    "free"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "in the end",
+                    "finally",
+                    "at last",
+                    "eventually",
+                    "after that",
+                    "so i",
+                    "then i",
+                    "ended",
+                    "happy",
+                    "lesson"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations in shops",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "jakub",
+                    "name": "Jakub",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "livia",
+                    "name": "Livia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "jakub",
+                    "text": "How is the jumper, Livia? Does it fit?"
+                  },
+                  {
+                    "speaker": "livia",
+                    "text": "The medium is too tight under the arms. I’ll ask for a large one."
+                  },
+                  {
+                    "speaker": "jakub",
+                    "text": "They have it in grey too, if you prefer that."
+                  },
+                  {
+                    "speaker": "livia",
+                    "text": "No, I like the blue. I just need a bigger one."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "What will the woman do?",
+                "options": [
+                  "Ask for a bigger size",
+                  "Choose a different colour",
+                  "Go to another shop"
+                ],
+                "answer": 0,
+                "explanation": "The medium is too tight, so Livia will ask for a large one; she prefers the blue and does not want the grey."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "efua",
+                    "name": "Efua",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "norman",
+                    "name": "Norman",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "efua",
+                    "text": "Excuse me, the sign says these headphones are twenty-five pounds, but the till says thirty-five."
+                  },
+                  {
+                    "speaker": "norman",
+                    "text": "Let me check. Oh, I’m sorry, that sign is out of date. The sale finished yesterday."
+                  },
+                  {
+                    "speaker": "efua",
+                    "text": "That’s a shame. I’ll think about it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "Why is the price different?",
+                "options": [
+                  "The till made a mistake",
+                  "The sale has ended",
+                  "It is a new model"
+                ],
+                "answer": 1,
+                "explanation": "Norman says the sign is out of date because the sale finished yesterday."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "konrad",
+                    "name": "Konrad",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "sade",
+                    "name": "Sade",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "konrad",
+                    "text": "Did you keep the receipt for the printer?"
+                  },
+                  {
+                    "speaker": "sade",
+                    "text": "I can’t find it, but I paid by card, so my bank statement shows the date and the price."
+                  },
+                  {
+                    "speaker": "konrad",
+                    "text": "The shop might accept that."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "How can she prove she bought the printer?",
+                "options": [
+                  "By showing the box it came in",
+                  "By phoning the shop to ask",
+                  "By showing her bank statement"
+                ],
+                "answer": 2,
+                "explanation": "Sade has no receipt, but her bank statement shows the date and the price."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "marley",
+                    "name": "Marley",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "tunde",
+                    "name": "Tunde",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "marley",
+                    "text": "My aunt gave me a gift voucher, but it runs out next week."
+                  },
+                  {
+                    "speaker": "tunde",
+                    "text": "Why don’t you use it on those boots you wanted?"
+                  },
+                  {
+                    "speaker": "marley",
+                    "text": "They cost more than the voucher, but I’ll pay the difference."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What will Marley do with the voucher?",
+                "options": [
+                  "Put it towards some boots",
+                  "Change it for cash at the till",
+                  "Keep it until next month or later"
+                ],
+                "answer": 0,
+                "explanation": "Marley will use the voucher for the boots and pay the extra money herself."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "sinead",
+                    "name": "Sinead",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "oisin",
+                    "name": "Oisin",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "sinead",
+                    "text": "Your sofa will arrive on Thursday between nine and twelve."
+                  },
+                  {
+                    "speaker": "oisin",
+                    "text": "Could it come in the afternoon? I’m out until one."
+                  },
+                  {
+                    "speaker": "sinead",
+                    "text": "Afternoon deliveries are only on Fridays, I’m afraid."
+                  },
+                  {
+                    "speaker": "oisin",
+                    "text": "Then I’ll wait for Friday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "When will the sofa be delivered?",
+                "options": [
+                  "On Thursday morning",
+                  "On Friday afternoon",
+                  "On Thursday afternoon"
+                ],
+                "answer": 1,
+                "explanation": "Oisin cannot be at home in the morning, and afternoon deliveries are on Fridays, so he chooses Friday."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "soraya",
+                    "name": "Soraya",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "zubair",
+                    "name": "Zubair",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "soraya",
+                    "text": "Look at the queue at the tills!"
+                  },
+                  {
+                    "speaker": "zubair",
+                    "text": "The machines on the left only take ten items, and we have twelve."
+                  },
+                  {
+                    "speaker": "soraya",
+                    "text": "Then we’ll have to wait for a cashier."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What will they do?",
+                "options": [
+                  "Use the machines on the left",
+                  "Shop somewhere else",
+                  "Wait for a cashier"
+                ],
+                "answer": 2,
+                "explanation": "They have twelve items, which is too many for the machines, so they will queue for a cashier."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "ruairi",
+                    "name": "Ruairi",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "holly",
+                    "name": "Holly",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "ruairi",
+                    "text": "Do you have these shoes in a size nine?"
+                  },
+                  {
+                    "speaker": "holly",
+                    "text": "Only in black, I’m afraid. The brown ones have sold out."
+                  },
+                  {
+                    "speaker": "ruairi",
+                    "text": "Brown would have been nicer, but black is fine. I’ll take them."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What will the man buy?",
+                "options": [
+                  "Black shoes",
+                  "Brown shoes",
+                  "Nothing"
+                ],
+                "answer": 0,
+                "explanation": "The brown shoes have sold out, so Ruairi accepts the black ones."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "What is the main point?",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "leandro",
+                    "name": "Leandro",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "piper",
+                    "name": "Piper",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "leandro",
+                    "text": "Is that a new coat, Piper?"
+                  },
+                  {
+                    "speaker": "piper",
+                    "text": "Yes! I found it in the charity shop for six pounds."
+                  },
+                  {
+                    "speaker": "leandro",
+                    "text": "Six pounds? That’s a very low price. It looks brand new."
+                  },
+                  {
+                    "speaker": "piper",
+                    "text": "That’s why I always check the second-hand shops before I buy anything new."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Why is the woman pleased?",
+                "options": [
+                  "She got a refund",
+                  "She paid a low price",
+                  "She found a rare style"
+                ],
+                "answer": 1,
+                "explanation": "She bought a nearly new coat for only six pounds."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "dagmar",
+                    "name": "Dagmar",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "cristian",
+                    "name": "Cristian",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "dagmar",
+                    "text": "My headphones stopped working after two weeks."
+                  },
+                  {
+                    "speaker": "cristian",
+                    "text": "Have you still got the guarantee? They should give you new ones for free."
+                  },
+                  {
+                    "speaker": "dagmar",
+                    "text": "I’ll take them back tomorrow."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What does the man suggest?",
+                "options": [
+                  "Asking for a free replacement",
+                  "Buying another make of headphones",
+                  "Mending them by herself at home"
+                ],
+                "answer": 0,
+                "explanation": "Cristian says the shop should give her new headphones for free because of the guarantee."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "daphne",
+                    "name": "Daphne",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "diarmuid",
+                    "name": "Diarmuid",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "daphne",
+                    "text": "My bank card isn’t working at the machine."
+                  },
+                  {
+                    "speaker": "diarmuid",
+                    "text": "Maybe it has expired. Look at the date on the front."
+                  },
+                  {
+                    "speaker": "daphne",
+                    "text": "Oh, it expired last month. I need to phone the bank."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What is the problem with the card?",
+                "options": [
+                  "It is out of date",
+                  "It has been stolen",
+                  "She forgot the number"
+                ],
+                "answer": 0,
+                "explanation": "The card expired last month, so it is out of date."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "sade",
+                    "name": "Sade",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "jakub",
+                    "name": "Jakub",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "sade",
+                    "text": "How much is this lamp?"
+                  },
+                  {
+                    "speaker": "jakub",
+                    "text": "Twenty pounds."
+                  },
+                  {
+                    "speaker": "sade",
+                    "text": "That’s a bit much. Would you take a lower price, say twelve?"
+                  },
+                  {
+                    "speaker": "jakub",
+                    "text": "Make it fifteen and it’s yours."
+                  },
+                  {
+                    "speaker": "sade",
+                    "text": "All right, fifteen."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What happens in the conversation?",
+                "options": [
+                  "The woman decides not to buy",
+                  "The man raises his price",
+                  "They agree on a lower price"
+                ],
+                "answer": 2,
+                "explanation": "The man comes down from twenty to fifteen pounds and the woman accepts."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "oisin",
+                    "name": "Oisin",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "efua",
+                    "name": "Efua",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "oisin",
+                    "text": "I can’t decide what present to get Dad for his birthday."
+                  },
+                  {
+                    "speaker": "efua",
+                    "text": "He loves cooking, doesn’t he? What about a good knife?"
+                  },
+                  {
+                    "speaker": "oisin",
+                    "text": "That seems dangerous. Maybe something else. I just don’t know."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What is the man’s problem?",
+                "options": [
+                  "He has no money left at all",
+                  "He cannot choose a present",
+                  "He forgot the date of the party"
+                ],
+                "answer": 1,
+                "explanation": "Oisin says he cannot decide what to buy his father and rejects the idea of a knife."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "sinead",
+                    "name": "Sinead",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "zubair",
+                    "name": "Zubair",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "sinead",
+                    "text": "My online order came, but there’s only one shoe in the box."
+                  },
+                  {
+                    "speaker": "zubair",
+                    "text": "Send the company a message through their website, with a photo."
+                  },
+                  {
+                    "speaker": "sinead",
+                    "text": "Good idea. I’ll do it now."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the woman going to do?",
+                "options": [
+                  "Send the order back by post",
+                  "Phone the shop tomorrow morning",
+                  "Contact the company with a picture"
+                ],
+                "answer": 2,
+                "explanation": "Zubair suggests sending a message with a photo, and Sinead agrees to do it."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a shop’s loyalty scheme",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "speaker-1",
+                "name": "Gopal",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "speaker-1",
+                "text": "Good morning, everyone. I’m Gopal, the manager of Brook Street Stores here in Calder Vale, and I’d like to tell you about our new loyalty scheme. Joining is free. Just ask at the customer service desk by the main door, and we’ll give you a card in two minutes. For every pound you spend, you earn one point. When you have a hundred points, we send you a voucher by email, not by post, so please give us your address. On your birthday, you’ll get a free coffee in our café. We also have double points every Wednesday, so that’s the best day for your big shop. Please remember that points run out at the end of the year, so use them before then. Thank you, and happy shopping."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "Join at the customer service ___",
+              "answer": "desk",
+              "explanation": "Gopal says to ask at the customer service desk by the main door."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Earn one ___ for each pound spent",
+              "answer": "point",
+              "explanation": "For every pound spent, customers earn one point."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Vouchers arrive by ___",
+              "answer": "email",
+              "accepted": [
+                "e-mail",
+                "e mail"
+              ],
+              "explanation": "The voucher is sent by email, not by post."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Birthday present: a free ___",
+              "answer": "coffee",
+              "explanation": "On their birthday, members get a free coffee in the café."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Double points every ___",
+              "answer": "Wednesday",
+              "explanation": "There are double points every Wednesday."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Points run out at the ___ of the year",
+              "answer": "end",
+              "explanation": "Points run out at the end of the year."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a young shop owner",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "interviewer",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "divya",
+                "name": "Divya",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "interviewer",
+                "text": "Divya, you opened a refill shop when you were only twenty. How did the idea start?"
+              },
+              {
+                "speaker": "divya",
+                "text": "At home, really. One evening I counted how much plastic my family threw away in a week, and I was shocked. I thought, there must be a way to buy things like rice and soap without all that packaging."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "How did you pay to start the business?"
+              },
+              {
+                "speaker": "divya",
+                "text": "I didn’t want a bank loan, so I used the money I had saved from working in a café and sold my old camera. It wasn’t much, so the shop is small."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What was the hardest part of the first months?"
+              },
+              {
+                "speaker": "divya",
+                "text": "People were interested, so finding customers wasn’t the problem. The hard part was doing everything alone. I opened at eight, closed at seven and then did the accounts at night."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "And how do you keep your customers coming back?"
+              },
+              {
+                "speaker": "divya",
+                "text": "I learn their names and what they like. If someone always buys a certain tea, I order extra for them. People enjoy that, and it’s something the big chains can’t do."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Do you try to be cheaper than the big chains?"
+              },
+              {
+                "speaker": "divya",
+                "text": "No, that would be impossible for a small shop. Instead, I offer advice, like how to cook with dried beans. People come for that as much as for the products."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What are your plans for next year?"
+              },
+              {
+                "speaker": "divya",
+                "text": "I’m not going to open another shop yet. First I want to start a delivery service, so that older customers and busy parents can order from home."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "What gave Divya the idea for her shop?",
+              "options": [
+                "She was surprised by how much plastic her family threw away.",
+                "A teacher at school suggested it to her.",
+                "She saw a similar shop when she was abroad."
+              ],
+              "answer": 0,
+              "explanation": "She counted her family’s plastic rubbish for a week and was shocked."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "How did she pay for the business?",
+              "options": [
+                "She took out a bank loan.",
+                "Her parents lent her the money.",
+                "She used her own savings."
+              ],
+              "answer": 2,
+              "explanation": "She did not want a bank loan; she used money saved from a café job and sold her old camera."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What was the hardest part of the first months?",
+              "options": [
+                "Finding people to buy things",
+                "Working long hours alone",
+                "Choosing what to sell"
+              ],
+              "answer": 1,
+              "explanation": "Finding customers was not the problem; doing everything alone was."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "How does she keep customers coming back?",
+              "options": [
+                "By remembering each person’s name and tastes",
+                "By offering lower prices than big chains",
+                "By posting on social media every day"
+              ],
+              "answer": 0,
+              "explanation": "She learns names and preferences and orders extra of what people like."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "How does she deal with the lower prices of big shop chains?",
+              "options": [
+                "She tries to match the prices of big chains.",
+                "She hopes to open more shops quite soon.",
+                "She prefers to give advice instead."
+              ],
+              "answer": 2,
+              "explanation": "She says competing on price would be impossible, so she offers advice instead."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What does she want to do next year?",
+              "options": [
+                "Open a second shop in another town",
+                "Start a delivery service",
+                "Hire a manager to run the shop"
+              ],
+              "answer": 1,
+              "explanation": "She says she will not open another shop yet; first she wants to start a delivery service."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Talking about shopping",
+          "type": "interview",
+          "instructions": "Answer each question in your own words. Aim to speak for 20–30 seconds.",
+          "questions": [
+            {
+              "id": "s09-1-1",
+              "prompt": "How often do you go shopping, and what do you usually buy?"
+            },
+            {
+              "id": "s09-1-2",
+              "prompt": "Do you get pocket money? What do you spend it on?"
+            },
+            {
+              "id": "s09-1-3",
+              "prompt": "Tell me about the last thing you bought that you were really pleased with."
+            },
+            {
+              "id": "s09-1-4",
+              "prompt": "Do you like shopping with friends or on your own? Why?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "type": "photo-description",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the person might be looking for.",
+          "prompt": "A woman choosing a top from the clothes hanging at a market stall.",
+          "images": [
+            {
+              "id": "s09-2-clothes-rack",
+              "title": "Choosing clothes",
+              "alt": "A woman with dark hair holds up a black top on a hanger at a clothes stall.",
+              "image": {
+                "id": "s09-2-clothes-rack",
+                "src": "assets/images/exams/cambridge-pet-09/s09-2-clothes-rack-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-09/s09-2-clothes-rack-600.webp",
+                "width": 1200,
+                "height": 799,
+                "alt": "A woman with dark hair holds up a black top on a hanger at a clothes stall.",
+                "credit": {
+                  "author": "SAN_DRINO",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Difficult_choice._(6869126236).jpg"
+                }
+              },
+              "describeHints": [
+                "a woman choosing clothes",
+                "the top on the hanger",
+                "the clothes on the rail",
+                "the market stall",
+                "what she might be thinking"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Choose a place to find a gift",
+          "type": "collaborative-task",
+          "instructions": "Look at the pictures. Talk about the different places and ways of shopping, and decide which one would be best for finding a present for a friend.",
+          "prompt": "Your friend has a birthday soon. Which of these places or ways of buying would you choose to get a present? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s09-3-glassware",
+              "title": "An antiques stall",
+              "alt": "Green glass jugs and bowls stand on a market table in front of a framed painting of a city by a river. Two tall decorated lamps stand on either side.",
+              "image": {
+                "id": "s09-3-glassware",
+                "src": "assets/images/exams/cambridge-pet-09/s09-3-glassware-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-09/s09-3-glassware-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "Green glass jugs and bowls stand on a market table in front of a framed painting of a city by a river. Two tall decorated lamps stand on either side.",
+                "credit": {
+                  "author": "Tess Mattew",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024.09.08_Fleamarket_Novopodrezkovo_Antique_Table_Lamps_and_Green_Glassware.jpg"
+                }
+              },
+              "describeHints": [
+                "old lamps and glass jugs",
+                "the green colour",
+                "a flea market stall",
+                "a picture in a frame behind",
+                "who might like these things"
+              ]
+            },
+            {
+              "id": "s09-3-veg-stall",
+              "title": "A vegetable stall",
+              "alt": "Pale leafy cabbages, round green cabbages and a tray of red and green tomatoes on a market stall.",
+              "image": {
+                "id": "s09-3-veg-stall",
+                "src": "assets/images/exams/cambridge-pet-09/s09-3-veg-stall-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-09/s09-3-veg-stall-600.webp",
+                "width": 1200,
+                "height": 677,
+                "alt": "Pale leafy cabbages, round green cabbages and a tray of red and green tomatoes on a market stall.",
+                "credit": {
+                  "author": "OnlyJanz",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fresh_Vegetables_display_in_Iloilo_Terminal_Public_Market_05.jpg"
+                }
+              },
+              "describeHints": [
+                "fresh vegetables",
+                "the crates",
+                "the cabbages and tomatoes",
+                "a market stall",
+                "what you could cook"
+              ]
+            },
+            {
+              "id": "s09-3-phone-payment",
+              "title": "Paying with a phone",
+              "alt": "A customer holds a purple phone over a card machine at a supermarket till. Vegetables and a bottle of milk are on the counter.",
+              "image": {
+                "id": "s09-3-phone-payment",
+                "src": "assets/images/exams/cambridge-pet-09/s09-3-phone-payment-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-09/s09-3-phone-payment-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A customer holds a purple phone over a card machine at a supermarket till. Vegetables and a bottle of milk are on the counter.",
+                "credit": {
+                  "author": "USDAgov",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:WIC_Environments_in_Michigan_(20230621-USDA-FNS-UNK-0095).jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:WIC_Environments_in_Michigan_(20230621-USDA-FNS-UNK-0095).jpg"
+                }
+              },
+              "describeHints": [
+                "a person paying with a phone",
+                "the card machine",
+                "the food on the counter",
+                "the shop till",
+                "why this is quick"
+              ]
+            },
+            {
+              "id": "s09-3-shoe-shelves",
+              "title": "A display of shoes",
+              "alt": "Rows of colourful flat shoes in red, orange and pink sit on wooden shelves in a shoe shop.",
+              "image": {
+                "id": "s09-3-shoe-shelves",
+                "src": "assets/images/exams/cambridge-pet-09/s09-3-shoe-shelves-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-09/s09-3-shoe-shelves-600.webp",
+                "width": 1200,
+                "height": 698,
+                "alt": "Rows of colourful flat shoes in red, orange and pink sit on wooden shelves in a shoe shop.",
+                "credit": {
+                  "author": "Tomascastelazo",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shoes_in_a_spanish_shoe_store.jpg"
+                }
+              },
+              "describeHints": [
+                "rows of shoes",
+                "the bright colours",
+                "the wooden shelves",
+                "a shoe shop",
+                "who might wear them"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about shopping online and in shops",
+          "type": "discussion",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "questions": [
+            {
+              "id": "s09-4-1",
+              "prompt": "Is it better to buy things online or in a shop? Why?"
+            },
+            {
+              "id": "s09-4-2",
+              "prompt": "Do you think people buy too many things they do not need?"
+            },
+            {
+              "id": "s09-4-3",
+              "prompt": "What do you do to get a good price when you shop?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

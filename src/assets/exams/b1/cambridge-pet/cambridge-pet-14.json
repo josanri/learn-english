@@ -1,0 +1,1782 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-14",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Food and Cooking",
+  "subtitle": "Cafes, recipes, cooking classes and meals with friends",
+  "theme": "Food and cooking",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "THE CORNER CAFE, LINDALE: Today's special is tomato soup with fresh bread, £4. Served until 2 p.m. only.",
+            "ALLERGY INFORMATION: Some of our cakes contain nuts. If you have an allergy, please ask a member of staff before you order.",
+            "JUN: Shopping done! The shop had no pasta, so I bought rice instead. Could you pick up some tomatoes on your way home?",
+            "HANAN'S BAKERY: This Saturday we will close at 2 p.m. because the main street is closed for the Lindale food fair. We open as usual on Sunday.",
+            "GREEN ACRE FARM SHOP: Weekly vegetable box, £12. Order by Wednesday and collect it from the shop on Friday. Delivery costs £2 extra."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What does the notice say about the special?",
+              "options": [
+                "It costs less after lunch.",
+                "It is served all day long.",
+                "It finishes at 2 p.m."
+              ],
+              "answer": 2,
+              "explanation": "The soup special is served until 2 p.m. only, so it stops being served at that time."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What should customers with an allergy do?",
+              "options": [
+                "Talk to the staff before ordering.",
+                "Choose food from a separate shelf.",
+                "Read the menu on the website."
+              ],
+              "answer": 0,
+              "explanation": "The notice asks customers with an allergy to speak to a member of staff before they order."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What does Jun want his friend to do?",
+              "options": [
+                "Buy some rice for dinner.",
+                "Get some tomatoes.",
+                "Cook the pasta tonight."
+              ],
+              "answer": 1,
+              "explanation": "Jun has already bought rice instead of pasta and asks his friend to pick up some tomatoes on the way home."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What is different about the bakery this Saturday?",
+              "options": [
+                "It will stay open longer.",
+                "It will close earlier.",
+                "It will have different cakes."
+              ],
+              "answer": 1,
+              "explanation": "The bakery will close at 2 p.m. this Saturday because the street is closed for the food fair."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What must customers do to get a vegetable box on Friday?",
+              "options": [
+                "Order it by Wednesday.",
+                "Pay £2 more at the shop.",
+                "Ask for delivery on Wednesday."
+              ],
+              "answer": 0,
+              "explanation": "Boxes must be ordered by Wednesday and collected on Friday. The £2 is only for delivery."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Choosing a cooking class",
+          "instructions": "Read what each person is looking for. Match each person to the best activity. There are three extra activities.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Sofia would like to make a special birthday cake for her niece and learn how to decorate it. She is free on Saturday afternoons."
+            },
+            {
+              "id": "p2",
+              "text": "Mustafa has never baked before but would like to make his own bread. He can only go to classes at the weekend, in the morning."
+            },
+            {
+              "id": "p3",
+              "text": "Ximena loves Japanese food and wants to learn to prepare it at home. She is free on Friday evenings."
+            },
+            {
+              "id": "p4",
+              "text": "Tadhg works long hours and has only a short break at midday. He wants to learn meals he can make quickly and take to work."
+            },
+            {
+              "id": "p5",
+              "text": "Maebh has stopped eating meat and wants to learn tasty dishes with plenty of spices. She can only come on Tuesday evenings."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Slow-cooked stews",
+              "text": "Learn to make warming beef and lamb stews on Thursday evenings. The dishes cook slowly, so the class lasts three hours."
+            },
+            {
+              "id": "B",
+              "title": "Vegetarian curry night",
+              "text": "Cook three meat-free curries with fresh spices on Tuesday evenings. Rice is included and you take the recipes home."
+            },
+            {
+              "id": "C",
+              "title": "Barbecue basics",
+              "text": "Learn to cook meat and vegetables safely on a barbecue. This outdoor class runs on Sunday afternoons from May to September."
+            },
+            {
+              "id": "D",
+              "title": "Lunch in twenty minutes",
+              "text": "Prepare simple lunches that take less than twenty minutes and are easy to carry. Wednesday evenings."
+            },
+            {
+              "id": "E",
+              "title": "Sushi at home",
+              "text": "Roll your own sushi with fresh fish and vegetables. Friday evenings. We provide the bamboo mats."
+            },
+            {
+              "id": "F",
+              "title": "Knife skills",
+              "text": "Chop, slice and dice like a chef in this short Monday evening workshop. Bring your own apron."
+            },
+            {
+              "id": "G",
+              "title": "Bread for beginners",
+              "text": "Make two loaves from the beginning with our baker. Saturday mornings; no experience necessary."
+            },
+            {
+              "id": "H",
+              "title": "Cake decorating",
+              "text": "Decorate a birthday cake with cream and chocolate. Saturday afternoons. You take your cake home."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Sofia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "Sofia wants to decorate a birthday cake on a Saturday afternoon, and text H is a cake decorating class on Saturday afternoons."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Mustafa",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "Mustafa is a beginner who wants to bake bread in the morning at the weekend; text G is a beginners bread class on Saturday mornings."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Ximena",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Ximena loves Japanese food and is free on Friday evenings; text E teaches sushi on Friday evenings."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Tadhg",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Tadhg needs quick meals to take to work; text D teaches lunches that take less than twenty minutes and are easy to carry."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Maebh",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Maebh no longer eats meat, likes spices and can come on Tuesday evenings; text B is a meat-free curry class on Tuesday evenings."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Running a soup stall",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Two years ago I was working in an office and spent every lunchtime in the same queue for the same sandwich. I loved cooking at home, and my friends always asked me for my carrot and ginger soup. One day my neighbour, who sells flowers at the Saturday market in Lindale, suggested that I try selling it. I laughed, but a week later I was standing behind a small table with a big pot, a small cooker and forty paper cups.\n\nI was very nervous. The first customer was a woman with a baby, and she asked me what was in the soup. I started to explain and then realised that everyone behind her in the queue was listening. By noon the pot was empty. I had never felt so tired, or so pleased.\n\nNow I run the stall every weekend and still work in the office during the week. People often tell me I should open a proper cafe, but I am not sure. A cafe would mean staff and long hours, and I would probably spend less time cooking and more time on office work. For the moment, I prefer to keep things small. What I like best is that regular customers now tell me about their week while they drink their soup. Next month I am going to try a new soup with pumpkin, and I hope they will like it.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer start the stall?",
+              "options": [
+                "She was tired of her office job.",
+                "A neighbour gave her the idea.",
+                "Her friends wanted to open a cafe."
+              ],
+              "answer": 1,
+              "explanation": "Her neighbour, who sells flowers at the market, suggested that she try selling her soup."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What happened when the first customer asked about the soup?",
+              "options": [
+                "Everyone was listening to her.",
+                "Nobody wanted to buy any soup.",
+                "She forgot what was in the soup."
+              ],
+              "answer": 0,
+              "explanation": "She started to explain and then realised that everyone behind the customer was listening."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "Why is the writer not sure about opening a cafe?",
+              "options": [
+                "She does not have enough customers.",
+                "She thinks her soup is too simple.",
+                "She would have less time to cook."
+              ],
+              "answer": 2,
+              "explanation": "She says she would probably spend less time cooking and more time on office work."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What does the writer enjoy most about the stall?",
+              "options": [
+                "Trying out new recipes at home.",
+                "Hearing from regular customers.",
+                "Earning some extra money."
+              ],
+              "answer": 1,
+              "explanation": "She says what she likes best is that regular customers tell her about their week."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What is the writer going to do next month?",
+              "options": [
+                "Make a different soup.",
+                "Move to a bigger table.",
+                "Leave her office job."
+              ],
+              "answer": 0,
+              "explanation": "She says she is going to try a new soup with pumpkin next month."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A kitchen garden at school",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "At Lindale Primary School, the old tennis court behind the gym is no longer empty. Since March it has been a kitchen garden with ten wooden boxes full of vegetables and herbs. [1] Each class looks after one box, and the children water the plants every morning before lessons.\n\nThe idea came from the school cook, who was worried about the food that was thrown away every day. [2] She thought that if the children grew vegetables themselves, they might want to eat them.\n\nThe first months were not easy. [3] But the pupils did not give up, and in June they picked their first tomatoes.\n\nNow the cook uses the vegetables in school lunches every Friday. [4] On those days, almost every plate comes back to the kitchen empty.\n\nThe school is already planning to build five more boxes next year. [5] The cook hopes other schools in the area will copy the idea.",
+          "sentences": [
+            "Many pupils said they simply did not like vegetables.",
+            "Parents have already offered to help with the building.",
+            "Some parents grow tomatoes on their balconies at home.",
+            "The pupils chose what to grow, from carrots to mint.",
+            "Insects ate most of the lettuces, and the beans grew very slowly.",
+            "The change in the dining room has surprised everyone."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "D",
+              "explanation": "\"The pupils chose what to grow\" explains the vegetables and herbs in the boxes, and leads to \"Each class looks after one box\"."
+            },
+            {
+              "id": "r4-2",
+              "answer": "A",
+              "explanation": "The cook was worried about wasted food because many pupils did not like vegetables; \"She thought that if the children grew vegetables themselves\" then gives her solution."
+            },
+            {
+              "id": "r4-3",
+              "answer": "E",
+              "explanation": "The first months were not easy because insects ate the lettuces and the beans grew slowly; \"But the pupils did not give up\" answers these problems."
+            },
+            {
+              "id": "r4-4",
+              "answer": "F",
+              "explanation": "\"The change in the dining room has surprised everyone\" introduces the surprising result in the next sentence, that almost every plate comes back empty."
+            },
+            {
+              "id": "r4-5",
+              "answer": "B",
+              "explanation": "Parents offering to help with the building follows the plan for five more boxes, and then \"The cook hopes\" gives the hope that other schools will copy the idea."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A simple tomato soup",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "This soup is quick and cheap to make. First, [1] a little oil in a large pan until it is hot. Then fry an onion and two cloves of garlic gently for five minutes. Then add a tin of tomatoes and half a litre of water. [2] that, bring the soup to the boil. Let it cook slowly [3] twenty minutes. When the soup is ready, [4] it with salt and pepper and add a few fresh basil leaves. These amounts are [5] for four people. Any soup that is left over can be [6] in the fridge for three days.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "add",
+                "put",
+                "pour",
+                "heat"
+              ],
+              "answer": 3,
+              "explanation": "Only \"heat\" fits \"until it is hot\": you heat oil in a pan until it is hot, then fry the vegetables."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "Before",
+                "After",
+                "During",
+                "Since"
+              ],
+              "answer": 1,
+              "explanation": "\"After that\" follows the step of adding the tomatoes and water, so the soup is brought to the boil next."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "in",
+                "for",
+                "since",
+                "during"
+              ],
+              "answer": 1,
+              "explanation": "\"For\" is used with a length of time: cook slowly for twenty minutes."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "pour",
+                "cook",
+                "season",
+                "taste"
+              ],
+              "answer": 2,
+              "explanation": "To season food means to add salt and pepper to it."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "enough",
+                "full",
+                "ready",
+                "sure"
+              ],
+              "answer": 0,
+              "explanation": "\"Enough for four people\" means the right amount for four people."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "kept",
+                "taken",
+                "spent",
+                "made"
+              ],
+              "answer": 0,
+              "explanation": "Soup that is left over can be kept in the fridge for three days; taken, spent and made do not fit \"in the fridge for three days\"."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "An invitation to dinner",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Hi Blake,\nThank you [1] your message! I am so glad you can come to my dinner party on Saturday. I have invited eight people, [2] I need to cook a lot of food. I am going to make a big vegetable pie and a chocolate cake. Is there [3] you do not eat? Please let me know [4] Friday evening. I will start cooking at four o'clock, so [5] you can come early, you could help me with the salad. It will be lovely to see you, because we have not met [6] March!\nNia",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "for",
+              "explanation": "We thank someone \"for\" something, here for the message."
+            },
+            {
+              "id": "r6-2",
+              "answer": "so",
+              "accepted": [
+                "and"
+              ],
+              "explanation": "\"So\" introduces the result: she has invited eight people, so she needs to cook a lot."
+            },
+            {
+              "id": "r6-3",
+              "answer": "anything",
+              "accepted": [
+                "something"
+              ],
+              "explanation": "In a question, \"anything\" is used before \"you do not eat\"."
+            },
+            {
+              "id": "r6-4",
+              "answer": "by",
+              "accepted": [
+                "before",
+                "on"
+              ],
+              "explanation": "\"By Friday evening\" means no later than Friday evening."
+            },
+            {
+              "id": "r6-5",
+              "answer": "if",
+              "accepted": [
+                "when",
+                "since"
+              ],
+              "explanation": "The condition \"if you can come early\" leads to the offer \"you could help me\"."
+            },
+            {
+              "id": "r6-6",
+              "answer": "since",
+              "explanation": "With the present perfect \"have not met\", \"since March\" gives the starting point."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Themba is going to cook dinner for his parents and wants your advice. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Suggest a dish he could cook.",
+              "Explain why it is a good choice.",
+              "Tell him where to buy the ingredients.",
+              "Ask Themba a question about the dinner."
+            ],
+            "sourceEmail": {
+              "from": "Themba",
+              "subject": "Dinner for my parents",
+              "body": "My parents are coming to dinner on Saturday and I want to cook something special, but I am not a very good cook! Could you recommend a recipe? I would also like to know where to find the ingredients. Thanks for your help!"
+            },
+            "contentPoints": [
+              {
+                "text": "Suggest a dish he could cook.",
+                "keywords": [
+                  "cook",
+                  "make",
+                  "dish",
+                  "recipe",
+                  "try",
+                  "pasta",
+                  "soup",
+                  "curry",
+                  "pie",
+                  "stew",
+                  "cake",
+                  "rice",
+                  "chicken",
+                  "fish"
+                ]
+              },
+              {
+                "text": "Explain why it is a good choice.",
+                "keywords": [
+                  "because",
+                  "easy",
+                  "simple",
+                  "tasty",
+                  "delicious",
+                  "quick",
+                  "cheap",
+                  "everyone",
+                  "love",
+                  "so that",
+                  "since",
+                  "that is why",
+                  "that's why",
+                  "reason"
+                ]
+              },
+              {
+                "text": "Tell him where to buy the ingredients.",
+                "keywords": [
+                  "buy",
+                  "shop",
+                  "market",
+                  "supermarket",
+                  "farm",
+                  "bakery",
+                  "ingredients",
+                  "get",
+                  "find",
+                  "store"
+                ]
+              },
+              {
+                "text": "Ask Themba a question about the dinner.",
+                "keywords": [
+                  "do you",
+                  "would you",
+                  "can you",
+                  "could you",
+                  "what",
+                  "when",
+                  "where",
+                  "how",
+                  "are you",
+                  "will you"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a school magazine",
+              "prompt": "Articles wanted! A meal I love. What is the meal? Who usually cooks it? Why do you love it? Write an article for the school magazine.",
+              "contentPoints": [
+                {
+                  "text": "Say what the meal is.",
+                  "keywords": [
+                    "meal",
+                    "dish",
+                    "food",
+                    "soup",
+                    "pasta",
+                    "rice",
+                    "pizza",
+                    "chicken",
+                    "stew",
+                    "cake",
+                    "favourite"
+                  ]
+                },
+                {
+                  "text": "Say who usually cooks it.",
+                  "keywords": [
+                    "cooks",
+                    "makes",
+                    "my mother",
+                    "my father",
+                    "my grandmother",
+                    "grandfather",
+                    "my mum",
+                    "my dad",
+                    "i cook",
+                    "we cook",
+                    "family",
+                    "prepares"
+                  ]
+                },
+                {
+                  "text": "Explain why you love it.",
+                  "keywords": [
+                    "because",
+                    "love",
+                    "delicious",
+                    "tasty",
+                    "smell",
+                    "remember",
+                    "special",
+                    "together",
+                    "taste",
+                    "enjoy"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a dinner that went wrong.",
+              "openingSentence": "The smell from the kitchen told me that something was wrong.",
+              "contentPoints": [
+                {
+                  "text": "Say what went wrong with the dinner.",
+                  "keywords": [
+                    "burnt",
+                    "burned",
+                    "forgot",
+                    "mistake",
+                    "wrong",
+                    "smoke",
+                    "too much",
+                    "dropped",
+                    "spilt",
+                    "ruined",
+                    "problem",
+                    "salt"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "in the end",
+                    "finally",
+                    "at last",
+                    "eventually",
+                    "after that",
+                    "so we",
+                    "then we",
+                    "ended",
+                    "laughed",
+                    "lesson",
+                    "ordered"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "zuri",
+                    "name": "Zuri",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "luca",
+                    "name": "Luca",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "luca",
+                    "text": "I can't decide. The pizza looks good."
+                  },
+                  {
+                    "speaker": "zuri",
+                    "text": "It's really big, though, and you said you weren't very hungry."
+                  },
+                  {
+                    "speaker": "luca",
+                    "text": "True. And I had soup yesterday, so I'll have the chicken salad."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "What will the man have for lunch?",
+                "options": [
+                  "Some vegetable soup",
+                  "A chicken salad",
+                  "A cheese pizza"
+                ],
+                "answer": 1,
+                "explanation": "Luca says the pizza is big, he had soup yesterday, and so he chooses the chicken salad."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "judith",
+                    "name": "Judith",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "waiter",
+                    "name": "Waiter",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "judith",
+                    "text": "Hello, I'd like to book a table for four on Saturday at eight o'clock, please."
+                  },
+                  {
+                    "speaker": "waiter",
+                    "text": "I'm afraid eight is full. I could offer you half past seven."
+                  },
+                  {
+                    "speaker": "judith",
+                    "text": "That's fine, thank you."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What time is the table booked for?",
+                "options": [
+                  "7:30",
+                  "8:00",
+                  "8:30"
+                ],
+                "answer": 0,
+                "explanation": "Eight o'clock is full, so Judith accepts the offer of half past seven."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "shelby",
+                    "name": "Shelby",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "jaxon",
+                    "name": "Jaxon",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "shelby",
+                    "text": "I'm making Mum's chocolate cake. Do we have any eggs?"
+                  },
+                  {
+                    "speaker": "jaxon",
+                    "text": "Six. And there's plenty of butter."
+                  },
+                  {
+                    "speaker": "shelby",
+                    "text": "Great. What about flour?"
+                  },
+                  {
+                    "speaker": "jaxon",
+                    "text": "Yes, but we've run out of sugar."
+                  },
+                  {
+                    "speaker": "shelby",
+                    "text": "I'll get some on my way home."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "What does the woman need to buy?",
+                "options": [
+                  "Eggs",
+                  "Butter",
+                  "Sugar"
+                ],
+                "answer": 2,
+                "explanation": "There are eggs, butter and flour at home, but Jaxon says they have run out of sugar."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "pilar",
+                    "name": "Pilar",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "donal",
+                    "name": "Donal",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "donal",
+                    "text": "Pilar, is something burning?"
+                  },
+                  {
+                    "speaker": "pilar",
+                    "text": "Oh no, the toast! I was reading a message on my phone."
+                  },
+                  {
+                    "speaker": "donal",
+                    "text": "Don't worry, I'll make some more."
+                  },
+                  {
+                    "speaker": "pilar",
+                    "text": "The bread was brand new, too."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Why did the toast burn?",
+                "options": [
+                  "She was reading a message.",
+                  "The bread was too old to eat.",
+                  "The toaster was not working."
+                ],
+                "answer": 0,
+                "explanation": "Pilar says she was reading a message on her phone, and she mentions the bread was new."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "beatriz",
+                    "name": "Beatriz",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "leif",
+                    "name": "Leif",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "leif",
+                    "text": "Shall we order a takeaway and eat it at the office?"
+                  },
+                  {
+                    "speaker": "beatriz",
+                    "text": "The office is so noisy at lunchtime. It's sunny, so let's take it to the park."
+                  },
+                  {
+                    "speaker": "leif",
+                    "text": "Good idea. I'll bring a blanket."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Where will they eat the takeaway?",
+                "options": [
+                  "In the office",
+                  "At the restaurant",
+                  "In the park"
+                ],
+                "answer": 2,
+                "explanation": "Beatriz says the office is noisy and suggests the park, and Leif agrees."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "waitress",
+                    "name": "Waitress",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "omer",
+                    "name": "Omer",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "omer",
+                    "text": "Excuse me, we only had one dessert, but the bill shows two."
+                  },
+                  {
+                    "speaker": "waitress",
+                    "text": "Oh, I'm sorry, that's a mistake. I'll change it now."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What is wrong with the bill?",
+                "options": [
+                  "A dessert is on it twice.",
+                  "The drinks cost too much.",
+                  "A service charge is missing."
+                ],
+                "answer": 0,
+                "explanation": "Omer says they had one dessert but the bill shows two, and the waitress agrees it is a mistake."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "felicity",
+                    "name": "Felicity",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "pranav",
+                    "name": "Pranav",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "felicity",
+                    "text": "Did you get everything on the list?"
+                  },
+                  {
+                    "speaker": "pranav",
+                    "text": "I think so. Milk, bread and eggs, they're all here. Oh no, the onions!"
+                  },
+                  {
+                    "speaker": "felicity",
+                    "text": "We need them for the soup tonight."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What has the man forgotten to buy?",
+                "options": [
+                  "Milk",
+                  "Onions",
+                  "Cheese"
+                ],
+                "answer": 1,
+                "explanation": "Pranav has milk, bread and eggs but says \"Oh no, the onions!\"."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "olive",
+                    "name": "Olive",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "boris",
+                    "name": "Boris",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "olive",
+                    "text": "No biscuits for me, thanks. I'm giving up sugar for a month."
+                  },
+                  {
+                    "speaker": "boris",
+                    "text": "Is it a diet?"
+                  },
+                  {
+                    "speaker": "olive",
+                    "text": "Not really. I just want to see if I feel better."
+                  },
+                  {
+                    "speaker": "boris",
+                    "text": "Do you want a coffee, then?"
+                  },
+                  {
+                    "speaker": "olive",
+                    "text": "Black, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What is the woman trying to do?",
+                "options": [
+                  "Cut out sugar",
+                  "Lose weight",
+                  "Eat out less often"
+                ],
+                "answer": 0,
+                "explanation": "She is giving up sugar for a month, and she says it is not really a diet."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "brianna",
+                    "name": "Brianna",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "idwal",
+                    "name": "Idwal",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "brianna",
+                    "text": "This cake tastes strange."
+                  },
+                  {
+                    "speaker": "idwal",
+                    "text": "Really? I followed the recipe."
+                  },
+                  {
+                    "speaker": "brianna",
+                    "text": "Did you use the white powder from the blue jar?"
+                  },
+                  {
+                    "speaker": "idwal",
+                    "text": "Yes, I did."
+                  },
+                  {
+                    "speaker": "brianna",
+                    "text": "That's salt! The sugar is in the green jar."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What did the man do wrong?",
+                "options": [
+                  "He used salt instead of sugar.",
+                  "He forgot to heat the oven first.",
+                  "He baked the cake for too long."
+                ],
+                "answer": 0,
+                "explanation": "The white powder from the blue jar was salt, not sugar."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "ailbhe",
+                    "name": "Ailbhe",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "jian",
+                    "name": "Jian",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "ailbhe",
+                    "text": "How's your curry?"
+                  },
+                  {
+                    "speaker": "jian",
+                    "text": "Delicious, but I didn't expect it to be so hot. I need more water!"
+                  },
+                  {
+                    "speaker": "ailbhe",
+                    "text": "I did say that medium is quite strong here."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "How does the man feel about his curry?",
+                "options": [
+                  "It is not hot enough for him.",
+                  "It is hotter than expected.",
+                  "It costs too much for a curry."
+                ],
+                "answer": 1,
+                "explanation": "Jian likes it but says he did not expect it to be so hot."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "sister",
+                    "name": "Sister",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "brother",
+                    "name": "Brother",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "brother",
+                    "text": "Shall I make sandwiches for the picnic on Sunday?"
+                  },
+                  {
+                    "speaker": "sister",
+                    "text": "They'll go soft in this heat. Let's take cold pasta and some fruit instead."
+                  },
+                  {
+                    "speaker": "brother",
+                    "text": "OK, I'll cook the pasta on Saturday night."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "Why will they not take sandwiches?",
+                "options": [
+                  "They are too expensive.",
+                  "They take far too long to make.",
+                  "They go soft in hot weather."
+                ],
+                "answer": 2,
+                "explanation": "The sister says sandwiches go soft in the heat, so they will take pasta and fruit."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "woman",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "man",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "man",
+                    "text": "Have you been to the new cafe near the station?"
+                  },
+                  {
+                    "speaker": "woman",
+                    "text": "Yes, last week. The cakes were lovely, but a bit expensive."
+                  },
+                  {
+                    "speaker": "man",
+                    "text": "I went on Saturday. What I loved was the garden at the back. We sat there all afternoon."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What did the man like best about the cafe?",
+                "options": [
+                  "The cakes",
+                  "The garden",
+                  "The prices"
+                ],
+                "answer": 1,
+                "explanation": "The woman talks about the cakes and the prices; the man says what he loved was the garden."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "customer",
+                    "name": "Customer",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "assistant",
+                    "name": "Assistant",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "customer",
+                    "text": "A large latte, please."
+                  },
+                  {
+                    "speaker": "assistant",
+                    "text": "Sorry, we've run out of milk, so there are no lattes today. We can make black coffee or tea."
+                  },
+                  {
+                    "speaker": "customer",
+                    "text": "Hmm. Then a large black coffee, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does the customer order?",
+                "options": [
+                  "A large latte",
+                  "A small cup of tea",
+                  "A black coffee"
+                ],
+                "answer": 2,
+                "explanation": "There is no milk, so he changes his order to a large black coffee."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk at a cooking school",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "speaker-1",
+                "name": "Birgit",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "speaker-1",
+                "text": "Hello, everyone, and welcome to the open day at Lindale Cooking School. My name's Birgit and I'm one of the chefs here. This morning there are three short lessons in the main kitchen. The first one starts at eleven and is about making fresh pasta. At twelve there's a lesson on knife skills, where you'll learn to cut vegetables quickly and safely. The last lesson, at one o'clock, is about desserts, and you'll be able to taste everything you make. If you decide to join us, our courses last six weeks and take place on Wednesday evenings. Students need to bring their own apron, but we provide all the ingredients. Finally, everyone who signs up today will receive a free recipe book. You can ask me questions at the front desk after the lessons."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "First lesson at 11 o'clock: making fresh ___",
+              "answer": "pasta",
+              "explanation": "The first lesson starts at eleven and is about making fresh pasta."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Lesson at 12 o'clock: ___ skills",
+              "answer": "knife",
+              "explanation": "At twelve there is a lesson on knife skills."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Last lesson at 1 o'clock: making ___",
+              "answer": "desserts",
+              "accepted": [
+                "dessert"
+              ],
+              "explanation": "The last lesson is about desserts."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "A course lasts ___ weeks",
+              "answer": "six",
+              "accepted": [
+                "6"
+              ],
+              "explanation": "Courses last six weeks and take place on Wednesday evenings."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Students must bring their own ___",
+              "answer": "apron",
+              "explanation": "Students need to bring their own apron; the school provides the ingredients."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Free gift for new students: a ___ book",
+              "answer": "recipe",
+              "explanation": "Everyone who signs up today will receive a free recipe book."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a baker",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "interviewer",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "minh",
+                "name": "Minh",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "interviewer",
+                "text": "Minh, you run the best-known bakery in Lindale. Did you always want to be a baker?"
+              },
+              {
+                "speaker": "minh",
+                "text": "Not at all. I trained as an electrician. But I used to help my uncle in his bakery in the school holidays, and I never forgot the smell of fresh bread early in the morning. When I was twenty-six, my uncle became ill and I took over for a few weeks. In the end I stayed."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What do you find most difficult about the job these days?"
+              },
+              {
+                "speaker": "minh",
+                "text": "The hours were hard at first. I get up at three every morning so the bread is ready by seven. But I've got used to that. The difficult thing now is keeping prices fair when flour costs more every year."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Your bread is famous. Is it a secret recipe?"
+              },
+              {
+                "speaker": "minh",
+                "text": "Ha, no. Anyone can make it with flour, water and salt. The secret is time. I let the dough rest for almost twenty hours. People want to hurry, but good bread can't be hurried."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Do you teach other people?"
+              },
+              {
+                "speaker": "minh",
+                "text": "I run a children's class on the first Saturday of every month. The children make little rolls and take them home. It's noisy and there's flour everywhere, but it's the part of the month I enjoy most."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Have you ever made a big mistake?"
+              },
+              {
+                "speaker": "minh",
+                "text": "Yes! One winter I forgot about forty loaves in the oven. They came out as hard as stones. I gave everybody a new loaf the next day, free of charge, and now I set two alarms."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "And what are your plans for the future?"
+              },
+              {
+                "speaker": "minh",
+                "text": "I'd love to open a small cafe next to the bakery, but my wife says we need a holiday first. So the next step is a week in Portugal!"
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Minh become a baker?",
+              "options": [
+                "He took over for a sick relative.",
+                "He studied baking at a local college.",
+                "He answered an advert in the paper."
+              ],
+              "answer": 0,
+              "explanation": "He had trained as an electrician, but when his uncle became ill he took over the bakery and stayed."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What does Minh find most difficult these days?",
+              "options": [
+                "Keeping prices fair.",
+                "Getting up very early.",
+                "Finding good flour."
+              ],
+              "answer": 0,
+              "explanation": "He has got used to the hours; the difficult thing now is keeping prices fair as flour costs more."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does Minh say about his bread?",
+              "options": [
+                "The recipe is a family secret.",
+                "It needs a special kind of flour.",
+                "It cannot be made quickly."
+              ],
+              "answer": 2,
+              "explanation": "The recipe is not secret; the secret is time, because the dough rests for almost twenty hours."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What does Minh say about his monthly class?",
+              "options": [
+                "It earns the bakery a lot of money.",
+                "It is what he enjoys most.",
+                "It is much too noisy for him."
+              ],
+              "answer": 1,
+              "explanation": "The class is noisy, but he says it is the part of the month he enjoys most."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What did Minh do after his mistake?",
+              "options": [
+                "He closed the bakery for a day.",
+                "He changed his recipe.",
+                "He replaced the bread for free."
+              ],
+              "answer": 2,
+              "explanation": "He gave everybody a new loaf the next day, free of charge."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What will Minh do next?",
+              "options": [
+                "Open a second bakery.",
+                "Take a holiday.",
+                "Start a new cafe."
+              ],
+              "answer": 1,
+              "explanation": "He would like a cafe, but first the family needs a holiday: the next step is a week in Portugal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s14-1-1",
+              "prompt": "What do you usually have for breakfast?"
+            },
+            {
+              "id": "s14-1-2",
+              "prompt": "Who cooks in your home, and what do they make?"
+            },
+            {
+              "id": "s14-1-3",
+              "prompt": "Tell me about a meal you remember very well."
+            },
+            {
+              "id": "s14-1-4",
+              "prompt": "Do you enjoy trying food from other countries? Why, or why not?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say how the person might be feeling.",
+          "type": "photo-description",
+          "prompt": "A chef putting fruit onto plates at a big dinner.",
+          "images": [
+            {
+              "id": "s14-2-chef",
+              "title": "A chef at work",
+              "alt": "A young chef in a tall white hat and glasses leans over a table and puts slices of yellow mango onto white plates. Other cooks in white jackets are working behind him at what looks like a large dinner.",
+              "describeHints": [
+                "a chef in a white hat and jacket",
+                "the plates with slices of mango",
+                "the plastic glove on his hand",
+                "the other cooks behind him",
+                "how he might feel at work"
+              ],
+              "image": {
+                "id": "s14-2-chef",
+                "src": "assets/images/exams/cambridge-pet-14/s14-2-chef-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-14/s14-2-chef-600.webp",
+                "width": 1200,
+                "height": 857,
+                "alt": "A young chef in a tall white hat and glasses leans over a table and puts slices of yellow mango onto white plates. Other cooks in white jackets are working behind him at what looks like a large dinner.",
+                "credit": {
+                  "author": "U.S. Navy photo by Photographer's Mate 3rd Class Ronald Gutridge",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_060509-N-3560G-015_Culinary_Specialist_3rd_Class_Guangfeng_Zhou_assigned_to_Naval_Mobile_Construction_Battalion_Four_(NMCB-4)_prepares_food_to_be_used_in_a_competition_dinner.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_060509-N-3560G-015_Culinary_Specialist_3rd_Class_Guangfeng_Zhou_assigned_to_Naval_Mobile_Construction_Battalion_Four_(NMCB-4)_prepares_food_to_be_used_in_a_competition_dinner.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Choose food for a party",
+          "instructions": "Look at the pictures. Talk about the food and decide which one would be best for a birthday party with twenty guests.",
+          "type": "collaborative-task",
+          "prompt": "Which food would you choose for the party? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s14-3-pasta",
+              "title": "Pasta",
+              "alt": "A white bowl of spaghetti with grated cheese and small pieces of meat on top.",
+              "describeHints": [
+                "a bowl of pasta",
+                "the cheese on top",
+                "the plate and the table",
+                "how easy it is to serve",
+                "who might like it"
+              ],
+              "image": {
+                "id": "s14-3-pasta",
+                "src": "assets/images/exams/cambridge-pet-14/s14-3-pasta-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-14/s14-3-pasta-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "A white bowl of spaghetti with grated cheese and small pieces of meat on top.",
+                "credit": {
+                  "author": "JIP",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spaghetti_carbonara_at_Makaronitehdas_Redi.jpg"
+                }
+              }
+            },
+            {
+              "id": "s14-3-barbecue",
+              "title": "A barbecue",
+              "alt": "A round black barbecue grill with pieces of grilled meat, sausages in a metal holder and green asparagus.",
+              "describeHints": [
+                "a barbecue grill",
+                "the meat and the sausages",
+                "the vegetables",
+                "cooking outdoors",
+                "the weather"
+              ],
+              "image": {
+                "id": "s14-3-barbecue",
+                "src": "assets/images/exams/cambridge-pet-14/s14-3-barbecue-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-14/s14-3-barbecue-600.webp",
+                "width": 1200,
+                "height": 803,
+                "alt": "A round black barbecue grill with pieces of grilled meat, sausages in a metal holder and green asparagus.",
+                "credit": {
+                  "author": "Declan Rex d3c1an",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grill_Out_(Unsplash).jpg"
+                }
+              }
+            },
+            {
+              "id": "s14-3-bread",
+              "title": "Fresh bread",
+              "alt": "A round golden loaf of bread on a white cutting board, with a knife with a wooden handle beside it.",
+              "describeHints": [
+                "a round loaf of bread",
+                "the cutting board",
+                "the knife",
+                "how people could share it",
+                "what to eat with it"
+              ],
+              "image": {
+                "id": "s14-3-bread",
+                "src": "assets/images/exams/cambridge-pet-14/s14-3-bread-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-14/s14-3-bread-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "A round golden loaf of bread on a white cutting board, with a knife with a wooden handle beside it.",
+                "credit": {
+                  "author": "E4024",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Somun_and_knife.jpg"
+                }
+              }
+            },
+            {
+              "id": "s14-3-sushi",
+              "title": "Sushi",
+              "alt": "A round black stone plate with salmon sushi rolls and slices of salmon, with small black dishes of green sauce.",
+              "describeHints": [
+                "a black plate of sushi",
+                "the salmon and the rolls",
+                "the small dishes of sauce",
+                "whether guests would like it",
+                "the price"
+              ],
+              "image": {
+                "id": "s14-3-sushi",
+                "src": "assets/images/exams/cambridge-pet-14/s14-3-sushi-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-14/s14-3-sushi-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "A round black stone plate with salmon sushi rolls and slices of salmon, with small black dishes of green sauce.",
+                "credit": {
+                  "author": "Mojmir Churavy",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sushi_Plate_in_Organic_Sushi_Prague_4_A.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about eating",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s14-4-1",
+              "prompt": "Do you think eating out is better than eating at home? Why?"
+            },
+            {
+              "id": "s14-4-2",
+              "prompt": "Is it important for young people to learn to cook? Why?"
+            },
+            {
+              "id": "s14-4-3",
+              "prompt": "How have the things people eat changed in your country?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

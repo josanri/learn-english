@@ -1,0 +1,1782 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-06",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Healthy Habits",
+  "subtitle": "Fitness, food, sleep and looking after yourself in Ashcombe",
+  "theme": "Health and fitness",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "ASHCOMBE PHARMACY: This month we are open until 8 p.m. on Thursdays. If you can, please collect your medicine before 5 p.m., when it is much quieter.",
+            "POOL RULES: The fast lane is for swimmers training hard. Beginners and children with an adult should use the slow lane. Everyone must shower before getting in.",
+            "TANNER: Missed my dentist appointment because my bus broke down! Could you phone the clinic and ask for another time on Friday? I have no signal here.",
+            "SCHOOL CANTEEN: From Monday we will stop selling sweets and fizzy drinks. Try our new fruit pots and cheese sandwiches instead!",
+            "GYM NOTICE: Tonight's circuit class has moved from Studio 1 to the sports hall because of a leak in the roof. The class still starts at 7.15 p.m."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What is new at the pharmacy this month?",
+              "options": [
+                "It stays open later on Thursdays.",
+                "It opens earlier on Thursday mornings.",
+                "It delivers medicine to customers' homes."
+              ],
+              "answer": 0,
+              "explanation": "The pharmacy is open until 8 p.m. on Thursdays this month, so it stays open later on that day."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "Who should use the slow lane?",
+              "options": [
+                "Swimmers who want to train hard.",
+                "Visitors who have not showered yet.",
+                "People who are just learning to swim."
+              ],
+              "answer": 2,
+              "explanation": "The notice says beginners and children with an adult should use the slow lane; the fast lane is for hard training."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What does Tanner want the reader to do?",
+              "options": [
+                "Take him to the dentist by bus.",
+                "Find out about another appointment.",
+                "Pay the clinic for the missed visit."
+              ],
+              "answer": 1,
+              "explanation": "Tanner asks his friend to phone the clinic and ask for another time on Friday."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What is changing at the canteen?",
+              "options": [
+                "Unhealthy snacks will no longer be sold.",
+                "Lunch will become cheaper for pupils.",
+                "The canteen will close earlier each day."
+              ],
+              "answer": 0,
+              "explanation": "The canteen will stop selling sweets and fizzy drinks and will offer fruit pots and sandwiches instead."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What has changed about tonight's class?",
+              "options": [
+                "The time when the class begins.",
+                "The room where it takes place.",
+                "The teacher who leads the class."
+              ],
+              "answer": 1,
+              "explanation": "The circuit class moves from Studio 1 to the sports hall; the start time of 7.15 p.m. stays the same."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "People and wellbeing classes",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Federica has back pain after long hours at a desk. She wants exercises that a trained back specialist has designed to protect her back."
+            },
+            {
+              "id": "p2",
+              "text": "Jonathan works late shifts in a hospital kitchen and finishes at ten at night. He would like a class that starts after he leaves work."
+            },
+            {
+              "id": "p3",
+              "text": "Dalia has never run before but would like to be able to jog for half an hour. She is free on Saturday mornings."
+            },
+            {
+              "id": "p4",
+              "text": "Jai has a very stressful job and sleeps badly. He wants to learn how to relax and feel calmer."
+            },
+            {
+              "id": "p5",
+              "text": "Narelle retired last year. She has time on weekday mornings and wants to learn how to stay healthy as she gets older, in a class with people of her own age."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Calm Minds",
+              "text": "Learn simple breathing and relaxation exercises to help you feel less worried after a busy day. Small groups meet in a quiet room on Tuesday evenings."
+            },
+            {
+              "id": "B",
+              "title": "Back Care",
+              "text": "A trained back specialist teaches gentle stretches and exercises for people with back or neck pain. Every Monday after work; mats provided."
+            },
+            {
+              "id": "C",
+              "title": "Active Years",
+              "text": "A weekday-morning course for people over sixty. Short talks on healthy ageing are followed by easy exercises and a cup of tea."
+            },
+            {
+              "id": "D",
+              "title": "Weekend Boot Camp",
+              "text": "A tough Saturday-morning workout with sprints, press-ups and heavy bags. Good fitness is needed, and no beginners, please."
+            },
+            {
+              "id": "E",
+              "title": "Family Swim",
+              "text": "Splash around with your children in the shallow pool every Sunday afternoon. Armbands and games provided."
+            },
+            {
+              "id": "F",
+              "title": "Lunchtime Spin",
+              "text": "Thirty minutes of cycling to loud music on exercise bikes, from 12.30 p.m. on weekdays. Be back at your desk by one."
+            },
+            {
+              "id": "G",
+              "title": "Late Night Circuit",
+              "text": "A forty-five-minute fitness class that starts at 10.30 p.m. on weeknights, for people who work late or on shifts."
+            },
+            {
+              "id": "H",
+              "title": "Start to Run",
+              "text": "A friendly programme in Ashcombe Park on Saturday mornings. You walk and jog in short intervals and build up slowly; no experience needed."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Federica",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Federica needs exercises designed by a back specialist for her back; text B (Back Care) is led by a trained back specialist."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Jonathan",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "Jonathan finishes work at ten at night; only text G (Late Night Circuit) starts at 10.30 p.m. for shift workers. The lunchtime class is too early."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Dalia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "Dalia is a beginner who wants to start running on Saturday mornings; text H is for new runners. The boot camp is for fit people only."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Jai",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Jai wants to relax and feel calmer; text A teaches breathing and relaxation to reduce worry."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Narelle",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Narelle is retired, free on weekday mornings and wants to learn about staying healthy as she ages; text C is a weekday-morning course for people over sixty."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Learning to swim as an adult",
+          "instructions": "Read the text and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "For most of my life I avoided swimming pools. When I was seven, I fell into deep water on a school trip, and ever since then I had told people that I simply did not like swimming. The truth was that I was afraid. So when my friends began planning a holiday by the sea last year, I decided it was time to change.\n\nI joined an adult beginners' class at the Ashcombe leisure centre on Wednesday evenings, while my husband stayed at home with the children. On the first night I nearly went home, because the other people in the water seemed so confident. But our teacher did not ask us to swim anywhere. Instead, we spent the first three weeks getting used to the water, blowing bubbles and floating with one hand on the side. It sounds silly, but it worked. I stopped holding my breath all the time, and my shoulders relaxed.\n\nBy the end of the second month I could swim a whole length of the pool, although I was very slow and had to rest at the end. Last week I swam two lengths without stopping, and I almost cried with happiness. I still don't like deep water, and I probably never will. However, I have booked a boat trip for the holiday, and I am going to wear a life jacket just in case. My plan is to get into the sea at least once, even if it is only up to my knees.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer decide to take lessons?",
+              "options": [
+                "A doctor had told her to exercise more.",
+                "Her friends were planning a seaside holiday.",
+                "She wanted to take part in a race."
+              ],
+              "answer": 1,
+              "explanation": "She says that when her friends began planning a holiday by the sea, she decided it was time to change."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "How did the writer feel at the first lesson?",
+              "options": [
+                "Worried that the others were better.",
+                "Excited about meeting so many new people.",
+                "Angry that the lesson was going so slowly."
+              ],
+              "answer": 0,
+              "explanation": "She nearly went home because the other people in the water seemed so confident."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did the teacher do in the first weeks?",
+              "options": [
+                "She let the learners get used to the water.",
+                "She taught them to swim a length.",
+                "She asked them to jump into deep water."
+              ],
+              "answer": 0,
+              "explanation": "For three weeks they only got used to the water, blowing bubbles and floating."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "How does the writer feel about swimming now?",
+              "options": [
+                "She now enjoys deep water much more than before.",
+                "She is proud but still uneasy in deep water.",
+                "She has decided to stop having lessons."
+              ],
+              "answer": 1,
+              "explanation": "She swam two lengths and is very happy, but says she still does not like deep water."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What is she planning to do on holiday?",
+              "options": [
+                "Spend most of the holiday in a hotel swimming pool.",
+                "Swim across a bay with her friends.",
+                "Try the sea carefully, wearing a life jacket."
+              ],
+              "answer": 2,
+              "explanation": "She will wear a life jacket on the boat trip and plans to get into the sea at least once, even only up to her knees."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "Walking to school in Ashcombe",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Every morning at half past eight, the road outside Ashcombe Primary School used to be full of cars. Parents stopped in the wrong places, children ran between the vehicles, and the noise could be heard from the classrooms. [1] So the school decided to organise a walk-to-school month in October.\n\nThe idea was simple. Children who walked, cycled or scooted to school got a sticker for every day, and each class tried to collect the most stickers. [2] Some families lived too far away, so volunteers set up meeting points at the library and at the church, where groups could start their walk together with an adult.\n\nAt first, many parents doubted that it would work. [3] Then, after the first week, the school counted the cars and found that there were almost half as many as usual. The children liked arriving with their friends, and teachers said they seemed more awake in lessons.\n\nBy the end of the month, 70 per cent of the children had walked at least three times a week. [4] Several parents said they had discovered quiet streets they never knew existed, and one father even admitted that he had lost two kilos. [5] The school now plans to run the walking month every spring and autumn.",
+          "sentences": [
+            "Earlier that year, the school had also won a prize for its garden.",
+            "Teachers worried that an accident was only a matter of time.",
+            "That was far more than anyone had expected.",
+            "Not every family could join in so easily, however.",
+            "The biggest change, however, was the friendly mood at the school gate.",
+            "They said the mornings were too dark and cold for small children."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "B",
+              "explanation": "Sentence B shows the danger from the cars and leads to \"So the school decided to organise a walk-to-school month\"."
+            },
+            {
+              "id": "r4-2",
+              "answer": "D",
+              "explanation": "\"Not every family could join in so easily, however\" contrasts with the game and introduces \"Some families lived too far away\"."
+            },
+            {
+              "id": "r4-3",
+              "answer": "F",
+              "explanation": "Sentence F gives the parents' doubts, and \"Then, after the first week\" shows how things changed."
+            },
+            {
+              "id": "r4-4",
+              "answer": "C",
+              "explanation": "\"That was far more than anyone had expected\" reacts to the figure of 70 per cent in the sentence before."
+            },
+            {
+              "id": "r4-5",
+              "answer": "E",
+              "explanation": "Sentence E mentions the mood at the school gate, which leads to the final sentence about repeating the month. Sentence A is about a garden prize and fits nowhere."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A first-aid course",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Last month I [1] a first-aid course at the Ashcombe community centre. I had never [2] anyone in a real emergency, so I was nervous at the start. The course lasted two evenings, and there were twelve of us in the group. The teacher [3] us what to do if someone cuts their hand, and we also practised how to put a person who has fainted into the recovery [4]. At the end, each of us [5] a certificate. I now keep a small first-aid kit in my bag, just in case I ever need to [6] a minor injury.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "made",
+                "took",
+                "played",
+                "saw"
+              ],
+              "answer": 1,
+              "explanation": "You take a course; make, play and see do not go with \"a first-aid course\"."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "caught",
+                "helped",
+                "joined",
+                "wished"
+              ],
+              "answer": 1,
+              "explanation": "\"Helped anyone in a real emergency\" fits the meaning; the other verbs do not."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "learned",
+                "explained",
+                "said",
+                "taught"
+              ],
+              "answer": 3,
+              "explanation": "\"Taught us what to do\" is correct; \"explained\" and \"said\" cannot be followed directly by \"us\", and \"learned us\" is wrong."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "place",
+                "way",
+                "position",
+                "style"
+              ],
+              "answer": 2,
+              "explanation": "\"The recovery position\" is the fixed expression for the safe way to lay a person who has fainted."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "received",
+                "borrowed",
+                "lent",
+                "wore"
+              ],
+              "answer": 0,
+              "explanation": "At the end of a course you receive a certificate; you do not borrow, lend or wear it."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "treat",
+                "cure",
+                "repair",
+                "recover"
+              ],
+              "answer": 0,
+              "explanation": "You treat an injury; you cure an illness, repair objects, and recover yourself."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "A note to a friend with a cold",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Hi Barnaby,\nI was sorry to hear [1] you have such a terrible cold. I hope you are feeling [2] today. Remember to drink plenty of water and to get as much rest as you can. I am sending you some lemons and honey [3] my mum, who says that it always works for her. If you are well enough, we could meet [4] Saturday for a short walk in the park. [5] not, we can wait until next week. By the way, my sister has made [6] much chicken soup that I will bring you a bowl on Friday evening. Get well soon!\nElisa",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "that",
+              "explanation": "After \"I was sorry to hear\" we use \"that\" to introduce what the writer heard."
+            },
+            {
+              "id": "r6-2",
+              "answer": "better",
+              "accepted": [
+                "well",
+                "good"
+              ],
+              "explanation": "\"Feeling better\" is what you hope for someone who is ill."
+            },
+            {
+              "id": "r6-3",
+              "answer": "from",
+              "explanation": "The lemons and honey come \"from\" the writer's mum, who says it works for her."
+            },
+            {
+              "id": "r6-4",
+              "answer": "on",
+              "accepted": [
+                "this",
+                "next"
+              ],
+              "explanation": "\"On Saturday\" gives the day of the meeting; \"this\" or \"next\" Saturday also fits."
+            },
+            {
+              "id": "r6-5",
+              "answer": "if",
+              "explanation": "\"If not\" means \"if you are not well enough\" and introduces the other plan."
+            },
+            {
+              "id": "r6-6",
+              "answer": "so",
+              "explanation": "\"So much soup that\" shows the result: there is more than she can eat, so she can share a bowl."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Barnaby has invited you to a free fitness trial day at a sports club. Read Barnaby's email and your notes, then write a reply.",
+            "notes": [
+              "Thank Barnaby and say you would like to come.",
+              "Say which activity you would like to try and why.",
+              "Say what you will bring.",
+              "Ask Barnaby one question about the day."
+            ],
+            "wordCount": "about 100 words",
+            "sourceEmail": {
+              "body": "The sports club near my house is holding a free trial day next Saturday. You can try yoga, swimming, circuit training or a short run. Would you like to come with me? I would like to arrive at about ten o'clock, but I am not sure what to bring. Let me know what you think!",
+              "from": "Barnaby",
+              "subject": "Free trial day"
+            },
+            "contentPoints": [
+              {
+                "text": "Thank Barnaby and say you would like to come.",
+                "keywords": [
+                  "thank",
+                  "thanks",
+                  "invit",
+                  "would love",
+                  "would like to",
+                  "love to",
+                  "happy to",
+                  "great idea",
+                  "sounds",
+                  "come"
+                ]
+              },
+              {
+                "text": "Say which activity you would like to try and why.",
+                "keywords": [
+                  "yoga",
+                  "swimming",
+                  "swim",
+                  "circuit",
+                  "run",
+                  "running",
+                  "try",
+                  "because",
+                  "since",
+                  "so that",
+                  "relax",
+                  "fit",
+                  "favourite"
+                ]
+              },
+              {
+                "text": "Say what you will bring.",
+                "keywords": [
+                  "bring",
+                  "pack",
+                  "take",
+                  "towel",
+                  "water",
+                  "bottle",
+                  "trainers",
+                  "shoes",
+                  "sports",
+                  "clothes",
+                  "swimsuit",
+                  "mat",
+                  "bag"
+                ]
+              },
+              {
+                "text": "Ask Barnaby one question about the day.",
+                "keywords": [
+                  "do you",
+                  "does",
+                  "what time",
+                  "what",
+                  "where",
+                  "when",
+                  "how",
+                  "who",
+                  "shall we",
+                  "would you",
+                  "can you",
+                  "are you"
+                ],
+                "question": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a magazine",
+              "prompt": "Articles wanted! My best way to relax. What do you do to relax? When and where do you do it? Why does it help you? Write an article for the magazine.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what you do to relax.",
+                  "keywords": [
+                    "relax",
+                    "i like",
+                    "i love",
+                    "i enjoy",
+                    "listen",
+                    "read",
+                    "walk",
+                    "music",
+                    "swim",
+                    "draw",
+                    "cook",
+                    "garden",
+                    "watch",
+                    "play"
+                  ]
+                },
+                {
+                  "text": "Say when and where you do it.",
+                  "keywords": [
+                    "when",
+                    "where",
+                    "every",
+                    "after",
+                    "before",
+                    "at home",
+                    "in the park",
+                    "evening",
+                    "weekend",
+                    "morning",
+                    "usually",
+                    "park",
+                    "garden",
+                    "bedroom"
+                  ]
+                },
+                {
+                  "text": "Explain why it helps you.",
+                  "keywords": [
+                    "because",
+                    "helps",
+                    "feel",
+                    "calm",
+                    "stress",
+                    "worry",
+                    "tired",
+                    "happy",
+                    "better",
+                    "reason",
+                    "so that"
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about someone in a waiting room.",
+              "openingSentence": "When I sat down in the waiting room, I noticed a man staring at me.",
+              "wordCount": "about 100 words",
+              "contentPoints": [
+                {
+                  "text": "Say what happened in the waiting room.",
+                  "keywords": [
+                    "waiting room",
+                    "man",
+                    "said",
+                    "asked",
+                    "spoke",
+                    "smiled",
+                    "suddenly",
+                    "then",
+                    "nurse",
+                    "doctor",
+                    "name",
+                    "noticed"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "in the end",
+                    "finally",
+                    "at last",
+                    "eventually",
+                    "after that",
+                    "later",
+                    "ended",
+                    "happy",
+                    "laughed",
+                    "lesson",
+                    "realised"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "aamir",
+                    "name": "Aamir",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "courtney",
+                    "name": "Courtney",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "aamir",
+                    "text": "Hello. I have come to collect some tablets for my back."
+                  },
+                  {
+                    "speaker": "courtney",
+                    "text": "Yes, they are ready. Take one three times a day, but only after meals, or they might upset your stomach."
+                  },
+                  {
+                    "speaker": "aamir",
+                    "text": "After meals, then. And can I still drive?"
+                  },
+                  {
+                    "speaker": "courtney",
+                    "text": "Yes, they will not make you sleepy."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "When should the man take the tablets?",
+                "options": [
+                  "After meals",
+                  "Before breakfast",
+                  "In the evening only"
+                ],
+                "answer": 0,
+                "explanation": "The pharmacist says to take one three times a day, but only after meals."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "daichi",
+                    "name": "Daichi",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "marisol",
+                    "name": "Marisol",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "daichi",
+                    "text": "I can offer you Monday at nine or Tuesday at half past ten."
+                  },
+                  {
+                    "speaker": "marisol",
+                    "text": "I work on Mondays, so Tuesday is better. Could you make it eleven?"
+                  },
+                  {
+                    "speaker": "daichi",
+                    "text": "Sorry, half past ten is the last appointment before lunch."
+                  },
+                  {
+                    "speaker": "marisol",
+                    "text": "All right, I will take that one then."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What time is the woman's appointment?",
+                "options": [
+                  "9.00",
+                  "10.30",
+                  "11.00"
+                ],
+                "answer": 1,
+                "explanation": "Eleven is not possible, so Marisol takes the Tuesday appointment at half past ten."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "kwame",
+                    "name": "Kwame",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "tamsin",
+                    "name": "Tamsin",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "kwame",
+                    "text": "Is the pasta salad still available?"
+                  },
+                  {
+                    "speaker": "tamsin",
+                    "text": "Sorry, that finished at twelve. There is vegetable soup or a cheese sandwich."
+                  },
+                  {
+                    "speaker": "kwame",
+                    "text": "I had a sandwich yesterday, so I will have the soup. And an apple, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "What will Kwame have as his main meal?",
+                "options": [
+                  "Pasta salad",
+                  "A sandwich",
+                  "Soup"
+                ],
+                "answer": 2,
+                "explanation": "The pasta salad has finished and Kwame had a sandwich yesterday, so he chooses the vegetable soup."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "lacey",
+                    "name": "Lacey",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "eamon",
+                    "name": "Eamon",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "lacey",
+                    "text": "Are you going to yoga tonight?"
+                  },
+                  {
+                    "speaker": "eamon",
+                    "text": "I just got a message. It has been cancelled."
+                  },
+                  {
+                    "speaker": "lacey",
+                    "text": "Oh no. Is the room being used for something else?"
+                  },
+                  {
+                    "speaker": "eamon",
+                    "text": "No, the teacher has a stomach bug. The class starts again next week."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Why has the yoga class been cancelled?",
+                "options": [
+                  "The room is being painted.",
+                  "Too few people booked.",
+                  "The teacher is ill."
+                ],
+                "answer": 2,
+                "explanation": "Eamon says the teacher has a stomach bug, which means the teacher is ill."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "hamza",
+                    "name": "Hamza",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "mhairi",
+                    "name": "Mhairi",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "hamza",
+                    "text": "Have you seen my blue water bottle?"
+                  },
+                  {
+                    "speaker": "mhairi",
+                    "text": "Did you take it into the changing room?"
+                  },
+                  {
+                    "speaker": "hamza",
+                    "text": "I looked there. I think I left it on the bench near the tennis courts when we finished."
+                  },
+                  {
+                    "speaker": "mhairi",
+                    "text": "I will come with you and look."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Where did Hamza probably leave his bottle?",
+                "options": [
+                  "In the changing room",
+                  "On a bench",
+                  "In his car"
+                ],
+                "answer": 1,
+                "explanation": "Hamza has already looked in the changing room and thinks he left it on the bench near the tennis courts."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "felipe",
+                    "name": "Felipe",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "dannielle",
+                    "name": "Dannielle",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "felipe",
+                    "text": "Excuse me, does the number twelve go to the hospital?"
+                  },
+                  {
+                    "speaker": "dannielle",
+                    "text": "No, that goes to the station. You need the twenty-one, from the stop across the road."
+                  },
+                  {
+                    "speaker": "felipe",
+                    "text": "Thank you very much."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "Which bus should Felipe take?",
+                "options": [
+                  "Number 12",
+                  "Number 21",
+                  "Number 22"
+                ],
+                "answer": 1,
+                "explanation": "The twelve goes to the station; Dannielle tells him to take the twenty-one."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "valerie",
+                    "name": "Valerie",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "warren",
+                    "name": "Warren",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "valerie",
+                    "text": "Well done, Warren. All finished. Put this sticker on to show you have donated today."
+                  },
+                  {
+                    "speaker": "warren",
+                    "text": "Can I go straight to the gym?"
+                  },
+                  {
+                    "speaker": "valerie",
+                    "text": "I would not. Sit down with a drink and a biscuit for ten minutes first, and no hard exercise today."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What does the nurse tell Warren to do first?",
+                "options": [
+                  "Sit and have something to drink",
+                  "Go straight to the gym",
+                  "Take the sticker off"
+                ],
+                "answer": 0,
+                "explanation": "Valerie tells him to sit with a drink and a biscuit for ten minutes and avoid hard exercise."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "dervla",
+                    "name": "Dervla",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "trevor",
+                    "name": "Trevor",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "dervla",
+                    "text": "You look tired, Trevor."
+                  },
+                  {
+                    "speaker": "trevor",
+                    "text": "I only slept five hours. I stay up too late watching videos on my phone, and then my alarm goes off at six."
+                  },
+                  {
+                    "speaker": "dervla",
+                    "text": "Try leaving your phone in another room."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Why is the man tired?",
+                "options": [
+                  "He wakes up during the night.",
+                  "He stays up too late.",
+                  "He has a noisy neighbour."
+                ],
+                "answer": 1,
+                "explanation": "Trevor says he stays up too late watching videos and sleeps only five hours before his alarm goes off at six."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "troy",
+                    "name": "Troy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "ayesha",
+                    "name": "Ayesha",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "troy",
+                    "text": "I have had a headache every afternoon this week."
+                  },
+                  {
+                    "speaker": "ayesha",
+                    "text": "Do you drink much during the day?"
+                  },
+                  {
+                    "speaker": "troy",
+                    "text": "Only coffee."
+                  },
+                  {
+                    "speaker": "ayesha",
+                    "text": "That could be the reason. Try water instead, a glass at every break."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What does Ayesha suggest?",
+                "options": [
+                  "Taking a tablet",
+                  "Seeing an eye doctor",
+                  "Drinking more water"
+                ],
+                "answer": 2,
+                "explanation": "Ayesha says his headaches could come from drinking only coffee and advises water at every break."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "toby",
+                    "name": "Toby",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "saoirse",
+                    "name": "Saoirse",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "toby",
+                    "text": "I am thinking of joining Ashcombe Fitness."
+                  },
+                  {
+                    "speaker": "saoirse",
+                    "text": "It is near your office, isn't it?"
+                  },
+                  {
+                    "speaker": "toby",
+                    "text": "True, and I have heard it is quiet at lunchtime. But the cost is a problem. Forty-five pounds a month is a lot for me. I might just run in the park."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What is the man's main problem with the gym?",
+                "options": [
+                  "The cost",
+                  "The distance",
+                  "The crowds"
+                ],
+                "answer": 0,
+                "explanation": "Toby says forty-five pounds a month is a lot for him, so the cost is the problem."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "courtney",
+                    "name": "Courtney",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "daichi",
+                    "name": "Daichi",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "courtney",
+                    "text": "No biscuits today, Daichi?"
+                  },
+                  {
+                    "speaker": "daichi",
+                    "text": "I am trying a new diet. No more sweet things like cakes or fizzy drinks. I am having fruit instead."
+                  },
+                  {
+                    "speaker": "courtney",
+                    "text": "Do you miss them?"
+                  },
+                  {
+                    "speaker": "daichi",
+                    "text": "Only in the afternoon!"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What is Daichi doing?",
+                "options": [
+                  "Skipping some of his meals",
+                  "Buying much cheaper food",
+                  "Avoiding sweet things"
+                ],
+                "answer": 2,
+                "explanation": "He has stopped eating cakes and fizzy drinks and eats fruit instead."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "tamsin",
+                    "name": "Tamsin",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "eamon",
+                    "name": "Eamon",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "tamsin",
+                    "text": "Good morning, Eamon. It is Tamsin from Ashcombe Surgery. I am calling about tomorrow at ten."
+                  },
+                  {
+                    "speaker": "eamon",
+                    "text": "Oh yes, my appointment. Do I need to bring anything?"
+                  },
+                  {
+                    "speaker": "tamsin",
+                    "text": "Just a list of your medicines, and please arrive ten minutes early."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "Why is Tamsin phoning?",
+                "options": [
+                  "To change the time of his appointment",
+                  "To remind him about an appointment",
+                  "To give him some test results"
+                ],
+                "answer": 1,
+                "explanation": "She rings about tomorrow's visit and reminds him what to bring and when to arrive."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "felipe",
+                    "name": "Felipe",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "mhairi",
+                    "name": "Mhairi",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "felipe",
+                    "text": "Does the walking club make you much fitter?"
+                  },
+                  {
+                    "speaker": "mhairi",
+                    "text": "A bit, but we go slowly. For me the best part is the chatting. I have met so many new people since I joined."
+                  },
+                  {
+                    "speaker": "felipe",
+                    "text": "Maybe I should come along one Saturday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does Mhairi like most about the walking club?",
+                "options": [
+                  "Meeting new people",
+                  "Getting fit quickly",
+                  "Seeing wildlife"
+                ],
+                "answer": 0,
+                "explanation": "She says the best part is chatting and that she has made many friends."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a free health-check day",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "haruka",
+                "name": "Haruka",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "haruka",
+                "text": "Good morning, everyone. My name is Haruka and I am a community nurse here in Ashcombe. I would like to tell you about our free health-check day, which takes place on the second Saturday of May at the town hall. The doors open at nine and close at four. You do not need to book, but if you want a particular time, call the number on the posters. First, a nurse will measure your blood pressure and check your weight. Then you can have a short talk with a doctor, who will answer questions about sleep or food. There will also be a free eye test for anyone over forty. Please bring a list of any medicine you take. Children are welcome, and there is a play area with a helper. Finally, wear comfortable shoes, because we will finish with a short walk around the park."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "Place: the town ___",
+              "answer": "hall",
+              "explanation": "Haruka says the health-check day takes place at the town hall."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Date: the second ___ of May",
+              "answer": "Saturday",
+              "explanation": "The event is on the second Saturday of May."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "First check: blood ___",
+              "answer": "pressure",
+              "explanation": "First a nurse measures your blood pressure and checks your weight."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Free eye test for people over ___",
+              "answer": "forty",
+              "accepted": [
+                "40"
+              ],
+              "explanation": "There is a free eye test for anyone over forty."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Bring a list of your ___",
+              "answer": "medicine",
+              "accepted": [
+                "medicines"
+              ],
+              "explanation": "Visitors should bring a list of any medicine they take."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "For children: a ___ area",
+              "answer": "play",
+              "explanation": "Children are welcome and there is a play area with a helper."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a runner who started late",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "interviewer",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "gwilym",
+                "name": "Gwilym",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "interviewer",
+                "text": "Gwilym, you ran your first marathon at fifty. What made you start running so late?"
+              },
+              {
+                "speaker": "gwilym",
+                "text": "Honestly, it was a visit to the doctor. I was forty-six, I had put on a lot of weight and my blood pressure was too high. I did not want to take tablets for the rest of my life, so I asked what else I could do. She said, \"Just start by walking for half an hour every day.\""
+              },
+              {
+                "speaker": "interviewer",
+                "text": "But you did not stay with walking."
+              },
+              {
+                "speaker": "gwilym",
+                "text": "No. After a few weeks I started to jog between two lamp posts, then three. I was terrible. I remember stopping outside the bakery because I could not breathe, and a boy shouted, \"Come on, grandad!\" I was so embarrassed."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What kept you going?"
+              },
+              {
+                "speaker": "gwilym",
+                "text": "A neighbour told me about the Saturday parkrun in Ashcombe Park. Nobody there cares how fast you are. People clap for the last runner as loudly as for the first. That is when I realised running could be friendly, not just painful."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Was it hard to find time to train?"
+              },
+              {
+                "speaker": "gwilym",
+                "text": "I run early in the morning, before work, at six, when the streets are empty. The first month I hated getting up. Now I cannot sleep late even at weekends."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "And the marathon itself?"
+              },
+              {
+                "speaker": "gwilym",
+                "text": "I trained for eight months with a plan from a book. The race was harder than I expected. At thirty kilometres I wanted to stop, but a woman next to me said, \"Just reach the next water station.\" I did that again and again, and suddenly I could see the finish line."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "Any advice for people who start late?"
+              },
+              {
+                "speaker": "gwilym",
+                "text": "Two things. Buy proper shoes: my first cheap pair gave me sore knees for a month. And be patient, because nothing happens in the first weeks."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "Why did Gwilym begin to exercise?",
+              "options": [
+                "A friend had challenged him to a big race.",
+                "He wanted to join a local club.",
+                "His doctor was worried about his health."
+              ],
+              "answer": 2,
+              "explanation": "His weight and blood pressure were high, and the doctor told him to start walking."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "Why was Gwilym embarrassed outside the bakery?",
+              "options": [
+                "He fell over in front of a crowd.",
+                "A boy made a comment about his age.",
+                "He dropped his shopping on the road."
+              ],
+              "answer": 1,
+              "explanation": "He had to stop because he could not breathe, and a boy shouted \"Come on, grandad!\""
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What did Gwilym like about the Saturday run?",
+              "options": [
+                "Everyone was supported, however slow they were.",
+                "Prizes were given to new runners.",
+                "He ran with famous athletes."
+              ],
+              "answer": 0,
+              "explanation": "Nobody cares how fast you are, and people clap for the last runner as loudly as for the first."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "When does Gwilym usually train?",
+              "options": [
+                "During his lunch break",
+                "Late in the evening",
+                "Early in the morning"
+              ],
+              "answer": 2,
+              "explanation": "He runs before work at six, when the streets are empty."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "How did he get through the hardest part of the marathon?",
+              "options": [
+                "By aiming for the next water station",
+                "By stopping to walk with another runner",
+                "By listening to loud music all the way"
+              ],
+              "answer": 0,
+              "explanation": "A woman told him to reach the next water station, and he repeated that again and again."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What happened with his first running shoes?",
+              "options": [
+                "They were too small for him.",
+                "They gave him sore knees.",
+                "They broke after a month."
+              ],
+              "answer": 1,
+              "explanation": "He says his first cheap pair gave him sore knees for a month."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20–30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s06-1-1",
+              "prompt": "How many hours do you usually sleep, and do you feel rested in the morning?"
+            },
+            {
+              "id": "s06-1-2",
+              "prompt": "What kind of exercise do you do in a normal week?"
+            },
+            {
+              "id": "s06-1-3",
+              "prompt": "What snacks do you like to eat between meals? Are they healthy?"
+            },
+            {
+              "id": "s06-1-4",
+              "prompt": "What do you do when you feel tired or ill?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say why some people like to exercise outdoors.",
+          "type": "photo-description",
+          "prompt": "A woman doing yoga on a mat in a park.",
+          "images": [
+            {
+              "id": "s06-2-yoga",
+              "title": "Yoga in the park",
+              "alt": "A woman with long dark curly hair sits cross-legged on a pink yoga mat in a park and raises both arms above her head. Tall trees and warm evening light are behind her.",
+              "describeHints": [
+                "a woman sitting on a yoga mat",
+                "her arms raised above her head",
+                "the tall trees and the grass",
+                "the warm evening light",
+                "why people exercise outdoors"
+              ],
+              "image": {
+                "id": "s06-2-yoga",
+                "src": "assets/images/exams/cambridge-pet-06/s06-2-yoga-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-06/s06-2-yoga-600.webp",
+                "width": 1200,
+                "height": 801,
+                "alt": "A woman with long dark curly hair sits cross-legged on a pink yoga mat in a park and raises both arms above her head. Tall trees and warm evening light are behind her.",
+                "credit": {
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woman_in_the_park_doing_yoga_on_the_mat.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Ways to stay healthy",
+          "instructions": "Look at the pictures. Talk about how each one can help people stay healthy and fit, and decide which is the most important for a teenager.",
+          "type": "collaborative-task",
+          "prompt": "Which of these would you recommend most to a friend who wants to stay fit and healthy? Give reasons and compare the options.",
+          "images": [
+            {
+              "id": "s06-3-swimming",
+              "title": "Swimming",
+              "alt": "A swimmer with dark hair swims front crawl between two red-and-white lane ropes in clear blue water on a sunny day.",
+              "describeHints": [
+                "a person swimming lengths",
+                "the lane ropes",
+                "the clear blue water",
+                "the sunny weather",
+                "how swimming helps your body"
+              ],
+              "image": {
+                "id": "s06-3-swimming",
+                "src": "assets/images/exams/cambridge-pet-06/s06-3-swimming-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-06/s06-3-swimming-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A swimmer with dark hair swims front crawl between two red-and-white lane ropes in clear blue water on a sunny day.",
+                "credit": {
+                  "author": "Lance Cpl. Cayce Nevers",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Summer_Splash,_Pools_open_for_fun_in_the_sun_summer_swimming_130525-M-DB277-040.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Summer_Splash,_Pools_open_for_fun_in_the_sun_summer_swimming_130525-M-DB277-040.jpg"
+                }
+              }
+            },
+            {
+              "id": "s06-3-fruit",
+              "title": "Fresh fruit",
+              "alt": "A round wooden bowl on a wooden table is full of fruit: a red apple, an orange, a large pomegranate, a green apple, three pears and some small green bananas.",
+              "describeHints": [
+                "a bowl of fruit on a table",
+                "the different colours and shapes",
+                "apples, pears and bananas",
+                "the wooden bowl from above",
+                "why fruit is a healthy snack"
+              ],
+              "image": {
+                "id": "s06-3-fruit",
+                "src": "assets/images/exams/cambridge-pet-06/s06-3-fruit-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-06/s06-3-fruit-600.webp",
+                "width": 1200,
+                "height": 900,
+                "alt": "A round wooden bowl on a wooden table is full of fruit: a red apple, an orange, a large pomegranate, a green apple, three pears and some small green bananas.",
+                "credit": {
+                  "author": "Yosarian",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruit_bowl.jpg"
+                }
+              }
+            },
+            {
+              "id": "s06-3-running",
+              "title": "Running outdoors",
+              "alt": "A man in a dark red jacket and black trousers runs along a gravel track beside tall bare trees under a blue sky with some clouds.",
+              "describeHints": [
+                "a man running",
+                "the gravel track",
+                "the trees and the blue sky",
+                "his jacket and trainers",
+                "how running keeps people fit"
+              ],
+              "image": {
+                "id": "s06-3-running",
+                "src": "assets/images/exams/cambridge-pet-06/s06-3-running-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-06/s06-3-running-600.webp",
+                "width": 1200,
+                "height": 799,
+                "alt": "A man in a dark red jacket and black trousers runs along a gravel track beside tall bare trees under a blue sky with some clouds.",
+                "credit": {
+                  "author": "Jenny Hill jennyhill",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Runner_in_Stainburn_Forest_(Unsplash).jpg"
+                }
+              }
+            },
+            {
+              "id": "s06-3-nurse",
+              "title": "A health check",
+              "alt": "A nurse in a white uniform and cap, wearing a stethoscope, measures the blood pressure of a man in a blue shirt. A cuff is wrapped around his arm.",
+              "describeHints": [
+                "a nurse and a patient",
+                "the white uniform and stethoscope",
+                "the cuff on his arm",
+                "the room",
+                "why regular check-ups matter"
+              ],
+              "image": {
+                "id": "s06-3-nurse",
+                "src": "assets/images/exams/cambridge-pet-06/s06-3-nurse-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-06/s06-3-nurse-600.webp",
+                "width": 1200,
+                "height": 800,
+                "alt": "A nurse in a white uniform and cap, wearing a stethoscope, measures the blood pressure of a man in a blue shirt. A cuff is wrapped around his arm.",
+                "credit": {
+                  "author": "Linda Bartlett (Photographer)",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Nurse_checks_blood_pressure.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nurse_checks_blood_pressure.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about staying well",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s06-4-1",
+              "prompt": "Do schools in your country do enough to keep students healthy?"
+            },
+            {
+              "id": "s06-4-2",
+              "prompt": "What makes young people feel stressed, and what can they do about it?"
+            },
+            {
+              "id": "s06-4-3",
+              "prompt": "Is it better to exercise alone or with other people? Why?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
