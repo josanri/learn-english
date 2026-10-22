@@ -92,7 +92,7 @@ import { ExamSessionStore } from './session/exam-session.store';
       margin: 0;
       padding: 0 0 var(--space-2);
       list-style: none;
-      overflow-x: auto;
+      flex-wrap: wrap;
     }
     .tabs-row li {
       flex: none;
@@ -118,6 +118,17 @@ import { ExamSessionStore } from './session/exam-session.store';
       border-color: var(--border);
       background: var(--text);
       color: var(--bg);
+    }
+    /* Phones: the tabs wrap onto a second row and share the width, so none is cut off or hidden by a scroll. */
+    @media (max-width: 30rem) {
+      .tabs-row li {
+        flex: 1 1 auto;
+      }
+      .tabs-row a {
+        display: flex;
+        justify-content: center;
+        padding: 0 var(--space-3);
+      }
     }
   `,
 })

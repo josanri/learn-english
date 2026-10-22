@@ -157,7 +157,7 @@ import { SubmitReview } from './ui/submit-review';
       margin: 0 0 var(--space-5);
       padding: 0 0 var(--space-2);
       list-style: none;
-      overflow-x: auto;
+      flex-wrap: wrap;
     }
     .tab {
       display: inline-flex;
@@ -175,6 +175,17 @@ import { SubmitReview } from './ui/submit-review';
     .tab .mono {
       color: var(--text-muted);
       font-size: var(--step--1);
+    }
+    /* Phones: the parts form a grid of equal buttons, so none is cut off or hidden by a scroll. */
+    @media (max-width: 30rem) {
+      .parts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+      }
+      .tab {
+        justify-content: center;
+        width: 100%;
+      }
     }
     .tab[aria-current='step'] {
       border-color: var(--border);

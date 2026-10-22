@@ -289,6 +289,16 @@ export class SelectRow {
     .flag {
       margin: 0;
     }
+    /* Phones: equal buttons that fill every row, instead of a last button alone on a row. */
+    @media (max-width: 30rem) {
+      .strip {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+      }
+      .flag {
+        justify-content: center;
+      }
+    }
   `,
 })
 export class FlagStrip {

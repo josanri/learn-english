@@ -43,7 +43,7 @@ import { ExamSessionStore } from '../session/exam-session.store';
       }
 
       @if (checkable()) {
-        <button appButton type="button" (click)="store.checkPart(part().id)">
+        <button appButton type="button" class="check" (click)="store.checkPart(part().id)">
           <app-icon name="check" [size]="18" />
           Check answers
         </button>
@@ -65,6 +65,16 @@ import { ExamSessionStore } from '../session/exam-session.store';
     }
     .lede {
       font-size: var(--step-0);
+    }
+    button.check {
+      margin-top: var(--space-5);
+    }
+    /* Phones: a full-width button is easy to hit with a thumb. */
+    @media (max-width: 30rem) {
+      button.check {
+        display: flex;
+        width: 100%;
+      }
     }
     .result {
       margin-top: var(--space-3);
