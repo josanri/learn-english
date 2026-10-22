@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { provideRouter, withComponentInputBinding, withRouterConfig } from '@angular/router';
 import { AudioDbService } from './core/audio-db.service';
+import { InstallService } from './core/install.service';
 import { ThemeService } from './core/theme.service';
 import { routes } from './app.routes';
 import { provideServiceWorker } from '@angular/service-worker';
@@ -26,6 +27,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideAppInitializer(() => {
       inject(ThemeService);
+      inject(InstallService); // Starts listening for the browser's install offer early.
       // One-off recording migrations (React-era copy, then attempt ids in keys); failures are ignored and retried later.
       void inject(AudioDbService).runMigrations();
     }),
