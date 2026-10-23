@@ -149,6 +149,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
     }
     main {
       min-height: calc(100vh - var(--header-height) - 6rem);
+      min-height: calc(100dvh - var(--header-height) - 6rem);
     }
     main:focus {
       outline: none;
@@ -202,7 +203,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
         text-align: center;
       }
       .site-footer {
-        padding-bottom: calc(var(--bottom-nav-height) + var(--space-5));
+        padding-bottom: calc(var(--bottom-nav-height) + var(--space-5) + env(safe-area-inset-bottom));
       }
     }
   `,

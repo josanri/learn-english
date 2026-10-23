@@ -297,7 +297,9 @@ html:has(app-exam-header) {
 }
 @media (max-width: 47.99rem) {
   html:has(app-exam-header) {
-    scroll-padding-bottom: calc(var(--bottom-nav-height) + var(--space-6));
+    scroll-padding-bottom: calc(
+      var(--bottom-nav-height) + var(--space-6) + env(safe-area-inset-bottom)
+    );
   }
 }
 html[data-text-size='xlarge']:has(app-exam-header) {
