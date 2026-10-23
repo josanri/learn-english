@@ -133,6 +133,62 @@ describe('state migrations', () => {
     });
   });
 
+  it('adds an empty practice record when it upgrades a version 3 document', () => {
+    const state = migrateState({
+      schemaVersion: 3,
+      progress: {},
+      activity: ['2026-03-02'],
+      settings: {},
+      grammar: {
+        verbs: { go: { right: 1, wrong: 0, lastSeen: '', known: false, starred: false } },
+      },
+      migrations: {},
+    });
+    expect(state.schemaVersion).toBe(CURRENT_SCHEMA_VERSION);
+    expect(state.practice).toEqual({ cards: {}, newPerDay: 10, phrasal: {}, stories: {} });
+    expect(state.grammar.verbs['go'].right).toBe(1);
+  });
+
+  it('keeps valid practice records and drops broken ones', () => {
+    const due = '2026-10-24T08:00:00.000Z';
+    const state = migrateState({
+      schemaVersion: CURRENT_SCHEMA_VERSION,
+      practice: {
+        newPerDay: 500,
+        cards: {
+          borrow: {
+            status: 'review',
+            step: 0,
+            ease: 2.36,
+            interval: 3,
+            due,
+            reps: 4,
+            lapses: 0,
+            last: due,
+            added: '2026-10-20',
+          },
+          broken: { status: 'flying', due },
+          noDue: { status: 'review', due: 'tomorrow' },
+          lowEase: { status: 'learning', ease: 0.4, due },
+        },
+        phrasal: { 'give-up': { right: 2, wrong: 1.5, lastSeen: '2026-10-22', streak: 2 }, bad: 3 },
+        stories: { lighthouse: { finishedAt: due, correct: 3, total: 4 }, nope: { correct: 1 } },
+      },
+    });
+    expect(state.practice.newPerDay).toBe(10);
+    expect(state.practice.cards['borrow'].interval).toBe(3);
+    expect(Object.keys(state.practice.cards).sort()).toEqual(['borrow', 'lowEase']);
+    expect(state.practice.cards['lowEase'].ease).toBe(1.3);
+    expect(state.practice.phrasal['give-up']).toEqual({
+      right: 2,
+      wrong: 1,
+      lastSeen: '2026-10-22',
+      streak: 2,
+    });
+    expect(state.practice.phrasal['bad']).toBeUndefined();
+    expect(Object.keys(state.practice.stories)).toEqual(['lighthouse']);
+  });
+
   it('repairs progress entries that miss containers', () => {
     const state = migrateState({
       schemaVersion: CURRENT_SCHEMA_VERSION,

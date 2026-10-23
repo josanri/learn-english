@@ -57,6 +57,15 @@ import { Button, Card, Chip, EmptyState, IllustratedCard, SkillArt } from '../..
             The Cambridge B1 word list, with topics, filters and a dictionary link for each word.
           </p>
         </app-illustrated-card>
+        <app-illustrated-card
+          heading="Phrasal verbs"
+          tone="green"
+          [rotate]="-1"
+          link="/vocabulary/phrasal-verbs"
+        >
+          <app-skill-art art kind="verbs" />
+          <p>About 180 common phrasal verbs, with meanings, examples and three exercises.</p>
+        </app-illustrated-card>
       </div>
 
       @if (index.isLoading()) {

@@ -106,6 +106,34 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./features/vocabulary/vocabulary-page').then((m) => m.VocabularyPage),
       },
+      {
+        path: 'flashcards',
+        title: 'Flashcards | Learn English',
+        loadComponent: () =>
+          import('./features/flashcards/flashcards-page').then((m) => m.FlashcardsPage),
+      },
+      {
+        path: 'phrasal-verbs',
+        title: 'Phrasal verbs | Learn English',
+        loadComponent: () =>
+          import('./features/phrasal-verbs/phrasal-verbs-page').then((m) => m.PhrasalVerbsPage),
+      },
+    ],
+  },
+  {
+    path: 'reader',
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        title: 'Graded reader | Learn English',
+        loadComponent: () => import('./features/reader/reader-page').then((m) => m.ReaderPage),
+      },
+      {
+        path: ':story',
+        title: 'Story | Learn English',
+        loadComponent: () => import('./features/reader/story-page').then((m) => m.StoryPage),
+      },
     ],
   },
   {

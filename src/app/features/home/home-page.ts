@@ -78,6 +78,23 @@ interface SkillCard {
         }
       </div>
     </section>
+
+    <section class="container skills" aria-labelledby="daily-title">
+      <h2 id="daily-title" class="section-title">Ten minutes a day</h2>
+      <div class="grid">
+        @for (item of daily; track item.link) {
+          <app-illustrated-card
+            [heading]="item.title"
+            [tone]="item.tone"
+            [rotate]="item.tilt"
+            [link]="item.link"
+          >
+            <app-skill-art art [kind]="item.kind" />
+            <p>{{ item.text }}</p>
+          </app-illustrated-card>
+        }
+      </div>
+    </section>
   `,
   styles: `
     .hero {
@@ -193,6 +210,34 @@ export class HomePage {
       text: 'Pass on information between texts and people in clear English.',
       tone: 'coral',
       tilt: -1.25,
+    },
+  ];
+
+  /** Short daily practice outside the exams. */
+  protected readonly daily: (SkillCard & { link: string })[] = [
+    {
+      kind: 'vocabulary',
+      title: 'Flashcards',
+      text: 'Over 500 B1 words. Each one comes back just before you forget it.',
+      tone: 'cream',
+      tilt: 1.25,
+      link: '/vocabulary/flashcards',
+    },
+    {
+      kind: 'verbs',
+      title: 'Phrasal verbs',
+      text: 'Give up, look after, run out of: a dozen a day, in three kinds of exercise.',
+      tone: 'green',
+      tilt: -1.5,
+      link: '/vocabulary/phrasal-verbs',
+    },
+    {
+      kind: 'reading',
+      title: 'Graded reader',
+      text: 'Short original stories with a tap-to-see glossary and a few questions.',
+      tone: 'blue',
+      tilt: 1,
+      link: '/reader',
     },
   ];
 

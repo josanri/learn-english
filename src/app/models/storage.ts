@@ -1,5 +1,6 @@
 import type { Skill } from './exam';
 import type { GrammarProgress } from './grammar';
+import type { PracticeState } from './practice';
 
 /** Colour theme chosen by the learner. `system` follows the operating system. */
 export type ThemePreference = 'system' | 'light' | 'dark';
@@ -96,6 +97,8 @@ export interface PersistedState {
   activity: string[];
   /** Practice record of the irregular verbs. */
   grammar: GrammarProgress;
+  /** Flashcards (spaced repetition), phrasal verbs and graded reader. */
+  practice: PracticeState;
   /** Flags recording which one-off data migrations have already run. */
   migrations: { audioDb?: string; audioKeys?: string };
 }

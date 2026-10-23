@@ -1,0 +1,1355 @@
+{
+  "groups": [
+    {
+      "id": "daily-life",
+      "name": "Daily life"
+    },
+    {
+      "id": "people",
+      "name": "People and relationships"
+    },
+    {
+      "id": "travel",
+      "name": "Travel"
+    },
+    {
+      "id": "work-study",
+      "name": "Work and study"
+    },
+    {
+      "id": "problems",
+      "name": "Problems and accidents"
+    },
+    {
+      "id": "money-shopping",
+      "name": "Money and shopping"
+    },
+    {
+      "id": "health",
+      "name": "Health and sport"
+    },
+    {
+      "id": "communication",
+      "name": "Talking and phoning"
+    }
+  ],
+  "verbs": [
+    {
+      "id": "get-up",
+      "verb": "get up",
+      "meaning": "get out of bed after sleeping",
+      "example": "I [[get up]] at seven on weekdays.",
+      "group": "daily-life"
+    },
+    {
+      "id": "wake-up",
+      "verb": "wake up",
+      "meaning": "stop sleeping",
+      "example": "The birds [[woke]] me [[up]] at five this morning.",
+      "group": "daily-life"
+    },
+    {
+      "id": "go-out",
+      "verb": "go out",
+      "meaning": "leave home to do something enjoyable",
+      "example": "We [[go out]] for dinner every Friday.",
+      "group": "daily-life",
+      "similar": ["eat-out", "stay-in"]
+    },
+    {
+      "id": "stay-in",
+      "verb": "stay in",
+      "meaning": "stay at home",
+      "example": "It was raining, so we [[stayed in]] and watched a film.",
+      "group": "daily-life",
+      "similar": ["go-out"]
+    },
+    {
+      "id": "eat-out",
+      "verb": "eat out",
+      "meaning": "eat in a restaurant",
+      "example": "We don't [[eat out]] much because it's expensive.",
+      "group": "daily-life",
+      "similar": ["go-out"]
+    },
+    {
+      "id": "tidy-up",
+      "verb": "tidy up",
+      "meaning": "make a place neat",
+      "example": "Please [[tidy up]] your room before your friends arrive.",
+      "group": "daily-life"
+    },
+    {
+      "id": "wash-up",
+      "verb": "wash up",
+      "meaning": "clean the plates and pans after a meal",
+      "example": "I cooked, so you can [[wash up]].",
+      "group": "daily-life"
+    },
+    {
+      "id": "put-away",
+      "verb": "put away",
+      "meaning": "put something in its usual place",
+      "example": "Can you [[put]] the shopping [[away]]?",
+      "group": "daily-life"
+    },
+    {
+      "id": "throw-away",
+      "verb": "throw away",
+      "meaning": "put something in the bin",
+      "example": "Don't [[throw away]] those boxes; we can use them.",
+      "group": "daily-life"
+    },
+    {
+      "id": "turn-on",
+      "verb": "turn on",
+      "meaning": "start a machine or light",
+      "example": "Could you [[turn on]] the light? It's dark in here.",
+      "group": "daily-life"
+    },
+    {
+      "id": "turn-off",
+      "verb": "turn off",
+      "meaning": "stop a machine or light",
+      "example": "Always [[turn off]] the computer before you go to bed.",
+      "group": "daily-life",
+      "similar": ["switch-off"]
+    },
+    {
+      "id": "turn-up",
+      "verb": "turn up",
+      "meaning": "make a machine louder or warmer",
+      "example": "[[Turn up]] the radio, I love this song!",
+      "group": "daily-life"
+    },
+    {
+      "id": "turn-down",
+      "verb": "turn down",
+      "meaning": "make a machine quieter or cooler",
+      "example": "Please [[turn]] the music [[down]]; the baby's asleep.",
+      "group": "daily-life"
+    },
+    {
+      "id": "plug-in",
+      "verb": "plug in",
+      "meaning": "connect a machine to the electricity",
+      "example": "[[Plug in]] the kettle and make some tea.",
+      "group": "daily-life"
+    },
+    {
+      "id": "switch-off",
+      "verb": "switch off",
+      "meaning": "stop a machine or light with a switch",
+      "example": "She [[switched off]] her phone during the film.",
+      "group": "daily-life",
+      "similar": ["turn-off"]
+    },
+    {
+      "id": "hang-up",
+      "verb": "hang up",
+      "meaning": "end a phone call",
+      "example": "He [[hung up]] before I could say goodbye.",
+      "group": "daily-life"
+    },
+    {
+      "id": "lie-down",
+      "verb": "lie down",
+      "meaning": "put your body flat to rest",
+      "example": "I need to [[lie down]] for ten minutes.",
+      "group": "daily-life"
+    },
+    {
+      "id": "sit-down",
+      "verb": "sit down",
+      "meaning": "move into a sitting position",
+      "example": "Please [[sit down]]. The doctor will see you soon.",
+      "group": "daily-life"
+    },
+    {
+      "id": "stand-up",
+      "verb": "stand up",
+      "meaning": "move into a standing position",
+      "example": "Everyone [[stood up]] when the teacher came in.",
+      "group": "daily-life"
+    },
+    {
+      "id": "dress-up",
+      "verb": "dress up",
+      "meaning": "wear special or formal clothes",
+      "example": "We [[dressed up]] for my cousin's wedding.",
+      "group": "daily-life"
+    },
+    {
+      "id": "put-on",
+      "verb": "put on",
+      "meaning": "start wearing clothes",
+      "example": "[[Put on]] your coat. It's cold outside.",
+      "group": "daily-life"
+    },
+    {
+      "id": "take-off",
+      "verb": "take off",
+      "meaning": "remove clothes",
+      "example": "Please [[take off]] your shoes at the door.",
+      "group": "daily-life"
+    },
+    {
+      "id": "try-on",
+      "verb": "try on",
+      "meaning": "wear clothes in a shop to see if they fit",
+      "example": "Can I [[try on]] these jeans?",
+      "group": "daily-life"
+    },
+    {
+      "id": "do-up",
+      "verb": "do up",
+      "meaning": "fasten a coat, button or zip",
+      "example": "[[Do up]] your jacket, it's windy.",
+      "group": "daily-life"
+    },
+    {
+      "id": "fill-up",
+      "verb": "fill up",
+      "meaning": "make something completely full",
+      "example": "We [[filled up]] the car before the long drive.",
+      "group": "daily-life",
+      "similar": ["fill-in"]
+    },
+    {
+      "id": "run-out-of",
+      "verb": "run out of",
+      "meaning": "have none left",
+      "example": "We've [[run out of]] milk. Can you buy some?",
+      "group": "daily-life",
+      "similar": ["use-up"]
+    },
+    {
+      "id": "use-up",
+      "verb": "use up",
+      "meaning": "use all of something",
+      "example": "The kids [[used up]] all the paper drawing dinosaurs.",
+      "group": "daily-life",
+      "similar": ["run-out-of"]
+    },
+    {
+      "id": "cut-down-on",
+      "verb": "cut down on",
+      "meaning": "eat, drink or use less of something",
+      "example": "I'm trying to [[cut down on]] sugar.",
+      "group": "daily-life",
+      "similar": ["give-up"]
+    },
+    {
+      "id": "look-for",
+      "verb": "look for",
+      "meaning": "try to find",
+      "example": "I'm [[looking for]] my glasses. Have you seen them?",
+      "group": "daily-life",
+      "similar": ["look-up"]
+    },
+    {
+      "id": "pick-up",
+      "verb": "pick up",
+      "meaning": "lift something from the ground or a surface",
+      "example": "She [[picked up]] the litter and put it in the bin.",
+      "group": "daily-life",
+      "similar": ["pick-up-2"]
+    },
+    {
+      "id": "hurry-up",
+      "verb": "hurry up",
+      "meaning": "do something more quickly",
+      "example": "[[Hurry up]]! The bus is coming.",
+      "group": "daily-life"
+    },
+    {
+      "id": "calm-down",
+      "verb": "calm down",
+      "meaning": "become less excited or angry",
+      "example": "[[Calm down]]. It's only a small scratch.",
+      "group": "daily-life"
+    },
+    {
+      "id": "cheer-up",
+      "verb": "cheer up",
+      "meaning": "become happier, or make someone happier",
+      "example": "We bought her flowers to [[cheer]] her [[up]].",
+      "group": "daily-life"
+    },
+    {
+      "id": "chill-out",
+      "verb": "chill out",
+      "meaning": "relax completely",
+      "example": "After the exams I just want to [[chill out]] at the beach.",
+      "group": "daily-life"
+    },
+    {
+      "id": "come-in",
+      "verb": "come in",
+      "meaning": "enter a room or building",
+      "example": "The door's open. [[Come in]]!",
+      "group": "daily-life",
+      "similar": ["get-in", "get-on"]
+    },
+    {
+      "id": "go-back",
+      "verb": "go back",
+      "meaning": "return to a place",
+      "example": "I'd love to [[go back]] to Lisbon one day.",
+      "group": "daily-life",
+      "similar": ["get-back", "come-back", "take-back"]
+    },
+    {
+      "id": "come-back",
+      "verb": "come back",
+      "meaning": "return to where you were",
+      "example": "What time will you [[come back]] tonight?",
+      "group": "daily-life",
+      "similar": ["get-back", "go-back"]
+    },
+    {
+      "id": "get-back",
+      "verb": "get back",
+      "meaning": "return home or to a place",
+      "example": "We [[got back]] from holiday late last night.",
+      "group": "daily-life",
+      "similar": ["come-back", "go-back"]
+    },
+    {
+      "id": "get-on-with",
+      "verb": "get on with",
+      "meaning": "have a good relationship with someone",
+      "example": "I [[get on with]] all my classmates.",
+      "group": "people",
+      "similar": ["get-along"]
+    },
+    {
+      "id": "fall-out",
+      "verb": "fall out",
+      "meaning": "stop being friends after an argument",
+      "example": "They [[fell out]] over a silly game.",
+      "group": "people"
+    },
+    {
+      "id": "make-up",
+      "verb": "make up",
+      "meaning": "become friends again after an argument",
+      "example": "They argued in the morning but [[made up]] at lunch.",
+      "group": "people"
+    },
+    {
+      "id": "look-after",
+      "verb": "look after",
+      "meaning": "take care of someone or something",
+      "example": "My grandmother [[looks after]] us after school.",
+      "group": "people",
+      "similar": ["bring-up"]
+    },
+    {
+      "id": "take-after",
+      "verb": "take after",
+      "meaning": "look or behave like an older family member",
+      "example": "She [[takes after]] her dad; they're both very calm.",
+      "group": "people"
+    },
+    {
+      "id": "grow-up",
+      "verb": "grow up",
+      "meaning": "change from a child to an adult",
+      "example": "I [[grew up]] in a small village near Ronda.",
+      "group": "people"
+    },
+    {
+      "id": "bring-up",
+      "verb": "bring up",
+      "meaning": "look after a child until it is an adult",
+      "example": "My aunt [[brought up]] three children on her own.",
+      "group": "people",
+      "similar": ["look-after"]
+    },
+    {
+      "id": "look-up-to",
+      "verb": "look up to",
+      "meaning": "admire and respect someone",
+      "example": "I've always [[looked up to]] my older brother.",
+      "group": "people"
+    },
+    {
+      "id": "let-down",
+      "verb": "let down",
+      "meaning": "disappoint someone by not doing what you promised",
+      "example": "Don't [[let]] me [[down]]. You promised to come.",
+      "group": "people",
+      "similar": ["tell-off"]
+    },
+    {
+      "id": "ask-out",
+      "verb": "ask out",
+      "meaning": "invite someone to go on a date",
+      "example": "He finally [[asked]] her [[out]] to the cinema.",
+      "group": "people",
+      "similar": ["go-out-with"]
+    },
+    {
+      "id": "go-out-with",
+      "verb": "go out with",
+      "meaning": "have a romantic relationship with someone",
+      "example": "She's been [[going out with]] Marco for a year.",
+      "group": "people",
+      "similar": ["ask-out"]
+    },
+    {
+      "id": "break-up",
+      "verb": "break up",
+      "meaning": "end a romantic relationship",
+      "example": "They [[broke up]] after two years together.",
+      "group": "people",
+      "similar": ["split-up"]
+    },
+    {
+      "id": "split-up",
+      "verb": "split up",
+      "meaning": "end a relationship or separate",
+      "example": "Her parents [[split up]] when she was ten.",
+      "group": "people",
+      "similar": ["break-up"]
+    },
+    {
+      "id": "settle-down",
+      "verb": "settle down",
+      "meaning": "start a quiet life in one place",
+      "example": "After years of travelling, he [[settled down]] in Cádiz.",
+      "group": "people"
+    },
+    {
+      "id": "count-on",
+      "verb": "count on",
+      "meaning": "trust someone to help you",
+      "example": "You can always [[count on]] me.",
+      "group": "people",
+      "similar": ["rely-on"]
+    },
+    {
+      "id": "stand-by",
+      "verb": "stand by",
+      "meaning": "continue to support someone",
+      "example": "Her friends [[stood by]] her when things were difficult.",
+      "group": "people"
+    },
+    {
+      "id": "put-up-with",
+      "verb": "put up with",
+      "meaning": "accept something unpleasant without complaining",
+      "example": "I can't [[put up with]] this noise any more.",
+      "group": "people"
+    },
+    {
+      "id": "call-round",
+      "verb": "call round",
+      "meaning": "visit someone for a short time",
+      "example": "Can I [[call round]] after work to return your book?",
+      "group": "people",
+      "similar": ["drop-in"]
+    },
+    {
+      "id": "drop-in",
+      "verb": "drop in",
+      "meaning": "visit someone without arranging it",
+      "example": "[[Drop in]] for a coffee if you're in the area.",
+      "group": "people",
+      "similar": ["call-round"]
+    },
+    {
+      "id": "get-together",
+      "verb": "get together",
+      "meaning": "meet socially",
+      "example": "Let's [[get together]] at the weekend.",
+      "group": "people",
+      "similar": ["catch-up"]
+    },
+    {
+      "id": "catch-up",
+      "verb": "catch up",
+      "meaning": "talk to someone about recent news after not seeing them",
+      "example": "We met for lunch to [[catch up]].",
+      "group": "people",
+      "similar": ["get-together"]
+    },
+    {
+      "id": "show-off",
+      "verb": "show off",
+      "meaning": "try to make people admire you",
+      "example": "He's always [[showing off]] about his new car.",
+      "group": "people"
+    },
+    {
+      "id": "tell-off",
+      "verb": "tell off",
+      "meaning": "speak angrily to someone who did something wrong",
+      "example": "The coach [[told]] us [[off]] for being late.",
+      "group": "people",
+      "similar": ["let-down"]
+    },
+    {
+      "id": "look-down-on",
+      "verb": "look down on",
+      "meaning": "think you are better than someone",
+      "example": "Don't [[look down on]] people with less money.",
+      "group": "people"
+    },
+    {
+      "id": "run-into",
+      "verb": "run into",
+      "meaning": "meet someone by chance",
+      "example": "I [[ran into]] my old teacher at the market.",
+      "group": "people",
+      "similar": ["bump-into"]
+    },
+    {
+      "id": "bump-into",
+      "verb": "bump into",
+      "meaning": "meet someone by chance",
+      "example": "Guess who I [[bumped into]] at the airport!",
+      "group": "people",
+      "similar": ["run-into"]
+    },
+    {
+      "id": "get-along",
+      "verb": "get along",
+      "meaning": "have a friendly relationship",
+      "example": "My sister and I [[get along]] really well now.",
+      "group": "people",
+      "similar": ["get-on-with"]
+    },
+    {
+      "id": "set-off",
+      "verb": "set off",
+      "meaning": "start a journey",
+      "example": "We [[set off]] for the mountains at dawn.",
+      "group": "travel",
+      "similar": ["set-out"]
+    },
+    {
+      "id": "set-out",
+      "verb": "set out",
+      "meaning": "start a journey, often a long one",
+      "example": "They [[set out]] early to avoid the heat.",
+      "group": "travel",
+      "similar": ["set-off"]
+    },
+    {
+      "id": "get-on",
+      "verb": "get on",
+      "meaning": "enter a bus, train or plane",
+      "example": "Hurry! [[Get on]] the train before the doors close.",
+      "group": "travel",
+      "similar": ["get-in", "come-in"]
+    },
+    {
+      "id": "get-off",
+      "verb": "get off",
+      "meaning": "leave a bus, train or plane",
+      "example": "[[Get off]] at the third stop.",
+      "group": "travel",
+      "similar": ["get-out-of"]
+    },
+    {
+      "id": "get-in",
+      "verb": "get in",
+      "meaning": "enter a car or taxi",
+      "example": "[[Get in]], I'll drive you home.",
+      "group": "travel",
+      "similar": ["get-on", "come-in"]
+    },
+    {
+      "id": "get-out-of",
+      "verb": "get out of",
+      "meaning": "leave a car or taxi",
+      "example": "She [[got out of]] the taxi and paid the driver.",
+      "group": "travel",
+      "similar": ["get-off"]
+    },
+    {
+      "id": "check-in",
+      "verb": "check in",
+      "meaning": "arrive and register at a hotel or airport",
+      "example": "We [[checked in]] at the hotel at three.",
+      "group": "travel"
+    },
+    {
+      "id": "check-out",
+      "verb": "check out",
+      "meaning": "pay and leave a hotel",
+      "example": "You must [[check out]] before eleven.",
+      "group": "travel"
+    },
+    {
+      "id": "take-off-2",
+      "verb": "take off",
+      "meaning": "leave the ground and start flying",
+      "example": "The plane [[took off]] an hour late.",
+      "group": "travel"
+    },
+    {
+      "id": "see-off",
+      "verb": "see off",
+      "meaning": "go to the airport or station to say goodbye",
+      "example": "My parents [[saw]] me [[off]] at the station.",
+      "group": "travel"
+    },
+    {
+      "id": "pick-up-2",
+      "verb": "pick up",
+      "meaning": "collect someone in a car",
+      "example": "I'll [[pick]] you [[up]] at the airport.",
+      "group": "travel",
+      "similar": ["pick-up"]
+    },
+    {
+      "id": "drop-off",
+      "verb": "drop off",
+      "meaning": "take someone to a place and leave them there",
+      "example": "Can you [[drop]] me [[off]] at the library?",
+      "group": "travel"
+    },
+    {
+      "id": "stop-over",
+      "verb": "stop over",
+      "meaning": "stay somewhere for a short time during a long journey",
+      "example": "We [[stopped over]] in Dubai on the way to Bangkok.",
+      "group": "travel"
+    },
+    {
+      "id": "look-around",
+      "verb": "look around",
+      "meaning": "walk around a place to see what is there",
+      "example": "We had an hour to [[look around]] the old town.",
+      "group": "travel"
+    },
+    {
+      "id": "get-away",
+      "verb": "get away",
+      "meaning": "go on holiday, away from your usual life",
+      "example": "We need to [[get away]] for a few days.",
+      "group": "travel"
+    },
+    {
+      "id": "speed-up",
+      "verb": "speed up",
+      "meaning": "go faster",
+      "example": "The train [[sped up]] after the tunnel.",
+      "group": "travel",
+      "similar": ["go-up"]
+    },
+    {
+      "id": "slow-down",
+      "verb": "slow down",
+      "meaning": "go less fast",
+      "example": "[[Slow down]]! There's a school here.",
+      "group": "travel",
+      "similar": ["come-down"]
+    },
+    {
+      "id": "break-down",
+      "verb": "break down",
+      "meaning": "stop working (a car or machine)",
+      "example": "Our car [[broke down]] on the motorway.",
+      "group": "travel"
+    },
+    {
+      "id": "turn-back",
+      "verb": "turn back",
+      "meaning": "go back the way you came",
+      "example": "The path was flooded, so we had to [[turn back]].",
+      "group": "travel"
+    },
+    {
+      "id": "head-for",
+      "verb": "head for",
+      "meaning": "go towards a place",
+      "example": "After lunch we [[headed for]] the beach.",
+      "group": "travel"
+    },
+    {
+      "id": "pull-over",
+      "verb": "pull over",
+      "meaning": "move a car to the side of the road and stop",
+      "example": "The police asked him to [[pull over]].",
+      "group": "travel"
+    },
+    {
+      "id": "hold-up",
+      "verb": "hold up",
+      "meaning": "make someone or something late",
+      "example": "We were [[held up]] by roadworks.",
+      "group": "travel",
+      "similar": ["hold-on"]
+    },
+    {
+      "id": "get-lost",
+      "verb": "get lost",
+      "meaning": "stop knowing where you are",
+      "example": "We [[got lost]] in the narrow streets.",
+      "group": "travel"
+    },
+    {
+      "id": "fill-in",
+      "verb": "fill in",
+      "meaning": "write information in a form",
+      "example": "Please [[fill in]] this form with your details.",
+      "group": "work-study",
+      "similar": ["fill-up"]
+    },
+    {
+      "id": "hand-in",
+      "verb": "hand in",
+      "meaning": "give your work to a teacher",
+      "example": "[[Hand in]] your essays on Friday.",
+      "group": "work-study",
+      "similar": ["give-out"]
+    },
+    {
+      "id": "give-out",
+      "verb": "give out",
+      "meaning": "give something to each person in a group",
+      "example": "The teacher [[gave out]] the exam papers.",
+      "group": "work-study",
+      "similar": ["hand-out", "hand-in", "give-away"]
+    },
+    {
+      "id": "look-up",
+      "verb": "look up",
+      "meaning": "find information in a book or online",
+      "example": "[[Look up]] any new words in the dictionary.",
+      "group": "work-study",
+      "similar": ["look-for", "look-into", "go-over"]
+    },
+    {
+      "id": "write-down",
+      "verb": "write down",
+      "meaning": "write something on paper so you remember it",
+      "example": "[[Write down]] my number before you forget it.",
+      "group": "work-study"
+    },
+    {
+      "id": "cross-out",
+      "verb": "cross out",
+      "meaning": "draw a line through something you wrote",
+      "example": "[[Cross out]] the wrong answer and write the correct one.",
+      "group": "work-study"
+    },
+    {
+      "id": "work-out",
+      "verb": "work out",
+      "meaning": "find the answer to a problem",
+      "example": "I can't [[work out]] this maths question.",
+      "group": "work-study",
+      "similar": ["figure-out"]
+    },
+    {
+      "id": "figure-out",
+      "verb": "figure out",
+      "meaning": "understand or solve something",
+      "example": "We finally [[figured out]] how the machine worked.",
+      "group": "work-study",
+      "similar": ["work-out"]
+    },
+    {
+      "id": "find-out",
+      "verb": "find out",
+      "meaning": "discover a fact or information",
+      "example": "I [[found out]] that the museum is free on Sundays.",
+      "group": "work-study",
+      "similar": ["find-out-about", "come-across"]
+    },
+    {
+      "id": "go-over",
+      "verb": "go over",
+      "meaning": "look at or explain something again carefully",
+      "example": "Let's [[go over]] the answers together.",
+      "group": "work-study",
+      "similar": ["look-up"]
+    },
+    {
+      "id": "catch-up-on",
+      "verb": "catch up on",
+      "meaning": "do work you did not have time to do before",
+      "example": "I need to [[catch up on]] my reading this weekend.",
+      "group": "work-study"
+    },
+    {
+      "id": "keep-up-with",
+      "verb": "keep up with",
+      "meaning": "go at the same speed as others",
+      "example": "It's hard to [[keep up with]] the fast learners.",
+      "group": "work-study"
+    },
+    {
+      "id": "fall-behind",
+      "verb": "fall behind",
+      "meaning": "fail to do as much as others or as planned",
+      "example": "She [[fell behind]] after missing two weeks of school.",
+      "group": "work-study"
+    },
+    {
+      "id": "drop-out",
+      "verb": "drop out",
+      "meaning": "leave a course before it ends",
+      "example": "He [[dropped out]] of university after one year.",
+      "group": "work-study",
+      "similar": ["give-up"]
+    },
+    {
+      "id": "sign-up",
+      "verb": "sign up",
+      "meaning": "put your name on a list to join something",
+      "example": "I've [[signed up]] for a swimming course.",
+      "group": "work-study"
+    },
+    {
+      "id": "take-up",
+      "verb": "take up",
+      "meaning": "start a new hobby or activity",
+      "example": "My dad has [[taken up]] golf.",
+      "group": "work-study"
+    },
+    {
+      "id": "give-up",
+      "verb": "give up",
+      "meaning": "stop doing something",
+      "example": "She [[gave up]] chocolate for a month.",
+      "group": "work-study",
+      "similar": ["drop-out", "cut-down-on"]
+    },
+    {
+      "id": "carry-on",
+      "verb": "carry on",
+      "meaning": "continue doing something",
+      "example": "[[Carry on]] reading; I'll be back in a minute.",
+      "group": "work-study",
+      "similar": ["go-on", "keep-on"]
+    },
+    {
+      "id": "go-on",
+      "verb": "go on",
+      "meaning": "continue",
+      "example": "The meeting [[went on]] until eight o'clock.",
+      "group": "work-study",
+      "similar": ["carry-on", "keep-on"]
+    },
+    {
+      "id": "keep-on",
+      "verb": "keep on",
+      "meaning": "continue doing something, often again and again",
+      "example": "He [[kept on]] asking the same question.",
+      "group": "work-study",
+      "similar": ["go-on", "carry-on"]
+    },
+    {
+      "id": "put-off",
+      "verb": "put off",
+      "meaning": "delay doing something until later",
+      "example": "I always [[put off]] my homework until Sunday night.",
+      "group": "work-study"
+    },
+    {
+      "id": "deal-with",
+      "verb": "deal with",
+      "meaning": "take action to solve a problem",
+      "example": "The manager will [[deal with]] your complaint.",
+      "group": "work-study"
+    },
+    {
+      "id": "take-over",
+      "verb": "take over",
+      "meaning": "take control of something",
+      "example": "A new company [[took over]] the hotel.",
+      "group": "work-study"
+    },
+    {
+      "id": "set-up",
+      "verb": "set up",
+      "meaning": "start a business or organisation",
+      "example": "She [[set up]] her own bakery last year.",
+      "group": "work-study"
+    },
+    {
+      "id": "turn-up-2",
+      "verb": "turn up",
+      "meaning": "arrive, often unexpectedly or late",
+      "example": "Only half the class [[turned up]] for the trip.",
+      "group": "work-study",
+      "similar": ["show-up"]
+    },
+    {
+      "id": "show-up",
+      "verb": "show up",
+      "meaning": "arrive at a place",
+      "example": "He [[showed up]] an hour late for the interview.",
+      "group": "work-study",
+      "similar": ["turn-up-2"]
+    },
+    {
+      "id": "hand-out",
+      "verb": "hand out",
+      "meaning": "give something to each person in a group",
+      "example": "Volunteers [[handed out]] water to the runners.",
+      "group": "work-study",
+      "similar": ["give-out"]
+    },
+    {
+      "id": "point-out",
+      "verb": "point out",
+      "meaning": "tell someone about a fact they had not noticed",
+      "example": "She [[pointed out]] a mistake in my essay.",
+      "group": "work-study"
+    },
+    {
+      "id": "come-up-with",
+      "verb": "come up with",
+      "meaning": "think of an idea or plan",
+      "example": "We [[came up with]] a great name for the band.",
+      "group": "work-study",
+      "similar": ["think-over"]
+    },
+    {
+      "id": "think-over",
+      "verb": "think over",
+      "meaning": "consider something carefully before deciding",
+      "example": "I'll [[think]] it [[over]] and tell you tomorrow.",
+      "group": "work-study",
+      "similar": ["talk-over", "come-up-with"]
+    },
+    {
+      "id": "read-out",
+      "verb": "read out",
+      "meaning": "read something aloud for others to hear",
+      "example": "The teacher [[read out]] the winners' names.",
+      "group": "work-study"
+    },
+    {
+      "id": "rely-on",
+      "verb": "rely on",
+      "meaning": "need someone or something and trust them",
+      "example": "We [[rely on]] the bus to get to school.",
+      "group": "work-study",
+      "similar": ["count-on"]
+    },
+    {
+      "id": "sort-out",
+      "verb": "sort out",
+      "meaning": "find a solution to a problem",
+      "example": "Don't worry, we'll [[sort]] it [[out]].",
+      "group": "problems"
+    },
+    {
+      "id": "get-over",
+      "verb": "get over",
+      "meaning": "feel better after an illness or a bad experience",
+      "example": "It took him weeks to [[get over]] the flu.",
+      "group": "problems",
+      "similar": ["get-better"]
+    },
+    {
+      "id": "go-off",
+      "verb": "go off",
+      "meaning": "start ringing (an alarm), or become bad (food)",
+      "example": "My alarm didn't [[go off]] this morning.",
+      "group": "problems"
+    },
+    {
+      "id": "break-into",
+      "verb": "break into",
+      "meaning": "enter a building by force to steal",
+      "example": "Someone [[broke into]] the shop last night.",
+      "group": "problems"
+    },
+    {
+      "id": "run-away",
+      "verb": "run away",
+      "meaning": "leave a place quickly to escape",
+      "example": "The dog [[ran away]] when it heard the fireworks.",
+      "group": "problems"
+    },
+    {
+      "id": "get-away-with",
+      "verb": "get away with",
+      "meaning": "not be punished for something wrong",
+      "example": "He cheated in the test and [[got away with]] it.",
+      "group": "problems"
+    },
+    {
+      "id": "watch-out",
+      "verb": "watch out",
+      "meaning": "be careful",
+      "example": "[[Watch out]]! There's a car coming.",
+      "group": "problems",
+      "similar": ["look-out"]
+    },
+    {
+      "id": "look-out",
+      "verb": "look out",
+      "meaning": "be careful",
+      "example": "[[Look out]]! The floor is wet.",
+      "group": "problems",
+      "similar": ["watch-out"]
+    },
+    {
+      "id": "blow-up",
+      "verb": "blow up",
+      "meaning": "explode, or fill with air",
+      "example": "The kids [[blew up]] fifty balloons for the party.",
+      "group": "problems"
+    },
+    {
+      "id": "burn-down",
+      "verb": "burn down",
+      "meaning": "be destroyed by fire",
+      "example": "The old cinema [[burned down]] in 1990.",
+      "group": "problems"
+    },
+    {
+      "id": "fall-over",
+      "verb": "fall over",
+      "meaning": "fall to the ground",
+      "example": "I [[fell over]] on the ice and hurt my knee.",
+      "group": "problems",
+      "similar": ["pass-out"]
+    },
+    {
+      "id": "knock-down",
+      "verb": "knock down",
+      "meaning": "hit someone with a vehicle, or destroy a building",
+      "example": "They [[knocked down]] the old factory to build flats.",
+      "group": "problems"
+    },
+    {
+      "id": "pass-out",
+      "verb": "pass out",
+      "meaning": "become unconscious for a short time",
+      "example": "It was so hot that a man [[passed out]] in the queue.",
+      "group": "problems",
+      "similar": ["fall-over"]
+    },
+    {
+      "id": "cut-off",
+      "verb": "cut off",
+      "meaning": "stop a supply of something or a phone call",
+      "example": "The storm [[cut off]] the electricity for hours.",
+      "group": "problems"
+    },
+    {
+      "id": "mix-up",
+      "verb": "mix up",
+      "meaning": "think one person or thing is another",
+      "example": "I always [[mix up]] the twins.",
+      "group": "problems"
+    },
+    {
+      "id": "get-rid-of",
+      "verb": "get rid of",
+      "meaning": "throw away or remove something you don't want",
+      "example": "We need to [[get rid of]] this old sofa.",
+      "group": "problems"
+    },
+    {
+      "id": "give-in",
+      "verb": "give in",
+      "meaning": "stop trying and accept defeat",
+      "example": "After an hour of arguing, Dad [[gave in]] and bought the puppy.",
+      "group": "problems"
+    },
+    {
+      "id": "back-up",
+      "verb": "back up",
+      "meaning": "make a copy of computer files",
+      "example": "[[Back up]] your photos in case you lose your phone.",
+      "group": "problems"
+    },
+    {
+      "id": "come-across",
+      "verb": "come across",
+      "meaning": "find something by chance",
+      "example": "I [[came across]] some old letters in the attic.",
+      "group": "problems",
+      "similar": ["find-out"]
+    },
+    {
+      "id": "end-up",
+      "verb": "end up",
+      "meaning": "be in a place or situation in the end",
+      "example": "We missed the bus and [[ended up]] walking home.",
+      "group": "problems"
+    },
+    {
+      "id": "turn-out",
+      "verb": "turn out",
+      "meaning": "happen in a particular way in the end",
+      "example": "The day [[turned out]] to be sunny after all.",
+      "group": "problems"
+    },
+    {
+      "id": "wear-out",
+      "verb": "wear out",
+      "meaning": "use something so much that it is broken",
+      "example": "I [[wore out]] my trainers in three months.",
+      "group": "problems"
+    },
+    {
+      "id": "call-off",
+      "verb": "call off",
+      "meaning": "cancel an event",
+      "example": "They [[called off]] the match because of the storm.",
+      "group": "problems"
+    },
+    {
+      "id": "put-out",
+      "verb": "put out",
+      "meaning": "stop a fire from burning",
+      "example": "Firefighters [[put out]] the fire in ten minutes.",
+      "group": "problems"
+    },
+    {
+      "id": "look-into",
+      "verb": "look into",
+      "meaning": "examine or investigate something",
+      "example": "The police are [[looking into]] the robbery.",
+      "group": "problems",
+      "similar": ["look-up"]
+    },
+    {
+      "id": "pay-back",
+      "verb": "pay back",
+      "meaning": "return money that you borrowed",
+      "example": "I'll [[pay]] you [[back]] on Friday.",
+      "group": "money-shopping",
+      "similar": ["save-up"]
+    },
+    {
+      "id": "save-up",
+      "verb": "save up",
+      "meaning": "keep money so you can buy something later",
+      "example": "I'm [[saving up]] for a new laptop.",
+      "group": "money-shopping",
+      "similar": ["pay-back"]
+    },
+    {
+      "id": "take-back",
+      "verb": "take back",
+      "meaning": "return something you bought to a shop",
+      "example": "I [[took]] the shirt [[back]] because it was too small.",
+      "group": "money-shopping",
+      "similar": ["go-back"]
+    },
+    {
+      "id": "shop-around",
+      "verb": "shop around",
+      "meaning": "compare prices in different shops",
+      "example": "It's worth [[shopping around]] before you buy a phone.",
+      "group": "money-shopping"
+    },
+    {
+      "id": "sell-out",
+      "verb": "sell out",
+      "meaning": "sell all of something, so none is left",
+      "example": "The concert tickets [[sold out]] in ten minutes.",
+      "group": "money-shopping"
+    },
+    {
+      "id": "go-up",
+      "verb": "go up",
+      "meaning": "increase",
+      "example": "The price of bread has [[gone up]] again.",
+      "group": "money-shopping",
+      "similar": ["speed-up"]
+    },
+    {
+      "id": "come-down",
+      "verb": "come down",
+      "meaning": "decrease",
+      "example": "Flight prices usually [[come down]] after the summer.",
+      "group": "money-shopping",
+      "similar": ["slow-down"]
+    },
+    {
+      "id": "splash-out",
+      "verb": "splash out",
+      "meaning": "spend a lot of money on something you enjoy",
+      "example": "We [[splashed out]] on a dinner at a fancy restaurant.",
+      "group": "money-shopping"
+    },
+    {
+      "id": "pay-for",
+      "verb": "pay for",
+      "meaning": "give money to buy something",
+      "example": "Who's going to [[pay for]] the taxi?",
+      "group": "money-shopping"
+    },
+    {
+      "id": "give-away",
+      "verb": "give away",
+      "meaning": "give something to someone for free",
+      "example": "The café [[gives away]] free cakes on its birthday.",
+      "group": "money-shopping",
+      "similar": ["give-out"]
+    },
+    {
+      "id": "work-out-2",
+      "verb": "work out",
+      "meaning": "do physical exercise to stay fit",
+      "example": "I [[work out]] at the gym three times a week.",
+      "group": "health",
+      "similar": ["keep-fit", "warm-up"]
+    },
+    {
+      "id": "warm-up",
+      "verb": "warm up",
+      "meaning": "do gentle exercise before sport",
+      "example": "Always [[warm up]] before you run.",
+      "group": "health",
+      "similar": ["work-out-2", "keep-fit"]
+    },
+    {
+      "id": "cool-down",
+      "verb": "cool down",
+      "meaning": "do gentle exercise after hard exercise",
+      "example": "[[Cool down]] with some slow stretches.",
+      "group": "health"
+    },
+    {
+      "id": "come-down-with",
+      "verb": "come down with",
+      "meaning": "start to have an illness",
+      "example": "I think I'm [[coming down with]] a cold.",
+      "group": "health"
+    },
+    {
+      "id": "throw-up",
+      "verb": "throw up",
+      "meaning": "be sick (vomit)",
+      "example": "He ate too fast and [[threw up]] on the boat.",
+      "group": "health"
+    },
+    {
+      "id": "get-better",
+      "verb": "get better",
+      "meaning": "recover from an illness",
+      "example": "I hope you [[get better]] soon.",
+      "group": "health",
+      "similar": ["get-over"]
+    },
+    {
+      "id": "keep-fit",
+      "verb": "keep fit",
+      "meaning": "stay healthy through exercise",
+      "example": "She swims every morning to [[keep fit]].",
+      "group": "health",
+      "similar": ["work-out-2", "warm-up"]
+    },
+    {
+      "id": "take-in",
+      "verb": "take in",
+      "meaning": "understand and remember information",
+      "example": "There was too much information to [[take in]].",
+      "group": "health",
+      "similar": ["make-out"]
+    },
+    {
+      "id": "call-back",
+      "verb": "call back",
+      "meaning": "phone someone again, or return their call",
+      "example": "I'm busy now. Can I [[call]] you [[back]]?",
+      "group": "communication",
+      "similar": ["ring-back"]
+    },
+    {
+      "id": "ring-back",
+      "verb": "ring back",
+      "meaning": "phone someone again",
+      "example": "She said she would [[ring back]] after lunch.",
+      "group": "communication",
+      "similar": ["call-back"]
+    },
+    {
+      "id": "speak-up",
+      "verb": "speak up",
+      "meaning": "speak more loudly",
+      "example": "Could you [[speak up]]? I can't hear you.",
+      "group": "communication"
+    },
+    {
+      "id": "hold-on",
+      "verb": "hold on",
+      "meaning": "wait for a short time",
+      "example": "[[Hold on]], I'll get a pen.",
+      "group": "communication",
+      "similar": ["hold-up"]
+    },
+    {
+      "id": "get-through",
+      "verb": "get through",
+      "meaning": "manage to talk to someone on the phone",
+      "example": "I tried calling the bank but couldn't [[get through]].",
+      "group": "communication"
+    },
+    {
+      "id": "put-through",
+      "verb": "put through",
+      "meaning": "connect someone on the phone",
+      "example": "Please hold, I'll [[put]] you [[through]] to the manager.",
+      "group": "communication"
+    },
+    {
+      "id": "pass-on",
+      "verb": "pass on",
+      "meaning": "give a message to someone else",
+      "example": "Can you [[pass on]] the message to your sister?",
+      "group": "communication"
+    },
+    {
+      "id": "bring-up-2",
+      "verb": "bring up",
+      "meaning": "start talking about a subject",
+      "example": "Don't [[bring up]] politics at dinner.",
+      "group": "communication"
+    },
+    {
+      "id": "look-forward-to",
+      "verb": "look forward to",
+      "meaning": "feel happy about something that is going to happen",
+      "example": "I'm [[looking forward to]] the summer holidays.",
+      "group": "communication"
+    },
+    {
+      "id": "make-out",
+      "verb": "make out",
+      "meaning": "manage to see, hear or understand something",
+      "example": "I couldn't [[make out]] what he was saying.",
+      "group": "communication",
+      "similar": ["take-in"]
+    },
+    {
+      "id": "go-ahead",
+      "verb": "go ahead",
+      "meaning": "start or continue doing something",
+      "example": "\"Can I ask a question?\" \"Sure, [[go ahead]].\"",
+      "group": "communication"
+    },
+    {
+      "id": "find-out-about",
+      "verb": "find out about",
+      "meaning": "get information about something",
+      "example": "I want to [[find out about]] courses in Dublin.",
+      "group": "communication",
+      "similar": ["find-out"]
+    },
+    {
+      "id": "talk-over",
+      "verb": "talk over",
+      "meaning": "discuss something before deciding",
+      "example": "Let's [[talk]] it [[over]] at dinner.",
+      "group": "communication",
+      "similar": ["think-over"]
+    }
+  ]
+}

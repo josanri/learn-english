@@ -1,5 +1,6 @@
 import { httpResource } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import type { VocabularyFile } from '../../models/vocabulary';
 import { Badge, Button, EmptyState, Icon } from '../../shared/ui';
 import { dictionaryUrl, filterWords } from './vocabulary-engine';
@@ -22,7 +23,7 @@ const POS_OPTIONS = [
 /** `/vocabulary`: the B1 Preliminary word list with search and filters; each word links to the Cambridge Dictionary. */
 @Component({
   selector: 'app-vocabulary-page',
-  imports: [Badge, Button, EmptyState, Icon],
+  imports: [RouterLink, Badge, Button, EmptyState, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="container page">
@@ -32,6 +33,26 @@ const POS_OPTIONS = [
         The words a B1 learner needs, taken from the Cambridge B1 Preliminary vocabulary list. Open
         a word to see its meaning in the Cambridge Dictionary.
       </p>
+      <ul class="practise" aria-label="Practise words">
+        <li>
+          <a appButton variant="primary" routerLink="/vocabulary/flashcards">
+            <app-icon name="repeat" />
+            Flashcards
+          </a>
+        </li>
+        <li>
+          <a appButton routerLink="/vocabulary/phrasal-verbs">
+            <app-icon name="list" />
+            Phrasal verbs
+          </a>
+        </li>
+        <li>
+          <a appButton routerLink="/reader">
+            <app-icon name="book" />
+            Graded reader
+          </a>
+        </li>
+      </ul>
 
       @if (resource.isLoading()) {
         <p role="status" class="muted">Loading the word list&hellip;</p>
@@ -145,6 +166,14 @@ const POS_OPTIONS = [
     </div>
   `,
   styles: `
+    .practise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin: var(--space-5) 0 var(--space-6);
+      padding: 0;
+      list-style: none;
+    }
     .filters {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));

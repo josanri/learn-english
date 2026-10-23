@@ -1,6 +1,6 @@
 # Learn English
 
-Browser app with original English practice exams (first section: B1), grammar guides, an irregular verbs trainer and a B1 vocabulary list. Installable PWA. Angular 22, zoneless, no backend: all data is static JSON and learner progress stays in the browser.
+Browser app with original English practice exams (first section: B1), grammar guides, an irregular verbs trainer, a B1 vocabulary list and daily practice (flashcards, phrasal verbs, graded reader). Installable PWA. Angular 22, zoneless, no backend: all data is static JSON and learner progress stays in the browser.
 
 Read this file first. It is short on purpose. Open only the document in `docs/` that matches your task (table below) instead of reading the whole repository.
 
@@ -32,6 +32,7 @@ npm test                   unit tests
 npm run test:scripts       tests of the node scripts
 npm run validate:exams     exams (schema, board shape, quality rules)
 npm run validate:grammar   grammar guides and irregular verbs
+npm run validate:practice  flashcards, phrasal verbs and graded reader stories
 npm run build              production build (npm run build:pages -- /repo/ for GitHub Pages)
 npm run schema:generate    JSON Schema from src/app/models/exam.ts
 npm run exams:index        regenerate src/assets/exams/<level>/index.json
@@ -40,7 +41,7 @@ npm run icons:generate     favicon.ico and PWA icons from public/favicon.svg
 npm run check:contrast     WCAG contrast table for every colour pair
 ```
 
-Before committing: lint, test, test:scripts, validate:exams, validate:grammar and build must all pass.
+Before committing: lint, test, test:scripts, validate:exams, validate:grammar, validate:practice and build must all pass.
 
 ## Where to look
 
@@ -53,6 +54,7 @@ Before committing: lint, test, test:scripts, validate:exams, validate:grammar an
 | Writing checker, rules, rubric                                | [docs/writing-checker.md](docs/writing-checker.md)       |
 | PDF and ZIP export of results                                 | [docs/export.md](docs/export.md)                         |
 | Grammar guides, irregular verbs, vocabulary list              | [docs/grammar-vocabulary.md](docs/grammar-vocabulary.md) |
+| Flashcards (spaced repetition), phrasal verbs, graded reader  | [docs/practice.md](docs/practice.md)                     |
 | localStorage document, IndexedDB, migrations                  | [docs/persistence.md](docs/persistence.md)               |
 | PWA install, service worker, GitHub Pages, project size       | [docs/pwa-and-deployment.md](docs/pwa-and-deployment.md) |
 | Writing or reviewing an exam, photos, validators, token costs | [docs/authoring-exams.md](docs/authoring-exams.md)       |

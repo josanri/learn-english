@@ -2,6 +2,7 @@ import { DOCUMENT } from '@angular/common';
 import { Injectable, computed, effect, inject, signal } from '@angular/core';
 import type { Skill } from '../models/exam';
 import type { VerbProgress } from '../models/grammar';
+import type { CardState, PracticeState } from '../models/practice';
 import type {
   Attempt,
   ExamProgress,
@@ -15,6 +16,7 @@ import {
   LEGACY_STORAGE_KEY,
   STORAGE_KEY,
   emptyGrammar,
+  emptyPractice,
   emptyState,
   localDay,
   migrateLegacyData,
@@ -106,6 +108,74 @@ export class LocalStorageService {
         activity: practisedAt ? addDay(s.activity, practisedAt) : s.activity,
       };
     });
+  }
+
+  /** Flashcards, phrasal verbs and graded reader progress. */
+  readonly practice = computed(() => this._state().practice);
+
+  /** Saves the new schedule of a flashcard after an answer and marks today as a practice day. */
+  saveCard(cardId: string, state: CardState): void {
+    this.updatePractice((p) => ({ ...p, cards: { ...p.cards, [cardId]: state } }), state.last);
+  }
+
+  setNewCardsPerDay(count: number): void {
+    this.updatePractice((p) => ({
+      ...p,
+      newPerDay: Math.min(100, Math.max(1, Math.round(count))),
+    }));
+  }
+
+  /** Forgets every flashcard schedule (the cards become new again). */
+  resetCards(): void {
+    this.updatePractice((p) => ({ ...p, cards: {} }));
+  }
+
+  /** Counts one answer for a phrasal verb and marks today as a practice day. */
+  recordPhrasalResult(verbId: string, correct: boolean): void {
+    const now = new Date().toISOString();
+    this.updatePractice((p) => {
+      const current = p.phrasal[verbId] ?? { right: 0, wrong: 0, lastSeen: '', streak: 0 };
+      return {
+        ...p,
+        phrasal: {
+          ...p.phrasal,
+          [verbId]: {
+            right: current.right + (correct ? 1 : 0),
+            wrong: current.wrong + (correct ? 0 : 1),
+            streak: correct ? current.streak + 1 : 0,
+            lastSeen: localDay(new Date(now)) ?? current.lastSeen,
+          },
+        },
+      };
+    }, now);
+  }
+
+  resetPhrasal(): void {
+    this.updatePractice((p) => ({ ...p, phrasal: {} }));
+  }
+
+  /** Saves the questions score of a finished story (the latest try replaces the earlier one). */
+  finishStory(storyId: string, correct: number, total: number): void {
+    const now = new Date().toISOString();
+    this.updatePractice(
+      (p) => ({ ...p, stories: { ...p.stories, [storyId]: { finishedAt: now, correct, total } } }),
+      now,
+    );
+  }
+
+  resetStories(): void {
+    this.updatePractice((p) => ({ ...p, stories: {} }));
+  }
+
+  private updatePractice(
+    change: (current: PracticeState) => PracticeState,
+    practisedAt?: string,
+  ): void {
+    this._state.update((s) => ({
+      ...s,
+      practice: change(s.practice ?? emptyPractice()),
+      activity: practisedAt ? addDay(s.activity, practisedAt) : s.activity,
+    }));
   }
 
   updateSettings(patch: Partial<Settings>): void {
