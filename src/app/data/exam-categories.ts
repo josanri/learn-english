@@ -15,7 +15,7 @@ export const EXAM_CATEGORIES: Record<ExamCategory, ExamCategoryInfo> = {
   transport: { name: 'Transport', icon: 'plane' },
   sport: { name: 'Sport & outdoor activity', icon: 'trophy' },
   health: { name: 'Health & safety', icon: 'heartbeat' },
-  food: { name: 'Food & drink', icon: 'chefhat' },
+  food: { name: 'Food & drink', icon: 'cutlery' },
   home: { name: 'Home & daily life', icon: 'house' },
   people: { name: 'People & celebrations', icon: 'people' },
   study: { name: 'Study & work', icon: 'gradcap' },
