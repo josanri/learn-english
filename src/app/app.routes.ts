@@ -28,34 +28,49 @@ export const routes: Routes = [
     loadComponent: () => import('./features/home/home-page').then((m) => m.HomePage),
   },
   {
-    // One branch per level. Parameters and data are inherited by children (see paramsInheritanceStrategy).
-    path: 'b1',
-    data: { level: 'b1' },
+    path: 'exams',
     children: [
+      { path: '', pathMatch: 'full', redirectTo: 'b1' },
       {
-        path: '',
-        pathMatch: 'full',
-        title: 'B1 exams | Learn English',
-        loadComponent: () => import('./features/level/level-page').then((m) => m.LevelPage),
-      },
-      {
-        path: ':board/:examId',
-        loadComponent: () => import('./features/exam/exam-shell').then((m) => m.ExamShell),
+        // One branch per level. Parameters and data are inherited by children (see paramsInheritanceStrategy).
+        path: 'b1',
+        data: { level: 'b1' },
         children: [
-          { path: '', pathMatch: 'full', redirectTo: 'reading' },
-          markedRoute('reading'),
-          markedRoute('writing'),
-          markedRoute('listening'),
-          markedRoute('speaking'),
-          placeholderRoute('mediation'),
           {
-            path: 'results',
-            title: 'Results | Learn English',
-            loadComponent: () => import('./features/exam/results-page').then((m) => m.ResultsPage),
+            path: '',
+            pathMatch: 'full',
+            title: 'B1 exams | Learn English',
+            loadComponent: () => import('./features/level/level-page').then((m) => m.LevelPage),
+          },
+          {
+            path: ':board/:examId',
+            loadComponent: () => import('./features/exam/exam-shell').then((m) => m.ExamShell),
+            children: [
+              { path: '', pathMatch: 'full', redirectTo: 'reading' },
+              markedRoute('reading'),
+              markedRoute('writing'),
+              markedRoute('listening'),
+              markedRoute('speaking'),
+              placeholderRoute('mediation'),
+              {
+                path: 'results',
+                title: 'Results | Learn English',
+                loadComponent: () =>
+                  import('./features/exam/results-page').then((m) => m.ResultsPage),
+              },
+            ],
           },
         ],
       },
     ],
+  },
+  // Old links without the `exams` prefix.
+  { path: 'b1', pathMatch: 'full', redirectTo: 'exams/b1' },
+  { path: 'b1/:board/:examId', pathMatch: 'full', redirectTo: 'exams/b1/:board/:examId' },
+  {
+    path: 'b1/:board/:examId/:section',
+    pathMatch: 'full',
+    redirectTo: 'exams/b1/:board/:examId/:section',
   },
   {
     path: 'grammar',
@@ -83,9 +98,15 @@ export const routes: Routes = [
   },
   {
     path: 'vocabulary',
-    title: 'B1 vocabulary | Learn English',
-    loadComponent: () =>
-      import('./features/vocabulary/vocabulary-page').then((m) => m.VocabularyPage),
+    children: [
+      { path: '', pathMatch: 'full', redirectTo: 'b1' },
+      {
+        path: 'b1',
+        title: 'B1 vocabulary | Learn English',
+        loadComponent: () =>
+          import('./features/vocabulary/vocabulary-page').then((m) => m.VocabularyPage),
+      },
+    ],
   },
   {
     path: 'settings',

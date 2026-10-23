@@ -27,6 +27,9 @@
         "theme": {
           "type": "string"
         },
+        "category": {
+          "$ref": "#/definitions/ExamCategory"
+        },
         "estimatedMinutes": {
           "type": "number"
         },
@@ -45,6 +48,7 @@
         "title",
         "subtitle",
         "theme",
+        "category",
         "estimatedMinutes",
         "sections"
       ],
@@ -76,6 +80,30 @@
         "oxford-test-b1"
       ],
       "description": "Boards/formats the app knows about. The type is open: any other string is also accepted."
+    },
+    "ExamCategory": {
+      "type": "string",
+      "enum": [
+        "animals",
+        "nature",
+        "environment",
+        "travel",
+        "transport",
+        "sport",
+        "health",
+        "food",
+        "home",
+        "people",
+        "study",
+        "arts",
+        "entertainment",
+        "science",
+        "games",
+        "shopping",
+        "history",
+        "misc"
+      ],
+      "description": "Topic group of an exam. The level page shows its icon next to the theme."
     },
     "Section": {
       "anyOf": [
@@ -1722,11 +1750,11 @@
         },
         "src": {
           "type": "string",
-          "description": "Local WebP, 1200 px wide, under `assets/images/exams/<examId>/` (relative to the site root)."
+          "description": "Local WebP, 1000 px wide, under `assets/images/exams/<examId>/` (relative to the site root)."
         },
         "srcSmall": {
           "type": "string",
-          "description": "Local WebP, 600 px wide, used in `srcset` for small screens."
+          "description": "Local WebP, 480 px wide, used in `srcset` for small screens."
         },
         "width": {
           "type": "number"

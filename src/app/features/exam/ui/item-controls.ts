@@ -128,6 +128,7 @@ export class ChoiceQuestion {
 /** A drop-down answer (matching, gapped text, headings). Accessible name comes from `label`. */
 @Component({
   selector: 'app-answer-select',
+  imports: [Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (visibleLabel()) {
@@ -150,9 +151,13 @@ export class ChoiceQuestion {
         }
       </select>
       @if (fb(); as f) {
-        <span class="gap-fb" [attr.data-ok]="f.correct">{{
-          f.correct ? 'Correct' : 'Answer: ' + f.correctText
-        }}</span>
+        @if (f.correct) {
+          <span class="gap-tick"
+            ><app-icon name="check" [size]="14" /><span class="visually-hidden">Correct</span></span
+          >
+        } @else {
+          <span class="gap-fb" data-ok="false">Answer: {{ f.correctText }}</span>
+        }
       }
     </span>
   `,
@@ -182,6 +187,7 @@ export class AnswerSelect {
 /** A short typed answer (open cloze, notes). */
 @Component({
   selector: 'app-answer-input',
+  imports: [Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (visibleLabel()) {
@@ -202,9 +208,13 @@ export class AnswerSelect {
         (input)="onInput($event)"
       />
       @if (fb(); as f) {
-        <span class="gap-fb" [attr.data-ok]="f.correct">{{
-          f.correct ? 'Correct' : 'Answer: ' + f.correctText
-        }}</span>
+        @if (f.correct) {
+          <span class="gap-tick"
+            ><app-icon name="check" [size]="14" /><span class="visually-hidden">Correct</span></span
+          >
+        } @else {
+          <span class="gap-fb" data-ok="false">Answer: {{ f.correctText }}</span>
+        }
       }
     </span>
   `,

@@ -91,7 +91,7 @@ function brief(board) {
 Already published (${exams.length}): do not repeat these themes`);
   for (const entry of exams) {
     const exam = readExam(entry);
-    console.log(`  ${exam.id} | ${exam.theme}`);
+    console.log(`  ${exam.id} | ${exam.category} | ${exam.theme}`);
     (function walk(n) {
       if (Array.isArray(n)) n.forEach(walk);
       else if (n && typeof n === 'object') {

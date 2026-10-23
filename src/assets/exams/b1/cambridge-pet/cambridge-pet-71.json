@@ -1,0 +1,1684 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-71",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Renewable Energy and Electricity",
+  "subtitle": "A village that makes its own electricity, how power reaches our homes and an electrician",
+  "theme": "Renewable energy and electricity",
+  "category": "environment",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "POWER CUT: There will be no electricity in Park Road between nine and noon on Tuesday while workers repair a cable. Please keep your fridge doors closed.",
+            "Message from Fenn: Fiona, I have switched off all the lights and the heating. Remember to turn the oven off when you leave!",
+            "SOLAR PANELS FOR SCHOOLS: Our school will get new panels on the roof this summer. They will give us about a third of our electricity.",
+            "WIND FARM OPEN DAY: Walk around the turbines and meet the engineers. Free bus from the village square at ten and two.",
+            "SAVE ENERGY: Please turn off the computers and the lights when you leave the classroom. Thank you from the Eco Club."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What should residents do during the power cut?",
+              "options": [
+                "Use their cookers instead",
+                "Move their food to a shop",
+                "Keep the fridge doors closed"
+              ],
+              "answer": 2,
+              "explanation": "Please keep your fridge doors closed."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What does Fenn ask Fiona to do?",
+              "options": [
+                "Switch on the heating",
+                "Turn off the oven",
+                "Buy some light bulbs"
+              ],
+              "answer": 1,
+              "explanation": "Remember to turn the oven off when you leave."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What will the new panels give the school?",
+              "options": [
+                "Part of its electricity",
+                "All of its hot water supply",
+                "A new roof for the hall"
+              ],
+              "answer": 0,
+              "explanation": "They will give about a third of the electricity."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "How can visitors get to the wind farm?",
+              "options": [
+                "By walking from the school",
+                "By a free bus",
+                "By their own bikes"
+              ],
+              "answer": 1,
+              "explanation": "There is a free bus from the village square."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What does the Eco Club ask students to do?",
+              "options": [
+                "Bring their own water bottles",
+                "Plant some trees outside",
+                "Switch off lights and computers"
+              ],
+              "answer": 2,
+              "explanation": "Turn off the computers and the lights when you leave."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Green energy",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Fabian lives in a village without a mains supply. He wants a small machine that can make electricity from the sun for his home."
+            },
+            {
+              "id": "p2",
+              "text": "Faith is interested in a job as an engineer. She would like to see how a wind farm works and ask people about their work."
+            },
+            {
+              "id": "p3",
+              "text": "Felix is writing a project about the history of electricity. He needs a book that tells the story of famous inventors."
+            },
+            {
+              "id": "p4",
+              "text": "Fern wants to cut her family's bills. She is looking for someone who can check her house and suggest simple changes."
+            },
+            {
+              "id": "p5",
+              "text": "Finn is a keen cyclist. He would like to try a bike that has a small motor and can climb hills without effort."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Sun Home Kit",
+              "text": "A box of small solar panels, a battery and cables. Easy to fit on any roof."
+            },
+            {
+              "id": "B",
+              "title": "Wind Farm Visit",
+              "text": "See the turbines up close and talk to engineers. Ideal for people who want a job in energy."
+            },
+            {
+              "id": "C",
+              "title": "Sparks and Inventors",
+              "text": "A book that tells the story of electricity, from Volta to Edison to today."
+            },
+            {
+              "id": "D",
+              "title": "Home Energy Check",
+              "text": "An adviser comes to your house, finds where heat is lost and suggests cheap ways to save money."
+            },
+            {
+              "id": "E",
+              "title": "E-Bike Test Day",
+              "text": "Try an electric bicycle for free. The motor helps you on steep hills."
+            },
+            {
+              "id": "F",
+              "title": "Gas Cooker Sale",
+              "text": "Great prices on new gas cookers this week."
+            },
+            {
+              "id": "G",
+              "title": "Board Game Night",
+              "text": "Fun for the whole family on Friday."
+            },
+            {
+              "id": "H",
+              "title": "Garden Market",
+              "text": "Plants and flowers every Saturday morning."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Fabian",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Sun Home Kit has solar panels and a battery to make electricity from the sun."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Faith",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Wind Farm Visit lets people see turbines and talk to engineers."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Felix",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Sparks and Inventors tells the story of electricity."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Fern",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Home Energy Check sends an adviser who suggests cheap ways to save money."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Finn",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "E-Bike Test Day lets people try an electric bicycle with a motor for hills."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Our village goes green",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Four years ago, our village decided to make all its own electricity. At the time, many people laughed. We live in a valley in the hills, far from any city, and most houses used oil to keep warm.\n\nThe first step was to put solar panels on the roof of the village hall. They worked so well that the hall now makes more electricity than it needs. Then a farmer, Mr Brook, built a small wind turbine in his field. At first the neighbours complained about the noise, but now they say they hardly hear it.\n\nThe next idea was the river. A small machine in the water uses the current to make power day and night. It cost a lot of money, but the villagers paid for it together, and each family owns a small part.\n\nToday, we sell some of our extra electricity to the city and use the money to repair the school. My little sister says that we are the greenest village in the country. I think she may be right, and I am proud of it.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did people laugh at the idea?",
+              "options": [
+                "The village is small and far away",
+                "The village had no school or shop",
+                "The river was too wide to use"
+              ],
+              "answer": 0,
+              "explanation": "They lived in a valley far from any city."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What happened with the village hall?",
+              "options": [
+                "It makes more power than it needs",
+                "It needed a new roof last year",
+                "It closed for repairs in summer"
+              ],
+              "answer": 0,
+              "explanation": "The hall makes more electricity than it needs."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did the neighbours say about the turbine?",
+              "options": [
+                "It is far too tall for them",
+                "They hardly hear it now",
+                "It spoils the view of the hills"
+              ],
+              "answer": 1,
+              "explanation": "They now say they hardly hear it."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "How was the river machine paid for?",
+              "options": [
+                "By one rich local farmer",
+                "By the national government",
+                "By the villagers together"
+              ],
+              "answer": 2,
+              "explanation": "The villagers paid for it together."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What is done with the extra electricity?",
+              "options": [
+                "It is given to the school",
+                "It is stored for winter",
+                "It is sold to the city"
+              ],
+              "answer": 2,
+              "explanation": "They sell some to the city and use the money to repair the school."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "Where does our electricity come from?",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Every time we switch on a light, electricity flows to the bulb. But how does it get there? [1] Most of it is made in big power stations far away from our homes.\n\nFor many years, power stations burned coal, oil or gas. [2] This is bad for the planet, because it sends dirty gases into the air.\n\nToday, more and more countries are changing to clean energy. The wind, the sun and moving water never run out. [3] Some countries now make half of their electricity in this way.\n\nBut there are problems. The sun does not shine at night, and the wind does not always blow. [4] This is why scientists are working on better batteries.\n\nWhat can we do? [5] Switching off lights, using less hot water and walking short distances all make a difference.",
+          "sentences": [
+            "Small actions by ordinary people add up to a big change.",
+            "We therefore need ways to store energy for later use.",
+            "The system of wires that carries it is called the grid.",
+            "The idea is not new, but it has become cheaper in recent years.",
+            "This kind of fuel will not last for ever.",
+            "Nobody knows exactly when it was invented."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "C",
+              "explanation": "The grid is the system of wires that carries electricity, answering how it gets there."
+            },
+            {
+              "id": "r4-2",
+              "answer": "E",
+              "explanation": "This kind of fuel will not last for ever; the next sentence says it is bad for the planet."
+            },
+            {
+              "id": "r4-3",
+              "answer": "D",
+              "explanation": "The idea is not new but cheaper recently, and the next sentence says some countries make half their power this way."
+            },
+            {
+              "id": "r4-4",
+              "answer": "B",
+              "explanation": "We need ways to store energy, which leads to better batteries."
+            },
+            {
+              "id": "r4-5",
+              "answer": "A",
+              "explanation": "Small actions add up, and the next sentence gives examples."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A message about the electricity bill",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Hi Dad, I hope you are well. I wanted to tell you that our electricity bill came yesterday, and it was much higher [1] usual. Mum thinks that it is because we [2] the heating on all day last month. I have promised to turn it off when I leave the house. Also, my brother always leaves his computer [3] all night. I have told him to stop, but he does not listen. If this carries on, we [4] have to pay more than we can afford. Do you think that we should put solar panels [5] the roof? Grandpa says they are expensive, but they would save us money in the [6] run. Let me know what you think. Love, Evie",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "as",
+                "than",
+                "that",
+                "from"
+              ],
+              "answer": 1,
+              "explanation": "Higher than usual: a comparison."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "had",
+                "have",
+                "are having",
+                "having"
+              ],
+              "answer": 0,
+              "explanation": "Had the heating on all day: past simple of have-on."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "at",
+                "in",
+                "with",
+                "on"
+              ],
+              "answer": 3,
+              "explanation": "Leaves his computer on: switched on."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "did",
+                "would",
+                "will",
+                "are"
+              ],
+              "answer": 2,
+              "explanation": "If this carries on, we will have to pay: first conditional."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "at",
+                "in",
+                "on",
+                "by"
+              ],
+              "answer": 2,
+              "explanation": "On the roof: the preposition for a surface."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "big",
+                "long",
+                "far",
+                "wide"
+              ],
+              "answer": 1,
+              "explanation": "In the long run is a fixed phrase."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "The first electric light",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Before electricity, people used candles and oil lamps to see in the dark. They did not give much light, and they were often dangerous, [1] a small fire could burn a whole house. In the nineteenth century, scientists started to look [2] a safer way to light our homes. The man who is most famous for this is Thomas Edison, an American inventor. In 1879, he made a light bulb that burned for more [3] thirteen hours. Many people had tried before him, [4] they had failed. It took Edison and his team thousands of experiments to find the right material. Soon, cities began to build power stations, and electric light became part [5] everyday life. Today, we use light bulbs that need much less power, [6] they last for years. It is hard to imagine a world without them.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "because",
+              "accepted": [
+                "as",
+                "since",
+                "for"
+              ],
+              "explanation": "Dangerous because a small fire could burn a house: a reason."
+            },
+            {
+              "id": "r6-2",
+              "answer": "for",
+              "explanation": "Look for a safer way: phrasal verb look for."
+            },
+            {
+              "id": "r6-3",
+              "answer": "than",
+              "explanation": "More than thirteen hours: a comparison."
+            },
+            {
+              "id": "r6-4",
+              "answer": "but",
+              "accepted": [
+                "yet",
+                "and"
+              ],
+              "explanation": "Many had tried, but they had failed: contrast."
+            },
+            {
+              "id": "r6-5",
+              "answer": "of",
+              "explanation": "Part of everyday life: a fixed phrase."
+            },
+            {
+              "id": "r6-6",
+              "answer": "and",
+              "accepted": [
+                "so",
+                "but"
+              ],
+              "explanation": "Need less power, and they last for years."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Fiona is trying to save energy at home. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Say well done.",
+              "Suggest ways to save energy.",
+              "Say what you do at home.",
+              "Ask what her family thinks."
+            ],
+            "sourceEmail": {
+              "from": "Fiona",
+              "subject": "Saving energy",
+              "body": "Our school is holding a Save Energy Week, and I have decided to try to use less electricity at home. Do you have any ideas? What do you and your family do?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say well done.",
+                "keywords": [
+                  "well done",
+                  "great",
+                  "good",
+                  "idea",
+                  "wonderful",
+                  "proud",
+                  "clever"
+                ]
+              },
+              {
+                "text": "Suggest ways to save energy.",
+                "keywords": [
+                  "switch",
+                  "turn",
+                  "off",
+                  "lights",
+                  "heating",
+                  "shower",
+                  "unplug"
+                ]
+              },
+              {
+                "text": "Say what you do at home.",
+                "keywords": [
+                  "we",
+                  "always",
+                  "at home",
+                  "my family",
+                  "every",
+                  "usually",
+                  "never"
+                ]
+              },
+              {
+                "text": "Ask what her family thinks.",
+                "keywords": [
+                  "what",
+                  "think",
+                  "family",
+                  "parents",
+                  "brother",
+                  "sister",
+                  "say"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! What can young people do to help the environment? Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Give some ideas.",
+                  "keywords": [
+                    "recycle",
+                    "walk",
+                    "bike",
+                    "plastic",
+                    "energy",
+                    "plant",
+                    "save"
+                  ]
+                },
+                {
+                  "text": "Explain why they are good.",
+                  "keywords": [
+                    "because",
+                    "planet",
+                    "clean",
+                    "money",
+                    "future",
+                    "air",
+                    "help"
+                  ]
+                },
+                {
+                  "text": "Say what you do yourself.",
+                  "keywords": [
+                    "my",
+                    "myself",
+                    "always",
+                    "every day",
+                    "try",
+                    "usually",
+                    "sometimes"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "All the lights in the town went out at exactly eight o'clock.",
+              "contentPoints": [
+                {
+                  "text": "Say what you did.",
+                  "keywords": [
+                    "candle",
+                    "torch",
+                    "went",
+                    "looked",
+                    "waited",
+                    "called",
+                    "ran"
+                  ]
+                },
+                {
+                  "text": "Say what you discovered.",
+                  "keywords": [
+                    "found",
+                    "saw",
+                    "heard",
+                    "learned",
+                    "noticed",
+                    "discovered",
+                    "realised"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "finally",
+                    "in the end",
+                    "lights",
+                    "came back",
+                    "happy",
+                    "smiled",
+                    "laughed"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fenn",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Faith",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Why is it so dark in here?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The electricity went off ten minutes ago. I think a storm has damaged a cable."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "What has caused the problem?",
+                "options": [
+                  "A broken light bulb",
+                  "A storm",
+                  "An unpaid power bill"
+                ],
+                "answer": 1,
+                "explanation": "She says that a storm has damaged a cable."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fern",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Fabian",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Are you still using that old fridge?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, but I am going to buy a new one. It will use half as much power."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "Why will the man buy a new fridge?",
+                "options": [
+                  "To use less power",
+                  "To have more space",
+                  "To get a better colour"
+                ],
+                "answer": 0,
+                "explanation": "He says that the new one will use half as much power."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Felix",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Fiona",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Where is the nearest charging point for electric cars?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Behind the supermarket, next to the bus stop."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Where is the charging point?",
+                "options": [
+                  "Behind the supermarket",
+                  "Next to the cinema",
+                  "Outside the station"
+                ],
+                "answer": 0,
+                "explanation": "She says that it is behind the supermarket."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Freya",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Finn",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What did you do for your science project?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I made a small wind turbine from plastic bottles. It lit up a tiny bulb."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What did the boy make?",
+                "options": [
+                  "A small solar oven",
+                  "A model wind turbine",
+                  "A new type of battery"
+                ],
+                "answer": 1,
+                "explanation": "He says that he made a small wind turbine."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fenn",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Faith",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Do you walk to school every day?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Only when it is dry. On rainy days, my mother drives me."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "When does the girl go by car?",
+                "options": [
+                  "On cold dark evenings",
+                  "On very late mornings",
+                  "On rainy days"
+                ],
+                "answer": 2,
+                "explanation": "She says that on rainy days, her mother drives her."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fern",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Fabian",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How long does your phone battery last?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "About two days if I do not play games. With games, only half a day."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What makes the battery run down quickly?",
+                "options": [
+                  "Playing games",
+                  "Making many calls",
+                  "Taking many photos"
+                ],
+                "answer": 0,
+                "explanation": "He says that with games, it lasts only half a day."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Felix",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Freya",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Is this switch for the light or the fan?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The light. The fan is the one on the wall, by the door."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "Where is the switch for the fan?",
+                "options": [
+                  "Next to the window",
+                  "On the wall by the door",
+                  "Above the kitchen sink"
+                ],
+                "answer": 1,
+                "explanation": "She says that the fan switch is on the wall by the door."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fiona",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Finn",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Good morning. This is the Green Power Company. How can I help you?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hello. I would like to ask about the price of solar panels for my house."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What does the man ask about?",
+                "options": [
+                  "The cost of a bus ticket",
+                  "The size of a new house",
+                  "The price of solar panels"
+                ],
+                "answer": 2,
+                "explanation": "She answers as the Green Power Company and he asks about solar panels."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Felix",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Faith",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I think I have broken the toaster. There was a loud bang!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do not touch it! Switch off the power first, then we will look at it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Telling him to buy a new toaster",
+                  "Telling him to switch off the power",
+                  "Asking him to carry it outside"
+                ],
+                "answer": 1,
+                "explanation": "She tells him not to touch it and to switch off the power first."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fern",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Fabian",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Our team has won the prize for the best energy idea!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is wonderful news! You have worked so hard for this."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "How does the man feel?",
+                "options": [
+                  "Happy for the team",
+                  "Jealous of the prize",
+                  "Tired of the idea"
+                ],
+                "answer": 0,
+                "explanation": "He says that it is wonderful news and they have worked hard."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fenn",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Freya",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, do you know how much a ticket to the wind farm costs?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is free. You only pay for the bus, which is three pounds."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the man want to know?",
+                "options": [
+                  "The way to the wind farm",
+                  "The time of the next bus",
+                  "The price of a ticket"
+                ],
+                "answer": 2,
+                "explanation": "He asks how much a ticket costs."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fiona",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Finn",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "The lights in the gym are on again, and nobody is there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I will turn them off. People forget so easily."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What will the man do next?",
+                "options": [
+                  "Switch off the lights",
+                  "Call the head teacher",
+                  "Close the gym door"
+                ],
+                "answer": 0,
+                "explanation": "He says that he will turn them off."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Felix",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Faith",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "My laptop battery is almost dead, and I cannot find the charger."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can borrow mine. It is in my bag, in the front pocket."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the man's problem?",
+                "options": [
+                  "His homework file is lost",
+                  "His screen is broken now",
+                  "He has no charger"
+                ],
+                "answer": 2,
+                "explanation": "He cannot find the charger."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a wind farm",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "nathalie",
+                "name": "Fiona",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "nathalie",
+                "text": "Welcome to Hill Top Wind Farm. My name is Fiona, and I am an engineer here. The farm was built six years ago, and it has twenty turbines. Each turbine is eighty metres tall, which is about as high as a twenty-storey building. Together they make enough electricity for fifteen thousand homes. The wind blows most strongly in winter, so that is when we make the most power. When there is no wind at all, the blades stop by themselves. We have a team of ten people who check the machines every day. Birds are sometimes a problem, so we have a special camera that can see them and slow the blades down. Today, you will walk around the farm for about one hour. Please stay on the path, and please do not touch the machines. At the end, there is a café with hot drinks and a small shop. Are you ready to start?"
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The farm was built ___ years ago",
+              "answer": "six",
+              "accepted": [
+                "6"
+              ],
+              "explanation": "The farm was built six years ago."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "It has ___ turbines",
+              "answer": "twenty",
+              "accepted": [
+                "20"
+              ],
+              "explanation": "It has twenty turbines."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Each turbine is ___ metres tall",
+              "answer": "eighty",
+              "accepted": [
+                "80"
+              ],
+              "explanation": "Each turbine is eighty metres tall."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "The farm makes power for ___ homes",
+              "answer": "fifteen thousand",
+              "accepted": [
+                "15,000",
+                "15000"
+              ],
+              "explanation": "Enough electricity for fifteen thousand homes."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The wind is strongest in ___",
+              "answer": "winter",
+              "accepted": [],
+              "explanation": "The wind blows most strongly in winter."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "The walk takes about ___ hour",
+              "answer": "one",
+              "accepted": [
+                "1",
+                "an"
+              ],
+              "explanation": "You will walk around the farm for about one hour."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with an electrician",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "i",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "h",
+                "name": "Fabian",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "i",
+                "text": "Fabian, you are an electrician. Why did you choose this job?"
+              },
+              {
+                "speaker": "h",
+                "text": "I have always liked solving problems. When something stops working, I want to find out why. It is like being a detective."
+              },
+              {
+                "speaker": "i",
+                "text": "What does a normal day look like?"
+              },
+              {
+                "speaker": "h",
+                "text": "I visit about four houses. I fix broken sockets, put in new lights and sometimes help people to fit solar panels on their roofs."
+              },
+              {
+                "speaker": "i",
+                "text": "Is the job dangerous?"
+              },
+              {
+                "speaker": "h",
+                "text": "It can be if you are careless. The first rule is always to switch off the power. I check three times before I touch a wire."
+              },
+              {
+                "speaker": "i",
+                "text": "What is the strangest problem you have had?"
+              },
+              {
+                "speaker": "h",
+                "text": "A family called me because their lights flickered at night. In the end, I found that a mouse had eaten part of a cable."
+              },
+              {
+                "speaker": "i",
+                "text": "Is it hard to learn?"
+              },
+              {
+                "speaker": "h",
+                "text": "It takes about four years of study and practice. But the work is steady, and good electricians are always needed."
+              },
+              {
+                "speaker": "i",
+                "text": "What advice do you have for young people?"
+              },
+              {
+                "speaker": "h",
+                "text": "Learn the basics at school, especially mathematics, and never be afraid to ask questions. Safety comes first."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "Why did Fabian choose his job?",
+              "options": [
+                "His father was an electrician",
+                "He likes solving problems",
+                "He wanted to earn a lot"
+              ],
+              "answer": 1,
+              "explanation": "He has always liked solving problems."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What does he sometimes help people with?",
+              "options": [
+                "Building new houses",
+                "Fitting solar panels",
+                "Painting the walls"
+              ],
+              "answer": 1,
+              "explanation": "He sometimes helps people to fit solar panels on their roofs."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What is the first rule of safety?",
+              "options": [
+                "Switch off the power",
+                "Wear thick rubber gloves",
+                "Work with a good friend"
+              ],
+              "answer": 0,
+              "explanation": "The first rule is always to switch off the power."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What caused the flickering lights?",
+              "options": [
+                "A bulb was very old indeed",
+                "A storm had hit the house",
+                "A mouse had eaten a cable"
+              ],
+              "answer": 2,
+              "explanation": "A mouse had eaten part of a cable."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "How long does it take to learn?",
+              "options": [
+                "About one single year",
+                "About four years",
+                "About ten long years"
+              ],
+              "answer": 1,
+              "explanation": "It takes about four years of study and practice."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What subject does he recommend?",
+              "options": [
+                "Mathematics",
+                "History",
+                "Music"
+              ],
+              "answer": 0,
+              "explanation": "Learn the basics at school, especially mathematics."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s71-1-1",
+              "prompt": "How do you use electricity at home every day?"
+            },
+            {
+              "id": "s71-1-2",
+              "prompt": "Do you try to save energy? What do you do?"
+            },
+            {
+              "id": "s71-1-3",
+              "prompt": "What would you do if the lights went out for a whole day?"
+            },
+            {
+              "id": "s71-1-4",
+              "prompt": "Do you prefer to walk, cycle or take a bus to school?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "Workers in orange jackets fitting solar panels on a roof.",
+          "images": [
+            {
+              "id": "s71-2-solar",
+              "title": "Workers fitting solar panels on a roof",
+              "alt": "Workers in orange safety jackets fit dark solar panels on a roof.",
+              "describeHints": [
+                "workers in orange jackets",
+                "dark solar panels",
+                "a sloping roof",
+                "a red-brown roof"
+              ],
+              "image": {
+                "id": "s71-2-solar",
+                "src": "assets/images/exams/cambridge-pet-71/s71-2-solar-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-71/s71-2-solar-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "Workers in orange safety jackets fit dark solar panels on a roof.",
+                "credit": {
+                  "author": "Alex Gill Marley",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayrshire_wiki.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A green school day",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your school wants to hold a green day to teach students about saving energy. Talk about the different activities that you could organise and decide which would be the most useful.",
+          "images": [
+            {
+              "id": "s71-3-bike",
+              "title": "Students riding bicycles",
+              "alt": "Two cyclists ride along a flat field at sunset. They look like dark silhouettes against the bright sky.",
+              "describeHints": [
+                "two cyclists",
+                "a flat field",
+                "a bright evening sky",
+                "a wooden pole beside the field"
+              ],
+              "image": {
+                "id": "s71-3-bike",
+                "src": "assets/images/exams/cambridge-pet-71/s71-3-bike-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-71/s71-3-bike-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "Two cyclists ride along a flat field at sunset. They look like dark silhouettes against the bright sky.",
+                "credit": {
+                  "author": "Ashikul Islam Anik",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:In_a_village_of_Meherpur_District,_students_set_out_for_school_by_bicycle_in_the_morning.jpg"
+                }
+              }
+            },
+            {
+              "id": "s71-3-turbine",
+              "title": "A model wind turbine",
+              "alt": "A model wind turbine with blades stands on a clear base. Tools and parts lie on the workbench around it.",
+              "describeHints": [
+                "a model wind turbine",
+                "a clear plastic base",
+                "tools on the workbench",
+                "wires and parts"
+              ],
+              "image": {
+                "id": "s71-3-turbine",
+                "src": "assets/images/exams/cambridge-pet-71/s71-3-turbine-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-71/s71-3-turbine-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A model wind turbine with blades stands on a clear base. Tools and parts lie on the workbench around it.",
+                "credit": {
+                  "author": "ALGurung",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wind_turbine_angle_view.JPG"
+                }
+              }
+            },
+            {
+              "id": "s71-3-recycle",
+              "title": "Recycling bins in a corridor",
+              "alt": "Several grey recycling bins stand in a row outside a red-brick building. Trees grow behind them.",
+              "describeHints": [
+                "a row of grey recycling bins",
+                "a red-brick building",
+                "arched doorways",
+                "trees behind the bins"
+              ],
+              "image": {
+                "id": "s71-3-recycle",
+                "src": "assets/images/exams/cambridge-pet-71/s71-3-recycle-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-71/s71-3-recycle-600.webp",
+                "width": 1000,
+                "height": 484,
+                "alt": "Several grey recycling bins stand in a row outside a red-brick building. Trees grow behind them.",
+                "credit": {
+                  "author": "Peulle",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Recycling_bins_Drammen.jpg"
+                }
+              }
+            },
+            {
+              "id": "s71-3-garden",
+              "title": "Students planting a school garden",
+              "alt": "Two people in red and black tops kneel by a concrete wall and work on the ground.",
+              "describeHints": [
+                "two people kneeling",
+                "red and black tops",
+                "a concrete wall",
+                "bare soil on the ground"
+              ],
+              "image": {
+                "id": "s71-3-garden",
+                "src": "assets/images/exams/cambridge-pet-71/s71-3-garden-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-71/s71-3-garden-600.webp",
+                "width": 1000,
+                "height": 663,
+                "alt": "Two people in red and black tops kneel by a concrete wall and work on the ground.",
+                "credit": {
+                  "author": "Forest Service Northern Region from Missoula, MT, USA",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Somers_Middle_School_Planting_Native_Garden_(8952742968).jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Somers_Middle_School_Planting_Native_Garden_(8952742968).jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s71-4-1",
+              "prompt": "Do you think that people waste too much electricity? Why?"
+            },
+            {
+              "id": "s71-4-2",
+              "prompt": "Which kind of clean energy do you think is the best? Why?"
+            },
+            {
+              "id": "s71-4-3",
+              "prompt": "Would you like to work in the energy industry? Why or why not?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

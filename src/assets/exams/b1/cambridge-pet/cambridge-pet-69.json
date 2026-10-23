@@ -1,0 +1,1683 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-69",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Robots and Artificial Intelligence",
+  "subtitle": "Building a first robot, robots in everyday life and a robot designer",
+  "theme": "Robots and artificial intelligence",
+  "category": "science",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "ROBOT CLUB: Every Thursday after school in Room 12. Build and program your own robot. No experience needed, and all equipment is provided.",
+            "Message from Dara: Leo, the robot vacuum cleaner is stuck under the sofa again. Please free it before Mum comes home!",
+            "SCIENCE MUSEUM: Meet Max, our talking robot. He answers questions about space, animals and history. Ask him anything between ten and four.",
+            "WARNING: Do not touch the robot arm while it is moving. Wait for the green light before you come closer.",
+            "COMPETITION: Design a robot that could help old people at home. Send your drawing and a short description to the teacher by Friday."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "When does the robot club meet?",
+              "options": [
+                "On Saturday mornings",
+                "During the lunch break",
+                "On Thursdays after school"
+              ],
+              "answer": 2,
+              "explanation": "Every Thursday after school in Room 12."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What does Dara ask Leo to do?",
+              "options": [
+                "Clean the sofa for Mum",
+                "Rescue the vacuum cleaner",
+                "Buy a new cleaner"
+              ],
+              "answer": 1,
+              "explanation": "She asks him to free the vacuum cleaner from under the sofa."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What can visitors do at the museum?",
+              "options": [
+                "Ask a robot some questions",
+                "Build a robot with an expert",
+                "Watch a film about space"
+              ],
+              "answer": 0,
+              "explanation": "Max answers questions between ten and four."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "When can people come closer to the robot arm?",
+              "options": [
+                "After it has stopped working",
+                "When the green light is on",
+                "If a guide is with them"
+              ],
+              "answer": 1,
+              "explanation": "Wait for the green light before you come closer."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What must students send to the teacher?",
+              "options": [
+                "A video of their robot",
+                "A model made of paper",
+                "A drawing and a short text"
+              ],
+              "answer": 2,
+              "explanation": "Send your drawing and a short description."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Technology and you",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Dalia loves building things. She would like to join a weekend workshop where she can make a simple robot from parts."
+            },
+            {
+              "id": "p2",
+              "text": "Damon is worried that robots will take people's jobs. He wants to go to a debate about how technology will change work."
+            },
+            {
+              "id": "p3",
+              "text": "Daria wants to learn how to write programs. She is a complete beginner and prefers to study online at her own speed."
+            },
+            {
+              "id": "p4",
+              "text": "Davin's grandfather lives alone. Davin is looking for a device that can remind the old man to take his medicine."
+            },
+            {
+              "id": "p5",
+              "text": "Delia likes stories about the future. She is looking for a novel in which robots and people live together."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Code at Home",
+              "text": "A free online course for beginners. Watch short videos and practise whenever you like."
+            },
+            {
+              "id": "B",
+              "title": "Robot Parts Weekend",
+              "text": "A two-day workshop where you build a simple robot from a kit. All parts included."
+            },
+            {
+              "id": "C",
+              "title": "Future Jobs Debate",
+              "text": "Experts and students discuss which jobs robots will do, and which ones they will never do."
+            },
+            {
+              "id": "D",
+              "title": "Helper Robot for Seniors",
+              "text": "A small machine that talks, gives reminders for medicine and calls family in an emergency."
+            },
+            {
+              "id": "E",
+              "title": "Mars Garden",
+              "text": "A novel about a family who grow vegetables on another planet."
+            },
+            {
+              "id": "F",
+              "title": "Cities of Tomorrow",
+              "text": "A science fiction book in which robots work next to people in a busy city."
+            },
+            {
+              "id": "G",
+              "title": "Gaming Night",
+              "text": "Play computer games with other young people. Snacks provided."
+            },
+            {
+              "id": "H",
+              "title": "Phone Repair Shop",
+              "text": "We fix broken screens in thirty minutes."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Dalia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Robot Parts Weekend is a two-day workshop where you build a simple robot from a kit."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Damon",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Future Jobs Debate discusses which jobs robots will do."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Daria",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Code at Home is a free online course for beginners to practise at their own speed."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Davin",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Helper Robot for Seniors gives reminders for medicine."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Delia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "Cities of Tomorrow is a science fiction book in which robots work next to people."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Meet my robot",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last year, I built my first robot with my father. It took us three months, working every weekend in the garage. It looks a bit like a small dog, with four wheels and two cameras instead of eyes. I called it Pixel.\n\nAt first, nothing worked. Pixel could not move in a straight line, and it kept running into the wall. My father said that we should not give up, because every mistake teaches you something. He was right. We changed the program, and after a week, Pixel could follow me around the garden.\n\nNow it can do much more. It can carry my school bag, and it can take pictures when I tell it to. My little brother loves it and wants to teach it to play football. Unfortunately, Pixel is not very good at that, and last week it knocked over a flowerpot.\n\nOne day, I would like to build a robot that helps people who cannot walk. I know it will be difficult, but I have already started reading about it. My father says that if I keep working hard, I may be able to do it by the age of twenty.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "How long did it take to build the robot?",
+              "options": [
+                "Three months",
+                "One year",
+                "A few days"
+              ],
+              "answer": 0,
+              "explanation": "It took three months, working every weekend."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What was the first problem?",
+              "options": [
+                "It could not go in a straight line",
+                "It stopped working in the rain",
+                "It was too heavy to move"
+              ],
+              "answer": 0,
+              "explanation": "Pixel could not move in a straight line."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did the writer's father say about mistakes?",
+              "options": [
+                "They cost a lot of money",
+                "They help you to learn",
+                "They are not important"
+              ],
+              "answer": 1,
+              "explanation": "Every mistake teaches you something."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What can Pixel do now?",
+              "options": [
+                "Do the washing up",
+                "Cook a simple meal",
+                "Carry a school bag"
+              ],
+              "answer": 2,
+              "explanation": "It can carry my school bag."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What does the writer want to do in the future?",
+              "options": [
+                "Sell robots to schools",
+                "Win a robot football match",
+                "Build a robot for people who cannot walk"
+              ],
+              "answer": 2,
+              "explanation": "He would like to build a robot that helps people who cannot walk."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "Robots in everyday life",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Many people think of robots as machines from films, but they are already part of everyday life. [1] They do jobs that are dull, dirty or dangerous for human beings.\n\nIn factories, robots build cars. [2] They can work all day and night without getting tired, and they rarely make a mistake.\n\nIn hospitals, some robots help doctors with difficult operations. [3] Their hands never shake, which makes the work safer for the patient.\n\nAt home, small robots clean floors and cut the grass. [4] Many people say that they have more free time now.\n\nIn the future, robots may even look after children and old people. [5] Others worry that people will become too lonely if machines do all the caring.",
+          "sentences": [
+            "Some experts believe that this will be a great help for busy families.",
+            "The robot arm can be controlled from another room.",
+            "This is one reason why prices of cars have not risen so quickly.",
+            "There are about two million of them working across the world.",
+            "These machines are cheap enough for ordinary families to buy.",
+            "They were first invented more than two hundred years ago."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "D",
+              "explanation": "About two million of them work across the world, and the next sentence says what they do."
+            },
+            {
+              "id": "r4-2",
+              "answer": "C",
+              "explanation": "Robots help to keep the prices of cars down, and the next sentence says they work day and night."
+            },
+            {
+              "id": "r4-3",
+              "answer": "B",
+              "explanation": "The arm can be controlled from another room, and the next sentence says their hands never shake."
+            },
+            {
+              "id": "r4-4",
+              "answer": "E",
+              "explanation": "The machines are cheap enough for ordinary families, which leads to the idea of more free time."
+            },
+            {
+              "id": "r4-5",
+              "answer": "A",
+              "explanation": "Some experts believe it will help families, and \"Others worry\" gives the contrast."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "An email about a school project",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Hi Sam, I am writing to tell you about our science project. Our teacher has asked us to make a model of a robot, [1] I have started to think about the design. I would like it to have two arms and a round head. It could be made [2] cardboard and plastic bottles. Could you bring the glue and the paint on Monday? I [3] to the shop yesterday, but they did not have the colours I needed. We have to finish the model [4] Friday, so we do not have much time. My dad can help us if we need him, because he is very good [5] making things. I think we will get a good mark if we work hard and do not leave everything until the [6] minute. See you soon, Nina",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "but",
+                "so",
+                "or",
+                "because"
+              ],
+              "answer": 1,
+              "explanation": "The teacher asked, so I have started: result."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "of",
+                "in",
+                "by",
+                "with"
+              ],
+              "answer": 0,
+              "explanation": "Made of cardboard describes the material."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "go",
+                "have gone",
+                "was going",
+                "went"
+              ],
+              "answer": 3,
+              "explanation": "Yesterday requires the past simple."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "until",
+                "at",
+                "by",
+                "during"
+              ],
+              "answer": 2,
+              "explanation": "By Friday means no later than Friday."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "on",
+                "in",
+                "at",
+                "for"
+              ],
+              "answer": 2,
+              "explanation": "Good at making things: the adjective with at."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "final",
+                "last",
+                "end",
+                "late"
+              ],
+              "answer": 1,
+              "explanation": "The last minute is a fixed expression."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Can machines think?",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Computers can do many things better than people. They can add up huge numbers in a second, and they never forget [1] they have learned. Some of them can even beat the best chess players in the world. However, many experts say that computers do not really think [2] we do. A computer follows rules that people have written, and it cannot understand why those rules exist. It also has no feelings. When you say something funny, a computer will not laugh unless somebody has [3] it to do so. Some scientists are trying to make machines that can learn by themselves, [4] watching and trying again, just like a child. Perhaps one day, there will be a machine that [5] truly intelligent. Nobody knows when this will happen, or [6] it will happen at all.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "what",
+              "accepted": [
+                "anything",
+                "everything"
+              ],
+              "explanation": "They never forget what they have learned: the object of forget."
+            },
+            {
+              "id": "r6-2",
+              "answer": "like",
+              "accepted": [
+                "as"
+              ],
+              "explanation": "Do not think like we do: a comparison."
+            },
+            {
+              "id": "r6-3",
+              "answer": "told",
+              "accepted": [
+                "programmed",
+                "taught",
+                "asked",
+                "made"
+              ],
+              "explanation": "Somebody has told it to do so: a past participle."
+            },
+            {
+              "id": "r6-4",
+              "answer": "by",
+              "explanation": "By watching and trying again: the means."
+            },
+            {
+              "id": "r6-5",
+              "answer": "is",
+              "explanation": "A machine that is truly intelligent: the verb to be."
+            },
+            {
+              "id": "r6-6",
+              "answer": "if",
+              "accepted": [
+                "whether"
+              ],
+              "explanation": "Nobody knows if it will happen at all: an indirect question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Ravi has just got a robot toy for his birthday. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Say happy birthday.",
+              "Say what you would use a robot for.",
+              "Suggest something to do together.",
+              "Ask what it can do."
+            ],
+            "sourceEmail": {
+              "from": "Ravi",
+              "subject": "My new robot!",
+              "body": "Guess what? I got a robot for my birthday! It is small, but it can dance and sing. Would you like to see it? What would you do if you had your own robot?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say happy birthday.",
+                "keywords": [
+                  "happy",
+                  "birthday",
+                  "congratulations",
+                  "great",
+                  "lucky",
+                  "wonderful",
+                  "hope"
+                ]
+              },
+              {
+                "text": "Say what you would use a robot for.",
+                "keywords": [
+                  "would",
+                  "homework",
+                  "clean",
+                  "carry",
+                  "help",
+                  "tidy",
+                  "bring"
+                ]
+              },
+              {
+                "text": "Suggest something to do together.",
+                "keywords": [
+                  "together",
+                  "come",
+                  "let",
+                  "why not",
+                  "weekend",
+                  "visit",
+                  "play"
+                ]
+              },
+              {
+                "text": "Ask what it can do.",
+                "keywords": [
+                  "what",
+                  "can",
+                  "how",
+                  "does",
+                  "else",
+                  "do",
+                  "it"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! Will robots make our lives better? Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Say what you think.",
+                  "keywords": [
+                    "think",
+                    "believe",
+                    "opinion",
+                    "yes",
+                    "no",
+                    "better",
+                    "worse"
+                  ]
+                },
+                {
+                  "text": "Give reasons.",
+                  "keywords": [
+                    "because",
+                    "help",
+                    "work",
+                    "jobs",
+                    "safe",
+                    "time",
+                    "tired"
+                  ]
+                },
+                {
+                  "text": "Say what could be a problem.",
+                  "keywords": [
+                    "problem",
+                    "danger",
+                    "lonely",
+                    "jobs",
+                    "lose",
+                    "risk",
+                    "worry"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "The robot stopped in the middle of the room and said my name.",
+              "contentPoints": [
+                {
+                  "text": "Say what the robot wanted.",
+                  "keywords": [
+                    "wanted",
+                    "asked",
+                    "help",
+                    "needed",
+                    "wish",
+                    "message",
+                    "told"
+                  ]
+                },
+                {
+                  "text": "Say what you did.",
+                  "keywords": [
+                    "ran",
+                    "answered",
+                    "called",
+                    "followed",
+                    "listened",
+                    "replied",
+                    "laughed"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "finally",
+                    "in the end",
+                    "friends",
+                    "happy",
+                    "smiled",
+                    "learned",
+                    "together"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Damon",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Dara",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Can your robot do the homework for you?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, it only helps me to find information. I still have to write the answers."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "What does the robot help the girl to do?",
+                "options": [
+                  "Write the answers",
+                  "Find information",
+                  "Draw pictures"
+                ],
+                "answer": 1,
+                "explanation": "She says that it helps her to find information."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Dalia",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Davin",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How much did your new tablet cost?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Three hundred pounds, but my father paid half because it was my birthday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "Who paid half of the price?",
+                "options": [
+                  "His father",
+                  "His sister",
+                  "His grandmother"
+                ],
+                "answer": 0,
+                "explanation": "He says that his father paid half."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Leo",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Delia",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Is the robot club on tonight?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, it has been moved to Friday because the teacher is ill."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Why has the robot club been moved?",
+                "options": [
+                  "The teacher is ill",
+                  "The room is closed",
+                  "The robot is broken"
+                ],
+                "answer": 0,
+                "explanation": "She says that the teacher is ill."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Daria",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Dev",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What did you think of the film about the robots?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It was exciting, but the ending was a bit sad for me."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What did the man think of the ending?",
+                "options": [
+                  "It was funny",
+                  "It was sad",
+                  "It was boring"
+                ],
+                "answer": 1,
+                "explanation": "He says that the ending was a bit sad."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Damon",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Dalia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Where can I charge my phone?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "There is a socket behind the desk, next to the window."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Where is the socket?",
+                "options": [
+                  "Under the table",
+                  "Next to the door",
+                  "Behind the desk"
+                ],
+                "answer": 2,
+                "explanation": "She says that it is behind the desk."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Delia",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Davin",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Are you going to buy the new game?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not yet. I will wait for the price to come down after Christmas."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "When will the man buy the game?",
+                "options": [
+                  "After Christmas",
+                  "This weekend",
+                  "Next summer"
+                ],
+                "answer": 0,
+                "explanation": "He says that he will wait until after Christmas."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Leo",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Dara",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Did you make this robot yourself?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "My brother helped me with the wheels, but I did the program alone."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What did the girl do by herself?",
+                "options": [
+                  "Made the wheels",
+                  "Wrote the program",
+                  "Painted the body"
+                ],
+                "answer": 1,
+                "explanation": "She says that she did the program alone."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Dara",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Dev",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Welcome to the robot show. Please take a seat in the front row."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. My son has been looking forward to this for weeks."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Where does the conversation take place?",
+                "options": [
+                  "In a restaurant",
+                  "At a football match",
+                  "At a robot show"
+                ],
+                "answer": 2,
+                "explanation": "She welcomes him to the robot show and offers a seat."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Damon",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Delia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I cannot get the program to work. I have tried everything!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do not give up. Let us look at it together, and we will find the mistake."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Telling him to stop for today",
+                  "Offering to work on it together",
+                  "Laughing at his mistake"
+                ],
+                "answer": 1,
+                "explanation": "She offers to look at the program together and find the mistake."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Dalia",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Davin",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Did you hear? Our team won the robot contest!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really? That is fantastic news! I am so proud of all of you."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "How does the man feel?",
+                "options": [
+                  "Proud of the team",
+                  "Worried about the contest",
+                  "Tired of the news"
+                ],
+                "answer": 0,
+                "explanation": "He says that he is proud of all of them."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Leo",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Daria",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, how do I turn this machine on?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Press the red button on the side, and wait for the screen to light up."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the man want to know?",
+                "options": [
+                  "What time the shop opens",
+                  "Where to buy a ticket",
+                  "How to start a machine"
+                ],
+                "answer": 2,
+                "explanation": "He asks how to turn the machine on."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Dara",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Dev",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "The museum closes at five, but the robot show is at four thirty."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then we should hurry. I do not want to miss it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What are the speakers worried about?",
+                "options": [
+                  "Missing the show",
+                  "Spending too much",
+                  "Losing their way"
+                ],
+                "answer": 0,
+                "explanation": "The man says he does not want to miss the show."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Damon",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Dalia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "My laptop has stopped working, and I have an essay due tomorrow."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can use mine. I am not going to need it this evening."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the man's problem?",
+                "options": [
+                  "His teacher is angry",
+                  "His essay is too long",
+                  "His laptop is broken"
+                ],
+                "answer": 2,
+                "explanation": "He says that his laptop has stopped working."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a robot competition",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "nathalie",
+                "name": "Dara",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "nathalie",
+                "text": "Good morning, everyone. I am Dara, the organiser of this year's school robot competition. It will take place on the twelfth of May in the main hall. Last year, twenty teams took part, and this year we hope for thirty. Each team can have up to four students. You have three months to build your robot, and you can use any materials you like, but the total cost must be under fifty pounds. The robot must be able to pick up a ball and carry it across the room. The judges will give points for speed, for strong design and for clever ideas. The winning team will receive a trophy and a free trip to the science museum. Please give me your team name by the end of next week. If you need help with the rules, ask Mr Evans, who teaches technology. Good luck, and have fun!"
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The competition is on the ___ of May",
+              "answer": "twelfth",
+              "accepted": [
+                "12th"
+              ],
+              "explanation": "It will take place on the twelfth of May."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Last year, ___ teams took part",
+              "answer": "twenty",
+              "accepted": [
+                "20"
+              ],
+              "explanation": "Last year, twenty teams took part."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Each team can have up to ___ students",
+              "answer": "four",
+              "accepted": [
+                "4"
+              ],
+              "explanation": "Each team can have up to four students."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "The cost of a robot must be under ___ pounds",
+              "answer": "fifty",
+              "accepted": [
+                "50"
+              ],
+              "explanation": "The total cost must be under fifty pounds."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The robot has to carry a ___",
+              "answer": "ball",
+              "accepted": [],
+              "explanation": "It must be able to pick up a ball and carry it."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "The winners will get a trip to the ___ museum",
+              "answer": "science",
+              "accepted": [],
+              "explanation": "A free trip to the science museum."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a robot designer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "i",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "h",
+                "name": "Dev",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "i",
+                "text": "Dev, you design robots for a living. How did you become interested?"
+              },
+              {
+                "speaker": "h",
+                "text": "When I was seven, my grandfather gave me a toy robot. I took it apart to see how it worked, and I never put it back together."
+              },
+              {
+                "speaker": "i",
+                "text": "What kind of robots do you make today?"
+              },
+              {
+                "speaker": "h",
+                "text": "I make small ones that help in hospitals. They carry food and medicine to the rooms, so that nurses have more time for patients."
+              },
+              {
+                "speaker": "i",
+                "text": "Do people feel comfortable with them?"
+              },
+              {
+                "speaker": "h",
+                "text": "At first, no. Some patients were afraid. So we gave the robots a friendly face and a gentle voice, and that changed everything."
+              },
+              {
+                "speaker": "i",
+                "text": "What is the biggest problem in your work?"
+              },
+              {
+                "speaker": "h",
+                "text": "Making them safe. A robot must never hurt anyone, so we test each one for months before it leaves the factory."
+              },
+              {
+                "speaker": "i",
+                "text": "Will robots take away people's jobs?"
+              },
+              {
+                "speaker": "h",
+                "text": "Some jobs will change, but I think new ones will appear. Somebody has to design, build and repair the machines."
+              },
+              {
+                "speaker": "i",
+                "text": "What do you do when you are not working?"
+              },
+              {
+                "speaker": "h",
+                "text": "I play the guitar. It is the one thing that no robot can do as well as a person with feelings."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Dev become interested in robots?",
+              "options": [
+                "He saw a robot in a film",
+                "He took a toy robot apart",
+                "He studied at a famous school"
+              ],
+              "answer": 1,
+              "explanation": "He took his toy robot apart and never put it back."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What do his robots do?",
+              "options": [
+                "They clean hospital floors",
+                "They carry food and medicine",
+                "They talk to the patients"
+              ],
+              "answer": 1,
+              "explanation": "They carry food and medicine to the rooms."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "How did he make patients less afraid?",
+              "options": [
+                "By giving robots a friendly face",
+                "By making the robots smaller",
+                "By hiding them in boxes"
+              ],
+              "answer": 0,
+              "explanation": "They gave the robots a friendly face and a gentle voice."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What is the biggest problem in his work?",
+              "options": [
+                "Getting good materials",
+                "Finding enough money",
+                "Making robots safe"
+              ],
+              "answer": 2,
+              "explanation": "Making them safe."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What does he think about jobs?",
+              "options": [
+                "Nobody will have work",
+                "New jobs will appear",
+                "Nothing will change at all"
+              ],
+              "answer": 1,
+              "explanation": "He thinks that new jobs will appear."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What does he do in his free time?",
+              "options": [
+                "Plays the guitar",
+                "Builds model planes",
+                "Goes to the cinema"
+              ],
+              "answer": 0,
+              "explanation": "He plays the guitar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s69-1-1",
+              "prompt": "What technology do you use every day?"
+            },
+            {
+              "id": "s69-1-2",
+              "prompt": "Would you like to have a robot at home? Why or why not?"
+            },
+            {
+              "id": "s69-1-3",
+              "prompt": "Do you enjoy films about the future? Tell me about one."
+            },
+            {
+              "id": "s69-1-4",
+              "prompt": "Are you good at using computers?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A boy and a small robot on the floor, with adults watching.",
+          "images": [
+            {
+              "id": "s69-2-robot",
+              "title": "A boy with a small robot",
+              "alt": "A small white robot stands on a grey floor. A young boy and several adults stand around it in a large room.",
+              "describeHints": [
+                "a small white robot",
+                "a young boy",
+                "adults standing around",
+                "a grey floor"
+              ],
+              "image": {
+                "id": "s69-2-robot",
+                "src": "assets/images/exams/cambridge-pet-69/s69-2-robot-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-69/s69-2-robot-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A small white robot stands on a grey floor. A young boy and several adults stand around it in a large room.",
+                "credit": {
+                  "author": "Tonynirappathu",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Child_with_Robot_04.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A robot for the school",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your school is going to buy a robot to help students and teachers. Talk about the different jobs that a robot could do and decide which would be the most useful.",
+          "images": [
+            {
+              "id": "s69-3-library",
+              "title": "A robot in a library",
+              "alt": "A grey robot with a black storage box on top stands on a wooden floor. A large window is behind it.",
+              "describeHints": [
+                "a grey delivery robot",
+                "a black storage box on top",
+                "a wooden floor",
+                "a large glass window"
+              ],
+              "image": {
+                "id": "s69-3-library",
+                "src": "assets/images/exams/cambridge-pet-69/s69-3-library-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-69/s69-3-library-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A grey robot with a black storage box on top stands on a wooden floor. A large window is behind it.",
+                "credit": {
+                  "author": "ThePikachin",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helsinki_Central_Library_Oodi_Robot_01.jpg"
+                }
+              }
+            },
+            {
+              "id": "s69-3-classroom",
+              "title": "A robot helping in a class",
+              "alt": "Two girls and a boy look closely at a small robot on a table in a classroom.",
+              "describeHints": [
+                "a small robot on a table",
+                "two girls watching closely",
+                "a boy in a white shirt",
+                "cables and small parts"
+              ],
+              "image": {
+                "id": "s69-3-classroom",
+                "src": "assets/images/exams/cambridge-pet-69/s69-3-classroom-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-69/s69-3-classroom-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "Two girls and a boy look closely at a small robot on a table in a classroom.",
+                "credit": {
+                  "author": "Robolab tech",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Students_working_in_Robolab_Technologies.jpg"
+                }
+              }
+            },
+            {
+              "id": "s69-3-cleaning",
+              "title": "A robot cleaning a floor",
+              "alt": "A white round robot with a black button on top stands on a grey surface.",
+              "describeHints": [
+                "a white round robot",
+                "a black button on top",
+                "a dark round panel on the side",
+                "a grey surface"
+              ],
+              "image": {
+                "id": "s69-3-cleaning",
+                "src": "assets/images/exams/cambridge-pet-69/s69-3-cleaning-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-69/s69-3-cleaning-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A white round robot with a black button on top stands on a grey surface.",
+                "credit": {
+                  "author": "TiHa",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robot_vacuum_cleaner_concept_study_1994.jpg"
+                }
+              }
+            },
+            {
+              "id": "s69-3-sport",
+              "title": "A robot on a sports field",
+              "alt": "Men in camouflage uniforms stand around a small robot on a snowy ground, with a wooden wall behind them.",
+              "describeHints": [
+                "a small tracked robot",
+                "men in camouflage uniforms",
+                "a snowy ground",
+                "a man in an orange T-shirt"
+              ],
+              "image": {
+                "id": "s69-3-sport",
+                "src": "assets/images/exams/cambridge-pet-69/s69-3-sport-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-69/s69-3-sport-600.webp",
+                "width": 1000,
+                "height": 664,
+                "alt": "Men in camouflage uniforms stand around a small robot on a snowy ground, with a wooden wall behind them.",
+                "credit": {
+                  "author": "Staff Sgt. Susan Wilt",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Fox_Sports_NFL_Personalities_Give_Service_Member_Tasks_a_Try_DVIDS221404.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fox_Sports_NFL_Personalities_Give_Service_Member_Tasks_a_Try_DVIDS221404.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s69-4-1",
+              "prompt": "Do you think that robots will be good for the world? Why?"
+            },
+            {
+              "id": "s69-4-2",
+              "prompt": "Would you like to learn how to build a robot? Why or why not?"
+            },
+            {
+              "id": "s69-4-3",
+              "prompt": "Which jobs should never be done by a machine?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

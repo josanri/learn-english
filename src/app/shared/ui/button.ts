@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 /**
  * Button styled as a chunky key. Use it on a native element so keyboard and screen-reader behaviour is free:
- * `<button appButton variant="primary">Start</button>` or `<a appButton routerLink="/b1">B1</a>`.
+ * `<button appButton variant="primary">Start</button>` or `<a appButton routerLink="/exams/b1">B1</a>`.
  */
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector -- attribute component on native elements

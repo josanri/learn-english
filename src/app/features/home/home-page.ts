@@ -5,7 +5,6 @@ import { ExamCatalogueService } from '../../data/exam-catalogue.service';
 import { ProgressSummary } from '../progress/progress-summary';
 import {
   Button,
-  Chip,
   Icon,
   IllustratedCard,
   SkillArt,
@@ -24,14 +23,10 @@ interface SkillCard {
 /** Landing page: hero with the speech bubble, the five skills as illustrated cards, and overall progress. */
 @Component({
   selector: 'app-home-page',
-  imports: [RouterLink, Button, Chip, Icon, IllustratedCard, SkillArt, ProgressSummary],
+  imports: [RouterLink, Button, Icon, IllustratedCard, SkillArt, ProgressSummary],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="hero container" aria-labelledby="hero-title">
-      <ul class="chips" aria-label="About this app">
-        <li><app-chip>Practice exams</app-chip></li>
-        <li><app-chip>Works offline</app-chip></li>
-      </ul>
       <h1 id="hero-title">
         <span class="line">Learn</span>
         <span class="bubble">
@@ -46,7 +41,7 @@ interface SkillCard {
         how you did. Everything stays on your device.
       </p>
       <div class="actions">
-        <a appButton variant="primary" size="lg" routerLink="/b1">
+        <a appButton variant="primary" size="lg" routerLink="/exams/b1">
           Start B1
           <app-icon name="arrow" [size]="22" />
         </a>
@@ -56,7 +51,10 @@ interface SkillCard {
             Install app
           </button>
         }
-        <a appButton size="lg" routerLink="/settings">Settings</a>
+        <a appButton size="lg" routerLink="/settings">
+          <app-icon name="gear" [size]="22" />
+          Settings
+        </a>
       </div>
     </section>
 
@@ -65,14 +63,14 @@ interface SkillCard {
     </section>
 
     <section class="container skills" aria-labelledby="skills-title">
-      <h2 id="skills-title" class="section-title">Practise every skill.</h2>
+      <h2 id="skills-title" class="section-title">Practise every skill</h2>
       <div class="grid">
         @for (skill of skills; track skill.kind) {
           <app-illustrated-card
             [heading]="skill.title"
             [tone]="skill.tone"
             [rotate]="skill.tilt"
-            [link]="'/b1'"
+            [link]="'/exams/b1'"
           >
             <app-skill-art art [kind]="skill.kind" />
             <p>{{ skill.text }}</p>
@@ -84,14 +82,6 @@ interface SkillCard {
   styles: `
     .hero {
       padding-block: var(--space-7) var(--space-8);
-    }
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-2);
-      margin: 0 0 var(--space-5);
-      padding: 0;
-      list-style: none;
     }
     h1 {
       position: relative;

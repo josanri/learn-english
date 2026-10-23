@@ -1,0 +1,1695 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-32",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Hotels and Hostels",
+  "subtitle": "Booking a room, a lighthouse stay and a hotel manager",
+  "theme": "Hotels and hostels",
+  "category": "travel",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "HOTEL BREAKFAST: Served from 7 to 10 a.m. in the garden room. Guests who would like breakfast in their room should tell reception the evening before.",
+            "CHECK-OUT: Rooms must be empty by 11 a.m. You may leave your bags at reception until 4 p.m. at no extra cost.",
+            "SWIMMING POOL: Open 8 a.m. to 8 p.m. Children under twelve must be with an adult. Please shower before you swim, and do not run.",
+            "WI-FI: Free in all rooms. The password is on the card by your bed. In the lobby, the connection is slower, so please do not download large files there.",
+            "HOSTEL KITCHEN: Please wash your dishes and keep your food in a labelled bag in the fridge. Anything left after Sunday will be thrown away."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What should guests do to eat breakfast in their room?",
+              "options": [
+                "Choose from a menu at ten",
+                "Ask a waiter in the morning",
+                "Tell reception the night before"
+              ],
+              "answer": 2,
+              "explanation": "Guests must tell reception the evening before."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What can guests do after they check out?",
+              "options": [
+                "Stay in the room until four",
+                "Leave their bags at reception",
+                "Have breakfast in the garden"
+              ],
+              "answer": 1,
+              "explanation": "They may leave their bags at reception until 4 p.m."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What must children under twelve do?",
+              "options": [
+                "Come with an adult",
+                "Wear a swimming cap",
+                "Swim before noon"
+              ],
+              "answer": 0,
+              "explanation": "Children under twelve must be with an adult."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "Where is the Wi-Fi slower?",
+              "options": [
+                "In the rooms",
+                "In the lobby",
+                "By the pool"
+              ],
+              "answer": 1,
+              "explanation": "The notice says that in the lobby the connection is slower."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What will happen to food left in the fridge after Sunday?",
+              "options": [
+                "It will be kept until Monday",
+                "It will be given to guests",
+                "It will be thrown away"
+              ],
+              "answer": 2,
+              "explanation": "Anything left after Sunday will be thrown away."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Places to stay",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Anika is travelling alone and has very little money. She would like to share a room and meet other travellers. A big breakfast is not important to her."
+            },
+            {
+              "id": "p2",
+              "text": "The Ferreira family has two adults and three children. They need one large place with a kitchen, so they can cook their own meals, and they want to be near the beach."
+            },
+            {
+              "id": "p3",
+              "text": "Gus and Ria want a quiet weekend away for their anniversary. They would like a lovely view and a good restaurant, and they do not mind paying more."
+            },
+            {
+              "id": "p4",
+              "text": "Lennart is on a business trip. He needs a room close to the railway station, with a desk and fast internet, and he wants to eat breakfast very early."
+            },
+            {
+              "id": "p5",
+              "text": "Prue loves being outdoors. She wants to sleep in a small wooden hut beside a lake and cook her food on a fire."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Seaview Guest House",
+              "text": "A friendly family house with seven rooms and a big cooked breakfast. Rooms from seventy pounds."
+            },
+            {
+              "id": "B",
+              "title": "Lakeside Cabins",
+              "text": "Small wooden huts beside the lake. Fire pits are provided. Please bring your own food and bedding."
+            },
+            {
+              "id": "C",
+              "title": "Backpackers' Hostel",
+              "text": "Beds in shared rooms from fifteen pounds. There is a kitchen and a common room, and travellers from all over the world."
+            },
+            {
+              "id": "D",
+              "title": "Hilltop Manor Hotel",
+              "text": "A quiet country hotel with wonderful views and an award-winning restaurant. Rooms from one hundred and eighty pounds."
+            },
+            {
+              "id": "E",
+              "title": "City Capsule Hotel",
+              "text": "Tiny private sleeping pods near the airport, ideal for a short stop. Thirty pounds a night."
+            },
+            {
+              "id": "F",
+              "title": "Beach Apartments",
+              "text": "Flats for up to six people, with a kitchen and a balcony. The sand is only one hundred metres away."
+            },
+            {
+              "id": "G",
+              "title": "Old Mill B&B",
+              "text": "Two rooms in a restored mill, with home-made cake at four o'clock. Adults only."
+            },
+            {
+              "id": "H",
+              "title": "Station Business Hotel",
+              "text": "Opposite the main station. A desk in every room, free fast Wi-Fi, and breakfast from half past five."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Anika",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "The Backpackers' Hostel has shared rooms, is cheap and is full of travellers."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "The Ferreiras",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "The Beach Apartments are for six people, have a kitchen and are by the sand."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Gus and Ria",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Hilltop Manor Hotel is quiet and has views and a restaurant."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Lennart",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "The Station Business Hotel is by the station, with desks, Wi-Fi and early breakfast."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Prue",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "The Lakeside Cabins are wooden huts by a lake with fire pits."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "A night in a lighthouse",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "When my sister suggested spending a weekend in a lighthouse, I thought she was joking. But the old lighthouse on the north coast really is a hotel now, with four bedrooms and a tiny kitchen at the bottom of the tower.\n\nWe arrived on Friday afternoon in heavy rain. The owner, a cheerful man called Mr Baird, showed us to our rooms. Mine was at the top, and to reach it I had to climb a hundred and twenty steps. By the time I arrived, I was out of breath, but the view of the sea through the round window was wonderful.\n\nThat evening, we cooked pasta and played cards while the wind shook the walls. I expected to sleep badly, yet I fell asleep quickly and woke up at six, when the sun came through the window and turned the room orange.\n\nThe next morning, Mr Baird told us how the lighthouse used to guide ships. Sailors depended on it for two hundred years, until a new machine took over in 1998. I asked him if he missed the old days. 'Sometimes,' he said, 'but it is good to share the place with visitors.' We are going back in October.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "What did the writer think when her sister made the suggestion?",
+              "options": [
+                "It was a joke",
+                "It sounded exciting",
+                "It would cost too much"
+              ],
+              "answer": 0,
+              "explanation": "She thought her sister was joking."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What was difficult about the writer's room?",
+              "options": [
+                "Getting up to it",
+                "The size of the bed",
+                "The noise at night"
+              ],
+              "answer": 0,
+              "explanation": "She had to climb a hundred and twenty steps and arrived out of breath."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "How did the writer sleep?",
+              "options": [
+                "She woke up many times",
+                "She fell asleep quickly",
+                "She could not sleep at all"
+              ],
+              "answer": 1,
+              "explanation": "She expected to sleep badly, yet she fell asleep quickly."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What did Mr Baird explain?",
+              "options": [
+                "When the tower was built",
+                "Why the rooms were cheap",
+                "How the lighthouse helped ships"
+              ],
+              "answer": 2,
+              "explanation": "He told them how the lighthouse used to guide ships."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How does Mr Baird feel about the lighthouse now?",
+              "options": [
+                "Tired of the work it needs",
+                "Sad that it is no longer used",
+                "Happy to welcome visitors"
+              ],
+              "answer": 2,
+              "explanation": "He sometimes misses the old days, but it is good to share the place with visitors."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "My first time in a hostel",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Last summer, I travelled around Portugal with my cousin, and we decided to stay in hostels to save money. [1] I had always imagined that they were dirty and noisy, but I could not have been more wrong.\n\nOur first hostel was in Porto, in a lovely old house with a roof terrace. [2] There were six beds in our room, and we shared the bathroom with three other people. At first, I felt shy, but the other guests were friendly. [3] One evening, a group from Brazil invited us to a cooking night, and we made a huge dish of rice and beans.\n\nAnother good thing was the price. We paid only fifteen euros each per night, which left more money for visiting museums and buying food. [4] We even got a free map and advice on where to go.\n\nOf course, hostels are not perfect. [5] If you are a light sleeper, it is a good idea to bring earplugs. Despite this, I would happily stay in one again.",
+          "sentences": [
+            "The staff at reception were helpful too.",
+            "It was my first time in a hostel.",
+            "The main problem is that someone is always snoring.",
+            "We soon began to talk to them every evening.",
+            "The room was simple, but it was clean and bright.",
+            "The weather in Portugal was hot and sunny every day."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "B",
+              "explanation": "\"It was my first time\" explains why she had only imagined what hostels were like."
+            },
+            {
+              "id": "r4-2",
+              "answer": "E",
+              "explanation": "\"There were six beds in our room\" continues the description of the room."
+            },
+            {
+              "id": "r4-3",
+              "answer": "D",
+              "explanation": "\"Them\" means the other guests, who were friendly; the next sentence gives an example."
+            },
+            {
+              "id": "r4-4",
+              "answer": "A",
+              "explanation": "\"Helpful too\" adds another good point, and the map and advice are examples of help."
+            },
+            {
+              "id": "r4-5",
+              "answer": "C",
+              "explanation": "\"Someone is always snoring\" explains why the next sentence mentions earplugs."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "An email to a hotel",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Dear Sir or Madam, I would like to [1] a double room for three nights from 12 to 15 May. My husband and I [2] never visited your city before, and we would like a room [3] a view of the river, if possible. Could you also tell me [4] breakfast is included in the price? We [5] be arriving until late in the evening, around ten o'clock, so please keep the room for us. I look forward [6] hearing from you.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "borrow",
+                "book",
+                "hire",
+                "make"
+              ],
+              "answer": 1,
+              "explanation": "We \"book\" a room in a hotel."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "have",
+                "are",
+                "did",
+                "do"
+              ],
+              "answer": 0,
+              "explanation": "\"Have never visited ... before\" uses the present perfect."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "on",
+                "by",
+                "for",
+                "with"
+              ],
+              "answer": 3,
+              "explanation": "A room \"with a view\" is the usual phrase."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "what",
+                "that",
+                "if",
+                "which"
+              ],
+              "answer": 2,
+              "explanation": "She wants to know whether breakfast is included, so \"if\" fits."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "don't",
+                "aren't",
+                "won't",
+                "haven't"
+              ],
+              "answer": 2,
+              "explanation": "\"Won't be arriving until late\" refers to a future time."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "at",
+                "to",
+                "for",
+                "of"
+              ],
+              "answer": 1,
+              "explanation": "\"Look forward to\" is followed by the -ing form."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Welcome to Sunny Hostel",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Welcome to Sunny Hostel! Breakfast is served [1] 7.30 and 9.30 every morning. Please be quiet [2] eleven o'clock at night, because some guests go to bed early. If you [3] a towel, you can rent one at reception. There is a kitchen [4] you can cook your own meals. [5] you leave, please check that you have taken all your things. We hope [6] will have a lovely stay.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "between",
+              "explanation": "A time from one point to another is shown with \"between ... and\"."
+            },
+            {
+              "id": "r6-2",
+              "answer": "after",
+              "accepted": [
+                "from"
+              ],
+              "explanation": "Quiet time begins at eleven, so \"after\" or \"from\" fits."
+            },
+            {
+              "id": "r6-3",
+              "answer": "need",
+              "accepted": [
+                "want"
+              ],
+              "explanation": "The guest asks for a towel, so \"need\" or \"want\" fits."
+            },
+            {
+              "id": "r6-4",
+              "answer": "where",
+              "explanation": "\"Where\" introduces the place in which guests can cook."
+            },
+            {
+              "id": "r6-5",
+              "answer": "Before",
+              "accepted": [
+                "When"
+              ],
+              "explanation": "The check happens before or when guests leave."
+            },
+            {
+              "id": "r6-6",
+              "answer": "you",
+              "explanation": "The hostel hopes that \"you\" (the guests) will have a nice stay."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Amara is coming to your town and needs a place to stay. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Suggest a hotel or hostel.",
+              "Say how much it costs.",
+              "Say how far it is from the station.",
+              "Ask when she will arrive."
+            ],
+            "sourceEmail": {
+              "from": "Amara",
+              "subject": "Somewhere to stay",
+              "body": "I'm visiting your town next month, and I need somewhere to stay. Can you recommend a place? I don't want to spend too much money. Is it easy to get there from the station?"
+            },
+            "contentPoints": [
+              {
+                "text": "Suggest a hotel or hostel.",
+                "keywords": [
+                  "hotel",
+                  "hostel",
+                  "stay",
+                  "recommend",
+                  "suggest",
+                  "room",
+                  "how about"
+                ]
+              },
+              {
+                "text": "Say how much it costs.",
+                "keywords": [
+                  "cost",
+                  "price",
+                  "pounds",
+                  "euros",
+                  "cheap",
+                  "per night",
+                  "night"
+                ]
+              },
+              {
+                "text": "Say how far it is from the station.",
+                "keywords": [
+                  "station",
+                  "minutes",
+                  "walk",
+                  "bus",
+                  "far",
+                  "near",
+                  "metres"
+                ]
+              },
+              {
+                "text": "Ask when she will arrive.",
+                "keywords": [
+                  "when",
+                  "arrive",
+                  "time",
+                  "what day",
+                  "how long",
+                  "do you"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school website",
+              "prompt": "Articles wanted! The best place I have ever stayed. Where was it? What was it like? Why do you remember it? Write an article for the school website.",
+              "contentPoints": [
+                {
+                  "text": "Say where it was.",
+                  "keywords": [
+                    "was",
+                    "in",
+                    "near",
+                    "city",
+                    "village",
+                    "country",
+                    "beach",
+                    "mountains"
+                  ]
+                },
+                {
+                  "text": "Describe what it was like.",
+                  "keywords": [
+                    "room",
+                    "view",
+                    "big",
+                    "small",
+                    "clean",
+                    "friendly",
+                    "garden",
+                    "food"
+                  ]
+                },
+                {
+                  "text": "Say why you remember it.",
+                  "keywords": [
+                    "because",
+                    "remember",
+                    "special",
+                    "happy",
+                    "fun",
+                    "never forget",
+                    "best"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a family that arrives at a hotel and finds a surprise in their room.",
+              "openingSentence": "When we opened the door of room twelve, nobody said a word.",
+              "contentPoints": [
+                {
+                  "text": "Say what the surprise was.",
+                  "keywords": [
+                    "surprise",
+                    "found",
+                    "bed",
+                    "cake",
+                    "gift",
+                    "animal",
+                    "note",
+                    "letter"
+                  ]
+                },
+                {
+                  "text": "Describe how the family felt.",
+                  "keywords": [
+                    "felt",
+                    "happy",
+                    "shocked",
+                    "laughed",
+                    "scared",
+                    "excited",
+                    "surprised"
+                  ]
+                },
+                {
+                  "text": "Say how the story ends.",
+                  "keywords": [
+                    "finally",
+                    "end",
+                    "later",
+                    "next day",
+                    "after",
+                    "decided",
+                    "smiled"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Richard",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Sinead",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Do you have a single room for tonight?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Single rooms cost fifty pounds, but I only have a double left. I can give it to you for sixty."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That's fine, thank you."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "How much will the man pay?",
+                "options": [
+                  "Fifty pounds",
+                  "Sixty pounds",
+                  "Eighty pounds"
+                ],
+                "answer": 1,
+                "explanation": "The double room is offered to him for sixty pounds."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gwen",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Dylan",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What time do I have to leave my room?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "By eleven o'clock, but you can keep your bags here at reception until four."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What can the woman do?",
+                "options": [
+                  "Leave her bags at reception",
+                  "Stay in her room until four",
+                  "Pay for her room later"
+                ],
+                "answer": 0,
+                "explanation": "The man says she can keep her bags at reception until four."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Quentin",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Bettina",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "What's the Wi-Fi password, please?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It's on the little card next to your bed."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Where can the man find the password?",
+                "options": [
+                  "Next to his bed",
+                  "At reception",
+                  "On the television"
+                ],
+                "answer": 0,
+                "explanation": "The woman says it is on a card next to his bed."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Tamsin",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Lucas",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Excuse me, the shower in my room isn't working."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'm sorry. I'll send someone to fix it. In the meantime, you can use the one on the second floor."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What is the woman's problem?",
+                "options": [
+                  "The room is too cold",
+                  "The shower does not work",
+                  "The lift is broken"
+                ],
+                "answer": 1,
+                "explanation": "She says the shower in her room is not working."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ewan",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Paige",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "When is breakfast?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is from seven until ten, but on Sundays it starts at eight o'clock."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "When can the man have breakfast on Sunday?",
+                "options": [
+                  "From ten o'clock",
+                  "From seven o'clock",
+                  "From eight o'clock"
+                ],
+                "answer": 2,
+                "explanation": "On Sundays breakfast starts at eight o'clock."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Shirley",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Hugo",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How do I get to the hostel from the station?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Take bus twelve and get off at the library. The hostel is just opposite."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "Where should the woman get off the bus?",
+                "options": [
+                  "At the library",
+                  "At the station",
+                  "At the park"
+                ],
+                "answer": 0,
+                "explanation": "The man tells her to get off at the library."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Seamus",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Fleur",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Would you like the sea view or the garden view?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The sea view, please. It's more expensive, but I only come here once a year."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "Why does the man choose the sea view?",
+                "options": [
+                  "It is much cheaper",
+                  "He only comes once a year",
+                  "It is quieter"
+                ],
+                "answer": 1,
+                "explanation": "He says he only comes here once a year."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Janice",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Barnaby",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "I'm afraid the room isn't like the photo on your website. It's tiny, and the window faces a wall."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'm very sorry. Let me see if I can find you another room."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Booking a table",
+                  "Asking for directions",
+                  "Complaining about a room"
+                ],
+                "answer": 2,
+                "explanation": "She says the room is not like the photo and is tiny."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Cormac",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Hadley",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Could I stay two more nights, please?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but you'll have to move to a different room. This one is booked from Friday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What does the man want?",
+                "options": [
+                  "To leave earlier",
+                  "To stay longer",
+                  "To change hostels"
+                ],
+                "answer": 1,
+                "explanation": "He asks to stay two more nights."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Zoe",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Travis",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Why don't we go camping? It's much cheaper than a hotel."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It might rain all weekend."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We'll take a good tent."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "All right, let's do it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What do they decide to do?",
+                "options": [
+                  "Go camping",
+                  "Book a hotel",
+                  "Stay with friends"
+                ],
+                "answer": 0,
+                "explanation": "They agree to go camping with a good tent."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Jerome",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Isobel",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I'm sorry to trouble you, but I've lost my key. I've looked everywhere."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Don't worry. I'll make you a new one. What's your room number?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What is the man's problem?",
+                "options": [
+                  "He missed breakfast",
+                  "He forgot his name",
+                  "He has lost his key"
+                ],
+                "answer": 2,
+                "explanation": "He says he has lost his key."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Clover",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Tobin",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Dad, our class is going to a youth hostel in Wales next month."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "How much does it cost?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Eighty pounds. Can I have the money by Friday?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, I'll give it to you tomorrow."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the girl want from her father?",
+                "options": [
+                  "Money for a trip",
+                  "Help with homework",
+                  "A lift to school"
+                ],
+                "answer": 0,
+                "explanation": "She asks for eighty pounds for the school trip."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Rowan",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Delia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "New guests arrive at three o'clock. Could you clean rooms four and five before then?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. I can do the bathrooms first."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the man asking the woman to do?",
+                "options": [
+                  "Answer the telephone",
+                  "Cook dinner for guests",
+                  "Clean rooms before three"
+                ],
+                "answer": 2,
+                "explanation": "He asks her to clean rooms four and five before three."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "Welcome to the youth hostel",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "leopold",
+                "name": "Leopold",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "leopold",
+                "text": "Hello, everyone, and welcome to Riverside Youth Hostel. My name is Leopold, and I'm the manager. Reception is open from seven in the morning until midnight. After midnight, your key card opens the front door. Breakfast is at eight o'clock in the dining room, and it costs four pounds. There is a laundry on the first floor, and a washing machine costs three pounds. Tonight, we're showing a film in the common room at nine. Tomorrow, we're organising a walk along the river, and we'll meet at the front door at ten o'clock. Finally, quiet time begins at eleven in the evening, so please don't make a noise in the bedrooms after that. Thank you, and enjoy your stay."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "Reception stays open until ___",
+              "answer": "midnight",
+              "explanation": "Reception is open until midnight."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Breakfast costs ___ pounds",
+              "answer": "four",
+              "accepted": [
+                "4"
+              ],
+              "explanation": "Breakfast costs four pounds."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "The laundry is on the ___ floor",
+              "answer": "first",
+              "accepted": [
+                "1st"
+              ],
+              "explanation": "There is a laundry on the first floor."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Tonight's film starts at ___ o'clock",
+              "answer": "nine",
+              "accepted": [
+                "9"
+              ],
+              "explanation": "The film is at nine in the common room."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Guests meet for the walk at the ___ door",
+              "answer": "front",
+              "explanation": "They meet at the front door at ten o'clock."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Quiet time begins at ___ o'clock in the evening",
+              "answer": "eleven",
+              "accepted": [
+                "11"
+              ],
+              "explanation": "Quiet time begins at eleven in the evening."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A hotel manager",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "brigid",
+                "name": "Brigid",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "ansel",
+                "name": "Ansel",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "brigid",
+                "text": "I'm talking to Ansel Hart, who manages a small seaside hotel. Ansel, how did you start in this business?"
+              },
+              {
+                "speaker": "ansel",
+                "text": "I was eighteen, and I began as a cleaner in this very hotel. I wanted to earn some money for college, but I loved the place, so I stayed and learned every job."
+              },
+              {
+                "speaker": "brigid",
+                "text": "Have you ever had a difficult guest?"
+              },
+              {
+                "speaker": "ansel",
+                "text": "Plenty! One man complained that the sea was too noisy at night. I explained that I couldn't turn it off, and he laughed and moved to a quieter room."
+              },
+              {
+                "speaker": "brigid",
+                "text": "What is a normal day like?"
+              },
+              {
+                "speaker": "ansel",
+                "text": "I get up at six and check the breakfast room first. If the tables are clean and the coffee is hot, the rest of the day is easier."
+              },
+              {
+                "speaker": "brigid",
+                "text": "What do you like most about the job?"
+              },
+              {
+                "speaker": "ansel",
+                "text": "Meeting people from so many countries. I have learned a few words in ten languages, and guests enjoy it when I say good morning in their language."
+              },
+              {
+                "speaker": "brigid",
+                "text": "Do people leave strange things behind?"
+              },
+              {
+                "speaker": "ansel",
+                "text": "All the time. Last year, someone left a violin in a wardrobe, and we sent it back to Germany by post. The owner was so happy that he sent us a recording."
+              },
+              {
+                "speaker": "brigid",
+                "text": "And what are your plans?"
+              },
+              {
+                "speaker": "ansel",
+                "text": "We're opening a second hotel in the autumn, on the other side of the bay. I'm excited, but a little nervous."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Ansel start working at the hotel?",
+              "options": [
+                "As a cook",
+                "As a cleaner",
+                "As a receptionist"
+              ],
+              "answer": 1,
+              "explanation": "He began as a cleaner at eighteen."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What was unusual about the noisy guest?",
+              "options": [
+                "He broke a window",
+                "He complained about the sea",
+                "He left without paying"
+              ],
+              "answer": 1,
+              "explanation": "The man complained that the sea was too noisy at night."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does Ansel do first each day?",
+              "options": [
+                "Check the breakfast room",
+                "Read his emails",
+                "Talk to guests"
+              ],
+              "answer": 0,
+              "explanation": "He checks the breakfast room first."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What does Ansel enjoy most about his job?",
+              "options": [
+                "Working short hours",
+                "Having a free room",
+                "Meeting people from many countries"
+              ],
+              "answer": 2,
+              "explanation": "He likes meeting people from so many countries."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What did a guest leave in a wardrobe?",
+              "options": [
+                "A camera",
+                "A violin",
+                "A passport"
+              ],
+              "answer": 1,
+              "explanation": "Someone left a violin in a wardrobe."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What will happen in the autumn?",
+              "options": [
+                "A second hotel will open",
+                "Ansel will retire",
+                "The hotel will close for repairs"
+              ],
+              "answer": 0,
+              "explanation": "They are opening a second hotel in the autumn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s32-1-1",
+              "prompt": "Do you like staying in hotels? Why or why not?"
+            },
+            {
+              "id": "s32-1-2",
+              "prompt": "Where did you stay on your last holiday?"
+            },
+            {
+              "id": "s32-1-3",
+              "prompt": "Tell me about a place that you would like to stay in one day."
+            },
+            {
+              "id": "s32-1-4",
+              "prompt": "Do you prefer to travel with friends or with your family?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "An empty hotel reception area with a long wooden desk and armchairs.",
+          "images": [
+            {
+              "id": "s32-2-reception",
+              "title": "A hotel reception desk",
+              "alt": "An empty reception area with a long wooden desk, a row of armchairs and table lamps. Framed pictures hang on the white walls.",
+              "describeHints": [
+                "a long wooden reception desk",
+                "armchairs with cushions",
+                "table lamps",
+                "framed pictures on white walls"
+              ],
+              "image": {
+                "id": "s32-2-reception",
+                "src": "assets/images/exams/cambridge-pet-32/s32-2-reception-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-32/s32-2-reception-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "An empty reception area with a long wooden desk, a row of armchairs and table lamps. Framed pictures hang on the white walls.",
+                "credit": {
+                  "author": "Basile Morin",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reception_desks_of_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A place to stay",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your friends are planning a holiday and need somewhere to stay. Talk about these places and decide which one would be best.",
+          "images": [
+            {
+              "id": "s32-3-tent",
+              "title": "A tent by a lake",
+              "alt": "A small dark tent stands on the bank of a calm lake. Bare trees line the shore in the evening light.",
+              "describeHints": [
+                "a small dark tent",
+                "a calm lake",
+                "bare trees on the shore",
+                "brown ground by the water"
+              ],
+              "image": {
+                "id": "s32-3-tent",
+                "src": "assets/images/exams/cambridge-pet-32/s32-3-tent-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-32/s32-3-tent-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "A small dark tent stands on the bank of a calm lake. Bare trees line the shore in the evening light.",
+                "credit": {
+                  "author": "Wowan1978",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent_by_Lake_Gosh.jpg"
+                }
+              }
+            },
+            {
+              "id": "s32-3-hostel",
+              "title": "A hostel dormitory",
+              "alt": "A room with two bunk beds made up with white bedding. Curtains hang at the window and the floor is wooden.",
+              "describeHints": [
+                "bunk beds with white bedding",
+                "window curtains",
+                "a wooden floor",
+                "a green curtain"
+              ],
+              "image": {
+                "id": "s32-3-hostel",
+                "src": "assets/images/exams/cambridge-pet-32/s32-3-hostel-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-32/s32-3-hostel-600.webp",
+                "width": 1000,
+                "height": 566,
+                "alt": "A room with two bunk beds made up with white bedding. Curtains hang at the window and the floor is wooden.",
+                "credit": {
+                  "author": "Sgroey",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hostel_6-bed_dorm_room,_Kuching,_Malaysia.jpg"
+                }
+              }
+            },
+            {
+              "id": "s32-3-pool",
+              "title": "A hotel with a pool",
+              "alt": "A swimming pool with blue tiles, with the reflections of palm trees on the water.",
+              "describeHints": [
+                "a swimming pool with blue tiles",
+                "palm tree reflections on the water",
+                "small leaves floating on the water"
+              ],
+              "image": {
+                "id": "s32-3-pool",
+                "src": "assets/images/exams/cambridge-pet-32/s32-3-pool-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-32/s32-3-pool-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "A swimming pool with blue tiles, with the reflections of palm trees on the water.",
+                "credit": {
+                  "author": "Kritzolina",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Swimming_Pool_in_a_hotel_in_Tamil_Nadu_03.jpg"
+                }
+              }
+            },
+            {
+              "id": "s32-3-cottage",
+              "title": "A holiday cottage",
+              "alt": "The inside of a small wooden cottage with yellow walls. A table and chairs stand by a window with trees outside.",
+              "describeHints": [
+                "a small wooden cottage",
+                "yellow walls",
+                "a table and chairs",
+                "trees seen through the window"
+              ],
+              "image": {
+                "id": "s32-3-cottage",
+                "src": "assets/images/exams/cambridge-pet-32/s32-3-cottage-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-32/s32-3-cottage-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "The inside of a small wooden cottage with yellow walls. A table and chairs stand by a window with trees outside.",
+                "credit": {
+                  "author": "Txllxt TxllxT",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands_Open_Air_Museum_-_2020-10-31_-_Rietveld_Holiday_Cottage,_Markelo_05_-_Interior.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s32-4-1",
+              "prompt": "What is the most important thing in a hotel room? Why?"
+            },
+            {
+              "id": "s32-4-2",
+              "prompt": "Would you like to work in a hotel one day? Why or why not?"
+            },
+            {
+              "id": "s32-4-3",
+              "prompt": "Do you think it is better to stay with friends or in a hotel?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

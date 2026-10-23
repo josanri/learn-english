@@ -41,7 +41,7 @@ Everything is saved in the browser: answers, writing drafts, speaking transcript
 
 ## Deployment
 
-`.github/workflows/deploy.yml` lints, tests, validates and builds, then publishes to GitHub Pages. The build uses `--base-href /<repository>/` and copies `index.html` to `404.html`, so deep links such as `/b1/cambridge-pet/cambridge-pet-01/reading` work with clean URLs. The app is an installable PWA (Settings > Install the app, or the install button of the browser) and works offline after the first visit.
+`.github/workflows/deploy.yml` lints, tests, validates and builds, then publishes to GitHub Pages. The build uses `--base-href /<repository>/` and copies `index.html` to `404.html`, so deep links such as `/exams/b1/cambridge-pet/cambridge-pet-01/reading` work with clean URLs. The app is an installable PWA (Settings > Install the app, or the install button of the browser) and works offline after the first visit.
 
 ## Reference sources
 

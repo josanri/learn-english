@@ -15,6 +15,7 @@ const index: LevelIndex = {
       title: 'Exam One',
       subtitle: '',
       theme: '',
+      category: 'misc',
       estimatedMinutes: 10,
       skills: ['speaking'],
       path: 'b1/cambridge-pet/e1.json',

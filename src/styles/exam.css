@@ -246,8 +246,22 @@
   font-size: var(--step--1);
   font-weight: 700;
 }
-.gap .gap-fb[data-ok='true'] {
-  color: var(--success);
+.gap {
+  position: relative;
+}
+/* A tick on the bottom corner of a correct gap. */
+.gap .gap-tick {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem;
+  border-radius: 50%;
+  background: var(--success);
+  color: var(--bg);
+  transform: translate(35%, 35%);
 }
 .gap .gap-fb[data-ok='false'] {
   color: var(--danger);

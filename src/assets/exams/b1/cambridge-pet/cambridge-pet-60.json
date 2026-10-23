@@ -1,0 +1,1680 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-60",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Farms and Country Life",
+  "subtitle": "A month on a farm, a dairy farmer's day and a young farmer",
+  "theme": "Farms and country life",
+  "category": "nature",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "FARM SHOP: Fresh eggs and milk are on sale every morning from seven. Please bring your own bottles and bags. We do not take bank cards.",
+            "FARM VISIT: On Thursday, pupils will meet the cows and see how milk is made. Wear boots. The bus leaves school at half past eight.",
+            "WARNING: Please keep your dog on a lead in the fields. There are sheep with young lambs.",
+            "HARVEST FESTIVAL: Join us on Saturday in the village hall for music, a supper and a sale of homemade jam. All the money will go to the church roof.",
+            "Message from Filip: Fran, the tractor will not start and Dad is in town. Can you ask Mr Pike to come and have a look? Thanks!"
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What can customers not use to pay at the farm shop?",
+              "options": [
+                "Cash in coins and notes",
+                "Their own bags",
+                "Cards from the bank"
+              ],
+              "answer": 2,
+              "explanation": "We do not take bank cards."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What will the pupils see on Thursday?",
+              "options": [
+                "How eggs are sold",
+                "How milk is made",
+                "How the bus is repaired"
+              ],
+              "answer": 1,
+              "explanation": "Pupils will meet the cows and see how milk is made."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "Why must dogs be kept on a lead?",
+              "options": [
+                "There are young lambs there",
+                "The farmer is afraid of them",
+                "The fields are very wet"
+              ],
+              "answer": 0,
+              "explanation": "There are sheep with young lambs."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What will the money from the festival be used for?",
+              "options": [
+                "A new village hall",
+                "Mending a church roof",
+                "A party for the farmers"
+              ],
+              "answer": 1,
+              "explanation": "All the money will go to the church roof."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What does Filip want Fran to do?",
+              "options": [
+                "Buy a new part for the tractor",
+                "Drive to town to find their father",
+                "Ask a neighbour to look at the tractor"
+              ],
+              "answer": 2,
+              "explanation": "He asks her to get Mr Pike to come and have a look."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Experiences in the countryside",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Eudora loves fresh food. She wants to buy vegetables, bread and eggs directly from the people who grow them."
+            },
+            {
+              "id": "p2",
+              "text": "Fabrice would like a quiet holiday on a real farm, where he can sleep in a simple room and help to look after the animals."
+            },
+            {
+              "id": "p3",
+              "text": "Fadila has always wanted to learn to ride a horse. She hopes to go on a slow ride through fields and woods."
+            },
+            {
+              "id": "p4",
+              "text": "Faustine likes cooking. She would like to learn how cheese is made, step by step, from milk."
+            },
+            {
+              "id": "p5",
+              "text": "Felipa is interested in history. She wants a book of old photographs that show how farm workers lived a hundred years ago."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Tractor Racing",
+              "text": "Watch big tractors race round a muddy field. Noisy, dirty and great fun for all the family."
+            },
+            {
+              "id": "B",
+              "title": "Country Life Then and Now",
+              "text": "A photo book that compares farm life in 1920 with farm life today, with captions written by local people."
+            },
+            {
+              "id": "C",
+              "title": "Farmers' Market",
+              "text": "Every Saturday morning, more than forty stalls sell fruit, bread, eggs and vegetables straight from the farm."
+            },
+            {
+              "id": "D",
+              "title": "Wool Fair",
+              "text": "See sheep shearing and buy hats, scarves and gloves made from local wool."
+            },
+            {
+              "id": "E",
+              "title": "Stay on a Farm",
+              "text": "Spend a week in a simple farmhouse. Feed the hens, help to milk the goats and enjoy the silence."
+            },
+            {
+              "id": "F",
+              "title": "Pony Trekking",
+              "text": "Guided rides through the hills for beginners. A teacher goes with each small group, and helmets are provided."
+            },
+            {
+              "id": "G",
+              "title": "Hay Maze",
+              "text": "Find your way through a maze made of hay. Suitable for children under ten."
+            },
+            {
+              "id": "H",
+              "title": "Cheese-Making Day",
+              "text": "Join a cheese-maker for one day to turn fresh milk into soft cheese. Take home your own cheese after a week."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Eudora",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "The Farmers' Market sells fruit, bread, eggs and vegetables straight from the farm."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Fabrice",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Stay on a Farm means a simple farmhouse, feeding the hens and helping with the goats."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Fadila",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "Pony Trekking has guided rides for beginners through the hills."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Faustine",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "Cheese-Making Day turns fresh milk into soft cheese with a cheese-maker."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Felipa",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Country Life Then and Now compares farm life in 1920 with farm life today in photographs."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "A summer on my uncle's farm",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last summer, I spent a month on my uncle's farm in the north of England. I live in a big city, and I had never seen a cow up close, so I was both excited and nervous.\n\nMy uncle gets up at five every morning, and on the first day, he woke me too. \"Farm animals do not wait for anyone,\" he said. We fed the hens, collected eggs and milked the cows. The milk was warm, and my hands were so cold that I could hardly feel it. After a week, though, I was getting quite fast.\n\nMy favourite job was looking after the lambs. One of them, which I called Pepper, would follow me everywhere. When I left at the end of the month, I almost cried. My aunt said that Pepper looked for me in the field for three days.\n\nThe farm taught me many things. I learned that food does not come from a shop, but from hard work by people who get up very early. At home now, I try not to waste anything. And I have already asked my parents if I can go back next summer.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "How did the writer feel before the visit?",
+              "options": [
+                "Excited but a bit nervous",
+                "Bored and a little afraid",
+                "Calm and rather confident"
+              ],
+              "answer": 0,
+              "explanation": "She was both excited and nervous."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did the writer find difficult at first?",
+              "options": [
+                "Milking cows with cold hands",
+                "Feeding the hens early",
+                "Finding a way round the farm"
+              ],
+              "answer": 0,
+              "explanation": "The milk was warm, but her hands were so cold that she could hardly feel it."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "Who was Pepper?",
+              "options": [
+                "A farm dog",
+                "A young sheep",
+                "A baby calf"
+              ],
+              "answer": 1,
+              "explanation": "Pepper was one of the lambs that followed her everywhere."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What did Pepper do after the writer left?",
+              "options": [
+                "It stayed in the barn for days",
+                "It did not eat for a week",
+                "It looked for her in the field"
+              ],
+              "answer": 2,
+              "explanation": "Pepper looked for her in the field for three days."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What did the writer learn from the farm?",
+              "options": [
+                "City food is better than farm food",
+                "Country life is boring for children",
+                "Farm work is hard and starts very early"
+              ],
+              "answer": 2,
+              "explanation": "Food comes from hard work by people who get up very early."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A day in the life of a farmer",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Tom Hayes is a dairy farmer, and he looks after a hundred and twenty cows. His working day begins at half past four, when it is still dark. [1] He puts on his boots and walks across the yard to the milking shed.\n\nThe cows are milked twice a day, once in the morning and once in the evening. [2] This takes about two hours, and he does it with the help of two workers.\n\nAfter breakfast, Tom checks the fields. [3] In summer, the cows eat the green grass outside, but in winter, they stay in the barn and eat hay.\n\nIn the afternoon, there is paperwork to do. [4] He must also keep a record of every animal on the farm, which is a legal rule.\n\nIn the evening, the milking begins again. [5] He is usually in bed by nine, because the next day starts just as early.",
+          "sentences": [
+            "Modern machines make the job much easier than it used to be.",
+            "Most farmers do not take any holiday because the cows need milking every day.",
+            "He needs to be sure that there is enough food for the animals.",
+            "His wife, who is a teacher, helps him with this work at weekends.",
+            "He often says that he is a tired man, but a very happy one.",
+            "He makes himself a cup of tea first and checks the weather."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "F",
+              "explanation": "Making tea and checking the weather follows the early start and leads to putting on his boots."
+            },
+            {
+              "id": "r4-2",
+              "answer": "A",
+              "explanation": "Modern machines make milking easier, and the next sentence says it takes about two hours."
+            },
+            {
+              "id": "r4-3",
+              "answer": "C",
+              "explanation": "Being sure there is enough food connects to the cows eating grass or hay."
+            },
+            {
+              "id": "r4-4",
+              "answer": "D",
+              "explanation": "His wife helps with the paperwork, and the next sentence mentions the records."
+            },
+            {
+              "id": "r4-5",
+              "answer": "E",
+              "explanation": "Saying he is tired but happy follows the evening milking and leads to bed by nine."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "An email about a farm visit",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Hi Gran, We [1] to a farm yesterday with school, and it was great fun! The farmer showed us how to feed the pigs. They were very hungry, [2] they ate everything in a minute. I [3] never touched a goat before, but it was very friendly. We also saw a huge tractor, [4] was bigger than our house! I wanted to drive it, but the farmer said that I was too young. At lunchtime, we [5] sandwiches in a field, and the sun came out. I am going to ask Mum [6] we can go back at the weekend. Love, Jacob",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "go",
+                "went",
+                "have been",
+                "were going"
+              ],
+              "answer": 1,
+              "explanation": "Yesterday needs the past simple."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "so",
+                "but",
+                "because",
+                "although"
+              ],
+              "answer": 0,
+              "explanation": "The pigs were hungry, so they ate everything: result."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "has",
+                "was",
+                "did",
+                "have"
+              ],
+              "answer": 3,
+              "explanation": "I have never touched: present perfect with never."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "who",
+                "what",
+                "which",
+                "where"
+              ],
+              "answer": 2,
+              "explanation": "Which refers back to the tractor, a thing."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "have eaten",
+                "eaten",
+                "ate",
+                "eating"
+              ],
+              "answer": 2,
+              "explanation": "A finished event in the past: past simple."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "that",
+                "if",
+                "what",
+                "unless"
+              ],
+              "answer": 1,
+              "explanation": "Ask if introduces a yes/no question."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Country or city?",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Some people say that life in the country is better than life in the city. In the country, the air is cleaner, and there is [1] noise. You can see the stars at night, and neighbours often know each other well. However, there are also problems. Buses are not very frequent, [2] you usually need a car. Shops can be far away, and there may be no cinema. Young people [3] sometimes feel that there is nothing to do. In a city, on the other hand, you can [4] a job more easily, and there are lots of things to do. But the streets are busy, and everything is expensive. In the end, it depends on [5] kind of person you are, and on what you want from life. Many people try both before they decide [6] they prefer.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "less",
+              "accepted": [
+                "little",
+                "no"
+              ],
+              "explanation": "There is less noise in the country: a smaller amount."
+            },
+            {
+              "id": "r6-2",
+              "answer": "so",
+              "accepted": [
+                "and"
+              ],
+              "explanation": "Buses are not frequent, so you usually need a car: result."
+            },
+            {
+              "id": "r6-3",
+              "answer": "may",
+              "accepted": [
+                "can",
+                "might"
+              ],
+              "explanation": "Young people may feel that there is nothing to do: possibility."
+            },
+            {
+              "id": "r6-4",
+              "answer": "find",
+              "accepted": [
+                "get"
+              ],
+              "explanation": "You can find a job more easily in a city."
+            },
+            {
+              "id": "r6-5",
+              "answer": "what",
+              "explanation": "What kind of person you are: an indirect question phrase."
+            },
+            {
+              "id": "r6-6",
+              "answer": "which",
+              "accepted": [
+                "what"
+              ],
+              "explanation": "Decide which they prefer: a choice between two things."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Charlie is going to stay on a farm for a week. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Say what he should take.",
+              "Suggest an animal to look after.",
+              "Say what the work is like.",
+              "Ask how he is getting there."
+            ],
+            "sourceEmail": {
+              "from": "Charlie",
+              "subject": "A week on a farm",
+              "body": "I am going to spend a week on a farm next month. I live in a town and have never worked outside, so I am a bit worried. What should I expect?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say what he should take.",
+                "keywords": [
+                  "take",
+                  "bring",
+                  "boots",
+                  "clothes",
+                  "coat",
+                  "gloves",
+                  "pack"
+                ]
+              },
+              {
+                "text": "Suggest an animal to look after.",
+                "keywords": [
+                  "animal",
+                  "cow",
+                  "hen",
+                  "horse",
+                  "sheep",
+                  "lamb",
+                  "goat"
+                ]
+              },
+              {
+                "text": "Say what the work is like.",
+                "keywords": [
+                  "early",
+                  "hard",
+                  "tired",
+                  "fun",
+                  "busy",
+                  "work",
+                  "dirty"
+                ]
+              },
+              {
+                "text": "Ask how he is getting there.",
+                "keywords": [
+                  "how",
+                  "get there",
+                  "train",
+                  "bus",
+                  "car",
+                  "travel",
+                  "journey"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! Would you prefer to live in the country or in a city? Give reasons for your choice. Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Say where you prefer to live.",
+                  "keywords": [
+                    "prefer",
+                    "country",
+                    "city",
+                    "town",
+                    "village",
+                    "live",
+                    "would"
+                  ]
+                },
+                {
+                  "text": "Give reasons.",
+                  "keywords": [
+                    "because",
+                    "quiet",
+                    "busy",
+                    "friends",
+                    "shops",
+                    "air",
+                    "space"
+                  ]
+                },
+                {
+                  "text": "Say what you would do there.",
+                  "keywords": [
+                    "walk",
+                    "cycle",
+                    "go",
+                    "visit",
+                    "play",
+                    "work",
+                    "explore"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "The farmer opened the barn door and could not believe what he saw.",
+              "contentPoints": [
+                {
+                  "text": "Say what he saw.",
+                  "keywords": [
+                    "saw",
+                    "animals",
+                    "horse",
+                    "cows",
+                    "mess",
+                    "surprise",
+                    "strange"
+                  ]
+                },
+                {
+                  "text": "Say what he did.",
+                  "keywords": [
+                    "ran",
+                    "called",
+                    "shouted",
+                    "phoned",
+                    "laughed",
+                    "looked",
+                    "went"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "finally",
+                    "in the end",
+                    "happy",
+                    "safe",
+                    "laughed",
+                    "home",
+                    "explained"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ferran",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Fadila",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "What time do you get up on the farm?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "At half past five, because the cows need milking before breakfast."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "When does the woman get up?",
+                "options": [
+                  "At a quarter to six",
+                  "At half past five",
+                  "At six o'clock"
+                ],
+                "answer": 1,
+                "explanation": "She says that she gets up at half past five."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Faustine",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Filip",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How many eggs do your hens lay every day?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "About twenty, but in winter, there are fewer."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "How many eggs are there in a day?",
+                "options": [
+                  "About twenty",
+                  "About thirty",
+                  "About fifty"
+                ],
+                "answer": 0,
+                "explanation": "He says about twenty."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fitz",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Frida",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Is that your tractor in the field?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, it belongs to my neighbour. Ours is in the garage for repairs."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Where is the woman's tractor?",
+                "options": [
+                  "In the garage",
+                  "In the field",
+                  "At the neighbour's farm"
+                ],
+                "answer": 0,
+                "explanation": "She says that theirs is in the garage for repairs."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Finola",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Fabrice",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Why are the sheep on the road?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Someone left the gate open, so they walked out to find fresh grass."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Why are the sheep on the road?",
+                "options": [
+                  "They are being moved",
+                  "A gate was left open",
+                  "They are lost in fog"
+                ],
+                "answer": 1,
+                "explanation": "He says that someone left the gate open."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ferran",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Fran",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Do you like living in the country?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I love the quiet, but I miss my friends from the city."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "What does the woman miss?",
+                "options": [
+                  "The shops in her street",
+                  "The noise of the traffic",
+                  "Her friends in the city"
+                ],
+                "answer": 2,
+                "explanation": "She says that she misses her friends from the city."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Felipa",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Fitz",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Where can I buy fresh honey?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "From the farm stand at the end of this road, next to the bus stop."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "Where is the honey sold?",
+                "options": [
+                  "At the end of the road",
+                  "In the village shop",
+                  "Beside the church"
+                ],
+                "answer": 0,
+                "explanation": "He says from the farm stand at the end of this road."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Filip",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Eudora",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Can you help me carry these boxes of apples?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sorry, I have hurt my back. I will fetch someone else to help."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "Why can't the woman carry the boxes?",
+                "options": [
+                  "She is too busy now",
+                  "She has hurt her back",
+                  "She is leaving soon"
+                ],
+                "answer": 1,
+                "explanation": "She says that she has hurt her back."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Frida",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Fabrice",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Welcome to Green Hill Farm. Please follow me to see the cows being milked."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. Can the children help me with it?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Where does the conversation take place?",
+                "options": [
+                  "On a train",
+                  "In a shop",
+                  "On a farm"
+                ],
+                "answer": 2,
+                "explanation": "The woman welcomes him to Green Hill Farm and offers to show the cows being milked."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ferran",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Faustine",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "It has not rained for a month, and my crops are dying."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That sounds awful. I hope it rains soon. Can I help you in any way?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Asking for money",
+                  "Offering to help",
+                  "Giving directions"
+                ],
+                "answer": 1,
+                "explanation": "She hopes it rains and asks if she can help in any way."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fadila",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Filip",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "My cow has won first prize at the county show!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is wonderful news! You have worked so hard for it, and I am so pleased."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "How does the man feel?",
+                "options": [
+                  "Pleased for the woman",
+                  "Jealous of the prize",
+                  "Tired of the show"
+                ],
+                "answer": 0,
+                "explanation": "He says that he is so pleased."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fitz",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Finola",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, how do I get to the farm shop from here?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Take the first road on the left, then drive for about two miles."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the man want?",
+                "options": [
+                  "A map of the village",
+                  "A lift to the town",
+                  "The way to a shop"
+                ],
+                "answer": 2,
+                "explanation": "He asks how to get to the farm shop."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fran",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Ferran",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Today, I am showing you how to milk a goat by hand."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Are goats more difficult to milk than cows?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Showing a skill",
+                  "Selling some goats",
+                  "Asking for advice"
+                ],
+                "answer": 0,
+                "explanation": "She says that she is showing them how to milk a goat by hand."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fabrice",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Frida",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Oh no, a fox got into the hen house last night!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "How terrible! Did you lose many of your chickens?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the man's problem?",
+                "options": [
+                  "His fence is falling down",
+                  "His chickens are all ill",
+                  "A fox got in the hen house"
+                ],
+                "answer": 2,
+                "explanation": "He says a fox got into the hen house."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a dairy farm",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "henrietta",
+                "name": "Fadila",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "henrietta",
+                "text": "Good afternoon, everybody, and welcome to Hill End Farm. My family has lived here for over a hundred years. Today, we have eighty cows, and each cow gives about twenty-five litres of milk every day. The milk is collected by a lorry every second morning and taken to a factory in town. On this farm, the cows are named, and you will see their names on the wall in the milking shed. The oldest cow is called Daisy, and she is nearly eighteen. We also grow our own food for the cows, mostly grass and some corn. In the spring, the cows have their calves, and this is the busiest time of the year. If you would like to see a calf, please walk to the red barn, but do not touch the babies, because their mothers may not like it. At the end of the visit, you can buy ice cream made from our own milk in the farm shop."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The farm has ___ cows",
+              "answer": "eighty",
+              "accepted": [
+                "80"
+              ],
+              "explanation": "Today, we have eighty cows."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Each cow gives about ___ litres a day",
+              "answer": "twenty-five",
+              "accepted": [
+                "25",
+                "twenty five"
+              ],
+              "explanation": "About twenty-five litres every day."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "The lorry collects milk every ___ morning",
+              "answer": "second",
+              "explanation": "Collected every second morning."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "The oldest cow is called ___",
+              "answer": "Daisy",
+              "explanation": "The oldest cow is called Daisy."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The calves are born in ___",
+              "answer": "spring",
+              "explanation": "In the spring, the cows have their calves."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Visitors can buy ___ in the farm shop",
+              "answer": "ice cream",
+              "accepted": [
+                "icecream"
+              ],
+              "explanation": "You can buy ice cream made from our own milk."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a young farmer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "i",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "f",
+                "name": "Felipa",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "i",
+                "text": "Felipa, you are only twenty-two, and you run your own farm. How did that happen?"
+              },
+              {
+                "speaker": "f",
+                "text": "My grandfather owned the farm, and when he became too old to work, he asked me to take it over. I had just finished college, so I said yes."
+              },
+              {
+                "speaker": "i",
+                "text": "What are the biggest challenges?"
+              },
+              {
+                "speaker": "f",
+                "text": "The weather, definitely. A very wet summer can ruin the crops, and a dry one is just as bad. I never know what will happen next."
+              },
+              {
+                "speaker": "i",
+                "text": "What do you grow?"
+              },
+              {
+                "speaker": "f",
+                "text": "Mainly potatoes, carrots and onions. I also have a small field of strawberries that I sell at the local market in June."
+              },
+              {
+                "speaker": "i",
+                "text": "Do you ever get time off?"
+              },
+              {
+                "speaker": "f",
+                "text": "Not much, but I take every Sunday afternoon to walk with my dog and to read. It is the only time when the farm is quiet."
+              },
+              {
+                "speaker": "i",
+                "text": "What do you enjoy most about your job?"
+              },
+              {
+                "speaker": "f",
+                "text": "Being outside, and seeing the things I plant grow. There is nothing like eating a carrot that you have grown yourself."
+              },
+              {
+                "speaker": "i",
+                "text": "Would you recommend farming to other young people?"
+              },
+              {
+                "speaker": "f",
+                "text": "Yes, if they are patient and not afraid of hard work. The money is not great, but the life is wonderful."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Felipa become a farmer?",
+              "options": [
+                "She bought land after college",
+                "Her grandfather asked her to take over",
+                "She won a farm in a competition"
+              ],
+              "answer": 1,
+              "explanation": "Her grandfather asked her to take over the farm."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What is her biggest challenge?",
+              "options": [
+                "Finding good workers",
+                "Dealing with the weather",
+                "Selling her potatoes"
+              ],
+              "answer": 1,
+              "explanation": "The weather: a wet summer ruins crops and a dry one is as bad."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does she sell at the market in June?",
+              "options": [
+                "Strawberries",
+                "Carrots",
+                "Onions"
+              ],
+              "answer": 0,
+              "explanation": "She sells strawberries at the local market in June."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What does she do on Sunday afternoons?",
+              "options": [
+                "Works in the local market all day",
+                "Visits her grandfather at his home",
+                "Goes for a walk with her dog"
+              ],
+              "answer": 2,
+              "explanation": "She takes every Sunday afternoon to walk with her dog and read."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What does she enjoy most about the job?",
+              "options": [
+                "Getting a high income",
+                "Seeing her plants grow",
+                "Meeting new customers"
+              ],
+              "answer": 1,
+              "explanation": "Being outside and seeing the things she plants grow."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What does she say to young people?",
+              "options": [
+                "Be patient and ready for hard work",
+                "Choose another job with more money",
+                "Wait until you are much older"
+              ],
+              "answer": 0,
+              "explanation": "Yes, if they are patient and not afraid of hard work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s60-1-1",
+              "prompt": "Have you ever been to a farm? What did you see there?"
+            },
+            {
+              "id": "s60-1-2",
+              "prompt": "Do you like animals? Which ones?"
+            },
+            {
+              "id": "s60-1-3",
+              "prompt": "What is your favourite fruit or vegetable?"
+            },
+            {
+              "id": "s60-1-4",
+              "prompt": "Do you prefer the country or the city for a holiday?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A woman standing in a yard with hens and ducks.",
+          "images": [
+            {
+              "id": "s60-2-hens",
+              "title": "A farmer feeding hens",
+              "alt": "An older woman in a patterned shawl stands in a yard surrounded by hens and ducks. A wooden hut is behind her.",
+              "describeHints": [
+                "a woman in a patterned shawl",
+                "brown and black hens",
+                "ducks on the ground",
+                "a wooden hut"
+              ],
+              "image": {
+                "id": "s60-2-hens",
+                "src": "assets/images/exams/cambridge-pet-60/s60-2-hens-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-60/s60-2-hens-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "An older woman in a patterned shawl stands in a yard surrounded by hens and ducks. A wooden hut is behind her.",
+                "credit": {
+                  "author": "Kate Holt/AusAID",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:AUSAID_KENYA_(10671724855).jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A school farm visit",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your class is planning a visit to a farm. Talk about the different things that you could do there and decide which activity would be the most interesting.",
+          "images": [
+            {
+              "id": "s60-3-milking",
+              "title": "A person milking a cow",
+              "alt": "A man in a green jacket and cap milks a brown cow in a barn.",
+              "describeHints": [
+                "a brown cow",
+                "a man in a green jacket",
+                "a green cap",
+                "a wooden wall"
+              ],
+              "image": {
+                "id": "s60-3-milking",
+                "src": "assets/images/exams/cambridge-pet-60/s60-3-milking-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-60/s60-3-milking-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A man in a green jacket and cap milks a brown cow in a barn.",
+                "credit": {
+                  "author": "NPS staff",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Milking_a_Dairy_Cow_(170a2501-d58d-1b9c-9064-62e0c269226b).jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milking_a_Dairy_Cow_(170a2501-d58d-1b9c-9064-62e0c269226b).jpg"
+                }
+              }
+            },
+            {
+              "id": "s60-3-tractor",
+              "title": "A tractor ride for visitors",
+              "alt": "A red tractor pulls a trailer full of visitors along a farm track. There are green fields and hills behind.",
+              "describeHints": [
+                "a tractor",
+                "a trailer",
+                "visitors",
+                "fields"
+              ],
+              "image": {
+                "id": "s60-3-tractor",
+                "src": "assets/images/exams/cambridge-pet-60/s60-3-tractor-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-60/s60-3-tractor-600.webp",
+                "width": 1000,
+                "height": 700,
+                "alt": "A red tractor pulls a trailer full of visitors along a farm track. There are green fields and hills behind.",
+                "credit": {
+                  "author": "AngusMurray1989",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pennywell_FarmTractor_Trailer_Ride.jpg"
+                }
+              }
+            },
+            {
+              "id": "s60-3-lambs",
+              "title": "Young lambs in a field",
+              "alt": "Two young lambs stand on and beside a tree stump in a grey field.",
+              "describeHints": [
+                "two young lambs",
+                "a tree stump",
+                "a grassy field",
+                "a misty background"
+              ],
+              "image": {
+                "id": "s60-3-lambs",
+                "src": "assets/images/exams/cambridge-pet-60/s60-3-lambs-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-60/s60-3-lambs-600.webp",
+                "width": 1000,
+                "height": 647,
+                "alt": "Two young lambs stand on and beside a tree stump in a grey field.",
+                "credit": {
+                  "author": "Geoff Charles",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Young_lambs_in_a_field_in_Cynghordy,_between_Llandovery_and_Beulah_(1575736).jpg"
+                }
+              }
+            },
+            {
+              "id": "s60-3-picking",
+              "title": "People picking fruit",
+              "alt": "A smiling girl in a red top reaches up with a long pole among cactus plants.",
+              "describeHints": [
+                "a long wooden pole",
+                "cactus plants",
+                "a red top",
+                "rocky ground"
+              ],
+              "image": {
+                "id": "s60-3-picking",
+                "src": "assets/images/exams/cambridge-pet-60/s60-3-picking-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-60/s60-3-picking-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A smiling girl in a red top reaches up with a long pole among cactus plants.",
+                "credit": {
+                  "author": "Rod Waddington from Kergunyah, Australia",
+                  "license": "CC BY-SA 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Picking_Cactus_Fruit,_Tigray_(53052339483).jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s60-4-1",
+              "prompt": "Why is farming important to everyone?"
+            },
+            {
+              "id": "s60-4-2",
+              "prompt": "Would you like to work on a farm one day? Why or why not?"
+            },
+            {
+              "id": "s60-4-3",
+              "prompt": "How can people buy food in a way that helps farmers?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

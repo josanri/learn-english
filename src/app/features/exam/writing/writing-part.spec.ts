@@ -46,6 +46,7 @@ const exam: Exam = {
   title: 'T',
   subtitle: '',
   theme: '',
+  category: 'misc',
   estimatedMinutes: 10,
   sections: [{ skill: 'writing', timeLimitMinutes: 45, parts: [email, story] }],
 };

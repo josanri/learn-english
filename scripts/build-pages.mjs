@@ -1,7 +1,7 @@
 // Production build for GitHub Pages.
 //   BASE_HREF=/my-repo/ node scripts/build-pages.mjs      (or: npm run build:pages -- /my-repo/)
 // Defaults to /learn-english/. The build output gets a 404.html copy of index.html so that deep links such as
-// /my-repo/b1/cambridge-pet/cambridge-pet-01/reading are served the app, which then routes on the clean URL.
+// /my-repo/exams/b1/cambridge-pet/cambridge-pet-01/reading are served the app, which then routes on the clean URL.
 import { spawnSync } from 'node:child_process';
 import { copyFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';

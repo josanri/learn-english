@@ -1,0 +1,1680 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-72",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Mysteries and Detectives",
+  "subtitle": "Two young detectives, Agatha Christie and a real detective",
+  "theme": "Mysteries and detectives",
+  "category": "misc",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "MYSTERY WEEKEND: Solve a crime in a country house. Dress as a character from the 1920s. Dinner and one night's stay included.",
+            "Message from Gwen: Gus, someone has taken my red pen from the desk. If you have seen it, please put it back. It was a present!",
+            "LIBRARY CLUB: Every Wednesday we read a short detective story and talk about who did it. New members are very welcome.",
+            "LOST PROPERTY: A brown wallet was found near the museum steps. To claim it, please describe what is inside to the office staff.",
+            "CRIME SCENE PLAYGROUND: This area is closed for the day while workers paint the fence. Please use the park next door."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What do guests do at the mystery weekend?",
+              "options": [
+                "Paint pictures of the house",
+                "Learn to cook old dishes",
+                "Try to solve a crime"
+              ],
+              "answer": 2,
+              "explanation": "Solve a crime in a country house."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What does Gwen want Gus to do?",
+              "options": [
+                "Buy her a new one",
+                "Return her pen",
+                "Look at the desk"
+              ],
+              "answer": 1,
+              "explanation": "She asks him to put the pen back if he has seen it."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What happens at the library club?",
+              "options": [
+                "They discuss a detective story",
+                "They write their own books",
+                "They watch a film"
+              ],
+              "answer": 0,
+              "explanation": "They read a short detective story and talk about who did it."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "How can the owner get the wallet back?",
+              "options": [
+                "By paying a small fee",
+                "By saying what is inside",
+                "By showing a photo"
+              ],
+              "answer": 1,
+              "explanation": "Describe what is inside to the office staff."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "Why is the playground closed?",
+              "options": [
+                "The park is full",
+                "A crime has happened",
+                "Workers are painting"
+              ],
+              "answer": 2,
+              "explanation": "Workers are painting the fence."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Puzzles and crime",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Gabe loves old films in black and white. He would like to see a classic detective film on a big screen with other fans."
+            },
+            {
+              "id": "p2",
+              "text": "Gemma wants to be a police officer. She is looking for a talk by someone who works as a detective."
+            },
+            {
+              "id": "p3",
+              "text": "Gideon likes puzzles that he can do alone, on the train. He wants a book of short mysteries with the answers at the back."
+            },
+            {
+              "id": "p4",
+              "text": "Gilda is going on holiday with her friends. She wants to play a game together in which everyone has a secret role."
+            },
+            {
+              "id": "p5",
+              "text": "Gray is interested in the story of a famous writer. He would like to visit the house where she lived and worked."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Old Cinema Night",
+              "text": "Black and white detective films every Friday, shown on the big screen. Tickets cost four pounds."
+            },
+            {
+              "id": "B",
+              "title": "Careers Evening",
+              "text": "Meet a police detective, ask her questions and learn what the job is really like."
+            },
+            {
+              "id": "C",
+              "title": "Pocket Mysteries",
+              "text": "Fifty short cases for you to solve, with the answers at the back of the book. Ideal for travel."
+            },
+            {
+              "id": "D",
+              "title": "Secret Roles Game",
+              "text": "A party game for four to ten people. Each player has a secret part, and one of you is the criminal."
+            },
+            {
+              "id": "E",
+              "title": "Writer's House",
+              "text": "Visit the home of the writer who invented the famous detective. See her desk, her books and her garden."
+            },
+            {
+              "id": "F",
+              "title": "Magic Show",
+              "text": "Tricks and surprises for the whole family."
+            },
+            {
+              "id": "G",
+              "title": "Chess Club",
+              "text": "Games and lessons for beginners on Tuesdays."
+            },
+            {
+              "id": "H",
+              "title": "Photo Contest",
+              "text": "Send us your best picture of an old building."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Gabe",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Old Cinema Night shows black and white detective films on a big screen."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Gemma",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Careers Evening lets her meet a police detective."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Gideon",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Pocket Mysteries has short cases with the answers at the back, good for travel."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Gilda",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Secret Roles Game gives each player a secret part."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Gray",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Writer's House is the home of the writer who invented the detective."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "The case of the missing cake",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last Saturday, my little cousin Tom and I became detectives. We were staying at our grandmother's house, and just before lunch, a big chocolate cake disappeared from the kitchen table. Grandma was very upset, because she had baked it for a party.\n\nWe started by looking for clues. On the floor, there were small brown footprints that led from the kitchen to the garden. \"The thief has dirty shoes,\" Tom said, and wrote it in his notebook. There was also a little cream on the door handle.\n\nWe followed the footprints across the grass until they stopped under a big tree. There, we found the empty plate. Next to it was Max, our neighbour's dog, who was fast asleep with chocolate on his nose.\n\nWe took the plate back to Grandma, and she could not stop laughing. She said that she would bake another cake and keep it in the fridge. Tom wants to be a real detective now, and he has asked for a magnifying glass for his birthday.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why was Grandma upset?",
+              "options": [
+                "A cake she had made was gone",
+                "The children broke a plate",
+                "The party was cancelled"
+              ],
+              "answer": 0,
+              "explanation": "A big cake disappeared, and she had baked it for a party."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did the children find on the floor?",
+              "options": [
+                "Brown footprints",
+                "A torn piece of paper",
+                "A broken cup"
+              ],
+              "answer": 0,
+              "explanation": "There were small brown footprints."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "Where did the footprints lead?",
+              "options": [
+                "To the front gate",
+                "To a tree in the garden",
+                "To the neighbour's house"
+              ],
+              "answer": 1,
+              "explanation": "They stopped under a big tree."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "Who had taken the cake?",
+              "options": [
+                "A visitor from the village",
+                "Tom's older brother",
+                "The neighbour's dog"
+              ],
+              "answer": 2,
+              "explanation": "Max, the neighbour's dog, was asleep with chocolate on his nose."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What does Tom want for his birthday?",
+              "options": [
+                "A new notebook",
+                "A toy police car",
+                "A magnifying glass"
+              ],
+              "answer": 2,
+              "explanation": "He has asked for a magnifying glass."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "The queen of crime",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Agatha Christie is one of the most famous writers in the world. [1] Her books have been sold more than two billion times, and only the Bible and Shakespeare have sold more.\n\nShe was born in 1890 in the south of England. As a child, she did not go to school. [2] She learned to read when she was only five, and from then on she spent hours with books.\n\nDuring the First World War, she worked in a hospital. [3] This knowledge later helped her to write about poisons in her stories.\n\nHer first detective book appeared in 1920. [4] It introduced Hercule Poirot, a little Belgian detective with a famous moustache.\n\nShe wrote over eighty books in her life. [5] People still enjoy trying to guess who the criminal is before the end.",
+          "sentences": [
+            "Her mother taught her at home, in a house full of books.",
+            "It was soon followed by many more cases for him to solve.",
+            "There, she learned a great deal about medicines.",
+            "Some of them have been made into films and television series.",
+            "She was already well known when she was still quite young.",
+            "No other writer of detective stories has been as successful as she has."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "F",
+              "explanation": "No other writer has been as successful; the next sentence gives sales."
+            },
+            {
+              "id": "r4-2",
+              "answer": "A",
+              "explanation": "Her mother taught her at home, which explains why she did not go to school."
+            },
+            {
+              "id": "r4-3",
+              "answer": "C",
+              "explanation": "There, she learned about medicines, which leads to poisons in her stories."
+            },
+            {
+              "id": "r4-4",
+              "answer": "B",
+              "explanation": "It was followed by many more cases for Poirot, introduced in the sentence before."
+            },
+            {
+              "id": "r4-5",
+              "answer": "D",
+              "explanation": "Some of them were made into films, and the next sentence says people still enjoy them."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A message about a book",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Hi Gaby, Have you finished the detective book that I lent you? I am dying to know [1] you think of it. I read it in two days, and I could not stop turning the pages. The ending was a big surprise, [2] I had guessed that the butler was the criminal. It is the first time that a book has [3] me wrong! If you have not read the last chapter, please do not tell me [4] I have finished it. I [5] already bought the next book in the series, and I will start it tonight. Perhaps we could meet on Saturday and talk about both books. I will bring some biscuits, [6] you can make the tea. Best, Gwen",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "which",
+                "what",
+                "that",
+                "how"
+              ],
+              "answer": 1,
+              "explanation": "Know what you think of it: the object clause."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "although",
+                "because",
+                "so",
+                "unless"
+              ],
+              "answer": 0,
+              "explanation": "A surprise, although I had guessed: contrast."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "put",
+                "made",
+                "got",
+                "proved"
+              ],
+              "answer": 3,
+              "explanation": "Proved me wrong is the fixed phrase."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "which",
+                "what",
+                "until",
+                "how"
+              ],
+              "answer": 2,
+              "explanation": "Do not tell me until I have finished it: a time limit."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "had",
+                "am",
+                "have",
+                "did"
+              ],
+              "answer": 2,
+              "explanation": "I have already bought: present perfect."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "although",
+                "and",
+                "unless",
+                "because"
+              ],
+              "answer": 1,
+              "explanation": "I will bring biscuits and you can make the tea."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "How finger marks solve crimes",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Every person has a different pattern on the ends of their fingers. We call this a finger mark. Even twins do not have exactly [1] same finger marks. Detectives have used them to catch criminals for more than a hundred years. When somebody touches a glass or a door, they leave a tiny mark [2] oil from their skin. Police officers cover the mark with a fine powder, and then it becomes easy to see. They take a photograph of it and compare it [3] the prints of people who have been arrested before. Today, a computer can search millions of finger marks in a few seconds. Of course, a criminal who wears gloves will not leave any marks, [4] it is not always so easy to solve a case. Police also look for other clues, [5] as hair, clothes or blood. Together, all these small pieces of evidence help them to tell the true story of what happened [6] the crime scene.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "the",
+              "explanation": "The same finger marks: a fixed phrase."
+            },
+            {
+              "id": "r6-2",
+              "answer": "of",
+              "accepted": [
+                "from"
+              ],
+              "explanation": "A mark of oil from their skin."
+            },
+            {
+              "id": "r6-3",
+              "answer": "with",
+              "accepted": [
+                "to"
+              ],
+              "explanation": "Compare it with the prints."
+            },
+            {
+              "id": "r6-4",
+              "answer": "so",
+              "accepted": [
+                "and"
+              ],
+              "explanation": "A criminal who wears gloves leaves no marks, so it is not easy."
+            },
+            {
+              "id": "r6-5",
+              "answer": "such",
+              "explanation": "Such as hair or clothes: a fixed phrase."
+            },
+            {
+              "id": "r6-6",
+              "answer": "at",
+              "accepted": [
+                "in"
+              ],
+              "explanation": "At the crime scene."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Gina has started to read detective stories. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Recommend a book or film.",
+              "Say why you like it.",
+              "Suggest meeting to talk about it.",
+              "Ask what she is reading."
+            ],
+            "sourceEmail": {
+              "from": "Gina",
+              "subject": "Detective stories",
+              "body": "I have just read my first detective novel and I loved it. Now I want more! Can you recommend a good book or film with a mystery in it? Why do you like it?"
+            },
+            "contentPoints": [
+              {
+                "text": "Recommend a book or film.",
+                "keywords": [
+                  "recommend",
+                  "book",
+                  "film",
+                  "read",
+                  "watch",
+                  "try",
+                  "called"
+                ]
+              },
+              {
+                "text": "Say why you like it.",
+                "keywords": [
+                  "because",
+                  "exciting",
+                  "clever",
+                  "surprise",
+                  "story",
+                  "ending",
+                  "like"
+                ]
+              },
+              {
+                "text": "Suggest meeting to talk about it.",
+                "keywords": [
+                  "meet",
+                  "weekend",
+                  "talk",
+                  "together",
+                  "saturday",
+                  "café",
+                  "tea"
+                ]
+              },
+              {
+                "text": "Ask what she is reading.",
+                "keywords": [
+                  "what",
+                  "reading",
+                  "book",
+                  "title",
+                  "about",
+                  "which",
+                  "now"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! Why do people enjoy mystery stories? Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Explain why people enjoy them.",
+                  "keywords": [
+                    "because",
+                    "enjoy",
+                    "puzzle",
+                    "guess",
+                    "excitement",
+                    "surprise",
+                    "fun"
+                  ]
+                },
+                {
+                  "text": "Describe a story you know.",
+                  "keywords": [
+                    "story",
+                    "film",
+                    "book",
+                    "detective",
+                    "criminal",
+                    "clue",
+                    "called"
+                  ]
+                },
+                {
+                  "text": "Give your opinion.",
+                  "keywords": [
+                    "think",
+                    "believe",
+                    "opinion",
+                    "my",
+                    "personally",
+                    "agree",
+                    "sure"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "I knew that somebody had been in my room when I saw the open window.",
+              "contentPoints": [
+                {
+                  "text": "Say what was missing.",
+                  "keywords": [
+                    "missing",
+                    "gone",
+                    "taken",
+                    "stolen",
+                    "lost",
+                    "disappeared",
+                    "bag"
+                  ]
+                },
+                {
+                  "text": "Say how you found out who did it.",
+                  "keywords": [
+                    "clue",
+                    "found",
+                    "saw",
+                    "footprints",
+                    "asked",
+                    "noticed",
+                    "looked"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "finally",
+                    "in the end",
+                    "returned",
+                    "happy",
+                    "laughed",
+                    "sorry",
+                    "solved"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gus",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Gemma",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Where did you find the missing key?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Under the sofa. The dog must have pushed it there."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "Where was the key?",
+                "options": [
+                  "In a coat pocket",
+                  "Under the sofa",
+                  "Behind the door"
+                ],
+                "answer": 1,
+                "explanation": "She says that she found it under the sofa."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gilda",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gideon",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What time did the robbery happen?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "About two in the morning, according to the police. Nobody heard anything."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "When did the robbery happen?",
+                "options": [
+                  "About two in the morning",
+                  "About two in the afternoon",
+                  "About ten in the evening"
+                ],
+                "answer": 0,
+                "explanation": "He says that it happened about two in the morning."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gabe",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Gwen",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Did you enjoy the detective film last night?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but I guessed the ending halfway through, so it was a bit easy."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "What did the woman think of the film?",
+                "options": [
+                  "It was too easy to guess",
+                  "It was far too long",
+                  "It was very frightening"
+                ],
+                "answer": 0,
+                "explanation": "She says that she guessed the ending halfway through."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gaby",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gray",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Why were you late for school?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Someone had taken my bike, so I had to walk. Then I found it behind the shop."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Where did the boy find his bike?",
+                "options": [
+                  "Near the school",
+                  "Behind the shop",
+                  "In his garden"
+                ],
+                "answer": 1,
+                "explanation": "He says that he found it behind the shop."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gus",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Gemma",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Do you know who borrowed my notebook?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I think that Gilda did. I saw her with a blue notebook this morning."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Who borrowed the notebook?",
+                "options": [
+                  "Gabe",
+                  "Gemma",
+                  "Gilda"
+                ],
+                "answer": 2,
+                "explanation": "She says that she thinks Gilda did."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gwen",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gideon",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How did you learn so much about crime?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My uncle is a police officer. He tells me stories about his cases at dinner."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "Who tells the man stories?",
+                "options": [
+                  "His uncle",
+                  "His teacher",
+                  "His neighbour"
+                ],
+                "answer": 0,
+                "explanation": "He says that his uncle tells him stories."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gabe",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Gaby",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Are you coming to the mystery party on Saturday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I would love to, but I have a dentist appointment in the morning."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "Why might the woman miss the party?",
+                "options": [
+                  "She feels quite ill",
+                  "She has an appointment",
+                  "She is going away"
+                ],
+                "answer": 1,
+                "explanation": "She says that she has a dentist appointment."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gina",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gray",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Good evening, ladies and gentlemen. Welcome to the murder mystery dinner."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. Which character will I be tonight?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Where does the conversation take place?",
+                "options": [
+                  "In a school hall",
+                  "At a police station",
+                  "At a mystery dinner"
+                ],
+                "answer": 2,
+                "explanation": "She welcomes guests to the murder mystery dinner."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gus",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Gwen",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I think the gardener is the criminal. He had dirty shoes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That is not enough evidence. Everyone has dirty shoes in the country."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Saying he has found enough evidence",
+                  "Saying there is not enough evidence",
+                  "Asking him for some more shoes"
+                ],
+                "answer": 1,
+                "explanation": "She says that it is not enough evidence."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gilda",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gideon",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "I solved the puzzle in under five minutes!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Well done! I have been trying for an hour and still cannot do it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "How does the man feel?",
+                "options": [
+                  "Unable to solve the puzzle yet",
+                  "Sure that he will soon win",
+                  "Annoyed with the woman today"
+                ],
+                "answer": 0,
+                "explanation": "He has tried for an hour and still cannot do the puzzle."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gabe",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Gaby",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, I think someone has taken my umbrella."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Have you checked the stand by the door? Many people leave them there."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the woman suggest?",
+                "options": [
+                  "Buying a new one",
+                  "Calling the police",
+                  "Looking by the door"
+                ],
+                "answer": 2,
+                "explanation": "She suggests checking the stand by the door."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gina",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gray",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "The police have found a new clue in the garden."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really? Let us go there and have a look before it rains."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What will they do next?",
+                "options": [
+                  "Look at the clue",
+                  "Phone the police",
+                  "Wait until tomorrow"
+                ],
+                "answer": 0,
+                "explanation": "He suggests going to the garden to look at the clue."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gus",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Gemma",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I have lost my phone, and I have a very important message to send."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Use mine. Then we can search the classroom for yours."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the man's problem?",
+                "options": [
+                  "He broke a window",
+                  "He missed a message",
+                  "He has lost his phone"
+                ],
+                "answer": 2,
+                "explanation": "He says that he has lost his phone."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about a famous detective",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "nathalie",
+                "name": "Gina",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "nathalie",
+                "text": "Good afternoon, everybody. Today I would like to talk to you about Sherlock Holmes, the most famous detective in fiction. He was invented by a Scottish writer, Arthur Conan Doyle, who was also a doctor. The first story appeared in 1887, and Holmes became so popular that readers sent him letters, as if he were real. Holmes lived at 221B Baker Street in London, with his friend Doctor Watson. He played the violin, smoked a pipe and wore a long hat with ears. He did not use guns often. Instead, he used his brain, and he noticed tiny details that other people missed. Doyle wrote fifty-six short stories and four novels about him. Once, he got tired of the character and killed him in a story, but readers were so angry that he had to bring him back. If you would like to see where the stories take place, there is a museum at the address, and it is open every day from nine thirty."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "Sherlock Holmes was invented by a ___ writer",
+              "answer": "Scottish",
+              "accepted": [],
+              "explanation": "He was invented by a Scottish writer."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The first story appeared in ___",
+              "answer": "1887",
+              "accepted": [
+                "eighteen eighty-seven"
+              ],
+              "explanation": "The first story appeared in 1887."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Holmes lived with Doctor ___",
+              "answer": "Watson",
+              "accepted": [],
+              "explanation": "He lived with his friend Doctor Watson."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Holmes played the ___",
+              "answer": "violin",
+              "accepted": [],
+              "explanation": "He played the violin."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Doyle wrote ___ short stories",
+              "answer": "fifty-six",
+              "accepted": [
+                "56"
+              ],
+              "explanation": "Doyle wrote fifty-six short stories."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "The museum opens every day at ___",
+              "answer": "nine thirty",
+              "accepted": [
+                "9.30",
+                "9:30",
+                "half past nine"
+              ],
+              "explanation": "It is open every day from nine thirty."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a police detective",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "i",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "h",
+                "name": "Gideon",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "i",
+                "text": "Gideon, you have been a detective for fifteen years. Is the job like it is on television?"
+              },
+              {
+                "speaker": "h",
+                "text": "Not at all. On television, cases are solved in one hour. In real life, they can take months, and most of the work is reading and talking."
+              },
+              {
+                "speaker": "i",
+                "text": "What skills do you need?"
+              },
+              {
+                "speaker": "h",
+                "text": "Patience and a good memory. You also have to listen carefully, because small details in people's stories often show the truth."
+              },
+              {
+                "speaker": "i",
+                "text": "What is the hardest part?"
+              },
+              {
+                "speaker": "h",
+                "text": "Speaking to the families of people who have been hurt. You must be calm and kind, even when it is very sad."
+              },
+              {
+                "speaker": "i",
+                "text": "Do you ever take your work home?"
+              },
+              {
+                "speaker": "h",
+                "text": "Sometimes. I cannot stop thinking about a case. My wife says I talk about it in my sleep!"
+              },
+              {
+                "speaker": "i",
+                "text": "What do you enjoy most?"
+              },
+              {
+                "speaker": "h",
+                "text": "The moment when all the pieces finally fit together. That feeling is worth all the long hours."
+              },
+              {
+                "speaker": "i",
+                "text": "What do you do to relax?"
+              },
+              {
+                "speaker": "h",
+                "text": "I do crossword puzzles and I walk in the hills with my dog. It clears my head."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How is real police work different from television?",
+              "options": [
+                "There is more danger",
+                "Cases can take months",
+                "It is more exciting"
+              ],
+              "answer": 1,
+              "explanation": "In real life, cases can take months."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What skills does a detective need?",
+              "options": [
+                "Great strength and speed",
+                "Patience and a good memory",
+                "Skill with a computer"
+              ],
+              "answer": 1,
+              "explanation": "Patience and a good memory."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What is the hardest part of the job?",
+              "options": [
+                "Speaking to the families",
+                "Working at night",
+                "Writing the reports"
+              ],
+              "answer": 0,
+              "explanation": "Speaking to the families of people who have been hurt."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What does his wife say?",
+              "options": [
+                "He never comes home",
+                "He works too many hours",
+                "He talks about cases in his sleep"
+              ],
+              "answer": 2,
+              "explanation": "She says he talks about cases in his sleep."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What does he enjoy most?",
+              "options": [
+                "Getting medals from the police",
+                "When the pieces fit together",
+                "Appearing in the newspapers"
+              ],
+              "answer": 1,
+              "explanation": "The moment when all the pieces finally fit together."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "How does he relax?",
+              "options": [
+                "By doing puzzles and walking",
+                "By playing sport with friends",
+                "By reading detective stories"
+              ],
+              "answer": 0,
+              "explanation": "He does crossword puzzles and walks in the hills."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s72-1-1",
+              "prompt": "Do you like detective stories? Why or why not?"
+            },
+            {
+              "id": "s72-1-2",
+              "prompt": "Have you ever lost something important? What happened?"
+            },
+            {
+              "id": "s72-1-3",
+              "prompt": "Do you enjoy puzzles and games? Which ones?"
+            },
+            {
+              "id": "s72-1-4",
+              "prompt": "What would you like to be good at?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A person holding a magnifying glass up to a house.",
+          "images": [
+            {
+              "id": "s72-2-detective",
+              "title": "A detective with a magnifying glass",
+              "alt": "A person's dark silhouette holds a round magnifying glass. Through the lens you can see a house and trees.",
+              "describeHints": [
+                "a magnifying glass held up",
+                "a dark silhouette of a hand",
+                "a house seen through the lens",
+                "a blue sky"
+              ],
+              "image": {
+                "id": "s72-2-detective",
+                "src": "assets/images/exams/cambridge-pet-72/s72-2-detective-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-72/s72-2-detective-600.webp",
+                "width": 1000,
+                "height": 574,
+                "alt": "A person's dark silhouette holds a round magnifying glass. Through the lens you can see a house and trees.",
+                "credit": {
+                  "author": "AntanO",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Convex_lens_(magnifying_glass)_and_upside-down_image.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A mystery party",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your class is going to organise a mystery party. Talk about the different things that you could do at the party and decide which would be the most fun.",
+          "images": [
+            {
+              "id": "s72-3-costumes",
+              "title": "People in old-fashioned costumes",
+              "alt": "Three women in long, old-fashioned dresses and headscarves stand in front of a wooden wall. They hold small plates.",
+              "describeHints": [
+                "three women in long dresses",
+                "red and purple dresses",
+                "white headscarves",
+                "a wooden wall",
+                "small plates in their hands"
+              ],
+              "image": {
+                "id": "s72-3-costumes",
+                "src": "assets/images/exams/cambridge-pet-72/s72-3-costumes-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-72/s72-3-costumes-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "Three women in long, old-fashioned dresses and headscarves stand in front of a wooden wall. They hold small plates.",
+                "credit": {
+                  "author": "Sergei Prokudin-Gorskii",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Russian_peasant_girls_in_front_of_a_traditional_wooden_house_in_Kirillov.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Russian_peasant_girls_in_front_of_a_traditional_wooden_house_in_Kirillov.jpg"
+                }
+              }
+            },
+            {
+              "id": "s72-3-clues",
+              "title": "Clues hidden on a table",
+              "alt": "A dark green bag with a black handle sits on a wooden table. A folded note is tucked inside it.",
+              "describeHints": [
+                "a green bag with a black handle",
+                "a spider-web pattern on the bag",
+                "a folded note",
+                "a wooden table"
+              ],
+              "image": {
+                "id": "s72-3-clues",
+                "src": "assets/images/exams/cambridge-pet-72/s72-3-clues-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-72/s72-3-clues-600.webp",
+                "width": 1000,
+                "height": 666,
+                "alt": "A dark green bag with a black handle sits on a wooden table. A folded note is tucked inside it.",
+                "credit": {
+                  "author": "Personal Creations",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Halloween_treasure_hunt_hidden_clue_(15351430901).jpg"
+                }
+              }
+            },
+            {
+              "id": "s72-3-treasure",
+              "title": "A treasure map",
+              "alt": "Two hands hold an old paper map with a dotted path and a red cross.",
+              "describeHints": [
+                "a map",
+                "a red cross",
+                "a dotted path",
+                "hands"
+              ],
+              "image": {
+                "id": "s72-3-treasure",
+                "src": "assets/images/exams/cambridge-pet-72/s72-3-treasure-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-72/s72-3-treasure-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "Two hands hold an old paper map with a dotted path and a red cross.",
+                "credit": {
+                  "author": "N. ellladee",
+                  "license": "CC0",
+                  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Treasure_hunt_map_(Unsplash).jpg"
+                }
+              }
+            },
+            {
+              "id": "s72-3-escape",
+              "title": "Friends in an escape room",
+              "alt": "A man and a woman try to solve a puzzle with wooden pieces in an escape room that looks like a ship.",
+              "describeHints": [
+                "an escape room",
+                "a puzzle",
+                "wooden pieces",
+                "working together"
+              ],
+              "image": {
+                "id": "s72-3-escape",
+                "src": "assets/images/exams/cambridge-pet-72/s72-3-escape-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-72/s72-3-escape-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "A man and a woman try to solve a puzzle with wooden pieces in an escape room that looks like a ship.",
+                "credit": {
+                  "author": "ORpretom",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tulleys_Farm_Outfitter_Escape_Room.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s72-4-1",
+              "prompt": "Why do people enjoy mystery stories and films?"
+            },
+            {
+              "id": "s72-4-2",
+              "prompt": "Would you like to work as a detective? Why or why not?"
+            },
+            {
+              "id": "s72-4-3",
+              "prompt": "Do you think that you could keep a secret? Why?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,7 @@ const exam = (id: string): ExamSummary => ({
   title: id,
   subtitle: '',
   theme: '',
+  category: 'misc',
   estimatedMinutes: 100,
   skills: ['reading', 'writing', 'listening', 'speaking'],
   path: '',

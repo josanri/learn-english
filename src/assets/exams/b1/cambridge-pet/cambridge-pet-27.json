@@ -1,0 +1,1775 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-27",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Books and Reading",
+  "subtitle": "Libraries, book clubs, new stories and old favourites",
+  "theme": "Books and reading",
+  "category": "arts",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "BOOK SALE: Saturday, 9 a.m. to 4 p.m., St Mary's Hall. Paperbacks cost one pound and hardbacks cost two pounds. All the money will be spent on new books for the school library.",
+            "LIBRARY NEWS: You can now return books at the machine by the front door, even when the library is closed. Please do not leave books on the steps.",
+            "STORYTIME: Wednesday at 4.30 p.m. in the children's room. Stories for ages four to seven. Parents may stay, but they must keep quiet.",
+            "BOOK CLUB: We meet on the last Friday of the month. This month's book is a detective story. Please finish it before you come, because there will be no time to read it at the meeting.",
+            "LOST: My brown e-book reader, left on the 8.15 train from Granton. My name is inside the cover. If you find it, please phone the station office."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What will the money from the sale be used for?",
+              "options": [
+                "Paying the people who help",
+                "Repairing the roof of the hall",
+                "Buying books for a school"
+              ],
+              "answer": 2,
+              "explanation": "All the money will be spent on new books for the school library."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What can people do now?",
+              "options": [
+                "Borrow books from a machine",
+                "Return books when the library is shut",
+                "Leave books on the steps for staff"
+              ],
+              "answer": 1,
+              "explanation": "The machine by the front door takes books even when the library is closed."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "Who is the event on Wednesday for?",
+              "options": [
+                "Young children",
+                "Parents with babies",
+                "Older children who love reading"
+              ],
+              "answer": 0,
+              "explanation": "The stories are for ages four to seven."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What must members do before the meeting?",
+              "options": [
+                "Write a review for the group",
+                "Read the whole book at home",
+                "Choose the next book to read"
+              ],
+              "answer": 1,
+              "explanation": "There will be no time to read the book at the meeting, so members must finish it first."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What should a person who finds the e-book reader do?",
+              "options": [
+                "Give it to the train driver",
+                "Post it to the owner",
+                "Contact the station office"
+              ],
+              "answer": 2,
+              "explanation": "The notice asks the finder to phone the station office."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Reading and writing events",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Hettie spends two hours in the car every day. She loves stories, but she has no time to sit down with a book."
+            },
+            {
+              "id": "p2",
+              "text": "Lukas would like to learn how to write his own short stories. He is free in the evenings and does not mind paying for a course."
+            },
+            {
+              "id": "p3",
+              "text": "Berenice has two children, aged six and nine. She is looking for a day out for the family that is connected with books."
+            },
+            {
+              "id": "p4",
+              "text": "Fergal is sixteen. He wants to talk about novels with people of his own age, but he cannot afford to buy books."
+            },
+            {
+              "id": "p5",
+              "text": "Kalinda has lots of books at home that she has finished, and she does not want to throw them away. She would like some new ones without spending money."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Audiobook Library",
+              "text": "Borrow audiobooks free with your library card. Listen on your phone or on the CD player in your car."
+            },
+            {
+              "id": "B",
+              "title": "Poetry Evening",
+              "text": "Last Thursday of the month. Bring a poem to read aloud, or just listen. Free tea and biscuits."
+            },
+            {
+              "id": "C",
+              "title": "Second-Hand Bookshop",
+              "text": "Thousands of cheap used books, from cookery to history. Open every day except Monday. Try our sofa corner before you buy."
+            },
+            {
+              "id": "D",
+              "title": "Creative Writing Course",
+              "text": "Eight Monday evenings. Learn how to write short stories. Bring a notebook. The price is sixty pounds."
+            },
+            {
+              "id": "E",
+              "title": "Children's Book Festival",
+              "text": "The first weekend in June. Meet authors and draw with the artists of your favourite books. For ages five to eleven."
+            },
+            {
+              "id": "F",
+              "title": "Book Swap Café",
+              "text": "Bring a book you have finished and take one that you want. Free. Drinks are on sale."
+            },
+            {
+              "id": "G",
+              "title": "Reading Group for Teenagers",
+              "text": "We meet after school on Tuesdays. Free books for every member. Talk about novels with other fifteen to eighteen-year-olds."
+            },
+            {
+              "id": "H",
+              "title": "Travel Writing Talk",
+              "text": "A famous writer describes her walk across Africa. Friday at 7 p.m. Tickets cost eight pounds."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Hettie",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "The Audiobook Library lets people listen to stories on a car CD player or phone, so Hettie can enjoy them while she drives."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Lukas",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "The Creative Writing Course teaches short-story writing on Monday evenings, and Lukas is happy to pay for it."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Berenice",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "The Children's Book Festival is for ages five to eleven, so it suits a family with a six-year-old and a nine-year-old."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Fergal",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "The Reading Group for Teenagers is for ages fifteen to eighteen and gives free books to every member."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Kalinda",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "The Book Swap Café is free and lets people exchange finished books for new ones."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Why I put my phone away",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "For years, I read on my phone. It was practical: I always had it with me, and I could read a page while I waited for the bus. But last January, I noticed something strange. I had been 'reading' for hours every day, yet I could not remember the last book that I had finished.\n\nSo I made a rule: no phone for the first hour after I got home. Instead, I picked up a paperback that had been on my shelf for two years. The first evening was difficult. I kept reaching for my pocket, and after ten minutes I got up to make tea. But on the third evening, something changed. I read for forty minutes without moving, and I did not want to stop.\n\nSince then, I have read twenty-three books. I do not think that paper is better than a screen, and I still use my phone for news and messages. The difference is that a book never asks for my attention. Nothing flashes, and nobody sends me a message in the middle of a chapter.\n\nMy friends were surprised when I told them. Some said that they would never manage it. I do not blame them, because I would have said the same last year. Now I just lend them a book and say, 'Try it for one evening.'",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer first read on her phone?",
+              "options": [
+                "She always had it with her",
+                "It cost less than buying books",
+                "Her friends told her to do it"
+              ],
+              "answer": 0,
+              "explanation": "She says it was practical because she always had it with her."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What problem did she notice in January?",
+              "options": [
+                "She could not remember finishing a book",
+                "She was spending too much on books",
+                "She no longer enjoyed good stories"
+              ],
+              "answer": 0,
+              "explanation": "She read for hours but could not remember the last book she had finished."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "How did she feel on the first evening?",
+              "options": [
+                "She enjoyed it from the first minute",
+                "She found it hard to stay with the book",
+                "She fell asleep after ten minutes"
+              ],
+              "answer": 1,
+              "explanation": "She kept reaching for her pocket and got up after ten minutes."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What does she say about paper books and screens?",
+              "options": [
+                "She thinks screens are bad for children",
+                "She has stopped using her phone completely",
+                "She does not prefer paper to screens"
+              ],
+              "answer": 2,
+              "explanation": "She says she does not think paper is better and that she still uses her phone for news and messages."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What does she do when friends say they could not do it?",
+              "options": [
+                "She explains her rule to them again",
+                "She tells them to buy a paperback",
+                "She offers to lend them a book"
+              ],
+              "answer": 2,
+              "explanation": "She lends them a book and tells them to try it for one evening."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "The little library on Alder Street",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "On Alder Street, between a bakery and a bus stop, there is a small wooden box with a glass door. Inside, there are about thirty books. It is a street library, and anyone can borrow a book from it for free. [1] The idea belongs to Maureen Tait, a retired teacher who built the box herself three years ago.\n\n'I got tired of seeing good books in rubbish bins,' she says. [2] Within a week, the shelves were full, and neighbours were leaving notes inside the covers about their favourite stories.\n\nThe rules are simple. Take a book, and bring it back when you have finished, or leave a different one instead. [3] Maureen says that this surprised her, because she had expected some books to disappear. 'In three years, the number of books has hardly changed,' she says.\n\nNow street libraries are appearing in other parts of the town. [4] Maureen helped the first two groups to build theirs, and she gives them advice about wood and paint. 'The hardest part is the roof,' she laughs. [5] 'If it leaks, you will have thirty wet books and thirty unhappy readers.'",
+          "sentences": [
+            "Some are run by schools, and others by neighbours or shops.",
+            "Nobody has to sign a form or show a card.",
+            "The bakery next door sells fresh bread and cakes every morning.",
+            "The box must keep the books dry, or the whole idea fails.",
+            "Most people follow them, and very few books are ever lost.",
+            "So she built a small box, painted it blue and filled it with her own books."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "B",
+              "explanation": "The sentence explains that the books are free and that no card is needed, which follows \"borrow a book from it for free\"."
+            },
+            {
+              "id": "r4-2",
+              "answer": "F",
+              "explanation": "The sentence tells what she did next, and the following sentence says the shelves were full within a week."
+            },
+            {
+              "id": "r4-3",
+              "answer": "E",
+              "explanation": "The sentence says that most people follow the rules, which Maureen finds surprising because few books disappear."
+            },
+            {
+              "id": "r4-4",
+              "answer": "A",
+              "explanation": "The sentence explains that the street libraries are run by groups, and the next sentence says she helped the first two groups."
+            },
+            {
+              "id": "r4-5",
+              "answer": "D",
+              "explanation": "The sentence explains why the roof matters, and Maureen then talks about leaks and wet books."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "How to read more",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Many people say that they would like to read more, but they do not know where to [1]. The best way to begin is to make reading a daily habit. Choose a quiet time, such as before bed, and read for just ten minutes. If you find a book boring, do not [2] yourself to finish it. There are millions of other books, and you will soon [3] one that you enjoy.\n\nIt also helps to carry a book with you [4] you go out, so that you can read on the bus or while you wait for a friend. Finally, try to talk about your books. When you tell a friend about a story, you remember it much [5], and they might want to read it [6].",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "open",
+                "start",
+                "send",
+                "reach"
+              ],
+              "answer": 1,
+              "explanation": "People ask \"where to start\" when they do not know how to begin."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "force",
+                "hope",
+                "let",
+                "want"
+              ],
+              "answer": 0,
+              "explanation": "We say \"force yourself to do something\", and the gap is followed by \"to\"."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "ask",
+                "win",
+                "catch",
+                "find"
+              ],
+              "answer": 3,
+              "explanation": "You find a book that you enjoy."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "unless",
+                "although",
+                "whenever",
+                "until"
+              ],
+              "answer": 2,
+              "explanation": "\"Whenever you go out\" means each time you leave home."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "good",
+                "well",
+                "better",
+                "best"
+              ],
+              "answer": 2,
+              "explanation": "\"Much better\" is the comparative form after \"remember it\"."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "yet",
+                "too",
+                "either",
+                "even"
+              ],
+              "answer": 1,
+              "explanation": "At the end of a positive sentence, \"too\" means \"as well\"."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "A guide for new members",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Welcome to Greenwood Library! If you have just joined, [1] is a short guide to help you. You can borrow up to ten books at [2] time, and you may keep them for three weeks. If you want to keep a book for longer, you can ask [3] the front desk or renew it online. Anyone who returns books late [4] to pay a small fine of ten pence a day. There is also a quiet room upstairs [5] you can study, and the computers are free to use for one hour. We hope [6] will enjoy your visits.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "here",
+              "accepted": [
+                "this"
+              ],
+              "explanation": "The text introduces the guide with \"here is\" or \"this is\"."
+            },
+            {
+              "id": "r6-2",
+              "answer": "a",
+              "explanation": "The fixed phrase is \"at a time\", meaning on each occasion."
+            },
+            {
+              "id": "r6-3",
+              "answer": "at",
+              "explanation": "You ask at the front desk."
+            },
+            {
+              "id": "r6-4",
+              "answer": "has",
+              "explanation": "\"Anyone\" takes \"has to pay\" in the present simple."
+            },
+            {
+              "id": "r6-5",
+              "answer": "where",
+              "explanation": "\"Where\" introduces the place in which people can study."
+            },
+            {
+              "id": "r6-6",
+              "answer": "you",
+              "explanation": "The library hopes that you, the reader, will enjoy your visits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Isaac wants a book to read on a long train journey. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Recommend a book.",
+              "Say what it is about.",
+              "Explain why he will like it.",
+              "Ask about his journey."
+            ],
+            "sourceEmail": {
+              "from": "Isaac",
+              "subject": "A book for the train",
+              "body": "Next week I am taking a train journey of eight hours, and I have nothing to read. You always find interesting books. Could you recommend one? I do not like very long books. And where do you usually buy your books?"
+            },
+            "contentPoints": [
+              {
+                "text": "Recommend a book.",
+                "keywords": [
+                  "recommend",
+                  "book",
+                  "novel",
+                  "read",
+                  "story",
+                  "try",
+                  "suggest",
+                  "called"
+                ]
+              },
+              {
+                "text": "Say what it is about.",
+                "keywords": [
+                  "about",
+                  "story",
+                  "character",
+                  "boy",
+                  "girl",
+                  "detective",
+                  "adventure",
+                  "tells"
+                ]
+              },
+              {
+                "text": "Explain why he will like it.",
+                "keywords": [
+                  "because",
+                  "short",
+                  "exciting",
+                  "funny",
+                  "easy",
+                  "enjoy",
+                  "like",
+                  "interesting"
+                ]
+              },
+              {
+                "text": "Ask about his journey.",
+                "keywords": [
+                  "where",
+                  "journey",
+                  "train",
+                  "going",
+                  "trip",
+                  "when",
+                  "who",
+                  "how long"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for a school magazine",
+              "prompt": "Articles wanted! My favourite book. What is it about? Why do you like it? Who should read it? Write an article for the school magazine.",
+              "contentPoints": [
+                {
+                  "text": "Say what the book is about.",
+                  "keywords": [
+                    "about",
+                    "story",
+                    "tells",
+                    "character",
+                    "main",
+                    "adventure",
+                    "happens"
+                  ]
+                },
+                {
+                  "text": "Explain why you like it.",
+                  "keywords": [
+                    "because",
+                    "enjoy",
+                    "love",
+                    "like",
+                    "exciting",
+                    "funny",
+                    "special",
+                    "interesting"
+                  ]
+                },
+                {
+                  "text": "Say who should read it.",
+                  "keywords": [
+                    "should",
+                    "everyone",
+                    "people",
+                    "friends",
+                    "teenagers",
+                    "children",
+                    "recommend",
+                    "read"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a library that opens at night.",
+              "openingSentence": "The library was supposed to be empty, but I could hear someone turning the pages.",
+              "contentPoints": [
+                {
+                  "text": "Say who or what the narrator finds.",
+                  "keywords": [
+                    "find",
+                    "found",
+                    "saw",
+                    "person",
+                    "man",
+                    "woman",
+                    "ghost",
+                    "cat",
+                    "light"
+                  ]
+                },
+                {
+                  "text": "Describe what happens next.",
+                  "keywords": [
+                    "then",
+                    "next",
+                    "suddenly",
+                    "ran",
+                    "opened",
+                    "book",
+                    "said",
+                    "asked"
+                  ]
+                },
+                {
+                  "text": "Explain how the story ends.",
+                  "keywords": [
+                    "finally",
+                    "in the end",
+                    "decided",
+                    "smiled",
+                    "home",
+                    "never",
+                    "always",
+                    "returned"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "lorna",
+                    "name": "Lorna",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "vaughn",
+                    "name": "Vaughn",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "vaughn",
+                    "text": "Hi, I'm returning this book. I'm sorry, it's a bit late."
+                  },
+                  {
+                    "speaker": "lorna",
+                    "text": "Let me check. It was due last Monday, so it's five days late. The fine is ten pence a day."
+                  },
+                  {
+                    "speaker": "vaughn",
+                    "text": "Oh, that's fine. Can I borrow this one too?"
+                  },
+                  {
+                    "speaker": "lorna",
+                    "text": "Of course. Just show me your card."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "How much does the man have to pay?",
+                "options": [
+                  "Ten pence",
+                  "Fifty pence",
+                  "One pound"
+                ],
+                "answer": 1,
+                "explanation": "The book is five days late and the fine is ten pence a day, so he pays fifty pence."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "sabine",
+                    "name": "Sabine",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "dougal",
+                    "name": "Dougal",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "sabine",
+                    "text": "Is the bookshop open late tonight?"
+                  },
+                  {
+                    "speaker": "dougal",
+                    "text": "It usually closes at six, but on Fridays it stays open until eight. Tomorrow, though, it closes at five."
+                  },
+                  {
+                    "speaker": "sabine",
+                    "text": "Then I'd better go now. Is it far?"
+                  },
+                  {
+                    "speaker": "dougal",
+                    "text": "Ten minutes' walk."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "When does the bookshop close tomorrow?",
+                "options": [
+                  "At five o'clock",
+                  "At six o'clock",
+                  "At eight o'clock"
+                ],
+                "answer": 0,
+                "explanation": "The man says that tomorrow it closes at five."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "maud",
+                    "name": "Maud",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "lennox",
+                    "name": "Lennox",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "maud",
+                    "text": "Have you seen the film of The Silver Door?"
+                  },
+                  {
+                    "speaker": "lennox",
+                    "text": "Yes, last night. The actors were great, but it's quite different from the book."
+                  },
+                  {
+                    "speaker": "maud",
+                    "text": "I know. I read the book twice, and I think it's much better."
+                  },
+                  {
+                    "speaker": "lennox",
+                    "text": "I'm not sure. The film has better music, and it's faster."
+                  },
+                  {
+                    "speaker": "maud",
+                    "text": "But the story in the book is more interesting."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "What does Maud think?",
+                "options": [
+                  "The book is better than the film",
+                  "The film has the better actors",
+                  "The film and the book are equal"
+                ],
+                "answer": 0,
+                "explanation": "She says that she thinks the book is much better and the story is more interesting."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "tamara",
+                    "name": "Tamara",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "ewart",
+                    "name": "Ewart",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "tamara",
+                    "text": "Are you coming to the cinema tonight?"
+                  },
+                  {
+                    "speaker": "ewart",
+                    "text": "I can't. I have to finish my book for school. The test is tomorrow."
+                  },
+                  {
+                    "speaker": "tamara",
+                    "text": "You could read it on the bus."
+                  },
+                  {
+                    "speaker": "ewart",
+                    "text": "It's two hundred pages! I'll read until midnight if I have to."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What will Ewart do tonight?",
+                "options": [
+                  "Go to the cinema with Tamara",
+                  "Finish a book for school",
+                  "Study for a different test"
+                ],
+                "answer": 1,
+                "explanation": "He has to finish his book for school before the test."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "aurora",
+                    "name": "Aurora",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "tobin",
+                    "name": "Tobin",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "aurora",
+                    "text": "I need a present for my nephew. He's ten and says he hates reading."
+                  },
+                  {
+                    "speaker": "tobin",
+                    "text": "Then try this one. It's a funny story with lots of drawings, and boys of his age love it."
+                  },
+                  {
+                    "speaker": "aurora",
+                    "text": "Has it got a long story? He hates thick books."
+                  },
+                  {
+                    "speaker": "tobin",
+                    "text": "No, it's quite short. Only eighty pages."
+                  },
+                  {
+                    "speaker": "aurora",
+                    "text": "Perfect, I'll take it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "What does the woman like about the book?",
+                "options": [
+                  "It is very cheap",
+                  "It is about sport",
+                  "It is not too long"
+                ],
+                "answer": 2,
+                "explanation": "She hates thick books, and the man says that it has only eighty pages."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "cerys",
+                    "name": "Cerys",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "tavish",
+                    "name": "Tavish",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "cerys",
+                    "text": "Do you ever use an e-book reader?"
+                  },
+                  {
+                    "speaker": "tavish",
+                    "text": "I tried one, but I missed turning the pages, and I couldn't lend it to anyone."
+                  },
+                  {
+                    "speaker": "cerys",
+                    "text": "I love mine, because I can carry fifty books on holiday."
+                  },
+                  {
+                    "speaker": "tavish",
+                    "text": "That's true, but I still prefer paper."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What does Tavish miss about paper books?",
+                "options": [
+                  "Turning the pages",
+                  "The cover pictures",
+                  "The weight in his bag"
+                ],
+                "answer": 0,
+                "explanation": "He says he missed turning the pages when he used an e-book reader."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "eilidh",
+                    "name": "Eilidh",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "hamish",
+                    "name": "Hamish",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "eilidh",
+                    "text": "The author talk starts at seven, doesn't it?"
+                  },
+                  {
+                    "speaker": "hamish",
+                    "text": "That's what the poster said, but they've moved it to half past seven because the author's train is late."
+                  },
+                  {
+                    "speaker": "eilidh",
+                    "text": "Oh good, then I can have dinner first."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "When will the author talk begin?",
+                "options": [
+                  "Seven o'clock",
+                  "Half past seven",
+                  "Eight o'clock"
+                ],
+                "answer": 1,
+                "explanation": "It has been moved to half past seven because the author's train is late."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "piers",
+                    "name": "Piers",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "marcia",
+                    "name": "Marcia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "piers",
+                    "text": "Hello, I'm looking for a book called Mountain Rescue. I couldn't find it on your shelves."
+                  },
+                  {
+                    "speaker": "marcia",
+                    "text": "We don't have it in stock at the moment, but I can order it for you. It'll arrive on Thursday."
+                  },
+                  {
+                    "speaker": "piers",
+                    "text": "Great. Can you phone me when it arrives?"
+                  },
+                  {
+                    "speaker": "marcia",
+                    "text": "Of course. Can I take your number?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Why is the man talking to the woman?",
+                "options": [
+                  "To ask about a delivery",
+                  "To check the opening times",
+                  "To order a book that is not in stock"
+                ],
+                "answer": 2,
+                "explanation": "The shop does not have the book in stock, so she offers to order it."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "hadley",
+                    "name": "Hadley",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "sunniva",
+                    "name": "Sunniva",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "hadley",
+                    "text": "Have you been to the new library yet?"
+                  },
+                  {
+                    "speaker": "sunniva",
+                    "text": "Yes, on Saturday. It's huge, and there are lots of comfortable chairs, but it was so noisy that I couldn't concentrate."
+                  },
+                  {
+                    "speaker": "hadley",
+                    "text": "Really? I thought libraries were supposed to be silent."
+                  },
+                  {
+                    "speaker": "sunniva",
+                    "text": "They've got a café inside now, so people talk all the time. I'll go back to the old one."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What does Sunniva think of the new library?",
+                "options": [
+                  "It is too far from her home",
+                  "It is too noisy for studying",
+                  "It has too few chairs"
+                ],
+                "answer": 1,
+                "explanation": "She could not concentrate because it was so noisy."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "pearl",
+                    "name": "Pearl",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "jude",
+                    "name": "Jude",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "jude",
+                    "text": "Excuse me, I can't find the section on history."
+                  },
+                  {
+                    "speaker": "pearl",
+                    "text": "It's on the second floor. I'll show you. Have you got your library card?"
+                  },
+                  {
+                    "speaker": "jude",
+                    "text": "Yes, here. I need a book about the Romans for my homework."
+                  },
+                  {
+                    "speaker": "pearl",
+                    "text": "We have a very good one for young readers. You can borrow it for three weeks."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "Who is the woman?",
+                "options": [
+                  "A library worker",
+                  "A school teacher",
+                  "A bookshop owner"
+                ],
+                "answer": 0,
+                "explanation": "She shows him where the history books are and lets him borrow a book with his library card."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "willa",
+                    "name": "Willa",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "corbin",
+                    "name": "Corbin",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "willa",
+                    "text": "Shall we start a book club?"
+                  },
+                  {
+                    "speaker": "corbin",
+                    "text": "Good idea, but who will join? Everyone I know is too busy."
+                  },
+                  {
+                    "speaker": "willa",
+                    "text": "We could ask at work and put a poster in the café."
+                  },
+                  {
+                    "speaker": "corbin",
+                    "text": "OK, I'll make the poster if you talk to your colleagues."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What will Corbin do?",
+                "options": [
+                  "Choose the first book",
+                  "Talk to colleagues",
+                  "Make a poster"
+                ],
+                "answer": 2,
+                "explanation": "He says he will make the poster, while Willa talks to her colleagues."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "dilys",
+                    "name": "Dilys",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "rufus",
+                    "name": "Rufus",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "dilys",
+                    "text": "Hello. I bought this book here yesterday, but when I got home, I found that ten pages were missing."
+                  },
+                  {
+                    "speaker": "rufus",
+                    "text": "Oh, I'm so sorry. Let me look. You're right, pages seventy to eighty are missing. Would you like a refund or a new copy?"
+                  },
+                  {
+                    "speaker": "dilys",
+                    "text": "A new copy, please. I'm giving it to my father for his birthday."
+                  },
+                  {
+                    "speaker": "rufus",
+                    "text": "I'll get you one from the back."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the woman want?",
+                "options": [
+                  "A new copy of the book",
+                  "Her money back",
+                  "A discount on the price"
+                ],
+                "answer": 0,
+                "explanation": "She asks for a new copy because the book is a birthday present."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "anwen",
+                    "name": "Anwen",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "lionel",
+                    "name": "Lionel",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "anwen",
+                    "text": "I want to read more English books, but they're so difficult."
+                  },
+                  {
+                    "speaker": "lionel",
+                    "text": "Start with books you already know in your own language. Then you can guess the new words."
+                  },
+                  {
+                    "speaker": "anwen",
+                    "text": "That's a clever idea. Which ones?"
+                  },
+                  {
+                    "speaker": "lionel",
+                    "text": "Try a children's classic. The sentences are short, and you'll understand most of it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What advice does Lionel give?",
+                "options": [
+                  "Choose a long, hard novel",
+                  "Look up every new word",
+                  "Read a story you already know"
+                ],
+                "answer": 2,
+                "explanation": "He says to start with books she already knows in her own language."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "The Summer Reading Challenge",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "hannelore",
+                "name": "Hannelore",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "hannelore",
+                "text": "Hello, everyone, and welcome to the Summer Reading Challenge at Brookfield Library. My name is Hannelore, and I look after the children's section. The challenge starts on the first of July and finishes at the end of August. Every child who joins receives a free folder, and each time you read a book, you get a sticker for it. If you read six books, you win a medal. We have more than two hundred new books on the shelves this year, including some about space and football. On Saturdays, we also have a reading club at eleven o'clock, where a storyteller reads aloud. It takes place in the garden if the weather is good. To join, you only need to give us your name at the front desk. It is completely free, but you must be a member of the library. Parents are welcome to stay and listen, but please keep the noise down. I hope to see you all soon!"
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The challenge finishes at the end of ___",
+              "answer": "August",
+              "explanation": "The challenge finishes at the end of August."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Every child who joins gets a free ___",
+              "answer": "folder",
+              "explanation": "Every child who joins receives a free folder."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Children get a ___ for every book they read",
+              "answer": "sticker",
+              "explanation": "Each time you read a book, you get a sticker."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Children who read six books win a ___",
+              "answer": "medal",
+              "explanation": "If you read six books, you win a medal."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "This year there are many ___ books about space and football",
+              "answer": "new",
+              "explanation": "Hannelore says there are more than two hundred new books."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "The Saturday reading club is in the ___ if the weather is good",
+              "answer": "garden",
+              "explanation": "The reading club takes place in the garden if the weather is good."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A writer for children",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "philip",
+                "name": "Philip",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "lottie",
+                "name": "Lottie",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "philip",
+                "text": "My guest today is Lottie Brandt, who writes stories for children. Lottie, when do you write?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "Early in the morning, before my children wake up. The house is quiet, and I have two hours before breakfast."
+              },
+              {
+                "speaker": "philip",
+                "text": "Where do your ideas come from?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "Mostly from things that my own children say. My son once told me that his teddy bear had a job, and that became my first book."
+              },
+              {
+                "speaker": "philip",
+                "text": "Do you ever have days when you can't write?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "Often! When that happens, I go for a long walk. It's strange, but ideas appear when I stop trying to find them."
+              },
+              {
+                "speaker": "philip",
+                "text": "What do children say when you visit schools?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "They ask very direct questions. One boy asked me why my characters were always so naughty. I told him that good characters are boring."
+              },
+              {
+                "speaker": "philip",
+                "text": "Is there a book you wish you had written?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "A little story about a lost umbrella that my grandmother used to read to me. It's simple, but I still remember every page."
+              },
+              {
+                "speaker": "philip",
+                "text": "And what are you working on now?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "A book about a girl who collects shadows. It's nearly finished, but I'm not sure about the ending."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "When does Lottie write?",
+              "options": [
+                "In the evening after dinner",
+                "Before her children wake up",
+                "While her children are at school"
+              ],
+              "answer": 1,
+              "explanation": "She writes early in the morning, before her children wake up."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "Where did the idea for her first book come from?",
+              "options": [
+                "A story her grandmother told",
+                "Something her son told her",
+                "A walk in the country"
+              ],
+              "answer": 1,
+              "explanation": "Her son told her that his teddy bear had a job."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does she do when she cannot write?",
+              "options": [
+                "Go for a long walk",
+                "Read other writers' books",
+                "Ask her family for ideas"
+              ],
+              "answer": 0,
+              "explanation": "She goes for a long walk, and ideas appear when she stops trying."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What did a boy ask her at school?",
+              "options": [
+                "Where she finds her ideas",
+                "How long a book takes to write",
+                "Why her characters behave badly"
+              ],
+              "answer": 2,
+              "explanation": "He asked why her characters were always so naughty."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "Why does she wish she had written the umbrella story?",
+              "options": [
+                "It sold millions of copies",
+                "She remembers it from her childhood",
+                "It has beautiful pictures"
+              ],
+              "answer": 1,
+              "explanation": "Her grandmother used to read it to her and she still remembers every page."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "How does she feel about her new book?",
+              "options": [
+                "Not sure about the ending",
+                "Sure that it will be popular",
+                "Tired of working on it"
+              ],
+              "answer": 0,
+              "explanation": "It is nearly finished, but she is not sure about the ending."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s27-1-1",
+              "prompt": "Do you like reading? What do you usually read?"
+            },
+            {
+              "id": "s27-1-2",
+              "prompt": "Where do you like to read?"
+            },
+            {
+              "id": "s27-1-3",
+              "prompt": "Tell me about a book that you read when you were younger."
+            },
+            {
+              "id": "s27-1-4",
+              "prompt": "Do you prefer paper books or e-books?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A person reading an open book outside, with autumn leaves on the pages.",
+          "images": [
+            {
+              "id": "s27-2-reader",
+              "title": "A person reading outdoors",
+              "alt": "A person holds an open book with a yellow leaf and a dry leaf lying on the pages. Only the hand, arm and part of a checked shirt are visible.",
+              "describeHints": [
+                "an open book",
+                "dry autumn leaves on the pages",
+                "a person's hand and arm",
+                "a checked shirt",
+                "a blurred outdoor background"
+              ],
+              "image": {
+                "id": "s27-2-reader",
+                "src": "assets/images/exams/cambridge-pet-27/s27-2-reader-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-27/s27-2-reader-600.webp",
+                "width": 1000,
+                "height": 668,
+                "alt": "A person holds an open book with a yellow leaf and a dry leaf lying on the pages. Only the hand, arm and part of a checked shirt are visible.",
+                "credit": {
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Person_reading_an_open_book_with_fallen_leaves_outdoors_during_autumn.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Choose a place to read",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "A student wants to find a good place to read for an hour. Talk about these places and decide which one would be the best.",
+          "images": [
+            {
+              "id": "s27-3-library",
+              "title": "A library reading room",
+              "alt": "A large library reading room with a high wooden ceiling and hanging lamps. People sit at long tables and read.",
+              "describeHints": [
+                "a high wooden ceiling",
+                "long wooden reading tables",
+                "hanging lamps",
+                "people reading at tables",
+                "tall arched windows"
+              ],
+              "image": {
+                "id": "s27-3-library",
+                "src": "assets/images/exams/cambridge-pet-27/s27-3-library-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-27/s27-3-library-600.webp",
+                "width": 1000,
+                "height": 432,
+                "alt": "A large library reading room with a high wooden ceiling and hanging lamps. People sit at long tables and read.",
+                "credit": {
+                  "author": "Diliff",
+                  "license": "CC BY 2.5",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:NYC_Public_Library_Research_Room_Jan_2006-1-_3.jpg"
+                }
+              }
+            },
+            {
+              "id": "s27-3-cafe",
+              "title": "A café with books",
+              "alt": "A café inside a bookshop, with wooden tables and chairs, a long counter with cakes and a few customers ordering drinks.",
+              "describeHints": [
+                "wooden tables",
+                "a counter",
+                "customers",
+                "a quiet place"
+              ],
+              "image": {
+                "id": "s27-3-cafe",
+                "src": "assets/images/exams/cambridge-pet-27/s27-3-cafe-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-27/s27-3-cafe-600.webp",
+                "width": 1000,
+                "height": 664,
+                "alt": "A café inside a bookshop, with wooden tables and chairs, a long counter with cakes and a few customers ordering drinks.",
+                "credit": {
+                  "author": "Joe Mabel",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elliott_Bay_Books_(Capitol_Hill)_cafe_01.jpg"
+                }
+              }
+            },
+            {
+              "id": "s27-3-bench",
+              "title": "A bench in a park",
+              "alt": "An old metal bench with a curly iron back stands among green ivy leaves. No people are in the picture.",
+              "describeHints": [
+                "a metal bench with a curly iron back",
+                "green ivy leaves",
+                "a brick path",
+                "a leafy outdoor corner"
+              ],
+              "image": {
+                "id": "s27-3-bench",
+                "src": "assets/images/exams/cambridge-pet-27/s27-3-bench-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-27/s27-3-bench-600.webp",
+                "width": 1000,
+                "height": 665,
+                "alt": "An old metal bench with a curly iron back stands among green ivy leaves. No people are in the picture.",
+                "credit": {
+                  "author": "Dietmar Rabich",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bredevoort_(NL),_Parkbank_--_2016_--_1398.jpg"
+                }
+              }
+            },
+            {
+              "id": "s27-3-bed",
+              "title": "A cosy bedroom",
+              "alt": "A bed with white sheets stands next to a large potted plant with long green leaves.",
+              "describeHints": [
+                "a bed with white sheets",
+                "a large potted plant with long green leaves",
+                "a small label on the plant pot"
+              ],
+              "image": {
+                "id": "s27-3-bed",
+                "src": "assets/images/exams/cambridge-pet-27/s27-3-bed-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-27/s27-3-bed-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A bed with white sheets stands next to a large potted plant with long green leaves.",
+                "credit": {
+                  "author": "Nora Sistemich",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schefflera_arboricola_NORA.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s27-4-1",
+              "prompt": "Do you think people read less than in the past? Why?"
+            },
+            {
+              "id": "s27-4-2",
+              "prompt": "Should schools make students read a book every month? Why or why not?"
+            },
+            {
+              "id": "s27-4-3",
+              "prompt": "What makes a book good for you?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

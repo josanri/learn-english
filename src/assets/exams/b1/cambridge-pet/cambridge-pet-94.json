@@ -1,0 +1,1684 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-94",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Souvenirs and Tourist Guides",
+  "subtitle": "A day tour in Italy, the history of souvenirs and a tour guide",
+  "theme": "Souvenirs and tourist guides",
+  "category": "travel",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "SOUVENIR SHOP: Postcards, magnets and local honey. Buy two postcards and get a third one free. Open every day until seven.",
+            "Message from Bellamy: Cosmin, I bought you a small wooden boat in the market. Do not worry, it was cheap! See you at the hotel.",
+            "GUIDED TOUR: The castle tour leaves from the main gate every hour. Tickets are sold at the kiosk. Children under five are free.",
+            "TOURIST INFORMATION: Free maps and bus timetables. Ask about our evening river cruise. We speak English, French and Spanish.",
+            "PLEASE NOTE: Do not buy tickets from people in the street. Only our official kiosks can sell you a valid ticket."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What is special about the postcards?",
+              "options": [
+                "They cost one pound",
+                "They show the castle",
+                "The third one is free"
+              ],
+              "answer": 2,
+              "explanation": "Buy two and get a third postcard free."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What did Bellamy buy for Cosmin?",
+              "options": [
+                "Some local honey",
+                "A wooden boat",
+                "A hotel postcard"
+              ],
+              "answer": 1,
+              "explanation": "Bellamy bought a small wooden boat."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "How often does the castle tour leave?",
+              "options": [
+                "Every hour",
+                "Every morning",
+                "Every weekend"
+              ],
+              "answer": 0,
+              "explanation": "The tour leaves from the main gate every hour."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What can visitors ask about at the information office?",
+              "options": [
+                "A castle ticket",
+                "A river cruise",
+                "A taxi ride"
+              ],
+              "answer": 1,
+              "explanation": "They can ask about the evening river cruise."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "Where should visitors buy tickets?",
+              "options": [
+                "On the tour bus",
+                "From people nearby",
+                "At an official kiosk"
+              ],
+              "answer": 2,
+              "explanation": "Only official kiosks can sell valid tickets."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Souvenirs and tours",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Erik wants to take home a taste of the region for his family, something he can eat and share."
+            },
+            {
+              "id": "p2",
+              "text": "Hedy is looking for something small and light for her friends, as her suitcase is already full."
+            },
+            {
+              "id": "p3",
+              "text": "Lark prefers experiences to objects. She wants to spend an evening on the water and see the city lights."
+            },
+            {
+              "id": "p4",
+              "text": "Nash wants to learn about the city's history from someone who really knows it."
+            },
+            {
+              "id": "p5",
+              "text": "Trent loves handmade things. He wants to see an artist at work and buy directly from him."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Local Food Hamper",
+              "text": "Cheese, honey and biscuits in a basket, made in the region."
+            },
+            {
+              "id": "B",
+              "title": "Postcards and Magnets",
+              "text": "Small, light and cheap. Ideal for friends at home."
+            },
+            {
+              "id": "C",
+              "title": "Evening River Cruise",
+              "text": "Sail along the river at night and see the city lights."
+            },
+            {
+              "id": "D",
+              "title": "Expert History Tour",
+              "text": "A professor of history walks you through the oldest streets."
+            },
+            {
+              "id": "E",
+              "title": "Craft Studio",
+              "text": "Watch artists make pottery, and buy directly from them."
+            },
+            {
+              "id": "F",
+              "title": "Gift Wrapping",
+              "text": "Wrap your presents free of charge."
+            },
+            {
+              "id": "G",
+              "title": "Luggage Storage",
+              "text": "Leave your bags safely while you explore."
+            },
+            {
+              "id": "H",
+              "title": "Coach Trip",
+              "text": "A day out to the coast, with lunch included."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Erik",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Local Food Hamper has cheese, honey and biscuits made in the region."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Hedy",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Postcards and Magnets are small and light."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Lark",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Evening River Cruise shows the city lights at night."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Nash",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Expert History Tour is led by a professor of history."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Trent",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Craft Studio lets you watch artists and buy directly from them."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "The worst tour guide",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "On our family holiday in Italy, we booked a day tour of an old town. We had read good reviews, and my mother was looking forward to it for weeks. But from the first minute, we could see that our guide, a young man called Dario, had a problem.\n\nHe spoke so quietly that nobody at the back could hear him. When he pointed at a building, he often said, \"I think this was a church... or perhaps a school.\" At one point, he took us to a beautiful square and told us that it was built in the twelfth century. A lady in our group, who was a historian, politely said that it was built in the sixteenth.\n\nThen it began to rain. Dario had no umbrella, and he walked so fast that we nearly lost him twice. Finally, he stopped at a cafe and said that this was the end of the tour. We had paid fifty euros each!\n\nHowever, there was a happy ending. The cafe owner, who had heard everything, brought us free coffee and gave us a map with all the sights marked. We spent the afternoon on our own, and it was the best part of the day.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer's family choose the tour?",
+              "options": [
+                "They had read good reviews",
+                "It was very cheap",
+                "A friend recommended it"
+              ],
+              "answer": 0,
+              "explanation": "They had read good reviews."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What was wrong with Dario's voice?",
+              "options": [
+                "It was too quiet",
+                "It was too loud",
+                "It was too fast"
+              ],
+              "answer": 0,
+              "explanation": "He spoke so quietly that people could not hear him."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did the historian do?",
+              "options": [
+                "Asked for her money",
+                "Corrected a date",
+                "Left the group"
+              ],
+              "answer": 1,
+              "explanation": "She politely said the square was built in the sixteenth century."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "How did the tour end?",
+              "options": [
+                "At the station",
+                "At the castle",
+                "In a cafe"
+              ],
+              "answer": 2,
+              "explanation": "Dario stopped at a cafe and said the tour was over."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What did the cafe owner do?",
+              "options": [
+                "Phoned the guide",
+                "Called the police",
+                "Gave them a map"
+              ],
+              "answer": 2,
+              "explanation": "He gave them free coffee and a map with the sights marked."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "The history of souvenirs",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "People have always brought things home from their travels. [1] Pilgrims in the Middle Ages, for example, took small badges from holy places to show that they had been there.\n\nIn the eighteenth century, rich young Europeans toured Italy and France. [2] They bought paintings, statues and books, and sent them back by ship.\n\nWhen railways and cheaper hotels arrived, ordinary people could travel too. [3] Their shops sold small, cheap objects with the name of the town on them.\n\nPostcards became very popular in the twentieth century. [4] A simple picture and a few words could tell friends that you were thinking of them.\n\nToday, many souvenirs are made in distant factories. [5] The best ones, however, are still made by local people using traditional skills.",
+          "sentences": [
+            "Seaside towns soon filled with gift shops.",
+            "These are often cheaper but less special.",
+            "The idea was to prove that you had really been there.",
+            "They were easy to buy, light and quick to send.",
+            "Visitors often prefer to buy food.",
+            "Most of them travelled for many months."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "C",
+              "explanation": "The idea was to prove you had been there; the next sentence gives pilgrims and badges."
+            },
+            {
+              "id": "r4-2",
+              "answer": "F",
+              "explanation": "Most of them travelled for many months; the next sentence says what they bought."
+            },
+            {
+              "id": "r4-3",
+              "answer": "A",
+              "explanation": "Seaside towns filled with gift shops; the next sentence says their shops sold cheap objects."
+            },
+            {
+              "id": "r4-4",
+              "answer": "D",
+              "explanation": "They were easy to buy, light and quick to send; the next sentence says a simple picture could tell friends."
+            },
+            {
+              "id": "r4-5",
+              "answer": "B",
+              "explanation": "These are cheaper but less special; the next sentence says the best are made by local people."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A note from a tourist",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Dear Ike, We arrived in the city yesterday, and I have [1] seen so many interesting things. This morning, we visited the old castle. The guide told us about the king [2] built it. After that, we went to a market, [3] I bought a small painting. It cost only ten euros, so I [4] my mother one as well. If I have enough room in my bag, I will [5] some local cheese. I cannot wait to show you everything when I [6] home. Dyer",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "yet",
+                "already",
+                "ever",
+                "soon"
+              ],
+              "answer": 1,
+              "explanation": "Already goes with the present perfect to show something has happened."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "who",
+                "which",
+                "what",
+                "where"
+              ],
+              "answer": 0,
+              "explanation": "Who refers to a person, the king."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "when",
+                "who",
+                "what",
+                "where"
+              ],
+              "answer": 3,
+              "explanation": "Where refers to the market as a place."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "buys",
+                "buy",
+                "bought",
+                "buying"
+              ],
+              "answer": 2,
+              "explanation": "Bought is the past tense for a finished action."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "cost",
+                "sell",
+                "buy",
+                "carry"
+              ],
+              "answer": 2,
+              "explanation": "We buy cheese; we do not sell it as a tourist."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "got",
+                "get",
+                "getting",
+                "gets"
+              ],
+              "answer": 1,
+              "explanation": "After when with a future meaning we use the present: get home."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Choosing a souvenir",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Choosing a souvenir can be harder than it seems. Many tourists buy the first thing they see, [1] later they regret it. Before you spend any money, walk around the market and compare the prices. [2] you find something you like, ask where it was made. Real handmade objects are often more expensive, but they last longer. Remember that you have to carry everything home, [3] be careful not to buy something heavy or fragile. A good tip is to choose an object that reminds you of a special moment. It can be anything: a stone from the beach, a ticket, or [4] a simple postcard. Do not forget the rules about taking food or plants through customs, because some countries do not allow [5] . Finally, if you are buying a gift, think about the person who will [6] it.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "and",
+              "accepted": [
+                "but"
+              ],
+              "explanation": "And joins two actions: they buy something and regret it later."
+            },
+            {
+              "id": "r6-2",
+              "answer": "When",
+              "accepted": [
+                "If",
+                "Once"
+              ],
+              "explanation": "When you find something you like, ask where it was made."
+            },
+            {
+              "id": "r6-3",
+              "answer": "so",
+              "explanation": "So gives a result: you have to carry everything, so be careful."
+            },
+            {
+              "id": "r6-4",
+              "answer": "just",
+              "accepted": [
+                "even",
+                "only"
+              ],
+              "explanation": "Even/just a simple postcard shows that it does not have to be special."
+            },
+            {
+              "id": "r6-5",
+              "answer": "it",
+              "accepted": [
+                "them"
+              ],
+              "explanation": "Do not allow it: object pronoun after the verb."
+            },
+            {
+              "id": "r6-6",
+              "answer": "receive",
+              "accepted": [
+                "get",
+                "enjoy",
+                "use"
+              ],
+              "explanation": "The person who will receive it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Cosmin is visiting your country and wants to buy souvenirs. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Say you are glad he is coming.",
+              "Suggest what to buy.",
+              "Say where to go to buy it.",
+              "Ask how much money he wants to spend."
+            ],
+            "sourceEmail": {
+              "from": "Cosmin",
+              "subject": "Souvenirs",
+              "body": "I am coming to your country in July, and I want to bring back something special for my family. What do you think I should buy? And where can I find it?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say you are glad he is coming.",
+                "keywords": [
+                  "glad",
+                  "happy",
+                  "pleased",
+                  "excited",
+                  "great",
+                  "lovely",
+                  "look forward"
+                ]
+              },
+              {
+                "text": "Suggest what to buy.",
+                "keywords": [
+                  "buy",
+                  "cheese",
+                  "pottery",
+                  "chocolate",
+                  "scarf",
+                  "postcards",
+                  "souvenir"
+                ]
+              },
+              {
+                "text": "Say where to go to buy it.",
+                "keywords": [
+                  "market",
+                  "shop",
+                  "town",
+                  "street",
+                  "centre",
+                  "store",
+                  "near"
+                ]
+              },
+              {
+                "text": "Ask how much money he wants to spend.",
+                "keywords": [
+                  "how much",
+                  "money",
+                  "spend",
+                  "budget",
+                  "pounds",
+                  "euros",
+                  "price"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! What is the best souvenir to bring home from a holiday? Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Say what you think is best.",
+                  "keywords": [
+                    "think",
+                    "best",
+                    "photo",
+                    "postcard",
+                    "food",
+                    "prefer",
+                    "magnet"
+                  ]
+                },
+                {
+                  "text": "Give reasons.",
+                  "keywords": [
+                    "because",
+                    "reason",
+                    "cheap",
+                    "light",
+                    "memory",
+                    "special",
+                    "first"
+                  ]
+                },
+                {
+                  "text": "Describe a souvenir that you own.",
+                  "keywords": [
+                    "own",
+                    "have",
+                    "got",
+                    "bought",
+                    "received",
+                    "my",
+                    "remember"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "When I opened my suitcase at home, I found something that was not mine.",
+              "contentPoints": [
+                {
+                  "text": "Say what you found.",
+                  "keywords": [
+                    "found",
+                    "box",
+                    "letter",
+                    "bag",
+                    "toy",
+                    "ring",
+                    "photo"
+                  ]
+                },
+                {
+                  "text": "Say what you did.",
+                  "keywords": [
+                    "called",
+                    "wrote",
+                    "went",
+                    "looked",
+                    "asked",
+                    "took",
+                    "returned"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "finally",
+                    "in the end",
+                    "happy",
+                    "friend",
+                    "returned",
+                    "smiled",
+                    "later"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "How much is this magnet?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Two pounds, or three for five."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "How much are three magnets?",
+                "options": [
+                  "Six pounds",
+                  "Five pounds",
+                  "Three pounds"
+                ],
+                "answer": 1,
+                "explanation": "He says three for five pounds."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "What did you buy for your grandmother?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "A silk scarf. It was the only thing she asked for."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What did the girl buy?",
+                "options": [
+                  "A silk scarf",
+                  "A pair of gloves",
+                  "A small vase"
+                ],
+                "answer": 0,
+                "explanation": "She bought a silk scarf."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "What time does the tour start?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "At ten thirty, from the front of the cathedral."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Where does the tour start?",
+                "options": [
+                  "At the cathedral",
+                  "At the station",
+                  "At the museum"
+                ],
+                "answer": 0,
+                "explanation": "She says it starts at the front of the cathedral."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Is the guide speaking English?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, and Spanish too, but this group will be in English."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Which language will the group use?",
+                "options": [
+                  "Spanish",
+                  "English",
+                  "French"
+                ],
+                "answer": 1,
+                "explanation": "He says this group will be in English."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Did you take lots of photos?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Over three hundred, but half of them are blurry."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "What is wrong with some photos?",
+                "options": [
+                  "They are missing",
+                  "They are too dark",
+                  "They are blurry"
+                ],
+                "answer": 2,
+                "explanation": "He says half of them are blurry."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Can I pay by card?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I am sorry, the machine is broken. Cash only today."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "How must the man pay?",
+                "options": [
+                  "In cash",
+                  "By card",
+                  "By phone"
+                ],
+                "answer": 0,
+                "explanation": "She says cash only today."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Where can I buy stamps?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "At the kiosk next to the bus stop. They sell postcards too."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "Where is the kiosk?",
+                "options": [
+                  "Inside the museum",
+                  "Next to the bus stop",
+                  "Behind the church"
+                ],
+                "answer": 1,
+                "explanation": "She says it is next to the bus stop."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Welcome to the gallery, everybody. Please stay together, and do not touch the paintings."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "How long will the tour take?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Where are these people?",
+                "options": [
+                  "In a station",
+                  "In a hotel",
+                  "In an art gallery"
+                ],
+                "answer": 2,
+                "explanation": "The guide tells the group not to touch the paintings."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "I want a souvenir, but I cannot decide between the blue mug and the green one."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Take the blue one. It matches the colour of the sea."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What is the girl doing?",
+                "options": [
+                  "Ordering food",
+                  "Choosing a souvenir",
+                  "Packing her bag"
+                ],
+                "answer": 1,
+                "explanation": "She cannot decide between two mugs."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Excuse me, I have lost my group. Have you seen thirty people in red caps?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, they went towards the fountain a few minutes ago."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What is the woman's problem?",
+                "options": [
+                  "She lost her group",
+                  "She lost her ticket",
+                  "She lost her bag"
+                ],
+                "answer": 0,
+                "explanation": "She says she has lost her group."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Teacher",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "On our trip, you may buy one small souvenir. Please spend less than five euros."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Can I buy two cheap ones instead?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What rule does the teacher give?",
+                "options": [
+                  "A noise rule",
+                  "A time limit",
+                  "A spending limit"
+                ],
+                "answer": 2,
+                "explanation": "She says to spend less than five euros."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Hello, I would like to book two places on tomorrow's boat trip."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I am sorry, it is full, but there are tickets for Thursday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What is the problem?",
+                "options": [
+                  "The trip is full",
+                  "The boat is late",
+                  "The price is high"
+                ],
+                "answer": 0,
+                "explanation": "She says it is full."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "This statue looks very old. Is it real?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, it is a copy. The real one is in the museum in the capital."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does the man say about the statue?",
+                "options": [
+                  "It is for sale",
+                  "It is very new",
+                  "It is a copy"
+                ],
+                "answer": 2,
+                "explanation": "He says it is a copy."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A message from a tourist office",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "clerk",
+                "name": "Oban",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "clerk",
+                "text": "Hello, and thank you for calling the Seaview Tourist Office. We are open from nine to five every day, except Sunday. This week, we are offering a special deal on our boat trips. The trip to the island lasts about three hours and costs eighteen pounds for adults and ten for children. It leaves at half past ten from the harbour. On the island, you can visit an old lighthouse and have lunch at the cafe. If you are interested in walking, our guide Beck will lead a tour of the cliffs on Wednesday morning. Please bring comfortable shoes and a raincoat, because the weather can change quickly. To make a booking, you can leave a message after the beep with your name and phone number, and we will call you back."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The office is closed on ___",
+              "answer": "Sunday",
+              "explanation": "She says they are open every day except Sunday."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The trip to the island lasts about ___ hours",
+              "answer": "three",
+              "accepted": [
+                "3"
+              ],
+              "explanation": "She says it lasts about three hours."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "An adult ticket costs ___ pounds",
+              "answer": "eighteen",
+              "accepted": [
+                "18"
+              ],
+              "explanation": "She says it costs eighteen pounds for adults."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "The boat leaves from the ___",
+              "answer": "harbour",
+              "accepted": [
+                "harbor"
+              ],
+              "explanation": "She says it leaves from the harbour."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The cliff tour is on ___ morning",
+              "answer": "Wednesday",
+              "explanation": "She says the cliff tour is on Wednesday morning."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Visitors should bring a ___",
+              "answer": "raincoat",
+              "accepted": [
+                "coat"
+              ],
+              "explanation": "She says to bring comfortable shoes and a raincoat."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a tour guide",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "i",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "h",
+                "name": "Beck",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "i",
+                "text": "Beck, you have been a tour guide for fifteen years. How did you start?"
+              },
+              {
+                "speaker": "h",
+                "text": "By accident. I took a friend's group round the castle, and I enjoyed it so much that I applied for a proper job."
+              },
+              {
+                "speaker": "i",
+                "text": "What do you need to be a good guide?"
+              },
+              {
+                "speaker": "h",
+                "text": "Patience, a loud voice and a good sense of humour. People remember jokes better than dates."
+              },
+              {
+                "speaker": "i",
+                "text": "Do you ever get bored of showing the same places?"
+              },
+              {
+                "speaker": "h",
+                "text": "Never. The sights are the same, but the visitors are always different. Last week, I met a man who was celebrating his hundredth birthday."
+              },
+              {
+                "speaker": "i",
+                "text": "What is the strangest question you have been asked?"
+              },
+              {
+                "speaker": "h",
+                "text": "Someone once asked me if the castle was built before or after the Second World War. It is more than seven hundred years old!"
+              },
+              {
+                "speaker": "i",
+                "text": "What do tourists often get wrong?"
+              },
+              {
+                "speaker": "h",
+                "text": "They try to see everything in one day. It is better to choose three or four places and enjoy them calmly."
+              },
+              {
+                "speaker": "i",
+                "text": "What is your advice for a first visit to a new city?"
+              },
+              {
+                "speaker": "h",
+                "text": "Walk. You discover much more on foot. And talk to local people, because they know the best cafes."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Beck become a guide?",
+              "options": [
+                "By answering an advert",
+                "By taking a friend's group",
+                "By studying history"
+              ],
+              "answer": 1,
+              "explanation": "He took a friend's group round the castle and enjoyed it."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What does a good guide need?",
+              "options": [
+                "A fast car",
+                "Patience and humour",
+                "A university degree"
+              ],
+              "answer": 1,
+              "explanation": "He says patience, a loud voice and a sense of humour."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "Why is the work never boring?",
+              "options": [
+                "The visitors are different",
+                "The routes change",
+                "The weather is lovely"
+              ],
+              "answer": 0,
+              "explanation": "He says the visitors are always different."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What was the strange question?",
+              "options": [
+                "About the nearest toilet",
+                "About the price of tickets",
+                "About the age of the castle"
+              ],
+              "answer": 2,
+              "explanation": "Someone asked if the castle was built before or after the Second World War."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What do tourists get wrong?",
+              "options": [
+                "They spend too much",
+                "They try to see everything",
+                "They wake up late"
+              ],
+              "answer": 1,
+              "explanation": "They try to see everything in one day."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What does Beck suggest for a new city?",
+              "options": [
+                "Walk and talk to locals",
+                "Take a taxi tour",
+                "Stay in the hotel"
+              ],
+              "answer": 0,
+              "explanation": "He says to walk and to talk to local people."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s94-1-1",
+              "prompt": "Do you like visiting new places? Where have you been?"
+            },
+            {
+              "id": "s94-1-2",
+              "prompt": "What do you usually bring back from a trip?"
+            },
+            {
+              "id": "s94-1-3",
+              "prompt": "Have you ever been on a guided tour? What was it like?"
+            },
+            {
+              "id": "s94-1-4",
+              "prompt": "Who do you like to travel with? Why?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A group of tourists stands under trees near an old building.",
+          "images": [
+            {
+              "id": "s94-2-guide",
+              "title": "A guide with a group",
+              "alt": "A group of tourists, some holding umbrellas, stands under trees near a low building.",
+              "describeHints": [
+                "a group of tourists",
+                "umbrellas and sun hats",
+                "a low red-roofed building",
+                "tall trees"
+              ],
+              "image": {
+                "id": "s94-2-guide",
+                "src": "assets/images/exams/cambridge-pet-94/s94-2-guide-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-94/s94-2-guide-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "A group of tourists, some holding umbrellas, stands under trees near a low building.",
+                "credit": {
+                  "author": "Ctny",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tour_guide_addressing_a_group_in_China.JPG"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A gift from your country",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "A foreign visitor wants to take a gift home from your country. Talk about the different things the visitor could buy and decide which would be the best.",
+          "images": [
+            {
+              "id": "s94-3-food",
+              "title": "Local sweets and food",
+              "alt": "Round fried sweets sit in a woven basket lined with green leaves.",
+              "describeHints": [
+                "a pile of round sweets",
+                "a woven basket",
+                "green leaves",
+                "orange-brown fried balls"
+              ],
+              "image": {
+                "id": "s94-3-food",
+                "src": "assets/images/exams/cambridge-pet-94/s94-3-food-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-94/s94-3-food-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "Round fried sweets sit in a woven basket lined with green leaves.",
+                "credit": {
+                  "author": "Pattaya Patrol",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:DFC_5228-_Golden,_crispy_fish_cakes_piled_on_banana_leaves_-_a_savory_Thai_street_food_favorite.jpg"
+                }
+              }
+            },
+            {
+              "id": "s94-3-craft",
+              "title": "A handmade bowl",
+              "alt": "A round wooden bowl with a simple carved mark sits on a wooden table outdoors.",
+              "describeHints": [
+                "a wooden bowl",
+                "a wooden table",
+                "a carved mark on the bowl",
+                "a blurred outdoor background"
+              ],
+              "image": {
+                "id": "s94-3-craft",
+                "src": "assets/images/exams/cambridge-pet-94/s94-3-craft-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-94/s94-3-craft-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A round wooden bowl with a simple carved mark sits on a wooden table outdoors.",
+                "credit": {
+                  "author": "bjornfalkevik",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Handmade_wood_bowl_made_with_a_recreated_medieval_lath.jpg"
+                }
+              }
+            },
+            {
+              "id": "s94-3-shirt",
+              "title": "T-shirts at a souvenir stall",
+              "alt": "A street stall full of T-shirts with words and pictures on them. A man walks past.",
+              "describeHints": [
+                "T-shirts",
+                "a stall",
+                "a street",
+                "souvenirs"
+              ],
+              "image": {
+                "id": "s94-3-shirt",
+                "src": "assets/images/exams/cambridge-pet-94/s94-3-shirt-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-94/s94-3-shirt-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A street stall full of T-shirts with words and pictures on them. A man walks past.",
+                "credit": {
+                  "author": "elminium from Ageo-city",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitecanvas_FC_Akihabara_-_souvenior_T-shirts_-_3-9_Sotokanda,_2014-07-13_(by_elminium).jpg"
+                }
+              }
+            },
+            {
+              "id": "s94-3-book",
+              "title": "A book with photographs",
+              "alt": "A large glossy photo book lies open. One page shows a building with a curved glass roof.",
+              "describeHints": [
+                "a large open photo book",
+                "glossy pages with photographs",
+                "a curved glass building",
+                "a red page edge"
+              ],
+              "image": {
+                "id": "s94-3-book",
+                "src": "assets/images/exams/cambridge-pet-94/s94-3-book-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-94/s94-3-book-600.webp",
+                "width": 1000,
+                "height": 665,
+                "alt": "A large glossy photo book lies open. One page shows a building with a curved glass roof.",
+                "credit": {
+                  "author": "Vyacheslav Argenberg",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photo_album,_Rostov-on-Don,_Russia.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s94-4-1",
+              "prompt": "Why do tourists like to buy souvenirs?"
+            },
+            {
+              "id": "s94-4-2",
+              "prompt": "Is it better to travel alone or with a tour group? Why?"
+            },
+            {
+              "id": "s94-4-3",
+              "prompt": "How can tourists be polite to the people they visit?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

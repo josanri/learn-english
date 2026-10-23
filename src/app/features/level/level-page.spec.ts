@@ -33,6 +33,7 @@ describe('LevelPage', () => {
           title: 'A Fresh Start',
           subtitle: 'Community',
           theme: 'Community',
+          category: 'people',
           estimatedMinutes: 137,
           skills: ['reading'],
           path: 'b1/cambridge-pet/cambridge-pet-01.json',
@@ -45,9 +46,64 @@ describe('LevelPage', () => {
     const element = fixture.nativeElement as HTMLElement;
     expect(element.querySelector('h2')?.textContent).toContain('Cambridge B1 Preliminary');
     expect(element.querySelector('.exam-list a')?.getAttribute('href')).toBe(
-      '/b1/cambridge-pet/cambridge-pet-01/reading',
+      '/exams/b1/cambridge-pet/cambridge-pet-01/reading',
     );
     expect(element.textContent).toContain('Not started');
     expect(element.textContent).toContain('137 min');
+    const themeChip = element.querySelector('.exam .top app-chip');
+    expect(themeChip?.textContent).toContain('Community');
+    // The people icon of the category comes before the theme.
+    expect(themeChip?.querySelector('app-icon svg circle[cx="9"][cy="8"]')).not.toBeNull();
+  });
+
+  it('filters the exams by topic with the topic list', async () => {
+    TestBed.configureTestingModule({
+      providers: [provideRouter([]), provideHttpClient(), provideHttpClientTesting()],
+    });
+    const fixture = TestBed.createComponent(LevelPage);
+    fixture.componentRef.setInput('level', 'b1');
+    fixture.detectChanges();
+    await Promise.resolve();
+
+    const exam = (id: string, category: 'people' | 'food') => ({
+      id,
+      level: 'B1' as const,
+      board: 'cambridge-pet',
+      title: id,
+      subtitle: 'Subtitle',
+      theme: 'Theme',
+      category,
+      estimatedMinutes: 100,
+      skills: ['reading' as const],
+      path: `b1/cambridge-pet/${id}.json`,
+    });
+    const index: LevelIndex = {
+      schemaVersion: 2,
+      level: 'B1',
+      boards: [{ id: 'cambridge-pet', name: 'Cambridge PET', description: 'Practice papers.' }],
+      exams: [exam('exam-a', 'people'), exam('exam-b', 'food'), exam('exam-c', 'food')],
+    };
+    TestBed.inject(HttpTestingController).expectOne('assets/exams/b1/index.json').flush(index);
+    await fixture.whenStable();
+
+    const element = fixture.nativeElement as HTMLElement;
+    const select = element.querySelector<HTMLSelectElement>('.topics select')!;
+    const choose = (value: string) => {
+      select.value = value;
+      select.dispatchEvent(new Event('change'));
+      fixture.detectChanges();
+    };
+    const cards = () => element.querySelectorAll('.exam-list .exam').length;
+
+    expect(
+      Array.from(select.options).map((o) => o.textContent?.replace(/\s+/g, ' ').trim()),
+    ).toEqual(['All topics (3)', 'Food & drink (2)', 'People & celebrations (1)']);
+    expect(cards()).toBe(3);
+
+    choose('food');
+    expect(cards()).toBe(2);
+
+    choose('all');
+    expect(cards()).toBe(3);
   });
 });

@@ -1,0 +1,1677 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-96",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "DIY and Home Repairs",
+  "subtitle": "Painting a bathroom, hanging a picture and a carpenter",
+  "theme": "DIY and home repairs",
+  "category": "home",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "HARDWARE STORE: Paint, brushes and tools at low prices. This week only, buy two tins of paint and get a brush free.",
+            "Message from Bevan: Dacey, the shelf is finished! I used the drill from your garage, so I will bring it back tomorrow. Thanks!",
+            "DIY WORKSHOP: Learn to fix a dripping tap. Saturday, ten o'clock. Bring your own gloves. Tea and biscuits provided.",
+            "DANGER: Wet paint. Please do not touch the walls or the door. Use the side entrance until Thursday.",
+            "RETURNS: Tools can be returned within fourteen days if they are in their box. Opened paint cannot be returned."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What do customers get for buying two tins of paint?",
+              "options": [
+                "A free tin",
+                "A discount card",
+                "A free brush"
+              ],
+              "answer": 2,
+              "explanation": "They get a brush free."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What did Bevan use?",
+              "options": [
+                "His own saw",
+                "Dacey's drill",
+                "A new hammer"
+              ],
+              "answer": 1,
+              "explanation": "Bevan used the drill from Dacey's garage."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What will people learn at the workshop?",
+              "options": [
+                "To fix a tap",
+                "To paint a room",
+                "To build a shelf"
+              ],
+              "answer": 0,
+              "explanation": "They will learn to fix a dripping tap."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What must people do until Thursday?",
+              "options": [
+                "Stay away from the shop",
+                "Use the side entrance",
+                "Wear a mask"
+              ],
+              "answer": 1,
+              "explanation": "They must use the side entrance because of wet paint."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What cannot be returned?",
+              "options": [
+                "Large boxes",
+                "Electric tools",
+                "Opened paint"
+              ],
+              "answer": 2,
+              "explanation": "Opened paint cannot be returned."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Fixing it yourself",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Fabia has just bought her first flat. She wants to learn the basics of painting walls before she starts."
+            },
+            {
+              "id": "p2",
+              "text": "Hollie's bicycle has a flat tyre. She wants to fix it herself, quickly and cheaply."
+            },
+            {
+              "id": "p3",
+              "text": "Lazar loves making furniture. He wants advice about the best wood for a table."
+            },
+            {
+              "id": "p4",
+              "text": "Niels has a leaking roof. He knows that this is a dangerous job and wants an expert to do it."
+            },
+            {
+              "id": "p5",
+              "text": "Reece wants to watch video lessons at home, in his own time, about fixing small electrical problems."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Painting for Beginners",
+              "text": "A friendly evening class: learn to prepare, paint and clean up."
+            },
+            {
+              "id": "B",
+              "title": "Bike Repair Corner",
+              "text": "Free tools and advice every Saturday. Fix your tyre in ten minutes."
+            },
+            {
+              "id": "C",
+              "title": "Wood Expert Talk",
+              "text": "A carpenter explains which wood is best for tables, chairs and shelves."
+            },
+            {
+              "id": "D",
+              "title": "Roof Repair Service",
+              "text": "Qualified workers fix leaks safely. Free estimate."
+            },
+            {
+              "id": "E",
+              "title": "Online Electrical Course",
+              "text": "Short films about simple jobs. Watch whenever you like."
+            },
+            {
+              "id": "F",
+              "title": "Garden Tool Sale",
+              "text": "Spades, forks and gloves."
+            },
+            {
+              "id": "G",
+              "title": "Tile Competition",
+              "text": "Win a prize for the best bathroom floor."
+            },
+            {
+              "id": "H",
+              "title": "Lighting Shop",
+              "text": "Lamps and bulbs of every size."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Fabia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Painting for Beginners teaches how to prepare and paint walls."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Hollie",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Bike Repair Corner helps you fix a tyre in ten minutes."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Lazar",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Wood Expert Talk is about the best wood for tables."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Niels",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "Roof Repair Service has qualified workers who fix leaks safely."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Reece",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Online Electrical Course has short films you can watch whenever you like."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "My first DIY disaster",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last spring, I decided to paint the bathroom myself. My brother had done it for his flat, and he said that it was easy. I bought blue paint, two brushes and a roll of tape, and I started on Saturday morning.\n\nThe first problem was the colour. In the shop, it looked like a pale sky, but on the walls, it was dark, almost black. The second problem was the ceiling. I was standing on a chair, and when I reached up, a big drop of paint fell on my head and went in my eye. I shouted so loudly that the neighbours knocked on the door.\n\nAt six in the evening, I finally finished. I stepped back to admire my work and put my foot straight into the paint tin. Blue footprints went all over the hall, through the kitchen and onto the sofa.\n\nThe next day, a friend who is a decorator came round. He laughed for five minutes, and then he repainted the room in white. Now I have a rule: I do the easy jobs, like changing a light bulb, and I pay experts for the rest.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why did the writer decide to paint the bathroom?",
+              "options": [
+                "Her brother said it was easy",
+                "It cost much less",
+                "She had free time"
+              ],
+              "answer": 0,
+              "explanation": "Her brother said that it was easy."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What was wrong with the colour?",
+              "options": [
+                "It looked far too dark",
+                "It looked far too bright",
+                "It dried too slowly"
+              ],
+              "answer": 0,
+              "explanation": "On the walls it was dark, almost black."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What happened to her eye?",
+              "options": [
+                "Dust blew into it",
+                "Paint fell in it",
+                "Her brush hit it"
+              ],
+              "answer": 1,
+              "explanation": "A drop of paint fell on her head and went in her eye."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "How did the evening end?",
+              "options": [
+                "With a call to her brother",
+                "With a nice meal",
+                "With footprints everywhere"
+              ],
+              "answer": 2,
+              "explanation": "She stepped in the tin and left blue footprints."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What is her rule now?",
+              "options": [
+                "Every job herself",
+                "No jobs at all",
+                "Easy jobs only"
+              ],
+              "answer": 2,
+              "explanation": "She does easy jobs and pays professionals for the rest."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "How to hang a picture",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Hanging a picture sounds simple, but many people make mistakes. [1] A few careful steps will save you a lot of time and trouble.\n\nFirst, decide where you want the picture to go. [2] The centre should be at about the height of your eyes.\n\nNext, mark the spot with a pencil. If you are not sure, hold the picture against the wall and ask a friend to tell you if it looks straight. [3] It is easier to rub out a pencil mark than to fill a hole in the wall.\n\nThen, choose a nail or a screw that is strong enough. [4] Heavy mirrors need a special fixing that goes deep into the wall.\n\nFinally, stand back and look at your work. [5] If it is not straight, a small tap on one corner usually puts it right.",
+          "sentences": [
+            "The wall may be harder than you think.",
+            "Do this before you make any holes.",
+            "Pictures are heavier than they look.",
+            "Do not trust the frame to hang straight by itself.",
+            "Think about the other furniture in the room.",
+            "Check whether the picture really is level."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "A",
+              "explanation": "The wall may be harder than you think, so careful steps help; the next sentence says a few steps save trouble."
+            },
+            {
+              "id": "r4-2",
+              "answer": "E",
+              "explanation": "Think about the furniture when you decide where it goes; the next sentence says the centre should be at eye height."
+            },
+            {
+              "id": "r4-3",
+              "answer": "B",
+              "explanation": "Do this before you make any holes; the next sentence says a pencil mark is easier to rub out than a hole."
+            },
+            {
+              "id": "r4-4",
+              "answer": "C",
+              "explanation": "Pictures are heavier than they look, so the nail must be strong; the next sentence mentions heavy mirrors."
+            },
+            {
+              "id": "r4-5",
+              "answer": "F",
+              "explanation": "Check whether the picture is level; the next sentence says what to do if it is not straight."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A note to a neighbour",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Dear Olwen, I hope you are well. I am writing to ask [1] a favour. My bathroom tap has been dripping for a week, and I do not know how to repair it. I do not want to pay a plumber, [2] it costs a fortune. Do you [3] a spanner that I could borrow? I would be very grateful if you [4] show me how to use it. I could bring you some home-made cake [5] return. Please let me know when it is convenient [6] you. Best wishes, Ira",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "to",
+                "for",
+                "of",
+                "at"
+              ],
+              "answer": 1,
+              "explanation": "We ask for a favour."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "because",
+                "so",
+                "but",
+                "although"
+              ],
+              "answer": 0,
+              "explanation": "Because gives the reason: it costs a fortune."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "get",
+                "make",
+                "take",
+                "have"
+              ],
+              "answer": 3,
+              "explanation": "Have a spanner means own or possess one."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "shall",
+                "must",
+                "could",
+                "might"
+              ],
+              "answer": 2,
+              "explanation": "I would be grateful if you could show me: could makes a polite request."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "by",
+                "on",
+                "in",
+                "at"
+              ],
+              "answer": 2,
+              "explanation": "In return is a fixed phrase meaning as a thank you."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "to",
+                "for",
+                "with",
+                "at"
+              ],
+              "answer": 1,
+              "explanation": "Convenient for you is the correct pattern."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Changing a light bulb",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Changing a light bulb is one of the easiest jobs in the house, but it can still be dangerous if you are not careful. First, make sure the light is switched [1] and wait a few minutes. The bulb may be very hot. Then, take a chair or a small ladder, and ask someone to hold it [2] you climb. Turn the old bulb gently to the left until it comes out. Do not use too much force, [3] the glass might break. Put the new bulb in [4] turning it to the right, and stop when it feels firm. Make sure that the new bulb is the same size and type [5] the old one. Finally, switch on the light and check that it works. If [6] does not, call an electrician.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "off",
+              "explanation": "Switched off means the electricity is not flowing."
+            },
+            {
+              "id": "r6-2",
+              "answer": "while",
+              "accepted": [
+                "as",
+                "when"
+              ],
+              "explanation": "Hold the chair while you climb."
+            },
+            {
+              "id": "r6-3",
+              "answer": "or",
+              "accepted": [
+                "because",
+                "as",
+                "since"
+              ],
+              "explanation": "Or gives the warning: use no force, or the glass might break."
+            },
+            {
+              "id": "r6-4",
+              "answer": "by",
+              "explanation": "By turning it to the right: the way to do it."
+            },
+            {
+              "id": "r6-5",
+              "answer": "as",
+              "accepted": [
+                "like"
+              ],
+              "explanation": "The same as the old one: comparison."
+            },
+            {
+              "id": "r6-6",
+              "answer": "it",
+              "explanation": "It refers to the light bulb or the light."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Dacey is moving into a new flat and wants to paint it. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Say you are happy for her.",
+              "Suggest a colour.",
+              "Offer to help.",
+              "Ask when she is moving."
+            ],
+            "sourceEmail": {
+              "from": "Dacey",
+              "subject": "My new flat",
+              "body": "I am moving into my first flat next month! The walls are all white, and I would like to paint them myself. What colours would you recommend? Can you give me any advice?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say you are happy for her.",
+                "keywords": [
+                  "happy",
+                  "glad",
+                  "pleased",
+                  "congratulations",
+                  "great",
+                  "exciting",
+                  "wonderful"
+                ]
+              },
+              {
+                "text": "Suggest a colour.",
+                "keywords": [
+                  "blue",
+                  "green",
+                  "yellow",
+                  "white",
+                  "grey",
+                  "colour",
+                  "pale"
+                ]
+              },
+              {
+                "text": "Offer to help.",
+                "keywords": [
+                  "help",
+                  "offer",
+                  "can",
+                  "could",
+                  "weekend",
+                  "come",
+                  "paint"
+                ]
+              },
+              {
+                "text": "Ask when she is moving.",
+                "keywords": [
+                  "when",
+                  "moving",
+                  "date",
+                  "day",
+                  "month",
+                  "what",
+                  "which"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! Is it better to repair things yourself or to pay an expert? Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Say which you prefer.",
+                  "keywords": [
+                    "prefer",
+                    "better",
+                    "repair",
+                    "expert",
+                    "pay",
+                    "think",
+                    "myself"
+                  ]
+                },
+                {
+                  "text": "Give reasons.",
+                  "keywords": [
+                    "because",
+                    "reason",
+                    "cheaper",
+                    "safe",
+                    "time",
+                    "money",
+                    "first"
+                  ]
+                },
+                {
+                  "text": "Describe something you have fixed.",
+                  "keywords": [
+                    "fixed",
+                    "repaired",
+                    "bicycle",
+                    "tap",
+                    "toy",
+                    "once",
+                    "my"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "My father said that the shelf would take ten minutes to put up, but he was wrong.",
+              "contentPoints": [
+                {
+                  "text": "Say what went wrong.",
+                  "keywords": [
+                    "broke",
+                    "fell",
+                    "missing",
+                    "wrong",
+                    "crooked",
+                    "screws",
+                    "hole"
+                  ]
+                },
+                {
+                  "text": "Say who helped.",
+                  "keywords": [
+                    "helped",
+                    "mother",
+                    "brother",
+                    "neighbour",
+                    "friend",
+                    "uncle",
+                    "sister"
+                  ]
+                },
+                {
+                  "text": "Say how the story ended.",
+                  "keywords": [
+                    "finally",
+                    "in the end",
+                    "straight",
+                    "proud",
+                    "laughed",
+                    "smiled",
+                    "later"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Do you have a hammer I can borrow?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "There is one in the shed, next to the ladder."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "Where is the hammer?",
+                "options": [
+                  "In the kitchen",
+                  "In the shed",
+                  "In the garage"
+                ],
+                "answer": 1,
+                "explanation": "He says there is one in the shed."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "What colour will you paint your room?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Light green. It is calmer than my old pink."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "Why does the girl choose green?",
+                "options": [
+                  "It is calmer",
+                  "It is cheaper",
+                  "It is brighter"
+                ],
+                "answer": 0,
+                "explanation": "She says green is calmer than pink."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "How long will it take to fix the tap?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "About twenty minutes, if I can find the right part."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "How long will the job take?",
+                "options": [
+                  "Twenty minutes",
+                  "Two hours",
+                  "Twelve minutes"
+                ],
+                "answer": 0,
+                "explanation": "She says about twenty minutes."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Why is the floor wet?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "The washing machine is leaking again. I have called a plumber."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Who has the boy called?",
+                "options": [
+                  "An electrician",
+                  "A plumber",
+                  "A neighbour"
+                ],
+                "answer": 1,
+                "explanation": "He says he has called a plumber."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Are you coming to the DIY class?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I would like to, but I have to work late on Thursday."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Why can the man not come?",
+                "options": [
+                  "He has no tools",
+                  "He is feeling ill",
+                  "He must work late"
+                ],
+                "answer": 2,
+                "explanation": "He says he has to work late on Thursday."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "How many screws do I need?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Eight, plus two spare ones in case you drop them."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "How many screws does he need?",
+                "options": [
+                  "Eight",
+                  "Ten",
+                  "Two"
+                ],
+                "answer": 0,
+                "explanation": "The man says eight, plus two spare."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Can I help you to carry the paint?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thanks. Just take the small tin. The big ones are heavy."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What does the woman ask the girl to carry?",
+                "options": [
+                  "The big tins",
+                  "The small tin",
+                  "The brushes"
+                ],
+                "answer": 1,
+                "explanation": "She asks her to take the small tin."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Excuse me, I need something to cut metal. Do you sell saws?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, aisle four. These ones are made for metal."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What does the man want?",
+                "options": [
+                  "A new ladder",
+                  "Some wood glue",
+                  "A tool for metal"
+                ],
+                "answer": 2,
+                "explanation": "He needs something to cut metal."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "I think the plug is broken. The lamp will not turn on."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Do not touch it! Let us ask Dad."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What does the boy say?",
+                "options": [
+                  "Turn it off",
+                  "Do not touch it",
+                  "Throw it out"
+                ],
+                "answer": 1,
+                "explanation": "He says do not touch it and ask Dad."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "The door keeps banging every time the wind blows."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I will put a little oil on the hinges. That might stop the noise."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What is the problem?",
+                "options": [
+                  "A noisy door",
+                  "A broken window",
+                  "A cold house"
+                ],
+                "answer": 0,
+                "explanation": "The door bangs and the hinges make noise."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Teacher",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "In technology class, you will each make a wooden box. Safety glasses must be worn at all times."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Do we have to buy the wood?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the teacher insist on?",
+                "options": [
+                  "Silent work",
+                  "Neat writing",
+                  "Safety glasses"
+                ],
+                "answer": 2,
+                "explanation": "He says safety glasses must be worn at all times."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Boy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Woman",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "Mum, the bike chain has come off again."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Put on old gloves, and I will show you how to put it back."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the mother offer?",
+                "options": [
+                  "To show him how",
+                  "To buy a bike",
+                  "To call the shop"
+                ],
+                "answer": 0,
+                "explanation": "She offers to show him how to put the chain back."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "a",
+                    "name": "Man",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "b",
+                    "name": "Girl",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "a",
+                    "text": "How much is it to repair my phone screen?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Sixty pounds, and it will be quick. It will be ready in an hour."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does the girl say?",
+                "options": [
+                  "It is free",
+                  "It cannot be fixed",
+                  "It will be quick"
+                ],
+                "answer": 2,
+                "explanation": "She says it will be ready in an hour."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A message from a decorator",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "decorator",
+                "name": "Berit",
+                "voice": {
+                  "lang": "en-IE",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "decorator",
+                "text": "Hello, this is Berit, the decorator. I am calling about the living room. I came to look at it yesterday, and I have a few questions. First, the walls need a lot of preparation. There are several cracks near the window, and the paint on the ceiling is peeling. I suggest two coats of white paint, which will cost about three hundred pounds. If you want a different colour on one wall, it will be twenty pounds more. The job will take three days, and I can start on the fourteenth. I will cover the floor and the furniture with plastic sheets. Please remove any pictures from the walls before I arrive. The smell of the paint will disappear after about two days, but I recommend that you keep the window open. Please call me back on this number, and we can discuss the details."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The living room has cracks near the ___",
+              "answer": "window",
+              "explanation": "She says there are several cracks near the window."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The paint on the ___ is peeling",
+              "answer": "ceiling",
+              "explanation": "She says the paint on the ceiling is peeling."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "The job will cost about ___ pounds",
+              "answer": "three hundred",
+              "accepted": [
+                "300"
+              ],
+              "explanation": "She says it will cost about three hundred pounds."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "A different colour on one wall costs ___ pounds more",
+              "answer": "twenty",
+              "accepted": [
+                "20"
+              ],
+              "explanation": "She says it will be twenty pounds more."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The job will take ___ days",
+              "answer": "three",
+              "accepted": [
+                "3"
+              ],
+              "explanation": "She says the job will take three days."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "She will cover the furniture with plastic ___",
+              "answer": "sheets",
+              "accepted": [
+                "sheet"
+              ],
+              "explanation": "She says she will cover things with plastic sheets."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "An interview with a carpenter",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "i",
+                "name": "Interviewer",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "h",
+                "name": "Eitan",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "i",
+                "text": "Eitan, how did you become a carpenter?"
+              },
+              {
+                "speaker": "h",
+                "text": "My grandfather had a workshop. As a child, I loved the smell of wood, and he let me make little boats from the scraps."
+              },
+              {
+                "speaker": "i",
+                "text": "What is your favourite thing to make?"
+              },
+              {
+                "speaker": "h",
+                "text": "Chairs. A table is simple, but a chair has to be strong, comfortable and beautiful all at once."
+              },
+              {
+                "speaker": "i",
+                "text": "How long does a chair take?"
+              },
+              {
+                "speaker": "h",
+                "text": "About two weeks. The shaping is quick, but the wood must dry slowly, and the joints must fit perfectly."
+              },
+              {
+                "speaker": "i",
+                "text": "What was your biggest mistake?"
+              },
+              {
+                "speaker": "h",
+                "text": "Once, I made a bed that was too big to get out of the workshop door. I had to take the wall down."
+              },
+              {
+                "speaker": "i",
+                "text": "Can anyone learn to work with wood?"
+              },
+              {
+                "speaker": "h",
+                "text": "Yes. Start with something small, like a box, and use sharp tools, because a blunt knife is more dangerous than a sharp one."
+              },
+              {
+                "speaker": "i",
+                "text": "Why do you still use hand tools?"
+              },
+              {
+                "speaker": "h",
+                "text": "They are quiet, and they give me a feeling of the wood. A machine is faster, but it does not teach you anything."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "What did Eitan make as a child?",
+              "options": [
+                "Wooden toys",
+                "Little boats",
+                "Small tables"
+              ],
+              "answer": 1,
+              "explanation": "His grandfather let him make little boats from the scraps."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "Why does he like making chairs?",
+              "options": [
+                "They are very quick to make",
+                "They must be strong and beautiful",
+                "They sell for a high price"
+              ],
+              "answer": 1,
+              "explanation": "A chair has to be strong, comfortable and beautiful at once."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "How long does a chair take?",
+              "options": [
+                "About two weeks",
+                "About two days",
+                "About two months"
+              ],
+              "answer": 0,
+              "explanation": "He says about two weeks."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What was his big mistake?",
+              "options": [
+                "A chair that broke",
+                "A table with three legs",
+                "A bed too big for the door"
+              ],
+              "answer": 2,
+              "explanation": "He made a bed too big to get out of the workshop."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What advice does he give to beginners?",
+              "options": [
+                "Buy new machines",
+                "Use sharp tools",
+                "Work very fast"
+              ],
+              "answer": 1,
+              "explanation": "He says a blunt knife is more dangerous than a sharp one."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "Why does he use hand tools?",
+              "options": [
+                "They teach him about the wood",
+                "They are much cheaper",
+                "They make less dust"
+              ],
+              "answer": 0,
+              "explanation": "Hand tools give him a feeling of the wood and teach him."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s96-1-1",
+              "prompt": "Do you ever fix things at home? What have you repaired?"
+            },
+            {
+              "id": "s96-1-2",
+              "prompt": "Who in your family is good with tools? What can they do?"
+            },
+            {
+              "id": "s96-1-3",
+              "prompt": "What would you like to learn to make or fix?"
+            },
+            {
+              "id": "s96-1-4",
+              "prompt": "Do you prefer to buy new things or repair old ones? Why?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A woman painting a wall with a roller.",
+          "images": [
+            {
+              "id": "s96-2-painting",
+              "title": "A woman painting a wall",
+              "alt": "A woman in a white T-shirt paints a white wall with a paint roller.",
+              "describeHints": [
+                "a paint roller",
+                "a white wall",
+                "painting",
+                "a T-shirt"
+              ],
+              "image": {
+                "id": "s96-2-painting",
+                "src": "assets/images/exams/cambridge-pet-96/s96-2-painting-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-96/s96-2-painting-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A woman in a white T-shirt paints a white wall with a paint roller.",
+                "credit": {
+                  "author": "U.S. Air Force photo by Airman 1st Class Ashley Garcia",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_090416-F-7522G-006_Aerographer%27s_Mate_Gina_Hegg,_embarked_aboard_the_Military_Sealift_Command_hospital_ship_USNS_Comfort_(T-AH_20)_paints_the_wall_of_a_pediatric_medical_facility_at_Emmanuel_Christian_School.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_090416-F-7522G-006_Aerographer%27s_Mate_Gina_Hegg,_embarked_aboard_the_Military_Sealift_Command_hospital_ship_USNS_Comfort_(T-AH_20)_paints_the_wall_of_a_pediatric_medical_facility_at_Emmanuel_Christian_School.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "Improving the school",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your school wants to improve a room for students. Talk about the different ways to make the room better and decide which would be the most useful.",
+          "images": [
+            {
+              "id": "s96-3-paint",
+              "title": "Painting the walls",
+              "alt": "A paint roller and a metal paint pot on a brick wall painted orange.",
+              "describeHints": [
+                "a paint roller",
+                "orange paint",
+                "a brick wall",
+                "a paint pot"
+              ],
+              "image": {
+                "id": "s96-3-paint",
+                "src": "assets/images/exams/cambridge-pet-96/s96-3-paint-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-96/s96-3-paint-600.webp",
+                "width": 1000,
+                "height": 671,
+                "alt": "A paint roller and a metal paint pot on a brick wall painted orange.",
+                "credit": {
+                  "author": "Michael Cory",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paint_roller_4.jpg"
+                }
+              }
+            },
+            {
+              "id": "s96-3-shelves",
+              "title": "New shelves for books",
+              "alt": "A library has rows of bookshelves full of books. White ceiling lights hang above the room.",
+              "describeHints": [
+                "rows of bookshelves",
+                "books on the shelves",
+                "white ceiling lights",
+                "a dark carpet"
+              ],
+              "image": {
+                "id": "s96-3-shelves",
+                "src": "assets/images/exams/cambridge-pet-96/s96-3-shelves-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-96/s96-3-shelves-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "A library has rows of bookshelves full of books. White ceiling lights hang above the room.",
+                "credit": {
+                  "author": "Bjankuloski06",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shelves,_Angela_Morton_Room.jpg"
+                }
+              }
+            },
+            {
+              "id": "s96-3-seats",
+              "title": "Comfortable seats",
+              "alt": "A lounge with two green armchairs and a long sofa around a wooden coffee table.",
+              "describeHints": [
+                "two green armchairs",
+                "a wooden coffee table",
+                "a long sofa",
+                "a wooden wall panel"
+              ],
+              "image": {
+                "id": "s96-3-seats",
+                "src": "assets/images/exams/cambridge-pet-96/s96-3-seats-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-96/s96-3-seats-600.webp",
+                "width": 1000,
+                "height": 668,
+                "alt": "A lounge with two green armchairs and a long sofa around a wooden coffee table.",
+                "credit": {
+                  "author": "Shixart1985",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Modern_lounge_interior_with_stylish_decor_and_comfortable_seating_in_an_inviting_atmosphere.jpg"
+                }
+              }
+            },
+            {
+              "id": "s96-3-plants",
+              "title": "Plants and pictures",
+              "alt": "A small tomato plant with red tomatoes grows in a terracotta pot against a dark background.",
+              "describeHints": [
+                "a potted tomato plant",
+                "red tomatoes",
+                "a terracotta pot",
+                "green leaves"
+              ],
+              "image": {
+                "id": "s96-3-plants",
+                "src": "assets/images/exams/cambridge-pet-96/s96-3-plants-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-96/s96-3-plants-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A small tomato plant with red tomatoes grows in a terracotta pot against a dark background.",
+                "credit": {
+                  "author": "George Chernilevsky",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_plant_2026_G2.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s96-4-1",
+              "prompt": "Why do some people enjoy fixing things?"
+            },
+            {
+              "id": "s96-4-2",
+              "prompt": "Is it important to learn practical skills at school? Why?"
+            },
+            {
+              "id": "s96-4-3",
+              "prompt": "What is the most useful tool in a home?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

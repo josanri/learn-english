@@ -20,6 +20,27 @@ export type KnownExamBoard =
 
 export type ExamBoard = KnownExamBoard | (string & {});
 
+/** Topic group of an exam. The level page shows its icon next to the theme. */
+export type ExamCategory =
+  | 'animals'
+  | 'nature'
+  | 'environment'
+  | 'travel'
+  | 'transport'
+  | 'sport'
+  | 'health'
+  | 'food'
+  | 'home'
+  | 'people'
+  | 'study'
+  | 'arts'
+  | 'entertainment'
+  | 'science'
+  | 'games'
+  | 'shopping'
+  | 'history'
+  | 'misc';
+
 export type Skill = 'reading' | 'writing' | 'listening' | 'speaking' | 'mediation';
 
 // ---------------------------------------------------------------------------------------------
@@ -463,6 +484,7 @@ export interface Exam {
   title: string;
   subtitle: string;
   theme: string;
+  category: ExamCategory;
   estimatedMinutes: number;
   sections: Section[];
 }
@@ -475,6 +497,7 @@ export interface ExamSummary {
   title: string;
   subtitle: string;
   theme: string;
+  category: ExamCategory;
   estimatedMinutes: number;
   skills: Skill[];
   /** Path relative to `assets/exams/`, for example `b1/cambridge-pet/cambridge-pet-01.json`. */

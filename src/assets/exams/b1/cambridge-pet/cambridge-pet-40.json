@@ -1,0 +1,1682 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-40",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "The Sea and Boats",
+  "subtitle": "Ferries, a fishing trip, a sailing lesson and a sailor",
+  "theme": "The sea and boats",
+  "category": "transport",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "FERRY: The 9.15 a.m. ferry to the island is cancelled because of strong winds. Tickets can be used for tomorrow's ferry, or refunded at the office.",
+            "BEACH SAFETY: Swim only between the red and yellow flags. A lifeguard is on duty from 10 a.m. to 6 p.m. Never swim when only the red flag is flying.",
+            "BOAT TRIPS: Boats leave the harbour every hour from 10 a.m. Children under five go free. Warm jackets are available to hire.",
+            "SAILING CLUB: The beginners' course starts on 5 May. All equipment is included in the price. You must be able to swim fifty metres.",
+            "FISH MARKET: Fresh fish arrives at 6 a.m. every day. Everything is usually sold by 11 a.m., so come early for the best choice."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What can passengers do with their tickets?",
+              "options": [
+                "Pay only half the price later",
+                "Take the next boat that leaves today",
+                "Travel again tomorrow"
+              ],
+              "answer": 2,
+              "explanation": "The tickets can be used for tomorrow's ferry."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "When should people not swim?",
+              "options": [
+                "When the sea is very warm and calm",
+                "When only a red flag is flying",
+                "When a lifeguard is on duty there"
+              ],
+              "answer": 1,
+              "explanation": "The notice says never to swim when only the red flag is flying."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What can passengers hire?",
+              "options": [
+                "Warm jackets",
+                "Fishing rods and bait",
+                "Life jackets for children"
+              ],
+              "answer": 0,
+              "explanation": "Warm jackets are available to hire."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What must beginners be able to do?",
+              "options": [
+                "Sail a small boat alone",
+                "Swim fifty metres",
+                "Tie some difficult knots"
+              ],
+              "answer": 1,
+              "explanation": "They must be able to swim fifty metres."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "Why should customers come early to the market?",
+              "options": [
+                "To watch the boats arrive in port",
+                "To get a much lower price",
+                "To have more fish to choose from"
+              ],
+              "answer": 2,
+              "explanation": "Everything is usually sold by 11 a.m., so early customers have the best choice."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Holidays on the water",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Torsten has never been in a sailing boat. He would like to spend a whole week learning, and he does not own any equipment."
+            },
+            {
+              "id": "p2",
+              "text": "Ines is seventy-five and wants a relaxing holiday on a comfortable boat. She would like all her meals to be included, and she does not want to do anything tiring."
+            },
+            {
+              "id": "p3",
+              "text": "Callum and Beth are qualified divers. They would like to see colourful fish and coral in warm water."
+            },
+            {
+              "id": "p4",
+              "text": "Arlo wants to catch his own fish from a small boat. He is happy to get up very early if he can go with an experienced guide."
+            },
+            {
+              "id": "p5",
+              "text": "Fenna wants to take her three children on a day trip by boat to a small island with a sandy beach. They must be home by the evening."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Sunrise Fishing Trip",
+              "text": "Leave the harbour at 5 a.m. with an experienced fisherman. Lines and bait are provided."
+            },
+            {
+              "id": "B",
+              "title": "Kayaking Weekend",
+              "text": "Paddle along the coast for two days. For fit adults only."
+            },
+            {
+              "id": "C",
+              "title": "Learn to Sail Week",
+              "text": "Seven days of lessons for beginners. Equipment is included in the price."
+            },
+            {
+              "id": "D",
+              "title": "Whale Watching",
+              "text": "Spot whales from a large boat. Seasickness tablets are available."
+            },
+            {
+              "id": "E",
+              "title": "Island Day Trip",
+              "text": "The ferry leaves at 9 and returns at 6. Sandy beach and café. Children half price."
+            },
+            {
+              "id": "F",
+              "title": "Coral Reef Diving",
+              "text": "Explore colourful fish and coral with qualified instructors. Diving certificate needed."
+            },
+            {
+              "id": "G",
+              "title": "Lighthouse Tour",
+              "text": "A short boat trip to visit an old lighthouse."
+            },
+            {
+              "id": "H",
+              "title": "Relaxing River Cruise",
+              "text": "Five days on a comfortable boat. All meals are included. Just sit back and enjoy the view."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Torsten",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Learn to Sail Week is for beginners and includes equipment."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Ines",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "The Relaxing River Cruise includes all meals and needs no effort."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Callum and Beth",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "Coral Reef Diving shows fish and coral, and needs a certificate."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Arlo",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "The Sunrise Fishing Trip leaves at 5 a.m. with an experienced fisherman."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Fenna",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "The Island Day Trip returns at 6 and has a sandy beach."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "A day on a fishing boat",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "My uncle Pedro has been a fisherman for thirty years, and last summer he finally agreed to take me out on his boat. We left the harbour at four in the morning, when the sky was still dark and the town was asleep. I was so sleepy that I almost fell into the water as I climbed on board.\n\nThe first hour was peaceful. Pedro steered the boat with one hand and drank coffee from a metal cup, while I watched the sun rise over the sea. Then he stopped the engine and told me to help him pull in the nets. It was much harder than it looked. The ropes were wet and heavy, and my hands were soon red and sore.\n\nAt first, I was disappointed because the nets seemed almost empty. 'Be patient,' said Pedro. Then I saw hundreds of silver fish jumping inside them. We worked for another hour to sort them into boxes. Pedro explained which ones were good to sell and which ones we should return to the sea.\n\nBy noon, I was exhausted but proud. That evening, my aunt cooked some of our fish for dinner, and it was the best meal I have ever eaten. I have decided to go out with Pedro every summer, although perhaps I will go to bed earlier the night before.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "How did the writer feel when they left the harbour?",
+              "options": [
+                "Very sleepy",
+                "Extremely nervous and worried",
+                "Full of energy and excitement"
+              ],
+              "answer": 0,
+              "explanation": "He was so sleepy that he almost fell into the water."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did the writer find difficult?",
+              "options": [
+                "Pulling in the nets",
+                "Steering the boat in the dark",
+                "Making the coffee for his uncle"
+              ],
+              "answer": 0,
+              "explanation": "Pulling in the nets was much harder than it looked."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "Why was the writer disappointed at first?",
+              "options": [
+                "The weather was far too cold",
+                "The nets looked almost empty",
+                "The boat was moving very slowly"
+              ],
+              "answer": 1,
+              "explanation": "The nets seemed almost empty."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What did Pedro explain?",
+              "options": [
+                "Where the best places to fish were",
+                "How to repair a torn net quickly",
+                "Which fish to sell and which to return"
+              ],
+              "answer": 2,
+              "explanation": "He explained which fish were good to sell and which to return to the sea."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What does the writer plan to do?",
+              "options": [
+                "Buy his own small boat soon",
+                "Become a professional fisherman",
+                "Go fishing every summer"
+              ],
+              "answer": 2,
+              "explanation": "He has decided to go out with Pedro every summer."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "My first sailing lesson",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "I had never been in a sailing boat before, so I felt nervous when I arrived at the club on Saturday morning. [1] Our instructor, a cheerful woman called Marta, welcomed us and gave us all life jackets.\n\nFirst, she showed us the different parts of the boat on land. [2] I tried to remember the names, but there were so many that my head began to spin. After half an hour, we were finally allowed to go onto the water.\n\nThe wind was light, and our little boat moved slowly across the lake. [3] Marta sat beside me and told me when to move the sail. Suddenly, a strong gust arrived, and the boat leaned so far that I was sure we would fall in. [4] Marta laughed and told me to keep calm, and soon we were sailing straight again.\n\nBy the end of the lesson, I was soaking wet but extremely happy. [5] I have already booked another lesson for next weekend.",
+          "sentences": [
+            "I held the rope in one hand and the steering stick in the other.",
+            "Sailing is much more expensive than most people think.",
+            "There were about ten other beginners, and none of us knew what to do.",
+            "I had never felt so free.",
+            "My heart was beating like a drum.",
+            "Some of them had strange names, like boom and rudder."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "C",
+              "explanation": "Ten other beginners explains why she was nervous, and \"our instructor\" then welcomes them."
+            },
+            {
+              "id": "r4-2",
+              "answer": "F",
+              "explanation": "\"Some of them\" refers to the parts of the boat, whose names she tried to remember."
+            },
+            {
+              "id": "r4-3",
+              "answer": "A",
+              "explanation": "Holding the rope and the steering stick describes what she did as the boat moved."
+            },
+            {
+              "id": "r4-4",
+              "answer": "E",
+              "explanation": "Her heart beating like a drum fits the frightening moment when the boat leaned."
+            },
+            {
+              "id": "r4-5",
+              "answer": "D",
+              "explanation": "\"I had never felt so free\" explains why she was happy and wanted another lesson."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A postcard from the coast",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Dear Ruth, We [1] a lovely time here by the sea since Monday. The weather has been perfect, so we have [2] most of the time on the beach. Yesterday, I went out in a small boat for the first time. At first, I was afraid [3] falling in, but then I relaxed and enjoyed it. This morning, we [4] some shells to take home. It is a pity that we [5] home tomorrow. Next summer, I would like to come [6] with you.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "are having",
+                "have been having",
+                "had",
+                "have"
+              ],
+              "answer": 1,
+              "explanation": "\"Since Monday\" needs the present perfect continuous."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "spent",
+                "taken",
+                "made",
+                "kept"
+              ],
+              "answer": 0,
+              "explanation": "We \"spend\" time somewhere."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "about",
+                "for",
+                "from",
+                "of"
+              ],
+              "answer": 3,
+              "explanation": "We say \"afraid of\" something."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "collecting",
+                "collect",
+                "collected",
+                "collects"
+              ],
+              "answer": 2,
+              "explanation": "\"This morning\" is finished, so the past simple \"collected\" is needed."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "going",
+                "goes",
+                "go",
+                "went"
+              ],
+              "answer": 2,
+              "explanation": "After \"we\", the basic form \"go\" is used."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "away",
+                "back",
+                "off",
+                "up"
+              ],
+              "answer": 1,
+              "explanation": "\"Come back\" means to return."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Boat safety rules",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Welcome aboard! Please read these safety rules carefully before we leave the harbour. Everyone [1] wear a life jacket at all times, even if the sea looks calm. Do not stand up [2] the boat is moving, because the floor can be wet. Please keep your hands inside the boat, [3] you could hurt yourself badly. Children must stay [4] an adult during the whole trip. If you feel ill, tell a crew member [5] once and sit down. We hope [6] enjoy your trip with us today!",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "must",
+              "accepted": [
+                "should"
+              ],
+              "explanation": "A rule about safety needs \"must\" or \"should\"."
+            },
+            {
+              "id": "r6-2",
+              "answer": "while",
+              "accepted": [
+                "when"
+              ],
+              "explanation": "\"While\" refers to the time when the boat is moving."
+            },
+            {
+              "id": "r6-3",
+              "answer": "or",
+              "accepted": [
+                "because",
+                "as"
+              ],
+              "explanation": "\"Or\" explains what could happen if you do not follow the rule."
+            },
+            {
+              "id": "r6-4",
+              "answer": "with",
+              "explanation": "Children must stay \"with\" an adult."
+            },
+            {
+              "id": "r6-5",
+              "answer": "at",
+              "explanation": "\"At once\" means immediately."
+            },
+            {
+              "id": "r6-6",
+              "answer": "you",
+              "explanation": "The crew hope that \"you\" will enjoy the trip."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Marcus is coming to the coast with you for a weekend. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Say what you want to do on Saturday.",
+              "Suggest a boat trip.",
+              "Say what he should wear.",
+              "Ask if he gets seasick."
+            ],
+            "sourceEmail": {
+              "from": "Marcus",
+              "subject": "The coast next weekend",
+              "body": "I can't wait to come to the coast next weekend! What shall we do on the first day? Is the sea warm enough for swimming? Do I need to bring anything special?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say what you want to do on Saturday.",
+                "keywords": [
+                  "saturday",
+                  "beach",
+                  "swim",
+                  "walk",
+                  "visit",
+                  "plan",
+                  "would like"
+                ]
+              },
+              {
+                "text": "Suggest a boat trip.",
+                "keywords": [
+                  "boat",
+                  "trip",
+                  "ferry",
+                  "sail",
+                  "island",
+                  "how about",
+                  "suggest"
+                ]
+              },
+              {
+                "text": "Say what he should wear.",
+                "keywords": [
+                  "wear",
+                  "bring",
+                  "jacket",
+                  "warm",
+                  "shoes",
+                  "swimming",
+                  "hat"
+                ]
+              },
+              {
+                "text": "Ask if he gets seasick.",
+                "keywords": [
+                  "seasick",
+                  "sick",
+                  "do you",
+                  "get",
+                  "boats",
+                  "afraid",
+                  "worried"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! A day by the sea. Where did you go? What did you do? Would you go there again? Write an article for the school magazine.",
+              "contentPoints": [
+                {
+                  "text": "Say where you went.",
+                  "keywords": [
+                    "went",
+                    "beach",
+                    "coast",
+                    "sea",
+                    "with",
+                    "village",
+                    "town"
+                  ]
+                },
+                {
+                  "text": "Say what you did.",
+                  "keywords": [
+                    "swam",
+                    "played",
+                    "walked",
+                    "ate",
+                    "boat",
+                    "sand",
+                    "shells"
+                  ]
+                },
+                {
+                  "text": "Say if you would go again.",
+                  "keywords": [
+                    "again",
+                    "would",
+                    "next year",
+                    "because",
+                    "love",
+                    "return",
+                    "enjoy"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a girl who finds a message in a bottle.",
+              "openingSentence": "The bottle was lying half-buried in the sand, and something was inside it.",
+              "contentPoints": [
+                {
+                  "text": "Say what the message said.",
+                  "keywords": [
+                    "message",
+                    "said",
+                    "wrote",
+                    "read",
+                    "help",
+                    "letter",
+                    "map"
+                  ]
+                },
+                {
+                  "text": "Describe what the girl did.",
+                  "keywords": [
+                    "decided",
+                    "went",
+                    "showed",
+                    "looked",
+                    "followed",
+                    "asked",
+                    "wrote back"
+                  ]
+                },
+                {
+                  "text": "Say how the story ends.",
+                  "keywords": [
+                    "finally",
+                    "found",
+                    "met",
+                    "happy",
+                    "end",
+                    "friend",
+                    "treasure"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Alec",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Brenda",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "When is the next ferry to the island?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ten forty, but it's full. The one after that leaves at twelve."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then I'll take that one."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "When will the man travel?",
+                "options": [
+                  "At ten forty",
+                  "At twelve",
+                  "At eleven"
+                ],
+                "answer": 1,
+                "explanation": "The ten-forty ferry is full, so he takes the one at twelve."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Susan",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Ronan",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Adults are twelve pounds, students are nine, and children under five go free."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then two adults and my three-year-old, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "How much will the woman pay?",
+                "options": [
+                  "Twenty-four pounds",
+                  "Twelve pounds",
+                  "Thirty-three pounds"
+                ],
+                "answer": 0,
+                "explanation": "Two adults pay twelve pounds each, and the child goes free."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Gordon",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Imani",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Will the sea be rough tomorrow?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, there will be strong winds from the west. The boats will probably stay in the harbour."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "What will probably happen to the boats tomorrow?",
+                "options": [
+                  "They will stay in the harbour",
+                  "They will leave very early",
+                  "They will all be cleaned"
+                ],
+                "answer": 0,
+                "explanation": "She says the boats will probably stay in the harbour."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Deborah",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Lance",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What should I wear on the boat?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A warm jacket, and shoes that don't slip on the deck."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What does the man say about shoes?",
+                "options": [
+                  "They should be new",
+                  "They must not slip",
+                  "They should be waterproof"
+                ],
+                "answer": 1,
+                "explanation": "He says shoes should not slip on the deck."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Wayne",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Molly",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Why don't you go swimming?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The water's much too cold for me."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Why doesn't the girl swim?",
+                "options": [
+                  "She forgot her swimsuit",
+                  "She cannot swim well",
+                  "The water is too cold"
+                ],
+                "answer": 2,
+                "explanation": "She says the water is much too cold."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Evelyn",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Garth",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Where is the lifeboat station, please?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "At the end of the pier, next to the café."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "Where is the lifeboat station?",
+                "options": [
+                  "At the end of the pier",
+                  "Next to the harbour wall",
+                  "Behind the café"
+                ],
+                "answer": 0,
+                "explanation": "It is at the end of the pier, next to the café."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Todd",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Georgia",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Did you enjoy the boat trip?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The scenery was lovely, but I felt seasick the whole time."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What spoiled the trip for the woman?",
+                "options": [
+                  "The cold wind",
+                  "Feeling seasick",
+                  "The long wait"
+                ],
+                "answer": 1,
+                "explanation": "She says she felt seasick the whole time."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Katrina",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Steve",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Let's go sailing next weekend. We could hire a small boat for the whole day."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Brilliant! I will ask my cousin for his advice."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What are they planning?",
+                "options": [
+                  "A beach party",
+                  "A swimming race",
+                  "A sailing weekend"
+                ],
+                "answer": 2,
+                "explanation": "They want to hire a small boat and go sailing."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Eugene",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Sofia",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, I'd like some information about boat trips to the island."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. There's one at ten and one at two, and tickets cost fifteen pounds."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "Why is the man asking?",
+                "options": [
+                  "To buy a map",
+                  "To find out about a boat trip",
+                  "To report a lost bag"
+                ],
+                "answer": 1,
+                "explanation": "He asks for information about boat trips to the island."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Louisa",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Noah",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Please follow my instructions: put on your sun cream and your hats, both of you. The sun is very strong today."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do we have to? We want to run to the water!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes. Then you can go."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What is the mother doing?",
+                "options": [
+                  "Giving instructions",
+                  "Asking for help",
+                  "Telling a story"
+                ],
+                "answer": 0,
+                "explanation": "She tells the children to put on sun cream and hats."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ralph",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Paula",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Coastguard to small boat, a storm is coming. Please return to the harbour as soon as you can."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Understood. We're turning back now."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the coastguard tell the boat to do?",
+                "options": [
+                  "Send a photograph",
+                  "Call again later",
+                  "Return to the harbour"
+                ],
+                "answer": 2,
+                "explanation": "She tells the boat to return to the harbour."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Mia",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Jack",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Look! I found something under this rock. It has claws!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It's a crab. Put it back carefully, or it will bite you."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What has the boy found?",
+                "options": [
+                  "A crab",
+                  "A coin",
+                  "A bottle"
+                ],
+                "answer": 0,
+                "explanation": "The girl says it is a crab."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Larry",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Sienna",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Hello, I'd like to rent a kayak for two hours, please."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Certainly. Have you paddled before?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does the woman want to do?",
+                "options": [
+                  "Take a lesson",
+                  "Buy a ticket",
+                  "Rent a kayak"
+                ],
+                "answer": 2,
+                "explanation": "She would like to rent a kayak for two hours."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A boat trip along the coast",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "rhys",
+                "name": "Captain Rhys",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "rhys",
+                "text": "Good morning, everybody, and welcome aboard the Seagull. I'm Captain Rhys. Today's trip lasts two hours, and we're going to sail along the coast as far as the Red Rocks. Please stay seated while the boat is moving. The life jackets are under your seats, in case you need them. On the left, you can see Seal Island, where about fifty seals live. If we are lucky, we may also see dolphins. There is a small shop on board that sells hot drinks and sandwiches. A cup of tea costs three pounds. We will arrive back in the harbour at noon. Finally, please don't throw any rubbish into the sea. Thank you, and enjoy the trip."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The trip lasts ___ hours",
+              "answer": "two",
+              "accepted": [
+                "2"
+              ],
+              "explanation": "Today's trip lasts two hours."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The boat sails as far as the ___ Rocks",
+              "answer": "Red",
+              "explanation": "They will sail as far as the Red Rocks."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Life jackets are under the ___",
+              "answer": "seats",
+              "explanation": "The life jackets are under the seats."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "About fifty ___ live on Seal Island",
+              "answer": "seals",
+              "explanation": "About fifty seals live on Seal Island."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "A cup of tea costs ___ pounds",
+              "answer": "three",
+              "accepted": [
+                "3"
+              ],
+              "explanation": "A cup of tea costs three pounds."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "The boat returns to the harbour at ___",
+              "answer": "noon",
+              "accepted": [
+                "twelve"
+              ],
+              "explanation": "They arrive back in the harbour at noon."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A sailor",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "gerard",
+                "name": "Gerard",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "jenna",
+                "name": "Jenna",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "gerard",
+                "text": "My guest today is Jenna Marsh, who sailed across the Atlantic alone in a small boat. Jenna, how long did the crossing take?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Forty days. I had planned for thirty-five, but the wind dropped for a week, and I hardly moved at all."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What was the hardest part?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Sleeping. You cannot sleep for eight hours when you are alone at sea, so I slept for twenty minutes at a time, and I was always tired."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Were you ever frightened?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Once, in a storm. The waves were as high as a house, and I stayed below deck, holding on for hours. I kept telling myself that the boat was stronger than I was."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What was your best moment?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Dolphins. They swam beside the boat for an entire afternoon, and I was not alone any more. I talked to them for hours."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What did you eat?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Mostly tinned food and rice. By the end, I would have given anything for a fresh apple."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What will you do next?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "I'm planning to sail round the world, and this time my daughter is coming with me."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How long did the crossing take?",
+              "options": [
+                "Four months, almost half a year",
+                "Forty days",
+                "Fourteen days, about two weeks"
+              ],
+              "answer": 1,
+              "explanation": "She says it took forty days."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What was the hardest part for Jenna?",
+              "options": [
+                "Cooking hot meals on the boat",
+                "Sleeping for short periods",
+                "Fixing the engine when it broke"
+              ],
+              "answer": 1,
+              "explanation": "She slept twenty minutes at a time and was always tired."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What happened in the storm?",
+              "options": [
+                "The waves were as high as a house",
+                "The boat lost its main sail",
+                "She lost her radio and phone"
+              ],
+              "answer": 0,
+              "explanation": "She says the waves were as high as a house."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What was her best moment?",
+              "options": [
+                "Seeing a famous old ship",
+                "Arriving safely at a harbour",
+                "Dolphins swimming beside the boat"
+              ],
+              "answer": 2,
+              "explanation": "Dolphins swam beside the boat for an entire afternoon."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What did she eat during the crossing?",
+              "options": [
+                "Fresh fish every single day",
+                "Tinned food and rice",
+                "Sandwiches and fruit from home"
+              ],
+              "answer": 1,
+              "explanation": "She ate mostly tinned food and rice."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What will she do next?",
+              "options": [
+                "Sail round the world with her daughter",
+                "Write a book about the sea",
+                "Teach sailing at a local school"
+              ],
+              "answer": 0,
+              "explanation": "She is planning to sail round the world with her daughter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s40-1-1",
+              "prompt": "Do you like being near the sea? Why or why not?"
+            },
+            {
+              "id": "s40-1-2",
+              "prompt": "Have you ever been on a boat? Tell me about it."
+            },
+            {
+              "id": "s40-1-3",
+              "prompt": "What do you like to do at the beach?"
+            },
+            {
+              "id": "s40-1-4",
+              "prompt": "Would you prefer a holiday by the sea or in the mountains? Why?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "Children playing in a sea pool beside the rocks.",
+          "images": [
+            {
+              "id": "s40-2-rockpool",
+              "title": "Children playing in a rock pool",
+              "alt": "Children play in a concrete sea pool beside rocks on the coast. Some children stand on the rocks, and a girl in a yellow swimsuit wades in the water.",
+              "describeHints": [
+                "a concrete sea pool",
+                "rocks by the sea",
+                "children in swimwear",
+                "a grassy cliff behind",
+                "waves on the shore"
+              ],
+              "image": {
+                "id": "s40-2-rockpool",
+                "src": "assets/images/exams/cambridge-pet-40/s40-2-rockpool-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-40/s40-2-rockpool-600.webp",
+                "width": 1000,
+                "height": 669,
+                "alt": "Children play in a concrete sea pool beside rocks on the coast. Some children stand on the rocks, and a girl in a yellow swimsuit wades in the water.",
+                "credit": {
+                  "author": "Coalcliff",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nippers_at_Coalcliff_Rock_Pool.JPG"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A school trip to the coast",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your class is planning a trip to the coast. Talk about these activities and decide which one would be the best.",
+          "images": [
+            {
+              "id": "s40-3-sailing",
+              "title": "A sailing lesson",
+              "alt": "Several small sailing boats with bright sails are on the sea near a sandy beach. Waves roll towards the shore.",
+              "describeHints": [
+                "small sailing boats with coloured sails",
+                "waves on a sandy beach",
+                "a calm sea",
+                "a distant boat"
+              ],
+              "image": {
+                "id": "s40-3-sailing",
+                "src": "assets/images/exams/cambridge-pet-40/s40-3-sailing-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-40/s40-3-sailing-600.webp",
+                "width": 1000,
+                "height": 666,
+                "alt": "Several small sailing boats with bright sails are on the sea near a sandy beach. Waves roll towards the shore.",
+                "credit": {
+                  "author": "Colin Babb",
+                  "license": "CC BY-SA 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sailing_Lesson_-_Priory_Bay_-_geograph.org.uk_-_2005135.jpg"
+                }
+              }
+            },
+            {
+              "id": "s40-3-aquarium",
+              "title": "An aquarium with fish",
+              "alt": "A large brown fish with a long pointed snout swims among smaller white and yellow fish. The background is a bright blue.",
+              "describeHints": [
+                "a large brown fish",
+                "a long pointed snout",
+                "small white and yellow fish",
+                "a bright blue background"
+              ],
+              "image": {
+                "id": "s40-3-aquarium",
+                "src": "assets/images/exams/cambridge-pet-40/s40-3-aquarium-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-40/s40-3-aquarium-600.webp",
+                "width": 1000,
+                "height": 392,
+                "alt": "A large brown fish with a long pointed snout swims among smaller white and yellow fish. The background is a bright blue.",
+                "credit": {
+                  "author": "Diliff",
+                  "license": "CC BY 2.5",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pristis_pristis_-_Georgia_Aquarium_Jan_2006.jpg"
+                }
+              }
+            },
+            {
+              "id": "s40-3-surfing",
+              "title": "A surfing lesson on a beach",
+              "alt": "A group of people in yellow tops stand on a sandy beach with surfboards. Surfers ride waves in the sea behind them.",
+              "describeHints": [
+                "a sandy beach",
+                "a group with surfboards",
+                "yellow tops",
+                "waves in the sea",
+                "surfers in the water"
+              ],
+              "image": {
+                "id": "s40-3-surfing",
+                "src": "assets/images/exams/cambridge-pet-40/s40-3-surfing-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-40/s40-3-surfing-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A group of people in yellow tops stand on a sandy beach with surfboards. Surfers ride waves in the sea behind them.",
+                "credit": {
+                  "author": "Mutney",
+                  "license": "CC BY 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Surf_School_lesson_on_Porthmeor_Beach,_St_Ives,_Cornwall_-_July_2025_(2).jpg"
+                }
+              }
+            },
+            {
+              "id": "s40-3-lighthouse",
+              "title": "A lighthouse on a cliff",
+              "alt": "A white lighthouse stands on a grassy cliff above the sea. The water below is dark blue and calm.",
+              "describeHints": [
+                "a white lighthouse",
+                "a grassy cliff",
+                "the blue sea",
+                "a rocky edge"
+              ],
+              "image": {
+                "id": "s40-3-lighthouse",
+                "src": "assets/images/exams/cambridge-pet-40/s40-3-lighthouse-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-40/s40-3-lighthouse-600.webp",
+                "width": 1000,
+                "height": 669,
+                "alt": "A white lighthouse stands on a grassy cliff above the sea. The water below is dark blue and calm.",
+                "credit": {
+                  "author": "Satdeep Gill",
+                  "license": "CC BY-SA 4.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_view_of_the_Baily_Lighthouse_from_the_Howth_Cliff_Walk_01.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s40-4-1",
+              "prompt": "Do you think the sea is dangerous? Why or why not?"
+            },
+            {
+              "id": "s40-4-2",
+              "prompt": "How can people keep beaches clean?"
+            },
+            {
+              "id": "s40-4-3",
+              "prompt": "Would you like to work on a boat? Why or why not?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

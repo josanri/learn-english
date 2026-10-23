@@ -5,9 +5,9 @@
 ```
 src/app/
   core/       storage (one localStorage document + migrations), settings, theme, install, speech (TTS), audio-db (IndexedDB), writing checker
-  data/       exam catalogue and grammar catalogue services (lazy JSON loading)
+  data/       exam catalogue and grammar catalogue services (lazy JSON loading), exam topic groups (name and icon)
   models/     exam.ts (schema v2, source of truth), grammar.ts, vocabulary.ts, storage.ts (persisted state)
-  features/   home, level (/b1), progress, exam, grammar, vocabulary, settings, credits
+  features/   home, level (/exams/b1), progress, exam, grammar, vocabulary, settings, credits
   shared/ui/  design-system components (import from 'shared/ui')
 src/assets/
   exams/<level>/<board>/<id>.json   exam data; <level>/index.json is generated
@@ -20,7 +20,7 @@ scripts/      validators, generators and authoring tools (see authoring-exams.md
 
 ## Routes
 
-`/`, `/b1`, `/b1/:board/:examId/(reading|writing|listening|speaking|mediation|results)`, `/grammar`, `/grammar/irregular-verbs`, `/grammar/:guide`, `/vocabulary`, `/settings`, `/credits`.
+`/`, `/exams` (redirects to `/exams/b1`), `/exams/b1`, `/exams/b1/:board/:examId/(reading|writing|listening|speaking|mediation|results)`, `/grammar`, `/grammar/irregular-verbs`, `/grammar/:guide`, `/vocabulary` (redirects to `/vocabulary/b1`), `/vocabulary/b1`, `/settings`, `/credits`.
 
 Routes are lazy (`loadComponent`). `withComponentInputBinding()` and `paramsInheritanceStrategy: 'always'` pass route params and route data to child components as `input()`s (for example `guide` in `GuidePage`).
 
@@ -34,4 +34,4 @@ Static JSON is loaded with `httpResource` through `ExamCatalogueService` and `Gr
 
 ## Level page filters
 
-`/b1` lists exams by board. The format filter shows only the boards that exist as content (`FORMATS` in `features/level/level-page.ts`: All formats, Cambridge). Add a segment there when a new board gets real exams.
+`/exams/b1` lists exams by board. The format filter shows only the boards that exist as content (`FORMATS` in `features/level/level-page.ts`: All formats, Cambridge). Add a segment there when a new board gets real exams.

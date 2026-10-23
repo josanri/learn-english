@@ -23,7 +23,7 @@ Keys inside `answers` keep the original format: item id (`r1-1`), `writing-1`, `
 ## Derived progress
 
 - `core/progress.ts` `examStatus()` derives not-started / in-progress / completed, section fraction, score percent and `everCompleted`. Completed means every skill in `COMPLETABLE_SKILLS` (reading, writing, listening, speaking) that the exam has is `completed`. Only `SCORED_SKILLS` (reading, listening) have `results`; writing and speaking are completed by submitting the section and have no score.
-- `core/stats.ts` `computeStats()` feeds the Home and /b1 summary (completed exams, average per skill, streak, Continue).
+- `core/stats.ts` `computeStats()` feeds the Home and /exams/b1 summary (completed exams, average per skill, streak, Continue).
 - `activity` lists local days (`YYYY-MM-DD`) with practice and feeds the streak.
 
 ## IndexedDB

@@ -1,0 +1,1687 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-44",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Hospitals and First Aid",
+  "subtitle": "Hospital notices, a broken arm, a first aid course and a paramedic",
+  "theme": "Hospitals and first aid",
+  "category": "health",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "VISITING HOURS: Visitors are welcome between 2 p.m. and 8 p.m. only. No more than two people at a bedside at the same time, please.",
+            "EMERGENCY ENTRANCE: Use the side door for accidents only. For ordinary appointments, please go to the main reception on the ground floor.",
+            "PHARMACY: Show the paper from your doctor at the window. Medicine is ready thirty minutes after you hand it in, and the queue is shorter before noon.",
+            "FIRST AID COURSE: Learn how to help someone who is hurt. Saturday 10 a.m. to 4 p.m. in Room 5. Lunch is not provided, so bring your own food.",
+            "HAND WASHING: Please clean your hands with the gel before you enter and after you leave every ward. This protects patients and staff."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What is the rule about visitors?",
+              "options": [
+                "They must bring a gift",
+                "Children may not come in",
+                "Only two may sit by one bed"
+              ],
+              "answer": 2,
+              "explanation": "No more than two people at a bedside."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "Who should use the side door?",
+              "options": [
+                "Visitors who come with flowers",
+                "People who have had an accident",
+                "Patients with a normal appointment"
+              ],
+              "answer": 1,
+              "explanation": "The side door is for accidents only."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "When is the pharmacy queue usually shorter?",
+              "options": [
+                "In the morning before noon",
+                "Late in the afternoon",
+                "On Saturdays and Sundays"
+              ],
+              "answer": 0,
+              "explanation": "The queue is shorter before noon."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What should people on the course do about lunch?",
+              "options": [
+                "Order it from the hospital café",
+                "Bring something to eat with them",
+                "Eat before they arrive at ten"
+              ],
+              "answer": 1,
+              "explanation": "Lunch is not provided, so bring your own food."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "Why should people clean their hands?",
+              "options": [
+                "To get a free gel sample",
+                "To keep the floors clean",
+                "To protect patients and staff"
+              ],
+              "answer": 2,
+              "explanation": "It protects patients and staff."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Health services",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Hugh has a toothache that has lasted for two days. He cannot eat properly and wants someone to look at it as soon as possible."
+            },
+            {
+              "id": "p2",
+              "text": "Nadia has hurt her ankle playing hockey. It is swollen and she thinks it might be broken, so she needs a picture of the inside of her foot."
+            },
+            {
+              "id": "p3",
+              "text": "Per is going to another country next month and wants advice and an injection to protect him from illnesses."
+            },
+            {
+              "id": "p4",
+              "text": "Lotte has a mild cold and a sore throat. She does not need a doctor, but wants something to make her feel better."
+            },
+            {
+              "id": "p5",
+              "text": "Ali is eighty and needs somebody to visit him at home once a week to check his health because he cannot leave the house easily."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Dental Clinic",
+              "text": "Emergency appointments for toothache and broken teeth. Phone before nine to get a place the same day."
+            },
+            {
+              "id": "B",
+              "title": "X-ray Department",
+              "text": "Pictures of bones and joints, available for people who have an accident. No appointment needed after an injury."
+            },
+            {
+              "id": "C",
+              "title": "Travel Health Centre",
+              "text": "Advice about injections and tablets for people who are going abroad. Book three weeks before you leave."
+            },
+            {
+              "id": "D",
+              "title": "Pharmacy",
+              "text": "Cold medicine, throat sweets and friendly advice about everyday illnesses. No paper from a doctor is needed for most items."
+            },
+            {
+              "id": "E",
+              "title": "Home Nurse Service",
+              "text": "Nurses visit people who cannot leave their homes. Weekly check-ups are arranged free of charge."
+            },
+            {
+              "id": "F",
+              "title": "Eye Clinic",
+              "text": "Eye tests and glasses. Open Monday to Friday."
+            },
+            {
+              "id": "G",
+              "title": "Baby Clinic",
+              "text": "Weight checks and advice for parents of new babies."
+            },
+            {
+              "id": "H",
+              "title": "Mental Health Service",
+              "text": "Support and talking therapy for people who feel worried or sad."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Hugh",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "The Dental Clinic gives same-day appointments for toothache."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Nadia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "The X-ray Department takes pictures of bones after an injury."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Per",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "The Travel Health Centre offers injections for travellers."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Lotte",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "The Pharmacy sells cold medicine and advice."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Ali",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "The Home Nurse Service visits people at home each week."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "A night in hospital",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last winter, I broke my arm while skating on a frozen lake. At first, I thought it was only a bad bruise, but when my friend Pia tried to lift my hand, I almost shouted with pain. She called an ambulance, and a few minutes later, two paramedics arrived. They were kind and calm, and one of them made a joke that made me laugh.\n\nAt the hospital, I had to wait for three hours in a crowded room. A boy with a cut on his head was crying, and an old man next to me was coughing loudly. Finally, a nurse called my name and took me to have an X-ray.\n\nThe doctor showed me the picture and said that the bone had broken in two places. I would need a plaster for six weeks. I was disappointed, because I had planned to go skiing in February. 'There will be other winters,' said the doctor, smiling.\n\nI went home at midnight with a blue plaster, and my classmates drew funny pictures on it the next day. Now it is off, and my arm is as good as new. I have promised myself, though, that I will never skate on a lake again without checking how thick the ice is.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "What did the writer first think about the injury?",
+              "options": [
+                "That it was only a bruise",
+                "That it was a very serious break",
+                "That it would heal by itself"
+              ],
+              "answer": 0,
+              "explanation": "He thought it was only a bad bruise."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did one of the paramedics do?",
+              "options": [
+                "He made a joke to cheer the writer up",
+                "He gave the writer a pain killer",
+                "He told the writer to stand up"
+              ],
+              "answer": 0,
+              "explanation": "One made a joke that made him laugh."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What was unpleasant about the waiting room?",
+              "options": [
+                "It was cold and had no chairs at all",
+                "It was crowded and noisy for three hours",
+                "It was far from the X-ray department"
+              ],
+              "answer": 1,
+              "explanation": "He waited three hours in a crowded room."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "Why was the writer disappointed?",
+              "options": [
+                "He had to miss his exams at school",
+                "He had to stay in hospital for weeks",
+                "He could not go skiing in February"
+              ],
+              "answer": 2,
+              "explanation": "He had planned to go skiing in February."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What has the writer decided?",
+              "options": [
+                "To take a first aid course next winter",
+                "To stop skating for the rest of his life",
+                "To check the ice before skating"
+              ],
+              "answer": 2,
+              "explanation": "He will check how thick the ice is."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "Learning first aid",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Last month, I joined a first aid course at the local hospital. I had never done anything like it before, but my mother thought it was a useful skill to learn. [1] We were divided into groups of six, and each group had a different teacher.\n\nOur teacher was a nurse called Mrs Dale, who had worked in hospitals for twenty years. [2] She showed us how to stop bleeding from a cut and how to put a bandage on a hurt knee.\n\nThe most difficult part was learning what to do when someone stops breathing. [3] We practised on a plastic model, pressing on its chest again and again until our arms were tired.\n\nAt the end of the day, we took a short test. [4] I was very proud of myself when I received my certificate. [5] Now, whenever I see an accident in a film, I know exactly what I would do.",
+          "sentences": [
+            "About thirty people had come, from teenagers to grandparents.",
+            "She had a loud voice and a great sense of humour.",
+            "It is important to stay calm and call for an ambulance first.",
+            "Luckily, I answered nearly all the questions correctly.",
+            "The course was held in a large room on the second floor.",
+            "It is a day that I will remember for a very long time."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "A",
+              "explanation": "About thirty people explains why they were divided into groups."
+            },
+            {
+              "id": "r4-2",
+              "answer": "B",
+              "explanation": "The teacher is described, and then she showed them first aid actions."
+            },
+            {
+              "id": "r4-3",
+              "answer": "C",
+              "explanation": "Calling an ambulance is the key step when someone stops breathing, and then they practised."
+            },
+            {
+              "id": "r4-4",
+              "answer": "D",
+              "explanation": "Answering the questions is about the test, and then he is proud of the certificate."
+            },
+            {
+              "id": "r4-5",
+              "answer": "F",
+              "explanation": "A day to remember closes the text, followed by the film comment."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A get-well message",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Dear Ben, I was very sorry [1] hear that you are in hospital. I [2] about your accident yesterday evening. How are you feeling? I hope the doctors are [3] after you well. If I [4] you, I would try to rest as much as possible. When you come home, we [5] watch films together. Everyone at school sends you [6] best wishes. Get well soon!",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "for",
+                "to",
+                "at",
+                "of"
+              ],
+              "answer": 1,
+              "explanation": "\"Sorry to hear\" is the correct phrase."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "heard",
+                "hear",
+                "was hearing",
+                "have hear"
+              ],
+              "answer": 0,
+              "explanation": "Past simple for \"yesterday evening\"."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "keeping",
+                "taking",
+                "caring",
+                "looking"
+              ],
+              "answer": 3,
+              "explanation": "\"Looking after\" someone."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "was",
+                "am",
+                "were",
+                "be"
+              ],
+              "answer": 2,
+              "explanation": "Second conditional uses \"were\"."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "must",
+                "did",
+                "can",
+                "are"
+              ],
+              "answer": 2,
+              "explanation": "\"Can\" shows possibility."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "its",
+                "their",
+                "her",
+                "your"
+              ],
+              "answer": 1,
+              "explanation": "\"Their best wishes\" refers to everyone."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Staying healthy",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Doctors say that it is easy to stay healthy if you follow a few simple rules. You should eat fruit and vegetables [1] day, and you should drink plenty of water. It is also important to take some exercise, [2] walking to school or playing a sport with friends. Try to sleep for at least eight hours [3] night. If you feel ill, you should go to see a doctor [4] soon as possible. Do not wait until the problem becomes serious. Finally, remember [5] wash your hands often, especially before meals. Everyone can look after [6] body with small, easy habits.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "every",
+              "accepted": [
+                "each"
+              ],
+              "explanation": "Fruit and vegetables \"every\" day."
+            },
+            {
+              "id": "r6-2",
+              "answer": "like",
+              "accepted": [
+                "such"
+              ],
+              "explanation": "\"Like walking to school\" gives an example."
+            },
+            {
+              "id": "r6-3",
+              "answer": "each",
+              "accepted": [
+                "every",
+                "a"
+              ],
+              "explanation": "Eight hours \"each\" night."
+            },
+            {
+              "id": "r6-4",
+              "answer": "as",
+              "explanation": "\"As soon as possible\"."
+            },
+            {
+              "id": "r6-5",
+              "answer": "to",
+              "explanation": "Remember \"to\" wash your hands."
+            },
+            {
+              "id": "r6-6",
+              "answer": "their",
+              "accepted": [
+                "his",
+                "her",
+                "the"
+              ],
+              "explanation": "Everyone can look after \"their\" body."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Nick has hurt his leg and is in hospital. Read his email and your notes, then write a reply.",
+            "notes": [
+              "Say how you feel about his accident.",
+              "Suggest something to bring him.",
+              "Ask how long he will stay in hospital.",
+              "Offer to visit."
+            ],
+            "sourceEmail": {
+              "from": "Nick",
+              "subject": "Stuck in hospital",
+              "body": "I fell off my bike and broke my leg! I'm in hospital for a few days and I'm really bored. The food is awful, and I can't get out of bed. Can you write back soon?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say how you feel about his accident.",
+                "keywords": [
+                  "sorry",
+                  "sad",
+                  "pity",
+                  "terrible",
+                  "awful",
+                  "hear",
+                  "worried"
+                ]
+              },
+              {
+                "text": "Suggest something to bring him.",
+                "keywords": [
+                  "bring",
+                  "book",
+                  "game",
+                  "magazine",
+                  "food",
+                  "music",
+                  "film"
+                ]
+              },
+              {
+                "text": "Ask how long he will stay in hospital.",
+                "keywords": [
+                  "how long",
+                  "stay",
+                  "when",
+                  "days",
+                  "weeks",
+                  "home",
+                  "leave"
+                ],
+                "question": true
+              },
+              {
+                "text": "Offer to visit.",
+                "keywords": [
+                  "visit",
+                  "come",
+                  "see",
+                  "saturday",
+                  "after school",
+                  "weekend",
+                  "offer"
+                ]
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! Looking after your health. What do you do to stay healthy? What advice can you give other students? Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Say what you do to stay healthy.",
+                  "keywords": [
+                    "eat",
+                    "sleep",
+                    "exercise",
+                    "sport",
+                    "drink",
+                    "walk",
+                    "healthy"
+                  ]
+                },
+                {
+                  "text": "Give advice to others.",
+                  "keywords": [
+                    "should",
+                    "advice",
+                    "try",
+                    "must",
+                    "remember",
+                    "tip",
+                    "important"
+                  ]
+                },
+                {
+                  "text": "Say why health matters.",
+                  "keywords": [
+                    "because",
+                    "important",
+                    "feel",
+                    "energy",
+                    "happy",
+                    "future",
+                    "matters"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "Dan heard a loud noise outside and ran to the window.",
+              "contentPoints": [
+                {
+                  "text": "Say what Dan saw.",
+                  "keywords": [
+                    "saw",
+                    "car",
+                    "bike",
+                    "man",
+                    "woman",
+                    "accident",
+                    "fell"
+                  ]
+                },
+                {
+                  "text": "Say how Dan helped.",
+                  "keywords": [
+                    "helped",
+                    "called",
+                    "ambulance",
+                    "bandage",
+                    "ran",
+                    "told",
+                    "stayed"
+                  ]
+                },
+                {
+                  "text": "Say how the story ends.",
+                  "keywords": [
+                    "finally",
+                    "thanked",
+                    "hospital",
+                    "happy",
+                    "safe",
+                    "end",
+                    "better"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Craig",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Ava",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "What time are visiting hours on Sunday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "From two until eight, same as every other day. But only two visitors at a time."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "How many visitors can see a patient at once?",
+                "options": [
+                  "Four",
+                  "Two",
+                  "One"
+                ],
+                "answer": 1,
+                "explanation": "Only two visitors at a time."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Julia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Stephen",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "My throat is very sore, and I have a temperature."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You should stay in bed and drink plenty of water. If it is no better in two days, come back to see me."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What does the doctor tell her to do?",
+                "options": [
+                  "Rest and drink water",
+                  "Take two tablets today",
+                  "Go to hospital at once"
+                ],
+                "answer": 0,
+                "explanation": "He says to stay in bed and drink water."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Miles",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Zita",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Where is the X-ray department, please?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Take the lift to the second floor and turn left. It is opposite the café."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Where is the X-ray department?",
+                "options": [
+                  "On the second floor",
+                  "On the ground floor",
+                  "Next to the pharmacy"
+                ],
+                "answer": 0,
+                "explanation": "It is on the second floor."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Madeleine",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gary",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How did you hurt your hand?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I was cooking, and the knife slipped. It is not deep, but it bled a lot."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "How did the man hurt his hand?",
+                "options": [
+                  "In a bicycle accident",
+                  "With a kitchen knife",
+                  "On a glass door"
+                ],
+                "answer": 1,
+                "explanation": "The knife slipped while he was cooking."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Phil",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Michelle",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Have you taken your medicine today?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, I took two tablets after breakfast. I must take one more this evening."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "When must the woman take the next tablet?",
+                "options": [
+                  "Before breakfast",
+                  "After lunch",
+                  "In the evening"
+                ],
+                "answer": 2,
+                "explanation": "She must take one more this evening."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Esther",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Earl",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Would you like to be a nurse when you grow up?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I would like to be a doctor. I want to help people with serious illnesses."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What does the boy want to be?",
+                "options": [
+                  "A doctor",
+                  "A nurse",
+                  "A dentist"
+                ],
+                "answer": 0,
+                "explanation": "He wants to be a doctor."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Graham",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Suzanne",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I feel dizzy. I have not eaten anything since yesterday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sit down, and I will bring you a sandwich and a glass of juice."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What will the woman do?",
+                "options": [
+                  "Call an ambulance",
+                  "Bring him some food",
+                  "Take him home"
+                ],
+                "answer": 1,
+                "explanation": "She will bring him a sandwich and juice."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gladys",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Ross",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Hello, I would like to make an appointment to see Doctor Hill."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "She is free on Thursday at ten. Is that convenient?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Buying medicine",
+                  "Cancelling a visit",
+                  "Making an appointment"
+                ],
+                "answer": 2,
+                "explanation": "She wants to make an appointment."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Randall",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Matilda",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Welcome to the clinic. Do not worry, this will only hurt a little. Look at the picture on the wall."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "OK. Is it nearly finished?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "Where are the speakers?",
+                "options": [
+                  "At a hotel reception",
+                  "At a dentist or a clinic",
+                  "At a sports centre"
+                ],
+                "answer": 1,
+                "explanation": "He gives an injection or treatment and tells her not to worry."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Sally",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Timothy",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "You must not play football for at least two weeks."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Two weeks? I am so upset! We have an important match next Saturday!"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "How does the boy feel?",
+                "options": [
+                  "Upset about the news",
+                  "Pleased with the doctor",
+                  "Surprised by the food"
+                ],
+                "answer": 0,
+                "explanation": "He is upset he cannot play in his match."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Albert",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Opal",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Is there anyone here who knows first aid? A man has fallen in the street!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, I do. Please call an ambulance while I stay with him."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the man ask the woman to do?",
+                "options": [
+                  "Wait in the street",
+                  "Bring a blanket",
+                  "Call an ambulance"
+                ],
+                "answer": 2,
+                "explanation": "He asks her to call an ambulance."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Alma",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Joseph",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Mum, I do not want to go to school. My stomach hurts."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let me take your temperature first. You do feel quite hot."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What is the mother going to do?",
+                "options": [
+                  "Check his temperature",
+                  "Take him to school",
+                  "Give him breakfast"
+                ],
+                "answer": 0,
+                "explanation": "She will take his temperature."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Tony",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Romy",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Are you the next patient? Please come through to the doctor's room."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I have been waiting for an hour."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the woman doing?",
+                "options": [
+                  "Cleaning the waiting room",
+                  "Giving out some medicine",
+                  "Calling the next patient"
+                ],
+                "answer": 2,
+                "explanation": "She invites the next patient into the doctor's room."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A talk about the hospital",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "donna",
+                "name": "Donna",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "donna",
+                "text": "Good morning, everyone, and welcome to St Mary's Hospital. I'm Donna, one of the nurses. First, a few facts. The hospital opened in nineteen fifty-two, and today more than two thousand people work here. We have six hundred beds. The busiest department is Emergency, which treats about three hundred patients every day. The children's ward is on the third floor, and it has a playroom with books and toys. There is a garden on the roof where patients can sit in good weather. The café opens at seven and closes at five. We also have a small shop that sells flowers and magazines. If you want to become a volunteer, you must be at least sixteen years old. Please ask at reception for a form."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The hospital opened in nineteen fifty-___",
+              "answer": "two",
+              "accepted": [
+                "2"
+              ],
+              "explanation": "The hospital opened in nineteen fifty-two."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "It has ___ beds",
+              "answer": "six hundred",
+              "accepted": [
+                "600"
+              ],
+              "explanation": "We have six hundred beds."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Emergency treats about ___ patients every day",
+              "answer": "three hundred",
+              "accepted": [
+                "300"
+              ],
+              "explanation": "About three hundred patients every day."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "The children's ward is on the ___ floor",
+              "answer": "third",
+              "accepted": [
+                "3rd"
+              ],
+              "explanation": "The children's ward is on the third floor."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The café closes at ___",
+              "answer": "five",
+              "accepted": [
+                "5"
+              ],
+              "explanation": "The café opens at seven and closes at five."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Volunteers must be at least ___ years old",
+              "answer": "sixteen",
+              "accepted": [
+                "16"
+              ],
+              "explanation": "You must be at least sixteen."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A paramedic",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "gerard",
+                "name": "Gerard",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "jenna",
+                "name": "Jenna",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "gerard",
+                "text": "Today I'm talking to Jenna Reed, a paramedic. Jenna, what does a normal day look like?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "There isn't one. One hour, I'm helping someone with a cut finger, and the next, I'm at a serious road accident."
+              },
+              {
+                "speaker": "gerard",
+                "text": "How long did your training take?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Three years at university, and then six months with an experienced partner. I learned something new every day."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What is the most difficult part of the job?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Staying calm when other people are frightened. If I panic, the patient will panic too."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Do you ever feel sad?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Sometimes, yes, when we cannot save someone. But then I remember all the people we have helped."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What do you do to relax after a hard day?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "I walk my dog on the beach. It clears my head, and the dog doesn't ask me any questions."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Would you recommend this job?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Definitely, if you like people and can work in a team. It is hard work, but it's the best job in the world."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "What does Jenna say about her normal day?",
+              "options": [
+                "It always starts very early",
+                "There is no normal day",
+                "It is mostly quiet and easy"
+              ],
+              "answer": 1,
+              "explanation": "She says there isn't a normal day."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "How long did her training take?",
+              "options": [
+                "Six years in a hospital ward",
+                "Three years at university, then six months",
+                "One year at a special school"
+              ],
+              "answer": 1,
+              "explanation": "Three years at university plus six months."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does she find hardest?",
+              "options": [
+                "Staying calm when others are frightened",
+                "Driving the ambulance very quickly",
+                "Writing long reports every night"
+              ],
+              "answer": 0,
+              "explanation": "Staying calm when other people are frightened."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "When does she feel sad?",
+              "options": [
+                "When her colleagues are late",
+                "When she has to work at night",
+                "When a patient cannot be saved"
+              ],
+              "answer": 2,
+              "explanation": "When they cannot save someone."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "How does she relax?",
+              "options": [
+                "By watching films with friends",
+                "By walking her dog on the beach",
+                "By reading books in the garden"
+              ],
+              "answer": 1,
+              "explanation": "She walks her dog on the beach."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "Does she recommend the job?",
+              "options": [
+                "Yes, for people who like people",
+                "No, because it is too tiring",
+                "Only for people who like driving"
+              ],
+              "answer": 0,
+              "explanation": "Yes, if you like people and can work in a team."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s44-1-1",
+              "prompt": "Do you often feel ill? What do you do when you feel ill?"
+            },
+            {
+              "id": "s44-1-2",
+              "prompt": "Have you ever been to hospital? Tell me about it."
+            },
+            {
+              "id": "s44-1-3",
+              "prompt": "What do you do to keep fit and healthy?"
+            },
+            {
+              "id": "s44-1-4",
+              "prompt": "Would you like to work as a doctor or a nurse? Why or why not?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A nurse in a white coat leans over a patient lying in a hospital bed.",
+          "images": [
+            {
+              "id": "s44-2-nurse",
+              "title": "A nurse and a young patient",
+              "alt": "A nurse in a white coat leans over a patient lying in a hospital bed. Another person in a red top stands nearby.",
+              "describeHints": [
+                "a nurse in a white coat",
+                "a patient in a hospital bed",
+                "a person in a red top",
+                "flowers in a vase"
+              ],
+              "image": {
+                "id": "s44-2-nurse",
+                "src": "assets/images/exams/cambridge-pet-44/s44-2-nurse-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-44/s44-2-nurse-600.webp",
+                "width": 1000,
+                "height": 669,
+                "alt": "A nurse in a white coat leans over a patient lying in a hospital bed. Another person in a red top stands nearby.",
+                "credit": {
+                  "author": "Department of Defense. American Forces Information Service. Defense Visual Information ...",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Aided_by_another_staff_worker,_a_pediatric_nurse_repositions_a_young_patient_in_a_leg_cast_with_skeletal_traction_at_Wilford_Hall_Medical_Center_-_DPLA_-_e834006ee1ff70c84ffac439a4537b89.jpeg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aided_by_another_staff_worker,_a_pediatric_nurse_repositions_a_young_patient_in_a_leg_cast_with_skeletal_traction_at_Wilford_Hall_Medical_Center_-_DPLA_-_e834006ee1ff70c84ffac439a4537b89.jpeg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A healthy school day",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your school is planning a health day for students. Talk about these activities and decide which one would be the most useful.",
+          "images": [
+            {
+              "id": "s44-3-firstaid",
+              "title": "A first aid lesson",
+              "alt": "A man in a navy uniform works with two women in khaki uniforms at a table. They are focused on a bandage or dressing.",
+              "describeHints": [
+                "a man in a navy uniform",
+                "two women in khaki uniforms",
+                "a table in a training room",
+                "a bandage or dressing"
+              ],
+              "image": {
+                "id": "s44-3-firstaid",
+                "src": "assets/images/exams/cambridge-pet-44/s44-3-firstaid-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-44/s44-3-firstaid-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A man in a navy uniform works with two women in khaki uniforms at a table. They are focused on a bandage or dressing.",
+                "credit": {
+                  "author": "George Degener",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:First_aid_training_on_the_USCGC_Sea_Fox.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_aid_training_on_the_USCGC_Sea_Fox.jpg"
+                }
+              }
+            },
+            {
+              "id": "s44-3-sport",
+              "title": "Students playing sport outdoors",
+              "alt": "A few people are playing a game on a green lawn in front of an old stone building.",
+              "describeHints": [
+                "a green lawn",
+                "an old stone building",
+                "a person in a red top running",
+                "a person bending over on the grass"
+              ],
+              "image": {
+                "id": "s44-3-sport",
+                "src": "assets/images/exams/cambridge-pet-44/s44-3-sport-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-44/s44-3-sport-600.webp",
+                "width": 1000,
+                "height": 469,
+                "alt": "A few people are playing a game on a green lawn in front of an old stone building.",
+                "credit": {
+                  "author": "Ввласенко",
+                  "license": "CC BY-SA 3.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Students_play_croquet_at_Corpus_Christi_College._Oxford,_UK.jpg"
+                }
+              }
+            },
+            {
+              "id": "s44-3-cooking",
+              "title": "A healthy cooking class",
+              "alt": "A woman in a red top mixes food in a bowl in a kitchen.",
+              "describeHints": [
+                "a woman in a red top",
+                "a large mixing bowl",
+                "a kitchen counter",
+                "wooden cupboards",
+                "a sink"
+              ],
+              "image": {
+                "id": "s44-3-cooking",
+                "src": "assets/images/exams/cambridge-pet-44/s44-3-cooking-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-44/s44-3-cooking-600.webp",
+                "width": 1000,
+                "height": 750,
+                "alt": "A woman in a red top mixes food in a bowl in a kitchen.",
+                "credit": {
+                  "author": "Fort Rucker",
+                  "license": "CC BY 2.0",
+                  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lyster_offers_new_healthy_cooking_class_(7825307958).jpg"
+                }
+              }
+            },
+            {
+              "id": "s44-3-doctor",
+              "title": "A doctor giving a talk to students",
+              "alt": "A man in a white coat stands at the front of a lecture room. Students sit at rows of desks, many with laptops.",
+              "describeHints": [
+                "a man in a white coat",
+                "rows of students at desks",
+                "laptops on the desks",
+                "a projector screen at the front"
+              ],
+              "image": {
+                "id": "s44-3-doctor",
+                "src": "assets/images/exams/cambridge-pet-44/s44-3-doctor-1200.webp",
+                "srcSmall": "assets/images/exams/cambridge-pet-44/s44-3-doctor-600.webp",
+                "width": 1000,
+                "height": 667,
+                "alt": "A man in a white coat stands at the front of a lecture room. Students sit at rows of desks, many with laptops.",
+                "credit": {
+                  "author": "U.S. Navy photo by Senior Chief Mass Communication Specialist Gary Ward",
+                  "license": "Public domain",
+                  "licenseUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_080926-N-3271W-003_Lt._Andrew_Baldwin,_M.D.,_peaks_to_students_at_the_University_of_South_Carolina_School_of_Medicine.jpg",
+                  "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_080926-N-3271W-003_Lt._Andrew_Baldwin,_M.D.,_peaks_to_students_at_the_University_of_South_Carolina_School_of_Medicine.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s44-4-1",
+              "prompt": "Do you think it is important for everyone to learn first aid? Why?"
+            },
+            {
+              "id": "s44-4-2",
+              "prompt": "How can schools help students to stay healthy?"
+            },
+            {
+              "id": "s44-4-3",
+              "prompt": "What is the best way to cheer up a friend who is ill?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

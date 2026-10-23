@@ -284,7 +284,7 @@ export function speaking(
 }
 
 /** Writes work/<examId>/header.json and one file per section, ready for `exam-tools build`. */
-export function save(examId, { title, subtitle, theme }, ...sections) {
+export function save(examId, { title, subtitle, theme, category }, ...sections) {
   const dir = join(WORK, examId);
   mkdirSync(dir, { recursive: true });
   const header = {
@@ -295,6 +295,7 @@ export function save(examId, { title, subtitle, theme }, ...sections) {
     title,
     subtitle,
     theme,
+    category,
     estimatedMinutes: 137,
     sectionOrder: sections.map((s) => s.skill),
   };

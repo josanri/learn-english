@@ -39,7 +39,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
             <app-icon name="home" />
             <span>Home</span>
           </a>
-          <a routerLink="/b1" routerLinkActive="active" ariaCurrentWhenActive="page">
+          <a routerLink="/exams/b1" routerLinkActive="active" ariaCurrentWhenActive="page">
             <app-icon name="list" />
             <span>B1 exams</span>
           </a>
@@ -47,7 +47,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
             <app-icon name="book" />
             <span>Grammar</span>
           </a>
-          <a routerLink="/vocabulary" routerLinkActive="active" ariaCurrentWhenActive="page">
+          <a routerLink="/vocabulary/b1" routerLinkActive="active" ariaCurrentWhenActive="page">
             <app-icon name="chat" />
             <span>Words</span>
           </a>
