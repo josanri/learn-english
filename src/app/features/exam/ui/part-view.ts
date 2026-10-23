@@ -28,7 +28,7 @@ import { ExamSessionStore } from '../session/exam-session.store';
   template: `
     <section [attr.aria-labelledby]="headingId()">
       <h2 #heading tabindex="-1" [id]="headingId()">
-        <span class="mono">Part {{ part().number }}</span> {{ part().title }}
+        <span class="mono">Part {{ part().number }}:</span> {{ part().title }}
       </h2>
       <p class="lede">{{ part().instructions }}</p>
 
