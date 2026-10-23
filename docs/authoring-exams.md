@@ -44,7 +44,7 @@ grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only
 
 ### Fast path for a whole exam
 
-1. Write one author script in `work/` (not committed) that imports the builders and ends with `save('<examId>', { title, subtitle, theme }, reading(...), writing(...), listening(...), speaking(...))`. Run it with `node`.
+1. Write one author script in `work/` (not committed) that imports the builders and ends with `save('<examId>', { title, subtitle, theme, category }, reading(...), writing(...), listening(...), speaking(...))`. Run it with `node`.
 2. `rebalance <examId>`: you do not have to balance the key letters by hand, write the key in any position. Do not put "all of the above" or a letter in an explanation, because options move.
 3. Write distractors as long as the key, and put at least one word of the key in the script (the validator warns about both). `longkeys <examId>` shows which items still need work.
 4. `build <examId>`, `npm run exams:index`, `npm run validate:exams -- <file>`. Fix warnings with small string patches on the work files, then `build` again.
@@ -52,7 +52,7 @@ grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only
 
 ## Workflow
 
-1. `node scripts/exam-tools.mjs brief cambridge-pet`. Pick a theme, names and photo topics that are not used. Check `docs/exam-formats.md` only if the board is not Cambridge.
+1. `node scripts/exam-tools.mjs brief cambridge-pet`. Pick a theme, names and photo topics that are not used. Pick the `category` (topic group) of the theme. Check `docs/exam-formats.md` only if the board is not Cambridge.
 2. Write the exam with the builders (see the fast path) or copy `split cambridge-pet-01` into `work/<newId>/` and rewrite the skills one by one. Start with reading, then listening.
 3. `build <newId>`, then `npm run exams:index` and `npm run validate:exams -- <file>`. Fix errors first, then warnings.
 4. Photos (see below).
@@ -65,7 +65,8 @@ grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only
 ## Files and ids
 
 - One file per exam: `src/assets/exams/b1/<board>/<board>-NN.json`, `id` equal to the file name (for example `cambridge-pet-16`). Never change a published id: learner progress is stored by exam, part and item id.
-- Header: `schemaVersion: 2`, `id`, `level: "B1"`, `board`, `title`, `subtitle`, `theme`, `estimatedMinutes`, `sections[]`.
+- Header: `schemaVersion: 2`, `id`, `level: "B1"`, `board`, `title`, `subtitle`, `theme`, `category`, `estimatedMinutes`, `sections[]`.
+- `category` is one of the topic groups in `ExamCategory` (`src/app/models/exam.ts`): `animals`, `nature`, `environment`, `travel`, `transport`, `sport`, `health`, `food`, `home`, `people`, `study`, `arts`, `entertainment`, `science`, `games`, `shopping`, `history`, `misc`. The level page shows its icon next to the theme. Use `misc` only when no other group fits. A new group needs a row in `src/app/data/exam-categories.ts` and an icon in `icon.ts`.
 - A section has `skill`, `timeLimitMinutes` and `parts[]`. A part has `id` (`<skill>-<n>`), `number`, `title`, `instructions` and a discriminating `type`. Item ids are unique in the exam: new exams use `r<part>-<item>` for reading and `l<part>-<recording>-<item>` for listening. `ChoiceQuestion.answer` is a zero-based option index; gapped-text, heading and matching keys are letters.
 - New board: add it to `BOARD_INFO` (`scripts/lib/exam-files.mjs`) and `BOARD_SPECS` (`scripts/lib/board-rules.mjs`), document the spec and its source in `exam-formats.md`, add a test in `scripts/lib/exam-rules.test.mjs`, and add a segment to `FORMATS` in `features/level/level-page.ts`.
 

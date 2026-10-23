@@ -33,6 +33,7 @@ describe('LevelPage', () => {
           title: 'A Fresh Start',
           subtitle: 'Community',
           theme: 'Community',
+          category: 'people',
           estimatedMinutes: 137,
           skills: ['reading'],
           path: 'b1/cambridge-pet/cambridge-pet-01.json',
@@ -49,5 +50,9 @@ describe('LevelPage', () => {
     );
     expect(element.textContent).toContain('Not started');
     expect(element.textContent).toContain('137 min');
+    const themeChip = element.querySelector('.exam .top app-chip');
+    expect(themeChip?.textContent).toContain('Community');
+    // The people icon of the category comes before the theme.
+    expect(themeChip?.querySelector('app-icon svg circle[cx="9"][cy="8"]')).not.toBeNull();
   });
 });

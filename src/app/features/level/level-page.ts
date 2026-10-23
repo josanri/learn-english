@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { examStatus, type ExamStatus } from '../../core/progress';
 import { LocalStorageService } from '../../core/storage.service';
 import { ExamCatalogueService } from '../../data/exam-catalogue.service';
+import { EXAM_CATEGORIES, type ExamCategoryInfo } from '../../data/exam-categories';
 import type { ExamSummary } from '../../models/exam';
 import { ProgressSummary } from '../progress/progress-summary';
 import {
@@ -10,6 +11,7 @@ import {
   Button,
   Chip,
   EmptyState,
+  Icon,
   ProgressRing,
   SegmentedControl,
   type SegmentOption,
@@ -23,6 +25,7 @@ const FORMATS: SegmentOption[] = [
 
 interface ExamCard {
   exam: ExamSummary;
+  category: ExamCategoryInfo;
   status: ExamStatus;
 }
 
@@ -35,6 +38,7 @@ interface ExamCard {
     Button,
     Chip,
     EmptyState,
+    Icon,
     ProgressRing,
     ProgressSummary,
     SegmentedControl,
@@ -85,7 +89,11 @@ interface ExamCard {
               @for (card of group.cards; track card.exam.id) {
                 <li class="exam">
                   <div class="top">
-                    <app-chip>{{ card.exam.theme }}</app-chip>
+                    <app-chip
+                      ><app-icon [name]="card.category.icon" [size]="16" />{{
+                        card.exam.theme
+                      }}</app-chip
+                    >
                     <app-progress-ring
                       [value]="card.status.fraction"
                       [size]="56"
@@ -238,7 +246,12 @@ export class LevelPage {
         ...board,
         cards: data.exams
           .filter((e): e is ExamSummary => e.board === board.id)
-          .map((exam): ExamCard => ({ exam, status: examStatus(exam, progress[exam.id]) })),
+          .map((exam): ExamCard => ({
+            exam,
+            // An index cached before categories existed has none: fall back to the generic icon.
+            category: EXAM_CATEGORIES[exam.category] ?? EXAM_CATEGORIES.misc,
+            status: examStatus(exam, progress[exam.id]),
+          })),
       }))
       .filter((group) => group.cards.length > 0);
   });

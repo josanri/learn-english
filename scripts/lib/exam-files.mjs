@@ -75,6 +75,7 @@ export function buildLevelIndex(levelDir) {
       title: exam.title,
       subtitle: exam.subtitle,
       theme: exam.theme,
+      category: exam.category,
       estimatedMinutes: exam.estimatedMinutes,
       skills: exam.sections.map((s) => s.skill),
       path: entry.path,

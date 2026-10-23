@@ -109,6 +109,10 @@ for (const entry of allEntries) {
   seenExamIds.add(exam.id);
   if (!exam.title.trim() || !exam.subtitle.trim() || !exam.theme.trim())
     error('title, subtitle and theme must not be empty');
+  if (/^practice exam\b/i.test(exam.title.trim()))
+    error(`title "${exam.title}" is a placeholder: name the topic, like the theme`);
+  if (exam.subtitle.trim().toLowerCase() === exam.theme.trim().toLowerCase())
+    error('subtitle repeats the theme: name the main texts and the interview');
 
   const skills = exam.sections.map((s) => s.skill);
   if (new Set(skills).size !== skills.length) error('each skill may appear in only one section');

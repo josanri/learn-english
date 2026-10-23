@@ -5,7 +5,7 @@
 ```
 src/app/
   core/       storage (one localStorage document + migrations), settings, theme, install, speech (TTS), audio-db (IndexedDB), writing checker
-  data/       exam catalogue and grammar catalogue services (lazy JSON loading)
+  data/       exam catalogue and grammar catalogue services (lazy JSON loading), exam topic groups (name and icon)
   models/     exam.ts (schema v2, source of truth), grammar.ts, vocabulary.ts, storage.ts (persisted state)
   features/   home, level (/b1), progress, exam, grammar, vocabulary, settings, credits
   shared/ui/  design-system components (import from 'shared/ui')

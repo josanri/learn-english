@@ -15,6 +15,7 @@ const exam: Exam = {
   title: 'Test exam',
   subtitle: '',
   theme: '',
+  category: 'misc',
   estimatedMinutes: 10,
   sections: [
     {
