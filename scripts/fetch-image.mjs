@@ -211,22 +211,24 @@ async function fetchOne(input) {
   if (!/jpeg|png/.test(d.mime)) fail(`Unsupported file type ${d.mime}`);
   if (d.width < 1200) fail(`Too small (${d.width}px wide); need at least 1200.`);
 
-  // Apply EXIF rotation, then crop tall pictures to 4:3 landscape (the speaking pages use wide frames).
+  // Apply EXIF rotation. Tall pictures are shown whole on a blurred 4:3 backdrop.
   const rotated = await sharp(await download(d.thumb ?? d.url))
     .rotate()
     .toBuffer({ resolveWithObject: true });
   let base = sharp(rotated.data);
-  if (rotated.info.height / rotated.info.width > 0.75)
-    base = sharp(
-      await base
-        .resize({
-          width: rotated.info.width,
-          height: Math.round(rotated.info.width * 0.75),
-          fit: 'cover',
-          position: 'attention',
-        })
-        .toBuffer(),
-    );
+  if (rotated.info.height / rotated.info.width > 0.75) {
+    // Never crop: a crop can cut a face. Show the whole picture centred on a blurred copy of itself.
+    const w = rotated.info.width;
+    const h = Math.round(w * 0.75);
+    const backdrop = await sharp(rotated.data)
+      .resize({ width: w, height: h, fit: 'cover' })
+      .blur(24)
+      .modulate({ brightness: 0.7 })
+      .toBuffer();
+    const front = await sharp(rotated.data).resize({ height: h, fit: 'inside' }).toBuffer();
+    base = sharp(backdrop).composite([{ input: front, gravity: 'centre' }]);
+    base = sharp(await base.toBuffer());
+  }
   const preview = join(flag('out', join(tmpdir(), 'fetch-image-preview')), `${visualId}.jpg`);
   mkdirSync(join(preview, '..'), { recursive: true });
   await base.clone().resize({ width: 480 }).jpeg({ quality: 65 }).toFile(preview);
