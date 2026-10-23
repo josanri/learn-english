@@ -240,7 +240,7 @@ export class SectionPage {
 
   protected exit(): void {
     this.toast.show('Progress saved on this device.', 'success');
-    void this.router.navigate(['/', this.store.location()?.level ?? 'b1']);
+    void this.router.navigate(['/exams', this.store.location()?.level ?? 'b1']);
   }
 
   protected jumpTo(target: { id: string; partIndex: number }): void {

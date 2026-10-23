@@ -4,7 +4,7 @@ import { Chip, EmptyState, Icon } from '../../shared/ui';
 import { ExamSessionStore } from './session/exam-session.store';
 
 /**
- * Frame for `/:level/:board/:examId/*`: loads the exam JSON into the session store (one store per
+ * Frame for `/exams/:level/:board/:examId/*`: loads the exam JSON into the session store (one store per
  * open exam), shows the title and the section navigation, and hosts the section pages.
  */
 @Component({
@@ -22,12 +22,12 @@ import { ExamSessionStore } from './session/exam-session.store';
           description="It may not exist yet, or you may be offline."
           icon="alert"
         >
-          <a [routerLink]="['/', level()]">Back to all {{ level().toUpperCase() }} exams</a>
+          <a [routerLink]="['/exams', level()]">Back to all {{ level().toUpperCase() }} exams</a>
         </app-empty-state>
       </div>
     } @else if (store.exam(); as exam) {
       <div class="container head">
-        <a class="back" [routerLink]="['/', level()]">
+        <a class="back" [routerLink]="['/exams', level()]">
           <app-icon name="back" [size]="16" />
           All {{ level().toUpperCase() }} exams
         </a>

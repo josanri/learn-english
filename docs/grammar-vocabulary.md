@@ -36,7 +36,7 @@ Pure logic in `irregular-verbs/verb-engine.ts`: `isCorrectForm` (uses `normalize
 
 Progress: `PersistedState.grammar.verbs[verbId] = { right, wrong, lastSeen, known, starred }`, written through `LocalStorageService.recordVerbResult / setVerbKnown / toggleVerbStar / resetGrammar`. Practice also adds the day to `activity` (streak). Feedback is a practice aid, never a score.
 
-## Vocabulary list (`/vocabulary`)
+## Vocabulary list (`/vocabulary/b1`)
 
 `assets/vocabulary/b1-preliminary.json` holds the whole Cambridge B1 Preliminary and Preliminary for Schools Vocabulary List (August 2025): about 2,775 headwords.
 

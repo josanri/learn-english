@@ -46,7 +46,7 @@ interface SkillCard {
         how you did. Everything stays on your device.
       </p>
       <div class="actions">
-        <a appButton variant="primary" size="lg" routerLink="/b1">
+        <a appButton variant="primary" size="lg" routerLink="/exams/b1">
           Start B1
           <app-icon name="arrow" [size]="22" />
         </a>
@@ -72,7 +72,7 @@ interface SkillCard {
             [heading]="skill.title"
             [tone]="skill.tone"
             [rotate]="skill.tilt"
-            [link]="'/b1'"
+            [link]="'/exams/b1'"
           >
             <app-skill-art art [kind]="skill.kind" />
             <p>{{ skill.text }}</p>

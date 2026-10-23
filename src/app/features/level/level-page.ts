@@ -29,7 +29,7 @@ interface ExamCard {
   status: ExamStatus;
 }
 
-/** `/b1`: exams grouped by board, filterable by format, with saved progress for each. */
+/** `/exams/b1`: exams grouped by board, filterable by format, with saved progress for each. */
 @Component({
   selector: 'app-level-page',
   imports: [
@@ -101,9 +101,10 @@ interface ExamCard {
                     />
                   </div>
                   <h3>
-                    <a [routerLink]="['/', level(), card.exam.board, card.exam.id, 'reading']">{{
-                      card.exam.title
-                    }}</a>
+                    <a
+                      [routerLink]="['/exams', level(), card.exam.board, card.exam.id, 'reading']"
+                      >{{ card.exam.title }}</a
+                    >
                   </h3>
                   <p class="muted">{{ card.exam.subtitle }}</p>
                   <div class="meta">

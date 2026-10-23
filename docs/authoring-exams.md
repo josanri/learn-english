@@ -87,7 +87,7 @@ Warnings (fix them unless there is a reason): one key letter above 45% or four e
 Rules that the machine cannot check:
 
 - Write fresh notices, messages, articles, stories, interviews and monologues. Never copy or lightly rewrite official tasks or copyrighted texts.
-- Target B1 everyday communication: personal, social, travel, study, work, health, leisure, shopping, transport, food, environment. The Cambridge vocabulary list (also in the app at `/vocabulary`) is a guide, not a whitelist.
+- Target B1 everyday communication: personal, social, travel, study, work, health, leisure, shopping, transport, food, environment. The Cambridge vocabulary list (also in the app at `/vocabulary/b1`) is a guide, not a whitelist.
 - One defensible key per item. For each gap and question ask whether a competent B1 candidate could choose another option or word. If yes, change the item or add the equivalent to `accepted`. Typical traps: verbs that also fit the gap (get/make/take a trip), prepositions with several correct options, comparatives that are also correct, extra sentences that fit another gap.
 - Distractors are plausible and parallel in length and grammar. No "all/none of the above". The key is not conspicuously longer and does not hold the only keyword of the stem.
 - Gapped text: each sentence depends on its neighbours through reference, linking or time. The extra sentence fits no gap.

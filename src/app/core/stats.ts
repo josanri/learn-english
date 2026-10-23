@@ -47,7 +47,7 @@ function latestResult(progress: ExamProgress, skill: Skill) {
   return undefined;
 }
 
-/** Everything the Home and /b1 summaries show, derived from the saved document. */
+/** Everything the Home and /exams/b1 summaries show, derived from the saved document. */
 export function computeStats(
   exams: readonly ExamSummary[],
   state: Pick<PersistedState, 'progress' | 'activity'>,

@@ -7,7 +7,7 @@ import { Button, Card, Icon, ProgressRing } from '../../shared/ui';
 
 /**
  * Overall progress for a list of exams, derived from the saved document: exams completed, average
- * per skill, practice streak and a "Continue" shortcut to the exam in progress. Used on Home and /b1.
+ * per skill, practice streak and a "Continue" shortcut to the exam in progress. Used on Home and /exams/b1.
  */
 @Component({
   selector: 'app-progress-summary',
@@ -55,7 +55,7 @@ import { Button, Card, Icon, ProgressRing } from '../../shared/ui';
               variant="primary"
               size="sm"
               [routerLink]="[
-                '/',
+                '/exams',
                 target.exam.level.toLowerCase(),
                 target.exam.board,
                 target.exam.id,

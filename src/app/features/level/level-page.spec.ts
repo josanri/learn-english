@@ -46,7 +46,7 @@ describe('LevelPage', () => {
     const element = fixture.nativeElement as HTMLElement;
     expect(element.querySelector('h2')?.textContent).toContain('Cambridge B1 Preliminary');
     expect(element.querySelector('.exam-list a')?.getAttribute('href')).toBe(
-      '/b1/cambridge-pet/cambridge-pet-01/reading',
+      '/exams/b1/cambridge-pet/cambridge-pet-01/reading',
     );
     expect(element.textContent).toContain('Not started');
     expect(element.textContent).toContain('137 min');

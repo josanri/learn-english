@@ -37,4 +37,4 @@ Exam pages must honour `showTimer`, `examMode` (no hints or explanations until f
 
 ## Accessibility check
 
-Run `ng serve` and axe through `@axe-core/playwright` (dev dependency; system Chrome works with `channel: 'chrome'`). Home, /b1 and /settings had no violations in either theme at 360 and 1280 px.
+Run `ng serve` and axe through `@axe-core/playwright` (dev dependency; system Chrome works with `channel: 'chrome'`). Home, /exams/b1 and /settings had no violations in either theme at 360 and 1280 px.
