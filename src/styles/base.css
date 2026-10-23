@@ -7,6 +7,9 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-padding-top: calc(var(--header-height) + var(--space-4));
+  /* Same scrollbar as the select list: thin, token colours, no grey system track. */
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-muted) var(--bg);
 }
 
 body {
@@ -224,14 +227,20 @@ select:disabled {
   select:open::picker-icon {
     rotate: 180deg;
   }
+  /* The wide transparent border is the inner spacing: it keeps the scrollbar clear of the rounded
+     corners. The outline draws the visible edge. */
   ::picker(select) {
     margin-block: var(--space-2);
-    padding: var(--space-2);
-    border: var(--bw) solid var(--border);
+    padding: 0;
+    border: var(--space-2) solid transparent;
     border-radius: var(--radius);
+    outline: var(--bw) solid var(--border);
+    outline-offset: calc(-1 * var(--bw));
     background: var(--surface);
     color: var(--text);
     box-shadow: 0.25rem 0.25rem 0 var(--shadow-solid);
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-muted) transparent;
   }
   option {
     min-height: var(--target);
