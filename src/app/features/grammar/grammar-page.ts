@@ -43,7 +43,7 @@ import { Button, Card, Chip, EmptyState, IllustratedCard, SkillArt } from '../..
           [rotate]="-1.5"
           link="/grammar/irregular-verbs"
         >
-          <app-skill-art art kind="writing" />
+          <app-skill-art art kind="verbs" />
           <p>A glossary of about 100 verbs, with exercises, gap sentences and flashcards.</p>
         </app-illustrated-card>
         <app-illustrated-card
@@ -52,7 +52,7 @@ import { Button, Card, Chip, EmptyState, IllustratedCard, SkillArt } from '../..
           [rotate]="1.5"
           link="/vocabulary/b1"
         >
-          <app-skill-art art kind="reading" />
+          <app-skill-art art kind="vocabulary" />
           <p>
             The Cambridge B1 word list, with topics, filters and a dictionary link for each word.
           </p>
