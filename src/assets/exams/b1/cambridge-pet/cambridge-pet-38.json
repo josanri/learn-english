@@ -1,0 +1,1602 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-38",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Space and the Night Sky",
+  "subtitle": "Telescopes, an astronaut visit and a short history of space travel",
+  "theme": "Space and the night sky",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "OBSERVATORY: Public viewing nights are on the first Friday of every month, from 8 p.m. to 11 p.m. Dress warmly. If the sky is cloudy, the evening is cancelled.",
+            "PLANETARIUM: Shows begin at 11 a.m., 1 p.m. and 3 p.m. Latecomers cannot enter once a show has started.",
+            "SCIENCE CLUB: Next week, we will build model rockets. Please bring an empty plastic bottle. Safety glasses are provided.",
+            "TELESCOPE FOR SALE: Hardly used, with a stand and two lenses. Sixty pounds or nearest offer. Phone Tom after six.",
+            "STAR PARTY: Join our camping weekend and watch a meteor shower. Tents and sleeping bags are available to hire."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What happens if the sky is cloudy?",
+              "options": [
+                "Visitors can return free",
+                "The visit is made shorter",
+                "The evening is cancelled"
+              ],
+              "answer": 2,
+              "explanation": "If the sky is cloudy, the evening is cancelled."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What happens to people who arrive late?",
+              "options": [
+                "They pay a lower price",
+                "They cannot go in",
+                "They watch from outside"
+              ],
+              "answer": 1,
+              "explanation": "Latecomers cannot enter once a show has started."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What should members bring to the club?",
+              "options": [
+                "An empty plastic bottle",
+                "A pair of safety glasses",
+                "A model of a rocket"
+              ],
+              "answer": 0,
+              "explanation": "Members should bring an empty plastic bottle; glasses are provided."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "When can people phone Tom?",
+              "options": [
+                "Before school starts",
+                "After six o'clock",
+                "At the weekend only"
+              ],
+              "answer": 1,
+              "explanation": "The notice says to phone Tom after six."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What can visitors hire at the star party?",
+              "options": [
+                "A place in the car park",
+                "A pair of binoculars",
+                "Camping equipment"
+              ],
+              "answer": 2,
+              "explanation": "Tents and sleeping bags are available to hire."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Space events and activities",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Elias is ten and is crazy about rockets. He would like to build one and launch it, with experts nearby to help him."
+            },
+            {
+              "id": "p2",
+              "text": "Brenna wants to see the craters on the Moon and some planets through a powerful telescope, with an expert who can explain what she is looking at."
+            },
+            {
+              "id": "p3",
+              "text": "Dev is an adult who has always wanted to hear what it is really like to live in space. He would love to listen to a real astronaut and ask questions."
+            },
+            {
+              "id": "p4",
+              "text": "Paulina has a good camera and wants to take pictures of the stars. She needs advice about how to use it at night."
+            },
+            {
+              "id": "p5",
+              "text": "Daniel is a teacher who wants to take his class of twenty-five students to a space show on a weekday morning."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "School Visits",
+              "text": "The planetarium is open to school groups on weekdays. Shows for ages seven to sixteen."
+            },
+            {
+              "id": "B",
+              "title": "Moon Rock Exhibition",
+              "text": "See real rock from the Moon in the museum's new hall."
+            },
+            {
+              "id": "C",
+              "title": "Telescope Night",
+              "text": "Look at the Moon and the planets through a large telescope with an expert guide."
+            },
+            {
+              "id": "D",
+              "title": "Space Film Club",
+              "text": "Watch classic science-fiction films every Sunday."
+            },
+            {
+              "id": "E",
+              "title": "Night Sky Photography",
+              "text": "Learn how to take pictures of stars with your own camera. Bring a tripod."
+            },
+            {
+              "id": "F",
+              "title": "Rocket Building Day",
+              "text": "Build and launch a model rocket with help from engineers. Ages eight to twelve."
+            },
+            {
+              "id": "G",
+              "title": "Space Quiz",
+              "text": "Test your knowledge every Friday. There are prizes for the winners."
+            },
+            {
+              "id": "H",
+              "title": "An Evening with an Astronaut",
+              "text": "A British astronaut talks about six months on the space station. Questions at the end."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Elias",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "Rocket Building Day lets children build and launch rockets with engineers."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Brenna",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Telescope Night shows the Moon and planets with an expert guide."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Dev",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "An Evening with an Astronaut includes a talk and questions."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Paulina",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Night Sky Photography teaches how to photograph stars with your own camera."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Daniel",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "School Visits are for school groups on weekdays."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "Meeting an astronaut",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last month, our school had an unusual visitor: a real astronaut. Her name was Commander Joanna Reid, and she had spent five months on the International Space Station. Everyone in the school hall was silent when she walked on stage.\n\nShe began by showing us a short film of life in space. We saw her floating in the air and drinking water from a bubble. When she turned upside down, the whole hall laughed. Then she explained that the hardest thing was not the danger but the loneliness. 'I missed my family,' she told us, 'and I missed the smell of rain.'\n\nAfter the talk, we were allowed to ask questions. A little boy in the front asked what astronauts eat for breakfast, and she answered that she had often eaten porridge from a bag. My friend Anil asked whether she was ever afraid, and she said that she was most afraid before the launch, not during it.\n\nAt the end, she told us that anyone could work for a space agency, not only brilliant scientists. 'You need patience and teamwork,' she said. I went home thinking about it all evening, and I have already decided to study physics.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "What did the film show?",
+              "options": [
+                "Life on the space station",
+                "The inside of a rocket",
+                "A famous space mission"
+              ],
+              "answer": 0,
+              "explanation": "It showed her floating and drinking water from a bubble in space."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did the astronaut find hardest?",
+              "options": [
+                "Missing her family and home",
+                "Being in danger",
+                "Eating in space"
+              ],
+              "answer": 0,
+              "explanation": "She said the hardest thing was the loneliness."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did she say about being afraid?",
+              "options": [
+                "She was never afraid at all",
+                "She was most afraid before the launch",
+                "She was afraid of the food"
+              ],
+              "answer": 1,
+              "explanation": "She was most afraid before the launch, not during it."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What does she say space agencies need?",
+              "options": [
+                "Young people under twenty",
+                "Only very clever scientists",
+                "Patient people who work in teams"
+              ],
+              "answer": 2,
+              "explanation": "She says you need patience and teamwork."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What has the writer decided?",
+              "options": [
+                "To write a book",
+                "To become an astronaut",
+                "To study physics"
+              ],
+              "answer": 2,
+              "explanation": "He has already decided to study physics."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "A short history of space travel",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "People have always looked up at the sky and wondered what was out there. [1] The first rocket to leave the Earth's atmosphere was launched in 1944, but nobody travelled in it.\n\nThe first person in space was Yuri Gagarin, a Russian pilot, who orbited the Earth in 1961. [2] The whole journey lasted only one hour and forty-eight minutes, but it changed history.\n\nEight years later, in July 1969, Neil Armstrong became the first person to walk on the Moon. [3] About six hundred million people watched on television as he stepped onto the grey dust.\n\nSince then, scientists have sent machines to Mars, Jupiter and even beyond the solar system. [4] Today, astronauts live on a space station for months at a time, and companies are planning holidays in space. [5] Some people believe that one day humans will live on other planets.",
+          "sentences": [
+            "Armstrong later became a university professor.",
+            "Many dreamed of travelling there, but it took until the twentieth century to do it.",
+            "Some of these machines are still sending pictures today.",
+            "He was only twenty-seven years old.",
+            "Ideas like these once seemed like science fiction.",
+            "His landing was shown live all over the world."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "B",
+              "explanation": "\"Travelling there\" and \"the twentieth century\" lead to the first rocket in 1944."
+            },
+            {
+              "id": "r4-2",
+              "answer": "D",
+              "explanation": "His age is extra information about Gagarin before the length of the journey."
+            },
+            {
+              "id": "r4-3",
+              "answer": "F",
+              "explanation": "\"Shown live\" explains why millions of people watched on television."
+            },
+            {
+              "id": "r4-4",
+              "answer": "C",
+              "explanation": "\"These machines\" refers to the machines sent to other planets."
+            },
+            {
+              "id": "r4-5",
+              "answer": "E",
+              "explanation": "\"Ideas like these\" refers to space holidays, which once seemed like science fiction."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A letter about stargazing",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Dear Uncle Ray, Thank you for the telescope! Last night, I took it into the garden and looked [1] the Moon. It was much [2] than I had imagined, and I could even see the mountains. My sister, who is [3] interested in stars than I am, wanted to look at Jupiter. We [4] the sky for about ten minutes, but there were too many clouds. I am going to try again [5] the sky is clear. I will [6] you a photograph by email when I get a good one.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "to",
+                "at",
+                "on",
+                "for"
+              ],
+              "answer": 1,
+              "explanation": "We say \"look at\" something."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "bigger",
+                "big",
+                "biggest",
+                "more big"
+              ],
+              "answer": 0,
+              "explanation": "\"Much bigger than\" is a comparative form."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "very",
+                "most",
+                "much",
+                "more"
+              ],
+              "answer": 3,
+              "explanation": "\"More interested than\" is the comparative form."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "saw",
+                "looked",
+                "watched",
+                "stared"
+              ],
+              "answer": 2,
+              "explanation": "\"Watched the sky\" means to look at it for a time."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "what",
+                "where",
+                "when",
+                "how"
+              ],
+              "answer": 2,
+              "explanation": "\"When the sky is clear\" refers to a time."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "bring",
+                "send",
+                "carry",
+                "borrow"
+              ],
+              "answer": 1,
+              "explanation": "A photograph \"by email\" is sent."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Welcome to the planetarium",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Welcome to the City Planetarium! Our shows [1] open every day except Monday. You will sit in comfortable seats and look [2] at a huge dome, where thousands of stars are shown. The show lasts forty-five minutes, [3] there is a short break halfway. Children [4] six cannot enter because the show is quite dark. [5] you have any questions, please ask our staff. Don't forget [6] visit our shop, which sells books, models and posters.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "are",
+              "explanation": "\"Our shows are open\" is the present simple plural of \"be\"."
+            },
+            {
+              "id": "r6-2",
+              "answer": "up",
+              "explanation": "\"Look up at\" something above you."
+            },
+            {
+              "id": "r6-3",
+              "answer": "and",
+              "accepted": [
+                "but"
+              ],
+              "explanation": "A second piece of information about the show is added."
+            },
+            {
+              "id": "r6-4",
+              "answer": "under",
+              "accepted": [
+                "below"
+              ],
+              "explanation": "\"Under six\" means younger than six."
+            },
+            {
+              "id": "r6-5",
+              "answer": "If",
+              "explanation": "\"If you have any questions\" begins the condition."
+            },
+            {
+              "id": "r6-6",
+              "answer": "to",
+              "explanation": "\"Don't forget to\" is followed by a verb."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Ashley is going to visit you and wants to learn about space. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Say you would love to go.",
+              "Suggest a day.",
+              "Say what you hope to see.",
+              "Ask if she has used a telescope before."
+            ],
+            "sourceEmail": {
+              "from": "Ashley",
+              "subject": "The planetarium",
+              "body": "Would you like to go to the planetarium with me? There's a show about the planets on Saturday. Is that a good day for you? I'd love to learn more about space."
+            },
+            "contentPoints": [
+              {
+                "text": "Say you would love to go.",
+                "keywords": [
+                  "love",
+                  "would like",
+                  "yes",
+                  "great",
+                  "good idea",
+                  "excited",
+                  "sounds"
+                ]
+              },
+              {
+                "text": "Suggest a day.",
+                "keywords": [
+                  "saturday",
+                  "sunday",
+                  "friday",
+                  "day",
+                  "afternoon",
+                  "morning",
+                  "meet"
+                ]
+              },
+              {
+                "text": "Say what you hope to see.",
+                "keywords": [
+                  "planets",
+                  "stars",
+                  "moon",
+                  "hope",
+                  "see",
+                  "rockets",
+                  "galaxy"
+                ]
+              },
+              {
+                "text": "Ask if she has used a telescope before.",
+                "keywords": [
+                  "telescope",
+                  "have you",
+                  "ever",
+                  "before",
+                  "used",
+                  "do you",
+                  "looked"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! If you could travel in space for one week, what would you do? Where would you go? Who would you take with you? Write an article for the school magazine.",
+              "contentPoints": [
+                {
+                  "text": "Say where you would go.",
+                  "keywords": [
+                    "moon",
+                    "mars",
+                    "planet",
+                    "space station",
+                    "would go",
+                    "visit",
+                    "stars"
+                  ]
+                },
+                {
+                  "text": "Say what you would do.",
+                  "keywords": [
+                    "would",
+                    "look",
+                    "take photos",
+                    "float",
+                    "watch",
+                    "explore",
+                    "experiment"
+                  ]
+                },
+                {
+                  "text": "Say who you would take.",
+                  "keywords": [
+                    "take",
+                    "friend",
+                    "family",
+                    "sister",
+                    "brother",
+                    "because",
+                    "with me"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a boy who finds a small spaceship in his garden.",
+              "openingSentence": "The first thing I noticed was a soft blue light behind the apple tree.",
+              "contentPoints": [
+                {
+                  "text": "Describe the spaceship.",
+                  "keywords": [
+                    "small",
+                    "silver",
+                    "round",
+                    "door",
+                    "windows",
+                    "lights",
+                    "strange"
+                  ]
+                },
+                {
+                  "text": "Say who or what was inside.",
+                  "keywords": [
+                    "inside",
+                    "alien",
+                    "creature",
+                    "robot",
+                    "voice",
+                    "opened",
+                    "met"
+                  ]
+                },
+                {
+                  "text": "Say how the story ends.",
+                  "keywords": [
+                    "finally",
+                    "flew",
+                    "goodbye",
+                    "secret",
+                    "end",
+                    "never forgot",
+                    "home"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fiorella",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Wolfgang",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What time is the show?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It starts at a quarter past four and finishes at five."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "When does the show finish?",
+                "options": [
+                  "At a quarter past four",
+                  "At five o'clock",
+                  "At half past five"
+                ],
+                "answer": 1,
+                "explanation": "The show finishes at five."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ciaran",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Martina",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "How much are the tickets?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Adults pay eight pounds, and children pay half price."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then one adult and two children is sixteen pounds."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "How much will the man pay?",
+                "options": [
+                  "Sixteen pounds",
+                  "Twelve pounds",
+                  "Twenty pounds"
+                ],
+                "answer": 0,
+                "explanation": "Eight pounds plus two half-price tickets of four pounds makes sixteen pounds."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Nadia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Merrick",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Will the sky be clear tonight?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The forecast says clouds until midnight, and then it should clear."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "When will the sky be clear?",
+                "options": [
+                  "After midnight",
+                  "Before dinner",
+                  "All evening long"
+                ],
+                "answer": 0,
+                "explanation": "The man says it should clear after midnight."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fintan",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Katarina",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Do I need a telescope to see the Moon?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not at all. A pair of binoculars is enough."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What is enough to see the Moon?",
+                "options": [
+                  "A camera with a lens",
+                  "A pair of binoculars",
+                  "Nothing at all"
+                ],
+                "answer": 1,
+                "explanation": "She says a pair of binoculars is enough."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Annabel",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Cassius",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Would you like to live on Mars one day?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No way. I'd miss the sea and my friends too much."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Why wouldn't the girl live on Mars?",
+                "options": [
+                  "It would be too hot",
+                  "She is afraid of rockets",
+                  "She would miss her home"
+                ],
+                "answer": 2,
+                "explanation": "She says she would miss the sea and her friends."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ptolemy",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Hester",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Shall we watch the documentary tonight or go out?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let's stay in and watch it. It's about the first Moon landing."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What will they do tonight?",
+                "options": [
+                  "Watch a documentary",
+                  "Go out for a meal",
+                  "Visit a museum"
+                ],
+                "answer": 0,
+                "explanation": "They decide to stay in and watch the documentary."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Thora",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Lionel",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How far away is the Moon?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "About four hundred thousand kilometres. A rocket needs three days to get there."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "How long does a rocket need to reach the Moon?",
+                "options": [
+                  "Four days",
+                  "Three days",
+                  "About a week"
+                ],
+                "answer": 1,
+                "explanation": "A rocket needs three days to get there."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Dirk",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Jodie",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Hello, I'd like to ask about your opening times for visitors, please."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We are open on the first Friday of every month, from eight until eleven."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Why is the man phoning?",
+                "options": [
+                  "To book a school trip",
+                  "To buy a telescope",
+                  "To ask about opening times"
+                ],
+                "answer": 2,
+                "explanation": "He asks about the opening times for visitors."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Mairead",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Sebastian",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Mum, I can't sleep. I keep thinking about the black hole in that documentary."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Don't worry, darling. It's millions of kilometres away, and it can't hurt us."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What is the boy's problem?",
+                "options": [
+                  "He has lost his book",
+                  "He is worried about black holes",
+                  "He has a headache"
+                ],
+                "answer": 1,
+                "explanation": "He cannot sleep because he keeps thinking about the black hole."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Teacher",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Quinn",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "What is our homework, sir?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Draw the solar system and label all the planets. Colour them if you like."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What must the students do?",
+                "options": [
+                  "Draw and label the planets",
+                  "Write about the Moon",
+                  "Build a rocket"
+                ],
+                "answer": 0,
+                "explanation": "They must draw the solar system and label the planets."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Priya",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Ralph",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What did you think of the film?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The pictures were brilliant, but the ending was terrible."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the man think about the film?",
+                "options": [
+                  "The music was great",
+                  "It was too short",
+                  "The ending was terrible"
+                ],
+                "answer": 2,
+                "explanation": "He says the ending was terrible."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Xavier",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Livia",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Hello, I'd like a map of the stars, please. I'm a complete beginner."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "This one is perfect. It shows the stars you can see from here each month."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the woman want to buy?",
+                "options": [
+                  "A map of the stars",
+                  "A telescope",
+                  "A book about rockets"
+                ],
+                "answer": 0,
+                "explanation": "She asks for a map of the stars."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Tara",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Ewart",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "There's going to be a meteor shower before dawn on Thursday. Shall we get up early and watch it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Definitely! I'll set my alarm for four."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What are they planning?",
+                "options": [
+                  "To visit a museum",
+                  "To go camping",
+                  "To watch meteors at dawn"
+                ],
+                "answer": 2,
+                "explanation": "They plan to get up early to watch a meteor shower."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A night at the observatory",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "hadrian",
+                "name": "Hadrian",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "hadrian",
+                "text": "Good evening, everybody, and welcome to Hilltop Observatory. Tonight, we are open from eight until eleven o'clock. Please speak quietly, and switch off your phones, because the light from the screens makes it hard for your eyes to see in the dark. First, we will look at the Moon, which is almost full this evening. Then we will point the telescope at Saturn. Our telescope is one hundred years old, and its mirror is thirty centimetres wide. Each person can look for two minutes, so please be patient. Afterwards, there is hot chocolate in the café for one pound fifty. If you would like to come again, our next open night is on the fourth of March."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The observatory closes at ___ o'clock",
+              "answer": "eleven",
+              "accepted": [
+                "11"
+              ],
+              "explanation": "The observatory is open until eleven o'clock."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Visitors should switch off their ___",
+              "answer": "phones",
+              "accepted": [
+                "mobiles"
+              ],
+              "explanation": "He asks visitors to switch off their phones."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "The first thing to look at is the ___",
+              "answer": "Moon",
+              "explanation": "First, they will look at the Moon."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "The mirror is ___ centimetres wide",
+              "answer": "thirty",
+              "accepted": [
+                "30"
+              ],
+              "explanation": "The mirror is thirty centimetres wide."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "Each person can look for ___ minutes",
+              "answer": "two",
+              "accepted": [
+                "2"
+              ],
+              "explanation": "Each person can look for two minutes."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Hot chocolate costs ___ pound fifty",
+              "answer": "one",
+              "accepted": [
+                "1"
+              ],
+              "explanation": "Hot chocolate is one pound fifty."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A young astronomer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "rosalind",
+                "name": "Rosalind",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "kavya",
+                "name": "Kavya",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "rosalind",
+                "text": "Today I'm speaking to Dr Kavya Menon, a young astronomer. Kavya, how did you become interested in space?"
+              },
+              {
+                "speaker": "kavya",
+                "text": "When I was nine, my uncle gave me a small telescope for my birthday. The first time I saw the rings of Saturn, I could not believe that they were real."
+              },
+              {
+                "speaker": "rosalind",
+                "text": "What is the hardest part of your work?"
+              },
+              {
+                "speaker": "kavya",
+                "text": "Working through the night. Telescopes work best in the dark, so I often sleep in the daytime. My friends say I live like a vampire."
+              },
+              {
+                "speaker": "rosalind",
+                "text": "What do you do on a normal day?"
+              },
+              {
+                "speaker": "kavya",
+                "text": "Mostly, I sit at a computer and study pictures sent by telescopes. I look for tiny changes that show something is moving or exploding."
+              },
+              {
+                "speaker": "rosalind",
+                "text": "Which object in the sky do you like best?"
+              },
+              {
+                "speaker": "kavya",
+                "text": "Still Saturn. I have seen thousands of beautiful pictures, but nothing has ever made me feel the way that first look did."
+              },
+              {
+                "speaker": "rosalind",
+                "text": "What advice do you have for beginners?"
+              },
+              {
+                "speaker": "kavya",
+                "text": "Look at the sky every night, and learn the names of a few stars. You do not need an expensive telescope to begin."
+              },
+              {
+                "speaker": "rosalind",
+                "text": "And what do you hope to do in the future?"
+              },
+              {
+                "speaker": "kavya",
+                "text": "I want to be part of a team that finds planets around other stars, planets where life might be possible."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "How did Kavya become interested in space?",
+              "options": [
+                "She visited a planetarium",
+                "She was given a telescope",
+                "She watched a film"
+              ],
+              "answer": 1,
+              "explanation": "Her uncle gave her a small telescope when she was nine."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What is the hardest part of her work?",
+              "options": [
+                "Learning mathematics",
+                "Working through the night",
+                "Travelling to other countries"
+              ],
+              "answer": 1,
+              "explanation": "She says the hardest part is working through the night."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does she do on most days?",
+              "options": [
+                "Study pictures from telescopes",
+                "Build new instruments",
+                "Teach students at a school"
+              ],
+              "answer": 0,
+              "explanation": "She mostly studies pictures sent by telescopes."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "Which object in the sky does she like best?",
+              "options": [
+                "Mars",
+                "The Moon",
+                "Saturn"
+              ],
+              "answer": 2,
+              "explanation": "She still likes Saturn best."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What advice does she give?",
+              "options": [
+                "Study only physics",
+                "Look at the sky every night",
+                "Buy an expensive telescope"
+              ],
+              "answer": 1,
+              "explanation": "She says to look at the sky every night."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What does she hope to do in the future?",
+              "options": [
+                "Find planets around other stars",
+                "Fly into space",
+                "Write books about space"
+              ],
+              "answer": 0,
+              "explanation": "She wants to help find planets around other stars."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s38-1-1",
+              "prompt": "Do you ever look at the stars at night? What can you see?"
+            },
+            {
+              "id": "s38-1-2",
+              "prompt": "Would you like to travel into space one day? Why or why not?"
+            },
+            {
+              "id": "s38-1-3",
+              "prompt": "Tell me about a science lesson that you enjoyed."
+            },
+            {
+              "id": "s38-1-4",
+              "prompt": "Is there a science museum or a planetarium near where you live?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A family looking at the stars at night.",
+          "images": [
+            {
+              "id": "s38-2-stargazers",
+              "title": "A family looking at the stars",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A school space day",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your school wants to hold a space day. Talk about these activities and decide which one would be the most interesting.",
+          "images": [
+            {
+              "id": "s38-3-rocket",
+              "title": "Children launching a model rocket",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s38-3-dome",
+              "title": "Inside a planetarium dome",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s38-3-astronaut",
+              "title": "An astronaut giving a talk",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s38-3-starmap",
+              "title": "A map of the stars",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s38-4-1",
+              "prompt": "Do you think it is a good idea to spend money on space travel? Why or why not?"
+            },
+            {
+              "id": "s38-4-2",
+              "prompt": "Would you like to be an astronaut? Why or why not?"
+            },
+            {
+              "id": "s38-4-3",
+              "prompt": "What do you think life on another planet could be like?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

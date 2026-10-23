@@ -1,0 +1,1625 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-31",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Cinema and Film-making",
+  "subtitle": "Film clubs, a school festival and a stunt performer",
+  "theme": "Cinema and film-making",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "FILM CLUB: Tonight's film starts at 7 p.m. in Room 12. Please arrive five minutes early. Popcorn is free for members, but all other snacks cost one pound.",
+            "CINEMA RULES: Please do not put your feet on the seat in front of you. Anyone who makes a lot of noise during the film will be asked to leave.",
+            "FILM-MAKING WORKSHOP: Saturday, 10 a.m. Bring your own phone or camera. We will teach you how to edit a short film on our computers. Lunch is not included.",
+            "TICKET OFFICE: Student tickets are half price on Tuesdays. Please show your student card when you pay. Children under five do not need a ticket.",
+            "LOST PROPERTY: A blue jacket and a pair of glasses were found in Screen 3 after last night's film. If they belong to you, please ask at the front desk."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "What do members get for nothing?",
+              "options": [
+                "An ice cream",
+                "A cold drink",
+                "Some popcorn"
+              ],
+              "answer": 2,
+              "explanation": "The notice says popcorn is free for members, while all other snacks cost one pound."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What will happen to noisy customers?",
+              "options": [
+                "They will get a free ticket",
+                "They will be told to go",
+                "They will move to the front"
+              ],
+              "answer": 1,
+              "explanation": "People who make a lot of noise will be asked to leave."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What must people bring to the workshop?",
+              "options": [
+                "Something to film with",
+                "A computer to edit on",
+                "Food for lunch"
+              ],
+              "answer": 0,
+              "explanation": "They must bring their own phone or camera; the computers and editing lessons are provided."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "When can students pay less for a ticket?",
+              "options": [
+                "At the weekend",
+                "On Tuesdays",
+                "In the evening"
+              ],
+              "answer": 1,
+              "explanation": "Student tickets are half price on Tuesdays."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What should the owner of the jacket do?",
+              "options": [
+                "Look in Screen 3 again",
+                "Phone the cinema later",
+                "Ask at the front desk"
+              ],
+              "answer": 2,
+              "explanation": "The notice asks people to ask at the front desk if the things belong to them."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Film events this month",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Hettie is seventy-two. She would like to see a film in the afternoon, and she does not want to spend much. She enjoys a hot drink and a chat."
+            },
+            {
+              "id": "p2",
+              "text": "Orrin loves films from other countries. He wants to see them with subtitles and talk about them with other people over a drink."
+            },
+            {
+              "id": "p3",
+              "text": "Luisa is twelve and loves drawing. She would like to make her own cartoons on a computer, but her parents cannot pay for a course."
+            },
+            {
+              "id": "p4",
+              "text": "Dev and three friends know the names of every film star. They would like to take part in a competition and try to win a prize."
+            },
+            {
+              "id": "p5",
+              "text": "Marta wants to take her family to see a film outside on a summer evening. They will bring a picnic, and she does not want to pay for tickets."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Silent Film Night",
+              "text": "Old black-and-white films with a live piano player. Wednesday evenings. Tickets are eight pounds."
+            },
+            {
+              "id": "B",
+              "title": "Animation for Beginners",
+              "text": "A four-week course for children aged ten to fourteen. Learn to make cartoons on a computer. The course is free."
+            },
+            {
+              "id": "C",
+              "title": "Outdoor Cinema in the Park",
+              "text": "Bring a blanket and watch a family film under the stars. Friday evenings in July. Free, but bring your own food."
+            },
+            {
+              "id": "D",
+              "title": "Meet the Director",
+              "text": "After the film on Thursday, the director answers questions from the audience. Tickets are ten pounds."
+            },
+            {
+              "id": "E",
+              "title": "Film Quiz Evening",
+              "text": "Teams of four answer questions about famous films and actors. The winners get free tickets for a year. Entry is three pounds each."
+            },
+            {
+              "id": "F",
+              "title": "Foreign Film Club",
+              "text": "A film from a different country every month, with English subtitles. We talk about it over coffee afterwards."
+            },
+            {
+              "id": "G",
+              "title": "Afternoon Film for Seniors",
+              "text": "Tuesday at 2 p.m. Tickets are four pounds for people over sixty-five, and tea and cake are included."
+            },
+            {
+              "id": "H",
+              "title": "Costume Workshop",
+              "text": "Learn to make costumes for films and plays. Sunday mornings. Materials cost fifteen pounds."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Hettie",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "The Afternoon Film for Seniors is in the afternoon, is cheap and includes tea."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Orrin",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "The Foreign Film Club has subtitles and a chat over coffee."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Luisa",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Animation for Beginners teaches cartoons on a computer, and it is free."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Dev",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "The Film Quiz Evening is for teams of four, with a prize."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Marta",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "The Outdoor Cinema is free, outside and allows people to bring their own food."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "My first week on a film set",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Last summer, my uncle, who works as a sound engineer, found me a job as a runner on a film set. A runner does small jobs for everybody: carrying equipment, bringing coffee and passing messages. I was excited, although I had no idea what to expect.\n\nOn the first morning, I arrived at six o'clock, but the crew had already been there for an hour. I was given a radio and told to stay close to the director's assistant, a tall woman called Greta. 'Listen carefully,' she said, 'and never be late.' Within ten minutes, she had sent me to look for a missing hat.\n\nI soon learned that filming is mostly waiting. A scene that lasts one minute on the screen can take five hours to film, because the camera and the lights must be moved again and again. I was also surprised how often the actors repeated the same line. At first, I found this boring, but then I noticed small differences in each version, and I began to enjoy comparing them.\n\nBy Friday, I was tired but happy. Greta said that I had worked hard and asked if I would like to come back next summer. I said yes at once, although I might look for a job with more sleep.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "How did the writer get the job?",
+              "options": [
+                "His uncle helped him",
+                "He answered an advert",
+                "A teacher recommended him"
+              ],
+              "answer": 0,
+              "explanation": "His uncle, a sound engineer, found him the job."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did Greta tell the writer?",
+              "options": [
+                "To listen and to be on time",
+                "To stay away from the actors",
+                "To wear a hat on the set"
+              ],
+              "answer": 0,
+              "explanation": "She said, \"Listen carefully, and never be late.\""
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did the writer learn about filming?",
+              "options": [
+                "It needs a big crew",
+                "It goes very slowly",
+                "It is very noisy"
+              ],
+              "answer": 1,
+              "explanation": "He says filming is mostly waiting, and a one-minute scene can take five hours."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "Why did the writer begin to enjoy the repeated lines?",
+              "options": [
+                "He wanted to learn the words",
+                "The actors made him laugh",
+                "He saw small differences each time"
+              ],
+              "answer": 2,
+              "explanation": "He noticed small differences in each version and enjoyed comparing them."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How does the writer feel at the end of the week?",
+              "options": [
+                "Pleased that it is over",
+                "Unsure about coming back",
+                "Tired but ready to return"
+              ],
+              "answer": 2,
+              "explanation": "He is tired but happy and says yes at once to returning next summer."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "Our school film festival",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Every year in March, our school holds a film festival, and this year I decided to enter a short film. [1] My friend Pia had a good idea about a boy who finds an old camera in the attic, so we wrote the story together.\n\nWe filmed during the Easter holidays, mostly in my grandmother's house. [2] That was a problem, because we needed bright light for the attic scenes. In the end, we borrowed two big lamps from the drama teacher.\n\nThe editing took much longer than we expected. [3] Pia is good with computers, so she did most of this, while I chose the music. [4] We were so nervous that we could hardly watch.\n\nOur film did not win the first prize, but the judges gave it a special mention for its story. [5] We are already planning next year's film, and this time we want to make a comedy.",
+          "sentences": [
+            "On the day of the festival, our film was shown to two hundred people.",
+            "I knew that I could not make a film alone.",
+            "It rained almost every day, so the house was very dark.",
+            "We had to cut an hour of filming down to eight minutes.",
+            "Making it taught us how much teamwork a film needs.",
+            "Pia wants to be an actor when she leaves school."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "B",
+              "explanation": "\"I could not make a film alone\" leads to \"My friend Pia\", who helps with the idea."
+            },
+            {
+              "id": "r4-2",
+              "answer": "C",
+              "explanation": "\"That was a problem\" refers to the dark house, which made bright light difficult."
+            },
+            {
+              "id": "r4-3",
+              "answer": "D",
+              "explanation": "\"Most of this\" refers to cutting the film, which is the editing."
+            },
+            {
+              "id": "r4-4",
+              "answer": "A",
+              "explanation": "The nervous audience scene follows the film being shown to two hundred people."
+            },
+            {
+              "id": "r4-5",
+              "answer": "E",
+              "explanation": "The sentence about teamwork sums up the experience before the plans for next year."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A trip to the cinema",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Last Saturday, my brother and I went to the cinema to see a new adventure film. We [1] the tickets online the day before, so we did not have to wait in a queue. The film started at four o'clock, [2] we had time for a snack first. Inside, the screen was enormous, and the seats were [3] comfortable than the ones in our old cinema. The story was exciting, and I [4] never guess the ending. After the film, we talked about it [5] an hour on the bus home. My brother has asked me to go again next weekend, [6] I might have to say no because I have a lot of homework.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "buying",
+                "bought",
+                "buy",
+                "buys"
+              ],
+              "answer": 1,
+              "explanation": "The action is finished and in the past, so the past simple \"bought\" is needed."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "so",
+                "but",
+                "because",
+                "or"
+              ],
+              "answer": 0,
+              "explanation": "The film started later, so they had time: \"so\" shows the result."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "very",
+                "most",
+                "much",
+                "more"
+              ],
+              "answer": 3,
+              "explanation": "\"More comfortable than\" is the comparative form used before \"than\"."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "must",
+                "can",
+                "could",
+                "should"
+              ],
+              "answer": 2,
+              "explanation": "The story is in the past, so \"could never guess\" fits."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "since",
+                "during",
+                "for",
+                "while"
+              ],
+              "answer": 2,
+              "explanation": "\"For\" is used with a length of time such as an hour."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "so",
+                "but",
+                "because",
+                "if"
+              ],
+              "answer": 1,
+              "explanation": "\"But\" shows the contrast between the invitation and the homework."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Welcome to the Film Club",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Welcome to the Film Club! We meet in Room 5 [1] Thursdays after lessons. Anyone [2] likes making films can join. You do not need your own camera, [3] we have three that you can borrow. In the first term, we will learn [4] to use a camera and how to write a script. There is no fee, but you [5] to tell your teacher if you want to come. At the end of the year, we will show our films [6] the whole school.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "on",
+              "explanation": "We say \"on\" with days of the week."
+            },
+            {
+              "id": "r6-2",
+              "answer": "who",
+              "accepted": [
+                "that"
+              ],
+              "explanation": "A relative word for people is needed after \"Anyone\"."
+            },
+            {
+              "id": "r6-3",
+              "answer": "because",
+              "accepted": [
+                "since",
+                "as"
+              ],
+              "explanation": "The reason for not needing a camera is that the club has some."
+            },
+            {
+              "id": "r6-4",
+              "answer": "how",
+              "explanation": "\"How to use a camera\" matches \"how to write a script\"."
+            },
+            {
+              "id": "r6-5",
+              "answer": "need",
+              "accepted": [
+                "have"
+              ],
+              "explanation": "\"Need to\" or \"have to\" is followed by \"tell\"."
+            },
+            {
+              "id": "r6-6",
+              "answer": "to",
+              "explanation": "We show something \"to\" an audience."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Lindsey wants to go to the cinema with you. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Say yes and suggest a film.",
+              "Say where to meet.",
+              "Suggest something to do after the film.",
+              "Ask what she likes to eat."
+            ],
+            "sourceEmail": {
+              "from": "Lindsey",
+              "subject": "Cinema on Saturday?",
+              "body": "Shall we go to the cinema on Saturday? I'm happy to see anything except horror films. What do you think we should see? And where shall we meet? Let me know soon!"
+            },
+            "contentPoints": [
+              {
+                "text": "Say yes and suggest a film.",
+                "keywords": [
+                  "yes",
+                  "great",
+                  "film",
+                  "see",
+                  "comedy",
+                  "how about",
+                  "suggest"
+                ]
+              },
+              {
+                "text": "Say where to meet.",
+                "keywords": [
+                  "meet",
+                  "outside",
+                  "station",
+                  "cinema",
+                  "at",
+                  "o'clock"
+                ]
+              },
+              {
+                "text": "Suggest something to do after the film.",
+                "keywords": [
+                  "after",
+                  "then",
+                  "eat",
+                  "pizza",
+                  "walk",
+                  "coffee",
+                  "go"
+                ]
+              },
+              {
+                "text": "Ask what she likes to eat.",
+                "keywords": [
+                  "what",
+                  "like",
+                  "eat",
+                  "food",
+                  "favourite",
+                  "do you"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! My favourite film. What is it about? Why do you like it? Would you recommend it to other students? Write an article for the school magazine.",
+              "contentPoints": [
+                {
+                  "text": "Say what the film is about.",
+                  "keywords": [
+                    "about",
+                    "story",
+                    "boy",
+                    "girl",
+                    "man",
+                    "woman",
+                    "film",
+                    "happens"
+                  ]
+                },
+                {
+                  "text": "Explain why you like it.",
+                  "keywords": [
+                    "because",
+                    "like",
+                    "love",
+                    "funny",
+                    "exciting",
+                    "music",
+                    "actors"
+                  ]
+                },
+                {
+                  "text": "Say if you recommend it.",
+                  "keywords": [
+                    "recommend",
+                    "should",
+                    "watch",
+                    "see",
+                    "everyone",
+                    "you will"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a young person who is given a small part in a film.",
+              "openingSentence": "When the phone rang that morning, I had no idea that my day was about to change.",
+              "contentPoints": [
+                {
+                  "text": "Say who phoned and why.",
+                  "keywords": [
+                    "phone",
+                    "called",
+                    "director",
+                    "asked",
+                    "part",
+                    "film",
+                    "wanted"
+                  ]
+                },
+                {
+                  "text": "Describe the day on the film set.",
+                  "keywords": [
+                    "set",
+                    "camera",
+                    "lights",
+                    "actors",
+                    "wait",
+                    "costume",
+                    "line"
+                  ]
+                },
+                {
+                  "text": "Say how the story ends.",
+                  "keywords": [
+                    "finally",
+                    "end",
+                    "proud",
+                    "happy",
+                    "saw",
+                    "screen",
+                    "later"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Otto",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Isla",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How much is a ticket for the evening film?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Adults pay nine pounds, but students get three pounds off."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good, I have my student card with me."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "How much will the woman pay?",
+                "options": [
+                  "Three pounds",
+                  "Six pounds",
+                  "Nine pounds"
+                ],
+                "answer": 1,
+                "explanation": "Nine pounds minus three pounds off for students makes six pounds."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ciaran",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Antonia",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "What time will the film finish? My bus leaves at ten."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It starts at twenty to eight and lasts two hours and ten minutes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then I will just catch it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What time does the film end?",
+                "options": [
+                  "At ten to ten",
+                  "At ten past ten",
+                  "At twenty to ten"
+                ],
+                "answer": 0,
+                "explanation": "Twenty to eight plus two hours and ten minutes is ten to ten."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Christina",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gareth",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Where would you like to sit?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Near the back, please. When I sit close to the screen, I get a headache."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Where does the woman want to sit?",
+                "options": [
+                  "At the back",
+                  "In the middle",
+                  "At the front"
+                ],
+                "answer": 0,
+                "explanation": "She asks for a seat near the back because the screen close up gives her a headache."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Marnie",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Cody",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Did you enjoy the film?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The acting was great, and so was the music, but the story was far too slow."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What did the man dislike about the film?",
+                "options": [
+                  "The acting",
+                  "The story",
+                  "The music"
+                ],
+                "answer": 1,
+                "explanation": "He liked the acting and the music but says the story was too slow."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Stefan",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Delphine",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Shall we see the new comedy tonight?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I've seen it already. Let's try the science-fiction film instead. It starts at eight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK, good idea."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "What will they do tonight?",
+                "options": [
+                  "See a comedy",
+                  "Watch a film at home",
+                  "See a science-fiction film"
+                ],
+                "answer": 2,
+                "explanation": "The woman has seen the comedy, so they choose the science-fiction film."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Teresa",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Nolan",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Excuse me, I can't find my phone. I think I left it in Screen 4."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'll go and look. What colour is it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Black, with a red case."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "What does the woman want?",
+                "options": [
+                  "To find her phone",
+                  "To change her seat",
+                  "To get her money back"
+                ],
+                "answer": 0,
+                "explanation": "She says she cannot find her phone and thinks she left it in Screen 4."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Fabian",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Annelise",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Do you want to go to the cinema with Pablo's group?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not really. They talk all the time during films. I'd rather go with you and your sister."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "Why doesn't the girl want to go with Pablo's group?",
+                "options": [
+                  "They always choose horror films",
+                  "They talk during films",
+                  "They arrive late"
+                ],
+                "answer": 1,
+                "explanation": "She says they talk all the time during films."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Abigail",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Paul",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Hello, I'd like to book a room for my daughter's birthday party."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. How many children are coming?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Twelve. We would like to watch a film and have some cake."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Why is the woman phoning?",
+                "options": [
+                  "To complain about a ticket",
+                  "To ask about film times",
+                  "To book a room for a party"
+                ],
+                "answer": 2,
+                "explanation": "She wants to book a room for her daughter's birthday party."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Murat",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Thelma",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, I need to talk to someone about last night. The sound was so loud that my little boy covered his ears."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I'm very sorry. I'll tell the manager, and I can give you two free tickets."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What was the man's problem?",
+                "options": [
+                  "The seats were broken",
+                  "The sound was too loud",
+                  "The film was too long"
+                ],
+                "answer": 1,
+                "explanation": "He complains that the sound was so loud his son covered his ears."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Mrs Pike",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Jonty",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "For homework, I would like you to watch a film of your choice."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do we have to write about it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, a review of two hundred words, please. Say what you liked and what you did not like."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What must the students do for homework?",
+                "options": [
+                  "Write a review of a film",
+                  "Make a short film",
+                  "Read a book about films"
+                ],
+                "answer": 0,
+                "explanation": "The teacher asks for a review of two hundred words about a film they watch."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Rafael",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Wanjiru",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Are you free on Friday? We could go to the cinema then."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'm playing football on Friday. What about Sunday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sunday's good. I'll book the tickets."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "When will they go to the cinema?",
+                "options": [
+                  "On Friday",
+                  "Next week",
+                  "On Sunday"
+                ],
+                "answer": 2,
+                "explanation": "He is busy on Friday, so they agree on Sunday."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Hattie",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Kenzo",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "What do you want to do when you leave school?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'd love to be a film director. I'm not interested in being an actor, I just like telling stories with a camera."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the boy want to do in the future?",
+                "options": [
+                  "Be a film director",
+                  "Be an actor",
+                  "Be a writer"
+                ],
+                "answer": 0,
+                "explanation": "He says he would love to be a film director and does not want to act."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Briar",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Hugh",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Hello, I saw a poster about a film club. How do I join?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You fill in this form, and it costs ten pounds for the whole year."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What does the woman want to do?",
+                "options": [
+                  "Buy some tickets",
+                  "Hire a film",
+                  "Join a film club"
+                ],
+                "answer": 2,
+                "explanation": "She asks how to join the film club she saw on a poster."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A tour of a film studio",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "marguerite",
+                "name": "Marguerite",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "marguerite",
+                "text": "Good afternoon, and welcome to the Hartwell Film Studio tour. I'm Marguerite, and I'll be your guide today. The tour lasts ninety minutes, so please stay together. First, we'll visit the costume room, where you can try on old clothes from famous films. Then we'll walk to the sound studio, where you'll learn how to make the noise of rain by shaking a bag of rice. After that, there's a short break at the café, where a piece of cake costs two pounds. In the last part, you'll see the model city that was built for a space film. It took six months to make. You can take photos everywhere except in the sound studio, because the equipment is very delicate. Tickets for next month's tour can be booked online. I hope you enjoy your visit."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The tour lasts ___ minutes",
+              "answer": "ninety",
+              "accepted": [
+                "90"
+              ],
+              "explanation": "The guide says the tour lasts ninety minutes."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "In the first room, visitors try on old ___",
+              "answer": "clothes",
+              "accepted": [
+                "costumes"
+              ],
+              "explanation": "In the costume room visitors try on old clothes from famous films."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Rice in a bag makes the noise of ___",
+              "answer": "rain",
+              "explanation": "She explains how to make the noise of rain with a bag of rice."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "A piece of cake costs ___ pounds",
+              "answer": "two",
+              "accepted": [
+                "2"
+              ],
+              "explanation": "Cake at the café costs two pounds."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The model city took ___ months to make",
+              "answer": "six",
+              "accepted": [
+                "6"
+              ],
+              "explanation": "It took six months to make the model city."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "Photos are not allowed in the ___ studio",
+              "answer": "sound",
+              "explanation": "You can take photos everywhere except in the sound studio."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A stunt performer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "philippa",
+                "name": "Philippa",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "jarrah",
+                "name": "Jarrah",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "philippa",
+                "text": "Today I'm talking to Jarrah Quill, who works as a stunt performer in films. Jarrah, what exactly do you do?"
+              },
+              {
+                "speaker": "jarrah",
+                "text": "I do the dangerous things that actors can't or shouldn't do, like jumping from a moving train or falling off a roof. I always train for weeks before a big scene."
+              },
+              {
+                "speaker": "philippa",
+                "text": "Did you always want this job?"
+              },
+              {
+                "speaker": "jarrah",
+                "text": "Not at all. I was a gymnast, but I hurt my knee when I was nineteen and had to stop. A friend told me that film crews needed people who could move well, so I applied."
+              },
+              {
+                "speaker": "philippa",
+                "text": "Is it as dangerous as it looks?"
+              },
+              {
+                "speaker": "jarrah",
+                "text": "Honestly, no. Safety is the most important thing on set. There are mats, ropes and a doctor nearby, and we practise each move slowly many times before we film it."
+              },
+              {
+                "speaker": "philippa",
+                "text": "What is the best part of the job?"
+              },
+              {
+                "speaker": "jarrah",
+                "text": "Seeing the finished film with my family. They never know which parts are me, so I whisper, 'That was me,' and they laugh."
+              },
+              {
+                "speaker": "philippa",
+                "text": "Do you have any advice for young people?"
+              },
+              {
+                "speaker": "jarrah",
+                "text": "Learn a sport really well and look after your body. Directors like people who are calm and patient, not only brave."
+              },
+              {
+                "speaker": "philippa",
+                "text": "And what's next for you?"
+              },
+              {
+                "speaker": "jarrah",
+                "text": "I'm going to Canada in March to work on a film about a mountain rescue."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "What does Jarrah do in films?",
+              "options": [
+                "He plans the safety of each scene",
+                "He takes the place of actors in dangerous scenes",
+                "He teaches actors how to move"
+              ],
+              "answer": 1,
+              "explanation": "He does the dangerous things that actors cannot or should not do."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "Why did Jarrah stop being a gymnast?",
+              "options": [
+                "He lost a competition",
+                "He hurt his knee",
+                "He wanted a new job"
+              ],
+              "answer": 1,
+              "explanation": "He hurt his knee at nineteen and had to stop."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does he say about safety on set?",
+              "options": [
+                "It is the most important thing",
+                "People sometimes forget about it",
+                "It makes filming too slow"
+              ],
+              "answer": 0,
+              "explanation": "He says safety is the most important thing on set."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "How does he feel about watching the finished film?",
+              "options": [
+                "He prefers to watch it alone",
+                "He feels nervous about it",
+                "He enjoys it with his family"
+              ],
+              "answer": 2,
+              "explanation": "He enjoys seeing the finished film with his family and whispers that a part was him."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What do directors like in a stunt performer?",
+              "options": [
+                "Someone tall and strong",
+                "Someone calm and patient",
+                "Someone famous"
+              ],
+              "answer": 1,
+              "explanation": "Directors like people who are calm and patient, not only brave."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What will Jarrah do in March?",
+              "options": [
+                "Work in Canada",
+                "Go on holiday",
+                "Start a training course"
+              ],
+              "answer": 0,
+              "explanation": "He is going to Canada in March to work on a film."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s31-1-1",
+              "prompt": "Do you often go to the cinema? Who do you usually go with?"
+            },
+            {
+              "id": "s31-1-2",
+              "prompt": "What kind of films do you enjoy most?"
+            },
+            {
+              "id": "s31-1-3",
+              "prompt": "Tell me about a film that you saw recently."
+            },
+            {
+              "id": "s31-1-4",
+              "prompt": "Would you like to work in the film industry one day? Why or why not?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "Friends watching a film together in a cinema.",
+          "images": [
+            {
+              "id": "s31-2-cinema",
+              "title": "Friends in a cinema",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A film event for the school",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your school wants to organise a film event. Talk about these ideas and decide which one would be the best.",
+          "images": [
+            {
+              "id": "s31-3-outdoor",
+              "title": "A film shown outdoors",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s31-3-filming",
+              "title": "People filming with a camera",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s31-3-posters",
+              "title": "Posters in a cinema foyer",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s31-3-popcorn",
+              "title": "A popcorn machine",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s31-4-1",
+              "prompt": "Do you prefer watching films at home or in the cinema? Why?"
+            },
+            {
+              "id": "s31-4-2",
+              "prompt": "Do you think films are better than books? Why or why not?"
+            },
+            {
+              "id": "s31-4-3",
+              "prompt": "Which film would you recommend to a friend, and why?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

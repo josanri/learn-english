@@ -1,0 +1,1604 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-41",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Airports and Flying",
+  "subtitle": "Notices, jobs, a first flight and a pilot",
+  "theme": "Airports and flying",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "AIRPORT SHUTTLE: Buses to the terminal leave every twenty minutes from the main station. Tickets are cheaper if you buy them online before you travel.",
+            "SECURITY: Please take all liquids out of your bag and put them in a clear plastic bag. Laptops must also be placed in a separate tray.",
+            "LOST LUGGAGE: If your suitcase does not arrive, go to the desk next to the carousels. Staff will ask you to fill in a short form.",
+            "GATE CHANGE: Flight BA204 to Madrid will now leave from Gate 14 instead of Gate 9. Passengers should go there immediately.",
+            "LONG-STAY PARKING: Leave your car for up to two weeks at a special price. Booking is necessary and must be done at least a day before."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "How can passengers get a cheaper shuttle ticket?",
+              "options": [
+                "By showing a student card at the door",
+                "By travelling in the early morning",
+                "By buying it on the internet beforehand"
+              ],
+              "answer": 2,
+              "explanation": "Tickets are cheaper if bought online before travelling."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What must passengers do with liquids at security?",
+              "options": [
+                "Pour them away before the check",
+                "Put them in a clear plastic bag",
+                "Leave them with the staff at the desk"
+              ],
+              "answer": 1,
+              "explanation": "Liquids go in a clear plastic bag."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "What should passengers do if their suitcase is missing?",
+              "options": [
+                "Fill in a form at the desk by the carousels",
+                "Wait until the next flight arrives",
+                "Phone the airline the next morning"
+              ],
+              "answer": 0,
+              "explanation": "They go to the desk and fill in a short form."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What has changed for flight BA204?",
+              "options": [
+                "The time it leaves",
+                "The gate it leaves from",
+                "The city it flies to"
+              ],
+              "answer": 1,
+              "explanation": "The flight leaves from Gate 14 instead of Gate 9."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What is necessary for long-stay parking?",
+              "options": [
+                "A ticket for a flight to Madrid",
+                "A payment made when leaving the car",
+                "A booking made at least a day before"
+              ],
+              "answer": 2,
+              "explanation": "Booking is necessary at least a day before."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Jobs at the airport",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Hamid enjoys talking to people and would like a job where he helps travellers who are lost or confused. He does not want to work outdoors."
+            },
+            {
+              "id": "p2",
+              "text": "Petra loves machines and wants to work with her hands. She would like to repair engines and make sure planes are safe to fly."
+            },
+            {
+              "id": "p3",
+              "text": "Joon speaks four languages and wants to travel the world while working. He is happy to look after passengers during long flights."
+            },
+            {
+              "id": "p4",
+              "text": "Elsa is good at cooking and would like to prepare meals for a large number of people each day, preferably in a place that is open early."
+            },
+            {
+              "id": "p5",
+              "text": "Dmitri is very calm and organised. He wants a job where he decides which planes can land and take off, and which direction they should take."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Cabin Crew",
+              "text": "Look after passengers on board. Languages are very useful, and you will visit many countries."
+            },
+            {
+              "id": "B",
+              "title": "Baggage Handler",
+              "text": "Load and unload suitcases. Heavy lifting, outdoors in all weather."
+            },
+            {
+              "id": "C",
+              "title": "Aircraft Engineer",
+              "text": "Check and repair engines. Technical training provided."
+            },
+            {
+              "id": "D",
+              "title": "Air Traffic Controller",
+              "text": "Direct planes in the sky and on the runway. Must stay calm under pressure."
+            },
+            {
+              "id": "E",
+              "title": "Airport Chef",
+              "text": "Prepare breakfast, lunch and dinner for hundreds of staff. The kitchen opens at 5 a.m."
+            },
+            {
+              "id": "F",
+              "title": "Security Officer",
+              "text": "Check bags and passengers before they enter the departure area."
+            },
+            {
+              "id": "G",
+              "title": "Information Desk Assistant",
+              "text": "Answer questions and help passengers find their way around the terminal. Indoor work."
+            },
+            {
+              "id": "H",
+              "title": "Pilot",
+              "text": "Fly large planes. Long training and many exams."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Hamid",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 6,
+              "explanation": "The Information Desk Assistant helps lost passengers, indoors."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Petra",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "The Aircraft Engineer repairs engines to keep planes safe."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Joon",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Cabin Crew use languages and travel to many countries."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Elsa",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "The Airport Chef prepares meals for hundreds, from an early start."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Dmitri",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "The Air Traffic Controller directs planes and stays calm."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "My first flight",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "I was twelve when I flew for the first time. My parents had saved money for two years so that we could visit my grandmother in Canada, and I could hardly sleep for a week before the trip.\n\nAt the airport, everything seemed enormous. There were so many people, signs and screens that I held my father's hand tightly. When we reached the departure area, a security officer asked me to take off my shoes. I felt embarrassed, but my sister, who had flown before, laughed and told me it was normal.\n\nThe moment the plane started to move, my stomach felt strange. We rushed along the runway, and suddenly the ground disappeared. I looked out of the window and saw the whole city getting smaller, like a model. I forgot my fear immediately.\n\nThe flight lasted nine hours, which seemed endless. I watched three films, ate two meals, and finally slept for a little while. When we landed, my grandmother was waiting with a huge sign with my name on it. Now I am not afraid of flying at all. In fact, I want to become a pilot one day.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why could the writer hardly sleep before the trip?",
+              "options": [
+                "He was excited about the journey",
+                "He was worried about the cost",
+                "He had a bad cold that week"
+              ],
+              "answer": 0,
+              "explanation": "He could hardly sleep because he was excited."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "How did the writer feel when asked to take off his shoes?",
+              "options": [
+                "Embarrassed about it",
+                "Angry with the officer",
+                "Surprised that it was free"
+              ],
+              "answer": 0,
+              "explanation": "He felt embarrassed, but his sister said it was normal."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "What did the writer see through the window?",
+              "options": [
+                "Clouds that looked like mountains",
+                "The city getting smaller below him",
+                "Another plane flying close by"
+              ],
+              "answer": 1,
+              "explanation": "The whole city was getting smaller, like a model."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What happened when the plane landed?",
+              "options": [
+                "He lost his bag in the terminal",
+                "His parents bought him a gift",
+                "His grandmother was waiting with a sign"
+              ],
+              "answer": 2,
+              "explanation": "His grandmother was waiting with a huge sign with his name."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "How does the writer feel about flying now?",
+              "options": [
+                "He prefers to travel by train",
+                "He still finds it frightening",
+                "He is keen to become a pilot"
+              ],
+              "answer": 2,
+              "explanation": "He wants to become a pilot one day."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "How to get through the airport quickly",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Airports can be stressful places, but a little preparation makes the experience much easier. [1] Many airlines allow you to check in on your phone the day before, which saves a lot of time.\n\nWhen you arrive, go straight to the bag drop if you have a suitcase. [2] Remember to check the weight, because heavy bags can be expensive.\n\nAt security, be ready. [3] It is also a good idea to wear shoes that are easy to remove. Many people forget this and hold up the queue.\n\nOnce you are through, look at the screens to find your gate. [4] However, do not go too far away, as the gate sometimes changes at the last minute. [5] Finally, listen carefully to the speakers, so that you never miss your flight.",
+          "sentences": [
+            "Have your passport and boarding pass in your hand.",
+            "Start by checking in online.",
+            "Keep your boarding pass in a safe pocket until you board.",
+            "There is usually plenty of time to buy a coffee or a book.",
+            "The pilot will tell you when it is safe to stand up.",
+            "Staff will weigh it and put a label on it."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "B",
+              "explanation": "Starting by checking in online matches the next sentence about checking in on your phone."
+            },
+            {
+              "id": "r4-2",
+              "answer": "F",
+              "explanation": "The bag drop is where staff weigh the suitcase and add a label, and then weight is mentioned."
+            },
+            {
+              "id": "r4-3",
+              "answer": "A",
+              "explanation": "At security you need your documents ready, and the next sentence adds shoes."
+            },
+            {
+              "id": "r4-4",
+              "answer": "D",
+              "explanation": "After finding your gate, there is time for a coffee, and then \"however\" warns about not going far."
+            },
+            {
+              "id": "r4-5",
+              "answer": "C",
+              "explanation": "Keeping the boarding pass safe is a final tip, and then \"Finally\" introduces the announcements."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A message from the airport",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Hi Tom, I am writing this at the airport. My flight [1] delayed by two hours, so I am sitting in a café. I [2] here since six o'clock this morning. The woman at the desk said that there [3] a problem with the engine. I am quite tired, [4] I have a good book with me. If everything goes well, I [5] home by midnight. I really hope the plane takes off [6] long.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "have been",
+                "has been",
+                "was being",
+                "had"
+              ],
+              "answer": 1,
+              "explanation": "Present perfect passive: \"has been delayed\"."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "have been",
+                "am",
+                "will be",
+                "was being"
+              ],
+              "answer": 0,
+              "explanation": "\"Since six o'clock\" needs the present perfect."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "had",
+                "will",
+                "is going",
+                "was"
+              ],
+              "answer": 3,
+              "explanation": "Reported past: \"there was a problem\"."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "because",
+                "so",
+                "but",
+                "if"
+              ],
+              "answer": 2,
+              "explanation": "\"But\" shows contrast: tired, but has a book."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "have been",
+                "am",
+                "will be",
+                "was"
+              ],
+              "answer": 2,
+              "explanation": "Future prediction: \"will be home\"."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "after",
+                "before",
+                "until",
+                "while"
+              ],
+              "answer": 1,
+              "explanation": "\"Before long\" means soon."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Airport rules for passengers",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Welcome to Bridgeport Airport. Please arrive at least two hours [1] your flight so that you have enough time to check in. All passengers must show [2] passport at the security desk. If you are carrying liquids, they must be [3] a clear plastic bag. Do not leave your bags alone, because security staff may take them [4]. Please switch off your phone [5] you are on the plane. Thank you, and we hope that you [6] a pleasant journey.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "before",
+              "explanation": "We arrive \"before\" the flight."
+            },
+            {
+              "id": "r6-2",
+              "answer": "their",
+              "accepted": [
+                "a",
+                "the"
+              ],
+              "explanation": "A possessive is needed: \"their passport\"."
+            },
+            {
+              "id": "r6-3",
+              "answer": "in",
+              "explanation": "Liquids must be \"in\" a clear plastic bag."
+            },
+            {
+              "id": "r6-4",
+              "answer": "away",
+              "explanation": "Staff may take them \"away\"."
+            },
+            {
+              "id": "r6-5",
+              "answer": "when",
+              "accepted": [
+                "while"
+              ],
+              "explanation": "\"When/while you are on the plane\"."
+            },
+            {
+              "id": "r6-6",
+              "answer": "have",
+              "explanation": "We hope that you \"have\" a pleasant journey."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Hannah is going to fly to meet you. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Say how she can get from the airport to your home.",
+              "Tell her what time you will meet her.",
+              "Suggest what to bring.",
+              "Ask about her flight."
+            ],
+            "sourceEmail": {
+              "from": "Hannah",
+              "subject": "My flight",
+              "body": "I'm flying to see you next month! I land at about four in the afternoon. How can I get from the airport to your house? Is there anything I should bring with me?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say how she can get from the airport to your home.",
+                "keywords": [
+                  "bus",
+                  "train",
+                  "taxi",
+                  "car",
+                  "shuttle",
+                  "metro",
+                  "pick"
+                ]
+              },
+              {
+                "text": "Tell her what time you will meet her.",
+                "keywords": [
+                  "meet",
+                  "wait",
+                  "arrive",
+                  "at",
+                  "o'clock",
+                  "time",
+                  "there"
+                ]
+              },
+              {
+                "text": "Suggest what to bring.",
+                "keywords": [
+                  "bring",
+                  "warm",
+                  "clothes",
+                  "umbrella",
+                  "coat",
+                  "camera",
+                  "shoes"
+                ]
+              },
+              {
+                "text": "Ask about her flight.",
+                "keywords": [
+                  "flight",
+                  "number",
+                  "time",
+                  "airline",
+                  "land",
+                  "which",
+                  "what time"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! Travelling by plane. Do you like flying? What is good or bad about it? Would you like to work at an airport? Write your article.",
+              "contentPoints": [
+                {
+                  "text": "Say whether you like flying.",
+                  "keywords": [
+                    "like",
+                    "love",
+                    "hate",
+                    "enjoy",
+                    "afraid",
+                    "flying",
+                    "plane"
+                  ]
+                },
+                {
+                  "text": "Say what is good or bad about it.",
+                  "keywords": [
+                    "good",
+                    "bad",
+                    "fast",
+                    "expensive",
+                    "noisy",
+                    "boring",
+                    "because"
+                  ]
+                },
+                {
+                  "text": "Say if you would like to work at an airport.",
+                  "keywords": [
+                    "work",
+                    "job",
+                    "would",
+                    "airport",
+                    "pilot",
+                    "crew",
+                    "because"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story that begins with the sentence below.",
+              "openingSentence": "When Maria arrived at the airport, she realised that her passport was not in her bag.",
+              "contentPoints": [
+                {
+                  "text": "Say what Maria did.",
+                  "keywords": [
+                    "looked",
+                    "ran",
+                    "phoned",
+                    "asked",
+                    "searched",
+                    "went",
+                    "called"
+                  ]
+                },
+                {
+                  "text": "Say who or what helped her.",
+                  "keywords": [
+                    "helped",
+                    "friend",
+                    "officer",
+                    "found",
+                    "taxi",
+                    "brother",
+                    "mother"
+                  ]
+                },
+                {
+                  "text": "Say how the story ends.",
+                  "keywords": [
+                    "finally",
+                    "flight",
+                    "arrived",
+                    "happy",
+                    "missed",
+                    "caught",
+                    "end"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Raymond",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Cheryl",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "What time does the shuttle bus leave for the airport?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Every twenty minutes. The next one is at ten past nine, so you've plenty of time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great. I need to be at the terminal by ten."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "When does the next bus leave?",
+                "options": [
+                  "At ten o'clock",
+                  "At ten past nine",
+                  "At twenty past nine"
+                ],
+                "answer": 1,
+                "explanation": "The next bus is at ten past nine."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Candace",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Gregory",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Excuse me, my suitcase has not come out on the carousel."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Please go to the desk and fill in a form. We will phone you when we find it."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "What should the woman do?",
+                "options": [
+                  "Fill in a form at the desk",
+                  "Come back in the morning",
+                  "Look in the other terminal"
+                ],
+                "answer": 0,
+                "explanation": "He tells her to fill in a form at the desk."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Clarence",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Robyn",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Is that your passport on the floor?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no, it fell out of my pocket! Thank you so much, I would have missed my flight."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "Why is the woman grateful?",
+                "options": [
+                  "He found her passport",
+                  "He carried her heavy bag",
+                  "He showed her the gate"
+                ],
+                "answer": 0,
+                "explanation": "He saw her passport on the floor."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Melissa",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Ethan",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Is the flight to Rome on time?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I am afraid it is running forty minutes late because of fog."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "Why is the flight late?",
+                "options": [
+                  "There is a strike",
+                  "There is fog",
+                  "There is a technical fault"
+                ],
+                "answer": 1,
+                "explanation": "He says it is late because of fog."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Arthur",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Agnes",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Would you like a window seat or an aisle seat?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A window seat, please. I love looking at the clouds."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "Which seat does the woman want?",
+                "options": [
+                  "A seat near the front",
+                  "An aisle seat",
+                  "A window seat"
+                ],
+                "answer": 2,
+                "explanation": "She asks for a window seat."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Margot",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Geoffrey",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "How much is a coffee here?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Three pounds, but a sandwich and a coffee together costs five."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I'll have both, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "How much will the woman pay?",
+                "options": [
+                  "Five pounds",
+                  "Three pounds",
+                  "Eight pounds"
+                ],
+                "answer": 0,
+                "explanation": "The sandwich and coffee together cost five pounds."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Amos",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Tracy",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Do you want to wait here until the gate opens?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, let us go to the shops. We still have an hour before boarding."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What does the woman suggest?",
+                "options": [
+                  "Having a meal",
+                  "Visiting the shops",
+                  "Sitting at the gate"
+                ],
+                "answer": 1,
+                "explanation": "She suggests going to the shops."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Lara",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Matthew",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Passengers for flight 306 to Dublin, please go to Gate 12. Boarding will begin in ten minutes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "What is the announcement about?",
+                "options": [
+                  "A change of runway",
+                  "A lost child",
+                  "Boarding a flight"
+                ],
+                "answer": 2,
+                "explanation": "It tells passengers to go to the gate because boarding will begin."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Anthony",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Olga",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I want to book a taxi to the airport for six tomorrow morning."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. Can I have your address, please?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What is the man doing?",
+                "options": [
+                  "Buying a plane ticket",
+                  "Booking a taxi",
+                  "Asking for directions"
+                ],
+                "answer": 1,
+                "explanation": "He wants to book a taxi."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Alicia",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Norbert",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Welcome to this plane. Please fasten your seat belt and put your bag under the seat."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. Sorry, I did not hear you."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "Where are they?",
+                "options": [
+                  "On a plane",
+                  "In a taxi",
+                  "At a station"
+                ],
+                "answer": 0,
+                "explanation": "The seat belt and announcement show they are on a plane."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Leonard",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Angela",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "I am calling about my reservation for car parking. I would like to change the date."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No problem. Which day would you prefer?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the woman want?",
+                "options": [
+                  "To find her car",
+                  "To cancel her flight",
+                  "To change a booking"
+                ],
+                "answer": 2,
+                "explanation": "She wants to change the date of her parking reservation."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Elisa",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Jim",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Mum, can we watch the planes land?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but stay close to me. It's very busy."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the boy want to do?",
+                "options": [
+                  "Watch the planes",
+                  "Buy a toy plane",
+                  "Go home"
+                ],
+                "answer": 0,
+                "explanation": "He wants to watch the planes land."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Melvin",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Blanche",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "I am sorry, your bag is too heavy. It is twenty-six kilos, and the limit is twenty-three."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh no. Can I take something out?"
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What is the problem?",
+                "options": [
+                  "The bag is lost",
+                  "The bag is too big",
+                  "The bag is too heavy"
+                ],
+                "answer": 2,
+                "explanation": "The limit is twenty-three kilos but the bag is twenty-six."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "A tour of the airport",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "clara",
+                "name": "Clara",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "clara",
+                "text": "Hello, everyone, and welcome to our airport tour. My name's Clara. The tour takes ninety minutes, and we start here in the main hall. First, we will visit the control tower, which is fifty metres high. After that, we will watch the baggage system, which moves nearly ten thousand suitcases every day. Then we go outside to see the fire station, where you can sit in a real fire engine. Lunch is included, and you can choose chicken or fish. The tour costs twelve pounds for adults and is free for children. Please remember to bring your passport to show who you are. Finally, you cannot take photographs in the security area."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The tour takes ___ minutes",
+              "answer": "ninety",
+              "accepted": [
+                "90"
+              ],
+              "explanation": "The tour takes ninety minutes."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "The control tower is ___ metres high",
+              "answer": "fifty",
+              "accepted": [
+                "50"
+              ],
+              "explanation": "The control tower is fifty metres high."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "The baggage system moves nearly ten thousand ___ every day",
+              "answer": "suitcases",
+              "accepted": [
+                "bags"
+              ],
+              "explanation": "It moves nearly ten thousand suitcases every day."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "At the fire station, you can sit in a fire ___",
+              "answer": "engine",
+              "explanation": "You can sit in a real fire engine."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "The tour costs ___ pounds for adults",
+              "answer": "twelve",
+              "accepted": [
+                "12"
+              ],
+              "explanation": "It costs twelve pounds for adults."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "You must bring your ___",
+              "answer": "passport",
+              "explanation": "Please remember to bring your passport."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A pilot",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "gerard",
+                "name": "Gerard",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "male"
+                }
+              },
+              {
+                "id": "jenna",
+                "name": "Jenna",
+                "voice": {
+                  "lang": "en-US",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "gerard",
+                "text": "Today I'm talking to Jenna Ford, who has been a pilot for fifteen years. Jenna, why did you choose this job?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "My father was a pilot, and when I was small he took me to the airport to see the planes. I never wanted to do anything else."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What is the best part of your job?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "The view. When you fly above the clouds at sunrise, it is the most beautiful sight in the world. I still look at it every day."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Is there anything you find difficult?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Being away from home. Sometimes I'm abroad for five days, and I miss my family. We talk on the phone every night, though."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Have you ever been frightened?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Once, when a bird hit the engine just after take-off. We had to return to the airport quickly. Everyone was safe, but I was shaking afterwards."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What do you do before a flight?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "We check the weather, the route and the fuel together. It takes about an hour, and nothing is left to chance."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What advice would you give to young people?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Study hard, especially maths and science, and don't give up. It is a long road, but it's worth every minute."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "Why did Jenna choose to be a pilot?",
+              "options": [
+                "She wanted to see the world",
+                "Her father was a pilot",
+                "A teacher suggested it to her"
+              ],
+              "answer": 1,
+              "explanation": "Her father was a pilot and took her to see planes."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What is the best part of her job?",
+              "options": [
+                "The money that she earns every month",
+                "The view above the clouds at sunrise",
+                "Meeting famous people on the flights"
+              ],
+              "answer": 1,
+              "explanation": "She loves the view above the clouds at sunrise."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What does she find difficult?",
+              "options": [
+                "Being away from her family",
+                "Flying at night in storms",
+                "Getting up very early each day"
+              ],
+              "answer": 0,
+              "explanation": "She misses her family when she is abroad."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What frightened her once?",
+              "options": [
+                "A passenger felt very ill",
+                "The weather turned bad",
+                "A bird hit the engine"
+              ],
+              "answer": 2,
+              "explanation": "A bird hit the engine after take-off."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What happens before a flight?",
+              "options": [
+                "The pilots sleep for a few hours",
+                "The crew check the weather and fuel",
+                "The passengers receive instructions"
+              ],
+              "answer": 1,
+              "explanation": "They check the weather, the route and the fuel together."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What advice does she give?",
+              "options": [
+                "Study maths and science hard",
+                "Learn to fly as a child",
+                "Travel as much as possible"
+              ],
+              "answer": 0,
+              "explanation": "She advises studying hard, especially maths and science."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s41-1-1",
+              "prompt": "Do you like travelling by plane? Why or why not?"
+            },
+            {
+              "id": "s41-1-2",
+              "prompt": "Tell me about a journey you remember."
+            },
+            {
+              "id": "s41-1-3",
+              "prompt": "What do you usually take with you when you travel?"
+            },
+            {
+              "id": "s41-1-4",
+              "prompt": "Would you like to live near an airport? Why or why not?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "Passengers waiting in an airport departure hall.",
+          "images": [
+            {
+              "id": "s41-2-departures",
+              "title": "Passengers waiting in an airport",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A day trip for the class",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your teacher wants to take the class on a day trip. Talk about these ways of travelling and decide which would be the best.",
+          "images": [
+            {
+              "id": "s41-3-plane",
+              "title": "A passenger plane in the sky",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s41-3-train",
+              "title": "A fast train at a station",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s41-3-coach",
+              "title": "A coach on a country road",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s41-3-ferry",
+              "title": "A ferry crossing the sea",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s41-4-1",
+              "prompt": "Is travelling by plane good for the environment? Why or why not?"
+            },
+            {
+              "id": "s41-4-2",
+              "prompt": "What do you do to pass the time on a long journey?"
+            },
+            {
+              "id": "s41-4-3",
+              "prompt": "Would you like to work as a pilot or cabin crew? Why or why not?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

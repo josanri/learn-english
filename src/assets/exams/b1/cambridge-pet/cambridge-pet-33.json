@@ -1,0 +1,1603 @@
+{
+  "schemaVersion": 2,
+  "id": "cambridge-pet-33",
+  "level": "B1",
+  "board": "cambridge-pet",
+  "title": "Gardens and Growing Food",
+  "subtitle": "Allotments, a school garden and a garden designer",
+  "theme": "Gardens and growing food",
+  "estimatedMinutes": 137,
+  "sections": [
+    {
+      "skill": "reading",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "reading-1",
+          "number": 1,
+          "title": "Notices and messages",
+          "instructions": "For each notice, choose what it means.",
+          "type": "notices",
+          "notices": [
+            "ALLOTMENT RULES: Please water your plants in the evening, not in the middle of the day. Hoses may be used on Sundays only.",
+            "PLANT SALE: Saturday, 9 a.m. to 1 p.m., outside the library. Tomato and pepper plants are two pounds each. Herbs: buy two and get one free.",
+            "GARDEN CENTRE: We close early on Monday for our yearly stock check. We will open again at 9 a.m. on Tuesday.",
+            "COMMUNITY GARDEN: New volunteers are welcome every Wednesday morning. Please bring gloves; tools and tea are provided.",
+            "WARNING: Slug pellets can harm pets and birds. Please try a safer method, for example a beer trap or copper tape around your pots."
+          ],
+          "questions": [
+            {
+              "id": "r1-1",
+              "prompt": "When may plot holders use a hose?",
+              "options": [
+                "At midday on weekdays",
+                "Every evening of the week",
+                "On Sundays only"
+              ],
+              "answer": 2,
+              "explanation": "Hoses may be used on Sundays only."
+            },
+            {
+              "id": "r1-2",
+              "prompt": "What is the offer on herbs?",
+              "options": [
+                "Half price for the whole day",
+                "Three for the price of two",
+                "Free if you buy a tomato plant"
+              ],
+              "answer": 1,
+              "explanation": "The notice says to buy two herbs and get one free."
+            },
+            {
+              "id": "r1-3",
+              "prompt": "Why does the garden centre close early on Monday?",
+              "options": [
+                "To count its stock",
+                "For a staff party",
+                "Because of bad weather"
+              ],
+              "answer": 0,
+              "explanation": "It closes early for the yearly stock check."
+            },
+            {
+              "id": "r1-4",
+              "prompt": "What must new volunteers bring?",
+              "options": [
+                "Their own tools",
+                "Their own gloves",
+                "Tea and biscuits"
+              ],
+              "answer": 1,
+              "explanation": "Volunteers must bring gloves; tools and tea are provided."
+            },
+            {
+              "id": "r1-5",
+              "prompt": "What does the warning ask gardeners to do?",
+              "options": [
+                "Stop growing vegetables for now",
+                "Keep their pets indoors at night",
+                "Use a safer way to stop slugs"
+              ],
+              "answer": 2,
+              "explanation": "It asks people to try safer methods than slug pellets."
+            }
+          ]
+        },
+        {
+          "id": "reading-2",
+          "number": 2,
+          "title": "Gardening classes and clubs",
+          "instructions": "Read what each person is looking for. Match each person to the best text. There are three extra texts.",
+          "type": "matching",
+          "people": [
+            {
+              "id": "p1",
+              "text": "Hamish has no garden, only a small balcony. He would like to grow tomatoes and salad in pots and boxes, and he is happy to pay for a short course."
+            },
+            {
+              "id": "p2",
+              "text": "Odette wants to help children find out where food comes from. She is free on Saturday mornings and does not need to be paid."
+            },
+            {
+              "id": "p3",
+              "text": "Rory has a lot of spare seeds. He would like to swap them with other gardeners and take home something new, but he does not want to spend any money."
+            },
+            {
+              "id": "p4",
+              "text": "Petra has just moved to a house with a big, empty garden. She would like an expert to visit her at home and plan the garden for her."
+            },
+            {
+              "id": "p5",
+              "text": "Cyril loves seeing famous gardens but does not drive. He would like to join a group and travel there by coach, with lunch."
+            }
+          ],
+          "texts": [
+            {
+              "id": "A",
+              "title": "Beginners' Lawn Care",
+              "text": "Learn how to look after grass. An evening class that lasts six weeks."
+            },
+            {
+              "id": "B",
+              "title": "Garden Design Visits",
+              "text": "A professional designer visits your home and plans your garden. Sixty pounds for each visit."
+            },
+            {
+              "id": "C",
+              "title": "Balcony Growers' Workshop",
+              "text": "Learn to grow vegetables in pots and boxes. Two Saturdays in April. Twenty pounds."
+            },
+            {
+              "id": "D",
+              "title": "Flower Arranging Night",
+              "text": "Make a bouquet from flowers that you pick yourself. Thursday evening. Eighteen pounds."
+            },
+            {
+              "id": "E",
+              "title": "Seed Swap Day",
+              "text": "Bring your spare seeds and cuttings, and take home something new. Free. First Sunday of every month."
+            },
+            {
+              "id": "F",
+              "title": "School Garden Helpers",
+              "text": "Volunteers help children grow vegetables on Saturday mornings. No experience is needed."
+            },
+            {
+              "id": "G",
+              "title": "Fruit Tree Pruning",
+              "text": "A morning in an orchard, learning how to cut apple trees. Fifteen pounds."
+            },
+            {
+              "id": "H",
+              "title": "Garden Visits Club",
+              "text": "Monthly coach trips to famous gardens, with lunch included. Thirty-five pounds."
+            }
+          ],
+          "questions": [
+            {
+              "id": "r2-1",
+              "prompt": "Hamish",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "The Balcony Growers' Workshop teaches pot and box vegetables for a small fee."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Odette",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 5,
+              "explanation": "School Garden Helpers is unpaid work with children on Saturday mornings."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Rory",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Seed Swap Day is free and lets people exchange seeds."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Petra",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Garden Design Visits sends a designer to plan a garden at home."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Cyril",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "The Garden Visits Club goes to famous gardens by coach with lunch."
+            }
+          ]
+        },
+        {
+          "id": "reading-3",
+          "number": 3,
+          "title": "My grandfather's vegetable patch",
+          "instructions": "Read the article and choose the best answer for each question.",
+          "type": "multiple-choice",
+          "passage": "Every spring, my grandfather digs up a long strip of grass behind his house and turns it into a vegetable patch. When I was small, I thought he did it only because he liked being outside. Now I understand that growing food is his way of saving money and keeping busy since he retired.\n\nLast April, I helped him for the first time. We planted potatoes, carrots and beans, and he showed me how to measure the space between the rows with a stick. 'If plants are too close,' he said, 'they fight for water.' I laughed, but he was serious.\n\nThe hardest part was waiting. After two weeks, nothing had come up, and I was ready to give up. My grandfather just smiled and told me to be patient. Then, one morning in May, tiny green leaves were pushing through the soil, and I felt incredibly proud.\n\nBy August, we were eating our own food every day. The carrots were small and a bit twisted, but they tasted sweeter than any I had bought in a shop. Now I plan to start a little patch in our own garden, and my grandfather has promised to lend me his best spade.",
+          "questions": [
+            {
+              "id": "r3-1",
+              "prompt": "Why does the writer's grandfather grow vegetables?",
+              "options": [
+                "To save money and stay busy",
+                "To win prizes at garden shows",
+                "To sell them at a local market"
+              ],
+              "answer": 0,
+              "explanation": "It is his way of saving money and keeping busy since he retired."
+            },
+            {
+              "id": "r3-2",
+              "prompt": "What did his grandfather teach him?",
+              "options": [
+                "How far apart to plant rows",
+                "How to cook the vegetables he grew",
+                "When to buy new seeds each spring"
+              ],
+              "answer": 0,
+              "explanation": "He showed him how to measure the space between the rows."
+            },
+            {
+              "id": "r3-3",
+              "prompt": "How did the writer feel after two weeks?",
+              "options": [
+                "He was proud of his work",
+                "He wanted to give up",
+                "He was cross with his grandfather"
+              ],
+              "answer": 1,
+              "explanation": "Nothing had come up, and he was ready to give up."
+            },
+            {
+              "id": "r3-4",
+              "prompt": "What happened in May?",
+              "options": [
+                "They picked the first potatoes",
+                "The beans died in the cold",
+                "Small plants appeared"
+              ],
+              "answer": 2,
+              "explanation": "Tiny green leaves were pushing through the soil."
+            },
+            {
+              "id": "r3-5",
+              "prompt": "What does the writer plan to do now?",
+              "options": [
+                "Move in with his grandfather",
+                "Buy his own spade",
+                "Grow vegetables at home"
+              ],
+              "answer": 2,
+              "explanation": "He plans to start a little patch in his own garden."
+            }
+          ]
+        },
+        {
+          "id": "reading-4",
+          "number": 4,
+          "title": "The garden behind the sports hall",
+          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "type": "gapped-text",
+          "passage": "Two years ago, our school had an ugly corner of concrete behind the sports hall. [1] Then Mrs Kaplan, our science teacher, had an idea: why not turn it into a garden?\n\nFirst, we had to break up the concrete, which was hard work. [2] Luckily, a local builder lent us a machine and showed us how to use it safely. After that, we filled big wooden boxes with soil and compost. [3] We planted lettuce, radishes and strawberries, because they grow quickly.\n\nNot everything went well. In the first summer, the radishes were eaten by slugs, and a football landed on the lettuces. [4] Now we have a sign that asks players to be careful, and the slugs are kept away with a ring of crushed eggshells.\n\nToday, the garden gives enough vegetables for the school kitchen every week. [5] Some of us have even started growing food at home, and the younger children visit the garden every Friday.",
+          "sentences": [
+            "We learned from our mistakes.",
+            "Mrs Kaplan used to teach at a different school.",
+            "Everybody thought that nothing would ever grow there.",
+            "The best part is that the pupils eat what they have grown.",
+            "Every class was given its own box to look after.",
+            "Some pupils got blisters on their hands."
+          ],
+          "gaps": [
+            {
+              "id": "r4-1",
+              "answer": "C",
+              "explanation": "\"Nothing would ever grow there\" explains why the corner was ugly, before the new idea."
+            },
+            {
+              "id": "r4-2",
+              "answer": "F",
+              "explanation": "\"Hard work\" leads to blisters, and the machine arrives as a lucky solution."
+            },
+            {
+              "id": "r4-3",
+              "answer": "E",
+              "explanation": "Each class getting a box leads to \"We planted\" in the boxes."
+            },
+            {
+              "id": "r4-4",
+              "answer": "A",
+              "explanation": "The problems with slugs and the football are the mistakes that they learned from."
+            },
+            {
+              "id": "r4-5",
+              "answer": "D",
+              "explanation": "The pupils eating the vegetables is the best result of the garden giving food each week."
+            }
+          ]
+        },
+        {
+          "id": "reading-5",
+          "number": 5,
+          "title": "A letter to Gran",
+          "instructions": "Choose the correct word for each gap.",
+          "type": "multiple-choice-cloze",
+          "passage": "Dear Gran, Thank you for your letter. The garden looks lovely [1] the summer. We have [2] our first tomatoes, and they taste delicious. Dad has built a small greenhouse [3] he can grow chilli peppers. Last week, it was so hot [4] I had to water everything twice a day. [5] I was away, my neighbour looked after the plants. I hope you can come and see them [6] you visit us in July.",
+          "questions": [
+            {
+              "id": "r5-1",
+              "prompt": "Gap 1",
+              "options": [
+                "on",
+                "in",
+                "at",
+                "by"
+              ],
+              "answer": 1,
+              "explanation": "We say \"in the summer\"."
+            },
+            {
+              "id": "r5-2",
+              "prompt": "Gap 2",
+              "options": [
+                "picked",
+                "pick",
+                "picks",
+                "picking"
+              ],
+              "answer": 0,
+              "explanation": "\"Have\" needs the past participle \"picked\"."
+            },
+            {
+              "id": "r5-3",
+              "prompt": "Gap 3",
+              "options": [
+                "what",
+                "which",
+                "who",
+                "where"
+              ],
+              "answer": 3,
+              "explanation": "\"Where\" refers to the greenhouse as a place."
+            },
+            {
+              "id": "r5-4",
+              "prompt": "Gap 4",
+              "options": [
+                "as",
+                "than",
+                "that",
+                "when"
+              ],
+              "answer": 2,
+              "explanation": "\"So hot that\" shows the result of the heat."
+            },
+            {
+              "id": "r5-5",
+              "prompt": "Gap 5",
+              "options": [
+                "Between",
+                "During",
+                "While",
+                "Meanwhile"
+              ],
+              "answer": 2,
+              "explanation": "\"While\" is followed by a subject and verb: \"while I was away\"."
+            },
+            {
+              "id": "r5-6",
+              "prompt": "Gap 6",
+              "options": [
+                "where",
+                "when",
+                "what",
+                "why"
+              ],
+              "answer": 1,
+              "explanation": "\"When you visit\" refers to a time."
+            }
+          ]
+        },
+        {
+          "id": "reading-6",
+          "number": 6,
+          "title": "Growing sunflowers",
+          "instructions": "Write one word in each gap.",
+          "type": "open-cloze",
+          "passage": "Growing sunflowers is easy. Plant the seeds [1] a sunny place, about two centimetres deep. Water them every [2], and soon you will see small green leaves. When the plants are [3] tall as your knee, put a stick next to each [4] to keep it straight. Sunflowers need lots of water, [5] you must not forget them in hot weather. By August, your flowers will be [6] big as dinner plates.",
+          "gaps": [
+            {
+              "id": "r6-1",
+              "answer": "in",
+              "explanation": "We plant seeds \"in\" a place."
+            },
+            {
+              "id": "r6-2",
+              "answer": "week",
+              "explanation": "A regular time is needed after \"every\"."
+            },
+            {
+              "id": "r6-3",
+              "answer": "as",
+              "explanation": "\"As tall as\" compares the plant with a knee."
+            },
+            {
+              "id": "r6-4",
+              "answer": "plant",
+              "accepted": [
+                "one"
+              ],
+              "explanation": "\"Each plant\" or \"each one\" is meant."
+            },
+            {
+              "id": "r6-5",
+              "answer": "so",
+              "explanation": "\"So\" shows the result of needing a lot of water."
+            },
+            {
+              "id": "r6-6",
+              "answer": "as",
+              "explanation": "\"As big as\" compares the flowers with dinner plates."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "writing",
+      "timeLimitMinutes": 45,
+      "parts": [
+        {
+          "id": "writing-1",
+          "number": 1,
+          "type": "email",
+          "title": "Part 1: Email",
+          "instructions": "This question is compulsory. Write your answer in about 100 words.",
+          "task": {
+            "kind": "email",
+            "title": "Reply to an email",
+            "prompt": "Your English friend Josie wants to grow vegetables for the first time. Read her email and your notes, then write a reply.",
+            "notes": [
+              "Say which vegetables are easy to grow.",
+              "Say where she should plant them.",
+              "Tell her what tools she needs.",
+              "Ask about her garden."
+            ],
+            "sourceEmail": {
+              "from": "Josie",
+              "subject": "Growing vegetables",
+              "body": "I've decided to grow some vegetables this year, but I've never done it before! Which ones are the easiest? Do I need a lot of space? Have you got any other tips for me?"
+            },
+            "contentPoints": [
+              {
+                "text": "Say which vegetables are easy to grow.",
+                "keywords": [
+                  "lettuce",
+                  "carrots",
+                  "potatoes",
+                  "tomatoes",
+                  "beans",
+                  "easy",
+                  "vegetables"
+                ]
+              },
+              {
+                "text": "Say where she should plant them.",
+                "keywords": [
+                  "sunny",
+                  "garden",
+                  "pots",
+                  "balcony",
+                  "soil",
+                  "place",
+                  "corner"
+                ]
+              },
+              {
+                "text": "Tell her what tools she needs.",
+                "keywords": [
+                  "spade",
+                  "fork",
+                  "gloves",
+                  "watering can",
+                  "tools",
+                  "need",
+                  "bring"
+                ]
+              },
+              {
+                "text": "Ask about her garden.",
+                "keywords": [
+                  "your garden",
+                  "how big",
+                  "what",
+                  "do you have",
+                  "size",
+                  "space",
+                  "is it"
+                ],
+                "question": true
+              }
+            ],
+            "wordCount": "about 100 words"
+          }
+        },
+        {
+          "id": "writing-2",
+          "number": 2,
+          "type": "choice-task",
+          "title": "Part 2: Article or story",
+          "instructions": "Choose one of the two tasks. Write your answer in about 100 words.",
+          "options": [
+            {
+              "kind": "article",
+              "title": "An article for the school magazine",
+              "prompt": "Articles wanted! A garden I like. Where is it? What can you see there? Why is it important to you? Write an article for the school magazine.",
+              "contentPoints": [
+                {
+                  "text": "Say where the garden is.",
+                  "keywords": [
+                    "in",
+                    "near",
+                    "behind",
+                    "house",
+                    "park",
+                    "town",
+                    "village",
+                    "is"
+                  ]
+                },
+                {
+                  "text": "Describe what you can see there.",
+                  "keywords": [
+                    "flowers",
+                    "trees",
+                    "grass",
+                    "vegetables",
+                    "colours",
+                    "birds",
+                    "see"
+                  ]
+                },
+                {
+                  "text": "Explain why it is important to you.",
+                  "keywords": [
+                    "because",
+                    "important",
+                    "relax",
+                    "happy",
+                    "family",
+                    "special",
+                    "peaceful"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            },
+            {
+              "kind": "story",
+              "title": "A story",
+              "prompt": "Write a story about a child who grows a very strange plant.",
+              "openingSentence": "I found the seed in the pocket of an old coat.",
+              "contentPoints": [
+                {
+                  "text": "Describe how the child plants the seed.",
+                  "keywords": [
+                    "planted",
+                    "pot",
+                    "soil",
+                    "water",
+                    "garden",
+                    "window",
+                    "dug"
+                  ]
+                },
+                {
+                  "text": "Say what is strange about the plant.",
+                  "keywords": [
+                    "strange",
+                    "grew",
+                    "huge",
+                    "colour",
+                    "talked",
+                    "tall",
+                    "magic"
+                  ]
+                },
+                {
+                  "text": "Say what happens in the end.",
+                  "keywords": [
+                    "finally",
+                    "end",
+                    "later",
+                    "then",
+                    "decided",
+                    "shared",
+                    "famous"
+                  ]
+                }
+              ],
+              "wordCount": "about 100 words"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "listening",
+      "timeLimitMinutes": 35,
+      "parts": [
+        {
+          "id": "listening-1",
+          "number": 1,
+          "title": "Short conversations",
+          "instructions": "Listen to seven short conversations. Choose the correct answer.",
+          "type": "short-dialogues",
+          "clips": [
+            {
+              "id": "l1-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Edmund",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Chiara",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "How much are the tomato plants?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They are two pounds each, or three for five pounds."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'll take three, please."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-1q",
+                "prompt": "How much will the man pay?",
+                "options": [
+                  "Six pounds",
+                  "Five pounds",
+                  "Seven pounds"
+                ],
+                "answer": 1,
+                "explanation": "Three plants cost five pounds together."
+              }
+            },
+            {
+              "id": "l1-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Hilary",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Reuben",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Is the garden club meeting on Thursday this week?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, because of the holiday it has moved to Friday at six."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-2q",
+                "prompt": "When will the club meet this week?",
+                "options": [
+                  "On Friday at six",
+                  "On Thursday at six",
+                  "On Friday at seven"
+                ],
+                "answer": 0,
+                "explanation": "It has moved to Friday at six."
+              }
+            },
+            {
+              "id": "l1-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Dexter",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Marielle",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Why are your lettuces so small?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I planted them too close together, so none of them had enough room."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-3q",
+                "prompt": "What went wrong with the lettuces?",
+                "options": [
+                  "They were too close together",
+                  "They had too much sun all day",
+                  "Birds ate most of them in spring"
+                ],
+                "answer": 0,
+                "explanation": "She planted them too close together."
+              }
+            },
+            {
+              "id": "l1-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Fenella",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Garrett",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "The leaves on my beans are turning yellow. What should I do?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You're probably giving them too much water. Let the soil dry out first."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-4q",
+                "prompt": "What does the man advise?",
+                "options": [
+                  "Move the plants",
+                  "Use less water",
+                  "Buy new soil"
+                ],
+                "answer": 1,
+                "explanation": "He says she is giving them too much water."
+              }
+            },
+            {
+              "id": "l1-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Callum",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Imogen",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Can I borrow your spade?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sorry, my brother has it. But I've got a fork that you could use."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-5q",
+                "prompt": "What will the man borrow?",
+                "options": [
+                  "A hose",
+                  "A spade",
+                  "A fork"
+                ],
+                "answer": 2,
+                "explanation": "She offers him a fork because her brother has the spade."
+              }
+            },
+            {
+              "id": "l1-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Aoife",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Brodie",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Where shall I put the herbs?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Near the kitchen door. You can pick them quickly when you are cooking."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-6q",
+                "prompt": "Why does the man suggest that place?",
+                "options": [
+                  "It is quick to pick herbs there",
+                  "It gets plenty of sun all day",
+                  "It keeps insects away from the food"
+                ],
+                "answer": 0,
+                "explanation": "He says you can pick them quickly when cooking."
+              }
+            },
+            {
+              "id": "l1-7-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Andre",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Rosamund",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Is it going to rain tomorrow?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, all day. So there's no need to water the plants."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l1-7q",
+                "prompt": "What does the man say about the plants?",
+                "options": [
+                  "They will get far too much sun",
+                  "They will not need watering",
+                  "They must be moved inside soon"
+                ],
+                "answer": 1,
+                "explanation": "It will rain all day, so there is no need to water them."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-2",
+          "number": 2,
+          "title": "Understanding the main idea",
+          "instructions": "Listen to six short conversations and choose the best answer.",
+          "type": "gist-dialogues",
+          "clips": [
+            {
+              "id": "l2-1-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Sunniva",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Ernest",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Hello, do you deliver plants to people at home?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, it is free if you spend more than fifty pounds."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-1q",
+                "prompt": "Why is the woman phoning?",
+                "options": [
+                  "To complain about a plant",
+                  "To order a spade",
+                  "To ask about delivery"
+                ],
+                "answer": 2,
+                "explanation": "She asks if the shop delivers plants."
+              }
+            },
+            {
+              "id": "l2-2-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Ronan",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Winnie",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, would you mind cutting the hedge between our gardens? It is blocking my light."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. I'll do it at the weekend."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-2q",
+                "prompt": "What does the man ask his neighbour to do?",
+                "options": [
+                  "Water his plants",
+                  "Cut the hedge",
+                  "Lend him a ladder"
+                ],
+                "answer": 1,
+                "explanation": "He asks her to cut the hedge."
+              }
+            },
+            {
+              "id": "l2-3-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Teacher",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Leif",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "This term, each of you will be growing beans in a jar, and you will measure them every week."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do we take it home?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, at the end of term."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-3q",
+                "prompt": "What is the class project?",
+                "options": [
+                  "Growing beans in a jar",
+                  "Visiting a farm near school",
+                  "Drawing plants in the garden"
+                ],
+                "answer": 0,
+                "explanation": "Each student will be growing beans in a jar."
+              }
+            },
+            {
+              "id": "l2-4-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Briar",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Wyatt",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "What would you like for your birthday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A watering can and some strong gloves. I'm starting a garden."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-4q",
+                "prompt": "What does the girl want for her birthday?",
+                "options": [
+                  "A book about plants",
+                  "A pet for the garden",
+                  "Gardening equipment"
+                ],
+                "answer": 2,
+                "explanation": "She asks for a watering can and strong gloves."
+              }
+            },
+            {
+              "id": "l2-5-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "m",
+                    "name": "Hector",
+                    "voice": {
+                      "lang": "en-GB",
+                      "gender": "male"
+                    }
+                  },
+                  {
+                    "id": "f",
+                    "name": "Tabitha",
+                    "voice": {
+                      "lang": "en-AU",
+                      "gender": "female"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "m",
+                    "text": "I'm going on holiday next week. Could you look after my allotment?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sure. What do I need to do?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Just water the beans and pick any ripe tomatoes. Take as many as you like."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-5q",
+                "prompt": "What does the man want?",
+                "options": [
+                  "Help with his allotment",
+                  "Some vegetables for dinner",
+                  "A lift to the airport later"
+                ],
+                "answer": 0,
+                "explanation": "He asks her to look after his allotment."
+              }
+            },
+            {
+              "id": "l2-6-clip",
+              "recording": {
+                "speakers": [
+                  {
+                    "id": "f",
+                    "name": "Gemma",
+                    "voice": {
+                      "lang": "en-US",
+                      "gender": "female"
+                    }
+                  },
+                  {
+                    "id": "m",
+                    "name": "Kieran",
+                    "voice": {
+                      "lang": "en-IE",
+                      "gender": "male"
+                    }
+                  }
+                ],
+                "turns": [
+                  {
+                    "speaker": "f",
+                    "text": "Look at all these tomatoes and lettuces! Shall we make a salad for lunch?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great idea. I'll wash everything."
+                  }
+                ]
+              },
+              "question": {
+                "id": "l2-6q",
+                "prompt": "What are they going to do?",
+                "options": [
+                  "Go shopping",
+                  "Plant some seeds",
+                  "Make a salad"
+                ],
+                "answer": 2,
+                "explanation": "The woman suggests making a salad for lunch."
+              }
+            }
+          ]
+        },
+        {
+          "id": "listening-3",
+          "number": 3,
+          "title": "Starting a herb garden",
+          "instructions": "Listen to the talk and complete each note with one word.",
+          "type": "note-completion",
+          "recording": {
+            "speakers": [
+              {
+                "id": "hartley",
+                "name": "Hartley",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "male"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "hartley",
+                "text": "Hello, and welcome to Garden Tips. Today, I'm going to explain how to start a little herb garden on your windowsill. First, you need a sunny window. A window that faces south is the best. Use pots with holes in the bottom, because the extra water must be able to escape. Fill the pots with compost, not ordinary garden soil. Good herbs for beginners are mint, basil and parsley. Plant the seeds about one centimetre deep. Water each pot every two days. The compost should feel damp, but never wet. After three weeks, you can start picking the leaves. If you pick them regularly, the plants will grow even more. A small pot costs about two pounds in most garden centres. Thanks for listening, and happy gardening."
+              }
+            ]
+          },
+          "gaps": [
+            {
+              "id": "l3-1",
+              "prompt": "The best window faces ___",
+              "answer": "south",
+              "explanation": "A window that faces south is the best."
+            },
+            {
+              "id": "l3-2",
+              "prompt": "Pots need ___ in the bottom",
+              "answer": "holes",
+              "explanation": "Pots need holes so that extra water can escape."
+            },
+            {
+              "id": "l3-3",
+              "prompt": "Fill the pots with ___",
+              "answer": "compost",
+              "explanation": "He says to fill the pots with compost, not garden soil."
+            },
+            {
+              "id": "l3-4",
+              "prompt": "Plant the seeds about one ___ deep",
+              "answer": "centimetre",
+              "accepted": [
+                "centimeter",
+                "cm"
+              ],
+              "explanation": "The seeds go about one centimetre deep."
+            },
+            {
+              "id": "l3-5",
+              "prompt": "You can pick leaves after ___ weeks",
+              "answer": "three",
+              "accepted": [
+                "3"
+              ],
+              "explanation": "After three weeks you can start picking the leaves."
+            },
+            {
+              "id": "l3-6",
+              "prompt": "A small pot costs about ___ pounds",
+              "answer": "two",
+              "accepted": [
+                "2"
+              ],
+              "explanation": "A small pot costs about two pounds."
+            }
+          ]
+        },
+        {
+          "id": "listening-4",
+          "number": 4,
+          "title": "A garden designer",
+          "instructions": "Listen to the interview and choose the correct answer.",
+          "type": "listening-interview",
+          "recording": {
+            "speakers": [
+              {
+                "id": "dorothea",
+                "name": "Dorothea",
+                "voice": {
+                  "lang": "en-GB",
+                  "gender": "female"
+                }
+              },
+              {
+                "id": "mina",
+                "name": "Mina",
+                "voice": {
+                  "lang": "en-AU",
+                  "gender": "female"
+                }
+              }
+            ],
+            "turns": [
+              {
+                "speaker": "dorothea",
+                "text": "Today I'm talking to Mina Falk, a garden designer. Mina, how did you become interested in gardens?"
+              },
+              {
+                "speaker": "mina",
+                "text": "My mother had a tiny garden in the city, only a few pots on a step, but she made it magical. I studied biology at university, but at weekends I was already designing gardens for my friends."
+              },
+              {
+                "speaker": "dorothea",
+                "text": "What do you do first when you start with a new client?"
+              },
+              {
+                "speaker": "mina",
+                "text": "I sit in the garden for an hour and do nothing. I just watch where the sun falls and where the wind comes from. You can't plan anything until you know that."
+              },
+              {
+                "speaker": "dorothea",
+                "text": "Which plants would you recommend for a beginner?"
+              },
+              {
+                "speaker": "mina",
+                "text": "Anything that grows without too much help: lavender, sunflowers and most herbs. Early success matters, because it makes people want to carry on."
+              },
+              {
+                "speaker": "dorothea",
+                "text": "What mistakes do people often make?"
+              },
+              {
+                "speaker": "mina",
+                "text": "They plant too many things in a small space. Plants need room to grow, and in two years the garden looks like a jungle."
+              },
+              {
+                "speaker": "dorothea",
+                "text": "Have you got a favourite garden?"
+              },
+              {
+                "speaker": "mina",
+                "text": "Yes, a roof garden in Glasgow, on top of an old car park. The people who live nearby grow vegetables there, and it's full of bees in summer."
+              },
+              {
+                "speaker": "dorothea",
+                "text": "What are you working on at the moment?"
+              },
+              {
+                "speaker": "mina",
+                "text": "A book for children about gardening. It comes out next spring, and my niece has drawn the pictures."
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "l4-1",
+              "prompt": "What first made Mina interested in gardens?",
+              "options": [
+                "A biology course at university",
+                "Her mother's small garden",
+                "A job at a large plant nursery"
+              ],
+              "answer": 1,
+              "explanation": "Her mother had a tiny garden in the city that she made magical."
+            },
+            {
+              "id": "l4-2",
+              "prompt": "What does Mina do first with a new client?",
+              "options": [
+                "She draws a detailed garden plan",
+                "She watches where the sun falls",
+                "She asks the client about the budget"
+              ],
+              "answer": 1,
+              "explanation": "She sits in the garden and watches the sun and the wind."
+            },
+            {
+              "id": "l4-3",
+              "prompt": "What kind of plants does she suggest to beginners?",
+              "options": [
+                "Ones that grow easily",
+                "Very rare and expensive flowers",
+                "Large trees that need space"
+              ],
+              "answer": 0,
+              "explanation": "She recommends plants that grow without much help."
+            },
+            {
+              "id": "l4-4",
+              "prompt": "What mistake do people often make?",
+              "options": [
+                "Buying cheap seeds from shops",
+                "Cutting the plants back too much",
+                "Planting too many things"
+              ],
+              "answer": 2,
+              "explanation": "They plant too many things in a small space."
+            },
+            {
+              "id": "l4-5",
+              "prompt": "What is special about her favourite garden?",
+              "options": [
+                "It belongs to a local school",
+                "It is on top of a car park",
+                "It is more than a hundred years old"
+              ],
+              "answer": 1,
+              "explanation": "It is a roof garden on top of an old car park."
+            },
+            {
+              "id": "l4-6",
+              "prompt": "What is Mina doing at the moment?",
+              "options": [
+                "Writing a book for children",
+                "Opening a shop in the city",
+                "Moving to a new house in Scotland"
+              ],
+              "answer": 0,
+              "explanation": "She is working on a book for children about gardening."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "skill": "speaking",
+      "timeLimitMinutes": 12,
+      "parts": [
+        {
+          "id": "speaking-1",
+          "number": 1,
+          "title": "Getting to know you",
+          "instructions": "Answer each question in your own words. Aim to speak for 20-30 seconds.",
+          "type": "interview",
+          "questions": [
+            {
+              "id": "s33-1-1",
+              "prompt": "Have you ever grown any plants? What happened?"
+            },
+            {
+              "id": "s33-1-2",
+              "prompt": "Do you like eating vegetables? Which ones do you like best?"
+            },
+            {
+              "id": "s33-1-3",
+              "prompt": "Tell me about a garden or a park that you like."
+            },
+            {
+              "id": "s33-1-4",
+              "prompt": "Would you like to have a garden one day? Why or why not?"
+            }
+          ]
+        },
+        {
+          "id": "speaking-2",
+          "number": 2,
+          "title": "Describe a photograph",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "type": "photo-description",
+          "prompt": "A man watering vegetables in a garden.",
+          "images": [
+            {
+              "id": "s33-2-watering",
+              "title": "A man watering vegetables",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-3",
+          "number": 3,
+          "title": "A school garden",
+          "instructions": "Look at the pictures. Talk about the options and decide which one is best.",
+          "type": "collaborative-task",
+          "prompt": "Your school has a small empty space for a garden. Talk about these ideas and decide which one would be best for the students.",
+          "images": [
+            {
+              "id": "s33-3-vegbeds",
+              "title": "Raised beds with vegetables",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s33-3-flowerbed",
+              "title": "A flower bed",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s33-3-herbpots",
+              "title": "Herbs in pots",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            },
+            {
+              "id": "s33-3-fruittrees",
+              "title": "Young fruit trees",
+              "alt": "Placeholder alt text to be replaced by the photo description.",
+              "describeHints": [
+                "placeholder 1",
+                "placeholder 2",
+                "placeholder 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speaking-4",
+          "number": 4,
+          "title": "Talk about the topic",
+          "instructions": "Answer the questions. Try to give a reason or an example with each answer.",
+          "type": "discussion",
+          "questions": [
+            {
+              "id": "s33-4-1",
+              "prompt": "Do you think more people should grow their own food? Why or why not?"
+            },
+            {
+              "id": "s33-4-2",
+              "prompt": "Is it better to have a big garden or a balcony with plants? Why?"
+            },
+            {
+              "id": "s33-4-3",
+              "prompt": "What can children learn from gardening?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
