@@ -303,3 +303,11 @@ html:has(app-exam-header) {
 html[data-text-size='xlarge']:has(app-exam-header) {
   scroll-padding-top: calc(var(--header-height) + var(--space-4));
 }
+/*
+ * Half-folded phone held like a laptop: only the exam header sticks to the top, and the bottom screen
+ * holds the questions panel, so the page shows what it scrolls to in the top screen.
+ */
+html[data-fold='laptop']:has(app-exam-header) {
+  scroll-padding-top: 7rem;
+  scroll-padding-bottom: calc(100dvh - var(--fold-top-2) + var(--space-4));
+}

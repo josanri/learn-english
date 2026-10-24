@@ -70,6 +70,13 @@ describe('FoldPosture', () => {
     media.restore();
   });
 
+  it('reports book pose on a dual-screen phone that lies flat, because the hinge splits the screen', () => {
+    const media = fakeMedia({ [FOLDED]: false, [COLUMNS]: true, [ROWS]: false });
+    expect(TestBed.inject(FoldPosture).layout()).toBe('book');
+    expect(document.documentElement.dataset['fold']).toBe('book');
+    media.restore();
+  });
+
   it('treats a browser without the media features as flat', () => {
     const media = fakeMedia({ [FOLDED]: true, [COLUMNS]: true }, [FOLDED, COLUMNS, ROWS]);
     expect(TestBed.inject(FoldPosture).layout()).toBe('flat');

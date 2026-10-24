@@ -124,7 +124,7 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
             </details>
           </article>
 
-          <section class="questions" aria-labelledby="questions-title">
+          <section class="questions fold-panel" aria-labelledby="questions-title">
             <h2 id="questions-title">Check your understanding</h2>
             <ol>
               @for (q of s.questions; track $index; let qi = $index) {
@@ -397,31 +397,6 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-3);
-    }
-
-    /*
-     * Half-folded phone (FoldPosture sets data-fold on <html>): the story on one side of the fold and
-     * the questions on the other, each scrolling on its own. "book" is side by side, "laptop" stacked.
-     */
-    :host-context(html[data-fold]) .panes {
-      display: grid;
-      gap: var(--space-6);
-      height: calc(100dvh - var(--header-height) - 7rem);
-    }
-    :host-context(html[data-fold='book']) .panes {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    }
-    :host-context(html[data-fold='laptop']) .panes {
-      grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
-    }
-    :host-context(html[data-fold]) .story,
-    :host-context(html[data-fold]) .questions {
-      min-height: 0;
-      max-width: none;
-      margin-top: 0;
-      padding: var(--space-1) var(--space-3) var(--space-3) var(--space-1);
-      overflow-y: auto;
-      overscroll-behavior: contain;
     }
   `,
 })

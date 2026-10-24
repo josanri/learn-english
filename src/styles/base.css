@@ -117,6 +117,77 @@ pre {
 .page {
   padding-block: var(--space-6) var(--space-8);
 }
+
+/*
+ * Split screen (FoldPosture sets data-fold on <html>): a fold or a hinge splits the screen in two,
+ * used like the two pages of a book. The page (site header, exam header, tabs, text) stays on the
+ * first screen: the left one in "book", the top one in "laptop". A fixed panel fills the second
+ * screen and scrolls on its own:
+ *   .fold-panel  the questions of an exam part or a story, in "book" and "laptop";
+ *   .fold-side   the secondary content of a page (filters, contents, summaries), in "book" only,
+ *                because the top screen of "laptop" is too short to lose the page to a panel.
+ * A panel inside another panel stays in its parent, so a part with a passage keeps only its
+ * questions there. Without the viewport-segment values the screen is split in half with no gap.
+ */
+html[data-fold='book'] {
+  --fold-seg-1: env(viewport-segment-width 0 0, 50vw);
+  --fold-seg-2: env(viewport-segment-width 1 0, 50vw);
+  --fold-gap: calc(env(viewport-segment-left 1 0, 50vw) - env(viewport-segment-right 0 0, 50vw));
+  /* The type scale of tokens.css grows with 1vw; here it grows with 1% of one screen instead. */
+  --fold-vw: calc(var(--fold-seg-1) / 100);
+  --step--1: clamp(0.8125rem, 0.79rem + 0.1 * var(--fold-vw), 0.875rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2 * var(--fold-vw), 1.125rem);
+  --step-1: clamp(1.15rem, 1.07rem + 0.4 * var(--fold-vw), 1.375rem);
+  --step-2: clamp(1.35rem, 1.2rem + 0.75 * var(--fold-vw), 1.75rem);
+  --step-3: clamp(1.7rem, 1.4rem + 1.5 * var(--fold-vw), 2.5rem);
+  --step-4: clamp(2.1rem, 1.5rem + 3 * var(--fold-vw), 3.75rem);
+  --step-5: clamp(2.6rem, 1.4rem + 6 * var(--fold-vw), 5.5rem);
+  --step-6: clamp(3rem, 1rem + 10 * var(--fold-vw), 8rem);
+}
+html[data-fold='laptop'] {
+  --fold-top-2: env(viewport-segment-top 0 1, 50vh);
+}
+html[data-fold='book'] .container {
+  max-width: var(--fold-seg-1);
+  margin-inline: 0;
+}
+html[data-fold='book'] :is(.fold-panel, .fold-side):not(:has(.fold-panel, .fold-side)),
+html[data-fold='laptop'] .fold-panel:not(:has(.fold-panel)) {
+  position: fixed;
+  z-index: 20;
+  box-sizing: border-box;
+  max-width: none;
+  max-height: none;
+  align-content: start;
+  margin: 0;
+  padding: var(--space-5) var(--gutter) var(--space-8);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--bg);
+}
+/* Book: the right screen under the row of links (see the site header). */
+html[data-fold='book'] :is(.fold-panel, .fold-side):not(:has(.fold-panel, .fold-side)) {
+  inset: calc(var(--header-height) + env(safe-area-inset-top)) 0 0 auto;
+  width: var(--fold-seg-2);
+}
+/* Sections that are containers of their own lose their gutter: the panel has one. */
+html[data-fold='book'] .fold-side .container {
+  max-width: none;
+  padding-inline: 0;
+}
+html[data-fold='laptop'] .fold-panel:not(:has(.fold-panel)) {
+  inset: var(--fold-top-2) 0 0 0;
+}
+/* Laptop: the page can scroll its last lines up into the top screen, above the panel. */
+html[data-fold='laptop']:has(.fold-panel) body {
+  padding-bottom: calc(100dvh - var(--fold-top-2));
+}
+/* Narrow phones keep the bottom bar, which sits over the bottom screen. */
+@media (max-width: 47.99rem) {
+  html[data-fold='laptop'] .fold-panel:not(:has(.fold-panel)) {
+    padding-bottom: calc(var(--bottom-nav-height) + var(--space-8));
+  }
+}
 .eyebrow {
   margin: 0 0 var(--space-3);
   font-family: var(--font-mono);
