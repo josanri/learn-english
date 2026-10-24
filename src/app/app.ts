@@ -188,9 +188,8 @@ const THEME_NAME: Record<ThemePreference, string> = {
         justify-content: space-around;
         gap: 0;
         margin: 0;
-        padding: var(--space-1) var(--space-2) calc(var(--space-1) + env(safe-area-inset-bottom));
-        padding-inline: max(var(--space-2), env(safe-area-inset-left))
-          max(var(--space-2), env(safe-area-inset-right));
+        padding: var(--space-1) var(--space-2) calc(var(--space-1) + var(--safe-bottom));
+        padding-inline: max(var(--space-2), var(--safe-left)) max(var(--space-2), var(--safe-right));
         border-top: var(--bw) solid var(--border);
         background: var(--bg);
       }
@@ -207,9 +206,7 @@ const THEME_NAME: Record<ThemePreference, string> = {
         text-align: center;
       }
       .site-footer {
-        padding-bottom: calc(
-          var(--bottom-nav-height) + var(--space-5) + env(safe-area-inset-bottom)
-        );
+        padding-bottom: calc(var(--bottom-nav-height) + var(--space-5) + var(--safe-bottom));
       }
     }
 

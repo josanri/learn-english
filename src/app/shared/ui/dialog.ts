@@ -54,7 +54,7 @@ let nextId = 0;
       border-width: var(--bw-card) 0 0;
       border-radius: var(--radius-lg) var(--radius-lg) 0 0;
       box-shadow: none;
-      padding-bottom: env(safe-area-inset-bottom);
+      padding-bottom: var(--safe-bottom);
     }
     @media (min-width: 48rem) {
       dialog[data-placement='sheet'] {

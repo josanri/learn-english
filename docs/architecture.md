@@ -27,7 +27,7 @@ Routes are lazy (`loadComponent`). `withComponentInputBinding()` and `paramsInhe
 
 ## Shell
 
-Sticky header, one `<nav aria-label="Main">` that becomes a fixed bottom bar under 48 rem (safe-area aware), main landmark `#main`. Pages wrap their content in `<div class="container page">`. The nav has five links: Home, B1 exams, Grammar, Words (vocabulary), Settings.
+Sticky header, one `<nav aria-label="Main">` that becomes a fixed bottom bar under 48 rem (safe-area aware, and kept clear of rounded screen corners with `--corner-inset`, see tokens.css), main landmark `#main`. Pages wrap their content in `<div class="container page">`. The nav has five links: Home, B1 exams, Grammar, Words (vocabulary), Settings.
 
 ## Data loading
 
