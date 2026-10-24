@@ -65,6 +65,20 @@
   --header-height: 4rem;
   --bottom-nav-height: 4.25rem;
 
+  /*
+   * Screen edges. env(safe-area-inset-*) covers the notch and the gesture bar, but no browser API
+   * reports how round the corners of the screen are. --corner-inset is the extra room kept at the
+   * bottom corners so the bottom bar is not cut off by them. It is set from what can be observed:
+   *   - a gesture bar or a notch reports an inset (> 0)  -> rounded screen;
+   *   - an installed app (standalone or fullscreen) on a touch screen draws under the corners.
+   * `data-corners` on <html> forces it: "round" or "square" (absent means automatic).
+   * Use --safe-bottom, --safe-left and --safe-right, never env() directly, in bottom bars and sheets.
+   */
+  --corner-inset: clamp(0rem, calc(env(safe-area-inset-bottom) * 99), var(--space-4));
+  --safe-bottom: max(env(safe-area-inset-bottom), calc(var(--corner-inset) / 2));
+  --safe-left: max(env(safe-area-inset-left), var(--corner-inset));
+  --safe-right: max(env(safe-area-inset-right), var(--corner-inset));
+
   /* Typography */
   --font-display:
     'Bricolage Grotesque Variable', 'Bricolage Grotesque', ui-sans-serif, system-ui, 'Segoe UI',
@@ -85,6 +99,19 @@
   /* Motion (set to 0s when motion is reduced) */
   --dur: 0.15s;
   --dur-draw: 1.1s;
+}
+
+/* Installed app on a touch screen: it draws under the rounded corners even if no inset is reported. */
+@media (pointer: coarse) and ((display-mode: standalone) or (display-mode: fullscreen)) {
+  :root {
+    --corner-inset: var(--space-4);
+  }
+}
+:root[data-corners='round'] {
+  --corner-inset: var(--space-4);
+}
+:root[data-corners='square'] {
+  --corner-inset: 0rem;
 }
 
 :root[data-theme='dark'] {

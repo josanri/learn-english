@@ -46,7 +46,7 @@ export class ToastService {
     .region {
       position: fixed;
       inset-inline: var(--space-4);
-      bottom: calc(var(--space-4) + env(safe-area-inset-bottom));
+      bottom: calc(var(--space-4) + var(--safe-bottom));
       z-index: 60;
       display: grid;
       gap: var(--space-3);
@@ -89,7 +89,7 @@ export class ToastService {
     }
     @media (max-width: 47.99rem) {
       .region {
-        bottom: calc(var(--bottom-nav-height) + var(--space-4) + env(safe-area-inset-bottom));
+        bottom: calc(var(--bottom-nav-height) + var(--space-4) + var(--safe-bottom));
       }
     }
   `,
