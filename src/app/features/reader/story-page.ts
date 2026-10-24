@@ -96,8 +96,10 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
                 </p>
                 @if (openGloss(s, p, paragraph); as gloss) {
                   <p class="note" role="note" [id]="'gloss-' + gloss.id">
-                    <strong>{{ gloss.word }}</strong>
-                    {{ gloss.meaning }}
+                    <span class="note-body">
+                      <strong>{{ gloss.word }}</strong>
+                      {{ gloss.meaning }}
+                    </span>
                     <button
                       type="button"
                       class="note-close"
@@ -271,7 +273,13 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
       font-size: var(--step-0);
       line-height: 1.5;
     }
+    /* The word sits on its own line above the meaning, so a narrow column never breaks it. */
+    .note-body {
+      flex: 1;
+      min-width: 0;
+    }
     .note strong {
+      display: block;
       font-style: normal;
     }
     .note-close {
