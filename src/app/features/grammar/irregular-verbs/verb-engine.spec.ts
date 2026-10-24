@@ -14,6 +14,7 @@ const verb = (patch: Partial<IrregularVerb> & { id: string }): IrregularVerb => 
   base: patch.id,
   past: `${patch.id}-p`,
   participle: `${patch.id}-pp`,
+  meaning: 'a test verb',
   example: 'It {{past}} here.',
   exampleParticiple: 'It has {{participle}} here.',
   ...patch,

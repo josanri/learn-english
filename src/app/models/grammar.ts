@@ -16,6 +16,8 @@ export interface IrregularVerb {
   past: string;
   participle: string;
   alt?: VerbAlternatives;
+  /** Short original definition in simple English, shown on request in the practice. */
+  meaning: string;
   /** Original sentence with `{{past}}` where the past simple goes. */
   example: string;
   /** Original sentence with `{{participle}}` (perfect or passive use). */

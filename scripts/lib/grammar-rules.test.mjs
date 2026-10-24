@@ -14,6 +14,7 @@ const verb = (patch = {}) => ({
   base: 'sing',
   past: 'sang',
   participle: 'sung',
+  meaning: 'to make music with your voice',
   example: 'She {{past}} well.',
   exampleParticiple: 'She has {{participle}} well.',
   ...patch,
@@ -37,6 +38,11 @@ const section = (patch = {}) => ({
 
 test('a good verb passes', () => {
   assert.deepEqual(checkIrregularVerbs({ verbs: [verb()] }), []);
+});
+
+test('a verb without a meaning fails', () => {
+  const errors = checkIrregularVerbs({ verbs: [verb({ meaning: ' ' })] });
+  assert.ok(errors.some((e) => e.includes('"meaning" is missing')));
 });
 
 test('duplicate ids and base forms fail', () => {

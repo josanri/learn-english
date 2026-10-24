@@ -8,6 +8,7 @@ const burn: IrregularVerb = {
   past: 'burnt',
   participle: 'burnt',
   alt: { past: ['burned'], participle: ['burned'] },
+  meaning: 'to damage something with fire',
   example: 'I {{past}} the toast.',
   exampleParticiple: 'The letters have been {{participle}}.',
 };
@@ -43,6 +44,27 @@ describe('TypeCard', () => {
     expect(answers).toEqual([true]);
     expect(el.querySelector('.feedback')?.textContent).toContain('Correct.');
     expect(past.disabled).toBe(true);
+  });
+
+  it('shows and hides the meaning of the verb on request', async () => {
+    const fixture = TestBed.createComponent(TypeCard);
+    fixture.componentRef.setInput('verb', burn);
+    const el = fixture.nativeElement as HTMLElement;
+    await flush(fixture);
+
+    const toggle = Array.from(el.querySelectorAll<HTMLButtonElement>('button')).find((b) =>
+      b.textContent?.includes('Show meaning'),
+    )!;
+    const meaning = el.querySelector<HTMLElement>('.meaning')!;
+    expect(toggle.getAttribute('aria-expanded')).toBe('false');
+    expect(meaning.hidden).toBe(true);
+
+    toggle.click();
+    await flush(fixture);
+    expect(toggle.getAttribute('aria-expanded')).toBe('true');
+    expect(toggle.textContent).toContain('Hide meaning');
+    expect(meaning.hidden).toBe(false);
+    expect(meaning.textContent).toContain('to damage something with fire');
   });
 
   it('marks a wrong answer and shows the forms', async () => {
