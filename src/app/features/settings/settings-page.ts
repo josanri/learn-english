@@ -320,6 +320,29 @@ const LANGUAGES: SegmentOption[] = [
             Pictures come from Wikimedia Commons under open licences.
             <a routerLink="/credits">See the image credits</a>.
           </p>
+          <p class="muted">
+            The app is free and open source. If it helps you, you can support it with a coffee.
+          </p>
+          <div class="buttons">
+            <a
+              appButton
+              href="https://github.com/josanri/learn-english"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <app-icon name="github" [size]="18" />
+              Source code on GitHub
+            </a>
+            <a
+              appButton
+              href="https://buymeacoffee.com/josesanc"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <app-icon name="coffee" [size]="18" />
+              Buy me a coffee (or a campero)
+            </a>
+          </div>
         </app-card>
       </div>
     </div>
