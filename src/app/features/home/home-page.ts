@@ -246,7 +246,7 @@ export class HomePage {
       link: '/reader',
     },
     {
-      kind: 'writing',
+      kind: 'mistakes',
       title: 'My mistakes',
       text: 'The exam questions and phrasal verbs you got wrong come back until you get them right.',
       tone: 'coral',

@@ -9,6 +9,7 @@ export type ArtKind =
   | 'vocabulary'
   | 'dictionary'
   | 'reader'
+  | 'mistakes'
   | 'verbs'
   | 'phrasal';
 
@@ -52,6 +53,16 @@ export type ArtKind =
           <path class="thick" d="M114 68l30 30" />
           <circle class="mark" cx="96" cy="50" r="25" />
           <text x="96" y="55" class="word">calm</text>
+        }
+        @case ('mistakes') {
+          <!-- Drawn small, then scaled up; the strokes keep their width. -->
+          <g class="grow" transform="translate(80 56) scale(1.22) translate(-80 -56)">
+            <path d="M56.5 23.6A40 40 0 1 1 46.8 78.4" />
+            <path d="M49 88.1l-2.2-9.7 10 .3" />
+            <path d="M38.7 31.2l12 12M50.7 31.2l-12 12" />
+            <circle class="mark" cx="80" cy="56" r="22" />
+            <path d="M70 56l7 7 14-14" />
+          </g>
         }
         @case ('verbs') {
           <path d="M28 26C58 8 102 8 132 26M125.3 14.9L132 26l-12.8 2.5" />
@@ -134,6 +145,9 @@ export type ArtKind =
     }
     .thick {
       stroke-width: 9;
+    }
+    .grow * {
+      vector-effect: non-scaling-stroke;
     }
     text {
       fill: currentColor;
