@@ -1,6 +1,6 @@
 import type { ExamSummary, Skill } from '../models/exam';
 import type { ExamProgress, PersistedState } from '../models/storage';
-import { COMPLETABLE_SKILLS, examStatus } from './progress';
+import { COMPLETABLE_SKILLS, SCORED_SKILLS, examStatus } from './progress';
 import { localDay } from './state-migrations';
 
 export interface ContinueTarget {
@@ -45,6 +45,64 @@ function latestResult(progress: ExamProgress, skill: Skill) {
     if (found) return found;
   }
   return undefined;
+}
+
+/** A part type or grammar tag with the learner's score over the latest result of every exam. */
+export interface WeakArea {
+  id: string;
+  correct: number;
+  total: number;
+  percent: number;
+}
+
+export interface WeakAreas {
+  parts: WeakArea[];
+  tags: WeakArea[];
+}
+
+/** Fewer answered items than this say too little about a weakness. */
+export const WEAK_AREA_MIN_ITEMS = 6;
+
+/**
+ * Sums the breakdown of the latest result of every exam and skill. Areas with at least
+ * `minItems` items come back lowest percentage first (ties: more items first).
+ */
+export function weakAreas(
+  state: Pick<PersistedState, 'progress'>,
+  minItems = WEAK_AREA_MIN_ITEMS,
+): WeakAreas {
+  const breakdowns: unknown[] = [];
+  for (const progress of Object.values(state.progress)) {
+    for (const skill of SCORED_SKILLS) breakdowns.push(latestResult(progress, skill)?.breakdown);
+  }
+  return rankBreakdowns(breakdowns, minItems);
+}
+
+/** Adds up breakdowns (saved data, so every value is checked) and ranks the areas, weakest first. */
+export function rankBreakdowns(breakdowns: readonly unknown[], minItems: number): WeakAreas {
+  const parts = new Map<string, { correct: number; total: number }>();
+  const tags = new Map<string, { correct: number; total: number }>();
+  const addAll = (target: typeof parts, source: unknown) => {
+    if (!source || typeof source !== 'object') return;
+    for (const [id, tally] of Object.entries(source as Record<string, unknown>)) {
+      const t = tally as { correct?: unknown; total?: unknown } | null;
+      if (typeof t?.correct !== 'number' || typeof t.total !== 'number' || t.total <= 0) continue;
+      const sum = target.get(id) ?? { correct: 0, total: 0 };
+      target.set(id, { correct: sum.correct + t.correct, total: sum.total + t.total });
+    }
+  };
+  for (const breakdown of breakdowns) {
+    if (!breakdown || typeof breakdown !== 'object') continue;
+    const b = breakdown as { parts?: unknown; tags?: unknown };
+    addAll(parts, b.parts);
+    addAll(tags, b.tags);
+  }
+  const rank = (map: typeof parts): WeakArea[] =>
+    [...map]
+      .filter(([, t]) => t.total >= minItems)
+      .map(([id, t]) => ({ id, ...t, percent: Math.round((t.correct / t.total) * 100) }))
+      .sort((a, b) => a.percent - b.percent || b.total - a.total);
+  return { parts: rank(parts), tags: rank(tags) };
 }
 
 /** Everything the Home and /exams/b1 summaries show, derived from the saved document. */

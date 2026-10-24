@@ -3,12 +3,15 @@ import { Injectable, computed, effect, inject, signal } from '@angular/core';
 import type { Skill } from '../models/exam';
 import type { VerbProgress } from '../models/grammar';
 import type { CardState, PracticeState } from '../models/practice';
+import { phrasalMistakeId } from './mistakes';
 import type {
   Attempt,
+  AttemptData,
   ExamProgress,
   ExamSession,
   ObjectiveResult,
   PersistedState,
+  ResultBreakdown,
   SectionStatus,
   Settings,
 } from '../models/storage';
@@ -130,13 +133,52 @@ export class LocalStorageService {
     this.updatePractice((p) => ({ ...p, cards: {} }));
   }
 
-  /** Counts one answer for a phrasal verb and marks today as a practice day. */
+  /**
+   * Puts items into "My mistakes" (keys from `examMistakeId` / `phrasalMistakeId`). An item that is
+   * already there starts its schedule again, because the learner got it wrong once more.
+   */
+  addMistakes(ids: readonly string[], at = new Date().toISOString()): void {
+    if (ids.length === 0) return;
+    this.updatePractice((p) => {
+      const mistakes = { ...p.mistakes };
+      for (const id of ids) mistakes[id] = { added: at };
+      return { ...p, mistakes };
+    });
+  }
+
+  /** Saves the new schedule of a mistake after a review and marks today as a practice day. */
+  saveMistakeReview(id: string, card: CardState): void {
+    this.updatePractice((p) => {
+      const current = p.mistakes[id];
+      if (!current) return p;
+      return { ...p, mistakes: { ...p.mistakes, [id]: { ...current, card } } };
+    }, card.last);
+  }
+
+  /** Takes items out of "My mistakes" (for example when their exam no longer exists). */
+  removeMistakes(ids: readonly string[]): void {
+    if (ids.length === 0) return;
+    this.updatePractice((p) => {
+      const mistakes = { ...p.mistakes };
+      for (const id of ids) delete mistakes[id];
+      return { ...p, mistakes };
+    });
+  }
+
+  resetMistakes(): void {
+    this.updatePractice((p) => ({ ...p, mistakes: {} }));
+  }
+
+  /** Counts one answer for a phrasal verb and marks today as a practice day. A miss goes to "My mistakes". */
   recordPhrasalResult(verbId: string, correct: boolean): void {
     const now = new Date().toISOString();
     this.updatePractice((p) => {
       const current = p.phrasal[verbId] ?? { right: 0, wrong: 0, lastSeen: '', streak: 0 };
       return {
         ...p,
+        mistakes: correct
+          ? p.mistakes
+          : { ...p.mistakes, [phrasalMistakeId(verbId)]: { added: now } },
         phrasal: {
           ...p.phrasal,
           [verbId]: {
@@ -216,6 +258,36 @@ export class LocalStorageService {
 
   setResult(examId: string, key: string, result: ObjectiveResult): void {
     this.updateProgress(examId, (p) => ({ ...p, results: { ...p.results, [key]: result } }));
+  }
+
+  /**
+   * Adds the breakdown to results saved before schema version 5. `attemptId` is null for the current
+   * attempt. It does not touch `updatedAt` or the activity days: nothing new was practised.
+   */
+  setBreakdown(
+    examId: string,
+    attemptId: string | null,
+    skill: string,
+    breakdown: ResultBreakdown,
+  ): void {
+    this._state.update((s) => {
+      const progress = s.progress[examId];
+      if (!progress) return s;
+      const withBreakdown = <T extends AttemptData>(data: T): T => {
+        const result = data.results[skill];
+        return result
+          ? { ...data, results: { ...data.results, [skill]: { ...result, breakdown } } }
+          : data;
+      };
+      const next =
+        attemptId === null
+          ? withBreakdown(progress)
+          : {
+              ...progress,
+              attempts: progress.attempts.map((a) => (a.id === attemptId ? withBreakdown(a) : a)),
+            };
+      return { ...s, progress: { ...s.progress, [examId]: next } };
+    });
   }
 
   /** Merges a change into the session (position, flags, listens, timers) of an exam. */

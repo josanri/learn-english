@@ -92,6 +92,60 @@ describe('LocalStorageService', () => {
     expect(saved.progress['cambridge-pet-01'].updatedAt).toBeTruthy();
   });
 
+  it('adds mistakes, saves their reviews and removes them', () => {
+    const service = TestBed.inject(LocalStorageService);
+    service.addMistakes(['exam:a:r1-1', 'exam:a:r1-2'], '2026-10-24T08:00:00.000Z');
+    const card = {
+      status: 'learning' as const,
+      step: 1,
+      ease: 2.5,
+      interval: 0,
+      due: '2026-10-24T08:10:00.000Z',
+      reps: 1,
+      lapses: 0,
+      last: '2026-10-24T08:00:00.000Z',
+      added: '',
+    };
+    service.saveMistakeReview('exam:a:r1-1', card);
+    expect(service.practice().mistakes['exam:a:r1-1'].card).toEqual(card);
+    expect(service.activity()).toHaveLength(1);
+    // Wrong again: the schedule starts again.
+    service.addMistakes(['exam:a:r1-1'], '2026-10-25T08:00:00.000Z');
+    expect(service.practice().mistakes['exam:a:r1-1']).toEqual({
+      added: '2026-10-25T08:00:00.000Z',
+    });
+    service.saveMistakeReview('unknown', card);
+    expect(service.practice().mistakes['unknown']).toBeUndefined();
+    service.removeMistakes(['exam:a:r1-2']);
+    expect(Object.keys(service.practice().mistakes)).toEqual(['exam:a:r1-1']);
+    service.resetMistakes();
+    expect(service.practice().mistakes).toEqual({});
+  });
+
+  it('puts a missed phrasal verb into the mistakes', () => {
+    const service = TestBed.inject(LocalStorageService);
+    service.recordPhrasalResult('give-up', true);
+    expect(service.practice().mistakes).toEqual({});
+    service.recordPhrasalResult('give-up', false);
+    expect(service.practice().mistakes['phrasal:give-up']).toBeTruthy();
+  });
+
+  it('adds a breakdown to an old result without touching updatedAt', () => {
+    const service = TestBed.inject(LocalStorageService);
+    service.setResult('a', 'reading', { correct: 1, total: 2, completedAt: 'x' });
+    service.startNewAttempt('a');
+    service.setResult('a', 'reading', { correct: 2, total: 2, completedAt: 'y' });
+    const updatedAt = service.progressFor('a')?.updatedAt;
+    const breakdown = { parts: { notices: { correct: 1, total: 2 } }, tags: {} };
+    service.setBreakdown('a', 'a-1', 'reading', breakdown);
+    service.setBreakdown('a', null, 'listening', breakdown); // no listening result: nothing to do
+    const progress = service.progressFor('a');
+    expect(progress?.attempts[0].results['reading'].breakdown).toEqual(breakdown);
+    expect(progress?.results['reading'].breakdown).toBeUndefined();
+    expect(progress?.results['listening']).toBeUndefined();
+    expect(progress?.updatedAt).toBe(updatedAt);
+  });
+
   it('survives corrupt stored data', () => {
     localStorage.setItem(STORAGE_KEY, '{not json');
     const service = TestBed.inject(LocalStorageService);

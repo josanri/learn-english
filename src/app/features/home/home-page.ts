@@ -245,6 +245,14 @@ export class HomePage {
       tilt: 1,
       link: '/reader',
     },
+    {
+      kind: 'writing',
+      title: 'My mistakes',
+      text: 'The exam questions and phrasal verbs you got wrong come back until you get them right.',
+      tone: 'coral',
+      tilt: -1,
+      link: '/practice/mistakes',
+    },
   ];
 
   protected readonly exams = computed(() =>

@@ -1,10 +1,12 @@
 import { DestroyRef, Injectable, computed, effect, inject, signal, untracked } from '@angular/core';
 import { currentAttemptId } from '../../../core/audio-db.service';
+import { examMistakeId } from '../../../core/mistakes';
 import { SettingsService } from '../../../core/settings.service';
 import { emptySession, LocalStorageService } from '../../../core/storage.service';
 import { ExamCatalogueService } from '../../../data/exam-catalogue.service';
 import type { Part, Skill } from '../../../models/exam';
 import type { ExamSession, SectionStatus } from '../../../models/storage';
+import { analyseSection } from '../engine/insights';
 import { placedItems, type PlacedItem } from '../engine/report';
 import { partPrompts } from '../parts/part-registry';
 import { isResponded } from '../parts/speaking-prompts';
@@ -356,13 +358,21 @@ export class ExamSessionStore {
     if (!id || this.locked()) return;
     this.persistElapsed();
     const { correct, total } = this.score();
+    const section = this.section();
     // Sections without marked items (speaking) are only marked as completed; they have no score.
-    if (total > 0) {
+    if (total > 0 && section) {
+      const now = new Date().toISOString();
+      const insight = analyseSection(section, this.answers());
       this.storage.setResult(id, this.skill(), {
         correct,
         total,
-        completedAt: new Date().toISOString(),
+        completedAt: now,
+        breakdown: insight.breakdown,
       });
+      this.storage.addMistakes(
+        insight.wrong.map((itemId) => examMistakeId(id, itemId)),
+        now,
+      );
     }
     this.storage.setSectionStatus(id, this.skill(), 'completed');
   }

@@ -1,17 +1,29 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  effect,
+  inject,
+  input,
+  untracked,
+} from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { computeStats } from '../../core/stats';
+import { computeStats, weakAreas } from '../../core/stats';
 import { LocalStorageService } from '../../core/storage.service';
 import type { ExamSummary } from '../../models/exam';
 import { Button, Card, Icon, ProgressRing } from '../../shared/ui';
+import { mistakeCounts } from '../mistakes/mistake-queue';
+import { InsightsService } from './insights.service';
+import { WeakAreasList } from './weak-areas-list';
 
 /**
  * Overall progress for a list of exams, derived from the saved document: exams completed, average
- * per skill, practice streak and a "Continue" shortcut to the exam in progress. Used on Home and /exams/b1.
+ * per skill, practice streak, a "Continue" shortcut to the exam in progress, the weak areas and the
+ * mistakes waiting for practice. Used on Home and /exams/b1.
  */
 @Component({
   selector: 'app-progress-summary',
-  imports: [RouterLink, Button, Card, Icon, ProgressRing],
+  imports: [RouterLink, Button, Card, Icon, ProgressRing, WeakAreasList],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (visible()) {
@@ -67,6 +79,29 @@ import { Button, Card, Icon, ProgressRing } from '../../shared/ui';
             </a>
           </div>
         }
+        @if (hasWeakAreas() || mistakes().due + mistakes().waiting > 0) {
+          <div class="weak">
+            <h3 class="weak-title">Your weak areas</h3>
+            @if (hasWeakAreas()) {
+              <app-weak-areas-list [areas]="weak()" headingId="summary-weak" />
+            }
+            <p class="mistakes">
+              <span>
+                @if (mistakes().due > 0) {
+                  <strong>{{ mistakes().due }}</strong>
+                  {{ mistakes().due === 1 ? 'mistake is' : 'mistakes are' }} ready to practise
+                  again.
+                } @else {
+                  No mistakes to practise now. The next ones come back later.
+                }
+              </span>
+              <a appButton size="sm" routerLink="/practice/mistakes">
+                My mistakes
+                <app-icon name="arrow" [size]="18" />
+              </a>
+            </p>
+          </div>
+        }
       </app-card>
     }
   `,
@@ -120,6 +155,23 @@ import { Button, Card, Icon, ProgressRing } from '../../shared/ui';
     .continue p {
       margin: 0;
     }
+    .weak {
+      margin-top: var(--space-5);
+      padding-top: var(--space-4);
+      border-top: var(--bw) solid var(--border-muted);
+    }
+    .weak-title {
+      margin: 0 0 var(--space-3);
+      font-size: var(--step-1);
+    }
+    .mistakes {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+      margin: var(--space-4) 0 0;
+    }
   `,
 })
 export class ProgressSummary {
@@ -128,7 +180,23 @@ export class ProgressSummary {
   readonly hideWhenEmpty = input(true);
 
   private readonly storage = inject(LocalStorageService);
+  private readonly insights = inject(InsightsService);
   protected readonly stats = computed(() => computeStats(this.exams(), this.storage.state()));
+  protected readonly weak = computed(() => weakAreas(this.storage.state()));
+  protected readonly hasWeakAreas = computed(
+    () => this.weak().parts.length > 0 || this.weak().tags.length > 0,
+  );
+  protected readonly mistakes = computed(() =>
+    mistakeCounts(this.storage.practice().mistakes, new Date()),
+  );
+
+  constructor() {
+    // Results saved before the breakdown existed get it now (only exams with results are loaded).
+    effect(() => {
+      const exams = this.exams();
+      if (exams.length) void untracked(() => this.insights.backfill(exams));
+    });
+  }
   protected readonly visible = computed(
     () => !this.hideWhenEmpty() || this.stats().started > 0 || this.stats().streak > 0,
   );

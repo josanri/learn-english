@@ -1,6 +1,6 @@
 import type { ExamSummary } from '../models/exam';
 import type { ExamProgress } from '../models/storage';
-import { computeStats, currentStreak } from './stats';
+import { computeStats, currentStreak, rankBreakdowns, weakAreas } from './stats';
 
 const exam = (id: string): ExamSummary => ({
   id,
@@ -106,5 +106,65 @@ describe('computeStats', () => {
     const stats = computeStats([exam('a')], { progress: {}, activity: [] }, new Date(2026, 9, 21));
     expect(stats).toMatchObject({ started: 0, completed: 0, streak: 0, continueTarget: null });
     expect(stats.averages).toEqual({});
+  });
+});
+
+describe('weakAreas', () => {
+  const tallies = (map: Record<string, [number, number]>) =>
+    Object.fromEntries(Object.entries(map).map(([k, [c, t]]) => [k, { correct: c, total: t }]));
+  const result = (
+    parts: Record<string, [number, number]>,
+    tags: Record<string, [number, number]> = {},
+  ) => ({
+    correct: 0,
+    total: 0,
+    completedAt: '',
+    breakdown: { parts: tallies(parts), tags: tallies(tags) },
+  });
+
+  it('sums the latest result of every exam and ranks the weakest first', () => {
+    const areas = weakAreas({
+      progress: {
+        a: progress({
+          results: {
+            reading: result({ 'open-cloze': [2, 6], notices: [5, 5] }, { prepositions: [1, 4] }),
+          },
+          // An older attempt is ignored when the current one has a result.
+          attempts: [
+            {
+              id: 'a-1',
+              startedAt: '',
+              finishedAt: '',
+              answers: {},
+              sectionStatus: {},
+              results: { reading: result({ 'open-cloze': [0, 6] }) },
+            },
+          ],
+        }),
+        b: progress({
+          results: {
+            reading: result({ 'open-cloze': [4, 6], notices: [0, 5] }, { prepositions: [1, 4] }),
+          },
+        }),
+      },
+    });
+    // Same percentage: the area with more items comes first.
+    expect(areas.parts).toEqual([
+      { id: 'open-cloze', correct: 6, total: 12, percent: 50 },
+      { id: 'notices', correct: 5, total: 10, percent: 50 },
+    ]);
+    expect(areas.tags).toEqual([{ id: 'prepositions', correct: 2, total: 8, percent: 25 }]);
+  });
+
+  it('leaves out areas with too few items', () => {
+    const areas = weakAreas({
+      progress: { a: progress({ results: { reading: result({ matching: [0, 5] }) } }) },
+    });
+    expect(areas.parts).toEqual([]);
+  });
+
+  it('ignores broken saved breakdowns', () => {
+    const broken = [null, 'x', { parts: { a: { correct: 'no', total: 3 } }, tags: 3 }];
+    expect(rankBreakdowns(broken, 1)).toEqual({ parts: [], tags: [] });
   });
 });

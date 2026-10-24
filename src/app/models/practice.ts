@@ -140,10 +140,22 @@ export interface StoryProgress {
   total: number;
 }
 
+/**
+ * One item of "My mistakes". The key is `exam:<examId>:<itemId>` or `phrasal:<verbId>`; the item
+ * text is not copied, it is read again from the content file.
+ */
+export interface MistakeState {
+  /** When the item was last answered incorrectly in an exam or a trainer (ISO time). */
+  added: string;
+  /** Review schedule; missing until the first review. */
+  card?: CardState;
+}
+
 export interface PracticeState {
   cards: Record<string, CardState>;
   /** New flashcards introduced per day. */
   newPerDay: number;
   phrasal: Record<string, PhrasalProgress>;
   stories: Record<string, StoryProgress>;
+  mistakes: Record<string, MistakeState>;
 }

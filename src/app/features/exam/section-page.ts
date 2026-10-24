@@ -6,6 +6,7 @@ import {
   inject,
   input,
   signal,
+  untracked,
 } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import type { Skill } from '../../models/exam';
@@ -219,6 +220,8 @@ import { SubmitReview } from './ui/submit-review';
 export class SectionPage {
   /** Bound from the route data (`skill`). */
   readonly skill = input.required<string>();
+  /** Query parameter `?part=<partId>` (links from "My mistakes"): opens that part once. */
+  readonly part = input<string>();
 
   protected readonly store = inject(ExamSessionStore);
   private readonly router = inject(Router);
@@ -247,6 +250,20 @@ export class SectionPage {
     effect(() => {
       this.store.skill.set(this.skill() as Skill);
       this.reviewing.set(false);
+    });
+    effect(() => {
+      const wanted = this.part();
+      const index = this.store.parts().findIndex((p) => p.id === wanted);
+      if (!wanted || index < 0 || this.store.skill() !== this.skill()) return;
+      untracked(() => {
+        this.store.goToPart(index);
+        void this.router.navigate([], {
+          relativeTo: this.route,
+          queryParams: { part: null },
+          queryParamsHandling: 'merge',
+          replaceUrl: true,
+        });
+      });
     });
   }
 

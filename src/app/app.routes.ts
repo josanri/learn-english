@@ -137,6 +137,11 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'practice/mistakes',
+    title: 'My mistakes | Learn English',
+    loadComponent: () => import('./features/mistakes/mistakes-page').then((m) => m.MistakesPage),
+  },
+  {
     path: 'settings',
     title: 'Settings | Learn English',
     loadComponent: () => import('./features/settings/settings-page').then((m) => m.SettingsPage),

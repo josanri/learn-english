@@ -1,4 +1,4 @@
-import type { Skill } from './exam';
+import type { GrammarTag, Skill } from './exam';
 import type { GrammarProgress } from './grammar';
 import type { PracticeState } from './practice';
 
@@ -39,11 +39,25 @@ export interface Settings {
 
 export type SectionStatus = 'not-started' | 'in-progress' | 'completed';
 
+/** Right answers out of a number of items. */
+export interface Tally {
+  correct: number;
+  total: number;
+}
+
+/** Score of one section split by part type (`open-cloze`) and by grammar tag (cloze items only). */
+export interface ResultBreakdown {
+  parts: Record<string, Tally>;
+  tags: Partial<Record<GrammarTag, Tally>>;
+}
+
 /** Score for the automatically marked items (reading + listening). */
 export interface ObjectiveResult {
   correct: number;
   total: number;
   completedAt: string;
+  /** Saved at submit since schema version 5; older results get it from `InsightsService.backfill`. */
+  breakdown?: ResultBreakdown;
 }
 
 /** Where the learner is inside the exam and the per-session flags. Cleared by Retry. */

@@ -23,6 +23,11 @@ import { RUBRIC, writingSummary, type WritingPartSummary } from './parts/writing
 import { ExamSessionStore } from './session/exam-session.store';
 import { ResultExportService, type ExportTarget } from './export/result-export.service';
 import { currentAttemptId } from '../../core/audio-db.service';
+import { examMistakeId } from '../../core/mistakes';
+import { rankBreakdowns } from '../../core/stats';
+import { LocalStorageService } from '../../core/storage.service';
+import { WeakAreasList } from '../progress/weak-areas-list';
+import { analyseSection } from './engine/insights';
 
 interface AttemptView {
   id: string;
@@ -47,6 +52,7 @@ interface AttemptView {
 @Component({
   selector: 'app-results-page',
   imports: [
+    WeakAreasList,
     DatePipe,
     RouterLink,
     Badge,
@@ -153,6 +159,20 @@ interface AttemptView {
                 }
               }
             </ul>
+          </section>
+        }
+
+        @if (areas(); as a) {
+          <section class="skill" aria-labelledby="areas-title">
+            <h3 id="areas-title">Strong and weak areas</h3>
+            <p class="muted">
+              Your score in this attempt by kind of task and by grammar point (only the gap-fill
+              texts are sorted by grammar point). The weakest come first.
+              @if (v.current && mistakeCount() > 0) {
+                Wrong answers are in <a routerLink="/practice/mistakes">My mistakes</a>.
+              }
+            </p>
+            <app-weak-areas-list [areas]="a" [limit]="4" headingId="results-areas" />
           </section>
         }
 
@@ -528,6 +548,7 @@ interface AttemptView {
 })
 export class ResultsPage {
   private readonly store = inject(ExamSessionStore);
+  private readonly storage = inject(LocalStorageService);
   private readonly router = inject(Router);
   private readonly route = inject(ActivatedRoute);
   private readonly toast = inject(ToastService);
@@ -662,6 +683,28 @@ export class ResultsPage {
   protected readonly view = computed(() => {
     const views = this.views();
     return views.find((v) => v.id === this.selectedId()) ?? views[views.length - 1];
+  });
+
+  /** Breakdown of the selected attempt, from its answers (no minimum: it is one exam). */
+  protected readonly areas = computed(() => {
+    const exam = this.store.exam();
+    const v = this.view();
+    if (!exam || !v || v.reports.length === 0) return null;
+    const breakdowns = exam.sections
+      .filter(
+        (s) => MARKED_SKILLS.includes(s.skill) && v.data.sectionStatus[s.skill] === 'completed',
+      )
+      .map((s) => analyseSection(s, v.data.answers).breakdown);
+    const ranked = rankBreakdowns(breakdowns, 1);
+    return ranked.parts.length || ranked.tags.length ? ranked : null;
+  });
+
+  /** Items of this exam in "My mistakes". */
+  protected readonly mistakeCount = computed(() => {
+    const id = this.store.examId();
+    if (!id) return 0;
+    const prefix = examMistakeId(id, '');
+    return Object.keys(this.storage.practice().mistakes).filter((k) => k.startsWith(prefix)).length;
   });
 
   protected readonly isCambridge = computed(() =>

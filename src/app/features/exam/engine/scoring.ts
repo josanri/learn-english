@@ -1,4 +1,10 @@
-import type { ChoiceQuestion, GapItem, PromptedGap, StatementItem } from '../../../models/exam';
+import type {
+  ChoiceQuestion,
+  GapItem,
+  GrammarTag,
+  PromptedGap,
+  StatementItem,
+} from '../../../models/exam';
 
 /**
  * Pure scoring helpers. Nothing here depends on Angular: every part type is reduced to a list of
@@ -25,6 +31,8 @@ export interface ScoreItem {
   /** Closed answer set for `text` items such as letters or true/false: stored value to display label. */
   choices?: readonly { value: string; label: string }[];
   explanation?: string;
+  /** Grammar points tested by the item (cloze items). */
+  tags?: readonly GrammarTag[];
 }
 
 export interface Score {
@@ -125,6 +133,7 @@ export function choiceItems(questions: readonly ChoiceQuestion[]): ScoreItem[] {
     correct: q.answer,
     options: q.options,
     explanation: q.explanation,
+    tags: q.tags,
   }));
 }
 
@@ -137,6 +146,7 @@ export function gapItems(gaps: readonly (GapItem | PromptedGap)[]): ScoreItem[] 
     correct: g.answer,
     accepted: g.accepted,
     explanation: g.explanation,
+    tags: g.tags,
   }));
 }
 

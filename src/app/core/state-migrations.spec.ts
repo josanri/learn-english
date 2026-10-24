@@ -145,7 +145,13 @@ describe('state migrations', () => {
       migrations: {},
     });
     expect(state.schemaVersion).toBe(CURRENT_SCHEMA_VERSION);
-    expect(state.practice).toEqual({ cards: {}, newPerDay: 10, phrasal: {}, stories: {} });
+    expect(state.practice).toEqual({
+      cards: {},
+      newPerDay: 10,
+      phrasal: {},
+      stories: {},
+      mistakes: {},
+    });
     expect(state.grammar.verbs['go'].right).toBe(1);
   });
 
@@ -187,6 +193,56 @@ describe('state migrations', () => {
     });
     expect(state.practice.phrasal['bad']).toBeUndefined();
     expect(Object.keys(state.practice.stories)).toEqual(['lighthouse']);
+  });
+
+  it('adds an empty mistakes record when it upgrades a version 4 document', () => {
+    const state = migrateState({
+      schemaVersion: 4,
+      progress: {},
+      activity: [],
+      settings: {},
+      grammar: { verbs: {} },
+      practice: { cards: {}, newPerDay: 20, phrasal: {}, stories: {} },
+      migrations: {},
+    });
+    expect(state.schemaVersion).toBe(5);
+    expect(state.practice.newPerDay).toBe(20);
+    expect(state.practice.mistakes).toEqual({});
+  });
+
+  it('keeps valid mistakes and drops broken ones', () => {
+    const due = '2026-10-24T08:00:00.000Z';
+    const schedule = {
+      status: 'learning',
+      step: 1,
+      ease: 2.5,
+      interval: 0,
+      due,
+      reps: 1,
+      lapses: 0,
+      last: due,
+      added: '',
+    };
+    const state = migrateState({
+      schemaVersion: CURRENT_SCHEMA_VERSION,
+      practice: {
+        mistakes: {
+          'exam:a:r1-1': { added: due },
+          'phrasal:give-up': { added: due, card: schedule },
+          'exam:a:r1-2': { added: due, card: { status: 'flying', due } },
+          'exam:a:r1-3': { added: 'yesterday' },
+          'exam:a:r1-4': 7,
+        },
+      },
+    });
+    expect(Object.keys(state.practice.mistakes).sort()).toEqual([
+      'exam:a:r1-1',
+      'exam:a:r1-2',
+      'phrasal:give-up',
+    ]);
+    expect(state.practice.mistakes['phrasal:give-up'].card?.step).toBe(1);
+    // A broken schedule is dropped; the mistake stays and starts again.
+    expect(state.practice.mistakes['exam:a:r1-2']).toEqual({ added: due });
   });
 
   it('repairs progress entries that miss containers', () => {

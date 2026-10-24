@@ -3,6 +3,7 @@ import type { GrammarProgress } from '../models/grammar';
 import type {
   CardState,
   CardStatus,
+  MistakeState,
   PhrasalProgress,
   PracticeState,
   StoryProgress,
@@ -20,7 +21,7 @@ export const STORAGE_KEY = 'learn-english:v1';
 /** localStorage key written by the React version ("Northstar B1"). Kept untouched after migration. */
 export const LEGACY_STORAGE_KEY = 'northstar-practice-v3';
 /** Version of the `PersistedState` document. Bump it and add a step to `STEPS` to change the shape. */
-export const CURRENT_SCHEMA_VERSION = 4;
+export const CURRENT_SCHEMA_VERSION = 5;
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
@@ -87,7 +88,13 @@ export function emptyState(): PersistedState {
 export const DEFAULT_NEW_CARDS_PER_DAY = 10;
 
 export function emptyPractice(): PracticeState {
-  return { cards: {}, newPerDay: DEFAULT_NEW_CARDS_PER_DAY, phrasal: {}, stories: {} };
+  return {
+    cards: {},
+    newPerDay: DEFAULT_NEW_CARDS_PER_DAY,
+    phrasal: {},
+    stories: {},
+    mistakes: {},
+  };
 }
 
 const CARD_STATUSES: readonly CardStatus[] = ['learning', 'review', 'relearning'];
@@ -101,11 +108,10 @@ export function sanitizePractice(raw: unknown): PracticeState {
   const str = (v: unknown) => (typeof v === 'string' ? v : '');
   const validTime = (v: unknown) => typeof v === 'string' && !Number.isNaN(Date.parse(v));
 
-  const cards: Record<string, CardState> = {};
-  for (const [id, value] of Object.entries(isRecord(r['cards']) ? r['cards'] : {})) {
-    if (!isRecord(value) || !CARD_STATUSES.includes(value['status'] as CardStatus)) continue;
-    if (!validTime(value['due'])) continue;
-    cards[id] = {
+  const card = (value: unknown): CardState | undefined => {
+    if (!isRecord(value) || !CARD_STATUSES.includes(value['status'] as CardStatus)) return;
+    if (!validTime(value['due'])) return;
+    return {
       status: value['status'] as CardStatus,
       step: int(value['step']),
       ease: Math.max(1.3, num(value['ease'], 2.5)),
@@ -116,6 +122,12 @@ export function sanitizePractice(raw: unknown): PracticeState {
       last: validTime(value['last']) ? (value['last'] as string) : (value['due'] as string),
       added: str(value['added']),
     };
+  };
+
+  const cards: Record<string, CardState> = {};
+  for (const [id, value] of Object.entries(isRecord(r['cards']) ? r['cards'] : {})) {
+    const state = card(value);
+    if (state) cards[id] = state;
   }
 
   const phrasal: Record<string, PhrasalProgress> = {};
@@ -139,12 +151,22 @@ export function sanitizePractice(raw: unknown): PracticeState {
     };
   }
 
+  const mistakes: Record<string, MistakeState> = {};
+  for (const [id, value] of Object.entries(isRecord(r['mistakes']) ? r['mistakes'] : {})) {
+    if (!isRecord(value) || !validTime(value['added'])) continue;
+    const state = card(value['card']);
+    mistakes[id] = state
+      ? { added: value['added'] as string, card: state }
+      : { added: value['added'] as string };
+  }
+
   const perDay = int(r['newPerDay']);
   return {
     cards,
     newPerDay: perDay >= 1 && perDay <= 100 ? perDay : DEFAULT_NEW_CARDS_PER_DAY,
     phrasal,
     stories,
+    mistakes,
   };
 }
 
@@ -191,6 +213,11 @@ const STEPS: Record<number, (state: Record<string, unknown>) => Record<string, u
   2: (state) => ({ ...state, grammar: emptyGrammar() }),
   // v3 -> v4: flashcards, phrasal verbs and graded reader.
   3: (state) => ({ ...state, practice: emptyPractice() }),
+  // v4 -> v5: "My mistakes" queue (results get their breakdown later, from InsightsService.backfill).
+  4: (state) => ({
+    ...state,
+    practice: { ...(isRecord(state['practice']) ? state['practice'] : {}), mistakes: {} },
+  }),
 };
 
 /** Local calendar day as `YYYY-MM-DD`, or null for an invalid date. */
