@@ -47,6 +47,29 @@ export type Skill = 'reading' | 'writing' | 'listening' | 'speaking' | 'mediatio
 // Shared building blocks
 // ---------------------------------------------------------------------------------------------
 
+/**
+ * Grammar or vocabulary point tested by a cloze item. `models/grammar-tags.ts` gives each tag a
+ * label and, when one exists, the grammar guide that explains it.
+ */
+export type GrammarTag =
+  | 'verb-forms'
+  | 'modals'
+  | 'verb-patterns'
+  | 'conditionals'
+  | 'relative-clauses'
+  | 'linking-words'
+  | 'comparisons'
+  | 'adverbs'
+  | 'pronouns'
+  | 'questions'
+  | 'prepositions'
+  | 'articles'
+  | 'quantifiers'
+  | 'phrasal-verbs'
+  | 'fixed-phrases'
+  | 'collocations'
+  | 'word-choice';
+
 export interface ImageCredit {
   author: string;
   license: string;
@@ -74,6 +97,8 @@ export interface ChoiceQuestion {
   options: string[];
   answer: number;
   explanation?: string;
+  /** What the item tests (required on cloze items, see `validate:exams`). */
+  tags?: GrammarTag[];
 }
 
 /** A gap whose key is a single word/short phrase typed by the learner (or a letter for gapped text). */
@@ -83,6 +108,8 @@ export interface GapItem {
   accepted?: string[];
   /** Why this is the answer, shown after marking (required by validate:exams). */
   explanation?: string;
+  /** What the gap tests (required on open-cloze gaps, see `validate:exams`). */
+  tags?: GrammarTag[];
 }
 
 /** A gap with a visible prompt, for note/sentence completion. */

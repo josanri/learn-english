@@ -248,6 +248,13 @@
         },
         "explanation": {
           "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GrammarTag"
+          },
+          "description": "What the item tests (required on cloze items, see `validate:exams`)."
         }
       },
       "required": [
@@ -258,6 +265,29 @@
       ],
       "additionalProperties": false,
       "description": "Multiple choice item. `answer` is the zero-based index into `options`."
+    },
+    "GrammarTag": {
+      "type": "string",
+      "enum": [
+        "verb-forms",
+        "modals",
+        "verb-patterns",
+        "conditionals",
+        "relative-clauses",
+        "linking-words",
+        "comparisons",
+        "adverbs",
+        "pronouns",
+        "questions",
+        "prepositions",
+        "articles",
+        "quantifiers",
+        "phrasal-verbs",
+        "fixed-phrases",
+        "collocations",
+        "word-choice"
+      ],
+      "description": "Grammar or vocabulary point tested by a cloze item. `models/grammar-tags.ts` gives each tag a label and, when one exists, the grammar guide that explains it."
     },
     "MatchingPart": {
       "type": "object",
@@ -453,6 +483,13 @@
         "explanation": {
           "type": "string",
           "description": "Why this is the answer, shown after marking (required by validate:exams)."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GrammarTag"
+          },
+          "description": "What the gap tests (required on open-cloze gaps, see `validate:exams`)."
         }
       },
       "required": [
@@ -684,6 +721,13 @@
         "explanation": {
           "type": "string",
           "description": "Why this is the answer, shown after marking (required by validate:exams)."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GrammarTag"
+          },
+          "description": "What the gap tests (required on open-cloze gaps, see `validate:exams`)."
         },
         "prompt": {
           "type": "string"

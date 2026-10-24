@@ -5,6 +5,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { suggestChoiceTag, suggestOpenTag } from './cloze-tags.mjs';
 
 const WORK = fileURLToPath(new URL('../../work/', import.meta.url));
 const LETTERS = 'ABCDEFGH';
@@ -74,7 +75,7 @@ export const gappedText = (prefix, title, passage, sentences, keys, explanations
   })),
 });
 
-/** qs: [options, answerIndex, explanation]. */
+/** qs: [options, answerIndex, explanation, tags?]. Without tags, the rule's suggestion is used. */
 export const cloze = (prefix, title, passage, qs) => ({
   id: 'reading-5',
   number: 5,
@@ -82,16 +83,17 @@ export const cloze = (prefix, title, passage, qs) => ({
   instructions: 'Choose the correct word for each gap.',
   type: 'multiple-choice-cloze',
   passage,
-  questions: qs.map(([options, answer, explanation], i) => ({
+  questions: qs.map(([options, answer, explanation, tags], i) => ({
     id: `${prefix}5-${i + 1}`,
     prompt: `Gap ${i + 1}`,
     options,
     answer,
     explanation,
+    tags: tags ?? [suggestChoiceTag(options, answer, explanation).tag],
   })),
 });
 
-/** gaps: [answer, acceptedOrNull, explanation]. */
+/** gaps: [answer, acceptedOrNull, explanation, tags?]. Without tags, the rule's suggestion is used. */
 export const openCloze = (prefix, title, passage, gaps) => ({
   id: 'reading-6',
   number: 6,
@@ -99,11 +101,12 @@ export const openCloze = (prefix, title, passage, gaps) => ({
   instructions: 'Write one word in each gap.',
   type: 'open-cloze',
   passage,
-  gaps: gaps.map(([answer, accepted, explanation], i) => ({
+  gaps: gaps.map(([answer, accepted, explanation, tags], i) => ({
     id: `${prefix}6-${i + 1}`,
     answer,
     ...(accepted ? { accepted } : {}),
     explanation,
+    tags: tags ?? [suggestOpenTag(answer, explanation).tag],
   })),
 });
 

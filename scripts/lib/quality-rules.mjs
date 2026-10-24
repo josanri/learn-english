@@ -1,5 +1,6 @@
 // Automatic quality rules for exam JSON (pure functions; tested in exam-rules.test.mjs).
 // Every function returns { errors: string[], warnings: string[] }. Errors block CI, warnings are advice.
+import { checkClozeTags } from './cloze-tags.mjs';
 import { classifyLicense } from './image-license.mjs';
 import { partWords, wordCount } from './board-rules.mjs';
 
@@ -480,6 +481,7 @@ export function allQualityChecks(exam, { fileExists, known }) {
     checkMatching(exam),
     checkImages(exam, fileExists),
     checkVocabulary(exam, known),
+    checkClozeTags(exam),
   ];
   return {
     errors: parts.flatMap((p) => p.errors),
