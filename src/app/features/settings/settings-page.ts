@@ -340,7 +340,7 @@ const LANGUAGES: SegmentOption[] = [
               rel="noreferrer noopener"
             >
               <app-icon name="coffee" [size]="18" />
-              Support: buy me a coffee
+              Buy me a coffee (or a campero)
             </a>
           </div>
         </app-card>
