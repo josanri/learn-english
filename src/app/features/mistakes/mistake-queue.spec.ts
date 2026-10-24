@@ -50,6 +50,16 @@ describe('mistake queue', () => {
 
   it('lists what is due now, oldest mistake first, never the fixed ones', () => {
     expect(dueMistakes(mistakes, now)).toEqual(['due', 'older', 'new']);
+    // Same time: mixed by a stable hash, not by insertion order.
+    const same = { added: '2026-10-22T10:00:00.000Z' };
+    const order = dueMistakes(
+      { 'exam:a:r1-1': same, 'exam:a:r1-2': same, 'exam:a:r5-1': same },
+      now,
+    );
+    expect([...order].sort()).toEqual(['exam:a:r1-1', 'exam:a:r1-2', 'exam:a:r5-1']);
+    expect(
+      dueMistakes({ 'exam:a:r5-1': same, 'exam:a:r1-2': same, 'exam:a:r1-1': same }, now),
+    ).toEqual(order);
   });
 
   it('counts due, waiting and fixed items', () => {

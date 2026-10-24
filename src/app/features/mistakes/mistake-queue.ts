@@ -1,5 +1,5 @@
 import type { CardState, MistakeState } from '../../models/practice';
-import { MATURE_INTERVAL, schedule } from '../flashcards/srs';
+import { MATURE_INTERVAL, hash, schedule } from '../flashcards/srs';
 
 /**
  * "My mistakes": items the learner got wrong in an exam or in the phrasal verb trainer, reviewed on
@@ -17,11 +17,28 @@ export function isDue(mistake: MistakeState, now: Date): boolean {
   return !mistake.card || new Date(mistake.card.due).getTime() <= now.getTime();
 }
 
-/** Ids of the mistakes due now, oldest mistake first. */
+/**
+ * Stable order key of an id. FNV alone keeps ids that differ only at the end (`r5-1`, `r5-2`) close
+ * together, so the MurmurHash3 finaliser spreads them.
+ */
+function mixKey(id: string): number {
+  let h = hash(id);
+  h = Math.imul(h ^ (h >>> 16), 0x85ebca6b);
+  h = Math.imul(h ^ (h >>> 13), 0xc2b2ae35);
+  return (h ^ (h >>> 16)) >>> 0;
+}
+
+/**
+ * Ids of the mistakes due now, oldest mistake first. Mistakes of one submit share their time, so
+ * a stable hash of the id mixes them (otherwise all the notices of an exam would come first).
+ */
 export function dueMistakes(mistakes: Readonly<Record<string, MistakeState>>, now: Date): string[] {
   return Object.entries(mistakes)
     .filter(([, m]) => isDue(m, now))
-    .sort(([, a], [, b]) => a.added.localeCompare(b.added))
+    .sort(
+      ([idA, a], [idB, b]) =>
+        a.added.localeCompare(b.added) || mixKey(idA) - mixKey(idB) || idA.localeCompare(idB),
+    )
     .map(([id]) => id);
 }
 

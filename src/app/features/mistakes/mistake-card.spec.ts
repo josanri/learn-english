@@ -65,6 +65,13 @@ describe('buildExamCard', () => {
     expect(card.skill).toBe('reading');
   });
 
+  it('shows what the person wants for a matching question, not only the name', () => {
+    const card = buildExamCard(exam, 'r2-1');
+    expect(card?.kind).toBe('self');
+    if (card?.kind !== 'self') return;
+    expect(card.prompt).toMatch(/^Harriet wants to redecorate/);
+  });
+
   it('returns null for an item that no longer exists', () => {
     expect(buildExamCard(exam, 'missing')).toBeNull();
   });

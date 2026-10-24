@@ -126,7 +126,13 @@ export function buildExamCard(exam: Exam, itemId: string): ExamMistakeCard | nul
       correct: Number(item.correct),
     };
   }
-  // Prompts such as `Gap 3` say nothing without the text, so they are left out.
-  const prompt = /^(Gap|Paragraph) \d+$/.test(item.prompt) ? undefined : item.prompt;
+  // Matching: the prompt is only a name, so show what the person wants. Prompts such as `Gap 3`
+  // say nothing without the text, so they are left out.
+  const prompt =
+    part.type === 'matching'
+      ? part.people[n - 1]?.text
+      : /^(Gap|Paragraph) \d+$/.test(item.prompt)
+        ? undefined
+        : item.prompt;
   return { ...base, kind: 'self', prompt, skill: section.skill };
 }

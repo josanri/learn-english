@@ -173,8 +173,8 @@ export function endOfDay(now: Date): Date {
   return end;
 }
 
-/** Number from a string, stable across sessions; used to mix the topics in the order of new cards. */
-function hash(text: string): number {
+/** Number from a string, stable across sessions; used to mix the order of new cards and of mistakes. */
+export function hash(text: string): number {
   let h = 2166136261;
   for (let i = 0; i < text.length; i++) {
     h ^= text.charCodeAt(i);

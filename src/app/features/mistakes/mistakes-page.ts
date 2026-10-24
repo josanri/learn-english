@@ -132,7 +132,7 @@ type LoadedCard =
                         >{{ ctx.after }}
                       </p>
                     }
-                    <p class="hint">{{ c.card.prompt }}</p>
+                    <p [class]="c.card.notice ? 'question-text' : 'hint'">{{ c.card.prompt }}</p>
                     <div class="options" role="group" aria-label="Options">
                       @for (option of c.card.options; track $index; let i = $index) {
                         <button
@@ -357,6 +357,10 @@ type LoadedCard =
     .gap.filled {
       border-color: var(--success);
       color: var(--success);
+    }
+    .question-text {
+      margin: 0 0 var(--space-4);
+      font-weight: 700;
     }
     .hint {
       margin: 0 0 var(--space-4);
