@@ -81,6 +81,40 @@ import { splitParagraphs } from '../engine/passage';
         overscroll-behavior: contain;
       }
     }
+
+    /*
+     * Half-folded phone (FoldPosture sets data-fold on <html>): both columns stay visible, one on each
+     * side of the fold, whatever the width. "book" puts them side by side, "laptop" stacks them.
+     */
+    :host-context(html[data-fold]) .switch {
+      display: none;
+    }
+    :host-context(html[data-fold]) .col.off {
+      display: block;
+    }
+    :host-context(html[data-fold]) .cols {
+      display: grid;
+      gap: var(--space-6);
+    }
+    :host-context(html[data-fold]) .col {
+      padding: 0 var(--space-3) var(--space-3) 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+    :host-context(html[data-fold='book']) .cols {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: start;
+    }
+    :host-context(html[data-fold='book']) .col {
+      max-height: calc(100dvh - var(--exam-chrome, 15rem));
+    }
+    :host-context(html[data-fold='laptop']) .cols {
+      grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+      height: calc(100dvh - var(--exam-chrome, 15rem));
+    }
+    :host-context(html[data-fold='laptop']) .col {
+      min-height: 0;
+    }
   `,
 })
 export class SplitLayout {

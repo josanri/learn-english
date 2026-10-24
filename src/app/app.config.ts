@@ -14,6 +14,7 @@ import {
   withRouterConfig,
 } from '@angular/router';
 import { AudioDbService } from './core/audio-db.service';
+import { FoldPosture } from './core/fold-posture.service';
 import { InstallService } from './core/install.service';
 import { ThemeService } from './core/theme.service';
 import { routes } from './app.routes';
@@ -34,6 +35,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideAppInitializer(() => {
       inject(ThemeService);
+      inject(FoldPosture); // Sets data-fold on <html> when a foldable phone is half-folded.
       inject(InstallService); // Starts listening for the browser's install offer early.
       // One-off recording migrations (React-era copy, then attempt ids in keys); failures are ignored and retried later.
       void inject(AudioDbService).runMigrations();

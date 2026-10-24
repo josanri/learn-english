@@ -40,135 +40,137 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
           <a appButton routerLink="/reader">See all stories</a>
         </app-empty-state>
       } @else if (data(); as s) {
-        <article class="story" [attr.aria-labelledby]="'story-title'">
-          <h1 id="story-title">{{ s.title }}</h1>
-          <ul class="facts" aria-label="About this story">
-            <li>
-              <app-chip [prompt]="false">{{ s.level }}</app-chip>
-            </li>
-            <li>
-              <app-chip [prompt]="false">{{ minutes() }} min</app-chip>
-            </li>
-            <li>
-              <app-chip [prompt]="false">{{ s.words }} words</app-chip>
-            </li>
-            <li>
-              <app-chip [prompt]="false">{{ s.topic }}</app-chip>
-            </li>
-          </ul>
-
-          <div class="tools">
-            @if (speech.supported) {
-              @if (speaking()) {
-                <button appButton type="button" (click)="stop()">
-                  <app-icon name="stop" />
-                  Stop
-                </button>
-              } @else {
-                <button appButton type="button" (click)="listen(s)">
-                  <app-icon name="volume" />
-                  Listen to the story
-                </button>
-              }
-            }
-            <p class="hint">Underlined words open their meaning.</p>
-          </div>
-
-          <div class="text">
-            @for (paragraph of paragraphs(); track $index; let p = $index) {
-              <p [class.reading]="speakingParagraph() === p">
-                @for (part of paragraph; track $index; let i = $index) {
-                  @if (part.kind === 'gloss') {
-                    <button
-                      type="button"
-                      class="gloss"
-                      [attr.aria-expanded]="open() === p + '-' + i"
-                      [attr.aria-controls]="'gloss-' + p + '-' + i"
-                      (click)="toggle(p + '-' + i)"
-                    >
-                      {{ part.text }}
-                    </button>
-                    @if (open() === p + '-' + i) {
-                      <span class="note" role="note" [id]="'gloss-' + p + '-' + i">
-                        {{ meaning(s, part) }}
-                      </span>
-                    }
-                  } @else {
-                    {{ part.text }}
-                  }
-                }
-              </p>
-            }
-          </div>
-
-          <details class="words">
-            <summary>Words in this story ({{ glossary().length }})</summary>
-            <dl>
-              @for (entry of glossary(); track entry.word) {
-                <div>
-                  <dt>{{ entry.word }}</dt>
-                  <dd>{{ entry.meaning }}</dd>
-                </div>
-              }
-            </dl>
-          </details>
-        </article>
-
-        <section class="questions" aria-labelledby="questions-title">
-          <h2 id="questions-title">Check your understanding</h2>
-          <ol>
-            @for (q of s.questions; track $index; let qi = $index) {
-              <li class="question">
-                <p class="ask">{{ q.question }}</p>
-                <div
-                  class="options"
-                  role="group"
-                  [attr.aria-label]="'Options for question ' + (qi + 1)"
-                >
-                  @for (option of q.options; track $index; let oi = $index) {
-                    <button
-                      type="button"
-                      class="option"
-                      [class.right]="answers()[qi] !== undefined && oi === q.answer"
-                      [class.wrong]="answers()[qi] === oi && oi !== q.answer"
-                      [disabled]="answers()[qi] !== undefined"
-                      [attr.aria-pressed]="answers()[qi] === oi"
-                      (click)="answer(s, qi, oi)"
-                    >
-                      {{ option }}
-                    </button>
-                  }
-                </div>
-                @if (answers()[qi] !== undefined) {
-                  <p class="explain" role="status">
-                    @if (answers()[qi] === q.answer) {
-                      <strong class="ok">Right.</strong>
-                    } @else {
-                      <strong class="no">Not quite.</strong>
-                    }
-                    {{ q.explanation }}
-                  </p>
-                }
+        <div class="panes">
+          <article class="story" [attr.aria-labelledby]="'story-title'">
+            <h1 id="story-title">{{ s.title }}</h1>
+            <ul class="facts" aria-label="About this story">
+              <li>
+                <app-chip [prompt]="false">{{ s.level }}</app-chip>
               </li>
-            }
-          </ol>
+              <li>
+                <app-chip [prompt]="false">{{ minutes() }} min</app-chip>
+              </li>
+              <li>
+                <app-chip [prompt]="false">{{ s.words }} words</app-chip>
+              </li>
+              <li>
+                <app-chip [prompt]="false">{{ s.topic }}</app-chip>
+              </li>
+            </ul>
 
-          @if (complete()) {
-            <div class="summary" role="status">
-              <p class="score">{{ correct() }} of {{ s.questions.length }} right.</p>
-              <div class="actions">
-                @if (nextStory(); as next) {
-                  <a appButton variant="primary" [routerLink]="['/reader', next.id]">
-                    Next story: {{ next.title }}
-                    <app-icon name="arrow" />
-                  </a>
+            <div class="tools">
+              @if (speech.supported) {
+                @if (speaking()) {
+                  <button appButton type="button" (click)="stop()">
+                    <app-icon name="stop" />
+                    Stop
+                  </button>
+                } @else {
+                  <button appButton type="button" (click)="listen(s)">
+                    <app-icon name="volume" />
+                    Listen to the story
+                  </button>
                 }
-                <button appButton type="button" (click)="retry()">Answer again</button>
-                <a appButton variant="ghost" routerLink="/reader">All stories</a>
-              </div>
+              }
+              <p class="hint">Underlined words open their meaning.</p>
             </div>
-          }
-        </section>
+
+            <div class="text">
+              @for (paragraph of paragraphs(); track $index; let p = $index) {
+                <p [class.reading]="speakingParagraph() === p">
+                  @for (part of paragraph; track $index; let i = $index) {
+                    @if (part.kind === 'gloss') {
+                      <button
+                        type="button"
+                        class="gloss"
+                        [attr.aria-expanded]="open() === p + '-' + i"
+                        [attr.aria-controls]="'gloss-' + p + '-' + i"
+                        (click)="toggle(p + '-' + i)"
+                      >
+                        {{ part.text }}
+                      </button>
+                      @if (open() === p + '-' + i) {
+                        <span class="note" role="note" [id]="'gloss-' + p + '-' + i">
+                          {{ meaning(s, part) }}
+                        </span>
+                      }
+                    } @else {
+                      {{ part.text }}
+                    }
+                  }
+                </p>
+              }
+            </div>
+
+            <details class="words">
+              <summary>Words in this story ({{ glossary().length }})</summary>
+              <dl>
+                @for (entry of glossary(); track entry.word) {
+                  <div>
+                    <dt>{{ entry.word }}</dt>
+                    <dd>{{ entry.meaning }}</dd>
+                  </div>
+                }
+              </dl>
+            </details>
+          </article>
+
+          <section class="questions" aria-labelledby="questions-title">
+            <h2 id="questions-title">Check your understanding</h2>
+            <ol>
+              @for (q of s.questions; track $index; let qi = $index) {
+                <li class="question">
+                  <p class="ask">{{ q.question }}</p>
+                  <div
+                    class="options"
+                    role="group"
+                    [attr.aria-label]="'Options for question ' + (qi + 1)"
+                  >
+                    @for (option of q.options; track $index; let oi = $index) {
+                      <button
+                        type="button"
+                        class="option"
+                        [class.right]="answers()[qi] !== undefined && oi === q.answer"
+                        [class.wrong]="answers()[qi] === oi && oi !== q.answer"
+                        [disabled]="answers()[qi] !== undefined"
+                        [attr.aria-pressed]="answers()[qi] === oi"
+                        (click)="answer(s, qi, oi)"
+                      >
+                        {{ option }}
+                      </button>
+                    }
+                  </div>
+                  @if (answers()[qi] !== undefined) {
+                    <p class="explain" role="status">
+                      @if (answers()[qi] === q.answer) {
+                        <strong class="ok">Right.</strong>
+                      } @else {
+                        <strong class="no">Not quite.</strong>
+                      }
+                      {{ q.explanation }}
+                    </p>
+                  }
+                </li>
+              }
+            </ol>
+
+            @if (complete()) {
+              <div class="summary" role="status">
+                <p class="score">{{ correct() }} of {{ s.questions.length }} right.</p>
+                <div class="actions">
+                  @if (nextStory(); as next) {
+                    <a appButton variant="primary" [routerLink]="['/reader', next.id]">
+                      Next story: {{ next.title }}
+                      <app-icon name="arrow" />
+                    </a>
+                  }
+                  <button appButton type="button" (click)="retry()">Answer again</button>
+                  <a appButton variant="ghost" routerLink="/reader">All stories</a>
+                </div>
+              </div>
+            }
+          </section>
+        </div>
       }
     </div>
   `,
@@ -359,6 +361,31 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
       display: flex;
       flex-wrap: wrap;
       gap: var(--space-3);
+    }
+
+    /*
+     * Half-folded phone (FoldPosture sets data-fold on <html>): the story on one side of the fold and
+     * the questions on the other, each scrolling on its own. "book" is side by side, "laptop" stacked.
+     */
+    :host-context(html[data-fold]) .panes {
+      display: grid;
+      gap: var(--space-6);
+      height: calc(100dvh - var(--header-height) - 7rem);
+    }
+    :host-context(html[data-fold='book']) .panes {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+    :host-context(html[data-fold='laptop']) .panes {
+      grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    }
+    :host-context(html[data-fold]) .story,
+    :host-context(html[data-fold]) .questions {
+      min-height: 0;
+      max-width: none;
+      margin-top: 0;
+      padding: var(--space-1) var(--space-3) var(--space-3) var(--space-1);
+      overflow-y: auto;
+      overscroll-behavior: contain;
     }
   `,
 })

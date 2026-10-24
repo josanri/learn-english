@@ -35,6 +35,12 @@ Logo = closing quotation marks on a paper-blue key tile (`app-logo-mark`, same d
 
 Exam pages must honour `showTimer`, `examMode` (no hints or explanations until finished) and `recognitionLang` / `onlineRecognition`.
 
+## Foldable phones
+
+`FoldPosture` (`src/app/core/fold-posture.service.ts`) reads `(device-posture: folded)` together with `(horizontal-viewport-segments: 2)` or `(vertical-viewport-segments: 2)` and sets `data-fold="book"` (fold vertical, two segments side by side) or `data-fold="laptop"` (fold horizontal, two segments stacked) on `<html>`. The attribute is absent when the screen is flat, closed or the browser lacks the features, so width-based layouts stay the base. The signals `layout()` and `folded()` are there for code that needs them.
+
+Components react in their own styles with `:host-context(html[data-fold])` (see `SplitLayout` in `features/exam/ui/layout.ts` and `StoryPage`): passage on one side of the fold, questions on the other, no tab switch. The fold is assumed to sit near the middle, as on iPhone Duo. Safari 27.1 on iPhone Duo has both APIs behind feature flags (Settings > Apps > Safari > Advanced > Feature Flags), so test on a device or Xcode's Device Hub simulator with them on.
+
 ## Accessibility check
 
 Run `ng serve` and axe through `@axe-core/playwright` (dev dependency; system Chrome works with `channel: 'chrome'`). Home, /exams/b1 and /settings had no violations in either theme at 360 and 1280 px.
