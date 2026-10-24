@@ -88,14 +88,15 @@ const LEVEL_OPTIONS: SegmentOption[] = [
                 }
               </select>
             </div>
-            <label class="switch-row" for="unread-only">
+            <label class="switch">
               <input
-                id="unread-only"
                 type="checkbox"
+                role="switch"
                 [checked]="unreadOnly()"
                 (change)="unreadOnly.set($any($event.target).checked)"
               />
-              Only stories I have not read
+              <span class="track" aria-hidden="true"></span>
+              <span class="text">Only stories I have not read</span>
             </label>
           </div>
 
@@ -186,18 +187,8 @@ const LEVEL_OPTIONS: SegmentOption[] = [
       margin-bottom: 0;
       max-width: 22rem;
     }
-    .switch-row {
-      display: flex;
-      align-items: center;
-      gap: var(--space-3);
-      min-height: var(--target);
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .switch-row input {
-      width: 1.4rem;
-      height: 1.4rem;
-      accent-color: var(--accent-strong);
+    .filters .switch {
+      margin-bottom: 0;
     }
     .list {
       display: grid;
