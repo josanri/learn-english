@@ -1,8 +1,7 @@
 import { httpResource } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import type { VocabularyFile } from '../../models/vocabulary';
-import { Badge, Button, EmptyState, Icon } from '../../shared/ui';
+import { Badge, Button, EmptyState, Icon, IllustratedCard, SkillArt } from '../../shared/ui';
 import { dictionaryUrl, filterWords } from './vocabulary-engine';
 
 const PAGE_SIZE = 100;
@@ -23,7 +22,7 @@ const POS_OPTIONS = [
 /** `/vocabulary`: the B1 Preliminary word list with search and filters; each word links to the Cambridge Dictionary. */
 @Component({
   selector: 'app-vocabulary-page',
-  imports: [RouterLink, Badge, Button, EmptyState, Icon],
+  imports: [Badge, Button, EmptyState, Icon, IllustratedCard, SkillArt],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="container page">
@@ -33,26 +32,33 @@ const POS_OPTIONS = [
         The words a B1 learner needs, taken from the Cambridge B1 Preliminary vocabulary list. Open
         a word to see its meaning in the Cambridge Dictionary.
       </p>
-      <ul class="practise" aria-label="Practise words">
-        <li>
-          <a appButton variant="primary" routerLink="/vocabulary/flashcards">
-            <app-icon name="repeat" />
-            Flashcards
-          </a>
-        </li>
-        <li>
-          <a appButton routerLink="/vocabulary/phrasal-verbs">
-            <app-icon name="list" />
-            Phrasal verbs
-          </a>
-        </li>
-        <li>
-          <a appButton routerLink="/reader">
-            <app-icon name="book" />
-            Graded reader
-          </a>
-        </li>
-      </ul>
+      <section class="practise" aria-labelledby="practise-title">
+        <h2 id="practise-title" class="visually-hidden">Practise words</h2>
+        <div class="grid">
+          <app-illustrated-card
+            heading="Flashcards"
+            tone="cream"
+            [rotate]="1.25"
+            link="/vocabulary/flashcards"
+          >
+            <app-skill-art art kind="vocabulary" />
+            <p>About 520 B1 words. Each one comes back just before you forget it.</p>
+          </app-illustrated-card>
+          <app-illustrated-card
+            heading="Phrasal verbs"
+            tone="green"
+            [rotate]="-1"
+            link="/vocabulary/phrasal-verbs"
+          >
+            <app-skill-art art kind="phrasal" />
+            <p>About 250 common phrasal verbs, with meanings, examples and three exercises.</p>
+          </app-illustrated-card>
+          <app-illustrated-card heading="Graded reader" tone="blue" [rotate]="1" link="/reader">
+            <app-skill-art art kind="reading" />
+            <p>40 short original stories with a tap-to-see glossary and a few questions.</p>
+          </app-illustrated-card>
+        </div>
+      </section>
 
       @if (resource.isLoading()) {
         <p role="status" class="muted">Loading the word list&hellip;</p>
@@ -173,12 +179,13 @@ const POS_OPTIONS = [
   `,
   styles: `
     .practise {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-3);
-      margin: var(--space-5) 0 var(--space-6);
-      padding: 0;
-      list-style: none;
+      margin: var(--space-6) 0 var(--space-7);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+      gap: var(--space-6);
+      padding-right: 6px;
     }
     .filters {
       display: grid;
