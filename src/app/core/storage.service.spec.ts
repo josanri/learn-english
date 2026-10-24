@@ -43,6 +43,43 @@ describe('LocalStorageService', () => {
     expect(service.grammar().verbs).toEqual({});
   });
 
+  it('records flashcards, phrasal verbs and stories in the practice record', () => {
+    const service = TestBed.inject(LocalStorageService);
+    const last = new Date().toISOString();
+    service.saveCard('borrow', {
+      status: 'learning',
+      step: 1,
+      ease: 2.5,
+      interval: 0,
+      due: last,
+      reps: 1,
+      lapses: 0,
+      last,
+      added: '2026-10-23',
+    });
+    expect(service.practice().cards['borrow'].step).toBe(1);
+    expect(service.activity()).toHaveLength(1);
+
+    service.recordPhrasalResult('give-up', true);
+    service.recordPhrasalResult('give-up', true);
+    expect(service.practice().phrasal['give-up']).toMatchObject({ right: 2, wrong: 0, streak: 2 });
+    service.recordPhrasalResult('give-up', false);
+    expect(service.practice().phrasal['give-up']).toMatchObject({ right: 2, wrong: 1, streak: 0 });
+
+    service.finishStory('lighthouse-notebook', 3, 4);
+    expect(service.practice().stories['lighthouse-notebook']).toMatchObject({
+      correct: 3,
+      total: 4,
+    });
+
+    service.setNewCardsPerDay(500);
+    expect(service.practice().newPerDay).toBe(100);
+    service.resetCards();
+    service.resetPhrasal();
+    service.resetStories();
+    expect(service.practice()).toMatchObject({ cards: {}, phrasal: {}, stories: {} });
+  });
+
   it('debounces writes and stores answers with timestamps', async () => {
     const service = TestBed.inject(LocalStorageService);
     service.setAnswer('cambridge-pet-01', 'r1-1', 2);

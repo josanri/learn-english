@@ -39,7 +39,7 @@ import { splitParagraphs } from '../engine/passage';
         <ng-content select="[left]" />
       </div>
       <div
-        class="col"
+        class="col fold-panel"
         role="group"
         tabindex="0"
         [attr.aria-label]="rightLabel()"
@@ -80,6 +80,26 @@ import { splitParagraphs } from '../engine/passage';
         overflow-y: auto;
         overscroll-behavior: contain;
       }
+    }
+
+    /*
+     * Half-folded phone (FoldPosture sets data-fold on <html>): both columns stay visible, whatever the
+     * width. The text stays in the page and scrolls with it; the questions are a .fold-panel that fills
+     * the other screen (right in "book", bottom in "laptop"), see base.css.
+     */
+    :host-context(html[data-fold]) .switch {
+      display: none;
+    }
+    :host-context(html[data-fold]) .cols {
+      display: block;
+    }
+    :host-context(html[data-fold]) .col.off {
+      display: block;
+    }
+    :host-context(html[data-fold]) .col:first-child {
+      max-height: none;
+      padding: 0;
+      overflow: visible;
     }
   `,
 })

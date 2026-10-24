@@ -1,6 +1,6 @@
 # Learn English
 
-Free, original English practice exams that run in the browser. The first section is **B1**, with twenty-five Cambridge B1 Preliminary-style papers (Reading, Writing, Listening and Speaking), grammar guides for B1 and B2, an irregular verbs trainer and the Cambridge B1 vocabulary list. It is an installable app (PWA) that works offline. More boards and levels are planned.
+Free, original English practice exams that run in the browser. The first section is **B1**, with twenty-five Cambridge B1 Preliminary-style papers (Reading, Writing, Listening and Speaking), grammar guides for B1 and B2, an irregular verbs trainer and the Cambridge B1 vocabulary list. For daily practice there are vocabulary flashcards with spaced repetition, a phrasal verb trainer and a graded reader with original short stories. It is an installable app (PWA) that works offline. More boards and levels are planned.
 
 The app is built with Angular 22 (zoneless, standalone components, signals). Exam content lives in static JSON files, and learner progress is stored only in the browser (localStorage and IndexedDB).
 
@@ -17,6 +17,7 @@ npm start               # dev server on http://localhost:4200
 npm run lint            # angular-eslint + Prettier check
 npm test                # unit tests (Vitest through the Angular CLI)
 npm run validate:exams  # JSON Schema + content rules for every exam
+npm run validate:practice  # flashcards, phrasal verbs and graded reader stories
 npm run build           # production build in dist/learn-english/browser
 npm run build:pages -- /repo-name/   # build for GitHub Pages (base href + 404.html)
 ```

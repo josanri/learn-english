@@ -211,139 +211,141 @@ const LANGUAGES: SegmentOption[] = [
           </p>
         </app-card>
 
-        <app-card>
-          <h2>Exam</h2>
-          <label class="switch">
-            <input
-              type="checkbox"
-              role="switch"
-              [checked]="settings().showTimer"
-              (change)="set({ showTimer: checked($event) })"
-            />
-            <span class="track" aria-hidden="true"></span>
-            <span class="text">
-              Show timer
-              <small>Display the time left for each section.</small>
-            </span>
-          </label>
-          <label class="switch">
-            <input
-              type="checkbox"
-              role="switch"
-              [checked]="settings().examMode"
-              (change)="set({ examMode: checked($event) })"
-            />
-            <span class="track" aria-hidden="true"></span>
-            <span class="text">
-              Exam mode
-              <small>Hide hints and explanations until you have finished the exam.</small>
-            </span>
-          </label>
-          <div class="field">
-            <label for="student-name">Your name</label>
-            <input
-              id="student-name"
-              type="text"
-              autocomplete="name"
-              maxlength="80"
-              [value]="settings().studentName"
-              (input)="set({ studentName: text($event) })"
-              aria-describedby="name-hint"
-            />
-            <p id="name-hint" class="hint">
-              Printed on your PDF report. It never leaves this device.
-            </p>
-          </div>
-        </app-card>
+        <div class="fold-side">
+          <app-card>
+            <h2>Exam</h2>
+            <label class="switch">
+              <input
+                type="checkbox"
+                role="switch"
+                [checked]="settings().showTimer"
+                (change)="set({ showTimer: checked($event) })"
+              />
+              <span class="track" aria-hidden="true"></span>
+              <span class="text">
+                Show timer
+                <small>Display the time left for each section.</small>
+              </span>
+            </label>
+            <label class="switch">
+              <input
+                type="checkbox"
+                role="switch"
+                [checked]="settings().examMode"
+                (change)="set({ examMode: checked($event) })"
+              />
+              <span class="track" aria-hidden="true"></span>
+              <span class="text">
+                Exam mode
+                <small>Hide hints and explanations until you have finished the exam.</small>
+              </span>
+            </label>
+            <div class="field">
+              <label for="student-name">Your name</label>
+              <input
+                id="student-name"
+                type="text"
+                autocomplete="name"
+                maxlength="80"
+                [value]="settings().studentName"
+                (input)="set({ studentName: text($event) })"
+                aria-describedby="name-hint"
+              />
+              <p id="name-hint" class="hint">
+                Printed on your PDF report. It never leaves this device.
+              </p>
+            </div>
+          </app-card>
 
-        <app-card>
-          <h2>Your data</h2>
-          <p class="muted">
-            Progress, answers and settings live in this browser. Export a copy to keep a backup or
-            to move to another device. Voice recordings are not included in the export.
-          </p>
-          <div class="buttons">
-            <button appButton type="button" (click)="exportProgress()">
-              <app-icon name="download" [size]="18" />
-              Export progress (JSON)
-            </button>
-            <button appButton type="button" (click)="filePicker.click()">
-              <app-icon name="upload" [size]="18" />
-              Import progress
-            </button>
-            <input
-              #filePicker
-              class="visually-hidden"
-              type="file"
-              accept="application/json,.json"
-              tabindex="-1"
-              aria-label="Choose a progress file to import"
-              (change)="onFile($event)"
-            />
-            <button appButton variant="danger" type="button" (click)="confirmReset.set(true)">
-              <app-icon name="trash" [size]="18" />
-              Delete everything
-            </button>
-          </div>
-        </app-card>
-        <app-card>
-          <h2>Install the app</h2>
-          @if (install.installed()) {
-            <p class="muted">The app is installed on this device. It also works offline.</p>
-          } @else if (install.canInstall()) {
+          <app-card>
+            <h2>Your data</h2>
             <p class="muted">
-              Add Learn English to your home screen or desktop. It opens in its own window and works
-              offline.
+              Progress, answers and settings live in this browser. Export a copy to keep a backup or
+              to move to another device. Voice recordings are not included in the export.
             </p>
             <div class="buttons">
-              <button appButton variant="primary" type="button" (click)="installApp()">
+              <button appButton type="button" (click)="exportProgress()">
                 <app-icon name="download" [size]="18" />
-                Install
+                Export progress (JSON)
+              </button>
+              <button appButton type="button" (click)="filePicker.click()">
+                <app-icon name="upload" [size]="18" />
+                Import progress
+              </button>
+              <input
+                #filePicker
+                class="visually-hidden"
+                type="file"
+                accept="application/json,.json"
+                tabindex="-1"
+                aria-label="Choose a progress file to import"
+                (change)="onFile($event)"
+              />
+              <button appButton variant="danger" type="button" (click)="confirmReset.set(true)">
+                <app-icon name="trash" [size]="18" />
+                Delete everything
               </button>
             </div>
-          } @else if (install.needsManualSteps()) {
-            <p class="muted">
-              On iPhone and iPad, tap the Share button in Safari, then choose &ldquo;Add to Home
-              Screen&rdquo;.
+          </app-card>
+          <app-card>
+            <h2>Install the app</h2>
+            @if (install.installed()) {
+              <p class="muted">The app is installed on this device. It also works offline.</p>
+            } @else if (install.canInstall()) {
+              <p class="muted">
+                Add Learn English to your home screen or desktop. It opens in its own window and
+                works offline.
+              </p>
+              <div class="buttons">
+                <button appButton variant="primary" type="button" (click)="installApp()">
+                  <app-icon name="download" [size]="18" />
+                  Install
+                </button>
+              </div>
+            } @else if (install.needsManualSteps()) {
+              <p class="muted">
+                On iPhone and iPad, tap the Share button in Safari, then choose &ldquo;Add to Home
+                Screen&rdquo;.
+              </p>
+            } @else {
+              <p class="muted">
+                Your browser has not offered the install yet. Open the browser menu and look for
+                &ldquo;Install app&rdquo; or &ldquo;Add to Home Screen&rdquo;. Use the app for a few
+                moments and try again.
+              </p>
+            }
+          </app-card>
+          <app-card>
+            <h2>About</h2>
+            <p>
+              Pictures come from Wikimedia Commons under open licences.
+              <a routerLink="/credits">See the image credits</a>.
             </p>
-          } @else {
             <p class="muted">
-              Your browser has not offered the install yet. Open the browser menu and look for
-              &ldquo;Install app&rdquo; or &ldquo;Add to Home Screen&rdquo;. Use the app for a few
-              moments and try again.
+              The app is free and open source. If it helps you, you can support it with a coffee.
             </p>
-          }
-        </app-card>
-        <app-card>
-          <h2>About</h2>
-          <p>
-            Pictures come from Wikimedia Commons under open licences.
-            <a routerLink="/credits">See the image credits</a>.
-          </p>
-          <p class="muted">
-            The app is free and open source. If it helps you, you can support it with a coffee.
-          </p>
-          <div class="buttons">
-            <a
-              appButton
-              href="https://github.com/josanri/learn-english"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <app-icon name="github" [size]="18" />
-              Source code on GitHub
-            </a>
-            <a
-              appButton
-              href="https://buymeacoffee.com/josesanc"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <app-icon name="coffee" [size]="18" />
-              Buy me a coffee (or a campero)
-            </a>
-          </div>
-        </app-card>
+            <div class="buttons">
+              <a
+                appButton
+                href="https://github.com/josanri/learn-english"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <app-icon name="github" [size]="18" />
+                Source code on GitHub
+              </a>
+              <a
+                appButton
+                href="https://buymeacoffee.com/josesanc"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <app-icon name="coffee" [size]="18" />
+                Buy me a coffee (or a campero)
+              </a>
+            </div>
+          </app-card>
+        </div>
       </div>
     </div>
 
@@ -379,6 +381,14 @@ const LANGUAGES: SegmentOption[] = [
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
       gap: var(--space-5);
       align-items: start;
+    }
+    /* The second half of the cards: part of the grid, or the right screen of a book (.fold-side). */
+    .sections > .fold-side {
+      display: contents;
+    }
+    :host-context(html[data-fold='book']) .sections > .fold-side {
+      display: grid;
+      gap: var(--space-5);
     }
     h2 {
       font-size: var(--step-2);

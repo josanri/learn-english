@@ -52,31 +52,33 @@ interface ExamCard {
         Pick an exam. Your answers are saved on this device, so you can stop and come back.
       </p>
 
-      <div class="summary">
-        <app-progress-summary [exams]="allExams()" />
-      </div>
-
-      @if (formats.length > 2) {
-        <div class="filter">
-          <app-segmented-control label="Exam format" [options]="formats" [(value)]="format" />
+      <div class="fold-side">
+        <div class="summary">
+          <app-progress-summary [exams]="allExams()" />
         </div>
-      }
 
-      @if (topics().length > 1) {
-        <div class="topics">
-          <label for="topic-filter">Topic</label>
-          <select id="topic-filter" [value]="topic()" (change)="onTopicChange($event)">
-            <option value="all" [selected]="topic() === 'all'">
-              <app-icon name="grid" [size]="16" />All topics ({{ allExams().length }})
-            </option>
-            @for (t of topics(); track t.id) {
-              <option [value]="t.id" [selected]="topic() === t.id">
-                <app-icon [name]="t.icon" [size]="16" />{{ t.name }} ({{ t.count }})
+        @if (formats.length > 2) {
+          <div class="filter">
+            <app-segmented-control label="Exam format" [options]="formats" [(value)]="format" />
+          </div>
+        }
+
+        @if (topics().length > 1) {
+          <div class="topics">
+            <label for="topic-filter">Topic</label>
+            <select id="topic-filter" [value]="topic()" (change)="onTopicChange($event)">
+              <option value="all" [selected]="topic() === 'all'">
+                <app-icon name="grid" [size]="16" />All topics ({{ allExams().length }})
               </option>
-            }
-          </select>
-        </div>
-      }
+              @for (t of topics(); track t.id) {
+                <option [value]="t.id" [selected]="topic() === t.id">
+                  <app-icon [name]="t.icon" [size]="16" />{{ t.name }} ({{ t.count }})
+                </option>
+              }
+            </select>
+          </div>
+        }
+      </div>
 
       @if (index.isLoading()) {
         <p role="status" class="muted">Loading exams&hellip;</p>
@@ -234,7 +236,7 @@ interface ExamCard {
     .group {
       margin-bottom: var(--space-8);
     }
-    .summary + .group {
+    .fold-side + .group {
       margin-top: var(--space-7);
     }
     .group .section-title {

@@ -1,12 +1,16 @@
 # Persistence
 
-One localStorage key, `learn-english:v1` (schemaVersion 3):
+One localStorage key, `learn-english:v1` (schemaVersion 4):
 
 ```
-{ schemaVersion, settings, progress: { [examId]: ExamProgress }, activity: string[], grammar: { verbs }, migrations }
+{ schemaVersion, settings, progress: { [examId]: ExamProgress }, activity: string[], grammar: { verbs }, practice, migrations }
 ```
 
 `LocalStorageService` is signal-based, debounces writes with an effect and reads with try/catch. To change the shape, bump `CURRENT_SCHEMA_VERSION` and add a step in `core/state-migrations.ts`.
+
+## Practice
+
+`practice: { cards: { [cardId]: CardState }, newPerDay, phrasal: { [verbId]: { right, wrong, lastSeen, streak } }, stories: { [storyId]: { finishedAt, correct, total } } }` (types in `models/practice.ts`, details in practice.md). Written through `LocalStorageService.saveCard / setNewCardsPerDay / resetCards / recordPhrasalResult / resetPhrasal / finishStory / resetStories`; answers add the day to `activity`. Version 3 documents get an empty record (`emptyPractice()`), and `sanitizePractice` drops broken entries (that card or verb simply starts again).
 
 ## ExamProgress
 

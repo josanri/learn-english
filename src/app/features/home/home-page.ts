@@ -62,22 +62,41 @@ interface SkillCard {
       <app-progress-summary [exams]="exams()" />
     </section>
 
-    <section class="container skills" aria-labelledby="skills-title">
-      <h2 id="skills-title" class="section-title">Practise every skill</h2>
-      <div class="grid">
-        @for (skill of skills; track skill.kind) {
-          <app-illustrated-card
-            [heading]="skill.title"
-            [tone]="skill.tone"
-            [rotate]="skill.tilt"
-            [link]="'/exams/b1'"
-          >
-            <app-skill-art art [kind]="skill.kind" />
-            <p>{{ skill.text }}</p>
-          </app-illustrated-card>
-        }
-      </div>
-    </section>
+    <div class="fold-side">
+      <section class="container skills" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="section-title">Practise every skill</h2>
+        <div class="grid">
+          @for (skill of skills; track skill.kind) {
+            <app-illustrated-card
+              [heading]="skill.title"
+              [tone]="skill.tone"
+              [rotate]="skill.tilt"
+              [link]="'/exams/b1'"
+            >
+              <app-skill-art art [kind]="skill.kind" />
+              <p>{{ skill.text }}</p>
+            </app-illustrated-card>
+          }
+        </div>
+      </section>
+
+      <section class="container skills" aria-labelledby="daily-title">
+        <h2 id="daily-title" class="section-title">Ten minutes a day</h2>
+        <div class="grid">
+          @for (item of daily; track item.link) {
+            <app-illustrated-card
+              [heading]="item.title"
+              [tone]="item.tone"
+              [rotate]="item.tilt"
+              [link]="item.link"
+            >
+              <app-skill-art art [kind]="item.kind" />
+              <p>{{ item.text }}</p>
+            </app-illustrated-card>
+          }
+        </div>
+      </section>
+    </div>
   `,
   styles: `
     .hero {
@@ -91,6 +110,10 @@ interface SkillCard {
       font-weight: 850;
       line-height: 0.92;
       letter-spacing: -0.055em;
+    }
+    /* Half-folded phone: the page is one screen wide, so the title scales with that screen. */
+    :host-context(html[data-fold='book']) h1 {
+      font-size: calc(var(--fold-seg-1) / 5.5);
     }
     .line {
       display: block;
@@ -193,6 +216,34 @@ export class HomePage {
       text: 'Pass on information between texts and people in clear English.',
       tone: 'coral',
       tilt: -1.25,
+    },
+  ];
+
+  /** Short daily practice outside the exams. */
+  protected readonly daily: (SkillCard & { link: string })[] = [
+    {
+      kind: 'vocabulary',
+      title: 'Flashcards',
+      text: 'Over 500 B1 words. Each one comes back just before you forget it.',
+      tone: 'cream',
+      tilt: 1.25,
+      link: '/vocabulary/flashcards',
+    },
+    {
+      kind: 'phrasal',
+      title: 'Phrasal verbs',
+      text: 'Give up, look after, run out of: a dozen a day, in three kinds of exercise.',
+      tone: 'green',
+      tilt: -1.5,
+      link: '/vocabulary/phrasal-verbs',
+    },
+    {
+      kind: 'reading',
+      title: 'Graded reader',
+      text: 'Short original stories with a tap-to-see glossary and a few questions.',
+      tone: 'blue',
+      tilt: 1,
+      link: '/reader',
     },
   ];
 

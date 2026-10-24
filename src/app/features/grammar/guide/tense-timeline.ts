@@ -114,6 +114,10 @@ import { NOW_X, TIMELINE_WIDTH, dotPositions, timelineMarks } from './timeline-s
     </section>
   `,
   styles: `
+    :host {
+      display: block;
+      container-type: inline-size;
+    }
     .timeline {
       margin-block: var(--space-6);
       padding: var(--space-5);
@@ -254,7 +258,8 @@ import { NOW_X, TIMELINE_WIDTH, dotPositions, timelineMarks } from './timeline-s
       flex: none;
     }
 
-    @media (min-width: 48rem) {
+    /* A container query, so a split screen keeps the one-column timeline on one screen. */
+    @container (min-width: 44rem) {
       .grid {
         grid-template-columns: 14.5rem minmax(14rem, 1fr) minmax(0, 1fr);
         align-items: center;

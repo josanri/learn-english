@@ -28,27 +28,29 @@ import { SpeakingResponse } from './speaking-response';
       }
     </fieldset>
 
-    @if (chosen(); as topic) {
-      <h3 class="step">2. Prepare (optional)</h3>
-      <app-prep-timer [seconds]="part().preparationSeconds" />
-      <h3 class="step">3. Give your talk</h3>
-      <app-speaking-response
-        [itemId]="talkId()"
-        [heading]="topic.prompt"
-        [hint]="'Speak for about ' + part().speakingSeconds + ' seconds.'"
-        [partType]="part().type"
-        [targetSeconds]="part().speakingSeconds"
-      />
-      <h3 class="step">4. Answer the follow-up questions</h3>
-      <app-question-sequence
-        [questions]="followUps()"
-        partType="discussion"
-        [targetSeconds]="30"
-        label="Follow-up questions"
-      />
-    } @else {
-      <p class="muted">Choose a topic to start.</p>
-    }
+    <div class="fold-panel">
+      @if (chosen(); as topic) {
+        <h3 class="step">2. Prepare (optional)</h3>
+        <app-prep-timer [seconds]="part().preparationSeconds" />
+        <h3 class="step">3. Give your talk</h3>
+        <app-speaking-response
+          [itemId]="talkId()"
+          [heading]="topic.prompt"
+          [hint]="'Speak for about ' + part().speakingSeconds + ' seconds.'"
+          [partType]="part().type"
+          [targetSeconds]="part().speakingSeconds"
+        />
+        <h3 class="step">4. Answer the follow-up questions</h3>
+        <app-question-sequence
+          [questions]="followUps()"
+          partType="discussion"
+          [targetSeconds]="30"
+          label="Follow-up questions"
+        />
+      } @else {
+        <p class="muted">Choose a topic to start.</p>
+      }
+    </div>
   `,
   styles: `
     .topics {

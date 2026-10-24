@@ -86,17 +86,47 @@ const CARD_STYLES = `
   input[aria-invalid='true'] {
     border-color: var(--danger);
   }
+  .meaning-row {
+    margin: calc(-1 * var(--space-2)) 0 var(--space-4);
+  }
+  .meaning {
+    margin: var(--space-2) 0 0;
+    padding: var(--space-2) var(--space-3);
+    border-left: 6px solid var(--border-muted);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+  }
 `;
 
 let nextId = 0;
 
-/** Shows the base form; the learner types the past simple and the past participle. */
+/**
+ * Shows the base form; the learner types the past simple and the past participle. "Show meaning"
+ * opens a short definition of the verb, for a learner who does not know it.
+ */
 @Component({
   selector: 'app-type-card',
   imports: [Button, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <p class="prompt">{{ verb().base }}</p>
+    <div class="meaning-row">
+      <button
+        appButton
+        type="button"
+        variant="ghost"
+        size="sm"
+        [attr.aria-expanded]="showMeaning()"
+        [attr.aria-controls]="id + '-meaning'"
+        (click)="showMeaning.set(!showMeaning())"
+      >
+        <app-icon name="book" [size]="16" />
+        {{ showMeaning() ? 'Hide meaning' : 'Show meaning' }}
+      </button>
+      <p class="meaning" [id]="id + '-meaning'" [hidden]="!showMeaning()">
+        {{ verb().meaning }}
+      </p>
+    </div>
     <form (submit)="submit($event)">
       <div class="fields">
         <div class="field">
@@ -160,6 +190,7 @@ export class TypeCard {
   protected readonly past = signal('');
   protected readonly participle = signal('');
   protected readonly checked = signal(false);
+  protected readonly showMeaning = signal(false);
   private readonly injector = inject(Injector);
   private readonly nextButton = viewChild('nextButton', { read: ElementRef<HTMLElement> });
   protected readonly pastRight = computed(() => isCorrectForm(this.verb(), 'past', this.past()));

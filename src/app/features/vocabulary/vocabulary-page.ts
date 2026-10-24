@@ -1,5 +1,6 @@
 import { httpResource } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import type { VocabularyFile } from '../../models/vocabulary';
 import { Badge, Button, EmptyState, Icon } from '../../shared/ui';
 import { dictionaryUrl, filterWords } from './vocabulary-engine';
@@ -22,7 +23,7 @@ const POS_OPTIONS = [
 /** `/vocabulary`: the B1 Preliminary word list with search and filters; each word links to the Cambridge Dictionary. */
 @Component({
   selector: 'app-vocabulary-page',
-  imports: [Badge, Button, EmptyState, Icon],
+  imports: [RouterLink, Badge, Button, EmptyState, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="container page">
@@ -32,6 +33,26 @@ const POS_OPTIONS = [
         The words a B1 learner needs, taken from the Cambridge B1 Preliminary vocabulary list. Open
         a word to see its meaning in the Cambridge Dictionary.
       </p>
+      <ul class="practise" aria-label="Practise words">
+        <li>
+          <a appButton variant="primary" routerLink="/vocabulary/flashcards">
+            <app-icon name="repeat" />
+            Flashcards
+          </a>
+        </li>
+        <li>
+          <a appButton routerLink="/vocabulary/phrasal-verbs">
+            <app-icon name="list" />
+            Phrasal verbs
+          </a>
+        </li>
+        <li>
+          <a appButton routerLink="/reader">
+            <app-icon name="book" />
+            Graded reader
+          </a>
+        </li>
+      </ul>
 
       @if (resource.isLoading()) {
         <p role="status" class="muted">Loading the word list&hellip;</p>
@@ -44,53 +65,59 @@ const POS_OPTIONS = [
           <button appButton type="button" (click)="resource.reload()">Try again</button>
         </app-empty-state>
       } @else if (data(); as file) {
-        <div class="filters">
-          <div class="field">
-            <label for="word-search">Search a word</label>
-            <input
-              id="word-search"
-              type="search"
-              autocomplete="off"
-              autocapitalize="none"
-              spellcheck="false"
-              [value]="query()"
-              (input)="setQuery($any($event.target).value)"
-            />
+        <div class="fold-side">
+          <div class="filters">
+            <div class="field">
+              <label for="word-search">Search a word</label>
+              <input
+                id="word-search"
+                type="search"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+                [value]="query()"
+                (input)="setQuery($any($event.target).value)"
+              />
+            </div>
+            <div class="field">
+              <label for="word-topic">Topic</label>
+              <select
+                id="word-topic"
+                [value]="topic()"
+                (change)="setTopic($any($event.target).value)"
+              >
+                <option value="all">All words</option>
+                @for (item of file.topics; track item.id) {
+                  <option [value]="item.id">{{ item.name }}</option>
+                }
+              </select>
+            </div>
+            <div class="field">
+              <label for="word-pos">Type of word</label>
+              <select id="word-pos" [value]="pos()" (change)="setPos($any($event.target).value)">
+                @for (option of posOptions; track option.value) {
+                  <option [value]="option.value">{{ option.label }}</option>
+                }
+              </select>
+            </div>
           </div>
-          <div class="field">
-            <label for="word-topic">Topic</label>
-            <select
-              id="word-topic"
-              [value]="topic()"
-              (change)="setTopic($any($event.target).value)"
-            >
-              <option value="all">All words</option>
-              @for (item of file.topics; track item.id) {
-                <option [value]="item.id">{{ item.name }}</option>
-              }
-            </select>
-          </div>
-          <div class="field">
-            <label for="word-pos">Type of word</label>
-            <select id="word-pos" [value]="pos()" (change)="setPos($any($event.target).value)">
-              @for (option of posOptions; track option.value) {
-                <option [value]="option.value">{{ option.label }}</option>
-              }
-            </select>
-          </div>
+
+          <nav class="letters" aria-label="First letter">
+            @for (item of letters; track item) {
+              <button
+                type="button"
+                [attr.aria-pressed]="letter() === item"
+                (click)="setLetter(item)"
+              >
+                {{ item === 'all' ? 'All' : item }}
+              </button>
+            }
+          </nav>
+
+          <p class="muted count" role="status">
+            {{ matches().length }} of {{ file.words.length }} words
+          </p>
         </div>
-
-        <nav class="letters" aria-label="First letter">
-          @for (item of letters; track item) {
-            <button type="button" [attr.aria-pressed]="letter() === item" (click)="setLetter(item)">
-              {{ item === 'all' ? 'All' : item }}
-            </button>
-          }
-        </nav>
-
-        <p class="muted count" role="status">
-          {{ matches().length }} of {{ file.words.length }} words
-        </p>
 
         @if (matches().length === 0) {
           <app-empty-state
@@ -145,6 +172,14 @@ const POS_OPTIONS = [
     </div>
   `,
   styles: `
+    .practise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin: var(--space-5) 0 var(--space-6);
+      padding: 0;
+      list-style: none;
+    }
     .filters {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));

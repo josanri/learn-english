@@ -19,7 +19,15 @@ export function checkIrregularVerbs(file) {
   const bases = new Set();
   for (const verb of verbs) {
     const where = `verb "${verb?.id ?? '?'}"`;
-    for (const field of ['id', 'base', 'past', 'participle', 'example', 'exampleParticiple']) {
+    for (const field of [
+      'id',
+      'base',
+      'past',
+      'participle',
+      'meaning',
+      'example',
+      'exampleParticiple',
+    ]) {
       if (!text(verb[field])) errors.push(`${where}: "${field}" is missing or empty.`);
     }
     if (ids.has(verb.id)) errors.push(`${where}: duplicate id.`);

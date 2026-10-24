@@ -29,6 +29,7 @@ jobs:
       - run: npm run test:scripts
       - run: npm run validate:exams
       - run: npm run validate:grammar
+      - run: npm run validate:practice
       # Builds with --base-href /<repository-name>/ and copies index.html to 404.html (clean URLs on Pages).
       - run: npm run build:pages -- "/${{ github.event.repository.name }}/"
       - uses: actions/upload-pages-artifact@v3

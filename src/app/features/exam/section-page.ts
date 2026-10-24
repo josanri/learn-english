@@ -88,7 +88,10 @@ import { SubmitReview } from './ui/submit-review';
           </nav>
 
           @if (store.part(); as part) {
-            <app-part-view [part]="part" />
+            <app-part-view
+              [part]="part"
+              [class.fold-panel]="store.skill() === 'reading' || store.skill() === 'listening'"
+            />
           }
 
           <div class="pager">
@@ -186,6 +189,15 @@ import { SubmitReview } from './ui/submit-review';
         justify-content: center;
         width: 100%;
       }
+    }
+    /* Half-folded phone held like a book: the page is one screen wide, so the tabs act as on a phone. */
+    :host-context(html[data-fold='book']) .parts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+    }
+    :host-context(html[data-fold='book']) .tab {
+      justify-content: center;
+      width: 100%;
     }
     .tab[aria-current='step'] {
       border-color: var(--border);

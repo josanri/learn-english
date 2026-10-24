@@ -29,24 +29,26 @@ import { SpeakingResponse } from './speaking-response';
         </li>
       }
     </ul>
-    <h3 class="step">1. Talk about each option</h3>
-    @for (image of part().images; track image.id; let i = $index) {
+    <div class="fold-panel">
+      <h3 class="step">1. Talk about each option</h3>
+      @for (image of part().images; track image.id; let i = $index) {
+        <app-speaking-response
+          [itemId]="image.id"
+          [heading]="'Option ' + letter(i) + ': ' + image.title"
+          hint="Say what it is, who it suits and one good and one bad point. About 20 seconds."
+          [partType]="part().type"
+          [targetSeconds]="30"
+        />
+      }
+      <h3 class="step">2. Make your choice</h3>
       <app-speaking-response
-        [itemId]="image.id"
-        [heading]="'Option ' + letter(i) + ': ' + image.title"
-        hint="Say what it is, who it suits and one good and one bad point. About 20 seconds."
+        [itemId]="decision()"
+        heading="Your decision"
+        hint="Say which option you would choose and give at least two reasons."
         [partType]="part().type"
-        [targetSeconds]="30"
+        [targetSeconds]="60"
       />
-    }
-    <h3 class="step">2. Make your choice</h3>
-    <app-speaking-response
-      [itemId]="decision()"
-      heading="Your decision"
-      hint="Say which option you would choose and give at least two reasons."
-      [partType]="part().type"
-      [targetSeconds]="60"
-    />
+    </div>
   `,
   styles: `
     .task {

@@ -121,6 +121,10 @@ interface Row {
     }
   `,
   styles: `
+    :host {
+      display: block;
+      container-type: inline-size;
+    }
     .filters {
       display: grid;
       gap: var(--space-4);
@@ -191,7 +195,8 @@ interface Row {
       background: var(--surface-2);
     }
 
-    @media (max-width: 47.99rem) {
+    /* Narrow: one card per verb. A container query, so it follows one screen of a split screen too. */
+    @container (max-width: 40rem) {
       table,
       tbody,
       tr,

@@ -88,6 +88,16 @@ export function formatClock(totalSeconds: number): string {
       display: block;
       border-bottom: var(--bw) solid var(--border-muted);
       background: var(--bg);
+      /* The compact rules below follow the width of the bar, not of the viewport (see the fold). */
+      container-type: inline-size;
+    }
+    /* Half-folded phone held like a book: the bar stays on the left screen, the questions use the right. */
+    :host-context(html[data-fold='book']) {
+      width: var(--fold-seg-1);
+    }
+    /* Held like a laptop: the site header scrolls away, so this bar sticks to the top of the screen. */
+    :host-context(html[data-fold='laptop']) {
+      top: env(safe-area-inset-top);
     }
     /* Very large text: a sticky bar this tall would hide the writing box, so it scrolls away. */
     :host-context(html[data-text-size='xlarge']) {
@@ -130,7 +140,7 @@ export function formatClock(totalSeconds: number): string {
     .timer.late {
       color: var(--danger);
     }
-    @media (max-width: 30rem) {
+    @container (max-width: 30rem) {
       .count {
         display: none;
       }
@@ -152,7 +162,7 @@ export function formatClock(totalSeconds: number): string {
       }
     }
     /* Small phones (iPhone SE): the exit button keeps only its arrow, the name stays in aria-label. */
-    @media (max-width: 22.5rem) {
+    @container (max-width: 22.5rem) {
       .exit {
         min-width: var(--target);
         padding: 0;

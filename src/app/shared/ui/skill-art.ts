@@ -1,7 +1,14 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 export type ArtKind =
-  'reading' | 'listening' | 'writing' | 'speaking' | 'mediation' | 'vocabulary' | 'verbs';
+  | 'reading'
+  | 'listening'
+  | 'writing'
+  | 'speaking'
+  | 'mediation'
+  | 'vocabulary'
+  | 'verbs'
+  | 'phrasal';
 
 /** Original flat illustrations for each skill, drawn with thick ink strokes. Decorative only. */
 @Component({
@@ -36,6 +43,17 @@ export type ArtKind =
           <text x="27" y="70">go</text>
           <text x="80" y="70">went</text>
           <text x="133" y="70">gone</text>
+        }
+        @case ('phrasal') {
+          <path d="M62 55C84 55 82 21 104 21M62 55h42M62 55C84 55 82 89 104 89" />
+          <rect class="paper" x="6" y="36" width="56" height="38" rx="7" />
+          <text x="34" y="60">get</text>
+          <rect class="mark" x="104" y="8" width="50" height="26" rx="6" />
+          <rect class="paper" x="104" y="42" width="50" height="26" rx="6" />
+          <rect class="paper" x="104" y="76" width="50" height="26" rx="6" />
+          <text x="129" y="26">up</text>
+          <text x="129" y="60">on</text>
+          <text x="129" y="94">over</text>
         }
         @case ('listening') {
           <path d="M34 70V58a46 46 0 0 1 92 0v12" />

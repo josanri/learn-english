@@ -3,6 +3,8 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
+  Injector,
+  afterNextRender,
   computed,
   effect,
   inject,
@@ -56,6 +58,10 @@ import { ExamSessionStore } from '../session/exam-session.store';
       font-size: var(--step-2);
       scroll-margin-top: calc(var(--header-height) + 8rem);
     }
+    /* Half-folded phone held like a laptop: the top screen is short, exam.css sets the whole offset. */
+    :host-context(html[data-fold='laptop']) h2 {
+      scroll-margin-top: var(--space-3);
+    }
     h2:focus {
       outline: none;
     }
@@ -86,6 +92,7 @@ export class PartView {
   readonly part = input.required<Part>();
   protected readonly store = inject(ExamSessionStore);
   private readonly heading = viewChild.required<ElementRef<HTMLElement>>('heading');
+  private readonly injector = inject(Injector);
 
   protected readonly headingId = computed(() => `heading-${this.part().id}`);
   /** A one-element list so that the renderer is recreated (fresh state) for every part. */
@@ -113,15 +120,22 @@ export class PartView {
 
   constructor() {
     let last: string | undefined;
+    let scrollPending = false;
     effect(() => {
       const id = this.part().id;
+      const ready = this.renderer.hasValue() && !this.renderer.isLoading();
       untracked(() => {
-        const changed = last !== undefined && last !== id;
-        last = id;
-        if (!changed) return;
         const el = this.heading().nativeElement;
-        el.focus({ preventScroll: true });
-        el.scrollIntoView({ block: 'start' });
+        if (last !== undefined && last !== id) {
+          el.focus({ preventScroll: true });
+          scrollPending = true;
+        }
+        last = id;
+        if (!scrollPending || !ready) return;
+        scrollPending = false;
+        // Scroll once the renderer is in the page: on a folded phone a part with a passage only then
+        // leaves the fold panel, so an earlier scroll would move the panel instead of the page.
+        afterNextRender(() => el.scrollIntoView({ block: 'start' }), { injector: this.injector });
       });
     });
   }

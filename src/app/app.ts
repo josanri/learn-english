@@ -90,6 +90,10 @@ const THEME_NAME: Record<ThemePreference, string> = {
       border-bottom: var(--bw) solid var(--border);
       background: var(--bg);
     }
+    /* Half-folded phone held like a laptop: the top screen is short, so this header scrolls away. */
+    :host-context(html[data-fold='laptop']) .site-header {
+      position: static;
+    }
     .bar {
       display: flex;
       align-items: center;
@@ -203,8 +207,47 @@ const THEME_NAME: Record<ThemePreference, string> = {
         text-align: center;
       }
       .site-footer {
-        padding-bottom: calc(var(--bottom-nav-height) + var(--space-5) + env(safe-area-inset-bottom));
+        padding-bottom: calc(
+          var(--bottom-nav-height) + var(--space-5) + env(safe-area-inset-bottom)
+        );
       }
+    }
+
+    /*
+     * Split screen held like a book (half-folded phone, or Surface Duo with its hinge): the brand and
+     * the theme button stay on the left screen, the links sit at the top of the right screen, above
+     * its panel, in the compact phone style. Nothing crosses the fold, whatever the viewport width.
+     */
+    :host-context(html[data-fold='book']) .theme-toggle {
+      margin-inline-start: auto;
+    }
+    :host-context(html[data-fold='book']) nav {
+      position: fixed;
+      inset: env(safe-area-inset-top) 0 auto auto;
+      z-index: 50;
+      box-sizing: border-box;
+      width: var(--fold-seg-2);
+      min-height: var(--header-height);
+      justify-content: space-around;
+      gap: 0;
+      margin: 0;
+      padding: var(--space-1) var(--space-2);
+      border: 0;
+      background: var(--bg);
+    }
+    :host-context(html[data-fold='book']) nav a {
+      flex: 1 1 0;
+      min-width: 0;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+      min-height: 3.25rem;
+      padding: 0 var(--space-1);
+      font-size: 0.75rem;
+      text-align: center;
+    }
+    :host-context(html[data-fold='book']) nav app-icon {
+      display: inline-flex;
     }
   `,
 })

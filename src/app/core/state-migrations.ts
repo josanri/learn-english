@@ -1,6 +1,13 @@
 import type { Skill } from '../models/exam';
 import type { GrammarProgress } from '../models/grammar';
 import type {
+  CardState,
+  CardStatus,
+  PhrasalProgress,
+  PracticeState,
+  StoryProgress,
+} from '../models/practice';
+import type {
   ExamProgress,
   ObjectiveResult,
   PersistedState,
@@ -13,7 +20,7 @@ export const STORAGE_KEY = 'learn-english:v1';
 /** localStorage key written by the React version ("Northstar B1"). Kept untouched after migration. */
 export const LEGACY_STORAGE_KEY = 'northstar-practice-v3';
 /** Version of the `PersistedState` document. Bump it and add a step to `STEPS` to change the shape. */
-export const CURRENT_SCHEMA_VERSION = 3;
+export const CURRENT_SCHEMA_VERSION = 4;
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
@@ -71,7 +78,73 @@ export function emptyState(): PersistedState {
     progress: {},
     activity: [],
     grammar: emptyGrammar(),
+    practice: emptyPractice(),
     migrations: {},
+  };
+}
+
+/** New flashcards per day when the learner has not chosen a number. */
+export const DEFAULT_NEW_CARDS_PER_DAY = 10;
+
+export function emptyPractice(): PracticeState {
+  return { cards: {}, newPerDay: DEFAULT_NEW_CARDS_PER_DAY, phrasal: {}, stories: {} };
+}
+
+const CARD_STATUSES: readonly CardStatus[] = ['learning', 'review', 'relearning'];
+
+/** Keeps only well-formed practice records; anything broken is dropped (that card simply starts again). */
+export function sanitizePractice(raw: unknown): PracticeState {
+  const r = isRecord(raw) ? raw : {};
+  const num = (v: unknown, fallback = 0) =>
+    typeof v === 'number' && Number.isFinite(v) && v >= 0 ? v : fallback;
+  const int = (v: unknown) => Math.floor(num(v));
+  const str = (v: unknown) => (typeof v === 'string' ? v : '');
+  const validTime = (v: unknown) => typeof v === 'string' && !Number.isNaN(Date.parse(v));
+
+  const cards: Record<string, CardState> = {};
+  for (const [id, value] of Object.entries(isRecord(r['cards']) ? r['cards'] : {})) {
+    if (!isRecord(value) || !CARD_STATUSES.includes(value['status'] as CardStatus)) continue;
+    if (!validTime(value['due'])) continue;
+    cards[id] = {
+      status: value['status'] as CardStatus,
+      step: int(value['step']),
+      ease: Math.max(1.3, num(value['ease'], 2.5)),
+      interval: num(value['interval']),
+      due: value['due'] as string,
+      reps: int(value['reps']),
+      lapses: int(value['lapses']),
+      last: validTime(value['last']) ? (value['last'] as string) : (value['due'] as string),
+      added: str(value['added']),
+    };
+  }
+
+  const phrasal: Record<string, PhrasalProgress> = {};
+  for (const [id, value] of Object.entries(isRecord(r['phrasal']) ? r['phrasal'] : {})) {
+    if (!isRecord(value)) continue;
+    phrasal[id] = {
+      right: int(value['right']),
+      wrong: int(value['wrong']),
+      lastSeen: str(value['lastSeen']),
+      streak: int(value['streak']),
+    };
+  }
+
+  const stories: Record<string, StoryProgress> = {};
+  for (const [id, value] of Object.entries(isRecord(r['stories']) ? r['stories'] : {})) {
+    if (!isRecord(value) || !validTime(value['finishedAt'])) continue;
+    stories[id] = {
+      finishedAt: value['finishedAt'] as string,
+      correct: int(value['correct']),
+      total: int(value['total']),
+    };
+  }
+
+  const perDay = int(r['newPerDay']);
+  return {
+    cards,
+    newPerDay: perDay >= 1 && perDay <= 100 ? perDay : DEFAULT_NEW_CARDS_PER_DAY,
+    phrasal,
+    stories,
   };
 }
 
@@ -116,6 +189,8 @@ const STEPS: Record<number, (state: Record<string, unknown>) => Record<string, u
   },
   // v2 -> v3: practice record of the irregular verbs.
   2: (state) => ({ ...state, grammar: emptyGrammar() }),
+  // v3 -> v4: flashcards, phrasal verbs and graded reader.
+  3: (state) => ({ ...state, practice: emptyPractice() }),
 };
 
 /** Local calendar day as `YYYY-MM-DD`, or null for an invalid date. */
@@ -152,6 +227,7 @@ export function migrateState(raw: unknown): PersistedState {
     progress: sanitizeProgress(progress),
     activity,
     grammar: sanitizeGrammar(current['grammar']),
+    practice: sanitizePractice(current['practice']),
     migrations: migrations as PersistedState['migrations'],
   };
 }

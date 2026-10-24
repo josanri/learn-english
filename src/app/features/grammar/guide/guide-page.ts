@@ -38,7 +38,7 @@ import { TenseTimeline } from './tense-timeline';
           <app-tense-timeline [rows]="rows" (go)="go($event)" />
         }
         <div class="layout">
-          <nav class="contents" aria-label="Contents">
+          <nav class="contents fold-side" aria-label="Contents">
             <ol>
               @for (section of sections(); track section.id) {
                 <li>
@@ -344,6 +344,18 @@ import { TenseTimeline } from './tense-timeline';
         width: 100%;
         text-align: start;
       }
+    }
+    /* Split screen held like a book: the contents fill the right screen as a list (.fold-side). */
+    :host-context(html[data-fold='book']) .layout {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    :host-context(html[data-fold='book']) .contents ol {
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+    :host-context(html[data-fold='book']) .contents button {
+      width: 100%;
+      text-align: start;
     }
   `,
 })
