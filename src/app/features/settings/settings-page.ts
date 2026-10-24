@@ -1,7 +1,9 @@
 import { DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { NEW_ISSUE_URL } from '../../core/app-links';
 import { InstallService } from '../../core/install.service';
+import { PersistentStorageService } from '../../core/persistent-storage.service';
 import { SettingsService } from '../../core/settings.service';
 import { SpeechService } from '../../core/speech.service';
 import type { Settings } from '../../models/storage';
@@ -263,6 +265,20 @@ const LANGUAGES: SegmentOption[] = [
               Progress, answers and settings live in this browser. Export a copy to keep a backup or
               to move to another device. Voice recordings are not included in the export.
             </p>
+            <p class="muted" data-testid="persistence">
+              @switch (persistence.status()) {
+                @case ('granted') {
+                  This browser keeps your data until you delete it.
+                }
+                @case ('best-effort') {
+                  This browser can delete your data when the device needs space or after some weeks
+                  without a visit. Export a copy from time to time.
+                }
+                @case ('unsupported') {
+                  This browser does not say if it keeps your data. Export a copy from time to time.
+                }
+              }
+            </p>
             <div class="buttons">
               <button appButton type="button" (click)="exportProgress()">
                 <app-icon name="download" [size]="18" />
@@ -285,6 +301,19 @@ const LANGUAGES: SegmentOption[] = [
                 <app-icon name="trash" [size]="18" />
                 Delete everything
               </button>
+            </div>
+          </app-card>
+          <app-card>
+            <h2>Help and feedback</h2>
+            <p class="muted">
+              Did you find a wrong answer, a typo or a bug? Do you have an idea? Tell us on GitHub.
+              You need a free GitHub account. The app sends nothing by itself.
+            </p>
+            <div class="buttons">
+              <a appButton [href]="newIssueUrl" target="_blank" rel="noreferrer noopener">
+                <app-icon name="github" [size]="18" />
+                Report a problem or suggest an idea
+              </a>
             </div>
           </app-card>
           <app-card>
@@ -417,6 +446,8 @@ export class SettingsPage {
   private readonly toast = inject(ToastService);
   protected readonly speech = inject(SpeechService);
   protected readonly install = inject(InstallService);
+  protected readonly persistence = inject(PersistentStorageService);
+  protected readonly newIssueUrl = NEW_ISSUE_URL;
 
   protected readonly settings = this.service.settings;
   protected readonly voices = this.speech.englishVoices;

@@ -1,6 +1,9 @@
-import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { NEW_ISSUE_URL } from './core/app-links';
+import { PersistentStorageService } from './core/persistent-storage.service';
 import { SettingsService } from './core/settings.service';
+import { LocalStorageService } from './core/storage.service';
 import type { ThemePreference } from './models/storage';
 import { Icon, LogoMark, SkipLink, ToastHost, type IconName } from './shared/ui';
 
@@ -74,6 +77,10 @@ const THEME_NAME: Record<ThemePreference, string> = {
       <p>
         Original practice material. Results are for practice only and are not an official score.
         <a routerLink="/credits">Image credits</a>
+        ·
+        <a [href]="newIssueUrl" target="_blank" rel="noreferrer noopener">
+          Report a problem or suggest an idea (GitHub)
+        </a>
       </p>
     </footer>
     <app-toast-host />
@@ -250,6 +257,20 @@ const THEME_NAME: Record<ThemePreference, string> = {
 })
 export class App {
   private readonly settings = inject(SettingsService);
+
+  private readonly storage = inject(LocalStorageService);
+  private readonly persistence = inject(PersistentStorageService);
+
+  protected readonly newIssueUrl = NEW_ISSUE_URL;
+
+  constructor() {
+    // Once the learner has saved some work, ask the browser not to delete it.
+    effect(() => {
+      if (this.storage.activity().length > 0 && this.persistence.status() === 'best-effort') {
+        void this.persistence.request();
+      }
+    });
+  }
 
   protected readonly themeIcon = computed(() => THEME_ICON[this.settings.settings().theme]);
   protected readonly themeLabel = computed(() => {

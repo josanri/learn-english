@@ -1,0 +1,15 @@
+name: Idea or request
+description: A new exercise, a new feature or a change that would help you learn.
+title: '[Idea] '
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How would it help you?

@@ -1,0 +1,36 @@
+name: Mistake in an exam or exercise
+description: A wrong answer key, a confusing question, a typo or a problem with a picture or a recording.
+title: '[Content] '
+labels: [content]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for your help. Please tell us where the problem is so that we can find it quickly.
+  - type: input
+    id: location
+    attributes:
+      label: Where is the problem?
+      description: Copy the address of the page, or write the exam, section and question number.
+      placeholder: 'https://.../exams/b1/cambridge-pet/cambridge-pet-07/reading, Part 6, question 4'
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - The answer key is wrong
+        - More than one answer is correct
+        - The question or the text is not clear
+        - Typo or grammar mistake
+        - Picture or recording problem
+        - The level is too difficult or too easy
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What is wrong, and what do you think is correct?
+    validations:
+      required: true

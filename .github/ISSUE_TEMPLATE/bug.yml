@@ -1,0 +1,28 @@
+name: Something does not work
+description: A page shows an error, a button does nothing, or the app looks broken.
+title: '[Bug] '
+labels: [bug]
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      description: Write the steps, one on each line.
+      placeholder: |
+        1. Open Settings
+        2. Click Import progress
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: Android 15, Chrome 141 (installed app)
+    validations:
+      required: true
