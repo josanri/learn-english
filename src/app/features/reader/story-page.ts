@@ -89,16 +89,25 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
                       >
                         {{ part.text }}
                       </button>
-                      @if (open() === p + '-' + i) {
-                        <span class="note" role="note" [id]="'gloss-' + p + '-' + i">
-                          {{ meaning(s, part) }}
-                        </span>
-                      }
                     } @else {
                       {{ part.text }}
                     }
                   }
                 </p>
+                @if (openGloss(s, p, paragraph); as gloss) {
+                  <p class="note" role="note" [id]="'gloss-' + gloss.id">
+                    <strong>{{ gloss.word }}</strong>
+                    {{ gloss.meaning }}
+                    <button
+                      type="button"
+                      class="note-close"
+                      aria-label="Close the meaning"
+                      (click)="open.set(null)"
+                    >
+                      <app-icon name="close" [size]="16" />
+                    </button>
+                  </p>
+                }
               }
             </div>
 
@@ -247,16 +256,43 @@ import { parseParagraph, plainParagraph, readingMinutes, type StoryPart } from '
       outline: 3px solid var(--focus-ring);
       outline-offset: 2px;
     }
-    .note {
-      display: inline;
-      margin-inline: var(--space-1);
-      padding: 0.05em var(--space-2);
+    /* The meaning opens as its own block under the paragraph, so it never splits across lines. */
+    .text p.note {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+      margin: calc(-1 * var(--space-2)) 0 var(--space-4);
+      padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3);
       border: var(--bw) solid var(--paper-ink);
+      border-left-width: 6px;
       border-radius: var(--radius-sm);
       background: var(--paper-white);
       color: var(--paper-ink);
       font-size: var(--step-0);
-      font-style: italic;
+      line-height: 1.5;
+    }
+    .note strong {
+      font-style: normal;
+    }
+    .note-close {
+      display: grid;
+      flex: none;
+      place-items: center;
+      width: var(--target);
+      height: var(--target);
+      margin: calc(-1 * var(--space-1)) 0 calc(-1 * var(--space-1)) auto;
+      border: 0;
+      border-radius: var(--radius-sm);
+      background: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    .note-close:hover {
+      background: var(--paper-blue);
+    }
+    .note-close:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 2px;
     }
     .words {
       margin-top: var(--space-6);
@@ -467,8 +503,17 @@ export class StoryPage {
     inject(DestroyRef).onDestroy(() => this.stop());
   }
 
-  protected meaning(story: Story, part: StoryPart): string {
-    return part.kind === 'gloss' ? (story.glossary[part.key]?.meaning ?? '') : '';
+  /** The open word of paragraph `p` with its meaning, or null when none of its words is open. */
+  protected openGloss(
+    story: Story,
+    p: number,
+    paragraph: StoryPart[],
+  ): { id: string; word: string; meaning: string } | null {
+    const id = this.open();
+    if (!id?.startsWith(`${p}-`)) return null;
+    const part = paragraph[Number(id.slice(`${p}-`.length))];
+    if (part?.kind !== 'gloss') return null;
+    return { id, word: part.text, meaning: story.glossary[part.key]?.meaning ?? '' };
   }
 
   protected toggle(id: string): void {
