@@ -2,7 +2,7 @@
 // (person or AI agent) never has to read a whole 60 KB exam to do one step.
 //
 //   node scripts/exam-tools.mjs brief <board> [--names]             what the board needs and what is already used
-//   node scripts/exam-tools.mjs split <examId>              exam -> work/<examId>/header.json + one file per skill
+//   node scripts/exam-tools.mjs split <examId>              exam -> work/<examId>/header.json + one file per skill (no cloze tags)
 //   node scripts/exam-tools.mjs build <examId>              work/<examId>/* -> the exam JSON (then validate it)
 //   node scripts/exam-tools.mjs sheet <examId> [skill]      the exam without keys, minified (for a blind solve)
 //   node scripts/exam-tools.mjs rebalance <examId>           spread the multiple-choice keys over A, B, C (D) in work/<examId>
@@ -130,9 +130,14 @@ function split(examId) {
     JSON.stringify({ ...header, sectionOrder: sections.map((s) => s.skill) }, null, 2) + '\n',
   );
   for (const section of sections) {
+    // Cloze tags belong to the items as they are now; after a rewrite they would be wrong, so they
+    // are dropped here and written again by `npm run exams:tag-cloze` after `build`.
+    for (const part of section.parts)
+      for (const item of [...(part.questions ?? []), ...(part.gaps ?? [])]) delete item.tags;
     writeFileSync(join(dir, `${section.skill}.json`), JSON.stringify(section, null, 2) + '\n');
   }
   console.log(`Wrote ${sections.length + 1} files to work/${examId}/`);
+  console.log('After build, run npm run exams:tag-cloze to add the grammar tags again.');
 }
 
 function build(examId) {

@@ -11,9 +11,10 @@ Short version:
 
 1. `node scripts/exam-tools.mjs brief cambridge-pet` (paper shape and used themes).
 2. `split cambridge-pet-01`, then write the new exam as one file per skill in `work/<id>/`, then `build <id>`.
-3. `npm run exams:index`, `npm run validate:exams -- <file>`; fix errors, then warnings.
-4. Photos: `node scripts/fetch-image.mjs search ...` (one contact sheet), then fetch the chosen file with `--alt` and `--hints`.
-5. Blind solve with `sheet` and `grade`; change every item that disagrees.
-6. `npm run lint`, `npm test`, `npm run build`.
+3. `npm run exams:tag-cloze -- --check`, then without `--check` (grammar tags on the cloze items), `npm run exams:index`, `npm run validate:exams -- <file>`; fix errors, then warnings.
+4. `npm run exams:difficulty`; if the exam is an outlier in `docs/reports/exam-difficulty.md`, simplify its texts.
+5. Photos: `node scripts/fetch-image.mjs search ...` (one contact sheet), then fetch the chosen file with `--alt` and `--hints`.
+6. Blind solve with `sheet` and `grade`; change every item that disagrees.
+7. `npm run lint`, `npm test`, `npm run build`.
 
 Never copy official papers. Only Cambridge B1 Preliminary is offered in the UI.

@@ -8,6 +8,7 @@
 - Timer: `elapsed`, `remaining`, `timerNotice`, `paused`. `togglePause()` stops the clock only; answers stay editable. The pause is not saved (a reload resumes the clock). The header shows a pause / play icon button (accessible name "Pause timer" / "Resume timer") next to the clock when `showTimer` is on.
 - `locked` (section submitted = read-only), `feedback(itemId)` (null until revealed: section submitted, or part checked in practice mode; never before submit when `examMode`).
 - Writers: `setAnswer`, `toggleFlag`, `goToPart`, `checkPart`, `addListen`, `submitSection`, `retry`.
+- `submitSection` saves the result with its `breakdown` and puts the wrong items into "My mistakes" (`engine/insights.ts` `analyseSection`).
 
 All state lives in `LocalStorageService`; the store only computes over it.
 
@@ -17,7 +18,9 @@ Reading, Listening, Speaking and Writing use `SectionPage` (navigator only when 
 
 ## Scoring
 
-Pure code in `engine/scoring.ts`: every part is reduced to `ScoreItem`s (`choice` stores the option index, `text` stores a string compared with `normalizeAnswer`; `choices` maps letters or true/false to labels). `engine/report.ts` builds per-part reports for any answers (current or archived attempt). Gap markers in passages are parsed by `engine/passage.ts`.
+Pure code in `engine/scoring.ts` (`ScoreItem.tags` carries the grammar tags of cloze items): every part is reduced to `ScoreItem`s (`choice` stores the option index, `text` stores a string compared with `normalizeAnswer`; `choices` maps letters or true/false to labels). `engine/report.ts` builds per-part reports for any answers (current or archived attempt). Gap markers in passages are parsed by `engine/passage.ts`.
+
+`engine/insights.ts`: `analyseSection(section, answers)` returns the breakdown by part type and grammar tag and the ids of the wrong answers; `locateItem(exam, itemId)` finds an item with its section, part and number. The results page shows the breakdown of the attempt with `WeakAreasList` (`features/progress`).
 
 Cambridge scale: deliberately not estimated (conversion tables are unpublished and these papers are original). Results show percentage, a neutral practice band and an explanation.
 

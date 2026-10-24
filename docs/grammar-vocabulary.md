@@ -38,7 +38,9 @@ Progress: `PersistedState.grammar.verbs[verbId] = { right, wrong, lastSeen, know
 
 ## Vocabulary list (`/vocabulary/b1`)
 
-`assets/vocabulary/b1-preliminary.json` holds the whole Cambridge B1 Preliminary and Preliminary for Schools Vocabulary List (August 2025): about 2,775 headwords.
+`assets/vocabulary/b1-preliminary.json` holds the Cambridge B1 Preliminary and Preliminary for Schools Vocabulary List (August 2025): about 2,775 headwords.
+
+Known gap: the import lost some headwords of the official list. For example there is no word that starts with "al" (already, also, always) and no "week", "children", "open", "different" or "happy". The difficulty report (`docs/reports/exam-difficulty.md`) lists the common words that are missing. Check the import against the PDF before you use the file as a complete list.
 
 ```
 { source: { title, publisher, url }, topics: [{ id, name }], words: [{ w, p?, r?, t?, e? }] }

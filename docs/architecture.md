@@ -4,10 +4,10 @@
 
 ```
 src/app/
-  core/       storage (one localStorage document + migrations), settings, theme, install, speech (TTS), audio-db (IndexedDB), writing checker
+  core/       storage (one localStorage document + migrations), persistent storage, settings, theme, install, speech (TTS), audio-db (IndexedDB), writing checker, stats (progress and weak areas), mistakes (queue keys), app-links (GitHub URLs)
   data/       exam catalogue and grammar catalogue services (lazy JSON loading), exam topic groups (name and icon)
-  models/     exam.ts (schema v2, source of truth), grammar.ts, vocabulary.ts, storage.ts (persisted state)
-  features/   home, level (/exams/b1), progress, exam, grammar, vocabulary, flashcards, phrasal-verbs, reader, settings, credits
+  models/     exam.ts (schema v2, source of truth), grammar-tags.ts and part-labels.ts (names for the weak areas), grammar.ts, vocabulary.ts, practice.ts, storage.ts (persisted state)
+  features/   home, level (/exams/b1), progress (summary, weak areas, InsightsService), exam, mistakes, grammar, vocabulary, flashcards, phrasal-verbs, reader, settings, credits
   shared/ui/  design-system components (import from 'shared/ui')
 src/assets/
   exams/<level>/<board>/<id>.json   exam data; <level>/index.json is generated
@@ -21,7 +21,9 @@ scripts/      validators, generators and authoring tools (see authoring-exams.md
 
 ## Routes
 
-`/`, `/exams` (redirects to `/exams/b1`), `/exams/b1`, `/exams/b1/:board/:examId/(reading|writing|listening|speaking|mediation|results)`, `/grammar`, `/grammar/irregular-verbs`, `/grammar/:guide`, `/vocabulary` (redirects to `/vocabulary/b1`), `/vocabulary/b1`, `/vocabulary/flashcards`, `/vocabulary/phrasal-verbs`, `/reader`, `/reader/:story`, `/settings`, `/credits`.
+`/`, `/exams` (redirects to `/exams/b1`), `/exams/b1`, `/exams/b1/:board/:examId/(reading|writing|listening|speaking|mediation|results)`, `/grammar`, `/grammar/irregular-verbs`, `/grammar/:guide`, `/vocabulary` (redirects to `/vocabulary/b1`), `/vocabulary/b1`, `/vocabulary/flashcards`, `/vocabulary/phrasal-verbs`, `/reader`, `/reader/:story`, `/practice/mistakes`, `/settings`, `/credits`.
+
+A section route takes `?part=<partId>` to open that part once (links from "My mistakes"); the page then removes the parameter from the address.
 
 Routes are lazy (`loadComponent`). `withComponentInputBinding()` and `paramsInheritanceStrategy: 'always'` pass route params and route data to child components as `input()`s (for example `guide` in `GuidePage`).
 

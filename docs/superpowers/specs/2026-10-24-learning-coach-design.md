@@ -26,7 +26,7 @@ report a problem on GitHub. The README describes the current app.
 - `ObjectiveResult.breakdown?: { parts: Record<partType, Tally>, tags: Record<GrammarTag, Tally> }`,
   `Tally = { correct, total }`.
 - `engine/insights.ts` (pure): `analyseSection(section, answers)` returns `{ breakdown, wrong }`
-  (`wrong` = item ids answered incorrectly or not answered).
+  (`wrong` = item ids answered incorrectly; empty answers count in the tallies only).
 - `submitSection` saves the breakdown with the result and adds the wrong items to the mistakes.
 - `InsightsService.backfill(exams)` loads only the exams that have a result without a breakdown,
   fills in the breakdown (current attempt) and adds the wrong items. It runs from the progress
@@ -58,7 +58,7 @@ report a problem on GitHub. The README describes the current app.
 
 ## 6. Phrasal verbs
 
-- About 80 new original verbs (176 to about 255). Two new groups: `home-food` (Home and food) and
+- 74 new original verbs (176 to 250). Two new groups: `home-food` (Home and food) and
   `feelings` (Feelings and opinions). The small groups (`health`, `money-shopping`) grow to at least 20.
 - Wrong answers go to the mistakes queue (section 4).
 

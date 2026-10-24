@@ -5,7 +5,7 @@ Three short activities for every day, outside the exams. All content is original
 | Route                       | Page                                              | Content file                                                               |
 | --------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------- |
 | `/vocabulary/flashcards`    | `features/flashcards/flashcards-page.ts`          | `assets/vocabulary/flashcards.json` (about 520 cards)                      |
-| `/vocabulary/phrasal-verbs` | `features/phrasal-verbs/phrasal-verbs-page.ts`    | `assets/vocabulary/phrasal-verbs.json` (about 180)                         |
+| `/vocabulary/phrasal-verbs` | `features/phrasal-verbs/phrasal-verbs-page.ts`    | `assets/vocabulary/phrasal-verbs.json` (250 in 10 groups)                  |
 | `/reader`, `/reader/:story` | `features/reader/reader-page.ts`, `story-page.ts` | `assets/reader/index.json`, `assets/reader/stories/<id>.json` (40 stories) |
 
 Files are loaded with `httpResource` through `PracticeCatalogueService`. Home, `/vocabulary/b1` and `/grammar` link to the three pages.
@@ -38,7 +38,7 @@ Engine: `features/phrasal-verbs/phrasal-engine.ts`.
 - Exercises: **Meaning** (verb → meaning), **Complete the sentence** (gap → base form) and **Missing particle** (the verb stays, the particles are blanked). Mixed sessions rotate the three.
 - `choicesFor` builds four options. Wrong options never include another sense of the same verb or a `similar` entry. In the particle exercise, a particle that would make another real phrasal verb with the same head (`turn on` → not `off`) is never offered.
 - Sessions have 12 verbs picked by weight (`phrasalWeight`): new and missed verbs more often, learnt verbs (three right in a row) less.
-- Saved per verb: `PhrasalProgress { right, wrong, lastSeen, streak }`.
+- Saved per verb: `PhrasalProgress { right, wrong, lastSeen, streak }`. A wrong answer also puts the verb into "My mistakes".
 
 ## Graded reader
 
@@ -48,6 +48,15 @@ Engine: `features/phrasal-verbs/phrasal-engine.ts`.
 - "Listen to the story" reads the title and paragraphs with `SpeechService.speakText` and highlights the paragraph being read.
 - Questions are multiple choice (three or four options, one `answer`, an `explanation`). When all are answered, `finishStory` saves `{ finishedAt, correct, total }` and the page offers the next unread story.
 - `storyOfTheDay` picks the first unread story from a starting point that moves every day.
+
+## My mistakes (`/practice/mistakes`)
+
+`features/mistakes/`: `mistake-queue.ts` (pure: due, counts, grading), `mistake-card.ts` (pure: the card of an exam item), `mistakes-page.ts`.
+
+- In: wrong answers of a submitted Reading or Listening section (empty answers count only in the score), wrong answers in the phrasal verb trainer, and the backfill of results saved before schema version 5.
+- Schedule: `srs.schedule`; a right answer counts as Good and a wrong one as Again. An item whose interval reaches 21 days (`MATURE_INTERVAL`) is fixed and leaves the queue. Due items come oldest first; items of one submit are mixed by a stable hash of the id.
+- Cards: multiple-choice cloze and open cloze show the sentence of the gap with the other gaps filled in (`gapContext`); notices show the notice. The learner answers and the app marks it. Other items show the question (matching: what the person wants) and "Open this part" (`?part=`); the learner then says if they got it right. Phrasal verbs ask for the meaning.
+- A session has up to 15 items. An item whose exam or verb no longer exists is removed.
 
 ## Adding content
 

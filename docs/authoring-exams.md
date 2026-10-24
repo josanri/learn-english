@@ -30,7 +30,7 @@ Rules for agents that keep the cache useful:
 
 ```
 brief <board> [--names]      paper shape, themes already used, key-letter totals
-split <examId>               exam -> work/<examId>/header.json + <skill>.json
+split <examId>               exam -> work/<examId>/header.json + <skill>.json (cloze tags removed; run exams:tag-cloze after build)
 build <examId>               work/<examId>/* -> src/assets/exams/<level>/<board>/<examId>.json
 rebalance <examId>           spread the multiple-choice keys over A, B, C (and D) in work/<examId>
 longkeys <examId>            list multiple-choice items whose key is the longest option
@@ -80,7 +80,7 @@ grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only
 
 ## Quality rules (the validator checks them)
 
-Errors (fail CI): unique ids; valid answer indexes; an `explanation` on every question, gap and statement (one or two sentences that quote or point at the text or script, never "option A"); open cloze answers of one word; note completion answers present in the script; distinct matching keys; speakers that are single people with turns for each person; images with file, alt, 3 to 5 `describeHints`, full credit and a whitelisted licence; no text copied between exams.
+Errors (fail CI): unique ids; valid answer indexes; an `explanation` on every question, gap and statement (one or two sentences that quote or point at the text or script, never "option A"); open cloze answers of one word; a known grammar tag (`tags`, see `GrammarTag` in `models/exam.ts`) on every open cloze gap and multiple-choice cloze question; note completion answers present in the script; distinct matching keys; speakers that are single people with turns for each person; images with file, alt, 3 to 5 `describeHints`, full credit and a whitelisted licence; no text copied between exams.
 
 Warnings (fix them unless there is a reason): one key letter above 45% or four equal keys in a row; the key is the longest option in half of the questions; a keyword of the question appears only in the key; the listening key is not found in the script; voices without gender or without accent variety (en-GB, en-US, en-AU, en-IE); names or themes repeated in other exams; vocabulary above B1 (heuristic).
 
@@ -95,6 +95,12 @@ Rules that the machine cannot check:
 - Listening: each recording lists `speakers` (id, name, `voice.lang`, `voice.gender`) and `turns`. Each person has their own speaker with a different voice. Scripts sound spoken (contractions, short turns). A note-completion prompt must not show its answer.
 - Speaking photo prompts describe what the photo really shows.
 - Writing: audience, purpose, `notes`, `contentPoints` (2 or more lower-case keywords each), approximate length; stories need an exact `openingSentence`.
+
+## Grammar tags and difficulty
+
+- Every cloze item has `tags` with the grammar point it tests. The builders (`cloze`, `openCloze`) add the tag that `scripts/lib/cloze-tags.mjs` suggests; pass a fifth array element (`[options, answer, explanation, ['collocations']]`) to choose it yourself. For an exam written by hand, run `npm run exams:tag-cloze -- --check`, read the items where the rules are not sure, add the wrong ones to `OVERRIDES` in `scripts/tag-cloze.mjs`, then run it without `--check`. Existing tags are never replaced (only with `--force`).
+- Pick the most specific tag: `relative-clauses` before `linking-words`, `phrasal-verbs` before `prepositions`. Use `word-choice` for a choice between content words with different meanings and `collocations` when only one word goes with its partner (make/take/do).
+- `npm run exams:difficulty` rewrites `docs/reports/exam-difficulty.md`. If the new exam is an outlier (more than two standard deviations from the others for sentence length, reading ease or words outside the B1 list), read its texts again and simplify them where they are above B1.
 
 ## Photos (Wikimedia Commons only)
 
