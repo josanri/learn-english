@@ -224,7 +224,7 @@ export class HomePage {
       link: '/vocabulary/flashcards',
     },
     {
-      kind: 'verbs',
+      kind: 'phrasal',
       title: 'Phrasal verbs',
       text: 'Give up, look after, run out of: a dozen a day, in three kinds of exercise.',
       tone: 'green',
