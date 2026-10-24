@@ -15,6 +15,8 @@ import { Button, Card, Icon, ProgressRing } from '../../shared/ui';
 import { mistakeCounts } from '../mistakes/mistake-queue';
 import { InsightsService } from './insights.service';
 import { WeakAreasList } from './weak-areas-list';
+import { GRAMMAR_TAGS, isGrammarTag } from '../../models/grammar-tags';
+import { partTypeInfo } from '../../models/part-labels';
 
 /**
  * Overall progress for a list of exams, derived from the saved document: exams completed, average
@@ -81,9 +83,18 @@ import { WeakAreasList } from './weak-areas-list';
         }
         @if (hasWeakAreas() || mistakes().due + mistakes().waiting > 0) {
           <div class="weak">
-            <h3 class="weak-title">Your weak areas</h3>
             @if (hasWeakAreas()) {
-              <app-weak-areas-list [areas]="weak()" headingId="summary-weak" />
+              <!-- Closed by default: the lists are long and the rest of the card comes first. -->
+              <details>
+                <summary>
+                  <span class="weak-title">Your weak areas</span>
+                  @if (weakest(); as w) {
+                    <span class="muted weakest">Weakest: {{ w.label }} ({{ w.percent }}%)</span>
+                  }
+                  <app-icon class="chevron" name="arrow" [size]="18" />
+                </summary>
+                <app-weak-areas-list [areas]="weak()" headingId="summary-weak" />
+              </details>
             }
             <p class="mistakes">
               <span>
@@ -160,9 +171,39 @@ import { WeakAreasList } from './weak-areas-list';
       padding-top: var(--space-4);
       border-top: var(--bw) solid var(--border-muted);
     }
+    summary {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-1) var(--space-3);
+      min-height: var(--target);
+      cursor: pointer;
+      list-style: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
     .weak-title {
-      margin: 0 0 var(--space-3);
       font-size: var(--step-1);
+      font-weight: 700;
+    }
+    .weakest {
+      font-size: var(--step--1);
+    }
+    .chevron {
+      margin-inline-start: auto;
+      transform: rotate(90deg);
+      transition: transform var(--dur);
+    }
+    details[open] .chevron {
+      transform: rotate(-90deg);
+    }
+    details[open] > summary {
+      margin-bottom: var(--space-3);
     }
     .mistakes {
       display: flex;
@@ -183,6 +224,18 @@ export class ProgressSummary {
   private readonly insights = inject(InsightsService);
   protected readonly stats = computed(() => computeStats(this.exams(), this.storage.state()));
   protected readonly weak = computed(() => weakAreas(this.storage.state()));
+  /** The lowest part type or grammar point, shown on the closed summary line. */
+  protected readonly weakest = computed(() => {
+    const { parts, tags } = this.weak();
+    const best = [...parts.slice(0, 1), ...tags.slice(0, 1)].sort(
+      (a, b) => a.percent - b.percent,
+    )[0];
+    if (!best) return null;
+    const label = isGrammarTag(best.id)
+      ? GRAMMAR_TAGS[best.id].label
+      : (partTypeInfo(best.id)?.label ?? best.id);
+    return { label, percent: best.percent };
+  });
   protected readonly hasWeakAreas = computed(
     () => this.weak().parts.length > 0 || this.weak().tags.length > 0,
   );
