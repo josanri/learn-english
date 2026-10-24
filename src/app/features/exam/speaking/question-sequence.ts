@@ -33,43 +33,45 @@ import { SpeakingResponse } from './speaking-response';
       </ol>
     </nav>
 
-    @for (q of current(); track q.id) {
-      <app-speaking-response
-        [itemId]="q.id"
-        [heading]="q.label"
-        [hint]="'Question ' + (index() + 1) + ' of ' + questions().length"
-        [partType]="partType()"
-        [targetSeconds]="targetSeconds()"
-        [examiner]="true"
-        (recordingChange)="recording.set($event)"
-      />
-    }
+    <div [class.fold-panel]="panel()">
+      @for (q of current(); track q.id) {
+        <app-speaking-response
+          [itemId]="q.id"
+          [heading]="q.label"
+          [hint]="'Question ' + (index() + 1) + ' of ' + questions().length"
+          [partType]="partType()"
+          [targetSeconds]="targetSeconds()"
+          [examiner]="true"
+          (recordingChange)="recording.set($event)"
+        />
+      }
 
-    <div class="pager">
-      <button
-        appButton
-        size="sm"
-        type="button"
-        [disabled]="index() === 0 || recording()"
-        (click)="index.set(index() - 1)"
-      >
-        <app-icon name="back" [size]="16" />
-        Previous question
-      </button>
-      <button
-        appButton
-        size="sm"
-        type="button"
-        [disabled]="index() >= questions().length - 1 || recording()"
-        (click)="index.set(index() + 1)"
-      >
-        Next question
-        <app-icon name="arrow" [size]="16" />
-      </button>
+      <div class="pager">
+        <button
+          appButton
+          size="sm"
+          type="button"
+          [disabled]="index() === 0 || recording()"
+          (click)="index.set(index() - 1)"
+        >
+          <app-icon name="back" [size]="16" />
+          Previous question
+        </button>
+        <button
+          appButton
+          size="sm"
+          type="button"
+          [disabled]="index() >= questions().length - 1 || recording()"
+          (click)="index.set(index() + 1)"
+        >
+          Next question
+          <app-icon name="arrow" [size]="16" />
+        </button>
+      </div>
+      @if (recording()) {
+        <p class="muted note">Stop recording before you go to another question.</p>
+      }
     </div>
-    @if (recording()) {
-      <p class="muted note">Stop recording before you go to another question.</p>
-    }
   `,
   styles: `
     ol {
@@ -122,6 +124,8 @@ export class QuestionSequence {
   readonly partType = input.required<string>();
   readonly targetSeconds = input(30);
   readonly label = input('Questions');
+  /** On a split screen, the current question and its recorder fill the other screen (fold-panel). */
+  readonly panel = input(false);
 
   private readonly store = inject(ExamSessionStore);
   protected readonly index = signal(0);

@@ -169,7 +169,7 @@ const KIND_LABEL: Record<string, string> = {
         <p class="visually-hidden" role="status" aria-live="polite">{{ announcement() }}</p>
       </div>
 
-      <aside class="side" aria-label="Writing help">
+      <aside class="side fold-side" aria-label="Writing help">
         @if (checkerOn()) {
           <section aria-labelledby="sugg-title">
             <h3 id="sugg-title">Suggestions</h3>
@@ -219,6 +219,10 @@ const KIND_LABEL: Record<string, string> = {
         grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
         align-items: start;
       }
+    }
+    /* Split screen held like a book: the writing help fills the right screen (.fold-side). */
+    :host-context(html[data-fold='book']) .layout {
+      grid-template-columns: minmax(0, 1fr);
     }
     .main,
     .side {

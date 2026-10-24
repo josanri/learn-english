@@ -14,6 +14,7 @@ import { QuestionSequence } from './question-sequence';
       [partType]="part().type"
       [targetSeconds]="seconds()"
       [label]="label()"
+      [panel]="true"
     />
   `,
 })

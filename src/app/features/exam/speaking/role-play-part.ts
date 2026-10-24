@@ -19,6 +19,7 @@ import { SpeakingResponse } from './speaking-response';
       </ul>
     </div>
     <app-speaking-response
+      class="fold-panel"
       [itemId]="part().id"
       heading="Say your part of the conversation"
       hint="Speak as if the other person were answering you. Cover every cue."
