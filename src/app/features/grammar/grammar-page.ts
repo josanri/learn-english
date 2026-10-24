@@ -65,7 +65,7 @@ import { Button, Card, Chip, EmptyState, IllustratedCard, SkillArt } from '../..
             link="/vocabulary/phrasal-verbs"
           >
             <app-skill-art art kind="phrasal" />
-            <p>About 180 common phrasal verbs, with meanings, examples and three exercises.</p>
+            <p>About 250 common phrasal verbs, with meanings, examples and three exercises.</p>
           </app-illustrated-card>
         </div>
       </div>
