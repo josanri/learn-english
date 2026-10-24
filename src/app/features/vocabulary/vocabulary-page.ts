@@ -54,7 +54,7 @@ const POS_OPTIONS = [
             <p>About 250 common phrasal verbs, with meanings, examples and three exercises.</p>
           </app-illustrated-card>
           <app-illustrated-card heading="Graded reader" tone="blue" [rotate]="1" link="/reader">
-            <app-skill-art art kind="reading" />
+            <app-skill-art art kind="reader" />
             <p>40 short original stories with a tap-to-see glossary and a few questions.</p>
           </app-illustrated-card>
         </div>

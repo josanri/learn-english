@@ -238,7 +238,7 @@ export class HomePage {
       link: '/vocabulary/phrasal-verbs',
     },
     {
-      kind: 'reading',
+      kind: 'reader',
       title: 'Graded reader',
       text: 'Short original stories with a tap-to-see glossary and a few questions.',
       tone: 'blue',

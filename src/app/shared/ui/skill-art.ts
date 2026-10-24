@@ -7,6 +7,8 @@ export type ArtKind =
   | 'speaking'
   | 'mediation'
   | 'vocabulary'
+  | 'dictionary'
+  | 'reader'
   | 'verbs'
   | 'phrasal';
 
@@ -34,6 +36,22 @@ export type ArtKind =
           <rect class="paper" x="14" y="32" width="106" height="70" rx="8" />
           <path d="M34 88l14-38 14 38M39 76h18M94 66v22" />
           <circle cx="84" cy="78" r="10" />
+        }
+        @case ('dictionary') {
+          <path class="paper" d="M34 22L50 6H132L116 22Z" />
+          <path class="paper" d="M116 22L132 6V88L116 104Z" />
+          <path class="thin" d="M121 22V94M126 17V89" />
+          <rect class="mark" x="34" y="22" width="82" height="82" rx="3" />
+          <path d="M44 22v82" />
+          <rect class="paper" x="54" y="44" width="52" height="32" rx="5" />
+          <text x="80" y="67" class="label">A–Z</text>
+        }
+        @case ('reader') {
+          <rect class="paper" x="8" y="8" width="104" height="94" rx="6" />
+          <path class="thin" d="M22 26h76M22 42h30M22 58h76M22 74h50M22 90h66" />
+          <path class="thick" d="M114 68l30 30" />
+          <circle class="mark" cx="96" cy="50" r="25" />
+          <text x="96" y="55" class="word">calm</text>
         }
         @case ('verbs') {
           <path d="M28 26C58 8 102 8 132 26M125.3 14.9L132 26l-12.8 2.5" />
@@ -114,6 +132,9 @@ export type ArtKind =
     .thin {
       stroke-width: 3;
     }
+    .thick {
+      stroke-width: 9;
+    }
     text {
       fill: currentColor;
       stroke: none;
@@ -121,6 +142,13 @@ export type ArtKind =
       font-size: 13px;
       font-weight: 800;
       text-anchor: middle;
+    }
+    /* SVG user units, scaled with the drawing like the 13px default above. */
+    text.label {
+      font-size: 19px;
+    }
+    text.word {
+      font-size: 15px;
     }
   `,
 })

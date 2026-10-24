@@ -53,7 +53,7 @@ import { Button, Card, Chip, EmptyState, IllustratedCard, SkillArt } from '../..
             [rotate]="1.5"
             link="/vocabulary/b1"
           >
-            <app-skill-art art kind="vocabulary" />
+            <app-skill-art art kind="dictionary" />
             <p>
               The Cambridge B1 word list, with topics, filters and a dictionary link for each word.
             </p>
