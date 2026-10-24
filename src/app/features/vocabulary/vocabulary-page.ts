@@ -65,53 +65,59 @@ const POS_OPTIONS = [
           <button appButton type="button" (click)="resource.reload()">Try again</button>
         </app-empty-state>
       } @else if (data(); as file) {
-        <div class="filters">
-          <div class="field">
-            <label for="word-search">Search a word</label>
-            <input
-              id="word-search"
-              type="search"
-              autocomplete="off"
-              autocapitalize="none"
-              spellcheck="false"
-              [value]="query()"
-              (input)="setQuery($any($event.target).value)"
-            />
+        <div class="fold-side">
+          <div class="filters">
+            <div class="field">
+              <label for="word-search">Search a word</label>
+              <input
+                id="word-search"
+                type="search"
+                autocomplete="off"
+                autocapitalize="none"
+                spellcheck="false"
+                [value]="query()"
+                (input)="setQuery($any($event.target).value)"
+              />
+            </div>
+            <div class="field">
+              <label for="word-topic">Topic</label>
+              <select
+                id="word-topic"
+                [value]="topic()"
+                (change)="setTopic($any($event.target).value)"
+              >
+                <option value="all">All words</option>
+                @for (item of file.topics; track item.id) {
+                  <option [value]="item.id">{{ item.name }}</option>
+                }
+              </select>
+            </div>
+            <div class="field">
+              <label for="word-pos">Type of word</label>
+              <select id="word-pos" [value]="pos()" (change)="setPos($any($event.target).value)">
+                @for (option of posOptions; track option.value) {
+                  <option [value]="option.value">{{ option.label }}</option>
+                }
+              </select>
+            </div>
           </div>
-          <div class="field">
-            <label for="word-topic">Topic</label>
-            <select
-              id="word-topic"
-              [value]="topic()"
-              (change)="setTopic($any($event.target).value)"
-            >
-              <option value="all">All words</option>
-              @for (item of file.topics; track item.id) {
-                <option [value]="item.id">{{ item.name }}</option>
-              }
-            </select>
-          </div>
-          <div class="field">
-            <label for="word-pos">Type of word</label>
-            <select id="word-pos" [value]="pos()" (change)="setPos($any($event.target).value)">
-              @for (option of posOptions; track option.value) {
-                <option [value]="option.value">{{ option.label }}</option>
-              }
-            </select>
-          </div>
+
+          <nav class="letters" aria-label="First letter">
+            @for (item of letters; track item) {
+              <button
+                type="button"
+                [attr.aria-pressed]="letter() === item"
+                (click)="setLetter(item)"
+              >
+                {{ item === 'all' ? 'All' : item }}
+              </button>
+            }
+          </nav>
+
+          <p class="muted count" role="status">
+            {{ matches().length }} of {{ file.words.length }} words
+          </p>
         </div>
-
-        <nav class="letters" aria-label="First letter">
-          @for (item of letters; track item) {
-            <button type="button" [attr.aria-pressed]="letter() === item" (click)="setLetter(item)">
-              {{ item === 'all' ? 'All' : item }}
-            </button>
-          }
-        </nav>
-
-        <p class="muted count" role="status">
-          {{ matches().length }} of {{ file.words.length }} words
-        </p>
 
         @if (matches().length === 0) {
           <app-empty-state

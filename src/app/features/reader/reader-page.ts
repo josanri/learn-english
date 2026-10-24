@@ -71,7 +71,7 @@ const LEVEL_OPTIONS: SegmentOption[] = [
           </section>
         }
 
-        <section aria-labelledby="all-title" class="all">
+        <section aria-labelledby="all-title" class="all fold-side">
           <h2 id="all-title" class="section-title">All stories</h2>
           <div class="filters">
             <app-segmented-control label="Level" [options]="levels" [(value)]="level" />

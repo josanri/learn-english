@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { FoldPosture } from '../../../core/fold-posture.service';
 import { LocalStorageService } from '../../../core/storage.service';
 import { GrammarCatalogueService } from '../../../data/grammar-catalogue.service';
 import { Button, Chip, EmptyState, SegmentedControl, type SegmentOption } from '../../../shared/ui';
@@ -11,7 +12,10 @@ const VIEWS: SegmentOption[] = [
   { value: 'practice', label: 'Practice' },
 ];
 
-/** `/grammar/irregular-verbs`: the glossary and the practice exercises. */
+/**
+ * `/grammar/irregular-verbs`: the glossary and the practice exercises. On a split screen held like
+ * a book both show at once, the practice on the right screen (.fold-side), with no switch.
+ */
 @Component({
   selector: 'app-irregular-verbs-page',
   imports: [RouterLink, Button, Chip, EmptyState, SegmentedControl, VerbGlossary, VerbPractice],
@@ -36,9 +40,11 @@ const VIEWS: SegmentOption[] = [
         </li>
       </ul>
 
-      <div class="view">
-        <app-segmented-control label="Section" [options]="views" [(value)]="view" />
-      </div>
+      @if (!book()) {
+        <div class="view">
+          <app-segmented-control label="Section" [options]="views" [(value)]="view" />
+        </div>
+      }
 
       @if (resource.isLoading()) {
         <p role="status" class="muted">Loading verbs&hellip;</p>
@@ -50,6 +56,11 @@ const VIEWS: SegmentOption[] = [
         >
           <button appButton type="button" (click)="resource.reload()">Try again</button>
         </app-empty-state>
+      } @else if (book()) {
+        <app-verb-glossary [verbs]="verbs()" />
+        <div class="fold-side">
+          <app-verb-practice [verbs]="verbs()" />
+        </div>
       } @else {
         @if (view() === 'glossary') {
           <app-verb-glossary [verbs]="verbs()" />
@@ -80,6 +91,10 @@ const VIEWS: SegmentOption[] = [
     .view {
       margin-block: var(--space-5);
     }
+    /* Split screen held like a book: no section switch, so the stats keep its space below them. */
+    :host-context(html[data-fold='book']) .stats {
+      margin-bottom: var(--space-5);
+    }
     .more {
       margin-top: var(--space-7);
     }
@@ -91,6 +106,8 @@ export class IrregularVerbsPage {
 
   protected readonly views = VIEWS;
   protected readonly view = signal('glossary');
+  private readonly fold = inject(FoldPosture);
+  protected readonly book = computed(() => this.fold.layout() === 'book');
   protected readonly verbs = computed(() =>
     this.resource.hasValue() ? this.resource.value().verbs : [],
   );

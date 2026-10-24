@@ -9,6 +9,7 @@ import {
   signal,
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { FoldPosture } from '../../core/fold-posture.service';
 import { LocalStorageService } from '../../core/storage.service';
 import { PracticeCatalogueService } from '../../data/practice-catalogue.service';
 import type { PhrasalVerb } from '../../models/practice';
@@ -118,11 +119,13 @@ interface Outcome {
           </li>
         </ul>
 
-        <div class="view">
-          <app-segmented-control label="Section" [options]="views" [(value)]="view" />
-        </div>
+        @if (!book()) {
+          <div class="view">
+            <app-segmented-control label="Section" [options]="views" [(value)]="view" />
+          </div>
+        }
 
-        @if (view() === 'list') {
+        @if (book() || view() === 'list') {
           <div class="filters">
             <div class="field">
               <label for="pv-search">Search</label>
@@ -173,190 +176,197 @@ interface Outcome {
               </li>
             }
           </ul>
-        } @else {
-          @switch (phase()) {
-            @case ('setup') {
-              <app-card>
-                <h2>Practice</h2>
-                <div class="setup">
-                  <app-segmented-control label="Exercise" [options]="modes" [(value)]="mode" />
-                  <p class="hint">{{ modeHelp() }}</p>
-                  <div class="field">
-                    <label for="pv-group">Topic</label>
-                    <select
-                      id="pv-group"
-                      [value]="group()"
-                      (change)="group.set($any($event.target).value)"
-                    >
-                      <option value="all">All topics</option>
-                      @for (g of groups(); track g.id) {
-                        <option [value]="g.id">{{ g.name }} ({{ countIn(g.id) }})</option>
-                      }
-                    </select>
-                  </div>
-                  <app-segmented-control label="Phrasal verbs" [options]="pools" [(value)]="pool" />
-                  <p class="hint" role="status">
-                    @if (poolIds().length === 0) {
-                      {{ emptyText() }}
-                    } @else {
-                      {{ poolIds().length }} available. {{ sessionSize() }} per session.
-                    }
-                  </p>
-                  <div>
-                    <button
-                      appButton
-                      type="button"
-                      variant="primary"
-                      size="lg"
-                      [disabled]="poolIds().length === 0"
-                      (click)="start()"
-                    >
-                      Start
-                      <app-icon name="arrow" [size]="22" />
-                    </button>
-                  </div>
-                </div>
-              </app-card>
-            }
-            @case ('running') {
-              @if (question(); as q) {
-                <div class="progress">
-                  <p class="count" role="status">
-                    Question {{ index() + 1 }} of {{ questions().length }}
-                  </p>
-                  <app-progress-bar
-                    [value]="index() / questions().length"
-                    label="Session progress"
-                  />
-                </div>
-                <article class="question">
-                  @switch (q.mode) {
-                    @case ('meaning') {
-                      <p class="ask">What does it mean?</p>
-                      <p class="prompt">{{ q.verb.verb }}</p>
-                    }
-                    @case ('gap') {
-                      <p class="ask">Which phrasal verb completes the sentence?</p>
-                      <p class="sentence">
-                        @for (part of q.gaps; track $index) {
-                          @if (part.gap) {
-                            <span class="gap" [class.filled]="picked() !== null">{{
-                              picked() !== null ? part.text : '_____'
-                            }}</span>
-                          } @else {
-                            {{ part.text }}
-                          }
-                        }
-                      </p>
-                      <p class="hint">The options are in the base form.</p>
-                    }
-                    @case ('particle') {
-                      <p class="ask">Which word or words are missing?</p>
-                      <p class="sentence">
-                        @for (part of q.gaps; track $index) {
-                          @if (part.gap) {
-                            <span class="gap" [class.filled]="picked() !== null">{{
-                              picked() !== null ? part.text : '_____'
-                            }}</span>
-                          } @else {
-                            {{ part.text }}
-                          }
-                        }
-                      </p>
-                    }
-                  }
-                  <div class="options" role="group" aria-label="Options">
-                    @for (choice of q.choices; track choice.label; let i = $index) {
-                      <button
-                        type="button"
-                        class="option"
-                        [class.right]="picked() !== null && choice.correct"
-                        [class.wrong]="picked() === i && !choice.correct"
-                        [disabled]="picked() !== null"
-                        [attr.aria-pressed]="picked() === i"
-                        (click)="pick(q, i)"
+        }
+        @if (book() || view() !== 'list') {
+          <div [class.fold-side]="book()">
+            @switch (phase()) {
+              @case ('setup') {
+                <app-card>
+                  <h2>Practice</h2>
+                  <div class="setup">
+                    <app-segmented-control label="Exercise" [options]="modes" [(value)]="mode" />
+                    <p class="hint">{{ modeHelp() }}</p>
+                    <div class="field">
+                      <label for="pv-group">Topic</label>
+                      <select
+                        id="pv-group"
+                        [value]="group()"
+                        (change)="group.set($any($event.target).value)"
                       >
-                        {{ choice.label }}
-                      </button>
-                    }
-                  </div>
-                  @if (picked() !== null) {
-                    <div class="feedback" role="status">
-                      @if (q.choices[picked()!].correct) {
-                        <p class="result right"><app-icon name="check" /> Right.</p>
-                      } @else {
-                        <p class="result wrong"><app-icon name="cross" /> Not quite.</p>
-                      }
-                      <p>
-                        <strong>{{ q.verb.verb }}</strong
-                        >: {{ q.verb.meaning }}.
-                      </p>
-                      <p class="ex">
-                        @for (part of parts(q.verb); track $index) {
-                          @if (part.marked) {
-                            <strong>{{ part.text }}</strong>
-                          } @else {
-                            {{ part.text }}
-                          }
+                        <option value="all">All topics</option>
+                        @for (g of groups(); track g.id) {
+                          <option [value]="g.id">{{ g.name }} ({{ countIn(g.id) }})</option>
                         }
-                      </p>
+                      </select>
+                    </div>
+                    <app-segmented-control
+                      label="Phrasal verbs"
+                      [options]="pools"
+                      [(value)]="pool"
+                    />
+                    <p class="hint" role="status">
+                      @if (poolIds().length === 0) {
+                        {{ emptyText() }}
+                      } @else {
+                        {{ poolIds().length }} available. {{ sessionSize() }} per session.
+                      }
+                    </p>
+                    <div>
                       <button
                         appButton
                         type="button"
                         variant="primary"
-                        class="next"
-                        (click)="advance()"
+                        size="lg"
+                        [disabled]="poolIds().length === 0"
+                        (click)="start()"
                       >
-                        {{ index() + 1 >= questions().length ? 'See results' : 'Next' }}
-                        <app-icon name="arrow" />
+                        Start
+                        <app-icon name="arrow" [size]="22" />
                       </button>
                     </div>
+                  </div>
+                </app-card>
+              }
+              @case ('running') {
+                @if (question(); as q) {
+                  <div class="progress">
+                    <p class="count" role="status">
+                      Question {{ index() + 1 }} of {{ questions().length }}
+                    </p>
+                    <app-progress-bar
+                      [value]="index() / questions().length"
+                      label="Session progress"
+                    />
+                  </div>
+                  <article class="question">
+                    @switch (q.mode) {
+                      @case ('meaning') {
+                        <p class="ask">What does it mean?</p>
+                        <p class="prompt">{{ q.verb.verb }}</p>
+                      }
+                      @case ('gap') {
+                        <p class="ask">Which phrasal verb completes the sentence?</p>
+                        <p class="sentence">
+                          @for (part of q.gaps; track $index) {
+                            @if (part.gap) {
+                              <span class="gap" [class.filled]="picked() !== null">{{
+                                picked() !== null ? part.text : '_____'
+                              }}</span>
+                            } @else {
+                              {{ part.text }}
+                            }
+                          }
+                        </p>
+                        <p class="hint">The options are in the base form.</p>
+                      }
+                      @case ('particle') {
+                        <p class="ask">Which word or words are missing?</p>
+                        <p class="sentence">
+                          @for (part of q.gaps; track $index) {
+                            @if (part.gap) {
+                              <span class="gap" [class.filled]="picked() !== null">{{
+                                picked() !== null ? part.text : '_____'
+                              }}</span>
+                            } @else {
+                              {{ part.text }}
+                            }
+                          }
+                        </p>
+                      }
+                    }
+                    <div class="options" role="group" aria-label="Options">
+                      @for (choice of q.choices; track choice.label; let i = $index) {
+                        <button
+                          type="button"
+                          class="option"
+                          [class.right]="picked() !== null && choice.correct"
+                          [class.wrong]="picked() === i && !choice.correct"
+                          [disabled]="picked() !== null"
+                          [attr.aria-pressed]="picked() === i"
+                          (click)="pick(q, i)"
+                        >
+                          {{ choice.label }}
+                        </button>
+                      }
+                    </div>
+                    @if (picked() !== null) {
+                      <div class="feedback" role="status">
+                        @if (q.choices[picked()!].correct) {
+                          <p class="result right"><app-icon name="check" /> Right.</p>
+                        } @else {
+                          <p class="result wrong"><app-icon name="cross" /> Not quite.</p>
+                        }
+                        <p>
+                          <strong>{{ q.verb.verb }}</strong
+                          >: {{ q.verb.meaning }}.
+                        </p>
+                        <p class="ex">
+                          @for (part of parts(q.verb); track $index) {
+                            @if (part.marked) {
+                              <strong>{{ part.text }}</strong>
+                            } @else {
+                              {{ part.text }}
+                            }
+                          }
+                        </p>
+                        <button
+                          appButton
+                          type="button"
+                          variant="primary"
+                          class="next"
+                          (click)="advance()"
+                        >
+                          {{ index() + 1 >= questions().length ? 'See results' : 'Next' }}
+                          <app-icon name="arrow" />
+                        </button>
+                      </div>
+                    }
+                  </article>
+                  <p class="end">
+                    <button appButton type="button" variant="ghost" size="sm" (click)="finish()">
+                      End session
+                    </button>
+                  </p>
+                }
+              }
+              @case ('done') {
+                <app-card [raised]="true">
+                  <h2 tabindex="-1">Session finished</h2>
+                  @if (outcomes().length === 0) {
+                    <p>You did not answer any question.</p>
+                  } @else {
+                    <p class="score" role="status">
+                      {{ rightCount() }} of {{ outcomes().length }} right.
+                    </p>
+                    @if (missed().length > 0) {
+                      <h3>To review</h3>
+                      <ul class="missed">
+                        @for (v of missed(); track v.id) {
+                          <li>
+                            <strong>{{ v.verb }}</strong
+                            >: {{ v.meaning }}
+                          </li>
+                        }
+                      </ul>
+                    } @else {
+                      <p>No mistakes. Well done.</p>
+                    }
                   }
-                </article>
-                <p class="end">
-                  <button appButton type="button" variant="ghost" size="sm" (click)="finish()">
-                    End session
-                  </button>
-                </p>
+                  <div class="actions">
+                    @if (missed().length > 0) {
+                      <button appButton type="button" variant="primary" (click)="practiseMissed()">
+                        Practise these again
+                      </button>
+                    }
+                    <button appButton type="button" (click)="start()">New session</button>
+                    <button appButton type="button" variant="ghost" (click)="phase.set('setup')">
+                      Change settings
+                    </button>
+                  </div>
+                </app-card>
               }
             }
-            @case ('done') {
-              <app-card [raised]="true">
-                <h2 tabindex="-1">Session finished</h2>
-                @if (outcomes().length === 0) {
-                  <p>You did not answer any question.</p>
-                } @else {
-                  <p class="score" role="status">
-                    {{ rightCount() }} of {{ outcomes().length }} right.
-                  </p>
-                  @if (missed().length > 0) {
-                    <h3>To review</h3>
-                    <ul class="missed">
-                      @for (v of missed(); track v.id) {
-                        <li>
-                          <strong>{{ v.verb }}</strong
-                          >: {{ v.meaning }}
-                        </li>
-                      }
-                    </ul>
-                  } @else {
-                    <p>No mistakes. Well done.</p>
-                  }
-                }
-                <div class="actions">
-                  @if (missed().length > 0) {
-                    <button appButton type="button" variant="primary" (click)="practiseMissed()">
-                      Practise these again
-                    </button>
-                  }
-                  <button appButton type="button" (click)="start()">New session</button>
-                  <button appButton type="button" variant="ghost" (click)="phase.set('setup')">
-                    Change settings
-                  </button>
-                </div>
-              </app-card>
-            }
-          }
+          </div>
         }
 
         <p class="more">
@@ -381,6 +391,10 @@ interface Outcome {
     }
     .view {
       margin-block: var(--space-5);
+    }
+    /* Split screen held like a book: no section switch, so the stats keep its space below them. */
+    :host-context(html[data-fold='book']) .stats {
+      margin-bottom: var(--space-5);
     }
     h2 {
       margin-bottom: var(--space-4);
@@ -594,6 +608,9 @@ export class PhrasalVerbsPage {
   protected readonly modes = MODES;
   protected readonly pools = POOLS;
   protected readonly view = signal('practice');
+  private readonly fold = inject(FoldPosture);
+  /** Split screen held like a book: the list and the practice show at once, with no switch. */
+  protected readonly book = computed(() => this.fold.layout() === 'book');
   protected readonly mode = signal('mixed');
   protected readonly pool = signal('all');
   protected readonly group = signal('all');

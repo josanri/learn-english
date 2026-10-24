@@ -19,53 +19,55 @@ import { Button, Card, Chip, EmptyState, IllustratedCard, SkillArt } from '../..
         practise the verbs.
       </p>
 
-      @if (practised() > 0) {
-        <app-card class="summary">
-          <h2>Your irregular verbs</h2>
-          <ul class="chips">
-            <li>
-              <app-chip [prompt]="false">{{ known() }} known</app-chip>
-            </li>
-            <li>
-              <app-chip [prompt]="false">{{ toReview() }} to review</app-chip>
-            </li>
-            <li>
-              <app-chip [prompt]="false">{{ practised() }} practised</app-chip>
-            </li>
-          </ul>
-        </app-card>
-      }
+      <div class="fold-side">
+        @if (practised() > 0) {
+          <app-card class="summary">
+            <h2>Your irregular verbs</h2>
+            <ul class="chips">
+              <li>
+                <app-chip [prompt]="false">{{ known() }} known</app-chip>
+              </li>
+              <li>
+                <app-chip [prompt]="false">{{ toReview() }} to review</app-chip>
+              </li>
+              <li>
+                <app-chip [prompt]="false">{{ practised() }} practised</app-chip>
+              </li>
+            </ul>
+          </app-card>
+        }
 
-      <div class="grid">
-        <app-illustrated-card
-          heading="Irregular verbs"
-          tone="blue"
-          [rotate]="-1.5"
-          link="/grammar/irregular-verbs"
-        >
-          <app-skill-art art kind="verbs" />
-          <p>A glossary of about 100 verbs, with exercises, gap sentences and flashcards.</p>
-        </app-illustrated-card>
-        <app-illustrated-card
-          heading="Vocabulary"
-          tone="cream"
-          [rotate]="1.5"
-          link="/vocabulary/b1"
-        >
-          <app-skill-art art kind="vocabulary" />
-          <p>
-            The Cambridge B1 word list, with topics, filters and a dictionary link for each word.
-          </p>
-        </app-illustrated-card>
-        <app-illustrated-card
-          heading="Phrasal verbs"
-          tone="green"
-          [rotate]="-1"
-          link="/vocabulary/phrasal-verbs"
-        >
-          <app-skill-art art kind="phrasal" />
-          <p>About 180 common phrasal verbs, with meanings, examples and three exercises.</p>
-        </app-illustrated-card>
+        <div class="grid">
+          <app-illustrated-card
+            heading="Irregular verbs"
+            tone="blue"
+            [rotate]="-1.5"
+            link="/grammar/irregular-verbs"
+          >
+            <app-skill-art art kind="verbs" />
+            <p>A glossary of about 100 verbs, with exercises, gap sentences and flashcards.</p>
+          </app-illustrated-card>
+          <app-illustrated-card
+            heading="Vocabulary"
+            tone="cream"
+            [rotate]="1.5"
+            link="/vocabulary/b1"
+          >
+            <app-skill-art art kind="vocabulary" />
+            <p>
+              The Cambridge B1 word list, with topics, filters and a dictionary link for each word.
+            </p>
+          </app-illustrated-card>
+          <app-illustrated-card
+            heading="Phrasal verbs"
+            tone="green"
+            [rotate]="-1"
+            link="/vocabulary/phrasal-verbs"
+          >
+            <app-skill-art art kind="phrasal" />
+            <p>About 180 common phrasal verbs, with meanings, examples and three exercises.</p>
+          </app-illustrated-card>
+        </div>
       </div>
 
       @if (index.isLoading()) {

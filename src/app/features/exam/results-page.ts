@@ -250,76 +250,78 @@ interface AttemptView {
           </app-card>
         }
 
-        <section class="history" aria-labelledby="history-title">
-          <h3 id="history-title">Attempts</h3>
-          <ul class="attempts">
-            @for (a of views(); track a.id) {
-              <li [class.selected]="a.id === v.id">
-                <span>
-                  <strong>{{ a.label }}</strong>
-                  <span class="muted"> &middot; {{ a.date | date: 'mediumDate' }}</span>
-                </span>
-                <span class="mono">{{
-                  a.percent === null ? 'Not submitted' : a.percent + '%'
-                }}</span>
-                <button
-                  appButton
-                  size="sm"
-                  type="button"
-                  [attr.aria-current]="a.id === v.id ? 'true' : null"
-                  (click)="selectedId.set(a.id)"
-                >
-                  {{ a.id === v.id ? 'Viewing' : 'View'
-                  }}<span class="visually-hidden"> {{ a.label }}</span>
-                </button>
-              </li>
-            }
-          </ul>
-        </section>
+        <div class="fold-side">
+          <section class="history" aria-labelledby="history-title">
+            <h3 id="history-title">Attempts</h3>
+            <ul class="attempts">
+              @for (a of views(); track a.id) {
+                <li [class.selected]="a.id === v.id">
+                  <span>
+                    <strong>{{ a.label }}</strong>
+                    <span class="muted"> &middot; {{ a.date | date: 'mediumDate' }}</span>
+                  </span>
+                  <span class="mono">{{
+                    a.percent === null ? 'Not submitted' : a.percent + '%'
+                  }}</span>
+                  <button
+                    appButton
+                    size="sm"
+                    type="button"
+                    [attr.aria-current]="a.id === v.id ? 'true' : null"
+                    (click)="selectedId.set(a.id)"
+                  >
+                    {{ a.id === v.id ? 'Viewing' : 'View'
+                    }}<span class="visually-hidden"> {{ a.label }}</span>
+                  </button>
+                </li>
+              }
+            </ul>
+          </section>
 
-        <section class="export" aria-labelledby="export-title">
-          <h3 id="export-title">Export {{ v.label }}</h3>
-          <p class="muted">
-            A PDF report of the attempt you are viewing, or a ZIP with the PDF, the exam, your
-            answers and your speaking recordings. Nothing leaves your device.
-          </p>
-          <app-segmented-control
-            label="Report type"
-            [options]="reportTypes"
-            [(value)]="reportType"
-          />
-          @if (reportType() === 'full') {
-            <label class="check">
-              <input
-                type="checkbox"
-                [checked]="includeSources()"
-                (change)="toggleSources($event)"
-              />
-              Add the reading texts and listening scripts at the end
-            </label>
-          }
-          <div class="export-actions">
-            <button
-              appButton
-              variant="primary"
-              type="button"
-              [disabled]="exporting() !== null"
-              (click)="exportPdf(v)"
-            >
-              <app-icon name="download" [size]="18" />
-              {{ exporting() === 'pdf' ? 'Preparing PDF...' : 'Download PDF' }}
-            </button>
-            <button
-              appButton
-              type="button"
-              [disabled]="exporting() !== null"
-              (click)="exportZip(v)"
-            >
-              <app-icon name="download" [size]="18" />
-              {{ exporting() === 'zip' ? 'Preparing ZIP...' : 'Download ZIP' }}
-            </button>
-          </div>
-        </section>
+          <section class="export" aria-labelledby="export-title">
+            <h3 id="export-title">Export {{ v.label }}</h3>
+            <p class="muted">
+              A PDF report of the attempt you are viewing, or a ZIP with the PDF, the exam, your
+              answers and your speaking recordings. Nothing leaves your device.
+            </p>
+            <app-segmented-control
+              label="Report type"
+              [options]="reportTypes"
+              [(value)]="reportType"
+            />
+            @if (reportType() === 'full') {
+              <label class="check">
+                <input
+                  type="checkbox"
+                  [checked]="includeSources()"
+                  (change)="toggleSources($event)"
+                />
+                Add the reading texts and listening scripts at the end
+              </label>
+            }
+            <div class="export-actions">
+              <button
+                appButton
+                variant="primary"
+                type="button"
+                [disabled]="exporting() !== null"
+                (click)="exportPdf(v)"
+              >
+                <app-icon name="download" [size]="18" />
+                {{ exporting() === 'pdf' ? 'Preparing PDF...' : 'Download PDF' }}
+              </button>
+              <button
+                appButton
+                type="button"
+                [disabled]="exporting() !== null"
+                (click)="exportZip(v)"
+              >
+                <app-icon name="download" [size]="18" />
+                {{ exporting() === 'zip' ? 'Preparing ZIP...' : 'Download ZIP' }}
+              </button>
+            </div>
+          </section>
+        </div>
       } @else {
         <app-empty-state
           heading="No results yet"

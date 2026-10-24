@@ -102,7 +102,7 @@ const TICK_MS = 15_000;
           </li>
         </ul>
 
-        <section class="study" aria-label="Study">
+        <section class="study fold-side" aria-label="Study">
           @if (current(); as card) {
             <article class="flash" [class.open]="revealed()" aria-live="polite">
               <p class="meta">
@@ -345,6 +345,10 @@ const TICK_MS = 15_000;
       .grades {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+    }
+    /* Split screen held like a book: the card is one screen wide (.fold-side), as on a phone. */
+    :host-context(html[data-fold='book']) .grades {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .grades [appButton] {
       position: relative;
