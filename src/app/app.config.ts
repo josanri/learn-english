@@ -13,6 +13,7 @@ import {
   withInMemoryScrolling,
   withRouterConfig,
 } from '@angular/router';
+import { AppUpdateService } from './core/app-update.service';
 import { AudioDbService } from './core/audio-db.service';
 import { FoldPosture } from './core/fold-posture.service';
 import { InstallService } from './core/install.service';
@@ -37,6 +38,7 @@ export const appConfig: ApplicationConfig = {
       inject(ThemeService);
       inject(FoldPosture); // Sets data-fold on <html> when a foldable phone is half-folded.
       inject(InstallService); // Starts listening for the browser's install offer early.
+      inject(AppUpdateService); // Checks for a new deployed version and reloads when it is ready.
       // One-off recording migrations (React-era copy, then attempt ids in keys); failures are ignored and retried later.
       void inject(AudioDbService).runMigrations();
     }),
