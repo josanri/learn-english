@@ -280,7 +280,7 @@ export interface GistDialoguesPart extends PartBase {
   clips: ListeningClip[];
 }
 
-/** One monologue; the learner completes notes with one word per gap. */
+/** One monologue; the learner completes notes with one or two words, a number, a date or a time per gap. */
 export interface NoteCompletionPart extends PartBase {
   type: 'note-completion';
   recording: Recording;

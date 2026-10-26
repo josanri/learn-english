@@ -1135,7 +1135,7 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Mum, can I go out and play in the snow?"
+                    "text": "Dad, can I go out and play in the snow?"
                   },
                   {
                     "speaker": "m",
@@ -1148,8 +1148,8 @@
                 "prompt": "What is the father doing?",
                 "options": [
                   "Giving permission with conditions",
-                  "Refusing to let him go out",
-                  "Playing in the snow with him"
+                  "Refusing to let her go out",
+                  "Playing in the snow with her"
                 ],
                 "answer": 0,
                 "explanation": "He lets the child go but tells them what to wear."
@@ -1293,7 +1293,7 @@
           "id": "listening-3",
           "number": 3,
           "title": "A talk about the ski centre",
-          "instructions": "Listen to the talk and complete each note with one word.",
+          "instructions": "Listen to the talk and complete each note. Write one or two words, a number, a date or a time.",
           "type": "note-completion",
           "recording": {
             "speakers": [
@@ -1354,7 +1354,10 @@
               "id": "l3-5",
               "prompt": "The hire shop is next to the ___",
               "answer": "car park",
-              "explanation": "The hire shop is next to the car park."
+              "explanation": "The hire shop is next to the car park.",
+              "accepted": [
+                "carpark"
+              ]
             },
             {
               "id": "l3-6",
@@ -1547,13 +1550,13 @@
           "id": "speaking-2",
           "number": 2,
           "title": "Describe a photograph",
-          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
+          "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the person might be feeling.",
           "type": "photo-description",
           "prompt": "A woman standing beside a snowman in a snowy garden.",
           "images": [
             {
               "id": "s48-2-snowman",
-              "title": "Children building a snowman",
+              "title": "A woman with a snowman",
               "alt": "A smiling woman in a dark coat and scarf stands beside a snowman in a snowy garden. A house is behind her.",
               "describeHints": [
                 "a snowman in the snow",
@@ -1569,7 +1572,7 @@
                 "height": 750,
                 "alt": "A smiling woman in a dark coat and scarf stands beside a snowman in a snowy garden. A house is behind her.",
                 "credit": {
-                  "author": "Department of Agriculture. Weather Bureau. Central Regional Weather Bureau Office. ca. ...",
+                  "author": "Department of Agriculture. Weather Bureau. Central Regional Weather Bureau Office",
                   "license": "Public domain",
                   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Girl_Building_Snowman_in_Yard_-_DPLA_-_15eacd86b76dd6b17469e06f49643359.jpg",
                   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_Building_Snowman_in_Yard_-_DPLA_-_15eacd86b76dd6b17469e06f49643359.jpg"
@@ -1604,7 +1607,7 @@
                 "height": 667,
                 "alt": "A wide snowy slope has many skiers going downhill, with a ski lift at the top.",
                 "credit": {
-                  "author": "che (Please credit as \"Petr Novák, Wikipedia\" in case you use this outside Wikimedia pr...",
+                  "author": "Petr Novák, Wikipedia",
                   "license": "CC BY-SA 2.5",
                   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
                   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rastkogel_ski_slope.jpg"

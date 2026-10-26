@@ -74,7 +74,7 @@ grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only
 
 - Reading 6 parts: notices (5), matching (5 people, 8 texts), multiple-choice (5), gapped-text (5 gaps, 6 sentences), multiple-choice-cloze (6, FOUR options), open-cloze (6).
 - Writing: email (4 content points) + choice of article or story (a story gives the exact opening sentence). About 100 words each.
-- Listening 7 + 6 + 6 + 6 items (3 options; note completion is one word). Each recording is heard twice.
+- Listening 7 + 6 + 6 + 6 items (3 options; note completion takes one or two words, a number, a date or a time). Each recording is heard twice.
 - Speaking: interview, one photo, collaborative task with 4 or more photos, discussion.
 - Cambridge marks Writing with four criteria (content, communicative achievement, organisation, language; 0 to 5). The app gives coaching, never an official score.
 

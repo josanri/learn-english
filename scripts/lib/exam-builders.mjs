@@ -202,7 +202,8 @@ export const noteCompletion = (title, who, text, gaps) => ({
   id: 'listening-3',
   number: 3,
   title,
-  instructions: 'Listen to the talk and complete each note with one word.',
+  instructions:
+    'Listen to the talk and complete each note. Write one or two words, a number, a date or a time.',
   type: 'note-completion',
   recording: { speakers: [speaker(who)], turns: [{ speaker: who[0], text }] },
   gaps: gaps.map(([prompt, answer, accepted, explanation], i) => ({

@@ -31,14 +31,36 @@ function findEntry(examId) {
   return entry ?? null;
 }
 
-/** Every `{ id, answer }` object inside a part, in document order. */
+/** Every `{ id, answer, accepted }` object inside a part, in document order. */
 function collectKeys(node, out = {}) {
   if (Array.isArray(node)) node.forEach((child) => collectKeys(child, out));
   else if (node && typeof node === 'object') {
-    if (typeof node.id === 'string' && 'answer' in node) out[node.id] = node.answer;
+    if (typeof node.id === 'string' && 'answer' in node)
+      out[node.id] = { answer: node.answer, accepted: node.accepted ?? [] };
     Object.values(node).forEach((child) => collectKeys(child, out));
   }
   return out;
+}
+
+/** Same comparison as `normalizeAnswer` in the app (features/exam/engine/scoring.ts). */
+function normalise(value) {
+  return String(value)
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[‘’‛ʼ´`]/g, "'")
+    .replace(/[“”„]/g, '"')
+    .replace(/[‐-―−-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .replace(/^[\s.,;:!?'"]+|[\s.,;:!?'"]+$/g, '')
+    .trim();
+}
+
+/** True when `mine` matches the key, an accepted form, or (for index keys) the option letter. */
+function agrees(mine, { answer, accepted }) {
+  if (typeof answer === 'number' && /^[a-z]$/i.test(String(mine).trim()))
+    return String(mine).trim().toUpperCase().charCodeAt(0) - 65 === answer;
+  const given = normalise(mine);
+  return [answer, ...accepted].some((e) => normalise(e) === given);
 }
 
 function stripSecrets(node) {
@@ -198,11 +220,11 @@ function grade(examId, file) {
       if (!(id in given)) continue;
       total += 1;
       const mine = given[id];
-      const ok = String(mine).trim().toLowerCase() === String(key).trim().toLowerCase();
+      const ok = agrees(mine, key);
       if (ok) same += 1;
       else
         lines.push(
-          `  ${id}: you ${JSON.stringify(mine)}, key ${JSON.stringify(key)} | ${promptOf(section.parts, id)}`,
+          `  ${id}: you ${JSON.stringify(mine)}, key ${JSON.stringify(key.answer)} | ${promptOf(section.parts, id)}`,
         );
     }
   }

@@ -255,6 +255,15 @@ export function checkListening(exam) {
   }
   if (recs.length >= 3 && langs.size < 2)
     warnings.push('all voices use the same accent; mix en-GB, en-US, en-AU, en-IE');
+  // A first name is one person: the same name with a male and a female voice confuses the learner.
+  // Roles (Assistant, Teacher, Man...) can be different people in different clips.
+  const genders = new Map();
+  for (const { recording } of recs)
+    for (const s of recording.speakers)
+      if (s.voice.gender && !GENERIC_NAMES.test(s.name.trim()))
+        genders.set(s.name, (genders.get(s.name) ?? new Set()).add(s.voice.gender));
+  for (const [name, set] of genders)
+    if (set.size > 1) warnings.push(`speaker "${name}" has two voice genders; rename one of them`);
   return { errors, warnings };
 }
 

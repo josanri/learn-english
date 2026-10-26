@@ -527,7 +527,7 @@
               "Say what she can see there.",
               "Suggest a question to ask.",
               "Say what to wear.",
-              "Ask when the visit is."
+              "Ask what time the visit starts."
             ],
             "sourceEmail": {
               "from": "Lena",
@@ -572,15 +572,15 @@
                 ]
               },
               {
-                "text": "Ask when the visit is.",
+                "text": "Ask what time the visit starts.",
                 "keywords": [
+                  "what time",
                   "when",
-                  "day",
-                  "date",
-                  "time",
-                  "next week",
-                  "monday",
-                  "morning"
+                  "start",
+                  "begin",
+                  "morning",
+                  "afternoon",
+                  "time"
                 ],
                 "question": true
               }
@@ -749,7 +749,7 @@
                 "speakers": [
                   {
                     "id": "f",
-                    "name": "Galen",
+                    "name": "Galina",
                     "voice": {
                       "lang": "en-AU",
                       "gender": "female"
@@ -757,7 +757,7 @@
                   },
                   {
                     "id": "m",
-                    "name": "Garnet",
+                    "name": "Garrick",
                     "voice": {
                       "lang": "en-IE",
                       "gender": "male"
@@ -837,7 +837,7 @@
                 "speakers": [
                   {
                     "id": "f",
-                    "name": "Ghislain",
+                    "name": "Ghislaine",
                     "voice": {
                       "lang": "en-IE",
                       "gender": "female"
@@ -1066,7 +1066,7 @@
                 "speakers": [
                   {
                     "id": "m",
-                    "name": "Gerda",
+                    "name": "Gervase",
                     "voice": {
                       "lang": "en-GB",
                       "gender": "male"
@@ -1074,7 +1074,7 @@
                   },
                   {
                     "id": "f",
-                    "name": "Ghislain",
+                    "name": "Ghislaine",
                     "voice": {
                       "lang": "en-US",
                       "gender": "female"
@@ -1110,7 +1110,7 @@
                 "speakers": [
                   {
                     "id": "f",
-                    "name": "Giacomo",
+                    "name": "Giulia",
                     "voice": {
                       "lang": "en-AU",
                       "gender": "female"
@@ -1154,7 +1154,7 @@
                 "speakers": [
                   {
                     "id": "m",
-                    "name": "Gisela",
+                    "name": "Gilberto",
                     "voice": {
                       "lang": "en-US",
                       "gender": "male"
@@ -1198,7 +1198,7 @@
                 "speakers": [
                   {
                     "id": "f",
-                    "name": "Gael",
+                    "name": "Gwyneira",
                     "voice": {
                       "lang": "en-IE",
                       "gender": "female"
@@ -1206,7 +1206,7 @@
                   },
                   {
                     "id": "m",
-                    "name": "Gaia",
+                    "name": "Gunther",
                     "voice": {
                       "lang": "en-AU",
                       "gender": "male"
@@ -1286,7 +1286,7 @@
           "id": "listening-3",
           "number": 3,
           "title": "A talk about the fire brigade",
-          "instructions": "Listen to the talk and complete each note with one word.",
+          "instructions": "Listen to the talk and complete each note. Write one or two words, a number, a date or a time.",
           "type": "note-completion",
           "recording": {
             "speakers": [
@@ -1542,11 +1542,11 @@
           "title": "Describe a photograph",
           "instructions": "Look at the photograph and speak for about one minute. Describe what you can see and say what the people might be feeling.",
           "type": "photo-description",
-          "prompt": "A firefighter stands beside an old fire engine.",
+          "prompt": "Several firefighters stand beside an old fire engine.",
           "images": [
             {
               "id": "s61-2-engine",
-              "title": "A fire fighter beside a fire engine",
+              "title": "Fire fighters beside a fire engine",
               "alt": "Several firefighters in uniform stand beside an old-fashioned fire engine.",
               "describeHints": [
                 "a fire engine",
@@ -1562,7 +1562,7 @@
                 "height": 657,
                 "alt": "Several firefighters in uniform stand beside an old-fashioned fire engine.",
                 "credit": {
-                  "author": "Unknown authorUnknown author",
+                  "author": "Unknown author",
                   "license": "Public domain",
                   "licenseUrl": "https://commons.wikimedia.org/wiki/File:Firemen_standing_beside_their_1910_Webb_2nd_size_700_gpm_combination_engine_and_hose_car._Made_in_St._Louis.jpg",
                   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Firemen_standing_beside_their_1910_Webb_2nd_size_700_gpm_combination_engine_and_hose_car._Made_in_St._Louis.jpg"
@@ -1581,7 +1581,7 @@
           "images": [
             {
               "id": "s61-3-fire",
-              "title": "Fire fighters spraying water",
+              "title": "A fire fighter spraying water",
               "alt": "A firefighter sprays water from a hose over rubble and damaged buildings.",
               "describeHints": [
                 "a firefighter with a hose",

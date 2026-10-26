@@ -159,6 +159,20 @@ test('listening: a dialogue in one turn and group speakers are errors, gap answe
   assert.ok(errors.some((e) => e.includes('"zebra" does not appear')));
 });
 
+test('listening: one name keeps one voice gender in the exam', () => {
+  const exam = clone(load(1));
+  assert.ok(!checkListening(exam).warnings.some((w) => w.includes('two voice genders')));
+  const [first, second] = partOf(exam, 'listening-1').clips;
+  const name = first.recording.speakers[0].name;
+  const other = second.recording.speakers.find(
+    (s) => s.voice.gender !== first.recording.speakers[0].voice.gender,
+  );
+  other.name = name;
+  assert.ok(
+    checkListening(exam).warnings.some((w) => w.includes(`"${name}" has two voice genders`)),
+  );
+});
+
 test('matching: two people cannot share a text', () => {
   const exam = clone(load(1));
   const part = partOf(exam, 'reading-2');
