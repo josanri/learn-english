@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Maia has just bought her first skateboard. She wants lessons from someone who can teach her the basics in a safe place."
+              "text": "Neve is new in town and does not know anyone. She is looking for a group of young people who meet every week to skate together."
             },
             {
               "id": "p2",
-              "text": "Max is a good skater who wants to enter a competition. He is looking for an event with prizes for the best tricks."
+              "text": "Maia has just bought her first skateboard. She wants lessons from someone who can teach her the basics in a safe place."
             },
             {
               "id": "p3",
-              "text": "Mila needs a pair of shoes that will not wear out quickly when she skates. She has only forty pounds to spend."
-            },
-            {
-              "id": "p4",
               "text": "Nate likes to film his friends skating. He would like to learn how to make short videos and put them online."
             },
             {
+              "id": "p4",
+              "text": "Max is a good skater who wants to enter a competition. He is looking for an event with prizes for the best tricks."
+            },
+            {
               "id": "p5",
-              "text": "Neve is new in town and does not know anyone. She is looking for a group of young people who meet every week to skate together."
+              "text": "Mila needs a pair of shoes that will not wear out quickly when she skates. She has only forty pounds to spend."
             }
           ],
           "texts": [
@@ -140,8 +140,8 @@
             },
             {
               "id": "F",
-              "title": "Ice Hockey Night",
-              "text": "Fast, fun games for all the family."
+              "title": "Skate Film Night",
+              "text": "Watch videos of famous skaters. No one competes. Free entry."
             },
             {
               "id": "G",
@@ -150,13 +150,29 @@
             },
             {
               "id": "H",
-              "title": "Chess Tournament",
-              "text": "Enter by Thursday. Prizes for under-sixteens."
+              "title": "Premium Skate Shoes",
+              "text": "Strong skate shoes from seventy pounds."
             }
           ],
           "questions": [
             {
               "id": "r2-1",
+              "prompt": "Neve",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Friday Crew is an open weekly group of skaters."
+            },
+            {
+              "id": "r2-2",
               "prompt": "Maia",
               "options": [
                 "A",
@@ -172,39 +188,7 @@
               "explanation": "Safe Start Lessons are small classes in a quiet place with all the safety equipment provided."
             },
             {
-              "id": "r2-2",
-              "prompt": "Max",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Trick Contest has judges and cash prizes for the best moves."
-            },
-            {
               "id": "r2-3",
-              "prompt": "Mila",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "Tough Shoe Shop sells strong skate shoes between thirty and fifty pounds."
-            },
-            {
-              "id": "r2-4",
               "prompt": "Nate",
               "options": [
                 "A",
@@ -220,8 +204,8 @@
               "explanation": "Video Workshop teaches how to film, edit and share short clips."
             },
             {
-              "id": "r2-5",
-              "prompt": "Neve",
+              "id": "r2-4",
+              "prompt": "Max",
               "options": [
                 "A",
                 "B",
@@ -232,8 +216,24 @@
                 "G",
                 "H"
               ],
-              "answer": 4,
-              "explanation": "Friday Crew is an open weekly group of skaters."
+              "answer": 1,
+              "explanation": "Trick Contest has judges and cash prizes for the best moves."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Mila",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Tough Shoe Shop sells strong skate shoes between thirty and fifty pounds."
             }
           ]
         },
@@ -249,33 +249,33 @@
               "id": "r3-1",
               "prompt": "Where did the writer get her skateboard?",
               "options": [
-                "From her cousin",
+                "From a neighbour",
                 "From a shop",
-                "From a neighbour"
+                "From her cousin"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Her cousin gave her his old board."
             },
             {
               "id": "r3-2",
               "prompt": "What went wrong on the first day?",
               "options": [
-                "She fell off many times",
                 "She lost the board",
+                "She fell off many times",
                 "She hurt her wrist badly"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She fell off nine times in half an hour."
             },
             {
               "id": "r3-3",
               "prompt": "What did Noor tell her to do?",
               "options": [
-                "Go much faster",
                 "Bend her knees",
+                "Go much faster",
                 "Practise only at night"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "Bend your knees and look where you want to go."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "What might she do next month?",
               "options": [
-                "Teach another beginner",
+                "Enter a contest",
                 "Buy a better board",
-                "Enter a contest"
+                "Teach another beginner"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "There is a contest for beginners, and she might enter."
             }
           ]

@@ -93,7 +93,7 @@
           "people": [
             {
               "id": "p1",
-              "text": "Harriet has never seen snow and would like a gentle holiday with beautiful views. She does not want to do any sport."
+              "text": "Annika wants to take her four-year-old twins to play in the snow. They have never been on a mountain before."
             },
             {
               "id": "p2",
@@ -101,11 +101,11 @@
             },
             {
               "id": "p3",
-              "text": "Annika wants to take her four-year-old twins to play in the snow. They have never been on a mountain before."
+              "text": "Dmitri likes quiet activities. He would like to walk through the forest on snow shoes and look for wild animals."
             },
             {
               "id": "p4",
-              "text": "Dmitri likes quiet activities. He would like to walk through the forest on snow shoes and look for wild animals."
+              "text": "Harriet has never seen snow and would like a gentle holiday with beautiful views. She does not want to do any sport."
             },
             {
               "id": "p5",
@@ -157,7 +157,7 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Harriet",
+              "prompt": "Annika",
               "options": [
                 "A",
                 "B",
@@ -168,8 +168,8 @@
                 "G",
                 "H"
               ],
-              "answer": 0,
-              "explanation": "The Scenic Train Tour has views and no sport."
+              "answer": 2,
+              "explanation": "The Family Snow Park is made for young children."
             },
             {
               "id": "r2-2",
@@ -189,22 +189,6 @@
             },
             {
               "id": "r2-3",
-              "prompt": "Annika",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "The Family Snow Park is made for young children."
-            },
-            {
-              "id": "r2-4",
               "prompt": "Dmitri",
               "options": [
                 "A",
@@ -218,6 +202,22 @@
               ],
               "answer": 3,
               "explanation": "The Forest Snowshoe Walk is quiet and shows animal tracks."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Harriet",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "The Scenic Train Tour has views and no sport."
             },
             {
               "id": "r2-5",
@@ -249,11 +249,11 @@
               "id": "r3-1",
               "prompt": "What did the writer expect before the trip?",
               "options": [
-                "To ski like a champion",
+                "To spend most of the days resting",
                 "To feel afraid of all the snow",
-                "To spend most of the days resting"
+                "To ski like a champion"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He imagined himself flying down the slope like a champion."
             },
             {
@@ -271,11 +271,11 @@
               "id": "r3-3",
               "prompt": "What happened on the steeper slope?",
               "options": [
-                "He skied past all of the others",
                 "He lost control and fell into snow",
+                "He skied past all of the others",
                 "He met his uncle halfway down it"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "He lost control and ended up in a pile of snow."
             },
             {
@@ -294,10 +294,10 @@
               "prompt": "What does the writer say about his uncle's comment?",
               "options": [
                 "He is angry with his uncle",
-                "He agrees that he is a natural",
-                "He thinks his uncle is being kind"
+                "He thinks his uncle is being kind",
+                "He agrees that he is a natural"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He thinks his uncle is just being kind."
             }
           ]

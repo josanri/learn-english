@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Fabian lives in a village without a mains supply. He wants a small machine that can make electricity from the sun for his home."
+              "text": "Finn is a keen cyclist. He would like to try a bike that has a small motor and can climb hills without effort."
             },
             {
               "id": "p2",
-              "text": "Faith is interested in a job as an engineer. She would like to see how a wind farm works and ask people about their work."
-            },
-            {
-              "id": "p3",
               "text": "Felix is writing a project about the history of electricity. He needs a book that tells the story of famous inventors."
             },
             {
+              "id": "p3",
+              "text": "Fabian lives in a village without a mains supply. He wants a small machine that can make electricity from the sun for his home."
+            },
+            {
               "id": "p4",
-              "text": "Fern wants to cut her family's bills. She is looking for someone who can check her house and suggest simple changes."
+              "text": "Faith is interested in a job as an engineer. She would like to see how a wind farm works and ask people about their work."
             },
             {
               "id": "p5",
-              "text": "Finn is a keen cyclist. He would like to try a bike that has a small motor and can climb hills without effort."
+              "text": "Fern wants to cut her family's bills. She is looking for someone who can check her house and suggest simple changes."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Gas Cooker Sale",
-              "text": "Great prices on new gas cookers this week."
+              "title": "Electric Scooter Shop",
+              "text": "New electric scooters for city roads. They cannot climb steep hills."
             },
             {
               "id": "G",
-              "title": "Board Game Night",
-              "text": "Fun for the whole family on Friday."
+              "title": "Solar Garden Lights",
+              "text": "Small lights for the garden that use the sun. They do not give power to a home."
             },
             {
               "id": "H",
@@ -157,7 +157,7 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Fabian",
+              "prompt": "Finn",
               "options": [
                 "A",
                 "B",
@@ -168,27 +168,11 @@
                 "G",
                 "H"
               ],
-              "answer": 0,
-              "explanation": "Sun Home Kit has solar panels and a battery to make electricity from the sun."
+              "answer": 4,
+              "explanation": "E-Bike Test Day lets people try an electric bicycle with a motor for hills."
             },
             {
               "id": "r2-2",
-              "prompt": "Faith",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Wind Farm Visit lets people see turbines and talk to engineers."
-            },
-            {
-              "id": "r2-3",
               "prompt": "Felix",
               "options": [
                 "A",
@@ -204,7 +188,39 @@
               "explanation": "Sparks and Inventors tells the story of electricity."
             },
             {
+              "id": "r2-3",
+              "prompt": "Fabian",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Sun Home Kit has solar panels and a battery to make electricity from the sun."
+            },
+            {
               "id": "r2-4",
+              "prompt": "Faith",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Wind Farm Visit lets people see turbines and talk to engineers."
+            },
+            {
+              "id": "r2-5",
               "prompt": "Fern",
               "options": [
                 "A",
@@ -218,22 +234,6 @@
               ],
               "answer": 3,
               "explanation": "Home Energy Check sends an adviser who suggests cheap ways to save money."
-            },
-            {
-              "id": "r2-5",
-              "prompt": "Finn",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 4,
-              "explanation": "E-Bike Test Day lets people try an electric bicycle with a motor for hills."
             }
           ]
         },
@@ -249,33 +249,33 @@
               "id": "r3-1",
               "prompt": "Why did people laugh at the idea?",
               "options": [
-                "The village is small and far away",
+                "The river was too wide to use",
                 "The village had no school or shop",
-                "The river was too wide to use"
+                "The village is small and far away"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "They lived in a valley far from any city."
             },
             {
               "id": "r3-2",
               "prompt": "What happened with the village hall?",
               "options": [
-                "It makes more power than it needs",
                 "It needed a new roof last year",
+                "It makes more power than it needs",
                 "It closed for repairs in summer"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "The hall makes more electricity than it needs."
             },
             {
               "id": "r3-3",
               "prompt": "What did the neighbours say about the turbine?",
               "options": [
-                "It is far too tall for them",
                 "They hardly hear it now",
+                "It is far too tall for them",
                 "It spoils the view of the hills"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "They now say they hardly hear it."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "What is done with the extra electricity?",
               "options": [
-                "It is given to the school",
+                "It is sold to the city",
                 "It is stored for winter",
-                "It is sold to the city"
+                "It is given to the school"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "They sell some to the city and use the money to repair the school."
             }
           ]

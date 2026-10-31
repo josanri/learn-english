@@ -93,15 +93,15 @@
           "people": [
             {
               "id": "p1",
-              "text": "Hana wants to learn to repair her bicycle. She can only come on Wednesday evenings."
+              "text": "Ruby wants to meet people while travelling to work by bus."
             },
             {
               "id": "p2",
-              "text": "Joe would like to help local wildlife and prefers being outdoors."
+              "text": "Hana wants to learn to repair her bicycle. She can only come on Wednesday evenings."
             },
             {
               "id": "p3",
-              "text": "Tilly wants to learn about saving energy at home at the weekend."
+              "text": "Joe would like to help local wildlife and prefers being outdoors."
             },
             {
               "id": "p4",
@@ -109,7 +109,7 @@
             },
             {
               "id": "p5",
-              "text": "Ruby wants to meet people while travelling to work by bus."
+              "text": "Tilly wants to learn about saving energy at home at the weekend."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Community choir",
-              "text": "Sing popular songs with a relaxed group on Monday evenings. You do not need experience."
+              "title": "Wildlife talk",
+              "text": "Hear a local expert describe the birds and animals of the area in the warm library on Thursday evening. No walk is included."
             },
             {
               "id": "G",
-              "title": "Kayaking lessons",
-              "text": "Learn to paddle safely on the lake during our three-day summer course."
+              "title": "Bike repair weekend",
+              "text": "Learn to fix brakes and chains in a full-day workshop on Saturday at the sports centre."
             },
             {
               "id": "H",
@@ -157,6 +157,22 @@
           "questions": [
             {
               "id": "r4-2-1",
+              "prompt": "Ruby",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Ruby wants to meet people on the bus to work; text E is a book club for passengers on their journey."
+            },
+            {
+              "id": "r4-2-2",
               "prompt": "Hana",
               "options": [
                 "A",
@@ -172,7 +188,7 @@
               "explanation": "Hana can only come on Wednesday evenings and wants to repair her bike; text A is a bike repair workshop on Wednesday at 6 p.m."
             },
             {
-              "id": "r4-2-2",
+              "id": "r4-2-3",
               "prompt": "Joe",
               "options": [
                 "A",
@@ -186,22 +202,6 @@
               ],
               "answer": 1,
               "explanation": "Joe wants to help wildlife outdoors; text B counts birds and cleans the river path on Saturday mornings."
-            },
-            {
-              "id": "r4-2-3",
-              "prompt": "Tilly",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "Tilly wants to learn about saving energy at home at the weekend; text C is a Sunday workshop about reducing energy use."
             },
             {
               "id": "r4-2-4",
@@ -221,7 +221,7 @@
             },
             {
               "id": "r4-2-5",
-              "prompt": "Ruby",
+              "prompt": "Tilly",
               "options": [
                 "A",
                 "B",
@@ -232,8 +232,8 @@
                 "G",
                 "H"
               ],
-              "answer": 4,
-              "explanation": "Ruby wants to meet people on the bus to work; text E is a book club for passengers on their journey."
+              "answer": 2,
+              "explanation": "Tilly wants to learn about saving energy at home at the weekend; text C is a Sunday workshop about reducing energy use."
             }
           ]
         },

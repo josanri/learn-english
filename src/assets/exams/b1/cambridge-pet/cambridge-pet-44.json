@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Hugh has a toothache that has lasted for two days. He cannot eat properly and wants someone to look at it as soon as possible."
+              "text": "Ali is eighty and needs somebody to visit him at home once a week to check his health because he cannot leave the house easily."
             },
             {
               "id": "p2",
-              "text": "Nadia has hurt her ankle playing hockey. It is swollen and she thinks it might be broken, so she needs a picture of the inside of her foot."
-            },
-            {
-              "id": "p3",
               "text": "Per is going to another country next month and wants advice and an injection to protect him from illnesses."
             },
             {
+              "id": "p3",
+              "text": "Hugh has a toothache that has lasted for two days. He cannot eat properly and wants someone to look at it as soon as possible."
+            },
+            {
               "id": "p4",
-              "text": "Lotte has a mild cold and a sore throat. She does not need a doctor, but wants something to make her feel better."
+              "text": "Nadia has hurt her ankle playing hockey. It is swollen and she thinks it might be broken, so she needs a picture of the inside of her foot."
             },
             {
               "id": "p5",
-              "text": "Ali is eighty and needs somebody to visit him at home once a week to check his health because he cannot leave the house easily."
+              "text": "Lotte has a mild cold and a sore throat. She does not need a doctor, but wants something to make her feel better."
             }
           ],
           "texts": [
@@ -157,7 +157,7 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Hugh",
+              "prompt": "Ali",
               "options": [
                 "A",
                 "B",
@@ -168,27 +168,11 @@
                 "G",
                 "H"
               ],
-              "answer": 0,
-              "explanation": "The Dental Clinic gives same-day appointments for toothache."
+              "answer": 4,
+              "explanation": "The Home Nurse Service visits people at home each week."
             },
             {
               "id": "r2-2",
-              "prompt": "Nadia",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "The X-ray Department takes pictures of bones after an injury."
-            },
-            {
-              "id": "r2-3",
               "prompt": "Per",
               "options": [
                 "A",
@@ -204,7 +188,39 @@
               "explanation": "The Travel Health Centre offers injections for travellers."
             },
             {
+              "id": "r2-3",
+              "prompt": "Hugh",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "The Dental Clinic gives same-day appointments for toothache."
+            },
+            {
               "id": "r2-4",
+              "prompt": "Nadia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "The X-ray Department takes pictures of bones after an injury."
+            },
+            {
+              "id": "r2-5",
               "prompt": "Lotte",
               "options": [
                 "A",
@@ -218,22 +234,6 @@
               ],
               "answer": 3,
               "explanation": "The Pharmacy sells cold medicine and advice."
-            },
-            {
-              "id": "r2-5",
-              "prompt": "Ali",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 4,
-              "explanation": "The Home Nurse Service visits people at home each week."
             }
           ]
         },
@@ -249,11 +249,11 @@
               "id": "r3-1",
               "prompt": "What did the writer first think about the injury?",
               "options": [
-                "That it was only a bruise",
+                "That it would heal by itself",
                 "That it was a very serious break",
-                "That it would heal by itself"
+                "That it was only a bruise"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He thought it was only a bad bruise."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "What has the writer decided?",
               "options": [
-                "To take a first aid course next winter",
+                "To check the ice before skating",
                 "To stop skating for the rest of his life",
-                "To check the ice before skating"
+                "To take a first aid course next winter"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He will check how thick the ice is."
             }
           ]

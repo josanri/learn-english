@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Alisha would like to learn to dive. She wants to see colourful fish and corals under the water."
-            },
-            {
-              "id": "p2",
               "text": "Alfonso enjoys walking. He wants paths with beautiful views of the sea, and he does not like traffic."
             },
             {
-              "id": "p3",
-              "text": "Allegra is travelling with her grandmother, who finds walking difficult. They want a quiet beach with a café close by."
-            },
-            {
-              "id": "p4",
+              "id": "p2",
               "text": "Alessia loves history. She would like to visit an old building and hear stories about the people who lived there."
             },
             {
-              "id": "p5",
+              "id": "p3",
               "text": "Alexei is full of energy. He wants to try a sport on the water and has never done one before."
+            },
+            {
+              "id": "p4",
+              "text": "Alisha would like to learn to dive. She wants to see colourful fish and corals under the water."
+            },
+            {
+              "id": "p5",
+              "text": "Allegra is travelling with her grandmother, who finds walking difficult. They want a quiet beach with a café close by."
             }
           ],
           "texts": [
@@ -130,8 +130,8 @@
             },
             {
               "id": "D",
-              "title": "Island Bike Hire",
-              "text": "Bikes for the whole family, with maps of the flat roads around the coast."
+              "title": "Coast Road Bus Tour",
+              "text": "An open-top bus travels along the coast with views of the sea. The road is busy with cars and buses."
             },
             {
               "id": "E",
@@ -145,8 +145,8 @@
             },
             {
               "id": "G",
-              "title": "Cave Boat Tour",
-              "text": "A forty-minute trip to the sea caves. Sit down and hold on tight."
+              "title": "Sandy Cove Beach",
+              "text": "A quiet beach with a small café. The only path from the car park has more than a hundred and fifty steps."
             },
             {
               "id": "H",
@@ -157,22 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Alisha",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Reef Diving School is for beginners and you swim with fish of every colour."
-            },
-            {
-              "id": "r2-2",
               "prompt": "Alfonso",
               "options": [
                 "A",
@@ -188,23 +172,7 @@
               "explanation": "Cliff Path Walks have routes where cars are not allowed, with wonderful views of the ocean."
             },
             {
-              "id": "r2-3",
-              "prompt": "Allegra",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 4,
-              "explanation": "Little Bay Beach Café is a calm beach with shade and a café, so no long walk is needed."
-            },
-            {
-              "id": "r2-4",
+              "id": "r2-2",
               "prompt": "Alessia",
               "options": [
                 "A",
@@ -220,7 +188,7 @@
               "explanation": "Old Fort Tours tell the stories of the soldiers and families of the fort."
             },
             {
-              "id": "r2-5",
+              "id": "r2-3",
               "prompt": "Alexei",
               "options": [
                 "A",
@@ -234,6 +202,38 @@
               ],
               "answer": 7,
               "explanation": "The Windsurfing Camp has a first lesson for complete beginners."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Alisha",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Reef Diving School is for beginners and you swim with fish of every colour."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Allegra",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Little Bay Beach Café is a calm beach with shade and a café, so no long walk is needed."
             }
           ]
         },
@@ -249,11 +249,11 @@
               "id": "r3-1",
               "prompt": "What does the writer say about her school?",
               "options": [
-                "It has only twelve pupils in total",
+                "It is closed during the winter months",
                 "It is in the same building as the church",
-                "It is closed during the winter months"
+                "It has only twelve pupils in total"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Our school has just twelve pupils."
             },
             {
@@ -272,21 +272,21 @@
               "prompt": "What does she do after school?",
               "options": [
                 "She helps her cousin with homework",
-                "She looks for crabs and shells",
-                "She works in the island shop"
+                "She works in the island shop",
+                "She looks for crabs and shells"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "She goes to the beach with friends to look for crabs and shells."
             },
             {
               "id": "r3-4",
               "prompt": "What does she miss about the mainland?",
               "options": [
-                "A shop with more bread",
+                "A cinema close to home",
                 "A bigger school to attend",
-                "A cinema close to home"
+                "A shop with more bread"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "There is no cinema on the island."
             },
             {
@@ -294,10 +294,10 @@
               "prompt": "What does the writer think about her future?",
               "options": [
                 "She will leave and never return",
-                "She will start a business on the island",
-                "She will return to her home one day"
+                "She will return to her home one day",
+                "She will start a business on the island"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She says she will always come back, because this is her home."
             }
           ]
@@ -310,17 +310,17 @@
           "type": "gapped-text",
           "passage": "Coral Cay is a tiny island in the Caribbean. It is only two kilometres long, and you can walk all the way round it in about an hour. [1] There are no big hotels, no cars and no traffic lights.\n\nMost visitors arrive on the little boat from the larger island. [2] The journey takes thirty minutes, and passengers often see dolphins on the way.\n\nThere are only five places to sleep on the island. [3] Most of them have a view of the sea from every window, and the owners cook breakfast for each guest.\n\nDuring the day, visitors swim, rest in the shade or take a small boat to a nearby reef. [4] The water is so clear that you can see the fish from the beach.\n\nIn the evening, everyone eats together on the sand. [5] Many people say that it is the most relaxing holiday they have ever had.",
           "sentences": [
-            "This makes it one of the quietest places that you can find.",
-            "It leaves every morning at nine and returns at five.",
             "All of them are small family houses near the beach.",
-            "There are many shops in the centre of the capital.",
+            "It leaves every morning at nine and returns at five.",
             "Even in the hottest weather, there is a nice cool breeze.",
-            "Afterwards, they sit and watch the stars come out."
+            "There are many shops in the centre of the capital.",
+            "Afterwards, they sit and watch the stars come out.",
+            "This makes it one of the quietest places that you can find."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "F",
               "explanation": "The island is tiny, so it is one of the quietest places, and the next sentence lists what it does not have."
             },
             {
@@ -330,17 +330,17 @@
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "A",
               "explanation": "The five places to sleep are small family houses, which explains the owners and the sea views."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "C",
               "explanation": "The breeze after swimming and resting in the shade connects to the clear water in the next sentence."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "E",
               "explanation": "Watching the stars after eating together leads to the comment on a relaxing holiday."
             }
           ]

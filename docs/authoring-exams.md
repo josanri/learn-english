@@ -47,6 +47,7 @@ grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only
 1. Write one author script in `work/` (not committed) that imports the builders and ends with `save('<examId>', { title, subtitle, theme, category }, reading(...), writing(...), listening(...), speaking(...))`. Run it with `node`.
 2. `rebalance <examId>`: you do not have to balance the key letters by hand, write the key in any position. Do not put "all of the above" or a letter in an explanation, because options move.
 3. Write distractors as long as the key, and put at least one word of the key in the script (the validator warns about both). `longkeys <examId>` shows which items still need work.
+   3b. `npm run audit:answer-order` must stay green: the keys of a part must not rise in order (A A B C C, A B C D E). `rebalance` seeds from the exam id, so it is safe. In matching (Reading part 2) write at least two persons with a similar wrong text: it shares a detail with the person (topic, place, activity) and fails on another detail (day, age, price, level).
 4. `build <examId>`, `npm run exams:index`, `npm run validate:exams -- <file>`. Fix warnings with small string patches on the work files, then `build` again.
 5. Photos last (they are written into the built JSON). After this step edit the built JSON only, or `split` it again, or `build` will remove the photos.
 

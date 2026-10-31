@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Ingo wants to spend a full year in another country, living with a family and going to a local school."
-            },
-            {
-              "id": "p2",
-              "text": "Linus can only be away for two weeks in the summer. He wants to improve his English and make friends."
-            },
-            {
-              "id": "p3",
-              "text": "Nyah would like to work abroad as a volunteer, helping children and learning a language at the same time."
-            },
-            {
-              "id": "p4",
               "text": "Rolf wants to learn how to cook the food of another country, and he does not mind where he goes."
             },
             {
-              "id": "p5",
+              "id": "p2",
+              "text": "Ingo wants to spend a full year in another country, living with a family and going to a local school."
+            },
+            {
+              "id": "p3",
+              "text": "Linus can only be away for two weeks in the summer. He wants to improve his English and make friends."
+            },
+            {
+              "id": "p4",
               "text": "Viggo is worried about money. He wants to find a scholarship that pays for his studies abroad."
+            },
+            {
+              "id": "p5",
+              "text": "Nyah would like to work abroad as a volunteer, helping children and learning a language at the same time."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Airport Shuttle",
-              "text": "Direct buses to the city centre."
+              "title": "Cookery school",
+              "text": "Learn to cook in your home city on Saturday evenings. All the dishes are from your own country."
             },
             {
               "id": "G",
-              "title": "Phone Card Shop",
-              "text": "Cheap calls to your home country."
+              "title": "Summer job fair",
+              "text": "Find paid work in a hotel abroad for the whole summer. You must be over eighteen."
             },
             {
               "id": "H",
@@ -157,54 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Ingo",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 0,
-              "explanation": "Year Abroad Programme lets you live with a host family for a full year."
-            },
-            {
-              "id": "r2-2",
-              "prompt": "Linus",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Summer Language Camp lasts two weeks and has English lessons and friends from many countries."
-            },
-            {
-              "id": "r2-3",
-              "prompt": "Nyah",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "Volunteer Exchange helps children while you learn the language."
-            },
-            {
-              "id": "r2-4",
               "prompt": "Rolf",
               "options": [
                 "A",
@@ -220,7 +172,39 @@
               "explanation": "Cooking Holiday teaches local dishes with a chef."
             },
             {
-              "id": "r2-5",
+              "id": "r2-2",
+              "prompt": "Ingo",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Year Abroad Programme lets you live with a host family for a full year."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Linus",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Summer Language Camp lasts two weeks and has English lessons and friends from many countries."
+            },
+            {
+              "id": "r2-4",
               "prompt": "Viggo",
               "options": [
                 "A",
@@ -234,6 +218,22 @@
               ],
               "answer": 4,
               "explanation": "Scholarship Office gives advice about money for studying abroad."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Nyah",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Volunteer Exchange helps children while you learn the language."
             }
           ]
         },
@@ -272,10 +272,10 @@
               "prompt": "What helped her to make friends?",
               "options": [
                 "A language course",
-                "The swimming team",
-                "A part-time job"
+                "A part-time job",
+                "The swimming team"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "She joined the school swimming team."
             },
             {
@@ -283,10 +283,10 @@
               "prompt": "What did she notice one evening?",
               "options": [
                 "She could cook well",
-                "She was no longer homesick",
-                "She had thought in English"
+                "She had thought in English",
+                "She was no longer homesick"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She realised that she had been thinking in English all day."
             },
             {

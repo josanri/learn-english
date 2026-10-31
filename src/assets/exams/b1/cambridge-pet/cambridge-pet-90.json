@@ -93,19 +93,19 @@
           "people": [
             {
               "id": "p1",
-              "text": "Tarn wants to bake bread at home but has never tried. She would like a teacher to show her step by step."
-            },
-            {
-              "id": "p2",
               "text": "Dex cannot eat wheat. He is looking for tasty bread and cakes that he can safely enjoy."
             },
             {
+              "id": "p2",
+              "text": "Mead loves old recipes. He wants to read about what people ate in the past."
+            },
+            {
               "id": "p3",
-              "text": "Heron wants to see how bread is made in a big factory, and to taste it while it is still warm."
+              "text": "Tarn wants to bake bread at home but has never tried. She would like a teacher to show her step by step."
             },
             {
               "id": "p4",
-              "text": "Mead loves old recipes. He wants to read about what people ate in the past."
+              "text": "Heron wants to see how bread is made in a big factory, and to taste it while it is still warm."
             },
             {
               "id": "p5",
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Coffee Corner",
-              "text": "Hot drinks and light snacks."
+              "title": "Gluten-Free Café",
+              "text": "Sandwiches and soup without wheat, but no bread or cakes are sold."
             },
             {
               "id": "G",
-              "title": "Bread Festival",
-              "text": "Stalls, music and prizes for the best loaf."
+              "title": "Sandwich Run",
+              "text": "Cold sandwiches for up to six people, collected from our shop. We do not deliver."
             },
             {
               "id": "H",
@@ -157,22 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Tarn",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 0,
-              "explanation": "Bread School offers a friendly teacher who shows you how to bake step by step."
-            },
-            {
-              "id": "r2-2",
               "prompt": "Dex",
               "options": [
                 "A",
@@ -188,23 +172,7 @@
               "explanation": "Free-From Bakery sells bread and cakes without wheat."
             },
             {
-              "id": "r2-3",
-              "prompt": "Heron",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "Factory Tour shows loaves being made and lets you taste them warm."
-            },
-            {
-              "id": "r2-4",
+              "id": "r2-2",
               "prompt": "Mead",
               "options": [
                 "A",
@@ -218,6 +186,38 @@
               ],
               "answer": 3,
               "explanation": "Food History Book has old recipes that tell what people ate."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Tarn",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Bread School offers a friendly teacher who shows you how to bake step by step."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Heron",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Factory Tour shows loaves being made and lets you taste them warm."
             },
             {
               "id": "r2-5",
@@ -272,10 +272,10 @@
               "prompt": "What do some customers do?",
               "options": [
                 "Order on the telephone",
-                "Wait outside early",
-                "Complain about prices"
+                "Complain about prices",
+                "Wait outside early"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "Some stand outside before the door opens."
             },
             {
@@ -294,10 +294,10 @@
               "prompt": "What does the little boy think of the bread?",
               "options": [
                 "It is rather dry",
-                "It is too hot",
-                "It tastes of sunshine"
+                "It tastes of sunshine",
+                "It is too hot"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He says her bread tastes of sunshine."
             }
           ]

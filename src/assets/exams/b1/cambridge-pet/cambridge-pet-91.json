@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Arlen is visiting the city for the first time. He wants a guide to show him the main sights on foot."
-            },
-            {
-              "id": "p2",
               "text": "Dion loves hiking in the mountains. He wants a map that shows paths, hills and streams in great detail."
             },
             {
-              "id": "p3",
-              "text": "Hiro is blind. He needs help to move around the city by himself, using sound and touch."
+              "id": "p2",
+              "text": "Arlen is visiting the city for the first time. He wants a guide to show him the main sights on foot."
             },
             {
-              "id": "p4",
+              "id": "p3",
               "text": "Milan is driving across the country. He wants an easy way to see the best route and avoid traffic."
             },
             {
-              "id": "p5",
+              "id": "p4",
               "text": "Teddy loves history. He would like to see how people drew the world hundreds of years ago."
+            },
+            {
+              "id": "p5",
+              "text": "Hiro is blind. He needs help to move around the city by himself, using sound and touch."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Bus Pass",
-              "text": "Unlimited travel for a week."
+              "title": "City Map Shop",
+              "text": "Simple street maps of the old town. They do not show hills or streams."
             },
             {
               "id": "G",
-              "title": "Compass Shop",
-              "text": "Compasses, torches and tents for all your adventures."
+              "title": "Audio Walking Guide",
+              "text": "Listen to stories about the main sights on your phone. There is no guide with you."
             },
             {
               "id": "H",
@@ -157,22 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Arlen",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 0,
-              "explanation": "Walking Tour has a guide who shows you the old streets."
-            },
-            {
-              "id": "r2-2",
               "prompt": "Dion",
               "options": [
                 "A",
@@ -188,8 +172,8 @@
               "explanation": "Hiking Map shows paths, hills and streams in detail."
             },
             {
-              "id": "r2-3",
-              "prompt": "Hiro",
+              "id": "r2-2",
+              "prompt": "Arlen",
               "options": [
                 "A",
                 "B",
@@ -200,11 +184,11 @@
                 "G",
                 "H"
               ],
-              "answer": 2,
-              "explanation": "Talking Streets gives spoken directions for people who cannot see."
+              "answer": 0,
+              "explanation": "Walking Tour has a guide who shows you the old streets."
             },
             {
-              "id": "r2-4",
+              "id": "r2-3",
               "prompt": "Milan",
               "options": [
                 "A",
@@ -220,7 +204,7 @@
               "explanation": "Route Planner shows the fastest road and traffic warnings."
             },
             {
-              "id": "r2-5",
+              "id": "r2-4",
               "prompt": "Teddy",
               "options": [
                 "A",
@@ -234,6 +218,22 @@
               ],
               "answer": 4,
               "explanation": "Old Maps Exhibition shows how people drew the world in the Middle Ages."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Hiro",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Talking Streets gives spoken directions for people who cannot see."
             }
           ]
         },
@@ -249,44 +249,44 @@
               "id": "r3-1",
               "prompt": "What did the brothers take on their walk?",
               "options": [
-                "Water and biscuits",
+                "A tent and some food",
                 "Jackets and a good map",
-                "A tent and some food"
+                "Water and biscuits"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "They took a bottle of water and a few biscuits."
             },
             {
               "id": "r3-2",
               "prompt": "What went wrong at the fork?",
               "options": [
-                "They chose the wrong path",
+                "They met a very bad storm",
                 "They lost their only map",
-                "They met a very bad storm"
+                "They chose the wrong path"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "They chose the left path, which was a mistake."
             },
             {
               "id": "r3-3",
               "prompt": "What did the writer's brother want to do?",
               "options": [
-                "Climb a hill",
                 "Run away fast",
+                "Climb a hill",
                 "Call for help"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "He wanted to run."
             },
             {
               "id": "r3-4",
               "prompt": "What advice helped them?",
               "options": [
-                "Wait until morning",
+                "Follow a stream downhill",
                 "Climb to the top",
-                "Follow a stream downhill"
+                "Wait until morning"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Their father said to follow a stream downhill."
             },
             {
@@ -294,10 +294,10 @@
               "prompt": "What does the writer always take now?",
               "options": [
                 "A tent and a radio",
-                "A phone and a flag",
-                "A compass and a torch"
+                "A compass and a torch",
+                "A phone and a flag"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She never walks without a compass and a torch."
             }
           ]

@@ -93,11 +93,11 @@
           "people": [
             {
               "id": "p1",
-              "text": "Elias has locked himself out of his flat and his flatmates are away. He needs somebody to open the door quickly, even at night."
+              "text": "Beatrice has bought a jumper that is the wrong size. She still has the receipt and wants to change it for a bigger one."
             },
             {
               "id": "p2",
-              "text": "Agnes has a pipe that is leaking in the kitchen. Water is running onto the floor, and she needs help straight away."
+              "text": "Elias has locked himself out of his flat and his flatmates are away. He needs somebody to open the door quickly, even at night."
             },
             {
               "id": "p3",
@@ -105,7 +105,7 @@
             },
             {
               "id": "p4",
-              "text": "Beatrice has bought a jumper that is the wrong size. She still has the receipt and wants to change it for a bigger one."
+              "text": "Agnes has a pipe that is leaking in the kitchen. Water is running onto the floor, and she needs help straight away."
             },
             {
               "id": "p5",
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Post Office",
-              "text": "Send letters and parcels, and pay bills. Closed on Sundays."
+              "title": "Computer Shop",
+              "text": "Buy new laptops and phones. Repairs are not offered. Open Monday to Saturday."
             },
             {
               "id": "G",
-              "title": "Tailor",
-              "text": "We shorten trousers and mend clothes. Ready in three days."
+              "title": "Clothes Repair Shop",
+              "text": "We mend and alter clothes. We do not take returns or change sizes. Ready in three days."
             },
             {
               "id": "H",
@@ -157,6 +157,22 @@
           "questions": [
             {
               "id": "r2-1",
+              "prompt": "Beatrice",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "The Customer Service Desk exchanges clothes with a receipt."
+            },
+            {
+              "id": "r2-2",
               "prompt": "Elias",
               "options": [
                 "A",
@@ -170,22 +186,6 @@
               ],
               "answer": 0,
               "explanation": "The Emergency Locksmith opens doors at night."
-            },
-            {
-              "id": "r2-2",
-              "prompt": "Agnes",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "The Plumber on Call helps with leaking pipes immediately."
             },
             {
               "id": "r2-3",
@@ -205,7 +205,7 @@
             },
             {
               "id": "r2-4",
-              "prompt": "Beatrice",
+              "prompt": "Agnes",
               "options": [
                 "A",
                 "B",
@@ -216,8 +216,8 @@
                 "G",
                 "H"
               ],
-              "answer": 3,
-              "explanation": "The Customer Service Desk exchanges clothes with a receipt."
+              "answer": 1,
+              "explanation": "The Plumber on Call helps with leaking pipes immediately."
             },
             {
               "id": "r2-5",
@@ -249,33 +249,33 @@
               "id": "r3-1",
               "prompt": "What was the writer's plan in town?",
               "options": [
-                "To buy a present for his mother",
+                "To meet his mother in a café",
                 "To visit friends in the library",
-                "To meet his mother in a café"
+                "To buy a present for his mother"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He went to buy his mother a birthday present."
             },
             {
               "id": "r3-2",
               "prompt": "What did the writer discover in the third shop?",
               "options": [
-                "His wallet was missing",
                 "His phone had stopped working",
+                "His wallet was missing",
                 "His bag had been cut open"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He put his hand in his pocket and the wallet was not there."
             },
             {
               "id": "r3-3",
               "prompt": "How did the shop assistant react?",
               "options": [
-                "She seemed rather annoyed",
                 "She was kind and patient",
+                "She seemed rather annoyed",
                 "She called the police"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She looked at him kindly and told him to take his time."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "How did the story end?",
               "options": [
-                "The police found the thief",
+                "A woman returned the wallet",
                 "The writer bought another wallet",
-                "A woman returned the wallet"
+                "The police found the thief"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "A woman had found the wallet and rang him."
             }
           ]

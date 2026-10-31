@@ -97,19 +97,19 @@
             },
             {
               "id": "p2",
-              "text": "Hedy is looking for something small and light for her friends, as her suitcase is already full."
+              "text": "Trent loves handmade things. He wants to see an artist at work and buy directly from him."
             },
             {
               "id": "p3",
-              "text": "Lark prefers experiences to objects. She wants to spend an evening on the water and see the city lights."
-            },
-            {
-              "id": "p4",
               "text": "Nash wants to learn about the city's history from someone who really knows it."
             },
             {
+              "id": "p4",
+              "text": "Hedy is looking for something small and light for her friends, as her suitcase is already full."
+            },
+            {
               "id": "p5",
-              "text": "Trent loves handmade things. He wants to see an artist at work and buy directly from him."
+              "text": "Lark prefers experiences to objects. She wants to spend an evening on the water and see the city lights."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Gift Wrapping",
-              "text": "Wrap your presents free of charge."
+              "title": "Pottery Gift Shop",
+              "text": "Plates and cups in boxes. They are made in a factory, not by hand."
             },
             {
               "id": "G",
-              "title": "Luggage Storage",
-              "text": "Leave your bags safely while you explore."
+              "title": "Big Souvenir Store",
+              "text": "Heavy statues and rugs. Delivery to your home costs extra."
             },
             {
               "id": "H",
@@ -173,7 +173,7 @@
             },
             {
               "id": "r2-2",
-              "prompt": "Hedy",
+              "prompt": "Trent",
               "options": [
                 "A",
                 "B",
@@ -184,27 +184,11 @@
                 "G",
                 "H"
               ],
-              "answer": 1,
-              "explanation": "Postcards and Magnets are small and light."
+              "answer": 4,
+              "explanation": "Craft Studio lets you watch artists and buy directly from them."
             },
             {
               "id": "r2-3",
-              "prompt": "Lark",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "Evening River Cruise shows the city lights at night."
-            },
-            {
-              "id": "r2-4",
               "prompt": "Nash",
               "options": [
                 "A",
@@ -220,8 +204,8 @@
               "explanation": "Expert History Tour is led by a professor of history."
             },
             {
-              "id": "r2-5",
-              "prompt": "Trent",
+              "id": "r2-4",
+              "prompt": "Hedy",
               "options": [
                 "A",
                 "B",
@@ -232,8 +216,24 @@
                 "G",
                 "H"
               ],
-              "answer": 4,
-              "explanation": "Craft Studio lets you watch artists and buy directly from them."
+              "answer": 1,
+              "explanation": "Postcards and Magnets are small and light."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Lark",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Evening River Cruise shows the city lights at night."
             }
           ]
         },
@@ -249,22 +249,22 @@
               "id": "r3-1",
               "prompt": "Why did the writer's family choose the tour?",
               "options": [
-                "They had read good reviews",
                 "It was very cheap",
+                "They had read good reviews",
                 "A friend recommended it"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "They had read good reviews."
             },
             {
               "id": "r3-2",
               "prompt": "What was wrong with Dario's voice?",
               "options": [
-                "It was too quiet",
+                "It was too fast",
                 "It was too loud",
-                "It was too fast"
+                "It was too quiet"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He spoke so quietly that people could not hear him."
             },
             {
@@ -272,32 +272,32 @@
               "prompt": "What did the historian do?",
               "options": [
                 "Asked for her money",
-                "Corrected a date",
-                "Left the group"
+                "Left the group",
+                "Corrected a date"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "She politely said the square was built in the sixteenth century."
             },
             {
               "id": "r3-4",
               "prompt": "How did the tour end?",
               "options": [
-                "At the station",
+                "In a cafe",
                 "At the castle",
-                "In a cafe"
+                "At the station"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Dario stopped at a cafe and said the tour was over."
             },
             {
               "id": "r3-5",
               "prompt": "What did the cafe owner do?",
               "options": [
-                "Phoned the guide",
+                "Gave them a map",
                 "Called the police",
-                "Gave them a map"
+                "Phoned the guide"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He gave them free coffee and a map with the sights marked."
             }
           ]

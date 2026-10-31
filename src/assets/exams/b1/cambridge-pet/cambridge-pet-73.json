@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Ivor plays the guitar and writes his own songs. He would like to perform in front of a real audience and get advice from musicians."
+              "text": "Jade watches every talent show on TV. She would like to see how the programmes are made behind the scenes."
             },
             {
               "id": "p2",
-              "text": "Ivy is a very good dancer, but she is shy. She wants a class where she can get more confident before going on stage."
-            },
-            {
-              "id": "p3",
               "text": "Izzy loves magic tricks. She is looking for a contest where she can show her tricks to children at a party."
             },
             {
-              "id": "p4",
+              "id": "p3",
               "text": "Jace wants to be a presenter on television. He needs a course that teaches how to speak well in front of a camera."
             },
             {
+              "id": "p4",
+              "text": "Ivor plays the guitar and writes his own songs. He would like to perform in front of a real audience and get advice from musicians."
+            },
+            {
               "id": "p5",
-              "text": "Jade watches every talent show on TV. She would like to see how the programmes are made behind the scenes."
+              "text": "Ivy is a very good dancer, but she is shy. She wants a class where she can get more confident before going on stage."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Cooking Contest",
-              "text": "Bake a cake in two hours and win a prize."
+              "title": "Band Night Contest",
+              "text": "Bands of four or more play for a prize. Solo performers are not allowed, and there is no feedback."
             },
             {
               "id": "G",
-              "title": "Football Trials",
-              "text": "Boys and girls aged ten to twelve. Wear boots."
+              "title": "Magic Shop",
+              "text": "Buy cards and tricks for magicians. No one performs here; open every day."
             },
             {
               "id": "H",
@@ -157,7 +157,7 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Ivor",
+              "prompt": "Jade",
               "options": [
                 "A",
                 "B",
@@ -168,27 +168,11 @@
                 "G",
                 "H"
               ],
-              "answer": 0,
-              "explanation": "Open Mic Night offers a real stage with advice from local musicians."
+              "answer": 4,
+              "explanation": "Studio Tour shows the studio and the people who make talent shows."
             },
             {
               "id": "r2-2",
-              "prompt": "Ivy",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Stage Confidence Class is for shy dancers who want to practise."
-            },
-            {
-              "id": "r2-3",
               "prompt": "Izzy",
               "options": [
                 "A",
@@ -204,7 +188,7 @@
               "explanation": "Magic at Parties is a competition for young magicians performing for children."
             },
             {
-              "id": "r2-4",
+              "id": "r2-3",
               "prompt": "Jace",
               "options": [
                 "A",
@@ -220,8 +204,8 @@
               "explanation": "TV Presenter Course teaches how to look natural in front of a camera."
             },
             {
-              "id": "r2-5",
-              "prompt": "Jade",
+              "id": "r2-4",
+              "prompt": "Ivor",
               "options": [
                 "A",
                 "B",
@@ -232,8 +216,24 @@
                 "G",
                 "H"
               ],
-              "answer": 4,
-              "explanation": "Studio Tour shows the studio and the people who make talent shows."
+              "answer": 0,
+              "explanation": "Open Mic Night offers a real stage with advice from local musicians."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Ivy",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Stage Confidence Class is for shy dancers who want to practise."
             }
           ]
         },
@@ -249,11 +249,11 @@
               "id": "r3-1",
               "prompt": "Why did the writer go to the audition?",
               "options": [
-                "Friends often told her to try",
+                "She wanted to meet a singer",
                 "Her teacher entered her name",
-                "She wanted to meet a singer"
+                "Friends often told her to try"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Her friends had told her for years that she should try."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "What does she think now?",
               "options": [
-                "She is angry about the result",
+                "She is glad that she went",
                 "She will not try again",
-                "She is glad that she went"
+                "She is angry about the result"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She does not regret it; it was the bravest thing she has done."
             }
           ]

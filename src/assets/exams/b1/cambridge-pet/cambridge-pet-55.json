@@ -93,11 +93,11 @@
           "people": [
             {
               "id": "p1",
-              "text": "Baptiste is looking for a book for his little sister, who cannot read yet. It must have big, colourful pictures of dinosaurs."
+              "text": "Benita would like to dig for real fossils herself. She wants to learn from an expert how to find and clean them."
             },
             {
               "id": "p2",
-              "text": "Benita would like to dig for real fossils herself. She wants to learn from an expert how to find and clean them."
+              "text": "Bertie loves technology. He wants to use his phone to see dinosaurs walking around his bedroom."
             },
             {
               "id": "p3",
@@ -105,11 +105,11 @@
             },
             {
               "id": "p4",
-              "text": "Bethan enjoys making things with her hands. She would like a class where she can build a model of a dinosaur."
+              "text": "Baptiste is looking for a book for his little sister, who cannot read yet. It must have big, colourful pictures of dinosaurs."
             },
             {
               "id": "p5",
-              "text": "Bertie loves technology. He wants to use his phone to see dinosaurs walking around his bedroom."
+              "text": "Bethan enjoys making things with her hands. She would like a class where she can build a model of a dinosaur."
             }
           ],
           "texts": [
@@ -157,22 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Baptiste",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Big Book of Giants is a picture book with huge drawings and very few words."
-            },
-            {
-              "id": "r2-2",
               "prompt": "Benita",
               "options": [
                 "A",
@@ -186,6 +170,22 @@
               ],
               "answer": 3,
               "explanation": "Dig Weekend has experts to show you how to find and clean bones."
+            },
+            {
+              "id": "r2-2",
+              "prompt": "Bertie",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 7,
+              "explanation": "The Dino Cam App shows life-size dinosaurs in any room through a phone."
             },
             {
               "id": "r2-3",
@@ -205,6 +205,22 @@
             },
             {
               "id": "r2-4",
+              "prompt": "Baptiste",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Big Book of Giants is a picture book with huge drawings and very few words."
+            },
+            {
+              "id": "r2-5",
               "prompt": "Bethan",
               "options": [
                 "A",
@@ -218,22 +234,6 @@
               ],
               "answer": 6,
               "explanation": "In the Clay Dino Workshop you build a small dinosaur from clay."
-            },
-            {
-              "id": "r2-5",
-              "prompt": "Bertie",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 7,
-              "explanation": "The Dino Cam App shows life-size dinosaurs in any room through a phone."
             }
           ]
         },
@@ -249,11 +249,11 @@
               "id": "r3-1",
               "prompt": "Why did the writer's grandfather take her to the beach?",
               "options": [
-                "He used to find fossils there",
+                "He needed to collect some shells",
                 "He wanted to teach her to swim",
-                "He needed to collect some shells"
+                "He used to find fossils there"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He had found fossils there as a boy."
             },
             {
@@ -271,11 +271,11 @@
               "id": "r3-3",
               "prompt": "What did she find?",
               "options": [
-                "A large bone from a dinosaur",
                 "A round stone with a spiral pattern",
+                "A large bone from a dinosaur",
                 "A piece of old and shiny glass"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "It was a round stone with a beautiful spiral pattern."
             },
             {
@@ -294,10 +294,10 @@
               "prompt": "What did the writer give her grandfather last week?",
               "options": [
                 "A photograph of the beach",
-                "A book about geology",
-                "A new ammonite in a box"
+                "A new ammonite in a box",
+                "A book about geology"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She gave him a small box with a new ammonite inside."
             }
           ]
@@ -310,37 +310,37 @@
           "type": "gapped-text",
           "passage": "Tyrannosaurus rex, often called T. rex, is probably the most famous dinosaur of all. [1] It lived about sixty-seven million years ago, in the area that is now North America.\n\nT. rex was about twelve metres long and as heavy as an African elephant. [2] Its head alone was over a metre and a half long, and its teeth were as long as bananas.\n\nFor a long time, people thought that T. rex was a slow animal. [3] Scientists now believe that it could probably walk quickly but could not run very fast.\n\nThe arms of T. rex were very short, and they could not even reach its mouth. [4] They were strong, however, and may have helped the animal to hold its food.\n\nThe first almost complete skeleton was found in 1902. [5] Today, you can see a copy of it in museums all over the world.",
           "sentences": [
+            "It had a huge head with a very powerful bite.",
             "This is why children everywhere love to draw and read about it.",
             "Its bones were found in rocks in places such as Canada and the United States.",
-            "It had a huge head with a very powerful bite.",
-            "New studies show that this idea may not be correct.",
             "For many years, scientists did not know what they were for.",
-            "It was sold to a museum for a large amount of money."
+            "It was sold to a museum for a large amount of money.",
+            "New studies show that this idea may not be correct."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "C",
               "explanation": "The sentence about bones found in Canada and the United States follows the place where it lived."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "A",
               "explanation": "A huge head with a powerful bite follows the animal's size, and the next sentence gives the head's length."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "F",
               "explanation": "New studies show the idea of a slow animal may be wrong, so scientists now believe it could walk quickly."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "D",
               "explanation": "Scientists did not know what the short arms were for, and the next sentence says they were strong."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "E",
               "explanation": "The skeleton sold to a museum explains why a copy can be seen in museums today."
             }
           ]

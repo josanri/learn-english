@@ -93,7 +93,7 @@
           "people": [
             {
               "id": "p1",
-              "text": "Ailsa has three small children and a dog. She needs a very large car with plenty of space, and safety is her priority."
+              "text": "Hamish loves fast cars and goes to race tracks at weekends. He wants an exciting car and does not care about the price."
             },
             {
               "id": "p2",
@@ -101,15 +101,15 @@
             },
             {
               "id": "p3",
-              "text": "Thea has just passed her driving test and has very little money. She wants a small, cheap car that is easy to park."
+              "text": "Ailsa has three small children and a dog. She needs a very large car with plenty of space, and safety is her priority."
             },
             {
               "id": "p4",
-              "text": "Hamish loves fast cars and goes to race tracks at weekends. He wants an exciting car and does not care about the price."
+              "text": "Odile cares about the environment and does not want to burn any petrol. She mostly drives short distances in the city."
             },
             {
               "id": "p5",
-              "text": "Odile cares about the environment and does not want to burn any petrol. She mostly drives short distances in the city."
+              "text": "Thea has just passed her driving test and has very little money. She wants a small, cheap car that is easy to park."
             }
           ],
           "texts": [
@@ -157,7 +157,7 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Ailsa",
+              "prompt": "Hamish",
               "options": [
                 "A",
                 "B",
@@ -168,8 +168,8 @@
                 "G",
                 "H"
               ],
-              "answer": 0,
-              "explanation": "The Family Estate has plenty of space and is safe."
+              "answer": 3,
+              "explanation": "The Sports Coupe is fast and exciting."
             },
             {
               "id": "r2-2",
@@ -189,7 +189,7 @@
             },
             {
               "id": "r2-3",
-              "prompt": "Thea",
+              "prompt": "Ailsa",
               "options": [
                 "A",
                 "B",
@@ -200,27 +200,11 @@
                 "G",
                 "H"
               ],
-              "answer": 2,
-              "explanation": "The Little City Car is small and cheap."
+              "answer": 0,
+              "explanation": "The Family Estate has plenty of space and is safe."
             },
             {
               "id": "r2-4",
-              "prompt": "Hamish",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 3,
-              "explanation": "The Sports Coupe is fast and exciting."
-            },
-            {
-              "id": "r2-5",
               "prompt": "Odile",
               "options": [
                 "A",
@@ -234,6 +218,22 @@
               ],
               "answer": 4,
               "explanation": "The Electric Hatchback has no exhaust fumes."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Thea",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "The Little City Car is small and cheap."
             }
           ]
         },
@@ -260,11 +260,11 @@
               "id": "r3-2",
               "prompt": "What happened during the second test?",
               "options": [
-                "A dog ran across the road",
+                "He got lost in the old town",
                 "The engine suddenly stopped working",
-                "He got lost in the old town"
+                "A dog ran across the road"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He saw a dog running across the road and stopped suddenly."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "How did the writer react to passing?",
               "options": [
-                "He thanked the examiner very loudly",
+                "He telephoned his mother in tears",
                 "He drove straight home again",
-                "He telephoned his mother in tears"
+                "He thanked the examiner very loudly"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He called his mother and cried for five minutes."
             }
           ]

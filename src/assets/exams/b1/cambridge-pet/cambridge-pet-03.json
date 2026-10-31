@@ -93,7 +93,7 @@
           "people": [
             {
               "id": "p1",
-              "text": "Mia wants a free activity where she can see local art. She has only one hour."
+              "text": "Finn wants to buy a gift made by someone from the area."
             },
             {
               "id": "p2",
@@ -101,15 +101,15 @@
             },
             {
               "id": "p3",
-              "text": "Rosa is interested in local history and needs a place to sit down for a break."
+              "text": "Lily would like a quiet place to read and enjoy a view of the water."
             },
             {
               "id": "p4",
-              "text": "Finn wants to buy a gift made by someone from the area."
+              "text": "Mia wants a free activity where she can see local art. She has only one hour."
             },
             {
               "id": "p5",
-              "text": "Lily would like a quiet place to read and enjoy a view of the water."
+              "text": "Rosa is interested in local history and needs a place to sit down for a break."
             }
           ],
           "texts": [
@@ -140,8 +140,8 @@
             },
             {
               "id": "F",
-              "title": "City cinema",
-              "text": "Watch the latest films in a modern building near the bus station."
+              "title": "Town art centre",
+              "text": "Join a two-hour painting class led by local artists. Tickets cost £8 and the class starts at 2 p.m."
             },
             {
               "id": "G",
@@ -150,14 +150,14 @@
             },
             {
               "id": "H",
-              "title": "Adventure centre",
-              "text": "Try climbing, kayaking or mountain biking. Booking is required for all activities."
+              "title": "Old fort tour",
+              "text": "Walk around the castle walls with a guide and learn about local history. There are 120 steps and few places to sit."
             }
           ],
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Mia",
+              "prompt": "Finn",
               "options": [
                 "A",
                 "B",
@@ -168,8 +168,8 @@
                 "G",
                 "H"
               ],
-              "answer": 0,
-              "explanation": "Mia wants a free activity with local art and has one hour; text A is a free gallery that takes about 45 minutes."
+              "answer": 3,
+              "explanation": "Finn wants a gift made by someone from the area; text D is a craft market with local makers."
             },
             {
               "id": "r2-2",
@@ -189,38 +189,6 @@
             },
             {
               "id": "r2-3",
-              "prompt": "Rosa",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "Rosa likes local history and needs to sit down; text C is a history museum with seats in every room."
-            },
-            {
-              "id": "r2-4",
-              "prompt": "Finn",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 3,
-              "explanation": "Finn wants a gift made by someone from the area; text D is a craft market with local makers."
-            },
-            {
-              "id": "r2-5",
               "prompt": "Lily",
               "options": [
                 "A",
@@ -234,6 +202,38 @@
               ],
               "answer": 4,
               "explanation": "Lily wants a quiet place to read with a view of the water; text E is a peaceful reading room overlooking the river."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Mia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Mia wants a free activity with local art and has one hour; text A is a free gallery that takes about 45 minutes."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Rosa",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Rosa likes local history and needs to sit down; text C is a history museum with seats in every room."
             }
           ]
         },

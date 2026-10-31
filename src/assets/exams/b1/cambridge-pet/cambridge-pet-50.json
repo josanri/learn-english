@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Gwen is interested in space and the stars. She would like to read about a person who travelled outside the Earth."
-            },
-            {
-              "id": "p2",
               "text": "Tadhg loves music and plays the piano. He would like to learn about a composer who wrote beautiful pieces as a child."
             },
             {
-              "id": "p3",
+              "id": "p2",
               "text": "Ilona wants to read about someone who fought for the right of girls to go to school, even when it was dangerous."
             },
             {
+              "id": "p3",
+              "text": "Gwen is interested in space and the stars. She would like to read about a person who travelled outside the Earth."
+            },
+            {
               "id": "p4",
-              "text": "Bjorn is fascinated by the sea. He would like to read about a person who sailed across oceans and discovered new lands."
+              "text": "Nadia is fond of art. She is interested in a painter whose pictures of flowers and fields are known all over the world."
             },
             {
               "id": "p5",
-              "text": "Nadia is fond of art. She is interested in a painter whose pictures of flowers and fields are known all over the world."
+              "text": "Bjorn is fascinated by the sea. He would like to read about a person who sailed across oceans and discovered new lands."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "The Scientist",
-              "text": "A woman who studied radiation and won two important prizes."
+              "title": "The Pianist’s Secret",
+              "text": "A modern concert pianist describes how she practises every day. The book is about piano technique, not about a composer."
             },
             {
               "id": "G",
-              "title": "The Inventor",
-              "text": "The man who built the first light bulb that lasted."
+              "title": "The Rocket Builder",
+              "text": "How engineers build rockets and launch satellites. It does not tell the story of a person who flew."
             },
             {
               "id": "H",
@@ -157,22 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Gwen",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 0,
-              "explanation": "The First Astronaut saw the Earth from space."
-            },
-            {
-              "id": "r2-2",
               "prompt": "Tadhg",
               "options": [
                 "A",
@@ -188,7 +172,7 @@
               "explanation": "A Young Composer wrote music as a child."
             },
             {
-              "id": "r2-3",
+              "id": "r2-2",
               "prompt": "Ilona",
               "options": [
                 "A",
@@ -204,8 +188,8 @@
               "explanation": "A Girl Who Stood Up spoke out for education."
             },
             {
-              "id": "r2-4",
-              "prompt": "Bjorn",
+              "id": "r2-3",
+              "prompt": "Gwen",
               "options": [
                 "A",
                 "B",
@@ -216,11 +200,11 @@
                 "G",
                 "H"
               ],
-              "answer": 3,
-              "explanation": "The Great Explorer sailed across oceans and found new countries."
+              "answer": 0,
+              "explanation": "The First Astronaut saw the Earth from space."
             },
             {
-              "id": "r2-5",
+              "id": "r2-4",
               "prompt": "Nadia",
               "options": [
                 "A",
@@ -234,6 +218,22 @@
               ],
               "answer": 4,
               "explanation": "The Painter of Sunflowers made pictures of flowers and fields."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Bjorn",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 3,
+              "explanation": "The Great Explorer sailed across oceans and found new countries."
             }
           ]
         },
@@ -249,33 +249,33 @@
               "id": "r3-1",
               "prompt": "What does the writer say about his hero?",
               "options": [
-                "She is not famous but very brave",
+                "She is a well-known singer in town",
                 "She appeared on television once or twice",
-                "She is a well-known singer in town"
+                "She is not famous but very brave"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She is not famous, but she is the bravest person he knows."
             },
             {
               "id": "r3-2",
               "prompt": "Why did his grandmother leave school?",
               "options": [
-                "Her father fell ill",
                 "The school was too far away",
+                "Her father fell ill",
                 "She wanted to earn some money"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Her father became ill, so she had to work on the farm."
             },
             {
               "id": "r3-3",
               "prompt": "How did she attract customers to her shop?",
               "options": [
-                "She put up bright new posters",
                 "She gave free cake to children",
+                "She put up bright new posters",
                 "She sold cheap bread to everyone"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She gave free cake to children after school."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "What does the writer hope for the future?",
               "options": [
-                "To become a famous person like others",
+                "To be strong and kind like her",
                 "To open a shop of his own one day",
-                "To be strong and kind like her"
+                "To become a famous person like others"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He hopes to be as strong and kind as she is."
             }
           ]

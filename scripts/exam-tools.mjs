@@ -274,7 +274,8 @@ function longkeys(examId) {
 function rebalance(examId) {
   const dir = join(WORK, examId);
   const skills = ['reading', 'listening'];
-  let seed = 7;
+  // The seed depends on the exam id: a fixed seed gave every exam the same key order (A A B C C).
+  let seed = [...examId].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 2147483646, 7) + 1;
   const random = () => {
     seed = (seed * 16807) % 2147483647;
     return seed / 2147483647;

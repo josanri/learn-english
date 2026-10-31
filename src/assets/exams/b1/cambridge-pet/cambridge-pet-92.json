@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Laird is looking for a present for his four-year-old niece, who loves animals and cannot read yet."
-            },
-            {
-              "id": "p2",
-              "text": "Nadir likes building things. He wants a toy that lets him make big models with thousands of small pieces."
-            },
-            {
-              "id": "p3",
               "text": "Quill wants to give her cousin something that teaches coding, but it must also be fun."
             },
             {
-              "id": "p4",
+              "id": "p2",
+              "text": "Arno collects old toys from the past. He wants to know where to see the oldest ones."
+            },
+            {
+              "id": "p3",
               "text": "Thad would like to play a game outdoors with ten friends, with no equipment at all."
             },
             {
+              "id": "p4",
+              "text": "Laird is looking for a present for his four-year-old niece, who loves animals and cannot read yet."
+            },
+            {
               "id": "p5",
-              "text": "Arno collects old toys from the past. He wants to know where to see the oldest ones."
+              "text": "Nadir likes building things. He wants a toy that lets him make big models with thousands of small pieces."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Teddy Bears",
-              "text": "Soft bears of all sizes."
+              "title": "Robot Kit Shop",
+              "text": "Robots that you build with screws and tools. Ages twelve and over; no coding."
             },
             {
               "id": "G",
-              "title": "Card Games",
-              "text": "Simple games for two to four players."
+              "title": "Teddy Zoo Book",
+              "text": "A picture book of animals with long texts for children who can read."
             },
             {
               "id": "H",
@@ -157,38 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Laird",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 0,
-              "explanation": "Animal Puzzle has big wooden animal pieces for ages three to six."
-            },
-            {
-              "id": "r2-2",
-              "prompt": "Nadir",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Mega Blocks has over two thousand pieces for building."
-            },
-            {
-              "id": "r2-3",
               "prompt": "Quill",
               "options": [
                 "A",
@@ -204,7 +172,23 @@
               "explanation": "Coding Robot teaches children to write simple programs."
             },
             {
-              "id": "r2-4",
+              "id": "r2-2",
+              "prompt": "Arno",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Toy Museum shows toys from the last two hundred years."
+            },
+            {
+              "id": "r2-3",
               "prompt": "Thad",
               "options": [
                 "A",
@@ -220,8 +204,8 @@
               "explanation": "Team Games Book has outdoor games that need no equipment."
             },
             {
-              "id": "r2-5",
-              "prompt": "Arno",
+              "id": "r2-4",
+              "prompt": "Laird",
               "options": [
                 "A",
                 "B",
@@ -232,8 +216,24 @@
                 "G",
                 "H"
               ],
-              "answer": 4,
-              "explanation": "Toy Museum shows toys from the last two hundred years."
+              "answer": 0,
+              "explanation": "Animal Puzzle has big wooden animal pieces for ages three to six."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Nadir",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 1,
+              "explanation": "Mega Blocks has over two thousand pieces for building."
             }
           ]
         },
@@ -249,22 +249,22 @@
               "id": "r3-1",
               "prompt": "Why was the bear called Mr Button?",
               "options": [
-                "He had a red button eye",
+                "His fur was dark brown",
                 "He wore a little coat",
-                "His fur was dark brown"
+                "He had a red button eye"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He had a red button instead of an eye."
             },
             {
               "id": "r3-2",
               "prompt": "What happened in Spain?",
               "options": [
-                "He was lost at the airport",
                 "He fell into the sea",
+                "He was lost at the airport",
                 "A dog took him away"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He disappeared at the airport."
             },
             {
@@ -272,32 +272,32 @@
               "prompt": "Who found the bear?",
               "options": [
                 "Her father",
-                "A cleaner",
-                "A policeman"
+                "A policeman",
+                "A cleaner"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "A cleaner appeared with the bear in her hand."
             },
             {
               "id": "r3-4",
               "prompt": "Why did the writer put him in a box?",
               "options": [
-                "He was badly broken",
+                "She was embarrassed",
                 "He was very dirty",
-                "She was embarrassed"
+                "He was badly broken"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "At fourteen she was embarrassed when friends visited."
             },
             {
               "id": "r3-5",
               "prompt": "How did the friends react last month?",
               "options": [
-                "They wanted him",
+                "Nobody laughed",
                 "They bought him a gift",
-                "Nobody laughed"
+                "They wanted him"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "None of them laughed."
             }
           ]
@@ -310,37 +310,37 @@
           "type": "gapped-text",
           "passage": "Children have always played with toys. [1] Archaeologists have found small clay animals and dolls in graves that are four thousand years old.\n\nIn the past, most toys were made at home. [2] Fathers carved wooden horses, and mothers made dolls from cloth.\n\nIn the nineteenth century, factories began to produce toys in large numbers. [3] Suddenly, even poor families could afford a doll or a spinning top.\n\nPlastic arrived in the 1950s and changed everything. [4] The new toys were cheaper, brighter and almost impossible to break.\n\nToday, many toys use electronics and can talk, move or connect to the internet. [5] Even so, simple things such as wooden blocks and balls remain as popular as ever.",
           "sentences": [
+            "Toys have been enjoyed by almost everyone.",
             "The oldest ones may have been used in religious ceremonies.",
-            "Parents used whatever they had.",
+            "Some experts worry that children play outside less.",
             "Prices dropped quickly.",
             "Factories could shape it into any form.",
-            "Some experts worry that children play outside less.",
-            "Toys have been enjoyed by almost everyone."
+            "Parents used whatever they had."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "B",
               "explanation": "The oldest toys may have been ceremonial; the next sentence gives finds from graves."
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "F",
               "explanation": "Parents used whatever they had; the next sentence gives fathers carving horses."
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "D",
               "explanation": "Prices dropped; the next sentence says even poor families could afford toys."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "E",
               "explanation": "Factories could shape plastic into any form; the next sentence says the new toys were cheaper."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "C",
               "explanation": "Some experts worry about outdoor play; the next sentence says simple toys remain popular."
             }
           ]

@@ -93,23 +93,23 @@
           "people": [
             {
               "id": "p1",
-              "text": "Fabia has just bought her first flat. She wants to learn the basics of painting walls before she starts."
+              "text": "Reece wants to watch video lessons at home, in his own time, about fixing small electrical problems."
             },
             {
               "id": "p2",
-              "text": "Hollie's bicycle has a flat tyre. She wants to fix it herself, quickly and cheaply."
-            },
-            {
-              "id": "p3",
-              "text": "Lazar loves making furniture. He wants advice about the best wood for a table."
-            },
-            {
-              "id": "p4",
               "text": "Niels has a leaking roof. He knows that this is a dangerous job and wants an expert to do it."
             },
             {
+              "id": "p3",
+              "text": "Hollie's bicycle has a flat tyre. She wants to fix it herself, quickly and cheaply."
+            },
+            {
+              "id": "p4",
+              "text": "Lazar loves making furniture. He wants advice about the best wood for a table."
+            },
+            {
               "id": "p5",
-              "text": "Reece wants to watch video lessons at home, in his own time, about fixing small electrical problems."
+              "text": "Fabia has just bought her first flat. She wants to learn the basics of painting walls before she starts."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Garden Tool Sale",
-              "text": "Spades, forks and gloves."
+              "title": "Bike Shop",
+              "text": "New bikes and repairs by our staff. Tyres from £15; repairs take two days."
             },
             {
               "id": "G",
-              "title": "Tile Competition",
-              "text": "Win a prize for the best bathroom floor."
+              "title": "Roof Repair Lessons",
+              "text": "Learn how to fix a roof yourself in a weekend course."
             },
             {
               "id": "H",
@@ -157,7 +157,7 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Fabia",
+              "prompt": "Reece",
               "options": [
                 "A",
                 "B",
@@ -168,43 +168,11 @@
                 "G",
                 "H"
               ],
-              "answer": 0,
-              "explanation": "Painting for Beginners teaches how to prepare and paint walls."
+              "answer": 4,
+              "explanation": "Online Electrical Course has short films you can watch whenever you like."
             },
             {
               "id": "r2-2",
-              "prompt": "Hollie",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 1,
-              "explanation": "Bike Repair Corner helps you fix a tyre in ten minutes."
-            },
-            {
-              "id": "r2-3",
-              "prompt": "Lazar",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 2,
-              "explanation": "Wood Expert Talk is about the best wood for tables."
-            },
-            {
-              "id": "r2-4",
               "prompt": "Niels",
               "options": [
                 "A",
@@ -220,8 +188,8 @@
               "explanation": "Roof Repair Service has qualified workers who fix leaks safely."
             },
             {
-              "id": "r2-5",
-              "prompt": "Reece",
+              "id": "r2-3",
+              "prompt": "Hollie",
               "options": [
                 "A",
                 "B",
@@ -232,8 +200,40 @@
                 "G",
                 "H"
               ],
-              "answer": 4,
-              "explanation": "Online Electrical Course has short films you can watch whenever you like."
+              "answer": 1,
+              "explanation": "Bike Repair Corner helps you fix a tyre in ten minutes."
+            },
+            {
+              "id": "r2-4",
+              "prompt": "Lazar",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 2,
+              "explanation": "Wood Expert Talk is about the best wood for tables."
+            },
+            {
+              "id": "r2-5",
+              "prompt": "Fabia",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 0,
+              "explanation": "Painting for Beginners teaches how to prepare and paint walls."
             }
           ]
         },
@@ -249,11 +249,11 @@
               "id": "r3-1",
               "prompt": "Why did the writer decide to paint the bathroom?",
               "options": [
-                "Her brother said it was easy",
                 "It cost much less",
+                "Her brother said it was easy",
                 "She had free time"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Her brother said that it was easy."
             },
             {
@@ -272,21 +272,21 @@
               "prompt": "What happened to her eye?",
               "options": [
                 "Dust blew into it",
-                "Paint fell in it",
-                "Her brush hit it"
+                "Her brush hit it",
+                "Paint fell in it"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "A drop of paint fell on her head and went in her eye."
             },
             {
               "id": "r3-4",
               "prompt": "How did the evening end?",
               "options": [
-                "With a call to her brother",
+                "With footprints everywhere",
                 "With a nice meal",
-                "With footprints everywhere"
+                "With a call to her brother"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She stepped in the tin and left blue footprints."
             },
             {

@@ -93,15 +93,15 @@
           "people": [
             {
               "id": "p1",
-              "text": "Eldon is always late for school. He needs a simple way to wake up on time and stop missing the first lesson."
-            },
-            {
-              "id": "p2",
               "text": "Halle has so much homework that she cannot finish it. She would like help to plan her week."
             },
             {
-              "id": "p3",
+              "id": "p2",
               "text": "Kolby loves old machines. He wants to see how clocks worked hundreds of years ago."
+            },
+            {
+              "id": "p3",
+              "text": "Perrin wants to understand why the days are shorter in winter than in summer."
             },
             {
               "id": "p4",
@@ -109,7 +109,7 @@
             },
             {
               "id": "p5",
-              "text": "Perrin wants to understand why the days are shorter in winter than in summer."
+              "text": "Eldon is always late for school. He needs a simple way to wake up on time and stop missing the first lesson."
             }
           ],
           "texts": [
@@ -140,13 +140,13 @@
             },
             {
               "id": "F",
-              "title": "Watch Repairs",
-              "text": "Old and new watches repaired in a day."
+              "title": "Sleep Better Talk",
+              "text": "A talk about why we need eight hours of sleep. No tips on alarms are given."
             },
             {
               "id": "G",
-              "title": "Speed Reading",
-              "text": "Read twice as fast in one day."
+              "title": "Study Skills Club",
+              "text": "Share study tips with friends in a noisy café on Saturdays. Not quiet, and not for exams."
             },
             {
               "id": "H",
@@ -157,22 +157,6 @@
           "questions": [
             {
               "id": "r2-1",
-              "prompt": "Eldon",
-              "options": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G",
-                "H"
-              ],
-              "answer": 0,
-              "explanation": "Alarm Clocks are loud and help you wake up on time."
-            },
-            {
-              "id": "r2-2",
               "prompt": "Halle",
               "options": [
                 "A",
@@ -188,7 +172,7 @@
               "explanation": "Planner Workshop teaches you to organise your week."
             },
             {
-              "id": "r2-3",
+              "id": "r2-2",
               "prompt": "Kolby",
               "options": [
                 "A",
@@ -202,6 +186,22 @@
               ],
               "answer": 2,
               "explanation": "Clock Museum shows clocks from the fourteenth century."
+            },
+            {
+              "id": "r2-3",
+              "prompt": "Perrin",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ],
+              "answer": 4,
+              "explanation": "Planetarium Show explains how the Earth moves and why seasons change."
             },
             {
               "id": "r2-4",
@@ -221,7 +221,7 @@
             },
             {
               "id": "r2-5",
-              "prompt": "Perrin",
+              "prompt": "Eldon",
               "options": [
                 "A",
                 "B",
@@ -232,8 +232,8 @@
                 "G",
                 "H"
               ],
-              "answer": 4,
-              "explanation": "Planetarium Show explains how the Earth moves and why seasons change."
+              "answer": 0,
+              "explanation": "Alarm Clocks are loud and help you wake up on time."
             }
           ]
         },
@@ -260,11 +260,11 @@
               "id": "r3-2",
               "prompt": "What task did Mr Ellis give Tom?",
               "options": [
-                "Write down his morning",
                 "Draw a picture of a clock",
+                "Write down his morning",
                 "Learn a long poem by heart"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He asked him to write down everything he does before school."
             },
             {
@@ -272,10 +272,10 @@
               "prompt": "What did Tom find?",
               "options": [
                 "He woke up far too early",
-                "He wasted a lot of time",
-                "He walked much too slowly"
+                "He walked much too slowly",
+                "He wasted a lot of time"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "He spent twenty-five minutes looking for shoes and fifteen on his phone."
             },
             {
@@ -293,11 +293,11 @@
               "id": "r3-5",
               "prompt": "What was his new problem?",
               "options": [
-                "Too little sleep at night",
+                "Too much free time",
                 "Too much work at home",
-                "Too much free time"
+                "Too little sleep at night"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He said he had too much time before lessons."
             }
           ]
