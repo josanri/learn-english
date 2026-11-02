@@ -115,7 +115,7 @@ describe('FilePlayback', () => {
 });
 
 describe('scriptFingerprint', () => {
-  it('matches the value of tools/tts/server.py', () => {
+  it('matches the value of tools/tts/catalog.py', () => {
     const rec: Recording = {
       speakers: [],
       turns: [{ speaker: 'a', text: 'Café, it’s ok.' }],

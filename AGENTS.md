@@ -41,6 +41,8 @@ npm run exams:difficulty   write docs/reports/exam-difficulty.md
 npm run images:optimize    re-encode exam photos (1000 px and 480 px WebP)
 npm run icons:generate     favicon.ico and PWA icons from public/favicon.svg
 npm run check:contrast     WCAG contrast table for every colour pair
+npm run tts                listening audio generator (local, GPU; see tools/tts/README.md)
+npm run test:tts           unit tests of the audio generator (Python, no GPU)
 ```
 
 Before committing: lint, test, test:scripts, validate:exams, validate:grammar, validate:practice and build must all pass.
@@ -52,7 +54,7 @@ Before committing: lint, test, test:scripts, validate:exams, validate:grammar, v
 | Folder layout, routes, how a feature is built                 | [docs/architecture.md](docs/architecture.md)             |
 | Colours, tokens, UI components, themes, settings              | [docs/design-system.md](docs/design-system.md)           |
 | Exam session store, scoring, part renderers, listening, timer | [docs/exam-engine.md](docs/exam-engine.md)               |
-| Listening audio files and the generator tool                  | [docs/listening-audio.md](docs/listening-audio.md)       |
+| Listening audio files and the generator tool (`tools/tts/`)   | [docs/listening-audio.md](docs/listening-audio.md)       |
 | Speaking recording and recognition                            | [docs/speaking.md](docs/speaking.md)                     |
 | Writing checker, rules, rubric                                | [docs/writing-checker.md](docs/writing-checker.md)       |
 | PDF and ZIP export of results                                 | [docs/export.md](docs/export.md)                         |

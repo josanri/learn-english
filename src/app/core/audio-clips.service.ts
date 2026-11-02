@@ -16,7 +16,7 @@ export interface RecordingAudio {
 
 /**
  * Fingerprint of a script (FNV-1a over UTF-16 code units of `speaker|text` lines).
- * `tools/tts/server.py` computes the same value, so a recording is found by what it says.
+ * `tools/tts/catalog.py` computes the same value, so a recording is found by what it says.
  */
 export function scriptFingerprint(recording: Recording): string {
   const text = recording.turns.map((t) => `${t.speaker}|${t.text}`).join('\n');

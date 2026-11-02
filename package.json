@@ -9,6 +9,8 @@
     "build:pages": "node scripts/build-pages.mjs",
     "test": "ng test --no-watch",
     "lint": "ng lint && prettier --check .",
+    "tts": "node tools/tts/run.mjs",
+    "test:tts": "node tools/tts/run.mjs test",
     "format": "prettier --write .",
     "schema:generate": "node scripts/generate-schema.mjs",
     "exams:index": "node scripts/generate-index.mjs",

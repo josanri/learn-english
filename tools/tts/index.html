@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Listening audio generator</title>
+    <style>
+      :root {
+        --bg: #f4f5f7;
+        --surface: #ffffff;
+        --surface-2: #eef0f3;
+        --text: #1b1f24;
+        --muted: #56616c;
+        --border: #d3d8de;
+        --accent: #1f5fbf;
+        --accent-soft: #e3ecfa;
+        --accent-text: #ffffff;
+        --ok: #16692f;
+        --ok-soft: #e1f3e6;
+        --warn: #8a5300;
+        --warn-soft: #fbefd9;
+        --bad: #a3231f;
+        --bad-soft: #fbe4e3;
+        --radius: 0.75rem;
+        --shadow: 0 0.0625rem 0.125rem rgb(0 0 0 / 6%), 0 0.25rem 0.75rem rgb(0 0 0 / 4%);
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+        font-size: 1rem;
+        line-height: 1.45;
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111418;
+          --surface: #1a1f25;
+          --surface-2: #232a32;
+          --text: #eef1f4;
+          --muted: #a3aeb9;
+          --border: #343e48;
+          --accent: #7db0ff;
+          --accent-soft: #1d2d47;
+          --accent-text: #0c1a30;
+          --ok: #6fd48c;
+          --ok-soft: #173322;
+          --warn: #f0b45a;
+          --warn-soft: #3a2a12;
+          --bad: #ff8f8a;
+          --bad-soft: #3d1a19;
+          --shadow: none;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      [hidden] {
+        display: none !important;
+      }
+      main > *,
+      .panel {
+        min-width: 0;
+      }
+      body {
+        margin: 0;
+        padding: 1.5rem 1rem 3rem;
+        background: var(--bg);
+        color: var(--text);
+      }
+      main {
+        max-width: 68rem;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+      }
+      h1,
+      h2 {
+        margin: 0;
+        line-height: 1.2;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.05rem;
+      }
+      code {
+        font-size: 0.9em;
+        padding: 0.05rem 0.3rem;
+        border-radius: 0.25rem;
+        background: var(--surface-2);
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .small {
+        font-size: 0.875rem;
+      }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      /* header */
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header p {
+        margin: 0.25rem 0 0;
+      }
+      .conn {
+        display: inline-flex;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        font-size: 0.875rem;
+      }
+      .dot {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        background: var(--ok);
+      }
+      .conn.off .dot {
+        background: var(--bad);
+      }
+      .conn.busy .dot {
+        background: var(--accent);
+        animation: pulse 1.2s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        50% {
+          opacity: 0.3;
+        }
+      }
+
+      /* cards */
+      .panel {
+        padding: 1.25rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+      .stats {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+      }
+      .stat {
+        padding: 0.9rem 1rem;
+      }
+      .stat .value {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+      }
+      .stat .label {
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+      .meter {
+        height: 0.4rem;
+        margin-top: 0.5rem;
+        border-radius: 999rem;
+        background: var(--surface-2);
+        overflow: hidden;
+      }
+      .meter > span {
+        display: block;
+        height: 100%;
+        background: var(--ok);
+        transition: width 0.4s ease;
+      }
+
+      /* controls */
+      button,
+      .chip {
+        min-height: 2.75rem;
+        min-width: 2.75rem;
+        padding: 0 1rem;
+        border: 1px solid var(--border);
+        border-radius: 0.5rem;
+        background: var(--surface);
+        color: var(--text);
+        font: inherit;
+        cursor: pointer;
+      }
+      button:hover:not(:disabled) {
+        background: var(--surface-2);
+      }
+      button.primary {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: var(--accent-text);
+        font-weight: 700;
+        padding: 0 1.5rem;
+      }
+      button.primary:hover:not(:disabled) {
+        background: var(--accent);
+        filter: brightness(1.08);
+      }
+      button.danger {
+        border-color: var(--bad);
+        color: var(--bad);
+      }
+      button.quiet {
+        border-color: transparent;
+        background: transparent;
+      }
+      button:disabled {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      :focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 2px;
+      }
+      label.check {
+        display: inline-flex;
+        gap: 0.5rem;
+        align-items: center;
+        min-height: 2.75rem;
+        cursor: pointer;
+      }
+      input[type='checkbox'] {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin: 0;
+        accent-color: var(--accent);
+        cursor: pointer;
+      }
+      td.sel label {
+        display: grid;
+        place-items: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        cursor: pointer;
+      }
+      input[type='search'] {
+        flex: 1 1 14rem;
+        min-height: 2.75rem;
+        padding: 0 0.85rem;
+        border: 1px solid var(--border);
+        border-radius: 0.5rem;
+        background: var(--surface);
+        color: var(--text);
+        font: inherit;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 0.75rem;
+        align-items: center;
+      }
+      .spacer {
+        flex: 1;
+      }
+
+      /* job panel */
+      .job {
+        display: grid;
+        gap: 1rem;
+      }
+      .job-head {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .job-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+      .phase {
+        display: inline-block;
+        margin-top: 0.25rem;
+        padding: 0.1rem 0.6rem;
+        border-radius: 999rem;
+        background: var(--accent-soft);
+        color: var(--text);
+        font-size: 0.875rem;
+      }
+      .bars {
+        display: grid;
+        gap: 0.75rem;
+      }
+      .bar-label {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 0.875rem;
+        color: var(--muted);
+        margin-bottom: 0.3rem;
+        font-variant-numeric: tabular-nums;
+      }
+      .track {
+        height: 0.75rem;
+        border-radius: 999rem;
+        background: var(--surface-2);
+        overflow: hidden;
+      }
+      .track > span {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: var(--accent);
+        border-radius: 999rem;
+        transition: width 0.6s ease;
+      }
+      .track.indeterminate > span {
+        width: 30%;
+        animation: slide 1.6s ease-in-out infinite;
+      }
+      @keyframes slide {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(340%);
+        }
+      }
+      .facts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 2rem;
+        margin: 0;
+      }
+      .facts div {
+        display: grid;
+      }
+      .facts dt {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      .facts dd {
+        margin: 0;
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
+      }
+      .errors {
+        margin: 0;
+        padding: 0.75rem 1rem 0.75rem 2rem;
+        border-radius: 0.5rem;
+        background: var(--bad-soft);
+        color: var(--bad);
+      }
+      .options {
+        padding-top: 0.75rem;
+        border-top: 1px solid var(--border);
+      }
+
+      /* exam table */
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+      .chip {
+        padding: 0 0.85rem;
+        border-radius: 999rem;
+        font-size: 0.9rem;
+      }
+      .chip[aria-pressed='true'] {
+        border-color: var(--accent);
+        background: var(--accent-soft);
+        font-weight: 600;
+      }
+      .chip .count {
+        margin-left: 0.35rem;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+      .selection {
+        display: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
+        background: var(--accent-soft);
+      }
+      .selection.show {
+        display: flex;
+      }
+      .table-wrap {
+        overflow-x: auto;
+        margin: 0 -1.25rem -1.25rem;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-variant-numeric: tabular-nums;
+      }
+      th,
+      td {
+        padding: 0.35rem 0.6rem;
+        text-align: left;
+        border-top: 1px solid var(--border);
+        white-space: nowrap;
+      }
+      th {
+        position: sticky;
+        top: 0;
+        background: var(--surface);
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+      th:first-child,
+      td:first-child {
+        padding-left: 0.75rem;
+      }
+      th:last-child,
+      td:last-child {
+        padding-right: 1.25rem;
+      }
+      .num {
+        text-align: right;
+      }
+      tr.exam:hover td {
+        background: var(--surface-2);
+      }
+      tr.exam.current td {
+        background: var(--accent-soft);
+      }
+      tr.exam.queued td:nth-child(2)::after {
+        content: ' · queued';
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      .exam-name {
+        font-weight: 600;
+      }
+      .exam-title {
+        display: block;
+        max-width: 22rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      .badge {
+        display: inline-block;
+        padding: 0.1rem 0.55rem;
+        border-radius: 999rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+      .badge.done {
+        background: var(--ok-soft);
+        color: var(--ok);
+      }
+      .badge.stale {
+        background: var(--warn-soft);
+        color: var(--warn);
+      }
+      .badge.missing {
+        background: var(--surface-2);
+        color: var(--muted);
+      }
+      .badge.working {
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
+      .badge.short {
+        margin-left: 0.35rem;
+        background: transparent;
+        border: 1px solid var(--warn);
+        color: var(--warn);
+      }
+      td.actions {
+        text-align: right;
+      }
+      td.actions button {
+        margin-left: 0.25rem;
+      }
+      tr.detail td {
+        padding: 0.75rem 1.25rem 1rem 3.5rem;
+        background: var(--surface-2);
+        white-space: normal;
+      }
+      .files {
+        display: grid;
+        gap: 0.5rem 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+      }
+      .file {
+        display: grid;
+        gap: 0.2rem;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      audio {
+        width: 100%;
+        height: 2.75rem;
+      }
+      .empty {
+        padding: 2rem 1rem;
+        text-align: center;
+        color: var(--muted);
+      }
+
+      /* log */
+      details.panel {
+        padding: 0;
+      }
+      summary {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        min-height: 2.75rem;
+        padding: 0.5rem 1.25rem;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      summary .muted {
+        font-weight: 400;
+      }
+      pre {
+        max-height: 20rem;
+        margin: 0;
+        padding: 0.75rem 1.25rem 1rem;
+        overflow: auto;
+        border-top: 1px solid var(--border);
+        font-size: 0.8rem;
+        line-height: 1.5;
+        white-space: pre-wrap;
+      }
+      pre .err {
+        color: var(--bad);
+        font-weight: 600;
+      }
+      pre .ok {
+        color: var(--ok);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+      @media (max-width: 40rem) {
+        .hide-sm {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Listening audio generator</h1>
+          <p class="muted small">
+            Qwen3-TTS 1.7B · Opus 32 kbps · files go to <code>public/audio</code>
+          </p>
+        </div>
+        <span class="conn" id="conn"
+          ><span class="dot" aria-hidden="true"></span><span id="conn-text">Connecting…</span></span
+        >
+      </header>
+
+      <section class="stats" aria-label="Summary">
+        <div class="panel stat">
+          <span class="value" id="st-done">–</span>
+          <span class="label">exams done</span>
+          <div class="meter" aria-hidden="true"><span id="st-meter" style="width: 0"></span></div>
+        </div>
+        <div class="panel stat">
+          <span class="value" id="st-missing">–</span><span class="label">not generated</span>
+        </div>
+        <div class="panel stat">
+          <span class="value" id="st-stale">–</span
+          ><span class="label">outdated (script changed)</span>
+        </div>
+        <div class="panel stat">
+          <span class="value" id="st-audio">–</span><span class="label">of audio</span>
+        </div>
+        <div class="panel stat">
+          <span class="value" id="st-size">–</span><span class="label">on disk</span>
+        </div>
+      </section>
+
+      <section class="panel job" aria-labelledby="job-title">
+        <div class="job-head">
+          <div>
+            <h2 class="job-title" id="job-title">Ready</h2>
+            <span class="phase" id="job-phase" hidden></span>
+            <p class="muted small" id="job-hint" style="margin: 0.25rem 0 0"></p>
+          </div>
+          <div class="row">
+            <button type="button" class="primary" id="go">Generate</button>
+            <button type="button" class="danger" id="stop" hidden>Stop after this exam</button>
+          </div>
+        </div>
+
+        <div class="bars" id="bars" hidden>
+          <div>
+            <div class="bar-label">
+              <span id="exam-bar-label">Current exam</span><span id="exam-bar-value"></span>
+            </div>
+            <div class="track" id="exam-track"><span id="exam-bar"></span></div>
+          </div>
+          <div>
+            <div class="bar-label"><span>Queue</span><span id="queue-bar-value"></span></div>
+            <div class="track"><span id="queue-bar"></span></div>
+          </div>
+        </div>
+
+        <dl class="facts" id="facts" hidden>
+          <div>
+            <dt>Elapsed</dt>
+            <dd id="f-elapsed">–</dd>
+          </div>
+          <div>
+            <dt>This exam</dt>
+            <dd id="f-exam">–</dd>
+          </div>
+          <div>
+            <dt>Average per exam</dt>
+            <dd id="f-avg">–</dd>
+          </div>
+          <div>
+            <dt>Time left</dt>
+            <dd id="f-eta">–</dd>
+          </div>
+          <div>
+            <dt>Finishes at</dt>
+            <dd id="f-end">–</dd>
+          </div>
+        </dl>
+
+        <ul class="errors" id="errors" hidden></ul>
+
+        <div class="row options" id="options">
+          <label class="check"><input type="checkbox" id="redo" /> Also redo finished exams</label>
+          <label class="check"
+            ><input type="checkbox" id="pending" /> Include exams with short scripts</label
+          >
+        </div>
+      </section>
+      <p class="visually-hidden" aria-live="polite" id="announce"></p>
+
+      <section class="panel" aria-labelledby="exams-title" style="display: grid; gap: 0.75rem">
+        <div class="row">
+          <h2 id="exams-title">Exams</h2>
+          <span class="spacer"></span>
+          <input
+            type="search"
+            id="search"
+            placeholder="Search exams  ( / )"
+            aria-label="Search exams"
+          />
+        </div>
+        <div class="chips" role="group" aria-label="Filter by status" id="chips"></div>
+        <div class="row selection" id="selection" role="region" aria-label="Selection">
+          <strong id="sel-count"></strong>
+          <span class="spacer"></span>
+          <button type="button" id="sel-go" class="primary">Generate selected</button>
+          <button type="button" id="sel-clear" class="quiet">Clear</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" class="sel">
+                  <label class="check" style="justify-content: center; width: 2.75rem">
+                    <input type="checkbox" id="sel-all" aria-label="Select all shown exams" />
+                  </label>
+                </th>
+                <th scope="col">Exam</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="num hide-sm">Recordings</th>
+                <th scope="col" class="num hide-sm">Words</th>
+                <th scope="col" class="num">Audio</th>
+                <th scope="col" class="num hide-sm">Size</th>
+                <th scope="col" class="num"><span class="visually-hidden">Actions</span></th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+          <p class="empty" id="empty" hidden>No exams match.</p>
+        </div>
+      </section>
+
+      <details class="panel" id="log-box">
+        <summary>Log <span class="muted small" id="log-last"></span></summary>
+        <pre id="log" tabindex="0" aria-label="Log"></pre>
+      </details>
+    </main>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const FILTERS = [
+        ['all', 'All'],
+        ['todo', 'To do'],
+        ['missing', 'Not generated'],
+        ['stale', 'Outdated'],
+        ['done', 'Done'],
+        ['short', 'Short script'],
+      ];
+      const STATE_LABEL = { done: 'Done', stale: 'Outdated', missing: 'Not generated' };
+      const ui = { filter: 'all', query: '', selected: new Set(), open: new Set() };
+      const rows = new Map();
+      let data = null;
+      let lastAnnounce = '';
+
+      // ------------------------------------------------------------ helpers
+
+      const mb = (b) => (b ? (b / 1048576).toFixed(1) + ' MB' : '–');
+      const duration = (s) => {
+        if (!s && s !== 0) return '–';
+        s = Math.max(0, Math.round(s));
+        const h = Math.floor(s / 3600);
+        const m = Math.floor((s % 3600) / 60);
+        if (h) return `${h} h ${m} min`;
+        if (m) return `${m} min ${String(s % 60).padStart(2, '0')} s`;
+        return `${s} s`;
+      };
+      const short = (s) => (s ? `${Math.round(s / 60)} min` : '–');
+      const el = (tag, props = {}, ...children) => {
+        const node = Object.assign(document.createElement(tag), props);
+        node.append(...children);
+        return node;
+      };
+      const isTodo = (e) => e.state !== 'done';
+      const matches = (e) => {
+        const f = ui.filter;
+        const okFilter =
+          f === 'all' ||
+          (f === 'todo' && isTodo(e)) ||
+          (f === 'short' && e.pending) ||
+          e.state === f;
+        const q = ui.query;
+        return (
+          okFilter && (!q || e.id.toLowerCase().includes(q) || e.title.toLowerCase().includes(q))
+        );
+      };
+
+      async function post(url, body) {
+        try {
+          await fetch(url, { method: 'POST', body: JSON.stringify(body ?? {}) });
+        } finally {
+          refresh();
+        }
+      }
+
+      // What the main button would queue, with the same rules as start() in server.py.
+      function goTargets() {
+        const redo = $('redo').checked;
+        const pending = $('pending').checked;
+        return data.exams.filter((e) => (redo || e.state !== 'done') && (pending || !e.pending));
+      }
+
+      // ------------------------------------------------------------ actions
+
+      $('go').onclick = () =>
+        post('/api/go', { includePending: $('pending').checked, redo: $('redo').checked });
+      $('stop').onclick = () => post('/api/stop');
+      $('redo').onchange = $('pending').onchange = () => data && render();
+      $('sel-go').onclick = () => {
+        post('/api/go', { ids: [...ui.selected], redo: true });
+        ui.selected.clear();
+      };
+      $('sel-clear').onclick = () => {
+        ui.selected.clear();
+        render();
+      };
+      $('sel-all').onchange = (ev) => {
+        for (const e of data.exams.filter(matches)) {
+          ev.target.checked ? ui.selected.add(e.id) : ui.selected.delete(e.id);
+        }
+        render();
+      };
+      $('search').oninput = (ev) => {
+        ui.query = ev.target.value.trim().toLowerCase();
+        render();
+      };
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+          ev.preventDefault();
+          $('search').focus();
+        }
+      });
+      // Only one recording plays at a time.
+      document.addEventListener(
+        'play',
+        (ev) => document.querySelectorAll('audio').forEach((a) => a !== ev.target && a.pause()),
+        true,
+      );
+
+      const chipButtons = new Map(
+        FILTERS.map(([key, label]) => {
+          const count = el('span', { className: 'count' });
+          const b = el('button', { type: 'button', className: 'chip' }, label, count);
+          b.onclick = () => {
+            ui.filter = key;
+            render();
+          };
+          $('chips').append(b);
+          return [key, { b, count }];
+        }),
+      );
+
+      // ------------------------------------------------------------ rows
+      // Rows are built once and then only updated, so focus, selection and playing audio survive the refresh.
+
+      function makeRow(e) {
+        const check = el('input', { type: 'checkbox' });
+        check.setAttribute('aria-label', `Select ${e.id}`);
+        check.onchange = () => {
+          check.checked ? ui.selected.add(e.id) : ui.selected.delete(e.id);
+          render();
+        };
+        const name = el('span', { className: 'exam-name' });
+        const title = el('span', { className: 'exam-title' });
+        const badge = el('span', { className: 'badge' });
+        const shortBadge = el('span', { className: 'badge short', textContent: 'short script' });
+        const make = el('button', { type: 'button' });
+        make.onclick = () => post('/api/go', { ids: [e.id], redo: true });
+        const listen = el('button', { type: 'button' });
+        listen.onclick = () => {
+          ui.open.has(e.id) ? ui.open.delete(e.id) : ui.open.add(e.id);
+          render();
+        };
+        const cells = {
+          recs: el('td', { className: 'num hide-sm' }),
+          words: el('td', { className: 'num hide-sm' }),
+          audio: el('td', { className: 'num' }),
+          size: el('td', { className: 'num hide-sm' }),
+        };
+        const tr = el(
+          'tr',
+          { className: 'exam' },
+          el('td', { className: 'sel' }, el('label', {}, check)),
+          el('td', {}, name, title),
+          el('td', {}, badge, shortBadge),
+          cells.recs,
+          cells.words,
+          cells.audio,
+          cells.size,
+          el('td', { className: 'actions' }, listen, make),
+        );
+        const files = el('div', { className: 'files' });
+        const detail = el('tr', { className: 'detail' }, el('td', { colSpan: 8 }, files));
+        return {
+          tr,
+          detail,
+          check,
+          name,
+          title,
+          badge,
+          shortBadge,
+          make,
+          listen,
+          cells,
+          files,
+          filesKey: '',
+        };
+      }
+
+      function updateRow(r, e, job) {
+        const current = job.running && job.exam === e.id;
+        const queued = job.running && !current && job.queue.includes(e.id);
+        r.tr.classList.toggle('current', current);
+        r.tr.classList.toggle('queued', queued);
+        r.check.checked = ui.selected.has(e.id);
+        r.name.textContent = e.id;
+        r.title.textContent = e.title !== e.id ? e.title : '';
+        r.badge.className = 'badge ' + (current ? 'working' : e.state);
+        r.badge.textContent = current ? 'Generating…' : STATE_LABEL[e.state];
+        r.shortBadge.hidden = !e.pending;
+        r.cells.recs.textContent = e.recordings;
+        r.cells.words.textContent = e.words.toLocaleString('en');
+        r.cells.audio.textContent = short(e.seconds);
+        r.cells.size.textContent = mb(e.bytes);
+        r.make.textContent = e.state === 'done' ? 'Redo' : 'Generate';
+        r.make.disabled = job.running;
+        r.make.setAttribute('aria-label', `${r.make.textContent} audio for ${e.id}`);
+        const isOpen = ui.open.has(e.id) && e.files.length > 0;
+        r.listen.hidden = !e.files.length;
+        r.listen.textContent = isOpen ? 'Hide' : 'Listen';
+        r.listen.setAttribute('aria-expanded', String(isOpen));
+        r.listen.setAttribute(
+          'aria-label',
+          `${isOpen ? 'Hide recordings of' : 'Listen to'} ${e.id}`,
+        );
+        // Rebuild the players only when the files change, so a playing one keeps playing.
+        const key = e.files.join('|') + '#' + e.bytes;
+        if (isOpen && key !== r.filesKey) {
+          r.filesKey = key;
+          r.files.replaceChildren(
+            ...e.files.map((f, i) => {
+              const a = el('audio', {
+                controls: true,
+                preload: 'none',
+                src: `/audio/${f}?v=${e.bytes}`,
+              });
+              a.setAttribute('aria-label', `${e.id}, recording ${i + 1}`);
+              return el('div', { className: 'file' }, `Recording ${i + 1}`, a);
+            }),
+          );
+        }
+        return isOpen;
+      }
+
+      function renderRows(job) {
+        const wanted = [];
+        for (const e of data.exams) {
+          let r = rows.get(e.id);
+          if (!r) rows.set(e.id, (r = makeRow(e)));
+          const isOpen = updateRow(r, e, job);
+          if (matches(e)) wanted.push(r.tr, ...(isOpen ? [r.detail] : []));
+        }
+        // Moving a node pauses its audio, so touch the DOM only when the order really changes.
+        const tbody = $('rows');
+        const now = [...tbody.children];
+        if (now.length !== wanted.length || now.some((n, i) => n !== wanted[i]))
+          tbody.replaceChildren(...wanted);
+        $('empty').hidden = wanted.length > 0;
+
+        const shown = data.exams.filter(matches);
+        const picked = shown.filter((e) => ui.selected.has(e.id)).length;
+        $('sel-all').checked = shown.length > 0 && picked === shown.length;
+        $('sel-all').indeterminate = picked > 0 && picked < shown.length;
+      }
+
+      // ------------------------------------------------------------ page
+
+      function render() {
+        const job = data.job;
+        const exams = data.exams;
+        const count = (fn) => exams.filter(fn).length;
+        const done = count((e) => e.state === 'done');
+
+        $('st-done').textContent = `${done} / ${exams.length}`;
+        $('st-meter').style.width = `${exams.length ? (100 * done) / exams.length : 0}%`;
+        $('st-missing').textContent = count((e) => e.state === 'missing');
+        $('st-stale').textContent = count((e) => e.state === 'stale');
+        const totalSeconds = exams.reduce((a, e) => a + e.seconds, 0);
+        $('st-audio').textContent =
+          totalSeconds >= 3600
+            ? duration(totalSeconds).replace(/ \d+ s$/, '')
+            : short(totalSeconds);
+        $('st-size').textContent = mb(exams.reduce((a, e) => a + e.bytes, 0));
+
+        const counts = {
+          all: exams.length,
+          todo: count(isTodo),
+          missing: count((e) => e.state === 'missing'),
+          stale: count((e) => e.state === 'stale'),
+          done,
+          short: count((e) => e.pending),
+        };
+        for (const [key, { b, count: c }] of chipButtons) {
+          b.setAttribute('aria-pressed', String(ui.filter === key));
+          c.textContent = counts[key];
+        }
+
+        renderJob(job);
+        renderRows(job);
+
+        for (const id of ui.selected) if (!exams.some((e) => e.id === id)) ui.selected.delete(id);
+        $('selection').classList.toggle('show', ui.selected.size > 0);
+        $('sel-count').textContent = `${ui.selected.size} selected`;
+        $('sel-go').disabled = job.running;
+        $('sel-go').textContent = `Generate ${ui.selected.size} selected`;
+
+        const log = $('log');
+        const atEnd = log.scrollTop + log.clientHeight >= log.scrollHeight - 8;
+        log.replaceChildren(
+          ...job.log.map((line) =>
+            el('div', {
+              className: /FAILED|Stopped|error/i.test(line)
+                ? 'err'
+                : /done in/.test(line)
+                  ? 'ok'
+                  : '',
+              textContent: line,
+            }),
+          ),
+        );
+        if (atEnd) log.scrollTop = log.scrollHeight;
+        $('log-last').textContent = job.log.length ? '· ' + job.log[job.log.length - 1] : '';
+      }
+
+      function renderJob(job) {
+        const running = job.running;
+        $('go').hidden = running;
+        $('stop').hidden = !running;
+        $('stop').disabled = job.stopping;
+        $('stop').textContent = job.stopping ? 'Stopping after this exam…' : 'Stop after this exam';
+        $('options').hidden = running;
+        $('bars').hidden = !running;
+        $('facts').hidden = !running;
+        $('job-phase').hidden = !running;
+        $('conn').classList.toggle('busy', running);
+        $('conn-text').textContent = running ? 'Generating' : 'Connected';
+
+        const errors = $('errors');
+        errors.hidden = !job.errors.length;
+        errors.replaceChildren(...job.errors.map((t) => el('li', { textContent: t })));
+
+        let announce;
+        if (!running) {
+          const targets = goTargets();
+          const go = $('go');
+          go.disabled = targets.length === 0;
+          go.textContent = targets.length
+            ? `Generate ${targets.length} exam${targets.length === 1 ? '' : 's'}`
+            : 'Nothing to generate';
+          $('job-title').textContent = job.errors.length ? 'Stopped with errors' : 'Ready';
+          const words = targets.reduce((a, e) => a + e.words, 0);
+          $('job-hint').textContent = targets.length
+            ? `${words.toLocaleString('en')} words. The first batch compiles the model, which takes about 3 minutes.`
+            : 'All exams are up to date. Tick an option below, or pick exams in the table.';
+          announce = $('job-title').textContent;
+        } else {
+          const position = Math.min(job.done + 1, job.total);
+          $('job-title').textContent = job.exam ?? 'Loading the model…';
+          $('job-phase').textContent = job.phase;
+          $('job-hint').textContent = `Exam ${position} of ${job.total}`;
+          announce = `${job.exam ?? 'loading'}: ${job.phase}`;
+
+          const [b, batches] = job.batch;
+          const examTrack = $('exam-track');
+          const examFrac = batches ? (job.phase === 'encoding' ? 1 : (b - 1) / batches) : 0;
+          examTrack.classList.toggle('indeterminate', !batches);
+          $('exam-bar').style.width = batches ? `${100 * examFrac}%` : '';
+          $('exam-bar-label').textContent = job.exam ? 'Current exam' : 'Preparing';
+          $('exam-bar-value').textContent = batches ? `batch ${b} of ${batches}` : '';
+          $('queue-bar').style.width = `${(100 * (job.done + examFrac)) / Math.max(job.total, 1)}%`;
+          $('queue-bar-value').textContent = `${job.done} of ${job.total} done`;
+
+          const now = Date.now() / 1000;
+          const inExam = job.exam_started ? now - job.exam_started : 0;
+          const times = job.exam_seconds;
+          const avg = times.length ? times.reduce((a, t) => a + t, 0) / times.length : null;
+          $('f-elapsed').textContent = job.started ? duration(now - job.started) : '–';
+          $('f-exam').textContent = job.exam_started ? duration(inExam) : '–';
+          $('f-avg').textContent = avg ? duration(avg) : '–';
+          let left = null;
+          if (avg) {
+            left = Math.max(0, avg * (job.total - job.done) - inExam);
+          } else if (batches && b > 2 && examFrac > 0) {
+            // No exam has finished yet: extrapolate from the batches of this exam (the first one compiles).
+            const perExam = inExam / examFrac;
+            left = Math.max(0, perExam * (job.total - job.done) - inExam);
+          }
+          $('f-eta').textContent = left === null ? 'estimating…' : duration(left);
+          $('f-end').textContent =
+            left === null
+              ? '–'
+              : new Date((now + left) * 1000).toLocaleTimeString([], {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                });
+        }
+        if (announce !== lastAnnounce) {
+          lastAnnounce = announce;
+          $('announce').textContent = announce;
+        }
+      }
+
+      let busy = false;
+      async function refresh() {
+        if (busy) return;
+        busy = true;
+        try {
+          data = await (await fetch('/api/state')).json();
+          $('conn').classList.remove('off');
+          render();
+        } catch {
+          $('conn').classList.add('off');
+          $('conn').classList.remove('busy');
+          $('conn-text').textContent = 'Server not answering';
+        } finally {
+          busy = false;
+        }
+      }
+      refresh();
+      setInterval(refresh, 2000);
+    </script>
+  </body>
+</html>
