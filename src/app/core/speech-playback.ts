@@ -1,4 +1,4 @@
-import { signal } from '@angular/core';
+import { signal, type Signal } from '@angular/core';
 import type { Recording, Speaker } from '../models/exam';
 
 /**
@@ -16,6 +16,20 @@ import type { Recording, Speaker } from '../models/exam';
  */
 
 export type PlaybackState = 'idle' | 'playing' | 'paused' | 'ended' | 'failed';
+
+/** What the listening player needs from a playback: speech synthesis (`ScriptPlayback`) or an audio file. */
+export interface RecordingPlayback {
+  readonly state: Signal<PlaybackState>;
+  /** Index of the turn being played (or the last one played). */
+  readonly turn: Signal<number>;
+  readonly turnCount: number;
+  readonly speakerId: string | undefined;
+  restart(): void;
+  pause(): void;
+  resume(): void;
+  repeatTurn(): void;
+  stop(): void;
+}
 
 const MAX_CHUNK = 170;
 

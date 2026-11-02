@@ -52,6 +52,7 @@ Before committing: lint, test, test:scripts, validate:exams, validate:grammar, v
 | Folder layout, routes, how a feature is built                 | [docs/architecture.md](docs/architecture.md)             |
 | Colours, tokens, UI components, themes, settings              | [docs/design-system.md](docs/design-system.md)           |
 | Exam session store, scoring, part renderers, listening, timer | [docs/exam-engine.md](docs/exam-engine.md)               |
+| Listening audio files and the generator tool                  | [docs/listening-audio.md](docs/listening-audio.md)       |
 | Speaking recording and recognition                            | [docs/speaking.md](docs/speaking.md)                     |
 | Writing checker, rules, rubric                                | [docs/writing-checker.md](docs/writing-checker.md)       |
 | PDF and ZIP export of results                                 | [docs/export.md](docs/export.md)                         |

@@ -7,14 +7,18 @@ import {
   input,
   signal,
 } from '@angular/core';
+import { AudioClipsService } from '../../../core/audio-clips.service';
+import { FilePlayback } from '../../../core/audio-playback';
+import { SettingsService } from '../../../core/settings.service';
+import type { RecordingPlayback } from '../../../core/speech-playback';
 import { SpeechService } from '../../../core/speech.service';
 import type { Recording } from '../../../models/exam';
 import { Button, Chip, Icon } from '../../../shared/ui';
 import { ExamSessionStore } from '../session/exam-session.store';
 
 /**
- * Plays a listening script with the browser's speech synthesis, one turn at a time, with a voice per
- * speaker. Exam mode allows two plays and hides the transcript until the section is submitted;
+ * Plays a listening recording: the generated audio file when one exists for this script, otherwise the
+ * browser's speech synthesis, one turn at a time, with a voice per speaker. Exam mode allows two plays and hides the transcript until the section is submitted;
  * practice mode is unlimited and offers the transcript. Without speech synthesis the transcript is shown.
  */
 @Component({
@@ -205,8 +209,28 @@ export class AudioScriptPlayer {
 
   protected readonly store = inject(ExamSessionStore);
   private readonly speech = inject(SpeechService);
+  private readonly clips = inject(AudioClipsService);
+  private readonly settings = inject(SettingsService);
 
-  protected readonly playback = computed(() => this.speech.createPlayback(this.recording()));
+  /** Audio files that could not be played; their recordings fall back to speech synthesis. */
+  private readonly failedUrls = signal<ReadonlySet<string>>(new Set());
+  private readonly clip = computed(() => {
+    const exam = this.store.exam();
+    const clip = exam ? this.clips.clipFor(exam, this.recording()) : undefined;
+    return clip && !this.failedUrls().has(clip.url) ? clip : undefined;
+  });
+
+  protected readonly playback = computed<RecordingPlayback>(() => {
+    const clip = this.clip();
+    if (!clip) return this.speech.createPlayback(this.recording());
+    return new FilePlayback(
+      this.recording(),
+      clip.url,
+      clip.starts,
+      () => this.settings.settings().speechRate,
+      () => this.failedUrls.update((urls) => new Set(urls).add(clip.url)),
+    );
+  });
   protected readonly state = computed(() => this.playback().state());
   protected readonly turn = computed(() => this.playback().turn());
   protected readonly turnCount = computed(() => this.playback().turnCount);
@@ -218,7 +242,7 @@ export class AudioScriptPlayer {
   protected readonly plays = computed(() => this.store.listens(this.playKey()));
   protected readonly canStart = computed(() => this.plays() < this.store.maxListens());
   protected readonly unavailable = computed(
-    () => !this.speech.supported || this.state() === 'failed',
+    () => (!this.speech.supported && !this.clip()) || this.state() === 'failed',
   );
   protected readonly playsText = computed(() => {
     const max = this.store.maxListens();
