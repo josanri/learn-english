@@ -251,6 +251,7 @@
               "options": [
                 "Roadworks stopped the service",
                 "The bus was too full to get on",
+                "The driver was ill",
                 "The writer arrived after it had left"
               ],
               "answer": 0,
@@ -261,10 +262,11 @@
               "prompt": "Who suggested another route?",
               "options": [
                 "The bus driver",
-                "A local woman",
-                "A family at the lake"
+                "A hotel owner",
+                "A family at the lake",
+                "A local woman"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "A local woman said there was another way and pointed to a path."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "Why did the writer become worried?",
               "options": [
                 "The weather was getting colder and wetter",
-                "The path was too crowded with walkers",
-                "The walk was taking longer than expected"
+                "The walk was taking longer than expected",
+                "It started to rain heavily",
+                "The path was too crowded with walkers"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "The walk was longer than she expected, so she worried she had taken a wrong turn."
             },
             {
               "id": "r3-4",
               "prompt": "How did the family help?",
               "options": [
-                "They showed where to find the road",
                 "They drove the writer to the coast",
-                "They lent the writer a map"
+                "They lent the writer a map",
+                "They showed where to find the road",
+                "They gave the writer some food"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "The family showed her where the path joined the main road."
             },
             {
               "id": "r3-5",
               "prompt": "What does the writer plan to do next time?",
               "options": [
-                "Take an earlier bus to the coast",
                 "Walk the route with someone",
+                "Take an earlier bus to the coast",
+                "Visit the lake again",
                 "Stay near the lake for longer"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She plans to walk the same route with a friend when she visits again."
             }
           ]
@@ -306,15 +311,17 @@
           "id": "reading-4",
           "number": 4,
           "title": "A weekend on an island",
-          "instructions": "Choose the sentence for each gap. One sentence is extra.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "My friends and I booked a weekend on a small island. We expected to spend most of the time on the beach. [1] The owner lent us bicycles, so we decided to explore.\n\nOur first stop was a lighthouse at the north end. [2] The view from the top was worth the climb.\n\nAfter lunch, we followed a path through a village. [3] She told us that the local market opened early on Sundays.\n\nWe set our alarms for the next morning. [4] We bought fresh bread and fruit for the journey home.\n\nThe weekend went quickly, but we came back with plenty of stories. [5] I would recommend the island to anyone who enjoys walking.",
           "sentences": [
             "But when we arrived, the sky was grey and it was too cold to swim.",
             "A woman at a small shop gave us a useful tip.",
-            "It was a short trip, but I felt fully relaxed afterwards.",
+            "A ferry runs between the island and the mainland every hour.",
             "We got up at seven and visited the market.",
+            "It was a short trip, but I felt fully relaxed afterwards.",
             "A steep staircase led to the top.",
+            "Many of the houses had red doors and small gardens.",
             "The streets were almost empty at that time."
           ],
           "gaps": [
@@ -325,7 +332,7 @@
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "F",
               "explanation": "“A steep staircase led to the top” follows the lighthouse and leads to “The view from the top”."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "E",
               "explanation": "“It was a short trip, but I felt fully relaxed afterwards” follows the weekend going quickly and leads to the recommendation."
             }
           ]
@@ -781,12 +788,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "andrew",
+                    "text": "Which gate did the app say, Helen? Gate Two?"
+                  },
+                  {
                     "speaker": "helen",
-                    "text": "Does the ferry leave from Gate Two as usual?"
+                    "text": "That’s what it said yesterday. This morning they moved us to Gate Six because of the delay."
                   },
                   {
                     "speaker": "andrew",
-                    "text": "Not today. It’s leaving from Gate Four because the other one is being repaired."
+                    "text": "Six is miles away, at the far end of the terminal."
+                  },
+                  {
+                    "speaker": "helen",
+                    "text": "I know, but then the screen updated again. Hold on. Yes, it’s Gate Four now, the one just past the coffee shop."
+                  },
+                  {
+                    "speaker": "andrew",
+                    "text": "Great, that’s close. Shall we get a drink first?"
+                  },
+                  {
+                    "speaker": "helen",
+                    "text": "Boarding starts at ten past, so let’s go straight there."
                   }
                 ]
               },
@@ -799,7 +822,7 @@
                   "Gate Six"
                 ],
                 "answer": 0,
-                "explanation": "Andrew says the ferry leaves from Gate Four today because the other gate is being repaired."
+                "explanation": "The app showed Gate Two yesterday and then Gate Six, but the screen changed again and Gate Four, past the coffee shop, is the final gate."
               }
             },
             {
@@ -826,11 +849,35 @@
                 "turns": [
                   {
                     "speaker": "mateo",
-                    "text": "Would you like a return ticket?"
+                    "text": "Hello. I need to get to Oxford, please."
                   },
                   {
                     "speaker": "zoe",
-                    "text": "I wanted one, but I’ve changed my plans. I’ll take a single and decide later."
+                    "text": "Certainly. Would you like a return? It’s cheaper than two tickets."
+                  },
+                  {
+                    "speaker": "mateo",
+                    "text": "Not today. My friend will drive me back on Sunday. I saw an advert for a group offer, though."
+                  },
+                  {
+                    "speaker": "zoe",
+                    "text": "That’s only for four people or more."
+                  },
+                  {
+                    "speaker": "mateo",
+                    "text": "I’m on my own."
+                  },
+                  {
+                    "speaker": "zoe",
+                    "text": "Then you need a single, which is ten pounds. One way."
+                  },
+                  {
+                    "speaker": "mateo",
+                    "text": "Fine. Can I pay by card? And which platform does it leave from?"
+                  },
+                  {
+                    "speaker": "zoe",
+                    "text": "Platform three, in about ten minutes, so you’d better hurry."
                   }
                 ]
               },
@@ -843,7 +890,7 @@
                   "A single"
                 ],
                 "answer": 2,
-                "explanation": "Zoe changed her plans, so she will buy a single ticket and decide later."
+                "explanation": "Mateo does not need a return because his friend will drive him back, and the group offer is for four people or more, so he buys a single."
               }
             },
             {
@@ -870,11 +917,27 @@
                 "turns": [
                   {
                     "speaker": "ruth",
-                    "text": "The map said the castle was five minutes away, but it took us nearly twenty."
+                    "text": "Here we are at last. I’m glad we walked."
                   },
                   {
                     "speaker": "harry",
-                    "text": "Well, at least we’re here now."
+                    "text": "Me too. The guidebook said an hour from the station."
+                  },
+                  {
+                    "speaker": "ruth",
+                    "text": "It must be wrong. We left the station at ten to three, and it’s ten past three now."
+                  },
+                  {
+                    "speaker": "harry",
+                    "text": "Is it? Wow. The taxi driver told us five minutes by car, but I think he was exaggerating."
+                  },
+                  {
+                    "speaker": "ruth",
+                    "text": "Or he drives very fast! Anyway, I’m happy we didn’t hire him."
+                  },
+                  {
+                    "speaker": "harry",
+                    "text": "And it was pretty, along the river."
                   }
                 ]
               },
@@ -887,7 +950,7 @@
                   "Twenty minutes"
                 ],
                 "answer": 2,
-                "explanation": "The map said five minutes, but it took them nearly twenty."
+                "explanation": "They left at ten to three and arrived at ten past, so the walk took twenty minutes, not the hour in the guidebook or the taxi driver’s five minutes."
               }
             },
             {
@@ -914,11 +977,27 @@
                 "turns": [
                   {
                     "speaker": "amira",
-                    "text": "Have you packed everything for the beach?"
+                    "text": "Colin, you can’t go to the beach without anything for the sun."
                   },
                   {
                     "speaker": "colin",
-                    "text": "I’ve got my sunglasses, but I forgot my hat. I’ll buy one at the shop near the beach."
+                    "text": "I’ve got sunglasses. I bought them at the airport."
+                  },
+                  {
+                    "speaker": "amira",
+                    "text": "Then you need something else. A towel?"
+                  },
+                  {
+                    "speaker": "colin",
+                    "text": "The hotel gives us towels. I’d like something for my head, though. I nearly bought a straw one in the market, but it was too small."
+                  },
+                  {
+                    "speaker": "amira",
+                    "text": "There’s a hat shop across the road with big cotton ones. Five euros."
+                  },
+                  {
+                    "speaker": "colin",
+                    "text": "Perfect. I’ll go now. Wait for me here."
                   }
                 ]
               },
@@ -931,7 +1010,7 @@
                   "A beach towel"
                 ],
                 "answer": 1,
-                "explanation": "Colin forgot his hat and will buy one at the shop near the beach."
+                "explanation": "Colin already has sunglasses and the hotel provides towels; he nearly bought something for his head in the market and will now buy a hat across the road."
               }
             },
             {
@@ -958,11 +1037,31 @@
                 "turns": [
                   {
                     "speaker": "freya",
-                    "text": "Shall we take the road through the village? It’s more interesting, even though it’s a little longer."
+                    "text": "Which way shall we go to the coast, Paolo? The motorway?"
                   },
                   {
                     "speaker": "paolo",
-                    "text": "Fine by me."
+                    "text": "It’s the quickest, but there’s an accident near junction nine. The radio says it’s closed for hours."
+                  },
+                  {
+                    "speaker": "freya",
+                    "text": "What about the road past the airport?"
+                  },
+                  {
+                    "speaker": "paolo",
+                    "text": "That’s normally empty, but they’re working on the bridge. We’d lose time."
+                  },
+                  {
+                    "speaker": "freya",
+                    "text": "Then it’s the old road, the one with the market and the church."
+                  },
+                  {
+                    "speaker": "paolo",
+                    "text": "Slower, but pretty, and we can stop in the village for coffee."
+                  },
+                  {
+                    "speaker": "freya",
+                    "text": "Sounds good."
                   }
                 ]
               },
@@ -975,7 +1074,7 @@
                   "Past the airport"
                 ],
                 "answer": 0,
-                "explanation": "Freya prefers the road through the village because it is more interesting."
+                "explanation": "The motorway is closed after an accident and the airport road has bridge works, so they take the old road and stop in the village."
               }
             },
             {
@@ -1002,11 +1101,31 @@
                 "turns": [
                   {
                     "speaker": "dev",
-                    "text": "What time does breakfast finish?"
+                    "text": "Excuse me, what time does breakfast finish?"
                   },
                   {
                     "speaker": "leah",
-                    "text": "It’s served until nine. But on Sunday we serve it until half past ten, because many guests sleep later."
+                    "text": "It’s nine o’clock on weekdays, but on Sunday we serve it a bit later."
+                  },
+                  {
+                    "speaker": "dev",
+                    "text": "Until ten?"
+                  },
+                  {
+                    "speaker": "leah",
+                    "text": "That was last summer. Now it’s thirty minutes longer, because guests complained that they couldn’t sleep in."
+                  },
+                  {
+                    "speaker": "dev",
+                    "text": "Lovely. And is it the same buffet?"
+                  },
+                  {
+                    "speaker": "leah",
+                    "text": "Yes, with hot food until the end. We also have fruit and yoghurt, and I can bring tea to your table if you like."
+                  },
+                  {
+                    "speaker": "dev",
+                    "text": "Then I’ll come down around ten. Thank you very much for your help."
                   }
                 ]
               },
@@ -1019,7 +1138,7 @@
                   "10:30"
                 ],
                 "answer": 2,
-                "explanation": "On Sunday breakfast is served until half past ten."
+                "explanation": "Weekday breakfast ends at nine and last summer’s Sunday time was ten, but now it finishes thirty minutes later, at half past ten."
               }
             },
             {
@@ -1046,11 +1165,27 @@
                 "turns": [
                   {
                     "speaker": "gus",
-                    "text": "Was the boat trip worth it? I thought it was too expensive."
+                    "text": "Hello Anya, welcome back! How was the boat trip you went on with your cousins at the weekend?"
                   },
                   {
                     "speaker": "anya",
-                    "text": "So did I, but the guide was excellent and we saw dolphins. It was worth it."
+                    "text": "Not bad. It was too short, honestly, only an hour, and I’d have liked more time on the island."
+                  },
+                  {
+                    "speaker": "gus",
+                    "text": "And the guide?"
+                  },
+                  {
+                    "speaker": "anya",
+                    "text": "Oh, he was great. He answered every question. But it was fifty pounds each."
+                  },
+                  {
+                    "speaker": "gus",
+                    "text": "Fifty! Do you regret it?"
+                  },
+                  {
+                    "speaker": "anya",
+                    "text": "Not at all. I saw dolphins, and the children loved it. I’d happily spend the money again next summer."
                   }
                 ]
               },
@@ -1063,7 +1198,7 @@
                   "The guide was unhelpful"
                 ],
                 "answer": 1,
-                "explanation": "Anya says it was expensive but the guide was excellent and they saw dolphins, so it was worth the money."
+                "explanation": "Anya says the trip was short and the guide was good; she does not regret the fifty pounds and would spend the money again."
               }
             }
           ]
@@ -1098,25 +1233,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "tobias",
+                    "text": "I’m so glad we left the car at home."
+                  },
+                  {
                     "speaker": "ingrid",
-                    "text": "I’m glad we came by train. Parking near the beach was full when we passed it."
+                    "text": "Me too. Did you see the cars near the sea? Hundreds, going round and round, and not a single parking space."
                   },
                   {
                     "speaker": "tobias",
-                    "text": "Yes, and we could relax on the journey."
+                    "text": "And the ticket was cheap."
+                  },
+                  {
+                    "speaker": "ingrid",
+                    "text": "It was, only eleven pounds each, but I’d have paid double to avoid that."
+                  },
+                  {
+                    "speaker": "tobias",
+                    "text": "Remember last year? We drove around for an hour looking for somewhere to stop."
+                  },
+                  {
+                    "speaker": "ingrid",
+                    "text": "Don’t remind me. And the south end of the beach was shut for cleaning today, but nobody minded, the north end was lovely."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Why are they pleased they took the train?",
+                "prompt": "Why are Ingrid and Tobias pleased they took the train?",
                 "options": [
+                  "The ticket was very cheap",
                   "There was no parking space",
-                  "The train ticket was very cheap",
                   "The beach was closed for the day"
                 ],
-                "answer": 0,
-                "explanation": "Ingrid says parking near the beach was full, so they are glad they did not drive."
+                "answer": 1,
+                "explanation": "The ticket was cheap and one end of the beach was shut, but they are pleased mainly because they saw the full roads and remember last year’s search for a place to stop."
               }
             },
             {
@@ -1143,24 +1294,40 @@
                 "turns": [
                   {
                     "speaker": "rory",
-                    "text": "Did you enjoy the walking tour?"
+                    "text": "That was a good tour, wasn’t it?"
                   },
                   {
                     "speaker": "jenny",
-                    "text": "I did, especially the old town. I wish we’d had more time at the museum."
+                    "text": "Yes, the guide was excellent. I’d happily go with him again. The old town was lovely too."
+                  },
+                  {
+                    "speaker": "rory",
+                    "text": "We could come back for it next year."
+                  },
+                  {
+                    "speaker": "jenny",
+                    "text": "Maybe. But what I really regret is the museum. We had forty minutes, and they were closing the best rooms as we arrived, the ones with the Roman things."
+                  },
+                  {
+                    "speaker": "rory",
+                    "text": "We can’t change the timetable."
+                  },
+                  {
+                    "speaker": "jenny",
+                    "text": "I know. I just wish we’d had a whole afternoon there."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the woman wish?",
+                "prompt": "What does Jenny wish?",
                 "options": [
                   "To visit the old town again",
-                  "To spend longer at the museum",
-                  "To join a different tour"
+                  "To join a different tour",
+                  "To spend longer at the museum"
                 ],
-                "answer": 1,
-                "explanation": "Jenny says she wishes they had had more time at the museum."
+                "answer": 2,
+                "explanation": "Jenny likes the guide and the old town, but she regrets that the stop at the museum was only forty minutes and wishes it had been a whole afternoon."
               }
             },
             {
@@ -1187,24 +1354,36 @@
                 "turns": [
                   {
                     "speaker": "kate",
-                    "text": "The guesthouse was comfortable, but the breakfast was better than I expected."
+                    "text": "So, was the hotel good? You were away for nearly a week."
                   },
                   {
                     "speaker": "frank",
-                    "text": "I agree. The homemade bread was delicious."
+                    "text": "The bedroom was tiny, but clean. The garden was lovely, though it rained, so we didn’t sit there."
+                  },
+                  {
+                    "speaker": "kate",
+                    "text": "I wanted to sit there too, in the evening. But the food in the morning, wow."
+                  },
+                  {
+                    "speaker": "frank",
+                    "text": "Eggs, fresh bread, the jam they made themselves. They gave us breakfast on a terrace."
+                  },
+                  {
+                    "speaker": "kate",
+                    "text": "That’s what I’ll tell people. Everything else was fine, but that was the star."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What did they particularly like?",
+                "prompt": "What do Kate and Frank agree was the best thing about the hotel?",
                 "options": [
                   "The breakfast",
                   "The bedroom",
                   "The garden"
                 ],
                 "answer": 0,
-                "explanation": "Kate says the breakfast was better than she expected and Frank praises the homemade bread."
+                "explanation": "Frank thinks the room was small and the garden was wet; they both praise the eggs, bread and jam in the morning as the star of the stay."
               }
             },
             {
@@ -1231,24 +1410,40 @@
                 "turns": [
                   {
                     "speaker": "dina",
-                    "text": "We can walk to the waterfall, but it might rain later."
+                    "text": "Oh no, it’s starting to rain. Shall we go back to the hotel and have lunch there?"
                   },
                   {
                     "speaker": "wes",
-                    "text": "I’ve got two raincoats in my bag, so let’s go."
+                    "text": "We’ve only got today. I’d hate to give up."
+                  },
+                  {
+                    "speaker": "dina",
+                    "text": "We could wait in the café until it stops."
+                  },
+                  {
+                    "speaker": "wes",
+                    "text": "The woman said rain in the mountains can last all day. The waterfall is only twenty minutes away, and we’ve got raincoats."
+                  },
+                  {
+                    "speaker": "dina",
+                    "text": "You’re right. It’ll look better with all that water anyway."
+                  },
+                  {
+                    "speaker": "wes",
+                    "text": "Let’s go. We can have lunch at the top, if the kiosk is open."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What have they decided to do?",
+                "prompt": "What do Dina and Wes decide to do?",
                 "options": [
-                  "Return to the hotel",
-                  "Wait for the rain",
+                  "Go back to the hotel",
+                  "Wait for the rain to stop",
                   "Walk to the waterfall"
                 ],
                 "answer": 2,
-                "explanation": "Wes has two raincoats, so they decide to walk to the waterfall."
+                "explanation": "Dina suggests going back or waiting in the café, but Wes says rain can last all day and the waterfall is only twenty minutes away, so they walk there."
               }
             },
             {
@@ -1274,25 +1469,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "mina",
+                    "text": "The board says the 5:10 is delayed by thirty minutes. Oh no, you’ll be late for your meeting."
+                  },
+                  {
                     "speaker": "vince",
-                    "text": "Your train has been delayed by thirty minutes. You can wait here or use your ticket on the next service."
+                    "text": "Honestly, it doesn’t matter. I phoned and they said to start without me."
                   },
                   {
                     "speaker": "mina",
-                    "text": "Thanks. I’ll wait here."
+                    "text": "And aren’t you cross about the announcements? They said it was cancelled first, then platform six, then delayed."
+                  },
+                  {
+                    "speaker": "vince",
+                    "text": "A bit confusing, but the staff were helpful. Actually, I haven’t eaten since breakfast, so now I have time to eat properly. I can get a sandwich."
+                  },
+                  {
+                    "speaker": "mina",
+                    "text": "Good plan. I’ll join you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What has happened to the train?",
+                "prompt": "How does Vince feel about the delay?",
                 "options": [
-                  "It has been cancelled",
-                  "It is delayed",
-                  "It leaves from another platform"
+                  "Worried that he will miss a meeting",
+                  "Pleased to have time to eat",
+                  "Annoyed with the station staff"
                 ],
                 "answer": 1,
-                "explanation": "The train has been delayed by thirty minutes, so it will leave half an hour late."
+                "explanation": "Vince has already told the meeting to start without him and finds the staff helpful; he is happy to use the extra time to get a sandwich."
               }
             },
             {
@@ -1319,24 +1526,40 @@
                 "turns": [
                   {
                     "speaker": "jess",
-                    "text": "Did you enjoy the mountain path?"
+                    "text": "How was the mountain walk, Bram?"
                   },
                   {
                     "speaker": "bram",
-                    "text": "I loved it, but the last part was quite steep. We should choose an easier walk next time."
+                    "text": "The steepest part nearly finished me. I had to stop every ten minutes."
+                  },
+                  {
+                    "speaker": "jess",
+                    "text": "Was it cold?"
+                  },
+                  {
+                    "speaker": "bram",
+                    "text": "Freezing at the top, but I had my big coat. And I only took the wrong path once, near the lake. A farmer pointed me back."
+                  },
+                  {
+                    "speaker": "jess",
+                    "text": "So would you do it again?"
+                  },
+                  {
+                    "speaker": "bram",
+                    "text": "Definitely. The view from the top was worth every step. I’m so glad I did it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What did the man find difficult?",
+                "prompt": "How does Bram feel about the mountain walk?",
                 "options": [
-                  "The steep part of the walk",
-                  "Finding the path",
-                  "The cold weather"
+                  "Glad he did it despite the difficulty",
+                  "Sorry he went in such cold weather",
+                  "Annoyed that he got lost"
                 ],
                 "answer": 0,
-                "explanation": "Bram says the last part was quite steep and wants an easier walk next time."
+                "explanation": "Bram found the climb hard and cold and took a wrong path once, but he would do it again because the view was worth every step."
               }
             }
           ]
@@ -1361,49 +1584,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good evening. I’m Claire from Open Road Holidays. Our next walking break begins on 14 June. We’ll stay in a hotel in the village of Penford. Each morning, a bus will take us to the start of a different walk. Please bring comfortable boots and a light jacket. The longest walk is twelve kilometres, but we’ll stop for lunch beside a river. Dinner is included, but you’ll need to pay for drinks yourself. There are only two places left, so contact our office soon if you want to join us."
+                "text": "Good evening. I’m Claire from Open Road Holidays, and tonight I’m going to tell you about our new walking break. First, the date. We planned to start in May, but the hotel was full, so the holiday begins on the fourteenth of June. The last day is the twentieth. You’ll stay in a small hotel in the village of Penford. Some customers confuse it with Ashby, which is further north, but our hotel is definitely in Penford. It has a garden and a fire in the sitting room. Now, what should you bring? Walking is easy on this holiday, but the paths can be wet and stony. Comfortable boots are important. Trainers aren’t good enough for the hills, so please don’t bring them. You should also pack a coat, because it can rain even in summer. Let me describe the walking itself. On most days, the walks are about eight kilometres, which takes a morning. The longest walk is on the fourth day. It is twelve kilometres, and you finish at the top of Penford Hill. I know that sounds like a lot, but we walk slowly, and there are plenty of stops. Lunch on that day is beside a river. We tried a picnic by the lake, but it was too windy, so the river is the better place, and it has a bridge where you can sit. The group has about twelve people, and a local guide called Ivan will lead us. Ivan has walked these hills for thirty years. Before I finish, remember that the price includes breakfast and dinner. If you have any questions, please come and see me after the talk. Thank you very much for listening."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Holiday begins: 14 ___",
+              "prompt": "The holiday begins in the month of ___",
               "answer": "June",
-              "explanation": "Claire says the holiday begins on 14 June."
+              "explanation": "Claire says they planned to start in May, but the hotel was full, so it begins on the fourteenth of June."
             },
             {
               "id": "l3-2",
-              "prompt": "Hotel is in Penford ___",
-              "answer": "village",
-              "explanation": "The hotel is in the village of Penford."
+              "prompt": "The hotel is in the village of ___",
+              "answer": "Penford",
+              "explanation": "She says some customers confuse it with Ashby, but the hotel is in Penford."
             },
             {
               "id": "l3-3",
-              "prompt": "Bring comfortable ___",
+              "prompt": "For the hills you must have comfortable ___ (not trainers)",
               "answer": "boots",
-              "explanation": "She tells guests to bring comfortable boots and a light jacket."
+              "explanation": "She says comfortable boots are important and trainers are not good enough."
             },
             {
               "id": "l3-4",
-              "prompt": "Longest walk: twelve ___",
-              "answer": "kilometres",
-              "accepted": [
-                "km"
-              ],
-              "explanation": "The longest walk is twelve kilometres."
+              "prompt": "The hardest walk on day four covers ___",
+              "answer": "twelve kilometres",
+              "explanation": "Most days are about eight kilometres, but the longest walk is twelve kilometres."
             },
             {
               "id": "l3-5",
-              "prompt": "Lunch is beside a ___",
+              "prompt": "The day four picnic is next to a ___ (not the lake)",
               "answer": "river",
-              "explanation": "They stop for lunch beside a river."
+              "explanation": "A picnic by the lake was too windy, so lunch is beside a river."
             },
             {
               "id": "l3-6",
-              "prompt": "Two places are still ___",
-              "answer": "left",
-              "explanation": "Only two places are left, so the learner must write “left”."
+              "prompt": "The local guide is called ___",
+              "answer": "Ivan",
+              "explanation": "She says a local guide called Ivan will lead the group."
             }
           ]
         },
@@ -1435,43 +1655,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Daniel, what made you start writing about travel?"
+                "text": "Daniel, you write about travel for a living. Who first encouraged you to write?"
               },
               {
                 "speaker": "daniel",
-                "text": "I kept a diary on a family trip when I was sixteen. My teacher read it and said I should write more. I didn’t take the idea seriously until a few years later."
+                "text": "It wasn’t my readers, I didn’t have any then. And my family thought I should find a proper job, although my sister did read my first stories. The person who changed things was my English teacher at school. She told me that my letters from a school trip were better than the essays, and she asked me to write for the school magazine. I think I’d have stopped without her."
               },
               {
                 "speaker": "interviewer",
-                "text": "Where did you go first for your work?"
+                "text": "Why did you choose a small town for your first trip as a writer?"
               },
               {
                 "speaker": "daniel",
-                "text": "To a town in the north of England. It wasn’t a famous place, but I wanted to show that interesting trips don’t have to be expensive or far away."
+                "text": "Honestly, I had friends in a big city who invited me, but I said no. It wasn’t the only place I could reach either. I wanted to show people that you don’t need a lot of money to enjoy a weekend away. So I chose a quiet town, stayed in a cheap guest house, and the readers liked that it was something they could copy."
               },
               {
                 "speaker": "interviewer",
-                "text": "How do you choose where to visit?"
+                "text": "Where do you get ideas for places?"
               },
               {
                 "speaker": "daniel",
-                "text": "I ask readers to send ideas. They often know a small museum or walking path that isn’t in the guidebooks."
+                "text": "Travel companies send me emails every day, but I almost never use them, they want me to say nice things. Old maps are fun, and I buy them in markets, but they only give me a starting point. The best ideas come from my readers. They write to me about their own villages, and some of those letters are better than any guidebook."
               },
               {
                 "speaker": "interviewer",
-                "text": "What do you find difficult?"
+                "text": "Is there a problem with travelling a lot?"
               },
               {
                 "speaker": "daniel",
-                "text": "Travel delays can be frustrating, especially when I have a short deadline. I’ve learned to plan a second route, and I always carry a notebook in case my phone battery runs out."
+                "text": "The food in hotels isn’t always great, but I learned to eat in local cafés. And my luggage has only been lost once, which was an adventure rather than a problem. What really drives me crazy is delays. Trains are late, planes are late, buses don’t arrive, and I can lose half a day. I’ve learned to carry a book for those moments."
               },
               {
                 "speaker": "interviewer",
-                "text": "What are you writing about now?"
+                "text": "I’ve heard you always carry a notebook. Why is that?"
               },
               {
                 "speaker": "daniel",
-                "text": "A series about places you can visit by bus. It’s useful for people who don’t drive, and it helps me discover towns I might otherwise pass by."
+                "text": "Well, I do draw a bit, but my maps are terrible, so I don’t draw them for readers. And I write letters on my laptop. The reason is practical. My phone battery often dies after a long day of taking photos, and then I can’t make notes. A small notebook never runs out, so it’s my backup."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What are you working on now?"
+              },
+              {
+                "speaker": "daniel",
+                "text": "A guide to places you can reach by bus, with no car at all. Mountain holidays are popular, and I’ve done a few, but this book is for people who live in cities and want an easy weekend. It’s difficult, because some timetables are confusing, but I think it will be useful."
               }
             ]
           },
@@ -1485,7 +1713,7 @@
                 "A teacher"
               ],
               "answer": 2,
-              "explanation": "Daniel’s teacher read his diary and said he should write more."
+              "explanation": "Daniel says it was not his readers or his family; his English teacher told him his letters were better than his essays and asked him to write for the school magazine."
             },
             {
               "id": "l4-2",
@@ -1496,7 +1724,7 @@
                 "He had friends living there"
               ],
               "answer": 0,
-              "explanation": "He wanted to show that interesting trips do not have to be expensive or far away."
+              "explanation": "He refused the big city and could have gone elsewhere; he wanted to show that a weekend away does not need much money."
             },
             {
               "id": "l4-3",
@@ -1507,7 +1735,7 @@
                 "From his readers"
               ],
               "answer": 2,
-              "explanation": "He asks readers to send ideas."
+              "explanation": "Companies and old maps only give him a starting point; the best ideas come from letters that his readers write about their villages."
             },
             {
               "id": "l4-4",
@@ -1518,7 +1746,7 @@
                 "Lost luggage"
               ],
               "answer": 1,
-              "explanation": "He says travel delays can be frustrating."
+              "explanation": "Hotel food and lost luggage are not the problem; what drives him crazy is delays that waste half a day."
             },
             {
               "id": "l4-5",
@@ -1529,7 +1757,7 @@
                 "His phone battery may run out"
               ],
               "answer": 2,
-              "explanation": "He carries a notebook in case his phone battery runs out."
+              "explanation": "He does not draw maps or write letters in it; his phone battery often dies, so the notebook is his backup."
             },
             {
               "id": "l4-6",
@@ -1540,7 +1768,7 @@
                 "Famous cities abroad"
               ],
               "answer": 0,
-              "explanation": "His current series is about places you can visit by bus."
+              "explanation": "Daniel is writing a guide to places that can be reached by bus; mountain holidays are popular but this book is for easy weekends."
             }
           ]
         }

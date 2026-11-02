@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "How did the writer feel before the trip?",
               "options": [
-                "Excited about seeing the stars",
                 "Nervous about sleeping outside",
-                "Annoyed with her friend"
+                "Excited about seeing the stars",
+                "Annoyed with her friend",
+                "Worried about her exams"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She says she was terrified because she had never slept outside and does not like insects."
             },
             {
               "id": "r3-2",
               "prompt": "Why did it take so long to put up the tent?",
               "options": [
-                "A pole was broken and there were no instructions.",
                 "They did not know how to start it properly.",
-                "They had no teacher to help them at all."
+                "They had no teacher to help them at all.",
+                "They had left the tent poles at school.",
+                "A pole was broken and there were no instructions."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "One of the poles was broken and the instructions were missing, so it took nearly an hour."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "What did the writer enjoy on Friday evening?",
               "options": [
                 "Listening to a teacher's story",
+                "Looking at the sky",
                 "Playing a team game",
-                "Looking at the sky"
+                "Singing with Daria"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She saw many stars and tried to count them."
             },
             {
               "id": "r3-4",
               "prompt": "What happened in the night?",
               "options": [
-                "Rain came into the tent.",
                 "A group left the campsite.",
-                "Daria lost her torch."
+                "Daria lost her torch.",
+                "Rain came into the tent.",
+                "A teacher got lost."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "A drop of rain landed on Daria's nose, showing that the tent was not completely waterproof."
             },
             {
               "id": "r3-5",
               "prompt": "How did the writer feel at the end of the trip?",
               "options": [
+                "She wanted to camp again.",
+                "She wanted to forget it.",
                 "She was too tired to speak.",
-                "She disliked camping even more.",
-                "She wanted to camp again."
+                "She disliked camping even more."
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She understands why people enjoy camping and wants to ask her parents to go together."
             }
           ]
@@ -306,15 +311,17 @@
           "id": "reading-4",
           "number": 4,
           "title": "A school in the forest",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "At the edge of a forest in the north of England, a group of children is learning how to light a fire. They are not at school in the usual way, but at a forest school, where children spend most of their lessons outdoors, whatever the weather. [1] Teachers say that this makes children more confident.\n\nA typical day begins with a walk to the clearing, where the group has a base. [2] They use sticks, ropes and old blankets to make a shelter, and in winter they sit round the fire to drink hot chocolate.\n\nThe children also learn about nature. They collect leaves, look for insects and listen to the birds. [3] Some of them can now tell the difference between twenty kinds of tree.\n\nMany parents were worried about safety at first. [4] Children learn to use tools carefully, and an adult is always with them. Accidents are rare.\n\nNot every child loves it immediately. [5] \"At first, I hated the mud,\" says nine-year-old Nell. \"Now I'd be sad if it was ever sunny.\"",
           "sentences": [
             "Some of them are shy at the start and find the cold and the mud difficult.",
             "However, the forest is not a rough or dangerous place, because the rules are very clear.",
-            "Their parents come to watch on Friday afternoons.",
+            "The nearest school is more than ten kilometres away.",
             "Rain, wind and snow are all part of the lesson.",
             "First, the children decide what they want to do that day.",
+            "Their parents come to watch on Friday afternoons.",
+            "Last winter, the whole forest was covered in snow for a month.",
             "After a few months, they know the names of most of the plants around them."
           ],
           "gaps": [
@@ -330,7 +337,7 @@
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "H",
               "explanation": "They collect leaves and listen to birds, and after a few months they know the plants; the next sentence says they can name twenty kinds of tree."
             },
             {
@@ -736,28 +743,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "vesper",
-                    "name": "Vesper",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "vesper",
-                    "text": "Is the bus to the campsite at nine o'clock?"
-                  },
-                  {
                     "speaker": "ambrose",
-                    "text": "That one was cancelled. The next leaves at ten past nine."
-                  },
-                  {
-                    "speaker": "vesper",
-                    "text": "Then we have time for a coffee first."
+                    "text": "Good morning, campers. This is a message about the bus to Blue Lake. The timetable on your programme says that the bus leaves at nine o’clock, but that’s last year’s information, so please ignore it. Because of roadworks on the main road, the driver will leave at ten past nine, and he will not wait for anybody. If you miss it, the next one goes at ten o’clock, but it’s already full with the school group. So please be at the gate five minutes before, with your bag and your lunch. Thank you."
                   }
                 ]
               },
@@ -770,7 +761,7 @@
                   "At ten o'clock"
                 ],
                 "answer": 1,
-                "explanation": "The nine o'clock bus was cancelled and the next one leaves at ten past nine."
+                "explanation": "The programme says nine and the next bus at ten is full, but the correct departure is ten past nine because of the roadworks."
               }
             },
             {
@@ -784,28 +775,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "basil",
-                    "name": "Basil",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "ulrika",
-                    "text": "Have you got everything for the weekend?"
-                  },
-                  {
-                    "speaker": "basil",
-                    "text": "I think so. I've packed my torch and my water bottle. Oh no, I've left my sleeping bag on the bed!"
-                  },
-                  {
-                    "speaker": "ulrika",
-                    "text": "We'll go back and get it. We have time."
+                    "text": "Hello, Mrs Clark, this is Ulrika from Pine Valley Camp. Don’t worry, Basil is fine and he’s having a great time. He asked me to call because he’s a little embarrassed. He brought his torch, and I checked his water bottle this morning, it’s full. But when he opened his bag tonight, he realised he’d left his sleeping bag on the sofa at home. We have a spare one for tonight, so he won’t be cold. Could you send his own tomorrow, with the bus. He will be very grateful. Thank you very much, and have a good evening."
                   }
                 ]
               },
@@ -818,7 +793,7 @@
                   "His water bottle"
                 ],
                 "answer": 0,
-                "explanation": "He remembers that he has left his sleeping bag on the bed."
+                "explanation": "The torch and the water bottle are in his bag, but he left the sleeping bag at home, and she asks the mother to send it."
               }
             },
             {
@@ -845,15 +820,27 @@
                 "turns": [
                   {
                     "speaker": "ezekiel",
-                    "text": "The sign says that the lake path is closed because of a fallen tree."
+                    "text": "Henrike, we need to decide which way we’re going to walk back to the camp."
                   },
                   {
                     "speaker": "henrike",
-                    "text": "Then we'll go through the woods. It's a bit longer, but it's shady."
+                    "text": "I’d like to go over the hill. The view is great from the top."
                   },
                   {
                     "speaker": "ezekiel",
-                    "text": "Fine by me. Let's go."
+                    "text": "Yes, but it’s a very steep climb, and you’re already tired. The route along the lake is flat, but it’s twice as long, and we’d be back after dark."
+                  },
+                  {
+                    "speaker": "henrike",
+                    "text": "True. What else is there?"
+                  },
+                  {
+                    "speaker": "ezekiel",
+                    "text": "The path through the woods is shaded and short. It joins the main road after twenty minutes. We’ll be there for dinner."
+                  },
+                  {
+                    "speaker": "henrike",
+                    "text": "Fine, let’s do that."
                   }
                 ]
               },
@@ -866,7 +853,7 @@
                   "Along the lake"
                 ],
                 "answer": 0,
-                "explanation": "The lake path is closed, so they decide to go through the woods."
+                "explanation": "The hill is steep and the lake route is long, so they choose the short, shaded path between the trees."
               }
             },
             {
@@ -892,16 +879,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "percival",
+                    "text": "Welcome to Oak Hill campsite. How many nights are you staying?"
+                  },
+                  {
                     "speaker": "arabella",
-                    "text": "How much is a pitch for two adults and a four-year-old?"
+                    "text": "Two nights, please, for one tent. I thought about staying three, but I have to be back at work on Monday."
                   },
                   {
                     "speaker": "percival",
-                    "text": "It's twelve pounds per adult. Children under five are free."
+                    "text": "No problem. It’s twelve pounds a night for each tent. A third night would have made it thirty-six, so you save some money this way."
                   },
                   {
                     "speaker": "arabella",
-                    "text": "So twenty-four pounds altogether, then."
+                    "text": "And is there a charge for the shower?"
+                  },
+                  {
+                    "speaker": "percival",
+                    "text": "No, it’s free. So that’s the total for the weekend, please."
+                  },
+                  {
+                    "speaker": "arabella",
+                    "text": "Here you are. Thank you."
                   }
                 ]
               },
@@ -914,7 +913,7 @@
                   "Thirty-six pounds"
                 ],
                 "answer": 1,
-                "explanation": "Each adult pays twelve pounds and the child is free, so the total is twenty-four pounds."
+                "explanation": "Twelve pounds is the price per night and thirty-six would be three nights, but she stays two, so she pays twice twelve."
               }
             },
             {
@@ -928,28 +927,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "seraphina",
-                    "name": "Seraphina",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "mortimer",
-                    "text": "The forecast says rain from lunchtime tomorrow."
-                  },
-                  {
-                    "speaker": "seraphina",
-                    "text": "Then let's do the long walk in the morning, and stay in the tent in the afternoon."
-                  },
-                  {
-                    "speaker": "mortimer",
-                    "text": "Good plan. I'll bring some cards."
+                    "text": "Hi Seraphina, it’s Mortimer. About the walk on Saturday, I’ve been thinking. This evening is out, because the forecast is for heavy rain, and I don’t want to be in the dark on a muddy path. Tomorrow afternoon would be nice, but I’ve got a dentist appointment at two, and I’ll be late. So what about going first thing, say nine o’clock, before it gets warm. I’ll bring the coffee if you bring the sandwiches, and we can eat at the top. Call me back, please, and tell me what you think."
                   }
                 ]
               },
@@ -962,7 +945,7 @@
                   "Tomorrow morning"
                 ],
                 "answer": 2,
-                "explanation": "Because rain is expected after lunch tomorrow, they will walk in the morning."
+                "explanation": "This evening will have heavy rain and he has an appointment tomorrow afternoon, so he suggests the early hour of the next day."
               }
             },
             {
@@ -988,16 +971,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "evangeline",
+                    "text": "Hector, I think we should put the tent near the river. It’s flat and pretty."
+                  },
+                  {
                     "speaker": "hector",
-                    "text": "Shall we put the tent by the river? It's such a lovely view."
+                    "text": "I don’t know. The toilets are far from there, but that doesn’t bother me. And the water is a bit noisy, but that would help me sleep, not keep me awake. The problem is the sky. Look at those clouds."
                   },
                   {
                     "speaker": "evangeline",
-                    "text": "The ranger said the water can rise quickly after heavy rain. Let's put it under the trees instead."
+                    "text": "It might not rain."
                   },
                   {
                     "speaker": "hector",
-                    "text": "OK, safer is better."
+                    "text": "Last year a man at the campsite told me that the river can rise very quickly in a storm. He had to run to higher ground in the middle of the night."
+                  },
+                  {
+                    "speaker": "evangeline",
+                    "text": "Oh dear. Let’s go up there, near the trees."
                   }
                 ]
               },
@@ -1010,7 +1001,7 @@
                   "It is too noisy."
                 ],
                 "answer": 0,
-                "explanation": "The ranger said that the water can rise quickly after heavy rain."
+                "explanation": "The toilets and the noise do not worry him; it is the sky, because the river can rise quickly in a storm."
               }
             },
             {
@@ -1036,16 +1027,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "lazarus",
+                    "text": "What are we eating tonight, Odessa? I’m starving."
+                  },
+                  {
                     "speaker": "odessa_x",
-                    "text": "What shall we cook tonight? We have sausages and pasta."
+                    "text": "I was going to cook sausages, but we finished them for lunch yesterday, and the shop is too far. I also thought about heating some soup, though it takes ages on this little stove."
                   },
                   {
                     "speaker": "lazarus",
-                    "text": "The sausages are for breakfast tomorrow. Let's have pasta with tomato sauce tonight."
+                    "text": "Hmm. And I’m tired of soup."
                   },
                   {
                     "speaker": "odessa_x",
-                    "text": "Perfect. I'll start the stove."
+                    "text": "So I bought some pasta in the village, the long Italian kind, with a jar of tomato sauce. It takes ten minutes, and there’s enough for both of us, even for seconds."
+                  },
+                  {
+                    "speaker": "lazarus",
+                    "text": "Perfect. Let me get the pan, and I’ll wash the plates afterwards."
+                  },
+                  {
+                    "speaker": "odessa_x",
+                    "text": "Deal. You’re a good friend."
                   }
                 ]
               },
@@ -1058,7 +1061,7 @@
                   "Soup"
                 ],
                 "answer": 1,
-                "explanation": "Lazarus says the sausages are for tomorrow's breakfast and suggests pasta tonight."
+                "explanation": "The sausages are finished and soup is too slow, so she will cook the long Italian noodles with sauce, which is pasta."
               }
             }
           ]
@@ -1094,15 +1097,23 @@
                 "turns": [
                   {
                     "speaker": "dominic",
-                    "text": "Hello? I'm on the hill path, but I think I've taken a wrong turn. I can see a river below me."
+                    "text": "Rowena, I don’t understand. We’ve been walking for two hours, and I haven’t seen the lake yet."
                   },
                   {
                     "speaker": "rowena",
-                    "text": "Stay where you are. Can you tell me what's near you? A sign, a gate?"
+                    "text": "Have you got your map? Are you tired? Is your leg hurting from yesterday?"
                   },
                   {
                     "speaker": "dominic",
-                    "text": "There's a stone wall and a red gate."
+                    "text": "My leg is fine, and we still have plenty of sandwiches. But I think we took the wrong path at the stream. That sign said Hilltop, not Lakeside."
+                  },
+                  {
+                    "speaker": "rowena",
+                    "text": "Oh no. We should go back, shouldn’t we?"
+                  },
+                  {
+                    "speaker": "dominic",
+                    "text": "Yes, I’m sure it was a mistake. It will take an extra hour, and we have to hurry before it gets dark."
                   }
                 ]
               },
@@ -1115,7 +1126,7 @@
                   "He has taken a wrong turn."
                 ],
                 "answer": 2,
-                "explanation": "He thinks he took a wrong turn and cannot say where he is."
+                "explanation": "His leg is fine and there are sandwiches; he is lost because he followed the Hilltop sign instead of Lakeside."
               }
             },
             {
@@ -1142,15 +1153,27 @@
                 "turns": [
                   {
                     "speaker": "tatiana",
-                    "text": "Excuse me, the group in the next field is playing loud music, and it's nearly midnight."
+                    "text": "Magnus, I didn’t sleep at all. Did you hear them last night?"
                   },
                   {
                     "speaker": "magnus",
-                    "text": "I'm sorry about that. I'll go and speak to them straight away."
+                    "text": "The group at the next tent? Yes, they were singing till three o’clock."
                   },
                   {
                     "speaker": "tatiana",
-                    "text": "Thank you. My children can't sleep."
+                    "text": "And shouting. I’m cross. I’m going to talk to the manager."
+                  },
+                  {
+                    "speaker": "magnus",
+                    "text": "Fair enough. At least our tent stayed dry, and the toilets were clean this morning."
+                  },
+                  {
+                    "speaker": "tatiana",
+                    "text": "That’s something, I suppose. But I came here for peace and quiet, and it was like a party. I want them to stop tonight."
+                  },
+                  {
+                    "speaker": "magnus",
+                    "text": "I’ll come with you, so he understands that it’s a serious problem for both of us."
                   }
                 ]
               },
@@ -1163,7 +1186,7 @@
                   "The toilets are dirty."
                 ],
                 "answer": 1,
-                "explanation": "Another group is playing loud music near midnight and her children cannot sleep."
+                "explanation": "The tent is dry and the toilets are clean; she is angry because the neighbours sang and shouted until three o’clock."
               }
             },
             {
@@ -1189,16 +1212,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "cassius",
+                    "text": "I’d like some walking boots for a camping trip in October. These are nice and soft, aren’t they?"
+                  },
+                  {
                     "speaker": "priscilla",
-                    "text": "I need boots for a three-day hike. Which ones do you recommend?"
+                    "text": "They are the most comfortable in the shop, but they aren’t waterproof. In autumn the ground is wet and your feet will be soaked."
                   },
                   {
                     "speaker": "cassius",
-                    "text": "These are very comfortable, but they're not waterproof. For the mountains, I'd choose the brown ones."
+                    "text": "Hmm. What about this cheaper pair?"
                   },
                   {
                     "speaker": "priscilla",
-                    "text": "They're expensive, but I'd rather have dry feet."
+                    "text": "The price is better, but they leak at the sides. If I were you, I’d pay a bit more and buy the ones that keep out water. You’ll be glad on the first rainy day."
+                  },
+                  {
+                    "speaker": "cassius",
+                    "text": "You’ve convinced me. Can I try the pair with the red laces?"
                   }
                 ]
               },
@@ -1211,7 +1242,7 @@
                   "The most comfortable pair"
                 ],
                 "answer": 0,
-                "explanation": "He says that for the mountains the brown ones are better because the first pair is not waterproof."
+                "explanation": "The soft pair is not waterproof and the cheap pair leaks, so she advises him to buy the ones that keep out the rain."
               }
             },
             {
@@ -1238,15 +1269,23 @@
                 "turns": [
                   {
                     "speaker": "olivier",
-                    "text": "Why don't we stay in a hotel instead of a tent?"
+                    "text": "Annelise, are you sure you want to camp again? Putting up the tent takes forever."
                   },
                   {
                     "speaker": "annelise",
-                    "text": "Because camping is half the fun! And it's much cheaper."
+                    "text": "It’s not that bad, it takes twenty minutes if we work together. And cooking outside is part of the fun."
                   },
                   {
                     "speaker": "olivier",
-                    "text": "You're right. And I do like making a fire."
+                    "text": "But hotels have beds and hot water. I think I prefer them."
+                  },
+                  {
+                    "speaker": "annelise",
+                    "text": "They cost a fortune in the summer, true, but that’s not the point. In a hotel you don’t hear the owls or see the stars. I wake up feeling happier after a night in a tent."
+                  },
+                  {
+                    "speaker": "olivier",
+                    "text": "Okay, you win. Let’s book the campsite."
                   }
                 ]
               },
@@ -1259,7 +1298,7 @@
                   "It is better than a hotel."
                 ],
                 "answer": 2,
-                "explanation": "She says camping is half the fun and cheaper, so she prefers it."
+                "explanation": "The work is not a problem and she does not say it is too expensive; she prefers the owls, the stars and waking up happier, so it is better than a hotel."
               }
             },
             {
@@ -1285,29 +1324,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "serafina",
+                    "text": "You’ve been scratching your arm all morning, Cyrus. What’s wrong?"
+                  },
+                  {
                     "speaker": "cyrus_x",
-                    "text": "Mum, something bit my arm in the night. It's red and it itches."
+                    "text": "I think I caught a cold in the night. It was freezing in the tent, and my arm feels strange."
                   },
                   {
                     "speaker": "serafina",
-                    "text": "Let me see. It's probably a mosquito. I'll put some cream on it."
+                    "text": "A cold doesn’t make your arm itch. Show me. Look, there’s a small red spot with a hard centre."
                   },
                   {
                     "speaker": "cyrus_x",
-                    "text": "Can I stay inside the tent today?"
+                    "text": "Maybe I fell on the wet grass yesterday, when we were running."
+                  },
+                  {
+                    "speaker": "serafina",
+                    "text": "That would make you dirty, not itchy. I’m sure it’s a bite from some insect that came into the tent. Put some cream on it."
+                  },
+                  {
+                    "speaker": "cyrus_x",
+                    "text": "Thanks. I’ll ask the leader."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What happened to the boy?",
+                "prompt": "What does Serafina think happened to Cyrus?",
                 "options": [
                   "An insect bit him in the night.",
                   "He fell over on the wet grass.",
                   "He caught a cold during the night."
                 ],
                 "answer": 0,
-                "explanation": "Something bit his arm, and his mother thinks it is a mosquito."
+                "explanation": "A cold does not make the arm itch and a fall would make him dirty; the red spot with a hard centre tells her it is a bite."
               }
             },
             {
@@ -1333,29 +1384,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "gideon_x",
+                    "text": "Good afternoon. Are you staying in the forest campsite tonight?"
+                  },
+                  {
                     "speaker": "thomasina",
-                    "text": "The ranger told us there is a fire danger because it's been so dry. No fires at all this week."
+                    "text": "Yes. Is the path to the top still open? We want to see the sunrise."
                   },
                   {
                     "speaker": "gideon_x",
-                    "text": "But we bought all this wood!"
+                    "text": "It’s open, and the weather will be dry until Thursday. I’d like to warn you about something else. The grass is very dry after the hot summer, so a small spark can start a big fire."
                   },
                   {
                     "speaker": "thomasina",
-                    "text": "We can cook on the gas stove. It's safer."
+                    "text": "Oh. We were going to cook on a campfire."
+                  },
+                  {
+                    "speaker": "gideon_x",
+                    "text": "Please use a stove instead. It’s safer for you and for the trees."
+                  },
+                  {
+                    "speaker": "thomasina",
+                    "text": "Of course, we’ll do that."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the ranger's warning?",
+                "prompt": "What is the ranger worried about?",
                 "options": [
-                  "Rain is coming.",
-                  "The path is closed.",
-                  "Fires are not allowed."
+                  "Bad weather",
+                  "A blocked path",
+                  "Careless campfires"
                 ],
                 "answer": 2,
-                "explanation": "The ranger says there is a fire danger and that nobody may light a fire this week."
+                "explanation": "The path is open and the weather is dry, but the grass is so dry that a spark could cause a fire, so he asks them to use a stove."
               }
             }
           ]
@@ -1380,58 +1443,58 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good morning, and welcome to Lake Meadow Nature Park. My name's Marietta, and I'll be your guide today. We're going to follow the Heron Trail, which is about six kilometres long. We'll start here at the visitor centre and walk round the lake. Along the way, you might see squirrels in the trees and perhaps a deer if we are quiet. The walk takes about three hours, with a break for lunch at the picnic area. Please wear strong shoes, because some parts of the path can be muddy. The walk is free, but if you would like to give money to help the park, there's a box by the door. Does anybody have any questions before we begin?"
+                "text": "Good morning, and welcome to Lake Meadow Nature Park. My name’s Marietta, and I’ll be your guide today. We’re going to follow the Heron Trail, which is named after the large grey birds that fish in the shallow water. You may remember that there’s another path called the Otter Trail, which is shorter, but it’s closed at the moment because of building work. Our trail is about six kilometres long. Some people say it’s eight, but that includes the way back to the car park, and we’ll take the shuttle bus for that. We begin at the visitor centre, just behind me. Please don’t go to the cafe yet; you can have a coffee when we finish. The first part of the path goes through an old wood. If you look up, you might see squirrels in the trees. Many visitors hope to see a deer, but they’re shy and usually hide, so don’t be sad if you don’t. In the middle of the walk, we’ll stop for a picnic by the water. After that, the path climbs slowly to a small hill, where there’s a lovely view. The whole walk takes about three hours, with the stops. I know the leaflet says two and a half, but that is for fast walkers, and we aren’t in a hurry. Before we start, a word about clothes. It has rained all week, so the park is very green, but also very muddy. The ground can be wet and rocky, so please wear strong shoes. Sandals are not suitable, and umbrellas are a nuisance among the branches. Please stay close to me and keep to the path, because the edge of the water is soft. Don’t pick the flowers and take your rubbish with you. If you have any questions, ask me at any time. Right, let’s go!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The walk is called the ___ Trail",
+              "prompt": "The route is named after a large grey bird: the ___ Trail",
               "answer": "Heron",
-              "explanation": "Marietta says they will follow the Heron Trail."
+              "explanation": "It is named after the heron; the Otter Trail is closed."
             },
             {
               "id": "l3-2",
-              "prompt": "The trail is about ___ kilometres long",
+              "prompt": "Distance of the walk, not counting the bus ride: ___ kilometres",
               "answer": "six",
               "accepted": [
                 "6"
               ],
-              "explanation": "The Heron Trail is about six kilometres long."
+              "explanation": "The trail is six kilometres, not eight; the extra is the way back."
             },
             {
               "id": "l3-3",
-              "prompt": "The walk starts at the visitor ___",
+              "prompt": "The group meets at the ___ near the car park",
               "answer": "centre",
               "accepted": [
                 "center"
               ],
-              "explanation": "They will start at the visitor centre."
+              "explanation": "They start at the visitor centre, not the cafe."
             },
             {
               "id": "l3-4",
-              "prompt": "You might see ___ in the trees",
+              "prompt": "In the woods, walkers may spot small animals called ___",
               "answer": "squirrels",
-              "explanation": "Visitors might see squirrels in the trees."
+              "explanation": "Squirrels are possible; deer are shy and hide."
             },
             {
               "id": "l3-5",
-              "prompt": "The walk takes about ___ hours",
+              "prompt": "With the stops, the walk lasts about ___ hours",
               "answer": "three",
               "accepted": [
                 "3"
               ],
-              "explanation": "The walk takes about three hours."
+              "explanation": "It takes three hours; the leaflet’s two and a half is for fast walkers."
             },
             {
               "id": "l3-6",
-              "prompt": "Walkers should wear strong ___",
+              "prompt": "For the wet and rocky ground, walkers need to wear strong ___",
               "answer": "shoes",
               "accepted": [
                 "boots"
               ],
-              "explanation": "Marietta asks everyone to wear strong shoes because the path may be muddy."
+              "explanation": "The guide asks for strong shoes; sandals are not suitable."
             }
           ]
         },
@@ -1463,51 +1526,51 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Rosalba, you have been a mountain guide for twenty years. What do you enjoy most about it?"
+                "text": "Rosalba, you’ve been a mountain guide for fifteen years. What do you like most about it?"
               },
               {
                 "speaker": "rosalba",
-                "text": "Being outdoors every day, of course, but mostly watching other people succeed. When someone who thought they could never climb reaches the top, it is the best moment of my job."
+                "text": "Photographs are nice, but I take very few, honestly. And I’m not alone in the mountains, because I’m always with a group, so the quiet isn’t what I like. For me, the best moment is when a tired person arrives at the top and realises they’ve done it. I see the smile on their face, and I think, this is why I do this job."
               },
               {
                 "speaker": "host",
-                "text": "What is the most important piece of equipment?"
+                "text": "What should people bring?"
               },
               {
                 "speaker": "rosalba",
-                "text": "People think it is the rope or the helmet, but it is a good pair of boots. If your feet hurt, you cannot enjoy anything else. I always tell my groups to wear their boots for a few weeks before the trip."
+                "text": "Ropes are only for glaciers and dangerous places, so beginners almost never need one. A camera would be nice, but it’s not really necessary. What you really have to carry is a good pair of boots, soft inside and strong outside. If your feet hurt, you can’t enjoy anything, however good the view is."
               },
               {
                 "speaker": "host",
-                "text": "What mistakes do beginners often make?"
+                "text": "What mistakes do beginners make?"
               },
               {
                 "speaker": "rosalba",
-                "text": "They try to go too fast at the start. They are full of energy, and after an hour they are exhausted. Slow and steady wins on a mountain."
+                "text": "They almost always do what the guide says, which is great. They don’t usually pack too much food either, we have a rule about that. The mistake is the speed. They are so excited that they start fast, and after one hour they have no energy left. I keep saying, slowly, slowly, you have all day."
               },
               {
                 "speaker": "host",
-                "text": "Have you ever been in danger?"
+                "text": "I understand you were once caught in a storm."
               },
               {
                 "speaker": "rosalba",
-                "text": "Once. A sudden storm came in while we were above the clouds, and we had to wait for three hours in a small shelter. Everyone was frightened, but we stayed calm and nobody was hurt. It taught me always to carry extra food and warm clothes."
+                "text": "Yes, six years ago, with eight clients. It was terrifying. The wind knocked one of the clients over, and we could not see ten metres. After that I thought about taking only small groups, but it wouldn’t have changed anything. I also considered cancelling afternoon trips, but storms can come at any hour. The real lesson was to have enough food and warm clothes in the bag at all times, even when it’s sunny. We were cold, but we were safe because of that."
               },
               {
                 "speaker": "host",
-                "text": "How has the job changed?"
+                "text": "Are the mountains changing?"
               },
               {
                 "speaker": "rosalba",
-                "text": "There are many more visitors than there used to be, and some of them leave rubbish on the paths. I now spend part of my time teaching people to look after the mountains."
+                "text": "The paths have always been steep, that’s the nature of mountains. The weather is warmer, yes, and it concerns me, but I’d say something else bothers me more. People leave bottles, bags and wrappers along the paths. I spend half of my days collecting rubbish, and it makes me angry. Last month we filled forty bags in a single weekend."
               },
               {
                 "speaker": "host",
-                "text": "What is your advice to somebody who wants to start?"
+                "text": "Finally, what would you say to a beginner?"
               },
               {
                 "speaker": "rosalba",
-                "text": "Begin with short walks near home and listen to experienced people. You do not have to climb big peaks to enjoy being in nature."
+                "text": "Don’t join a club in another country, and don’t spend a fortune on equipment you’ll never use. Just start with short walks near your house, on Sundays. Get used to the feeling of walking for hours, and then you can think about the bigger mountains."
               }
             ]
           },
@@ -1521,7 +1584,7 @@
                 "Working alone in a quiet place"
               ],
               "answer": 1,
-              "explanation": "She says the best moment is when someone who thought they could never climb reaches the top."
+              "explanation": "She takes few photographs and is never alone; the best moment is when a tired person arrives at the top and smiles."
             },
             {
               "id": "l4-2",
@@ -1532,7 +1595,7 @@
                 "A good camera"
               ],
               "answer": 1,
-              "explanation": "She says that a good pair of boots matters most because sore feet spoil everything."
+              "explanation": "Ropes are for glaciers and cameras are not necessary; what you need is a good pair of boots."
             },
             {
               "id": "l4-3",
@@ -1543,7 +1606,7 @@
                 "They carry too much food."
               ],
               "answer": 0,
-              "explanation": "They try to go too fast at the start and are exhausted after an hour."
+              "explanation": "They listen to the guide and do not pack too much; the problem is that they start fast and run out of energy."
             },
             {
               "id": "l4-4",
@@ -1554,7 +1617,7 @@
                 "To carry food and warm clothes"
               ],
               "answer": 2,
-              "explanation": "After waiting three hours in the shelter, she learned always to carry extra food and warm clothes."
+              "explanation": "Smaller groups and fewer afternoon trips would not have changed anything; the lesson was to carry food and warm clothes."
             },
             {
               "id": "l4-5",
@@ -1565,7 +1628,7 @@
                 "The weather is warmer."
               ],
               "answer": 1,
-              "explanation": "Some of the many visitors leave rubbish on the paths."
+              "explanation": "Paths have always been steep and the warmer weather concerns her, but what bothers her more is rubbish left on the paths."
             },
             {
               "id": "l4-6",
@@ -1576,7 +1639,7 @@
                 "Buy lots of expensive new equipment"
               ],
               "answer": 0,
-              "explanation": "She advises beginning with short walks near home and listening to experienced people."
+              "explanation": "She says do not join a club abroad or buy expensive equipment; start with short walks near your house."
             }
           ]
         }

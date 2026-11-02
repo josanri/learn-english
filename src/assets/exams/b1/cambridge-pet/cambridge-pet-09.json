@@ -251,7 +251,8 @@
               "options": [
                 "Her father refused to give her anything.",
                 "She wanted to manage without help.",
-                "The shop gave discounts for savers."
+                "The shop gave discounts for savers.",
+                "She wanted a different colour."
               ],
               "answer": 1,
               "explanation": "Her dad offered to pay half, but she felt she should save the money on her own."
@@ -260,11 +261,12 @@
               "id": "r3-2",
               "prompt": "What did she find when she wrote down her spending?",
               "options": [
-                "A lot of money went on small things.",
+                "Most of her money went on clothes.",
                 "She spent more on clothes than anything else.",
-                "She was already saving a lot each month."
+                "She was already saving a lot each month.",
+                "A lot of money went on small things."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She was shocked that nearly a quarter of her money went on snacks, drinks and small things she did not need."
             },
             {
@@ -273,7 +275,8 @@
               "options": [
                 "By selling things she no longer used.",
                 "By walking dogs for her neighbours.",
-                "By working in a shop at the weekend."
+                "By working in a shop at the weekend.",
+                "By getting a loan from her dad."
               ],
               "answer": 0,
               "explanation": "She sold old games, trainers and her guitar, which she had hardly used."
@@ -283,10 +286,11 @@
               "prompt": "Why did she wait before buying the bike?",
               "options": [
                 "She still did not have enough money yet.",
+                "The shop was about to close down.",
                 "She learned that it would soon be cheaper.",
                 "The bike she wanted was not in the shop."
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "The assistant said the new colours would arrive in a few weeks and the price of last year’s model would drop."
             },
             {
@@ -294,10 +298,11 @@
               "prompt": "How does the writer feel now?",
               "options": [
                 "Sorry that she did not buy it sooner.",
+                "Proud, and more careful with money.",
                 "Worried about the cost of the repairs.",
-                "Proud, and more careful with money."
+                "Happy that her father paid half."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She says she is proud of the bike and much more careful about where her money goes."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A week of online shopping",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Last month, our consumer studies teacher set us an unusual project: to spend a week shopping online for a present that cost less than twenty pounds, and then report back to the class. I thought it would be simple because I order things on the internet all the time. [1] I had already looked at six different websites by Monday evening.\n\nMy first problem was choosing. I wanted a present for my grandmother, who loves puzzles. [2] Some had four stars, others had four and a half, and the information all seemed to say the same thing. In the end, I decided to read the customers’ comments properly.\n\nThat helped a lot. [3] One reviewer said the pieces were so small that her father needed a magnifying glass. I chose a puzzle with larger pieces.\n\nWhen I compared prices, I noticed that delivery was sometimes very expensive. [4] That would have taken me over my budget, so I picked a site with free delivery on orders over fifteen pounds.\n\nThe parcel arrived on Friday, a day before the deadline. [5] The lesson I took from the week was simple: slow down before you click “buy”.",
           "sentences": [
-            "There were dozens of puzzles, and they all looked almost the same.",
-            "Several people had written about details that the product pages left out.",
+            "Some of my classmates chose to buy books or sweets instead.",
             "My grandmother loved it and finished it in two evenings.",
-            "It turned out to be much harder than I expected.",
+            "Several people had written about details that the product pages left out.",
             "One website wanted ten pounds to send a puzzle that cost twelve.",
-            "Some of my classmates chose to buy books or sweets instead."
+            "There were dozens of puzzles, and they all looked almost the same.",
+            "One of my friends bought a pair of trainers that were too big.",
+            "It turned out to be much harder than I expected.",
+            "Some websites send emails every day with special offers."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "G",
               "explanation": "“It turned out to be much harder than I expected” contrasts with “I thought it would be simple” and explains why she had already visited six websites."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "E",
               "explanation": "“There were dozens of puzzles” explains “Some had four stars, others had four and a half”: “Some” and “others” refer to the puzzles."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "C",
               "explanation": "The comments “helped a lot” because people wrote about details missing from the product pages; the next sentence gives one example."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "D",
               "explanation": "Ten pounds delivery for a twelve-pound puzzle is the example, and “That would have taken me over my budget” refers to it."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "B",
               "explanation": "After the parcel arrives, the grandmother’s reaction to the present comes naturally before the final lesson. Sentence F is about classmates and fits no gap."
             }
           ]
@@ -776,19 +783,31 @@
                 "turns": [
                   {
                     "speaker": "jakub",
-                    "text": "How is the jumper, Livia? Does it fit?"
+                    "text": "Hi, can I help you?"
                   },
                   {
                     "speaker": "livia",
-                    "text": "The medium is too tight under the arms. I’ll ask for a large one."
+                    "text": "I bought this jacket yesterday, but it’s a bit tight across the shoulders."
                   },
                   {
                     "speaker": "jakub",
-                    "text": "They have it in grey too, if you prefer that."
+                    "text": "Oh yes, I can see that. Would you like to try a different colour? We have it in navy and in green."
                   },
                   {
                     "speaker": "livia",
-                    "text": "No, I like the blue. I just need a bigger one."
+                    "text": "Not really, I love the red. I just need more room. To be honest, I was thinking of going to the shop across the road, because they sell something similar. But I like this one better."
+                  },
+                  {
+                    "speaker": "jakub",
+                    "text": "Then I’ll check the stock room for you."
+                  },
+                  {
+                    "speaker": "livia",
+                    "text": "Do you have this one in a size up? I think a large would be perfect."
+                  },
+                  {
+                    "speaker": "jakub",
+                    "text": "One moment, I’ll have a look."
                   }
                 ]
               },
@@ -801,21 +820,13 @@
                   "Go to another shop"
                 ],
                 "answer": 0,
-                "explanation": "The medium is too tight, so Livia will ask for a large one; she prefers the blue and does not want the grey."
+                "explanation": "She likes the red colour and prefers this jacket to the one in the other shop, but it is tight, so she asks if there is a larger size."
               }
             },
             {
               "id": "l1-2-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "efua",
-                    "name": "Efua",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "norman",
                     "name": "Norman",
@@ -827,16 +838,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "efua",
-                    "text": "Excuse me, the sign says these headphones are twenty-five pounds, but the till says thirty-five."
-                  },
-                  {
                     "speaker": "norman",
-                    "text": "Let me check. Oh, I’m sorry, that sign is out of date. The sale finished yesterday."
-                  },
-                  {
-                    "speaker": "efua",
-                    "text": "That’s a shame. I’ll think about it."
+                    "text": "Hello, this is Norman from Dalton Electronics, calling Efua about the speaker. You saw it online for sixty pounds last week, and today the shop price is seventy-five. I know it looks strange, so I checked the till, and it’s correct, there’s no mistake. The sale ended on Sunday, and now it’s the normal price again. The new model arrives next month and will cost ninety, but it’s not in the shop yet. If you can come before the weekend, I might ask my manager for a small discount. Thank you, and have a nice day."
                   }
                 ]
               },
@@ -849,7 +852,7 @@
                   "It is a new model"
                 ],
                 "answer": 1,
-                "explanation": "Norman says the sign is out of date because the sale finished yesterday."
+                "explanation": "The till is correct and the new model has not arrived yet, but the offer ended on Sunday, so the price went back to normal."
               }
             },
             {
@@ -876,15 +879,31 @@
                 "turns": [
                   {
                     "speaker": "konrad",
-                    "text": "Did you keep the receipt for the printer?"
+                    "text": "I’m sorry, but I need proof that you bought this printer in the last year."
                   },
                   {
                     "speaker": "sade",
-                    "text": "I can’t find it, but I paid by card, so my bank statement shows the date and the price."
+                    "text": "I threw the receipt away. And I put the box in the recycling bin on Monday, otherwise I’d show you that."
                   },
                   {
                     "speaker": "konrad",
-                    "text": "The shop might accept that."
+                    "text": "Perhaps the shop could tell us. Why not ring them?"
+                  },
+                  {
+                    "speaker": "sade",
+                    "text": "They closed last month, I’m afraid. But I paid by card. I can show you my bank statement on my phone."
+                  },
+                  {
+                    "speaker": "konrad",
+                    "text": "Could you open it, please? I need to see the date and the amount."
+                  },
+                  {
+                    "speaker": "sade",
+                    "text": "Here it is. Fourteenth of March, ninety-nine pounds, and the name of the shop."
+                  },
+                  {
+                    "speaker": "konrad",
+                    "text": "That’s fine, thank you. I’ll start the repair now."
                   }
                 ]
               },
@@ -897,7 +916,7 @@
                   "By showing her bank statement"
                 ],
                 "answer": 2,
-                "explanation": "Sade has no receipt, but her bank statement shows the date and the price."
+                "explanation": "The box is already in the recycling and the shop closed, but she paid by card and shows the date and amount on her bank statement."
               }
             },
             {
@@ -911,28 +930,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "tunde",
-                    "name": "Tunde",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "marley",
-                    "text": "My aunt gave me a gift voucher, but it runs out next week."
-                  },
-                  {
-                    "speaker": "tunde",
-                    "text": "Why don’t you use it on those boots you wanted?"
-                  },
-                  {
-                    "speaker": "marley",
-                    "text": "They cost more than the voucher, but I’ll pay the difference."
+                    "text": "Hi Tunde, it’s Marley. I’m in town with the voucher you gave me for my birthday, thank you again! I asked at the till if they could give me the cash instead, but they said vouchers can’t be changed for money. I thought about keeping it until next month, when the new collection arrives, but it ends in three weeks and I’d probably forget. Anyway, there’s a lovely pair of brown boots in the window, the ones with the thick soles. They cost a bit more than the voucher, but I can pay the difference. I’m going in to try them now. Talk later!"
                   }
                 ]
               },
@@ -945,7 +948,7 @@
                   "Keep it until next month or later"
                 ],
                 "answer": 0,
-                "explanation": "Marley will use the voucher for the boots and pay the extra money herself."
+                "explanation": "Cash is not possible and she will not wait for next month; she wants to spend the voucher on the brown boots in the window."
               }
             },
             {
@@ -971,20 +974,32 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "sinead",
-                    "text": "Your sofa will arrive on Thursday between nine and twelve."
-                  },
-                  {
                     "speaker": "oisin",
-                    "text": "Could it come in the afternoon? I’m out until one."
+                    "text": "Hello, Pine Furniture. Can I help you?"
                   },
                   {
                     "speaker": "sinead",
-                    "text": "Afternoon deliveries are only on Fridays, I’m afraid."
+                    "text": "I’m calling about the grey sofa I ordered. The website said it would arrive on Thursday morning."
                   },
                   {
                     "speaker": "oisin",
-                    "text": "Then I’ll wait for Friday."
+                    "text": "Let me see. Yes, that was the first date, but our lorry is full on Thursday, and the afternoon is also taken. I can offer you Friday afternoon, between one and four."
+                  },
+                  {
+                    "speaker": "sinead",
+                    "text": "Friday morning would be better for me, I’m at work in the afternoon."
+                  },
+                  {
+                    "speaker": "oisin",
+                    "text": "I’m afraid that’s not possible. Is somebody at home?"
+                  },
+                  {
+                    "speaker": "sinead",
+                    "text": "My brother will be there, so Friday afternoon is fine."
+                  },
+                  {
+                    "speaker": "oisin",
+                    "text": "Great. The driver will ring half an hour before."
                   }
                 ]
               },
@@ -997,7 +1012,7 @@
                   "On Thursday afternoon"
                 ],
                 "answer": 1,
-                "explanation": "Oisin cannot be at home in the morning, and afternoon deliveries are on Fridays, so he chooses Friday."
+                "explanation": "Thursday is full both in the morning and in the afternoon, and the morning of Friday is not possible, so the sofa will come on Friday afternoon."
               }
             },
             {
@@ -1024,15 +1039,39 @@
                 "turns": [
                   {
                     "speaker": "soraya",
-                    "text": "Look at the queue at the tills!"
+                    "text": "Look at this queue. There are only two people working at the cashier desk."
                   },
                   {
                     "speaker": "zubair",
-                    "text": "The machines on the left only take ten items, and we have twelve."
+                    "text": "We could use the machines on the left. They’re free."
                   },
                   {
                     "speaker": "soraya",
-                    "text": "Then we’ll have to wait for a cashier."
+                    "text": "I tried them last time and the screen froze. It took ten minutes."
+                  },
+                  {
+                    "speaker": "zubair",
+                    "text": "Then let’s go to the supermarket near the station."
+                  },
+                  {
+                    "speaker": "soraya",
+                    "text": "That’s a long walk, and we’re only buying five things. The queue is moving quickly."
+                  },
+                  {
+                    "speaker": "zubair",
+                    "text": "True. And look, another cashier has just arrived."
+                  },
+                  {
+                    "speaker": "soraya",
+                    "text": "Good. Let’s stay here and join the line. I only need to pay and go home, I’m so tired today."
+                  },
+                  {
+                    "speaker": "zubair",
+                    "text": "Me too. Shall we get a pizza on the way?"
+                  },
+                  {
+                    "speaker": "soraya",
+                    "text": "Yes, please!"
                   }
                 ]
               },
@@ -1045,7 +1084,7 @@
                   "Wait for a cashier"
                 ],
                 "answer": 2,
-                "explanation": "They have twelve items, which is too many for the machines, so they will queue for a cashier."
+                "explanation": "The machines on the left froze last time and the supermarket is too far, so they decide to wait for a cashier as the queue is moving."
               }
             },
             {
@@ -1059,28 +1098,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "holly",
-                    "name": "Holly",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "ruairi",
-                    "text": "Do you have these shoes in a size nine?"
-                  },
-                  {
-                    "speaker": "holly",
-                    "text": "Only in black, I’m afraid. The brown ones have sold out."
-                  },
-                  {
-                    "speaker": "ruairi",
-                    "text": "Brown would have been nicer, but black is fine. I’ll take them."
+                    "text": "Hi Holly, it’s Ruairi. I’m in the shoe shop and I’m in trouble. I came to buy brown shoes, because you said they go with everything. But the brown ones look old-fashioned on me. I nearly left without buying anything, because they’re all so expensive. Then the assistant showed me a pair of black ones that are half price, and they look smart for the wedding. So I’m taking those. They’re a bit shiny, but I think you will like them. I’ll show you tonight when I get home, and then you can tell me the truth. Bye!"
                   }
                 ]
               },
@@ -1093,7 +1116,7 @@
                   "Nothing"
                 ],
                 "answer": 0,
-                "explanation": "The brown shoes have sold out, so Ruairi accepts the black ones."
+                "explanation": "He planned brown shoes and nearly bought nothing, but the black pair is half price and looks smart, so he buys them."
               }
             }
           ]
@@ -1129,32 +1152,44 @@
                 "turns": [
                   {
                     "speaker": "leandro",
-                    "text": "Is that a new coat, Piper?"
+                    "text": "Nice trainers, Piper! Are they new?"
                   },
                   {
                     "speaker": "piper",
-                    "text": "Yes! I found it in the charity shop for six pounds."
+                    "text": "Yes, I bought them this morning. I’m so happy."
                   },
                   {
                     "speaker": "leandro",
-                    "text": "Six pounds? That’s a very low price. It looks brand new."
+                    "text": "Did you get a refund for the old ones? You said they were broken."
                   },
                   {
                     "speaker": "piper",
-                    "text": "That’s why I always check the second-hand shops before I buy anything new."
+                    "text": "The shop said no, they were too old. But who cares? These were in the sale, thirty pounds, half price!"
+                  },
+                  {
+                    "speaker": "leandro",
+                    "text": "Wow. They look like the expensive ones."
+                  },
+                  {
+                    "speaker": "piper",
+                    "text": "They’re the same make. They aren’t a rare style, lots of people have them, but at that price I don’t mind."
+                  },
+                  {
+                    "speaker": "leandro",
+                    "text": "Bargain! I might go tomorrow."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Why is the woman pleased?",
+                "prompt": "Why is Piper pleased with her new trainers?",
                 "options": [
-                  "She got a refund",
-                  "She paid a low price",
-                  "She found a rare style"
+                  "She got a refund.",
+                  "She paid a low price.",
+                  "She found a rare style."
                 ],
                 "answer": 1,
-                "explanation": "She bought a nearly new coat for only six pounds."
+                "explanation": "She did not get a refund and the style is not rare, but she is pleased because they were in the sale at half price."
               }
             },
             {
@@ -1181,28 +1216,44 @@
                 "turns": [
                   {
                     "speaker": "dagmar",
-                    "text": "My headphones stopped working after two weeks."
+                    "text": "My headphones stopped working after only two months. I’m so annoyed."
                   },
                   {
                     "speaker": "cristian",
-                    "text": "Have you still got the guarantee? They should give you new ones for free."
+                    "text": "Have you checked the guarantee? I think it lasts a year."
                   },
                   {
                     "speaker": "dagmar",
-                    "text": "I’ll take them back tomorrow."
+                    "text": "Yes, but I don’t have the receipt. Should I just buy another make? My cousin says the other brand is better."
+                  },
+                  {
+                    "speaker": "cristian",
+                    "text": "Don’t spend money yet. Take them back to the shop and ask for a free replacement. They have to do that when something breaks so soon."
+                  },
+                  {
+                    "speaker": "dagmar",
+                    "text": "I could try to fix them myself. I’ve got a small screwdriver."
+                  },
+                  {
+                    "speaker": "cristian",
+                    "text": "You might break them completely. Go to the shop and take your bank card."
+                  },
+                  {
+                    "speaker": "dagmar",
+                    "text": "Okay. I’ll go on Saturday."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the man suggest?",
+                "prompt": "What does Cristian suggest?",
                 "options": [
                   "Asking for a free replacement",
                   "Buying another make of headphones",
                   "Mending them by herself at home"
                 ],
                 "answer": 0,
-                "explanation": "Cristian says the shop should give her new headphones for free because of the guarantee."
+                "explanation": "He tells her not to spend money and not to repair them herself; he thinks she should go back to the shop and ask for a free replacement."
               }
             },
             {
@@ -1228,29 +1279,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "diarmuid",
+                    "text": "Your payment didn’t go through, Daphne."
+                  },
+                  {
                     "speaker": "daphne",
-                    "text": "My bank card isn’t working at the machine."
+                    "text": "What? I’ve got money in the account. And I haven’t lost the card, it’s here in my bag."
                   },
                   {
                     "speaker": "diarmuid",
-                    "text": "Maybe it has expired. Look at the date on the front."
+                    "text": "Maybe you’ve forgotten your number?"
                   },
                   {
                     "speaker": "daphne",
-                    "text": "Oh, it expired last month. I need to phone the bank."
+                    "text": "No, I used it yesterday at the cash machine. Hold on, look at the date on the card. It ended last month."
+                  },
+                  {
+                    "speaker": "diarmuid",
+                    "text": "Then it has expired. The bank must have sent you a new one."
+                  },
+                  {
+                    "speaker": "daphne",
+                    "text": "Yes, it’s in a drawer at home. I never opened the envelope."
+                  },
+                  {
+                    "speaker": "diarmuid",
+                    "text": "Don’t worry. Pay with cash today. Do you have enough with you?"
+                  },
+                  {
+                    "speaker": "daphne",
+                    "text": "I think so. Let me count it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the problem with the card?",
+                "prompt": "What is the problem with Daphne's card?",
                 "options": [
-                  "It is out of date",
-                  "It has been stolen",
-                  "She forgot the number"
+                  "It is out of date.",
+                  "It has been stolen.",
+                  "She forgot the number."
                 ],
                 "answer": 0,
-                "explanation": "The card expired last month, so it is out of date."
+                "explanation": "The card is not lost and she knows the number, but the date on it ended last month, so it has expired."
               }
             },
             {
@@ -1276,24 +1347,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "jakub",
+                    "text": "The bike is a hundred and fifty pounds."
+                  },
+                  {
                     "speaker": "sade",
-                    "text": "How much is this lamp?"
+                    "text": "That’s a lot for a used bike. Would you take a hundred?"
                   },
                   {
                     "speaker": "jakub",
-                    "text": "Twenty pounds."
+                    "text": "A hundred is too low. I paid two hundred for it two years ago. I could go down to a hundred and thirty."
                   },
                   {
                     "speaker": "sade",
-                    "text": "That’s a bit much. Would you take a lower price, say twelve?"
+                    "text": "How about a hundred and twenty? I’d pay in cash now."
                   },
                   {
                     "speaker": "jakub",
-                    "text": "Make it fifteen and it’s yours."
+                    "text": "Hmm, okay. A hundred and twenty. But the helmet isn’t included."
                   },
                   {
                     "speaker": "sade",
-                    "text": "All right, fifteen."
+                    "text": "That’s fine, I have my own helmet."
+                  },
+                  {
+                    "speaker": "jakub",
+                    "text": "Deal. Do you want me to wrap the bike, or will you ride it home?"
+                  },
+                  {
+                    "speaker": "sade",
+                    "text": "I’ll ride it. It’s only ten minutes to my flat."
                   }
                 ]
               },
@@ -1301,12 +1384,12 @@
                 "id": "l2-4q",
                 "prompt": "What happens in the conversation?",
                 "options": [
-                  "The woman decides not to buy",
-                  "The man raises his price",
-                  "They agree on a lower price"
+                  "The woman decides not to buy.",
+                  "The man raises his price.",
+                  "They agree on a lower price."
                 ],
                 "answer": 2,
-                "explanation": "The man comes down from twenty to fifteen pounds and the woman accepts."
+                "explanation": "The man starts at a hundred and fifty and the woman offers less; they finally agree on a lower price of a hundred and twenty."
               }
             },
             {
@@ -1332,29 +1415,53 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "efua",
+                    "text": "You look worried, Oisin."
+                  },
+                  {
                     "speaker": "oisin",
-                    "text": "I can’t decide what present to get Dad for his birthday."
+                    "text": "It’s Marta’s birthday party on Saturday and I still have nothing. I’ve been in six shops."
                   },
                   {
                     "speaker": "efua",
-                    "text": "He loves cooking, doesn’t he? What about a good knife?"
+                    "text": "Oh dear. Haven’t you got any money?"
                   },
                   {
                     "speaker": "oisin",
-                    "text": "That seems dangerous. Maybe something else. I just don’t know."
+                    "text": "Plenty, I got paid on Friday, so that isn’t it. And I haven’t forgotten the date, I wrote it on the calendar."
+                  },
+                  {
+                    "speaker": "efua",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "oisin",
+                    "text": "She likes everything and nothing. Books, perfume, scarves. I can’t decide."
+                  },
+                  {
+                    "speaker": "efua",
+                    "text": "Why not give her a voucher?"
+                  },
+                  {
+                    "speaker": "oisin",
+                    "text": "Boring! But maybe you’re right. At least nobody ever complains about a voucher, and she can choose something herself."
+                  },
+                  {
+                    "speaker": "efua",
+                    "text": "Exactly. Buy it today and relax."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the man’s problem?",
+                "prompt": "What is Oisin's problem?",
                 "options": [
-                  "He has no money left at all",
-                  "He cannot choose a present",
-                  "He forgot the date of the party"
+                  "He has no money left at all.",
+                  "He cannot choose a present.",
+                  "He forgot the date of the party."
                 ],
                 "answer": 1,
-                "explanation": "Oisin says he cannot decide what to buy his father and rejects the idea of a knife."
+                "explanation": "He has money and knows the date; the problem is that Marta likes so many things that he cannot decide what to buy."
               }
             },
             {
@@ -1380,29 +1487,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "zubair",
+                    "text": "Did your parcel arrive, Sinead?"
+                  },
+                  {
                     "speaker": "sinead",
-                    "text": "My online order came, but there’s only one shoe in the box."
+                    "text": "Yes, but the vase is broken. There are pieces everywhere."
                   },
                   {
                     "speaker": "zubair",
-                    "text": "Send the company a message through their website, with a photo."
+                    "text": "Are you going to send it back by post?"
                   },
                   {
                     "speaker": "sinead",
-                    "text": "Good idea. I’ll do it now."
+                    "text": "That would cost me money, and it’s in a hundred pieces. I could phone, but the helpline only opens at ten and I’ll be at work. Their website says to send a photo of the damage with the order number. That’s quicker."
+                  },
+                  {
+                    "speaker": "zubair",
+                    "text": "Good idea. Take a clear photo of the box too."
+                  },
+                  {
+                    "speaker": "sinead",
+                    "text": "Yes, I’ll do it tonight and send it by email. I hope they answer quickly, because I really wanted that vase for my sister’s flat."
+                  },
+                  {
+                    "speaker": "zubair",
+                    "text": "They will. Most companies are good about this."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman going to do?",
+                "prompt": "What is Sinead going to do?",
                 "options": [
                   "Send the order back by post",
                   "Phone the shop tomorrow morning",
                   "Contact the company with a picture"
                 ],
                 "answer": 2,
-                "explanation": "Zubair suggests sending a message with a photo, and Sinead agrees to do it."
+                "explanation": "Posting it back costs money and the helpline opens when she is at work, so she will send the company a photo of the damage."
               }
             }
           ]
@@ -1427,50 +1550,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good morning, everyone. I’m Gopal, the manager of Brook Street Stores here in Calder Vale, and I’d like to tell you about our new loyalty scheme. Joining is free. Just ask at the customer service desk by the main door, and we’ll give you a card in two minutes. For every pound you spend, you earn one point. When you have a hundred points, we send you a voucher by email, not by post, so please give us your address. On your birthday, you’ll get a free coffee in our café. We also have double points every Wednesday, so that’s the best day for your big shop. Please remember that points run out at the end of the year, so use them before then. Thank you, and happy shopping."
+                "text": "Good morning, everyone. I’m Gopal, the manager of Brook Street Stores here in Calder Vale, and I’d like to tell you about our new loyalty scheme. It’s free to join. You can fill in a form online, but most people prefer to come into the shop and sign up at the customer service desk, which is next to the main door. Not at the tills, because the cashiers are too busy. Once you’re a member, you get a card, and you show it every time you shop. You earn one point for each pound that you spend. We thought about one point for every two pounds, but that seemed too mean. Every month we count your points and send you vouchers. Some shops send them by post, but we use email, so please give us your address, and check your spam folder. The vouchers come in the first week of the month. Now for the nice things. On your birthday, you receive a present: a free coffee in our cafe. Last year it was a cake, but many members told us they would prefer a coffee, so we changed it. Another bonus is that you get double points every Wednesday. It used to be on Fridays, but those are our busiest days. You can use the card in our two other shops in the valley as well, so your points grow quicker. Finally, a warning. Your points don’t last forever. They don’t disappear in the middle of the year, but they do run out at the end of the year, so use your vouchers before then. A friend of mine lost ninety points last December, and she was not happy! So, I hope you will join us. Thank you for listening, and are there any questions?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Join at the customer service ___",
+              "prompt": "To join the scheme, go to the customer service ___",
               "answer": "desk",
-              "explanation": "Gopal says to ask at the customer service desk by the main door."
+              "explanation": "You sign up at the customer service desk next to the main door, not at the tills."
             },
             {
               "id": "l3-2",
-              "prompt": "Earn one ___ for each pound spent",
+              "prompt": "Members earn one ___ for each pound they spend",
               "answer": "point",
-              "explanation": "For every pound spent, customers earn one point."
+              "explanation": "One point for each pound; one point for every two pounds was the first idea but it seemed mean."
             },
             {
               "id": "l3-3",
-              "prompt": "Vouchers arrive by ___",
+              "prompt": "Members receive their vouchers by ___",
               "answer": "email",
-              "accepted": [
-                "e-mail",
-                "e mail"
-              ],
-              "explanation": "The voucher is sent by email, not by post."
+              "explanation": "They use email, not post, and the vouchers come in the first week of the month."
             },
             {
               "id": "l3-4",
-              "prompt": "Birthday present: a free ___",
+              "prompt": "The birthday present for members is a free ___",
               "answer": "coffee",
-              "explanation": "On their birthday, members get a free coffee in the café."
+              "explanation": "The present is a free coffee; last year it was a cake."
             },
             {
               "id": "l3-5",
-              "prompt": "Double points every ___",
+              "prompt": "Members get double points every ___",
               "answer": "Wednesday",
-              "explanation": "There are double points every Wednesday."
+              "explanation": "Double points are on Wednesday; it used to be Friday."
             },
             {
               "id": "l3-6",
               "prompt": "Points run out at the ___ of the year",
               "answer": "end",
-              "explanation": "Points run out at the end of the year."
+              "explanation": "They do not disappear in the middle of the year, they run out at the end of the year."
             }
           ]
         },
@@ -1502,51 +1621,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Divya, you opened a refill shop when you were only twenty. How did the idea start?"
+                "text": "Divya, what gave you the idea for your shop?"
               },
               {
                 "speaker": "divya",
-                "text": "At home, really. One evening I counted how much plastic my family threw away in a week, and I was shocked. I thought, there must be a way to buy things like rice and soap without all that packaging."
+                "text": "Honestly, it wasn’t a teacher, though my art teacher always said I should start a business. And I didn’t copy anyone. I’ve never seen a shop like this abroad. It started in my kitchen. One day I noticed how much plastic my family threw away in a week: bottles, bags, boxes. I was shocked. A full bin every two days! I thought, there must be a better way to buy soap and rice."
               },
               {
                 "speaker": "interviewer",
-                "text": "How did you pay to start the business?"
+                "text": "How did you pay for the business?"
               },
               {
                 "speaker": "divya",
-                "text": "I didn’t want a bank loan, so I used the money I had saved from working in a café and sold my old camera. It wasn’t much, so the shop is small."
+                "text": "The bank said no, because I was only nineteen, and nobody wanted to lend me money. My parents offered a bit, but I said thanks, I want to do this on my own. So I used what I had earned from two years of Saturday jobs in a bakery. It wasn’t a fortune, but it was enough for the shelves and the first products."
               },
               {
                 "speaker": "interviewer",
-                "text": "What was the hardest part of the first months?"
+                "text": "Why were the first months so hard?"
               },
               {
                 "speaker": "divya",
-                "text": "People were interested, so finding customers wasn’t the problem. The hard part was doing everything alone. I opened at eight, closed at seven and then did the accounts at night."
+                "text": "People did come in, which surprised me. Customers were curious from day one. And I knew exactly what to sell, I had a long list. The problem was that I did everything myself. I opened at eight, cleaned, ordered, did the accounts, closed at seven, and then more paperwork at home. I was exhausted. I cried a few times, I have to say."
               },
               {
                 "speaker": "interviewer",
-                "text": "And how do you keep your customers coming back?"
+                "text": "How do you keep customers coming back?"
               },
               {
                 "speaker": "divya",
-                "text": "I learn their names and what they like. If someone always buys a certain tea, I order extra for them. People enjoy that, and it’s something the big chains can’t do."
+                "text": "Not with low prices, I can’t compete there. And I do post photos online, but only twice a week, it takes too much time. What works is that I know my customers. I remember that Mr Evans likes his tea very strong, and that one lady needs gluten-free flour. They feel special, and they come back."
               },
               {
                 "speaker": "interviewer",
-                "text": "Do you try to be cheaper than the big chains?"
+                "text": "What do you do about big supermarkets with lower prices?"
               },
               {
                 "speaker": "divya",
-                "text": "No, that would be impossible for a small shop. Instead, I offer advice, like how to cook with dried beans. People come for that as much as for the products."
+                "text": "I tried to match their prices at the beginning, and I lost money. I would love a second shop, but not yet. Now I do something different: I give advice. People ask me how to cook with lentils or how to store spices, and I explain. A supermarket cashier can’t do that."
               },
               {
                 "speaker": "interviewer",
-                "text": "What are your plans for next year?"
+                "text": "What do you want to do next year?"
               },
               {
                 "speaker": "divya",
-                "text": "I’m not going to open another shop yet. First I want to start a delivery service, so that older customers and busy parents can order from home."
+                "text": "Many people say I should open another shop in the next town, and perhaps one day, but I’m not ready. And I don’t want a manager, I like being in the shop. What I want is a delivery service. Lots of my customers are older or very busy, and they’d love to get their shopping at the door. I’m already looking for a small electric van."
               }
             ]
           },
@@ -1560,7 +1679,7 @@
                 "She saw a similar shop when she was abroad."
               ],
               "answer": 0,
-              "explanation": "She counted her family’s plastic rubbish for a week and was shocked."
+              "explanation": "She says it was not a teacher and she did not copy a shop abroad; she was shocked by how much plastic her family threw away."
             },
             {
               "id": "l4-2",
@@ -1571,18 +1690,18 @@
                 "She used her own savings."
               ],
               "answer": 2,
-              "explanation": "She did not want a bank loan; she used money saved from a café job and sold her old camera."
+              "explanation": "The bank refused and she thanked her parents but declined; she paid with money from her Saturday jobs."
             },
             {
               "id": "l4-3",
-              "prompt": "What was the hardest part of the first months?",
+              "prompt": "Why were the first months so hard for Divya?",
               "options": [
-                "Finding people to buy things",
-                "Working long hours alone",
-                "Choosing what to sell"
+                "Few people came into the shop.",
+                "She worked long hours on her own.",
+                "She could not decide what to sell."
               ],
               "answer": 1,
-              "explanation": "Finding customers was not the problem; doing everything alone was."
+              "explanation": "Customers came from day one and she knew what to sell; she did everything herself and was exhausted."
             },
             {
               "id": "l4-4",
@@ -1593,7 +1712,7 @@
                 "By posting on social media every day"
               ],
               "answer": 0,
-              "explanation": "She learns names and preferences and orders extra of what people like."
+              "explanation": "She cannot compete on price and posts online only twice a week; she remembers each customer’s tastes."
             },
             {
               "id": "l4-5",
@@ -1604,7 +1723,7 @@
                 "She prefers to give advice instead."
               ],
               "answer": 2,
-              "explanation": "She says competing on price would be impossible, so she offers advice instead."
+              "explanation": "She lost money when she matched prices and a second shop is not yet; she gives advice that a supermarket cashier cannot give."
             },
             {
               "id": "l4-6",
@@ -1615,7 +1734,7 @@
                 "Hire a manager to run the shop"
               ],
               "answer": 1,
-              "explanation": "She says she will not open another shop yet; first she wants to start a delivery service."
+              "explanation": "She is not ready for another shop and does not want a manager; she wants a delivery service for older or busy customers."
             }
           ]
         }

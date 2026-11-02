@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "How did Marek's parents feel about his plan?",
               "options": [
+                "They paid for his first computer",
                 "They were delighted at the idea",
                 "They did not like it at all",
                 "They did not care very much"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "They were not happy at all."
             },
             {
               "id": "r3-2",
               "prompt": "How did Marek improve his skills?",
               "options": [
+                "By watching videos of top players",
                 "By reading books about games",
-                "By playing only at weekends",
-                "By watching videos of top players"
+                "By asking his parents for help",
+                "By playing only at weekends"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He studied videos of the best players to learn their tricks."
             },
             {
               "id": "r3-3",
               "prompt": "What happened at the tournament in Berlin?",
               "options": [
-                "His team lost in the first round",
+                "His team won a prize of five thousand euros",
                 "His team won the first round",
-                "His team could not travel there"
+                "His team could not travel there",
+                "His team lost in the first round"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "They lost in the first round and he cried all the way home."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "How do the parents behave now?",
               "options": [
                 "They ask him to choose another job",
+                "They watch the matches and cheer",
                 "They still worry about his health",
-                "They watch the matches and cheer"
+                "They give him money for trips"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "They come to his matches and cheer louder than anyone."
             },
             {
               "id": "r3-5",
               "prompt": "What lesson has the writer learned from her brother?",
               "options": [
-                "You must work hard to succeed",
                 "You should play for fun only",
-                "You can win without practice"
+                "You can win without practice",
+                "You must work hard to succeed",
+                "Winning is not very important"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "You must work hard to be good at anything."
             }
           ]
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "A short history of video games",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The first video games were very simple. In 1972, a game called Pong appeared in bars and shops. [1] Two players hit a small white ball across the screen with two white lines, and that was all.\n\nDuring the 1980s, games moved into people's homes. [2] Families bought small machines that they could connect to the television and play in the living room.\n\nIn the 1990s, the pictures became much better. [3] Characters had more colours and movements, and some games had a story with music.\n\nIn the 2000s, the internet changed everything. [4] Players could now compete with friends or with people from the other side of the world.\n\nToday, gaming is a huge industry, and millions of people play on their phones. [5] Some of them even earn their living by playing in competitions.",
           "sentences": [
-            "Soon, the number of players grew every year.",
-            "It was very easy to learn, but hard to stop playing.",
-            "Connecting to a game online was suddenly possible.",
+            "Others work in offices where they design new games.",
             "This made the games feel more like a real film.",
-            "Many of the early games were invented by students.",
-            "Others work in offices where they design new games."
+            "Connecting to a game online was suddenly possible.",
+            "The first home computers were sold in the 1970s.",
+            "It was very easy to learn, but hard to stop playing.",
+            "This is why the first machines were so expensive.",
+            "Soon, the number of players grew every year.",
+            "Many of the early games were invented by students."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "E",
               "explanation": "It was very easy to learn describes Pong, and the next sentence explains what it was like."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "G",
               "explanation": "The number of players grew soon after games moved into homes."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "B",
               "explanation": "Better pictures make games feel more like a real film, and the next sentence talks about characters and story."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "A",
               "explanation": "Others work in offices continues from the people who play for a living."
             }
           ]
@@ -704,14 +711,6 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "m",
-                    "name": "Calum",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
-                  {
                     "id": "f",
                     "name": "Carys",
                     "voice": {
@@ -722,12 +721,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "What time does the tournament start on Saturday?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "At two o'clock, but we should arrive at one to find good seats."
+                    "text": "Hi, Calum, it’s Carys. About the gaming tournament on Saturday. The poster says that the doors open at two, and I’d planned to get there at that time, but the email from the organisers says that the first matches start at half past one. And they told me that people who arrive at three can’t play at all, because the hall is full by then. So don’t be late. I think we should be there an hour before the doors open at two, to find a good place in the queue. See you at the station! Bring a snack, because it will be a long day."
                   }
                 ]
               },
@@ -740,7 +735,7 @@
                   "At three o'clock"
                 ],
                 "answer": 1,
-                "explanation": "She says they should arrive at one."
+                "explanation": "Two is when the doors open, three is too late because the hall is full; they should arrive an hour earlier, at one o’clock."
               }
             },
             {
@@ -767,11 +762,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How much was your new headset?"
+                    "text": "Cillian, is that a new headset? It looks very smart. How much was it?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Eighty pounds, but I got ten pounds off because I am a student."
+                    "text": "Seventy pounds. Not cheap, but it’s a good brand."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really? My cousin paid eighty for the same one, and I saw it in the window for ninety. Where did you buy it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "On a website, in the sale. It was ninety at the beginning of the week, then they dropped it by twenty, just for two days. I was lucky."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Lucky is the word! Can you send me the link?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course."
                   }
                 ]
               },
@@ -784,7 +795,7 @@
                   "Ninety pounds"
                 ],
                 "answer": 0,
-                "explanation": "It was eighty, minus ten pounds off, so seventy."
+                "explanation": "Her cousin paid eighty and the shop window showed ninety, but he bought it in a sale after the price fell by twenty, so it cost seventy."
               }
             },
             {
@@ -798,24 +809,12 @@
                       "lang": "en-US",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Brynn",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why do you never play on your phone at dinner?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Mum has a rule: phones stay in the hall until we have finished eating."
+                    "text": "Welcome to our house! Before dinner, I should tell you about the rules, because we do things a little differently. Some families have a rule that everybody has to help with the cooking, and we like that idea, but in our house, the cook is the only one in the kitchen. Another family I know doesn’t allow talking at the table, which sounds terrible to me. We love to talk. Our rule is simple. When we sit down to eat, all the phones go in the basket in the hall. Nobody checks a message until after the dessert. Is that all right?"
                   }
                 ]
               },
@@ -828,7 +827,7 @@
                   "No talking at the table"
                 ],
                 "answer": 0,
-                "explanation": "Phones stay in the hall until they have finished eating."
+                "explanation": "Cooking together and silence are rules of other families or ideas he rejects; in his house the phones go in the basket in the hall."
               }
             },
             {
@@ -855,11 +854,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Is that game suitable for my eight-year-old son?"
+                    "text": "Bridger, my nephew wants this game for his birthday. Do you know it?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I am afraid not. It is only for players over twelve because of the violence."
+                    "text": "I do. It’s not expensive, about twenty pounds, and it’s not hard to learn, the instructions take five minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The game is full of violent scenes. You shoot people all the time, and there’s a lot of blood. He’s only nine. I’d choose a football game instead."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hadn’t realised that. Thanks for warning me. I’ll look at the box again."
                   }
                 ]
               },
@@ -872,21 +883,13 @@
                   "It is very difficult to learn"
                 ],
                 "answer": 1,
-                "explanation": "The man says that it is for players over twelve because of the violence."
+                "explanation": "It is cheap and easy to learn, but it has violent scenes with shooting, so it is not right for a nine-year-old."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Bogdan",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Branwen",
@@ -898,12 +901,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Did you win the match yesterday?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "No, we lost by one point. It was so close that I could not sleep."
+                    "text": "Hi, Bogdan, it’s Branwen. I’m just home after the match, and I’m still shaking. I’ll tell you everything tomorrow, but first I want to say that I’m not tired, even though it was past midnight, and the game wasn’t boring, not for a second. I’m proud of the team, of course, we played well, but that isn’t what I feel. I’m so excited that I know I won’t be able to close my eyes tonight. We won in the last minute! I’m going to lie on the sofa and watch the replay."
                   }
                 ]
               },
@@ -911,26 +910,18 @@
                 "id": "l1-5q",
                 "prompt": "How did the woman feel after the match?",
                 "options": [
-                  "She was bored of it",
-                  "She was very proud",
-                  "She could not sleep"
+                  "Bored by the game",
+                  "Proud of her team",
+                  "Too excited to sleep"
                 ],
                 "answer": 2,
-                "explanation": "She says that it was so close that she could not sleep."
+                "explanation": "She says she is not bored and she is proud of her team, but she is so excited that she will not be able to close her eyes."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Carys",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Bastian",
@@ -942,12 +933,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Where did you find this old game?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "In my grandfather's attic, inside a box with some other toys."
+                    "text": "Hello, Carys. It’s Bastian. Guess what I’ve found in my uncle’s house! A box of old games. You told me that I would find something in the cellar, because that’s where my uncle keeps tools, and I looked there first, but there was only a washing machine. Then I went to the garage, where there was nothing except a bicycle. In the end, I went up the ladder into the attic, and there it was, under a pile of blankets, with a console from the nineteen-eighties. Come and see it!"
                   }
                 ]
               },
@@ -960,7 +947,7 @@
                   "In a garage"
                 ],
                 "answer": 0,
-                "explanation": "He says that he found it in his grandfather's attic."
+                "explanation": "The cellar had only a washing machine and the garage a bicycle; the box was in the attic under some blankets."
               }
             },
             {
@@ -987,11 +974,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Do you want to play a racing game or a puzzle game?"
+                    "text": "Chandra, shall we buy that new racing game for the party? Everybody loves it."
                   },
                   {
                     "speaker": "f",
-                    "text": "A puzzle game, please. Racing games make me feel sick."
+                    "text": "I don’t think so. I played it at my cousin’s house, and it’s not that it’s too slow. It’s fast, which is fine, and the noise doesn’t bother me."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what’s wrong with it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The screen moves so quickly that after ten minutes I feel sick. I have to stop and sit down, and my head hurts for an hour."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh, I didn’t know. Let’s choose a dancing game instead."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Great idea."
                   }
                 ]
               },
@@ -1004,7 +1007,7 @@
                   "It is too slow for her"
                 ],
                 "answer": 1,
-                "explanation": "She says that racing games make her feel sick."
+                "explanation": "She says the game is not slow and the noise is not a problem; the quick screen makes her feel sick."
               }
             }
           ]
@@ -1040,24 +1043,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to Game World. We sell games for every console. Can I help you find something?"
+                    "text": "Look, Calum, the new adventure game is in the window. Are you going to buy it?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, I am looking for the newest football game for my console."
+                    "text": "Not today. I have the money, I got my pocket money on Friday, and the shop is open until eight, so there’s no hurry."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then what are you waiting for?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Last time I bought a game on the first day, it was a disaster. It had so many bugs I couldn’t finish it. I’ll read the reviews for a week, and then I’ll decide."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s wise."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And if it’s good, I’ll buy it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "Why does Calum not buy the new game today?",
                 "options": [
-                  "In a school hall",
-                  "In a library",
-                  "In a games shop"
+                  "He does not have enough money",
+                  "The shop is closing soon",
+                  "He wants to read reviews first"
                 ],
                 "answer": 2,
-                "explanation": "The woman welcomes him to Game World and asks what he wants to find."
+                "explanation": "He has the money and the shop is open late; he is waiting to read reviews because the last game he bought was full of bugs."
               }
             },
             {
@@ -1084,24 +1103,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I cannot believe that I lost the game in the last second!"
+                    "text": "I lost the final again. I’m useless at this."
                   },
                   {
                     "speaker": "f",
-                    "text": "Never mind. You will feel better soon. It is only a game, and you played really well."
+                    "text": "Don’t say that. The other player was a professional, and the connection was terrible. Nobody could win in those conditions. It wasn’t your fault at all."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do you think so?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know it. I’d offer to play with you, but I have an exam tomorrow. And I can’t buy you a new game, I’m broke. But I can tell you that you’re good, and you’ll win next time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. That helps."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman trying to do?",
+                "prompt": "How does Carys try to help Cedar?",
                 "options": [
-                  "Start a loud argument",
-                  "Make the man feel better",
-                  "Give him some advice"
+                  "By telling him it was not his fault",
+                  "By playing with him",
+                  "By buying him a new game"
                 ],
-                "answer": 1,
-                "explanation": "She says that it is only a game and that he played well, to comfort him."
+                "answer": 0,
+                "explanation": "She cannot play or buy him a game, so she tells him that the other player was a professional and the connection was bad, so it was not his fault."
               }
             },
             {
@@ -1128,24 +1159,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I have been picked for the school team for the gaming competition!"
+                    "text": "Bridger, I won the school gaming competition!"
                   },
                   {
                     "speaker": "m",
-                    "text": "That is brilliant news! I am so proud of you. You deserve it."
+                    "text": "What? That’s incredible! When did it happen?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "This afternoon. I didn’t tell you before because I didn’t want to make you nervous."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You could have told me, but I’m not upset about that. It took you four hours, and I don’t mind that either. I’m just really happy. You practised every night for months, and now you’ve done it. I want to tell everyone in the school."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Please don’t, it’s embarrassing."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Bridger feel about Chandra's win?",
                 "options": [
-                  "Proud of his friend",
-                  "Annoyed with his friend",
-                  "Worried about his friend"
+                  "Annoyed that she did not tell him",
+                  "Proud of her",
+                  "Worried because it took so long"
                 ],
-                "answer": 0,
-                "explanation": "He says it is brilliant news and that she deserves it."
+                "answer": 1,
+                "explanation": "He says that he is not upset and the time does not matter; he is happy and wants to tell everyone, so he is proud of her."
               }
             },
             {
@@ -1172,24 +1215,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Could you tell me how to save my game, please?"
+                    "text": "Brynn, I lost three hours of progress yesterday because the game crashed. How do you save yours?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. Press this button and wait for the message on the screen."
+                    "text": "There’s a button at the top, and I press it every ten minutes. I used to save once a day, but after a few disasters, I changed."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is it a problem to save in the first level?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not at all, it works everywhere. My advice is simple: save as often as you can. It takes two seconds, and it can save you hours."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll do that from now on."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the man asking about?",
+                "prompt": "What does Brynn advise Bogdan to do about saving?",
                 "options": [
-                  "When the shop closes",
-                  "Where to buy a game",
-                  "How to save a game"
+                  "Save the game often",
+                  "Save only at the end of the day",
+                  "Avoid saving in the first level"
                 ],
-                "answer": 2,
-                "explanation": "He asks how to save his game."
+                "answer": 0,
+                "explanation": "She used to save daily until disasters happened, and saving in the first level is fine; she advises saving as often as possible."
               }
             },
             {
@@ -1216,24 +1271,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Today, we are going to look at how computer games are designed and tested."
+                    "text": "I’ve had an idea for a game, Cillian. A girl is a gardener, and she has to grow plants on a space station."
                   },
                   {
                     "speaker": "m",
-                    "text": "That sounds like a great job. Do you need a degree?"
+                    "text": "It sounds unusual. Isn’t it too complicated, with the plants and the space? Like a mix of everything?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ve thought about it, and the rules are simple: water, light and care."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then it’s really good. I thought it would be the same as that farm game, but I’ve never heard of anything like it. And it sounds fun. I’d play it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks, I needed to hear that."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Cillian think of Blessing's idea for a game?",
                 "options": [
-                  "Giving a talk about game design",
-                  "Asking for some help with a game",
-                  "Selling a computer to a customer"
+                  "It is too complicated",
+                  "It copies another game",
+                  "It is original and fun"
                 ],
-                "answer": 0,
-                "explanation": "She says they will look at how games are designed and tested."
+                "answer": 2,
+                "explanation": "He worries about complexity and copying, but she explains the simple rules and he has never heard of anything like it, so it is original and fun."
               }
             },
             {
@@ -1260,24 +1327,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am sorry, but the game server is down at the moment."
+                    "text": "Is something wrong, Bonaventure? You look sad."
                   },
                   {
                     "speaker": "f",
-                    "text": "Oh no! Do you know when it will be working again?"
+                    "text": "The game server is broken. I can’t play, and the company says it will be fixed on Friday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is it because of tonight’s match? You can play it another time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s not that, the match was cancelled. And the repair is free for the players. What really hurts is that they said some of the saved games were lost. I played for three months and I might have nothing."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m so sorry. I hope they find it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman's question about?",
+                "prompt": "Why is Bonaventure upset about the broken server?",
                 "options": [
-                  "How much the repair will cost",
-                  "Where to find another game",
-                  "When the server will work again"
+                  "She will miss tonight's match",
+                  "She has lost her saved game",
+                  "She has to pay for repairs"
                 ],
-                "answer": 2,
-                "explanation": "She asks when it will be working again."
+                "answer": 1,
+                "explanation": "The match was cancelled and repairs are free; her fear is that her saved game, three months of play, is lost."
               }
             }
           ]
@@ -1302,55 +1381,55 @@
             "turns": [
               {
                 "speaker": "esther",
-                "text": "Hello, everybody. Today, I would like to talk to you about esports, which means competitions in video games. In recent years, they have become very popular. Last year, more than five hundred million people around the world watched esports on their screens, and some matches were seen by more people than a big football final. The best players come from countries such as South Korea, China and the United States. They usually start young, and many of them stop playing professionally before they are thirty, because their reactions become slower. A top team practises for about ten hours a day, and it has a coach, a doctor and often a cook. The prizes can be very high. At one tournament, the winners shared more than thirty million dollars. However, the road to the top is hard, and only a few players succeed. If you want to try it yourself, the first step is to join a team at your school or in your town."
+                "text": "Hello, everybody. Today, I would like to talk to you about esports, which means competitions in video games. In recent years, they have become very popular. Two years ago, about four hundred million people watched them, but last year, the number grew, and more than five hundred million people watched, which is more than the population of some continents. Some of the best players come from Asia. People often think of Japan, which makes many games, but a very famous player comes from South Korea. His fans wait for him outside the stadium. Players are usually young. Many of them start when they are sixteen, and they often retire before they are thirty, because their hands and eyes become slower. A few stay until twenty-five, but the usual age to stop is thirty. How do top players practise? Many people think they play for six hours, like a school day. But a top team practises for about ten hours a day, with short breaks. It is like a job. And they have a big team to take care of them. The team has a coach, a doctor and a cook. The driver is only for big events. The cook prepares healthy meals, because the players need energy for their brains. If you would like to become a player, how can you start? Some people join a club at school, but the first step for a real career is to join a team. You can find one on the internet. Be patient, practise a lot, and sleep well. Remember that many young players also go to school or have a part-time job, so they must organise their time carefully. Esports is not only about having fun, it is also about discipline and friendship. Thank you for listening."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "More than ___ million people watched esports last year",
+              "prompt": "Last year more than ___ million people watched esports",
               "answer": "five hundred",
               "accepted": [
                 "500"
               ],
-              "explanation": "More than five hundred million people watched."
+              "explanation": "Two years ago it was four hundred million; last year the number grew to more than five hundred million."
             },
             {
               "id": "l3-2",
-              "prompt": "A famous player comes from South ___",
+              "prompt": "One of the most famous players is from South ___",
               "answer": "Korea",
-              "explanation": "Players come from South Korea, China and the United States."
+              "explanation": "Japan makes many games, but the famous player comes from South Korea."
             },
             {
               "id": "l3-3",
-              "prompt": "Many players retire before they are ___",
+              "prompt": "Many players stop before the age of ___",
               "answer": "thirty",
               "accepted": [
                 "30"
               ],
-              "explanation": "Many stop before they are thirty."
+              "explanation": "A few stay until twenty-five, but many retire before they are thirty."
             },
             {
               "id": "l3-4",
-              "prompt": "A top team practises for about ___ hours a day",
+              "prompt": "A top team trains for about ___ hours each day",
               "answer": "ten",
               "accepted": [
                 "10"
               ],
-              "explanation": "A top team practises for about ten hours a day."
+              "explanation": "Many people think it is six hours, but the speaker says a top team practises about ten."
             },
             {
               "id": "l3-5",
-              "prompt": "The team has a coach, a doctor and a ___",
+              "prompt": "Players are looked after by a coach, a doctor and a ___",
               "answer": "cook",
-              "explanation": "It has a coach, a doctor and often a cook."
+              "explanation": "The driver is only for big events; the cook prepares healthy meals."
             },
             {
               "id": "l3-6",
-              "prompt": "The first step is to join a ___",
+              "prompt": "Anyone who wants a real career should first join a ___",
               "answer": "team",
-              "explanation": "The first step is to join a team at your school."
+              "explanation": "A club at school is fine for fun, but the first step for a real career is to join a team."
             }
           ]
         },
@@ -1382,51 +1461,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Calum, you design video games for a living. How did you get started?"
+                "text": "Calum, you design video games. What was the first game that you made?"
               },
               {
                 "speaker": "g",
-                "text": "I made my first game at the age of fourteen, on my father's old computer. It was a very simple game about a frog crossing a road, but my friends loved it."
+                "text": "I was fourteen. I’d love to say it was a pirate game, because I liked pirates, but I never finished that one, and I didn’t make a racing game either. My first finished game was very simple. A frog had to cross a busy road without being hit by cars. My friends played it at school during the break, and they asked me to make a second level. That’s when I knew what I wanted to do."
               },
               {
                 "speaker": "i",
-                "text": "What does your team do every day?"
+                "text": "Who is in your team, and what do the writers do?"
               },
               {
                 "speaker": "g",
-                "text": "We start with a meeting to see what has to be done. Then the artists draw the characters, the writers invent the story, and the programmers make everything work."
+                "text": "There are about thirty of us. The artists draw the characters, and the programmers make everything work. The writers create the story. They decide who the hero is, what he wants and what stops him. Without a good story, the best graphics are boring."
               },
               {
                 "speaker": "i",
-                "text": "What is the hardest part of making a game?"
+                "text": "What is the hardest part of your work?"
               },
               {
                 "speaker": "g",
-                "text": "Testing. A game can have thousands of small problems, and we must find them all before the players do. Sometimes, we test one level for a month."
+                "text": "Testing. I know that talking to players and finding money are also difficult, but testing is the worst. We play the same level hundreds of times to find mistakes, and after a week, it becomes really boring. But one small bug can make people angry, so we can’t skip it."
               },
               {
                 "speaker": "i",
-                "text": "Where do your ideas come from?"
+                "text": "Where do you keep your ideas?"
               },
               {
                 "speaker": "g",
-                "text": "Everywhere! From films, books, dreams and even from the bus journey to work. I always carry a small notebook in my pocket."
+                "text": "I don’t have a special folder at work, and I don’t write on my computer, because I forget to open the files. I keep a small notebook in my pocket. I write in it on the bus, in a café, at night. It’s full of silly drawings, and every few months a drawing becomes a game."
               },
               {
                 "speaker": "i",
-                "text": "Do you still have time to play games?"
+                "text": "What do you do on a day off, and why?"
               },
               {
                 "speaker": "g",
-                "text": "Of course. It is part of my job to try other games, but I also play board games with my family on Sundays."
+                "text": "On Sundays, I play board games with my family. I’m not at the screen, and I don’t test things alone. We play for hours, and the laughter is wonderful. I want to rest my eyes, and it also reminds me that games are about people, not just computers."
               },
               {
                 "speaker": "i",
-                "text": "What would you say to someone who wants to design games?"
+                "text": "What advice would you give to somebody who wants to make games?"
               },
               {
                 "speaker": "g",
-                "text": "Start small and finish what you start. A short game that works is better than a huge game that you never complete."
+                "text": "Start small. Don’t buy a super expensive computer, because you don’t need it, and don’t copy ideas from other games, because it’s better to invent your own. Make a small game and finish it. A finished small game teaches you more than ten big ones that you never complete."
               }
             ]
           },
@@ -1440,7 +1519,7 @@
                 "A car in a race"
               ],
               "answer": 1,
-              "explanation": "It was a very simple game about a frog crossing a road."
+              "explanation": "He did not finish the pirate game and made no racing game; his first game had a frog crossing a busy road."
             },
             {
               "id": "l4-2",
@@ -1451,18 +1530,18 @@
                 "They make the program work"
               ],
               "answer": 1,
-              "explanation": "The writers invent the story."
+              "explanation": "Artists draw characters and programmers make it work; the writers create the story, deciding who the hero is."
             },
             {
               "id": "l4-3",
-              "prompt": "What is the hardest part of his work?",
+              "prompt": "Why is testing the hardest part of his work?",
               "options": [
-                "Testing the game for problems",
-                "Talking to the players",
-                "Finding enough money"
+                "It is boring but it prevents bugs",
+                "Players give dishonest comments",
+                "It costs the most money"
               ],
               "answer": 0,
-              "explanation": "Testing: they must find the thousands of small problems."
+              "explanation": "Talking to players and money are also difficult, but testing means playing a level hundreds of times, and one small bug makes people angry."
             },
             {
               "id": "l4-4",
@@ -1473,29 +1552,29 @@
                 "In a small notebook"
               ],
               "answer": 2,
-              "explanation": "He always carries a small notebook in his pocket."
+              "explanation": "He has no folder at work or file on a computer; he writes in a small notebook that he keeps in his pocket."
             },
             {
               "id": "l4-5",
-              "prompt": "What does he do on Sundays?",
+              "prompt": "Why does he play board games on Sundays?",
               "options": [
-                "Tests new games alone",
-                "Plays board games with family",
-                "Works from home on code"
+                "To test new ideas for work",
+                "To rest his eyes and remember people",
+                "Because his family insists"
               ],
               "answer": 1,
-              "explanation": "He plays board games with his family on Sundays."
+              "explanation": "He does not test things alone; he wants to rest his eyes and remember that games are about people."
             },
             {
               "id": "l4-6",
               "prompt": "What advice does he give to beginners?",
               "options": [
-                "Start small and finish the game",
-                "Buy the most expensive computer",
-                "Copy ideas from other games"
+                "Buy a very good computer",
+                "Copy ideas from other games",
+                "Start small and finish the game"
               ],
-              "answer": 0,
-              "explanation": "Start small and finish what you start."
+              "answer": 2,
+              "explanation": "He says a big computer is not needed and copying is not good; a finished small game teaches the most."
             }
           ]
         }

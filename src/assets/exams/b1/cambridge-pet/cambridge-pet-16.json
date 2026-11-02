@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "Why did the writer avoid charity shops at first?",
               "options": [
-                "She was afraid of what her friends would think.",
                 "She thought the prices were too high.",
+                "She had never been inside a charity shop in her life.",
+                "She was afraid of what her friends would think.",
                 "She did not enjoy shopping with her cousin."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She was worried that her friends would laugh at her, and she expected the clothes to look old-fashioned."
             },
             {
               "id": "r3-2",
               "prompt": "What made her go to the shop on that Saturday?",
               "options": [
-                "She wanted to buy a coat.",
                 "There was nothing else to do.",
-                "Kayode asked her again."
+                "She wanted to buy a coat.",
+                "Kayode asked her again.",
+                "She wanted to buy a present for him."
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "It rained and there was nothing else to do, so she agreed to go."
             },
             {
@@ -273,9 +275,10 @@
               "options": [
                 "It was a gift from her cousin.",
                 "Its colour matched her school uniform.",
+                "It was a present from the shop owner.",
                 "It was cheap and fitted her well."
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "It cost only eight pounds and the sleeves fitted exactly."
             },
             {
@@ -284,6 +287,7 @@
               "options": [
                 "They laughed at the buttons.",
                 "They asked where she got it.",
+                "They wanted to borrow it for a party.",
                 "They did not notice it."
               ],
               "answer": 1,
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What does the writer say about Kayode at the end?",
               "options": [
-                "He was right about her but did not say it.",
                 "He now shops in different places.",
-                "He felt sorry about the idea."
+                "He felt sorry about the idea.",
+                "He was right about her but did not say it.",
+                "He was angry that she had waited for so long."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Kayode knew she would change her mind but was too polite to say so."
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "A year without new clothes",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Last January, Mia from Kelby made a promise: she would not buy any new clothes for a whole year. She had noticed that her wardrobe was full, but she still felt that she had nothing to wear. [1] She hoped the challenge would show her how much she really needed.\n\nThe first few months were not easy. Whenever her friends went to the shopping centre, she felt left out. [2] Instead, she took a bag and went to the market to look for second-hand pieces, or she borrowed clothes from her older sister.\n\nBy summer, Mia was enjoying the challenge. She learned to sew on missing buttons and to turn old jeans into shorts. [3] People she did not know began to follow her, and many of them sent her their own ideas for mending clothes.\n\nAt the end of the year, Mia counted what she had saved. [4] She says that the biggest surprise was not the money but the way she felt. She no longer looked at adverts and thought she needed everything.\n\nWill she go back to her old habits? [5] \"I want to buy fewer things and keep them for longer,\" she says.",
           "sentences": [
-            "It was more than four hundred pounds.",
-            "She also started to write about her projects online.",
-            "So she decided to try something different.",
             "She did not want to spend her money on things she would wear only once.",
+            "Her brother bought a new coat and a pair of shoes last week.",
+            "So she decided to try something different.",
+            "She also started to write about her projects online.",
             "Mia is sure that she will not.",
-            "A few of her friends also began to buy second-hand things."
+            "A few of her friends also began to buy second-hand things.",
+            "It was more than four hundred pounds.",
+            "The shopping centre in Kelby is the biggest in the county."
           ],
           "gaps": [
             {
@@ -325,17 +332,17 @@
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "A",
               "explanation": "\"Instead\" follows the sentence about not buying at the shopping centre; sentence D explains why she avoided shops."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "D",
               "explanation": "She learned to sew and mend, and then began to write about her projects online; the next sentences say that people followed her."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "G",
               "explanation": "\"It was more than four hundred pounds\" answers what she counted, and the next sentence continues with the money."
             },
             {
@@ -734,15 +741,31 @@
                 "turns": [
                   {
                     "speaker": "odalys",
-                    "text": "Excuse me, have you got this blue shirt in medium? The large one is too big for me."
+                    "text": "Excuse me. I like this shirt for my brother’s birthday. Have you got it in blue?"
                   },
                   {
                     "speaker": "teodor",
-                    "text": "Let me check. In blue we only have small and large, but the medium comes in green."
+                    "text": "Yes, we have it in blue, in small and large. Which size does he wear?"
                   },
                   {
                     "speaker": "odalys",
-                    "text": "Green is fine, actually. I'll take it."
+                    "text": "Hmm. Last year I bought him a large blue one and it was far too big. I nearly picked the small one just now, but he’s grown since then."
+                  },
+                  {
+                    "speaker": "teodor",
+                    "text": "Then try the medium. We have it in green and it’s selling quickly."
+                  },
+                  {
+                    "speaker": "odalys",
+                    "text": "Green is his favourite colour, actually. The medium one in green, please."
+                  },
+                  {
+                    "speaker": "teodor",
+                    "text": "Lovely. Shall I put it in a bag?"
+                  },
+                  {
+                    "speaker": "odalys",
+                    "text": "Please, and I’ll pay at the till."
                   }
                 ]
               },
@@ -755,7 +778,7 @@
                   "A small blue shirt"
                 ],
                 "answer": 1,
-                "explanation": "The blue shirt does not come in medium, so she takes the medium shirt in green."
+                "explanation": "Last year’s large blue shirt was too big and she nearly took the small one, but he has grown and green is his favourite colour, so she buys the medium green one."
               }
             },
             {
@@ -782,19 +805,27 @@
                 "turns": [
                   {
                     "speaker": "wendell",
-                    "text": "Have you decided what to give Grandad for his birthday?"
+                    "text": "Look at all these scarves. Do you like the red one? It’s very bright."
                   },
                   {
                     "speaker": "perpetua",
-                    "text": "I was thinking of a red scarf, because he loves football."
+                    "text": "It’s nice, but I wore red last winter. What about the striped one? It’s on sale."
                   },
                   {
                     "speaker": "wendell",
-                    "text": "But he already has three red ones. How about a grey one?"
+                    "text": "The stripes are a bit loud for my dad, and it’s a present. He only wears dark colours."
                   },
                   {
                     "speaker": "perpetua",
-                    "text": "Good idea. Grey goes with his winter coat."
+                    "text": "You’re right. His coat is grey, and it matches everything he owns, so let’s get one in that colour. It’s softer, too."
+                  },
+                  {
+                    "speaker": "wendell",
+                    "text": "Good thinking. I’ll ask the assistant for a box."
+                  },
+                  {
+                    "speaker": "perpetua",
+                    "text": "And I’ll find a card."
                   }
                 ]
               },
@@ -807,7 +838,7 @@
                   "A grey one"
                 ],
                 "answer": 2,
-                "explanation": "Wendell says Grandad already has red scarves, and Perpetua agrees on grey."
+                "explanation": "Red is too bright and she wore it last winter, and the stripes are too loud for a man who wears dark colours, so they choose the soft grey one."
               }
             },
             {
@@ -834,15 +865,27 @@
                 "turns": [
                   {
                     "speaker": "ximena",
-                    "text": "These trainers are sixty pounds, but there is twenty per cent off today."
+                    "text": "Good afternoon. Can I help you?"
                   },
                   {
                     "speaker": "rafferty",
-                    "text": "So that is twelve pounds off. I will pay forty-eight pounds, then?"
+                    "text": "Yes, I’d like this jacket. The label says fifty pounds. Is that right?"
                   },
                   {
                     "speaker": "ximena",
-                    "text": "That's right, forty-eight."
+                    "text": "That’s the normal price, but this week we have a small discount. With your student card, I can take two pounds off."
+                  },
+                  {
+                    "speaker": "rafferty",
+                    "text": "Excellent, I have it here. A friend of mine bought a similar jacket for forty pounds at the market, but the quality wasn’t good."
+                  },
+                  {
+                    "speaker": "ximena",
+                    "text": "Ours is better. So the total is your price after the reduction. Card or cash?"
+                  },
+                  {
+                    "speaker": "rafferty",
+                    "text": "Card, please."
                   }
                 ]
               },
@@ -855,7 +898,7 @@
                   "Forty pounds"
                 ],
                 "answer": 0,
-                "explanation": "Twenty per cent of sixty is twelve, and sixty minus twelve is forty-eight."
+                "explanation": "The label price is fifty pounds, the market jacket cost forty, and the student discount takes two pounds off the price, so he pays forty-eight."
               }
             },
             {
@@ -869,32 +912,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "hollis",
-                    "name": "Hollis",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "beryl",
-                    "text": "I would like to bring this dress back, please. I bought it last Monday."
-                  },
-                  {
-                    "speaker": "hollis",
-                    "text": "Of course. Is there a problem with it?"
-                  },
-                  {
-                    "speaker": "beryl",
-                    "text": "No, it's lovely, but it's too tight around the waist."
-                  },
-                  {
-                    "speaker": "hollis",
-                    "text": "Do you have the receipt? Then I can give you another size."
+                    "text": "Hello, this is Beryl, and I’m calling about the dress that I bought online on Monday. I want to return it. At first I thought there was a hole near the sleeve, but it was just a shadow in the photo. The colour is exactly the one on the website, and I like the pattern. The real problem is that I tried it on this morning and I can’t breathe. It’s too tight around the waist. Please tell me how to send it back. Thank you very much, goodbye."
                   }
                 ]
               },
@@ -907,7 +930,7 @@
                   "It does not fit."
                 ],
                 "answer": 2,
-                "explanation": "She says the dress is lovely but too tight, so it does not fit her."
+                "explanation": "She says the hole was only a shadow and the colour is the same as the website, but the dress is too tight around the waist."
               }
             },
             {
@@ -921,32 +944,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "yvette",
-                    "name": "Yvette",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "yvette",
-                    "text": "Shall I buy new boots for Saturday's walk?"
-                  },
-                  {
                     "speaker": "cosmo",
-                    "text": "I would not. New boots can hurt your feet on a long walk. Wear your old ones."
-                  },
-                  {
-                    "speaker": "yvette",
-                    "text": "Anything else?"
-                  },
-                  {
-                    "speaker": "cosmo",
-                    "text": "Take an extra pair of socks in your bag, in case it rains."
+                    "text": "Hi Yvette, it’s Cosmo. I’m phoning about your walk in the mountains on Sunday. I know you want to buy new boots today, but the shops close at one and you need time to break them in, so don’t do it. Your old ones are fine. Light sandals sound comfortable, but the rocks are sharp near the top, so please leave them at home. The most useful thing is an extra pair of socks in your bag. When your feet get wet, you’ll be glad to change them. Have a great time, and send me a photo!"
                   }
                 ]
               },
@@ -959,7 +962,7 @@
                   "Wear a pair of light sandals"
                 ],
                 "answer": 1,
-                "explanation": "He tells her to keep her old boots and take an extra pair of socks."
+                "explanation": "New boots would not be broken in and sandals are not safe on sharp rocks, so the useful advice is to carry an extra pair of socks."
               }
             },
             {
@@ -986,19 +989,23 @@
                 "turns": [
                   {
                     "speaker": "maribel",
-                    "text": "Dad, I can't find my left glove anywhere."
+                    "text": "Anselm, did you find everything for the trip? You always forget something."
                   },
                   {
                     "speaker": "anselm",
-                    "text": "Is it in your coat pocket?"
+                    "text": "I’m not sure. Daisy lost her hat last winter, and I don’t want that to happen again. This time it’s in her bag with her scarf. But I can only find the left glove."
                   },
                   {
                     "speaker": "maribel",
-                    "text": "No, I looked. Maybe I left it on the bus."
+                    "text": "The right one is probably under the sofa. Daisy leaves her things everywhere."
                   },
                   {
                     "speaker": "anselm",
-                    "text": "We'll phone the bus company tomorrow."
+                    "text": "I’ve looked there already. It’s gone. I’ll buy a new pair tomorrow before we leave."
+                  },
+                  {
+                    "speaker": "maribel",
+                    "text": "Good idea. It’s freezing up there."
                   }
                 ]
               },
@@ -1011,7 +1018,7 @@
                   "A scarf"
                 ],
                 "answer": 0,
-                "explanation": "She says she cannot find her left glove and may have left it on the bus."
+                "explanation": "The hat was lost last winter and the scarf is in her bag, but Anselm can find only one of the pair of gloves, so she has lost a glove."
               }
             },
             {
@@ -1025,28 +1032,12 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "thea",
-                    "name": "Thea",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "thea",
-                    "text": "Are we meeting at the bus stop at two?"
-                  },
-                  {
                     "speaker": "lorcan",
-                    "text": "Let's meet outside the clothes shop instead. It's easier to find."
-                  },
-                  {
-                    "speaker": "thea",
-                    "text": "Fine. I'll wait by the window."
+                    "text": "Hi Thea, it’s Lorcan. About tonight. I said we’d meet at the bus stop near the station, but my bus is always late on Fridays, so forget that. The film starts at eight at the cinema on the corner, but it’s very cold, and I don’t want you to wait there on your own. So let’s meet outside the clothes shop, the one where we bought your yellow jacket. It’s got a big window, so you can stay warm and look at the dresses. See you at half past seven!"
                   }
                 ]
               },
@@ -1059,7 +1050,7 @@
                   "At the cinema on the corner"
                 ],
                 "answer": 1,
-                "explanation": "Lorcan suggests meeting outside the clothes shop instead of the bus stop."
+                "explanation": "The bus stop is rejected because the bus is late and the cinema is too cold to wait outside, so they will meet at the shop where they bought her jacket."
               }
             }
           ]
@@ -1094,16 +1085,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "portia",
+                    "text": "Jarvis, why are you looking so sad? You were so excited about the party tonight."
+                  },
+                  {
                     "speaker": "jarvis",
-                    "text": "Mum, look at my jeans! They were fine yesterday."
+                    "text": "I wanted to wear my new jeans, but I tried them on and they don’t close. I only got them in September."
                   },
                   {
                     "speaker": "portia",
-                    "text": "I washed them at a very high temperature. I'm sorry, they've shrunk."
+                    "text": "Did Mum buy the wrong ones?"
                   },
                   {
                     "speaker": "jarvis",
-                    "text": "They won't even go over my knees!"
+                    "text": "No, they were the right size then. I just grew about five centimetres this year. I looked everywhere for my old trousers, but I can’t find those either."
+                  },
+                  {
+                    "speaker": "portia",
+                    "text": "That’s not a disaster. We can go to the shop after lunch."
+                  },
+                  {
+                    "speaker": "jarvis",
+                    "text": "But I wanted to feel good about these ones."
                   }
                 ]
               },
@@ -1116,7 +1119,7 @@
                   "His mother bought the wrong size."
                 ],
                 "answer": 1,
-                "explanation": "The jeans shrank in a hot wash and no longer fit him."
+                "explanation": "The size was right in September and he found nothing else; what upsets him is that he has grown and the jeans do not close."
               }
             },
             {
@@ -1142,16 +1145,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "marlowe",
+                    "text": "Good morning, Style Direct. How can I help you?"
+                  },
+                  {
                     "speaker": "serena",
-                    "text": "Hello, I ordered a coat from your website ten days ago, and nothing has arrived."
+                    "text": "Hi. I ordered a coat two weeks ago and it still hasn’t arrived. I’m sick of waiting for the delivery. The website shows a green light and the word on its way."
                   },
                   {
                     "speaker": "marlowe",
-                    "text": "I'm sorry about that. Can I have your order number?"
+                    "text": "Let me check. Do you want to cancel it or change the size?"
                   },
                   {
                     "speaker": "serena",
-                    "text": "It's 4471. The website said it would take four days, and I'm still waiting."
+                    "text": "No, the order is fine. I made it on the website without any trouble. I just need the coat before my trip on Friday."
+                  },
+                  {
+                    "speaker": "marlowe",
+                    "text": "I see it here. The courier says tomorrow morning."
+                  },
+                  {
+                    "speaker": "serena",
+                    "text": "Great. Please send me a message when it leaves the depot."
                   }
                 ]
               },
@@ -1164,7 +1179,7 @@
                   "She cannot use the website."
                 ],
                 "answer": 0,
-                "explanation": "Her coat was ordered ten days ago and has not arrived."
+                "explanation": "She can use the website and does not want to change the order; she is calling because the coat has not arrived and she needs it by Friday."
               }
             },
             {
@@ -1190,16 +1205,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "delphine",
+                    "text": "Have you seen the new school uniform, Nikolai? They put the picture on the website."
+                  },
+                  {
                     "speaker": "nikolai",
-                    "text": "What do you think of the new school uniform?"
+                    "text": "I have. It’s dark blue with a white shirt. A bit boring, I think."
                   },
                   {
                     "speaker": "delphine",
-                    "text": "I quite like it. It's a big improvement: the jumper is much softer and the colour is nicer."
+                    "text": "Actually, I like it. The old grey one made everybody look tired, and this has lighter material for summer. And look at the price, it costs less than the old one."
                   },
                   {
                     "speaker": "nikolai",
-                    "text": "I miss the old tie, though."
+                    "text": "You’re right. I tried the trousers on, and they’re soft."
+                  },
+                  {
+                    "speaker": "delphine",
+                    "text": "See? A big improvement. I can’t wait to wear it."
+                  },
+                  {
+                    "speaker": "nikolai",
+                    "text": "Well, I’m not so sure about the tie."
                   }
                 ]
               },
@@ -1212,7 +1239,7 @@
                   "It is an improvement."
                 ],
                 "answer": 2,
-                "explanation": "She likes the softer jumper and the nicer colour, so she thinks it is better."
+                "explanation": "She says the old grey one looked tired, the new material is lighter and the price is lower, so she believes it is better than the old uniform."
               }
             },
             {
@@ -1239,15 +1266,27 @@
                 "turns": [
                   {
                     "speaker": "osbert",
-                    "text": "The office party is on Friday. Should I wear a suit?"
+                    "text": "Inge, do you think this suit is too much for the party? Everyone will be in jeans."
                   },
                   {
                     "speaker": "inge",
-                    "text": "No, nobody wears a suit. People come in jeans and a nice shirt."
+                    "text": "It’s very smart. Maybe a bit formal, a bit serious."
                   },
                   {
                     "speaker": "osbert",
-                    "text": "Oh good. I didn't want to look too formal."
+                    "text": "That’s what I think! And my tie is so dark. I’ll look as if I’m going to a funeral."
+                  },
+                  {
+                    "speaker": "inge",
+                    "text": "Don’t panic. Take off the tie and open the shirt a little. We can go in ten minutes. The taxi is booked and it’s quite cheap."
+                  },
+                  {
+                    "speaker": "osbert",
+                    "text": "I’m not worried about the money or the time. I just don’t want to stand out."
+                  },
+                  {
+                    "speaker": "inge",
+                    "text": "You’ll be fine, trust me."
                   }
                 ]
               },
@@ -1260,7 +1299,7 @@
                   "Spending too much"
                 ],
                 "answer": 0,
-                "explanation": "He does not want to look too serious, so he is worried about being too formal."
+                "explanation": "He is not worried about the money or the time; he fears that his suit and dark tie are too serious for a party where people wear jeans."
               }
             },
             {
@@ -1287,15 +1326,27 @@
                 "turns": [
                   {
                     "speaker": "tamsin2",
-                    "text": "Barnaby, have you taken my red T-shirt again?"
+                    "text": "Barnaby, is that my red shirt that you’re wearing?"
                   },
                   {
                     "speaker": "barnaby",
-                    "text": "I only borrowed it. I was going to put it back."
+                    "text": "Er, yes. I needed something smart for the interview, and mine were in the wash."
                   },
                   {
                     "speaker": "tamsin2",
-                    "text": "Please ask me first next time."
+                    "text": "You could have asked me! I found the drawer empty this morning."
+                  },
+                  {
+                    "speaker": "barnaby",
+                    "text": "Sorry, I really am. I’ll wash it tonight, and I promise there isn’t a mark on it."
+                  },
+                  {
+                    "speaker": "tamsin2",
+                    "text": "I’m not angry about the shirt. I’d have said yes. I just hate it when you take my things behind my back."
+                  },
+                  {
+                    "speaker": "barnaby",
+                    "text": "You’re right. Next time I’ll ask first."
                   }
                 ]
               },
@@ -1308,7 +1359,7 @@
                   "He lost her new red shirt yesterday."
                 ],
                 "answer": 1,
-                "explanation": "She asks him to ask first, so he borrowed the shirt without permission."
+                "explanation": "He has not damaged or lost the shirt and she would have agreed; she is annoyed because he borrowed it without asking her."
               }
             },
             {
@@ -1335,15 +1386,27 @@
                 "turns": [
                   {
                     "speaker": "gregor",
-                    "text": "Can you make the sleeves shorter on this jacket?"
+                    "text": "Hattie, do you sew? I need to change this jacket."
                   },
                   {
                     "speaker": "hattie",
-                    "text": "Yes, about three centimetres. Come back on Thursday."
+                    "text": "What’s wrong with it? It looks fine to me. The sleeve isn’t torn."
                   },
                   {
                     "speaker": "gregor",
-                    "text": "Thursday is perfect, thank you."
+                    "text": "No, it isn’t. And I love the size, I wouldn’t want a different one. The problem is that my arms are not so long, so the cuffs cover my hands."
+                  },
+                  {
+                    "speaker": "hattie",
+                    "text": "I see. We can take it up by three centimetres at the end of each arm. It’s an easy job."
+                  },
+                  {
+                    "speaker": "gregor",
+                    "text": "Perfect. How much would it be?"
+                  },
+                  {
+                    "speaker": "hattie",
+                    "text": "Ten pounds. Come back on Thursday."
                   }
                 ]
               },
@@ -1356,7 +1419,7 @@
                   "Shorter sleeves on his jacket"
                 ],
                 "answer": 2,
-                "explanation": "He asks the tailor to make the sleeves shorter, which changes their length."
+                "explanation": "The jacket is not torn and the size is right, but the sleeves are too long and cover his hands, so he wants them shortened."
               }
             }
           ]
@@ -1381,52 +1444,52 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good morning, everyone. I'm Bronwyn, and I'm in charge of this year's fashion show at Rowan School. The show takes place on Friday evening, and it starts at seven o'clock. All the clothes are made from recycled materials, such as old curtains, plastic bags and even newspapers. Students will walk across the stage in the school hall, and a small band will play. Tickets are four pounds each, and you can buy them from the school office. All the money we collect will help to pay for a new piano for the music room. If you would like to help with the show, please come to the art room at lunchtime on Wednesday."
+                "text": "Good morning, everyone. I’m Bronwyn, and I’m in charge of this year’s fashion show at Rowan School. First, the day. The show takes place on Friday evening. We wanted Saturday, but the building is used for a wedding, so Friday it is. The doors open at half past six, and the show starts at seven o’clock. Please be on time, because the first models walk out at five past. Now, the clothes. Last year the students bought cheap cotton in the market, but this time everything has to be made of recycled materials. We are using old curtains, plastic bags and even bicycle tyres. Some of the results are surprising. One girl made a lovely evening dress from newspapers! Where will it be? Many people think we’ll use the gym, because we did last time, but the floor was too hard and noisy. We’ll be in the school hall, with a proper stage and lights. A friend of the school is lending us a long walkway for the models. Now, tickets. Adults pay six pounds in the normal way, but for students and for pensioners it is only four pounds, and that is the price you pay if you buy in advance. Children under seven come in free. The seats are numbered, so the early buyers get the best ones. You can buy tickets in the office before the show, or from me after class. Finally, what is the money for? Some of you suggested a new minibus, and the music teacher hopes for a drum kit, but we decided to buy a piano for the hall, because the old one is broken and can’t be repaired. Please tell your friends and your families, and bring a warm coat, because the hall can be cold in the evening. Thank you for listening, and I hope to see you all there on Friday."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The show takes place on ___",
+              "prompt": "The show takes place on a ___ evening",
               "answer": "Friday",
-              "explanation": "Bronwyn says the show takes place on Friday evening."
+              "explanation": "The show is on Friday evening because Saturday is taken by a wedding."
             },
             {
               "id": "l3-2",
-              "prompt": "It starts at ___ o'clock",
+              "prompt": "The show begins at ___ in the evening",
               "answer": "seven",
               "accepted": [
                 "7"
               ],
-              "explanation": "The show starts at seven o'clock."
+              "explanation": "The doors open at half past six and the show starts at seven o’clock."
             },
             {
               "id": "l3-3",
-              "prompt": "The clothes are made from ___ materials",
+              "prompt": "All the clothes must be made of ___ materials",
               "answer": "recycled",
-              "explanation": "All the clothes are made from recycled materials."
+              "explanation": "Last year they used cheap cotton; this year everything is recycled."
             },
             {
               "id": "l3-4",
-              "prompt": "The show will be in the school ___",
+              "prompt": "The event will be held in the school ___",
               "answer": "hall",
-              "explanation": "Students will walk across the stage in the school hall."
+              "explanation": "Not the gym but the school hall, with a stage."
             },
             {
               "id": "l3-5",
-              "prompt": "A ticket costs ___ pounds",
+              "prompt": "Students and pensioners pay ___ pounds for a ticket",
               "answer": "four",
               "accepted": [
                 "4"
               ],
-              "explanation": "Tickets are four pounds each."
+              "explanation": "Adults pay six pounds; students and pensioners pay four pounds."
             },
             {
               "id": "l3-6",
-              "prompt": "The money will help to buy a ___",
+              "prompt": "The money raised will be spent on a ___ for the hall",
               "answer": "piano",
-              "explanation": "The money will pay for a new piano for the music room."
+              "explanation": "A minibus and a drum kit were suggested, but they will buy a piano."
             }
           ]
         },
@@ -1458,51 +1521,51 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Ottoline, you make costumes for the theatre. How did you start?"
+                "text": "Ottoline, you make costumes for the theatre. How did your career begin?"
               },
               {
                 "speaker": "ottoline",
-                "text": "I wanted to be an actress, but I was terrible on stage. A teacher saw me sewing costumes for the school play and said I should do that instead. She was right."
+                "text": "Well, I dreamed of going to the famous drama school in London, but I didn’t get a place, so that’s not it. And I did help my mother sometimes in her little shop, though only at weekends. What really started it was my teacher at school. She saw me sewing a bag for a friend during break, and she asked if I’d like to do the costumes for the end-of-year play."
               },
               {
                 "speaker": "host",
-                "text": "What is the first thing you do with a new play?"
+                "text": "What do you do first with a new play?"
               },
               {
                 "speaker": "ottoline",
-                "text": "I read the script twice and make notes about each character. Is she rich or poor? Is she shy? The clothes have to tell the audience that before she says a word."
+                "text": "I read the script several times, and I’m trying to understand each character. Are they shy, angry, rich? The colours and the shapes come later. I do meet the actors, of course, but not at the start, because they sometimes have strong opinions that confuse me. First I need to know who these people are."
               },
               {
                 "speaker": "host",
-                "text": "Do you buy new cloth for every costume?"
+                "text": "Why do you often use old clothes?"
               },
               {
                 "speaker": "ottoline",
-                "text": "Hardly ever. Theatres have little money, so I look for old clothes in charity shops and change them. A plain dress can look completely different with new sleeves and some paint."
+                "text": "Lots of people expect me to say that it’s for the planet, and that’s a nice bonus, but it isn’t my main reason. Nor do I think they look better. New cloth is often prettier! The truth is that theatres have very small budgets. A shop dress would eat my whole month’s money, so I look in charity shops and my friends’ wardrobes."
               },
               {
                 "speaker": "host",
-                "text": "What is the most difficult part of the job?"
+                "text": "What is the hardest part of the job?"
               },
               {
                 "speaker": "ottoline",
-                "text": "Time. I always have to work very quickly. During a show I only have a few minutes to help an actor change. Last month someone's zip broke just before he went on stage, and I fixed it with safety pins in thirty seconds."
+                "text": "Actors are lovely, so I don’t find talking to them hard. And repairing big costumes is slow, but it’s relaxing. The hard thing is the deadline. Sometimes a director changes the idea three days before the opening night, and I have to make ten costumes in a weekend. I work through the night, and I’m exhausted."
               },
               {
                 "speaker": "host",
-                "text": "Do actors ever complain about their costumes?"
+                "text": "You listen to the actors’ complaints. Why?"
               },
               {
                 "speaker": "ottoline",
-                "text": "Sometimes. They tell me a hat is too heavy or a shoe pinches. I listen, because if an actor feels uncomfortable, the audience can see it."
+                "text": "A few of them do have clever ideas, for example moving a pocket, but I don’t do it for that. And I’m not trying to keep them happy either. I listen because the audience can see when someone is uncomfortable. If a collar scratches, the actor moves strangely, and people in the third row notice it."
               },
               {
                 "speaker": "host",
-                "text": "What advice would you give to a young person who wants to do your job?"
+                "text": "What advice do you give young people?"
               },
               {
                 "speaker": "ottoline",
-                "text": "Learn to sew properly, but also watch people. Look at how they dress on the bus or in the park. The best ideas come from real life, not from books."
+                "text": "Read history, if you like, but history books won’t solve everything. Working in a shop is useful too, though you can learn that later. My best tip is to sit in a café and watch people dress. See how they walk in their clothes, which colours they choose, what they hide. That’s where every character comes from."
               }
             ]
           },
@@ -1516,7 +1579,7 @@
                 "She worked for her mother."
               ],
               "answer": 1,
-              "explanation": "A teacher saw her sewing costumes for the school play and suggested the job."
+              "explanation": "She did not get into the famous school and only helped her mother at weekends; a teacher saw her sewing a bag and asked her to do the play."
             },
             {
               "id": "l4-2",
@@ -1527,7 +1590,7 @@
                 "Talk to the actors about their ideas."
               ],
               "answer": 0,
-              "explanation": "She reads the script and makes notes about each character's personality."
+              "explanation": "She reads the script to understand each character and meets the actors and chooses colours later."
             },
             {
               "id": "l4-3",
@@ -1538,7 +1601,7 @@
                 "It is better for the environment."
               ],
               "answer": 1,
-              "explanation": "She says theatres have little money, so she changes clothes from charity shops."
+              "explanation": "The planet is only a bonus and she thinks new cloth is prettier; the real reason is that theatres have small budgets."
             },
             {
               "id": "l4-4",
@@ -1549,7 +1612,7 @@
                 "Mending large costumes"
               ],
               "answer": 1,
-              "explanation": "She says time is the biggest problem, with only minutes to help an actor change."
+              "explanation": "She finds talking to actors easy and repairs relaxing; the hard thing is the deadline when a director changes the idea."
             },
             {
               "id": "l4-5",
@@ -1560,7 +1623,7 @@
                 "The audience can see their discomfort."
               ],
               "answer": 2,
-              "explanation": "She says that if an actor feels uncomfortable, the audience can see it."
+              "explanation": "Clever ideas and keeping them happy are not her reason; she listens because the audience can see when someone is uncomfortable."
             },
             {
               "id": "l4-6",
@@ -1571,7 +1634,7 @@
                 "Work in a shop first"
               ],
               "answer": 0,
-              "explanation": "She says to look at how people dress in everyday places because ideas come from real life."
+              "explanation": "History and shop work are less important; the best tip is to sit in a café and watch how people dress."
             }
           ]
         }

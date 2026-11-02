@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "What did the writer expect to do at work?",
               "options": [
-                "Answer the phone most of the time",
                 "Write travel books",
-                "Design walking tours"
+                "Take customers out on the walking tours",
+                "Design walking tours",
+                "Answer the phone most of the time"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She says she expected to spend most of the day answering the phone."
             },
             {
               "id": "r3-2",
               "prompt": "Why was the writer nervous?",
               "options": [
+                "They did not know any of the guides well",
+                "They had little experience making websites",
                 "The company website was not working",
-                "Jo expected too much from them",
-                "They had little experience making websites"
+                "Jo expected too much from them"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She was nervous because she had only made a school page before, so she had little experience."
             },
             {
               "id": "r3-3",
               "prompt": "How did Jo help the writer learn?",
               "options": [
+                "She sent them on a training course",
                 "She gave them a long manual",
                 "She asked them to try small tasks",
                 "She completed the work for them"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "Jo asked her to try one small change and then show it to her."
             },
             {
@@ -284,6 +287,7 @@
               "options": [
                 "Added three tours to the website",
                 "Changed the name of the company",
+                "Met all of the people who buy tours",
                 "Took a group of visitors around"
               ],
               "answer": 0,
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "How does the writer feel now?",
               "options": [
-                "More confident about asking for help",
                 "Ready to become a manager",
-                "Disappointed with the new colleagues"
+                "Disappointed with the new colleagues",
+                "Worried about the other new colleagues",
+                "More confident about asking for help"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She says she feels comfortable asking questions now, so she is more confident about asking for help."
             }
           ]
@@ -306,36 +311,38 @@
           "id": "reading-4",
           "number": 4,
           "title": "The school radio station",
-          "instructions": "Choose the sentence for each gap. One sentence is extra.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Our school started a radio station last year. At first, only a few students were interested. [1] Then our English teacher suggested making a weekly programme about music and school news.\n\nWe had to learn how to use the recording equipment. [2] After a few attempts, we could edit the interviews ourselves.\n\nThe first programme was only ten minutes long. [3] Students began sending in questions and asking to hear their favourite songs.\n\nNow the radio team meets every Wednesday lunchtime. [4] We also record interviews with teachers and visitors.\n\nI have learned to plan ahead and speak clearly. [5] Next term, we hope to broadcast a live quiz.",
           "sentences": [
+            "Radio stations usually need a licence from the government.",
             "Nearly everyone in school listened to it.",
+            "Our school has about eight hundred students.",
             "We play it during lunch on Fridays.",
+            "It has also made me much less shy in front of other people.",
             "Most of us had never used a microphone before.",
             "Many people thought it would be difficult to manage.",
-            "It has also made me much less shy in front of other people.",
             "The music was too loud for the classroom."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "G",
               "explanation": "“Many people thought it would be difficult to manage” explains why few students were interested at first, and “Then” introduces the teacher’s idea."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "F",
               "explanation": "“Most of us had never used a microphone before” explains why they had to learn the equipment, and “After a few attempts” follows."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "B",
               "explanation": "“Nearly everyone in school listened to it” fits after the short first programme and leads to students sending questions."
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "D",
               "explanation": "“We play it during lunch on Fridays” follows the team’s Wednesday meeting; “it” is the programme. “We also record” adds more."
             },
             {
@@ -753,11 +760,35 @@
                 "turns": [
                   {
                     "speaker": "sophie",
-                    "text": "Is the meeting in Room Five?"
+                    "text": "Marcus, is the team meeting in the main hall again?"
                   },
                   {
                     "speaker": "marcus",
-                    "text": "It was, but they’ve moved it to Room Eight because the projector is broken."
+                    "text": "No, the hall is being painted this week. The email said Room Five."
+                  },
+                  {
+                    "speaker": "sophie",
+                    "text": "Oh, I thought so too, but I just checked the board downstairs. Someone has a training day in Five."
+                  },
+                  {
+                    "speaker": "marcus",
+                    "text": "So where do they want us?"
+                  },
+                  {
+                    "speaker": "sophie",
+                    "text": "The room at the end of the corridor, next to the lift. Number eight."
+                  },
+                  {
+                    "speaker": "marcus",
+                    "text": "Oh, good. It has the big window. What time again?"
+                  },
+                  {
+                    "speaker": "sophie",
+                    "text": "Half past two. Bring your laptop."
+                  },
+                  {
+                    "speaker": "marcus",
+                    "text": "Will do. See you there."
                   }
                 ]
               },
@@ -770,7 +801,7 @@
                   "Room Eight"
                 ],
                 "answer": 2,
-                "explanation": "Marcus says the meeting has moved to Room Eight because the projector is broken."
+                "explanation": "The hall is being painted and Room Five is taken by a training day, so the meeting has moved to the room next to the lift, number eight."
               }
             },
             {
@@ -797,11 +828,35 @@
                 "turns": [
                   {
                     "speaker": "hugo",
-                    "text": "Where are the charts for your report, Lena?"
+                    "text": "Lena, did you finish the report for the science project?"
                   },
                   {
                     "speaker": "lena",
-                    "text": "I’ve printed the report, but I forgot to bring the charts. I’ll email them to you tonight."
+                    "text": "I handed it in this morning. It’s on your desk."
+                  },
+                  {
+                    "speaker": "hugo",
+                    "text": "Thanks. And the homework from Tuesday?"
+                  },
+                  {
+                    "speaker": "lena",
+                    "text": "I did that last night. I gave it to Mr Ahmed at lunchtime."
+                  },
+                  {
+                    "speaker": "hugo",
+                    "text": "Good. I noticed that the pictures with the results were missing, though. The bar charts."
+                  },
+                  {
+                    "speaker": "lena",
+                    "text": "Yes, I’m still making them look right. The colours are wrong on my laptop. I’ll email them tonight, if that’s all right."
+                  },
+                  {
+                    "speaker": "hugo",
+                    "text": "Tonight is fine. Tomorrow morning at the latest."
+                  },
+                  {
+                    "speaker": "lena",
+                    "text": "Thanks, sir. Sorry about that."
                   }
                 ]
               },
@@ -814,7 +869,7 @@
                   "The homework"
                 ],
                 "answer": 1,
-                "explanation": "Lena says she forgot the charts and will email them tonight; she has already printed the report."
+                "explanation": "Lena has already handed in the report and the homework; she still has to email the missing bar charts tonight."
               }
             },
             {
@@ -841,11 +896,27 @@
                 "turns": [
                   {
                     "speaker": "chris",
-                    "text": "Aren’t you catching the early train today?"
+                    "text": "Fatima, I thought you’d be at your desk by now. Is the train late again?"
                   },
                   {
                     "speaker": "fatima",
-                    "text": "I normally do, but today I’m working from home. I’ll start at nine instead."
+                    "text": "Worse. There’s a strike, and nothing is running until tomorrow. I did think about driving, but the car park near the office is full."
+                  },
+                  {
+                    "speaker": "chris",
+                    "text": "What a nuisance. Can you manage from your flat?"
+                  },
+                  {
+                    "speaker": "fatima",
+                    "text": "Yes, my home internet is good, and I only need my laptop. I’ll join the meeting at eleven."
+                  },
+                  {
+                    "speaker": "chris",
+                    "text": "Great. And tomorrow, will you take the train to the office?"
+                  },
+                  {
+                    "speaker": "fatima",
+                    "text": "Hopefully. If it’s working, I’ll be there at nine."
                   }
                 ]
               },
@@ -858,7 +929,7 @@
                   "At home"
                 ],
                 "answer": 2,
-                "explanation": "Fatima says she is working from home today instead of taking the early train."
+                "explanation": "The train strike and the full car park stop her getting to the office, so she will work from her flat with her home internet."
               }
             },
             {
@@ -885,11 +956,27 @@
                 "turns": [
                   {
                     "speaker": "isla",
-                    "text": "Did you decide about the two jobs?"
+                    "text": "Did you look at the jobs, Omari?"
                   },
                   {
                     "speaker": "omari",
-                    "text": "The first one sounded interesting, but the office is too far away. I’ve decided to apply for the one near my house."
+                    "text": "Yes. The museum job sounds the most interesting, honestly. I’d love it."
+                  },
+                  {
+                    "speaker": "isla",
+                    "text": "So apply for that one!"
+                  },
+                  {
+                    "speaker": "omari",
+                    "text": "The pay is low, and I’d need two buses. I nearly sent my application yesterday. Then I saw the other advert, in the library at the end of my street."
+                  },
+                  {
+                    "speaker": "isla",
+                    "text": "So neither is perfect."
+                  },
+                  {
+                    "speaker": "omari",
+                    "text": "No, but I’d save an hour a day, and it’s five minutes from my home. I’ll send that one tonight."
                   }
                 ]
               },
@@ -902,7 +989,7 @@
                   "Neither job"
                 ],
                 "answer": 1,
-                "explanation": "Omari says the first office is too far away, so he will apply for the job near his house."
+                "explanation": "Omari nearly applied for the interesting museum job, but he chooses the library advert because it saves him an hour a day and is close to where he lives."
               }
             },
             {
@@ -929,11 +1016,27 @@
                 "turns": [
                   {
                     "speaker": "bea",
-                    "text": "Your presentation was clear, Jonas. Next time, try to look at the audience more often instead of reading from your notes."
+                    "text": "Jonas, that was a good presentation. I could hear every word, so you don’t have to speak more loudly."
                   },
                   {
                     "speaker": "jonas",
-                    "text": "OK, I’ll practise that."
+                    "text": "Thanks. I practised in the garden so I wouldn’t be too quiet."
+                  },
+                  {
+                    "speaker": "bea",
+                    "text": "It worked. Your notes were useful, too. Some students write whole paragraphs, but yours were short."
+                  },
+                  {
+                    "speaker": "jonas",
+                    "text": "I used cards this time. Is there anything I should change?"
+                  },
+                  {
+                    "speaker": "bea",
+                    "text": "Just one thing. You kept staring at the floor, so the audience didn’t feel you were talking to them. Try looking up for a few seconds after each point."
+                  },
+                  {
+                    "speaker": "jonas",
+                    "text": "Okay, I’ll try that."
                   }
                 ]
               },
@@ -946,7 +1049,7 @@
                   "Speaking more loudly"
                 ],
                 "answer": 0,
-                "explanation": "The teacher tells Jonas to look at the audience more often instead of reading from his notes."
+                "explanation": "Ms Bea praises his voice and short notes; her advice is to look up at the people in the room after each point."
               }
             },
             {
@@ -973,11 +1076,31 @@
                 "turns": [
                   {
                     "speaker": "vikram",
-                    "text": "Can you help me with maths this week, Rita?"
+                    "text": "Rita, could you help me with the moving boxes this week?"
                   },
                   {
                     "speaker": "rita",
-                    "text": "I can help you on Tuesday. I’m busy on Wednesday, but Thursday after school is fine too."
+                    "text": "I’d love to, but Wednesday is out. I’m at the dentist all day."
+                  },
+                  {
+                    "speaker": "vikram",
+                    "text": "Oh. What about Thursday morning?"
+                  },
+                  {
+                    "speaker": "rita",
+                    "text": "I have a class until twelve. But after that I’m free, and I’m free on Tuesday evening too."
+                  },
+                  {
+                    "speaker": "vikram",
+                    "text": "Wednesday was my first idea, but never mind. Which would you prefer?"
+                  },
+                  {
+                    "speaker": "rita",
+                    "text": "Either. It’s up to you."
+                  },
+                  {
+                    "speaker": "vikram",
+                    "text": "I’ll check with my brother and text you tonight."
                   }
                 ]
               },
@@ -990,7 +1113,7 @@
                   "Tuesday or Thursday"
                 ],
                 "answer": 2,
-                "explanation": "Rita can help on Tuesday and on Thursday after school; she is busy on Wednesday."
+                "explanation": "Rita cannot help on Wednesday or on Thursday morning, but she is free on Tuesday evening and Thursday after twelve."
               }
             },
             {
@@ -1017,11 +1140,27 @@
                 "turns": [
                   {
                     "speaker": "raj",
-                    "text": "Does the computer course start this week?"
+                    "text": "Has your cooking course started yet, Daisy?"
                   },
                   {
                     "speaker": "daisy",
-                    "text": "No, it begins next month. We’ll email the exact date to everyone who registered."
+                    "text": "No. It was supposed to begin tomorrow, but the teacher has a broken leg."
+                  },
+                  {
+                    "speaker": "raj",
+                    "text": "Oh no. Will they find someone else this week?"
+                  },
+                  {
+                    "speaker": "daisy",
+                    "text": "They said that might be possible, but then the centre sent a second email. Everything has moved to the start of next month, when the new teacher arrives."
+                  },
+                  {
+                    "speaker": "raj",
+                    "text": "That’s a long wait."
+                  },
+                  {
+                    "speaker": "daisy",
+                    "text": "I know, but at least I get my money back if I change my mind."
                   }
                 ]
               },
@@ -1034,7 +1173,7 @@
                   "Tomorrow"
                 ],
                 "answer": 0,
-                "explanation": "Daisy says the course begins next month, not this week."
+                "explanation": "The course was due to begin tomorrow, but the teacher is injured, so the centre moved it to the start of next month."
               }
             }
           ]
@@ -1069,25 +1208,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "pavel",
+                    "text": "You look worried, Ellen. Is it the new class?"
+                  },
+                  {
                     "speaker": "ellen",
-                    "text": "I’m worried about the science test. I’ve studied every evening this week."
+                    "text": "A bit. I don’t know anyone, but I’m sure I’ll make friends."
                   },
                   {
                     "speaker": "pavel",
-                    "text": "You’ll be fine, Ellen. You know the material well."
+                    "text": "Is it the project, then? Mr Cole chose Aisha as your partner."
+                  },
+                  {
+                    "speaker": "ellen",
+                    "text": "That’s actually fine. She’s really nice, and we did the first part last week."
+                  },
+                  {
+                    "speaker": "pavel",
+                    "text": "So what is it?"
+                  },
+                  {
+                    "speaker": "ellen",
+                    "text": "Friday’s paper. I’ve studied all week, but the questions on the last page always confuse me. If I do badly, I won’t be allowed in the advanced group."
+                  },
+                  {
+                    "speaker": "pavel",
+                    "text": "You won’t. Come to my house on Thursday and we’ll practise."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the girl worried about?",
+                "prompt": "What does Ellen feel most nervous about?",
                 "options": [
-                  "A project partner",
-                  "A test",
-                  "A new class"
+                  "Working with a new partner",
+                  "Meeting a new class",
+                  "Doing the test on Friday"
                 ],
-                "answer": 1,
-                "explanation": "Ellen says she is worried about the science test."
+                "answer": 2,
+                "explanation": "Ellen is not worried about the new class or her partner Aisha; what worries her is the exam paper on Friday and the advanced group."
               }
             },
             {
@@ -1113,25 +1272,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "anita",
+                    "text": "Mr Holt, have you got a minute? It’s about the brochure."
+                  },
+                  {
                     "speaker": "holt",
-                    "text": "Could you finish the posters by Friday?"
+                    "text": "Of course. Is it going to be late?"
                   },
                   {
                     "speaker": "anita",
-                    "text": "I can do that, but I need the final details today."
+                    "text": "No, I can finish it by Friday, that’s no problem. And the printer works fine now, thanks for sending the technician."
+                  },
+                  {
+                    "speaker": "holt",
+                    "text": "Good. So what’s worrying you?"
+                  },
+                  {
+                    "speaker": "anita",
+                    "text": "I’m not sure what you want on the last page. The email only says \"contact details\", but there are three offices."
+                  },
+                  {
+                    "speaker": "holt",
+                    "text": "Ah, I see. I’ll send you all the information with the addresses this afternoon."
+                  },
+                  {
+                    "speaker": "anita",
+                    "text": "Thank you. Then I’ll know what to write."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the employee need?",
+                "prompt": "Why does Anita speak to Mr Holt?",
                 "options": [
-                  "More details",
-                  "More time",
-                  "A new printer"
+                  "To ask for more information",
+                  "To ask for a later deadline",
+                  "To complain about the equipment"
                 ],
                 "answer": 0,
-                "explanation": "Anita can finish the posters but says she needs the final details today, so she needs more details."
+                "explanation": "Anita says she can meet Friday and the printer is fixed; she is unsure what to put on the last page, and Mr Holt will send the addresses."
               }
             },
             {
@@ -1158,24 +1337,44 @@
                 "turns": [
                   {
                     "speaker": "dylan",
-                    "text": "This book is easier than the one we read last month."
+                    "text": "Have you finished the book for class?"
                   },
                   {
                     "speaker": "zara",
-                    "text": "Yes, and the story is more exciting too."
+                    "text": "Almost. The first chapters were hard. I had to use the dictionary a lot."
+                  },
+                  {
+                    "speaker": "dylan",
+                    "text": "Me too. But after chapter five I couldn’t stop reading."
+                  },
+                  {
+                    "speaker": "zara",
+                    "text": "Same! It’s quite short, though. I wanted it to go on."
+                  },
+                  {
+                    "speaker": "dylan",
+                    "text": "Yes, but that’s why it’s good. Not a word wasted."
+                  },
+                  {
+                    "speaker": "zara",
+                    "text": "I’d read it again. It’s better than the last one Mr Pike gave us. I hated that."
+                  },
+                  {
+                    "speaker": "dylan",
+                    "text": "Let’s tell him to choose more like this."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What do they think about the book?",
+                "prompt": "What do Dylan and Zara agree about the book?",
                 "options": [
-                  "The book is too difficult",
-                  "The story is enjoyable",
-                  "The book is very short"
+                  "It is too difficult to read",
+                  "It is hard to put down",
+                  "It needs to be longer"
                 ],
                 "answer": 1,
-                "explanation": "Both say the book is easier and more exciting than the last one, so they enjoy the story."
+                "explanation": "Both found the first chapters hard but then could not stop reading; Dylan likes the short length, so only the second view is shared by both."
               }
             },
             {
@@ -1201,25 +1400,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "ross",
+                    "text": "So, Carla, what would you like to work on today?"
+                  },
+                  {
                     "speaker": "carla",
-                    "text": "I keep making mistakes with past tense verbs."
+                    "text": "I thought pronunciation, because my boss says people don’t understand me on the phone."
                   },
                   {
                     "speaker": "ross",
-                    "text": "Let’s practise them together before class tomorrow."
+                    "text": "I’d say you’re clear. A few sounds, but nothing serious."
+                  },
+                  {
+                    "speaker": "carla",
+                    "text": "Okay. Then maybe emails? I have to write a long one next week."
+                  },
+                  {
+                    "speaker": "ross",
+                    "text": "Your emails are well organised. But I notice the same mistakes with verbs: \"I go\" for \"I went\", \"he have\" for \"he has\"."
+                  },
+                  {
+                    "speaker": "carla",
+                    "text": "Oh, you’re right. I never notice them. Let’s do that, then. Emails can wait until next time."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What will they practise?",
+                "prompt": "What does Carla decide to work on?",
                 "options": [
+                  "Verb forms",
                   "Pronunciation",
-                  "Writing emails",
-                  "Verb forms"
+                  "Writing emails"
                 ],
-                "answer": 2,
-                "explanation": "Carla makes mistakes with past tense verbs and her tutor suggests practising them, so they will practise verb forms."
+                "answer": 0,
+                "explanation": "Ross says her pronunciation is clear and her emails are well organised; he points out mistakes with verbs and she agrees to practise those."
               }
             },
             {
@@ -1246,24 +1461,44 @@
                 "turns": [
                   {
                     "speaker": "nadia",
-                    "text": "The new café is lovely, but it takes too long to get lunch there."
+                    "text": "Shall we get lunch at the café?"
                   },
                   {
                     "speaker": "eddie",
-                    "text": "We should bring food from home tomorrow."
+                    "text": "If we go now. The queue is awful after twelve."
+                  },
+                  {
+                    "speaker": "nadia",
+                    "text": "I know. I waited twenty minutes yesterday for one sandwich."
+                  },
+                  {
+                    "speaker": "eddie",
+                    "text": "At least it’s cheap. Two pounds for a sandwich is fine."
+                  },
+                  {
+                    "speaker": "nadia",
+                    "text": "True, and the soup was properly hot when I had it. It’s the waiting that I hate. We only get forty minutes."
+                  },
+                  {
+                    "speaker": "eddie",
+                    "text": "Exactly. They need another person at the till."
+                  },
+                  {
+                    "speaker": "nadia",
+                    "text": "Let’s bring packed lunches tomorrow."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What problem do they mention?",
+                "prompt": "What do Nadia and Eddie agree is wrong with the café?",
                 "options": [
-                  "The café is expensive",
-                  "Getting lunch is slow",
-                  "The food is cold"
+                  "The prices are too high",
+                  "The food is not hot enough",
+                  "You have to wait too long"
                 ],
-                "answer": 1,
-                "explanation": "Nadia says it takes too long to get lunch, which means getting lunch is slow."
+                "answer": 2,
+                "explanation": "They say the sandwiches are cheap and the soup was hot; both complain about the queue and the twenty minutes that Nadia waited."
               }
             },
             {
@@ -1290,24 +1525,40 @@
                 "turns": [
                   {
                     "speaker": "sean",
-                    "text": "I thought the workshop was about painting."
+                    "text": "How was your carpentry course?"
                   },
                   {
                     "speaker": "gina",
-                    "text": "It was, but we also learned how to make a frame from old wood."
+                    "text": "Brilliant. First we learnt to repair a chair, which sounds boring, but it was satisfying."
+                  },
+                  {
+                    "speaker": "sean",
+                    "text": "Did you take photos?"
+                  },
+                  {
+                    "speaker": "gina",
+                    "text": "I meant to, but my phone died. Then in week five we made a frame, and I’m so pleased with it. It’s on my wall, and everybody asks where I bought it."
+                  },
+                  {
+                    "speaker": "sean",
+                    "text": "I’d like to do it. Was it expensive?"
+                  },
+                  {
+                    "speaker": "gina",
+                    "text": "Not at all. The materials were included. And the teacher was a real expert."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What else did they learn to do?",
+                "prompt": "How does Gina feel about her carpentry course?",
                 "options": [
-                  "Repair a chair",
-                  "Take photos",
-                  "Make a frame"
+                  "Disappointed with the teacher",
+                  "Proud of what she made",
+                  "Worried about the cost"
                 ],
-                "answer": 2,
-                "explanation": "Gina says they also learned how to make a frame from old wood."
+                "answer": 1,
+                "explanation": "Gina enjoyed the course and the teacher; she is delighted with the frame she made, which people think she bought."
               }
             }
           ]
@@ -1332,52 +1583,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Welcome to the training centre. I’m Mark, and I’ll explain the course. Our first class is on Monday at six o’clock. Please meet in the main hall, where you’ll receive your books. You should bring a notebook and a pen. We’ll take a short break at seven thirty. There is a café on the ground floor, but it closes at seven, so bring a snack if you need one. The course lasts for eight weeks. At the end, you’ll receive a certificate by email."
+                "text": "Welcome to the training centre. I’m Mark, and I’ll explain how the course works. Our first class is on Monday at six o’clock. Some of you were told Tuesday in the email, but that was a mistake, so please remember Monday. Please come to the main hall, where you’ll receive your books. Don’t go to the library, because it’s closed for repairs this month. The hall is the large room on the ground floor, just behind the reception desk. You should bring a notebook and a pen. A pencil isn’t necessary, because we’ll mainly write short answers and notes about our discussions. Each lesson lasts two hours, and we take a short break at seven thirty. At eight o’clock, we start the second half, which is usually the practical part. The lesson ends at nine. If you need something to eat, there is a café on the ground floor next to the hall. There are also vending machines on the first floor, but they sometimes run out of drinks. The café closes early, so bring a snack if you need one. Now, some information about the length of the course. The full programme lasts eight weeks. A longer programme, which is twelve weeks, is for the advanced group, and you’ll hear about that later. At the end of the eighth week, there is a short test, and then you receive a certificate. If you miss a class, please tell your teacher in advance. Finally, our phone number is on the back of your book, and the office is open every morning. Thank you for listening, and I hope you enjoy the course."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "First class: ___ at six",
+              "prompt": "Day of the first class: ___",
               "answer": "Monday",
-              "explanation": "Mark says the first class is on Monday at six o’clock."
+              "explanation": "Mark says Tuesday in the email was a mistake, so the first class is on Monday."
             },
             {
               "id": "l3-2",
-              "prompt": "Meet in the main ___",
+              "prompt": "Students collect their books in the large ___ behind reception",
               "answer": "hall",
-              "explanation": "He says to meet in the main hall."
+              "explanation": "He says not to go to the library, which is closed; they receive the books in the main hall."
             },
             {
               "id": "l3-3",
-              "prompt": "Bring a notebook and a ___",
+              "prompt": "Take notes with a ___",
               "answer": "pen",
-              "explanation": "Students should bring a notebook and a pen."
+              "explanation": "Mark says to bring a notebook and a pen; a pencil is not necessary."
             },
             {
               "id": "l3-4",
-              "prompt": "Break time: half past ___",
-              "answer": "seven",
-              "accepted": [
-                "7"
-              ],
-              "explanation": "The short break is at seven thirty, which is half past seven."
+              "prompt": "The short break is at ___ in the evening",
+              "answer": "seven thirty",
+              "explanation": "The break is at seven thirty, before the second half starts at eight."
             },
             {
               "id": "l3-5",
-              "prompt": "The café closes at ___",
-              "answer": "seven",
-              "accepted": [
-                "7"
-              ],
-              "explanation": "The café on the ground floor closes at seven."
+              "prompt": "The café is on the ___ floor",
+              "answer": "ground",
+              "explanation": "He says the vending machines are on the first floor, but the café is on the ground floor next to the hall."
             },
             {
               "id": "l3-6",
-              "prompt": "Course length: eight ___",
-              "answer": "weeks",
-              "explanation": "The course lasts for eight weeks."
+              "prompt": "The standard course finishes after ___",
+              "answer": "eight weeks",
+              "explanation": "The full programme lasts eight weeks; twelve weeks is only for the advanced group."
             }
           ]
         },
@@ -1409,11 +1654,11 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Tom, why did you become a teacher?"
+                "text": "Tom, you’ve been a teacher for fifteen years. Why did you become one?"
               },
               {
                 "speaker": "tom",
-                "text": "At school, I had a teacher who made history interesting. I wanted to help other students feel the same way."
+                "text": "It wasn’t because of the holidays, although everybody says that. And my family didn’t push me, they wanted me to be an accountant. At school I had a history teacher who made the past feel alive. I remember walking out of her classroom and wanting to give other students the same feeling."
               },
               {
                 "speaker": "interviewer",
@@ -1421,15 +1666,15 @@
               },
               {
                 "speaker": "tom",
-                "text": "Busy! I spent a lot of time preparing lessons at home. My colleagues helped me, and I learned to plan more carefully."
+                "text": "Busy! Finding a classroom wasn’t the problem, they gave me a nice one on the second floor. And I knew my history, I’d studied it for years. What took all my evenings was preparing the lessons. I spent hours making worksheets, and I was exhausted. Luckily my colleagues helped me, and I learned to plan more carefully."
               },
               {
                 "speaker": "interviewer",
-                "text": "What do you enjoy about teaching now?"
+                "text": "What do you enjoy most about teaching now?"
               },
               {
                 "speaker": "tom",
-                "text": "I like seeing students understand something that seemed difficult at first. Every class is different, so the work never feels boring."
+                "text": "I like writing the end-of-year reports less than people think, and organising trips is more stress than fun. What I enjoy is the moment when a student understands something that seemed impossible ten minutes before. You can see it in their faces. Every class is different, so the work never feels boring."
               },
               {
                 "speaker": "interviewer",
@@ -1437,7 +1682,15 @@
               },
               {
                 "speaker": "tom",
-                "text": "Keeping everyone involved. Some students are confident, while others need more time. I try to use different activities so everybody can take part."
+                "text": "It’s not choosing textbooks, the school does that, and I’m rarely late for a lesson. The real challenge is keeping everyone involved. Some students are very confident and answer every question, while others need more time and stay quiet. If I’m not careful, the loud ones take over and the others quietly switch off and stop listening completely."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "How do you deal with that?"
+              },
+              {
+                "speaker": "tom",
+                "text": "I never give extra homework to the quiet ones, that would only make them hate the subject. And I can’t split a class of thirty into small groups, there isn’t the space. So I change the activities. We might have a debate, then a game, then a writing task, so that everybody can find something that suits them."
               },
               {
                 "speaker": "interviewer",
@@ -1445,7 +1698,7 @@
               },
               {
                 "speaker": "tom",
-                "text": "Listen to your students. They can tell you what is working. And don’t be afraid to change a lesson if the class needs something different."
+                "text": "Follow your plan at the start, it gives you confidence. But listen to your students, because they can tell you what is working. And don’t be afraid to change a lesson in the middle if the class needs something different. Some of my best lessons began as a mistake, and it took me years to be comfortable with that idea."
               }
             ]
           },
@@ -1459,7 +1712,7 @@
                 "His family asked him"
               ],
               "answer": 0,
-              "explanation": "Tom says a history teacher at school made the subject interesting and inspired him."
+              "explanation": "Tom says it was not for the holidays or for his family; a history teacher made the past feel alive and he wanted to give students the same feeling."
             },
             {
               "id": "l4-2",
@@ -1470,7 +1723,7 @@
                 "Learning history"
               ],
               "answer": 0,
-              "explanation": "In his first year he spent a lot of time preparing lessons at home."
+              "explanation": "Finding a classroom was easy and he knew history; what took his evenings was preparing lessons."
             },
             {
               "id": "l4-3",
@@ -1481,7 +1734,7 @@
                 "Organising trips"
               ],
               "answer": 1,
-              "explanation": "He likes seeing students understand something that seemed difficult."
+              "explanation": "Tom says he likes reports and trips less than people think; he enjoys the moment when a student understands something difficult."
             },
             {
               "id": "l4-4",
@@ -1492,7 +1745,7 @@
                 "Keeping all students involved"
               ],
               "answer": 2,
-              "explanation": "He says the most challenging part is keeping everyone involved."
+              "explanation": "Textbooks are chosen by the school and he is rarely late; the real challenge is keeping everyone involved."
             },
             {
               "id": "l4-5",
@@ -1503,7 +1756,7 @@
                 "He teaches smaller groups"
               ],
               "answer": 0,
-              "explanation": "He uses different activities so everybody can take part."
+              "explanation": "He does not give extra homework or make small groups; he changes the activities so everybody can find one that suits them."
             },
             {
               "id": "l4-6",
@@ -1514,7 +1767,7 @@
                 "Avoid changing activities"
               ],
               "answer": 1,
-              "explanation": "He advises listening to students and changing a lesson if the class needs it."
+              "explanation": "Tom says to follow the plan at first but listen to the students and change a lesson if the class needs something different."
             }
           ]
         }

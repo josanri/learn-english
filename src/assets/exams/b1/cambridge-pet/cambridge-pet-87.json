@@ -250,6 +250,7 @@
               "prompt": "What was special about the cafe at first?",
               "options": [
                 "The apple cake",
+                "The old wooden chairs",
                 "The low prices",
                 "The large tables"
               ],
@@ -260,11 +261,12 @@
               "id": "r3-2",
               "prompt": "What did the writer do as a child?",
               "options": [
-                "Washed cups and listened",
+                "Baked the apple cake",
                 "Cooked the soup",
+                "Washed cups and listened",
                 "Took the orders"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She washed cups, carried plates and listened to customers."
             },
             {
@@ -272,10 +274,11 @@
               "prompt": "Why did the writer leave university for a while?",
               "options": [
                 "To start a new job",
-                "To help her grandmother",
-                "To travel"
+                "To travel",
+                "To open a bookshop",
+                "To help her grandmother"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She did not want the cafe sold, so she took a break to help."
             },
             {
@@ -283,10 +286,11 @@
               "prompt": "What did she find about the work?",
               "options": [
                 "It was easy",
+                "It was hard",
                 "It was boring",
-                "It was hard"
+                "It was lonely"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "It was harder than she had expected."
             },
             {
@@ -295,7 +299,8 @@
               "options": [
                 "The cafe is too busy",
                 "The books are too many",
-                "The cake is not as good"
+                "The cake is not as good",
+                "The tables are too small"
               ],
               "answer": 2,
               "explanation": "She says the cake is not as good as hers."
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "A short history of coffee",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Coffee has a long and interesting history. [1] According to an old story, a farmer in Ethiopia noticed that his goats became very lively after eating the red berries of a certain bush.\n\nAt first, people ate the berries or chewed the leaves. [2] Slowly, the habit of drinking coffee spread across the Arab world, where the first coffee houses opened.\n\nIn the seventeenth century, traders brought coffee to Europe. [3] Many people thought it was a dangerous drink, but soon cafes appeared in every big city.\n\nThese cafes became meeting places. [4] Writers, artists and business people spent hours there, talking and reading the news.\n\nToday, coffee is one of the most traded goods in the world. [5] For many people, a day cannot begin without a cup.",
           "sentences": [
-            "It was a completely new taste for most of them.",
-            "Over two billion cups are drunk every day.",
-            "Later, someone had the idea of making a hot drink from the beans.",
             "Tea is much more popular in some countries.",
+            "The beans are still picked by hand on most farms.",
+            "Over two billion cups are drunk every day.",
+            "She was the first woman in her town to own one.",
+            "It was a completely new taste for most of them.",
+            "People could hear new ideas and share them for the price of a cup.",
             "Nobody knows exactly who first discovered it.",
-            "People could hear new ideas and share them for the price of a cup."
+            "Later, someone had the idea of making a hot drink from the beans."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "E",
+              "answer": "G",
               "explanation": "Nobody knows who discovered it; the next sentence gives an old story."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "H",
               "explanation": "People first ate berries; later they made a hot drink from the beans."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "E",
               "explanation": "It was a new taste; the next sentence says many people thought it was dangerous."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "B",
+              "answer": "C",
               "explanation": "Billions of cups are drunk every day; the next sentence says people cannot start the day without one."
             }
           ]
@@ -730,11 +737,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What would you like to drink?"
+                    "text": "What would you like, young man? A cup of tea, perhaps?"
                   },
                   {
                     "speaker": "b",
-                    "text": "A hot chocolate, please, with cream on top."
+                    "text": "My mum always gives me tea, but I don’t really like it. I wanted an orange juice, but it’s freezing outside, so I need something warm."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "We have a lovely one with cream on top."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, please. Chocolate is my favourite, and the biggest size you have, please. Can I pay at the end?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Of course. It’ll be five minutes."
                   }
                 ]
               },
@@ -747,7 +766,7 @@
                   "An orange juice"
                 ],
                 "answer": 1,
-                "explanation": "He orders a hot chocolate with cream."
+                "explanation": "He does not want tea and the juice is too cold for the weather, so he asks for the warm drink made of chocolate."
               }
             },
             {
@@ -761,24 +780,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much is the carrot cake?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "Three pounds, or five with a coffee."
+                    "text": "Welcome to Pepper’s Cafe, the friendliest place in town! Our slice of carrot cake costs three pounds on its own, and a coffee is four pounds. But this month we have a special offer. Take the cake and a coffee together, and you pay only five pounds in total. That’s two pounds less than the normal price. Come before the end of the week, from eight in the morning, and bring a friend. There is a table for everyone, and the garden is open if the sun comes out. Pepper’s Cafe, near the station."
                   }
                 ]
               },
@@ -791,7 +798,7 @@
                   "Four pounds"
                 ],
                 "answer": 0,
-                "explanation": "She says it is five pounds with a coffee."
+                "explanation": "The cake is three pounds and the coffee four, but with the special offer both cost five pounds together."
               }
             },
             {
@@ -805,24 +812,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Boy",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Shall we sit outside?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "It is too windy. Let us take the table by the window."
+                    "text": "Hi Sam, it’s Ella. I’m at Pepper’s already. I was going to sit in the garden, but it’s very windy and the tables are wet. The counter is full of workers on their lunch break. So I’ve taken the little table by the window, and you can see me from the street. Don’t be late, because they only keep it for ten minutes. I’ve ordered you a coffee, but I’ll wait for you before I order food. See you soon, bye."
                   }
                 ]
               },
@@ -835,7 +830,7 @@
                   "At the counter"
                 ],
                 "answer": 0,
-                "explanation": "He suggests the table by the window."
+                "explanation": "The garden is too windy and the counter is full, so she is waiting at the table beside the window."
               }
             },
             {
@@ -862,11 +857,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you take sugar?"
+                    "text": "Do you want sugar in your coffee?"
                   },
                   {
                     "speaker": "b",
-                    "text": "No, thanks. I gave it up last month."
+                    "text": "No, thanks. I stopped last year. The doctor said it’s fine for me, I’m not allergic or anything. I just gave it up when my teeth started to hurt, and I feel healthier now. I used to take three spoons, can you believe it?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I don’t like the taste of it either, to be honest."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I loved it, that was the problem. Now I put a little milk in, and that’s enough."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe I should try that."
                   }
                 ]
               },
@@ -879,7 +886,7 @@
                   "He dislikes the taste"
                 ],
                 "answer": 1,
-                "explanation": "He says he gave it up last month."
+                "explanation": "He is not allergic and still likes the taste; he stopped on his own when his teeth hurt."
               }
             },
             {
@@ -906,11 +913,31 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "You look tired. Did you sleep well?"
+                    "text": "You look tired, Marta."
                   },
                   {
                     "speaker": "b",
-                    "text": "Not really. I drank too much coffee yesterday evening."
+                    "text": "I slept terribly. Not because of the party in the flat next door, that finished at midnight. And I wasn’t worried about the exam, I felt fine."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what happened?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I had a big coffee at nine in the evening to study, and I couldn’t close my eyes until four."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You should drink water at that time."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I know. Never again. Today I’ll have only tea, and I’m going to bed early."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good idea."
                   }
                 ]
               },
@@ -923,7 +950,7 @@
                   "She drank coffee late"
                 ],
                 "answer": 2,
-                "explanation": "She drank too much coffee in the evening."
+                "explanation": "The party stopped at midnight and she was not worried; her late cup of coffee kept her awake."
               }
             },
             {
@@ -950,11 +977,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Excuse me, is this seat taken?"
+                    "text": "Would you like another table? That one is a bit cold, near the door."
                   },
                   {
                     "speaker": "b",
-                    "text": "No, go ahead. I am just leaving."
+                    "text": "Thanks, but no. Actually, I wanted more food too, the soup was great. But I’ve just looked at the time and my train leaves in twenty minutes. I’ll pay now."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Of course. Shall I get a taxi for you?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, it’s near the station and I can walk. Could I have the bill, please?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Right away. I hope you can come back soon. Next time, try the cake."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, I’m leaving now, but I’ll be back next week, I promise."
                   }
                 ]
               },
@@ -967,7 +1010,7 @@
                   "Move to another table"
                 ],
                 "answer": 0,
-                "explanation": "She says she is just leaving."
+                "explanation": "She says no to the table and no more food; her train leaves in twenty minutes, so she asks for the bill and goes."
               }
             },
             {
@@ -981,24 +1024,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Boy",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time do you close tonight?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "At six, but the kitchen shuts at five."
+                    "text": "Good afternoon, everybody. Please note that the kitchen will close earlier today. Usually we serve food until six, but because of a staff party we planned to finish at four. Now a few more cooks have agreed to stay, so the kitchen will close at five. After that, we will still serve drinks and cake until the cafe closes. Thank you for your understanding, and enjoy the rest of your afternoon."
                   }
                 ]
               },
@@ -1011,7 +1042,7 @@
                   "At four"
                 ],
                 "answer": 1,
-                "explanation": "He says the kitchen shuts at five."
+                "explanation": "The usual time is six and the plan was four, but extra cooks stayed, so the kitchen closes at five."
               }
             }
           ]
@@ -1047,24 +1078,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Table for two, please."
+                    "text": "The cafe is full. Shall we wait?"
                   },
                   {
                     "speaker": "b",
-                    "text": "I am sorry, we are full. It will be a twenty-minute wait."
+                    "text": "Forty minutes is too long. We could get takeaway, but it’s cold, and we’d have to eat on a bench."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "There’s the new place down the road. It’s cheaper, too. Their soup is only four pounds."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Really? I’ve walked past, but I never went in."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then let’s go there."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good idea. I’m starving. Do they have any vegetarian dishes, do you know?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, there are three, I saw the menu on the window."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the problem?",
+                "prompt": "What do the friends decide about lunch?",
                 "options": [
-                  "The bill is wrong",
-                  "The food is cold",
-                  "The cafe is full"
+                  "Wait for a table",
+                  "Order takeaway food",
+                  "Go somewhere cheaper"
                 ],
                 "answer": 2,
-                "explanation": "She says they are full."
+                "explanation": "Waiting is too long and takeaway on a cold bench is not nice; the place down the road is cheaper, so they go there."
               }
             },
             {
@@ -1090,25 +1141,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "b",
+                    "text": "Excuse me, I asked for tea with lemon, but this has milk in it."
+                  },
+                  {
                     "speaker": "a",
-                    "text": "Excuse me, I asked for a tea without milk."
+                    "text": "Oh, I’m sorry. I’ll change it. Was the wait too long?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Oh, I am so sorry. I will bring you another."
+                    "text": "No, the wait wasn’t long, and the price is normal. It’s the third time with milk. People never listen."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’m really sorry. I’ll bring a new one now, and the lemon is free this time."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thank you, but you don’t need to give me anything. I only want the drink I ordered, and a quiet afternoon with my book."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the customer complaining about?",
+                "prompt": "What bothers the customer most?",
                 "options": [
-                  "The very high price",
-                  "Milk in her tea",
-                  "The slow service today"
+                  "The wrong drink",
+                  "The high price",
+                  "The slow service"
                 ],
-                "answer": 1,
-                "explanation": "She asked for tea without milk and got milk."
+                "answer": 0,
+                "explanation": "She says that the wait and the price are fine; she is angry because she did not get the tea that she asked for."
               }
             },
             {
@@ -1135,24 +1198,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why do you work at the cafe on Saturdays?"
+                    "text": "I didn’t know you work at the cafe on Saturdays."
                   },
                   {
                     "speaker": "b",
-                    "text": "I am saving for a guitar. It costs two hundred pounds."
+                    "text": "Since March. I thought about buying a guitar, but my brother lent me his. I’m going to Italy with my cousin in August, and I need to save four hundred pounds for the trip."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And do you meet friends there?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not really. I’m alone in the kitchen all day!"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Sounds hard."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s fine. Italy will be worth it. My cousin has a flat near the sea, so we won’t pay for a hotel."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s a good idea. Send me photos."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Why does the girl work?",
+                "prompt": "Why does the girl work at the cafe?",
                 "options": [
                   "To buy a guitar",
-                  "To learn cooking",
+                  "To save for a trip",
                   "To meet friends"
                 ],
-                "answer": 0,
-                "explanation": "She is saving for a guitar."
+                "answer": 1,
+                "explanation": "The guitar was borrowed and she works alone; she works because she needs money for a holiday in Italy."
               }
             },
             {
@@ -1179,15 +1262,31 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like to book a table for six on Sunday."
+                    "text": "Hello, I’d like a table for six on Saturday evening. It’s my mum’s birthday."
                   },
                   {
                     "speaker": "b",
-                    "text": "Certainly. For what time?"
+                    "text": "I can offer you half past eight."
                   },
                   {
                     "speaker": "a",
-                    "text": "One o'clock, please."
+                    "text": "Perfect. I thought of changing a booking, but I never made one, so there’s nothing to change. And I wanted to order food to take away, but my sister is bringing the cake, so no."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Name, please?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Hilda Voss."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good, Hilda. We’ll put a candle on the table if you like, and you can sing as loudly as you want."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you. See you on Saturday."
                   }
                 ]
               },
@@ -1195,12 +1294,12 @@
                 "id": "l2-4q",
                 "prompt": "What does the woman want to do?",
                 "options": [
+                  "Reserve a table",
                   "Change a booking",
-                  "Order takeaway food",
-                  "Reserve a table"
+                  "Order takeaway food"
                 ],
-                "answer": 2,
-                "explanation": "She wants to book a table for six."
+                "answer": 0,
+                "explanation": "She is not changing a booking and does not want takeaway food; she wants a table for her mum’s birthday."
               }
             },
             {
@@ -1227,24 +1326,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Class, please stop talking. You are disturbing the other customers in the cafe."
+                    "text": "Your idea of a small cafe at school every Friday, tell me about it."
                   },
                   {
                     "speaker": "b",
-                    "text": "Sorry, sir."
+                    "text": "Students bring cakes, others sell them, and we give the money to the library."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I thought you’d say you need machines and an oven, and that’s expensive, but you don’t need any of that. It isn’t complicated either, it’s just cakes and a table."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So can we do it?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It’s a good plan, and I like it very much. Talk to the head teacher on Monday, and I’ll come with you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Who is speaking?",
+                "prompt": "What does the teacher think of the girl's idea?",
                 "options": [
-                  "A teacher with a class",
-                  "A cafe owner",
-                  "A waiter"
+                  "It costs too much",
+                  "It is too complicated",
+                  "It is a good plan"
                 ],
-                "answer": 0,
-                "explanation": "He speaks to a class about disturbing the customers."
+                "answer": 2,
+                "explanation": "The teacher expected costs and difficulty but sees neither, and she likes the idea so much that she sends the girl to the head."
               }
             },
             {
@@ -1271,24 +1382,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "This coffee tastes strange."
+                    "text": "Excuse me, my juice is warm."
                   },
                   {
                     "speaker": "b",
-                    "text": "It is a new kind from Brazil. Shall I get you a different drink?"
+                    "text": "Oh dear. Let me taste it. You’re right, it’s not cold. I’m sorry about that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it the fridge?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Maybe, but it’s not the cook’s fault, he doesn’t touch the drinks. I’ll bring you a fresh glass with ice. And I’ll check the fridge today."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you very much."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, thank you for telling me. Most people just leave and never come back, and I want to know about any problem."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’m sure it’ll be fixed."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the man offer?",
+                "prompt": "What does the manager think about the boy's complaint?",
                 "options": [
-                  "A discount",
-                  "A free cake",
-                  "A different drink"
+                  "He thinks the boy is wrong",
+                  "He accepts it and offers another drink",
+                  "He blames the cook"
                 ],
-                "answer": 2,
-                "explanation": "He offers to get something else."
+                "answer": 1,
+                "explanation": "The manager tastes it and agrees; he does not blame the cook and brings a new cold drink."
               }
             }
           ]
@@ -1313,7 +1444,7 @@
             "turns": [
               {
                 "speaker": "owner",
-                "text": "Welcome to my cafe, everybody. I am Aldis, and I started this business five years ago. I want to tell you a little about how we work. We open at half past seven, and the first customers are usually people on their way to work. By ten o'clock, we have sold about a hundred coffees. Our most popular cake is the lemon cake, which we make every morning. We buy our milk from a farm that is only ten kilometres away. On Wednesdays, we run a book club in the back room, and about twelve people come. If you would like to work here, we need someone at weekends. The pay is eight pounds an hour, and you get a free lunch. Please leave your name at the counter."
+                "text": "Welcome to my cafe, everybody. I am Aldis, and I started this business five years ago. Before that, this building was a shoe shop for twenty years, and my uncle had a bakery here, but both closed. I want to tell you a little about how we work. We open at half past seven on weekdays, because many people come before work. On Saturdays and Sundays we open later, at half past eight. Some of you have asked for seven, but the bakers aren’t here that early. Now, the food. The most popular cake is the lemon cake. Years ago it was chocolate, and my own favourite is carrot, but every day we sell out of lemon before lunch. All our cakes are baked here. We care about where things come from. The milk comes from a farm ten kilometres away. The eggs come from a farm only two kilometres from here, and the flour comes from a mill about thirty kilometres away, near the river. We like to keep it local, because the food tastes better and the farmers are my friends. We also have events. The book club meets on Wednesday evenings. Don’t confuse it with the knitting group, which meets on Thursdays, or the music night, which is on the last Friday of the month. Everyone is welcome at all of them, and they are free, so you only pay for what you eat and drink. Bring a friend if you are shy. Finally, a word about our staff. Many students work here at weekends. People who work on weekdays get a free breakfast, but those who work at the weekend get a free lunch, because they stay longer and have more customers. It’s a small thank you. Now please come in, have a look around, and try a slice of cake."
               }
             ]
           },
@@ -1322,49 +1453,37 @@
               "id": "l3-1",
               "prompt": "The cafe opened ___ years ago",
               "answer": "five",
-              "accepted": [
-                "5"
-              ],
-              "explanation": "He says he started the business five years ago."
+              "explanation": "Aldis started five years ago; the shoe shop lasted twenty years before that."
             },
             {
               "id": "l3-2",
-              "prompt": "The cafe opens at half past ___",
+              "prompt": "On weekdays the cafe opens at half past ___",
               "answer": "seven",
-              "accepted": [
-                "7"
-              ],
-              "explanation": "He says they open at half past seven."
+              "explanation": "Weekdays start at half past seven; weekends open at half past eight, and seven was asked for but is too early."
             },
             {
               "id": "l3-3",
               "prompt": "The most popular cake is the ___ cake",
               "answer": "lemon",
-              "explanation": "He says the lemon cake is the most popular."
+              "explanation": "Chocolate was popular years ago and carrot is his favourite, but lemon sells out every day."
             },
             {
               "id": "l3-4",
               "prompt": "The milk comes from a farm ___ kilometres away",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "He says the farm is ten kilometres away."
+              "explanation": "The eggs are two kilometres away and the flour thirty; the milk farm is ten kilometres away."
             },
             {
               "id": "l3-5",
-              "prompt": "The book club meets on ___",
-              "answer": "Wednesdays",
-              "accepted": [
-                "Wednesday"
-              ],
-              "explanation": "He says they run a book club on Wednesdays."
+              "prompt": "The book club meets on ___ evenings",
+              "answer": "Wednesday",
+              "explanation": "The knitting group is on Thursdays and the music night on Fridays; the book club meets on Wednesdays."
             },
             {
               "id": "l3-6",
               "prompt": "Weekend workers get a free ___",
               "answer": "lunch",
-              "explanation": "He says you get a free lunch."
+              "explanation": "Weekday workers get a free breakfast; weekend workers get a free lunch."
             }
           ]
         },
@@ -1396,51 +1515,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Dante, you taste tea for a living. How did you start?"
+                "text": "Dante, you are a professional tea taster. Who encouraged you as a boy?"
               },
               {
                 "speaker": "h",
-                "text": "My grandmother had a tea shop. As a boy, I loved the smell of the leaves, and she let me help to mix them."
+                "text": "My teacher gave me good marks, but he didn’t really care about tea. And my father only drank coffee, and he laughed at me in the beginning. It was my grandmother. She had a big kitchen with forty jars of tea, and every Sunday she asked me to smell three of them and guess what they were. I was seven, and I loved the game."
               },
               {
                 "speaker": "i",
-                "text": "What does a tea taster actually do?"
+                "text": "What do you note about each tea?"
               },
               {
                 "speaker": "h",
-                "text": "I taste about two hundred cups a day. I make a note of the colour, the smell and the flavour, and then I decide which teas to buy."
+                "text": "Not the price or the size of the leaf, that’s for the buyers, who count money. And I don’t care much about the name or the country when I taste. I write down three things: the colour, the smell and the flavour. Then I compare them with my notes from last year. Good tea has a very clear story in those three words."
               },
               {
                 "speaker": "i",
-                "text": "Do you swallow all that tea?"
+                "text": "Why do you spit the tea out?"
               },
               {
                 "speaker": "h",
-                "text": "No, I spit it out, like a wine taster. Otherwise, I would not sleep for a week!"
+                "text": "It’s a surprise for visitors. It isn’t too hot, because we let it cool, and it isn’t old, it’s fresh from the factory. The reason is simple. I taste up to two hundred cups a day. If I swallowed them all, I wouldn’t sleep at night, with so much caffeine in my body."
               },
               {
                 "speaker": "i",
-                "text": "What is the secret of a good cup?"
+                "text": "What do people do wrong when they make tea?"
               },
               {
                 "speaker": "h",
-                "text": "Fresh water and the right time. Most people leave the bag in for too long, and the tea becomes bitter. Three minutes is enough for black tea."
+                "text": "A lot of people put too much milk in, and that’s just taste, not a mistake. Another idea is that water must be cold, which is nonsense, it needs to be hot. The real mistake is to leave the bag in too long. After four minutes the tea gets bitter, and then they add sugar to fix it. Take the bag out and enjoy."
               },
               {
                 "speaker": "i",
-                "text": "Do you drink tea at home?"
+                "text": "How do you like your tea at home?"
               },
               {
                 "speaker": "h",
-                "text": "Of course, but I like it simple, with a little milk. I save the special teas for my friends."
+                "text": "Very simple. I’m not a fan of sweet tea, and I find lemon covers the taste. At home I drink it with a drop of milk, nothing else. I taste complicated flavours all day at work, so I want something quiet when I finish."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to someone starting out?"
+                "text": "What is your advice for someone who wants to become a taster?"
               },
               {
                 "speaker": "h",
-                "text": "Be patient. It takes years to train your nose and your tongue."
+                "text": "Many people say you should study chemistry, and it helps, but it’s not essential. Travelling is great, but I started without it. If I had to choose one thing, it’s patience. Smell, wait, try again. You need years to learn, and nobody can hurry it."
               }
             ]
           },
@@ -1454,18 +1573,18 @@
                 "His father"
               ],
               "answer": 1,
-              "explanation": "His grandmother had a tea shop and let him help."
+              "explanation": "His father and teacher were not the ones; his grandmother let him smell jars on Sundays."
             },
             {
               "id": "l4-2",
-              "prompt": "What does he note about each tea?",
+              "prompt": "What does he write down about each tea?",
               "options": [
                 "Price and size",
                 "Colour, smell and flavour",
                 "Name and country"
               ],
               "answer": 1,
-              "explanation": "He notes the colour, the smell and the flavour."
+              "explanation": "Price and size are for buyers and the name does not matter; he writes colour, smell and flavour."
             },
             {
               "id": "l4-3",
@@ -1476,7 +1595,7 @@
                 "Because it is old"
               ],
               "answer": 0,
-              "explanation": "He says otherwise he would not sleep for a week."
+              "explanation": "The tea is not hot or old; he tastes so many cups that he would not sleep if he swallowed them."
             },
             {
               "id": "l4-4",
@@ -1487,18 +1606,18 @@
                 "Leave the bag in too long"
               ],
               "answer": 2,
-              "explanation": "He says most people leave the bag in for too long."
+              "explanation": "Milk is a matter of taste and water must be hot; the real mistake is leaving the bag in too long."
             },
             {
               "id": "l4-5",
-              "prompt": "How does he like his tea at home?",
+              "prompt": "Why does he like simple tea at home?",
               "options": [
-                "Very sweet",
-                "Simple, with a little milk",
-                "Black with lemon"
+                "He tastes complex ones all day",
+                "It is cheaper",
+                "His family prefers it"
               ],
-              "answer": 1,
-              "explanation": "He likes it simple, with a little milk."
+              "answer": 0,
+              "explanation": "He drinks tea with a drop of milk and wants something quiet after tasting complicated flavours at work."
             },
             {
               "id": "l4-6",
@@ -1509,7 +1628,7 @@
                 "Study chemistry"
               ],
               "answer": 0,
-              "explanation": "He says to be patient."
+              "explanation": "Chemistry helps and travel is great, but the main advice is patience."
             }
           ]
         }

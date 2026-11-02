@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "How did the writer become the editor?",
               "options": [
-                "She was keen to learn about it",
+                "She had worked for a newspaper before",
                 "She knew a lot about journalism",
-                "She was chosen by the head teacher"
+                "She was chosen by the head teacher",
+                "She was keen to learn about it"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She did not know much but she loved writing and wanted to learn."
             },
             {
@@ -261,10 +262,11 @@
               "prompt": "What does the team do on Wednesdays?",
               "options": [
                 "They print the newspaper pages",
+                "They choose stories for the next issue",
                 "They interview the head teacher",
-                "They choose stories for the next issue"
+                "They take photos for the website"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "They meet to decide the stories for the next issue."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "How did the head teacher react to the interview?",
               "options": [
                 "She refused to answer some questions",
+                "She was angry about the new rules",
                 "She answered and even laughed",
-                "She was angry about the new rules"
+                "She said that jokes were not allowed"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "She answered all the questions and laughed at a joke."
             },
             {
               "id": "r3-4",
               "prompt": "What is the hardest part of the work?",
               "options": [
+                "The deadline on Friday at noon",
                 "The interviews with teachers",
                 "The meetings on Wednesday",
-                "The deadline on Friday at noon"
+                "Choosing the photographs"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Every article must be ready by Friday at noon."
             },
             {
               "id": "r3-5",
               "prompt": "What happened when the local paper printed a story?",
               "options": [
-                "She felt proud of the team",
                 "She was asked to join them",
-                "She won a prize at school"
+                "Her mother stopped worrying",
+                "She won a prize at school",
+                "She felt proud of the team"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She says she felt so proud."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The history of the newspaper",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The first printed newspapers appeared in Europe about four hundred years ago. [1] They were small, with only a few pages, and they were published once a week.\n\nAt that time, most people could not read. [2] Someone would read the news aloud in a café or a market, and everybody gathered around to listen.\n\nIn the nineteenth century, new machines made printing much faster. [3] A newspaper could now be sold for a penny, so even poor families could buy one.\n\nThe invention of the telegraph helped too. [4] News from other countries could arrive in a few hours instead of several weeks.\n\nToday, many people read the news on their phones. [5] Some newspapers have even stopped printing on paper altogether.",
           "sentences": [
-            "As a result, the number of readers grew very quickly.",
-            "This has changed the business of journalism enormously.",
+            "Messages could now travel along wires between cities.",
             "Because of this, reading aloud was an important way to share information.",
-            "This was one of the first real breakthroughs in the speed of information.",
+            "Some newspapers are free, and people read them on the train.",
+            "The best reporters were paid large sums of money by the kings.",
+            "This has changed the business of journalism enormously.",
+            "As a result, newspapers became much cheaper.",
             "Nobody had ever seen anything like them before.",
-            "The best reporters were paid large sums of money by the kings."
+            "That was why the news was always a few days old."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "E",
+              "answer": "G",
               "explanation": "Nobody had seen anything like them before leads to the description of them being small."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "B",
               "explanation": "Because people could not read, reading aloud was important, and the next sentence shows someone reading in a café."
             },
             {
               "id": "r4-3",
-              "answer": "A",
-              "explanation": "Faster printing led to a quicker growth in readers, and it explains why the price could be a penny."
+              "answer": "F",
+              "explanation": "Faster printing made newspapers cheaper, which explains why the next sentence says a newspaper could be sold for a penny."
             },
             {
               "id": "r4-4",
-              "answer": "D",
-              "explanation": "The speed of information links to news arriving in a few hours."
+              "answer": "A",
+              "explanation": "The telegraph sent messages along wires, and the next sentence says news from other countries arrived in a few hours."
             },
             {
               "id": "r4-5",
-              "answer": "B",
+              "answer": "E",
               "explanation": "The change to phones has changed journalism, and some papers stopped printing on paper."
             }
           ]
@@ -717,37 +724,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Desta",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What time is the news on tonight?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "The main news starts at half past six, just after the weather."
+                    "text": "Good evening, and welcome to Channel Nine. A change in tonight’s schedule. The football match went into extra time, so all the programmes are late. Our newspaper guide says that the main news starts at seven, but please forget that, because it was the old timetable. Before the news, we will show the match highlights and a short weather report. Normally we start at a quarter past six, as you know, but not today. The main news will begin at half past seven, with all the day’s stories and an interview with the mayor. Thank you for your patience."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "When does the main news start?",
+                "prompt": "When will the main news begin tonight?",
                 "options": [
                   "At a quarter past six",
-                  "At half past six",
-                  "At seven o'clock"
+                  "At seven o'clock",
+                  "At half past seven"
                 ],
-                "answer": 1,
-                "explanation": "She says it starts at half past six."
+                "answer": 2,
+                "explanation": "The guide says seven but that was the old timetable, and the normal start is a quarter past six; tonight it is half past seven."
               }
             },
             {
@@ -774,24 +769,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How much is the newspaper today?"
+                    "text": "Morning! Are you after the newspaper?"
                   },
                   {
                     "speaker": "m",
-                    "text": "One pound fifty, but it is free if you buy a coffee as well."
+                    "text": "Yes. Is it free to read in here? I saw a sign."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It used to be free for everybody who sat in the cafe, but we stopped that in the summer, because too many people stayed all day. Now it costs a pound if you just read it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh, that’s a pity. Do you have any offers?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Next month we’ll have one for people who bring a friend, two papers for the price of one. But today, if you order a coffee, you can read the paper for nothing."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then I’ll have a large one."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "When is the newspaper free?",
+                "prompt": "When can the man read the newspaper for free in the cafe?",
                 "options": [
-                  "When you buy a coffee",
-                  "When you read it there",
-                  "When you bring a friend"
+                  "When he orders a coffee",
+                  "When he reads it there",
+                  "When he brings a friend"
                 ],
                 "answer": 0,
-                "explanation": "He says it is free if you buy a coffee as well."
+                "explanation": "Reading in the cafe was free in the past, the friend offer starts next month, and today the paper is free with a coffee."
               }
             },
             {
@@ -818,24 +829,48 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Where did you read about the accident?"
+                    "text": "Did you hear about the accident on the bridge this morning?"
                   },
                   {
                     "speaker": "f",
-                    "text": "On the radio, while I was driving, and later on my phone."
+                    "text": "Yes, terrible. Everybody was talking about it at work."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Were you listening to the radio in the car?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I usually do, but it was broken, so I drove in silence. I didn’t know anything."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So your friend Hana told you?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, she called me after lunch. By then I had seen it. When I took out my phone at the bus stop, there was a message with the headline and a short video."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wow, that’s quick."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, I’m never without it."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "Where did the woman first hear about the accident?",
+                "prompt": "Where did the woman first see the news about the accident?",
                 "options": [
                   "On the radio",
                   "On her phone",
                   "From a friend"
                 ],
-                "answer": 0,
-                "explanation": "She says she heard it on the radio while driving."
+                "answer": 1,
+                "explanation": "The radio was broken and Hana only phoned after lunch; she saw a message and a video when she took out her phone at the bus stop."
               }
             },
             {
@@ -862,11 +897,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why do you buy a paper every morning?"
+                    "text": "You’re buying a newspaper? I thought you read the news online."
                   },
                   {
                     "speaker": "m",
-                    "text": "I like to do the crossword on the train to work."
+                    "text": "I do. And it’s not for the football, I get the scores on my phone. I used to buy it for the crossword, too, but I’ve given that up, it was too easy."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So why?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m looking for a small flat to rent, and the best ones are in the small ads on Thursdays. Nobody puts them online until later."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really? Good luck then."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. I’ve seen two already, but they were too far from work."
                   }
                 ]
               },
@@ -876,24 +927,16 @@
                 "options": [
                   "To read about football",
                   "To do the crossword",
-                  "To look at the adverts"
+                  "To look at the small ads"
                 ],
-                "answer": 1,
-                "explanation": "He likes to do the crossword on the train."
+                "answer": 2,
+                "explanation": "He gets football scores on his phone and has given up the crossword; he wants the small ads for a flat to rent."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Dewald",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Drusilla",
@@ -905,25 +948,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Is your brother still a reporter?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Yes, but now he works for a magazine about travel, not for a newspaper."
+                    "text": "Hi Marta, it’s Eva. Guess what, my brother Kofi has a new job! You remember he wrote for a travel magazine, but they closed it in the spring. Then he worked for the local newspaper for three months, which he didn’t enjoy because he had to write about car parks. Now he’s in the newsroom of a television channel, presenting the weather on Sunday evenings, if you can believe it! Watch the news this Sunday at seven, I’m sure you’ll see him. He is really nervous. Call me back. Bye."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "Who does the woman's brother work for?",
+                "prompt": "Who does the woman's brother work for now?",
                 "options": [
                   "A television channel",
                   "A local newspaper",
                   "A travel magazine"
                 ],
-                "answer": 2,
-                "explanation": "She says that he works for a magazine about travel."
+                "answer": 0,
+                "explanation": "The magazine closed and the newspaper job was only for three months; now he works for a television channel."
               }
             },
             {
@@ -949,25 +988,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Have you seen the school page in the paper? There’s an article about Ben’s prize."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Did you see yourself in the school newspaper?"
+                    "text": "Yes, but the editor made a mistake. At first I thought it was the photo, because they used one from last year, but they say it’s fine."
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, but they spelled my name wrong, so everyone laughed."
+                    "text": "Right. They didn’t write his class either, but everybody knows he’s in 4B."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s not the problem. They wrote Ben Hollins, with two l’s, but his name is spelled with one. His mother is furious."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh dear. Will they correct it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They promised to print a note tomorrow."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "What was wrong in the newspaper?",
+                "prompt": "What was wrong in the newspaper article about Ben?",
                 "options": [
+                  "His class was not mentioned",
                   "His name was spelled wrongly",
-                  "His photo was upside down",
-                  "His class was not mentioned"
+                  "His photo was an old one"
                 ],
-                "answer": 0,
-                "explanation": "He says that they spelled his name wrong."
+                "answer": 1,
+                "explanation": "The photo is acceptable and the class does not matter; the mistake is that his surname was spelled with two l’s instead of one."
               }
             },
             {
@@ -994,11 +1049,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Do you want to watch the news or a film?"
+                    "text": "Are you going to turn over? This film is great."
                   },
                   {
                     "speaker": "f",
-                    "text": "The news, please. I need it for my project about the election."
+                    "text": "Honestly, I don’t think so, I’ve seen it twice, but that’s not why I’m changing. And I’m not waiting for Jo, she’s coming at nine."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So why the news?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I have to write about the elections for my media class, and tonight’s programme has an hour on it. I need notes, so I’m going to watch it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Can’t you find it online?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but the teacher wants us to watch it live."
                   }
                 ]
               },
@@ -1006,12 +1077,12 @@
                 "id": "l1-7q",
                 "prompt": "Why does the woman want to watch the news?",
                 "options": [
-                  "She dislikes the film",
-                  "It is useful for her project",
+                  "It will help with her project",
+                  "She does not like the film",
                   "She is waiting for a friend"
                 ],
-                "answer": 1,
-                "explanation": "She says she needs it for her project."
+                "answer": 0,
+                "explanation": "She has seen the film twice but that is not the reason, Jo comes later; she needs notes on the elections for her media class."
               }
             }
           ]
@@ -1046,25 +1117,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "So you start on the morning news next week, Desta! How do you feel?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Good evening, and welcome to the six o'clock news. Our top story tonight is a flood in the north."
+                    "text": "Good, well, thrilled, really. It’s a great chance. Getting up at four is going to be awful, but I’ll get used to it."
                   },
                   {
                     "speaker": "m",
-                    "text": "That is terrible. Have many people been hurt?"
+                    "text": "Aren’t you nervous about being on camera?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not any more. I practised in the studio for weeks. It was boring at first, repeating the same lines, but now I enjoy it. I can’t wait to start."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll watch you every morning."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Please don’t! I’d be too embarrassed."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the woman?",
+                "prompt": "How does the woman feel about her new job?",
                 "options": [
-                  "A school teacher",
-                  "A police officer",
-                  "A news presenter"
+                  "Excited about the chance",
+                  "Worried about the early hours",
+                  "Bored with the practice"
                 ],
-                "answer": 2,
-                "explanation": "She welcomes people to the six o'clock news and gives the top story."
+                "answer": 0,
+                "explanation": "She will get used to the early hours and the practice is no longer boring; she is thrilled and cannot wait to start."
               }
             },
             {
@@ -1090,25 +1177,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Have you tried the paper’s new website? I hate it."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I wrote an article about the school garden, but nobody has read it."
+                    "text": "Really? I like it. I know that you pay a fee, but it’s just two pounds a month, and the stories are good."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't give up hope. I am sure that people will read it."
+                    "text": "There are loads of adverts too."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Some, yes. I don’t notice them. What I like is that I can find any story in seconds, by searching for a name. With the paper copy I could never find an article from last month."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I suppose that’s useful."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And it’s easier to read on my phone on the bus."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does the man think about the newspaper's new website?",
                 "options": [
-                  "Asking for a big favour",
-                  "Giving the man some hope",
-                  "Complaining about her work"
+                  "It is too expensive to use",
+                  "It has too many adverts",
+                  "It makes news easy to find"
                 ],
-                "answer": 1,
-                "explanation": "She tells him not to give up hope and that people will read it."
+                "answer": 2,
+                "explanation": "He accepts the small fee and does not notice the adverts; he likes that he can find any story in seconds."
               }
             },
             {
@@ -1134,25 +1237,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "How was your interview with the local newspaper, Kira?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "I have just heard that my story will be on the front page tomorrow!"
+                    "text": "Awful. I’m so annoyed with myself."
                   },
                   {
                     "speaker": "m",
-                    "text": "Fantastic! You must be so thrilled. You deserve it."
+                    "text": "Why? Was the journalist rude? I heard she was."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, she was lovely, and she arrived early. And the questions weren’t personal, they were easy ones about my shop."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what went wrong?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hadn’t prepared anything, I didn’t even think about what to say. I forgot the year I opened the shop! I just said \"um\" for a minute."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m sure it wasn’t that bad."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the woman feel?",
+                "prompt": "Why is the woman unhappy about her interview?",
                 "options": [
-                  "Thrilled about her story",
-                  "Nervous about the interview",
-                  "Angry about the delay"
+                  "The journalist arrived late",
+                  "She had not prepared enough",
+                  "The questions were too personal"
                 ],
-                "answer": 0,
-                "explanation": "The man says that she must be thrilled about the front page."
+                "answer": 1,
+                "explanation": "The journalist was early and kind and the questions were easy; she is annoyed because she hadn’t prepared anything."
               }
             },
             {
@@ -1179,24 +1302,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, where can I buy a copy of yesterday's paper?"
+                    "text": "The bus driver who helped Mrs Park last week deserves some thanks. Why don’t you write to the paper?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Try the newsagent on the corner. They keep old copies for a week."
+                    "text": "Is it to complain about the late buses? I’ve already written twice."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, forget that. And it’s not to find his lost bag either, the police found it. I mean a letter to say thank you, so everyone knows what he did."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, that’s a nice idea. I’ll write tonight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good. He will be very pleased."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want to do?",
+                "prompt": "Why does the man suggest writing to the newspaper?",
                 "options": [
-                  "Read the news online",
-                  "Sell some old papers",
-                  "Buy yesterday's paper"
+                  "To complain about late buses",
+                  "To ask readers to find a bag",
+                  "To thank a bus driver"
                 ],
                 "answer": 2,
-                "explanation": "He asks where he can buy a copy of yesterday's paper."
+                "explanation": "She thinks of complaining about late buses and he rejects it, and the bag has been found; he wants readers to know what the driver did."
               }
             },
             {
@@ -1223,24 +1358,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Today, we are going to teach you how to write a clear headline."
+                    "text": "I stopped watching the news at night. It’s always bad news."
                   },
                   {
                     "speaker": "m",
-                    "text": "Is there a secret to making it interesting?"
+                    "text": "I know what you mean. Every day there is another war or disaster. I can’t sleep after it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "My sister says the headlines are the problem, they’re often exaggerated."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe, but I think they are true. I’d say the stories themselves are sad."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes. So now I only read the weather and the sports in the morning."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The weather report is the only thing that makes me smile."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What do the two speakers agree about?",
                 "options": [
-                  "Teaching a skill",
-                  "Giving out prizes",
-                  "Taking a photograph"
+                  "Many news stories are too sad",
+                  "Headlines often make things bigger",
+                  "Weather reports are boring"
                 ],
                 "answer": 0,
-                "explanation": "She says that she will show them how to write a clear headline, so she teaches a skill."
+                "explanation": "Only her sister blames the headlines and the man enjoys the weather; both say the stories themselves are sad."
               }
             },
             {
@@ -1267,24 +1418,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "The editor says that we must finish the report by midnight."
+                    "text": "I heard you’re leaving the newspaper, Anna. Is it the pay?"
                   },
                   {
                     "speaker": "f",
-                    "text": "But we have so little time! It is only two hours away and I have barely started."
+                    "text": "No, they raised my salary in January, so I can’t complain."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is it Mr Davis? Everybody says he’s difficult."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not at all, he’s one of the kindest bosses I’ve had. It’s the late nights. I get home at midnight, and my kids are asleep. I haven’t had dinner with them for months. I want to see them grow up."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I understand. What will you do?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ve got an offer from a school magazine. Nine to five."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman's problem?",
+                "prompt": "Why does the woman want to leave her job at the newspaper?",
                 "options": [
-                  "She does not like the topic",
-                  "She has lost her notes",
-                  "She has too little time"
+                  "She earns too little",
+                  "She wants more time with her children",
+                  "She dislikes her boss"
                 ],
-                "answer": 2,
-                "explanation": "She says that it is only two hours away and that she has barely started."
+                "answer": 1,
+                "explanation": "The pay went up and her boss is kind; the late nights mean she never has dinner with her kids."
               }
             }
           ]
@@ -1309,58 +1476,58 @@
             "turns": [
               {
                 "speaker": "mariam",
-                "text": "Good morning, everybody, and welcome to our radio station. My name is Dinah, and I am the manager. We went on the air twenty years ago, and today we have more than two hundred thousand listeners. Our busiest time is the morning, between seven and nine, when people are driving to work. During this time, we play music, read the news and give traffic reports. In the afternoon, we have a show for children, and on Sundays, we invite local bands to play live in our studio. We have twelve presenters and about thirty volunteers, many of whom are students. If you would like to take part, you can write to us, or you can come on Saturday, when we have an open day. On that day, you can see the studio and talk to our presenters. The best thing about working in radio is that every day is different, so you are never bored."
+                "text": "Good morning, everybody, and welcome to our radio station. My name is Dinah, and I am the manager. We went on the air twenty years ago, although the idea started in 1998, a few years before. At first we had only two presenters and a tiny studio, in what is now the kitchen. Today we have more than two hundred thousand listeners. I know that sounds small beside the big national stations, which have millions, but for a local station it’s a lot, and the number grows every year. People often ask me when we are busiest. You would think that it’s the evening, when people are at home, but the busiest time is the morning, between seven and nine, when people are driving to work and listening to the traffic news and the music. Weekends are different. On Saturdays we play a lot of music from the charts, but on Sundays we invite local bands to play live in the studio. Last year we had a choir as well, but the bands are what people love. Now, who makes all this happen? We have five paid staff, and about thirty volunteers. A few years ago there were only fifteen, but more people join each month. Some are students, some are retired, and all of them love the radio. Finally, please come to our open day. Many of you ask whether it is on a Sunday, because on that day we are usually closed to visitors, but this time it will be on Saturday, the second of June. Come and see the studio, meet the presenters, and try reading the news yourselves. Entry is free, and there will be tea and cakes. Thank you for coming this morning, and I hope to see you again soon."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The station started ___ years ago",
+              "prompt": "The station began broadcasting this many years ago",
               "answer": "twenty",
               "accepted": [
                 "20"
               ],
-              "explanation": "We went on the air twenty years ago."
+              "explanation": "The idea started a few years before, but it went on the air twenty years ago."
             },
             {
               "id": "l3-2",
-              "prompt": "It has more than ___ thousand listeners",
+              "prompt": "Audience: more than ___ thousand people",
               "answer": "two hundred",
               "accepted": [
                 "200"
               ],
-              "explanation": "More than two hundred thousand listeners."
+              "explanation": "Big national stations have millions, but this station has more than two hundred thousand listeners."
             },
             {
               "id": "l3-3",
-              "prompt": "The busiest time is in the ___",
+              "prompt": "Most people listen to the radio in the",
               "answer": "morning",
-              "explanation": "Our busiest time is the morning."
+              "explanation": "You might guess the evening, but the busiest time is the morning."
             },
             {
               "id": "l3-4",
-              "prompt": "On Sundays, local ___ play live",
+              "prompt": "Live music in the studio on Sundays comes from local",
               "answer": "bands",
               "accepted": [
                 "band"
               ],
-              "explanation": "On Sundays, we invite local bands to play live."
+              "explanation": "The choir was last year; on Sundays local bands play live."
             },
             {
               "id": "l3-5",
-              "prompt": "There are about ___ volunteers",
+              "prompt": "The station relies on about ___ unpaid helpers",
               "answer": "thirty",
               "accepted": [
                 "30"
               ],
-              "explanation": "About thirty volunteers."
+              "explanation": "There were only fifteen a few years ago, but now there are about thirty volunteers."
             },
             {
               "id": "l3-6",
-              "prompt": "The open day is on ___",
+              "prompt": "Visitors are welcome at the open day on",
               "answer": "Saturday",
-              "explanation": "Come on Saturday, when we have an open day."
+              "explanation": "The studio is usually closed on Sundays, but the open day is on Saturday."
             }
           ]
         },
@@ -1392,51 +1559,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Dorrit, you take pictures for a national newspaper. How did you start?"
+                "text": "Dorrit, you’ve been a news photographer for fifteen years. How did you earn your first money from photography?"
               },
               {
                 "speaker": "p",
-                "text": "I took pictures for my school magazine when I was fifteen. A local paper bought one of them, and I earned twenty pounds. I felt like a millionaire!"
+                "text": "It was a long time ago. I took a photo of a fire near my school when I was sixteen. I’d entered a school contest before, but I didn’t win anything, just a certificate. And I did sell my old camera once, to buy a better one, but that was money for equipment, not for pictures. A local paper saw my fire photo and paid me fifty pounds for it. I was so proud."
               },
               {
                 "speaker": "i",
-                "text": "What kinds of events do you cover?"
+                "text": "What do you like most about your job now?"
               },
               {
                 "speaker": "p",
-                "text": "Everything: sports matches, protests, concerts, even floods. I never know in the morning where I will be at night."
+                "text": "Honestly, the surprises. People think it’s about a fixed plan, but there is no routine. I never know what the day will bring. I get a call in the morning and I could be at a football stadium, or in a hospital by the afternoon. And I’m often alone, so I don’t have the same team around me every day. I wouldn’t change that. I’d be bored with a regular programme."
               },
               {
                 "speaker": "i",
-                "text": "What is the most difficult part of your job?"
+                "text": "What is the most difficult part of the work?"
               },
               {
                 "speaker": "p",
-                "text": "Waiting. Sometimes, I stand for five hours in the cold to get one good picture. And I must be fast, because the moment is gone in a second."
+                "text": "Waiting, definitely. You can stand in the rain for six hours and the important moment lasts two seconds. Writing captions is annoying, because the editor wants every name correct, but it’s easy compared to waiting. And travel? I used to dread flights, but I’m used to them now."
               },
               {
                 "speaker": "i",
-                "text": "Have you ever been in danger?"
+                "text": "You were once caught in a storm. What changed after that?"
               },
               {
                 "speaker": "p",
-                "text": "Once, at a big storm, a tree fell very close to me. After that, I always checked the weather and told my editor where I was going."
+                "text": "Oh, that was frightening. I was on a beach, taking photos, when the wind suddenly became very strong. My camera was fine, luckily, so I didn’t buy a new one. I didn’t want to stop covering events either, that is my life. But now I always check the weather forecast before I go out. I never did that before."
               },
               {
                 "speaker": "i",
-                "text": "Which of your pictures are you proudest of?"
+                "text": "There’s a famous photo of yours of a boy. Why does it mean so much to you?"
               },
               {
                 "speaker": "p",
-                "text": "A photo of a boy who is hugging his dog after a flood. The dog was missing for three days. Thousands of people wrote to say that it made them cry."
+                "text": "He was seven and he was sitting in front of his house after a flood. The photo did win a prize, but that isn’t the reason. It was also on the front of a magazine for a week, which was nice. What matters is that after people saw it, readers sent money and a company gave the family a new home. That makes me proud."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to a young photographer?"
+                "text": "What advice would you give to young photographers?"
               },
               {
                 "speaker": "p",
-                "text": "Always carry your camera, and look at the light. And be kind to the people you photograph, because they are not just a subject."
+                "text": "Don’t think you need the best equipment, my first good photos were taken with a cheap camera. And don’t think that you must work only for the big newspapers, small local ones are a great start. But what I would say above all is to be kind to the people you photograph. They’re often having the worst day of their lives."
               }
             ]
           },
@@ -1446,66 +1613,66 @@
               "prompt": "How did Dorrit get her first payment?",
               "options": [
                 "She won a school contest",
-                "A paper bought her photo",
-                "She sold a camera"
+                "She sold a camera",
+                "A paper bought her photo"
               ],
-              "answer": 1,
-              "explanation": "A local paper bought one of her pictures for twenty pounds."
+              "answer": 2,
+              "explanation": "She won only a certificate and the camera sale was for equipment; a local paper paid fifty pounds for her fire photo."
             },
             {
               "id": "l4-2",
-              "prompt": "What does she say about her job?",
+              "prompt": "What does Dorrit like most about her job?",
               "options": [
-                "Every day follows a clear plan",
-                "She does not know where she will be",
-                "She works only on sports events"
+                "Never knowing what the day will bring",
+                "Working with the same team",
+                "Following a clear plan"
               ],
-              "answer": 1,
-              "explanation": "She never knows in the morning where she will be at night."
+              "answer": 0,
+              "explanation": "She says there is no fixed plan and no same team around her; the surprises of each day are what she likes."
             },
             {
               "id": "l4-3",
               "prompt": "What is the hardest part of her work?",
               "options": [
-                "Waiting for the right moment",
                 "Writing the long captions",
-                "Travelling by plane abroad"
+                "Waiting for the right moment",
+                "Travelling by plane"
               ],
-              "answer": 0,
-              "explanation": "Waiting: five hours in the cold to get one good picture."
+              "answer": 1,
+              "explanation": "Captions are annoying but easy compared to waiting, and she is used to flights; waiting for a two-second moment is the hardest."
             },
             {
               "id": "l4-4",
-              "prompt": "What did she do after the storm?",
+              "prompt": "What did Dorrit start doing after the storm?",
               "options": [
-                "She changed her camera",
-                "She stopped covering events",
-                "She checked the weather first"
+                "Checking the weather first",
+                "Changing her camera",
+                "Stopping her work at events"
               ],
-              "answer": 2,
-              "explanation": "After that, she always checked the weather."
+              "answer": 0,
+              "explanation": "Her camera was fine and she did not want to stop covering events; now she always checks the forecast."
             },
             {
               "id": "l4-5",
               "prompt": "Why is she proud of the photo of the boy?",
               "options": [
                 "It won a national prize",
-                "It made many people cry",
+                "It helped a family to get help",
                 "It was on a magazine cover"
               ],
               "answer": 1,
-              "explanation": "Thousands wrote to say that it made them cry."
+              "explanation": "The prize and the magazine cover were nice but not the reason; readers sent money and a company gave the family a new home."
             },
             {
               "id": "l4-6",
-              "prompt": "What advice does she give?",
+              "prompt": "What advice does Dorrit give to young photographers?",
               "options": [
-                "Be kind to the people you photograph",
                 "Buy the most expensive camera",
-                "Work only for big newspapers"
+                "Work only for big newspapers",
+                "Be kind to the people you photograph"
               ],
-              "answer": 0,
-              "explanation": "Be kind to the people you photograph."
+              "answer": 2,
+              "explanation": "She says expensive equipment and big newspapers are not necessary; above all, be kind to the people you photograph."
             }
           ]
         }

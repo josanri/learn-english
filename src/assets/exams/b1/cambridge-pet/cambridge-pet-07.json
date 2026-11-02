@@ -251,7 +251,8 @@
               "options": [
                 "She had become responsible for herself.",
                 "She had forgotten to buy any food.",
-                "Her new flat was far too small."
+                "Her new flat was far too small.",
+                "She felt lonely without her brothers."
               ],
               "answer": 0,
               "explanation": "She realised that nobody would tell her when to go to bed or wash up, so she was now responsible for herself."
@@ -261,29 +262,32 @@
               "prompt": "How did the writer deal with the lack of money?",
               "options": [
                 "She asked her parents for a loan.",
+                "She sold her old furniture at a market.",
                 "She used borrowed and cheap furniture.",
                 "She waited until she could buy everything new."
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "She borrowed a bed from her cousin and bought a ten-pound table on a neighbourhood website."
             },
             {
               "id": "r3-3",
               "prompt": "What happened with the man upstairs?",
               "options": [
+                "He asked her to move out.",
                 "He complained about the noise she made.",
                 "He asked to borrow some of her furniture.",
                 "He helped her by lending a tool."
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "The man upstairs lent her a drill when she wanted to put up shelves."
             },
             {
               "id": "r3-4",
               "prompt": "What surprised the writer most?",
               "options": [
-                "How difficult it was to find furniture.",
+                "How expensive the rent was.",
                 "How silent the evenings felt.",
+                "How difficult it was to find furniture.",
                 "How many neighbours came to visit."
               ],
               "answer": 1,
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "How does the writer feel now?",
               "options": [
-                "More comfortable about living alone.",
                 "Lonely and ready to move back home.",
+                "Excited because her mother is coming.",
+                "More comfortable about living alone.",
                 "Worried about paying for her dinner party."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "A month later she enjoys her own company and is looking forward to cooking for guests."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A garage becomes a studio",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "For years, the garage behind our house in Fenwick Green held only bicycles, boxes and a broken washing machine. We never parked a car there because the door was too narrow. [1] Then last winter my mother, who paints in her free time, said she needed a proper place to work.\n\nMy father liked the idea at once, and we spent two months turning the garage into a studio. The first job was clearing everything out. [2] We rented a small van to take the old machine to the recycling centre, and we gave the bikes a new home in the shed. After that, my uncle, who is a builder, helped us to fit a large window in the wall facing the garden. [3] But when it was finished, the room filled with natural light, which is exactly what a painter needs.\n\nThe walls were painted white, and my father built long shelves for brushes, paper and tins of paint. [4] We found a big wooden table in a charity shop and fixed its broken leg. On the last evening we all stood in the doorway and looked at the finished room. [5] My mother says she has never felt so happy at home, and she now gives painting lessons there every Thursday afternoon.",
           "sentences": [
-            "There was one thing missing, though: a table big enough for large sheets of paper.",
             "It took us three weekends, and we were surprised at how much we had kept.",
-            "In fact, it had become a place where nobody wanted to look.",
-            "Permission from the council was not needed for such a small change.",
+            "There was one thing missing, though: a table big enough for large sheets of paper.",
             "Fitting it was difficult, and it took us a whole weekend.",
-            "It was hard to believe it was the same place."
+            "In fact, it had become a place where nobody wanted to look.",
+            "My father had always wanted to keep a car there.",
+            "She sold her first picture to a neighbour for twenty pounds.",
+            "It was hard to believe it was the same place.",
+            "Permission from the council was not needed for such a small change."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "D",
               "explanation": "Sentence C explains why nobody used the garage and leads to \"Then last winter\" when the mother asked for a workplace."
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "A",
               "explanation": "\"It took us three weekends\" follows the first job of clearing everything out and leads to the van and the old machine."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "C",
               "explanation": "\"Fitting it\" refers to the large window, and \"But when it was finished\" contrasts with the difficult work."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "B",
               "explanation": "Sentence A introduces the missing table, which the family then finds in a charity shop."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "G",
               "explanation": "\"It was hard to believe it was the same place\" follows looking at the finished room, before the mother's reaction. Sentence D is about permission and fits nowhere."
             }
           ]
@@ -761,15 +768,27 @@
                 "turns": [
                   {
                     "speaker": "garrett",
-                    "text": "I will look at the leaking pipe. I can come on Thursday morning between eight and ten, or on Friday afternoon."
+                    "text": "Hello, Ms Okoro? This is Garrett from Ace Plumbing. I’m calling about your leaking tap."
                   },
                   {
                     "speaker": "chidinma",
-                    "text": "Thursday morning is good, but I leave for work at nine. Can you be here by half past eight?"
+                    "text": "Oh good. Can he come on Friday afternoon? That’s when I’m usually at home."
                   },
                   {
                     "speaker": "garrett",
-                    "text": "I will try. I will call you when I am ten minutes away."
+                    "text": "Friday is full, I’m afraid. The earliest we have is Thursday evening, or Thursday morning."
+                  },
+                  {
+                    "speaker": "chidinma",
+                    "text": "Thursday evening is when I have my English class. I won’t be home until nine."
+                  },
+                  {
+                    "speaker": "garrett",
+                    "text": "Then I’ll put you down for Thursday morning, around nine o’clock. Will somebody be in the house?"
+                  },
+                  {
+                    "speaker": "chidinma",
+                    "text": "I’m working from home that day, so that’s perfect. Thank you so much."
                   }
                 ]
               },
@@ -782,7 +801,7 @@
                   "On Thursday evening"
                 ],
                 "answer": 0,
-                "explanation": "Chidinma chooses Thursday morning and asks him to be there by half past eight."
+                "explanation": "Friday afternoon is full and Chidinma is at her class on Thursday evening, so the plumber will come on Thursday morning around nine."
               }
             },
             {
@@ -809,15 +828,27 @@
                 "turns": [
                   {
                     "speaker": "farah",
-                    "text": "Oh no, the lamp is broken! Was it expensive?"
+                    "text": "Adrian, is that the lamp I gave you? It isn’t working."
                   },
                   {
                     "speaker": "adrian",
-                    "text": "Not really. It just needs a new switch. I watched a video and it looks easy. I will change the switch myself tonight."
+                    "text": "The light flickers. I was going to throw it away, it’s so old."
                   },
                   {
                     "speaker": "farah",
-                    "text": "Do not forget to unplug it first!"
+                    "text": "There’s a repair shop on Pine Street. Why don’t you take it there?"
+                  },
+                  {
+                    "speaker": "adrian",
+                    "text": "I thought of that, but they charge twenty pounds just to look at it. I watched a video, and the problem is probably only the switch. A new one costs three pounds at the hardware shop, and it takes five minutes."
+                  },
+                  {
+                    "speaker": "farah",
+                    "text": "Be careful. Unplug it first."
+                  },
+                  {
+                    "speaker": "adrian",
+                    "text": "Of course. I’m not completely crazy."
                   }
                 ]
               },
@@ -830,7 +861,7 @@
                   "Change the switch himself"
                 ],
                 "answer": 2,
-                "explanation": "Adrian says it only needs a new switch and that he will change it himself tonight."
+                "explanation": "He was going to throw the lamp away, and the repair shop is too expensive, so he will buy a cheap part and do the job on his own."
               }
             },
             {
@@ -857,15 +888,27 @@
                 "turns": [
                   {
                     "speaker": "hunter",
-                    "text": "Hello, I am calling about the bookcase. Could you deliver it before lunch?"
+                    "text": "Hello, I’m calling about the bookcase I bought. The email says delivery between eight and twelve tomorrow."
                   },
                   {
                     "speaker": "lerato",
-                    "text": "The morning slots are full. I can offer you something between one and five."
+                    "text": "Let me check. Oh yes, that was the original slot. But one of our lorries has broken down, so we’ve moved all the morning deliveries to after lunch."
                   },
                   {
                     "speaker": "hunter",
-                    "text": "All right, afternoon it is."
+                    "text": "Can’t you come in the evening? I get home at six."
+                  },
+                  {
+                    "speaker": "lerato",
+                    "text": "Our drivers finish at five. The afternoon slot is from one to five."
+                  },
+                  {
+                    "speaker": "hunter",
+                    "text": "My neighbour will be at home, so that’s fine."
+                  },
+                  {
+                    "speaker": "lerato",
+                    "text": "Great. The driver will phone you twenty minutes before."
                   }
                 ]
               },
@@ -878,7 +921,7 @@
                   "In the evening"
                 ],
                 "answer": 1,
-                "explanation": "The morning slots are full, so Hunter accepts a time between one and five in the afternoon."
+                "explanation": "The morning slot was cancelled because a lorry broke down, and the drivers finish at five, so the bookcase will come between one and five in the afternoon."
               }
             },
             {
@@ -904,24 +947,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "rhodri",
+                    "text": "Found your keys yet?"
+                  },
+                  {
                     "speaker": "selin",
-                    "text": "I cannot find my keys anywhere."
+                    "text": "No. I looked on the table, where I always put them. There’s only a pile of post. I even checked the car, though I know I locked it with them."
                   },
                   {
                     "speaker": "rhodri",
-                    "text": "Have you looked on the kitchen table?"
+                    "text": "Which coat were you wearing yesterday?"
                   },
                   {
                     "speaker": "selin",
-                    "text": "Yes, twice."
+                    "text": "The green one. It’s on the hook behind the door. Oh! There they are, in the pocket where I never look. I feel silly."
                   },
                   {
                     "speaker": "rhodri",
-                    "text": "Have you tried your coat pocket?"
+                    "text": "Don’t worry. It happens to everybody."
                   },
                   {
                     "speaker": "selin",
-                    "text": "Oh, I wore my long coat yesterday. Found them!"
+                    "text": "Thanks for helping. Now I can finally leave."
                   }
                 ]
               },
@@ -934,7 +981,7 @@
                   "In the car"
                 ],
                 "answer": 0,
-                "explanation": "Selin finds the keys after checking the pocket of her long coat."
+                "explanation": "The keys were not on the table or in the car; Selin finds them in the pocket of the green coat she wore yesterday."
               }
             },
             {
@@ -961,15 +1008,23 @@
                 "turns": [
                   {
                     "speaker": "joanna",
-                    "text": "Wojtek, I have to tell you that the rent is going up, from 580 to 620 pounds."
+                    "text": "Wojtek, I wanted to tell you that I need to raise the rent by fifteen pounds a week."
                   },
                   {
                     "speaker": "wojtek",
-                    "text": "Oh. When does that start? In June?"
+                    "text": "When? I thought it was April, as in the contract."
                   },
                   {
                     "speaker": "joanna",
-                    "text": "No, from the first of May. I will send you a letter."
+                    "text": "The contract says April, but I said I’d wait until the boiler was replaced, and that will happen in a few weeks. So you’ll start paying more in May. I had thought of June, but my costs go up sooner."
+                  },
+                  {
+                    "speaker": "wojtek",
+                    "text": "That’s fair. Thanks for telling me early."
+                  },
+                  {
+                    "speaker": "joanna",
+                    "text": "I’ll send you a letter this week."
                   }
                 ]
               },
@@ -982,7 +1037,7 @@
                   "In June"
                 ],
                 "answer": 1,
-                "explanation": "Joanna says the new rent starts on the first of May, not in June."
+                "explanation": "The contract says April and Joanna also considered June, but she will wait until after the boiler is replaced, so the higher rent begins in May."
               }
             },
             {
@@ -1008,20 +1063,24 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "alba",
-                    "text": "Sorry to bother you, Fabian. I can hear your music through the wall, especially late at night."
-                  },
-                  {
                     "speaker": "fabian",
-                    "text": "I am so sorry. I did not realise."
+                    "text": "Did you talk to your neighbour?"
                   },
                   {
                     "speaker": "alba",
-                    "text": "It is fine before ten, but could you turn it down after that? I start work very early."
+                    "text": "Yes. I was going to ask him to stop his dog barking, but it only barks when he leaves for work. And he’s moving his furniture on Saturday, which is noisy, but only for one day. So I asked him about the music. It’s fine in the day, but after ten o’clock I can’t sleep."
                   },
                   {
                     "speaker": "fabian",
-                    "text": "Of course."
+                    "text": "What did he say?"
+                  },
+                  {
+                    "speaker": "alba",
+                    "text": "He said sorry and agreed to use headphones in the evening."
+                  },
+                  {
+                    "speaker": "fabian",
+                    "text": "That’s a good result."
                   }
                 ]
               },
@@ -1034,7 +1093,7 @@
                   "Turn the music down after ten"
                 ],
                 "answer": 2,
-                "explanation": "She says it is fine before ten but asks him to turn it down after that."
+                "explanation": "Alba does not mind the dog or the furniture move; what she asks is for the neighbour to turn down his music late at night."
               }
             },
             {
@@ -1061,19 +1120,23 @@
                 "turns": [
                   {
                     "speaker": "millie",
-                    "text": "The washing machine is leaking again."
+                    "text": "The washing machine is leaking again. Do you think it’s the pipe?"
                   },
                   {
                     "speaker": "simon",
-                    "text": "Is the water coming from the door or from the pipe at the back?"
+                    "text": "I checked, and the pipe is fine. No cracks. I thought it might be the filter, but I cleaned it last week and it’s clear. Where does the water come out?"
                   },
                   {
                     "speaker": "millie",
-                    "text": "From the bottom of the door."
+                    "text": "From the door."
                   },
                   {
                     "speaker": "simon",
-                    "text": "Then it is the rubber ring. It is old and worn. I will order a new one."
+                    "text": "Then it’s the rubber around the door. It’s old and cracked. A new one costs about ten pounds, and I can fit it on Sunday."
+                  },
+                  {
+                    "speaker": "millie",
+                    "text": "Brilliant. I was afraid we would need a new machine."
                   }
                 ]
               },
@@ -1086,7 +1149,7 @@
                   "A blocked filter"
                 ],
                 "answer": 0,
-                "explanation": "The water comes from the door, so Simon says the old, worn rubber ring is the problem."
+                "explanation": "The pipe and the filter are fine; since the water leaks from the door, Simon thinks that the old, cracked rubber around it is the problem."
               }
             }
           ]
@@ -1122,28 +1185,36 @@
                 "turns": [
                   {
                     "speaker": "tuan",
-                    "text": "Our sofa is so old. A new one costs a fortune, though."
+                    "text": "Our sofa is falling apart. Shall we order a new one online?"
                   },
                   {
                     "speaker": "phoebe",
-                    "text": "There is a second-hand shop near the market with some really nice ones."
+                    "text": "It’s too risky. We can’t try it, and returning a big thing is a nightmare. I’d rather look at second-hand ones. They’re good quality and much cheaper, and we can sit on them first."
                   },
                   {
                     "speaker": "tuan",
-                    "text": "Good idea. Let us go on Saturday."
+                    "text": "Fair. We could move the old one to the spare room."
+                  },
+                  {
+                    "speaker": "phoebe",
+                    "text": "There’s no space, and it’s really ugly. Let’s go to the market on Saturday."
+                  },
+                  {
+                    "speaker": "tuan",
+                    "text": "Good idea. I’ll bring the car."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What do they agree to do?",
+                "prompt": "What do Tuan and Phoebe agree to do?",
                 "options": [
                   "Order a new sofa online",
                   "Look at second-hand sofas",
                   "Move the old sofa"
                 ],
                 "answer": 1,
-                "explanation": "Phoebe suggests the second-hand shop, and Tuan agrees to go on Saturday."
+                "explanation": "Phoebe rejects buying online because they cannot try the sofa, and the old sofa has no space in the spare room, so they agree to look at second-hand ones."
               }
             },
             {
@@ -1170,28 +1241,40 @@
                 "turns": [
                   {
                     "speaker": "delaney",
-                    "text": "I saw lovely wallpaper with birds on it for the bedroom."
+                    "text": "What shall we do with the bedroom walls? I love this wallpaper with the birds, the one we saw in the catalogue yesterday."
                   },
                   {
                     "speaker": "vito",
-                    "text": "It looks nice, but it is hard to put up, and we are not experts. Paint is easier."
+                    "text": "It’s lovely, but it would take two days to put up, and it’s expensive. White is easy, but it’s like a hospital."
                   },
                   {
                     "speaker": "delaney",
-                    "text": "All right, pale blue paint, then, like we said."
+                    "text": "True. What about a soft colour?"
+                  },
+                  {
+                    "speaker": "vito",
+                    "text": "Pale blue! It’s calm, and it would go with the curtains."
+                  },
+                  {
+                    "speaker": "delaney",
+                    "text": "And the paint is cheap. Let’s do it this weekend."
+                  },
+                  {
+                    "speaker": "vito",
+                    "text": "I’ll buy the brushes and some tape on my way home from work."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What will they do with the bedroom walls?",
+                "prompt": "What do Delaney and Vito decide about the bedroom walls?",
                 "options": [
                   "Cover them with wallpaper",
-                  "Paint them pale blue",
-                  "Leave them white"
+                  "Leave them white",
+                  "Paint them pale blue"
                 ],
-                "answer": 1,
-                "explanation": "Vito says paint is easier than wallpaper, and Delaney agrees to pale blue paint."
+                "answer": 2,
+                "explanation": "Wallpaper is slow and costly and white feels like a hospital, so they choose pale blue paint, which is calm and cheap."
               }
             },
             {
@@ -1218,15 +1301,27 @@
                 "turns": [
                   {
                     "speaker": "kylie",
-                    "text": "The new flat has a garden!"
+                    "text": "What do you think of the house, Stefano? The garden is lovely."
                   },
                   {
                     "speaker": "stefano",
-                    "text": "Great, but I will be the one cutting the grass every weekend."
+                    "text": "It’s beautiful. And the size isn’t a problem, it’s actually smaller than I expected. The neighbours seemed quiet, too."
                   },
                   {
                     "speaker": "kylie",
-                    "text": "It is tiny. Ten minutes at most."
+                    "text": "So what’s wrong?"
+                  },
+                  {
+                    "speaker": "stefano",
+                    "text": "I work long hours, and I don’t know anything about plants. The grass needs cutting every week, and those trees will drop leaves everywhere. I’d never find the time."
+                  },
+                  {
+                    "speaker": "kylie",
+                    "text": "We could pay a gardener."
+                  },
+                  {
+                    "speaker": "stefano",
+                    "text": "Maybe. Let me think about the cost."
                   }
                 ]
               },
@@ -1239,7 +1334,7 @@
                   "The noise from neighbours"
                 ],
                 "answer": 0,
-                "explanation": "Stefano complains that he will have to cut the grass every weekend, so he worries about the work."
+                "explanation": "He likes the small garden and the quiet neighbours; what he fears is the weekly cutting and the leaves, because he has no time."
               }
             },
             {
@@ -1265,16 +1360,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "chidinma",
+                    "text": "Hunter, did you know the bin lorry came this morning? Your bin is still outside."
+                  },
+                  {
                     "speaker": "hunter",
-                    "text": "My bin is still full. Did they skip our street?"
+                    "text": "Oh no. I put it out on Monday, like always. The collection day changed to Tuesday, didn’t it?"
                   },
                   {
                     "speaker": "chidinma",
-                    "text": "No, the collection was on Thursday this week because of the holiday, and you put yours out on Friday."
+                    "text": "Yes, the leaflet said so, but I think you threw it away."
                   },
                   {
                     "speaker": "hunter",
-                    "text": "Ah. I read the old calendar."
+                    "text": "I did read something, but I thought it was an advert. It’s the third time I’ve done this."
+                  },
+                  {
+                    "speaker": "chidinma",
+                    "text": "At least you sort the rubbish correctly. The neighbours say you never mix plastic with the paper."
+                  },
+                  {
+                    "speaker": "hunter",
+                    "text": "That’s something. I’ll write the new day on the calendar."
                   }
                 ]
               },
@@ -1282,12 +1389,12 @@
                 "id": "l2-4q",
                 "prompt": "What mistake did Hunter make?",
                 "options": [
-                  "He missed the new collection day.",
-                  "He put the wrong things in the bin.",
-                  "He forgot to take the bin out."
+                  "He put the wrong things in the bin",
+                  "He forgot to take the bin out",
+                  "He missed the new collection day"
                 ],
-                "answer": 0,
-                "explanation": "The collection was on Thursday because of the holiday, but Hunter put his bin out on Friday."
+                "answer": 2,
+                "explanation": "Hunter sorts the rubbish correctly and put the bin out, but he did not notice that the day changed to Tuesday."
               }
             },
             {
@@ -1314,32 +1421,40 @@
                 "turns": [
                   {
                     "speaker": "selin",
-                    "text": "The internet is so slow tonight. I cannot even load a page."
+                    "text": "The internet is so slow tonight. Is the router broken?"
                   },
                   {
                     "speaker": "fabian",
-                    "text": "Is anyone else in the flat doing something online?"
+                    "text": "I restarted it and the lights are normal. And there’s no storm. The sky is clear."
                   },
                   {
                     "speaker": "selin",
-                    "text": "My flatmate is downloading a film."
+                    "text": "So what is it?"
                   },
                   {
                     "speaker": "fabian",
-                    "text": "Ah, that is why."
+                    "text": "Look at my brother’s room. He’s been downloading a huge film since six o’clock. It uses almost all the speed."
+                  },
+                  {
+                    "speaker": "selin",
+                    "text": "Can you ask him to stop?"
+                  },
+                  {
+                    "speaker": "fabian",
+                    "text": "I’ll tell him to wait until we’ve finished. He’ll complain, but I don’t care."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Why is the internet slow?",
+                "prompt": "What does Fabian think about the slow internet?",
                 "options": [
-                  "The router is broken.",
-                  "There is a storm outside.",
-                  "Someone is downloading a film."
+                  "The router is broken",
+                  "Someone is downloading a film",
+                  "There is a storm outside"
                 ],
-                "answer": 2,
-                "explanation": "Selin says her flatmate is downloading a film, which slows the connection."
+                "answer": 1,
+                "explanation": "The router lights are normal and the sky is clear, but Fabian’s brother has been downloading a big film, which uses all the speed."
               }
             },
             {
@@ -1366,15 +1481,27 @@
                 "turns": [
                   {
                     "speaker": "adrian",
-                    "text": "So, what did you think of the flat?"
+                    "text": "So, what do you think of the flat, Joanna?"
                   },
                   {
                     "speaker": "joanna",
-                    "text": "The kitchen is small and the price is a bit high, but the living room has huge windows, and it was full of sunshine at four in the afternoon."
+                    "text": "It’s a good price, of course, but I’ve seen cheaper ones. And the kitchen is big, though I don’t cook much."
                   },
                   {
                     "speaker": "adrian",
-                    "text": "Light matters a lot. Shall we go back for a second look?"
+                    "text": "Then why do you want it?"
+                  },
+                  {
+                    "speaker": "joanna",
+                    "text": "The living room. It faces south, so the sun comes in all day. I’d read there every afternoon."
+                  },
+                  {
+                    "speaker": "adrian",
+                    "text": "That would be nice. Shall we tell the agent?"
+                  },
+                  {
+                    "speaker": "joanna",
+                    "text": "Yes, let’s tell him now before somebody else takes it."
                   }
                 ]
               },
@@ -1382,12 +1509,12 @@
                 "id": "l2-6q",
                 "prompt": "What does Joanna like most about the flat?",
                 "options": [
+                  "The light in the living room",
                   "The size of the kitchen",
-                  "The price",
-                  "The light in the living room"
+                  "The price"
                 ],
-                "answer": 2,
-                "explanation": "She criticises the kitchen and the price, but praises the huge windows and the sunshine in the living room."
+                "answer": 0,
+                "explanation": "Joanna says the price is good and the kitchen is big, but she really likes the south-facing living room where the sun comes in all day."
               }
             }
           ]
@@ -1412,49 +1539,46 @@
             "turns": [
               {
                 "speaker": "malachy",
-                "text": "Hello, everyone, and welcome to Fenwick Green Housing Co-operative. I am Malachy, and I have lived in the co-op for nine years. Let me explain how things work. Everyone pays a monthly fee, and that covers repairs and the garden. On the first Tuesday of every month we hold a meeting in the community room at seven o'clock, and every member is asked to come. There is a shared laundry in the basement, which you can use from eight in the morning until ten at night. If you need to book the guest room for visitors, you do that on the notice board in the hallway, and it costs five pounds a night. Cars are not allowed inside the gates, but there is a bicycle shed next to the garden. Finally, each member agrees to give four hours every month to help, for example by cleaning the stairs or cutting the grass."
+                "text": "Hello, everyone, and welcome to Fenwick Green Housing Co-operative. I am Malachy, and I have lived here for nine years. Let me explain how things work. First, our meetings. We hold a meeting on the first Tuesday of every month, at seven in the evening. We used to meet on Thursdays, but too many people played football, so we changed it. The meeting is in the community room, on the ground floor. If the weather is warm, we sometimes go outside to the garden, but the official place is the community room. Now, shared spaces. The laundry is in the basement. You can use the machines from eight in the morning until ten at night, and each wash costs one pound. We don’t have a laundry in the attic any more, because it was too hot. If you have friends or family who want to stay, we have a guest room. It’s very popular. It costs five pounds a night for members’ visitors. For longer visits we have a weekly price, which is twenty-five pounds, but you should ask the committee. For people with bicycles, we have a shed. It is next to the garden, near the back gate. Don’t leave them in the car park, because the cars need the space, and we have had a few thefts there. Finally, the most important thing. A co-operative works because everyone helps. Each member works four hours every month. It could be gardening, cleaning the stairs or helping with paperwork. Some co-ops ask for four hours every week, but we think that’s too much. Please look at the list on the notice board and choose what suits you. Thank you, and welcome again."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Monthly meeting: the first ___ of the month",
+              "prompt": "Monthly meeting: the first ___ at seven",
               "answer": "Tuesday",
-              "explanation": "The monthly meeting is held on the first Tuesday of every month."
+              "explanation": "They used to meet on Thursdays, but they changed it to the first Tuesday of the month."
             },
             {
               "id": "l3-2",
-              "prompt": "Meeting place: the community ___",
+              "prompt": "Meetings are held in the community ___",
               "answer": "room",
-              "explanation": "The meetings take place in the community room at seven o'clock."
+              "explanation": "The official place is the community room on the ground floor, not the garden."
             },
             {
               "id": "l3-3",
               "prompt": "The shared laundry is in the ___",
               "answer": "basement",
-              "explanation": "Malachy says there is a shared laundry in the basement."
+              "explanation": "Malachy says the laundry is in the basement; the attic was too hot."
             },
             {
               "id": "l3-4",
-              "prompt": "Guest room: five pounds a ___",
+              "prompt": "The guest room costs five pounds for each ___",
               "answer": "night",
-              "accepted": [
-                "nights"
-              ],
-              "explanation": "Booking the guest room costs five pounds a night."
+              "explanation": "Visitors pay five pounds a night; the weekly price is twenty-five pounds."
             },
             {
               "id": "l3-5",
-              "prompt": "The bicycle shed is next to the ___",
+              "prompt": "The bicycle shed stands beside the ___",
               "answer": "garden",
-              "explanation": "The bicycle shed stands next to the garden."
+              "explanation": "The shed is next to the garden, near the back gate, and bicycles must not stay in the car park."
             },
             {
               "id": "l3-6",
-              "prompt": "Every member helps for four hours every ___",
+              "prompt": "Every member works four hours each ___",
               "answer": "month",
-              "explanation": "Each member gives four hours every month to help."
+              "explanation": "Each member works four hours every month, not every week."
             }
           ]
         },
@@ -1486,51 +1610,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Adaeze, you have designed many tiny flats. What do people get wrong most often?"
+                "text": "Adaeze, you are famous for small flats. What’s the most common mistake that people make?"
               },
               {
                 "speaker": "adaeze",
-                "text": "Usually they buy furniture before they measure. I have seen people fall in love with a huge sofa and then discover it will not go through the door."
+                "text": "Oh, the biggest one is easy. People fall in love with a gorgeous sofa in a shop, buy it, and then it doesn’t fit through the door. Choosing dark colours is a problem too, but you can paint over them. And plants are fine, you can give them away. A sofa is much harder to return. So please measure everything twice."
               },
               {
                 "speaker": "interviewer",
-                "text": "How did you get into this kind of work?"
+                "text": "What first made you interested in small spaces?"
               },
               {
                 "speaker": "adaeze",
-                "text": "I grew up in a flat above my parents' shop, and the three of us children shared one bedroom. We had to be clever with space. My dad built beds with drawers underneath, and I loved that. Later I trained as an architect, but I realised I preferred interiors."
+                "text": "I’m an architect by training, but that’s not it. I didn’t see a television programme either, I hardly watched TV. I grew up in a flat with six people and two rooms. Every corner had a use, and my mother was a genius at it. I think that’s where I learned that small can be beautiful."
               },
               {
                 "speaker": "interviewer",
-                "text": "What is your best tip for a small living room?"
+                "text": "You often say that furniture should have legs. Why?"
               },
               {
                 "speaker": "adaeze",
-                "text": "Use mirrors, but opposite a window, never opposite a messy corner. And choose furniture with legs, so you can see the floor underneath. It makes the room look bigger."
+                "text": "It’s a simple trick. If you can see the floor under a table or a sofa, the room feels bigger, because your eye continues under the furniture. It isn’t cheaper, in fact it can cost more, and you have to clean underneath. But the effect is worth it."
               },
               {
                 "speaker": "interviewer",
-                "text": "Many people think white walls are the answer."
+                "text": "What do you recommend about colour?"
               },
               {
                 "speaker": "adaeze",
-                "text": "They can work, but white can feel cold. I prefer soft colours, such as warm grey or pale yellow. The important thing is to use the same colours in every room, so that the eye moves smoothly from one to the next."
+                "text": "Many people want a different colour in each room, and that makes a small flat look cut up. Painting everything white is boring and can feel cold. My advice is to choose colours that are similar, say soft greens and greys, in all the rooms. Then the eye sees one big space."
               },
               {
                 "speaker": "interviewer",
-                "text": "And storage?"
+                "text": "And where should people keep things they rarely use?"
               },
               {
                 "speaker": "adaeze",
-                "text": "Look up. Most people forget the space above doors and cupboards. Put shelves high up for things you rarely need. But keep the floor and the kitchen table clear. Too many things in one place is the real enemy of a small space."
+                "text": "Not on the kitchen table, obviously, that’s for living. And under the bed is the traditional answer, but then you never see anything again, and it gets dusty. I prefer high shelves. You don’t reach there every day, so it’s perfect for the suitcases and the Christmas decorations."
               },
               {
                 "speaker": "interviewer",
-                "text": "What is the happiest result you have had?"
+                "text": "Tell us about your last project. How did the couple feel after the work?"
               },
               {
                 "speaker": "adaeze",
-                "text": "A young couple with a baby in thirty-five square metres. They were so stressed when they called me. After the work, the mother sent me a message that said, \"We finally have a place for everything, and we have time to breathe.\" That is why I love this job."
+                "text": "They are a lovely couple, with a baby, and they were very stressed because of the mess and the noise at home. They never wanted to sell, and the price was reasonable, so no complaints there. When they came back and saw the finished flat, the wife cried and said she felt calmer for the first time in a year."
               }
             ]
           },
@@ -1544,7 +1668,7 @@
                 "Keeping too many plants"
               ],
               "answer": 0,
-              "explanation": "Adaeze says people buy furniture before they measure."
+              "explanation": "She says people buy a sofa and it does not fit through the door; dark colours can be painted over and plants can be given away."
             },
             {
               "id": "l4-2",
@@ -1555,7 +1679,7 @@
                 "A television programme about homes"
               ],
               "answer": 1,
-              "explanation": "She grew up sharing one bedroom with her brother and sister and learned to be clever with space; she says she preferred interiors to architecture."
+              "explanation": "Adaeze is an architect but that is not the reason, and she hardly watched TV; she grew up in a flat for six people with two rooms."
             },
             {
               "id": "l4-3",
@@ -1566,7 +1690,7 @@
                 "It is easier to clean."
               ],
               "answer": 0,
-              "explanation": "She says that seeing the floor underneath makes the room look bigger."
+              "explanation": "Furniture with legs lets you see the floor, so the room feels bigger; it is not cheaper, and cleaning underneath is harder."
             },
             {
               "id": "l4-4",
@@ -1577,7 +1701,7 @@
                 "Using similar colours in all the rooms"
               ],
               "answer": 2,
-              "explanation": "She prefers soft colours used in every room, so that the eye moves smoothly from one to the next."
+              "explanation": "She says different colours cut up a small flat and white is cold; she recommends similar colours in all the rooms."
             },
             {
               "id": "l4-5",
@@ -1588,7 +1712,7 @@
                 "On high shelves"
               ],
               "answer": 2,
-              "explanation": "She says to put shelves high up for things you rarely need and to keep the floor and the table clear."
+              "explanation": "The kitchen table is for living and under the bed gets dusty, so she prefers high shelves for things that are rarely needed."
             },
             {
               "id": "l4-6",
@@ -1599,7 +1723,7 @@
                 "Annoyed about the cost"
               ],
               "answer": 1,
-              "explanation": "They were very stressed at first; afterwards the mother's message says they have a place for everything and time to breathe, so they felt calmer."
+              "explanation": "The couple did not want to sell and the cost was reasonable; the wife said she felt calmer, so they were less stressed than before."
             }
           ]
         }

@@ -251,7 +251,8 @@
               "options": [
                 "The flat became empty",
                 "There was loud music at night",
-                "The writer lost her job"
+                "The writer lost her job",
+                "The writer found a new job"
               ],
               "answer": 1,
               "explanation": "Every evening she heard loud music through the ceiling."
@@ -260,11 +261,12 @@
               "id": "r3-2",
               "prompt": "Why didn't the writer complain at first?",
               "options": [
+                "She felt too shy",
                 "She was away from home",
                 "She liked the music",
-                "She felt too shy"
+                "She did not hear it"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She says she was too shy to complain."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "What made the writer decide to act?",
               "options": [
                 "A letter from her boss",
+                "A letter from the owner",
                 "A call to the police",
                 "Being very tired at work"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She was so tired at work that her boss asked if she was ill."
             },
             {
               "id": "r3-4",
               "prompt": "Why did the neighbour play music?",
               "options": [
-                "To relax after work",
+                "To practise for his job",
                 "To annoy the writer",
+                "To relax after work",
                 "To practise for a concert"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He played music to relax when he came home from his night shift."
             },
             {
               "id": "r3-5",
               "prompt": "How did the story end?",
               "options": [
-                "They became friends",
                 "She wrote an angry letter",
-                "He moved to another flat"
+                "They became friends",
+                "He moved to another flat",
+                "They stopped speaking"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "They became friends, and he brought her a cake."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Moving to a new neighbourhood",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "When my family moved to the town of Millbrook last year, I was very sad to leave my old friends. [1] Our new street looked quiet and a little boring, and I wondered how I would ever be happy there.\n\nOn our first Saturday, the family next door knocked on our door. [2] They brought a plate of home-made biscuits and a map of the area with their favourite places marked on it. Their daughter, Jess, was the same age as me, and she offered to show me around.\n\nJess took me to the park, the library and a small café. [3] By the end of the afternoon, I had met six people, and I could remember most of their names. I realised that Millbrook was not as boring as I had expected.\n\nNow, a year later, I feel completely at home. [4] On Friday evenings, a group of us play football in the park, and in summer we all have a barbecue in Jess's garden. [5] I still miss my old friends, but I am grateful that moving brought me so many new ones.",
           "sentences": [
+            "Her father works at the town hospital.",
+            "Jess's brother plays the guitar in a band.",
             "I know almost everyone in our street now.",
             "It is strange to think that I did not want to come here.",
-            "Jess's brother plays the guitar in a band.",
+            "Later that week, a van arrived with the rest of our furniture.",
             "They had come to welcome us to the street.",
-            "The owner smiled at Jess and introduced me to everyone in the café.",
-            "Everything in town was unfamiliar, and I did not know a single person."
+            "Everything in town was unfamiliar, and I did not know a single person.",
+            "The owner smiled at Jess and introduced me to everyone in the café."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "F",
+              "answer": "G",
               "explanation": "\"Unfamiliar\" explains why the town felt boring and the street looked dull."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "F",
               "explanation": "\"They had come to welcome us\" explains why the neighbours knocked and brought biscuits."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "H",
               "explanation": "The owner introduced her to people, which leads to \"met six people\"."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "C",
               "explanation": "Knowing everyone in the street leads to the football and barbecue examples."
             },
             {
               "id": "r4-5",
-              "answer": "B",
+              "answer": "D",
               "explanation": "\"I did not want to come\" contrasts with the happy ending and the sentence \"I still miss my old friends\"."
             }
           ]
@@ -729,11 +736,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "When do they collect the recycling?"
+                    "text": "Eugene, do you know when the recycling gets collected this week?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Every second Thursday, so the next one is this week."
+                    "text": "Usually on Mondays, isn’t it? I put mine out on Sunday night."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Me too, but the lorry never came. I phoned the council. They said that because of the holiday it moves to Thursday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Next Thursday? That’s almost a week away."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, this one, so you’ve got two days. Next Thursday is the garden waste."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh good, I didn’t want my bin to smell for a week. Thanks."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No problem. I’ll remind the neighbours too."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great, see you later."
                   }
                 ]
               },
@@ -746,7 +777,7 @@
                   "This Monday"
                 ],
                 "answer": 1,
-                "explanation": "Recycling is collected every second Thursday, and the next one is this week."
+                "explanation": "Monday is past because the lorry did not come, and next Thursday is the garden waste; it is moved to this Thursday."
               }
             },
             {
@@ -773,11 +804,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Could I borrow your ladder, please?"
+                    "text": "Fiona, I need to clean the gutters. Could I borrow your ladder?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course, but it's in my brother's garage. I'll bring it round after lunch."
+                    "text": "Of course. I can bring it this morning, on my way to the shops."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s kind, but I’m not at home until twelve. I’m playing tennis."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then tomorrow? I could leave it by your gate."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Tomorrow is too late. It’s going to rain and the gutters will be full. Can you do it today?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, I’ll come with it when I’ve had lunch, at about two."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Perfect. I’ll make you a cup of tea."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Lovely. See you then."
                   }
                 ]
               },
@@ -790,7 +845,7 @@
                   "Tomorrow"
                 ],
                 "answer": 0,
-                "explanation": "She will bring it round after lunch."
+                "explanation": "This morning is when he is out at tennis and tomorrow is too late because of the rain, so she will come after lunch."
               }
             },
             {
@@ -804,24 +859,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Vincent",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Your dog barked all night, and none of us could sleep."
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "I'm so sorry. From now on, I'll keep him indoors at night."
+                    "text": "Hi, it’s Winona from next door. I talked to our neighbour about his dog, the one that keeps getting into your garden. First he said he’d build a new fence, but then he found out it costs eight hundred pounds, so he changed his mind. He even joked that he’d move to a house with a bigger garden, but he loves this street too much. In the end he will keep the dog inside the house during the day and take it for walks in the park instead. So you shouldn’t have any more problems. Call me if there’s anything else."
                   }
                 ]
               },
@@ -834,7 +877,7 @@
                   "Move to another house"
                 ],
                 "answer": 0,
-                "explanation": "He promises to keep the dog indoors at night."
+                "explanation": "The fence is too expensive and the move was a joke; he will keep the dog inside the house during the day."
               }
             },
             {
@@ -848,24 +891,12 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Clover",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Is there a post office near here?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Turn left at the bakery. It is next to the bank."
+                    "text": "Hi Clover, you asked me where the post office is. Most people will tell you it’s opposite the bakery, but that was the old one, and it closed in the spring. The new one is on High Street, right beside the bank, with a blue sign. I thought of the library too, because they used to sell stamps at a small desk, but that stopped in the summer. So walk straight on, turn left at the traffic lights, and you’ll see it on your right. It closes at five, so don’t be late. Hope that helps!"
                   }
                 ]
               },
@@ -878,7 +909,7 @@
                   "Behind the library"
                 ],
                 "answer": 1,
-                "explanation": "It is next to the bank, after turning left at the bakery."
+                "explanation": "The bakery post office closed and the library desk stopped; the new one is beside the bank."
               }
             },
             {
@@ -892,24 +923,12 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Roland",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "What time does the meeting start?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "At half past seven, but please come earlier if you can help us put out the chairs."
+                    "text": "Hi Roland, it’s Eilidh about Saturday’s meeting. The tickets will be sold at the door by Mrs Pryce, so you don’t need to collect them. And I know that last time you made the tea, but a new volunteer wants to do it this time. What I’d like is for you to come at half past five instead of six. The hall is full of boxes and we need to put out a hundred chairs before people arrive. Thanks so much. Call me if you can’t make it."
                   }
                 ]
               },
@@ -922,7 +941,7 @@
                   "To help with the chairs"
                 ],
                 "answer": 2,
-                "explanation": "She asks him to come earlier to help put out the chairs."
+                "explanation": "Mrs Pryce sells the tickets and a new volunteer makes the tea; Eilidh needs him early to put out a hundred chairs."
               }
             },
             {
@@ -949,11 +968,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why are you selling your house?"
+                    "text": "Cormac, I hear you’re selling your house."
                   },
                   {
                     "speaker": "m",
-                    "text": "It's too large now that the children have left, and I would like a garden that I can manage."
+                    "text": "Yes, after thirty years. The children have all left, and now it’s just me and the cat. Six bedrooms is silly."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it the noise? The road is so busy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not really. I stopped hearing it years ago."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Or is it too far from the town centre?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A bit, but I have a car, and I like the quiet. No, I want a flat where I only need to clean two rooms."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That makes sense. Where will you go?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Somewhere near the park, I hope."
                   }
                 ]
               },
@@ -966,7 +1009,7 @@
                   "It is too far from town"
                 ],
                 "answer": 0,
-                "explanation": "He says it is too large now that the children have left."
+                "explanation": "The noise does not bother him and the distance is not a problem; with the children gone he finds six bedrooms silly."
               }
             },
             {
@@ -993,11 +1036,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much is the flat?"
+                    "text": "Madge, I’d like to rent the flat on Park Road. How much is it?"
                   },
                   {
                     "speaker": "f",
-                    "text": "It's six hundred pounds a month, plus fifty pounds for bills."
+                    "text": "The rent is six hundred pounds a month."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is that all? I thought the owner wanted more."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Water and heating are another fifty, and everyone pays them. Add that to the rent and you have the figure for the form."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about the parking space? I saw a sign on the gate."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s another fifty, so seven hundred pounds in total. But you don’t have a car, do you?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I come to work by bike, so I won’t need it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good, then I’ll prepare the contract."
                   }
                 ]
               },
@@ -1010,7 +1077,7 @@
                   "Seven hundred pounds"
                 ],
                 "answer": 1,
-                "explanation": "Six hundred pounds plus fifty pounds for bills makes six hundred and fifty."
+                "explanation": "The rent is six hundred and the bills add fifty; seven hundred would include a parking space that he does not need."
               }
             }
           ]
@@ -1046,15 +1113,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I'm flying to Madrid on Friday morning. How are you getting to the airport?"
+                    "text": "Osian, my car’s in the garage until Friday. How are you getting to work?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I was going to take a taxi. Shall we share one?"
+                    "text": "I usually go by bus, but it takes an hour with all the changes."
                   },
                   {
                     "speaker": "f",
-                    "text": "Good idea. It's cheaper."
+                    "text": "Same for me. What about getting a lift from Dan in your office?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He lives in the opposite direction. He’d have to drive for an hour to pick me up."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Right. What about a taxi? It’s expensive alone, but if we split it..."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It would be about ten pounds each. That’s cheaper than I thought, and we’d be there in twenty minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And we could leave later."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Brilliant. I’ll book it for Monday."
                   }
                 ]
               },
@@ -1067,7 +1154,7 @@
                   "A shared taxi"
                 ],
                 "answer": 2,
-                "explanation": "They agree to share a taxi to the airport."
+                "explanation": "The bus takes an hour and Dan lives too far away, so they agree to split the cost of a taxi."
               }
             },
             {
@@ -1093,25 +1180,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Hi Holly, you look happy. What’s up?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Have you seen the new shop on the corner? They sell fresh bread and local cheese."
+                    "text": "I just walked past the new shop on Mill Street, the one that sells fruit and vegetables from local farms."
                   },
                   {
                     "speaker": "m",
-                    "text": "Not yet. I'll go tomorrow."
+                    "text": "Is it expensive? New shops usually are."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s what I thought, but it’s cheaper than the supermarket."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And is it far from here?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Just five minutes. Honestly, the street needed something like this. The old empty shop was so depressing."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I might go on Saturday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do! You’ll love it. They even gave me a free apple to try, and the man behind the counter was really friendly."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman telling him about?",
+                "prompt": "What does Holly think of the new shop?",
                 "options": [
-                  "A lost wallet",
-                  "A new shop",
-                  "A broken window"
+                  "It is too expensive",
+                  "It is just what the street needed",
+                  "It is too far to walk"
                 ],
                 "answer": 1,
-                "explanation": "She tells him about the new shop on the corner."
+                "explanation": "It is cheaper than the supermarket and only five minutes away; she says the street needed something like it."
               }
             },
             {
@@ -1138,15 +1249,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I'm going on holiday for a week. Could you feed my cat while I'm away?"
+                    "text": "Cora, are you busy next week? I need a favour."
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. Where do you keep the food?"
+                    "text": "Of course. Do you want me to cut your grass? It looked very long."
                   },
                   {
                     "speaker": "m",
-                    "text": "In the kitchen cupboard. I will leave you a key."
+                    "text": "A neighbour’s son does that, thanks. And I’m taking the car to be washed on my way to the airport."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what, then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m away for ten days, and my cat hates the cattery. Could you come twice a day with food? It’s a bit of a job, I know."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I don’t mind at all, I love cats."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re a star. I’ll leave the key under the pot."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect."
                   }
                 ]
               },
@@ -1159,7 +1290,7 @@
                   "Clean his car"
                 ],
                 "answer": 0,
-                "explanation": "He asks her to feed his cat."
+                "explanation": "The grass and the car are already organised; he is away and needs someone to look after his cat."
               }
             },
             {
@@ -1186,24 +1317,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "We could close the road and have a street party in June."
+                    "text": "Lukas, have you thought more about the street party?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Brilliant! Everyone could bring food, and we could put up some music."
+                    "text": "Yes. I’d like to use the school hall in case it rains."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s sensible, but the hall costs eighty pounds. We’ve only got fifty, and the street is free."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Okay, we’ll risk the street. Should we move it to a Sunday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, Saturday works. The council only lends us the tables on Saturdays. The real problem is that only five people have offered to help, and we expect a hundred guests."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re right. That worries me more than the weather."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let’s ask the neighbours this week."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What are they planning?",
+                "prompt": "What do Bea and Lukas agree about the street party?",
                 "options": [
-                  "A school concert",
-                  "A football match",
-                  "A street party"
+                  "It should be in the school hall",
+                  "It should be on a Sunday",
+                  "It needs more helpers"
                 ],
                 "answer": 2,
-                "explanation": "They are planning a street party in June."
+                "explanation": "The hall is too expensive and Saturday is the day for the tables; both are worried that only five people will help."
               }
             },
             {
@@ -1230,15 +1381,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I would like to give you some safety advice. Please remember to lock your doors and windows, even when you go out for only a few minutes."
+                    "text": "Good afternoon, I’m Officer Penn. I’m visiting all the houses in the street today."
                   },
                   {
                     "speaker": "f",
-                    "text": "Should we tell you if we see anything strange?"
+                    "text": "Oh dear, is something wrong?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, please phone us straight away."
+                    "text": "Nothing serious. I’m not here to take a statement or anything. There have been a few bicycle thefts, so I’m giving people some tips."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Right. We keep our bikes in the garden."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’d suggest locking them to something solid, even in the garden, and writing down the number on the frame."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I never thought of that. Is there a charge for the leaflet?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, it’s free. Here you are."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you very much."
                   }
                 ]
               },
@@ -1251,7 +1422,7 @@
                   "Asking for money"
                 ],
                 "answer": 0,
-                "explanation": "He gives advice about locking doors and windows."
+                "explanation": "He says it is not a statement and the leaflet is free; he is visiting houses to give tips about bicycle thefts."
               }
             },
             {
@@ -1277,12 +1448,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Oh, hi Farid! What a surprise."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Hello, a parcel for you was delivered to my house by mistake."
+                    "text": "Sorry to bother you. I wanted to borrow your drill, but I found one in my garage, so never mind."
                   },
                   {
                     "speaker": "f",
-                    "text": "Oh, thank you so much! I've been looking for it all week."
+                    "text": "Do you want some sugar, then? I know you were out yesterday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I’m fine. The reason I’m here is this parcel. The postman left it with me by mistake. It has your name on it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, thank you. I’ve been waiting for it for a week!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No problem. I thought you’d be worried."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I was. Come in for a coffee?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe another day."
                   }
                 ]
               },
@@ -1295,7 +1490,7 @@
                   "To return a parcel"
                 ],
                 "answer": 2,
-                "explanation": "He brings a parcel that was delivered to his house by mistake."
+                "explanation": "He no longer needs the drill and does not want sugar; he brings her parcel that the postman left with him."
               }
             }
           ]
@@ -1320,58 +1515,46 @@
             "turns": [
               {
                 "speaker": "gillian",
-                "text": "Good morning, and welcome to the Oakfield Community Centre. We are open from nine in the morning until ten at night, six days a week. We are closed on Mondays. There is a café on the ground floor, where a cup of tea costs one pound. On Tuesday afternoons, there is a free yoga class for beginners. On Wednesdays, children can join the art club, which meets at four o'clock. The big hall can be hired for parties, and it costs forty pounds for the evening. If you would like to be a volunteer, please speak to Mrs Dunn at reception. We also have a noticeboard where you can advertise things that you want to sell. Thank you for coming."
+                "text": "Good morning, and welcome to the Oakfield Community Centre. My name is Gillian. We are open from nine in the morning until ten at night, six days a week. The centre used to be closed on Sundays, but we changed that last year, because so many people wanted to come at weekends. Now we close on Mondays, when the cleaners and the gardeners work. Let me tell you about the café. It’s on the ground floor. Coffee is two pounds, but if you prefer tea, it’s only one pound, and a biscuit is fifty pence. Next, classes. Many people ask about the dance class, which is on Wednesdays and costs five pounds. The class that doesn’t cost anything is yoga, on Tuesdays at ten. It’s very popular, so please arrive early. Then the art club. It’s for children and adults. It used to meet at three, but too many children were still at school, so now it starts at four o’clock. You can bring your own paints, but we have some for you. Now, some of you will want to hold a party or a meeting. The small room costs twenty pounds, but the big hall, which holds a hundred people, costs forty pounds for an afternoon. You can pay at the office or online. Finally, volunteers. We always need help with the café and the garden. Please don’t speak to the manager, Mr Hill, because he is very busy. Mrs Dunn organises the volunteers, and she is in the office every morning. That’s D, U, N, N. If you have any questions, ask at the desk by the front door, or look at the board in the entrance, where we put all the news. Thank you for listening, and enjoy the centre."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The centre is closed on ___",
+              "prompt": "The centre does not open on ___",
               "answer": "Monday",
-              "accepted": [
-                "Mondays"
-              ],
-              "explanation": "The centre is closed on Mondays."
+              "explanation": "They used to close on Sundays, but now it is Monday."
             },
             {
               "id": "l3-2",
-              "prompt": "A cup of tea costs ___ pound",
+              "prompt": "In the café, a cup of tea costs ___ pound",
               "answer": "one",
-              "accepted": [
-                "1"
-              ],
-              "explanation": "A cup of tea costs one pound."
+              "explanation": "Coffee is two pounds, but tea is one pound."
             },
             {
               "id": "l3-3",
-              "prompt": "There is a free ___ class on Tuesdays",
+              "prompt": "There is no charge for ___ lessons on Tuesdays",
               "answer": "yoga",
-              "explanation": "There is a free yoga class for beginners on Tuesday afternoons."
+              "explanation": "Dance costs five pounds on Wednesdays; the class that is free is yoga on Tuesdays."
             },
             {
               "id": "l3-4",
-              "prompt": "The art club meets at ___ o'clock",
+              "prompt": "Children's art club starts at ___ o'clock",
               "answer": "four",
-              "accepted": [
-                "4"
-              ],
-              "explanation": "The art club meets at four o'clock."
+              "explanation": "It used to meet at three, but now it starts at four."
             },
             {
               "id": "l3-5",
-              "prompt": "Hiring the hall costs ___ pounds",
+              "prompt": "The big hall can be rented for ___ pounds",
               "answer": "forty",
-              "accepted": [
-                "40"
-              ],
-              "explanation": "The hall costs forty pounds for the evening."
+              "explanation": "The small room is twenty pounds; the big hall is forty."
             },
             {
               "id": "l3-6",
-              "prompt": "Volunteers should speak to Mrs ___",
+              "prompt": "To volunteer, ask for Mrs ___",
               "answer": "Dunn",
-              "explanation": "Volunteers should speak to Mrs Dunn at reception."
+              "explanation": "She does not say Mr Hill; Mrs Dunn organises the volunteers."
             }
           ]
         },
@@ -1403,11 +1586,11 @@
             "turns": [
               {
                 "speaker": "mitchell",
-                "text": "Today I'm talking to Donna Rahman, a community worker. Donna, why did you choose this job?"
+                "text": "Donna, why did you become a community worker?"
               },
               {
                 "speaker": "fatima",
-                "text": "I grew up in a block of flats where everybody knew each other. When I moved to the city, I missed that feeling, and I decided to help other people find it."
+                "text": "People expect me to say I lost my first job. I did, a shop job, but I found another one within a month. And a teacher at school did suggest it once, but I just laughed at her. The real reason is that I moved to the city for work and I missed my old neighbourhood, where everybody knew everybody. I wanted to build that feeling again here, and my family thought I was a little crazy."
               },
               {
                 "speaker": "mitchell",
@@ -1415,15 +1598,15 @@
               },
               {
                 "speaker": "fatima",
-                "text": "Lots of things: street parties, a weekly lunch for older people and repair days, when neighbours bring broken bikes and toys, and volunteers fix them for free."
+                "text": "Football matches were my first idea, but only a few boys came, so we stopped. We do one coach trip to the seaside in the summer, but that’s only once a year. The main things are lunches on Wednesdays, where people cook together, and repair days once a month, when neighbours fix bikes, radios and clothes."
               },
               {
                 "speaker": "mitchell",
-                "text": "What is the biggest problem in your area?"
+                "text": "What do you think is the biggest problem?"
               },
               {
                 "speaker": "fatima",
-                "text": "Loneliness. Many people live next to each other for years and never speak. Often, the only thing needed is somebody to say hello first."
+                "text": "Prices are going up, and everybody complains about it, but I can’t do much about that. The streets are noisy at weekends too, but people get used to it. What worries me most is loneliness. Older people can go a week without talking to anybody, and they never tell you, because they’re too polite."
               },
               {
                 "speaker": "mitchell",
@@ -1431,23 +1614,23 @@
               },
               {
                 "speaker": "fatima",
-                "text": "A wall of messages outside the library. People pin up notes, like offers to help with shopping or requests for a guitar teacher. It has brought many people together."
+                "text": "We tried a monthly newspaper, but it took too many hours to write and nobody read all of it. A telephone line was fine, but people prefer to talk face to face. The surprise success is a big wall at the community centre where everybody leaves notes, offers and thank-you messages. It costs nothing, it is always full, and people sometimes answer each other’s notes, which I love to see."
               },
               {
                 "speaker": "mitchell",
-                "text": "Any funny memories?"
+                "text": "How did you feel about the goat at the last street party?"
               },
               {
                 "speaker": "fatima",
-                "text": "At our last street party, a man arrived with a goat. He said it was part of his family and could not be left at home."
+                "text": "The rain was forecast, but it stayed dry, and the music was loud, but we had permission. Then a man arrived with a goat! I thought, oh no, everyone will complain, and I felt a bit nervous. But the children loved it and I couldn’t stop laughing. I wasn’t angry, and the owner is a lovely man."
               },
               {
                 "speaker": "mitchell",
-                "text": "What are your plans?"
+                "text": "What will you open next year?"
               },
               {
                 "speaker": "fatima",
-                "text": "I'm going to open a tool library, where people can borrow drills, ladders and lawnmowers instead of buying them."
+                "text": "People keep asking for a small café, and I’d love one, but we can’t afford the rent yet. The council suggested a second office, but we don’t really need it. What we are going to do is a tool library, where people can borrow drills and ladders for a small deposit."
               }
             ]
           },
@@ -1461,7 +1644,7 @@
                 "A teacher suggested it"
               ],
               "answer": 1,
-              "explanation": "She grew up where everybody knew each other and missed that feeling."
+              "explanation": "The job loss and the teacher were not the reason; she missed her old neighbourhood where everybody knew everybody."
             },
             {
               "id": "l4-2",
@@ -1472,7 +1655,7 @@
                 "Holiday trips"
               ],
               "answer": 1,
-              "explanation": "She organises street parties, weekly lunches and repair days."
+              "explanation": "Football stopped and the coach trip is once a year; the main events are lunches and repair days."
             },
             {
               "id": "l4-3",
@@ -1483,7 +1666,7 @@
                 "Rising prices"
               ],
               "answer": 0,
-              "explanation": "She says the biggest problem is loneliness."
+              "explanation": "She says prices and noise are not what worries her most; she is most worried about older people who feel lonely."
             },
             {
               "id": "l4-4",
@@ -1494,18 +1677,18 @@
                 "A wall for messages"
               ],
               "answer": 2,
-              "explanation": "A wall of messages outside the library has brought many people together."
+              "explanation": "The newspaper took too many hours and the telephone line was only fine; the wall for messages was the surprise success."
             },
             {
               "id": "l4-5",
-              "prompt": "What happened at the last street party?",
+              "prompt": "How did Donna feel about the goat at the last street party?",
               "options": [
-                "The rain stopped it",
-                "A man brought a goat",
-                "The music was too loud"
+                "Embarrassed in front of the guests",
+                "Amused by the surprise",
+                "Angry with the owner"
               ],
               "answer": 1,
-              "explanation": "A man arrived with a goat."
+              "explanation": "She was nervous at first, but the children loved it and she could not stop laughing; she was not angry."
             },
             {
               "id": "l4-6",
@@ -1516,7 +1699,7 @@
                 "A second office"
               ],
               "answer": 0,
-              "explanation": "She will open a tool library."
+              "explanation": "A café costs too much rent and a second office is not needed; they will open a place to borrow drills and ladders."
             }
           ]
         }

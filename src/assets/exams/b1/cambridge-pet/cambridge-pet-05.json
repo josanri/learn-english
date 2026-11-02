@@ -251,7 +251,8 @@
               "options": [
                 "It was faster.",
                 "It was less expensive.",
-                "It stopped at the museum."
+                "It stopped at the museum.",
+                "It was nearer to her cousin's house."
               ],
               "answer": 1,
               "explanation": "The coach was cheaper than the train, so it was less expensive."
@@ -260,22 +261,24 @@
               "id": "r5-3-2",
               "prompt": "What surprised the writer at the museum?",
               "options": [
-                "How many boats were outside.",
                 "How interesting it was.",
-                "How new the photographs were."
+                "How many boats were outside.",
+                "How new the photographs were.",
+                "How many visitors came."
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She expected the museum to be boring, but the guide showed interesting old photographs, so she was surprised how interesting it was."
             },
             {
               "id": "r5-3-3",
               "prompt": "What did they do on the coast path?",
               "options": [
-                "They took photographs.",
                 "They bought bicycles.",
-                "They swam in the sea."
+                "They swam in the sea.",
+                "They had lunch in a cafe.",
+                "They took photographs."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "They stopped several times to take photographs along the coast path."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "The lighthouse was closed.",
                 "The owner had no passengers.",
-                "The weather at sea was unsafe."
+                "The weather at sea was unsafe.",
+                "The boat was too small."
               ],
               "answer": 2,
               "explanation": "The sea was too rough, so the weather at sea was unsafe."
@@ -295,7 +299,8 @@
               "options": [
                 "They did not enjoy the town.",
                 "They would like a longer visit.",
-                "They want to travel by train next time."
+                "They want to travel by train next time.",
+                "They want to move to the town."
               ],
               "answer": 1,
               "explanation": "She says she would happily return and stay for a few more days, so she would like a longer visit."
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "The coastal path",
-          "instructions": "Five sentences have been removed from the text. Choose the correct sentence for each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The coastal path is popular with visitors and local people, especially in spring and summer. [1] It begins near the old harbour and continues past a small museum. [2] The town has added signs so walkers can find the route easily, and volunteers clean the path every month. There are benches at several points, and most of the path is flat. [3] Some families bring a picnic and stop beside the beach. Dogs are welcome, but they must stay on a lead near the farms. The final section goes uphill towards a lighthouse. [4] On clear days, you can see several islands from the top. The council hopes to extend the path next year. [5]",
           "sentences": [
             "It is steep in places, but the climb is worth it.",
+            "In winter, the wind can be very strong near the cliffs.",
             "It is about eight kilometres long and takes most people three hours.",
             "More walkers would then be able to reach the next village on foot.",
             "Many walkers stop there to look at old photographs of the harbour.",
             "This makes it a good walk for families with young children.",
+            "Fishing is not allowed from the rocks near the lighthouse.",
             "We decided to stay indoors all afternoon."
           ],
           "gaps": [
             {
               "id": "r5-4-1",
-              "answer": "B",
+              "answer": "C",
               "explanation": "“It is about eight kilometres long” gives the first facts about the path and leads to “It begins near the old harbour”."
             },
             {
               "id": "r5-4-2",
-              "answer": "D",
+              "answer": "E",
               "explanation": "“Many walkers stop there to look at old photographs” follows “a small museum” (“there”) and leads to the signs."
             },
             {
               "id": "r5-4-3",
-              "answer": "E",
+              "answer": "F",
               "explanation": "“This makes it a good walk for families” follows “most of the path is flat” and leads to families bringing a picnic."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r5-4-5",
-              "answer": "C",
+              "answer": "D",
               "explanation": "“More walkers would then be able to reach the next village” follows the hope to extend the path."
             }
           ]
@@ -777,11 +784,27 @@
                 "turns": [
                   {
                     "speaker": "nathan",
-                    "text": "I thought the museum closed at five, but the sign says six."
+                    "text": "Hello. Is it true that the museum closes at five? That’s what the website says."
                   },
                   {
                     "speaker": "olivia",
-                    "text": "Good. We have time to see the last room."
+                    "text": "It used to, yes. But from this month we stay open until eight on Fridays."
+                  },
+                  {
+                    "speaker": "nathan",
+                    "text": "Oh good. I was told this morning that it’s closed today for a private event."
+                  },
+                  {
+                    "speaker": "olivia",
+                    "text": "Only the café. And the clock room, which was shut last month, is open again, so you can see everything."
+                  },
+                  {
+                    "speaker": "nathan",
+                    "text": "Then I’ll come at six, after work."
+                  },
+                  {
+                    "speaker": "olivia",
+                    "text": "Perfect. Tickets are half price after five."
                   }
                 ]
               },
@@ -794,7 +817,7 @@
                   "The museum closes later than expected."
                 ],
                 "answer": 2,
-                "explanation": "The sign says six, not five, so the museum closes later than expected."
+                "explanation": "The website says the museum closes at five, but Olivia says that on Fridays it stays open until eight; only the café is closed and the clock room is open again."
               }
             },
             {
@@ -821,11 +844,27 @@
                 "turns": [
                   {
                     "speaker": "rafael",
-                    "text": "I booked the table for seven. Could we make it half past?"
+                    "text": "The film starts at eight. Shall we meet at seven?"
                   },
                   {
                     "speaker": "elsa",
-                    "text": "Sure. My train gets in at six forty."
+                    "text": "Seven is too early. We only need to collect the tickets."
+                  },
+                  {
+                    "speaker": "rafael",
+                    "text": "There might be a queue at the box office."
+                  },
+                  {
+                    "speaker": "elsa",
+                    "text": "I bought them online, so there’s no queue. My bus gets in at six forty, so I could be there early, but I’ll have a coffee first."
+                  },
+                  {
+                    "speaker": "rafael",
+                    "text": "Then shall we say half an hour before the film?"
+                  },
+                  {
+                    "speaker": "elsa",
+                    "text": "Yes, that’s plenty of time. See you there."
                   }
                 ]
               },
@@ -838,7 +877,7 @@
                   "Six forty."
                 ],
                 "answer": 0,
-                "explanation": "Rafael asks to make the table half past seven and Elsa agrees, because her train arrives at six forty."
+                "explanation": "They reject seven as too early, and Elsa’s bus at six forty is her earliest arrival; they agree to meet half an hour before an eight o’clock film."
               }
             },
             {
@@ -865,15 +904,27 @@
                 "turns": [
                   {
                     "speaker": "ivan",
-                    "text": "The beach is beautiful. Shall we swim?"
+                    "text": "Got everything for the pool, Cathy?"
                   },
                   {
                     "speaker": "cathy",
-                    "text": "I’d love to, but I forgot my towel."
+                    "text": "Let me think. Swimming costume, goggles. I put the car keys in my pocket. They’re here."
                   },
                   {
                     "speaker": "ivan",
-                    "text": "We can buy one in the shop near the car park."
+                    "text": "And your camera? You said you’d film Tom."
+                  },
+                  {
+                    "speaker": "cathy",
+                    "text": "It’s in the bag, charged. Oh no. The one thing I always forget! I’ll have to buy another towel."
+                  },
+                  {
+                    "speaker": "ivan",
+                    "text": "We can get one at the pool shop. It costs about six pounds."
+                  },
+                  {
+                    "speaker": "cathy",
+                    "text": "Fine, but I’m annoyed with myself. Tom will laugh at me when he sees me standing in the changing room, waiting for the sun to dry my hair."
                   }
                 ]
               },
@@ -886,7 +937,7 @@
                   "A towel."
                 ],
                 "answer": 2,
-                "explanation": "Cathy says she forgot her towel."
+                "explanation": "Cathy has the car keys and the camera, but she says she has to buy another towel, so she has forgotten it."
               }
             },
             {
@@ -913,11 +964,19 @@
                 "turns": [
                   {
                     "speaker": "bridget",
-                    "text": "Do you still go walking on Sundays?"
+                    "text": "Are you doing anything on Sunday, Jamal? We’re going for a walk in the forest."
                   },
                   {
                     "speaker": "jamal",
-                    "text": "I usually do, but this week I’m taking my niece to the aquarium."
+                    "text": "Sounds nice, but I’ve promised my nephew a day out. We were going to take the train to the coast, but he’d rather see the fish, so we’re booking the aquarium instead."
+                  },
+                  {
+                    "speaker": "bridget",
+                    "text": "He’ll love that. Is it expensive?"
+                  },
+                  {
+                    "speaker": "jamal",
+                    "text": "Fifteen pounds each, but we’re having lunch there too, and he can touch the starfish. Maybe the train trip another time, in the summer holidays."
                   }
                 ]
               },
@@ -930,7 +989,7 @@
                   "Taking a train trip."
                 ],
                 "answer": 1,
-                "explanation": "Jamal says he is taking his niece to the aquarium this week."
+                "explanation": "Jamal declines the forest walk; the train trip to the coast was the old plan, and now he and his nephew will visit the aquarium."
               }
             },
             {
@@ -957,11 +1016,27 @@
                 "turns": [
                   {
                     "speaker": "walt",
-                    "text": "The blue backpack has more pockets. The red one is lighter, though."
+                    "text": "I think I prefer the blue one. It’s much lighter."
                   },
                   {
                     "speaker": "sara",
-                    "text": "I’ll take the red one for the trip."
+                    "text": "It is, but the pockets are small, and you said you carry a laptop."
+                  },
+                  {
+                    "speaker": "walt",
+                    "text": "True. Then the red one? It’s twenty pounds more."
+                  },
+                  {
+                    "speaker": "sara",
+                    "text": "But it’s waterproof, and the laptop pocket is padded. Or you can wait for the sale on Monday and buy neither today."
+                  },
+                  {
+                    "speaker": "walt",
+                    "text": "I’m travelling on Saturday, so I can’t wait. I’ll take the one with the padding."
+                  },
+                  {
+                    "speaker": "sara",
+                    "text": "Good choice. I’ll wrap it for you."
                   }
                 ]
               },
@@ -974,7 +1049,7 @@
                   "Neither backpack."
                 ],
                 "answer": 0,
-                "explanation": "Sara says she will take the red backpack, which is lighter."
+                "explanation": "The blue one is light but has small pockets, and he cannot wait for the sale, so he takes the one with the padded laptop pocket, which is the red one."
               }
             },
             {
@@ -1001,11 +1076,27 @@
                 "turns": [
                   {
                     "speaker": "lucas",
-                    "text": "The boat leaves from the harbour at ten."
+                    "text": "I’ll tell Dad to come at ten."
                   },
                   {
                     "speaker": "kim",
-                    "text": "Then we should get there by quarter to, just in case."
+                    "text": "That’s too late. The ceremony begins at quarter past ten, but they close the doors for latecomers half an hour before that."
+                  },
+                  {
+                    "speaker": "lucas",
+                    "text": "Really? Why so early?"
+                  },
+                  {
+                    "speaker": "kim",
+                    "text": "Because of the photographers. They want everyone in their seats."
+                  },
+                  {
+                    "speaker": "lucas",
+                    "text": "Okay, I’ll text him now. He always gets lost in that car park, so I’ll say to leave extra time and bring his glasses. Mum wants him to sit with us in the second row."
+                  },
+                  {
+                    "speaker": "kim",
+                    "text": "Good idea."
                   }
                 ]
               },
@@ -1018,7 +1109,7 @@
                   "At quarter to ten."
                 ],
                 "answer": 2,
-                "explanation": "Kim suggests getting there by quarter to ten, just in case."
+                "explanation": "The ceremony begins at quarter past ten, but the doors close half an hour before, so they need to be there at quarter to ten."
               }
             },
             {
@@ -1045,11 +1136,19 @@
                 "turns": [
                   {
                     "speaker": "hugh",
-                    "text": "Was the walk very long?"
+                    "text": "How was your trip to the lake, Dora?"
                   },
                   {
                     "speaker": "dora",
-                    "text": "Longer than I expected, but the view from the hill made it worthwhile."
+                    "text": "It was really close, only twenty minutes by car, so the journey was nothing special. And it rained for half the time, though it was warm. The weather forecast was terrible."
+                  },
+                  {
+                    "speaker": "hugh",
+                    "text": "Oh no. So you didn’t enjoy it?"
+                  },
+                  {
+                    "speaker": "dora",
+                    "text": "I did! It was a short distance, so we had time to climb. When we got to the top of the hill, the whole valley was in front of us, green and blue as far as I could see. I took a hundred photos. I’d go back just for that view."
                   }
                 ]
               },
@@ -1062,7 +1161,7 @@
                   "The weather."
                 ],
                 "answer": 1,
-                "explanation": "Dora says the view from the hill made the long walk worthwhile."
+                "explanation": "The lake was close and the weather was wet, but Dora loved looking down at the whole valley from the top of the hill."
               }
             }
           ]
@@ -1098,24 +1197,40 @@
                 "turns": [
                   {
                     "speaker": "theo",
-                    "text": "Shall we take the early train? It’s cheaper."
+                    "text": "The train at six forty is eleven pounds cheaper than the ten o’clock one."
                   },
                   {
                     "speaker": "gabi",
-                    "text": "True, but we’d have to get up before six."
+                    "text": "But I hate getting up that early. And is it as comfortable? Those old carriages have hard seats."
+                  },
+                  {
+                    "speaker": "theo",
+                    "text": "Not as good, I admit, but you pay less."
+                  },
+                  {
+                    "speaker": "gabi",
+                    "text": "It gets into the city at midday, so lunch isn’t a problem. And the later one would be full of people going to the match."
+                  },
+                  {
+                    "speaker": "theo",
+                    "text": "Exactly. Eleven pounds each is hard to say no to."
+                  },
+                  {
+                    "speaker": "gabi",
+                    "text": "Fine. I’ll set my alarm for five."
                   }
                 ]
               },
               "question": {
                 "id": "l5-2-1",
-                "prompt": "Why are they considering the early train?",
+                "prompt": "What do Theo and Gabi agree about the early train?",
                 "options": [
-                  "It is cheaper.",
-                  "It is more comfortable.",
-                  "It arrives after lunch."
+                  "It is more comfortable",
+                  "It is cheaper",
+                  "It arrives too late"
                 ],
-                "answer": 0,
-                "explanation": "Theo says the early train is cheaper."
+                "answer": 1,
+                "explanation": "They both admit that the early train is less comfortable and hard to wake up for, but eleven pounds less is the reason that persuades them."
               }
             },
             {
@@ -1142,24 +1257,40 @@
                 "turns": [
                   {
                     "speaker": "pia",
-                    "text": "I wanted to sit outside, but all the tables are wet."
+                    "text": "Shall we sit on the terrace? The sun is out."
                   },
                   {
                     "speaker": "max",
-                    "text": "Let’s find a place inside."
+                    "text": "It was, but the wind is cold now. Inside, then?"
+                  },
+                  {
+                    "speaker": "pia",
+                    "text": "The café is packed. I saw it from the window, and there’s loud music too."
+                  },
+                  {
+                    "speaker": "max",
+                    "text": "We could just buy two coffees and take them back home, to my flat. It’s cheaper and quieter, and you can sit on the new sofa."
+                  },
+                  {
+                    "speaker": "pia",
+                    "text": "Brilliant. And I’ve been wanting to see your new bookshelves for weeks."
+                  },
+                  {
+                    "speaker": "max",
+                    "text": "Right. Let’s go before the rain starts."
                   }
                 ]
               },
               "question": {
                 "id": "l5-2-2",
-                "prompt": "Where will they sit?",
+                "prompt": "Where do Pia and Max decide to drink their coffee?",
                 "options": [
-                  "Outside.",
-                  "Inside.",
-                  "At home."
+                  "Outside",
+                  "Inside",
+                  "At home"
                 ],
-                "answer": 1,
-                "explanation": "The tables outside are wet, so Max suggests finding a place inside."
+                "answer": 2,
+                "explanation": "The terrace is too windy and the café is crowded and noisy, so Max suggests taking the coffees to his flat and Pia agrees."
               }
             },
             {
@@ -1186,24 +1317,44 @@
                 "turns": [
                   {
                     "speaker": "fern",
-                    "text": "Does the walking tour start here?"
+                    "text": "The tour starts here at two. The guide will meet you by the fountain."
                   },
                   {
                     "speaker": "oli",
-                    "text": "It does, but you need to collect a map from reception first."
+                    "text": "Should I wait there until she comes?"
+                  },
+                  {
+                    "speaker": "fern",
+                    "text": "You can, but first collect a map from the desk. It has the route marked."
+                  },
+                  {
+                    "speaker": "oli",
+                    "text": "And the tickets?"
+                  },
+                  {
+                    "speaker": "fern",
+                    "text": "You buy those from the driver, on the bus, so there’s no need to queue here."
+                  },
+                  {
+                    "speaker": "oli",
+                    "text": "Okay, so the desk first. Thanks very much. Is there a toilet near the fountain, in case I need it before we leave?"
+                  },
+                  {
+                    "speaker": "fern",
+                    "text": "Yes, behind the ticket office, on the left. It’s free."
                   }
                 ]
               },
               "question": {
                 "id": "l5-2-3",
-                "prompt": "What must the customer do before the tour?",
+                "prompt": "What does Oli tell Fern to do before the tour?",
                 "options": [
-                  "Wait for the guide outside.",
-                  "Buy a ticket on the bus.",
-                  "Get a map."
+                  "Get a map",
+                  "Wait for the guide outside",
+                  "Buy a ticket on the bus"
                 ],
-                "answer": 2,
-                "explanation": "Oli says Fern needs to collect a map from reception first."
+                "answer": 0,
+                "explanation": "Fern says the guide will arrive later and tickets are sold on the bus, but she tells Oli to collect a map from the desk first."
               }
             },
             {
@@ -1230,24 +1381,40 @@
                 "turns": [
                   {
                     "speaker": "isabel",
-                    "text": "The lighthouse is a long way from here."
+                    "text": "How shall we get to the lighthouse? There’s a boat, and the brochure looks great."
                   },
                   {
                     "speaker": "joss",
-                    "text": "We could rent bicycles, or take the local bus."
+                    "text": "It’s only on Sundays, and it’s full. Walking would take eight hours, so no."
+                  },
+                  {
+                    "speaker": "isabel",
+                    "text": "Bicycles, then? We can rent them by the station. Or there’s a bus every hour."
+                  },
+                  {
+                    "speaker": "joss",
+                    "text": "Either would be fine. I’d choose the bike if it’s dry."
+                  },
+                  {
+                    "speaker": "isabel",
+                    "text": "Let’s check the forecast tonight."
+                  },
+                  {
+                    "speaker": "joss",
+                    "text": "Good idea. Then we’ll decide. I’ll bring a waterproof coat, just in case, and some sandwiches."
                   }
                 ]
               },
               "question": {
                 "id": "l5-2-4",
-                "prompt": "How might they travel to the lighthouse?",
+                "prompt": "How will Isabel and Joss probably get to the lighthouse?",
                 "options": [
-                  "By bicycle or bus.",
-                  "By boat only.",
-                  "On foot only."
+                  "On foot",
+                  "By boat",
+                  "By bicycle or bus"
                 ],
-                "answer": 0,
-                "explanation": "Joss suggests renting bicycles or taking the local bus."
+                "answer": 2,
+                "explanation": "The boat is full and walking takes too long; they like both the rented bikes and the hourly bus."
               }
             },
             {
@@ -1278,20 +1445,40 @@
                   },
                   {
                     "speaker": "abe",
-                    "text": "Fine, but there weren’t many choices."
+                    "text": "Fine, I suppose. Bread, cheese, a hot dish, and that was it. It did the job."
+                  },
+                  {
+                    "speaker": "tess",
+                    "text": "Nothing else?"
+                  },
+                  {
+                    "speaker": "abe",
+                    "text": "Not really. If you like variety, you’d be bored after two days. I’ve had better in hotels half the price."
+                  },
+                  {
+                    "speaker": "tess",
+                    "text": "So not excellent. What about the room?"
+                  },
+                  {
+                    "speaker": "abe",
+                    "text": "The room was big and very quiet, no complaints there."
+                  },
+                  {
+                    "speaker": "abe",
+                    "text": "No, but I’m not complaining. The coffee was good, and the staff were friendly."
                   }
                 ]
               },
               "question": {
                 "id": "l5-2-5",
-                "prompt": "What did the man think about breakfast?",
+                "prompt": "What did Abe think about breakfast?",
                 "options": [
-                  "It was fine but limited.",
-                  "There was a lot to choose from.",
-                  "It was excellent."
+                  "It was excellent",
+                  "It was fine but limited",
+                  "There was a lot to choose from"
                 ],
-                "answer": 0,
-                "explanation": "Abe says it was fine but there were not many choices, so it was fine but limited."
+                "answer": 1,
+                "explanation": "Abe says that breakfast did the job but he would be bored after two days, because there was only a few things, and he is not complaining."
               }
             },
             {
@@ -1318,28 +1505,44 @@
                 "turns": [
                   {
                     "speaker": "karl",
-                    "text": "Have you got the tickets?"
+                    "text": "Do you have the hotel address?"
                   },
                   {
                     "speaker": "noor",
-                    "text": "Yes, they’re on my phone. Do you have the hotel address?"
+                    "text": "It’s on my phone, and the battery is dead."
                   },
                   {
                     "speaker": "karl",
-                    "text": "I’ll keep it in case we need it."
+                    "text": "Oh no. Have you got a map, then?"
+                  },
+                  {
+                    "speaker": "noor",
+                    "text": "I left it on the bus. But I’ve got something more important in my jacket."
+                  },
+                  {
+                    "speaker": "karl",
+                    "text": "The tickets? Great. We can’t enter the gallery without them."
+                  },
+                  {
+                    "speaker": "noor",
+                    "text": "Right here. And I’ll ask someone at the station for directions. Somebody will know the way, and if not, I’ll use your phone."
+                  },
+                  {
+                    "speaker": "karl",
+                    "text": "Mine is at ten percent, but fine."
                   }
                 ]
               },
               "question": {
                 "id": "l5-2-6",
-                "prompt": "What does the woman have?",
+                "prompt": "What has Noor got with her?",
                 "options": [
-                  "A paper map.",
-                  "The hotel address.",
-                  "The tickets."
+                  "The tickets",
+                  "A paper map",
+                  "The hotel address"
                 ],
-                "answer": 2,
-                "explanation": "Noor says the tickets are on her phone."
+                "answer": 0,
+                "explanation": "The address is on a dead phone and the map was left on the bus, but Noor has the tickets in her jacket."
               }
             }
           ]
@@ -1364,58 +1567,46 @@
             "turns": [
               {
                 "speaker": "manager",
-                "text": "Welcome to the Hilltop Hostel. The front door is locked after eleven, so please take your key with you. Breakfast is served in the dining room from half past seven. If you want to join the guided walk, meet our guide, Mr Green, at the entrance at nine o’clock. The walk takes about two hours. You can leave your bags in the small room beside reception after you check out. There is a bus stop opposite the hostel, and buses to the station leave every twenty minutes."
+                "text": "Welcome to the Hilltop Hostel. My name is Jess, and I’m the manager. Let me explain a few things before you go to your rooms. First, safety. The front door is locked after eleven at night. Last week we had a problem with the old system, which locked at ten, but the new one is working. So please take your key with you if you go out for the evening. Breakfast is served in the dining room from half past seven. It was at seven in the past, but the cook asked for extra time to prepare. It finishes at ten, and there’s tea, coffee, bread and fruit. Now, the best activity here is our morning walk to the old castle. Mr Green will lead it. He has lived in the village all his life, and he knows every path. Some guests think the leader is Mr Brown, but he only helps in the summer. The walk takes about two hours, with a stop for photos halfway, and you don’t need special shoes. It leaves from the front steps at nine thirty. If you want to go into town afterwards, you can leave your bags beside reception. Please don’t leave them in the hall, because it blocks the way, and the cleaners will move them. We aren’t responsible for money or phones, so keep those with you. Finally, the bus into town stops at the bottom of the hill. Buses leave every twenty minutes during the day, but in the evening they are only once an hour. The last bus is at ten forty. Enjoy your stay, and please ask us if you have any questions."
               }
             ]
           },
           "gaps": [
             {
               "id": "l5-3-1",
-              "prompt": "Door is locked after ___",
+              "prompt": "The front door is locked at night after ___",
               "answer": "eleven",
-              "accepted": [
-                "11"
-              ],
-              "explanation": "The manager says the front door is locked after eleven."
+              "explanation": "Jess says the new system locks after eleven; the old one locked at ten."
             },
             {
               "id": "l5-3-2",
-              "prompt": "Breakfast starts at half past ___",
+              "prompt": "Breakfast is served from half past ___",
               "answer": "seven",
-              "accepted": [
-                "7"
-              ],
-              "explanation": "Breakfast is served from half past seven."
+              "explanation": "Breakfast used to start at seven, but now it starts at half past seven."
             },
             {
               "id": "l5-3-3",
-              "prompt": "Walk leader: Mr ___",
+              "prompt": "The walk to the castle is led by Mr ___",
               "answer": "Green",
-              "explanation": "The guide is called Mr Green."
+              "explanation": "She says Mr Green leads it; Mr Brown only helps in the summer."
             },
             {
               "id": "l5-3-4",
-              "prompt": "Walk lasts about ___ hours",
+              "prompt": "The morning walk takes ___ hours",
               "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "The walk takes about two hours."
+              "explanation": "The walk takes about two hours, with a stop for photos halfway."
             },
             {
               "id": "l5-3-5",
-              "prompt": "Bags can be left beside ___",
-              "answer": "reception",
-              "explanation": "Guests can leave bags in the small room beside reception."
+              "prompt": "You can leave your bags ___ (not in the hall)",
+              "answer": "beside reception",
+              "explanation": "She says to leave bags beside reception and not in the hall."
             },
             {
               "id": "l5-3-6",
-              "prompt": "Buses leave every ___ minutes",
+              "prompt": "In the daytime a bus leaves every ___ minutes",
               "answer": "twenty",
-              "accepted": [
-                "20"
-              ],
-              "explanation": "Buses to the station leave every twenty minutes."
+              "explanation": "Buses leave every twenty minutes in the day; in the evening it is once an hour."
             }
           ]
         },
@@ -1447,27 +1638,27 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Carlos, why did you open a hostel?"
+                "text": "Carlos, you run a successful hostel by the harbour. Why did you open it?"
               },
               {
                 "speaker": "carlos",
-                "text": "I travelled a lot when I was young, and I always stayed in hostels. I met so many interesting people that I wanted to create the same friendly atmosphere in my own town."
+                "text": "I know people expect a long family story, but I didn’t take over a hotel from my parents, my family worked in a factory. And I didn’t need a job near the harbour either, I had one in an office. What happened is that I travelled for a year in my twenties, and I stayed in some wonderful places where strangers became friends in one evening. I wanted to bring that warm feeling to my own town."
               },
               {
                 "speaker": "interviewer",
-                "text": "How did you choose the building?"
+                "text": "Why did you choose the old building?"
               },
               {
                 "speaker": "carlos",
-                "text": "It used to be a fish factory near the harbour. It was cheap and it had lots of space, so I painted the walls and bought second-hand beds."
+                "text": "It’s not next to the railway station, in fact it’s a twenty-minute walk. And when I bought it, it was empty, so I had to buy all the furniture myself. But it was cheap, because nobody wanted it, and it had lots of room for beds. I could have found something nicer, but I couldn’t have found anything bigger at that price."
               },
               {
                 "speaker": "interviewer",
-                "text": "What is the hardest part of the job?"
+                "text": "What’s the hardest part of running it?"
               },
               {
                 "speaker": "carlos",
-                "text": "Summer weekends. Every bed is full, and guests often arrive earlier than expected. I’ve learned to keep a few clean rooms ready, just in case."
+                "text": "Summer weekends. The rooms are quite big, so groups are fine, and my staff don’t take holidays then, I won’t allow it! The problem is that guests often arrive much earlier than they said. They get off the night bus at six in the morning and we have nothing ready, so I spend a lot of those mornings making beds."
               },
               {
                 "speaker": "interviewer",
@@ -1475,15 +1666,15 @@
               },
               {
                 "speaker": "carlos",
-                "text": "The roof terrace. People sit there in the evening, share food and plan the next day. Many of them make new friends."
+                "text": "They like watching the boats in the harbour, of course, and the breakfast is nice, although it isn’t free, it’s included in the price. But what people write about in the comments is the roof terrace. They sit up there in the evening, talk and watch the sunset, and that’s when they get to know each other."
               },
               {
                 "speaker": "interviewer",
-                "text": "How has the business done?"
+                "text": "Was it easy to make money?"
               },
               {
                 "speaker": "carlos",
-                "text": "It took me two years before it made any money, but now we are busy from May to October."
+                "text": "Not in the first month, definitely. We lost money for a long time. It took about two years before I could pay myself a proper salary, and I nearly gave up in the second winter. But it was worth waiting."
               },
               {
                 "speaker": "interviewer",
@@ -1491,7 +1682,7 @@
               },
               {
                 "speaker": "carlos",
-                "text": "Visit lots of places first and ask guests what they like. That is the best way to learn."
+                "text": "Don’t try to do it alone. You can save money that way, but you’ll be exhausted. And you don’t need the biggest building in town, I know I said it helps. The most useful thing is to ask your guests what they like, and then change things. I’ve learned more from conversations than from books."
               }
             ]
           },
@@ -1500,23 +1691,23 @@
               "id": "l5-4-1",
               "prompt": "Why did Carlos open a hostel?",
               "options": [
-                "He inherited a family hotel in his town.",
-                "He wanted to recreate the friendly atmosphere he enjoyed as a traveller.",
-                "He needed a job near the harbour."
+                "He took over a family hotel",
+                "He wanted to share the warm welcome he enjoyed",
+                "He needed a job near the harbour"
               ],
               "answer": 1,
-              "explanation": "Carlos says he wanted to create the same friendly atmosphere he found in hostels as a traveller."
+              "explanation": "Carlos did not inherit a hotel or need a job; he wanted to bring the warm feeling he found as a traveller to his own town."
             },
             {
               "id": "l5-4-2",
               "prompt": "Why did Carlos choose the old building?",
               "options": [
-                "It was close to the railway station.",
-                "It was cheap and had plenty of space.",
-                "It was already full of furniture."
+                "It was next to the station",
+                "It cost little and had room",
+                "It was full of furniture"
               ],
               "answer": 1,
-              "explanation": "He says the old fish factory was cheap and had lots of space."
+              "explanation": "The building was far from the station and empty, but it was cheap and had lots of room for beds."
             },
             {
               "id": "l5-4-3",
@@ -1527,7 +1718,7 @@
                 "Many of the staff are on holiday."
               ],
               "answer": 0,
-              "explanation": "He says guests often arrive earlier than expected on summer weekends."
+              "explanation": "Staff holidays and room size are not the problem; the difficulty on summer weekends is that guests arrive earlier than they said."
             },
             {
               "id": "l5-4-4",
@@ -1538,7 +1729,7 @@
                 "Sitting on the roof terrace."
               ],
               "answer": 2,
-              "explanation": "Guests enjoy the roof terrace most, where they share food and plan the next day."
+              "explanation": "Guests like the boats and the breakfast, but the comments praise the roof terrace where they talk and watch the sunset."
             },
             {
               "id": "l5-4-5",
@@ -1549,18 +1740,18 @@
                 "He has never made any."
               ],
               "answer": 1,
-              "explanation": "He says it took two years before the business made any money."
+              "explanation": "Carlos says they lost money at first and he only paid himself a proper salary after about two years."
             },
             {
               "id": "l5-4-6",
               "prompt": "What advice does Carlos give?",
               "options": [
-                "Work alone so that costs stay low.",
-                "Buy the largest building you can find.",
-                "Visit many places and ask guests what they like."
+                "Work alone to save money",
+                "Buy the largest building",
+                "Ask guests what they like"
               ],
               "answer": 2,
-              "explanation": "He advises visiting lots of places and asking guests what they like."
+              "explanation": "He says not to work alone and the biggest building is not necessary; the most useful thing is to ask guests what they like."
             }
           ]
         }

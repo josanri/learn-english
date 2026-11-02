@@ -251,9 +251,10 @@
               "options": [
                 "No sleeping bags in the halls",
                 "No talking at all during dinner",
+                "No eating in the museum",
                 "No touching the exhibits"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "The teacher said absolutely no touching the exhibits."
             },
             {
@@ -261,43 +262,47 @@
               "prompt": "What did the guide say about the whale bones?",
               "options": [
                 "They had been found in a lake",
+                "They belonged to a monster",
                 "They were only a few years old",
-                "They belonged to a monster"
+                "They were hung by a king"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He said people believed the bones belonged to a sea monster."
             },
             {
               "id": "r3-3",
               "prompt": "Why could the writer not sleep?",
               "options": [
-                "She imagined the wolf moving",
                 "The floor felt very hard and cold",
-                "Her friend talked all night long"
+                "Her friend talked all night long",
+                "She imagined the wolf moving",
+                "The whale skeleton made noises"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She kept imagining that the wolf in the corner was moving."
             },
             {
               "id": "r3-4",
               "prompt": "What happened at midnight?",
               "options": [
-                "A door opened",
                 "An alarm clock rang",
+                "The guide came back",
+                "A door opened",
                 "The lights went out"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "Somebody's alarm clock rang, and half the class screamed."
             },
             {
               "id": "r3-5",
               "prompt": "What would she do next time?",
               "options": [
-                "Bring earplugs",
+                "Stay awake all night",
                 "Sleep in another room",
-                "Go home early"
+                "Go home early",
+                "Bring earplugs"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She says next time she would bring earplugs."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The history of museums",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The word museum comes from ancient Greece, where it meant a place for the Muses, the goddesses of art and science. [1] However, these were not like the museums that we visit today.\n\nMany early collections belonged to rich families. [2] Ordinary people could only see them if they knew the owners.\n\nIn the eighteenth century, some collections were opened to everyone. [3] Visitors could walk round for free, although they sometimes had to book weeks in advance.\n\nBy the nineteenth century, most large cities had their own museum. [4] Schools began to organise trips, and soon children were an important part of the audience.\n\nToday, museums try to make visits more exciting. [5] Many have films, games and quizzes, so that visitors of all ages can learn while they enjoy themselves.",
           "sentences": [
-            "Some of the first collections were kept in temples.",
-            "Some museums do not have any visitors at all.",
             "They filled their houses with paintings, fossils and rare objects.",
             "They were now seen as places for learning, not only for the rich.",
             "This was a big change, because before then only a few people could enter.",
+            "Some museums do not have any visitors at all.",
+            "The oldest one in Britain opened in Oxford in 1683.",
+            "Some of the first collections were kept in temples.",
+            "That is still true in some small towns today.",
             "They also know that visitors like to take part."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "F",
               "explanation": "The first collections were in temples; the next sentence says they were not like museums today."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "A",
               "explanation": "Rich families filled their houses with objects, and ordinary people could only see them if they knew the owners."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "C",
               "explanation": "Opening collections to everyone was a big change; the next sentence says visitors could walk round for free."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "B",
               "explanation": "Museums were seen as places for learning; the next sentence says schools organised trips."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "H",
               "explanation": "Visitors like to take part; the next sentence lists films, games and quizzes."
             }
           ]
@@ -718,11 +725,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time does the museum open on Sundays?"
+                    "text": "Hi, I’d like to visit the museum on Sunday. Is it open at nine, like on weekdays?"
                   },
                   {
                     "speaker": "b",
-                    "text": "At ten, but the shop opens an hour later."
+                    "text": "On weekdays, yes, nine. But on Sundays it’s different. It used to open at eleven, which was too late for families, so since January we open an hour earlier."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "An hour earlier than eleven. Great. How long does it take to see everything?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "About two hours. Come early and you’ll miss the crowds."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Perfect. I’ll bring my children, and we’ll have lunch in the café afterwards."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Lovely. Enjoy your visit."
                   }
                 ]
               },
@@ -735,7 +758,7 @@
                   "At nine"
                 ],
                 "answer": 1,
-                "explanation": "He says the museum opens at ten."
+                "explanation": "Nine is the weekday time and eleven is the old Sunday time; since January the museum opens an hour earlier than eleven."
               }
             },
             {
@@ -762,11 +785,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much is the audio guide?"
+                    "text": "Hello, I’m here with my class for the workshop. Do I need to pay?"
                   },
                   {
                     "speaker": "b",
-                    "text": "It is free, but you must leave your ID card at the desk."
+                    "text": "No, it’s free for schools. But we need a card with your photo on it from every visitor, and we keep it at the desk until you come back. It’s safer for everybody."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "What about my phone? Do you want that too?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, you can keep it, but please turn off the sound. And don’t leave your money here, keep it in your pocket."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, here’s my school ID."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thank you. You’ll get it back at the end."
                   }
                 ]
               },
@@ -779,7 +818,7 @@
                   "Their phone"
                 ],
                 "answer": 0,
-                "explanation": "She says you must leave your ID card."
+                "explanation": "They keep the photo card at the desk; he may keep the phone and his money."
               }
             },
             {
@@ -806,11 +845,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you like the dinosaur exhibition?"
+                    "text": "Did you enjoy the museum trip, Emma?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, especially the huge skeleton in the main hall."
+                    "text": "Yes. The film about them was short, and I liked it, but I’d seen the same one at school. And I nearly spent all my money in the gift shop upstairs, but then I saw a T-shirt that was too expensive."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what was the best part?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "The enormous dinosaur in the main hall. It’s only a skeleton, but you can walk right under it, and it’s taller than a house. I took twenty photos."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’d like to see that."
                   }
                 ]
               },
@@ -823,7 +874,7 @@
                   "The gift shop upstairs"
                 ],
                 "answer": 0,
-                "explanation": "She says she liked the huge skeleton best."
+                "explanation": "She had already seen the film and nearly spent her money in the shop, but she says that the best part was the enormous dinosaur skeleton."
               }
             },
             {
@@ -850,11 +901,31 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why are you carrying that big bag?"
+                    "text": "Excuse me, sir, you can’t take a big bag into the galleries."
                   },
                   {
                     "speaker": "b",
-                    "text": "My camera is in it, but they said I must leave the bag in the cloakroom."
+                    "text": "Oh. I’ll leave it in the car park, in my car. It’s outside."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I wouldn’t. Last month somebody broke a window there. And the café doesn’t take bags either, it’s too small."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So where can I put it?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "The cloakroom is free, on the left of the entrance. Take a ticket and keep it safe."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Perfect, thank you. I’ll go there now. I didn’t know that the museum was so strict about bags, but I understand."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It’s for the safety of the objects."
                   }
                 ]
               },
@@ -867,7 +938,7 @@
                   "In the museum cafe"
                 ],
                 "answer": 1,
-                "explanation": "He says he must leave the bag in the cloakroom."
+                "explanation": "The car park is risky and the café is too small, so the staff member sends him to the free cloakroom."
               }
             },
             {
@@ -894,11 +965,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How was the school trip?"
+                    "text": "Did you like the school trip, Jake?"
                   },
                   {
                     "speaker": "b",
-                    "text": "We spent too long in the shop and not enough time looking at the paintings."
+                    "text": "The guides were fantastic, they were so nice. And I understand the rules about not touching things, so that’s fine."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what’s wrong?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "We had an hour in the museum, and then forty-five minutes waiting in the gift shop for the other class. It was so boring, because I didn’t have any money to buy anything."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s a pity. Did you tell your teacher?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, she said she would talk to the museum."
                   }
                 ]
               },
@@ -911,7 +998,7 @@
                   "Too long in the shop"
                 ],
                 "answer": 2,
-                "explanation": "He says they spent too long in the shop."
+                "explanation": "He liked the guides and accepts the rules; his complaint is the forty-five minutes of waiting in the shop."
               }
             },
             {
@@ -938,11 +1025,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where is the Egyptian room?"
+                    "text": "Excuse me, where is the Egyptian room? The map says it’s beside the shop."
                   },
                   {
                     "speaker": "b",
-                    "text": "Up the stairs and turn left. It is next to the cafe."
+                    "text": "That’s an old map, we changed the rooms in the spring. The shop moved downstairs."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it behind the cloakroom, then? I saw a sign there."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That sign is for the toilets. Go straight along this corridor and follow the smell of coffee. The mummies are in the room by the café door."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you so much. I’ve been looking for it for twenty minutes."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "You’re welcome. It’s a big building, and everybody gets lost on their first visit. Enjoy the tour."
                   }
                 ]
               },
@@ -955,7 +1058,7 @@
                   "Behind the cloakroom"
                 ],
                 "answer": 0,
-                "explanation": "He says it is next to the cafe."
+                "explanation": "The map is old and the sign behind the cloakroom is for the toilets; the Egyptian room is by the café door."
               }
             },
             {
@@ -969,24 +1072,12 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is the museum open on Mondays?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "No, it is closed on Mondays, but open every other day."
+                    "text": "Thank you for calling the Riverside Museum. Our opening times are changing. Until last year, we were closed on Sundays, but now we are open every Sunday from ten. Fridays are our late night, and we stay open until eight. The only day when the doors stay shut is the day after the weekend, when our team cleans the galleries and prepares the new exhibitions. To buy tickets, press one. To speak to the café, press two. For any other question, please stay on the line."
                   }
                 ]
               },
@@ -999,7 +1090,7 @@
                   "On Fridays"
                 ],
                 "answer": 1,
-                "explanation": "She says it is closed on Mondays."
+                "explanation": "Sunday used to be closed but is open now, and Friday is a late night; the museum closes on the day after the weekend."
               }
             }
           ]
@@ -1035,24 +1126,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like to book a tour for my class of thirty students."
+                    "text": "Hello, I’m a teacher, and I’d like to bring thirty children next month. I haven’t lost anything, thankfully, I only want to book."
                   },
                   {
                     "speaker": "b",
-                    "text": "Of course. Which day would you like to come?"
+                    "text": "Lovely. Have you been before?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, but a colleague told me about the workshops. Is the visit free?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "For schools, yes. I can give you the twelfth or the nineteenth."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "The nineteenth is perfect. By the way, I’m also thinking about a gift for my class."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Our shop has a nice puzzle set, but you don’t need to decide today."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman want?",
+                "prompt": "Why is the woman phoning the museum?",
                 "options": [
-                  "To report a lost school bag",
-                  "To buy a gift for her class",
-                  "To book a class visit"
+                  "To say that she has lost a school bag",
+                  "To ask for a present for her class",
+                  "To arrange a visit for her pupils"
                 ],
                 "answer": 2,
-                "explanation": "She wants to book a tour for her class."
+                "explanation": "She says she has lost nothing and the gift is only an extra thought; her main purpose is to book a day for thirty children."
               }
             },
             {
@@ -1079,24 +1186,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I do not understand this painting. It is just red and blue squares."
+                    "text": "I don’t understand this painting at all. What is it supposed to be?"
                   },
                   {
                     "speaker": "b",
-                    "text": "I think that is the point. The artist wants you to decide what it means."
+                    "text": "Nobody knows, and that’s the point. I read the sign: the artist never explained it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe he wasn’t a good painter?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I don’t think so. The lines are perfect, look. And it’s from last year, not very old. I think everyone sees something different: you see a storm, I see a garden."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Hmm, I see a face."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Exactly. That’s the fun of it. Come on, let’s see what the next one looks like, and then we can sit down for a while."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the girl say about the painting?",
+                "prompt": "What is the girl's opinion of the painting?",
                 "options": [
-                  "The artist painted it badly",
-                  "You decide what it means",
-                  "It is a very old painting"
+                  "The artist made too many mistakes",
+                  "Everybody can understand it in their own way",
+                  "It is interesting only because it is old"
                 ],
                 "answer": 1,
-                "explanation": "She says the artist wants you to decide what it means."
+                "explanation": "The lines are perfect and the painting is new; she enjoys that each person sees something different."
               }
             },
             {
@@ -1123,24 +1246,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Attention, please. The museum will close in fifteen minutes. Please make your way to the main exit. Thank you."
+                    "text": "Did you hear the announcement? The museum closes in half an hour."
                   },
                   {
                     "speaker": "b",
-                    "text": "Come on, we should hurry."
+                    "text": "Oh no! And we haven’t seen the dinosaurs yet. I’m starving, though. Can we have something in the café?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "There’s no time. The café closes before the museum, in ten minutes."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "What about the new exhibition on the first floor?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Nice, but that takes an hour. Let’s do the dinosaurs now and come back another day."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good plan. Run! I’ll take the map, and you check which stairs are the quickest."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Follow me, it’s this way."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the announcement about?",
+                "prompt": "What do the friends agree to do?",
                 "options": [
-                  "The museum closing soon",
-                  "A missing child near the cafe",
-                  "A new exhibition on the first floor"
+                  "Look at the dinosaurs now",
+                  "Have something to eat",
+                  "See the new exhibition"
                 ],
                 "answer": 0,
-                "explanation": "The announcer says the museum will close in fifteen minutes."
+                "explanation": "The café closes in ten minutes and the exhibition takes an hour, so they agree to see the dinosaurs now."
               }
             },
             {
@@ -1167,24 +1310,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Shall we go to the history museum or the science museum on Saturday?"
+                    "text": "Shall we go to the history museum on Saturday, Kai?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Science. They have a new space show, and I have never seen it."
+                    "text": "I’d like the science museum. I know the history one is cheaper, and it’s closer to my house, but I don’t mind."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So why science?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "They have a new show about space, with a huge screen on the ceiling. My cousin saw it and said it was amazing."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, that sounds fun. Let’s book it online. Do you think your cousin can come with us?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Maybe. I’ll ask him tonight, and I’ll bring my camera as well."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "Why does the boy choose the science museum?",
+                "prompt": "Why does Kai want to go to the science museum?",
                 "options": [
-                  "It is cheaper to get into",
-                  "It is much closer to town",
+                  "The tickets are cheaper",
+                  "It is nearer to his house",
                   "There is a new show"
                 ],
                 "answer": 2,
-                "explanation": "He says they have a new space show."
+                "explanation": "Price and distance favour the history museum, but Kai wants to see the new space show his cousin loved."
               }
             },
             {
@@ -1211,28 +1370,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Remember to bring a notebook and a pen. You will need to write about three objects that interest you."
+                    "text": "After our visit, I’d like you to write a page about the museum."
                   },
                   {
                     "speaker": "b",
-                    "text": "Can we use our phones for photos?"
+                    "text": "Is it about the history of the museum, Sir?"
                   },
                   {
                     "speaker": "a",
-                    "text": "Yes, but only of the objects."
+                    "text": "No, you don’t need to look that up. Choose one object that you really liked and say why."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s easy. I loved the old compass. I could write two pages about it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "A page is enough. Don’t forget to add a drawing, and bring it on Monday."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I will, Sir. I’m going to start tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What will the students write about?",
+                "prompt": "What does the girl think about the homework?",
                 "options": [
-                  "Objects they like",
-                  "The cafe menu",
-                  "The museum's history"
+                  "It will be easy because she has a favourite object",
+                  "It will be too long",
+                  "It will be dull"
                 ],
                 "answer": 0,
-                "explanation": "The teacher says to write about three objects that interest them."
+                "explanation": "She already has a favourite, the old compass, and says she could write two pages, so she finds it easy and enjoyable."
               }
             },
             {
@@ -1259,24 +1430,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Hello, I left my umbrella in the museum yesterday. It is green with white spots."
+                    "text": "Hello, I was at the museum yesterday afternoon. I think I left my umbrella in the café."
                   },
                   {
                     "speaker": "b",
-                    "text": "I will check the lost property box. Please hold."
+                    "text": "I’ll check. What colour?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Blue with white dots. I don’t want to complain, because the staff were lovely and it wasn’t noisy at all. And I’ll book tickets for the evening show another day. I just need the umbrella back, it’s my mother’s."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I have it here. You can pick it up until six."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Wonderful, I’ll come this afternoon. Thank you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "Why does the woman phone?",
+                "prompt": "Why is the woman phoning the museum?",
                 "options": [
-                  "To complain about some noise",
                   "To book tickets for a show",
-                  "To ask about an umbrella"
+                  "To ask about something she left there",
+                  "To complain about noise"
                 ],
-                "answer": 2,
-                "explanation": "She says she left her umbrella in the museum."
+                "answer": 1,
+                "explanation": "She does not complain and will book tickets another day; she phones to get back her umbrella."
               }
             }
           ]
@@ -1301,52 +1484,46 @@
             "turns": [
               {
                 "speaker": "guide",
-                "text": "Good morning, and welcome to the City History Museum. My name is Ove. Our tour today lasts one hour and fifteen minutes, and we will start on the ground floor. Please note that the building is more than two hundred years old, and in the past it was a prison. The oldest object in the collection is a clay pot, which is about three thousand years old. In the next room, you will see a model of the city in the year 1850. You can press the green button to hear sounds from that time. On the second floor, there is a special exhibition about the old market, with hundreds of photographs. Please do not use a flash. At the end of the tour, the shop sells postcards, and the cafe offers a discount of ten per cent to anyone with a ticket. Now, if you would follow me."
+                "text": "Good morning, and welcome to the City History Museum. My name is Ove, and I will be your guide today. The tour lasts one hour and fifteen minutes. Last month it was one hour and a half, but visitors told us that was too long, so we cut a room. We’ll start on the ground floor. Many people ask me if this building was a school or a hospital, because it looks like one. In fact, it was a prison until nineteen fifty, and the thick walls and small windows are still here. Please look at the door on your left. It’s the original one. Let’s move on to the first room, where we keep the oldest things in the collection. Look at the glass case. People expect a coin or a bowl, but our oldest object is a clay pot, almost three thousand years old. It was found by children in a field. Now, in the next room, there are screens and buttons. If you press the red button, you can hear a story. The green button is the one that plays the sounds from the past, such as horses, bells and voices in the street. Please be gentle, they are sensitive. After that, we’ll climb to the first floor, where our special exhibition is. It is about the old market, which stood in front of the museum for five hundred years. The exhibition about the harbour was last year, and it’s finished. You’ll see photos, scales and even a market stall that you can touch. At the end of the tour, you can have a drink in the café. Show your ticket at the till, and you’ll get ten per cent off. Students get twenty per cent in the shop, but only on Wednesdays. Any questions before we begin?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The tour lasts one hour and ___ minutes",
+              "prompt": "The guided tour takes one hour and ___ minutes",
               "answer": "fifteen",
-              "accepted": [
-                "15"
-              ],
-              "explanation": "He says the tour lasts one hour and fifteen minutes."
+              "explanation": "The tour lasts one hour and fifteen minutes; one and a half hours was last month’s tour."
             },
             {
               "id": "l3-2",
-              "prompt": "The building used to be a ___",
+              "prompt": "Before it became a museum, the building was a ___",
               "answer": "prison",
-              "explanation": "He says that in the past it was a prison."
+              "explanation": "It looks like a school or hospital, but it was a prison until nineteen fifty."
             },
             {
               "id": "l3-3",
-              "prompt": "The oldest object is a clay ___",
+              "prompt": "The oldest object in the collection is a clay ___",
               "answer": "pot",
-              "explanation": "He says the oldest object is a clay pot."
+              "explanation": "People expect a coin or a bowl, but the oldest object is a clay pot."
             },
             {
               "id": "l3-4",
-              "prompt": "Visitors press the ___ button to hear sounds",
+              "prompt": "To listen to sounds from the past, press the ___ button",
               "answer": "green",
-              "explanation": "He says to press the green button."
+              "explanation": "The red button plays a story and the green button plays the sounds."
             },
             {
               "id": "l3-5",
               "prompt": "The special exhibition is about the old ___",
               "answer": "market",
-              "explanation": "He says the exhibition is about the old market."
+              "explanation": "The exhibition is about the old market; the harbour exhibition was last year."
             },
             {
               "id": "l3-6",
-              "prompt": "The cafe gives a discount of ___ per cent",
+              "prompt": "With your ticket, the café gives ___ per cent off",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "He says the discount is ten per cent."
+              "explanation": "The café gives ten per cent off; twenty per cent is the student discount in the shop."
             }
           ]
         },
@@ -1378,27 +1555,27 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Maddox, you work as a curator in a museum. What exactly does a curator do?"
+                "text": "Maddox, many people don’t know what a curator does. What is your job?"
               },
               {
                 "speaker": "h",
-                "text": "I look after the objects. I decide which ones go on display, I make sure that they are safe, and I write the labels that visitors read."
+                "text": "I get that all the time. I don’t sell tickets, that’s the front desk, and I don’t clean the halls, we have a lovely team for that. My job is to look after the objects: to choose them, record them and keep them safe for the future. I know each one like a friend. Some of them have been in the museum for a hundred years, and I even talk to them when nobody is around. My colleagues find that funny."
               },
               {
                 "speaker": "i",
-                "text": "What is the strangest object in your museum?"
+                "text": "You have a pair of paper shoes in the collection. Why were they made?"
               },
               {
                 "speaker": "h",
-                "text": "Probably a pair of shoes made of paper, two hundred years old. They were made for a dancer who could not afford leather."
+                "text": "They’re fascinating. Some people think it was a joke, and in a way they are funny, but no. A film company didn’t ask for them either. They were made in 1932 by a dancer who couldn’t afford leather. She had no money, so she used newspaper and glue, and she still danced in them. They survived because her daughter kept them in a box in the attic, and later gave them to us."
               },
               {
                 "speaker": "i",
-                "text": "Is it difficult to keep old things safe?"
+                "text": "What damages old objects?"
               },
               {
                 "speaker": "h",
-                "text": "Very. Light, heat and even breath can damage them. In one room, we keep the lights low and the temperature at exactly eighteen degrees."
+                "text": "Dust is a nuisance, but you can clean it, and the roof is fine, we fixed the leak years ago. The real enemies are light and heat. They make colours fade and paper turn yellow. That’s why some rooms are so dark, and that is why I’m always arguing with visitors who want more lights!"
               },
               {
                 "speaker": "i",
@@ -1406,7 +1583,7 @@
               },
               {
                 "speaker": "h",
-                "text": "Many think that everything in the museum is on display. In fact, about ninety per cent is stored in rooms underneath."
+                "text": "Many people think that museums are boring, and that’s changing slowly. They also think tickets are free, but only on certain days. The biggest mistake is believing that everything is on display. In fact, ninety per cent of our collection is in storage, because there isn’t enough room. We change the display every few months, so even regular visitors will always find something new when they come back."
               },
               {
                 "speaker": "i",
@@ -1414,15 +1591,15 @@
               },
               {
                 "speaker": "h",
-                "text": "I studied history, and then I worked as a volunteer for two years. It is a competitive job, so experience matters."
+                "text": "I didn’t win a prize, and I never worked in a shop. I studied history at university, and then I volunteered here on Saturdays for three years, cleaning labels and carrying boxes. When a job opened, they remembered me. I was so nervous at the interview that I forgot my own name for a second, but they gave me the job anyway."
               },
               {
                 "speaker": "i",
-                "text": "What would you tell a young person who wants to do your job?"
+                "text": "What advice do you give to young people?"
               },
               {
                 "speaker": "h",
-                "text": "Be curious and ask questions about everything you see. Every object has a story."
+                "text": "Ask questions, always. When you stand in front of an object and wonder who made it, you start to find the story. You don’t have to study art, and you don’t have to travel. Just be curious, because every discovery begins with a question."
               }
             ]
           },
@@ -1436,7 +1613,7 @@
                 "Cleans the big halls"
               ],
               "answer": 1,
-              "explanation": "He says he looks after the objects."
+              "explanation": "He does not sell tickets or clean the halls; his job is to choose, record and look after the objects."
             },
             {
               "id": "l4-2",
@@ -1447,7 +1624,7 @@
                 "They were for a film"
               ],
               "answer": 1,
-              "explanation": "They were made for a dancer who could not afford leather."
+              "explanation": "It was not a joke and not for a film; a dancer without money made them from newspaper and glue."
             },
             {
               "id": "l4-3",
@@ -1458,7 +1635,7 @@
                 "Dust alone"
               ],
               "answer": 0,
-              "explanation": "He says light, heat and even breath can damage them."
+              "explanation": "Dust can be cleaned and the roof is fixed; the real enemies are light and heat."
             },
             {
               "id": "l4-4",
@@ -1469,7 +1646,7 @@
                 "They think all is on display"
               ],
               "answer": 2,
-              "explanation": "Many think that everything is on display, but most is stored underneath."
+              "explanation": "Boring museums and free tickets are other beliefs; the biggest mistake is thinking that everything is on display."
             },
             {
               "id": "l4-5",
@@ -1480,18 +1657,18 @@
                 "He worked in a shop for years"
               ],
               "answer": 1,
-              "explanation": "He studied history and then worked as a volunteer for two years."
+              "explanation": "He did not win a prize or work in a shop; he studied history and then volunteered for three years."
             },
             {
               "id": "l4-6",
-              "prompt": "What advice does he give?",
+              "prompt": "Why does Maddox tell young people to ask questions?",
               "options": [
-                "Ask questions",
-                "Study art",
-                "Travel abroad"
+                "Every discovery begins with a question",
+                "Staff like talkative visitors",
+                "It makes the visit shorter"
               ],
               "answer": 0,
-              "explanation": "He says to be curious and ask questions about everything."
+              "explanation": "He says that you do not need to study art or travel; wondering about an object starts the story and every discovery begins with a question."
             }
           ]
         }

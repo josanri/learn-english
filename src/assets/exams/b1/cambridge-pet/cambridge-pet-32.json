@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "What did the writer think when her sister made the suggestion?",
               "options": [
-                "It was a joke",
                 "It sounded exciting",
+                "It was too dangerous",
+                "It was a joke",
                 "It would cost too much"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She thought her sister was joking."
             },
             {
               "id": "r3-2",
               "prompt": "What was difficult about the writer's room?",
               "options": [
-                "The size of the bed",
                 "Getting up to it",
-                "The noise at night"
+                "The size of the bed",
+                "The noise at night",
+                "Finding the key"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She had to climb a hundred and twenty steps and arrived out of breath."
             },
             {
@@ -272,10 +274,11 @@
               "prompt": "How did the writer sleep?",
               "options": [
                 "She woke up many times",
+                "She slept until late in the morning",
                 "She could not sleep at all",
                 "She fell asleep quickly"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She expected to sleep badly, yet she fell asleep quickly."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "What did Mr Baird explain?",
               "options": [
                 "When the tower was built",
-                "Why the rooms were cheap",
-                "How the lighthouse helped ships"
+                "How the lighthouse helped ships",
+                "Where the sailors came from",
+                "Why the rooms were cheap"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He told them how the lighthouse used to guide ships."
             },
             {
               "id": "r3-5",
               "prompt": "How does Mr Baird feel about the lighthouse now?",
               "options": [
-                "Happy to welcome visitors",
                 "Sad that it is no longer used",
-                "Tired of the work it needs"
+                "Tired of the work it needs",
+                "Happy to welcome visitors",
+                "Worried that visitors break things"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He sometimes misses the old days, but it is good to share the place with visitors."
             }
           ]
@@ -306,36 +311,38 @@
           "id": "reading-4",
           "number": 4,
           "title": "My first time in a hostel",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Last summer, I travelled around Portugal with my cousin, and we decided to stay in hostels to save money. [1] I had always imagined that they were dirty and noisy, but I could not have been more wrong.\n\nOur first hostel was in Porto, in a lovely old house with a roof terrace. [2] There were six beds in our room, and we shared the bathroom with three other people. At first, I felt shy, but the other guests were friendly. [3] One evening, a group from Brazil invited us to a cooking night, and we made a huge dish of rice and beans.\n\nAnother good thing was the price. We paid only fifteen euros each per night, which left more money for visiting museums and buying food. [4] We even got a free map and advice on where to go.\n\nOf course, hostels are not perfect. [5] If you are a light sleeper, it is a good idea to bring earplugs. Despite this, I would happily stay in one again.",
           "sentences": [
-            "The staff at reception were helpful too.",
-            "It was my first time in a hostel.",
-            "The main problem is that someone is always snoring.",
             "We soon began to talk to them every evening.",
             "The room was simple, but it was clean and bright.",
-            "The weather in Portugal was hot and sunny every day."
+            "The main problem is that someone is always snoring.",
+            "It was my first time in a hostel.",
+            "She said that we should visit the south first.",
+            "The weather in Portugal was hot and sunny every day.",
+            "The streets around it were narrow and full of tourists.",
+            "The staff at reception were helpful too."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "D",
               "explanation": "\"It was my first time\" explains why she had only imagined what hostels were like."
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "B",
               "explanation": "\"There were six beds in our room\" continues the description of the room."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "A",
               "explanation": "\"Them\" means the other guests, who were friendly; the next sentence gives an example."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "H",
               "explanation": "\"Helpful too\" adds another good point, and the map and advice are examples of help."
             },
             {
@@ -729,29 +736,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Good evening, Hotel Bellevue. How can I help?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Do you have a single room for tonight?"
+                    "text": "Hello. Do you have a single room for tonight?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Single rooms cost fifty pounds, but I only have a double left. I can give it to you for sixty."
+                    "text": "Yes. A single room is eighty pounds a night, but we have a special price tonight because the hotel isn’t full. It’s twenty pounds less."
                   },
                   {
                     "speaker": "m",
-                    "text": "That's fine, thank you."
+                    "text": "That’s good. Do I pay it all now?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, only a deposit of fifty pounds now, and the rest when you leave."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fine. I’ll bring my card to the desk."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "How much will the man pay?",
+                "prompt": "How much will the room cost for one night?",
                 "options": [
                   "Fifty pounds",
                   "Sixty pounds",
                   "Eighty pounds"
                 ],
                 "answer": 1,
-                "explanation": "The double room is offered to him for sixty pounds."
+                "explanation": "The usual price is eighty and the deposit is fifty, but tonight there is a discount of twenty pounds, so the room costs sixty."
               }
             },
             {
@@ -778,11 +797,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What time do I have to leave my room?"
+                    "text": "Hi, I’m checking out, but my train isn’t until six this evening. Can I stay in my room until four?"
                   },
                   {
                     "speaker": "m",
-                    "text": "By eleven o'clock, but you can keep your bags here at reception until four."
+                    "text": "I’m afraid check-out is at eleven, because we need to clean the rooms. But you can leave your bags with us at the desk and collect them later. It’s free."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s great. What about the bill?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I need the payment now, I’m afraid, because the computer closes the account when you check out."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, OK. Here’s my card. Then I’ll go and see the old town."
                   }
                 ]
               },
@@ -795,21 +826,13 @@
                   "Pay for her room later"
                 ],
                 "answer": 0,
-                "explanation": "The man says she can keep her bags at reception until four."
+                "explanation": "Check-out is at eleven so she cannot stay, and she must pay now, but the staff will keep her bags at the desk."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Quentin",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Bettina",
@@ -821,12 +844,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "What's the Wi-Fi password, please?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "It's on the little card next to your bed."
+                    "text": "Welcome to the Grand Hotel. We hope you enjoy your stay. A quick tip about the Wi-Fi. Many guests ask about it at reception, but you don’t need to come down. The password is not on the television screen either, because that was our old system. If you look at the small card by the lamp next to your bed, you will find the name of the network and the password. Breakfast is served from seven o’clock. If you need anything else, press nine on the room telephone. Have a lovely evening."
                   }
                 ]
               },
@@ -839,7 +858,7 @@
                   "On the television"
                 ],
                 "answer": 0,
-                "explanation": "The woman says it is on a card next to his bed."
+                "explanation": "Reception and the television are not where the password is; it is on the small card next to the bed."
               }
             },
             {
@@ -865,12 +884,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Reception. Can I help you?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Excuse me, the shower in my room isn't working."
+                    "text": "Yes, I’m in room 214. I know the room is a bit cold, but there’s an extra blanket, so that’s fine. And I took the stairs, so the lift didn’t bother me."
                   },
                   {
                     "speaker": "m",
-                    "text": "I'm sorry. I'll send someone to fix it. In the meantime, you can use the one on the second floor."
+                    "text": "What’s wrong, then?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The shower. When I turn it on, there’s only a little cold water, and then nothing. I need to wash my hair before my interview."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m so sorry. I’ll send someone up right now."
                   }
                 ]
               },
@@ -883,7 +914,7 @@
                   "The lift is broken"
                 ],
                 "answer": 1,
-                "explanation": "She says the shower in her room is not working."
+                "explanation": "The cold room has a blanket and she used the stairs; the problem is that the shower gives only a little water and then nothing."
               }
             },
             {
@@ -910,11 +941,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "When is breakfast?"
+                    "text": "Excuse me, what time can I have breakfast on Sunday? The sign says from ten."
                   },
                   {
                     "speaker": "f",
-                    "text": "It is from seven until ten, but on Sundays it starts at eight o'clock."
+                    "text": "That’s the old sign. We used to start at ten on Sundays because the chef had the day off, but now we start at eight, one hour later than during the week."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Perfect. Seven would have been too early anyway."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll change the sign. Thanks for telling me."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No problem. I’ll see you at the restaurant on Sunday."
                   }
                 ]
               },
@@ -927,21 +970,13 @@
                   "From eight o'clock"
                 ],
                 "answer": 2,
-                "explanation": "On Sundays breakfast starts at eight o'clock."
+                "explanation": "The sign with ten is old, and the weekday time is seven; on Sundays they now start one hour later than in the week."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Shirley",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Hugo",
@@ -953,12 +988,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "How do I get to the hostel from the station?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "Take bus twelve and get off at the library. The hostel is just opposite."
+                    "text": "Hi, Shirley, it’s Hugo. Here’s how to get to the hotel from the airport. Take bus twelve into the city. Most people get off at the station, but that’s a long walk, almost half an hour with a suitcase, so don’t do that. The bus also goes past the park, which is pretty, but the hotel is on the other side of the river from there. Wait until you see the big library with the red doors, and get off there. Our hotel is directly across the street. Call me if you get lost. See you soon!"
                   }
                 ]
               },
@@ -971,7 +1002,7 @@
                   "At the park"
                 ],
                 "answer": 0,
-                "explanation": "The man tells her to get off at the library."
+                "explanation": "The station is too far and the park is on the wrong side of the river; she should get off at the big library, opposite the hotel."
               }
             },
             {
@@ -998,11 +1029,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Would you like the sea view or the garden view?"
+                    "text": "Which room would you like, Mr Collins? The sea view is more expensive, and the garden room is cheaper."
                   },
                   {
                     "speaker": "m",
-                    "text": "The sea view, please. It's more expensive, but I only come here once a year."
+                    "text": "Is the sea view quiet?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Honestly, the garden rooms are quieter, because the sea view faces the road."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hmm. I’ll take the sea view anyway. I only come here once a year, so I like to treat myself."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Lovely. Room 305, then. Enjoy your stay."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. Could someone take my bags up, please?"
                   }
                 ]
               },
@@ -1015,7 +1062,7 @@
                   "It is quieter"
                 ],
                 "answer": 1,
-                "explanation": "He says he only comes here once a year."
+                "explanation": "The garden room is cheaper and quieter, but he chooses the sea view because it is a yearly treat."
               }
             }
           ]
@@ -1051,24 +1098,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I'm afraid the room isn't like the photo on your website. It's tiny, and the window faces a wall."
+                    "text": "Barnaby, I’m glad you’re on duty. I came to see you about my room."
                   },
                   {
                     "speaker": "m",
-                    "text": "I'm very sorry. Let me see if I can find you another room."
+                    "text": "Of course. Do you want to book a table at the restaurant as well? I can get you the one by the window."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe later. And I know how to get to the beach, I looked at the map. It’s about the room. The window doesn’t close, and there’s a draught all night. I didn’t sleep."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh no, I’m sorry. I’ll move you to a different floor."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And the TV is broken, too. That’s the third thing, but I didn’t want to be rude."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not rude at all. I’ll fix everything today."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the woman doing?",
+                "prompt": "Why is Janice talking to Barnaby?",
                 "options": [
-                  "Booking a table",
-                  "Asking for directions",
-                  "Complaining about a room"
+                  "To book a table",
+                  "To ask for directions",
+                  "To complain about her room"
                 ],
                 "answer": 2,
-                "explanation": "She says the room is not like the photo and is tiny."
+                "explanation": "She does not want a table now and has a map, but she explains three problems with her room."
               }
             },
             {
@@ -1095,24 +1158,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Could I stay two more nights, please?"
+                    "text": "Hadley, the hostel is full on Saturday, but I don’t want to leave on Friday as planned."
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, but you'll have to move to a different room. This one is booked from Friday."
+                    "text": "Do you have to leave? I thought you had a flight on Saturday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I changed it. The city is so nice, and I’ve made friends here. I’d stay a week more."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Why not move to another hostel for those nights? There’s one beside the river."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I like this one. The staff are lovely and the beds are comfy. I’ll ask if they have a bed from Saturday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good luck. Ask at reception."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the man want?",
+                "prompt": "What does Cormac want?",
                 "options": [
-                  "To leave earlier",
                   "To stay longer",
+                  "To leave earlier",
                   "To change hostels"
                 ],
-                "answer": 1,
-                "explanation": "He asks to stay two more nights."
+                "answer": 0,
+                "explanation": "He has changed his flight and likes the city and his friends; he does not want to leave early or move to another hostel."
               }
             },
             {
@@ -1139,32 +1218,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why don't we go camping? It's much cheaper than a hotel."
+                    "text": "Where shall we stay on our trip to Wales? Camping would be cheap."
                   },
                   {
                     "speaker": "m",
-                    "text": "It might rain all weekend."
+                    "text": "It would, but you know how much it rains there, and I forgot my tent last time."
                   },
                   {
                     "speaker": "f",
-                    "text": "We'll take a good tent."
+                    "text": "Then let’s ask Jack and Maria. They live near the coast."
                   },
                   {
                     "speaker": "m",
-                    "text": "All right, let's do it."
+                    "text": "Their flat is tiny, and they have a baby. I’d feel like I was in the way."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "True. So a hotel, then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A small one. I found one on a website, sixty pounds with breakfast."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s not bad. Book it before it’s full."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What do they decide to do?",
+                "prompt": "What do Zoe and Travis decide to do?",
                 "options": [
                   "Go camping",
                   "Book a hotel",
                   "Stay with friends"
                 ],
-                "answer": 0,
-                "explanation": "They agree to go camping with a good tent."
+                "answer": 1,
+                "explanation": "It rains too much for a tent and the friends’ flat is tiny, so they agree on a small hotel."
               }
             },
             {
@@ -1191,24 +1282,44 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I'm sorry to trouble you, but I've lost my key. I've looked everywhere."
+                    "text": "Isobel, have you seen my room key? I’ve looked everywhere."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't worry. I'll make you a new one. What's your room number?"
+                    "text": "Did you miss breakfast because of that? I didn’t see you in the dining room."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I had breakfast at eight, with a lovely waiter who remembered my name. It’s just that after the swim I came back to change, and the key wasn’t in my pocket."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Have you checked the pool?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, twice. They said nobody gave it in."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ask at reception for a new one. They do it all the time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m so annoyed. It’s the second key this month."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the man's problem?",
+                "prompt": "Why is Jerome upset?",
                 "options": [
                   "He missed breakfast",
                   "He forgot his name",
                   "He has lost his key"
                 ],
                 "answer": 2,
-                "explanation": "He says he has lost his key."
+                "explanation": "He had breakfast and the waiter remembered his name; he is annoyed because the key is not in his pocket."
               }
             },
             {
@@ -1235,32 +1346,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Dad, our class is going to a youth hostel in Wales next month."
+                    "text": "Dad, can I ask you something? The school is going to Paris in May."
                   },
                   {
                     "speaker": "m",
-                    "text": "How much does it cost?"
+                    "text": "Is it a lot of money?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Eighty pounds. Can I have the money by Friday?"
+                    "text": "Two hundred pounds. I know it’s a lot, but it’s educational."
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, I'll give it to you tomorrow."
+                    "text": "Do you need help with the project for it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, I’ve already done that, it’s easy. And my friend’s mum will take me to school, so I don’t need a lift."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then it’s only the money. Let me think about it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the girl want from her father?",
+                "prompt": "What does Clover want from her father?",
                 "options": [
                   "Money for a trip",
                   "Help with homework",
                   "A lift to school"
                 ],
                 "answer": 0,
-                "explanation": "She asks for eighty pounds for the school trip."
+                "explanation": "The project is done and a friend’s mother will give her a lift; what she needs is two hundred pounds for the Paris trip."
               }
             },
             {
@@ -1287,24 +1410,48 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "New guests arrive at three o'clock. Could you clean rooms four and five before then?"
+                    "text": "Delia, it’s chaos today. A group of twenty is arriving at three."
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. I can do the bathrooms first."
+                    "text": "Do you want me to answer the telephone? It’s ringing non-stop."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Julie is doing that. And the restaurant is closed tonight, so nobody needs dinner."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then what do you need?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The rooms on the second floor aren’t ready. Can you make the beds and clean the bathrooms before three?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. I’ll start now."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re a star. I’ll make you a coffee when you finish."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Make it a big one!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man asking the woman to do?",
+                "prompt": "What does Rowan ask Delia to do?",
                 "options": [
                   "Answer the telephone",
-                  "Cook dinner for guests",
-                  "Clean rooms before three"
+                  "Clean rooms before three",
+                  "Cook dinner for guests"
                 ],
-                "answer": 2,
-                "explanation": "He asks her to clean rooms four and five before three."
+                "answer": 1,
+                "explanation": "Julie answers the phone and there is no dinner tonight; the second floor rooms must be ready for the group at three."
               }
             }
           ]
@@ -1329,58 +1476,46 @@
             "turns": [
               {
                 "speaker": "leopold",
-                "text": "Hello, everyone, and welcome to Riverside Youth Hostel. My name is Leopold, and I'm the manager. Reception is open from seven in the morning until midnight. After midnight, your key card opens the front door. Breakfast is at eight o'clock in the dining room, and it costs four pounds. There is a laundry on the first floor, and a washing machine costs three pounds. Tonight, we're showing a film in the common room at nine. Tomorrow, we're organising a walk along the river, and we'll meet at the front door at ten o'clock. Finally, quiet time begins at eleven in the evening, so please don't make a noise in the bedrooms after that. Thank you, and enjoy your stay."
+                "text": "Hello, everyone, and welcome to Riverside Youth Hostel. My name is Leopold, and I’m the manager. Reception is open from seven in the morning until midnight. Some hostels lock the doors at ten, but we don’t. If you come back after midnight, ring the bell, and the night guard will let you in. Now, food. Breakfast is served from seven thirty to nine thirty. It used to cost five pounds, but we have lowered the price, so it’s four pounds now, and it includes as much tea and coffee as you like. The kitchen is open all day if you want to cook for yourself. Next, the laundry. The machines are on the first floor, at the end of the corridor, not in the basement as the old sign says. A wash costs two pounds, but you must bring your own powder. This evening we have a film night. It’s usually at eight, but we start later tonight, at nine, because many people arrive late on Fridays. It’s a comedy, and the popcorn is free. Tomorrow morning there’s a city walk. It’s free, and our guide, Paula, knows lots of stories. We meet at the front door at ten, not at the back door near the bikes, because the bus to the old town stops outside the front. Wear comfortable shoes. Finally, a rule. We have quiet time every night. It starts at eleven, not at ten as in some hostels. After that, please speak softly in the corridors, and don’t use the kitchen. Use the common room if you want to talk. That’s all. Please ask me if you have any questions, and enjoy your stay."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Reception stays open until ___",
+              "prompt": "Guests who come back after ___ must ring the bell",
               "answer": "midnight",
-              "explanation": "Reception is open until midnight."
+              "explanation": "Reception is open until midnight; some hostels lock the doors at ten, but not this one."
             },
             {
               "id": "l3-2",
-              "prompt": "Breakfast costs ___ pounds",
+              "prompt": "Breakfast now costs ___ pounds",
               "answer": "four",
-              "accepted": [
-                "4"
-              ],
-              "explanation": "Breakfast costs four pounds."
+              "explanation": "It used to be five, but the price is lower now, four pounds."
             },
             {
               "id": "l3-3",
-              "prompt": "The laundry is on the ___ floor",
+              "prompt": "The washing machines are on the ___ floor",
               "answer": "first",
-              "accepted": [
-                "1st"
-              ],
-              "explanation": "There is a laundry on the first floor."
+              "explanation": "The old sign says basement, but the machines are on the first floor."
             },
             {
               "id": "l3-4",
-              "prompt": "Tonight's film starts at ___ o'clock",
+              "prompt": "Tonight the film begins at ___ o'clock",
               "answer": "nine",
-              "accepted": [
-                "9"
-              ],
-              "explanation": "The film is at nine in the common room."
+              "explanation": "The film is usually at eight but tonight they start later, at nine."
             },
             {
               "id": "l3-5",
-              "prompt": "Guests meet for the walk at the ___ door",
+              "prompt": "For the city walk, meet at the ___ door",
               "answer": "front",
-              "explanation": "They meet at the front door at ten o'clock."
+              "explanation": "They meet at the front door, not the back door, because the bus stops outside the front."
             },
             {
               "id": "l3-6",
-              "prompt": "Quiet time begins at ___ o'clock in the evening",
+              "prompt": "After ___ o'clock at night, people should speak softly",
               "answer": "eleven",
-              "accepted": [
-                "11"
-              ],
-              "explanation": "Quiet time begins at eleven in the evening."
+              "explanation": "Quiet time starts at eleven, not at ten as in some hostels."
             }
           ]
         },
@@ -1412,51 +1547,59 @@
             "turns": [
               {
                 "speaker": "brigid",
-                "text": "I'm talking to Ansel Hart, who manages a small seaside hotel. Ansel, how did you start in this business?"
+                "text": "Ansel, you manage the Seaview Hotel. How did you start working there?"
               },
               {
                 "speaker": "ansel",
-                "text": "I was eighteen, and I began as a cleaner in this very hotel. I wanted to earn some money for college, but I loved the place, so I stayed and learned every job."
+                "text": "Many people think I began as a cook because I love food, and I did apply to the kitchen, but it was full. They offered me a job as a cleaner, just for the summer, and I said yes. I wasn’t a receptionist. I was too shy to talk to guests then. That was twenty years ago."
               },
               {
                 "speaker": "brigid",
-                "text": "Have you ever had a difficult guest?"
+                "text": "Any difficult guests?"
               },
               {
                 "speaker": "ansel",
-                "text": "Plenty! One man complained that the sea was too noisy at night. I explained that I couldn't turn it off, and he laughed and moved to a quieter room."
+                "text": "Plenty. One man left on the second night. Not because the bed was hard, he said it was the best bed he’d ever had, and the food was fine too. He couldn’t stand the noise of the sea. He said the waves kept him awake. In a hotel on the beach! I couldn’t help laughing, but he was serious."
               },
               {
                 "speaker": "brigid",
-                "text": "What is a normal day like?"
+                "text": "What do you do first each day?"
               },
               {
                 "speaker": "ansel",
-                "text": "I get up at six and check the breakfast room first. If the tables are clean and the coffee is hot, the rest of the day is easier."
+                "text": "I walk to the breakfast room before anyone gets up and look at everything: the tables, the coffee machine, the flowers. I read my emails later, with a coffee, and I only talk to guests when I’m sure everything is perfect. Breakfast is where people form their first opinion."
               },
               {
                 "speaker": "brigid",
-                "text": "What do you like most about the job?"
+                "text": "What do you enjoy most about it?"
               },
               {
                 "speaker": "ansel",
-                "text": "Meeting people from so many countries. I have learned a few words in ten languages, and guests enjoy it when I say good morning in their language."
+                "text": "The hours aren’t short. I work ten hours a day, and I don’t have a free room, my flat is very small. But the people are what I love, from every corner of the world. I’ve learned phrases in fifteen languages, mostly \"thank you\"."
               },
               {
                 "speaker": "brigid",
-                "text": "Do people leave strange things behind?"
+                "text": "Have guests ever left strange things behind?"
               },
               {
                 "speaker": "ansel",
-                "text": "All the time. Last year, someone left a violin in a wardrobe, and we sent it back to Germany by post. The owner was so happy that he sent us a recording."
+                "text": "All the time. Cameras, of course, and one lady left her passport, but she remembered before she left town. The strangest was a violin in a wardrobe. It was a beautiful old one, and nobody knew whose it was. We phoned fifty guests. In the end, a famous musician called us."
               },
               {
                 "speaker": "brigid",
-                "text": "And what are your plans?"
+                "text": "What are your plans for the future?"
               },
               {
                 "speaker": "ansel",
-                "text": "We're opening a second hotel in the autumn, on the other side of the bay. I'm excited, but a little nervous."
+                "text": "Retire? No, not yet. My wife wants me to, but I enjoy it too much. The hotel won’t close either, we painted it last winter. What’s coming is a new hotel in the town of Port Mary, which we are going to open in October, when the leaves change colour. I’ll be very busy."
+              },
+              {
+                "speaker": "brigid",
+                "text": "Thank you, Ansel. Do you have any message for future guests?"
+              },
+              {
+                "speaker": "ansel",
+                "text": "Just come with an open mind. Tell us what you like, and we will do everything to make your holiday special."
               }
             ]
           },
@@ -1470,18 +1613,18 @@
                 "As a receptionist"
               ],
               "answer": 1,
-              "explanation": "He began as a cleaner at eighteen."
+              "explanation": "The kitchen was full and he was too shy to be a receptionist, so he took a summer job as a cleaner."
             },
             {
               "id": "l4-2",
-              "prompt": "What was unusual about the noisy guest?",
+              "prompt": "Why did one guest leave early?",
               "options": [
-                "He broke a window",
-                "He complained about the sea",
-                "He left without paying"
+                "The bed was too hard",
+                "The food was bad",
+                "The sea was too noisy"
               ],
-              "answer": 1,
-              "explanation": "The man complained that the sea was too noisy at night."
+              "answer": 2,
+              "explanation": "He said the bed was the best and the food was fine; the waves kept him awake."
             },
             {
               "id": "l4-3",
@@ -1492,29 +1635,29 @@
                 "Talk to guests"
               ],
               "answer": 0,
-              "explanation": "He checks the breakfast room first."
+              "explanation": "He walks to the breakfast room before anyone gets up; emails and guests come later."
             },
             {
               "id": "l4-4",
               "prompt": "What does Ansel enjoy most about his job?",
               "options": [
                 "Working short hours",
-                "Having a free room",
-                "Meeting people from many countries"
+                "Meeting people from many countries",
+                "Having a free room"
               ],
-              "answer": 2,
-              "explanation": "He likes meeting people from so many countries."
+              "answer": 1,
+              "explanation": "The hours are long and he has no free room; he loves the people from every corner of the world."
             },
             {
               "id": "l4-5",
               "prompt": "What did a guest leave in a wardrobe?",
               "options": [
                 "A camera",
-                "A violin",
-                "A passport"
+                "A passport",
+                "A violin"
               ],
-              "answer": 1,
-              "explanation": "Someone left a violin in a wardrobe."
+              "answer": 2,
+              "explanation": "Cameras and a passport were left too, but the strangest thing in a wardrobe was a violin."
             },
             {
               "id": "l4-6",
@@ -1525,7 +1668,7 @@
                 "The hotel will close for repairs"
               ],
               "answer": 0,
-              "explanation": "They are opening a second hotel in the autumn."
+              "explanation": "He will not retire and the hotel will not close; a new hotel opens in October."
             }
           ]
         }

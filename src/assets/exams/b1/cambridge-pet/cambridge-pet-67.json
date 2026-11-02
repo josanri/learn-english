@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why does the writer like the number seven?",
               "options": [
+                "It appears often in his life",
                 "His coach chose it for him",
                 "It is the number on his shirt",
-                "It appears often in his life"
+                "His mother was born on the seventh"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He was born on the seventh, lives at number seven and won a prize with ticket seventy-seven."
             },
             {
@@ -261,10 +262,11 @@
               "prompt": "What does the writer do before a match?",
               "options": [
                 "He talks to the other team",
-                "He follows the same routine",
-                "He practises for an hour"
+                "He asks his team to pray",
+                "He practises for an hour",
+                "He follows the same routine"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "He follows the same routine before every match."
             },
             {
@@ -272,21 +274,23 @@
               "prompt": "What happened when he forgot to tie his laces twice?",
               "options": [
                 "He hurt his foot",
-                "He was dropped from the team",
-                "His team lost heavily"
+                "His team lost heavily",
+                "The referee stopped the game",
+                "He was dropped from the team"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "They lost five-nil."
             },
             {
               "id": "r3-4",
               "prompt": "What does his coach believe?",
               "options": [
-                "Hard training makes luck",
+                "Luck comes only from charms",
                 "Routines are a waste of time",
+                "Hard training makes luck",
                 "The number seven is unlucky"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He says that good players make their own luck by training hard."
             },
             {
@@ -294,6 +298,7 @@
               "prompt": "Why does he sit far from one boy on the bus?",
               "options": [
                 "The boy never washes his shirt",
+                "The boy sings loudly all the time",
                 "The boy always talks about luck",
                 "The boy supports another team"
               ],
@@ -306,13 +311,15 @@
           "id": "reading-4",
           "number": 4,
           "title": "Strange beliefs around the world",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Superstitions are found in every country, and many of them are very old. [1] In Britain, for example, people say that walking under a ladder brings bad luck.\n\nSome beliefs are about animals. In many countries, a black cat that crosses your path is a bad sign. [2] But in the United Kingdom, a black cat is thought to bring good luck.\n\nSome are about numbers. In Italy, seventeen is thought to be unlucky. [3] Many hotels in Italy have no room with that number.\n\nOther beliefs are about food. In Japan, you should never stick your chopsticks upright in a bowl of rice. [4] It looks like something that is done at a funeral.\n\nMany people laugh at these beliefs. [5] Still, they often do them just in case, because nobody wants to take a risk.",
           "sentences": [
             "The reason is that the Roman numerals can be rearranged to mean \"I have lived\".",
             "Some of them are shared by many countries, but others are only local.",
             "Our grandparents often told us stories of this kind.",
+            "Opening an umbrella inside a house is also supposed to bring bad luck.",
+            "In Germany, a chimney sweep is considered a sign of good luck.",
             "It is rude, and that is why people avoid it.",
             "They admit that there is no proof that they work.",
             "Sailors, however, consider it a sign of good fortune."
@@ -325,7 +332,7 @@
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "H",
               "explanation": "Sailors consider the cat a good sign, which leads to the contrast in the United Kingdom."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "F",
               "explanation": "It is rude, and the next sentence says it looks like something at a funeral."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "G",
               "explanation": "They admit there is no proof, and \"Still\" in the next sentence shows the contrast."
             }
           ]
@@ -738,11 +745,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why are you carrying a horseshoe?"
+                    "text": "That’s a funny horseshoe above your door, Bianca. Is it for luck?"
                   },
                   {
                     "speaker": "f",
-                    "text": "My grandfather gave it to me. He says that it brings good luck to its owner."
+                    "text": "It is. My teacher wanted to give me one when I passed my exams, but she forgot. And my best friend promised to buy one for my birthday, but she bought a book instead."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So where is it from?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "My grandfather gave it to me when I moved in. It’s from his farm, and it’s older than me. He nailed it up himself, with the open end up, so the luck doesn’t fall out."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s lovely."
                   }
                 ]
               },
@@ -755,21 +774,13 @@
                   "Her best friend"
                 ],
                 "answer": 1,
-                "explanation": "She says that her grandfather gave it to her."
+                "explanation": "The teacher forgot and the best friend bought a book, but the horseshoe came from her grandfather’s farm."
               }
             },
             {
               "id": "l1-2-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Briar",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Bruno",
@@ -781,25 +792,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Are you scared of Friday the thirteenth?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "A little. I never travel on that day, in case something goes wrong."
+                    "text": "Some people are afraid of Friday the thirteenth, and I have to admit that I’m a bit silly about it. Of course I still go to school, because my teacher doesn’t accept excuses, and I go on eating out with my friends in the cafe, as usual. But I never travel on that day. Once I missed a flight, and another year my train broke down, and I decided it was not a coincidence. I won’t go anywhere further than the shop on the corner, and if I have a journey planned, I move it to the next day."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "What does the man avoid on that day?",
+                "prompt": "What does the speaker avoid on Friday the thirteenth?",
                 "options": [
                   "Travelling anywhere",
                   "Going to school",
                   "Eating out"
                 ],
                 "answer": 0,
-                "explanation": "He says that he never travels on that day."
+                "explanation": "He goes to school and eats lunch in the cafe as usual, but he does not go on any journey that day."
               }
             },
             {
@@ -826,24 +833,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you wear your lucky shirt to the final?"
+                    "text": "How was the match, Bree? Did you wear your lucky scarf?"
                   },
                   {
                     "speaker": "f",
-                    "text": "I did, but we still lost. I think that I will stop believing in luck."
+                    "text": "I did, and we still lost. Two-one, in the last minute."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh no. I thought you won the cup last year."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We did, but that was last season. This year we’ve drawn three games, but today there was no luck at all."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe the scarf needs washing. Or maybe you should wear the blue one next week, the one you had at the cup game."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Don’t say that! If I wash it, the luck disappears."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "What does the woman say about her team?",
+                "prompt": "What does the woman say about her team today?",
                 "options": [
                   "They lost the match",
                   "They won the cup",
                   "They drew the game"
                 ],
                 "answer": 0,
-                "explanation": "She says that they still lost."
+                "explanation": "The cup was last season and the draws were earlier in this season; today they lost two-one in the last minute."
               }
             },
             {
@@ -870,11 +893,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why do you knock on wood after you speak?"
+                    "text": "Brodie, why did you touch the table just now?"
                   },
                   {
                     "speaker": "m",
-                    "text": "It is a habit. I say that I will pass, and then I knock so that nothing spoils it."
+                    "text": "I knocked on wood. I said that my holiday has been perfect so far, and I don’t want to spoil it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it to make a noise, like to frighten the bad luck away?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Some people say that, but I don’t think noise has anything to do with it. For me, it’s so nothing goes wrong. My friends sometimes do it with me, but that’s just for fun."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I always say it as a joke."
                   }
                 ]
               },
@@ -883,25 +918,17 @@
                 "prompt": "Why does the man knock on wood?",
                 "options": [
                   "To make a loud noise",
-                  "So that nothing spoils it",
+                  "So that nothing spoils his luck",
                   "To call his friends over"
                 ],
                 "answer": 1,
-                "explanation": "He knocks so that nothing spoils it."
+                "explanation": "He says noise has nothing to do with it and his friends only join for fun; he does it so that nothing spoils his holiday."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Bram",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Bianca",
@@ -913,12 +940,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Where did you find that bracelet?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "At a market in Turkey. The man said that the blue eye protects the person who wears it."
+                    "text": "Welcome to our little shop. Many visitors ask about the blue eye, so let me explain. People in many countries believe that it will protect whoever wears it from envy and bad luck. Some tourists think it makes the owner rich, and they buy three. Others are told that it helps babies to sleep, which is a pretty idea, but that’s not what it is for. You can find it in rings, on keys, and even on the walls of houses. The small ones start at two pounds. Take one for your car, and your journeys will be safer."
                   }
                 ]
               },
@@ -931,7 +954,7 @@
                   "Protects the wearer"
                 ],
                 "answer": 2,
-                "explanation": "The man said it protects the person who wears it."
+                "explanation": "The shop assistant says it keeps the wearer safe; the money and the sleep are things that tourists have heard."
               }
             },
             {
@@ -958,38 +981,46 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Do you have a lucky number for the lottery?"
+                    "text": "Bruno, you bought a lottery ticket! Did you win the big prize?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Nine. I choose it every week, but I have never won more than ten pounds."
+                    "text": "Ha! Not even close. For a moment I thought I’d won a car, but I was looking at the wrong numbers."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So, nothing?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Actually I did win a small prize. The website says ten pounds at the very most. It depends on the extra number, maybe only five."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Still, better than nothing. Let’s have a coffee."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great, but you pay!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "How much has the man won?",
+                "prompt": "How much will the man get from his lottery ticket?",
                 "options": [
                   "Ten pounds at most",
                   "A very large prize",
                   "Nothing at all"
                 ],
                 "answer": 0,
-                "explanation": "He says that he has never won more than ten pounds."
+                "explanation": "The big prize was a mistake with the numbers, but he did win a small prize of ten pounds at most."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Ivo",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Bree",
@@ -1001,12 +1032,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "You look worried. What is the matter?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I broke a mirror this morning. My mother says that it means seven years of bad luck."
+                    "text": "Hi Ivo, it’s Bree. I have bad news, and I’m laughing about it. I was cleaning your flat and I nearly broke the window, but I held the ladder in time. Then I dropped a plate in the kitchen, but it was an old one with a crack, so I don’t think you will care. The real disaster is the mirror in the hall. It fell down and broke into a hundred pieces. Seven years of bad luck, I know! You can say you were right when you told me to be careful. I’ll buy you a new one on Saturday. Call me back, okay?"
                   }
                 ]
               },
@@ -1019,7 +1046,7 @@
                   "A plate"
                 ],
                 "answer": 1,
-                "explanation": "She says that she broke a mirror this morning."
+                "explanation": "She nearly broke the window and dropped a cracked plate, but the real disaster was the mirror in the hall."
               }
             }
           ]
@@ -1055,24 +1082,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to my tent. Please sit down and give me your hand."
+                    "text": "Look at that tent, Brodie. Shall we go in? She says she can see the future."
                   },
                   {
                     "speaker": "m",
-                    "text": "Will you tell me something good about my future?"
+                    "text": "Maybe it’s fun. It costs ten pounds, which is not too bad."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do you believe in it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not really, but I’m curious. It’s like reading a horoscope. I don’t take it seriously, though sometimes it can be true."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I think she says the same to everybody."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Probably. Let’s go in anyway, for a laugh."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where are the speakers?",
+                "prompt": "What does Brodie think about fortune telling?",
                 "options": [
-                  "In a hotel lobby",
-                  "In a doctor's office",
-                  "In a fortune teller's tent"
+                  "It is a way to know the future",
+                  "It is just a bit of fun",
+                  "It is too expensive"
                 ],
-                "answer": 2,
-                "explanation": "She welcomes him to her tent and asks for his hand, to tell his future."
+                "answer": 1,
+                "explanation": "He does not take it seriously and the price is fine; he wants to go in for a laugh."
               }
             },
             {
@@ -1099,24 +1142,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am sure that I will fail the test. I always do badly."
+                    "text": "My exam is tomorrow, so I’m packing my lucky pen. I used it in every exam last year."
                   },
                   {
                     "speaker": "f",
-                    "text": "That is not true! You have worked so hard, and you will do well."
+                    "text": "Bruno, a pen can’t answer the questions for you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I know, but I feel better with it. Do you think I should buy a new one?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, keep the old one if it makes you feel calm. But you’ve studied every night this week, and that is what matters. The pen won’t change anything."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re right. I’ll still take it, just in case."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Briar think about Bruno's lucky pen?",
                 "options": [
-                  "Asking for all his notes",
-                  "Telling him he will do well",
-                  "Telling him a big secret"
+                  "It will not change the result",
+                  "It will bring him a good mark",
+                  "It should be replaced by a new one"
                 ],
-                "answer": 1,
-                "explanation": "She tells him that he has worked hard and will do well."
+                "answer": 0,
+                "explanation": "Briar says that he has studied every night and that the pen will not change anything, though he can keep it to feel calm."
               }
             },
             {
@@ -1143,24 +1198,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "You have seen a magpie! Say hello to it, or it will bring bad luck."
+                    "text": "I have an idea for Saturday. A lucky dance before the match, all the team in a circle."
                   },
                   {
                     "speaker": "m",
-                    "text": "That is silly. I will not say anything to a bird."
+                    "text": "In front of the other team? Everyone will laugh at us."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let them. It worked in my old club, we didn’t lose once."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I doubt that it was the dance that helped you. But you know what, I like it. It makes us a team. I’m really keen to teach the new boys."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, and I’ll start tonight. Where do we meet?"
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel about the idea?",
+                "prompt": "How does Bram feel about Bianca's idea of a lucky dance?",
                 "options": [
-                  "He thinks it is silly",
-                  "He is afraid of birds",
-                  "He wants to learn more"
+                  "Worried about looking silly",
+                  "Sure it will not work",
+                  "Keen to try it"
                 ],
-                "answer": 0,
-                "explanation": "He says that it is silly."
+                "answer": 2,
+                "explanation": "He mentions the laughing and doubts the dance, but he likes it and cannot wait to start."
               }
             },
             {
@@ -1187,24 +1258,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, how much is the little silver elephant?"
+                    "text": "Excuse me, how much is this silver elephant?"
                   },
                   {
                     "speaker": "f",
-                    "text": "It is eight pounds. In my country, elephants bring good fortune to the home."
+                    "text": "Twenty pounds. In many places they say an elephant with its trunk up brings good luck."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I like it. I was looking at the ring too, but I never wear jewellery. I need a map of the town as well, but I can get that online."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The elephant is a good choice. Shall I wrap it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, please. It’s a present for my sister."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the man doing?",
+                "prompt": "What does Ivo decide to buy?",
                 "options": [
-                  "Looking for a good map",
-                  "Trying on a silver ring",
-                  "Asking about the silver elephant"
+                  "A silver ring",
+                  "A silver elephant",
+                  "A map of the town"
                 ],
-                "answer": 2,
-                "explanation": "He asks how much the elephant is."
+                "answer": 1,
+                "explanation": "He never wears jewellery and can find a map online, so he buys the elephant."
               }
             },
             {
@@ -1231,24 +1314,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Thank you for the ticket. I have never been to a fair like this one."
+                    "text": "The big wheel is closed because of the wind. Shall we try the other rides?"
                   },
                   {
                     "speaker": "m",
-                    "text": "You are welcome. Come on, let us try the rides before it gets dark."
+                    "text": "They’re all closed. The man says it’s too dangerous."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then let’s eat. I saw a pizza place near the entrance."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I walked past, and there’s a queue out of the door. It would take an hour."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I suppose we should go home. The next bus is in ten minutes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Okay. We’ll come back tomorrow."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What will they do next?",
+                "prompt": "What do Bryn and Brodie decide to do next?",
                 "options": [
                   "Go on some rides",
                   "Have a meal",
                   "Take a bus home"
                 ],
-                "answer": 0,
-                "explanation": "He says that they should try the rides before it gets dark."
+                "answer": 2,
+                "explanation": "The rides are closed and the restaurant has a long queue, so they agree to take the bus."
               }
             },
             {
@@ -1274,25 +1373,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Bruno, are you all right? You look upset."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Where is my lucky hat? I cannot go to the match without it!"
+                    "text": "I’ve lost my lucky hat. I had it on the bus this morning, and now it’s gone."
                   },
                   {
                     "speaker": "f",
-                    "text": "Calm down. It was in the kitchen, and I put it on your bed."
+                    "text": "Maybe somebody took it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I’m sure I left it on the seat. I’m so annoyed with myself, I never take it off."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s only a hat."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not to me. I’ve worn it for ten years, and it was a present from my grandfather. Every match, every exam, every trip."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "How does Bruno feel about losing his hat?",
                 "options": [
-                  "He has lost his ticket",
-                  "He is late for the bus",
-                  "He cannot find his hat"
+                  "Annoyed with himself",
+                  "Happy to be free of it",
+                  "Sure that somebody took it"
                 ],
-                "answer": 2,
-                "explanation": "He cannot find his lucky hat."
+                "answer": 0,
+                "explanation": "He is sure he left it himself, so he blames himself, and it is not just a hat to him."
               }
             }
           ]
@@ -1317,28 +1432,28 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Good afternoon. My name is Bree, and I study the history of beliefs. Today I would like to tell you about a few famous beliefs. First, the number thirteen. In many countries, buildings have no thirteenth floor. Some airplanes have no row thirteen, either. This fear is so common that it has a name. Second, the saying that a broken mirror brings seven years of bad luck. This idea comes from the Romans, who thought that the mirror held a part of your soul. Third, the custom of throwing salt over the left shoulder. People did this to send away the devil, because salt was precious. And finally, the belief that you should not open an umbrella indoors. It started in the eighteenth century, when umbrellas were large and could hurt people in small rooms. As you can see, many beliefs began as common sense. Thank you for listening."
+                "text": "Good afternoon. My name is Bree, and I study the history of beliefs. Today I would like to tell you about a few famous ones and where they come from. First, the number thirteen. Many people are afraid of it, and you can see this in tall buildings. In lots of hotels and offices, there is no thirteenth floor. They go from twelve to fourteen. Some buildings also skip the fourth floor, but that is in other countries. Next, mirrors. We all know the saying that if you break a mirror, you have seven years of bad luck. This idea is very old. It comes from the Romans, who believed that a mirror held part of your soul, and that life renewed itself every seven years. Some books say it was the Greeks, but the number seven is a Roman one. Now, salt. In the past, salt was expensive, so spilling it was a disaster. To stop the bad luck, people threw a pinch of it over the left shoulder, because they thought the devil stood there. Not the right shoulder, that is where the good angel stands. Then, umbrellas. Opening one indoors is unlucky. This belief began in the eighteenth century, when umbrellas had metal parts that could hurt someone in a small room. Some people think it is much older, from ancient Egypt, but the modern story is from the seventeen hundreds. Finally, I think many beliefs began as common sense. Do not walk under a ladder, because something may fall on you. Do not break mirrors, because the glass cuts you. It is not magic at all, just a warning. Of course, some people say it is about religion, but I prefer the practical explanation. Thank you for listening, and now I’m happy to answer your questions."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Bree studies the history of ___",
+              "prompt": "Bree studies the past of ___",
               "answer": "beliefs",
               "accepted": [
                 "belief"
               ],
-              "explanation": "I study the history of beliefs."
+              "explanation": "She says she studies the history of beliefs."
             },
             {
               "id": "l3-2",
-              "prompt": "Many buildings have no ___ floor",
+              "prompt": "Many tall buildings leave out the ___ floor",
               "answer": "thirteenth",
               "accepted": [
                 "13th"
               ],
-              "explanation": "Buildings have no thirteenth floor."
+              "explanation": "In many hotels and offices there is no thirteenth floor; the fourth floor is skipped only in other countries."
             },
             {
               "id": "l3-3",
@@ -1347,14 +1462,14 @@
               "accepted": [
                 "roman"
               ],
-              "explanation": "This idea comes from the Romans."
+              "explanation": "It comes from the Romans; some books say the Greeks, but seven is a Roman number."
             },
             {
               "id": "l3-4",
-              "prompt": "People threw ___ over the left shoulder",
+              "prompt": "People threw a pinch of ___ over their left shoulder",
               "answer": "salt",
               "accepted": [],
-              "explanation": "The custom of throwing salt over the left shoulder."
+              "explanation": "They threw salt over the left shoulder to stop the bad luck."
             },
             {
               "id": "l3-5",
@@ -1363,14 +1478,14 @@
               "accepted": [
                 "18th"
               ],
-              "explanation": "It started in the eighteenth century."
+              "explanation": "It began in the eighteenth century, not in ancient Egypt."
             },
             {
               "id": "l3-6",
               "prompt": "Many beliefs began as ___ sense",
               "answer": "common",
               "accepted": [],
-              "explanation": "Many beliefs began as common sense."
+              "explanation": "Bree thinks that many beliefs began as common sense, not magic or religion."
             }
           ]
         },
@@ -1402,51 +1517,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Bram, many sports players have lucky habits. What are yours?"
+                "text": "Bram, you’re a goalkeeper with many habits. What do you do before a match?"
               },
               {
                 "speaker": "h",
-                "text": "I always put on my left glove first, and I never step on the white line when I walk onto the pitch."
+                "text": "Well, the list is long. People think I eat a banana and an apple, but I have a plain sandwich at twelve. Then I put on my left glove first, always, before the right one. And I don’t phone my father before the game, though he calls me afterwards. The left glove is the rule."
               },
               {
                 "speaker": "i",
-                "text": "Where did these habits come from?"
+                "text": "Why did you start these habits?"
               },
               {
                 "speaker": "h",
-                "text": "From my first big match. I did these things by accident, and we won. Since then, I have never changed."
+                "text": "My father didn’t tell me to do them, and I never copied a famous player. It was my first big match, when I was fifteen. I put on the left glove first by accident, and I played the best game of my life. So I did it again the next week, and the next. I’m afraid it became a habit."
               },
               {
                 "speaker": "i",
-                "text": "Have you ever forgotten to do them?"
+                "text": "What happened when you forgot one?"
               },
               {
                 "speaker": "h",
-                "text": "Once, in a cup match. I was so worried that I played badly, though in the end the team still won on penalties."
+                "text": "Once, I put on the right glove first by mistake. I realised on the pitch, and I felt terrible. I played badly, I let in a silly goal, but my team scored three, so we won. I wasn’t sent off and it wasn’t a final, thank goodness. Afterwards I thought it was just a coincidence."
               },
               {
                 "speaker": "i",
-                "text": "Does your team have any shared habits?"
+                "text": "Does the whole team have a ritual?"
               },
               {
                 "speaker": "h",
-                "text": "Yes, we all touch the same old ball before we leave the dressing room. It was the ball from our first win as a team."
+                "text": "Yes, and it’s the best part. No matching socks, we’re not a circus, and we don’t sing, nobody can sing. Before every game the players touch an old ball that belonged to our first coach. It’s in a glass box in the changing room. We touch it one by one on the way out."
               },
               {
                 "speaker": "i",
-                "text": "Do you think that luck is more important than skill?"
+                "text": "Do you believe that luck matters more than skill?"
               },
               {
                 "speaker": "h",
-                "text": "No. Skill and training matter much more. But a good-luck habit helps me to feel calm, and that is useful too."
+                "text": "It’s a good question. Luck is part of the game, a ball can hit the post and go in or out. But training is what wins matches. I train six days a week, and I’d say that’s what counts. I wouldn’t say they’re equal, skill is more important."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to young players?"
+                "text": "Why is a good friend in the team worth more than any charm?"
               },
               {
                 "speaker": "h",
-                "text": "Enjoy the game, work hard, and do not worry about small things. A good friend in the team is worth more than any charm."
+                "text": "Not money, and not new boots, I’ve had expensive ones that hurt my feet. A good friend, someone who tells you the truth after a bad game, is worth more than all the lucky charms in the world. When I’ve made a mistake, a friend makes me laugh and helps me forget it, and that is better than any glove."
               }
             ]
           },
@@ -1457,65 +1572,65 @@
               "options": [
                 "He eats a banana and an apple",
                 "He puts on his left glove first",
-                "He calls his father on the phone"
+                "He phones his father"
               ],
               "answer": 1,
-              "explanation": "He always puts on his left glove first."
+              "explanation": "He has a plain sandwich, not fruit; he does not phone his father before the game; the left glove first is the rule."
             },
             {
               "id": "l4-2",
-              "prompt": "Where did the habits come from?",
+              "prompt": "Why did Bram start his habits?",
               "options": [
-                "From his father's advice",
-                "From his first big match",
-                "From a famous player"
+                "His father told him to do them",
+                "He played very well in his first big match",
+                "He copied a famous player"
               ],
               "answer": 1,
-              "explanation": "He did these things by accident in his first big match, and they won."
+              "explanation": "His father did not tell him and he did not copy a player; he played the best game of his life after the left glove by accident."
             },
             {
               "id": "l4-3",
-              "prompt": "What happened when he forgot one of them?",
+              "prompt": "What happened when he forgot one of the habits?",
               "options": [
                 "He played badly but the team won",
                 "He was sent off the pitch",
                 "He lost the final"
               ],
               "answer": 0,
-              "explanation": "He played badly, though the team still won on penalties."
+              "explanation": "He played badly and let in a silly goal, but the team scored three and won; it was not a final."
             },
             {
               "id": "l4-4",
-              "prompt": "What does the whole team do?",
+              "prompt": "What does the whole team do before a game?",
               "options": [
                 "They wear matching socks",
-                "They sing before the game",
+                "They sing together",
                 "They touch an old ball"
               ],
               "answer": 2,
-              "explanation": "They all touch the same old ball before they leave the dressing room."
+              "explanation": "There are no matching socks and nobody sings; they touch the old ball of their first coach."
             },
             {
               "id": "l4-5",
-              "prompt": "What does he say about luck and skill?",
+              "prompt": "What does Bram say about luck and skill?",
               "options": [
                 "Luck is the most important thing",
                 "Skill and training matter more",
-                "Both are of equal importance"
+                "Both are equally important"
               ],
               "answer": 1,
-              "explanation": "Skill and training matter much more."
+              "explanation": "Luck is part of the game, but training wins matches and he does not say they are equal."
             },
             {
               "id": "l4-6",
-              "prompt": "What is worth more than any charm?",
+              "prompt": "Why is a good friend in the team worth more than any charm?",
               "options": [
-                "A good friend in the team",
-                "A lot of money",
-                "A new pair of boots"
+                "He tells you the truth and helps you forget mistakes",
+                "He can lend you money",
+                "He brings you new boots"
               ],
               "answer": 0,
-              "explanation": "A good friend in the team is worth more than any charm."
+              "explanation": "Money and new boots are not what he means; a friend tells the truth after a bad game and helps him forget his mistakes."
             }
           ]
         }

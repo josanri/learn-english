@@ -74,7 +74,8 @@ const writingTasks = (part) => (part.task ? [part.task] : (part.options ?? []));
 /**
  * Declarative shape per board and skill.
  * part spec: types (allowed), items (exact count), itemsMin, options (exact option count of every question),
- * words [min, max] (warning), texts (exact number of texts), sentences (exact), people.
+ * words [min, max] (warning), texts (exact number of texts), sentences (exact), people,
+ * scriptWords [min, max] (warning, words of each listening recording).
  */
 export const BOARD_SPECS = {
   'cambridge-pet': {
@@ -83,8 +84,8 @@ export const BOARD_SPECS = {
       reading: [
         { types: T('notices'), items: 5, options: 3 },
         { types: T('matching'), items: 5, texts: 8, distinctKeys: true },
-        { types: T('multiple-choice'), items: 5, options: 3, words: [140, 400] },
-        { types: T('gapped-text'), items: 5, sentences: 6, words: [100, 350], distinctKeys: true },
+        { types: T('multiple-choice'), items: 5, options: 4, words: [140, 400] },
+        { types: T('gapped-text'), items: 5, sentences: 8, words: [100, 350], distinctKeys: true },
         { types: T('multiple-choice-cloze'), items: 6, options: 4, words: [60, 250] },
         { types: T('open-cloze'), items: 6, words: [60, 250] },
       ],
@@ -93,10 +94,11 @@ export const BOARD_SPECS = {
         { types: T('choice-task'), options: 2, kinds: ['article', 'story'] },
       ],
       listening: [
-        { types: T('short-dialogues'), items: 7, options: 3 },
-        { types: T('gist-dialogues'), items: 6, options: 3 },
-        { types: T('note-completion'), items: 6 },
-        { types: T('listening-interview'), items: 6, options: 3 },
+        // Script lengths of the 2022 Cambridge sample: 85-100, 75-100, about 340 and about 470 words.
+        { types: T('short-dialogues'), items: 7, options: 3, scriptWords: [70, 130] },
+        { types: T('gist-dialogues'), items: 6, options: 3, scriptWords: [70, 130] },
+        { types: T('note-completion'), items: 6, scriptWords: [260, 400] },
+        { types: T('listening-interview'), items: 6, options: 3, scriptWords: [380, 560] },
       ],
       speaking: [
         { types: T('interview'), itemsMin: 3 },
@@ -294,6 +296,16 @@ export function checkBoardRules(exam) {
         const w = partWords(part);
         if (w < ps.words[0] || w > ps.words[1])
           warn(`${where} has ${w} words; aim for ${ps.words[0]}-${ps.words[1]}`);
+      }
+      if (ps.scriptWords) {
+        const [min, max] = ps.scriptWords;
+        const recordings = part.clips
+          ? part.clips.map((c) => [c.id, c.recording])
+          : [[part.id, part.recording]];
+        for (const [id, r] of recordings) {
+          const w = wordCount((r?.turns ?? []).map((t) => t.text).join(' '));
+          if (w < min || w > max) warn(`${id}: the script has ${w} words; aim for ${min}-${max}`);
+        }
       }
       if (ps.kinds) {
         const kinds = (part.options ?? [])

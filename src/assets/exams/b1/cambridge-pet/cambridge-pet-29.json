@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why did the writer try getting up at five?",
               "options": [
+                "To finish a book before winter",
+                "To test what people told her",
                 "Because her sister asked her to",
-                "Because her job began very early",
-                "To test what people told her"
+                "Because her job began very early"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "People told her that early hours are the best time to work, and she wanted to see if it was true."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "She turned off her alarm each day",
                 "She could not find her alarm clock",
-                "She was ill for several days"
+                "She was ill for several days",
+                "Her neighbours woke her too early"
               ],
               "answer": 0,
               "explanation": "She turned off the alarm every morning and went back to sleep."
@@ -271,11 +273,12 @@
               "id": "r3-3",
               "prompt": "How did she solve the problem?",
               "options": [
-                "By moving her alarm away",
                 "By going to bed much earlier",
-                "By using an alarm on her phone"
+                "By using an alarm on her phone",
+                "By asking her sister to wake her",
+                "By moving her alarm away"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "Her sister told her to put the alarm on the other side of the room."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "She could do her shopping",
                 "She could meet her neighbours",
-                "It was calm and silent"
+                "It was calm and silent",
+                "She could talk to her friends"
               ],
               "answer": 2,
               "explanation": "The world was silent, and nobody needed anything from her."
@@ -295,7 +299,8 @@
               "options": [
                 "Her sister got up later than she did",
                 "She was too tired at night",
-                "The mornings were too dark to run"
+                "The mornings were too dark to run",
+                "Her neighbours complained of the noise"
               ],
               "answer": 1,
               "explanation": "She was too tired to stay awake after nine, so she stopped seeing her friends."
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "The night bus driver",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "At eleven o'clock at night, when most people are going to bed, Mina Torres is starting work. She drives the number 24 night bus through the city, and she has been doing it for eight years. [1] Her family says that she lives 'upside down', but she says she loves it.\n\nMina sleeps from nine in the morning until four in the afternoon. [2] She puts thick curtains on her bedroom window and turns off her phone, so that nothing can wake her. After she gets up, she cooks dinner for her children, who are just coming home from school.\n\nHer passengers are very different from those in the day. [3] Some are nurses going home after a long shift, and others are students who have missed the last train. 'A few of them fall asleep and miss their stop,' she laughs. [4] She always checks the seats at the end of the line before she leaves.\n\nThe worst part is winter, when the weather is cold and the streets are empty. [5] But Mina says that she would not change her job. 'At night, the city belongs to us,' she says.",
           "sentences": [
-            "Sometimes the heating on the bus breaks, and everyone feels cold until the end of the line.",
-            "There are far fewer of them, and they are usually tired and quiet.",
-            "She learned to drive when she was twenty, in her father's old truck.",
-            "It is not an easy timetable, because she finishes at seven in the morning.",
+            "Her children are fast asleep when she leaves for work.",
             "Others forget things, such as umbrellas, bags and sometimes even shoes.",
-            "Getting enough sleep in the daytime is difficult, so she has learned a few tricks."
+            "Getting enough sleep in the daytime is difficult, so she has learned a few tricks.",
+            "It is not an easy timetable, because she finishes at seven in the morning.",
+            "Sometimes the heating on the bus breaks, and everyone feels cold until the end of the line.",
+            "Few buses run after midnight in small towns.",
+            "There are far fewer of them, and they are usually tired and quiet.",
+            "She learned to drive when she was twenty, in her father's old truck."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "C",
               "explanation": "The sentence says that daytime sleep is difficult, and the next sentence describes her tricks with curtains and her phone."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "G",
               "explanation": "The sentence says that night passengers are fewer and quieter, and the next sentence gives examples of who they are."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "B",
               "explanation": "The sentence says that other passengers forget things, which is why she checks the seats at the end of the line."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "E",
               "explanation": "The sentence gives another winter problem, and the next sentence says that Mina would still not change her job."
             }
           ]
@@ -745,15 +752,27 @@
                 "turns": [
                   {
                     "speaker": "estelle",
-                    "text": "I have an early train tomorrow, at seven."
+                    "text": "Dane, I have to set my alarm. My train to Leeds leaves at eight."
                   },
                   {
                     "speaker": "dane",
-                    "text": "Then you should get up at five."
+                    "text": "So you’ll get up at five, like last time?"
                   },
                   {
                     "speaker": "estelle",
-                    "text": "No, six o'clock is fine. The station is only five minutes away. I'll set my alarm for six."
+                    "text": "Last time I was so tired that I nearly fell asleep on the platform. The station is only twenty minutes away, and I can have toast on the train, so I don’t need all that time."
+                  },
+                  {
+                    "speaker": "dane",
+                    "text": "Then shall I put in seven? That gives you an hour."
+                  },
+                  {
+                    "speaker": "estelle",
+                    "text": "Seven o’clock is too late. I still have to pack my laptop and find my ticket. I want an hour before that."
+                  },
+                  {
+                    "speaker": "dane",
+                    "text": "OK, I’ll set it on your phone. Don’t blame me if you hate it!"
                   }
                 ]
               },
@@ -766,7 +785,7 @@
                   "Seven o'clock"
                 ],
                 "answer": 1,
-                "explanation": "She says that six is fine and that she will set her alarm for six."
+                "explanation": "Five was the time of last time and seven was rejected as too late; she wants one hour before seven."
               }
             },
             {
@@ -793,11 +812,23 @@
                 "turns": [
                   {
                     "speaker": "isaura",
-                    "text": "Do you read in bed, Wallace?"
+                    "text": "Wallace, you look tired. Do you still watch films in bed?"
                   },
                   {
                     "speaker": "wallace",
-                    "text": "I used to, but I always fell asleep after two pages. Now I listen to the radio."
+                    "text": "I used to, on my phone, but the screen kept me awake, so I stopped. Then I tried a book. I read three pages and fell asleep with the light on, which is not very comfortable, so that idea is out too."
+                  },
+                  {
+                    "speaker": "isaura",
+                    "text": "So what do you do now?"
+                  },
+                  {
+                    "speaker": "wallace",
+                    "text": "My grandfather had a little radio next to his bed, so I bought one. I put on a quiet talking programme, and the voices make me sleepy. Ten minutes and I’m gone."
+                  },
+                  {
+                    "speaker": "isaura",
+                    "text": "I should try that. My phone is always in my hand."
                   }
                 ]
               },
@@ -810,7 +841,7 @@
                   "He watches a film on his phone"
                 ],
                 "answer": 0,
-                "explanation": "He says that he now listens to the radio."
+                "explanation": "He stopped watching films because the screen kept him awake, a book did not work, and now he puts on a quiet programme on a radio."
               }
             },
             {
@@ -824,24 +855,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "alton",
-                    "name": "Alton",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "brigitta",
-                    "text": "Excuse me, I live below you. Your music was very loud at two o'clock this morning."
-                  },
-                  {
-                    "speaker": "alton",
-                    "text": "Oh, I'm so sorry. I had a party. It won't happen again."
+                    "text": "Hello, this is Brigitta from flat twelve, leaving a message for the building manager. I’m calling about the problems on our floor. The lift was out of order last week, but it has been repaired and works well now. The stairs are not very clean either, although the cleaner told me she comes on Mondays, so I’ll wait for that. But what really bothers me is what happens after midnight. Somebody in the flat below plays music so loudly that my bed shakes, and I have to get up at six for work. I’ve asked them twice, nicely, to turn it down. Please speak to them this week. Call me back on my mobile. Thanks very much."
                   }
                 ]
               },
@@ -854,7 +873,7 @@
                   "Dirty stairs and corridors"
                 ],
                 "answer": 0,
-                "explanation": "She says that his music was very loud at two in the morning."
+                "explanation": "The lift has been repaired and the cleaner is coming on Monday, but what really bothers her is the music after midnight."
               }
             },
             {
@@ -881,19 +900,23 @@
                 "turns": [
                   {
                     "speaker": "cassia",
-                    "text": "Do you eat breakfast at home?"
+                    "text": "Benedict, do you always have breakfast at your desk? I saw you with a sandwich yesterday."
                   },
                   {
                     "speaker": "benedict",
-                    "text": "No, I never have time. I buy a sandwich at the station and eat it on the train."
+                    "text": "That was a one-off. Yesterday I had a meeting at eight, so I ate at the office. Normally I’d love to eat at home, but my kids take forever, and I have to leave at seven to catch my train."
                   },
                   {
                     "speaker": "cassia",
-                    "text": "That's not very healthy!"
+                    "text": "So you don’t have time at all?"
                   },
                   {
                     "speaker": "benedict",
-                    "text": "I know, but at least it's quick."
+                    "text": "I do, actually. I buy a coffee and a croissant at the station and eat them in my seat, looking out of the window. It’s the quietest part of my day."
+                  },
+                  {
+                    "speaker": "cassia",
+                    "text": "That sounds nice. I just have a quick banana in the car."
                   }
                 ]
               },
@@ -906,7 +929,7 @@
                   "At home"
                 ],
                 "answer": 1,
-                "explanation": "He eats a sandwich on the train."
+                "explanation": "Yesterday was a one-off at the office and he cannot stay at home, but he eats his croissant in his seat after he catches the train."
               }
             },
             {
@@ -933,19 +956,23 @@
                 "turns": [
                   {
                     "speaker": "madge",
-                    "text": "You look tired, Rhett."
+                    "text": "You look terrible, Rhett. Did you sleep well?"
                   },
                   {
                     "speaker": "rhett",
-                    "text": "I only slept four hours. I had to finish a report."
+                    "text": "Not really. I went to bed at eleven, which is early for me, and I thought I’d get six hours at least."
                   },
                   {
                     "speaker": "madge",
-                    "text": "You should go to bed early tonight."
+                    "text": "So what happened?"
                   },
                   {
                     "speaker": "rhett",
-                    "text": "I will. I'll sleep for ten hours if I can!"
+                    "text": "The neighbours’ baby cried from midnight. I finally fell asleep around two, and my alarm went off at six. At the weekend I usually sleep for ten hours, so this is a big shock."
+                  },
+                  {
+                    "speaker": "madge",
+                    "text": "Poor you. Have a strong tea."
                   }
                 ]
               },
@@ -958,7 +985,7 @@
                   "Four hours"
                 ],
                 "answer": 2,
-                "explanation": "He says he only slept four hours."
+                "explanation": "He hoped for six hours and sleeps ten at the weekend, but he fell asleep at two and woke up at six."
               }
             },
             {
@@ -984,12 +1011,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "dermot",
+                    "text": "Nessa, why do you go to work at five? Surely that’s too early."
+                  },
+                  {
                     "speaker": "nessa",
-                    "text": "I like getting up early on Sundays. The streets are quiet, and I can go for a walk."
+                    "text": "I thought so too at first. The bus tickets are cheaper before six, but that isn’t why I do it. I’d happily pay more. And you can smell the fresh bread from the bakery near the market, though I never buy anything at that time because the shop isn’t open."
                   },
                   {
                     "speaker": "dermot",
-                    "text": "Not me! Sunday is for sleeping."
+                    "text": "So what’s the attraction?"
+                  },
+                  {
+                    "speaker": "nessa",
+                    "text": "Nobody is around. No cars, no crowds, just me and a few birds. The streets are so quiet that it feels as if the whole city belongs to me, and I can think in peace."
+                  },
+                  {
+                    "speaker": "dermot",
+                    "text": "I prefer my bed, honestly."
                   }
                 ]
               },
@@ -1002,7 +1041,7 @@
                   "The fresh bread"
                 ],
                 "answer": 0,
-                "explanation": "She says that the streets are quiet and she can go for a walk."
+                "explanation": "The cheaper tickets are not her reason and the bakery is closed; she enjoys the calm, empty streets."
               }
             },
             {
@@ -1029,19 +1068,27 @@
                 "turns": [
                   {
                     "speaker": "pauline",
-                    "text": "Shall we go to the cinema tonight?"
+                    "text": "Kenny, what’s the plan for tonight? The film starts at nine."
                   },
                   {
                     "speaker": "kenny",
-                    "text": "I'd love to, but I've got swimming at six."
+                    "text": "I’ll book the tickets online, but I’ll do that on the bus later."
                   },
                   {
                     "speaker": "pauline",
-                    "text": "The film starts at eight, so you'll have time."
+                    "text": "Shall we eat first?"
                   },
                   {
                     "speaker": "kenny",
-                    "text": "OK, I'll come after the swim."
+                    "text": "There isn’t time for a proper dinner. We’ll grab a pizza after the film. Before anything else, I’ve promised to take my little sister to the pool. She has a swimming lesson at six, and I’m her lift."
+                  },
+                  {
+                    "speaker": "pauline",
+                    "text": "Oh, OK. Then I’ll meet you at the cinema."
+                  },
+                  {
+                    "speaker": "kenny",
+                    "text": "Perfect. I’ll see you at quarter to nine."
                   }
                 ]
               },
@@ -1054,7 +1101,7 @@
                   "Buy tickets"
                 ],
                 "answer": 1,
-                "explanation": "He has swimming at six and will come to the cinema afterwards."
+                "explanation": "Tickets will be booked later and dinner will be after the film; before everything he takes his sister to her swimming lesson."
               }
             }
           ]
@@ -1089,37 +1136,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "hilda",
+                    "text": "I’m thinking of joining the six o’clock gym class. Want to come?"
+                  },
+                  {
                     "speaker": "pascal",
-                    "text": "I'd like an appointment, please. I haven't been sleeping well for two weeks."
+                    "text": "Six in the morning? No way."
                   },
                   {
                     "speaker": "hilda",
-                    "text": "I can offer you Thursday at four."
+                    "text": "It’s only an hour, and the teacher is great."
                   },
                   {
                     "speaker": "pascal",
-                    "text": "I work until five. Do you have anything later?"
+                    "text": "I’m sure, and the price is fine. I’m fit enough, so I’m not worried about the exercises either. But I know myself. I’d be tired and half asleep at my desk by ten, and I have an important report to finish this week."
                   },
                   {
                     "speaker": "hilda",
-                    "text": "The doctor has a free time at half past five."
+                    "text": "What about the lunchtime class, then?"
                   },
                   {
                     "speaker": "pascal",
-                    "text": "Perfect, thank you."
+                    "text": "Better, but lunch is when I catch up with my emails. Honestly, evenings suit me more."
+                  },
+                  {
+                    "speaker": "hilda",
+                    "text": "The evening class is full, though."
+                  },
+                  {
+                    "speaker": "pascal",
+                    "text": "Then I’ll wait."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What problem does the man have with the first time offered?",
+                "prompt": "What worries Pascal about the early class?",
                 "options": [
-                  "He has a doctor's test",
-                  "He is on holiday",
-                  "He is still at work"
+                  "The price of the lessons",
+                  "Feeling tired at work",
+                  "Finding the exercises too difficult"
                 ],
-                "answer": 2,
-                "explanation": "He says that he works until five, so four o'clock is too early."
+                "answer": 1,
+                "explanation": "Pascal says that the price is fine and the exercises are no problem, but he would be half asleep at his desk with an important report to finish."
               }
             },
             {
@@ -1146,28 +1205,48 @@
                 "turns": [
                   {
                     "speaker": "tessie",
-                    "text": "My new shift starts at six in the morning."
+                    "text": "They’ve moved me to the late shift, from two till ten."
                   },
                   {
                     "speaker": "ephraim",
-                    "text": "Six! That sounds terrible."
+                    "text": "Oh no. Is that bad? You said the early one was terrible."
                   },
                   {
                     "speaker": "tessie",
-                    "text": "Actually, I like it. I finish at two, so I have the whole afternoon free."
+                    "text": "It was. I’m not sorry to stop getting up at five, and mornings off sound great. I could even go to the pool."
+                  },
+                  {
+                    "speaker": "ephraim",
+                    "text": "And the bus home at ten?"
+                  },
+                  {
+                    "speaker": "tessie",
+                    "text": "Oh, there’s a night bus every ten minutes, and my manager offered me a taxi. That’s fine."
+                  },
+                  {
+                    "speaker": "ephraim",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "tessie",
+                    "text": "Every evening is when we all meet up, you, Ines, the football lot. I’ll be at work, missing time with all of you, while you’re laughing at the café. That’s what I hate."
+                  },
+                  {
+                    "speaker": "ephraim",
+                    "text": "We’ll keep you a seat at weekends."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does Tessie think of her new shift?",
+                "prompt": "How does Tessie feel about her new shift?",
                 "options": [
-                  "She finds it far too early",
-                  "She enjoys her afternoons",
-                  "She wants to change it"
+                  "Glad to have more time in the morning",
+                  "Worried about the journey home",
+                  "Unhappy about missing time with friends"
                 ],
-                "answer": 1,
-                "explanation": "She says that she likes it because she finishes at two."
+                "answer": 2,
+                "explanation": "She likes the free mornings and the bus home is fine, but she hates that she will be at work while her friends meet in the evening."
               }
             },
             {
@@ -1194,32 +1273,52 @@
                 "turns": [
                   {
                     "speaker": "pike",
-                    "text": "Tomás, you were asleep in my lesson again."
+                    "text": "Tomás, you fell asleep in my lesson again."
                   },
                   {
                     "speaker": "tomas",
-                    "text": "I'm sorry, Mrs Pike. I was up late with my homework."
+                    "text": "Sorry, Mrs Pike. I was up until two. I had a lot of homework, and I drank coffee to stay awake."
                   },
                   {
                     "speaker": "pike",
-                    "text": "Try to start it earlier. And have a proper breakfast."
+                    "text": "Coffee at night isn’t helping. But I won’t tell you to stop completely. One cup in the morning is fine."
                   },
                   {
                     "speaker": "tomas",
-                    "text": "I will."
+                    "text": "I can’t stop doing homework though."
+                  },
+                  {
+                    "speaker": "pike",
+                    "text": "Of course not. But when do you start it?"
+                  },
+                  {
+                    "speaker": "tomas",
+                    "text": "After football, around ten, when I’m exhausted."
+                  },
+                  {
+                    "speaker": "pike",
+                    "text": "That’s the problem. Try to do it straight after school, while you still have energy. You’ll finish sooner and sleep properly."
+                  },
+                  {
+                    "speaker": "tomas",
+                    "text": "Maybe I could do some on the bus, too."
+                  },
+                  {
+                    "speaker": "pike",
+                    "text": "Good idea."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the teacher advise Tomás to do?",
+                "prompt": "What does Mrs Pike advise Tomás to do?",
                 "options": [
-                  "Start his homework earlier",
-                  "Drink more coffee in the evening",
-                  "Sleep during the lesson"
+                  "Finish his homework earlier in the day",
+                  "Stop drinking coffee completely",
+                  "Sleep for a while in class"
                 ],
                 "answer": 0,
-                "explanation": "She tells him to start his homework earlier."
+                "explanation": "She says one cup of coffee in the morning is fine and tells him to do his homework straight after school, while he still has energy."
               }
             },
             {
@@ -1246,32 +1345,44 @@
                 "turns": [
                   {
                     "speaker": "jessamy",
-                    "text": "We should get up earlier on Saturdays. Then we would have more time."
+                    "text": "I’m going to stay in bed till eleven on Saturday. I deserve it!"
                   },
                   {
                     "speaker": "brodie",
-                    "text": "I like sleeping late."
+                    "text": "I used to do that too, but then I felt terrible all Sunday. I read that it confuses your body."
                   },
                   {
                     "speaker": "jessamy",
-                    "text": "How about seven instead of nine?"
+                    "text": "Really? But I love long lie-ins. Or I could jump out of bed at six and enjoy the sunshine!"
                   },
                   {
                     "speaker": "brodie",
-                    "text": "Eight, and it's a deal."
+                    "text": "Ha! Be serious. What about a compromise? On weekdays we get up at seven. On Saturdays, eight, no more."
+                  },
+                  {
+                    "speaker": "jessamy",
+                    "text": "Eight is still early for a weekend. But I don’t want to feel awful on Sunday night, when I can’t sleep."
+                  },
+                  {
+                    "speaker": "brodie",
+                    "text": "And we could make pancakes to look forward to."
+                  },
+                  {
+                    "speaker": "jessamy",
+                    "text": "OK, almost the same time as usual, then, and pancakes."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What time will they get up on Saturdays?",
+                "prompt": "What do Jessamy and Brodie agree about Saturday mornings?",
                 "options": [
-                  "At nine",
-                  "At seven",
-                  "At eight"
+                  "They should get up early to enjoy the day",
+                  "They should stay in bed until late",
+                  "They should wake up at a similar time as usual"
                 ],
                 "answer": 2,
-                "explanation": "Brodie suggests eight, and Jessamy accepts."
+                "explanation": "Getting up at six is a joke and lying in bed until eleven makes Sunday night difficult, so they agree to wake up at almost their usual time."
               }
             },
             {
@@ -1297,33 +1408,45 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "camille",
-                    "text": "I can't concentrate in class. I keep yawning."
-                  },
-                  {
                     "speaker": "ronan",
-                    "text": "How much do you sleep?"
+                    "text": "Camille, you seemed far away in maths."
                   },
                   {
                     "speaker": "camille",
-                    "text": "About five hours. I stay up chatting with friends."
+                    "text": "I know. I can’t concentrate lately. It’s not the lessons. The teacher explains everything clearly, and I understand most of it."
                   },
                   {
                     "speaker": "ronan",
-                    "text": "No wonder you're tired!"
+                    "text": "Are you hungry? That happens to me before lunch."
+                  },
+                  {
+                    "speaker": "camille",
+                    "text": "Actually no. I always eat a big breakfast, so my stomach isn’t the problem. It’s the test on the twelfth. I’m so anxious that every time the teacher writes a formula, I think, what if I forget it? My head fills with that."
+                  },
+                  {
+                    "speaker": "ronan",
+                    "text": "I get that. I felt the same before my driving test."
+                  },
+                  {
+                    "speaker": "camille",
+                    "text": "What did you do?"
+                  },
+                  {
+                    "speaker": "ronan",
+                    "text": "I made a plan and did a little each day. It calmed me down."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Why can't Camille concentrate in class?",
+                "prompt": "Why does Camille find it hard to concentrate?",
                 "options": [
-                  "She does not sleep enough",
-                  "The lessons are too hard",
-                  "She is very hungry"
+                  "The lessons are too difficult",
+                  "She is anxious about a test",
+                  "She is feeling hungry"
                 ],
-                "answer": 0,
-                "explanation": "She sleeps about five hours because she stays up chatting."
+                "answer": 1,
+                "explanation": "She understands the lessons and has a big breakfast; her mind is full of worry about the test on the twelfth."
               }
             },
             {
@@ -1350,24 +1473,48 @@
                 "turns": [
                   {
                     "speaker": "yvaine",
-                    "text": "I wake up at three every night, and I can't go back to sleep."
+                    "text": "I woke at three again and couldn’t go back to sleep."
                   },
                   {
                     "speaker": "bertil",
-                    "text": "Don't look at the clock, and don't check your phone. Get up, drink some warm milk and read for a while."
+                    "text": "Do you lie there looking at the clock?"
+                  },
+                  {
+                    "speaker": "yvaine",
+                    "text": "Yes, every ten minutes."
+                  },
+                  {
+                    "speaker": "bertil",
+                    "text": "Don’t do that, it makes you more stressed. Turn the clock around."
+                  },
+                  {
+                    "speaker": "yvaine",
+                    "text": "I thought I’d sleep in the afternoon to make up for it."
+                  },
+                  {
+                    "speaker": "bertil",
+                    "text": "Many people say that, but a long nap means you won’t be tired at night. Better to get out of bed, go to another room and keep the light low. Read a magazine or a book, nothing exciting."
+                  },
+                  {
+                    "speaker": "yvaine",
+                    "text": "And then back to bed?"
+                  },
+                  {
+                    "speaker": "bertil",
+                    "text": "When your eyes feel heavy. It works for me."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does Bertil advise?",
+                "prompt": "What does Bertil advise Yvaine to do when she can't sleep?",
                 "options": [
+                  "Get up and read for a while",
                   "Take a long nap in the afternoon",
-                  "Check the time often",
-                  "Get up and read for a while"
+                  "Check the time to see how long is left"
                 ],
-                "answer": 2,
-                "explanation": "He tells her to get up, drink warm milk and read."
+                "answer": 0,
+                "explanation": "He says that looking at the clock and long naps make things worse, and recommends leaving the bed to read something quiet."
               }
             }
           ]
@@ -1392,49 +1539,46 @@
             "turns": [
               {
                 "speaker": "leona",
-                "text": "Good evening, and welcome to our sleep workshop at the Riverside Health Centre. My name is Leona, and I'm a nurse here. Today I'll give you five simple ideas for better sleep. First, keep the same bedtime every night, because your body likes routine. Second, make your bedroom dark. Even a small light from a phone can wake you. Third, don't eat a big meal late in the evening. A light snack, such as a banana, is fine. Fourth, take some exercise during the day, but not in the last two hours before bed. Finally, try writing down your worries on a piece of paper, so that you don't think about them in bed. At the end, you will receive a free leaflet, and next Tuesday we will have a second workshop about how children sleep. There is tea and coffee in the hall, but I suggest that you avoid the coffee!"
+                "text": "Good evening, and welcome to our sleep workshop at the Riverside Health Centre. My name is Leona, and I’m a nurse here. Today I’ll give you five simple ideas, and we’ll finish at about eight o’clock. First, regular habits. Many people think the important thing is to sleep for eight hours, but the body also likes a pattern. So choose one time to go to bed, and stay with it every night. I know many of you relax on Sundays, but keep the pattern even on Saturdays, because that is the night that breaks it. Second, the room. Some of my patients buy an expensive mattress, and of course that can help, but it is better to start with the light. The television is easy to turn off. But even a small light from a phone charger can wake the brain, so make the room as dark as you can. Heavy curtains are fine, or a sleeping mask. Third, food. A big dinner late in the evening is a bad idea. Some people say a hot chocolate is the best thing before bed, but I prefer something light, for example a banana. Cheese can give strange dreams, so I wouldn’t eat it. Fourth, exercise. It is excellent for sleep, but timing matters. Some websites say you should stop one hour before bed, but I’d leave two, because your body is still warm and awake. A walk in the afternoon, or even in the morning, is much better. Fifth, worries. Lots of people lie in bed thinking about tomorrow. Keep a notebook by the bed, and put your worries on a piece of paper. I don’t mean on your phone, because the screen is bright. Then you can leave them until the morning. Finally, an announcement. Next Tuesday at seven we have another workshop, about how children sleep. Parents, please bring your questions. The one after that, in two weeks, will be about older people. Thank you, and sleep well."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Keep the same ___ every night",
-              "answer": "bedtime",
-              "explanation": "Leona says to keep the same bedtime every night."
+              "prompt": "Keep your bedtime even on ___",
+              "answer": "Saturdays",
+              "explanation": "She says to keep the pattern on Saturdays, the night that breaks it, even though many people relax on Sundays."
             },
             {
               "id": "l3-2",
-              "prompt": "Make your bedroom ___",
-              "answer": "dark",
-              "explanation": "Her second idea is to make the bedroom dark."
+              "prompt": "A small light from a ___ can wake the brain",
+              "answer": "phone charger",
+              "explanation": "The television is easy to turn off, but a small light from a phone charger can wake the brain."
             },
             {
               "id": "l3-3",
-              "prompt": "A light snack, such as a ___, is fine",
+              "prompt": "A good snack before bed is a ___",
               "answer": "banana",
-              "explanation": "She says that a light snack such as a banana is fine."
+              "explanation": "She prefers something light, a banana, instead of hot chocolate, and she would not eat cheese."
             },
             {
               "id": "l3-4",
-              "prompt": "Do not exercise in the last ___ hours before bed",
+              "prompt": "Stop exercising ___ hours before bed",
               "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "She says no exercise in the last two hours before bed."
+              "explanation": "Some websites say one hour, but she would leave two hours."
             },
             {
               "id": "l3-5",
-              "prompt": "Write down your worries on a piece of ___",
+              "prompt": "Put your worries on a piece of ___",
               "answer": "paper",
-              "explanation": "She suggests writing worries on a piece of paper."
+              "explanation": "She says to keep a notebook but to put worries on a piece of paper, not on the phone."
             },
             {
               "id": "l3-6",
-              "prompt": "Next Tuesday there is a workshop about how ___ sleep",
+              "prompt": "Next Tuesday: a workshop on how ___ sleep",
               "answer": "children",
-              "explanation": "The second workshop is about how children sleep."
+              "explanation": "The workshop next Tuesday is about how children sleep; the one in two weeks is about older people."
             }
           ]
         },
@@ -1466,76 +1610,76 @@
             "turns": [
               {
                 "speaker": "ivor",
-                "text": "With me today is Dr Elowen Grey, who studies sleep. Elowen, why do we sleep?"
+                "text": "Elowen, welcome. Why did you become a sleep scientist?"
               },
               {
                 "speaker": "elowen",
-                "text": "Nobody knows everything yet, but we know that during sleep the brain sorts out the memories of the day. It's like tidying a room."
+                "text": "People expect a family story. My parents were teachers, so it wasn’t that, and I did read a famous book about dreams, but I had already chosen my subject by then. The real reason is that I couldn’t sleep for weeks before my exams at university. I was so frustrated that I wanted to understand what was happening in my own head."
               },
               {
                 "speaker": "ivor",
-                "text": "How much sleep do we need?"
+                "text": "Let’s talk about teenagers. Are they lazy?"
               },
               {
                 "speaker": "elowen",
-                "text": "It varies. Most adults need seven or eight hours, but teenagers need nine. Many of them get only six, which is a problem."
+                "text": "That annoys me. Their body clock moves about two hours later during these years, so they truly aren’t sleepy at ten. Some parents say the answer is an earlier bedtime, and some schools talk about starting the day later. Both ideas have something in their favour, and I understand why teachers argue about it, but what I mind is the word lazy. It is biology, not character."
               },
               {
                 "speaker": "ivor",
-                "text": "Is it true that we can catch up on sleep at the weekend?"
+                "text": "What about sleeping late at the weekend?"
               },
               {
                 "speaker": "elowen",
-                "text": "Only partly. Sleeping late on Sunday helps a little, but it also makes it harder to fall asleep that night."
+                "text": "Many of us do it, and it does feel wonderful. It repays a little of the missing sleep, but it moves your body clock, so on Sunday night you can’t fall asleep and Monday is hard. It doesn’t cure everything, and it isn’t dangerous for the brain either. It’s a small help with a price, so I try to wake up within an hour of my normal time, even on a holiday. My friends think I’m boring, but I feel much better on Mondays."
               },
               {
                 "speaker": "ivor",
-                "text": "What about naps?"
+                "text": "And afternoon naps?"
               },
               {
                 "speaker": "elowen",
-                "text": "A short nap of twenty minutes in the afternoon is excellent. If it's longer than an hour, you wake up feeling worse than before."
+                "text": "I’m a fan, as long as they’re short. Twenty minutes is perfect. After an hour you wake up heavy and confused, and then you won’t sleep at night. I would never tell anybody to forbid naps, though. Plenty of people can’t take one at all, and that’s fine."
               },
               {
                 "speaker": "ivor",
-                "text": "Do you have trouble sleeping yourself?"
+                "text": "You travel a lot. How do you deal with jet lag?"
               },
               {
                 "speaker": "elowen",
-                "text": "Sometimes. When I travel to another time zone, I wake up in the middle of the night. I go outside into the sunlight in the morning, which helps my body to adjust."
+                "text": "I tried the strong coffee trick for years, and it only left me nervous. Sleeping for a long time in the afternoon makes it worse, because then the night is wide awake. What works for me is going outside and walking in the daylight, even if I’m tired. The light tells your body what time it is."
               },
               {
                 "speaker": "ivor",
-                "text": "Finally, what's your best tip?"
+                "text": "Finally, what is your best advice? Imagine you can only give one tip."
               },
               {
                 "speaker": "elowen",
-                "text": "Switch off your phone an hour before bed. It's the simplest change, and people notice the difference within a week."
+                "text": "Put your phone away before bed, and I mean off, not just silent. Everyone says go to bed at nine, but a fixed time is not the same for everybody. Some say sleep with the window open, which is nice and fresh, but it’s not the secret. The phone is the biggest enemy."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "What does the brain do during sleep?",
+              "prompt": "Why did Elowen become a sleep scientist?",
               "options": [
-                "It stops working completely",
-                "It sorts out memories",
-                "It makes plans for the next day"
+                "Her parents were both doctors",
+                "She had trouble sleeping as a student",
+                "She read a book about dreams"
               ],
               "answer": 1,
-              "explanation": "She says the brain sorts out the memories of the day, like tidying a room."
+              "explanation": "Her parents were teachers and the book came later; she could not sleep before her university exams and wanted to understand it."
             },
             {
               "id": "l4-2",
-              "prompt": "What does she say about teenagers?",
+              "prompt": "How does Elowen feel about the idea that teenagers are lazy?",
               "options": [
-                "They need less sleep than adults",
-                "They sleep too little",
-                "They usually sleep too much"
+                "She thinks it is partly true",
+                "She believes parents should wake them earlier",
+                "She is annoyed because it is about biology"
               ],
-              "answer": 1,
-              "explanation": "Teenagers need nine hours but many get only six."
+              "answer": 2,
+              "explanation": "She says both solutions have something in their favour, but what she minds is the word lazy, because their body clock changes."
             },
             {
               "id": "l4-3",
@@ -1546,29 +1690,29 @@
                 "It is very bad for the brain"
               ],
               "answer": 0,
-              "explanation": "It helps a little, but it makes it harder to fall asleep on Sunday night."
+              "explanation": "It repays a little missing sleep, but on Sunday night you cannot fall asleep; it does not cure everything and is not dangerous."
             },
             {
               "id": "l4-4",
               "prompt": "What does she say about afternoon naps?",
               "options": [
-                "Nobody should ever take them",
                 "They should last at least an hour",
-                "A short one is good for you"
+                "A short one is good for you",
+                "Nobody should ever take them"
               ],
-              "answer": 2,
-              "explanation": "A nap of twenty minutes is excellent, but a long one makes you feel worse."
+              "answer": 1,
+              "explanation": "Twenty minutes is perfect, an hour makes you heavy, and she would never tell anybody to forbid naps."
             },
             {
               "id": "l4-5",
               "prompt": "How does she cope with a change of time zone?",
               "options": [
                 "She takes a long afternoon nap",
-                "She spends time outside",
-                "She drinks very strong coffee"
+                "She drinks very strong coffee",
+                "She spends time outside"
               ],
-              "answer": 1,
-              "explanation": "She goes outside into the sunlight in the morning."
+              "answer": 2,
+              "explanation": "Coffee made her nervous and long sleep in the afternoon makes it worse; she walks outside in the daylight."
             },
             {
               "id": "l4-6",
@@ -1579,7 +1723,7 @@
                 "Sleep with the window open"
               ],
               "answer": 0,
-              "explanation": "She says to switch off your phone an hour before bed."
+              "explanation": "She says to put the phone away and off; a fixed time is not the same for everybody and the window is not the secret."
             }
           ]
         }

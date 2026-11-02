@@ -249,9 +249,10 @@
               "id": "r3-1",
               "prompt": "How did the writer feel when they left the harbour?",
               "options": [
+                "Cold and rather hungry",
                 "Full of energy and excitement",
-                "Extremely nervous and worried",
-                "Very sleepy"
+                "Very sleepy",
+                "Extremely nervous and worried"
               ],
               "answer": 2,
               "explanation": "He was so sleepy that he almost fell into the water."
@@ -262,7 +263,8 @@
               "options": [
                 "Pulling in the nets",
                 "Steering the boat in the dark",
-                "Making the coffee for his uncle"
+                "Making the coffee for his uncle",
+                "Cleaning the engine"
               ],
               "answer": 0,
               "explanation": "Pulling in the nets was much harder than it looked."
@@ -272,21 +274,23 @@
               "prompt": "Why was the writer disappointed at first?",
               "options": [
                 "The weather was far too cold",
-                "The nets looked almost empty",
-                "The boat was moving very slowly"
+                "The boat was moving very slowly",
+                "The engine had stopped working",
+                "The nets looked almost empty"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "The nets seemed almost empty."
             },
             {
               "id": "r3-4",
               "prompt": "What did Pedro explain?",
               "options": [
-                "Which fish to sell and which to return",
                 "How to repair a torn net quickly",
+                "Which fish to sell and which to return",
+                "How to cook the fish",
                 "Where the best places to fish were"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He explained which fish were good to sell and which to return to the sea."
             },
             {
@@ -295,7 +299,8 @@
               "options": [
                 "Buy his own small boat soon",
                 "Become a professional fisherman",
-                "Go fishing every summer"
+                "Go fishing every summer",
+                "Get a job on the boat"
               ],
               "answer": 2,
               "explanation": "He has decided to go out with Pedro every summer."
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "My first sailing lesson",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "I had never been in a sailing boat before, so I felt nervous when I arrived at the club on Saturday morning. [1] Our instructor, a cheerful woman called Marta, welcomed us and gave us all life jackets.\n\nFirst, she showed us the different parts of the boat on land. [2] I tried to remember the names, but there were so many that my head began to spin. After half an hour, we were finally allowed to go onto the water.\n\nThe wind was light, and our little boat moved slowly across the lake. [3] Marta sat beside me and told me when to move the sail. Suddenly, a strong gust arrived, and the boat leaned so far that I was sure we would fall in. [4] Marta laughed and told me to keep calm, and soon we were sailing straight again.\n\nBy the end of the lesson, I was soaking wet but extremely happy. [5] I have already booked another lesson for next weekend.",
           "sentences": [
-            "I held the rope in one hand and the steering stick in the other.",
-            "Sailing is much more expensive than most people think.",
-            "There were about ten other beginners, and none of us knew what to do.",
             "I had never felt so free.",
+            "There were about ten other beginners, and none of us knew what to do.",
+            "Sailing is much more expensive than most people think.",
+            "She told us to bring warm clothes next time.",
+            "I held the rope in one hand and the steering stick in the other.",
+            "Marta says that the best sailors are the most patient.",
             "My heart was beating like a drum.",
             "Some of them had strange names, like boom and rudder."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "B",
               "explanation": "Ten other beginners explains why she was nervous, and \"our instructor\" then welcomes them."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "H",
               "explanation": "\"Some of them\" refers to the parts of the boat, whose names she tried to remember."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "E",
               "explanation": "Holding the rope and the steering stick describes what she did as the boat moved."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "G",
               "explanation": "Her heart beating like a drum fits the frightening moment when the boat leaned."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "A",
               "explanation": "\"I had never felt so free\" explains why she was happy and wanted another lesson."
             }
           ]
@@ -440,7 +447,7 @@
               "answer": 1,
               "explanation": "\"Come back here\" means to return to this place.",
               "tags": [
-                "phrasal-verbs"
+                "word-choice"
               ]
             }
           ]
@@ -730,15 +737,39 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "When is the next ferry to the island?"
+                    "text": "Hello. One ticket for the island, please. Is there a boat at ten forty?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Ten forty, but it's full. The one after that leaves at twelve."
+                    "text": "That one left five minutes ago, I’m afraid."
                   },
                   {
                     "speaker": "m",
-                    "text": "Then I'll take that one."
+                    "text": "Oh no. What about the next one, at eleven?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s full. Today is the school trip."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hmm. So what’s possible?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "There’s space on the one after that, at twelve. After that, nothing until three."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then twelve is fine. I’ll have lunch in the café first."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay. That’s fifteen pounds, please."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Here you are. Thank you for your help."
                   }
                 ]
               },
@@ -751,7 +782,7 @@
                   "At eleven"
                 ],
                 "answer": 1,
-                "explanation": "The ten-forty ferry is full, so he takes the one at twelve."
+                "explanation": "The ten forty boat has left and the eleven o’clock boat is full, so he takes the one at twelve."
               }
             },
             {
@@ -777,12 +808,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Excuse me, how much is the boat ticket?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Adults are twelve pounds, students are nine, and children under five go free."
+                    "text": "Twelve pounds each."
                   },
                   {
                     "speaker": "f",
-                    "text": "Then two adults and my three-year-old, please."
+                    "text": "I’d like two adults, please. It’s just me and my sister."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "We have a family ticket for thirty-three pounds, but that’s for four people. It’s not worth it for two."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, I understand. So what’s the total, then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Double what I said. Would you like to pay by card?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, please. I haven’t got much cash."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No problem. Here are your tickets, and the boat leaves in ten minutes."
                   }
                 ]
               },
@@ -795,7 +850,7 @@
                   "Thirty-three pounds"
                 ],
                 "answer": 0,
-                "explanation": "Two adults pay twelve pounds each, and the child goes free."
+                "explanation": "One adult costs twelve and the family ticket for thirty-three is for four people; she buys two adult tickets, so double twelve."
               }
             },
             {
@@ -809,24 +864,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Imani",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Will the sea be rough tomorrow?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Yes, there will be strong winds from the west. The boats will probably stay in the harbour."
+                    "text": "Good morning, all boat owners. This is Gordon at the harbour office. The forecast for tomorrow is strong wind from the north, with high waves outside the harbour. The fishing boats usually leave very early, at five o’clock, but I don’t think anybody will go out tomorrow. We planned to clean all the boats on Saturday, but that’s for next week now, because of the rain. So please check your ropes tonight and make sure everything is safe. Don’t forget to tell your friends. Thank you."
                   }
                 ]
               },
@@ -839,7 +882,7 @@
                   "They will all be cleaned"
                 ],
                 "answer": 0,
-                "explanation": "She says the boats will probably stay in the harbour."
+                "explanation": "Strong wind is forecast, so the fishing boats will probably stay in; the cleaning is next week."
               }
             },
             {
@@ -866,11 +909,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What should I wear on the boat?"
+                    "text": "Lance, what shoes should I wear tomorrow on the boat?"
                   },
                   {
                     "speaker": "m",
-                    "text": "A warm jacket, and shoes that don't slip on the deck."
+                    "text": "Not your good ones, the deck gets dirty."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I could buy new boots for it. Waterproof ones."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "There’s no need to spend money. The deck gets wet, but your feet won’t. What matters is the sole. It mustn’t be smooth, because you could slip on a wet deck, and that’s dangerous."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "My old trainers have a thick sole."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Perfect. Wear those, then."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And socks?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, thick ones, it’s cold on the sea."
                   }
                 ]
               },
@@ -883,7 +950,7 @@
                   "They should be waterproof"
                 ],
                 "answer": 1,
-                "explanation": "He says shoes should not slip on the deck."
+                "explanation": "New and waterproof shoes are not necessary; the important thing is that the sole is rough so that you do not slip."
               }
             },
             {
@@ -910,11 +977,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why don't you go swimming?"
+                    "text": "Molly, are you coming in? The water’s lovely."
                   },
                   {
                     "speaker": "f",
-                    "text": "The water's much too cold for me."
+                    "text": "Not today. I didn’t forget my swimsuit, it’s in my bag."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is it because you’re not a good swimmer?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m fine, I swim twice a week. But it’s so cold, only fourteen degrees this morning. My feet hurt just from walking on the beach."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You get used to it after a minute."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not me. I’ll sit here and watch you all."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Suit yourself. But you’ll miss the fun."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll take photos of you. Don’t splash me!"
                   }
                 ]
               },
@@ -927,21 +1018,13 @@
                   "The water is too cold"
                 ],
                 "answer": 2,
-                "explanation": "She says the water is much too cold."
+                "explanation": "She has her swimsuit and swims well, but the water is too cold for her."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Evelyn",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Garth",
@@ -953,12 +1036,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Where is the lifeboat station, please?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "At the end of the pier, next to the café."
+                    "text": "Hi Evelyn, it’s Garth. You asked me where the lifeboat station is. Next to the harbour wall is where it used to be, but they moved it last year, and the old building is a museum now. Some people say it’s behind the café, but that’s just the toilets. The real station is right at the end of the pier. Walk past the arcade, keep going until you can’t go any further, and you’ll see the orange boat. It’s open to visitors from two o’clock. Hope that helps. Bye!"
                   }
                 ]
               },
@@ -971,21 +1050,13 @@
                   "Behind the café"
                 ],
                 "answer": 0,
-                "explanation": "It is at the end of the pier, next to the café."
+                "explanation": "The harbour wall building is a museum and the café is the toilets; the lifeboat station is at the end of the pier."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Todd",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Georgia",
@@ -997,12 +1068,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Did you enjoy the boat trip?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "The scenery was lovely, but I felt seasick the whole time."
+                    "text": "Hi Todd, it’s Georgia. You asked about the boat trip yesterday. Honestly, it started badly. We waited an hour in the queue, but I had a good book. Then the wind was very cold, but I had my big coat, so it wasn’t a problem. The real problem started when we left the harbour. The sea was rough and I felt sick all the way. I’d never been seasick before. I couldn’t enjoy the seals or the views at all. Anyway, don’t let me stop you. Take a pill before you go. Call me later."
                   }
                 ]
               },
@@ -1015,7 +1082,7 @@
                   "The long wait"
                 ],
                 "answer": 1,
-                "explanation": "She says she felt seasick the whole time."
+                "explanation": "She waited in the queue and the wind was cold, but she had a book and a coat; she felt seasick the whole time."
               }
             }
           ]
@@ -1051,24 +1118,48 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Let's go sailing next weekend. We could hire a small boat for the whole day."
+                    "text": "Steve, what shall we do for the long weekend?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Brilliant! I will ask my cousin for his advice."
+                    "text": "A beach party would be fun, with music and a barbecue."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s October. We’d freeze. And a swimming race? The water is cold and half of us can’t swim fast."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "True. What else?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "My uncle has a small sailing boat on the coast. He said we could use it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Sailing! Yes, much better. Two days at sea."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll ask him tonight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great. I’ll make the sandwiches."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What are they planning?",
+                "prompt": "What do Katrina and Steve agree about the weekend?",
                 "options": [
-                  "A beach party",
-                  "A swimming race",
-                  "A sailing weekend"
+                  "It should be a party on the beach",
+                  "It should include a swimming race",
+                  "It should be a sailing trip"
                 ],
                 "answer": 2,
-                "explanation": "They want to hire a small boat and go sailing."
+                "explanation": "The party would be too cold and the race is not a good idea; they both like the idea of using the uncle’s boat."
               }
             },
             {
@@ -1095,11 +1186,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, I'd like some information about boat trips to the island."
+                    "text": "Excuse me. I’m not here to buy a map, I have one, thank you. And I haven’t lost anything."
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. There's one at ten and one at two, and tickets cost fifteen pounds."
+                    "text": "Then how can I help?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My wife and I would like to go on a boat trip tomorrow, but I don’t know which company is best."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "There are two. The red one goes to the island and costs fifteen pounds. The blue one sails along the coast, and it’s cheaper."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What time does the first one leave?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ten o’clock, from the harbour."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I’ll tell my wife."
                   }
                 ]
               },
@@ -1112,7 +1223,7 @@
                   "To report a lost bag"
                 ],
                 "answer": 1,
-                "explanation": "He asks for information about boat trips to the island."
+                "explanation": "He does not want a map and has lost nothing; he wants information about the boat trip."
               }
             },
             {
@@ -1138,29 +1249,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Mum, can I take the small boat out on my own on Saturday?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Please follow my instructions: put on your sun cream and your hats, both of you. The sun is very strong today."
+                    "text": "On your own? You’re only fifteen. I’m nervous about it."
                   },
                   {
                     "speaker": "m",
-                    "text": "Do we have to? We want to run to the water!"
+                    "text": "Dad let me last summer, with his friend."
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes. Then you can go."
+                    "text": "I know. You’re a good sailor and I trust you. I don’t think it’s brave, it’s a bit crazy, but you did ask me first, so I’m not angry. Take your phone and a life jacket, and stay near the beach."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I will. Thanks, Mum."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And be back by lunch."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the mother doing?",
+                "prompt": "How does Louisa feel about Noah sailing alone?",
                 "options": [
-                  "Giving instructions",
-                  "Asking for help",
-                  "Telling a story"
+                  "Worried but she lets him go",
+                  "Angry because he did not ask",
+                  "Delighted that he is brave"
                 ],
                 "answer": 0,
-                "explanation": "She tells the children to put on sun cream and hats."
+                "explanation": "She is nervous but trusts him and is not angry because he asked, so she lets him go with conditions."
               }
             },
             {
@@ -1186,12 +1309,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Coastguard, this is Seabird. Our engine is making a strange noise. Shall I send you a photograph of it?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Coastguard to small boat, a storm is coming. Please return to the harbour as soon as you can."
+                    "text": "A photograph won’t help, I’m afraid. We can’t repair it from here."
                   },
                   {
                     "speaker": "m",
-                    "text": "Understood. We're turning back now."
+                    "text": "Should I call you again later, when I’ve checked?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, don’t wait. The wind will increase this afternoon. Come back to the harbour slowly, and a boat will meet you at the entrance."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Understood. We’re turning round now."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good. Keep your life jackets on."
                   }
                 ]
               },
@@ -1204,7 +1343,7 @@
                   "Return to the harbour"
                 ],
                 "answer": 2,
-                "explanation": "She tells the boat to return to the harbour."
+                "explanation": "A photograph will not help and waiting is dangerous, so she tells him to come back to the harbour."
               }
             },
             {
@@ -1230,25 +1369,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Jack, what’s in the bucket?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Look! I found something under this rock. It has claws!"
+                    "text": "A crab! I found it under a stone. Can we take it home?"
                   },
                   {
                     "speaker": "f",
-                    "text": "It's a crab. Put it back carefully, or it will bite you."
+                    "text": "It would die in a bucket. Its home is the sea."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then show it to our teacher on Monday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She isn’t here, and the crab can’t wait until Monday. Let’s put it back in the water, near the rocks."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK. I’ll take a photo first."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good idea. And then we can go and get an ice cream."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Deal."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What has the boy found?",
+                "prompt": "What do Mia and Jack agree to do with the crab?",
                 "options": [
-                  "A crab",
-                  "A coin",
-                  "A bottle"
+                  "Put it back in the water",
+                  "Take it home in a bucket",
+                  "Show it to their teacher"
                 ],
                 "answer": 0,
-                "explanation": "The girl says it is a crab."
+                "explanation": "The bucket would kill it and Monday is too late; they will let it go in the sea after a photo."
               }
             },
             {
@@ -1274,12 +1437,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Hello, can I help you? Lessons start at ten."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Hello, I'd like to rent a kayak for two hours, please."
+                    "text": "I’m not here for a lesson. I’ve been kayaking before. I thought about buying a ticket for the boat trip, but I prefer to be on my own."
                   },
                   {
                     "speaker": "m",
-                    "text": "Certainly. Have you paddled before?"
+                    "text": "Kayaks are twelve pounds an hour."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s fine. I’d like one for two hours, please."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Take a life jacket from the box over there."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. Is the sea calm today?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Very calm. Stay inside the red flags."
                   }
                 ]
               },
@@ -1292,7 +1475,7 @@
                   "Rent a kayak"
                 ],
                 "answer": 2,
-                "explanation": "She would like to rent a kayak for two hours."
+                "explanation": "She has no need for a lesson and does not want the boat ticket; she wants to hire a kayak for two hours."
               }
             }
           ]
@@ -1317,55 +1500,46 @@
             "turns": [
               {
                 "speaker": "rhys",
-                "text": "Good morning, everybody, and welcome aboard the Seagull. I'm Captain Rhys. Today's trip lasts two hours, and we're going to sail along the coast as far as the Red Rocks. Please stay seated while the boat is moving. The life jackets are under your seats, in case you need them. On the left, you can see Seal Island, where about fifty seals live. If we are lucky, we may also see dolphins. There is a small shop on board that sells hot drinks and sandwiches. A cup of tea costs three pounds. We will arrive back in the harbour at noon. Finally, please don't throw any rubbish into the sea. Thank you, and enjoy the trip."
+                "text": "Good morning, everybody, and welcome aboard the Seagull. I’m Captain Rhys. Today’s trip lasts two hours, although last month’s longer trip lasted three, and we are going to sail along the coast as far as the Red Rocks. Some people think that we go to the Black Rocks, which are more famous, but they are too far for one morning. Now, safety. Life jackets are under the seats, not in the cabin as on some boats. Please take one now and put it on when I say. Children must wear them all the time. Stay away from the edges, and hold on when the boat moves. The most exciting moment is Seal Island, which we reach after about forty minutes. About fifty seals live there in summer. In winter there are hundreds, but most of them go to other beaches. You will also see many sea birds, but I can’t count them. Please keep quiet, so you don’t frighten the animals. Photographs are fine, but turn the flash off. There is a small café on board. Coffee costs four pounds, which is a bit expensive, I know, but tea is only three pounds, and the biscuits are free. If the sea is rough, the café closes, because the cups fall off the tables. Finally, timing. We left the harbour at ten, and we will return at noon exactly, if the wind helps us. You will have time for lunch in the town afterwards. Please stay with your group, and if you feel ill, tell me or one of my crew straight away. We have medicine on board, and the crew wears yellow jackets, so you can find us easily. Thank you, and enjoy the trip."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The trip lasts ___ hours",
+              "prompt": "The sailing lasts ___ hours",
               "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "Today's trip lasts two hours."
+              "explanation": "Last month’s trip took three hours, but today’s trip lasts two."
             },
             {
               "id": "l3-2",
-              "prompt": "The boat sails as far as the ___ Rocks",
+              "prompt": "The farthest point of the trip is the ___ Rocks",
               "answer": "Red",
-              "explanation": "They will sail as far as the Red Rocks."
+              "explanation": "The Black Rocks are more famous but too far; the boat goes as far as the Red Rocks."
             },
             {
               "id": "l3-3",
-              "prompt": "Life jackets are under the ___",
+              "prompt": "Passengers can find life jackets beneath the ___",
               "answer": "seats",
-              "explanation": "The life jackets are under the seats."
+              "explanation": "They are not in the cabin; they are under the seats."
             },
             {
               "id": "l3-4",
-              "prompt": "About fifty ___ live on Seal Island",
+              "prompt": "In summer, around fifty ___ live on Seal Island",
               "answer": "seals",
-              "explanation": "About fifty seals live on Seal Island."
+              "explanation": "In winter there are hundreds, but in summer about fifty seals live there."
             },
             {
               "id": "l3-5",
-              "prompt": "A cup of tea costs ___ pounds",
+              "prompt": "The café charges ___ pounds for a cup of tea",
               "answer": "three",
-              "accepted": [
-                "3"
-              ],
-              "explanation": "A cup of tea costs three pounds."
+              "explanation": "Coffee costs four pounds, but tea is three pounds."
             },
             {
               "id": "l3-6",
-              "prompt": "The boat returns to the harbour at ___",
+              "prompt": "The boat gets back to the harbour at ___",
               "answer": "noon",
-              "accepted": [
-                "twelve"
-              ],
-              "explanation": "They arrive back in the harbour at noon."
+              "explanation": "They left at ten and return at noon exactly."
             }
           ]
         },
@@ -1397,43 +1571,43 @@
             "turns": [
               {
                 "speaker": "gerard",
-                "text": "My guest today is Jenna Marsh, who sailed across the Atlantic alone in a small boat. Jenna, how long did the crossing take?"
+                "text": "Jenna, how long did your crossing take?"
               },
               {
                 "speaker": "jenna",
-                "text": "Forty days. I had planned for thirty-five, but the wind dropped for a week, and I hardly moved at all."
+                "text": "People assume four months, almost half a year, because that was the length of my first trip, and I was afraid of that. This time we hoped for fourteen days, like the fast racing boats, but our boat is slow and heavy. In the end it took forty days. Forty days of sea and nothing else."
               },
               {
                 "speaker": "gerard",
-                "text": "What was the hardest part?"
+                "text": "What was the hardest part for you?"
               },
               {
                 "speaker": "jenna",
-                "text": "Sleeping. You cannot sleep for eight hours when you are alone at sea, so I slept for twenty minutes at a time, and I was always tired."
+                "text": "Cooking hot meals was awkward, because the boat never stops moving, but I managed. The engine broke once, and my friend fixed it in two hours. No, the difficult thing was sleep. You can’t sleep for more than an hour or two, because you must check the sails, so I was always tired."
               },
               {
                 "speaker": "gerard",
-                "text": "Were you ever frightened?"
+                "text": "How did you feel during the storm?"
               },
               {
                 "speaker": "jenna",
-                "text": "Once, in a storm. The waves were as high as a house, and I stayed below deck, holding on for hours. I kept telling myself that the boat was stronger than I was."
+                "text": "Terrified. The waves were as high as a house, and I thought we would never get home. The main sail didn’t break, thank goodness, and the radio worked. Losing my phone was annoying, but it was not important. I held the rope and shouted, mostly to myself. It lasted a whole night."
               },
               {
                 "speaker": "gerard",
-                "text": "What was your best moment?"
+                "text": "What did you eat during the crossing?"
               },
               {
                 "speaker": "jenna",
-                "text": "Dolphins. They swam beside the boat for an entire afternoon, and I was not alone any more. I talked to them for hours."
+                "text": "I’d imagined fresh fish every single day, but we caught only two fish in forty days. The sandwiches and fruit from home lasted four days. After that it was mostly tinned food and rice, with some chocolate. I never want to see tinned beans again."
               },
               {
                 "speaker": "gerard",
-                "text": "What did you eat?"
+                "text": "Why was seeing the dolphins your best moment?"
               },
               {
                 "speaker": "jenna",
-                "text": "Mostly tinned food and rice. By the end, I would have given anything for a fresh apple."
+                "text": "Arriving was wonderful, and I cried at the harbour. We also saw a famous old ship, which was lovely. But the dolphins came on day thirty, when I was exhausted and a bit lonely. They swam beside the boat for an hour, and I felt less alone. I’ll never forget it."
               },
               {
                 "speaker": "gerard",
@@ -1441,7 +1615,19 @@
               },
               {
                 "speaker": "jenna",
-                "text": "I'm planning to sail round the world, and this time my daughter is coming with me."
+                "text": "My daughter is twelve, and she wants to sail round the world with me. We start in two years. A book about the sea is an idea, my friends say I should write one, but I’m no writer. I teach sailing at the local school on Saturdays now, but that’s only to pay for the boat."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Would you cross the ocean again?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Yes, without any doubt. It was hard and lonely, but the sea teaches you who you are."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Thank you very much, Jenna."
               }
             ]
           },
@@ -1455,7 +1641,7 @@
                 "Fourteen days, about two weeks"
               ],
               "answer": 1,
-              "explanation": "She says it took forty days."
+              "explanation": "People assume four months and the fast boats take fourteen days, but their slow boat took forty days."
             },
             {
               "id": "l4-2",
@@ -1466,29 +1652,29 @@
                 "Fixing the engine when it broke"
               ],
               "answer": 1,
-              "explanation": "She slept twenty minutes at a time and was always tired."
+              "explanation": "Cooking was awkward and the engine was fixed in two hours; the difficult thing was sleep, because she could only sleep an hour or two."
             },
             {
               "id": "l4-3",
-              "prompt": "What happened in the storm?",
+              "prompt": "How did Jenna feel during the storm?",
               "options": [
-                "The waves were as high as a house",
-                "The boat lost its main sail",
-                "She lost her radio and phone"
+                "Terrified by the huge waves",
+                "Annoyed about her broken radio",
+                "Sad about the damaged sail"
               ],
               "answer": 0,
-              "explanation": "She says the waves were as high as a house."
+              "explanation": "The waves were as high as a house and she was terrified; the radio worked and the sail did not break."
             },
             {
               "id": "l4-4",
-              "prompt": "What was her best moment?",
+              "prompt": "Why was seeing the dolphins her best moment?",
               "options": [
-                "Seeing a famous old ship",
-                "Arriving safely at a harbour",
-                "Dolphins swimming beside the boat"
+                "She was proud to have arrived",
+                "She saw a famous old ship",
+                "She felt less alone at sea"
               ],
               "answer": 2,
-              "explanation": "Dolphins swam beside the boat for an entire afternoon."
+              "explanation": "Arriving and the old ship were lovely, but the dolphins came when she was lonely and she felt less alone."
             },
             {
               "id": "l4-5",
@@ -1499,7 +1685,7 @@
                 "Sandwiches and fruit from home"
               ],
               "answer": 1,
-              "explanation": "She ate mostly tinned food and rice."
+              "explanation": "She had imagined fresh fish and the sandwiches lasted four days; after that it was tinned food and rice."
             },
             {
               "id": "l4-6",
@@ -1510,7 +1696,7 @@
                 "Teach sailing at a local school"
               ],
               "answer": 0,
-              "explanation": "She is planning to sail round the world with her daughter."
+              "explanation": "Her daughter wants to sail round the world with her; the book is only an idea and the teaching is only to pay for the boat."
             }
           ]
         }

@@ -249,44 +249,48 @@
               "id": "r3-1",
               "prompt": "How did the writer feel at the airport?",
               "options": [
-                "Nervous and excited",
+                "Happy and relaxed",
                 "Sad and very tired",
+                "Nervous and excited",
                 "Calm and rather bored"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She was nervous and excited."
             },
             {
               "id": "r3-2",
               "prompt": "What was difficult at first?",
               "options": [
-                "Understanding people",
                 "Finding good food",
-                "Making the bed daily"
+                "Understanding people",
+                "Making the bed daily",
+                "Packing her suitcase"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Her English was not as good as she thought, and she could not follow the teacher."
             },
             {
               "id": "r3-3",
               "prompt": "What helped her to make friends?",
               "options": [
+                "Her host brother",
                 "A language course",
                 "A part-time job",
                 "The swimming team"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She joined the school swimming team."
             },
             {
               "id": "r3-4",
               "prompt": "What did she notice one evening?",
               "options": [
-                "She could cook well",
                 "She had thought in English",
+                "She could cook well",
+                "She had forgotten her language",
                 "She was no longer homesick"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She realised that she had been thinking in English all day."
             },
             {
@@ -295,7 +299,8 @@
               "options": [
                 "The Parkers will move",
                 "She will return to Canada",
-                "Jake will visit her"
+                "Jake will visit her",
+                "She will start a new school"
               ],
               "answer": 2,
               "explanation": "Jake is coming to visit her."
@@ -306,36 +311,38 @@
           "id": "reading-4",
           "number": 4,
           "title": "Tips for living abroad",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Moving to another country is exciting, but it is not always easy. [1] A little preparation can make the first weeks much smoother.\n\nBefore you leave, learn some basic words in the local language. [2] People are usually delighted when a foreigner tries to speak their language, even badly.\n\nWhen you arrive, try to find friends quickly. [3] Join a club or a class, and say yes to every invitation, even if you feel shy.\n\nBe patient with yourself, too. [4] It can take months before you stop feeling like a stranger, and that is quite normal.\n\nFinally, stay in touch with your family at home. [5] But do not spend all your time on the phone, or you will miss the adventure around you.",
           "sentences": [
             "A short call every week will make you feel less alone.",
-            "The language, the food and even the weather may all be new to you.",
             "Saying hello and thank you will already help.",
-            "Nobody knows you on the first day.",
+            "Banks in most countries are closed on Sundays.",
             "Do not expect to feel at home straight away.",
+            "Some of them speak better English than you think.",
+            "Nobody knows you on the first day.",
+            "The language, the food and even the weather may all be new to you.",
             "Food will always be the biggest problem."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "G",
               "explanation": "Moving is \"not always easy\" because so much is new; the next sentence says how preparation helps."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "B",
               "explanation": "Saying hello and thank you will already help; the next sentence says people are delighted when you try."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "F",
               "explanation": "Nobody knows you on the first day, so find friends; the next sentence says to join a club."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "D",
               "explanation": "Being patient means not expecting to feel at home straight away; \"it can take months\" follows."
             },
             {
@@ -736,24 +743,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where are you from?"
+                    "text": "Hi Aoife, are you excited about the course in Edinburgh? Where are you going to live?"
                   },
                   {
                     "speaker": "b",
-                    "text": "I come from Norway, but I live in Scotland now."
+                    "text": "Yes, very! I was going to share a student flat, but the list was full, so I can’t do that now."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "What about a hotel? It would be quiet."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I nearly booked one, but it was far too expensive for three months."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what’s the plan?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "A family in the suburbs will have me. They have two children and a cat. I’ve spoken to the mother twice on the phone already."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That sounds lovely. You’ll improve your English quickly."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I hope so. They say dinner is always a long conversation."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "Where does the girl live now?",
+                "prompt": "Where will Aoife stay during the course?",
                 "options": [
-                  "In Norway",
-                  "In Scotland",
-                  "In Ireland"
+                  "In a hotel",
+                  "In a family home",
+                  "In a student flat"
                 ],
                 "answer": 1,
-                "explanation": "She says she lives in Scotland now."
+                "explanation": "The student flat was full and the hotel nearly happened but cost too much, so she will live with a family in the suburbs."
               }
             },
             {
@@ -767,37 +798,25 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How long are you staying in London?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "Six months. I am studying at the university."
+                    "text": "Hi Mum, it’s Ben, and I’m at the airport. I have good news and bad news. The good news is that I’m coming home today. The bad news is about the time. My ticket says the plane lands at four, but that was the old time. There was a storm, so first they said five, and then they changed it again, and now the board says seven. I know, it’s a long wait. Please don’t come to the airport at four, that would be silly. I’ll take the train home if you’d rather not drive in the dark. I’m going to get something to eat now. See you later. Love you."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "Why is the man in London?",
+                "prompt": "When will the boy's plane arrive?",
                 "options": [
-                  "To study",
-                  "To work",
-                  "To visit friends"
+                  "At five",
+                  "At four",
+                  "At seven"
                 ],
-                "answer": 0,
-                "explanation": "He says he is studying at the university."
+                "answer": 2,
+                "explanation": "Four was the old time and five was the first change, but the board now shows a later time, seven."
               }
             },
             {
@@ -824,24 +843,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you miss your home?"
+                    "text": "You’ve been here three months, Jake. Do you miss home?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, mostly my dog. I call my parents every Sunday."
+                    "text": "Sure. But I’m in touch with my friends every night online, so that’s fine. And I nearly joined the football team here, but I’m too busy with school anyway."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what do you miss?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Honestly, it’s the walk every morning in the park. My neighbour looks after the dog now, and my sister sends me photos. She says he sleeps by the door every night, waiting for me."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Aw, that’s sad."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I know. Four more months and I’ll be back."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "He’ll give you a big welcome."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "What does the boy miss most?",
+                "prompt": "What does Jake miss most about home?",
                 "options": [
                   "His dog",
-                  "His school",
-                  "His bed"
+                  "His friends",
+                  "His football team"
                 ],
                 "answer": 0,
-                "explanation": "He says mostly his dog."
+                "explanation": "He talks to his friends every night and he is too busy for a team, but he misses the daily walk with his pet."
               }
             },
             {
@@ -868,11 +907,35 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can you speak slowly, please? My English is not very good."
+                    "text": "Excuse me, I’m trying to find the station. Is it far?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Of course. I will repeat it more slowly."
+                    "text": "Not really. I can write the directions for you on a piece of paper."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s kind, but I don’t read English well yet. Could you say them again, but slower?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course. Go straight on, then turn left at the church."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Sorry, I missed that. Can you say it more slowly, please?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Left at the church. Then follow the river for ten minutes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you. Shall I use my phone to check?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No need. Just remember church, river, station."
                   }
                 ]
               },
@@ -880,26 +943,18 @@
                 "id": "l1-4q",
                 "prompt": "What does the man ask the woman to do?",
                 "options": [
-                  "Write it down",
-                  "Speak more slowly",
-                  "Speak much louder"
+                  "Write the directions",
+                  "Say it more slowly",
+                  "Show him on a phone"
                 ],
                 "answer": 1,
-                "explanation": "He asks her to speak slowly."
+                "explanation": "He refuses her offer to write the directions and twice asks her to say them again, but slowly."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Woman",
@@ -911,25 +966,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "What is the weather like in your country?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "Hot and dry in summer, but quite cold in winter."
+                    "text": "Come and learn English by the sea. Coastal Language School has courses in July. The normal price is three hundred pounds for two weeks, but we have a special offer for early booking. In June the course cost two hundred pounds, but that offer has finished. Book before the end of this week and you pay two hundred and fifty pounds for July. That includes your lessons, a trip to the castle and all your books. Call us on the number on the screen, or visit our website. Places are limited, so don’t wait!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "What is the winter like?",
+                "prompt": "How much will the course cost in July if you book this week?",
                 "options": [
-                  "Hot and dry",
-                  "Very wet",
-                  "Quite cold"
+                  "Two hundred and fifty pounds",
+                  "Three hundred pounds",
+                  "Two hundred pounds"
                 ],
-                "answer": 2,
-                "explanation": "She says it is quite cold in winter."
+                "answer": 0,
+                "explanation": "Three hundred is the normal price and two hundred was the June offer, which has finished; the early booking price for July is two hundred and fifty."
               }
             },
             {
@@ -956,24 +1007,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What do you eat for breakfast at home?"
+                    "text": "Are you coming to the international dinner on Friday? Everybody brings a dish."
                   },
                   {
                     "speaker": "b",
-                    "text": "Bread, cheese and olives. I miss it here."
+                    "text": "Yes! What are the others bringing?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Marta is doing a salad, and I’m bringing bread from my mum’s recipe."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I thought about making a salad too, but with Marta doing that, it’s pointless. Soup is easy, but it’s too hot to carry on the bus."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what’s your plan?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll make the same thing I made for your birthday, that Spanish dish with eggs and potatoes. You loved it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh yes! Everybody will want some."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "What does the girl miss?",
+                "prompt": "What will the girl bring to the dinner?",
                 "options": [
-                  "Her breakfast",
-                  "Her friends",
-                  "Her sports"
+                  "A salad",
+                  "Some soup",
+                  "A Spanish omelette"
                 ],
-                "answer": 0,
-                "explanation": "She says she misses her breakfast of bread, cheese and olives."
+                "answer": 2,
+                "explanation": "The salad is already Marta’s, and soup is hard to carry on the bus, so she will make the egg and potato dish from his birthday."
               }
             },
             {
@@ -1000,24 +1071,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "When does your flight leave?"
+                    "text": "Are you ready for tomorrow’s flight, Sam?"
                   },
                   {
                     "speaker": "b",
-                    "text": "At seven in the evening, so I need to be at the airport at four."
+                    "text": "I think so. A bit nervous, to be honest."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it the English? You speak very well now."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, that’s fine. I nearly lost my ticket yesterday, but I found it in my jacket."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Phew. So is it the plane itself?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s that I’ve never flown alone before. I’m used to my parents sitting next to me and speaking for me."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You’ll be fine. Ask the staff if you have a problem."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I will. Thanks."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "When must the boy be at the airport?",
+                "prompt": "Why is Sam nervous?",
                 "options": [
-                  "At seven",
-                  "At four",
-                  "At five"
+                  "He has lost his ticket",
+                  "He is travelling alone",
+                  "His English is weak"
                 ],
                 "answer": 1,
-                "explanation": "He says he must be at the airport at four."
+                "explanation": "His English is fine and he found the ticket in his jacket; he is worried because he has never travelled without his parents before."
               }
             }
           ]
@@ -1053,24 +1148,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Welcome to the school! Your classes will begin at nine, and I will show you the way."
+                    "text": "How was your first week at school?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Thank you. I feel a bit lost."
+                    "text": "Honestly, quite hard at the beginning. The lessons are in Spanish and I got lost on Monday."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh dear. Was the homework a problem too?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not really, the teachers gave us extra time. And the days are long, but I’m used to that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So you’re not worried?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not any more. Two girls in my class invited me to eat with them, and now we sit together every day. I have real friends here, and I feel like I belong."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s wonderful."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Who is the woman?",
+                "prompt": "How does the girl feel about her first week at school?",
                 "options": [
-                  "A visiting tourist",
-                  "A next-door neighbour",
-                  "A school worker"
+                  "She is happy about the friends she has made",
+                  "She is tired of the long days",
+                  "She is worried about the homework"
                 ],
-                "answer": 2,
-                "explanation": "She welcomes the girl to the school and shows her the way."
+                "answer": 0,
+                "explanation": "Homework and long days are not a problem for her; after a hard start, two girls invited her to eat with them, and she feels she belongs."
               }
             },
             {
@@ -1097,24 +1212,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like to open a bank account, please. I am a student from abroad."
+                    "text": "Uncle Max, I want to spend the summer in Canada, working in a cafe."
                   },
                   {
                     "speaker": "b",
-                    "text": "You will need your passport and a letter from your school."
+                    "text": "That sounds exciting. Have you thought about the visa?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not yet. I thought I could just go and look for a job there."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I wouldn’t do that. You don’t need to wait a year, you’re ready, but you must prepare. Do a short English course at home first, so that you understand people on the phone."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "A short trip first might be easier."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Maybe, but a course will teach you more for less money."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, that’s a good point."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the boy want?",
+                "prompt": "What does the man advise the boy to do?",
                 "options": [
-                  "A new passport",
-                  "A bank account",
-                  "A school place"
+                  "Go on a short trip first",
+                  "Wait until next year",
+                  "Do a course before he goes"
                 ],
-                "answer": 1,
-                "explanation": "He wants to open a bank account."
+                "answer": 2,
+                "explanation": "The uncle says there is no need to wait a year and finds a trip less useful; he recommends a short English course before travelling."
               }
             },
             {
@@ -1141,24 +1276,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Mum, I feel so homesick. Everything here is different."
+                    "text": "Only two weeks left, Mrs Clarke!"
                   },
                   {
                     "speaker": "b",
-                    "text": "I know, darling. It gets easier. Tell me about your day."
+                    "text": "Already? You must be excited to see your family."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I can’t wait to see my mum, that’s true. But I’m going to miss everybody here so much."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Are you nervous about going back to your old school?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, not nervous. It will just feel a little boring after this. I’m happy and sad together, it’s strange."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s normal. You can always come back."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I hope so."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the girl feel?",
+                "prompt": "How does the girl feel about going home?",
                 "options": [
-                  "Homesick",
-                  "Delighted",
-                  "Angry"
+                  "She is looking forward to it",
+                  "She feels sad and happy at the same time",
+                  "She is afraid of it"
                 ],
-                "answer": 0,
-                "explanation": "She says she feels homesick."
+                "answer": 1,
+                "explanation": "She is eager to see her mum but will miss her friends, and she is not scared of her old school, so she has two feelings at once."
               }
             },
             {
@@ -1185,24 +1340,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "In our class, we welcome a new student from Brazil. Please help him to find his way around."
+                    "text": "Marco, have you got a minute? I want to ask you something."
                   },
                   {
                     "speaker": "b",
-                    "text": "Of course, sir. I will show him the library."
+                    "text": "Sure. Is it about the test? I know I was late."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, no, it’s not that. You did well, and the lateness is forgotten. I wanted to talk about Yuki, the new student from Japan."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "She sits behind me. She’s very quiet."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Exactly. She’s shy and her English is still basic. Could you look after her a little, sit next to her at lunch and show her around?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’d be happy to. I remember feeling lost when I arrived here."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thanks. I knew I could count on you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the teacher ask the class?",
+                "prompt": "Why does the teacher talk to Marco?",
                 "options": [
-                  "To move the desks",
-                  "To read a long book",
-                  "To help a newcomer"
+                  "To ask him to look after a newcomer",
+                  "To talk about his test mark",
+                  "To warn him about being late"
                 ],
-                "answer": 2,
-                "explanation": "He asks the class to help the new student."
+                "answer": 0,
+                "explanation": "The test went well and the lateness does not matter; the teacher wants Marco to sit with Yuki at lunch and show her around."
               }
             },
             {
@@ -1229,24 +1404,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is it possible to extend my visa?"
+                    "text": "So how was the visa interview? Was it expensive?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, but you must apply a month before it ends."
+                    "text": "The fee was fifty pounds, which is fine. I expected worse."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And the officers? I heard they can be rude."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not at all. The man I met was kind and smiled the whole time. No, the problem was the forms. There were so many pages, with questions I didn’t understand, and the website was confusing."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Did you ask for help?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, my cousin sat with me for two evenings. Without him I’d still be filling them in."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the woman say?",
+                "prompt": "What does the woman find difficult about getting a visa?",
                 "options": [
-                  "Apply a month early",
-                  "It is impossible now",
-                  "It is free of charge"
+                  "The fee",
+                  "The officers",
+                  "The forms"
                 ],
-                "answer": 0,
-                "explanation": "She says you must apply a month before it ends."
+                "answer": 2,
+                "explanation": "The fee is fine and the officer was kind, but the many pages and unclear questions of the forms were the problem."
               }
             },
             {
@@ -1273,24 +1464,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How do you say thank you in your language?"
+                    "text": "How do you remember all the new words?"
                   },
                   {
                     "speaker": "b",
-                    "text": "It is one word: gracias. It is easy to remember."
+                    "text": "I write long lists, but honestly I forget them in a day."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Same here. I tried reading stories, but looking up each word takes ages."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "What about talking to people? When I ask the guy at the shop for things, I remember the words."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes! I learned \"receipt\" that way. It’s so much more natural."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So we agree: use the words with real people."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Exactly, and make mistakes without worrying."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What are they doing?",
+                "prompt": "What do the friends agree about learning new words?",
                 "options": [
-                  "Playing a word game",
-                  "Telling a long story",
-                  "Learning a word"
+                  "Writing long lists is useful",
+                  "Using them with real people works best",
+                  "Reading stories is the best way"
                 ],
-                "answer": 2,
-                "explanation": "They are talking about how to say thank you in his language."
+                "answer": 1,
+                "explanation": "Each of them says that lists or stories do not work for them, but they both remember words they use in real conversations."
               }
             }
           ]
@@ -1315,55 +1526,46 @@
             "turns": [
               {
                 "speaker": "coordinator",
-                "text": "Welcome, everybody, to our school. My name is Joni, and I am the coordinator of the exchange programme. This year, we have twenty-eight students from nine countries, and I am sure you will enjoy your time here. Your lessons start on Monday at a quarter to nine. Please wear comfortable clothes, because we do not have a uniform. Lunch is served in the dining hall from twelve to one, and it is free for exchange students. Every Thursday afternoon, we have a special activity, such as a trip to the museum or a football match. On the first Saturday of each month, your host families will organise a picnic. If you have a problem, please come to my office, which is next to the library. I am there every day except Friday. Remember that making mistakes is part of learning."
+                "text": "Welcome, everybody, to Hillside School. My name is Joni, and I am the coordinator of the exchange programme. This year we have twenty-eight students. At first I thought there would be eleven countries, but two students could not come, so in the end we have nine, from Japan to Brazil. I hope you all had a good journey. Let me tell you about school life. Lessons start every morning at nine. Last year they began at eight, but students said they were too sleepy, so we changed it. The bus from the town centre arrives at half past eight, so you will have time for a coffee. Another good thing is that you do not need to wear a uniform. Some schools ask for one, but not us. Just wear clothes that you feel comfortable in, although in sports lessons you must have special shoes, which you can buy in the shop at the gym. Now, food. Lunch is free for all exchange students in the dining hall, which is on the ground floor. The cafe on the first floor is open too, but you have to pay there, so I suggest the dining hall. Every Thursday afternoon, there are no normal lessons. You can join a club or go on a trip. We used to do this on Wednesdays, but the museum is only free on Thursdays. Please choose your activity on the website this week. Finally, if you have any problem, come and see me. My office is next to the library, on the second floor. Some people look for it near the gym, because the old office was there, but we moved. I’m there from eight till five every day. I hope you enjoy your time with us."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "There are students from ___ countries",
+              "prompt": "The students in the programme come from ___ countries",
               "answer": "nine",
-              "accepted": [
-                "9"
-              ],
-              "explanation": "She says there are twenty-eight students from nine countries."
+              "explanation": "She expected eleven countries, but two students could not come, so there are nine."
             },
             {
               "id": "l3-2",
-              "prompt": "Lessons start on Monday at a quarter to ___",
+              "prompt": "Lessons begin at ___ in the morning",
               "answer": "nine",
-              "accepted": [
-                "9"
-              ],
-              "explanation": "She says lessons start at a quarter to nine."
+              "explanation": "Last year lessons began at eight, but now they start at nine."
             },
             {
               "id": "l3-3",
-              "prompt": "Students do not need to wear a ___",
+              "prompt": "Students are not required to wear a ___",
               "answer": "uniform",
-              "explanation": "She says there is no uniform."
+              "explanation": "Some schools ask for a uniform, but this school does not; only special shoes are needed in sports."
             },
             {
               "id": "l3-4",
-              "prompt": "Lunch is free in the ___ hall",
+              "prompt": "Exchange students eat for free in the ___ hall",
               "answer": "dining",
-              "explanation": "She says lunch is served in the dining hall and is free."
+              "explanation": "The cafe on the first floor costs money, so lunch is free in the dining hall."
             },
             {
               "id": "l3-5",
-              "prompt": "Special activities are on ___ afternoons",
+              "prompt": "Clubs and trips happen every ___ afternoon",
               "answer": "Thursday",
-              "accepted": [
-                "Thursdays"
-              ],
-              "explanation": "She says every Thursday afternoon."
+              "explanation": "They used to be on Wednesdays, but they now take place on Thursdays because the museum is free."
             },
             {
               "id": "l3-6",
-              "prompt": "The coordinator's office is next to the ___",
+              "prompt": "Joni's office is beside the ___",
               "answer": "library",
-              "explanation": "She says the office is next to the library."
+              "explanation": "Some people look for it near the gym, but it moved and it is now next to the library."
             }
           ]
         },
@@ -1395,51 +1597,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Bowen, you moved to Spain three years ago. Why?"
+                "text": "Bowen, you are seventeen and you have lived in Spain for two years. Why did you move there?"
               },
               {
                 "speaker": "h",
-                "text": "My mother got a job here. At first, I was angry, because I had to leave my friends and my school."
+                "text": "A lot of people think I won a place at a special school, but I didn’t. It was not my idea either, and I never dreamed of an adventure, I was happy in Australia. My mum found a job in Valencia, with a company that makes software, and she said we could go together. I was angry for the first month, I admit. But now I’m very glad."
               },
               {
                 "speaker": "i",
-                "text": "What was the hardest part?"
+                "text": "What was the most difficult part at the beginning?"
               },
               {
                 "speaker": "h",
-                "text": "The language. I thought that I knew some Spanish, but nobody understood me. I ordered a coffee and got a chicken sandwich."
+                "text": "People expect me to say the language, and yes, the first lessons were hard. But I’d studied Spanish for three years at home, so I could manage. The food was no problem, I love paella. What I found hardest was making friends. Everybody already had their groups, and I sat alone at lunch for weeks. It felt terrible, to be honest."
               },
               {
                 "speaker": "i",
-                "text": "How did you cope?"
+                "text": "Did you ever make a big mistake because of the language?"
               },
               {
                 "speaker": "h",
-                "text": "I made a rule: I spoke only Spanish at school, even when I felt silly. After six months, I could follow most conversations."
+                "text": "Many! The worst one is funny now. I wanted to go to my cousin’s house, and I said the wrong number to the driver, so I got on the wrong bus. It took me two hours to come back. I didn’t lose my passport and I didn’t miss an exam, just that bus. After that, I always checked the number twice."
               },
               {
                 "speaker": "i",
-                "text": "What do you like about living here?"
+                "text": "Was there a rule that helped you to improve?"
               },
               {
                 "speaker": "h",
-                "text": "The sun, the food and the way people talk to strangers. In my old town, nobody said hello on the bus."
+                "text": "Yes, a simple one. My teacher said I should watch Spanish films, or study every evening, but I tried both and neither worked for me. In the end I decided to speak only Spanish at school, even with other foreign students. It was difficult for a month, but my Spanish got better much faster."
               },
               {
                 "speaker": "i",
-                "text": "Do you ever want to go back?"
+                "text": "What do you like about the people there?"
               },
               {
                 "speaker": "h",
-                "text": "Sometimes. I miss the rain and my grandparents. But I think that I have become more independent."
+                "text": "They are very friendly, and it’s easy to start a chat with a stranger in the street, but that is not the best thing. The best thing is their patience. When I make a mistake, nobody laughs. People wait, help me find the word, and smile. Everyone is always busy, but they still find time for you."
               },
               {
                 "speaker": "i",
-                "text": "What would you say to someone who is about to move abroad?"
+                "text": "What advice would you give to somebody who wants to live abroad?"
               },
               {
                 "speaker": "h",
-                "text": "Be brave and ask questions. People are usually happy to help, and you will learn faster than you expect."
+                "text": "Be brave and ask questions, all the time. Don’t stay only with people from your own country, that’s comfortable but you learn nothing. And don’t wait until you feel ready, because you will never feel ready. I tried that for a year and I wasted time. Ask, try, make mistakes, and enjoy it."
               }
             ]
           },
@@ -1448,67 +1650,67 @@
               "id": "l4-1",
               "prompt": "Why did Bowen move to Spain?",
               "options": [
-                "He won a place",
-                "His mother found a job",
-                "He wanted adventure"
+                "He won a place at a school",
+                "His mother found a job there",
+                "He wanted an adventure"
               ],
               "answer": 1,
-              "explanation": "His mother got a job there."
+              "explanation": "He did not win a school place and never wanted an adventure; his mum found a job in Valencia."
             },
             {
               "id": "l4-2",
-              "prompt": "What was the hardest part?",
+              "prompt": "What was the hardest part for Bowen at the beginning?",
               "options": [
-                "The food and drinks",
-                "The language",
-                "The weather there"
+                "The new language",
+                "The local food",
+                "Making new friends"
               ],
-              "answer": 1,
-              "explanation": "He says the language was the hardest."
+              "answer": 2,
+              "explanation": "He had studied the language and loves the food; what he found hardest was sitting alone at lunch with no friends."
             },
             {
               "id": "l4-3",
-              "prompt": "What mistake did he make?",
+              "prompt": "What mistake did Bowen make?",
               "options": [
-                "Ordered the wrong food",
-                "Missed the last bus",
-                "Lost his old passport"
+                "He got on the wrong bus",
+                "He lost his passport",
+                "He missed an important exam"
               ],
               "answer": 0,
-              "explanation": "He ordered a coffee and got a chicken sandwich."
+              "explanation": "He says the worst mistake was taking the wrong bus after giving the wrong number; the passport and the exam were not problems."
             },
             {
               "id": "l4-4",
-              "prompt": "What rule did he make?",
+              "prompt": "What rule helped Bowen improve his Spanish?",
               "options": [
-                "Avoid all English films",
-                "Study every single evening",
-                "Speak only Spanish at school"
+                "He studied every evening",
+                "He spoke only Spanish at school",
+                "He watched a lot of Spanish films"
               ],
-              "answer": 2,
-              "explanation": "He spoke only Spanish at school."
+              "answer": 1,
+              "explanation": "Studying and films did not work for him; he decided to speak Spanish only, even with other foreign students."
             },
             {
               "id": "l4-5",
-              "prompt": "What does he like about Spain?",
+              "prompt": "What does Bowen like most about people in Spain?",
               "options": [
-                "The cheap travel costs",
-                "The way people talk to strangers",
-                "The very quiet streets"
+                "They are always in a hurry",
+                "They talk to strangers easily",
+                "They are patient with learners"
               ],
-              "answer": 1,
-              "explanation": "He likes how people talk to strangers."
+              "answer": 2,
+              "explanation": "They are friendly and chat in the street, but the best thing is that they wait and help when he makes a mistake."
             },
             {
               "id": "l4-6",
-              "prompt": "What advice does he give?",
+              "prompt": "What advice does Bowen give?",
               "options": [
-                "Be brave and ask questions",
-                "Stay close to your home",
-                "Wait for other people"
+                "Ask a lot of questions",
+                "Stay with people from home",
+                "Wait until you feel ready"
               ],
               "answer": 0,
-              "explanation": "He says be brave and ask questions."
+              "explanation": "He says to be brave and ask questions, not to stay with people from your country, and not to wait until you feel ready."
             }
           ]
         }

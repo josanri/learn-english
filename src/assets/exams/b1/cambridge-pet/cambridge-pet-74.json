@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why did the writer decide to join the team?",
               "options": [
-                "She is good at arguing",
                 "Her friends were all in it",
-                "She wanted to win a prize"
+                "She had won a speech prize",
+                "She wanted to win a prize",
+                "She is good at arguing"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "Her teacher said she was good at arguing with her brother."
             },
             {
@@ -261,10 +262,11 @@
               "prompt": "What surprised her about the subject?",
               "options": [
                 "The other school did not arrive on time",
-                "The topic was far too easy for her",
-                "She had to argue for an idea she disliked"
+                "She had to argue for an idea she disliked",
+                "The other team was much older",
+                "The topic was far too easy for her"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She did not agree with her side, but a good debater can argue for any idea."
             },
             {
@@ -272,10 +274,11 @@
               "prompt": "How did she feel when she began to speak?",
               "options": [
                 "Completely calm",
+                "Rather bored",
                 "Very nervous",
-                "Rather bored"
+                "Surprisingly happy"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "Her notes were shaking and her voice was a whisper."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "She began to enjoy herself",
                 "She forgot her notes",
-                "She stopped speaking"
+                "She stopped speaking",
+                "She lost her notes"
               ],
               "answer": 0,
               "explanation": "She forgot her nerves and started to enjoy herself."
@@ -294,10 +298,11 @@
               "prompt": "What has she learned?",
               "options": [
                 "Judges are always right about everything",
+                "Zoos should be closed",
                 "Winning is the most important thing of all",
                 "Listening is as important as speaking"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "Listening is just as important as speaking."
             }
           ]
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "How to give a good speech",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Many people are afraid of speaking in public, but it is a skill that anyone can learn. [1] Here are some simple tips to help you.\n\nFirst, know your audience. Think about who will be listening and what they want to hear. [2] A talk to young children, for example, should be very different from a talk to teachers.\n\nSecond, keep it short and clear. Most listeners remember only two or three main ideas. [3] Everything else just makes your message harder to follow.\n\nThird, speak slowly. When we are nervous, we speak very fast. [4] Take a breath at the end of each sentence, and you will sound much more confident.\n\nFinally, practise out loud. Stand in front of a mirror, or ask a friend to listen. [5] The more you rehearse, the less afraid you will be on the day.",
           "sentences": [
-            "Choose these carefully and repeat them at the end.",
-            "It may feel strange at first, but it really works.",
-            "The same words will not work for every group of people.",
             "This makes it difficult for the audience to understand you.",
-            "All it takes is a little preparation and a lot of practice.",
-            "Do not forget to wear comfortable shoes."
+            "Your hands should always stay in your pockets.",
+            "The same words will not work for every group of people.",
+            "It may feel strange at first, but it really works.",
+            "Speakers who read from paper often forget to look up.",
+            "Choose these carefully and repeat them at the end.",
+            "Do not forget to wear comfortable shoes.",
+            "All it takes is a little preparation and a lot of practice."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "E",
+              "answer": "H",
               "explanation": "All it takes is a little preparation, and the next sentence gives tips."
             },
             {
@@ -330,17 +337,17 @@
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "F",
               "explanation": "Choose the main ideas carefully; everything else makes the message harder."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "A",
               "explanation": "Fast speech makes it hard to understand, and the next sentence advises taking a breath."
             },
             {
               "id": "r4-5",
-              "answer": "B",
+              "answer": "D",
               "explanation": "It may feel strange, and the next sentence says the more you rehearse the less afraid you are."
             }
           ]
@@ -716,24 +723,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Kaya",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What was your speech about?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "About my grandmother, who moved to this country when she was a girl."
+                    "text": "Good evening, everybody. When Mr Dean asked us to give a speech about a person that we admire, I thought about a lot of names. First I thought of a famous writer, because I have read all her books twice. Then I thought of our head teacher, who is here tonight, and I hope she isn’t offended. But in the end, I chose the woman who taught me to read when I was four. She had no university degree and she never travelled far from her village. She made soup every Sunday, and she told me stories that she made up as she went. This speech is for my grandmother."
                   }
                 ]
               },
@@ -746,7 +741,7 @@
                   "The head teacher of the school"
                 ],
                 "answer": 1,
-                "explanation": "She says that the speech was about her grandmother."
+                "explanation": "He considered a writer and the head teacher, but he chose the woman who taught him to read and told him stories, his grandmother."
               }
             },
             {
@@ -773,11 +768,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "When does the debate start?"
+                    "text": "Keir, is the debate in the main hall? I saw a poster there."
                   },
                   {
                     "speaker": "m",
-                    "text": "At half past three in room twelve. Come early to get a good seat."
+                    "text": "That was the old poster. The hall is full of chairs for the exams, so they moved it. I thought of the library, but they have a book fair this week."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So where is it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Room twelve, the biggest classroom on the second floor. The judges are already there, I saw them."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks. I’ll tell Mia. She’s looking for the entrance of the hall."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good, because she’s going to be late."
                   }
                 ]
               },
@@ -790,7 +801,7 @@
                   "In the library"
                 ],
                 "answer": 0,
-                "explanation": "He says that it is in room twelve."
+                "explanation": "The poster in the hall is old because of the exams and the library has a book fair, so the debate is in room twelve."
               }
             },
             {
@@ -817,11 +828,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you win the competition?"
+                    "text": "You look so happy, Leah! Did you win?"
                   },
                   {
                     "speaker": "f",
-                    "text": "No, I came third. But I was happy because I spoke without any notes."
+                    "text": "No, I came third, and the winner was from the north. That’s fine. And I didn’t talk to the famous speaker who was on the list, because he left early."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So why the smile?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I never needed my notes, not once. Last time I held my cards like a shield and read most of it. Today I knew every word."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s great."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know. My teacher cried a little, and she is usually so serious. Will you come to the next round and clap for me?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course, I wouldn’t miss it."
                   }
                 ]
               },
@@ -829,12 +860,12 @@
                 "id": "l1-3q",
                 "prompt": "Why was the girl happy?",
                 "options": [
-                  "She spoke without notes",
-                  "She won the first prize",
-                  "She met a famous speaker"
+                  "She won first prize",
+                  "She met a famous speaker",
+                  "She spoke without notes"
                 ],
-                "answer": 0,
-                "explanation": "She says that she spoke without any notes."
+                "answer": 2,
+                "explanation": "She came third and did not meet the famous speaker, but she did not need her notes at all, which she did last time."
               }
             },
             {
@@ -861,11 +892,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why do you practise in the bathroom?"
+                    "text": "Mum says you spend hours in the bathroom. Are you hiding from your brothers?"
                   },
                   {
                     "speaker": "m",
-                    "text": "The sound is better there, and nobody can hear me when I make mistakes."
+                    "text": "I’m practising my speech. It’s the only room with a lock, but that’s not the reason."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it because it’s quiet? The house is so noisy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not quiet at all, the tap is dripping. But with all those tiles my voice sounds deep and clear, like in a theatre. And I know there’s a big mirror, but I can’t look at it, because it makes me laugh."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then maybe you should practise in the garden."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not a chance. The neighbours would hear."
                   }
                 ]
               },
@@ -878,7 +925,7 @@
                   "It has a big mirror"
                 ],
                 "answer": 1,
-                "explanation": "He says that the sound is better there."
+                "explanation": "He says the room is not quiet and he cannot look at the mirror; the tiles make his voice sound deep and clear."
               }
             },
             {
@@ -892,24 +939,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Kaya",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How long should the speech be?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Between three and four minutes. Anything longer will bore the audience."
+                    "text": "Right, class, a few words about your speeches for Friday. Last year they were about ten minutes, but that was for the older students, so forget it. I know some of you want five or six minutes, because a good topic needs time. I understand that, but the judges have only four minutes for each person. So please make it three or four, no more. If you finish early, nobody minds, but if you go over, I will stop you. Practise with a clock at home, and bring your cards on Thursday so that I can check them."
                   }
                 ]
               },
@@ -922,7 +957,7 @@
                   "Three to four minutes"
                 ],
                 "answer": 2,
-                "explanation": "She says that it should be between three and four minutes."
+                "explanation": "Ten minutes was for the older students and five or six is too long for the judges; the limit is four minutes, so three or four."
               }
             },
             {
@@ -949,24 +984,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Who taught you to speak so well?"
+                    "text": "Your speech was fantastic, Keir. Did your coach help you? He’s famous for training champions."
                   },
                   {
                     "speaker": "m",
-                    "text": "My aunt is a radio presenter. She gave me many tips when I was little."
+                    "text": "I did go to him once, but he only said, \"Be yourself,\" and that was it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Your brother then? He’s studying law."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He wanted to help, but he’s always travelling, and we only talked on the phone for five minutes. The real help was my aunt. She used to teach drama, and she showed me where to breathe, where to look and where to stop."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She must be proud."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "She cried more than my mum did."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "Who gave the man tips?",
+                "prompt": "Who gave the man tips for his speech?",
                 "options": [
-                  "His aunt",
+                  "His brother",
                   "His coach",
-                  "His brother"
+                  "His aunt"
                 ],
-                "answer": 0,
-                "explanation": "He says that his aunt, a radio presenter, gave him tips."
+                "answer": 2,
+                "explanation": "The coach only said \"Be yourself\" and the brother is always away; the person who taught him to breathe, look and stop was his aunt."
               }
             },
             {
@@ -993,11 +1044,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What will you do after the competition?"
+                    "text": "Great speech! Are you going home to rest now?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Go for pizza with my team. We have promised ourselves a treat."
+                    "text": "I thought I would, because I’m exhausted. But the team insisted. We’re going for pizza, because the coach is paying."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Brilliant. Then you start work on the new speech?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "On Monday, not today. Today I just want to celebrate. I haven’t eaten anything since breakfast, and I was too nervous."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Save me a slice, then."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Come with us! There’s a big table, and the others would love to see you. We’ll sit near the window and talk about the next round."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "All right, if you’re sure."
                   }
                 ]
               },
@@ -1005,12 +1076,12 @@
                 "id": "l1-7q",
                 "prompt": "What will the girl do afterwards?",
                 "options": [
-                  "Go straight home to rest",
+                  "Go home to rest",
                   "Eat pizza with her team",
-                  "Practise another new speech"
+                  "Practise a new speech"
                 ],
                 "answer": 1,
-                "explanation": "She says that she will go for pizza with her team."
+                "explanation": "She wanted to go home but the team insisted on pizza; she will start the new speech on Monday."
               }
             }
           ]
@@ -1046,24 +1117,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good evening, everyone, and welcome to the school debate. Tonight's motion is about school uniform."
+                    "text": "Well, Levi, what did you think of the debate?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Thank you. I will speak first for the team in favour."
+                    "text": "I thought the topic about phones in school was a bit easy. Everybody had the same ideas."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m not sure. I found it interesting. But the judges were strange. One of them kept yawning."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, but they chose the right team in the end. The girls from Westfield were brilliant, calm and clear."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Totally. They deserved to win, though I’d have liked it to be us. Our captain made a few small mistakes in the second round."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Everybody does. We’ll get them next year."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hope so."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "What do Lena and Levi agree about the debate?",
                 "options": [
-                  "At a restaurant",
-                  "At a sports match",
-                  "At a school debate"
+                  "The topic was too easy",
+                  "The winning team deserved it",
+                  "The judges were unfair"
                 ],
-                "answer": 2,
-                "explanation": "She welcomes everyone to the school debate."
+                "answer": 1,
+                "explanation": "He thinks the topic was easy and she does not; the judges were strange but not unfair, and both think the girls from Westfield deserved to win."
               }
             },
             {
@@ -1090,24 +1181,48 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I think I forgot my best argument in my speech."
+                    "text": "Be honest, Kaya. How was my speech?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Do not be so hard on yourself. Nobody noticed, and you did very well."
+                    "text": "You did very well, honestly. Your voice was strong, and I could hear every word in the last row."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And the ending? I rushed it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, you spoke very quickly at the end and I missed a joke. But everybody laughed at the others, and you didn’t forget anything."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I felt my knees shake."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Nobody could see. Just slow down next time, take a breath between the ideas, and smile a little more."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll try. Thanks for telling me the truth."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s what friends are for."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does the woman say about his speech?",
                 "options": [
-                  "Telling him he was very bad",
-                  "Telling him he did very well",
-                  "Asking him a difficult question"
+                  "It was good but too fast",
+                  "It was too quiet",
+                  "He forgot parts of it"
                 ],
-                "answer": 1,
-                "explanation": "She tells him that nobody noticed and that he did very well."
+                "answer": 0,
+                "explanation": "She heard every word and he forgot nothing, but the ending was fast and she missed a joke."
               }
             },
             {
@@ -1134,24 +1249,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "We have been chosen to speak for the school at the national final!"
+                    "text": "Congratulations, captain! I heard Mr Dean chose you."
                   },
                   {
                     "speaker": "m",
-                    "text": "You are joking! That is the best news I have heard all year."
+                    "text": "Thanks. I can’t believe it. Jo was the obvious choice, and I thought she would get it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Aren’t you worried? There’s a lot of work, and training twice a week."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A bit, but I like organising things. I’m so excited. I’ve been smiling since this morning and I can’t stop. Honestly, I’d do it for free."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Well, you will! Who’s going to be your vice-captain?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I don’t know yet. I’ll ask the team on Monday."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does the man feel about being captain?",
                 "options": [
-                  "Excited about the news",
-                  "Angry about the choice",
-                  "Tired of the contest"
+                  "Angry that it is unfair",
+                  "Worried about the work",
+                  "Excited about the news"
                 ],
-                "answer": 0,
-                "explanation": "He says that it is the best news he has heard all year."
+                "answer": 2,
+                "explanation": "He is surprised that he was chosen over Jo and is a little worried about the work, but mostly he cannot stop smiling and would do it for free."
               }
             },
             {
@@ -1178,24 +1309,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, is this the room for the speaking class?"
+                    "text": "Leah, I’m thinking of joining the speaking club. Is it any good?"
                   },
                   {
                     "speaker": "f",
-                    "text": "No, that is next door. This is the art room."
+                    "text": "It’s great. Is it to improve your marks? Mr Ash gives extra points for joining."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That would be nice, but no. And I have plenty of friends. The real thing is that my hands shake every time I speak in front of the class. I get so nervous, and I want that to stop."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It will get better. I was the same in my first year, and now I don’t even think about it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really? Then I’ll go on Tuesday and ask Mr Ash about the next meeting."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good. I’ll walk there with you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want?",
+                "prompt": "Why does the man want to join the speaking club?",
                 "options": [
-                  "The head teacher",
-                  "The art room",
-                  "The speaking class"
+                  "To make new friends",
+                  "To feel less nervous",
+                  "To get better marks"
                 ],
-                "answer": 2,
-                "explanation": "He asks if this is the room for the speaking class."
+                "answer": 1,
+                "explanation": "He says marks and friends are not the reason; he wants his hands to stop shaking because he is nervous in front of the class."
               }
             },
             {
@@ -1222,24 +1369,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "The judges are ready, and the first speaker is already on stage."
+                    "text": "The debate has started, Levi. The door is closed."
                   },
                   {
                     "speaker": "m",
-                    "text": "Let us go in quietly and sit at the back."
+                    "text": "Should we wait here until they finish the first speech?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That might take twenty minutes. Let’s go in quietly and sit at the back. Nobody will mind."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And speak to the judges first? To say sorry?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Afterwards. Come on."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK, but I’ll open the door slowly. The last time I went in late, the door made a terrible noise and everybody looked at me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That was in the library! Just come."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What will they do next?",
+                "prompt": "What do the friends decide to do?",
                 "options": [
                   "Go in and sit at the back",
-                  "Wait outside the main hall",
+                  "Wait outside the hall",
                   "Speak to the judges first"
                 ],
                 "answer": 0,
-                "explanation": "He suggests going in quietly and sitting at the back."
+                "explanation": "Waiting would take twenty minutes and they will speak to the judges afterwards, so they go in quietly and sit at the back."
               }
             },
             {
@@ -1265,25 +1432,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Jory, you’re pale. Is the speech too long again?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "My microphone is not working, and the speech starts in five minutes!"
+                    "text": "No, I timed it, four minutes exactly. And I have my cards here, all eight, in the right order."
                   },
                   {
                     "speaker": "f",
-                    "text": "Stay calm. I will ask the technician to bring another one."
+                    "text": "So what’s the matter?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I tried the microphone ten minutes ago, and it kept making a noise, then it stopped. If it doesn’t work, nobody will hear me in the last row."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The technician is coming. Don’t worry."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I hope he’s quick, because the first speech is in ten minutes and I’m the second."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You will be fine. Drink some water."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the boy's problem?",
+                "prompt": "What is the boy worried about?",
                 "options": [
-                  "His speech is far too long",
-                  "His notes have been lost",
-                  "His microphone is not working"
+                  "His speech is too long",
+                  "He has lost his cards",
+                  "The microphone may not work"
                 ],
                 "answer": 2,
-                "explanation": "He says that his microphone is not working."
+                "explanation": "The speech takes four minutes and the cards are in order; he fears that the microphone will stop and nobody will hear him."
               }
             }
           ]
@@ -1308,63 +1495,63 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Good afternoon, everybody. I am Lena, the captain of the school debating team. Today I would like to tell you about our competition next month. It will be held in the town hall on the fourteenth of November. Teams of three students from eight schools will take part. Each speaker has four minutes, and then there is a break of two minutes. The topic is given only one hour before the debate, so there is not much time to prepare. We will be told which side to argue for just before we begin. Three judges will give marks for clear ideas, good manners and teamwork. The winning team will receive a silver cup and will go on to the national final in the capital. If you want to watch, entry is free, but you must arrive by half past nine. Please remember to switch off your mobile phones. Thank you for listening."
+                "text": "Good afternoon, everybody. I’m Lena, the captain of the school debating team, and today I’d like to tell you about our competition next month. It will be on the fourteenth of November. The practice round is a week earlier, on the seventh, but only the teams come to that. The competition will be in our school hall. Last year twelve schools took part, which was too many, and we finished at nine in the evening. So this year we invited only eight schools. Each team has three speakers. Every speaker talks for four minutes, and after that there are two minutes for questions. People often forget the second number, but it matters. The topic is different from other years. In the past the teams knew it a week before, but now we give it to them one hour before the debate, so there is no time to learn a speech by heart. They must think quickly. A team of judges, with two teachers and a former student, will decide the winner. The winning team receives a silver cup, and the runners-up get bronze medals. Now, for those who would like to watch. Entry is free, and you don’t have to book. The debate starts at ten, but the doors open at half past eight. Please come before half past nine, because we close the doors after that, so nobody disturbs the speakers. Our own team will wear the green school jumper, so you can see us easily and clap when we come in. Finally, there will be sandwiches and tea at lunchtime for everyone in the canteen, and the students from the other schools can try our famous lemon cake. Thank you very much."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The competition is on the ___ of November",
+              "prompt": "The competition takes place on November the ___",
               "answer": "fourteenth",
               "accepted": [
                 "14th"
               ],
-              "explanation": "It will be held on the fourteenth of November."
+              "explanation": "The practice round is on the seventh, but the competition is on the fourteenth."
             },
             {
               "id": "l3-2",
-              "prompt": "Teams come from ___ schools",
+              "prompt": "This year ___ schools will take part",
               "answer": "eight",
               "accepted": [
                 "8"
               ],
-              "explanation": "Teams of three students from eight schools."
+              "explanation": "Twelve schools came last year, but this year they invited only eight."
             },
             {
               "id": "l3-3",
-              "prompt": "Each speaker has ___ minutes",
+              "prompt": "Each speaker can talk for ___ minutes",
               "answer": "four",
               "accepted": [
                 "4"
               ],
-              "explanation": "Each speaker has four minutes."
+              "explanation": "After the four minutes of the speech there are two minutes for questions."
             },
             {
               "id": "l3-4",
-              "prompt": "The topic is given ___ hour before the debate",
+              "prompt": "The team gets the topic ___ hour before the debate",
               "answer": "one",
               "accepted": [
                 "1",
                 "an"
               ],
-              "explanation": "The topic is given only one hour before."
+              "explanation": "In the past the topic was known a week before, but now it is given one hour before."
             },
             {
               "id": "l3-5",
-              "prompt": "The winners receive a silver ___",
+              "prompt": "The winning team takes home a silver ___",
               "answer": "cup",
               "accepted": [],
-              "explanation": "The winning team will receive a silver cup."
+              "explanation": "The winners get a silver cup and the runners-up get bronze medals."
             },
             {
               "id": "l3-6",
-              "prompt": "Visitors must arrive by half past ___",
+              "prompt": "Spectators have to come before half past ___",
               "answer": "nine",
               "accepted": [
                 "9"
               ],
-              "explanation": "You must arrive by half past nine."
+              "explanation": "The debate starts at ten and the doors open at half past eight, but visitors must arrive before half past nine."
             }
           ]
         },
@@ -1396,120 +1583,120 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Keir, you coach the national schools debating team. What do you like about it?"
+                "text": "Keir, why do you enjoy coaching?"
               },
               {
                 "speaker": "h",
-                "text": "I love seeing shy students find their voice. Some arrive unable to speak in front of ten people, and a year later they speak to hundreds."
+                "text": "People think I’ll say winning, and of course trophies are nice, we have a few cups. And I have been to several countries with teams, which I love, but I would never choose a job for the travel. What gets me is watching a student who couldn’t ask a question in class last September stand up in front of two hundred people and speak. At that moment I’m proud and a bit emotional."
               },
               {
                 "speaker": "i",
-                "text": "What do you teach first?"
+                "text": "What is the first thing you teach?"
               },
               {
                 "speaker": "h",
-                "text": "Listening. A debater who does not listen cannot answer the other side. Then we work on building arguments with clear examples."
+                "text": "Many beginners think it’s about talking, and some buy a suit before the first lesson, but the way you dress is the last thing. I don’t start with writing either, because you can type fast and still say nothing. We begin with listening. If you don’t hear what the other team really says, you can’t answer. I make them repeat each other’s arguments before they reply."
               },
               {
                 "speaker": "i",
-                "text": "Do students always argue for what they believe?"
+                "text": "Why do you give students a side?"
               },
               {
                 "speaker": "h",
-                "text": "Not usually. They are given a side, and they must defend it. It teaches them to understand ideas they disagree with."
+                "text": "Because it’s the best lesson. Some days a student has to defend an idea that they hate. It doesn’t make the debates shorter, they are exactly the same length, and we have the occasional argument in the corridor, so that isn’t the reason. But when you defend the other side, you see why somebody believes it, and you stop thinking that they are stupid."
               },
               {
                 "speaker": "i",
-                "text": "What is the most common mistake?"
+                "text": "What mistake do you see most often?"
               },
               {
                 "speaker": "h",
-                "text": "Speaking too fast and trying to say too much. A few strong points are better than twenty weak ones."
+                "text": "Speaking too fast and trying to say everything. Nervous students put ten ideas into four minutes, and the judges remember none. I tell them: three ideas, well explained. Arguing with the judges has happened only once, and missing practice is a problem for a few, but it’s rare."
               },
               {
                 "speaker": "i",
-                "text": "How do you prepare for a competition?"
+                "text": "What do you do the day before a competition?"
               },
               {
                 "speaker": "h",
-                "text": "We practise answering surprise questions. We also hold a mock debate the day before, and I play the judge."
+                "text": "I used to give them a day off to relax, but they just worried more. A trip to the theatre was a nice idea for a while, and I took them once, but it did nothing. Now we have a mock debate with parents and teachers as the audience. It feels real, and it takes their fear away."
               },
               {
                 "speaker": "i",
-                "text": "What do students gain from debating?"
+                "text": "Apart from confidence, what do students gain?"
               },
               {
                 "speaker": "h",
-                "text": "Confidence, of course, but also respect for other opinions. Many of them tell me that it has helped them in every subject."
+                "text": "Some people think it would help with dates and facts, and I would love to say that, but their memory isn’t better than anybody else’s. A few go on to act, but only because they were already good at it. The biggest change, and the one that parents notice, is respect. They learn to listen to opinions that they don’t share, even at home, around the dinner table."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "What does Keir like about his work?",
+              "prompt": "What does Keir like most about his work?",
               "options": [
-                "Travelling to other countries often",
-                "Seeing shy students find their voice",
-                "Winning big prizes every single year"
+                "Travelling to other countries",
+                "Watching shy students find their voice",
+                "Winning cups every year"
               ],
               "answer": 1,
-              "explanation": "He loves seeing shy students find their voice."
+              "explanation": "Trophies and travel are nice, but he is proud and emotional when a student who could not ask a question speaks to two hundred people."
             },
             {
               "id": "l4-2",
-              "prompt": "What does he teach first?",
+              "prompt": "What does Keir teach first?",
               "options": [
-                "How to dress",
                 "How to listen",
+                "How to dress",
                 "How to write fast"
               ],
-              "answer": 1,
-              "explanation": "Listening comes first."
+              "answer": 0,
+              "explanation": "Clothes are the last thing and fast writing is not the start; they begin with listening to the other team."
             },
             {
               "id": "l4-3",
-              "prompt": "Why are students given a side?",
+              "prompt": "Why does Keir give students a side?",
               "options": [
-                "To understand ideas they disagree with",
-                "To make each debate much shorter",
-                "To avoid arguments between the teams"
+                "To avoid arguments between teams",
+                "To make debates shorter",
+                "To understand ideas they dislike"
               ],
-              "answer": 0,
-              "explanation": "It teaches them to understand ideas they disagree with."
+              "answer": 2,
+              "explanation": "The debates are the same length and arguments in the corridor still happen; defending the other side shows why people believe it."
             },
             {
               "id": "l4-4",
-              "prompt": "What is the most common mistake?",
+              "prompt": "What mistake does he see most often?",
               "options": [
-                "Arguing with the three judges",
-                "Not coming to every practice",
-                "Speaking too fast and saying too much"
+                "Arguing with the judges",
+                "Speaking too fast and saying too much",
+                "Missing practice"
               ],
-              "answer": 2,
-              "explanation": "Speaking too fast and trying to say too much."
+              "answer": 1,
+              "explanation": "Arguing with the judges happened once and missing practice is rare; nervous students put ten ideas into four minutes."
             },
             {
               "id": "l4-5",
               "prompt": "What does he do the day before a competition?",
               "options": [
-                "Gives the students a day off",
                 "Holds a mock debate",
-                "Takes them all to the theatre"
+                "Gives the students a day off",
+                "Takes them to the theatre"
               ],
-              "answer": 1,
-              "explanation": "They hold a mock debate and he plays the judge."
+              "answer": 0,
+              "explanation": "The day off made them worry and the theatre did nothing; now they have a mock debate with parents and teachers."
             },
             {
               "id": "l4-6",
               "prompt": "What do students gain apart from confidence?",
               "options": [
-                "Respect for other opinions",
-                "A better memory for old dates",
-                "A new talent for acting drama"
+                "A better memory for dates",
+                "A talent for acting",
+                "Respect for other opinions"
               ],
-              "answer": 0,
-              "explanation": "Respect for other opinions."
+              "answer": 2,
+              "explanation": "Their memory is not better and only a few act, but they learn to listen to opinions that they do not share."
             }
           ]
         }

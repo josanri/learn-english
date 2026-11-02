@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "Why could the writer hardly sleep before the trip?",
               "options": [
+                "He had a school test the next day",
                 "He was excited about the journey",
                 "He was worried about the cost",
                 "He had a bad cold that week"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He could hardly sleep because he was excited."
             },
             {
               "id": "r3-2",
               "prompt": "How did the writer feel when asked to take off his shoes?",
               "options": [
-                "Embarrassed about it",
+                "Nervous about missing his flight",
                 "Angry with the officer",
-                "Surprised that it was free"
+                "Surprised that it was free",
+                "Embarrassed about it"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He felt embarrassed, but his sister said it was normal."
             },
             {
               "id": "r3-3",
               "prompt": "What did the writer see through the window?",
               "options": [
+                "The city getting smaller below him",
+                "A small boat on the lake",
                 "Clouds that looked like mountains",
-                "Another plane flying close by",
-                "The city getting smaller below him"
+                "Another plane flying close by"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "The whole city was getting smaller, like a model."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "He lost his bag in the terminal",
                 "His parents bought him a gift",
-                "His grandmother was waiting with a sign"
+                "His grandmother was waiting with a sign",
+                "His sister met a friend"
               ],
               "answer": 2,
               "explanation": "His grandmother was waiting with a huge sign with his name."
@@ -295,7 +299,8 @@
               "options": [
                 "He prefers to travel by train",
                 "He is keen to become a pilot",
-                "He still finds it frightening"
+                "He still finds it frightening",
+                "He wants to be a travel writer"
               ],
               "answer": 1,
               "explanation": "He wants to become a pilot one day."
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "How to get through the airport quickly",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Airports can be stressful places, but a little preparation makes the experience much easier. [1] Many airlines allow you to check in on your phone the day before, which saves a lot of time.\n\nWhen you arrive, go straight to the bag drop if you have a suitcase. [2] Remember to check the weight, because heavy bags can be expensive.\n\nAt security, be ready. [3] It is also a good idea to wear shoes that are easy to remove. Many people forget this and hold up the queue.\n\nOnce you are through, look at the screens to find your gate. [4] However, do not go too far away, as the gate sometimes changes at the last minute. [5] Finally, listen carefully to the speakers, so that you never miss your flight.",
           "sentences": [
-            "Have your passport and boarding pass in your hand.",
-            "Start by checking in online.",
             "Keep your boarding pass in a safe pocket until you board.",
+            "Start by checking in online.",
+            "Staff will weigh it and put a label on it.",
+            "Have your passport and boarding pass in your hand.",
+            "Children under two do not need their own seat.",
             "There is usually plenty of time to buy a coffee or a book.",
             "The pilot will tell you when it is safe to stand up.",
-            "Staff will weigh it and put a label on it."
+            "Some airports have free wifi, so you can download a film."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "C",
               "explanation": "The bag drop is where staff weigh the suitcase and add a label, and then weight is mentioned."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "D",
               "explanation": "At security you need your documents ready, and the next sentence adds shoes."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "F",
               "explanation": "After finding your gate, there is time for a coffee, and then \"however\" warns about not going far."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "A",
               "explanation": "Keeping the boarding pass safe is a final tip, and then \"Finally\" introduces the announcements."
             }
           ]
@@ -736,6 +743,22 @@
                   {
                     "speaker": "m",
                     "text": "Great. I need to be at the terminal by ten."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then you can have a coffee first. The terminal is only fifteen minutes away, and the bus does not stop on the way."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about the buses after that one?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The one after that is at half past nine. Most people take the one at ten past nine, because it arrives before ten o'clock."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. I'll buy my ticket now."
                   }
                 ]
               },
@@ -780,6 +803,22 @@
                   {
                     "speaker": "m",
                     "text": "Please go to the desk and fill in a form. We will phone you when we find it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I understand, but I'm leaving tomorrow morning. Can I come back in the morning to look for it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "There's no need to come back. If we find it, we will bring it to your hotel. And please don't go to the other terminal. Bags from this flight always come here."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Which details do I write on the form?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Write the colour of your suitcase, your hotel address and your phone number."
                   }
                 ]
               },
@@ -824,6 +863,18 @@
                   {
                     "speaker": "f",
                     "text": "Oh no, it fell out of my pocket! Thank you so much, I would have missed my flight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You're welcome. It was next to the gate, near the seats, and I saw it when I walked past with my heavy bag."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I would have missed my flight to Madrid. Can I offer you a coffee? There is a café over there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, thank you, I must hurry. Have a good trip!"
                   }
                 ]
               },
@@ -868,6 +919,22 @@
                   {
                     "speaker": "m",
                     "text": "No, I am afraid it is running forty minutes late because of fog."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no. Is it a strike? Or a technical fault with the plane?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, it's only the fog. The pilots can't see the runway, so planes leave one by one. There's no strike and no fault."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Will we arrive in Rome before dinner?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I think so, but you should wait near the gate, because the time can change. Please listen for the announcements."
                   }
                 ]
               },
@@ -912,6 +979,22 @@
                   {
                     "speaker": "f",
                     "text": "A window seat, please. I love looking at the clouds."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good choice. The view is lovely today. Do you want a seat near the front of the plane?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, a seat near the wing is fine. I don't like the aisle, because people always hit my arm with their bags."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then here is your boarding pass, seat fourteen A. Boarding starts at eleven, at gate eight."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you very much."
                   }
                 ]
               },
@@ -960,6 +1043,22 @@
                   {
                     "speaker": "f",
                     "text": "I'll have both, please."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is five pounds altogether. The coffee alone is three, so you are saving some money."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "With milk, please. And which sandwiches do you have?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Cheese, ham or egg. The egg one is the most popular, and I'll make it fresh for you."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Lovely. I'll sit by the window and eat it there."
                   }
                 ]
               },
@@ -1004,6 +1103,18 @@
                   {
                     "speaker": "f",
                     "text": "No, let us go to the shops. We still have an hour before boarding."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. I'd like to buy a present for my daughter. Is there a toy shop?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "There's one near the exit, and a bookshop too. Let's not have a meal now. We can eat on the plane, and I don't want to sit at the gate for an hour."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Agreed. We'll be back at the gate in forty minutes. I'll set an alarm on my phone."
                   }
                 ]
               },
@@ -1057,6 +1168,18 @@
                   {
                     "speaker": "m",
                     "text": "Thank you."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Please have your boarding pass and your passport ready. Flight 306 to Dublin will leave on time, at a quarter past eleven. There is no change of runway and nobody is lost, so please do not worry."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. Is that the right gate for business class too?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, all passengers use Gate 12. Have a pleasant flight."
                   }
                 ]
               },
@@ -1101,6 +1224,22 @@
                   {
                     "speaker": "f",
                     "text": "Of course. Can I have your address, please?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It's twenty-two Hill Road, near the post office. I'd like a car for two people with two big suitcases."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No problem. That will be about twenty pounds. Do you want to pay by card or in cash?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Cash, please. I already have my plane ticket, I just need a ride, and the driver knows the way, doesn't he?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. He will ring your bell at ten to six. Please be ready."
                   }
                 ]
               },
@@ -1145,6 +1284,22 @@
                   {
                     "speaker": "m",
                     "text": "Of course. Sorry, I did not hear you."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No problem. We will take off in ten minutes. After that you can use your tablet, and we will bring drinks and a small meal."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Where do I put my coat? There is no space under the seat."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can put it in the locker above your head. We are not in a taxi or at a station, you know, there is plenty of room up there!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Ha! Of course. Thank you."
                   }
                 ]
               },
@@ -1189,6 +1344,22 @@
                   {
                     "speaker": "m",
                     "text": "No problem. Which day would you prefer?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I'm going on holiday for two weeks. I would like to leave my car on Saturday, not on Friday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Let me check. Yes, the car park has space on Saturday. The price is the same, nine pounds a day. I'll change your booking."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. I'm not cancelling my flight, I just need a day more at home. I also lost the paper with my booking number. Can you find it by my name?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. I'll send you a new email."
                   }
                 ]
               },
@@ -1233,6 +1404,18 @@
                   {
                     "speaker": "f",
                     "text": "Yes, but stay close to me. It's very busy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Can we also buy a toy plane at the shop afterwards? Only a small one. I have some money from my birthday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We'll see. Hold my hand when we cross to the window. First the planes, and then we will go home for dinner. Look, one is coming now!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks, Mum. Can I take a photo of the big one with your phone?"
                   }
                 ]
               },
@@ -1277,6 +1460,18 @@
                   {
                     "speaker": "m",
                     "text": "Oh no. Can I take something out?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes. You can put the heavy things in your hand luggage, or you can pay twenty pounds for extra weight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I will move my books and my shoes to my small bag. The suitcase is not lost, and it is the right size, so it's only the weight."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let's put it on the scale again. Now it is twenty-two kilos, so it is fine. Have a good flight."
                   }
                 ]
               },
@@ -1314,7 +1509,7 @@
             "turns": [
               {
                 "speaker": "clara",
-                "text": "Hello, everyone, and welcome to our airport tour. My name's Clara. The tour takes ninety minutes, and we start here in the main hall. First, we will visit the control tower, which is fifty metres high. After that, we will watch the baggage system, which moves nearly ten thousand suitcases every day. Then we go outside to see the fire station, where you can sit in a real fire engine. Lunch is included, and you can choose chicken or fish. The tour costs twelve pounds for adults and is free for children. Please remember to bring your passport to show who you are. Finally, you cannot take photographs in the security area."
+                "text": "Hello, everyone, and welcome to our airport tour. We will walk about two kilometres, so I hope you are wearing comfortable shoes. My name's Clara. I have worked at the airport for twelve years, and I love showing it to visitors. The tour takes ninety minutes, and we start here in the main hall. Please stay together and listen to my instructions, because some areas are very busy. First, we will visit the control tower, which is fifty metres high. From the top, you can see the whole airport and the hills behind it, and the air traffic controllers will answer your questions. After that, we will watch the baggage system, which moves nearly ten thousand suitcases every day. It is a very big machine, and it makes a lot of noise, so you may want to cover your ears. Then we go outside to see the fire station, where you can sit in a real fire engine. Children love this part, and the firefighters let them wear the helmets. Lunch is included, and you can choose chicken or fish. There is also a vegetarian dish, and it comes with a salad and a drink. The tour costs twelve pounds for adults and is free for children. You can pay at the information desk by card or in cash. Please remember to bring your passport to show who you are. A driving licence is not enough, so please do not forget your passport. Finally, you cannot take photographs in the security area. There are signs on the walls, and the staff will check your phone if they see you use it."
               }
             ]
           },
@@ -1405,11 +1600,27 @@
               },
               {
                 "speaker": "gerard",
+                "text": "What was your first flight like?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "I was nineteen, and I flew a very small plane with a teacher beside me. My hands were wet, and I forgot to say one word on the radio, but the teacher only laughed."
+              },
+              {
+                "speaker": "gerard",
                 "text": "What is the best part of your job?"
               },
               {
                 "speaker": "jenna",
                 "text": "The view. When you fly above the clouds at sunrise, it is the most beautiful sight in the world. I still look at it every day."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What do passengers not see?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "They don't see the work we do on the ground. Engineers check the plane for hours, and the cleaners work in the night. Without them, I could not fly even for one minute."
               },
               {
                 "speaker": "gerard",
@@ -1421,11 +1632,27 @@
               },
               {
                 "speaker": "gerard",
+                "text": "What do you do when you are abroad?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "I walk around the city, try local food and send postcards to my nephews. I have visited more than fifty countries, and I keep a small book with all the stamps."
+              },
+              {
+                "speaker": "gerard",
                 "text": "Have you ever been frightened?"
               },
               {
                 "speaker": "jenna",
                 "text": "Once, when a bird hit the engine just after take-off. We had to return to the airport quickly. Everyone was safe, but I was shaking afterwards."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What did you learn from that day?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "To stay calm. We practise emergencies every year, and that practice helped us. I also learned to say thank you to the crew, because we worked as one team."
               },
               {
                 "speaker": "gerard",
@@ -1437,11 +1664,35 @@
               },
               {
                 "speaker": "gerard",
+                "text": "Are there many women pilots?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "There were few when I started, but now there are many more. I hope that young girls see me and think, I can do that, too."
+              },
+              {
+                "speaker": "gerard",
                 "text": "What advice would you give to young people?"
               },
               {
                 "speaker": "jenna",
                 "text": "Study hard, especially maths and science, and don't give up. It is a long road, but it's worth every minute."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Do you want to do this job for ever?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Until the doctors tell me it's time to stop. After that, I would like to teach students in a flight school."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What would you like passengers to know?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "That we like our passengers to be happy. If you have a question, please ask a member of the crew. We are always glad to help."
               }
             ]
           },

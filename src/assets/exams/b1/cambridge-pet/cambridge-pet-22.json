@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "What does the writer say about the early morning?",
               "options": [
-                "She leaves home before it is light in winter.",
                 "She enjoys the quiet streets.",
-                "She often misses the first train."
+                "She often misses the first train.",
+                "She arrives at school an hour early.",
+                "She leaves home before it is light in winter."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She leaves at ten past six, when it is still dark in winter."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "The seats were uncomfortable.",
                 "It was too noisy.",
-                "She was afraid to miss her stop."
+                "She was afraid to miss her stop.",
+                "It was too cold."
               ],
               "answer": 0,
               "explanation": "The seats were too hard and she woke up with a sore neck."
@@ -271,9 +273,10 @@
               "id": "r3-3",
               "prompt": "What does she like about listening to podcasts?",
               "options": [
+                "They help her to forget the wet weather.",
                 "They help her to fall asleep.",
-                "They are free of charge.",
-                "They make her more ready for lessons."
+                "They make her more ready for lessons.",
+                "They are free of charge."
               ],
               "answer": 2,
               "explanation": "She is sometimes better prepared for her lessons than the students who live next to the school."
@@ -282,11 +285,12 @@
               "id": "r3-4",
               "prompt": "Why does she take a flask of hot chocolate?",
               "options": [
+                "She gets very hungry in the afternoon.",
+                "Her bus once broke down and she had to wait.",
                 "Her friends like it.",
-                "The bus is always too hot.",
-                "Her bus once broke down and she had to wait."
+                "The bus is always too hot."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "The bus broke down twice in one week and they waited forty minutes in the cold."
             },
             {
@@ -294,10 +298,11 @@
               "prompt": "How does the writer feel about her journey now?",
               "options": [
                 "She is tired of her friends.",
-                "She would be sad if it stopped.",
-                "She wants to move closer to school."
+                "She is bored with Mr Tate.",
+                "She wants to move closer to school.",
+                "She would be sad if it stopped."
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She says that she thinks she would miss her long journey if it ended."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A city without traffic jams",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Ten years ago, the city of Greenhaven had a big problem. Every morning, thousands of cars filled the centre, the air was dirty, and a short journey could take an hour. [1] They decided to do something about it, and the result surprised everybody.\n\nFirst, they built new bicycle lanes that are separated from the traffic. [2] Many parents, who had been afraid to let their children ride on the road, changed their minds.\n\nNext, the council made the bus service cheaper and faster. A single ticket now costs half the old price. [3] The queue for the bus at rush hour has doubled, but the buses now come every five minutes.\n\nNot everybody was pleased at the beginning. Some shop owners said that customers would not come without cars. [4] In fact, the number of visitors has gone up by 20 per cent, because the centre is now quieter and more pleasant.\n\nToday, nearly half of the people in Greenhaven go to work by bike, bus or on foot. [5] Visitors from other cities often come to find out how it was done.",
           "sentences": [
-            "Their solution was simple but brave.",
-            "Many other cities are now planning to follow the same path.",
             "These lanes made cycling feel much safer.",
+            "The old railway station is now a museum.",
             "As a result, more people left their cars at home.",
+            "Many other cities are now planning to follow the same path.",
+            "Bus drivers there are now paid more than before.",
             "This was a fair worry, but it was not true.",
-            "The old railway station is now a museum."
+            "Their solution was simple but brave.",
+            "A taxi in Greenhaven costs twice as much as in other cities."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "G",
               "explanation": "\"Every morning, thousands of cars filled the centre\" describes the problem; \"They decided to do something\" follows the idea of a simple but brave solution."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "A",
               "explanation": "New bicycle lanes are mentioned; sentence C says they made cycling feel safer, and the next sentence says parents changed their minds."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "C",
               "explanation": "The bus service became cheaper, so more people left their cars at home; the next sentence mentions longer queues."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "F",
               "explanation": "Shop owners worried that customers would not come, and \"In fact\" shows that this worry was not true."
             },
             {
               "id": "r4-5",
-              "answer": "B",
+              "answer": "D",
               "explanation": "Nearly half of the people now go to work by bike, bus or foot; other cities want to follow, and visitors come to learn how."
             }
           ]
@@ -733,41 +740,25 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "benvolio",
-                    "name": "Benvolio",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "benvolio",
-                    "text": "Is the next bus to the airport at half past three?"
-                  },
-                  {
                     "speaker": "anatolia",
-                    "text": "No, that one was cancelled. The next one is at a quarter to four."
-                  },
-                  {
-                    "speaker": "benvolio",
-                    "text": "Then I have time for a sandwich."
+                    "text": "Good afternoon, passengers waiting for the number twelve to the museum. The board shows half past three, but that is the old timetable, so please ignore it. Because of roadworks in the town centre, the normal bus is running late today. It will not leave until four o’clock, I’m afraid. However, we have organised a special minibus which will go earlier, at a quarter to four. It will stop in front of the café, next to the ticket machine. If you prefer to wait for the normal bus, you may, but it will be very full. Thank you for your patience, and we apologise for the delay."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "What time is the next bus?",
+                "prompt": "What time does the first bus to the museum leave?",
                 "options": [
                   "Half past three",
                   "A quarter to four",
                   "Four o'clock"
                 ],
                 "answer": 1,
-                "explanation": "The half past three bus was cancelled, and the next is at a quarter to four."
+                "explanation": "The board’s half past three is the old timetable and the normal bus leaves at four, but the special minibus goes at a quarter to four."
               }
             },
             {
@@ -794,15 +785,27 @@
                 "turns": [
                   {
                     "speaker": "clarimond",
-                    "text": "A single to Brightside, please. How much is it?"
+                    "text": "Hello. I’d like a ticket to Oxford, please. I’m coming back on Sunday evening."
                   },
                   {
                     "speaker": "dunstan",
-                    "text": "Six pounds fifty, or a return for ten pounds, if you come back today."
+                    "text": "A single is twelve pounds. A day pass is eighteen, but it’s only for people who come back the same day."
                   },
                   {
                     "speaker": "clarimond",
-                    "text": "I'm coming back tonight, so I'll take the return."
+                    "text": "I thought about the day pass, but I’m staying two nights at my sister’s."
+                  },
+                  {
+                    "speaker": "dunstan",
+                    "text": "Then I’d get the kind where you pay for both journeys together. It’s twenty pounds, so it’s cheaper than two singles."
+                  },
+                  {
+                    "speaker": "clarimond",
+                    "text": "I nearly bought a single online last night, but I decided to wait. Actually, yes, I’ll take the same as my sister bought last time. She said it was good value."
+                  },
+                  {
+                    "speaker": "dunstan",
+                    "text": "Lovely. That’s twenty pounds, please."
                   }
                 ]
               },
@@ -815,7 +818,7 @@
                   "A day pass"
                 ],
                 "answer": 0,
-                "explanation": "She is coming back the same night, so she chooses the return ticket for ten pounds."
+                "explanation": "The day pass is only for the same day and she nearly bought a single, but she wants the ticket that pays for both journeys together."
               }
             },
             {
@@ -842,15 +845,31 @@
                 "turns": [
                   {
                     "speaker": "fenella",
-                    "text": "Which platform is the Oxford train on?"
+                    "text": "Excuse me, which platform is the train to Bristol? My ticket says platform seven."
                   },
                   {
                     "speaker": "evaristo",
-                    "text": "Platform seven, but it's been changed from four because of a delay."
+                    "text": "That was changed this morning. Seven is for the London trains today. Let me check the screen. Oh, it says platform five."
                   },
                   {
                     "speaker": "fenella",
-                    "text": "Thanks. I'd better hurry; it leaves in five minutes."
+                    "text": "Five? OK, I’ll go over the bridge."
+                  },
+                  {
+                    "speaker": "evaristo",
+                    "text": "Wait, wait. Sorry, that’s the delayed train from Cardiff. The Bristol one has been moved to the platform next to it, so it’s four."
+                  },
+                  {
+                    "speaker": "fenella",
+                    "text": "I’m so glad I asked."
+                  },
+                  {
+                    "speaker": "evaristo",
+                    "text": "Yes, there’s a short walk, so hurry up. It leaves in six minutes."
+                  },
+                  {
+                    "speaker": "fenella",
+                    "text": "Thank you. You’ve saved my day."
                   }
                 ]
               },
@@ -862,8 +881,8 @@
                   "Platform five",
                   "Platform four"
                 ],
-                "answer": 0,
-                "explanation": "The train has been changed from platform four to platform seven."
+                "answer": 2,
+                "explanation": "Seven is only on her ticket and five is the delayed Cardiff train; the man corrects himself and says that the Bristol train is on four."
               }
             },
             {
@@ -890,28 +909,48 @@
                 "turns": [
                   {
                     "speaker": "hyacinth",
-                    "text": "How much will the taxi to the station cost?"
+                    "text": "I’m thinking of taking the coach to Manchester next weekend instead of the train."
                   },
                   {
                     "speaker": "gawain2",
-                    "text": "About fifteen pounds, but it could be more if there's traffic."
+                    "text": "Really? The coach takes almost five hours. The train takes two."
                   },
                   {
                     "speaker": "hyacinth",
-                    "text": "Maybe I should go by bus. It's only three pounds, which is much cheaper."
+                    "text": "I know, so it isn’t about saving time."
+                  },
+                  {
+                    "speaker": "gawain2",
+                    "text": "Is it the seats? I heard the new coaches are very comfortable."
+                  },
+                  {
+                    "speaker": "hyacinth",
+                    "text": "Maybe, but I always sleep badly on them. Actually, I looked at the prices yesterday. The train ticket is sixty pounds, and the coach is only fifteen."
+                  },
+                  {
+                    "speaker": "gawain2",
+                    "text": "Wow, that’s a big difference."
+                  },
+                  {
+                    "speaker": "hyacinth",
+                    "text": "Yes. I’m a student, so every pound counts. I can use the money for a nice dinner there."
+                  },
+                  {
+                    "speaker": "gawain2",
+                    "text": "Sensible. Take a good book!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "Why does the woman think of taking the bus?",
+                "prompt": "Why does the woman think of taking the coach?",
                 "options": [
-                  "It is faster.",
-                  "It is cheaper.",
+                  "It saves time.",
+                  "It saves money.",
                   "It is more comfortable."
                 ],
                 "answer": 1,
-                "explanation": "The taxi costs about fifteen pounds and the bus only three pounds."
+                "explanation": "She says it is not about time and she sleeps badly on coaches, but the coach ticket is fifteen pounds against sixty for the train."
               }
             },
             {
@@ -925,55 +964,31 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "juliette",
-                    "name": "Juliette",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "juliette",
-                    "text": "Where do I change for the airport?"
-                  },
-                  {
                     "speaker": "ignatius2",
-                    "text": "At Central Station. Get off there and take the green line, two stops."
-                  },
-                  {
-                    "speaker": "juliette",
-                    "text": "Central, then the green line. Got it."
+                    "text": "Hi Juliette, it’s Ignace. About tomorrow: I know you usually take the green line to get to the airport, but it’s closed for repairs all weekend, so forget that. Some people say there’s a direct bus from the airport station, but it only runs on weekdays. So this is what you do. Take the blue line from your house and stay on it for eight stops. Don’t get out earlier, even if the map looks easier. Change at the big station in the middle of town, the one with the clock tower. The airport train leaves from platform two there. Call me if you get lost. See you tomorrow! Bye."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "Where must the woman change?",
+                "prompt": "Where must Juliette change trains?",
                 "options": [
-                  "At the green line",
+                  "At the green line station",
                   "At the airport",
                   "At Central Station"
                 ],
                 "answer": 2,
-                "explanation": "He tells her to get off at Central Station and take the green line."
+                "explanation": "The green line is closed and the direct bus runs only on weekdays, so she must change at the big station with the clock tower in the middle of town."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "konstantin",
-                    "name": "Konstantin",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "leocadie",
                     "name": "Leocadie",
@@ -986,28 +1001,20 @@
                 "turns": [
                   {
                     "speaker": "leocadie",
-                    "text": "Why were you late for school today?"
-                  },
-                  {
-                    "speaker": "konstantin",
-                    "text": "My bike had a flat tyre, so I had to walk the last two kilometres."
-                  },
-                  {
-                    "speaker": "leocadie",
-                    "text": "Oh no! Did you fix it?"
+                    "text": "Hello, Mr Evans, it’s Tom’s mum. I’m calling about why Tom was late today. I know it’s the third time this term, but this morning was different. He didn’t oversleep and he didn’t miss the bus either. In fact, he got up at half past six, before me. He usually goes by bike, but when he went into the garage, the back wheel was completely flat. I suggested the bus, but he said the next one wasn’t for forty minutes, so he walked all the way. It took him an hour. I’m sorry. He did his best. Please call me if you want to talk."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "Why was the boy late?",
+                "prompt": "Why was Tom late for school?",
                 "options": [
                   "His bike had a flat tyre.",
-                  "He missed the bus this morning.",
-                  "He woke up too late today."
+                  "He missed the bus.",
+                  "He got up late."
                 ],
                 "answer": 0,
-                "explanation": "His bike had a flat tyre, so he had to walk."
+                "explanation": "He got up early and refused the bus, but his bike wheel was flat, so he had to walk."
               }
             },
             {
@@ -1021,41 +1028,25 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "nikanor",
-                    "name": "Nikanor",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "nikanor",
-                    "text": "Are you going to drive to the concert on Saturday?"
-                  },
-                  {
                     "speaker": "mercutia",
-                    "text": "No, parking is impossible there. I'll take the tram and then walk for ten minutes."
-                  },
-                  {
-                    "speaker": "nikanor",
-                    "text": "Good plan. I'll join you."
+                    "text": "Hi Nik, it’s Mercutia. I’m calling about Saturday’s concert. I was going to drive, but the car park next to the hall is always full, and I’d have to pay a lot. I nearly booked a taxi, but then I saw it costs more than the ticket! So I’ll use the tram in the end. The stop is only five minutes from my flat, and it leaves you right outside the main door of the hall. It runs until midnight, so I won’t have a problem coming home. Tell me if you want to join me. Bye!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "How will the woman go to the concert?",
+                "prompt": "How will Mercutia go to the concert?",
                 "options": [
                   "By car",
                   "By tram",
                   "By taxi"
                 ],
                 "answer": 1,
-                "explanation": "She says she will take the tram and then walk for ten minutes."
+                "explanation": "She was going to drive and nearly booked a taxi, but she rejects both and says she will take the tram that stops outside the hall."
               }
             }
           ]
@@ -1091,28 +1082,40 @@
                 "turns": [
                   {
                     "speaker": "orestes",
-                    "text": "Excuse me, I think you're sitting in my seat. This is number twenty-two."
+                    "text": "Excuse me, I think you’re in my seat. It’s number forty-two, by the window."
                   },
                   {
                     "speaker": "perdita2",
-                    "text": "Oh, I'm so sorry. I thought it was twenty-three."
+                    "text": "Oh, is it? My ticket says forty-two as well. Look."
                   },
                   {
                     "speaker": "orestes",
-                    "text": "No problem. Yours is the next one, by the window."
+                    "text": "That’s for tomorrow’s train, though. Today is the fourth."
+                  },
+                  {
+                    "speaker": "perdita2",
+                    "text": "Oh no, you’re right. I’m so sorry. I was sure I had the right day. I’ll move."
+                  },
+                  {
+                    "speaker": "orestes",
+                    "text": "It’s all right. I’m not angry about the train being late, we’ve waited for twenty minutes, it’s quite normal. I just want to sit down after a long day. And I haven’t lost my ticket, don’t worry, I have it here."
+                  },
+                  {
+                    "speaker": "perdita2",
+                    "text": "Of course, let me take my bag. Sorry again!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the problem?",
+                "prompt": "Why is the man a little annoyed?",
                 "options": [
-                  "A ticket has been lost.",
-                  "The train is late.",
-                  "A passenger is in the wrong seat."
+                  "The train is late again.",
+                  "Another passenger has taken his seat.",
+                  "He has lost his ticket."
                 ],
-                "answer": 2,
-                "explanation": "The woman is sitting in the man's seat, number twenty-two."
+                "answer": 1,
+                "explanation": "He says the lateness is normal and he has his ticket, but he wants to sit in his own seat, which she has taken by mistake."
               }
             },
             {
@@ -1138,29 +1141,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "quintilian",
+                    "text": "So how do we get to Edinburgh on Friday? I’m checking flights."
+                  },
+                  {
                     "speaker": "rosaline",
-                    "text": "My flight has been delayed by three hours. I'll miss my connection."
+                    "text": "Flying is quick, but the airport is far, and the prices go up before holidays. What about the night bus?"
                   },
                   {
                     "speaker": "quintilian",
-                    "text": "Don't worry. I'll check if there's a later flight for you. May I see your ticket?"
+                    "text": "I tried that once. I couldn’t sleep, and I felt terrible all day. No way."
                   },
                   {
                     "speaker": "rosaline",
-                    "text": "Here it is. Thank you for your help."
+                    "text": "OK. Then the train in the morning. But if it’s late, we’ll miss the lunch with Dad."
+                  },
+                  {
+                    "speaker": "quintilian",
+                    "text": "Exactly. We’d better take the early one, at seven. Then we have plenty of time."
+                  },
+                  {
+                    "speaker": "rosaline",
+                    "text": "Fine, I’ll set the alarm. It’s early, but it’s better than rushing."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "Where does this conversation take place?",
+                "prompt": "What do the speakers agree about?",
                 "options": [
-                  "On a bus",
-                  "At a desk for flights",
-                  "In a taxi"
+                  "They should fly to Edinburgh.",
+                  "They should take the night bus.",
+                  "They should catch an early train."
                 ],
-                "answer": 1,
-                "explanation": "They talk about a delayed flight and a ticket, so it is at an airport desk."
+                "answer": 2,
+                "explanation": "Flights are expensive and far, and the night bus is rejected, so both agree on the seven o’clock train to be safe for lunch."
               }
             },
             {
@@ -1187,28 +1202,40 @@
                 "turns": [
                   {
                     "speaker": "theodora",
-                    "text": "I'd love a car, but insurance and petrol cost so much."
+                    "text": "You’ve stopped driving to work, haven’t you?"
                   },
                   {
                     "speaker": "sempronius",
-                    "text": "That's why I prefer the train. It's relaxing: I can read on the way to work, and I don't need to find a parking space."
+                    "text": "Yes, about two months ago. I thought the train would be more expensive, but it’s about the same with petrol and parking. And to be honest it’s late quite often."
                   },
                   {
                     "speaker": "theodora",
-                    "text": "Maybe you're right."
+                    "text": "So why do you do it?"
+                  },
+                  {
+                    "speaker": "sempronius",
+                    "text": "Well, in the car I’m just staring at the road for an hour. Now I open my laptop and answer emails, so I’m ready when I arrive. I even finished a report last week."
+                  },
+                  {
+                    "speaker": "theodora",
+                    "text": "That sounds useful."
+                  },
+                  {
+                    "speaker": "sempronius",
+                    "text": "It is. My boss was surprised, because I leave the office earlier now."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Why does the man like the train?",
+                "prompt": "Why does the man like going to work by train?",
                 "options": [
-                  "It is more relaxing than driving.",
-                  "It is cheaper than walking.",
-                  "It is always on time."
+                  "He can get some work done.",
+                  "It costs much less than driving.",
+                  "It nearly always arrives on time."
                 ],
                 "answer": 0,
-                "explanation": "He can read on the way and does not need to look for parking."
+                "explanation": "The cost is similar and the train is often late, but he uses the hour to answer emails and write a report."
               }
             },
             {
@@ -1234,29 +1261,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "ulpian",
+                    "text": "Did you hear that buses won’t run tomorrow? There’s a strike."
+                  },
+                  {
                     "speaker": "valeria",
-                    "text": "The bus driver says there's a strike tomorrow, so there will be no buses."
+                    "text": "Yes, I read it this morning. I was a bit irritated at first, because it takes me an hour to walk to the office."
                   },
                   {
                     "speaker": "ulpian",
-                    "text": "Then I'll cycle to work. It's only six kilometres."
+                    "text": "So will you go?"
                   },
                   {
                     "speaker": "valeria",
-                    "text": "I'll ask my brother to give me a lift."
+                    "text": "My boss said I can stay at home, which is nice, but that isn’t what I’m thinking about. These drivers work long hours, and their pay hasn’t gone up for three years. If I were them, I’d do the same."
+                  },
+                  {
+                    "speaker": "ulpian",
+                    "text": "That’s true. They have a hard job."
+                  },
+                  {
+                    "speaker": "valeria",
+                    "text": "Exactly. I’ll just walk, it’s only one day. Good for my health."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is going to happen tomorrow?",
+                "prompt": "How does the woman feel about the bus strike?",
                 "options": [
-                  "The trains will be free.",
-                  "The roads will be closed.",
-                  "Buses will not run."
+                  "Angry about having to walk",
+                  "Pleased to stay at home",
+                  "Supportive of the drivers"
                 ],
                 "answer": 2,
-                "explanation": "The driver says there is a strike, so there will be no buses."
+                "explanation": "She was irritated at first and could stay at home, but she says that the drivers have long hours and low pay and she would do the same."
               }
             },
             {
@@ -1283,28 +1322,40 @@
                 "turns": [
                   {
                     "speaker": "xanthe",
-                    "text": "You've never been on a ferry? It's wonderful. You can stand on the deck and watch the seagulls."
+                    "text": "Are you ready for Saturday? The ferry leaves at nine."
                   },
                   {
                     "speaker": "wulfric",
-                    "text": "I'm a bit worried that I might feel sick."
+                    "text": "I’m trying to be, though I was ill the last time I took a boat. I decided to take a tablet this time, so I won’t worry. The weather forecast is good too."
                   },
                   {
                     "speaker": "xanthe",
-                    "text": "Take a tablet before you sail, and look at the horizon."
+                    "text": "And the ticket is only eight pounds each, not bad for an hour at sea."
+                  },
+                  {
+                    "speaker": "wulfric",
+                    "text": "Not bad at all. I haven’t slept well this week, I keep thinking about the seals we might see! I’ve wanted to visit the island since I was a kid."
+                  },
+                  {
+                    "speaker": "xanthe",
+                    "text": "You sound like a child."
+                  },
+                  {
+                    "speaker": "wulfric",
+                    "text": "I feel like one!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "How does the man feel about the ferry?",
+                "prompt": "How does the man feel about the trip to the island?",
                 "options": [
-                  "Worried about feeling sick",
-                  "Excited about the trip",
-                  "Bored by the idea"
+                  "Anxious about the crossing",
+                  "Excited about visiting the island",
+                  "Unhappy about the cost"
                 ],
-                "answer": 0,
-                "explanation": "He says he is worried that he might feel sick."
+                "answer": 1,
+                "explanation": "He has solved the sea sickness and the price is fine, and he cannot sleep because he wants to see the seals and has wanted to visit the island since he was a kid."
               }
             },
             {
@@ -1331,15 +1382,27 @@
                 "turns": [
                   {
                     "speaker": "zephyrin",
-                    "text": "You've bought a new bike! Is it electric?"
+                    "text": "Is that your new bike? It looks heavy."
                   },
                   {
                     "speaker": "ysabel",
-                    "text": "Yes. It's so useful: I can go up hills without getting tired. It's the best thing I've bought this year."
+                    "text": "It is a bit, because of the battery. I thought I’d hate it, but I take it up the stairs only once, and I leave it in the garage."
                   },
                   {
                     "speaker": "zephyrin",
-                    "text": "Maybe I should get one, too."
+                    "text": "It must have cost a fortune."
+                  },
+                  {
+                    "speaker": "ysabel",
+                    "text": "Almost six hundred pounds, which I couldn’t believe at first. But I’ve stopped using the bus, and I don’t pay for petrol any more. In three months I’ll have paid for it."
+                  },
+                  {
+                    "speaker": "zephyrin",
+                    "text": "Is it safe in the rain?"
+                  },
+                  {
+                    "speaker": "ysabel",
+                    "text": "Yes, I feel fine. The lights are great. Honestly, it’s the best decision I’ve made this year, it was worth every penny."
                   }
                 ]
               },
@@ -1347,12 +1410,12 @@
                 "id": "l2-6q",
                 "prompt": "What does the woman think of her new bike?",
                 "options": [
-                  "It is too heavy.",
-                  "It is not worth the money.",
-                  "It is very useful."
+                  "It was worth the price.",
+                  "It is too heavy to carry.",
+                  "It is dangerous in the rain."
                 ],
-                "answer": 2,
-                "explanation": "She says she can go up hills without getting tired and calls it the best thing she has bought."
+                "answer": 0,
+                "explanation": "The weight is not a problem and it feels safe, and although it was expensive she saves money and calls it her best decision."
               }
             }
           ]
@@ -1377,52 +1440,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good morning, ladies and gentlemen, and welcome to Westbury Station. This is travel information for passengers. Because of an accident on the line, the nine fifteen train to Cardiff is delayed by forty minutes. It will now leave from platform six. Passengers who wish to travel to the airport should take the replacement bus, which leaves every twenty minutes from the car park. Please note that the café on platform two is closed today for repairs, but there is a coffee machine near the ticket office. If you have left something on a train, please go to the information desk on the first floor. Finally, we remind passengers that smoking is not allowed anywhere in the station. We apologise for the delay and thank you for your patience."
+                "text": "Good morning, ladies and gentlemen, and welcome to Westbury Station. This is travel information for passengers. Because of an accident on the line, the nine fifteen train to Cardiff is delayed. The company first told us it would be twenty minutes late, and then half an hour, but the latest news is that it will be forty minutes behind time. We are very sorry about this. The train will not leave from platform four, as it says on the board, because that platform is closed for cleaning. It will use platform six instead, which you reach from the stairs at the end of the hall. If you do not want to wait, the company has organised replacement buses. They leave from the car park, behind the station, not from the bus station in front. Please follow the yellow signs, and ask the staff in the orange jackets if you need help. The buses will go every fifteen minutes, and they are free for anyone with a train ticket. Now some news about the facilities. The café on platform two is closed for repairs. The owners hoped to open it today, but some problems were found with the kitchen, so it will probably open next week. For hot drinks, there is a coffee machine near the ticket office; it takes coins and cards, but not notes. There is another one outside, by the taxi stand, but it is out of order. Finally, a reminder for people who have lost something. If you left a bag or an umbrella on a train, don’t go to the ticket office. Please go to the information desk, in the main hall, next to the shop. It is open from seven in the morning until eight at night. Remember to bring something that shows your name, and to describe the object clearly. Thank you for your patience, and we hope you have a pleasant journey."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The nine fifteen train is delayed by ___ minutes",
+              "prompt": "The train that normally leaves at 9.15 will be late by ___ minutes",
               "answer": "forty",
-              "accepted": [
-                "40"
-              ],
-              "explanation": "The train to Cardiff is delayed by forty minutes."
+              "explanation": "The company said twenty and then thirty minutes, but the latest news is forty."
             },
             {
               "id": "l3-2",
-              "prompt": "It will leave from platform ___",
+              "prompt": "The delayed Cardiff train will go from platform ___",
               "answer": "six",
-              "accepted": [
-                "6"
-              ],
-              "explanation": "The train will now leave from platform six."
+              "explanation": "Platform four is closed for cleaning, so it uses platform six."
             },
             {
               "id": "l3-3",
-              "prompt": "The replacement bus leaves from the ___ park",
+              "prompt": "Replacement buses wait in the ___ park",
               "answer": "car",
-              "explanation": "The replacement bus leaves every twenty minutes from the car park."
+              "explanation": "The buses leave from the car park behind the station, not from the bus station in front."
             },
             {
               "id": "l3-4",
-              "prompt": "The café on platform two is closed for ___",
+              "prompt": "The café on platform two is shut because of ___",
               "answer": "repairs",
-              "explanation": "The café is closed today for repairs."
+              "explanation": "The owners hoped to open it today but it is closed for repairs."
             },
             {
               "id": "l3-5",
-              "prompt": "There is a coffee ___ near the ticket office",
+              "prompt": "Hot drinks are sold from a coffee ___ near the ticket office",
               "answer": "machine",
-              "explanation": "There is a coffee machine near the ticket office."
+              "explanation": "The machine near the ticket office works; the one outside is out of order."
             },
             {
               "id": "l3-6",
-              "prompt": "Lost property is at the ___ desk",
+              "prompt": "Passengers who lost an umbrella should go to the ___ desk",
               "answer": "information",
-              "explanation": "Lost items should be taken to the information desk on the first floor."
+              "explanation": "Not the ticket office: they should go to the information desk in the main hall."
             }
           ]
         },
@@ -1454,51 +1511,59 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Barnard, you have been a bus driver for twenty-two years. Why did you choose the job?"
+                "text": "Barnard, thank you for coming. Most people choose a job like yours because they love driving. Is that why you became a bus driver?"
               },
               {
                 "speaker": "barnard",
-                "text": "I always loved driving, and I like meeting people. I was working in a factory, and the work was boring. One day, I saw an advert for bus drivers, and I thought, why not?"
+                "text": "Not really. My father drove a bus for thirty years, but I always said I’d never do the same. And I’m not a big fan of cars, to be honest. I worked in an office for ten years doing the same thing every day, and I was bored out of my mind. One day I saw an advert for drivers and I thought, why not? I needed a change, and it was the best decision I’ve ever made."
               },
               {
                 "speaker": "host",
-                "text": "What does a typical day look like?"
+                "text": "You start very early. Who gets on first?"
               },
               {
                 "speaker": "barnard",
-                "text": "I start at five in the morning. My first passengers are nurses and builders who go to work early. Later, there are students, and in the afternoon, shoppers and children coming home from school."
+                "text": "My first bus leaves at ten past five. You’d think tourists would be early, but they get up late. Students and shoppers appear later too, around eight or nine. At that hour it’s the nurses, cleaners and builders, people who start work before most of us are awake. I know many of them by name now."
               },
               {
                 "speaker": "host",
-                "text": "What is the hardest part?"
+                "text": "What’s the hardest part of the job?"
               },
               {
                 "speaker": "barnard",
-                "text": "Traffic, especially at rush hour. I have to keep to the timetable, but I cannot control the roads. It's frustrating when I'm late and people are angry, although most passengers are very kind."
+                "text": "Well, people think the passengers are hard, but most are very friendly. Cold weather is not nice, especially in winter when the doors freeze, but you get used to it. For me it’s the traffic. When there are roadworks, and it takes two hours to move a mile, you can’t relax, and the passengers get angry with you even though it’s not your fault."
               },
               {
                 "speaker": "host",
-                "text": "Do you have any special memories?"
+                "text": "I’ve heard something unusual happened on your bus once."
               },
               {
                 "speaker": "barnard",
-                "text": "Many. Once, a woman had her baby on my bus. I stopped the bus, and a doctor who was sitting at the back helped. Everyone clapped. The baby is now twelve, and she still waves when she sees me."
+                "text": "Yes! A famous footballer travelled on my bus once, but that was no big deal, he was very quiet. And I’ve never lost a child, thankfully. But a few years ago a woman started to feel pains on the number nine, and a little later she had her baby, right at the back of the bus! Two passengers helped her until the ambulance arrived."
               },
               {
                 "speaker": "host",
-                "text": "Has the job changed?"
+                "text": "How did you feel about all that?"
               },
               {
                 "speaker": "barnard",
-                "text": "A lot. Buses are cleaner and quieter now, and many are electric. We also have screens that tell passengers when the next stop is. But the best part of the job has not changed: you can make somebody's day with a smile."
+                "text": "People expect me to be proud, but at the time I was honestly terrified. I wasn’t embarrassed, there was no time to be, I just drove as fast as I safely could to the hospital. Afterwards, I was shaking for an hour. Now it’s a good story, and they sent me a card every year!"
               },
               {
                 "speaker": "host",
-                "text": "What would you tell people who want to do your job?"
+                "text": "How have buses changed since you started?"
               },
               {
                 "speaker": "barnard",
-                "text": "You need to be patient and to stay calm under pressure. And always check your mirrors, twice."
+                "text": "They’re not slower, in fact, the new ones are quicker because the lanes are separate. Tickets are not much dearer either, you pay about the same. The big change is the engine. Many of the newer ones have an electric motor. They’re quiet, there’s no smell, and the air in the city is cleaner."
+              },
+              {
+                "speaker": "host",
+                "text": "Finally, what advice would you give to someone who wants to do your job?"
+              },
+              {
+                "speaker": "barnard",
+                "text": "Stay calm and be patient, with everyone, the traffic and yourself. Don’t try to drive fast, you can’t change a late bus, and speed causes accidents. And you don’t need to repair buses, the mechanics do that. Just smile and say good morning, people remember it."
               }
             ]
           },
@@ -1507,23 +1572,23 @@
               "id": "l4-1",
               "prompt": "Why did Barnard become a bus driver?",
               "options": [
-                "His father drove buses.",
-                "He wanted a change from a boring job.",
+                "His father was a driver.",
+                "He needed a change from his office job.",
                 "He did not like cars."
               ],
               "answer": 1,
-              "explanation": "He worked in a factory, found it boring and saw an advert for bus drivers."
+              "explanation": "His father drove a bus and he is not a fan of cars, but he was bored in an office and wanted a change."
             },
             {
               "id": "l4-2",
               "prompt": "Who are his first passengers in the morning?",
               "options": [
                 "Students and shoppers",
-                "People who start work early",
-                "Tourists"
+                "Tourists",
+                "People who start work early"
               ],
-              "answer": 1,
-              "explanation": "His first passengers are nurses and builders going to work early."
+              "answer": 2,
+              "explanation": "Tourists get up late and students and shoppers come later; the first ones are nurses, cleaners and builders."
             },
             {
               "id": "l4-3",
@@ -1534,40 +1599,40 @@
                 "Unfriendly passengers"
               ],
               "answer": 0,
-              "explanation": "He says the traffic is the hardest part, especially at rush hour."
+              "explanation": "Passengers are friendly and he gets used to the cold, but roadworks and slow traffic are the hardest."
             },
             {
               "id": "l4-4",
-              "prompt": "What special thing happened on his bus?",
+              "prompt": "How did Barnard feel when the baby was born on his bus?",
               "options": [
-                "A passenger lost a child.",
-                "A famous person travelled.",
-                "A woman gave birth."
+                "Proud of what happened",
+                "Embarrassed in front of people",
+                "Frightened at the time"
               ],
               "answer": 2,
-              "explanation": "A woman had her baby on his bus, and a doctor helped."
+              "explanation": "People expect him to be proud and he was not embarrassed, but he says he was terrified."
             },
             {
               "id": "l4-5",
               "prompt": "How have buses changed?",
               "options": [
                 "They are slower than before.",
-                "Many of them are electric.",
+                "They have electric engines.",
                 "They are much more expensive."
               ],
               "answer": 1,
-              "explanation": "He says buses are cleaner and quieter and many are electric."
+              "explanation": "They are not slower and tickets cost about the same; the change is an electric motor."
             },
             {
               "id": "l4-6",
               "prompt": "What advice does he give to future drivers?",
               "options": [
-                "Be patient and stay calm",
+                "Keep calm with everyone",
                 "Drive as fast as possible",
                 "Learn to repair buses"
               ],
               "answer": 0,
-              "explanation": "He says drivers need to be patient and to stay calm under pressure."
+              "explanation": "He says to stay calm and be patient, not to drive fast, and the mechanics repair buses."
             }
           ]
         }

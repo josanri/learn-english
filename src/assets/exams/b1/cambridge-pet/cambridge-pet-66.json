@@ -250,30 +250,33 @@
               "prompt": "What was unusual about the wedding?",
               "options": [
                 "It was held in a big hotel",
-                "The party lasted for three days",
-                "Only very close friends came along"
+                "Only very close friends came along",
+                "Only two guests came from abroad",
+                "The party lasted for three days"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "There were two hundred guests and the party lasted three days."
             },
             {
               "id": "r3-2",
               "prompt": "What did the writer do in the church?",
               "options": [
+                "Read a poem to the bride",
+                "Dropped one of the rings",
                 "Sang a song with the priest",
-                "Made a long speech to everyone",
-                "Dropped one of the rings"
+                "Made a long speech to everyone"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He dropped one of the rings on the floor."
             },
             {
               "id": "r3-3",
               "prompt": "Who made the wedding dress?",
               "options": [
+                "A friend of the bride",
                 "A shop in the village",
-                "The writer's own mother",
-                "Marta's grandmother"
+                "Marta's grandmother",
+                "The writer's own mother"
               ],
               "answer": 2,
               "explanation": "It was a dress that her grandmother had made."
@@ -284,7 +287,8 @@
               "options": [
                 "Guests keep eating until the morning",
                 "Everybody dances together in a circle",
-                "The bride gives a very long speech"
+                "The bride gives a very long speech",
+                "Everybody sings an old song at midnight"
               ],
               "answer": 0,
               "explanation": "The guests keep eating until the early morning."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What would the writer do next time?",
               "options": [
-                "Ask somebody else to carry the rings",
                 "Stay at home with all of his family",
-                "Bring a camera with him to take photos"
+                "Leave before the party ends",
+                "Bring a camera with him to take photos",
+                "Ask somebody else to carry the rings"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "Next time, he will let somebody else carry the rings."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Birthday traditions around the world",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "People all over the world celebrate birthdays, but the traditions are very different. [1] A cake with candles is the best-known custom in many countries.\n\nIn China, people eat long noodles on their birthday. [2] This is because long noodles mean a long life, and the guest of honour must not cut them.\n\nIn Mexico, children often hit a paper animal filled with sweets. [3] When it breaks, all the guests rush to pick up the sweets from the floor.\n\nIn Denmark, a flag is put outside the window of the person whose birthday it is. [4] Neighbours can then see it from the street and may call in to say hello.\n\nIn some countries, people pull a child's ears once for every year of their age. [5] It sounds painful, but most children say that it is quite gentle, and they are happy to do it.",
           "sentences": [
-            "The adults hang it from a tree, and the children hit it with a stick.",
-            "In the United Kingdom, this game is called \"bumps\".",
-            "It is a way of wishing the child good luck for the next year.",
+            "In India, friends give the birthday child a small gift of sweets.",
             "It is a cheerful way of showing that there is a celebration at home.",
             "Some customs are known almost everywhere, and others belong to one country.",
+            "This is why nobody in Denmark forgets a friend's birthday.",
+            "It is a way of wishing the child good luck for the next year.",
+            "In the United Kingdom, this game is called \"bumps\".",
+            "The adults hang it from a tree, and the children hit it with a stick.",
             "Eating them is thought to bring good fortune."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "E",
+              "answer": "C",
               "explanation": "The traditions are different: some are known almost everywhere, like the cake with candles in the next sentence."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "H",
               "explanation": "Eating the noodles is thought to bring good fortune, and the next sentence explains why."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "G",
               "explanation": "The paper animal hangs from a tree and the children hit it; \"when it breaks\" follows."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "B",
               "explanation": "A flag is a cheerful way of showing a celebration at home, so neighbours can see it."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "E",
               "explanation": "Pulling ears is a way of wishing luck, and the next sentence says it sounds painful."
             }
           ]
@@ -710,14 +717,6 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "m",
-                    "name": "Aiden",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
-                  {
                     "id": "f",
                     "name": "Alma",
                     "voice": {
@@ -728,12 +727,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "What time does the wedding start?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "The ceremony is at three, but please arrive at half past two."
+                    "text": "Hi Aiden, it’s Alma. I’m calling about Saturday. I know I told you to come at three o’clock, because that is when the ceremony starts, but I’ve talked to the photographer and she wants everyone in the family in the garden for photos first. Half past three is too late for that, that’s when the lunch begins. So please be there at half past two, and ask your parents to come with you. Park in the road behind the church, because the car park will be full. Call me if you get lost, and thanks a lot for your help!"
                   }
                 ]
               },
@@ -746,7 +741,7 @@
                   "Half past three"
                 ],
                 "answer": 1,
-                "explanation": "She says that he should arrive at half past two."
+                "explanation": "The ceremony is at three and lunch at half past three, but the photographer wants the family first, so he must arrive at half past two."
               }
             },
             {
@@ -773,11 +768,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Are you going to wear a suit to the party?"
+                    "text": "Amos, what are you going to wear on Saturday? Something smart?"
                   },
                   {
                     "speaker": "m",
-                    "text": "No, it is only a barbecue. I will wear jeans and a nice shirt."
+                    "text": "I wanted to get a smart suit, I even went to the shop. But the invitation says it’s a garden wedding and \"relaxed\", so a suit would look strange."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about a tie and a jacket, at least?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Only my brother, the groom, will wear a jacket. I’ll put on my best jeans and a clean white shirt. Comfortable and tidy."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That sounds perfect. I’ll wear a light dress."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great. I hate dressing up, anyway."
                   }
                 ]
               },
@@ -790,7 +801,7 @@
                   "A tie and a jacket"
                 ],
                 "answer": 0,
-                "explanation": "He says that he will wear jeans and a nice shirt."
+                "explanation": "He went to the suit shop but the wedding is relaxed, and only the groom wears a jacket, so Amos will wear jeans and a shirt."
               }
             },
             {
@@ -817,11 +828,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Have you bought a present for Grandma?"
+                    "text": "What did you get for the bride? Is that a present in the bag?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, a scarf. It was in a sale, so it only cost ten pounds."
+                    "text": "Yes. I wanted a bracelet, but the one she likes costs eighty pounds, and that’s too much. Then I nearly bought a sweater, but it’s summer and she wouldn’t wear it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what’s inside?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A silk scarf, blue, like her dress. It was only twenty pounds, and she’ll use it for years."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Lovely. I haven’t bought anything yet."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then hurry up! The shop closes at six."
                   }
                 ]
               },
@@ -834,7 +861,7 @@
                   "A bracelet"
                 ],
                 "answer": 0,
-                "explanation": "She says that she bought a scarf."
+                "explanation": "The bracelet was too expensive and she nearly bought a sweater, but in the end the present is a blue silk scarf."
               }
             },
             {
@@ -861,11 +888,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Is your sister still planning an outdoor wedding?"
+                    "text": "Aziz, I’m worried about Saturday. The forecast says heavy rain all afternoon."
                   },
                   {
                     "speaker": "m",
-                    "text": "No, the forecast says it will rain, so they are using the hall."
+                    "text": "But we planned the party in the garden! Shall we move it to the hall?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The garden isn’t too small, we could have fitted everyone there, and renting the hall isn’t more expensive, the price is the same. It’s only the weather that changed the plan. The hall is free because someone cancelled."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good. I’ll tell the caterers. They’ll have to bring the tables inside."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And let’s put up a sign on the gate so people know."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll make one tonight."
                   }
                 ]
               },
@@ -878,21 +921,13 @@
                   "It is too expensive"
                 ],
                 "answer": 1,
-                "explanation": "He says that the forecast says it will rain."
+                "explanation": "The garden is big enough and the price is the same; only the forecast of heavy rain changed the plan."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Alfie",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Alma",
@@ -904,12 +939,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Who is going to make the cake?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "My aunt. She bakes the most delicious chocolate cakes in the whole town."
+                    "text": "Hi Alfie, it’s Alma. Thanks for asking about the cake. At first I wanted to make it myself, because I love baking, but with the invitations and the flowers I have no time. I called the baker in town, the one next to the library, but she can’t make a big cake before the wedding. So I rang my aunt Rosa. She used to work in a bakery and she said yes immediately. She’ll bring it on Friday evening. It will be chocolate, with strawberries on top. You don’t need to bring anything, just yourself. Speak soon, bye!"
                   }
                 ]
               },
@@ -917,12 +948,12 @@
                 "id": "l1-5q",
                 "prompt": "Who will make the cake?",
                 "options": [
-                  "The woman herself",
+                  "Alma",
                   "A baker in town",
-                  "The woman's aunt"
+                  "Alma's aunt"
                 ],
                 "answer": 2,
-                "explanation": "She says that her aunt will make the cake."
+                "explanation": "Alma has no time to bake and the baker in town is too busy, so her aunt Rosa will make the cake."
               }
             },
             {
@@ -949,11 +980,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Did you enjoy the dancing at the party?"
+                    "text": "Ansel, where did you go during dinner? I looked for you everywhere."
                   },
                   {
                     "speaker": "m",
-                    "text": "Not really. The music was too loud, so I stayed in the garden."
+                    "text": "I went out to the garden for a bit. It wasn’t hot, in fact it was cool and nice outside, and I wasn’t hungry at all. I had three plates!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So why?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The music was so loud that I couldn’t hear anything, and my head hurt. Out there, I could talk to Grandpa in peace."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I see. I thought you were avoiding the speeches."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I’ll listen to the speeches. I just needed a break."
                   }
                 ]
               },
@@ -966,21 +1013,13 @@
                   "It was too hot"
                 ],
                 "answer": 0,
-                "explanation": "He says that the music was too loud."
+                "explanation": "It was not hot and he was not hungry; the music was so loud that he needed some peace."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Amos",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Aisha",
@@ -992,12 +1031,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "How many people are coming to your birthday?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "About fifteen. I have invited my class, but a few cannot come."
+                    "text": "Hi Amos, it’s Aisha. You asked me who’s coming to the party. Well, I thought about inviting my neighbours, but our flat is tiny and they are really noisy. And my cousins are all abroad this month, so they can’t come anyway. In the end I decided on my English class. There are twelve of us and we’ve become good friends. They all said yes straight away, and one of them is bringing a guitar. Could you bring some chairs, please. I’ll send you the address. Call me back when you can!"
                   }
                 ]
               },
@@ -1010,7 +1045,7 @@
                   "Her cousins"
                 ],
                 "answer": 1,
-                "explanation": "She says that she has invited her class."
+                "explanation": "She thought about her neighbours and her cousins cannot come, so she invited the people from her English class."
               }
             }
           ]
@@ -1046,24 +1081,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Hello, I would like to book your hall for the fourth of July."
+                    "text": "We have to finish the guest list. My mother wants two hundred people!"
                   },
                   {
                     "speaker": "m",
-                    "text": "Let me check. Yes, it is free that day. How many guests will there be?"
+                    "text": "Mine too, the whole family, even cousins I’ve never met."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’d like a small wedding, with just friends and close family."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Me too. If we invite everybody, we’ll spend the day shaking hands."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "But they will be upset."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A little, but our parents will get over it. It’s our day. Let’s say eighty people at most."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Agreed."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman want to do?",
+                "prompt": "What do Ayla and Arlo agree about the guest list?",
                 "options": [
-                  "Find a place to stay",
-                  "Buy tickets for a show",
-                  "Book the hall for a day"
+                  "It should include all their relatives",
+                  "It should be small",
+                  "It should be written by their parents"
                 ],
-                "answer": 2,
-                "explanation": "She says that she would like to book the hall for the fourth of July."
+                "answer": 1,
+                "explanation": "Both reject the long lists their mothers want, prefer friends and close family, and agree on eighty people at most."
               }
             },
             {
@@ -1090,24 +1145,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am so nervous about my speech tomorrow!"
+                    "text": "Alma, can you listen to my speech? I’m the best man, and I’m terrified. I wrote it last night and I still don’t know if it works."
                   },
                   {
                     "speaker": "f",
-                    "text": "You will be fine. Just speak slowly and look at your family."
+                    "text": "Of course. That’s funny, the story about the car."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is it too long? It’s five minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, five is perfect. People get bored after ten. It’s a bit serious at the end, maybe? No, it’s touching. I wouldn’t make any changes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really. You’ll be fine. Just breathe."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Alma think about Aiden's speech?",
                 "options": [
-                  "Asking him to leave early",
-                  "Telling him he will be fine",
-                  "Saying his speech is too long"
+                  "It needs no changes",
+                  "It should be shorter",
+                  "It should be funnier"
                 ],
-                "answer": 1,
-                "explanation": "She tells him that he will be fine and gives advice."
+                "answer": 0,
+                "explanation": "She says five minutes is perfect, the funny story works and the serious ending is touching, so she would change nothing."
               }
             },
             {
@@ -1134,24 +1205,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I cannot believe that you forgot the rings!"
+                    "text": "Amos, the invitations say Saturday the fourteenth, but the wedding is on the fifteenth!"
                   },
                   {
                     "speaker": "m",
-                    "text": "I am very sorry. I will run home and get them now."
+                    "text": "What? Oh no. I’m so sorry. I thought they looked beautiful, and I was proud of the design, but I didn’t check the date again."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Please don’t be angry with yourself, but forty people already have them."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m not angry with you for finding it. It’s my fault. I’ll phone everyone tonight. I feel terrible."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s okay, we all make mistakes."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Amos feel about the mistake on the invitations?",
                 "options": [
-                  "Sorry for his mistake",
-                  "Proud of his work",
-                  "Angry with the woman"
+                  "Proud of the design",
+                  "Angry with Anika",
+                  "Sorry about it"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is very sorry."
+                "answer": 2,
+                "explanation": "He says he is sorry, it is his fault and he feels terrible; the pride in the design and anger belong to other moments."
               }
             },
             {
@@ -1178,24 +1261,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Could you take a photo of us in front of the fountain?"
+                    "text": "Excuse me, could you help me? I’m trying to find the church."
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. Stand a bit closer, and smile!"
+                    "text": "It’s just there, you can see the tower. But I think it’s closed before the wedding."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I know, I’m the cousin of the groom. I can see it, I know the way. But I’m late and I want a photograph of me in the square. My mum wants proof that I arrived. Could you take one?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ha, of course. Smile!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. My bag is heavy, but I can manage it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man ask the woman to do?",
+                "prompt": "What does Alfie ask Aisha to do?",
                 "options": [
                   "Show him the way",
-                  "Carry his bag",
-                  "Take a photograph"
+                  "Take a photograph",
+                  "Carry his bag"
                 ],
-                "answer": 2,
-                "explanation": "He asks her to take a photo."
+                "answer": 1,
+                "explanation": "He can see the church and carries the bag himself, but he needs somebody to take his picture in the square."
               }
             },
             {
@@ -1222,24 +1317,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Thank you so much for the beautiful flowers."
+                    "text": "Ansel, the flowers arrived this morning, they’re beautiful! Everyone in the house stopped to look."
                   },
                   {
                     "speaker": "m",
-                    "text": "You are welcome. I hope you and Ben will be very happy."
+                    "text": "I’m glad. I wasn’t sure about the colour."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They’re perfect. I wanted to ask you to buy more for the tables, but now I see you’ve sent enough. And you know you’re invited to the wedding, of course?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, I got the card. I’ll be there."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you so much, it was really kind. My mother cried when she saw them."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "Why is Ayla speaking to Ansel?",
                 "options": [
-                  "Thanking him for the flowers",
-                  "Asking him to buy some flowers",
-                  "Inviting him to her wedding"
+                  "To invite him to her wedding",
+                  "To ask him to buy more flowers",
+                  "To thank him for the flowers"
                 ],
-                "answer": 0,
-                "explanation": "She thanks him for the flowers and he hopes the couple will be happy."
+                "answer": 2,
+                "explanation": "He already has an invitation and enough flowers were sent; she is praising the flowers and thanking him."
               }
             },
             {
@@ -1266,24 +1373,44 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "The restaurant has no free table for a party of twelve."
+                    "text": "Alma, the restaurant says there’s no free table on Saturday."
                   },
                   {
                     "speaker": "f",
-                    "text": "Then let us have the party at our house. It is bigger."
+                    "text": "That’s a pity. Shall we wait for a week? Maybe someone cancels."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "We can’t, the guests are coming from abroad."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about the food? We could make the menu cheaper and they’d find us a table."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, the problem is the table, not the price."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then let’s have the meal at the hotel. They have a big room."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the problem?",
+                "prompt": "What do Arlo and Alma decide to do about the meal?",
                 "options": [
-                  "Some guests are late",
-                  "The food is too expensive",
-                  "No free table at the restaurant"
+                  "Eat at a hotel",
+                  "Wait for a table",
+                  "Choose cheaper food"
                 ],
-                "answer": 2,
-                "explanation": "The restaurant has no free table for twelve people."
+                "answer": 0,
+                "explanation": "Waiting is impossible and the price is not the problem, so they agree on the hotel with a big room."
               }
             }
           ]
@@ -1308,60 +1435,60 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Hello, everybody. I am Alma, and I plan weddings for a living. Today I would like to give you some advice. First, start early. A good wedding needs about one year of preparation. Next, decide how many guests you want, because that will change the price of everything. The average wedding in this country has one hundred guests, but I think that fifty is much better. Then choose the place. Many couples want a hotel, but a garden is cheaper and more beautiful. The food is the biggest cost, and it usually takes about a third of the money. Remember, too, that the weather can be a problem, so always have a second plan. Finally, ask a friend to be in charge on the day, so you can enjoy it. The most important thing is to have fun. Now, does anyone have a question?"
+                "text": "Hello, everybody. I am Alma, and I plan weddings for a living. Today I would like to give you some advice. First, start early. A good wedding needs about a year of preparation. Some people tell me six months is enough, and others plan for two years, but twelve months is just right, because the best places are booked early. Next, the guests. The average wedding in this country has about one hundred guests, but I think that’s too many. You will not talk to everyone, and the cost grows quickly. In my opinion fifty is better, and the day feels warmer. I did a wedding with two hundred once and the couple were exhausted. Now, the place. Many couples think a hotel is the best choice, but a garden is cheaper, and prettier. You only need some tables and good weather, of course. Always have a plan B, like a tent. Some couples dream of a beach, but it’s difficult to arrange. The next question is money. Everybody believes that the dress or the flowers are the biggest cost, but it is the food. It’s more than a third of the budget, so choose carefully. The music is cheaper than people expect, and a friend with a good playlist is enough. Finally, the day itself. Please do not try to organise everything yourself. Give the job of being in charge to a friend. Not your mother, who will be busy with the family, and not the best man, who will have to make a speech. A calm friend who likes lists is perfect. If you follow these ideas, your wedding will be a happy day for everybody, including you. Thank you for listening, and good luck!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "A wedding needs about ___ of preparation",
+              "prompt": "The best time for preparation is ___",
               "answer": "one year",
               "accepted": [
                 "a year",
                 "1 year"
               ],
-              "explanation": "A good wedding needs about one year of preparation."
+              "explanation": "Six months is too short and two years too long; twelve months, one year, is just right."
             },
             {
               "id": "l3-2",
-              "prompt": "The average wedding has ___ guests",
+              "prompt": "The usual number of guests is ___",
               "answer": "one hundred",
               "accepted": [
                 "100",
                 "a hundred"
               ],
-              "explanation": "The average wedding has one hundred guests."
+              "explanation": "The average wedding has about one hundred guests; two hundred was one special case."
             },
             {
               "id": "l3-3",
-              "prompt": "Alma thinks that ___ guests is better",
+              "prompt": "Alma prefers a guest list of ___ people",
               "answer": "fifty",
               "accepted": [
                 "50"
               ],
-              "explanation": "I think that fifty is much better."
+              "explanation": "In her opinion fifty is better than one hundred."
             },
             {
               "id": "l3-4",
-              "prompt": "A ___ is cheaper than a hotel",
+              "prompt": "Cheaper place than a hotel: a ___",
               "answer": "garden",
               "accepted": [],
-              "explanation": "A garden is cheaper and more beautiful."
+              "explanation": "A garden is cheaper than a hotel; a beach is difficult to arrange."
             },
             {
               "id": "l3-5",
-              "prompt": "The biggest cost is the ___",
+              "prompt": "The largest part of the budget goes on ___",
               "answer": "food",
               "accepted": [],
-              "explanation": "The food is the biggest cost."
+              "explanation": "People believe the dress or the flowers cost most, but it is the food."
             },
             {
               "id": "l3-6",
-              "prompt": "Ask a ___ to be in charge on the day",
+              "prompt": "On the day, a ___ should be in charge",
               "answer": "friend",
               "accepted": [],
-              "explanation": "Ask a friend to be in charge on the day."
+              "explanation": "Not the mother or the best man, but a calm friend should be in charge."
             }
           ]
         },
@@ -1393,51 +1520,59 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Aiden, you have taken photos at over three hundred weddings. How did you start?"
+                "text": "Aiden, how did you become a wedding photographer?"
               },
               {
                 "speaker": "h",
-                "text": "My uncle got married when I was eighteen, and I took pictures for fun. People liked them, and I never stopped."
+                "text": "People think I studied at a famous school, but I didn’t, and I never worked with my father, he’s an accountant. It started at my uncle’s wedding. I was seventeen, I had an old camera, and the official photographer didn’t arrive. I took all the pictures, and everyone loved them."
               },
               {
                 "speaker": "i",
-                "text": "What is the hardest part of the job?"
+                "text": "What’s the hardest part of your job?"
               },
               {
                 "speaker": "h",
-                "text": "The weather. Rain can ruin the plans, so I always carry umbrellas and a small tent in my car."
+                "text": "I get tired, the days are long, sometimes twelve hours, but I’m used to that. And the equipment is expensive, though I bought it slowly. The real enemy is the weather. If it rains, the light is dark, the dress gets wet and the couple get upset. I always check the forecast ten times."
               },
               {
                 "speaker": "i",
-                "text": "What kind of photos do people like best?"
+                "text": "Why do people prefer natural photos?"
               },
               {
                 "speaker": "h",
-                "text": "Not the posed ones. They love the moments when nobody is looking, such as a grandfather laughing or a child falling asleep."
+                "text": "Honestly, the natural ones are the ones that people put on the wall. A grandmother laughing, the groom crying a little when the bride arrives. Posed pictures of the couple are nice, and everybody wants the cake, but those are not the favourites. It’s not that natural photos are easier, they take patience. People choose them because they bring back the real emotion."
               },
               {
                 "speaker": "i",
-                "text": "Do you have any funny stories?"
+                "text": "Do you remember a funny moment?"
               },
               {
                 "speaker": "h",
-                "text": "Once, a dog ran into the church and took the groom's shoe. Everyone laughed, and it became the favourite picture of the day."
+                "text": "Yes! In a small church, a dog walked in, took the groom’s shoe from beside the door and ran outside. Nobody fell over and the bride kept her ring, thank goodness. I was so amused that I nearly dropped the camera. In the end the dog sat for the family photo."
               },
               {
                 "speaker": "i",
-                "text": "What advice do you give to couples?"
+                "text": "Is there a part of the job that you would change if you could?"
               },
               {
                 "speaker": "h",
-                "text": "Choose a quiet place for the portraits. A crowd makes people nervous, and then they do not look natural."
+                "text": "Not really. I know it sounds strange, but I love working on Saturdays, even when my friends are out having fun, because I am always part of somebody’s best day. I just wish I had more time to see my own family at weekends."
               },
               {
                 "speaker": "i",
-                "text": "What are your plans for the future?"
+                "text": "What advice do you give for portraits?"
               },
               {
                 "speaker": "h",
-                "text": "I want to teach a photography class. I would love to show young people how to find a story in a picture."
+                "text": "Bright colours look great on holiday, but not necessarily on the day, so I don’t ask for them. And please don’t bring twenty friends to the portrait session. What helps is a quiet place, just the couple and me. They relax and they forget the camera."
+              },
+              {
+                "speaker": "i",
+                "text": "Why do you want to teach?"
+              },
+              {
+                "speaker": "h",
+                "text": "I’d love to teach a photography class. I don’t need a large studio, my car is my studio, and I’m not planning to write a travel book. I won’t stop taking photos either, of course. I like the idea because I remember how confusing it was when I started, and I’d like to help beginners avoid my mistakes."
               }
             ]
           },
@@ -1451,62 +1586,62 @@
                 "He worked with his father"
               ],
               "answer": 1,
-              "explanation": "He took pictures when his uncle got married."
+              "explanation": "He did not study or work with his father; he took the pictures when the official photographer did not arrive at his uncle’s wedding."
             },
             {
               "id": "l4-2",
-              "prompt": "What is the hardest part of his job?",
+              "prompt": "What does Aiden find hardest in his job?",
               "options": [
                 "The long hours",
                 "The weather",
                 "The expensive equipment"
               ],
               "answer": 1,
-              "explanation": "He says that the weather is the hardest part."
+              "explanation": "He is used to long days and bought equipment slowly; the real enemy is the weather."
             },
             {
               "id": "l4-3",
-              "prompt": "Which photos do people like best?",
+              "prompt": "Why do people prefer natural photos?",
               "options": [
-                "Natural moments",
-                "Posed pictures of the couple",
-                "Photos of the wedding cake"
+                "They bring back real emotion",
+                "They show the wedding cake",
+                "They are easier to take"
               ],
               "answer": 0,
-              "explanation": "They love the moments when nobody is looking."
+              "explanation": "Posed pictures and cake photos are not the favourites, and natural ones are not easier; they bring back the real emotion."
             },
             {
               "id": "l4-4",
-              "prompt": "What happened in the church?",
+              "prompt": "How did Aiden feel when the dog took the shoe?",
               "options": [
-                "A guest fell over in the church",
-                "The bride lost her wedding ring",
-                "A dog took the groom's shoe"
+                "Angry with the owner",
+                "Worried about the ceremony",
+                "Amused by it"
               ],
               "answer": 2,
-              "explanation": "A dog ran into the church and took the groom's shoe."
+              "explanation": "He says he was so amused that he nearly dropped the camera; nobody fell and the ring was safe."
             },
             {
               "id": "l4-5",
-              "prompt": "What advice does he give for portraits?",
+              "prompt": "What advice does Aiden give for portraits?",
               "options": [
-                "Wear bright colours on the day",
+                "Wear bright colours",
                 "Choose a quiet place",
-                "Bring a lot more friends along"
+                "Bring a lot of friends"
               ],
               "answer": 1,
-              "explanation": "Choose a quiet place for the portraits."
+              "explanation": "He does not ask for bright colours and does not want twenty friends; a quiet place helps the couple relax."
             },
             {
               "id": "l4-6",
-              "prompt": "What does he want to do in the future?",
+              "prompt": "Why does Aiden want to teach a class?",
               "options": [
-                "Teach a photography class",
-                "Open a large studio in town",
-                "Write a travel book about weddings"
+                "To help beginners avoid mistakes",
+                "To earn more money",
+                "To stop taking photos"
               ],
               "answer": 0,
-              "explanation": "He wants to teach a photography class."
+              "explanation": "He will keep taking photos; he remembers how confusing it was and wants to help beginners."
             }
           ]
         }

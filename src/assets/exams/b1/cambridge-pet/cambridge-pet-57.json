@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "What is special about the chess set?",
               "options": [
+                "It was bought in a village market",
                 "A relative made the pieces",
                 "It came from a famous shop",
                 "It was a prize from a contest"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "The pieces are wooden and he made them himself when he was young."
             },
             {
               "id": "r3-2",
               "prompt": "How did the knight get its crack?",
               "options": [
-                "It fell when the writer was five",
                 "It was damaged in a long journey",
-                "It broke during an argument"
+                "It broke during an argument",
+                "It was hit by a wooden spoon at home",
+                "It fell when the writer was five"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "The writer dropped it when he was five."
             },
             {
               "id": "r3-3",
               "prompt": "What does the grandfather say about chess?",
               "options": [
-                "It is a game only for older people",
                 "It is like life because choices matter",
+                "It is a game only for older people",
+                "It is a good way to learn about Poland and chess",
                 "It is easy to learn but hard to win"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "Chess is like life: you cannot move backwards and every choice has a result."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "He laughed and told him to try again",
                 "He stopped playing with him for a time",
-                "He taught him a better way to look at the board"
+                "He taught him a better way to look at the board",
+                "He asked him to find a friend to play with instead"
               ],
               "answer": 2,
               "explanation": "He showed him how to look at the board in a different way."
@@ -294,10 +298,11 @@
               "prompt": "How did the writer feel when he won?",
               "options": [
                 "Rather surprised by the result",
+                "Very proud of himself",
                 "Sorry for his grandfather",
-                "Very proud of himself"
+                "Worried about his grandfather's feelings"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He says he has never felt so proud."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The story of chess",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Chess is one of the oldest games in the world. [1] People first played it in India about fifteen hundred years ago, and the game then travelled along trade routes to Persia and Europe.\n\nIn the beginning, the pieces looked very different from the ones that we know today. [2] They were made to look like soldiers, elephants and horses, because the game was a small battle.\n\nOver the centuries, the rules changed several times. [3] In the fifteenth century, the queen became the most powerful piece on the board, and the game became much faster.\n\nToday, millions of people play chess, from children at school to famous champions. [4] Many of them play online against people from other countries.\n\nChess is also good for the brain. [5] Teachers say that pupils who play chess often get better marks in maths.",
           "sentences": [
-            "Its history is much longer than that of most sports.",
-            "Nobody was allowed to play it without the king's permission.",
             "Experts say that it makes players think carefully and plan.",
-            "One of these changes is still the biggest in the history of the game.",
+            "Nobody was allowed to play it without the king's permission.",
+            "Those early rules were written down by monks.",
             "In fact, the internet has made the game more popular than ever.",
+            "Even now, the king is the weakest piece in the game.",
+            "Its history is much longer than that of most sports.",
+            "One of these changes is still the biggest in the history of the game.",
             "Some of the early pieces were also made of ivory."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "F",
               "explanation": "Its long history leads to the sentence about the first players in India."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "H",
               "explanation": "Some early pieces were made of ivory, and the next sentence says they looked like soldiers and animals."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "G",
               "explanation": "\"These changes\" are the rule changes in the sentence before; the next sentence gives the biggest one, the new queen."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "D",
               "explanation": "The internet made the game more popular, and many people play online."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "A",
               "explanation": "Experts say that chess makes players think and plan, and teachers say it helps maths marks."
             }
           ]
@@ -717,37 +724,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Colette",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How many people can play this game at the same time?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Up to six, but four is better, because then nobody has to wait very long."
+                    "text": "Good evening, everyone, and welcome to the Hartley Games Club. A quick change before we start. The chess tournament was going to begin at six, as it says on the poster, but the school concert finishes late and many of our young players are in it. So please ignore the poster. Registration is open from half past six, and you can have a hot drink while you wait. The first games will be at seven, and we will finish by ten. Good luck to all of you, and remember to switch off your phones."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "How many players does the woman prefer?",
+                "prompt": "What time will the first chess games start?",
                 "options": [
-                  "Six players",
-                  "Four players",
-                  "Two players"
+                  "At six o'clock",
+                  "At seven o'clock",
+                  "At half past six"
                 ],
                 "answer": 1,
-                "explanation": "She says that four is better."
+                "explanation": "The poster says six but that has changed because of the concert; half past six is only registration, and the first games are at seven."
               }
             },
             {
@@ -773,39 +768,55 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Have you found something for Dan’s birthday yet, Nora?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Where is the box with the chess pieces?"
+                    "text": "Not yet. I nearly bought him a chess set in the market yesterday, but he’s got two already, and he never plays."
                   },
                   {
                     "speaker": "m",
-                    "text": "It is in the cupboard, on the top shelf, next to the blue vase."
+                    "text": "What about a card game? There’s a new one in the shop by the station."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought about that, but he only plays cards with his brothers at Christmas. No, I want something he can do alone on rainy days."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh, like a puzzle with a thousand pieces?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Exactly. The one with a picture of a harbour. It costs fifteen pounds, which is fine."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He’ll love it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll go and get it on the way home."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "Where is the box?",
+                "prompt": "What does the woman decide to buy for Dan's birthday?",
                 "options": [
-                  "On the top shelf",
-                  "Under the table",
-                  "Behind the sofa"
+                  "A jigsaw puzzle",
+                  "A card game",
+                  "A chess set"
                 ],
                 "answer": 0,
-                "explanation": "He says it is in the cupboard on the top shelf."
+                "explanation": "She nearly bought a chess set but he has two, she rejects the card game, and she wants a puzzle with a thousand pieces for rainy days."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Dewi",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Danika",
@@ -817,25 +828,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Do you still do the crossword every morning?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Only on Sundays now, because I have to leave for work early on other days."
+                    "text": "Hi Luis, it’s Mina. About Saturday’s games night at my flat. I asked you to bring your folding table, but Tom has just said he can lend us his, so don’t worry about that. And I’ve bought plenty of snacks, crisps and biscuits, so you needn’t bring any. What we haven’t got is enough places to sit. Only four of us can sit comfortably, and eight people are coming. If you can borrow a few more chairs from your neighbours, that would be great. We start at seven. Call me if there is any problem. Bye."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "When does the woman do the crossword?",
+                "prompt": "What does Mina ask Luis to bring on Saturday?",
                 "options": [
-                  "On Sundays only",
-                  "Every morning",
-                  "Every evening"
+                  "A folding table",
+                  "Some snacks",
+                  "A few more chairs"
                 ],
-                "answer": 0,
-                "explanation": "She says only on Sundays now."
+                "answer": 2,
+                "explanation": "The table is no longer needed because Tom will lend one, she has bought snacks, and what she needs is more places to sit, so more chairs."
               }
             },
             {
@@ -862,24 +869,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why did you stop the game?"
+                    "text": "You stopped the game last night, didn’t you? Rosa said you left early."
                   },
                   {
                     "speaker": "m",
-                    "text": "Two of the pieces are missing, and the rules are in the box that we lost."
+                    "text": "Yes. I was a bit sleepy after work, but I would have stayed anyway."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Was it the rules? They’re quite complicated."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not really. Mum explained them well and after ten minutes I understood. No, the real problem was that we couldn’t finish. We counted the cards and found that twelve were missing, so the game made no sense."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe the dog took them."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll look under the sofa today. If I find them, we’ll play again."
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "Why did the man stop the game?",
+                "prompt": "Why did the man stop the game last night?",
                 "options": [
                   "He felt too tired",
-                  "Some pieces are missing",
-                  "The rules were too hard"
+                  "Some cards were missing",
+                  "The rules were too difficult"
                 ],
                 "answer": 1,
-                "explanation": "He says that two of the pieces are missing."
+                "explanation": "He was sleepy but would have stayed and the rules were clear after ten minutes; they stopped because twelve cards were missing."
               }
             },
             {
@@ -893,37 +916,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Demi",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I have a spare ticket for the quiz night on Friday. Do you want it?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Yes, please! What time does it start?"
+                    "text": "Welcome to Brightside Toys, the home of games for all ages. This week we have lots of news. Last week, many of you enjoyed ten per cent off all board games, but that offer finished on Sunday. Next week, we will have free coffee in our new cafe on the first floor, once the builders have gone. And this Saturday only, everybody who spends twenty pounds or more will take home a puzzle book with two hundred crosswords, our gift for you. Come early, because we only have a hundred books. Brightside Toys, on Mill Street, opens at nine."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "What does the woman ask about?",
+                "prompt": "What can customers get this Saturday only?",
                 "options": [
-                  "The place of a quiz night",
-                  "The price of a ticket",
-                  "The start time of an event"
+                  "A free puzzle book",
+                  "Ten per cent off games",
+                  "Free coffee in the cafe"
                 ],
-                "answer": 2,
-                "explanation": "She asks what time the quiz night starts."
+                "answer": 0,
+                "explanation": "The discount was last week and the coffee is next week; this Saturday only, shoppers get a puzzle book as a gift."
               }
             },
             {
@@ -949,25 +960,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "That’s a huge jigsaw! Did you finish it all?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "How long did it take you to finish that huge jigsaw?"
+                    "text": "Yes, last night. It took us ages."
                   },
                   {
                     "speaker": "m",
-                    "text": "About three weeks, working for an hour or two every evening."
+                    "text": "A week?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought it would be a week, and my sister said a weekend because she was sure it was easy. But in the end we needed ten days, from the first of the month to the eleventh."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wow, so you worked on it every night."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Every evening after dinner. The sky was the worst, all blue pieces!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And where will you put it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Mum wants to glue it and put it on the wall."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "How long did the jigsaw take?",
+                "prompt": "How long did the jigsaw take to finish?",
                 "options": [
-                  "Three weeks",
-                  "Three days",
-                  "Three months"
+                  "A weekend",
+                  "A week",
+                  "Ten days"
                 ],
-                "answer": 0,
-                "explanation": "He says that it took about three weeks."
+                "answer": 2,
+                "explanation": "The speakers expected a week and her sister a weekend, but in the end it took ten days."
               }
             },
             {
@@ -994,24 +1029,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Shall we play cards or a board game after dinner?"
+                    "text": "Shall we play that new board game tonight?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Let us play cards. Setting up a board game takes too long."
+                    "text": "Could we play cards instead?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Why? You always say you win more at cards."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ha, I do, but that isn’t the reason. And I haven’t lost the box, it’s in the cupboard upstairs. The truth is that it takes forty minutes to put out all the pieces and read the rules, and then it’s nearly midnight. With cards we can start in a minute."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK, fair enough."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Next weekend, when we have the whole afternoon, we can try the board game."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "Why does the woman prefer cards?",
+                "prompt": "Why does the woman prefer to play cards tonight?",
                 "options": [
                   "She has lost the board game",
                   "A board game takes long to set up",
                   "She wins more often at cards"
                 ],
                 "answer": 1,
-                "explanation": "She says that setting up a board game takes too long."
+                "explanation": "She admits she wins at cards but says that is not why, the box is not lost; what she dislikes is the forty minutes of setting up."
               }
             }
           ]
@@ -1047,24 +1098,48 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to Toy Town. Our shop has the biggest choice of board games in the city."
+                    "text": "Are you still playing that online game, Joe?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Great. I am looking for a game for my nephew who is ten."
+                    "text": "Not as much. For the first month I played every night. I loved it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it the price? Mum said the monthly fee is quite high."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I don’t mind that. It’s about ten pounds, the same as a film ticket. And my friends are still fun, they never argue."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what changed?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "After a few weeks it’s always the same. The same missions, the same enemies. I know what will happen before it starts. I think I’ll stop soon."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Why not try the chess app I told you about?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe, I’d like something new."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "How does the man feel about his online game now?",
                 "options": [
-                  "In a restaurant",
-                  "In a school",
-                  "In a toy shop"
+                  "Worried about the cost",
+                  "Angry with his friends",
+                  "Bored after a few weeks"
                 ],
                 "answer": 2,
-                "explanation": "The woman welcomes him to Toy Town, a shop with a big choice of board games."
+                "explanation": "He does not mind the price and his friends are fun; the missions repeat after a few weeks, so he is bored."
               }
             },
             {
@@ -1091,24 +1166,44 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I made a terrible move, and now I am going to lose the game!"
+                    "text": "Did you watch the quiz show last night? I couldn’t follow it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't give up hope. Keep thinking. You might still find a way."
+                    "text": "Yes. People say it’s too fast, but I like that. The host reads each question once and you have to think quickly."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And some questions are so strange. Who knows the capital of Mali?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I do now! That’s the thing, I learned it from the show. Last week I found out how bees make honey. I never knew."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "But the prizes are small."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Who cares? I enjoy it because I always learn something."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fine, I’ll watch with you next time."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What is the woman's opinion of the quiz show?",
                 "options": [
-                  "Making a joke about him",
-                  "Giving the man hope",
-                  "Asking him a question"
+                  "She learns something new from it",
+                  "She finds it too fast to enjoy",
+                  "She thinks the prizes are too small"
                 ],
-                "answer": 1,
-                "explanation": "She tells him not to give up hope and to keep thinking."
+                "answer": 0,
+                "explanation": "She likes the speed and does not care about the prizes; she learned the capital of Mali and how bees make honey."
               }
             },
             {
@@ -1135,24 +1230,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I have just won the chess tournament at school!"
+                    "text": "Look what I found in the loft: our old family board game, the one with the pirates."
                   },
                   {
                     "speaker": "m",
-                    "text": "Wonderful! I knew that you could do it. I am delighted for you."
+                    "text": "Wow. The box is falling apart. Shall we sell it? Someone online might pay a lot."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No way, I wouldn’t sell it. And a few pieces are gone, but we could draw new ones."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’d rather keep it as it is, the missing pieces are part of the story. But I do want to play with Maya and Tom this Sunday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, they’d love it. They’re always on their tablets."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then it’s decided."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "What do the two speakers agree to do with the old board game?",
                 "options": [
-                  "Delighted about her victory",
-                  "Jealous of her skill",
-                  "Doubtful about the result"
+                  "Sell it online",
+                  "Play it with the children",
+                  "Make some new pieces for it"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is delighted for her."
+                "answer": 1,
+                "explanation": "She refuses to sell it, he does not want new pieces, but both want the children to play it on Sunday."
               }
             },
             {
@@ -1179,24 +1290,48 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, could you explain the rules of this game again, please?"
+                    "text": "So, how was the chess match, Isa? Did you win?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. First, each player takes seven cards from the pile."
+                    "text": "No, I lost in the end, after four hours!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh no, you must be sad."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’d think so, but I’m not. He is the champion of the region, and for most of the game I was ahead. I made one small mistake in the last ten minutes, that was it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Was he rude? Some players are."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not at all. He was very polite and shook my hand."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So are you angry with yourself?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A bit, but mostly I’m proud. Nobody thought I could do that."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want?",
+                "prompt": "How does the woman feel about her chess match?",
                 "options": [
-                  "A seat at the table",
-                  "Another pack of cards",
-                  "An explanation of the rules"
+                  "Annoyed with her opponent",
+                  "Sad about losing",
+                  "Pleased with how she played"
                 ],
                 "answer": 2,
-                "explanation": "He asks the woman to explain the rules again."
+                "explanation": "She lost but is not sad, he was polite, and she is mostly proud because she was ahead against the champion."
               }
             },
             {
@@ -1223,24 +1358,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Today's quiz has five rounds, and each round has ten questions."
+                    "text": "The kids are fighting again over the card game."
                   },
                   {
                     "speaker": "m",
-                    "text": "Can we use our phones to look up the answers?"
+                    "text": "I know. I have an idea, though. What if the little ones get ten extra points at the start? Then Pablo could play too instead of just watching."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Hmm, that’s not fair for the older ones."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "They won’t mind, they’re nearly twice his age. And the game wouldn’t be shorter. In fact it will take longer."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Well, the arguments won’t end, will they?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe not. Those happen with any game. But I hate it when Pablo sits alone."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "OK, let’s try it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Who is the woman?",
+                "prompt": "Why does the man suggest changing the rules?",
                 "options": [
-                  "A quiz presenter",
-                  "A police officer",
-                  "A school nurse"
+                  "To make the game shorter",
+                  "To let the youngest child join in",
+                  "To stop the arguments"
                 ],
-                "answer": 0,
-                "explanation": "She talks about the quiz rounds and questions, like a quiz presenter."
+                "answer": 1,
+                "explanation": "The game will not be shorter and the arguments may not stop; his reason is that Pablo would no longer sit alone and could play."
               }
             },
             {
@@ -1267,24 +1422,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Oh no, the dog has eaten one of the dice!"
+                    "text": "Is that puzzle app any good, Lola?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't worry. We can use a coin or make a new one from paper."
+                    "text": "I like it. My brother told me to download it so we could compete, but we never do. We forgot."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Does it help you sleep? I read that on a website."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I tried that once, but it keeps me awake, the screen is too bright. I only use it on the train. It takes an hour to get to work and I got so bored of looking out of the window."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Right, it’s a good way to use the time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And my head feels awake when I arrive."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the problem?",
+                "prompt": "Why did the woman download the puzzle app?",
                 "options": [
-                  "A table has broken",
-                  "A card is missing",
-                  "A dog has eaten a die"
+                  "To pass the time on her journey",
+                  "To compete with her brother",
+                  "To help her sleep"
                 ],
-                "answer": 2,
-                "explanation": "The man says that the dog has eaten one of the dice."
+                "answer": 0,
+                "explanation": "The competition with her brother was forgotten and it keeps her awake; she uses it on the hour-long train ride to work."
               }
             }
           ]
@@ -1309,55 +1480,55 @@
             "turns": [
               {
                 "speaker": "roxana",
-                "text": "Good evening, everyone. Tonight, I would like to tell you a little about chess. It is played on a square board of sixty-four squares, in black and white. Each player starts with sixteen pieces, so there are thirty-two pieces on the board at the beginning. The most important piece is the king, because if you lose it, you lose the game. The most powerful piece is the queen, which can move in any direction for as many squares as it likes. A game of chess can last from a few minutes to many hours. The shortest possible game has only four moves, but it is very unusual. At the highest level, players think many moves ahead, and they sometimes use clocks, so each player has a limited amount of time. If you are new to the game, my advice is to start with simple openings and to practise every day. Playing against friends is the best way to improve."
+                "text": "Good evening, everyone. Tonight I would like to tell you a little about chess, a game that is more than fifteen hundred years old. Many people think it is only for clever people, but anyone can learn it. Let’s start with the board. It has eight rows and eight columns, and some beginners think that makes sixty squares, but in fact it is sixty-four, half of them black and half white. At the beginning of a game, each player has sixteen pieces, so there are thirty-two on the board together. There are six different kinds. Now, which piece matters most? Many newcomers guess it is the queen, because she moves so far, but they are wrong. You can lose your queen and still win. If you lose your king, the game is over, so he is the piece that you protect above all. The most powerful piece, though, really is the queen. The rook and the bishop can travel far in a straight line too, but only the queen can go in any direction for as many squares as she likes. The knight is my favourite, because it jumps over other pieces and always surprises beginners. Next, time. At home, you can think for as long as you like, even an hour for one move! But in serious tournaments each player has a limited time, and it is controlled with clocks. You press a button after each move and the other side’s time starts to run. Some people use their phone as a timer, but at official events you are not allowed to. Finally, how do you improve? Reading books helps, and a computer program can teach you a lot, but it will beat you every time, which is not much fun. For me the best way is to play against friends, especially friends who are better than you. You will lose often at first, but you learn something from every game. Thank you for listening, and now, who would like to try a game?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The board has ___ squares",
+              "prompt": "The number of squares on a chess board",
               "answer": "sixty-four",
               "accepted": [
                 "64"
               ],
-              "explanation": "It is played on a board of sixty-four squares."
+              "explanation": "Beginners think there are sixty squares, but she says it is sixty-four."
             },
             {
               "id": "l3-2",
-              "prompt": "At the beginning, there are ___ pieces on the board",
+              "prompt": "The number of pieces on the board when a game begins",
               "answer": "thirty-two",
               "accepted": [
                 "32"
               ],
-              "explanation": "Thirty-two pieces on the board at the beginning."
+              "explanation": "Each player has sixteen pieces, so there are thirty-two together."
             },
             {
               "id": "l3-3",
-              "prompt": "The most important piece is the ___",
+              "prompt": "The piece that a player must protect above all",
               "answer": "king",
-              "explanation": "The most important piece is the king."
+              "explanation": "You can lose the queen and still win, but if you lose the king the game is over."
             },
             {
               "id": "l3-4",
-              "prompt": "The most powerful piece is the ___",
+              "prompt": "The strongest piece on the board",
               "answer": "queen",
-              "explanation": "The most powerful piece is the queen."
+              "explanation": "The rook and the bishop travel far, but only the queen can go in any direction as far as she likes."
             },
             {
               "id": "l3-5",
-              "prompt": "Players sometimes use ___ to limit time",
+              "prompt": "In serious tournaments, thinking time is controlled with",
               "answer": "clocks",
               "accepted": [
                 "clock"
               ],
-              "explanation": "They sometimes use clocks."
+              "explanation": "At official events they use clocks, not a phone timer."
             },
             {
               "id": "l3-6",
-              "prompt": "The best way to improve is to play against ___",
+              "prompt": "To get better, she says you should play regularly against",
               "answer": "friends",
-              "explanation": "Playing against friends is the best way to improve."
+              "explanation": "Books and computer programs help, but the best way is to play against friends."
             }
           ]
         },
@@ -1389,51 +1560,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Delroy, you make puzzles for newspapers. How did you start?"
+                "text": "Delroy, you make crosswords for a national newspaper. How did your first one get printed?"
               },
               {
                 "speaker": "p",
-                "text": "I used to make crosswords for my classmates when I was twelve. A teacher saw one of them and sent it to a local newspaper, and they printed it."
+                "text": "Ha, that’s a funny story. I was fourteen and made a crossword for fun. My mother wanted to post it to the paper, but I said no, I was too shy. In the end my English teacher found it in my bag. She liked it, wrote a letter and sent it in herself. I didn’t know until I saw it in print."
               },
               {
                 "speaker": "i",
-                "text": "How long does it take to create a crossword?"
+                "text": "What is the hardest part of making a crossword?"
               },
               {
                 "speaker": "p",
-                "text": "A big one takes me about two days. The hardest part is to find words that fit together, and clues that are clever but not too difficult."
+                "text": "People think it’s drawing the grid, and yes, that takes time, I use a ruler and a pencil. Writing the solution at the end is boring, but it’s just copying. The real challenge is the clues. A good clue must be clever but fair, and I can spend a whole evening on just one."
               },
               {
                 "speaker": "i",
-                "text": "Where do you get your ideas?"
+                "text": "And where do you write down your ideas?"
               },
               {
                 "speaker": "p",
-                "text": "From everyday life. A conversation in a café, a road sign, a film title. I always write them in a notebook, and later they become clues."
+                "text": "They come everywhere: on the bus, in a cafe. For years I used my phone, but I lost it twice, and the notes with it. I also bought a large board for my wall once, but it was too big for my flat, so my brother has it now. These days I carry a small notebook in my pocket."
               },
               {
                 "speaker": "i",
-                "text": "Do readers ever complain?"
+                "text": "You once made a mistake in a puzzle. Why do you check everything twice now?"
               },
               {
                 "speaker": "p",
-                "text": "All the time! Once, I made a mistake, and thousands of people wrote to me. I learned to check every answer twice."
+                "text": "Oh, that was a terrible week. One clue had two possible answers. Many readers wrote to the newspaper, some of them quite angry. The editor was very kind and didn’t stop my column, he just laughed. And my mother said nothing, she doesn’t do crosswords. But I felt so embarrassed that I now check every answer twice."
               },
               {
                 "speaker": "i",
-                "text": "Do you solve puzzles in your free time?"
+                "text": "You walk your dog every evening. Is that for the dog?"
               },
               {
                 "speaker": "p",
-                "text": "Not really. After a day of puzzles, I prefer to go for a long walk with my dog, or to cook something with my wife."
+                "text": "Not really. He’s only three and he runs in the garden all day. And no, the doctor hasn’t ordered me to walk, though he’d approve. The truth is that after hours with words, my head is full. Walking is the only time it goes quiet, and often a new idea comes."
               },
               {
                 "speaker": "i",
-                "text": "What would you tell someone who wants to be a puzzle maker?"
+                "text": "Finally, what would you say to someone who wants to start?"
               },
               {
                 "speaker": "p",
-                "text": "Read a lot, because you need a rich vocabulary, and test your puzzles on friends before you send them away."
+                "text": "Don’t worry about studying maths, I didn’t, and you don’t need a degree. Some people say you must work in the morning, but I write at night and I’m fine. My advice is to make little puzzles and show them to your friends first. They will tell you honestly if a clue is boring or impossible."
               }
             ]
           },
@@ -1443,66 +1614,66 @@
               "prompt": "How did Delroy's first crossword reach the newspaper?",
               "options": [
                 "His mother posted it",
-                "A teacher sent it in",
+                "His teacher sent it in",
                 "He took it there himself"
               ],
               "answer": 1,
-              "explanation": "A teacher saw one and sent it to a local newspaper."
+              "explanation": "His mother wanted to post it but he said no; his English teacher found it and sent it in."
             },
             {
               "id": "l4-2",
-              "prompt": "What is the hardest part of making a crossword?",
+              "prompt": "What does Delroy find hardest about making a crossword?",
               "options": [
-                "Drawing the squares neatly",
-                "Finding words that fit and good clues",
-                "Writing the answers at the end"
+                "Making the grid look tidy",
+                "Writing out the solution",
+                "Writing clues that are fair"
               ],
-              "answer": 1,
-              "explanation": "The hardest part is finding words that fit and clever clues."
+              "answer": 2,
+              "explanation": "The grid takes time and the solution is just copying; the real challenge is a clever but fair clue."
             },
             {
               "id": "l4-3",
-              "prompt": "Where does he write down his ideas?",
+              "prompt": "Where does Delroy keep his ideas now?",
               "options": [
-                "In a notebook",
+                "In a small notebook",
                 "On his phone",
                 "On a large board"
               ],
               "answer": 0,
-              "explanation": "He always writes them in a notebook."
+              "explanation": "He lost his phone twice and the board was too big, so he carries a notebook in his pocket."
             },
             {
               "id": "l4-4",
-              "prompt": "What did he learn from a mistake?",
+              "prompt": "Why does Delroy check every answer twice now?",
               "options": [
-                "To ask a friend to write them",
-                "To make easier puzzles",
-                "To check every answer twice"
+                "The editor stopped his column once",
+                "His mother found an error in print",
+                "Many readers wrote about one clue"
               ],
               "answer": 2,
-              "explanation": "He learned to check every answer twice."
+              "explanation": "The editor did not stop his column and his mother said nothing; many readers wrote about a clue with two answers, so he felt embarrassed."
             },
             {
               "id": "l4-5",
-              "prompt": "What does he do to relax after work?",
+              "prompt": "Why does Delroy walk his dog every evening?",
               "options": [
-                "Does puzzles on the sofa",
-                "Takes a walk with his dog",
-                "Watches television all evening"
+                "It clears his head after a day of words",
+                "The dog needs a lot of exercise",
+                "His doctor told him to"
               ],
-              "answer": 1,
-              "explanation": "He prefers to go for a long walk with his dog."
+              "answer": 0,
+              "explanation": "The dog runs in the garden and the doctor has not ordered it; walking makes his head quiet after hours with words."
             },
             {
               "id": "l4-6",
-              "prompt": "What advice does he give to beginners?",
+              "prompt": "What advice does Delroy give to beginners?",
               "options": [
-                "Read a lot and test puzzles on friends",
                 "Study maths at university",
+                "Show little puzzles to friends first",
                 "Work only in the morning"
               ],
-              "answer": 0,
-              "explanation": "Read a lot and test puzzles on friends before sending them away."
+              "answer": 1,
+              "explanation": "He says maths and a degree are not needed and he writes at night; he advises showing little puzzles to friends first."
             }
           ]
         }

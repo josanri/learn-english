@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "Why did the writer not want to go to the class?",
               "options": [
-                "He thought that his friends would laugh",
                 "He did not like his teacher",
-                "He preferred to play football on his own"
+                "He preferred to play football on his own",
+                "He thought that his friends would laugh",
+                "He wanted to spend time with his father"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He was afraid that his friends would laugh at him."
             },
             {
               "id": "r3-2",
               "prompt": "What was the first lesson like?",
               "options": [
+                "It was harder than it looked",
                 "It was rather boring",
                 "It was easy and quite short",
-                "It was harder than it looked"
+                "It was fun from the first minute"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "It was much harder than it looked and his legs were shaking."
             },
             {
@@ -273,20 +275,22 @@
               "options": [
                 "He wanted to stop attending",
                 "He felt more nervous",
+                "He felt proud of his friends",
                 "He began to enjoy dancing"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "After a few weeks, he began to enjoy it."
             },
             {
               "id": "r3-4",
               "prompt": "How did his friends react when he told them?",
               "options": [
-                "Nobody laughed at him",
                 "They stopped playing football",
-                "They asked him to leave the team"
+                "Nobody laughed at him",
+                "They asked him to leave the team",
+                "They said he was too tall"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "To his surprise, nobody laughed, and one even wanted to try."
             },
             {
@@ -294,10 +298,11 @@
               "prompt": "What was the best moment of his life?",
               "options": [
                 "Winning a football match at school",
+                "Meeting a famous dancer",
                 "His friends clapping at his show",
-                "Meeting a famous dancer"
+                "Winning a place at a ballet school"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "His football friends stood up and clapped for a long time."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A short history of ballet",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Ballet began more than five hundred years ago in the courts of Italy. [1] Rich families organised parties with music, food and dancing to show their power.\n\nThe art then moved to France, where King Louis the Fourteenth loved to dance. [2] He even performed himself, and he started the first school for dancers in the year sixteen sixty-one.\n\nIn the beginning, the dancers wore heavy costumes and shoes with heels. [3] This changed in the nineteenth century, when women began to dance on the tips of their toes in soft shoes.\n\nThe Russian dancers and teachers became famous around the world. [4] Some of the best-known ballets, such as Swan Lake, were written at that time and are still performed today.\n\nToday, ballet is danced in almost every country. [5] Many young people take lessons, even if they never plan to become professional dancers.",
           "sentences": [
-            "People were amazed by how light and graceful they looked.",
-            "It was a way to entertain guests at big dinners.",
-            "This made the movements slow and difficult to follow.",
-            "The king believed that dance was important to the nation.",
             "The music for them was very quiet and sad.",
+            "The king believed that dance was important to the nation.",
+            "Ballet shoes were first made from soft leather.",
+            "This made the movements slow and difficult to follow.",
+            "It was a way to entertain guests at big dinners.",
+            "People were amazed by how light and graceful they looked.",
+            "Their ideas came from a book about dance written in Italy.",
             "Companies have even been founded in cities which had no theatres before."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "E",
               "explanation": "Entertaining guests at big dinners follows the beginnings in Italy and leads to parties with music."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "B",
               "explanation": "The king believed that dance was important, and the next sentence says he performed himself."
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "D",
               "explanation": "Heavy costumes made the movements slow, and the next sentence says things changed."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "F",
               "explanation": "People were amazed by the Russian dancers, and ballets of that time are still performed."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "H",
               "explanation": "Companies founded in new cities fit with ballet being danced in almost every country."
             }
           ]
@@ -713,24 +720,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Josefa",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What time does the dance class start?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "At half past four on Tuesdays, but I like to arrive early to warm up."
+                    "text": "Hi, this is Jaden from the Starlight Dance School, calling about your first lesson. Last month the beginners’ class was on Tuesdays at half past four, and I know you wrote that down. But we changed the timetable in September, so please ignore it. There was also a Thursday group at five o’clock, but that one is only for advanced students, so it isn’t for you. Your class will be on Wednesdays, starting at a quarter to five. Bring soft shoes and a bottle of water, and arrive ten minutes early to fill in a form. See you soon, and don’t be nervous!"
                   }
                 ]
               },
@@ -743,7 +738,7 @@
                   "At five o'clock on Thursdays"
                 ],
                 "answer": 1,
-                "explanation": "She says that it is at half past four on Tuesdays."
+                "explanation": "Jaden says the old Tuesday time is out of date and the Thursday group is only for advanced students, so the beginner’s class is on Wednesdays at a quarter to five."
               }
             },
             {
@@ -770,11 +765,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How long have you been dancing?"
+                    "text": "Jalil, you move so well. Have you been dancing since you were a child?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Since I was six. That makes ten years now."
+                    "text": "I wish. I started at sixteen, which is quite late. My cousin dragged me to a class."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So that’s about six years ago?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, six years is how long I’ve lived in this city. Look, I’m twenty-six now, so it’s been ten years."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ten years! No wonder you’re so good."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. I nearly gave up after the first year, but I’m glad I didn’t."
                   }
                 ]
               },
@@ -787,7 +798,7 @@
                   "For sixteen years"
                 ],
                 "answer": 0,
-                "explanation": "He says that it makes ten years now."
+                "explanation": "Jalil began at sixteen and is now twenty-six; the six years is only the time he has lived in the city, so he has danced for ten years."
               }
             },
             {
@@ -801,24 +812,12 @@
                       "lang": "en-US",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Joyce",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Are the tickets for the ballet expensive?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "They start at twenty pounds, but students get a discount of five pounds."
+                    "text": "If you love dance, come to the Riverside Theatre this Saturday for the Starlight Spring Show! An adult ticket is twenty-five pounds, and it includes a programme and a drink in the interval. Last year, students paid twenty pounds, which many of you told us was too much. So this year we’ve listened: show your student card at the door, and you’ll pay only fifteen. Children under twelve come in for free if they sit with an adult. You can buy tickets online or at the school office until Friday at six. Don’t wait too long, because last year we sold out two days before the show!"
                   }
                 ]
               },
@@ -831,7 +830,7 @@
                   "Twenty-five pounds"
                 ],
                 "answer": 0,
-                "explanation": "It is twenty pounds minus five pounds for students."
+                "explanation": "Adults pay twenty-five and students paid twenty last year, but this year students pay only fifteen with a card."
               }
             },
             {
@@ -858,11 +857,31 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why have you stopped doing ballet?"
+                    "text": "Jarek, I haven’t seen you at the studio for months. Have you lost interest?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I hurt my ankle last month, and the doctor says that I must rest for six weeks."
+                    "text": "No, not at all. I still watch every video I can find."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then is it because you’ve moved to a new city? Someone told me that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That was my sister. I’m still in the same flat. Actually, I twisted my ankle badly in March, doing a jump that was too difficult."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no! Is it better now?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The doctor says I can come back in a month, if I’m careful. I miss it so much."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We’ll be glad to have you back."
                   }
                 ]
               },
@@ -875,7 +894,7 @@
                   "He moved to a new city"
                 ],
                 "answer": 1,
-                "explanation": "He says that he hurt his ankle."
+                "explanation": "Jarek has not lost interest, and it was his sister who moved; he twisted his ankle in March."
               }
             },
             {
@@ -889,24 +908,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Josefa",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Where will the show take place?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "In the old theatre by the river, not in the school hall as before."
+                    "text": "Good evening, everyone, and thank you for coming to our meeting. A quick note about the summer show. We usually perform in the school hall, but it is too small for the number of people who want to come. We also asked the sports centre, and they offered us a date in July, but the stage there is very hard and cold, so we said no. The good news is that the manager of the little theatre by the river has agreed to let us use it for two evenings. It’s a beautiful place with a real curtain and good lights. I’ll put the address on the board, and you can all take a copy home."
                   }
                 ]
               },
@@ -919,7 +926,7 @@
                   "In a theatre by the river"
                 ],
                 "answer": 2,
-                "explanation": "She says that it is in the old theatre by the river."
+                "explanation": "The school hall is too small and the sports centre was refused, so the show will be in the little theatre by the river."
               }
             },
             {
@@ -946,11 +953,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Who taught you to dance so well?"
+                    "text": "Kamal, that dance was amazing. Did your teacher at school show you that?"
                   },
                   {
                     "speaker": "m",
-                    "text": "My grandmother. She used to be a dancer, and she showed me the steps in her kitchen."
+                    "text": "No, our school only had football. I did ask my older brother once, but he just laughed. He can’t dance at all."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So who taught you?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My nan, actually, my grandmother on my mum’s side. She danced in a club when she was young, and every Sunday she put on her old records in the kitchen and showed me the steps."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s lovely."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I think of her every time I perform."
                   }
                 ]
               },
@@ -963,21 +986,13 @@
                   "His older brother"
                 ],
                 "answer": 0,
-                "explanation": "He says that his grandmother taught him."
+                "explanation": "The school only had football and his brother laughed; it was his nan, his grandmother, who showed him the steps."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Jens",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Joyce",
@@ -989,12 +1004,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Do you want to come to the dance club with me on Saturday?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I would love to, but I have a piano exam on Monday, so I must practise."
+                    "text": "Hi Jens, it’s Joyce. I got your message about the party and the dance on Saturday. I’m really sorry, but I can’t come. Don’t think that I’m avoiding it, I love dancing, you know that. And I was invited to a party on Saturday too, but I told my friend that I’d see her next week instead. The real problem is my driving theory exam on Monday morning. I haven’t studied enough, so I have to spend the whole weekend with my books and practise the questions. Let’s go dancing together the weekend after, I promise. Call me when you get this!"
                   }
                 ]
               },
@@ -1007,7 +1018,7 @@
                   "She does not like dancing"
                 ],
                 "answer": 1,
-                "explanation": "She says that she has a piano exam and must practise."
+                "explanation": "She loves dancing and said no to the other party, but she needs the weekend to practise for her exam on Monday."
               }
             }
           ]
@@ -1043,24 +1054,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good evening, ladies and gentlemen. Welcome to our dance show. Please turn off your phones."
+                    "text": "Only two hours until the show! I can’t sit still."
                   },
                   {
                     "speaker": "m",
-                    "text": "Thank you. I am so excited to see the first dance."
+                    "text": "Are you scared? You looked pale at the rehearsal."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Well, my stomach is full of butterflies, but it’s not fear. And not the audience, they’re all friendly. I’m so excited, I’ve waited for this for a year."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’d want to run away if it were me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Honestly, I wouldn’t change places with anyone. Even if I make a mistake, I’ll enjoy it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then you’ll be fine. Go and break a leg!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks, I will. See you in the interval!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does this conversation take place?",
+                "prompt": "How does Juno feel about tonight's show?",
                 "options": [
-                  "At a train station",
-                  "At a swimming pool",
-                  "At a dance show"
+                  "She is afraid of the audience",
+                  "She is excited about it",
+                  "She would like to cancel"
                 ],
-                "answer": 2,
-                "explanation": "The woman welcomes the audience to the dance show."
+                "answer": 1,
+                "explanation": "She says it is not fear, the audience is friendly, she is excited and has waited a year; Jarek is the one who would run away."
               }
             },
             {
@@ -1087,24 +1118,44 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am so nervous before my first solo that I cannot breathe."
+                    "text": "The audition is tomorrow, and I keep forgetting the middle part."
                   },
                   {
                     "speaker": "f",
-                    "text": "Take a deep breath. You have practised for months, and you will be fine."
+                    "text": "You’ve practised it every night this week. I’ve watched you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe I should choose an easier dance, one with fewer turns."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, don’t change it now. The judges will like the difficult one. And you don’t need more time, you could dance it in your sleep."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You think so?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know so. Just keep calm and go to bed early."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks, you always know what to say."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Josefa think about Kaito's audition?",
                 "options": [
-                  "Asking about his plans",
-                  "Telling him he will be fine",
-                  "Giving him a short lesson"
+                  "He has practised enough",
+                  "He should dance something easier",
+                  "He needs another week"
                 ],
-                "answer": 1,
-                "explanation": "She tells him to take a deep breath and that he will be fine."
+                "answer": 0,
+                "explanation": "She reminds him that he practises every night, says not to change the dance and that he does not need more time."
               }
             },
             {
@@ -1131,24 +1182,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I have just been chosen for the main part in the school show!"
+                    "text": "Guess what? The school offered me a job as a teacher!"
                   },
                   {
                     "speaker": "m",
-                    "text": "That is fantastic! You were the best at the audition. I am delighted."
+                    "text": "Wow, congratulations! You deserve it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You don’t mind? I know you applied too."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A little part of me wishes it was me, I won’t lie. But you’re much better with children than I am. I’m happy for you, really."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll be busy, though. Five evenings a week."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m not worried that you’ll be too busy. You’ll manage, and you’ll be wonderful. Let’s celebrate on Friday."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Jalil feel about Jelena's new job?",
                 "options": [
-                  "Delighted for the woman",
-                  "Jealous of the woman",
-                  "Worried about the show"
+                  "He is jealous of her",
+                  "He is worried about her",
+                  "He is happy for her"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is delighted."
+                "answer": 2,
+                "explanation": "He is a little envious, but he praises her and says congratulations, so he is happy for her; he is not worried about her work."
               }
             },
             {
@@ -1175,24 +1242,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, could you tell me where the dance studio is, please?"
+                    "text": "Excuse me, do you know where the dance studio is? I’ve been walking around for ten minutes."
                   },
                   {
                     "speaker": "f",
-                    "text": "It is on the first floor, at the end of the corridor."
+                    "text": "It’s behind the sports shop, next to the school office. Are you going to a class?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I’m too old to start. My daughter has a lesson at six and she left her shoes in my car."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, that’s kind of you! Her teacher will be pleased."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I hope so. Otherwise she’d dance in her socks, and she hates that. Maybe I’ll ask about lessons for myself another day."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want to find?",
+                "prompt": "Why is the man going to the dance studio?",
                 "options": [
-                  "The sports shop",
-                  "The school office",
-                  "The dance studio"
+                  "To join a class",
+                  "To bring something to his daughter",
+                  "To book lessons for himself"
                 ],
-                "answer": 2,
-                "explanation": "He asks where the dance studio is."
+                "answer": 1,
+                "explanation": "He says he is too old to start a class, and he is taking his daughter the shoes she left in his car."
               }
             },
             {
@@ -1219,24 +1298,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Today, I am going to teach you the first five positions in ballet."
+                    "text": "Kamal, are you free on Friday evening? I have to go to my sister’s wedding."
                   },
                   {
                     "speaker": "m",
-                    "text": "Are they difficult to learn?"
+                    "text": "I can come to the show, if that’s what you mean. Isn’t that Saturday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The show is Saturday. I mean my class on Friday. Nobody else can teach it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do you want me to bring music? I have a lot."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, the speakers are there already. Just show them the basic steps."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Okay, I’ll do it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Juno want Kamal to do?",
                 "options": [
-                  "Teaching a class",
-                  "Asking for a favour",
-                  "Selling shoes"
+                  "Bring some music",
+                  "Come to the show",
+                  "Teach her class on Friday"
                 ],
-                "answer": 0,
-                "explanation": "She says that she is going to teach them the positions."
+                "answer": 2,
+                "explanation": "Juno corrects the show and the music, and asks him to show the basic steps in her class on Friday."
               }
             },
             {
@@ -1262,25 +1357,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Janek, why are you looking under the chairs?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I have lost one of my ballet shoes, and the show starts in ten minutes!"
+                    "text": "I can’t find my left shoe! Did you move it?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Stay calm. I have a spare pair in my bag, and I think that they are your size."
+                    "text": "No, I haven’t touched it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Sorry, I know you didn’t. It’s my own fault. I took it off in the car and forgot it there."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You look so worried."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not worried exactly. I can borrow a spare pair, and they fit. But I’m so annoyed with myself. I’ve been in this show for three years, and I never lose anything. I even packed my bag last night, and this is what happens."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Don’t worry, it could happen to anyone. Let’s go and find those spare shoes."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "How does Janek feel about losing his shoe?",
                 "options": [
-                  "He has missed the show",
-                  "He has broken his leg",
-                  "He has lost a shoe"
+                  "Annoyed with himself",
+                  "Angry with Jelena",
+                  "Relaxed about it"
                 ],
-                "answer": 2,
-                "explanation": "He says that he has lost one of his ballet shoes."
+                "answer": 0,
+                "explanation": "He apologises to Jelena, says it is his own fault and that he is annoyed with himself, not relaxed."
               }
             }
           ]
@@ -1305,37 +1420,37 @@
             "turns": [
               {
                 "speaker": "marguerite",
-                "text": "Hello, and welcome to the Starlight Dance School. My name is Joyce, and I am the head teacher. Our school was opened twenty years ago, and today, we have about three hundred students, from the age of four to seventy. We teach many types of dance, including ballet, jazz, tap and hip-hop. Classes take place every day from four o'clock until nine in the evening. The beginner classes are on Mondays and Wednesdays, and they cost eight pounds a lesson. If you decide to join us, you will need a pair of soft shoes and comfortable clothes. We provide the music, the mirrors and the water. Twice a year, we put on a big show at the town theatre, and all the students can take part. This year, the show will be in June, and the theme is The Four Seasons. Please remember that we are closed in August, when the teachers take a holiday. We hope to see you in September!"
+                "text": "Hello, and welcome to the Starlight Dance School. My name is Joyce, and I am the head teacher. Before we begin the tour, let me tell you a little about us. Our school started with just one small room above a bakery. People think it’s older than it is, because the building is so old, but we opened our doors twenty years ago. Some friends say it was only fifteen, but they forget the first year in the bakery. Today we have about three hundred students. I know, it sounds like a lot. Two years ago we had only two hundred, and next year I hope to reach four hundred, but we need to build another studio first. Our students come from every part of the city. The youngest is four, and she is very serious about it. Most children are between six and twelve. But dancing isn’t just for the young. Our oldest student is seventy, and she comes twice a week. Her husband is sixty-eight, and he started last year after he watched her. Let me tell you about the timetable. The advanced groups meet from Tuesday to Friday, but the beginners’ classes are on Mondays and Wednesdays. We used to have a Friday group for beginners, but nobody could come, so we stopped it. All classes begin at five and finish at six. Now, the price. A single lesson costs eight pounds. If you buy ten lessons together, it’s seventy pounds, which is seven pounds each, and a monthly card for unlimited classes is fifty. Most families find the lessons good value. The first lesson is free, so please try it. Finally, our big event. Every year we hold a show in the city theatre. It was in May when we started, then we moved to July for a few years because of the heat. Now it’s in June, always the second Saturday, and we hope that you will all come and watch. Tickets go on sale in March. Now, please follow me, and I will show you the studios."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The school opened ___ years ago",
+              "prompt": "The school began its work ___ years ago",
               "answer": "twenty",
               "accepted": [
                 "20"
               ],
-              "explanation": "Our school was opened twenty years ago."
+              "explanation": "The school opened twenty years ago; some friends say fifteen, but they forget the first year."
             },
             {
               "id": "l3-2",
-              "prompt": "It has about ___ students",
+              "prompt": "Number of students today: about ___",
               "answer": "three hundred",
               "accepted": [
                 "300"
               ],
-              "explanation": "We have about three hundred students."
+              "explanation": "There are about three hundred students now; it was two hundred two years ago and four hundred is only a hope."
             },
             {
               "id": "l3-3",
-              "prompt": "The oldest students are ___ years old",
+              "prompt": "The age of the oldest student: ___",
               "answer": "seventy",
               "accepted": [
                 "70"
               ],
-              "explanation": "From the age of four to seventy."
+              "explanation": "The oldest student is seventy; her husband is sixty-eight."
             },
             {
               "id": "l3-4",
@@ -1344,22 +1459,22 @@
               "accepted": [
                 "Wednesday"
               ],
-              "explanation": "The beginner classes are on Mondays and Wednesdays."
+              "explanation": "Beginners’ classes are on Mondays and Wednesdays; the Friday group was stopped."
             },
             {
               "id": "l3-5",
-              "prompt": "A lesson costs ___ pounds",
+              "prompt": "The price of one single lesson: ___ pounds",
               "answer": "eight",
               "accepted": [
                 "8"
               ],
-              "explanation": "They cost eight pounds a lesson."
+              "explanation": "A single lesson costs eight pounds; ten lessons are seventy, which is seven each."
             },
             {
               "id": "l3-6",
-              "prompt": "The big show is in ___",
+              "prompt": "The month of the yearly show: ___",
               "answer": "June",
-              "explanation": "This year, the show will be in June."
+              "explanation": "The show is now in June; it was in May at first and in July for a few years."
             }
           ]
         },
@@ -1391,120 +1506,120 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Josefa, you are only seventeen, and you already dance with a professional company. How did it start?"
+                "text": "Josefa, you started dancing very young. Why did you begin?"
               },
               {
                 "speaker": "d",
-                "text": "My grandmother took me to see a ballet when I was five. I watched the dancers and told her that I wanted to be one of them."
+                "text": "People think my parents sent me, or that a teacher at school noticed me, but no. When I was five, my grandmother took me to see a ballet, and I couldn’t speak for the whole evening. I told her I would be on that stage one day. The next week, I joined my first class."
               },
               {
                 "speaker": "i",
-                "text": "How many hours a day do you practise?"
+                "text": "How long do you practise every day?"
               },
               {
                 "speaker": "d",
-                "text": "About six. We start with a warm-up at nine, then we have two hours of technique, and after lunch, we rehearse for the next show."
+                "text": "It depends on the period of the year. When I was at school, I did about three hours after class, and only at weekends it was ten, because there were no lessons. Now it’s about six hours every day, three in the morning and three in the afternoon, with a short break for lunch. It sounds like a lot, and my friends say I’m crazy, but I love it, so it doesn’t feel like work to me."
               },
               {
                 "speaker": "i",
-                "text": "Is it painful?"
+                "text": "What about pain?"
               },
               {
                 "speaker": "d",
-                "text": "Sometimes. My feet hurt a lot, and I have many plasters in my bag. But when I am on stage, I forget the pain completely."
+                "text": "People imagine I never feel pain, but my feet hurt every day. I don’t stop because of it, though. And on stage it’s strange: the lights come on and I forget about it completely. It’s afterwards, in the dressing room, when I take my shoes off, that I feel it again. My mother always says that I should see a doctor, and of course I do, twice a year, but a dancer has to accept a little pain as part of the job."
               },
               {
                 "speaker": "i",
-                "text": "What do you eat before a performance?"
+                "text": "What do you eat before a show?"
               },
               {
                 "speaker": "d",
-                "text": "Something simple, like pasta and a banana. I cannot eat too much, or I feel heavy, but I also need energy."
+                "text": "Some dancers eat nothing, only water, but I’d faint. A big meal with meat would make me sleepy and slow. So about two hours before, I have a small plate of pasta, and a banana, which gives me energy without making me heavy. I also drink a lot of water during the day, but never too much just before I go on, because that would be a disaster. Some of my friends have a special lucky snack, but I don’t believe in luck, only in good habits."
               },
               {
                 "speaker": "i",
-                "text": "Do you ever feel nervous?"
+                "text": "How do you feel when the curtain goes up?"
               },
               {
                 "speaker": "d",
-                "text": "Always. My hands shake in the dressing room, but when the curtain goes up, I feel calm. It is a strange feeling."
+                "text": "Before that, in the dressing room, I’m shaking, more than I ever was as a child. My hands are cold and my heart is going so fast that I think everybody can hear it. But when the curtain rises, everything goes quiet and I feel calm. Tired comes afterwards, at the end, and bored, never."
               },
               {
                 "speaker": "i",
-                "text": "What would you say to a child who wants to be a dancer?"
+                "text": "What advice would you give to a child who wants to dance?"
               },
               {
                 "speaker": "d",
-                "text": "Work hard, but also enjoy it. If you stop loving dance, it becomes only a job."
+                "text": "Don’t wait until you’re older, there’s no need, and don’t think about another career yet. Work hard, because nothing comes easy, but make sure you enjoy it. If it’s not fun, it’s very difficult to continue for so many years. I remember that on bad days, when everything hurt, I thought about stopping, and it was the love of dancing that kept me going. A teacher once told me that talent is only ten per cent, and the rest is a happy kind of hard work."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "What happened when Josefa was five?",
+              "prompt": "Why did Josefa begin to dance?",
               "options": [
-                "She started her first class",
-                "She saw a ballet with her grandmother",
-                "She won a prize at school"
+                "A teacher chose her at school",
+                "A ballet she saw with her grandmother",
+                "A prize she won as a child"
               ],
               "answer": 1,
-              "explanation": "Her grandmother took her to see a ballet."
+              "explanation": "Her parents and teacher did not send her; she saw a ballet with her grandmother at five and said she would be on that stage."
             },
             {
               "id": "l4-2",
-              "prompt": "How long does she practise every day?",
+              "prompt": "How long does Josefa practise every day now?",
               "options": [
                 "About three hours",
                 "About six hours",
                 "About ten hours"
               ],
               "answer": 1,
-              "explanation": "About six hours a day."
+              "explanation": "Three hours was school time and ten only at weekends; now it is about six hours every day."
             },
             {
               "id": "l4-3",
-              "prompt": "What does she say about pain?",
+              "prompt": "What does Josefa say about pain?",
               "options": [
-                "She forgets it when she is on stage",
-                "She stops dancing when it hurts",
-                "She never feels any pain"
+                "She stops when it hurts",
+                "She never feels it",
+                "She forgets it on stage"
               ],
-              "answer": 0,
-              "explanation": "When she is on stage, she forgets the pain completely."
+              "answer": 2,
+              "explanation": "She feels pain every day and does not stop, but on stage she forgets it completely."
             },
             {
               "id": "l4-4",
-              "prompt": "What does she eat before a show?",
+              "prompt": "What does Josefa eat before a show?",
               "options": [
                 "Only a glass of water",
                 "A big meal with meat",
                 "Pasta and a banana"
               ],
               "answer": 2,
-              "explanation": "Something simple, like pasta and a banana."
+              "explanation": "Some dancers eat only water and a big meal would make her slow, so she has pasta and a banana."
             },
             {
               "id": "l4-5",
-              "prompt": "How does she feel when the curtain goes up?",
+              "prompt": "How does Josefa feel when the curtain goes up?",
               "options": [
-                "More nervous than before",
+                "Nervous, more than before",
                 "Calm, after being nervous",
                 "Tired and bored"
               ],
               "answer": 1,
-              "explanation": "Her hands shake in the dressing room, but she feels calm when the curtain goes up."
+              "explanation": "She shakes in the dressing room, but when the curtain rises she feels calm; tired comes afterwards and bored, never."
             },
             {
               "id": "l4-6",
-              "prompt": "What advice does she give a child?",
+              "prompt": "What advice does Josefa give to a child?",
               "options": [
                 "Work hard and enjoy it",
                 "Choose a different career",
                 "Wait until you are older"
               ],
               "answer": 0,
-              "explanation": "Work hard, but also enjoy it."
+              "explanation": "She says not to wait or think of another career, but to work hard and make sure to enjoy it."
             }
           ]
         }

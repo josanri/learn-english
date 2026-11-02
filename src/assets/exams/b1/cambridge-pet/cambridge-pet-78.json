@@ -251,9 +251,10 @@
               "options": [
                 "Her school organised it",
                 "She won a prize",
+                "She saw an advert on television",
                 "A friend recommended it"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "Her best friend said it was the best week of her life, so she booked a place."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "The flying trapeze",
                 "Juggling with clubs",
-                "Walking on a wire"
+                "Walking on a wire",
+                "Balancing on a ball"
               ],
               "answer": 0,
               "explanation": "She says she picked the trapeze."
@@ -273,7 +275,8 @@
               "options": [
                 "Climbing the ladder",
                 "Swinging high up",
-                "Trusting her partner"
+                "Trusting her partner",
+                "Waking up early"
               ],
               "answer": 2,
               "explanation": "She says the hardest thing was learning to trust the person who caught her hands."
@@ -282,11 +285,12 @@
               "id": "r3-4",
               "prompt": "What went wrong in the show?",
               "options": [
-                "She forgot a move",
                 "She fell off the bar",
+                "She forgot a move",
+                "The mat was missing",
                 "Her partner was late"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She was so nervous that she forgot her first move."
             },
             {
@@ -294,10 +298,11 @@
               "prompt": "How does she feel now?",
               "options": [
                 "Worried about shows",
-                "Eager to go again",
-                "Tired of practising"
+                "Proud but tired",
+                "Tired of practising",
+                "Eager to go again"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She is already saving money for next summer."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A short history of the circus",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The modern circus began in London in 1768, when a former soldier called Philip Astley opened a place for horse riding. [1] He chose a circle because it helped the riders to stay on their horses.\n\nSoon, there was a problem. [2] So Astley added other acts to keep people interested. Clowns, rope walkers and jugglers all joined the show, and it became more and more popular.\n\nIn the 1800s, circuses started to travel. [3] Large tents could be put up in a day and taken down overnight, so a show could visit a new town every week.\n\nMany of these shows had animals, but attitudes have changed. [4] Today, most famous circuses use only human performers, and some of them have become works of art.\n\nThe circus is still popular around the world. [5] Even a small town can enjoy a show, and people of every age still love to watch.",
           "sentences": [
+            "Some of the first clowns were also famous musicians.",
             "Companies began to use big tents instead of buildings.",
             "The first films were shown in Paris in the 1890s.",
-            "You do not need a big stadium to enjoy one.",
-            "The place was a round ring, not a stage.",
             "Many people now think that it is wrong to keep wild animals in a show.",
+            "You do not need a big stadium to enjoy one.",
+            "He kept the horses in a field outside the city.",
+            "The place was a round ring, not a stage.",
             "Audiences got bored of watching only horses."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "G",
               "explanation": "The first sentence says a place for horse riding; the next one explains why he chose a circle."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "H",
               "explanation": "Audiences got bored; the next sentence says Astley added other acts to keep people interested."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "B",
               "explanation": "Circuses started to travel, and the next sentence talks about large tents."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "D",
               "explanation": "Attitudes have changed, and the next sentence says most circuses now use only people."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "E",
               "explanation": "The circus is still popular, and \"even a small town\" follows the idea that no stadium is needed."
             }
           ]
@@ -729,11 +736,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time is the circus show tomorrow?"
+                    "text": "Are you coming to the street show tonight, Leo? I thought it started at six, because that’s what the poster at school says."
                   },
                   {
                     "speaker": "b",
-                    "text": "Doors open at six, and the show starts at seven."
+                    "text": "That poster is old. They changed it last week. Six was the time in the summer, and now it gets dark earlier."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So is it the late one, at eight? I’d have to ask my mum, because she doesn’t like me coming home after ten."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, no, eight is the second show, for the adults. I checked the website this morning, and ours starts an hour after six."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh good. That gives me time to finish my homework first."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Meet me at the gate, then. I’ll bring some money for popcorn."
                   }
                 ]
               },
@@ -746,7 +769,7 @@
                   "At eight"
                 ],
                 "answer": 1,
-                "explanation": "He says the show starts at seven."
+                "explanation": "The poster says six but it is old, and eight is the show for adults, so the children’s show starts an hour after six."
               }
             },
             {
@@ -773,11 +796,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you like the clown?"
+                    "text": "Did you see the clown at the fair? He fell over about ten times!"
                   },
                   {
                     "speaker": "b",
-                    "text": "He was funny, but his shoes were so big that he kept falling over."
+                    "text": "I did. At first I thought the floor was wet, because it had rained all morning, but the stage has a roof."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe he couldn’t see properly with that big red nose and the hat over his eyes?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I nearly asked the same thing, but he looked straight at the children every time. No, it was part of the joke. Have you seen his shoes? They were as big as small boats."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Ha, you’re right. Every step was a disaster."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "And he did it on purpose, which is the clever part. The little boy next to me laughed so much that he got hiccups."
                   }
                 ]
               },
@@ -790,7 +829,7 @@
                   "He could not see well"
                 ],
                 "answer": 0,
-                "explanation": "She says his shoes were so big that he kept falling over."
+                "explanation": "The speakers think of a wet floor and a hat over his eyes, but they reject both; the clown fell because his shoes were as big as small boats."
               }
             },
             {
@@ -804,24 +843,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much are the tickets?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "Children pay nine pounds, and adults pay twelve."
+                    "text": "Good morning, and welcome to the Blue Moon Circus box office. Here is this week’s price list. Adults pay twelve pounds for a seat, and students pay eleven if they show their card. Last year we had a special offer of five pounds for children, but that was only for the opening weekend, so please don’t ask for it. This year children pay three pounds less than the adults. Families can buy a group ticket, but you must ask at the desk. The box office is open until nine o’clock every evening, and the first show begins at six. You can also book online, which saves you a long queue. Thank you for choosing the Blue Moon Circus."
                   }
                 ]
               },
@@ -834,7 +861,7 @@
                   "Eleven pounds"
                 ],
                 "answer": 0,
-                "explanation": "He says children pay nine pounds."
+                "explanation": "Adults pay twelve and children pay three pounds less than that; the five-pound offer was last year, and eleven is the student price."
               }
             },
             {
@@ -860,12 +887,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "b",
+                    "text": "Have you seen the juggler this week? I want to film him for my project."
+                  },
+                  {
                     "speaker": "a",
-                    "text": "Where is the juggler working today?"
+                    "text": "He was in the market square on Monday, but the council stopped him there because of the stalls."
                   },
                   {
                     "speaker": "b",
-                    "text": "Outside the station, near the bookshop."
+                    "text": "Oh. Then maybe he moved to the river? It’s a nice place for tourists."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I thought so too, and I went there yesterday. Just some fishermen. But my cousin told me that he stands near the station now, where all the people come out in the evening."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Smart. Lots of people with time to wait for buses."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Go after five. He puts a hat on the ground to collect money. Take some coins."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Great, thanks. I’ll go tomorrow."
                   }
                 ]
               },
@@ -878,7 +925,7 @@
                   "By the river"
                 ],
                 "answer": 1,
-                "explanation": "She says he is outside the station."
+                "explanation": "He was in the market square on Monday but was stopped, and the river is empty; now he stands near the station where people come out."
               }
             },
             {
@@ -905,11 +952,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Are you afraid of heights?"
+                    "text": "So, Ella, which part of the circus did you like best? Was it the horses?"
                   },
                   {
                     "speaker": "b",
-                    "text": "A little, but I love watching acrobats high above the ground."
+                    "text": "The horses were nice, and Dad says I should ride one, but I’m a bit scared. I did try the ladder in the practice tent. I got halfway and came down."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh dear. So what is your favourite?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "The acrobats, the people who fly through the air. I could watch them all day. I’ve drawn them in my notebook, look."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "They’re really good! Maybe you’ll join them one day."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, I just want to sit in the front row and see them. Is it OK if we go again on Saturday?"
                   }
                 ]
               },
@@ -922,7 +985,7 @@
                   "Watching acrobats"
                 ],
                 "answer": 2,
-                "explanation": "She says she loves watching acrobats."
+                "explanation": "She is afraid of riding a horse and gave up on the ladder, but she loves the people who fly through the air and wants to watch them again."
               }
             },
             {
@@ -936,24 +999,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why did you leave the show early?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "My little brother was tired, and it was getting late."
+                    "text": "Hi Mark, it’s Nina. Sorry I didn’t call last night. We left the circus early. It wasn’t because of the rain. It started to come down during the interval, but we have a big umbrella and we’d have stayed. Actually, we nearly left at the start of the second half, because the seats were so hard that my back hurt, but I put my coat under me and it was fine. In the end it was my little brother Tom. He’s only five, he’d been up since six, and he was so tired that his eyes kept closing. He fell asleep on my shoulder, so I carried him to the car. Call me when you can."
                   }
                 ]
               },
@@ -966,7 +1017,7 @@
                   "The seats were too hard"
                 ],
                 "answer": 0,
-                "explanation": "He says his little brother was tired."
+                "explanation": "The rain did not matter and the hard seats were fixed with a coat; they left because Tom, aged five, was so tired that he fell asleep."
               }
             },
             {
@@ -993,11 +1044,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can I take photos during the show?"
+                    "text": "Excuse me, can I take pictures of the show? My daughter is in it."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, but please do not use your flash. It can frighten the performers."
+                    "text": "Of course you can, sir. Most people do. But please turn the flash off, because the bright light can surprise the performers on the high wire."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I see. And what about standing up? She’s very small and I can’t see her from the back."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "You can stand at the sides during the opening, but please sit down during the tricks, so you don’t block anyone."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No problem. I’ll stand for the start and then sit."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Perfect. Enjoy the show!"
                   }
                 ]
               },
@@ -1010,7 +1077,7 @@
                   "Take any photos"
                 ],
                 "answer": 1,
-                "explanation": "She asks him not to use his flash."
+                "explanation": "Photos are allowed and he may stand at the start, but the staff member asks him to turn the flash off because it can surprise the performers."
               }
             }
           ]
@@ -1046,24 +1113,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like two tickets for the Saturday afternoon show, please."
+                    "text": "I saw the poster for the circus class at the sports centre. Do you fancy it?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Certainly. Would you like seats at the front or at the back?"
+                    "text": "Honestly, I’m not very strong. Isn’t it only for people who can already do tricks?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, it says beginners are welcome. And it’s only eight pounds a lesson, which is cheaper than my swimming club."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Hmm, that’s fair. I thought it would cost double that. But I keep imagining myself falling off a rope."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "They use soft mats, and the teacher stays next to you. I think we’d laugh the whole time."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "OK, you’ve convinced me. It does sound like a laugh. Let’s sign up tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the girl doing?",
+                "prompt": "What do Mia and Dan think about the circus class?",
                 "options": [
-                  "Joining a class",
-                  "Asking for a refund",
-                  "Buying tickets"
+                  "It would be too expensive",
+                  "It would be good fun",
+                  "It would be too difficult"
                 ],
-                "answer": 2,
-                "explanation": "She asks for two tickets for the Saturday show."
+                "answer": 1,
+                "explanation": "Beginners are welcome and the price is low, so neither cost nor difficulty is a problem; both friends expect to laugh and agree to sign up."
               }
             },
             {
@@ -1090,24 +1173,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Well done! You were wonderful in the show. I did not know that you could balance on a ball."
+                    "text": "Well done, Nina. That was your best performance so far."
                   },
                   {
                     "speaker": "b",
-                    "text": "Thanks. I have practised every evening since June."
+                    "text": "Thanks, sir. I was really nervous before I went on, though. My hands were shaking."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I couldn’t tell at all. You looked calm. And the song was lovely. Did you write it yourself?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, my cousin did. I only changed the last verse."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Well, whoever wrote it, you sang it beautifully. In September you could hardly look at the audience, and tonight you smiled at them."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I practised in front of the mirror every day."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It shows. I’m very proud of you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the teacher doing?",
+                "prompt": "How does the teacher feel about Nina's performance?",
                 "options": [
-                  "Giving homework",
-                  "Saying well done",
-                  "Asking for help"
+                  "Disappointed that she was nervous",
+                  "Surprised that she wrote the song",
+                  "Proud of how much she has improved"
                 ],
-                "answer": 1,
-                "explanation": "He says well done and that she was wonderful in the show."
+                "answer": 2,
+                "explanation": "He did not notice her nerves and she did not write the song; he compares September with tonight and says he is very proud of her."
               }
             },
             {
@@ -1134,24 +1237,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Hello, is the show on Friday still on, with all this rain?"
+                    "text": "Did you hear about Friday’s show? They want to move it to Saturday."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, the big tent is waterproof. We will start on time."
+                    "text": "Yes, the manager emailed me on Monday. I’m happy about it, to be honest. On Fridays I finish work at seven and the traffic is terrible."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "But won’t fewer people come on Saturday? Everyone goes out then."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I don’t think so. More families can come when there’s no school the next day. They’ll sell more tickets."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I suppose that’s true. I was cross that they only told us this morning."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I had time to think about it, so I’m fine. I can bring my sister now as well."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then we should tell everyone in the group."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the man say about Friday's show?",
+                "prompt": "How does the man feel about the change to the Friday show?",
                 "options": [
-                  "It will start on time",
-                  "It will start late",
-                  "It will move to Saturday"
+                  "Pleased because it suits him better",
+                  "Worried that fewer people will come",
+                  "Annoyed that nobody told him"
                 ],
                 "answer": 0,
-                "explanation": "He says the tent is waterproof and the show will start on time."
+                "explanation": "He says he is happy because of work and traffic on Fridays; the worry about numbers and the anger about the late news are the woman’s."
               }
             },
             {
@@ -1178,28 +1301,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I think I will try the circus class."
+                    "text": "I’m thinking of joining the circus class, Hana. What do you think?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Really? But you hate being the centre of attention."
+                    "text": "Really? I thought you wanted to get stronger for football. Isn’t that why you went to the gym?"
                   },
                   {
                     "speaker": "a",
-                    "text": "That is true, but I want to try something new."
+                    "text": "That was last year, and I’m fine now. Besides, the team is great and I already know everybody, so it isn’t about friends."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So why the circus?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ve played football, tennis and swimming since I was seven. I do the same things every week, and I’m sick of them. I’d like to learn juggling or walk on a rope."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That sounds fun! I’ll come and watch."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "Why does the boy want to take the class?",
+                "prompt": "Why does Tom want to join the circus class?",
                 "options": [
-                  "To get fitter and stronger",
-                  "To meet some new friends",
-                  "To try something new"
+                  "He wants to get stronger for football",
+                  "He hopes to make new friends",
+                  "He is bored with his usual hobbies"
                 ],
                 "answer": 2,
-                "explanation": "He says he wants to try something new."
+                "explanation": "Strength was last year’s reason and he already has friends; he is tired of doing the same sports every week and wants something different."
               }
             },
             {
@@ -1225,29 +1360,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "b",
+                    "text": "Wow, Leila, your tree costume is huge! Did you make it?"
+                  },
+                  {
                     "speaker": "a",
-                    "text": "I have just seen a man walking on stilts through the market!"
+                    "text": "My aunt made it, actually. I wanted to be a pirate, but she was already sewing leaves. I couldn’t say no."
                   },
                   {
                     "speaker": "b",
-                    "text": "Was he dressed as a pirate?"
+                    "text": "It looks great. The branches are so real."
                   },
                   {
                     "speaker": "a",
-                    "text": "No, as a tree, with real leaves!"
+                    "text": "Thanks, but I can’t go through the door. And everyone looks at me on the bus. I feel silly."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Don’t! You’ll win the prize. And it isn’t going to rain, so it won’t get wet."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I hope you’re right. Maybe I’ll take it off between shows."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What was the man dressed as?",
+                "prompt": "How does Leila feel about her costume?",
                 "options": [
-                  "A tree",
-                  "A pirate",
-                  "A clown"
+                  "Embarrassed because everyone looks at her",
+                  "Proud that she made it herself",
+                  "Worried that it will get wet"
                 ],
                 "answer": 0,
-                "explanation": "The girl says he was dressed as a tree, with real leaves."
+                "explanation": "Her aunt made the costume and the boy says it will not get wet; Leila says that everyone looks at her and that she feels silly."
               }
             },
             {
@@ -1274,24 +1421,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Dad, can we stay for the last act?"
+                    "text": "Dad, can I stay for the second show? My friends are going."
                   },
                   {
                     "speaker": "b",
-                    "text": "Only if you promise to go straight to bed when we get home."
+                    "text": "It starts at nine, Chloe, and you’ve got school tomorrow. You looked half asleep at dinner."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’m fine, really. I can get some snacks to wake up. Popcorn and a drink."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Snacks won’t help. Last time you fell asleep in the middle and I had to carry you."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That was when I was ten!"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Only five months ago. I’m sorry, love, but I’d rather you get some rest. We’ll go to the Saturday show together."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Fine. You’re always right."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the father ask the girl to do?",
+                "prompt": "What does the father think about the girl's plan?",
                 "options": [
-                  "Buy some snacks first",
-                  "Leave the show at once",
-                  "Go straight to bed"
+                  "She should buy some snacks first",
+                  "She is too tired to stay out late",
+                  "She is old enough to decide"
                 ],
-                "answer": 2,
-                "explanation": "He says she must go straight to bed when they get home."
+                "answer": 1,
+                "explanation": "He says she looked half asleep and fell asleep last time, snacks will not help, and he does not let her decide; she needs rest."
               }
             }
           ]
@@ -1316,61 +1483,46 @@
             "turns": [
               {
                 "speaker": "ringmaster",
-                "text": "Good evening, everyone, and thank you for coming to the Silver Star Circus. I am Sacha, the ringmaster. Tonight's show lasts two hours, with a short break after the first hour. Our company has twenty-five performers from eleven different countries, and the youngest is only fifteen. We begin with a group of acrobats who build a tower of six people. After that, there is a clown who loves to pick someone from the audience, so please be ready! In the second half, you will see a woman who walks across a wire twelve metres above the ground. Photos are allowed, but please stay in your seats during the acts. After the show, the performers will be outside the tent to sign programmes. And do not forget, tomorrow's show starts at four, not seven."
+                "text": "Good evening, everyone, and thank you for coming to the Silver Star Circus. I’m Sacha, the ringmaster, and I’d like to tell you a few things before we begin. The show lasts two hours, with a short break in the middle. Last year it was three hours, but many children were too sleepy at the end, so we made it shorter. In the break you can buy drinks and ice cream at the back, and the toilets are on your left. Now, about our company. We have twenty-five performers this year. Last year there were thirty, but five of them have started a new circus in Spain. Our performers come from eleven different countries. We hoped to have twelve, but one of our dancers couldn’t get her visa in time. So tonight you will hear many languages behind the curtain! In the second half, our clown will choose a volunteer. Please don’t be afraid. He always picks someone from the audience, and never one of the musicians, although they would be happy to help. I promise that nobody will be hurt. Our biggest act is the high wire. The wire is twelve metres above the ground. Last season we used a lower one, only eight metres, but our artists wanted a bigger challenge. There is a safety net, of course. Please stay in your seats during that act and don’t use a flash. Finally, after the show, the performers will wait outside the tent. They will sign programmes if you’d like. They won’t sign posters, because those are too big for the table, and photos are free, so just ask them. Enjoy the show, and thank you for choosing us!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The show lasts ___ hours",
+              "prompt": "The whole evening, with the break, takes ___ hours",
               "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "He says tonight's show lasts two hours."
+              "explanation": "The show lasts two hours; three hours was last year’s length."
             },
             {
               "id": "l3-2",
-              "prompt": "The company has ___ performers",
+              "prompt": "The circus employs ___ artists this year",
               "answer": "twenty-five",
-              "accepted": [
-                "25"
-              ],
-              "explanation": "He says the company has twenty-five performers."
+              "explanation": "There are twenty-five performers this year; thirty is last year’s number."
             },
             {
               "id": "l3-3",
-              "prompt": "The performers come from ___ different countries",
+              "prompt": "The artists come from ___ countries",
               "answer": "eleven",
-              "accepted": [
-                "11"
-              ],
-              "explanation": "He says they come from eleven different countries."
+              "explanation": "They come from eleven countries; twelve was only a hope."
             },
             {
               "id": "l3-4",
-              "prompt": "The clown picks someone from the ___",
+              "prompt": "Volunteers for the clown always come from the ___",
               "answer": "audience",
-              "explanation": "He says the clown picks someone from the audience."
+              "explanation": "The clown picks someone from the audience, never a musician."
             },
             {
               "id": "l3-5",
-              "prompt": "The wire is ___ metres above the ground",
+              "prompt": "The high wire is ___ metres above the floor",
               "answer": "twelve",
-              "accepted": [
-                "12"
-              ],
-              "explanation": "He says the woman walks across a wire twelve metres up."
+              "explanation": "The wire is twelve metres above the ground; the eight-metre wire was used last season."
             },
             {
               "id": "l3-6",
-              "prompt": "The performers will sign ___ after the show",
+              "prompt": "After the show the artists will sign their names on ___",
               "answer": "programmes",
-              "accepted": [
-                "programs"
-              ],
-              "explanation": "He says they will sign programmes outside the tent."
+              "explanation": "They will sign programmes, but not posters."
             }
           ]
         },
@@ -1402,51 +1554,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Ogden, you perform on the street every day. How did you start?"
+                "text": "Ogden, you’re known for juggling in the street. Why did you start?"
               },
               {
                 "speaker": "h",
-                "text": "At school I was very shy, and a teacher suggested that I learn to juggle to feel more confident. It worked better than I expected."
+                "text": "Well, it’s a funny story. People think I wanted money, and I did sell a few tickets when I was fourteen, but that wasn’t the reason. I also entered a school competition, and I lost in the first round, so that didn’t help. The truth is I was very shy. I couldn’t talk to people. Juggling gave me something to do with my hands, and slowly I stopped being afraid of people looking at me. My mum says I was a different boy after one summer, and I think she’s right."
               },
               {
                 "speaker": "i",
-                "text": "Where do you perform?"
+                "text": "Where do you work in the summer?"
               },
               {
                 "speaker": "h",
-                "text": "Mainly in the city centre, but in summer I also travel to festivals around the country."
+                "text": "I used to do schools, and it was nice, but now the best months are all about festivals. Shopping centres asked me last year, though I said no because they’re too noisy and the floor is hard. Festivals have big crowds and a lot of friendly people. I travel to about ten of them, usually with my van full of equipment and a lot of sandwiches."
               },
               {
                 "speaker": "i",
-                "text": "Do you earn a good living?"
+                "text": "And in the winter?"
               },
               {
                 "speaker": "h",
-                "text": "Some days, yes. On a sunny Saturday I can make two hundred pounds. But in winter there are days when I earn nothing, so I also teach children on Mondays."
+                "text": "Winter is harder. Nobody wants to stand in the cold. I worked in a bakery for one winter, which was OK because I like the smell of bread, but I got up at four, and I couldn’t keep it up. Cleaning shops, never! Now I teach children in the community centre every Saturday, and I’m much happier than I was in that kitchen."
               },
               {
                 "speaker": "i",
-                "text": "What is the best part of the job?"
+                "text": "What’s the best part of the job?"
               },
               {
                 "speaker": "h",
-                "text": "The reaction of the crowd. If a child laughs, I forget about the cold and the tiredness."
+                "text": "Oh, easy. I do have more free time than my friends, I suppose, and sometimes I meet well-known actors at festivals, which is exciting. But what I really love is when the whole crowd gasps or laughs at the same moment. That tells me I did something right."
               },
               {
                 "speaker": "i",
-                "text": "Have there been any bad moments?"
+                "text": "Has anything gone wrong in your shows?"
               },
               {
                 "speaker": "h",
-                "text": "Once a strong wind blew my hat and my balls into a fountain. I had to finish the show with bread rolls from a baker nearby!"
+                "text": "Plenty. Last summer the wind was terrible. My hat nearly flew away, but I caught it. The worst bit was that my clubs flew out of my hands and fell into the fountain. I got wet, the crowd loved it, and the show went on, so I didn’t cancel anything."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to a young person who wants to try?"
+                "text": "What advice would you give to a young person?"
               },
               {
                 "speaker": "h",
-                "text": "Start small. Perform for your family first, then your friends. And never stop practising, even when you think you are good."
+                "text": "Practise in front of your family before you try the street. They will be honest with you, and they are usually kind. Finding a teacher is useful, but you can learn from videos. And saving money is clever, but you can start slowly. Just begin at home, with three balls, and be patient. It took me a whole year to learn a simple pattern."
               }
             ]
           },
@@ -1460,7 +1612,7 @@
                 "To earn some pocket money"
               ],
               "answer": 1,
-              "explanation": "A teacher suggested it to help him feel more confident."
+              "explanation": "Money and the competition were not the reason; he was shy and juggling made him less afraid of people looking at him."
             },
             {
               "id": "l4-2",
@@ -1471,7 +1623,7 @@
                 "In shopping centres"
               ],
               "answer": 1,
-              "explanation": "In summer he travels to festivals around the country."
+              "explanation": "Schools are in the past and shopping centres were refused; the best summer work is at festivals with big, friendly crowds."
             },
             {
               "id": "l4-3",
@@ -1482,7 +1634,7 @@
                 "By cleaning shops"
               ],
               "answer": 0,
-              "explanation": "He says he teaches children on Mondays."
+              "explanation": "He left the bakery because of the early hours and would never clean shops; now he teaches children at the community centre."
             },
             {
               "id": "l4-4",
@@ -1493,7 +1645,7 @@
                 "The crowd's reaction"
               ],
               "answer": 2,
-              "explanation": "He says the best part is the reaction of the crowd."
+              "explanation": "Free time and meeting actors are only extras; what he really loves is the whole crowd gasping or laughing together."
             },
             {
               "id": "l4-5",
@@ -1504,7 +1656,7 @@
                 "His show was cancelled"
               ],
               "answer": 1,
-              "explanation": "The wind blew his hat and his balls into a fountain."
+              "explanation": "He caught his hat and did not cancel the show; his clubs fell into the fountain."
             },
             {
               "id": "l4-6",
@@ -1515,7 +1667,7 @@
                 "Save money before you start"
               ],
               "answer": 0,
-              "explanation": "He says to start small and perform for your family first."
+              "explanation": "He says to practise in front of family first; a teacher and saving money are useful but not his main advice."
             }
           ]
         }

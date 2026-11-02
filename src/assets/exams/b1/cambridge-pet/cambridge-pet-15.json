@@ -249,41 +249,45 @@
               "id": "r3-1",
               "prompt": "Why did the writer agree to take part in the parade?",
               "options": [
+                "A classmate asked her to.",
                 "She had seen photos she liked.",
-                "Her family told her to go.",
-                "A classmate asked her to."
+                "She wanted to wear a costume.",
+                "Her family told her to go."
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "A girl in her class asked her to walk with her group, and she said yes."
             },
             {
               "id": "r3-2",
               "prompt": "How did the writer feel when she arrived at the harbour?",
               "options": [
-                "Embarrassed by her costume.",
                 "Worried about the weather.",
-                "Excited about the music."
+                "Excited about the music.",
+                "Embarrassed by her costume.",
+                "Frightened by the crowd."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She says she felt silly in her costume."
             },
             {
               "id": "r3-3",
               "prompt": "What changed her feelings at the harbour?",
               "options": [
-                "Seeing so many other costumes.",
                 "Meeting the group leader.",
-                "Hearing the music begin."
+                "Hearing the music begin.",
+                "Finding her classmate.",
+                "Seeing so many other costumes."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She felt silly until she saw hundreds of other people dressed in costumes of all kinds."
             },
             {
               "id": "r3-4",
               "prompt": "What problem did she have during the parade?",
               "options": [
-                "She could not hear the music.",
+                "She could not see the road.",
                 "Her costume caught on others.",
+                "She could not hear the music.",
                 "She lost her group in the crowd."
               ],
               "answer": 1,
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What did the writer learn from the day?",
               "options": [
+                "Octopus costumes are easy to make.",
                 "Costumes should be made earlier.",
                 "Enjoying herself matters most.",
                 "Parades are too tiring."
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "She says that having fun matters much more than looking perfect."
             }
           ]
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "A village harvest festival",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every October, a village a few miles from Marlowe Bay holds a harvest festival that is more than six hundred years old. People bring the best vegetables, fruit and flowers from their gardens to the church hall. [1] Last year, a farmer won the prize for the heaviest pumpkin, which weighed more than forty kilos.\n\nOn Friday evening, the children walk through the village carrying lanterns they have made themselves. [2] At the top of the hill, hot chocolate is waiting for them.\n\nSaturday is the busiest day. [3] The recipe is a secret, and it has passed from one family to another for generations.\n\nOn Saturday afternoon, the whole village joins a long picnic on the green. [4] After the meal, there is dancing until late.\n\nThe festival ends on Sunday with a church service of thanks. [5] \"It is not about winning,\" says one of the organisers. \"It is about saying thank you.\"",
           "sentences": [
-            "Everything that is left over is shared with people who live alone.",
             "Judges then choose the biggest, the tastiest and the most beautiful.",
-            "Some visitors arrive early to find a good place to park.",
-            "They sing old songs as they walk, and the villagers listen from their doorsteps.",
             "Everyone brings a dish to share, so there is always more than enough.",
+            "Everything that is left over is shared with people who live alone.",
+            "They sing old songs as they walk, and the villagers listen from their doorsteps.",
+            "Last year, the weather was too wet for the lanterns.",
+            "Parking is difficult in the village at that time.",
+            "Some visitors arrive early to find a good place to park.",
             "Everybody wants to buy the village's spiced apple bread."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "A",
               "explanation": "\"Judges then choose\" follows the vegetables, fruit and flowers brought to the hall and leads to the prize for the heaviest pumpkin."
             },
             {
@@ -330,17 +337,17 @@
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "H",
               "explanation": "\"The spiced apple bread\" is introduced before \"The recipe is a secret\", which refers back to it."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "B",
               "explanation": "\"Everyone brings a dish to share\" describes the picnic, and \"After the meal\" refers to it."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "C",
               "explanation": "Leftover food shared with people who live alone fits the end of the festival and the organiser's comment about saying thank you."
             }
           ]
@@ -747,16 +754,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "erin",
+                    "text": "Karim, have you seen the route of the parade? It starts at the town hall, doesn’t it?"
+                  },
+                  {
                     "speaker": "karim",
-                    "text": "The parade starts at the bus station, doesn't it? I thought it finished at the town hall."
+                    "text": "Yes, but this year it finishes somewhere different. Last year it ended there as well, and the streets were completely blocked."
                   },
                   {
                     "speaker": "erin",
-                    "text": "That was last year. This year it finishes by the lighthouse, where the stage is."
+                    "text": "So where do they stop now? At the bus station? That would be easy for people who come by coach."
                   },
                   {
                     "speaker": "karim",
-                    "text": "Oh, great. That's closer to my house."
+                    "text": "They thought about it, but the buses need that road all afternoon. In the end they chose a spot by the old lighthouse, at the end of the harbour. There’s more space for the band and the dancers."
+                  },
+                  {
+                    "speaker": "erin",
+                    "text": "Brilliant. I’ll meet you at the harbour then."
                   }
                 ]
               },
@@ -769,7 +784,7 @@
                   "At the bus station"
                 ],
                 "answer": 1,
-                "explanation": "Erin says the town hall was last year; this year the parade finishes by the lighthouse."
+                "explanation": "The parade used to end at the town hall and the bus station was rejected because the buses need the road, so it finishes at the end of the harbour by the lighthouse."
               }
             },
             {
@@ -796,15 +811,23 @@
                 "turns": [
                   {
                     "speaker": "petra",
-                    "text": "I'd like to hire the cat costume from the window, please."
+                    "text": "Hello. I’d like to hire a costume for the festival parade, please."
                   },
                   {
                     "speaker": "assistant",
-                    "text": "That one's already booked, I'm afraid. We have a pirate outfit or a clown."
+                    "text": "Of course. We have lots. Have you thought about a clown? Those were very popular last year."
                   },
                   {
                     "speaker": "petra",
-                    "text": "Pirate, please. Clowns scare me."
+                    "text": "I wore one then, so I want something new. I nearly chose the cat, because it’s so soft and warm, but then I saw the hat with the feather over there."
+                  },
+                  {
+                    "speaker": "assistant",
+                    "text": "Ah, the pirate one, with the big black boots and the sword. That’s a lot of fun, and the hat comes with it."
+                  },
+                  {
+                    "speaker": "petra",
+                    "text": "Perfect. I’ll take it for the weekend, please."
                   }
                 ]
               },
@@ -817,7 +840,7 @@
                   "A cat costume"
                 ],
                 "answer": 0,
-                "explanation": "The cat costume is booked, and Petra chooses the pirate outfit because clowns scare her."
+                "explanation": "She wore the clown last year and nearly chose the cat, but then she saw the hat with the feather, the boots and the sword that belong to the pirate."
               }
             },
             {
@@ -844,19 +867,31 @@
                 "turns": [
                   {
                     "speaker": "gillian",
-                    "text": "Two tickets for the harbour boat trip, please. How much are they?"
+                    "text": "Hi, I’d like a ticket for the Saturday concert, please. Is it sixteen pounds?"
                   },
                   {
                     "speaker": "seller",
-                    "text": "Eight pounds each, or five pounds for students."
+                    "text": "That’s the price at the door. But if you book online or at this desk before Friday, we take three pounds off."
                   },
                   {
                     "speaker": "gillian",
-                    "text": "One of us is a student, so one at eight and one at five?"
+                    "text": "Oh, that’s good news. My nephew is eight. Does he need a ticket too?"
                   },
                   {
                     "speaker": "seller",
-                    "text": "That's thirteen pounds, please."
+                    "text": "Children under twelve get in for ten pounds, but only with an adult. Is he coming with you?"
+                  },
+                  {
+                    "speaker": "gillian",
+                    "text": "No, he’s going with his mum. So just one for me, please."
+                  },
+                  {
+                    "speaker": "seller",
+                    "text": "Then that’s your total. Cash or card?"
+                  },
+                  {
+                    "speaker": "gillian",
+                    "text": "Card, please."
                   }
                 ]
               },
@@ -869,7 +904,7 @@
                   "£10"
                 ],
                 "answer": 0,
-                "explanation": "One ticket costs £8 and the student ticket costs £5, so the total is £13."
+                "explanation": "The full price is sixteen pounds with three pounds off for early booking; ten pounds is the child price for the nephew, who is not coming with her."
               }
             },
             {
@@ -883,28 +918,12 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "wyatt",
-                    "name": "Wyatt",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "wyatt",
-                    "text": "Do you think the fair will be all right on Saturday? I heard it would be sunny."
-                  },
-                  {
                     "speaker": "eszter",
-                    "text": "That was yesterday's forecast. Now they say it will be cloudy in the morning, with rain by the afternoon."
-                  },
-                  {
-                    "speaker": "wyatt",
-                    "text": "Then we'd better go early."
+                    "text": "Good morning, this is the weekend weather report for Marlowe Bay. Yesterday I said Saturday would be sunny all day long, and on Thursday I said cloudy from start to finish, but the new maps show a change. The morning will start with some sunshine, so the early events on the green should be fine. Don’t expect the sun to stay all day, though, because thick clouds arrive around noon, and it will be rainy by the afternoon, with the first drops at about three o’clock. If you’re going to the concert in the evening, take an umbrella. On Sunday the sky will be much brighter."
                   }
                 ]
               },
@@ -917,7 +936,7 @@
                   "Rainy by the afternoon"
                 ],
                 "answer": 2,
-                "explanation": "The new forecast is cloudy in the morning and rain by the afternoon."
+                "explanation": "She corrects the earlier forecast: sunshine only in the morning and then clouds at noon, with the first rain at about three o’clock."
               }
             },
             {
@@ -931,28 +950,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "declan",
-                    "name": "Declan",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "declan",
-                    "text": "Are the fireworks at quarter past ten?"
-                  },
-                  {
                     "speaker": "paloma",
-                    "text": "No, they've moved them forward half an hour. They start at quarter to ten now."
-                  },
-                  {
-                    "speaker": "declan",
-                    "text": "Thanks. I'll tell the others."
+                    "text": "Ladies and gentlemen, this is an announcement from the festival team. The fireworks were going to start at quarter past ten, but the wind is getting stronger and the police have asked us to start earlier. So please note the new time: the first rockets will go up at quarter to ten. The band will carry on playing until half past ten, so you can still listen to the music after the show. Please stay behind the yellow ropes and keep children and dogs close to you. Thank you for your help, and enjoy the evening."
                   }
                 ]
               },
@@ -965,7 +968,7 @@
                   "10:30"
                 ],
                 "answer": 0,
-                "explanation": "They were at 10:15 but have been moved forward half an hour, so they start at 9:45."
+                "explanation": "The old time was quarter past ten and the band plays until half past ten, but the fireworks now start at quarter to ten because of the wind."
               }
             },
             {
@@ -979,28 +982,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "assistant",
-                    "name": "Assistant",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "maddison",
-                    "text": "I bought this scarf for my aunt. Could you get it wrapped, please? I have no paper at home."
-                  },
-                  {
-                    "speaker": "assistant",
-                    "text": "Of course. Would you like some ribbon?"
-                  },
-                  {
-                    "speaker": "maddison",
-                    "text": "No ribbon, thanks. Just the paper."
+                    "text": "Hello, this is a message for the Harbour Gift Shop. I bought a scarf from you yesterday, the blue one with the small boats. I’m calling because I’d like to ask a favour. Your assistant suggested a gift card, but I’d rather give her something to open. I did think of buying a second scarf in green, but one is enough. Please put the first one in paper with a ribbon before Friday. I’ll come and collect it after work. Thanks very much."
                   }
                 ]
               },
@@ -1013,7 +1000,7 @@
                   "A gift card"
                 ],
                 "answer": 1,
-                "explanation": "She asks the man to wrap the scarf she has already bought."
+                "explanation": "She rejects the gift card and the second scarf, and asks the shop to put paper and a ribbon on the one she bought."
               }
             },
             {
@@ -1040,11 +1027,23 @@
                 "turns": [
                   {
                     "speaker": "gita",
-                    "text": "Murat, are you selling tickets again this year?"
+                    "text": "Murat, we need volunteers for the family day. I thought you could sell the tickets at the gate."
                   },
                   {
                     "speaker": "murat",
-                    "text": "No, I did that last year. This time I'm doing the face painting, and my sister is in the choir."
+                    "text": "Sorry, I did that last year and I spent the whole day counting change. And I can’t sing in the choir either. I lost my voice in the spring and it’s still weak."
+                  },
+                  {
+                    "speaker": "gita",
+                    "text": "What about the children’s corner? We have paints, but nobody to help."
+                  },
+                  {
+                    "speaker": "murat",
+                    "text": "Oh, that sounds fun. I’m quite good at drawing, and I like working with kids. Cats, flowers, butterflies on their cheeks."
+                  },
+                  {
+                    "speaker": "gita",
+                    "text": "Perfect. I’ll put your name on the list."
                   }
                 ]
               },
@@ -1057,7 +1056,7 @@
                   "Paint faces"
                 ],
                 "answer": 2,
-                "explanation": "He sold tickets last year; this year he is doing the face painting. His sister is in the choir."
+                "explanation": "He did the tickets last year and his voice is weak for the choir, but he likes the idea of drawing cats and butterflies on children’s cheeks."
               }
             }
           ]
@@ -1093,15 +1092,27 @@
                 "turns": [
                   {
                     "speaker": "chelsea",
-                    "text": "Shall we move closer to the stage?"
+                    "text": "Sanjay, are you enjoying the concert? You look a bit strange."
                   },
                   {
                     "speaker": "sanjay",
-                    "text": "No, my ears already hurt. I like the band, but I can't hear what you're saying. It's too loud."
+                    "text": "It’s great, really. The singer is brilliant. I’m standing on the top step, so I can see everything, and I know most of the songs from the radio."
                   },
                   {
                     "speaker": "chelsea",
-                    "text": "OK, let's stay by the trees."
+                    "text": "So what’s wrong?"
+                  },
+                  {
+                    "speaker": "sanjay",
+                    "text": "The music is so loud! The speakers are right behind us and my ears hurt. I can hardly hear you speak."
+                  },
+                  {
+                    "speaker": "chelsea",
+                    "text": "Let’s move to the back, then. We can still hear the band from there."
+                  },
+                  {
+                    "speaker": "sanjay",
+                    "text": "Good idea. I’ll also buy some earplugs from the stall."
                   }
                 ]
               },
@@ -1114,7 +1125,7 @@
                   "The music is too loud."
                 ],
                 "answer": 2,
-                "explanation": "Sanjay likes the band but says he cannot hear because it is too loud."
+                "explanation": "Sanjay can see and knows the songs, but the speakers are right behind them and his ears hurt, so the music is too loud."
               }
             },
             {
@@ -1140,16 +1151,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "yvonne",
+                    "text": "Cormac, my cousins say that the lantern walk is old-fashioned. They’d rather watch a film at home."
+                  },
+                  {
                     "speaker": "cormac",
-                    "text": "My brother says the festival is old-fashioned and we should change everything."
+                    "text": "I know some people feel like that. Honestly, I found it a bit slow when I was a child."
                   },
                   {
                     "speaker": "yvonne",
-                    "text": "I disagree. The old customs are what make it special, and they are worth keeping. We can add new things too."
+                    "text": "Me too, at first. But now I love it. My grandmother made the lanterns by hand, and we carry them the same way she did. It’s worth keeping, because if we stopped it, the town would lose something special."
                   },
                   {
                     "speaker": "cormac",
-                    "text": "Maybe you're right."
+                    "text": "That’s true. We don’t need to make it modern."
+                  },
+                  {
+                    "speaker": "yvonne",
+                    "text": "Exactly. Some things are better when they stay as they are."
                   }
                 ]
               },
@@ -1162,7 +1181,7 @@
                   "They need to change every year."
                 ],
                 "answer": 1,
-                "explanation": "Yvonne says the old customs are what make the festival special."
+                "explanation": "Yvonne found it slow as a child, but now she thinks the town would lose something special, and that some things are better when they stay as they are."
               }
             },
             {
@@ -1189,24 +1208,40 @@
                 "turns": [
                   {
                     "speaker": "jasmine",
-                    "text": "Are you doing anything for New Year's Eve?"
+                    "text": "Have you got any plans for New Year’s Eve, Vijay?"
                   },
                   {
                     "speaker": "vijay",
-                    "text": "We were going to watch the fireworks in the bay, but it's freezing. My sister is having a party at her flat, so we'll go there instead."
+                    "text": "Not yet. Last year we watched the fireworks in town, but it was freezing and we couldn’t see a thing."
+                  },
+                  {
+                    "speaker": "jasmine",
+                    "text": "I remember. I’d rather not do that again. And staying at home makes the night feel like any other."
+                  },
+                  {
+                    "speaker": "vijay",
+                    "text": "Right. Everybody I know is having a party at Dan’s flat. There’s music and he’s cooking for twenty people."
+                  },
+                  {
+                    "speaker": "jasmine",
+                    "text": "That sounds fun. Shall we take some drinks?"
+                  },
+                  {
+                    "speaker": "vijay",
+                    "text": "Sure. I’ll buy the juice if you bring a cake."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What will they do on New Year's Eve?",
+                "prompt": "What do Jasmine and Vijay agree about New Year's Eve?",
                 "options": [
-                  "Go to a party",
-                  "Watch fireworks",
-                  "Stay at home"
+                  "A party with friends is the best plan.",
+                  "The town fireworks are too crowded.",
+                  "A quiet night at home is better."
                 ],
                 "answer": 0,
-                "explanation": "They planned to watch the fireworks but it is too cold, so they will go to the sister's party."
+                "explanation": "Both say the fireworks last year were not enjoyable and staying home is boring, so they agree to go to the party at Dan’s flat."
               }
             },
             {
@@ -1232,29 +1267,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "teacher",
+                    "text": "Mauricio, are your lanterns ready for the walk on Friday?"
+                  },
+                  {
                     "speaker": "mauricio",
-                    "text": "We've only finished sixty lanterns, and the walk is tomorrow evening."
+                    "text": "Not quite. I haven’t got enough paper, and it’ll take me ages to finish them on my own."
                   },
                   {
                     "speaker": "teacher",
-                    "text": "I'll ask my class to help after school. There are thirty of them."
+                    "text": "I thought of buying some in town, but they cost a fortune. And the weather may be bad on Friday, but the other classes are going anyway, so we can’t change the date."
                   },
                   {
                     "speaker": "mauricio",
-                    "text": "That would be wonderful."
+                    "text": "So what can we do?"
+                  },
+                  {
+                    "speaker": "teacher",
+                    "text": "Ask my pupils to help. If everyone brings an old jar and some paper tomorrow, they can make their own in class. They’ll enjoy it more."
+                  },
+                  {
+                    "speaker": "mauricio",
+                    "text": "Good plan. I’ll bring the glue."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What will the teacher do?",
+                "prompt": "What will the teacher do about the lantern walk?",
                 "options": [
                   "Ask her pupils to help",
                   "Buy lanterns in a shop",
                   "Move the walk to another day"
                 ],
                 "answer": 0,
-                "explanation": "She will ask her class of thirty pupils to help make more lanterns."
+                "explanation": "Buying lanterns is too expensive and the date cannot change because other classes are going, so she will let the children make their own in class."
               }
             },
             {
@@ -1281,28 +1328,40 @@
                 "turns": [
                   {
                     "speaker": "woman",
-                    "text": "It's so crowded here. I can't see anything."
+                    "text": "The square will be packed on Saturday. Where shall we stand for the parade?"
                   },
                   {
                     "speaker": "man",
-                    "text": "Let's go up to the bridge. There's a good view and fewer people."
+                    "text": "By the stage is the usual place, but you have to arrive two hours before to get a good spot."
                   },
                   {
                     "speaker": "woman",
-                    "text": "Good idea."
+                    "text": "Too early for me. What about the bridge? It’s a bit of a walk from here."
+                  },
+                  {
+                    "speaker": "man",
+                    "text": "I like it, because you look down on the whole street and the marching bands, from the first drum to the last float. There aren’t any seats, but we can bring a blanket."
+                  },
+                  {
+                    "speaker": "woman",
+                    "text": "Fine. We’ll go to the bridge then."
+                  },
+                  {
+                    "speaker": "man",
+                    "text": "Let’s meet at ten o’clock."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Where will they watch the parade?",
+                "prompt": "Why do they choose the bridge to watch the parade?",
                 "options": [
-                  "Near the stage",
-                  "On the bridge",
-                  "In the square"
+                  "They will find seats there.",
+                  "They will see the whole parade.",
+                  "It is near the car park."
                 ],
                 "answer": 1,
-                "explanation": "The man suggests the bridge because it has a good view and fewer people, and the woman agrees."
+                "explanation": "The stage needs an early arrival and the bridge has no seats, but from there they look down on the entire street, from the first drum to the last float."
               }
             },
             {
@@ -1328,33 +1387,37 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "assistant",
-                    "text": "These handmade mugs are very popular."
-                  },
-                  {
                     "speaker": "tourist",
-                    "text": "Lovely, but my suitcase is full. Do you have anything small and light?"
+                    "text": "Excuse me, I’m looking for a souvenir from Marlowe Bay. I like this mug, but it would never survive the flight home."
                   },
                   {
                     "speaker": "assistant",
-                    "text": "We have postcards, or these bookmarks."
+                    "text": "Fair enough. What about postcards? They’re only fifty pence each, and they weigh nothing."
                   },
                   {
                     "speaker": "tourist",
-                    "text": "I'll take the bookmarks. They'll be perfect for my grandmother."
+                    "text": "They’re cheaper, I agree, but everybody sends postcards. Oh, what are those little ones, with the painted tassels?"
+                  },
+                  {
+                    "speaker": "assistant",
+                    "text": "Bookmarks. They cost two pounds. A local artist draws the boats and the lighthouse on each one by hand."
+                  },
+                  {
+                    "speaker": "tourist",
+                    "text": "Lovely. I’ll take the one with the harbour."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the tourist buy?",
+                "prompt": "Why does the tourist choose bookmarks?",
                 "options": [
-                  "A mug",
-                  "Postcards",
-                  "Bookmarks"
+                  "They are cheaper than cards.",
+                  "They are easy to pack.",
+                  "They have local pictures."
                 ],
                 "answer": 2,
-                "explanation": "He does not want a mug because his suitcase is full, and he chooses the bookmarks for his grandmother."
+                "explanation": "The mug is too fragile and postcards are cheaper but ordinary, while the bookmarks are drawn by a local artist with pictures of boats and the lighthouse."
               }
             }
           ]
@@ -1379,49 +1442,49 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good morning, everybody. I'm Easton, one of the organisers of the Marlowe Bay Festival, and I'd like to tell you about the programme. The festival starts on Friday and lasts four days. On Friday evening there's the lantern walk, which begins at the library at eight o'clock. On Saturday morning you can join a dance workshop on the green, where the Marlowe Bay Dancers will teach you a traditional dance in about an hour. The big parade is on Sunday afternoon at two, and it ends by the lighthouse, where there is live music. On Sunday morning the craft fair opens in the old boathouse and stays open until four. Entry is free. The festival finishes on Monday with a picnic on the beach. Tickets for the Friday evening concert cost ten pounds and you can buy them at the tourist office."
+                "text": "Good morning, everybody. I’m Easton, one of the organisers of the Marlowe Bay Festival, and I’d like to tell you about the programme. The festival starts on Thursday and finishes on Sunday, so we have four days of events. Last year it was only three, and people asked for more, so we added an extra day. Let me begin with Friday evening. The lantern walk is the most beautiful event of the festival. Children carry paper lanterns through the old streets. It doesn’t begin at the harbour, as many visitors think. We meet outside the library at seven, and the walk takes about forty minutes. On Saturday morning we have a workshop on the green, where a teacher shows you traditional steps. A painting workshop was planned too, but we didn’t find enough space, so only the dance one is running. You don’t need any experience, just comfortable shoes. Then at two o’clock the big parade begins. It starts at the town hall, goes along the seafront and ends by the lighthouse at the end of the harbour. There’ll be bands, dancers and a lot of colourful floats. Please wear something bright if you want to join in. On Sunday we have the craft fair. People often ask if it’s in the church hall, but this year it’s in the old boathouse, which is bigger and has better light. You can buy jewellery, pots, paintings and local honey, and it’s open from ten until five. Finally, tickets. The concert on Saturday night is the only event where you have to pay. You can’t buy the tickets at the door, because we sold out last year. Please go to the tourist office on Harbour Street. They are open every day, and the staff will also give you a free map. Thank you very much for listening, and I hope you enjoy the festival."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The festival lasts ___ days",
+              "prompt": "The event runs for ___ days in total",
               "answer": "four",
               "accepted": [
                 "4"
               ],
-              "explanation": "Easton says the festival starts on Friday and lasts four days."
+              "explanation": "He says the festival starts on Thursday and finishes on Sunday, four days; last year it was three."
             },
             {
               "id": "l3-2",
-              "prompt": "Friday: the lantern walk starts at the ___",
+              "prompt": "On Friday evening, people gather outside the ___ for the lantern walk",
               "answer": "library",
-              "explanation": "The lantern walk begins at the library at eight o'clock."
+              "explanation": "The walk does not begin at the harbour; they meet outside the library at seven."
             },
             {
               "id": "l3-3",
-              "prompt": "Saturday morning: a ___ workshop on the green",
+              "prompt": "On Saturday morning, a teacher shows traditional steps at a ___ workshop",
               "answer": "dance",
-              "explanation": "On Saturday morning there is a dance workshop on the green."
+              "explanation": "A painting workshop was planned but only the dance one is running."
             },
             {
               "id": "l3-4",
-              "prompt": "The parade ends by the ___",
+              "prompt": "The route of the parade finishes next to the ___",
               "answer": "lighthouse",
-              "explanation": "The parade ends by the lighthouse, where there is live music."
+              "explanation": "The parade starts at the town hall and ends by the lighthouse."
             },
             {
               "id": "l3-5",
-              "prompt": "Sunday: the craft fair is in the old ___",
+              "prompt": "On Sunday, the fair of local products is held in the ___",
               "answer": "boathouse",
-              "explanation": "On Sunday the craft fair is in the old boathouse."
+              "explanation": "It is not in the church hall but in the old boathouse, which is bigger."
             },
             {
               "id": "l3-6",
-              "prompt": "Concert tickets are sold at the tourist ___",
+              "prompt": "To buy concert tickets you should go to the ___",
               "answer": "office",
-              "explanation": "Tickets for the concert can be bought at the tourist office."
+              "explanation": "Tickets are not sold at the door; you go to the tourist office on Harbour Street."
             }
           ]
         },
@@ -1453,35 +1516,35 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Ciaran, how long have you been dancing with the Marlowe Bay Dancers?"
+                "text": "Ciaran, you have danced in this group for ten years. Why did you go to your first practice?"
               },
               {
                 "speaker": "ciaran",
-                "text": "Since I was nine, so about fifteen years now. My grandmother was a member, and she took me to a practice one evening because she couldn't find anyone to look after me. I thought it would be boring, but I loved the music and I went back the following week."
+                "text": "It’s a funny story. I’d seen a show on the main stage when I was six and it was good, but I forgot about it quickly. And a school friend did try to bring me along, though I said no. The one who finally took me was my grandmother. She danced herself when she was young, and she said it would be good for me to see how it works. I haven’t missed a week since."
               },
               {
                 "speaker": "interviewer",
-                "text": "What is the hardest thing about it?"
+                "text": "So is there anything difficult about it?"
               },
               {
                 "speaker": "ciaran",
-                "text": "Learning the steps is not so hard. The difficult part is dancing in the traditional shoes. They are heavy and the leather is stiff, so after a long performance my feet are covered in blisters."
+                "text": "People think it’s all about memory, but I learned the steps very quickly because we repeat them so often. And I manage to find time to practise, since I do it with the group. What really bothers me are the shoes. They’re heavy, with wooden soles, and after an hour my feet hurt so much that I can’t feel my toes."
               },
               {
                 "speaker": "interviewer",
-                "text": "Do you perform often?"
+                "text": "When is the group at its busiest?"
               },
               {
                 "speaker": "ciaran",
-                "text": "Around thirty times a year, mostly in summer. The busiest time is the town festival, when we dance four times in one day: in the square, on the green, at the harbour and finally at the lantern walk."
+                "text": "Winter is quiet, because it’s cold and dark, and we practise only once a week. Weekends and holidays are good, but they’re not the peak either. The craziest time is the town festival in summer, when we perform four times in three days. We get hundreds of requests from restaurants and hotels, and we have to say no to some."
               },
               {
                 "speaker": "interviewer",
-                "text": "Is it difficult to find young people to join?"
+                "text": "Many groups can’t find young members. How have you managed?"
               },
               {
                 "speaker": "ciaran",
-                "text": "It used to be. Many teenagers thought folk dancing was old-fashioned. But since we started putting short videos online, more of them come. This year we have twelve new members under sixteen."
+                "text": "We tried to change the dances, but the older dancers hated it, so we gave up. We also asked the school to give free lessons, but the head teacher said there wasn’t time. Then my cousin filmed us and put the videos on the internet. A thousand people watched in a week, and twenty teenagers came to the next practice."
               },
               {
                 "speaker": "interviewer",
@@ -1489,15 +1552,15 @@
               },
               {
                 "speaker": "ciaran",
-                "text": "It connects me to my family and my town. When we dance the same steps my grandmother danced, I feel close to her, even though she's not with us any more."
+                "text": "It’s good exercise, I suppose, but I could run if I only wanted that. And I’ve been to several countries with the group, though that’s not the reason I stay. The real reason is my family: my grandmother and my father danced these same steps. When I move to the music, I feel that they are standing next to me."
               },
               {
                 "speaker": "interviewer",
-                "text": "Would you ever change the dances?"
+                "text": "Finally, should the dances ever change?"
               },
               {
                 "speaker": "ciaran",
-                "text": "A little. I like to add small changes, because a tradition that never changes can be forgotten. But I wouldn't change them a lot."
+                "text": "Some people say never, but I disagree, because a living tradition has to grow. I don’t want to make them very modern either, with electronic music, for example. What I like is a small change, like a new tune or a different order. It keeps the spirit and keeps the dancers interested."
               }
             ]
           },
@@ -1511,7 +1574,7 @@
                 "He had seen a show and liked it."
               ],
               "answer": 0,
-              "explanation": "His grandmother, a member, took him because she could not find anyone to look after him."
+              "explanation": "His grandmother took him; he had seen a show but forgot it, and the school friend failed to bring him."
             },
             {
               "id": "l4-2",
@@ -1522,7 +1585,7 @@
                 "Dancing in the heavy shoes"
               ],
               "answer": 2,
-              "explanation": "He says the steps are not hard, but the traditional shoes are heavy and give him blisters."
+              "explanation": "He learned the steps quickly and finds time to practise; what bothers him are the heavy shoes."
             },
             {
               "id": "l4-3",
@@ -1533,7 +1596,7 @@
                 "At weekends and on holidays"
               ],
               "answer": 0,
-              "explanation": "The busiest time is the town festival, when they dance four times in one day."
+              "explanation": "Winter is quiet and weekends are not the peak, but the town festival in summer is the craziest time."
             },
             {
               "id": "l4-4",
@@ -1544,7 +1607,7 @@
                 "By giving free lessons at school"
               ],
               "answer": 1,
-              "explanation": "More teenagers have come since the group started putting short videos online."
+              "explanation": "Changing the dances failed and the school had no time for lessons, but the videos on the internet brought twenty teenagers."
             },
             {
               "id": "l4-5",
@@ -1555,7 +1618,7 @@
                 "A link with his family"
               ],
               "answer": 2,
-              "explanation": "It connects him to his family and his town; he feels close to his grandmother."
+              "explanation": "Exercise and travel are not the reason he stays; his grandmother and father danced the same steps, so it links him to his family."
             },
             {
               "id": "l4-6",
@@ -1566,7 +1629,7 @@
                 "They need to be much more modern."
               ],
               "answer": 1,
-              "explanation": "He likes to add small changes but would not change them a lot."
+              "explanation": "He says never is wrong and very modern is not what he wants; small changes keep the spirit and the dancers interested."
             }
           ]
         }

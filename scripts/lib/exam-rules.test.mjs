@@ -67,6 +67,22 @@ test('cambridge-pet: wrong part counts and option counts are errors', () => {
   assert.ok(errors.some((e) => e.includes('should have 4 options')));
 });
 
+test('cambridge-pet: a short listening script is a warning', () => {
+  const exam = clone(load(1));
+  const clip = partOf(exam, 'listening-1').clips[0];
+  clip.recording.turns = clip.recording.turns.slice(0, 1);
+  assert.ok(checkBoardRules(exam).warnings.some((w) => w.startsWith(`${clip.id}: the script has`)));
+});
+
+test('listening: a part 1 option that the script never mentions is a warning', () => {
+  const exam = clone(load(1));
+  const { question } = partOf(exam, 'listening-1').clips[0];
+  question.options[(question.answer + 1) % 3] = 'Zebra museum';
+  assert.ok(
+    checkListening(exam).warnings.some((w) => w.includes('"Zebra museum" is not mentioned')),
+  );
+});
+
 test('cambridge-pet: gapped text keys must be distinct', () => {
   const exam = clone(load(1));
   const part = partOf(exam, 'reading-4');
@@ -162,11 +178,11 @@ test('listening: a dialogue in one turn and group speakers are errors, gap answe
 test('listening: one name keeps one voice gender in the exam', () => {
   const exam = clone(load(1));
   assert.ok(!checkListening(exam).warnings.some((w) => w.includes('two voice genders')));
-  const [first, second] = partOf(exam, 'listening-1').clips;
+  const [first, ...rest] = partOf(exam, 'listening-1').clips;
   const name = first.recording.speakers[0].name;
-  const other = second.recording.speakers.find(
-    (s) => s.voice.gender !== first.recording.speakers[0].voice.gender,
-  );
+  const other = rest
+    .flatMap((c) => c.recording.speakers)
+    .find((s) => s.voice.gender !== first.recording.speakers[0].voice.gender);
   other.name = name;
   assert.ok(
     checkListening(exam).warnings.some((w) => w.includes(`"${name}" has two voice genders`)),

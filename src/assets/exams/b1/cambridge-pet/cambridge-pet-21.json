@@ -250,43 +250,47 @@
               "prompt": "How did the writer feel about her English before she left?",
               "options": [
                 "She was worried about her marks.",
+                "She was confident about it.",
                 "She thought it was terrible.",
-                "She was confident about it."
+                "She was shy about it."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She thought her English was quite good because of her high marks and the songs she understood."
             },
             {
               "id": "r3-2",
               "prompt": "What happened at the airport?",
               "options": [
-                "Her host family was late to collect her.",
                 "She could not understand a question.",
+                "Her host family was late to collect her.",
+                "A woman gave her the wrong ticket.",
                 "She lost her suitcase on the plane."
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "A woman at the desk asked a question that she did not understand at all."
             },
             {
               "id": "r3-3",
               "prompt": "Why was she so tired in the first month?",
               "options": [
-                "Listening to English all day was hard work.",
+                "Her host family spoke too fast.",
                 "She did not sleep well at night because of noise.",
-                "She had far too much homework to finish each day."
+                "She had far too much homework to finish each day.",
+                "Listening to English all day was hard work."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She says that listening all day to a foreign language is very hard work."
             },
             {
               "id": "r3-4",
               "prompt": "What was the first sign that her English was improving?",
               "options": [
-                "She found herself thinking in English.",
                 "She got a very good mark in a test.",
-                "She told a joke and her host sister laughed."
+                "She told a joke and her host sister laughed.",
+                "She found herself thinking in English.",
+                "Her host brother praised her accent."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She realised one morning that she had been thinking in English for an hour; the joke came a few weeks later."
             },
             {
@@ -294,10 +298,11 @@
               "prompt": "What does she say about mistakes?",
               "options": [
                 "She always tried very hard to avoid them.",
+                "They are an important part of learning.",
                 "People were often a little annoyed by them.",
-                "They are an important part of learning."
+                "They made her feel ashamed."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She learned that you need to make mistakes to improve and people helped her."
             }
           ]
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "Growing up with two languages",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Do you know that more than half of the people in the world speak at least two languages? [1] In many countries, children grow up with two or three languages at home, and they move easily from one to the other.\n\nScientists have studied bilingual children for many years. [2] For example, they can often concentrate better, and they find it easier to learn a third language later.\n\nHowever, being bilingual is not always simple. Some children mix words from both languages in one sentence, and parents sometimes worry. [3] Teachers say that this is normal, and that it usually stops as the child gets older.\n\nFamilies who want to raise bilingual children have several options. One common method is that each parent speaks a different language to the child. [4] Others speak one language at home and the other one outside the house.\n\nWhatever method they choose, experts agree on one thing: children need plenty of chances to hear and use both languages. [5] A grandparent who tells stories in the second language can be just as helpful as an expensive school.",
           "sentences": [
             "Some families also ask a relative to talk to the child in a different language.",
             "It does not always have to be a formal lesson, as this can be done through games, songs and conversation.",
+            "Adults usually find it harder to learn a language than children.",
             "They found that these children often have some advantages at school.",
             "Learning a language is easier with a good dictionary.",
             "In fact, this is a normal stage of learning two languages at the same time.",
-            "Being bilingual is normal for a large part of the population."
+            "Being bilingual is normal for a large part of the population.",
+            "That is why many children learn to read late."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "F",
+              "answer": "G",
               "explanation": "The question about half the world speaking two languages is answered by sentence F: being bilingual is normal; the next sentence is about children growing up with languages."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "D",
               "explanation": "\"Scientists have studied bilingual children\" leads to what they found; \"For example\" gives the advantages."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "F",
               "explanation": "Parents worry about mixed words; \"In fact, this is a normal stage\" reassures them, and the next sentence says teachers agree."
             },
             {
@@ -746,28 +753,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "beatrix",
-                    "name": "Beatrix",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "beatrix",
-                    "text": "Has the German class moved? I thought it was on Monday."
-                  },
-                  {
                     "speaker": "amadeus",
-                    "text": "It's now on Wednesday evenings because the teacher has another course on Monday."
-                  },
-                  {
-                    "speaker": "beatrix",
-                    "text": "Wednesday's fine, actually. Better for me."
+                    "text": "Hello Beatrix, this is Amadeus from the language school. I’m calling about your German class. You were told it was on Monday evening, but I’m afraid the room isn’t free any more. Thursday has the open evening for new students, so we can’t use that day either. The only choice is Wednesday, at the same time, half past six, in room twelve. I hope that’s all right with you. If you can’t make it, please send me an email before the weekend and we’ll find another solution. Thank you very much."
                   }
                 ]
               },
@@ -780,7 +771,7 @@
                   "Thursday"
                 ],
                 "answer": 1,
-                "explanation": "The class has moved to Wednesday evenings."
+                "explanation": "Monday’s room is not free and Thursday is the open evening, so the class moves to Wednesday at half past six."
               }
             },
             {
@@ -806,16 +797,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "celestine",
+                    "text": "Dorian, I’ve started a Portuguese course. Isn’t that great?"
+                  },
+                  {
                     "speaker": "dorian",
-                    "text": "Which language are you learning at the moment?"
+                    "text": "Really? Are you planning to go to Brazil? I remember you talked about a long holiday there."
                   },
                   {
                     "speaker": "celestine",
-                    "text": "I started Portuguese in September. My grandmother is from Brazil, and I'd love to speak to her in her own language."
+                    "text": "Maybe one day, but not yet. I’m not thinking about a new job abroad either, I’m happy at the bank. The truth is that my grandmother moved to Lisbon last year, and she’s lonely. She hardly speaks any English."
                   },
                   {
                     "speaker": "dorian",
-                    "text": "That's a lovely reason."
+                    "text": "That’s so kind of you."
+                  },
+                  {
+                    "speaker": "celestine",
+                    "text": "I want to phone her every Sunday and chat in her own language."
+                  },
+                  {
+                    "speaker": "dorian",
+                    "text": "She’ll be delighted."
                   }
                 ]
               },
@@ -828,7 +831,7 @@
                   "To get a much better job abroad"
                 ],
                 "answer": 0,
-                "explanation": "She wants to speak to her grandmother in her own language."
+                "explanation": "The holiday and the job abroad are not her plans; her grandmother lives in Lisbon and speaks little English, so she wants to chat with her in Portuguese."
               }
             },
             {
@@ -854,16 +857,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "evander2",
+                    "text": "Hello, Felicia. Are you interested in the Italian course for beginners?"
+                  },
+                  {
                     "speaker": "felicity",
-                    "text": "How much is this English dictionary?"
+                    "text": "Yes. How much is it, roughly? My friend told me it was about twenty-five."
                   },
                   {
                     "speaker": "evander2",
-                    "text": "It's twenty-two pounds, but with the student card there's ten per cent off."
+                    "text": "That’s the price of the intermediate one. The beginners’ course is less, around twenty pounds for the term, with the book included."
                   },
                   {
                     "speaker": "felicity",
-                    "text": "Good, I'm a student. That's about twenty pounds, then."
+                    "text": "That’s cheaper than I expected. Last year I paid fifteen pounds for a short Spanish workshop, and it was only two evenings."
+                  },
+                  {
+                    "speaker": "evander2",
+                    "text": "Then this is much better value. Shall I put your name down?"
+                  },
+                  {
+                    "speaker": "felicity",
+                    "text": "Yes, please."
                   }
                 ]
               },
@@ -876,7 +891,7 @@
                   "About fifteen pounds"
                 ],
                 "answer": 0,
-                "explanation": "Ten per cent off twenty-two pounds is about twenty pounds."
+                "explanation": "Twenty-five is the intermediate course and fifteen was her Spanish workshop, so the beginners’ course costs about twenty pounds."
               }
             },
             {
@@ -902,16 +917,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "gaspard",
+                    "text": "Henriette, do you like your new French teacher?"
+                  },
+                  {
                     "speaker": "henriette",
-                    "text": "Who's your Spanish teacher this year?"
+                    "text": "I do. Some people say that she’s strict, but that was Mr Hall, last year, and he never smiled. And we don’t have an easy time with homework either, there’s a lot of it."
                   },
                   {
                     "speaker": "gaspard",
-                    "text": "Mrs Alonso. She used to teach in Mexico, so she tells us lots of stories about the country."
+                    "text": "So what’s good about her?"
                   },
                   {
                     "speaker": "henriette",
-                    "text": "I'd love a teacher like that."
+                    "text": "She spent ten years in Senegal, and she tells us stories about the markets and the food and the music. We learn words without even noticing."
+                  },
+                  {
+                    "speaker": "gaspard",
+                    "text": "That sounds much better than my class."
+                  },
+                  {
+                    "speaker": "henriette",
+                    "text": "You should ask to change."
                   }
                 ]
               },
@@ -924,7 +951,7 @@
                   "She is very strict with all the students."
                 ],
                 "answer": 1,
-                "explanation": "She used to teach in Mexico and tells lots of stories about it."
+                "explanation": "Mr Hall was the strict one and the homework is heavy, but she likes the teacher because she tells stories about her years in Senegal."
               }
             },
             {
@@ -938,28 +965,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "josephine",
-                    "name": "Josephine",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "josephine",
-                    "text": "What's the homework for tomorrow?"
-                  },
-                  {
                     "speaker": "ignacio",
-                    "text": "Exercise four on page twelve. And we have to learn ten new words."
-                  },
-                  {
-                    "speaker": "josephine",
-                    "text": "Page twelve? I thought it was page twenty."
+                    "text": "Okay, everybody, before you leave, a word about homework. Last week you wrote a story about your holidays, and I enjoyed reading them, so there’s no need for another one. Some of you asked if you can read a whole book for next time, which is a lovely idea, but let’s wait until the holidays. For tomorrow, please do exercise four on page twenty-two. It’s about the past simple and should take about twenty minutes. Don’t leave it for the morning bus! If you have any questions, please ask me now. Otherwise, have a good evening."
                   }
                 ]
               },
@@ -972,7 +983,7 @@
                   "Do an exercise"
                 ],
                 "answer": 2,
-                "explanation": "They have to do exercise four on page twelve and learn ten words."
+                "explanation": "The story was last week and the book can wait for the holidays; for tomorrow they must do exercise four."
               }
             },
             {
@@ -986,28 +997,12 @@
                       "lang": "en-US",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "lucinda",
-                    "name": "Lucinda",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "lucinda",
-                    "text": "When's your English exam?"
-                  },
-                  {
                     "speaker": "kasimir",
-                    "text": "It's on the twelfth of June, but the speaking part is a week earlier, on the fifth."
-                  },
-                  {
-                    "speaker": "lucinda",
-                    "text": "I'm more nervous about the speaking."
+                    "text": "Hi everyone, this is Kasimir with the dates for the exams. Please write them down. The written paper is on the twelfth of June, in the big hall, and you’ll get your results on the nineteenth. The speaking test is a different day and a different room. It’s earlier, on the fifth of June, so you have less than two weeks to practise with your partner. I know it seems soon, but the examiners are only free that morning. Please arrive fifteen minutes early and bring your identity card. Good luck!"
                   }
                 ]
               },
@@ -1020,7 +1015,7 @@
                   "On 19 June"
                 ],
                 "answer": 0,
-                "explanation": "The exam is on the twelfth, and the speaking part is a week earlier, on the fifth."
+                "explanation": "The written paper is on the twelfth and the results on the nineteenth, but the speaking test is earlier, on the fifth."
               }
             },
             {
@@ -1046,16 +1041,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "leopoldo",
+                    "text": "Marianne, you’re coming to the cooking class in Spanish tomorrow, aren’t you? What do I need to bring?"
+                  },
+                  {
                     "speaker": "marianne",
-                    "text": "Shall I bring my laptop to the conversation class?"
+                    "text": "I thought of taking my laptop, to look up words."
                   },
                   {
                     "speaker": "leopoldo",
-                    "text": "No need. We'll be talking all the time. Just bring a notebook and a pen."
+                    "text": "There’s no need, the teacher says phones aren’t allowed in the kitchen. A big dictionary would be too heavy, and there are some on the shelf anyway."
                   },
                   {
                     "speaker": "marianne",
-                    "text": "Great, I'll travel light."
+                    "text": "So what will I use?"
+                  },
+                  {
+                    "speaker": "leopoldo",
+                    "text": "A small book for new words, and something to write with. That’s all."
+                  },
+                  {
+                    "speaker": "marianne",
+                    "text": "Easy. I’ll put them in my apron pocket."
                   }
                 ]
               },
@@ -1068,7 +1075,7 @@
                   "A big dictionary and a bag"
                 ],
                 "answer": 1,
-                "explanation": "Leopoldo says she only needs a notebook and a pen."
+                "explanation": "Computers are not allowed, a big dictionary is heavy and the school has them, so she only needs a small notebook and a pen."
               }
             }
           ]
@@ -1104,15 +1111,23 @@
                 "turns": [
                   {
                     "speaker": "nathaniel",
-                    "text": "I get so nervous when I have to speak English in front of the class."
+                    "text": "Odalie, I’m so worried about the English test on Friday."
                   },
                   {
                     "speaker": "ottoline2",
-                    "text": "Everybody does. Try practising at home in front of the mirror."
+                    "text": "But you’re always top of the class. You do your homework and you read novels in English."
                   },
                   {
                     "speaker": "nathaniel",
-                    "text": "That's actually a good idea."
+                    "text": "Yes, I know, the writing and the reading are fine. It’s the speaking part. When the teacher looks at me and waits, my mind goes blank and my heart beats very fast."
+                  },
+                  {
+                    "speaker": "ottoline2",
+                    "text": "Practise with me after school. I’ll pretend to be the examiner."
+                  },
+                  {
+                    "speaker": "nathaniel",
+                    "text": "Thanks. That might help me relax."
                   }
                 ]
               },
@@ -1125,7 +1140,7 @@
                   "He feels nervous when speaking."
                 ],
                 "answer": 2,
-                "explanation": "He says he gets nervous speaking English in front of the class."
+                "explanation": "Homework and reading are fine; he becomes nervous and his mind goes blank when he has to talk to the teacher."
               }
             },
             {
@@ -1151,16 +1166,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "prosper",
+                    "text": "Querida, you look sad. Did you get your exam results?"
+                  },
+                  {
                     "speaker": "querida",
-                    "text": "I've decided to stop learning French. It's too difficult, and I'm not making progress."
+                    "text": "Yes, and I failed again. I’ve studied for months. I think I should stop the lessons for a while, or just do the exam again in April."
                   },
                   {
                     "speaker": "prosper",
-                    "text": "Don't give up! You've only been learning for three months. Try a language exchange instead of just classes."
+                    "text": "I wouldn’t give up, and I wouldn’t repeat the same thing. You always learn from your textbook. Why not try films, songs, and chatting with people online? You might remember much more."
                   },
                   {
                     "speaker": "querida",
-                    "text": "Maybe you're right."
+                    "text": "That’s an idea. It’s more fun, too."
+                  },
+                  {
+                    "speaker": "prosper",
+                    "text": "Exactly. It’s about learning in a different way."
                   }
                 ]
               },
@@ -1173,7 +1196,7 @@
                   "Stopping all the lessons for now"
                 ],
                 "answer": 1,
-                "explanation": "He tells her not to give up and to try a language exchange as well as classes."
+                "explanation": "She wants to stop or take the exam in April, but he says that studying the same way is the issue and suggests films, songs and chatting."
               }
             },
             {
@@ -1199,29 +1222,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "rutherford",
+                    "text": "Excuse me, you look lost. Can I help?"
+                  },
+                  {
                     "speaker": "seraphine",
-                    "text": "Excuse me, is there a bookshop near here that sells books in Italian?"
+                    "text": "Yes, please. I want to learn Italian for my trip, so I’d like to buy some books to start. Is there a bookshop near here?"
                   },
                   {
                     "speaker": "rutherford",
-                    "text": "Yes, there's one on the High Street, next to the post office. It also has books to help you learn."
+                    "text": "There’s one on Mill Street, with a big section for languages. The post office is next door, if you need it."
                   },
                   {
                     "speaker": "seraphine",
-                    "text": "Thank you, that's perfect."
+                    "text": "I have to send a parcel, but that can wait. And I’m thinking of joining a school, though I don’t know if I’ll have time. The books come first."
+                  },
+                  {
+                    "speaker": "rutherford",
+                    "text": "Then turn left at the bank and it’s the second shop."
+                  },
+                  {
+                    "speaker": "seraphine",
+                    "text": "Thank you very much."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the woman want to find?",
+                "prompt": "What does the woman decide to do first?",
                 "options": [
-                  "A shop for Italian books",
-                  "A post office",
-                  "A language school"
+                  "Look for Italian books",
+                  "Post a parcel",
+                  "Ask about a language school"
                 ],
                 "answer": 0,
-                "explanation": "She is asking for a bookshop that sells books in Italian."
+                "explanation": "The post office can wait and the school is only an idea; she says the books come first."
               }
             },
             {
@@ -1247,29 +1282,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "thelonius",
+                    "text": "Ulrike, I’ve been using a new website to learn Japanese. You should try it."
+                  },
+                  {
                     "speaker": "ulrike",
-                    "text": "My exchange partner sends me messages in English, and I answer in German. We correct each other."
+                    "text": "Is it expensive? The last one was thirty pounds a month."
                   },
                   {
                     "speaker": "thelonius",
-                    "text": "That's clever. Do you learn a lot?"
+                    "text": "Not at all. There are no payments, no advertisements, nothing. A group of students makes it as a hobby. There aren’t any teachers or certificates, but I don’t need them. I just want to talk to my friends in Tokyo."
                   },
                   {
                     "speaker": "ulrike",
-                    "text": "Yes, and it's free. We've made a good friendship too."
+                    "text": "Hmm, if it’s free, then why not?"
+                  },
+                  {
+                    "speaker": "thelonius",
+                    "text": "I’ll send you the link tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What are the two speakers talking about?",
+                "prompt": "What does the man like about the website?",
                 "options": [
-                  "A job as a professional translator",
-                  "A holiday abroad with her family today",
-                  "A free way of learning languages"
+                  "It costs nothing.",
+                  "It has real teachers.",
+                  "It gives certificates."
                 ],
-                "answer": 2,
-                "explanation": "They talk about exchanging messages in two languages and correcting each other for free."
+                "answer": 0,
+                "explanation": "The other website was expensive; he says there are no payments, and he does not need teachers or a certificate."
               }
             },
             {
@@ -1295,16 +1338,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "valerian",
+                    "text": "Wilhelmine, you’ve got your exam result. What did you get?"
+                  },
+                  {
                     "speaker": "wilhelmine",
-                    "text": "I watched the film in Spanish without subtitles and I understood about half of it."
+                    "text": "Eighty-five per cent! I can’t believe it. Last year I failed, and I almost gave up Spanish."
                   },
                   {
                     "speaker": "valerian",
-                    "text": "That's very good! Last year, you couldn't follow a word."
+                    "text": "Congratulations! Were you expecting a better mark?"
                   },
                   {
                     "speaker": "wilhelmine",
-                    "text": "I know. I'm quite proud of myself."
+                    "text": "Not at all. I only wanted to pass. And the questions weren’t confusing at all, I knew what to write. I worked so hard, and now I’ve done it by myself. I’ll tell my parents tonight with a big smile."
+                  },
+                  {
+                    "speaker": "valerian",
+                    "text": "You deserve it."
                   }
                 ]
               },
@@ -1317,7 +1368,7 @@
                   "Confused"
                 ],
                 "answer": 0,
-                "explanation": "She says she understood half of the film and is quite proud of herself."
+                "explanation": "She only wanted to pass and the questions were clear; she worked hard and is happy about what she achieved by herself."
               }
             },
             {
@@ -1343,29 +1394,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "xiomara",
+                    "text": "Yannick, why are you hiding behind your book? Are you late again?"
+                  },
+                  {
                     "speaker": "yannick",
-                    "text": "I think I made a terrible mistake. I told my host mother that I was very full, but I used the wrong word."
+                    "text": "No, I was on time today. And my dictionary is in my bag, I checked twice."
                   },
                   {
                     "speaker": "xiomara",
-                    "text": "What did you say?"
+                    "text": "So what’s the matter?"
                   },
                   {
                     "speaker": "yannick",
-                    "text": "I said that I was pregnant! She laughed for ten minutes."
+                    "text": "In the lesson, I wanted to say that I was hot, and I said I was a hot person, you know, in a different sense. Everyone laughed, even the teacher. My face is still red."
+                  },
+                  {
+                    "speaker": "xiomara",
+                    "text": "Oh, that’s a classic mistake! Don’t worry, everybody makes them."
+                  },
+                  {
+                    "speaker": "yannick",
+                    "text": "I hope they forget it soon."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What happened to the boy?",
+                "prompt": "Why is the boy embarrassed?",
                 "options": [
-                  "He was late for class again today.",
+                  "He was late for class again.",
                   "He lost his dictionary on the bus.",
-                  "He made a very silly mistake."
+                  "He made a silly mistake in front of everyone."
                 ],
                 "answer": 2,
-                "explanation": "He used the wrong word and accidentally said he was pregnant, which embarrassed him."
+                "explanation": "He was on time and still has his dictionary; what embarrasses him is the mistake that made the whole class laugh."
               }
             }
           ]
@@ -1390,62 +1453,49 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good afternoon, and welcome to the Greenfield Language School. I'm Cornelius, the director. We offer courses in six languages: English, Spanish, French, German, Italian and Chinese. Our classes are small, with a maximum of eight students, so that everybody has a chance to speak. Lessons take place in the evenings, from six until eight o'clock, and on Saturday mornings. A course lasts ten weeks and costs one hundred and twenty pounds. In the school building, we have a library with books and films that you can borrow, and a café where students can meet. If you register today, you will receive a free dictionary. You can sign up at the desk near the main entrance."
+                "text": "Good afternoon, and welcome to the Greenfield Language School. I’m Cornelius, the director. First, a few facts about us. We offer courses in six languages: English, Spanish, French, German, Italian and Japanese. We wanted to add Chinese this year, but we couldn’t find a teacher, so perhaps next year. Our classes are small. In many schools there are twenty people in a room, but here the maximum is eight students, so every person speaks a lot. Now, the timetable. There are morning and evening lessons. The morning ones finish at midday. In the evening, the classes start at half past six, and we have to stop at nine o’clock, because the building closes. I know that some of you would like to stay later, but the neighbours complain. Next, the length of the course. Our short courses last four weeks, and our summer intensive ones are only two, but the standard one lasts ten weeks, and it’s the one that most students choose. At the end, there’s an exam and a certificate. Let me also tell you about the library. It’s on the first floor and it’s open every day. You are welcome to borrow books and films, so that you can enjoy the language at home. You can’t take out magazines, but you can read them there. We don’t sell textbooks in the library, they are in the shop downstairs. And now my favourite part. Today is a special day. If you register before six o’clock, you’ll receive a free dictionary. I’d love to say a free course, but that’s not possible. The dictionary is a good one, and it normally costs eighteen pounds. Please come to the desk by the door, and my colleagues will help you. Thank you for your attention, and I hope you’ll join us!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The school teaches ___ languages",
+              "prompt": "The school offers lessons in ___ different languages",
               "answer": "six",
               "accepted": [
                 "6"
               ],
-              "explanation": "Cornelius says the school offers courses in six languages."
+              "explanation": "They wanted to add Chinese but could not find a teacher, so there are six."
             },
             {
               "id": "l3-2",
-              "prompt": "Classes have a maximum of ___ students",
+              "prompt": "Nobody sits in a larger group than ___ students",
               "answer": "eight",
-              "accepted": [
-                "8"
-              ],
-              "explanation": "Classes are small, with a maximum of eight students."
+              "explanation": "Many schools have twenty, but here the maximum is eight."
             },
             {
               "id": "l3-3",
-              "prompt": "Evening lessons end at ___ o'clock",
-              "answer": "eight",
-              "accepted": [
-                "8"
-              ],
-              "explanation": "Lessons take place from six until eight o'clock."
+              "prompt": "The building closes, so evening lessons stop at ___ o'clock",
+              "answer": "nine",
+              "explanation": "Evening classes start at half past six and stop at nine; morning classes finish at midday."
             },
             {
               "id": "l3-4",
-              "prompt": "A course lasts ___ weeks",
+              "prompt": "The most common course takes ___ weeks",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "A course lasts ten weeks."
+              "explanation": "Short courses last four weeks and intensive ones two, but the standard one lasts ten."
             },
             {
               "id": "l3-5",
-              "prompt": "Students can borrow books and ___ from the library",
+              "prompt": "Members can take home books and ___ from the library",
               "answer": "films",
-              "accepted": [
-                "movies",
-                "dvds"
-              ],
-              "explanation": "The library has books and films that students can borrow."
+              "explanation": "They can borrow books and films, not magazines."
             },
             {
               "id": "l3-6",
-              "prompt": "People who register today get a free ___",
+              "prompt": "Anyone who signs up before six o'clock receives a ___ as a gift",
               "answer": "dictionary",
-              "explanation": "If you register today, you will receive a free dictionary."
+              "explanation": "A free course is not possible; the gift is a dictionary."
             }
           ]
         },
@@ -1477,35 +1527,35 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Augustina, you teach Spanish to adults in the evenings. Did you always want to be a teacher?"
+                "text": "Augustina, you teach Spanish. What first made you interested in languages?"
               },
               {
                 "speaker": "augustina",
-                "text": "Not at all. I studied history at university, and I only began to learn languages because I wanted to read old letters. A friend then told me about a teaching course, and I loved it from the first day."
+                "text": "People assume that I grew up speaking two languages, but no, my family only spoke English. And I did work in a bank abroad, but that came much later. It started when I found a box of old letters in my grandmother’s house. They were written in Spanish and I wanted to know what was inside. I spent a whole summer with a dictionary, and I was hooked."
               },
               {
                 "speaker": "host",
-                "text": "How many languages do you speak?"
+                "text": "In your opinion, what makes a good teacher?"
               },
               {
                 "speaker": "augustina",
-                "text": "Four fluently, and I can get by in two more. But that's not the point. A good teacher is not someone who knows a lot of words. It's someone who helps people to understand each other."
+                "text": "It isn’t about knowing the most words. I’ve met teachers with huge vocabularies who couldn’t explain anything. And speaking fast isn’t a gift, believe me. A good teacher helps two people understand each other, with their different cultures and ideas. That’s the real job, and that is what I enjoy."
               },
               {
                 "speaker": "host",
-                "text": "What is the hardest thing about the job?"
+                "text": "What do you find difficult?"
               },
               {
                 "speaker": "augustina",
-                "text": "Patience. Adult students are often shy, and they are afraid of making mistakes. It can take months before they speak without worrying. I try to make the classroom a friendly place, and we laugh a lot."
+                "text": "There’s never a problem with classrooms, we have plenty, and marking homework is a pleasure for me, I like seeing the progress. What is hard is being patient with shy students. Some of them hardly speak for weeks, and I have to wait, smile and not push too hard. It tests me every day."
               },
               {
                 "speaker": "host",
-                "text": "Have you ever made a funny mistake yourself?"
+                "text": "Have you ever made a mistake in class?"
               },
               {
                 "speaker": "augustina",
-                "text": "Once, in a class about food, I wrote the word for 'cow' on the board when I meant 'cold'. Everybody looked confused, and then a student started to laugh. After that, I always checked my words before a lesson."
+                "text": "Several, but one stays in my memory. Once I mixed up the names of two students, but that was just embarrassing. And I have never missed a lesson in my life. No, the worst was a word I wrote wrongly on the board. I meant to write, you are a fine student, and instead I wrote something rude. The class laughed for ten minutes."
               },
               {
                 "speaker": "host",
@@ -1513,15 +1563,15 @@
               },
               {
                 "speaker": "augustina",
-                "text": "Computers are getting better, but they cannot understand jokes, or feelings, or what is not said. People still prefer to learn with a human being, especially when they are nervous."
+                "text": "Programs are impressive, but I don’t think they are nearly as good as a person. They can’t understand a joke, or hear that you’re sad. They are not too expensive either, many are free, so it’s not about money. It’s about feelings, and machines don’t have any."
               },
               {
                 "speaker": "host",
-                "text": "What advice do you give to young people?"
+                "text": "What would you tell young people who want to learn a language?"
               },
               {
                 "speaker": "augustina",
-                "text": "Spend time where your language is spoken, even for a short time. Books will teach you grammar, but only life will teach you how people really talk."
+                "text": "Go and live where people speak it, even for a few months. Of course, you should study grammar, but not every day, and you don’t have to become a teacher. If you listen to the people in the street and the shop, you learn faster than in any classroom."
               }
             ]
           },
@@ -1535,7 +1585,7 @@
                 "She worked in a bank abroad."
               ],
               "answer": 1,
-              "explanation": "She began to learn languages because she wanted to read old letters while studying history."
+              "explanation": "Her family spoke only English and the bank was later; she found old letters in Spanish and wanted to read them."
             },
             {
               "id": "l4-2",
@@ -1546,7 +1596,7 @@
                 "Speaking very fast"
               ],
               "answer": 1,
-              "explanation": "She says a good teacher helps people to understand each other, not just knowing many words."
+              "explanation": "A big vocabulary and speed are not important; a good teacher helps two people understand each other."
             },
             {
               "id": "l4-3",
@@ -1557,7 +1607,7 @@
                 "Marking all the homework"
               ],
               "answer": 0,
-              "explanation": "She says the hardest thing is patience, because adult students are shy and afraid of mistakes."
+              "explanation": "Classrooms are not a problem and she likes marking; what is hard is waiting for shy students."
             },
             {
               "id": "l4-4",
@@ -1568,7 +1618,7 @@
                 "She wrote a wrong word on the board."
               ],
               "answer": 2,
-              "explanation": "She wrote the word for cow when she meant cold, and a student laughed."
+              "explanation": "Mixing up names was only embarrassing and she never missed a lesson; the worst was the rude word she wrote on the board."
             },
             {
               "id": "l4-5",
@@ -1579,18 +1629,18 @@
                 "They are far too expensive for most people."
               ],
               "answer": 1,
-              "explanation": "She says that computers cannot understand jokes, feelings or what is not said."
+              "explanation": "They are not too expensive and they are not nearly as good as people; they cannot understand a joke or hear that someone is sad."
             },
             {
               "id": "l4-6",
               "prompt": "What does she advise young people to do?",
               "options": [
-                "Spend time where the language is spoken",
-                "Study the grammar rules carefully every single day",
-                "Find a job as a teacher of the language"
+                "Live where it is spoken",
+                "Study grammar every day",
+                "Become a language teacher"
               ],
               "answer": 0,
-              "explanation": "She recommends spending time where the language is spoken, because life teaches how people really talk."
+              "explanation": "She says to live where people speak it; grammar every day and teaching are not necessary."
             }
           ]
         }

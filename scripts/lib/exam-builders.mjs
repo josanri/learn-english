@@ -59,12 +59,12 @@ export const multipleChoice = (prefix, title, passage, qs) => ({
   questions: choices(`${prefix}3-`, qs),
 });
 
-/** keys: letter of the sentence for each gap (five gaps, six sentences). */
+/** keys: letter of the sentence for each gap (five gaps, eight sentences). */
 export const gappedText = (prefix, title, passage, sentences, keys, explanations) => ({
   id: 'reading-4',
   number: 4,
   title,
-  instructions: 'Choose the sentence that fits each gap. There is one extra sentence.',
+  instructions: 'Choose the sentence that fits each gap. There are three extra sentences.',
   type: 'gapped-text',
   passage,
   sentences,

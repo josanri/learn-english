@@ -251,9 +251,10 @@
               "options": [
                 "She is a well-known singer in town",
                 "She appeared on television once or twice",
+                "She was a famous writer in the city",
                 "She is not famous but very brave"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She is not famous, but she is the bravest person he knows."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "The school was too far away",
                 "Her father fell ill",
-                "She wanted to earn some money"
+                "She wanted to earn some money",
+                "The family moved to the city"
               ],
               "answer": 1,
               "explanation": "Her father became ill, so she had to work on the farm."
@@ -271,33 +273,36 @@
               "id": "r3-3",
               "prompt": "How did she attract customers to her shop?",
               "options": [
-                "She gave free cake to children",
                 "She put up bright new posters",
-                "She sold cheap bread to everyone"
+                "She sold cheap bread to everyone",
+                "She gave free cake to children",
+                "She sold sweets to teachers"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She gave free cake to children after school."
             },
             {
               "id": "r3-4",
               "prompt": "What was the shop like after five years?",
               "options": [
+                "It was the most popular in the street",
                 "It was still quite empty then",
                 "It had to close for a short while",
-                "It was the most popular in the street"
+                "It had moved to a bigger street"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "After five years, the shop was the most popular in the street."
             },
             {
               "id": "r3-5",
               "prompt": "What does the writer hope for the future?",
               "options": [
-                "To be strong and kind like her",
                 "To open a shop of his own one day",
-                "To become a famous person like others"
+                "To travel the world like her",
+                "To become a famous person like others",
+                "To be strong and kind like her"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He hopes to be as strong and kind as she is."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A famous inventor",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Thomas Alva Edison is one of the most famous inventors in history. He was born in 1847 in the United States, and as a child he was always curious about how things worked. [1] His teacher thought he was slow, so his mother took him out of school and taught him at home.\n\nEdison loved to experiment, and at the age of ten, he built a small laboratory in his cellar. [2] Sometimes, his experiments made so much smoke that his family was afraid.\n\nAs an adult, he invented many things, including a machine that could record sound. [3] He is probably best known for the electric light bulb, which he improved after trying thousands of materials.\n\nWhen people asked him about his failures, he answered that he had found a thousand ways that did not work. [4] His strong will is the reason why he became so successful. [5] Today, many of his ideas are still used all over the world.",
           "sentences": [
-            "He spent all his pocket money on bottles and chemicals.",
-            "People could hardly believe that a machine could repeat a voice.",
-            "He was also very good at selling his ideas.",
-            "In the end, he held more than a thousand patents.",
             "He asked so many questions that the other pupils got tired of him.",
-            "Few people have changed the way we live as much as he did."
+            "In the end, he held more than a thousand patents.",
+            "He was also very good at selling his ideas.",
+            "People could hardly believe that a machine could repeat a voice.",
+            "He sold newspapers and sweets on trains when he was twelve.",
+            "They were so surprised that they gave him a prize.",
+            "Few people have changed the way we live as much as he did.",
+            "He spent all his pocket money on bottles and chemicals."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "E",
+              "answer": "A",
               "explanation": "Asking so many questions explains why the teacher thought he was slow."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "H",
               "explanation": "Spending money on bottles and chemicals goes with the cellar laboratory and smoke."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "D",
               "explanation": "The machine that could record sound surprised people: they could hardly believe it could repeat a voice."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "B",
               "explanation": "He held over a thousand patents, which supports his determination."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "G",
               "explanation": "Few people changed life as much leads to many ideas still being used today."
             }
           ]
@@ -716,24 +723,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Vesna",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What time does the museum open on Mondays?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "At ten. But the new show about famous inventors does not start until noon."
+                    "text": "Good morning, everyone, and welcome to the Science Centre. A short message about today’s programme. The new space show was going to start at ten, as it says on our leaflet, but the machine in the dome needs a repair, so please ignore that time. We will open the doors at the start of the lunch hour, at twelve, just after the café has put out the sandwiches. There is also a later show at two, but it is only for school groups. Tickets are free, and you can collect one at the desk by the main door. Thank you for your patience."
                   }
                 ]
               },
@@ -746,7 +741,7 @@
                   "At two"
                 ],
                 "answer": 1,
-                "explanation": "The show does not start until noon."
+                "explanation": "The leaflet says ten but the machine needs a repair, and the show at two is only for school groups; the doors open at twelve, at the start of the lunch hour, so the show starts at noon."
               }
             },
             {
@@ -773,11 +768,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Who is the man in that painting?"
+                    "text": "Who’s the man in the big painting, Niall? He looks very important."
                   },
                   {
                     "speaker": "m",
-                    "text": "He was a king who ruled the country four hundred years ago."
+                    "text": "I thought it might be the painter at first, because there’s a name at the bottom. But that’s the signature of the artist, and it’s a woman called Helen Brown."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, I see. Is he a doctor then? He’s holding a book."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s what I said to my sister, but look at the sign on the wall. It says he ruled the country for forty years, and he’s wearing a crown on his head."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course! I didn’t notice the crown."
                   }
                 ]
               },
@@ -790,21 +797,13 @@
                   "A doctor"
                 ],
                 "answer": 0,
-                "explanation": "He was a king who ruled the country."
+                "explanation": "Niall says the name is the artist’s signature, not the man’s, and the doctor idea is wrong; the sign says he ruled the country and he wears a crown, so he is a king."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Gideon",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Cecilia",
@@ -816,12 +815,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Have you read the new book by that famous author?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I am halfway through it. The first part is great, but the ending is quite sad."
+                    "text": "Hi Gideon, it’s Cecilia. I finished the book you lent me, and I wanted to tell you at once. You said that the first chapters were slow, and I almost stopped reading on page twenty, but I’m glad I didn’t, because after that I couldn’t put it down. It’s about six hundred pages, but I read it in a week and it never felt heavy. The last pages were the hardest. I was on the train and I had tears in my eyes. Call me back when you can, and we’ll talk about it."
                   }
                 ]
               },
@@ -834,7 +829,7 @@
                   "It is very long indeed"
                 ],
                 "answer": 0,
-                "explanation": "The first part is great, but the ending is quite sad."
+                "explanation": "The beginning was slow but she kept reading, and the length did not bother her; the end made her cry on the train, so the ending was sad."
               }
             },
             {
@@ -861,11 +856,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Did you meet the footballer at the shop?"
+                    "text": "Did you get your football signed, Stellan? Your brother said you waited for hours."
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes! I asked for his autograph, and he even signed my shirt."
+                    "text": "Well, I took a magazine with a big photo of him on the cover, and I was ready to give it to him, but there were hundreds of people and he couldn’t reach it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about the ball? I thought you were going to bring one."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I left it at home, I’m afraid. In the end a boy next to me was wearing his team shirt, and the player smiled and signed that. I was a bit jealous, but it was nice to watch."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Poor you!"
                   }
                 ]
               },
@@ -878,7 +885,7 @@
                   "A magazine that he held"
                 ],
                 "answer": 1,
-                "explanation": "He signed the boy's shirt."
+                "explanation": "Stellan did not give the magazine and left his ball at home; the player signed the shirt that a boy was wearing."
               }
             },
             {
@@ -905,11 +912,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why do you admire your teacher?"
+                    "text": "Why do you like your new teacher so much, Oriel? You always talk about her."
                   },
                   {
                     "speaker": "f",
-                    "text": "She never gives up on anyone, even when they find lessons hard."
+                    "text": "Well, people say she’s funny, and she does tell good stories sometimes, but that’s not why. She doesn’t give much homework either, only a little, and that’s nice."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what is it, then?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Last week my friend Jack was failing maths. Other teachers had stopped trying, but she stayed with him after school every day until he understood it. She’s still doing it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s really kind of her."
                   }
                 ]
               },
@@ -922,7 +941,7 @@
                   "She never gives up on pupils"
                 ],
                 "answer": 2,
-                "explanation": "She never gives up on anyone."
+                "explanation": "Oriel says the teacher is funny and gives little homework, but admires her because she stayed with Jack every day when other teachers gave up."
               }
             },
             {
@@ -936,24 +955,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Jory",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Is the film about a real person?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "Yes, it is based on the life of a nurse who saved many soldiers."
+                    "text": "Welcome to Film Hour. This week I saw a new film that I want to tell you about. A lot of people expect it to be about a soldier who later becomes a king, because of the poster with a crown and a sword, but that’s only a small part of the story. And there is a teacher in a village, who appears for five minutes at the beginning. The real heart of the film is a young nurse who works in a tent near the battlefield and helps hurt soldiers get home. It made me think. Go and see it."
                   }
                 ]
               },
@@ -966,7 +973,7 @@
                   "A teacher in a small village"
                 ],
                 "answer": 0,
-                "explanation": "It is based on the life of a nurse who saved soldiers."
+                "explanation": "The soldier and the teacher are only small parts; the film is really about a young nurse who looks after hurt soldiers."
               }
             },
             {
@@ -993,11 +1000,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "When was she born?"
+                    "text": "Ursula, you have a lovely accent. Where are you from? The capital?"
                   },
                   {
                     "speaker": "f",
-                    "text": "In nineteen fifty-two, in a small town by the coast."
+                    "text": "Everybody asks me that. My parents lived there when they married, and later we moved to a village high up in the mountains when I was six, but I was born before that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So where, then?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "In the same place where my grandfather kept his fishing boat. You can see the sea from the main street, and the whole town smells of salt in the morning."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That sounds lovely."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is. I go back every summer."
                   }
                 ]
               },
@@ -1010,7 +1033,7 @@
                   "In a mountain village"
                 ],
                 "answer": 1,
-                "explanation": "She was born in a small town by the coast."
+                "explanation": "The family lived in the capital and moved to the mountains later, but she was born near where her grandfather kept his fishing boat, a town by the sea."
               }
             }
           ]
@@ -1046,24 +1069,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Ladies and gentlemen, please welcome our guest tonight, the famous explorer, Doctor Hall!"
+                    "text": "Well, that was a long morning. I’m tired. Did you enjoy the charity race, Vaughan?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Thank you for the welcome. It is wonderful to be here."
+                    "text": "I did. People said it was too long, but I don’t mind that when it’s for a good reason."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "True. The prizes were quite small, weren’t they? Just a box of chocolates."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I didn’t mind that either. What I liked were the helpers. They gave out water, they cheered for everyone, and they stayed until the very last runner."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know! They were so friendly. I’d like to thank them."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Let’s write a message on the club website tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is happening?",
+                "prompt": "What do Polly and Vaughan agree about?",
                 "options": [
-                  "A race is finishing now",
-                  "A film is starting soon",
-                  "A guest is being introduced"
+                  "The race was too long",
+                  "The prizes were too small",
+                  "The helpers did a great job"
                 ],
                 "answer": 2,
-                "explanation": "She welcomes a famous guest to the stage."
+                "explanation": "They both accept the long distance and the small prizes, and they praise the helpers who gave water, cheered and stayed to the end."
               }
             },
             {
@@ -1090,24 +1129,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I would love to be like her one day: a brilliant scientist."
+                    "text": "I heard you are learning the guitar, Kiri. Are you starting a band with your brother?"
                   },
                   {
                     "speaker": "f",
-                    "text": "My advice is to study hard and never stop asking questions."
+                    "text": "No, he’s much better than I am. I’d be embarrassed. He did ask me once, but I said no."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is it for the trip to Spain? You’ll hear a lot of guitar music there."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not really. We leave in March and I won’t be good by then. It’s for me. My job is stressful, and when I get home I need something that clears my head. Ten minutes of music helps me feel peaceful."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s a good idea. I might try it too."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "Why is Kiri going to learn the guitar?",
                 "options": [
-                  "Asking him for some help",
-                  "Giving the man advice",
-                  "Telling him a big secret"
+                  "To play with her brother",
+                  "To feel calm after work",
+                  "To prepare for a trip"
                 ],
                 "answer": 1,
-                "explanation": "She tells him to study hard and keep asking questions."
+                "explanation": "She says her brother asked her to play and the trip is too soon, but she wants something that clears her head after a stressful job."
               }
             },
             {
@@ -1134,24 +1185,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Can I have your autograph, please? I am your biggest fan!"
+                    "text": "Aldo, I saw a house in the country for sale. It has a big garden and a stream. Would you like to move?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Of course. I am a famous actor, but what is your name?"
+                    "text": "The price is quite good, so that’s not a problem. And I’m not worried about feeling alone, I’d make friends quickly."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what’s stopping you?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Nothing really. Our kids spend all day with their phones in the flat. In the country they could play outside, climb trees, and learn about animals. I think they would be happier and healthier."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’re right. Shall we go and see it on Sunday?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, let’s book a visit."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Who is the woman talking to?",
+                "prompt": "What does Aldo think about the idea of moving to the country?",
                 "options": [
-                  "A famous person",
-                  "A taxi driver in town",
-                  "A shop assistant nearby"
+                  "It would be too lonely",
+                  "It would be good for the children",
+                  "It would cost too much"
                 ],
-                "answer": 0,
-                "explanation": "She asks for an autograph as a fan."
+                "answer": 1,
+                "explanation": "He says the price is fine and he would not be lonely; the main thing is that the children would play outside, so he thinks it would be good for them."
               }
             },
             {
@@ -1177,25 +1244,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Are you excited about the school play, Janet? I heard you have a big part."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "The mayor will unveil the statue of our local hero at noon tomorrow."
+                    "text": "A bit, yes, but I’ve learned all my words already, so that’s fine. I’m not frightened of the audience, because my parents will be there and they always make me feel safe."
                   },
                   {
                     "speaker": "m",
-                    "text": "I will definitely be there."
+                    "text": "So is it going well?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Honestly, we have practice every evening this week and it’s the same scenes again and again. I wish it were over. I’d rather be at home with a book."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I understand. It’ll be worth it on Friday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hope so."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What will happen tomorrow?",
+                "prompt": "How does Janet feel about the school play?",
                 "options": [
-                  "A school will open there",
-                  "A race will begin there",
-                  "A statue will be shown"
+                  "Excited about her part",
+                  "Nervous about the audience",
+                  "Bored by the long practice"
                 ],
                 "answer": 2,
-                "explanation": "The mayor will unveil the statue."
+                "explanation": "She has learned her words and is not afraid of the audience, but the repeated evening practice makes her tired of it."
               }
             },
             {
@@ -1221,25 +1304,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Vance, are we still having the party on Saturday? I’ve told everybody."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I got full marks in my history project about Queen Victoria!"
+                    "text": "Actually, I wanted to ask you about that. Could we move it to Sunday? Our friend Marco is flying home on Saturday night, and it wouldn’t be the same without him."
                   },
                   {
                     "speaker": "f",
-                    "text": "Well done! I am so proud of you. I knew you could do it."
+                    "text": "I checked the weather, and it says rain on Sunday. And the hall is booked for both days."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hmm. We can use the garden if it doesn’t rain, and if it does, we can move into the kitchen. I want Marco there."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Fine, I’ll call everyone this evening."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "How does the mother feel?",
+                "prompt": "Why does Vance suggest changing the date of the party?",
                 "options": [
-                  "Proud of her son",
-                  "Worried about her son",
-                  "Surprised at the good news"
+                  "His friend can't come",
+                  "The weather will be bad",
+                  "The hall isn't free"
                 ],
                 "answer": 0,
-                "explanation": "She says well done and that she knew he could do it."
+                "explanation": "Eliza mentions rain and the hall, but Vance says those are not problems; he wants his friend Marco to be at the party."
               }
             },
             {
@@ -1265,25 +1360,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "So, Sienna, what are your new neighbours like?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Next on our programme: the story of a girl who rowed across the ocean alone."
+                    "text": "Quiet, which is nice. I thought they’d be noisy, with three children, but I hardly hear them."
                   },
                   {
                     "speaker": "m",
-                    "text": "That sounds amazing. Please tell us more."
+                    "text": "Are they friendly?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes. They brought me a cake on the first day, and they smile in the corridor. But when I invited them for tea, they went red and said they were busy. I think they just don’t know what to say to new people."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe they’ll relax."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hope so. I’ll keep inviting them."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman doing?",
+                "prompt": "How does Sienna feel about her new neighbours?",
                 "options": [
-                  "Giving a lesson at her school",
-                  "Taking part in a long race",
-                  "Presenting a radio programme"
+                  "They make too much noise",
+                  "They are friendly but shy",
+                  "They are rude and unkind"
                 ],
-                "answer": 2,
-                "explanation": "She introduces the next item on a programme."
+                "answer": 1,
+                "explanation": "She says they are not noisy and brought a cake, but they went red and refused tea, so she thinks they are friendly and shy."
               }
             }
           ]
@@ -1308,52 +1419,46 @@
             "turns": [
               {
                 "speaker": "marcus",
-                "text": "Good morning, class. Today, we will learn about Marie Curie, one of the greatest scientists in history. She was born in Poland in eighteen sixty-seven, and her family was very poor. She moved to Paris when she was twenty-four to study at university. There, she met her husband, Pierre, and together they studied a new kind of energy. In nineteen oh three, they won an important prize for physics. Eight years later, she won a second prize, this time for chemistry. She was the first woman to win a prize like this, and she is still the only person to win it in two different sciences. During the war, she helped to build machines that took pictures of bones. She died in nineteen thirty-four, but her work is still helping people today."
+                "text": "Good afternoon, everyone, and thank you for coming to the Harbour Museum open day. My name is Brenda, and I am one of the guides. I’d like to tell you about the day. First, the opening hours. The museum is open from nine in the morning, but today we are opening early, at half past eight, for the open day. The tickets are free today. Normally, an adult ticket costs twelve pounds, but you are paying nothing. The first tour begins in the entrance hall at ten o’clock. It lasts an hour, and we will see the old fishing boats. We thought about starting in the cellar, where the old maps are kept, but it was too cold. Then there is the workshop on the second floor, where children can make a small ship out of wood. Some people think that it is on the third floor, but that is the café. Please remember to wear old clothes, because the paint can be messy. After the workshop, at one o’clock, you can have lunch in the café. We have a special menu today. The most popular dish is fish soup, and if you do not like fish, there is also a cheese sandwich, but I always take the soup. For the afternoon, there is a talk by a retired sailor named Mr Hughes, at three o’clock. He sailed around the world twice, and he has a lot of stories. Some of the stories are about storms, but most of them are about the places he saw, and the people he met. At the end of the day, you can buy postcards at the shop. They cost one pound each. If you want a bigger souvenir, a model ship is ten pounds, but I think the postcards are nicer. Thank you, and enjoy your day."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Marie Curie was born in ___",
-              "answer": "Poland",
-              "explanation": "She was born in Poland."
+              "prompt": "The museum opens early at ___ for the open day",
+              "answer": "half past eight",
+              "explanation": "Normally it opens at nine, but today it opens at half past eight."
             },
             {
               "id": "l3-2",
-              "prompt": "She moved to Paris at the age of ___",
-              "answer": "twenty-four",
-              "accepted": [
-                "24"
-              ],
-              "explanation": "She moved to Paris when she was twenty-four."
+              "prompt": "The first tour begins in the ___",
+              "answer": "entrance hall",
+              "explanation": "The tour starts in the entrance hall; the cellar was too cold."
             },
             {
               "id": "l3-3",
-              "prompt": "Her husband was called ___",
-              "answer": "Pierre",
-              "explanation": "She met her husband, Pierre."
+              "prompt": "Children make a small ship out of wood in the ___ on the second floor",
+              "answer": "workshop",
+              "explanation": "The workshop is on the second floor; the third floor is the café."
             },
             {
               "id": "l3-4",
-              "prompt": "The second prize was for ___",
-              "answer": "chemistry",
-              "explanation": "The second prize was for chemistry."
+              "prompt": "The most popular dish in the café is ___",
+              "answer": "fish soup",
+              "explanation": "The most popular dish is fish soup; the other choice is a cheese sandwich."
             },
             {
               "id": "l3-5",
-              "prompt": "During the war, she built machines for pictures of ___",
-              "answer": "bones",
-              "explanation": "Machines that took pictures of bones."
+              "prompt": "The speaker at three o'clock is a retired ___",
+              "answer": "sailor",
+              "explanation": "Mr Hughes is a retired sailor who sailed around the world twice."
             },
             {
               "id": "l3-6",
-              "prompt": "She died in nineteen thirty-___",
-              "answer": "four",
-              "accepted": [
-                "4"
-              ],
-              "explanation": "She died in nineteen thirty-four."
+              "prompt": "A postcard costs ___ pound",
+              "answer": "one",
+              "explanation": "Postcards cost one pound each; a model ship is ten pounds."
             }
           ]
         },
@@ -1385,11 +1490,11 @@
             "turns": [
               {
                 "speaker": "lucian",
-                "text": "My guest today is Mirela Cruz, the author of the best-selling Dragon Island books. Mirela, when did you start writing?"
+                "text": "Mirela, welcome to the programme. Your books are everywhere. Who was the first person to read your stories?"
               },
               {
                 "speaker": "mirela",
-                "text": "When I was nine. I wrote stories in an old notebook and read them to my little brother. He was my first fan."
+                "text": "Oh, you’d think it was my parents, wouldn’t you? But they were always busy with work, and I never showed them anything. I wrote my first story for my little brother, who was seven at the time. He would sit on the end of my bed and listen to every chapter, and he always told me what he thought, even when it was not kind. I still call him before I send a book to my publisher."
               },
               {
                 "speaker": "lucian",
@@ -1397,7 +1502,7 @@
               },
               {
                 "speaker": "mirela",
-                "text": "Everywhere. A strange sign, a conversation on a bus, a dream. I always carry a notebook to write them down."
+                "text": "People imagine it must be from my own childhood, but that was actually quite ordinary. And I don’t borrow ideas from other books, I try not to. Mostly I listen. I sit on a bus or in a park and I hear a few words from a stranger, or I watch someone’s face, and a whole story begins in my head."
               },
               {
                 "speaker": "lucian",
@@ -1405,15 +1510,15 @@
               },
               {
                 "speaker": "mirela",
-                "text": "A bit strange. I'm quite shy, so I don't enjoy being recognised in the street. But I love meeting readers at book signings."
+                "text": "Delighted would be the wrong word. I’m happy that people enjoy my work, of course, and I don’t mind the readers at all, they are lovely. But I’m shy by nature, so when someone recognises me in a shop I go red and forget what to say. It still feels a little strange to me."
               },
               {
                 "speaker": "lucian",
-                "text": "What is a typical working day?"
+                "text": "Where do you write?"
               },
               {
                 "speaker": "mirela",
-                "text": "I write in the morning for four hours, in a café near my home. In the afternoon, I answer letters or go for a walk."
+                "text": "I used to write in the town library, because it was quiet, and I tried my bedroom for a while, but there is a bed there and I fall asleep. Now I go every morning to a small café near my house. The people there know me, and nobody asks any questions. I order a coffee, and I work for four hours."
               },
               {
                 "speaker": "lucian",
@@ -1421,15 +1526,15 @@
               },
               {
                 "speaker": "mirela",
-                "text": "Read as much as you can, and never throw anything away. Even a bad story can have one good sentence."
+                "text": "Don’t wait until midnight to write, like in the films, you’ll just be tired. And you needn’t show your work to famous authors, they’re busy people. My advice is to read as much as you can, and to keep every page you write, even the bad ones, because one day you may use them."
               },
               {
                 "speaker": "lucian",
-                "text": "Are you planning a new book?"
+                "text": "Tell us about your new book."
               },
               {
                 "speaker": "mirela",
-                "text": "Yes, a mystery set in a lighthouse. I'm only on chapter two, so it's too soon to say more."
+                "text": "It isn’t about the sea, although I did go on a boat for research and I was sick the whole time. And it’s not about a school either, I’ve done that already. It’s a mystery that happens in an old lighthouse, with a keeper who disappears on a stormy night. I won’t tell you more."
               }
             ]
           },
@@ -1443,7 +1548,7 @@
                 "Her mother and father"
               ],
               "answer": 1,
-              "explanation": "She read her stories to her little brother."
+              "explanation": "She says she never showed her parents anything and wrote her first story for her little brother, who listened to every chapter."
             },
             {
               "id": "l4-2",
@@ -1454,7 +1559,7 @@
                 "From her own early childhood"
               ],
               "answer": 1,
-              "explanation": "Ideas come from everywhere: signs, conversations and dreams."
+              "explanation": "Her childhood was ordinary and she tries not to borrow from books; she listens to strangers and watches faces."
             },
             {
               "id": "l4-3",
@@ -1465,7 +1570,7 @@
                 "Annoyed by her many readers"
               ],
               "answer": 0,
-              "explanation": "She is shy and does not enjoy being recognised."
+              "explanation": "She is happy that people enjoy her books but she is shy, so being recognised feels strange."
             },
             {
               "id": "l4-4",
@@ -1476,7 +1581,7 @@
                 "In a café near her home"
               ],
               "answer": 2,
-              "explanation": "She writes in a café near her home."
+              "explanation": "She used to write in the library and tried her bedroom but fell asleep; now she works every morning in a café near her house."
             },
             {
               "id": "l4-5",
@@ -1487,7 +1592,7 @@
                 "Show your work to famous authors"
               ],
               "answer": 1,
-              "explanation": "Read as much as you can and never throw anything away."
+              "explanation": "She says do not write at midnight and do not show work to famous authors; read a lot and keep every page."
             },
             {
               "id": "l4-6",
@@ -1498,7 +1603,7 @@
                 "A school in the mountains"
               ],
               "answer": 0,
-              "explanation": "A mystery set in a lighthouse."
+              "explanation": "The book is not about the sea or a school; it is a mystery in an old lighthouse."
             }
           ]
         }

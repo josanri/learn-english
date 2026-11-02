@@ -250,32 +250,35 @@
               "prompt": "Why did the writer go to the audition?",
               "options": [
                 "She wanted to meet a singer",
-                "Her teacher entered her name",
-                "Friends often told her to try"
+                "Friends often told her to try",
+                "She needed money for lessons",
+                "Her teacher entered her name"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "Her friends had told her for years that she should try."
             },
             {
               "id": "r3-2",
               "prompt": "What was unusual outside?",
               "options": [
-                "Some people were doing tricks",
+                "Famous singers waited in line",
                 "The doors were not open yet",
-                "Judges were giving autographs"
+                "Judges were giving autographs",
+                "Some people were doing tricks"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "Some were dancing, and one man was walking on his hands."
             },
             {
               "id": "r3-3",
               "prompt": "How did she feel before singing?",
               "options": [
-                "Quite bored",
                 "Very nervous",
-                "Rather angry"
+                "Quite bored",
+                "Rather angry",
+                "Very confident"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "Her legs were shaking and her throat was dry."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "She changed the song",
                 "She stopped at once",
-                "She forgot her fear"
+                "She forgot her fear",
+                "She asked for water"
               ],
               "answer": 2,
               "explanation": "After a few seconds, she forgot her fear."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What does she think now?",
               "options": [
-                "She is glad that she went",
                 "She will not try again",
-                "She is angry about the result"
+                "She is glad that she went",
+                "She is angry about the result",
+                "She is sure she will win"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She does not regret it; it was the bravest thing she has done."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Behind the scenes of a talent show",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Talent shows look easy on TV, but a lot of hard work goes on behind the scenes. [1] Months before the show, a team of people starts to look for the best acts.\n\nFirst, thousands of people are invited to audition. [2] Only a small group goes through to the next round, and the rest are told \"thank you\".\n\nThen the acts practise with a coach. [3] The coach helps them to choose the right clothes, the right music and the best moment to start.\n\nOn the night of the live show, everything must be exactly on time. [4] A mistake of even a few seconds can ruin the programme for millions of viewers.\n\nAfter the show, the winners may become famous overnight. [5] Experts say that it takes years of work to build a career in music or dance.",
           "sentences": [
-            "But a TV prize does not always lead to lasting success.",
             "The producers use clocks and screens to check every moment.",
+            "But a TV prize does not always lead to lasting success.",
+            "The programmes often become famous around the world.",
             "It is hard work for the crew, and nobody gets much sleep.",
+            "Some of the judges also work as music teachers.",
             "Each of them performs for just a few minutes in front of the judges.",
             "The first rule is that every minute on stage must be useful.",
-            "The programmes often become famous around the world."
+            "The winner is often chosen by the public, using their phones."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "D",
               "explanation": "It is hard work for the crew, which fits the idea of work behind the scenes."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "F",
               "explanation": "Each of them performs for a few minutes, and the next sentence says only a few go through."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "G",
               "explanation": "The first rule is that every minute counts, and the next sentence gives advice on details."
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "A",
               "explanation": "Producers use clocks and screens; a mistake of a few seconds follows."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "B",
               "explanation": "But a prize does not always lead to lasting success; the next sentence says it takes years."
             }
           ]
@@ -715,37 +722,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Izzy",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What kind of act are you doing at the talent show?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "I am going to juggle with five balls. I have practised for two months."
+                    "text": "Ladies and gentlemen, our next act is Izzy, and I must tell you a little story about her. Yesterday, she told me that she would sing her favourite pop song, but her voice goes strange when she is nervous, so she changed her mind. Then she wanted to tell some jokes, but her brother said that hers were terrible, and she believed him. In the end, she has been practising for a month with three coloured balls. She can keep them in the air for two minutes, and she hasn’t dropped them once in the last week. Please give her a big welcome, and let’s hope for the best!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "What will the girl do?",
+                "prompt": "What will the girl do in the show?",
                 "options": [
                   "Sing a song",
                   "Juggle with balls",
                   "Tell some jokes"
                 ],
                 "answer": 1,
-                "explanation": "She says that she is going to juggle with five balls."
+                "explanation": "She changed her mind about singing and her brother said her jokes were terrible; she has practised for a month with three balls."
               }
             },
             {
@@ -759,24 +754,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Ivor",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "When is the final of the singing contest?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "On Saturday evening at eight, and it will be on television live."
+                    "text": "Good morning, students. This is a reminder about the final of the talent show. We first planned it for Friday afternoon, but that is the day of the school trip, so we had to cancel that idea. After that, we wanted Saturday evening, but the hall is booked for a wedding, so we can’t use it. That leaves Sunday. The final will be on Sunday morning at ten o’clock. The doors open at half past nine, and please remember that all the acts must be at the back of the hall at nine for a short rehearsal. See you then, and good luck!"
                   }
                 ]
               },
@@ -784,12 +767,12 @@
                 "id": "l1-2q",
                 "prompt": "When is the final?",
                 "options": [
-                  "On Saturday evening",
                   "On Friday afternoon",
+                  "On Saturday evening",
                   "On Sunday morning"
                 ],
-                "answer": 0,
-                "explanation": "He says that it is on Saturday evening at eight."
+                "answer": 2,
+                "explanation": "Friday afternoon was cancelled because of the trip and Saturday evening because of a wedding, so the final is on Sunday morning."
               }
             },
             {
@@ -816,11 +799,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you vote for the dancers?"
+                    "text": "Did you vote in the end? I gave my vote to the dancers."
                   },
                   {
                     "speaker": "f",
-                    "text": "No, I voted for the band. Their song was much better, I thought."
+                    "text": "I almost did the same. They were so quick! But my friend says they used a recording, so they didn’t really dance live."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about the magician? Everyone was talking about him."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "He was funny, but the trick with the cards went wrong, so I’m afraid he lost my vote. I gave it to the band. The singer was fantastic."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll be honest, they were a bit loud."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s the point of a band!"
                   }
                 ]
               },
@@ -833,7 +832,7 @@
                   "The magician"
                 ],
                 "answer": 0,
-                "explanation": "She says that she voted for the band."
+                "explanation": "She nearly voted for the dancers but heard they used a recording, and the magician’s trick went wrong; she gave her vote to the band."
               }
             },
             {
@@ -860,11 +859,31 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "You look pale. Are you feeling all right?"
+                    "text": "Hale, you look pale. Are you ill?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I am worried about the audition. I could not sleep last night."
+                    "text": "I’m not ill. I sneezed this morning, but that’s only the dust in my room. And I’m not hungry, I had two big sandwiches at ten."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what is it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I was at the theatre rehearsing until midnight, and then I stayed up with my script. I got hardly any sleep, two hours at the most."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No wonder. Why don’t you go home early?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I might, after the lesson. I have a test at two, and I don’t want to miss it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then drink some coffee, or better, some water, and eat something."
                   }
                 ]
               },
@@ -873,11 +892,11 @@
                 "prompt": "Why does the boy look pale?",
                 "options": [
                   "He has a cold",
-                  "He did not sleep",
+                  "He did not sleep enough",
                   "He is hungry"
                 ],
                 "answer": 1,
-                "explanation": "He says that he could not sleep last night."
+                "explanation": "The sneeze is only dust and he ate two sandwiches; he rehearsed until midnight and had only two hours of sleep."
               }
             },
             {
@@ -891,37 +910,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Izzy",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much are the tickets for the concert?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Twelve pounds each, but students pay only eight."
+                    "text": "Tickets for Saturday’s show are on sale now at the school office. An adult ticket costs twelve pounds, and children under five come in for free. Last year students paid ten pounds, but this year we have a special price. If you show your school card, a student ticket is only eight pounds. You can buy as many as you like for your family, but remember that the hall holds two hundred people, and last year we sold out in two days. So don’t wait, because you will not find any tickets at the door."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "How much do students pay?",
+                "prompt": "How much do students pay for a ticket?",
                 "options": [
                   "Ten pounds",
                   "Twelve pounds",
                   "Eight pounds"
                 ],
                 "answer": 2,
-                "explanation": "She says that students pay only eight pounds."
+                "explanation": "Adults pay twelve and students paid ten last year, but this year the price with a school card is eight pounds."
               }
             },
             {
@@ -948,11 +955,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What do you want to be when you grow up?"
+                    "text": "Jace, you were so good in the school play. Do you want to sing professionally? Your voice is great."
                   },
                   {
                     "speaker": "m",
-                    "text": "A film actor. I have already been in two school plays."
+                    "text": "Thanks. My mum would like that. But I only sing in the shower."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A teacher then? You always help the little kids with their maths homework."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I enjoy that, but I do it because I’m good at maths. It’s not my dream. I want to be on a stage, in front of an audience, saying someone else’s words. I’d love to join the actors at the theatre in town. That’s what I felt in the play."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Well, you have my vote."
                   }
                 ]
               },
@@ -965,7 +984,7 @@
                   "A teacher"
                 ],
                 "answer": 0,
-                "explanation": "He says that he wants to be a film actor."
+                "explanation": "A singer and a teacher are not his dream; he wants to stand on a stage and say other people’s words, like the people at the theatre."
               }
             },
             {
@@ -992,11 +1011,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why did the show finish so late?"
+                    "text": "The show finished at eleven! It was supposed to end at ten."
                   },
                   {
                     "speaker": "f",
-                    "text": "There was a problem with the sound, so everything started an hour late."
+                    "text": "I know. At first I thought the singers took their time, but to be fair they were all quick."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And the judges? They spoke a lot, but just a minute each, I counted."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The real delay was at nine, when the microphones stopped. They tried for twenty minutes to fix the sound before the next act."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh yes, I forgot about that."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Me too, until the lights went off."
                   }
                 ]
               },
@@ -1009,7 +1044,7 @@
                   "The judges talked too much"
                 ],
                 "answer": 1,
-                "explanation": "She says that there was a problem with the sound."
+                "explanation": "The singers were quick and the judges spoke only a minute each; the microphones stopped at nine and they lost twenty minutes."
               }
             }
           ]
@@ -1045,24 +1080,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to the auditions. Please sign your name here and wait on the red chairs."
+                    "text": "I’m so nervous, Jace. My audition is in ten minutes, and I want to change my song."
                   },
                   {
                     "speaker": "m",
-                    "text": "Thank you. How long will I have to wait?"
+                    "text": "To what? You’ve practised the slow one for weeks."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A fast one is more impressive. And the judges might fall asleep with a slow song."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe, but you don’t know the fast one well. You forgot the words twice yesterday. Sing the one you love, the one you can do half asleep."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’re right. I could ask to go tomorrow, but I’d be nervous anyway."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Exactly. Do your slow one."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "What does the boy advise the girl to do?",
                 "options": [
-                  "On a bus",
-                  "In a hospital",
-                  "At an audition"
+                  "Wait for another day",
+                  "Sing the song she knows best",
+                  "Choose a more difficult song"
                 ],
-                "answer": 2,
-                "explanation": "She welcomes him to the auditions and asks him to wait."
+                "answer": 1,
+                "explanation": "He says she forgot the words of the fast one twice and that she was not better prepared tomorrow, so he advises the song she loves."
               }
             },
             {
@@ -1089,24 +1140,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am sure I will forget my words tonight."
+                    "text": "I can’t do it, Ivy. I’ll forget the words on stage and everybody will laugh."
                   },
                   {
                     "speaker": "f",
-                    "text": "Stop worrying. You know them perfectly, and I will be watching from the front row."
+                    "text": "Everybody forgets sometimes. Even actors on television. I was terrified in the school choir, my hands shook, and it always passed after the first minute."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You? I never knew."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Nobody did. That’s the point. You’ve learned your part and you know it very well. If you didn’t feel nervous, it would mean that you don’t care. I would worry if you weren’t."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK. Maybe I should leave the show."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, don’t be silly. You’ll be fine."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does the woman think about the man's worry?",
                 "options": [
-                  "Telling him to leave the show",
-                  "Telling him to stop worrying",
-                  "Asking him to forget the words"
+                  "It is normal and will pass",
+                  "It shows that he is not ready",
+                  "It is a reason to leave the show"
                 ],
-                "answer": 1,
-                "explanation": "She tells him to stop worrying and says that he knows the words."
+                "answer": 0,
+                "explanation": "She says everybody gets nervous, that it passed after a minute for her and that he knows his part; she tells him not to leave."
               }
             },
             {
@@ -1133,24 +1200,32 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "The judges said that my act was the best of the night!"
+                    "text": "Ivor, I’m sorry. I know you wanted to win."
                   },
                   {
                     "speaker": "m",
-                    "text": "That is brilliant! I am so happy for you."
+                    "text": "Honestly, I’m fine. Yes, I practised for months, and I’d be lying if I said I wasn’t a bit disappointed, but only for a minute. The judges were fair. Her voice is much better than mine."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’re not angry about the way they chose?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No way. I gave her a big hug when they said her name. The winner is my friend, and I’m so pleased for her after the year she’s had."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does the man feel about the result?",
                 "options": [
-                  "Happy for the girl",
-                  "Sad about the result",
-                  "Angry with the judges"
+                  "Sad that he lost",
+                  "Angry with the judges",
+                  "Pleased for the winner"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is so happy for her."
+                "answer": 2,
+                "explanation": "He is disappointed for a minute only and thinks the judges were fair; he hugged his friend and is happy for her."
               }
             },
             {
@@ -1177,24 +1252,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Could you turn the music down a bit? I cannot hear myself think."
+                    "text": "Jade, I love that song, but could you...? I’m learning my lines and I can’t hear myself think."
                   },
                   {
                     "speaker": "f",
-                    "text": "Sorry, I did not realise. Is that better?"
+                    "text": "Do you want me to go to another room? I can take my speaker to the kitchen."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, no, stay. It’s your room too. And please don’t change the song. It’s the best part of my day. Just lower the music a little, then I can concentrate."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sure, no problem. Like that?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Perfect. Thanks, Jade. You’re the best flatmate I’ve ever had."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Only because I’m the only one you’ve ever had!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man ask the woman to do?",
+                "prompt": "What does the man want the woman to do?",
                 "options": [
                   "Leave the room",
-                  "Sing a different song",
-                  "Make the music quieter"
+                  "Turn the music down",
+                  "Sing a different song"
                 ],
-                "answer": 2,
-                "explanation": "He asks her to turn the music down."
+                "answer": 1,
+                "explanation": "He does not want her to go to another room or to change the song; he asks her to lower the music so that he can concentrate."
               }
             },
             {
@@ -1221,24 +1312,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "The bus leaves in ten minutes, and we still have to carry the costumes."
+                    "text": "Hale, the bus leaves in ten minutes and the costumes are still on the stage."
                   },
                   {
                     "speaker": "m",
-                    "text": "Come on, then. You take the big bag and I will take the box."
+                    "text": "Shall we try them on again first? The red coat was too tight."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No time. We tried them yesterday, and it can be fixed at the theatre. And if we miss this bus the next one is in an hour."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So we carry everything now?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes. You take the big bag, and I’ll take the boxes. Quick!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wait, where are the keys of the van?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "In my pocket. Come on, the driver doesn’t like waiting."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What will they do next?",
+                "prompt": "What do the friends decide to do first?",
                 "options": [
-                  "Carry the things to the bus",
                   "Try on their costumes",
-                  "Wait for another bus"
+                  "Wait for the next bus",
+                  "Carry everything to the bus"
                 ],
-                "answer": 0,
-                "explanation": "They plan to carry the costumes in time for the bus."
+                "answer": 2,
+                "explanation": "There is no time to try on the costumes and the next bus is in an hour, so they take the bags and the boxes to the bus now."
               }
             },
             {
@@ -1264,25 +1375,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Ivor, you look worried. Are we at the right door?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I have lost my ticket for the show, and the doors close in five minutes."
+                    "text": "Yes, this is the right door, and I’ve got money for the bus home in my wallet. The problem is that my ticket for the show was in my jacket, and I can’t find it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Do not panic. Go to the office, and they will print another one."
+                    "text": "Did you check all your pockets?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Three times. If I’ve lost it, they won’t let me in, because the show is sold out."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let’s ask at the desk. They have your name on the list."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "What is the man worried about?",
                 "options": [
-                  "He has no money for a bus",
-                  "He is in the wrong place",
-                  "He cannot find his ticket"
+                  "Losing his ticket",
+                  "Being in the wrong place",
+                  "Having no money for the bus"
                 ],
-                "answer": 2,
-                "explanation": "He says that he has lost his ticket."
+                "answer": 0,
+                "explanation": "The door is right and he has money; he cannot find his ticket and thinks that they will not let him in."
               }
             }
           ]
@@ -1307,63 +1430,63 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Hello, everyone. I am Isla, and I am in charge of this year's talent show. It will take place on the twentieth of March in the school hall. The doors open at six thirty, and the show begins at seven. Last year, we had fourteen acts, and this year we already have eighteen. Each act can last up to three minutes. There will be three judges: our head teacher, a local singer and a drama teacher. The prize for the winner is a gift card for a music shop, worth fifty pounds. Tickets cost four pounds for adults, and children can get in for two. All the money we raise will go to the children's hospital. If you would like to help backstage, please speak to me after the meeting. We need people to look after the costumes and to run the lights. Thank you, and good luck to all the performers!"
+                "text": "Hello, everyone. I’m Isla, and I’m in charge of this year’s talent show. First, the date. The show takes place on the twentieth of March in the school hall. Please don’t mix it up with the dress rehearsal, which is a week before, on the thirteenth. Last year we held the show in the sports hall, but this time the school hall is better because it has a proper stage. The doors open at half past six, but the show begins at seven, so please arrive early to find a seat. A record number of students wanted to take part. Last year there were twenty-two acts, and the show was far too long. So this year the judges chose eighteen of them. There are singers, dancers, two bands and a boy who plays the violin while he rides a unicycle. To keep the evening short, every act can last up to three minutes. The bands asked for five minutes, but I said no. Now for the tickets. An adult ticket costs four pounds. Children under twelve pay two pounds, and students from our school pay nothing if they show their card. You can buy them in the school office or at the door. Finally, the reason for it all. In the past we used the money for new books for the library, and one year for a school bus. This time we’ll give everything to the children’s hospital in town, because they need toys and games for the young patients. The parents’ group will also sell cakes and tea in the corridor, and they would like some help. So please bring your family and your friends. I hope you’re all as excited as I am. Thank you."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The show takes place on the ___ of March",
+              "prompt": "The date of the show is the ___ of March",
               "answer": "twentieth",
               "accepted": [
                 "20th"
               ],
-              "explanation": "It will take place on the twentieth of March."
+              "explanation": "The rehearsal is on the thirteenth, but the show is on the twentieth."
             },
             {
               "id": "l3-2",
-              "prompt": "The show begins at ___",
+              "prompt": "The first act starts at ___",
               "answer": "seven",
               "accepted": [
                 "7",
                 "seven o'clock"
               ],
-              "explanation": "The show begins at seven."
+              "explanation": "The doors open at half past six, but the show begins at seven."
             },
             {
               "id": "l3-3",
-              "prompt": "This year there are ___ acts",
+              "prompt": "The judges chose ___ acts this year",
               "answer": "eighteen",
               "accepted": [
                 "18"
               ],
-              "explanation": "This year we already have eighteen."
+              "explanation": "Last year there were twenty-two acts, but this year the judges chose eighteen."
             },
             {
               "id": "l3-4",
-              "prompt": "An act can last up to ___ minutes",
+              "prompt": "No act may last longer than ___ minutes",
               "answer": "three",
               "accepted": [
                 "3"
               ],
-              "explanation": "Each act can last up to three minutes."
+              "explanation": "The bands asked for five minutes, but every act can last up to three minutes."
             },
             {
               "id": "l3-5",
-              "prompt": "Adult tickets cost ___ pounds",
+              "prompt": "An adult pays ___ pounds to get in",
               "answer": "four",
               "accepted": [
                 "4"
               ],
-              "explanation": "Tickets cost four pounds for adults."
+              "explanation": "Children pay two pounds and students nothing; an adult ticket costs four pounds."
             },
             {
               "id": "l3-6",
-              "prompt": "The money will go to the children's ___",
+              "prompt": "The money will help sick children at the ___",
               "answer": "hospital",
               "accepted": [],
-              "explanation": "All the money will go to the children's hospital."
+              "explanation": "In the past the money was for the library and a school bus, but this time it goes to the children’s hospital."
             }
           ]
         },
@@ -1395,51 +1518,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Jace, you came second in a TV talent show last year. How did it feel?"
+                "text": "Jace, you became famous very fast. How did that feel?"
               },
               {
                 "speaker": "h",
-                "text": "Amazing, but strange. One week I was a normal student, and the next week strangers wanted my autograph."
+                "text": "Honestly, it was amazing, but it was strange. One week I was a normal student, and the next week people stopped me in the street to take photos. I’m not saying it was boring. I loved the attention, and I wasn’t tired of it, even though the days were long. But it felt like someone else’s life, and sometimes I looked in the mirror and asked who that was."
               },
               {
                 "speaker": "i",
-                "text": "What was the hardest part of the competition?"
+                "text": "What was the hardest part?"
               },
               {
                 "speaker": "h",
-                "text": "Learning a new song every week. We only had three days, so I hardly slept."
+                "text": "Everybody expects the early mornings to be the worst, and I do hate them, six o’clock every day. Meeting famous people was scary the first time, but you get used to it. The real killer was the schedule. Every Monday they gave me a new song, and by Saturday I had to know every word and every note, with the dancing too. I almost never slept on Fridays."
               },
               {
                 "speaker": "i",
-                "text": "Did you make friends with the other contestants?"
+                "text": "What was it like with the other contestants?"
               },
               {
                 "speaker": "h",
-                "text": "Yes, with a lot of them. We lived in the same house, and we helped each other when we were nervous."
+                "text": "It surprised me, because I expected a fight. Some of them were very funny, especially a girl from Wales who did impressions of the judges. And a boy taught me two dance moves, although I’m still bad at it. But what I valued most is that we helped each other. At night someone always had time to sit with you and go through a difficult line."
               },
               {
                 "speaker": "i",
-                "text": "What did you learn from the judges?"
+                "text": "Did the judges give you any useful advice?"
               },
               {
                 "speaker": "h",
-                "text": "To be honest with myself. One of them told me that I was singing to impress people, not to share a feeling. That changed my style."
+                "text": "One of them did, and I’ll never forget it. I was singing a song perfectly, with no mistakes, and she stopped me. She said, \"Jace, I believe your voice, but I don’t feel anything.\" I thought I should choose easier songs, or practise less, but she told me that wasn’t the problem. What mattered was how I share a feeling with the people in the room."
               },
               {
                 "speaker": "i",
-                "text": "What has happened since the show?"
+                "text": "What are you doing next month?"
               },
               {
                 "speaker": "h",
-                "text": "I have recorded my first album, and next month I am going on a tour of small theatres."
+                "text": "I had an offer to be in a film, and I read the script, but I said no, because I can’t act. A university has offered me a place, but I have asked to wait a year. So next month I start a tour of ten theatres, from Glasgow to Plymouth. I’m so excited, I can’t wait."
               },
               {
                 "speaker": "i",
-                "text": "Do you have any advice for people who want to enter?"
+                "text": "What advice would you give to a young person with the same dream?"
               },
               {
                 "speaker": "h",
-                "text": "Do it for the love of music, not for fame. If you enjoy it, you will do your best, and that is all you can ask."
+                "text": "Don’t do it to become famous. That might happen, and it might happen very quickly, but it isn’t a good reason. Listen to the judges, of course, but remember that they are only four people, and you must decide for yourself. Do it for the love of music. If you enjoy singing in your room, you will enjoy it on a big stage."
               }
             ]
           },
@@ -1453,29 +1576,29 @@
                 "He did not like it at all"
               ],
               "answer": 1,
-              "explanation": "He says it was amazing, but strange."
+              "explanation": "He says it was not boring and he was not tired of it; it felt amazing and, at the same time, like somebody else’s life."
             },
             {
               "id": "l4-2",
-              "prompt": "What was the hardest part?",
+              "prompt": "What was the hardest part for Jace?",
               "options": [
                 "Getting up very early",
-                "Learning a new song each week",
-                "Meeting famous people"
+                "Meeting famous people",
+                "Learning a new song each week"
               ],
-              "answer": 1,
-              "explanation": "Learning a new song every week."
+              "answer": 2,
+              "explanation": "He hates the early mornings and was afraid of famous people, but the real problem was a new song every Monday."
             },
             {
               "id": "l4-3",
-              "prompt": "What was good about the other contestants?",
+              "prompt": "Why did Jace value the other contestants?",
               "options": [
                 "They helped each other",
-                "They were all very funny",
+                "They made him laugh",
                 "They taught him to dance"
               ],
               "answer": 0,
-              "explanation": "They helped each other when they were nervous."
+              "explanation": "One was funny and one taught him two moves, but what he valued most was that they helped each other."
             },
             {
               "id": "l4-4",
@@ -1483,32 +1606,32 @@
               "options": [
                 "To choose easier songs",
                 "To practise a little less",
-                "To sing to share a feeling"
+                "To share a feeling when he sings"
               ],
               "answer": 2,
-              "explanation": "To sing to share a feeling and not to impress people."
+              "explanation": "She said that easy songs and less practice were not the problem; he should share a feeling with the audience."
             },
             {
               "id": "l4-5",
               "prompt": "What is he doing next month?",
               "options": [
-                "Starting a university course",
+                "Making a new film",
                 "Going on a tour of theatres",
-                "Making a new film"
+                "Starting a university course"
               ],
               "answer": 1,
-              "explanation": "He is going on a tour of small theatres."
+              "explanation": "He said no to the film and asked the university to wait a year, so he starts a tour of ten theatres."
             },
             {
               "id": "l4-6",
               "prompt": "What advice does he give?",
               "options": [
                 "Do it for the love of music",
-                "Always listen to the judges",
+                "Always follow the judges",
                 "Try to become famous quickly"
               ],
               "answer": 0,
-              "explanation": "Do it for the love of music, not for fame."
+              "explanation": "He says fame is not a good reason and that the judges are only four people; he says to do it for the love of music."
             }
           ]
         }

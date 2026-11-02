@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why did people laugh at the idea?",
               "options": [
+                "The village is small and far away",
+                "The weather there is often cloudy",
                 "The river was too wide to use",
-                "The village had no school or shop",
-                "The village is small and far away"
+                "The village had no school or shop"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "They lived in a valley far from any city."
             },
             {
@@ -261,21 +262,23 @@
               "prompt": "What happened with the village hall?",
               "options": [
                 "It needed a new roof last year",
+                "It closed for repairs in summer",
                 "It makes more power than it needs",
-                "It closed for repairs in summer"
+                "It was built by Mr Brook"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "The hall makes more electricity than it needs."
             },
             {
               "id": "r3-3",
               "prompt": "What did the neighbours say about the turbine?",
               "options": [
-                "They hardly hear it now",
                 "It is far too tall for them",
-                "It spoils the view of the hills"
+                "They want another one built",
+                "It spoils the view of the hills",
+                "They hardly hear it now"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "They now say they hardly hear it."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "How was the river machine paid for?",
               "options": [
                 "By one rich local farmer",
+                "By the villagers together",
                 "By the national government",
-                "By the villagers together"
+                "By a bank loan"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "The villagers paid for it together."
             },
             {
               "id": "r3-5",
               "prompt": "What is done with the extra electricity?",
               "options": [
-                "It is sold to the city",
+                "It is kept for emergencies",
                 "It is stored for winter",
+                "It is sold to the city",
                 "It is given to the school"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "They sell some to the city and use the money to repair the school."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Where does our electricity come from?",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every time we switch on a light, electricity flows to the bulb. But how does it get there? [1] Most of it is made in big power stations far away from our homes.\n\nFor many years, power stations burned coal, oil or gas. [2] This is bad for the planet, because it sends dirty gases into the air.\n\nToday, more and more countries are changing to clean energy. The wind, the sun and moving water never run out. [3] Some countries now make half of their electricity in this way.\n\nBut there are problems. The sun does not shine at night, and the wind does not always blow. [4] This is why scientists are working on better batteries.\n\nWhat can we do? [5] Switching off lights, using less hot water and walking short distances all make a difference.",
           "sentences": [
-            "Small actions by ordinary people add up to a big change.",
-            "We therefore need ways to store energy for later use.",
             "The system of wires that carries it is called the grid.",
-            "The idea is not new, but it has become cheaper in recent years.",
+            "Thomas Edison built one of the first of them in New York in 1882.",
+            "We therefore need ways to store energy for later use.",
             "This kind of fuel will not last for ever.",
-            "Nobody knows exactly when it was invented."
+            "Small actions by ordinary people add up to a big change.",
+            "The idea is not new, but it has become cheaper in recent years.",
+            "Nobody knows exactly when it was invented.",
+            "Some people say that these machines are too ugly."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "A",
               "explanation": "The grid is the system of wires that carries electricity, answering how it gets there."
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "D",
               "explanation": "This kind of fuel will not last for ever; the next sentence says it is bad for the planet."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "F",
               "explanation": "The idea is not new but cheaper recently, and the next sentence says some countries make half their power this way."
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "C",
               "explanation": "We need ways to store energy, which leads to better batteries."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "E",
               "explanation": "Small actions add up, and the next sentence gives examples."
             }
           ]
@@ -719,37 +726,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Faith",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why is it so dark in here?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "The electricity went off ten minutes ago. I think a storm has damaged a cable."
+                    "text": "Hello, this is Martin from Northside Electric with a message for customers on Pine Road. Many of you called this morning because the power went off at about six. First, every bill on the road is paid, so nobody will lose their power. Some people also thought that a street lamp had blown and caused the problem. One of our workers checked it, and the lamp was fine. In fact, the wind and rain last night were so strong that a tree fell on the main cable at the end of the road. After the storm, our team went out at dawn, and they are working there now. We expect the power to be back by lunchtime. Thank you for being patient."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "What has caused the problem?",
+                "prompt": "What caused the power cut?",
                 "options": [
-                  "A broken light bulb",
+                  "A broken street lamp",
                   "A storm",
-                  "An unpaid power bill"
+                  "An unpaid bill"
                 ],
                 "answer": 1,
-                "explanation": "She says that a storm has damaged a cable."
+                "explanation": "The bills are paid and the street lamp was fine; the wind and rain of the storm knocked a tree onto the main cable."
               }
             },
             {
@@ -776,11 +771,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Are you still using that old fridge?"
+                    "text": "Is that a brochure for fridges, Marco? Yours still works, doesn’t it?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, but I am going to buy a new one. It will use half as much power."
+                    "text": "It works fine, yes. But it’s twenty years old, and my electricity bill has gone up again."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So you want a bigger one? You always say it’s too small when the whole family comes for Christmas."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I do say that, but it’s only a few days a year, and I don’t need more space. The shop assistant showed me a silver one and a bright red one. The red one is lovely, but I don’t mind about colour."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then what’s the point of changing it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The new ones are very efficient. I read that I would pay a third less every month."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Well, that’s sensible. Is it expensive?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "More than I wanted, but it pays for itself."
                   }
                 ]
               },
@@ -788,26 +807,18 @@
                 "id": "l1-2q",
                 "prompt": "Why will the man buy a new fridge?",
                 "options": [
-                  "To use less power",
+                  "To use less electricity",
                   "To have more space",
-                  "To get a better colour"
+                  "To choose a nicer colour"
                 ],
                 "answer": 0,
-                "explanation": "He says that the new one will use half as much power."
+                "explanation": "He says the fridge still works, that Christmas is only a few days and that colour does not matter; he reads that a new one would cost a third less in electricity."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Felix",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Fiona",
@@ -819,25 +830,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Where is the nearest charging point for electric cars?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Behind the supermarket, next to the bus stop."
+                    "text": "Welcome to Greenfield town centre. If you drive an electric car, you can charge it for free this month. The old charging point outside the station closed last year, and some visitors still look for it there, but please don’t. People also ask about the cinema, where there is a plan for a new charging point, but the building work doesn’t start until next spring. At the moment, the only place is the new car park behind the supermarket, next to the recycling bins. It has six places and it is open all night. Please remember to bring your own cable, because we don’t lend them. Thank you, and enjoy your visit."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "Where is the charging point?",
+                "prompt": "Where is the charging point for electric cars?",
                 "options": [
                   "Behind the supermarket",
                   "Next to the cinema",
                   "Outside the station"
                 ],
                 "answer": 0,
-                "explanation": "She says that it is behind the supermarket."
+                "explanation": "The station point closed last year and the cinema point is only a plan for next spring, so the only place is the car park behind the supermarket."
               }
             },
             {
@@ -864,11 +871,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What did you do for your science project?"
+                    "text": "How was the science fair, Finn? Did your little brother win anything?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I made a small wind turbine from plastic bottles. It lit up a tiny bulb."
+                    "text": "He got second place! He’s only twelve."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wow. Did he make that solar oven he was talking about in the summer?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That was his first idea, actually. But the weather was bad all August, so it never got hot enough, and he gave up on it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no. And the battery? Somebody told me about a battery project."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That was his friend Leo, who did that one. My brother built a little model from plastic bottles and an old bicycle motor. When you blow on the blades, like the wind does, a tiny bulb comes on."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s clever!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He’s very proud of it. He wants to build a bigger one next year."
                   }
                 ]
               },
@@ -877,11 +908,11 @@
                 "prompt": "What did the boy make?",
                 "options": [
                   "A small solar oven",
-                  "A model wind turbine",
+                  "A wind turbine",
                   "A new type of battery"
                 ],
                 "answer": 1,
-                "explanation": "He says that he made a small wind turbine."
+                "explanation": "The solar oven was his first idea but he gave up, and Leo made the battery; the brother made a model with blades and a motor, which is a wind turbine."
               }
             },
             {
@@ -908,38 +939,54 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Do you walk to school every day?"
+                    "text": "Do you still cycle to college every day, Emma?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Only when it is dry. On rainy days, my mother drives me."
+                    "text": "Most days, yes. I used to take the car on dark evenings, but I bought better lights for my bike, so now it doesn’t bother me."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And what about when it’s freezing? You hate the cold."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I wear thick gloves. I only took the car once or twice in the winter, and that was when I woke up very late and had to hurry."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So you never go by car?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Only when there’s heavy rain. My bag, my books and my laptop get wet, and it isn’t worth it. Then Dad drives me."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That sounds sensible."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, and he never complains, because the college is on his way to work."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "When does the girl go by car?",
+                "prompt": "When does the girl go to college by car?",
                 "options": [
-                  "On cold dark evenings",
-                  "On very late mornings",
-                  "On rainy days"
+                  "When it is cold and dark",
+                  "When she wakes up late",
+                  "When there is heavy rain"
                 ],
                 "answer": 2,
-                "explanation": "She says that on rainy days, her mother drives her."
+                "explanation": "She cycles in the dark with good lights, wears gloves in the cold and only once took the car when late; she goes by car when the rain is heavy."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Fern",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Fabian",
@@ -951,25 +998,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "How long does your phone battery last?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "About two days if I do not play games. With games, only half a day."
+                    "text": "Many phone batteries run down before lunchtime. Many people blame phone calls, but a call uses very little power. Others think that the camera is the problem. It does use some power, especially with the flash, but one photo only takes a second. The real problem is on the screen. When you play games, the picture is bright and moves all the time, and the phone works hard. One hour of playing can use a quarter of your battery. So here is my tip: put a time limit on your games, make the screen a little darker, and you will get home with some power left."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "What makes the battery run down quickly?",
+                "prompt": "What makes the phone battery run down quickly?",
                 "options": [
                   "Playing games",
                   "Making many calls",
                   "Taking many photos"
                 ],
                 "answer": 0,
-                "explanation": "He says that with games, it lasts only half a day."
+                "explanation": "Calls use little power and a photo only takes a second; the bright, moving picture of games works the phone hard."
               }
             },
             {
@@ -995,12 +1038,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "It’s so hot in here. How do I turn on the fan?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Is this switch for the light or the fan?"
+                    "text": "There’s a button on the fan itself, but it’s easier with the wall switch."
                   },
                   {
                     "speaker": "f",
-                    "text": "The light. The fan is the one on the wall, by the door."
+                    "text": "Is that the one next to the window? I can see a switch there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, that one is for the blind. And the one above the sink is for the extractor, which is a different thing and makes a terrible noise."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So where’s the one for the fan?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s in the same place as the light, where you came into the room."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, I see it now. I’d never have found it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Everybody says that."
                   }
                 ]
               },
@@ -1013,7 +1080,7 @@
                   "Above the kitchen sink"
                 ],
                 "answer": 1,
-                "explanation": "She says that the fan switch is on the wall by the door."
+                "explanation": "The window switch is for the blind and the sink switch for the extractor; the fan switch is where the light switch is, at the entrance."
               }
             }
           ]
@@ -1049,24 +1116,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good morning. This is the Green Power Company. How can I help you?"
+                    "text": "Are you really thinking of putting panels on your roof, Finn?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Hello. I would like to ask about the price of solar panels for my house."
+                    "text": "I am. The price scared me at first, I must say. It’s almost eight thousand pounds."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s a lot. And won’t they spoil the look of the house? My neighbours’ roof looks like a big black mirror."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Some people say that, but I don’t care about looks. What matters is that my bills will go down for twenty years."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So you’ve done the sums?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes. In nine years I’ll have my money back, and after that the power is free. It’s a sensible plan for the long run."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then it makes sense. I might ask for a quote too."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the man ask about?",
+                "prompt": "What does the man think about solar panels?",
                 "options": [
-                  "The cost of a bus ticket",
-                  "The size of a new house",
-                  "The price of solar panels"
+                  "They are too expensive for his family",
+                  "They would make his house ugly",
+                  "They are a good plan for the long term"
                 ],
                 "answer": 2,
-                "explanation": "She answers as the Green Power Company and he asks about solar panels."
+                "explanation": "The price scared him at first and he does not care about looks, but he has done the sums and will get his money back in nine years."
               }
             },
             {
@@ -1093,24 +1180,44 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I think I have broken the toaster. There was a loud bang!"
+                    "text": "My toaster is making a funny smell. I think I’ll keep using it. It’s only a bit of smoke."
                   },
                   {
                     "speaker": "f",
-                    "text": "Do not touch it! Switch off the power first, then we will look at it."
+                    "text": "A bit of smoke? Please don’t. Switch it off at the wall and pull out the plug."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "But it only needs cleaning. I could take it apart and wash it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I wouldn’t. The wires are probably old and it could catch fire. Don’t take the risk."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A new one costs thirty pounds, though. I hate wasting money on something that still works."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Honestly, I’d rather spend thirty pounds than lose my kitchen. My brother tried to repair his, and no shop would touch it afterwards."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK, you’ve convinced me."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does the woman think about the old toaster?",
                 "options": [
-                  "Telling him to buy a new toaster",
-                  "Telling him to switch off the power",
-                  "Asking him to carry it outside"
+                  "It is unsafe to keep",
+                  "It is easy to repair",
+                  "It is worth selling"
                 ],
-                "answer": 1,
-                "explanation": "She tells him not to touch it and to switch off the power first."
+                "answer": 0,
+                "explanation": "She tells him to switch it off, says the wires are old and could catch fire, and prefers to pay for a new one, so she thinks it is dangerous."
               }
             },
             {
@@ -1137,24 +1244,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Our team has won the prize for the best energy idea!"
+                    "text": "Did you hear? Our school team won the energy prize!"
                   },
                   {
                     "speaker": "m",
-                    "text": "That is wonderful news! You have worked so hard for this."
+                    "text": "Really? I voted for the other school, because I thought their idea was better. But the judges chose ours."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Are you disappointed? You’ve been helping them for months."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not at all. To be honest, I didn’t expect them to win with that idea, but they worked so hard all term. Of course the prize money of a thousand pounds is nice, and I won’t pretend that I wouldn’t like it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I guess."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "But I’m not jealous. When I saw the team hold up the cup, I couldn’t stop smiling. I felt so proud, it was a real success. And I’m not tired of the project either. I’d start again tomorrow."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does the man feel about the school team?",
                 "options": [
-                  "Happy for the team",
-                  "Jealous of the prize",
-                  "Tired of the idea"
+                  "Jealous of their prize",
+                  "Proud of their success",
+                  "Bored with the project"
                 ],
-                "answer": 0,
-                "explanation": "He says that it is wonderful news and they have worked hard."
+                "answer": 1,
+                "explanation": "He is not disappointed or jealous of the money and wants to start again, and he cannot stop smiling when the team wins, so he is proud."
               }
             },
             {
@@ -1181,24 +1304,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, do you know how much a ticket to the wind farm costs?"
+                    "text": "Freya, have you ever been to the wind farm on the hill? I’m thinking of going on Saturday."
                   },
                   {
                     "speaker": "f",
-                    "text": "It is free. You only pay for the bus, which is three pounds."
+                    "text": "Once. Is it for your geography project? I remember you have to write about energy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s due in November, so there’s lots of time. No, the school has a photo contest, and the theme is \"Our region\". I think the turbines against the sunset would make a great picture."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Isn’t it a bit far? Your uncle works near there, doesn’t he?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He does, but I’ve seen his office many times, and it’s boring. I just want to take the best photos before the sun goes down."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then go early, because the buses are slow on Saturdays."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want to know?",
+                "prompt": "Why does the boy want to visit the wind farm?",
                 "options": [
-                  "The way to the wind farm",
-                  "The time of the next bus",
-                  "The price of a ticket"
+                  "To take photos for a contest",
+                  "To get ideas for a school project",
+                  "To see where his uncle works"
                 ],
-                "answer": 2,
-                "explanation": "He asks how much a ticket costs."
+                "answer": 0,
+                "explanation": "The project is due in November and he has seen his uncle’s office many times; he wants good pictures of the turbines for the school contest."
               }
             },
             {
@@ -1225,24 +1364,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "The lights in the gym are on again, and nobody is there."
+                    "text": "Finn, I walked past the gym at eleven last night and all the lights were still on."
                   },
                   {
                     "speaker": "m",
-                    "text": "I will turn them off. People forget so easily."
+                    "text": "Again? That must cost a fortune. Shall we write to the head teacher?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She’d say she’s too busy. And she’d send us to the caretaker anyway."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "True. What about changing the bulbs? The LED ones use much less power."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They do, but they cost a lot, and the school has no money this year. Only the caretaker has the keys and the switch. If he turned the lights off when he locks up, it would solve the problem for free."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re right. I’ll catch him tomorrow after school. He’s always in the boiler room at four."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What will the man do next?",
+                "prompt": "What do the two friends agree to do about the gym lights?",
                 "options": [
-                  "Switch off the lights",
-                  "Call the head teacher",
-                  "Close the gym door"
+                  "Write a letter to the head teacher",
+                  "Change the bulbs for new ones",
+                  "Ask the caretaker to switch them off"
                 ],
-                "answer": 0,
-                "explanation": "He says that he will turn them off."
+                "answer": 2,
+                "explanation": "A letter would be passed to the caretaker and new bulbs are too expensive, so they agree that the caretaker should turn them off when he locks up."
               }
             },
             {
@@ -1268,25 +1423,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "You look worried, Felix. Is it the essay?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "My laptop battery is almost dead, and I cannot find the charger."
+                    "text": "No, it’s finished and saved. I even put a copy online. And the screen is fine, I bought a strong case for it last week."
                   },
                   {
                     "speaker": "f",
-                    "text": "You can borrow mine. It is in my bag, in the front pocket."
+                    "text": "So what’s wrong?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My battery is at five per cent, and I left the charger at my cousin’s house. We have the presentation in the morning and I need the laptop for the slides."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Can’t you borrow one?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not easily. The plug is a different shape from the normal ones. I’m just afraid that it will run out of power in the middle of the talk."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I think mine might fit. I’ll look tonight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Please do. You’re a lifesaver."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "What is the boy worried about?",
                 "options": [
-                  "His homework file is lost",
-                  "His screen is broken now",
-                  "He has no charger"
+                  "Losing his essay",
+                  "Running out of power",
+                  "Breaking his screen"
                 ],
-                "answer": 2,
-                "explanation": "He cannot find the charger."
+                "answer": 1,
+                "explanation": "The essay is saved and the screen is protected; what worries him is that the battery will die during the presentation because he has no charger."
               }
             }
           ]
@@ -1311,64 +1490,63 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Welcome to Hill Top Wind Farm. My name is Fiona, and I am an engineer here. The farm was built six years ago, and it has twenty turbines. Each turbine is eighty metres tall, which is about as high as a twenty-storey building. Together they make enough electricity for fifteen thousand homes. The wind blows most strongly in winter, so that is when we make the most power. When there is no wind at all, the blades stop by themselves. We have a team of ten people who check the machines every day. Birds are sometimes a problem, so we have a special camera that can see them and slow the blades down. Today, you will walk around the farm for about one hour. Please stay on the path, and please do not touch the machines. At the end, there is a café with hot drinks and a small shop. Are you ready to start?"
+                "text": "Good morning, everyone, and welcome to Hill Top Wind Farm. My name is Fiona, and I’m one of the engineers here. Before we walk up the hill, let me tell you a few things. The idea was born about ten years ago, when the council started to look for clean energy, but for a long time nothing happened. Building started eight years ago, and the farm opened six years ago, which is quite fast for a project of this size. Originally, we planned twenty-four turbines, but some neighbours complained, so there are twenty of them today. You can see them on the ridge behind me. Each one is taller than you think. The tower alone is sixty metres, but when you add the blades, the whole thing reaches eighty metres, as high as a twenty-storey building. Now, the question that most people ask: how much power do we make? Last year the farm produced enough electricity for fifteen thousand homes. The year before, it was only nine thousand, because there was less wind and one turbine was being repaired. Many visitors imagine that summer is our best season, and it’s true that we get lovely days then. But the wind is strongest in winter, and that is when we make the most power. Autumn comes second, with storms, but sometimes they are too strong, and then we have to stop the turbines for safety. Finally, a word about our visit. There is a path from here to the top. The full circle takes two hours, but today we’ll take the short route, which takes about one hour, and that includes a break at the viewpoint. Please wear strong shoes, because the ground is wet. If you have questions, ask me on the way. Shall we go?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The farm was built ___ years ago",
+              "prompt": "The farm started to work ___ years ago",
               "answer": "six",
+              "explanation": "Building started eight years ago and the farm opened six years ago; the idea was ten years ago.",
               "accepted": [
                 "6"
-              ],
-              "explanation": "The farm was built six years ago."
+              ]
             },
             {
               "id": "l3-2",
-              "prompt": "It has ___ turbines",
+              "prompt": "Today the farm has ___ turbines",
               "answer": "twenty",
+              "explanation": "Twenty-four were planned, but because of complaints there are twenty.",
               "accepted": [
                 "20"
-              ],
-              "explanation": "It has twenty turbines."
+              ]
             },
             {
               "id": "l3-3",
-              "prompt": "Each turbine is ___ metres tall",
+              "prompt": "Counting the blades, a turbine reaches ___ metres",
               "answer": "eighty",
+              "explanation": "The tower alone is sixty metres; with the blades the total is eighty.",
               "accepted": [
                 "80"
-              ],
-              "explanation": "Each turbine is eighty metres tall."
+              ]
             },
             {
               "id": "l3-4",
-              "prompt": "The farm makes power for ___ homes",
+              "prompt": "Last year the farm supplied ___ homes with electricity",
               "answer": "fifteen thousand",
+              "explanation": "Last year fifteen thousand homes; the year before it was nine thousand.",
               "accepted": [
                 "15,000",
                 "15000"
-              ],
-              "explanation": "Enough electricity for fifteen thousand homes."
+              ]
             },
             {
               "id": "l3-5",
-              "prompt": "The wind is strongest in ___",
+              "prompt": "The strongest wind blows in ___",
               "answer": "winter",
-              "accepted": [],
-              "explanation": "The wind blows most strongly in winter."
+              "explanation": "Summer has lovely days and autumn has storms that are too strong, but the wind is strongest in winter."
             },
             {
               "id": "l3-6",
-              "prompt": "The walk takes about ___ hour",
+              "prompt": "Today's walk lasts about ___ hour",
               "answer": "one",
+              "explanation": "The full circle takes two hours, but the short route is about one hour.",
               "accepted": [
                 "1",
                 "an"
-              ],
-              "explanation": "You will walk around the farm for about one hour."
+              ]
             }
           ]
         },
@@ -1400,51 +1578,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Fabian, you are an electrician. Why did you choose this job?"
+                "text": "Fabian, how did you become an electrician?"
               },
               {
                 "speaker": "h",
-                "text": "I have always liked solving problems. When something stops working, I want to find out why. It is like being a detective."
+                "text": "Well, my father was one, and people always think I just followed him. He did take me to jobs at the weekend, and I enjoyed it. But honestly, that wasn’t the main thing. I’ll admit that the money is decent, though a few of my friends earn more in offices. What really got me was the first time I fixed a fault by myself. It was a bedroom where nothing worked, and after two hours I found a loose wire. It felt like solving a puzzle, and I wanted that feeling every day."
               },
               {
                 "speaker": "i",
-                "text": "What does a normal day look like?"
+                "text": "What kind of work do you do now?"
               },
               {
                 "speaker": "h",
-                "text": "I visit about four houses. I fix broken sockets, put in new lights and sometimes help people to fit solar panels on their roofs."
+                "text": "In the past I mostly fixed sockets and lights, and sometimes I helped on building sites with new houses, but builders have their own teams for that now. I do paint a wall after I put in new cables, to leave the room tidy, but I always say it’s not my job. The big change is the sun. Every month more families ask me to put panels on their roof and connect them to the house, and it keeps me very busy."
               },
               {
                 "speaker": "i",
-                "text": "Is the job dangerous?"
+                "text": "Is there a golden rule for safety?"
               },
               {
                 "speaker": "h",
-                "text": "It can be if you are careless. The first rule is always to switch off the power. I check three times before I touch a wire."
+                "text": "Always cut the power before you touch anything, and check it with a tester. Rubber gloves are useful, and I wear them for some jobs, but they aren’t the first thing, because a glove can have a hole. A good partner is useful too. I sometimes work with my apprentice, but even alone I follow the rule, even when I’m in a hurry."
               },
               {
                 "speaker": "i",
-                "text": "What is the strangest problem you have had?"
+                "text": "Tell me about a strange problem that you solved."
               },
               {
                 "speaker": "h",
-                "text": "A family called me because their lights flickered at night. In the end, I found that a mouse had eaten part of a cable."
+                "text": "Last winter a woman called me because her lights flickered every evening. She had changed all the bulbs, even though they were new. Everybody thought it was the storm, because it began after a big one, but the wiring in the house was fine. In the end, I looked in the loft and found a cable with teeth marks. A mouse had chewed it. She laughed and said she would have preferred a storm."
               },
               {
                 "speaker": "i",
-                "text": "Is it hard to learn?"
+                "text": "How long does it take to learn the job?"
               },
               {
                 "speaker": "h",
-                "text": "It takes about four years of study and practice. But the work is steady, and good electricians are always needed."
+                "text": "Some people think a one-year course is enough. You can learn the basics, yes, but you won’t be safe. Others tell me about ten years, which is the time to become a real expert. That’s true for me, but nobody needs it to start. The usual way is about four years: college, training with a company and then an exam."
               },
               {
                 "speaker": "i",
-                "text": "What advice do you have for young people?"
+                "text": "What would you say to a teenager who wants to do it?"
               },
               {
                 "speaker": "h",
-                "text": "Learn the basics at school, especially mathematics, and never be afraid to ask questions. Safety comes first."
+                "text": "Study mathematics. Some people say history is useful because you learn to read long documents, and others say music helps your ear for the job, but that’s nonsense. The real reason is the numbers. You calculate how much power a cable can take and how long a cable you need. I do these sums every day. It isn’t easy for everybody, I know, but it pays off."
               }
             ]
           },
@@ -1458,62 +1636,62 @@
                 "He wanted to earn a lot"
               ],
               "answer": 1,
-              "explanation": "He has always liked solving problems."
+              "explanation": "His father was an electrician and the money is decent, but the main thing was the feeling of solving a puzzle by himself."
             },
             {
               "id": "l4-2",
-              "prompt": "What does he sometimes help people with?",
+              "prompt": "What does Fabian do more and more often?",
               "options": [
                 "Building new houses",
-                "Fitting solar panels",
-                "Painting the walls"
+                "Painting the walls",
+                "Fitting solar panels"
               ],
-              "answer": 1,
-              "explanation": "He sometimes helps people to fit solar panels on their roofs."
+              "answer": 2,
+              "explanation": "Builders have their own teams and painting is not his job; more families ask him to put panels on the roof."
             },
             {
               "id": "l4-3",
               "prompt": "What is the first rule of safety?",
               "options": [
                 "Switch off the power",
-                "Wear thick rubber gloves",
-                "Work with a good friend"
+                "Wear rubber gloves",
+                "Work with a partner"
               ],
               "answer": 0,
-              "explanation": "The first rule is always to switch off the power."
+              "explanation": "Gloves and a partner are useful but not first; he always cuts the power before touching anything."
             },
             {
               "id": "l4-4",
               "prompt": "What caused the flickering lights?",
               "options": [
-                "A bulb was very old indeed",
-                "A storm had hit the house",
-                "A mouse had eaten a cable"
+                "An old bulb",
+                "A storm outside",
+                "A mouse in the loft"
               ],
               "answer": 2,
-              "explanation": "A mouse had eaten part of a cable."
+              "explanation": "The bulbs were new and the wiring was fine despite the storm; a mouse had chewed a cable in the loft."
             },
             {
               "id": "l4-5",
-              "prompt": "How long does it take to learn?",
+              "prompt": "How long does it take to learn the job?",
               "options": [
-                "About one single year",
+                "About one year",
                 "About four years",
-                "About ten long years"
+                "About ten years"
               ],
               "answer": 1,
-              "explanation": "It takes about four years of study and practice."
+              "explanation": "One year gives only the basics and ten years makes an expert; the usual way is about four years."
             },
             {
               "id": "l4-6",
-              "prompt": "What subject does he recommend?",
+              "prompt": "Why does Fabian advise teenagers to study mathematics?",
               "options": [
-                "Mathematics",
-                "History",
-                "Music"
+                "It helps with calculations at work",
+                "It teaches you to read documents",
+                "It improves your ear for music"
               ],
               "answer": 0,
-              "explanation": "Learn the basics at school, especially mathematics."
+              "explanation": "History and music are not the reason; he does sums every day to know how much power a cable takes and how long it must be."
             }
           ]
         }

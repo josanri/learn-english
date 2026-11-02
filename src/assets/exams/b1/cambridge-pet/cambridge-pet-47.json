@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "What was the writer's plan in town?",
               "options": [
+                "To buy a present for his mother",
                 "To meet his mother in a café",
-                "To visit friends in the library",
-                "To buy a present for his mother"
+                "To return a birthday present",
+                "To visit friends in the library"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He went to buy his mother a birthday present."
             },
             {
@@ -261,21 +262,23 @@
               "prompt": "What did the writer discover in the third shop?",
               "options": [
                 "His phone had stopped working",
+                "His bag had been cut open",
                 "His wallet was missing",
-                "His bag had been cut open"
+                "The scarf was too expensive"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "He put his hand in his pocket and the wallet was not there."
             },
             {
               "id": "r3-3",
               "prompt": "How did the shop assistant react?",
               "options": [
-                "She was kind and patient",
                 "She seemed rather annoyed",
-                "She called the police"
+                "She asked him to leave the shop",
+                "She called the police",
+                "She was kind and patient"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She looked at him kindly and told him to take his time."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "What did the policeman do?",
               "options": [
                 "He gave the writer some money",
-                "He went to look for the wallet",
-                "He took a description of the wallet"
+                "He took a description of the wallet",
+                "He phoned the woman",
+                "He went to look for the wallet"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He wrote down a description and asked for a phone number."
             },
             {
               "id": "r3-5",
               "prompt": "How did the story end?",
               "options": [
-                "A woman returned the wallet",
+                "The shop gave him the scarf free",
                 "The writer bought another wallet",
+                "A woman returned the wallet",
                 "The police found the thief"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "A woman had found the wallet and rang him."
             }
           ]
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "What to do if you lose something",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Everybody loses things from time to time. It might be a key, a phone or a bag. When it happens, the most important thing is to stay calm. [1] Panic makes it harder to think clearly, and you may forget something obvious.\n\nStart by thinking about where you last had the item. [2] Walk the same route again and look carefully, because things are often found in places we have already looked.\n\nIf you lose something on public transport, contact the company straight away. [3] Many companies have a lost property office, and most of them have a website where you can fill in a form.\n\nIf you lose something valuable, like a passport, tell the police. [4] You will be given a number, which you may need later for insurance. [5] Finally, try not to blame yourself, since it happens to everyone.",
           "sentences": [
-            "They will make a note of the details in their report.",
-            "Staff may already have found it and be keeping it safe.",
+            "Some of these are open only on weekdays.",
             "Take a deep breath and sit down for a moment.",
-            "It is also a good idea to ask friends to help you.",
+            "Next time, write your phone number inside your bag.",
+            "Staff may already have found it and be keeping it safe.",
             "Perhaps you took it out of your pocket at the café.",
-            "Next time, write your phone number inside your bag."
+            "That is why it helps to take photos of your passport.",
+            "They will make a note of the details in their report.",
+            "That is why it is better to pay by card."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "B",
               "explanation": "Taking a deep breath matches staying calm, and panic is mentioned next."
             },
             {
@@ -330,17 +337,17 @@
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "D",
               "explanation": "Staff may already have it, which leads to the lost property office."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "G",
               "explanation": "They make a note in their report, and then you receive a number."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "C",
               "explanation": "Writing a phone number inside is a final practical tip, with a closing thought."
             }
           ]
@@ -733,6 +740,22 @@
                   {
                     "speaker": "f",
                     "text": "Go to the lost property office at the station. They are open until one o'clock."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is the office near the bus stop? I don't know this part of the town well, and the police station is closer to my hotel."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, it's inside the station, behind the ticket machines. Don't go to the bus stop or the police station. The staff there will only send you to the office."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What time is it now? I think I have just enough time before it closes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is half past twelve, so hurry. Describe your umbrella to them, and ask if somebody gave it in."
                   }
                 ]
               },
@@ -777,6 +800,22 @@
                   {
                     "speaker": "m",
                     "text": "It is large and green, with a red label on the handle."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is there anything else? We have three large green bags here. Has it got a long zip or a blue pocket?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, the zip is short, and there is no blue pocket. The only special thing is the red label on the handle, with my name on it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let me look in the back. Please wait a moment."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. There are a laptop and a book inside, so I hope you can find it."
                   }
                 ]
               },
@@ -821,6 +860,22 @@
                   {
                     "speaker": "f",
                     "text": "No, I gave it back to you this morning. Check your coat pocket."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh yes, I remember now. But it isn't in my coat pocket. Is it in your bag, or on the table by the door?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I looked there too. Think again. You wore the blue coat yesterday, and it is in the cupboard."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You're right. I will check the pocket of the blue coat."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Hurry, we are going to be late."
                   }
                 ]
               },
@@ -865,6 +920,22 @@
                   {
                     "speaker": "m",
                     "text": "My bike had a puncture, so I had to walk the last two kilometres."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh dear! Have you missed the bus again? Or did you forget the time?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I didn't miss the bus, I came by bike this morning. I didn't forget the time either. It was only the puncture."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Where is your bike now?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "At the repair shop on Mill Road. They will fix it by four, so I can ride home."
                   }
                 ]
               },
@@ -909,6 +980,22 @@
                   {
                     "speaker": "f",
                     "text": "You will have to buy another one, I am afraid. It costs fourteen pounds."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fourteen pounds! That is a lot. Can I go to the office and ask? Maybe somebody found it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can, but it takes a long time, and your train leaves in ten minutes. You will not wait for the next train, either, because it is an hour later."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then I'll buy another one. Can I pay by card?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, just put your card here. Platform three, on the left."
                   }
                 ]
               },
@@ -953,6 +1040,22 @@
                   {
                     "speaker": "m",
                     "text": "Take it back to the shop with your receipt. They should give you another one."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I could mend the hole myself, but I paid sixty pounds, and it is brand new. I shouldn't have to do that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Exactly. And don't buy a cheaper one. Ask for the same jacket in another size, or for your money back."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do I need the bag as well?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Take the bag and the receipt. They'll check the jacket and change it, I'm sure."
                   }
                 ]
               },
@@ -997,6 +1100,22 @@
                   {
                     "speaker": "f",
                     "text": "Have you checked if there is any paper in it? Last time that was the problem."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "There is paper in it. I put in a new pack this morning. And the cable is fine, because the green light is on."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then look at the small screen. Does it show a message?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, it says paper jam on the machine, but I don't know how to open it. The ink is full, I changed it on Monday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Press the blue button and pull out the tray. I'll show you."
                   }
                 ]
               },
@@ -1050,6 +1169,22 @@
                   {
                     "speaker": "m",
                     "text": "I want to report a theft. My bicycle was stolen from outside the library this afternoon."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I'm sorry to hear that. Can you describe the bicycle and say exactly where you left it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It is a red mountain bike, and I locked it to the railing outside the library at two o'clock. When I came out at four, only the lock was there."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. I'm writing everything down. Please tell me your name and your phone number. You don't need to come to the station, because an officer will visit you tomorrow."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you very much. My name is James Moore."
                   }
                 ]
               },
@@ -1094,6 +1229,22 @@
                   {
                     "speaker": "f",
                     "text": "I am sorry. I will send someone to look at it this afternoon."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "This afternoon is too late. I'm going out in the evening, and I want a warm room when I come back. Is there another room I can use?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I understand. We have a free room on the third floor. It is a bit smaller, but the heating works. I'll ask a porter to carry your bags."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That's very kind. This is a lovely hotel, and I don't want to complain too much, but the room really was freezing."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We are so sorry. Breakfast tomorrow is free. There is a school group on the first floor, but they leave early."
                   }
                 ]
               },
@@ -1138,6 +1289,22 @@
                   {
                     "speaker": "m",
                     "text": "I forgive you, do not worry. Just give it to me tomorrow."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you for being so understanding. I read it in two days, and I loved it. I will also give you some money for the damaged cover."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'm not angry, and I don't need any money. The cover was already old. Just bring it tomorrow, and you can borrow the second book of the series."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really? That is very generous of you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not at all. I like to share books with friends who love them."
                   }
                 ]
               },
@@ -1182,6 +1349,18 @@
                   {
                     "speaker": "m",
                     "text": "Not again! I will be late."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The delay will be about twenty minutes. Tickets stay valid, and the platform will not change. We will keep you informed."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Twenty minutes! I have an interview at ten. I must phone the office."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Please do not leave the train. A new ticket is not necessary, and the price is the same. We are very sorry for this delay."
                   }
                 ]
               },
@@ -1226,6 +1405,22 @@
                   {
                     "speaker": "f",
                     "text": "Get a cloth and some water. We must clean it before it dries."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'm sorry, Mum. It was an accident. I was carrying the glass to my room, and I tripped over the dog."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Don't worry. Go to the kitchen and get a cloth, and bring a bowl with cool water. Don't use hot water, because it makes the mark bigger."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do we need to buy a new sofa?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course not! Just clean it carefully. Then you can go to your room and read until dinner."
                   }
                 ]
               },
@@ -1270,6 +1465,22 @@
                   {
                     "speaker": "m",
                     "text": "Come to the desk. I will see if I can find you a seat on another airline."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you so much. I have my ticket, and my luggage is here, but the plane left twenty minutes before I got to the gate. The train was late."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I see. Another airline flies to Lisbon at six this evening. It's more expensive, and you will need to pay the difference."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That's fine. I must be there tonight, because my sister's wedding is tomorrow."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then let's do it now. Show me your passport, please."
                   }
                 ]
               },
@@ -1307,7 +1518,7 @@
             "turns": [
               {
                 "speaker": "agnes",
-                "text": "Hello, and thank you for calling the Central Lost Property Office. My name is Agnes. Our office is on Park Street, next to the post office. We are open from nine until one, Monday to Friday, and we are closed at weekends. When you visit, please bring your passport. You will also need to describe the missing item. The most common items we receive are umbrellas, followed by phones and gloves. We keep everything for thirty days. If you cannot visit us in person, you can send a friend with a letter from you. There is a small charge of three pounds for each item. To check if we have found something, please go to our website and look at the list."
+                "text": "Hello, and thank you for calling the Central Lost Property Office. We receive many calls every day, so please listen to the whole message. My name is Agnes. Our office is on Park Street, next to the post office. The nearest underground station is five minutes' walk away, and several buses stop at the end of the street. We are open from nine until one, Monday to Friday, and we are closed at weekends. We are also closed on public holidays, such as Christmas Day and New Year's Day. When you visit, please bring your passport. We must check who you are, because we only give things to their owners. You will also need to describe the missing item. Tell us the colour, the size, and any marks or labels. The more details you give, the faster we can find it. The most common items we receive are umbrellas, followed by phones and gloves. Last month someone even left a guitar, a wedding dress and a box of tools. We keep everything for thirty days. After that, we give them to charity or sell them, and the money helps people in need. If you cannot visit us in person, you can send a friend with a letter from you. The letter must have your signature, and your friend must also bring their own passport. There is a small charge of three pounds for each item. You can pay by card or in cash, but we cannot accept cheques. To check if we have found something, please go to our website and look at the list. It is updated every morning at eight, and you can also send us an email with a photo."
               }
             ]
           },
@@ -1398,11 +1609,27 @@
               },
               {
                 "speaker": "victor",
+                "text": "Did the parrot make a lot of noise?"
+              },
+              {
+                "speaker": "ingrid",
+                "text": "A lot! It shouted Hello and also whistled like a kettle. One lady thought there was a fire, and she looked for the smoke."
+              },
+              {
+                "speaker": "victor",
                 "text": "What items do people forget most often?"
               },
               {
                 "speaker": "ingrid",
                 "text": "Phones, definitely. People get off in a hurry and leave them on the seat. I probably find three or four a week."
+              },
+              {
+                "speaker": "victor",
+                "text": "Do people come back for their things?"
+              },
+              {
+                "speaker": "ingrid",
+                "text": "Most of them, yes, usually within two days. They are so happy when they get their phones back that some of them give me chocolate."
               },
               {
                 "speaker": "victor",
@@ -1414,11 +1641,27 @@
               },
               {
                 "speaker": "victor",
+                "text": "What about other items, like bags or umbrellas?"
+              },
+              {
+                "speaker": "ingrid",
+                "text": "We keep a big box in the driver's cabin. At the end of the week, everything goes to the central office, and people can collect it there."
+              },
+              {
+                "speaker": "victor",
                 "text": "Have you ever had a difficult day?"
               },
               {
                 "speaker": "ingrid",
                 "text": "In winter, when it snowed heavily and the road was closed. I had thirty passengers who were late for work and very unhappy."
+              },
+              {
+                "speaker": "victor",
+                "text": "How did you get home that day?"
+              },
+              {
+                "speaker": "ingrid",
+                "text": "I didn't! The company gave me a hotel room, and I slept for twelve hours. It was the best sleep of my life."
               },
               {
                 "speaker": "victor",
@@ -1430,11 +1673,35 @@
               },
               {
                 "speaker": "victor",
+                "text": "Do you have any favourite routes?"
+              },
+              {
+                "speaker": "ingrid",
+                "text": "The coast road in summer, with the sea on one side and the hills on the other. Sometimes I stop for one minute so passengers can take photos."
+              },
+              {
+                "speaker": "victor",
                 "text": "Is there anything you would change?"
               },
               {
                 "speaker": "ingrid",
                 "text": "The early starts. I get up at four, and it is dark and cold. But I still love it, to be honest."
+              },
+              {
+                "speaker": "victor",
+                "text": "Would you recommend the job?"
+              },
+              {
+                "speaker": "ingrid",
+                "text": "Yes, if you like people and you are patient. You learn to be calm, even when the traffic is terrible."
+              },
+              {
+                "speaker": "victor",
+                "text": "What do you do on your days off?"
+              },
+              {
+                "speaker": "ingrid",
+                "text": "I drive nowhere! I walk in the park with my dog and visit my sister, who lives in the next town. She drives me, and I sit in the back."
               }
             ]
           },

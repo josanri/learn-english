@@ -251,6 +251,7 @@
               "options": [
                 "It is the best job in the world",
                 "It is too difficult for most people",
+                "It is easier than it looks",
                 "It takes him away from the family"
               ],
               "answer": 0,
@@ -260,11 +261,12 @@
               "id": "r3-2",
               "prompt": "How was the bridge built?",
               "options": [
+                "Using stones from the old castle",
                 "By a team of foreign engineers",
                 "With the help of big machines",
                 "By workers who carried the stones"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "Workers carried every stone by hand, without any machines."
             },
             {
@@ -272,10 +274,11 @@
               "prompt": "What do some children do in the summer?",
               "options": [
                 "They swim near the arches",
+                "They jump from the bridge wall",
                 "They take photographs of tourists",
-                "They jump from the bridge wall"
+                "They fish from the arches"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "Children jump into the river from its low wall."
             },
             {
@@ -283,10 +286,11 @@
               "prompt": "What happened to the bridge during the flood?",
               "options": [
                 "It lost one of its arches",
+                "It was closed for a long time",
                 "It was not damaged at all",
-                "It was closed for a long time"
+                "The river water went over it"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "It survived without a single crack."
             },
             {
@@ -294,6 +298,7 @@
               "prompt": "What did the writer say in her school work?",
               "options": [
                 "Old bridges are stronger than they look",
+                "Rivers should never be built on",
                 "Floods are a great danger to towns",
                 "Engineers should use more stone"
               ],
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "The race to the sky",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "For hundreds of years, the tallest buildings in the world were churches and towers. Then, at the end of the nineteenth century, a new kind of building appeared in the United States: the skyscraper. [1] Two things made this possible: steel and the lift.\n\nSteel is much stronger than stone, so builders could make walls that were thinner and higher. [2] Before that invention, nobody wanted to live or work on the tenth floor, because the stairs were too tiring.\n\nSoon, cities around the world began to compete. [3] Each new tower was taller than the last, and people loved to watch the cranes lift the steel high above the streets.\n\nToday, the tallest skyscraper is more than eight hundred metres high. [4] It has more than a hundred and sixty floors, and the lift to the top takes about a minute.\n\nOf course, tall buildings use a lot of energy. [5] Because of this, many architects now design towers with plants on the walls and solar panels on the roof.",
           "sentences": [
             "The first examples were only about ten floors high.",
+            "This has become a serious worry for the planet.",
+            "They were popular with tourists from the very beginning.",
+            "Some towers sway a little in strong winds, but they are safe.",
             "The lift was just as important, because it carried people up quickly.",
-            "It is so tall that, on a clear day, it can be seen from a hundred kilometres away.",
             "Paris, London and Dubai all wanted the highest tower.",
             "People who live in cold climates prefer small houses.",
-            "This has become a serious worry for the planet."
+            "It is so tall that, on a clear day, it can be seen from a hundred kilometres away."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "E",
               "explanation": "The lift carried people up quickly, and the next sentence says nobody wanted to live on the tenth floor before."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "F",
               "explanation": "Paris, London and Dubai wanted the highest tower, which describes cities competing."
             },
             {
               "id": "r4-4",
-              "answer": "C",
+              "answer": "H",
               "explanation": "The sentence about being seen from a hundred kilometres away describes the very tall skyscraper."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "B",
               "explanation": "The worry for the planet follows the energy use, and the next sentence says architects now use plants and solar panels."
             }
           ]
@@ -716,37 +723,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Elara",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How high is the new tower?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Two hundred metres, which is almost twice as high as the old one."
+                    "text": "Good afternoon, and thank you for coming to this meeting about the new tower by the harbour. First, a few facts. The old water tower, which will come down in March, is about a hundred metres high. The architects first drew a tower of four hundred metres, which would have been the tallest in the country, but the airport said no, because planes fly nearby, and the cost was enormous. So the council chose a smaller version. It will be exactly two hundred metres tall, with a restaurant at the top and a viewing platform for visitors. Building starts in the autumn. Now, I’ll take your questions."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "How high is the new tower?",
+                "prompt": "How high will the new tower be?",
                 "options": [
                   "A hundred metres",
                   "Two hundred metres",
                   "Four hundred metres"
                 ],
                 "answer": 1,
-                "explanation": "She says that it is two hundred metres."
+                "explanation": "The old tower is a hundred metres and the first plan of four hundred was refused; the final tower will be two hundred metres."
               }
             },
             {
@@ -773,38 +768,50 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Is there a lift in the old castle?"
+                    "text": "Are you coming to the castle tomorrow, Emeric?"
                   },
                   {
                     "speaker": "m",
-                    "text": "No, but there are three hundred steps, and the view from the top is worth it."
+                    "text": "I’ve been there already. Be ready for a long climb. There are three hundred steps to the top, and I counted every one of them."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I read that the lift is out of order."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It was last week, but they’ve repaired it. I took it on the way down, and it’s very slow."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And what about the weather? The forecast says cloudy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It said that for me too, but the sky was clear and the view was amazing."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I’ll wear sports shoes and take a bottle of water, because I get thirsty when I climb."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "What does the man say about the castle?",
+                "prompt": "What does the man warn the woman about at the castle?",
                 "options": [
-                  "There are three hundred steps",
-                  "The lift is out of order",
-                  "The view is rather poor"
+                  "A long climb",
+                  "A broken lift",
+                  "Bad weather"
                 ],
                 "answer": 0,
-                "explanation": "He says there are three hundred steps."
+                "explanation": "The lift was repaired and the weather was clear despite the forecast; what he warns about is the three hundred steps."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Emerson",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Eleni",
@@ -816,25 +823,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Why is the bridge closed this morning?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "There was an accident at six o'clock, and the police are checking the road."
+                    "text": "Good morning, here is your travel news. The old bridge in Riverton is closed to all traffic. Early this morning there was a rumour of an accident, but the police say that nobody was hurt and there was no crash. Workers will paint the bridge next month, but that has not started yet. The real reason is the weather: the wind is so strong, with gusts of eighty kilometres an hour, that it’s not safe for lorries or buses. Drivers should use the south road or the ferry, and allow an extra twenty minutes. We will tell you as soon as the bridge reopens."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "Why is the bridge closed?",
+                "prompt": "Why is the old bridge closed today?",
                 "options": [
-                  "There was an accident",
-                  "It is being repainted",
-                  "A boat has hit it"
+                  "Someone had an accident",
+                  "The workers are painting it",
+                  "There is too much wind"
                 ],
-                "answer": 0,
-                "explanation": "She says that there was an accident at six o'clock."
+                "answer": 2,
+                "explanation": "The accident was only a rumour and the painting starts next month; the wind is the real reason."
               }
             },
             {
@@ -861,24 +864,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Do you like modern buildings?"
+                    "text": "Why do you always look for old flats, Enzo? New ones have lifts and everything."
                   },
                   {
                     "speaker": "m",
-                    "text": "Some of them, but I prefer old ones, because each has its own story."
+                    "text": "They aren’t cheaper to rent, you know. Old flats in the centre are usually more expensive. And they’re really hard to find, I’ve been looking for months."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So why?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I like to imagine who lived there before. My flat is a hundred years old, and under the paint there was a message written on the wall by a builder. Every building has a little story like that, don’t you think?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Hmm. I’d rather have central heating."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fair enough."
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "Why does the man prefer old buildings?",
+                "prompt": "Why does the man like old buildings?",
                 "options": [
                   "They are cheaper to rent",
                   "Each of them has a story",
                   "They are easier to find"
                 ],
                 "answer": 1,
-                "explanation": "He says that each has its own story."
+                "explanation": "Old flats are expensive and hard to find; he likes them because each has a story, like the message under the paint."
               }
             },
             {
@@ -905,24 +924,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What did you think of the new library?"
+                    "text": "You visited the new library, didn’t you? What did you think?"
                   },
                   {
                     "speaker": "f",
-                    "text": "I loved the glass roof, but the chairs were terribly uncomfortable."
+                    "text": "Some things were great. The size surprised me. I expected it to be small because it looks narrow from outside, but inside it’s huge. And the glass roof is lovely, you can read in the sunlight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Sounds perfect."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Almost. The chairs, though! They’re beautiful but really hard, after an hour my back hurt. I’d bring a cushion."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll take one then."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And a sweater, because the air is quite cold."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "What did the woman not like about the library?",
+                "prompt": "What did the woman not like about the new library?",
                 "options": [
                   "The size",
                   "The roof",
                   "The chairs"
                 ],
                 "answer": 2,
-                "explanation": "She says that the chairs were uncomfortable."
+                "explanation": "She expected it to be small but it is huge, and she loves the roof; her complaint is about the hard chairs."
               }
             },
             {
@@ -936,37 +971,25 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Einar",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "When will the new bridge be ready?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "The engineers say that it will open in the spring, in about six months."
+                    "text": "Hi Tom, it’s Ruth. You asked when the new museum opens. The sign by the gate says summer, but that sign is old. First they said autumn, last year, you remember. Then there was a leak in the roof, and they moved the date to the summer. But I read in the paper yesterday that it will open in spring now, because the builders worked faster than they expected. The dinosaur room will be ready too, and I know your sister wants to see it. Let’s go together in April. Call me when you can. Bye."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "When will the bridge open?",
+                "prompt": "When will the new museum open?",
                 "options": [
                   "In the spring",
                   "In the summer",
                   "In the autumn"
                 ],
                 "answer": 0,
-                "explanation": "He says that it will open in the spring."
+                "explanation": "The sign says summer and the first date was autumn, but both are old; the newspaper says it will open in spring."
               }
             },
             {
@@ -993,24 +1016,32 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Are you going to study architecture at university?"
+                    "text": "Have you chosen your university course, Elara?"
                   },
                   {
                     "speaker": "f",
-                    "text": "I hope so. I have wanted to design houses since I was ten."
+                    "text": "Yes, I send the form tomorrow. I nearly chose art history, because I love museums, but my mum says there are no jobs. And my dad wants me to study engineering, because I’m good at maths. He says I could build roads and bridges."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And you don’t agree?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I don’t want to spend my life next to a motorway. I want to design houses that people really enjoy living in, with big windows and gardens. So I applied to the building design course in Leeds."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "What does the woman want to do?",
+                "prompt": "What does the woman want to study at university?",
                 "options": [
-                  "Teach art",
-                  "Design houses",
-                  "Build roads"
+                  "Art history",
+                  "Building design",
+                  "Engineering"
                 ],
                 "answer": 1,
-                "explanation": "She says that she has wanted to design houses since she was ten."
+                "explanation": "She nearly chose art history and her father suggested engineering, but she wants to design houses, so she chose architecture."
               }
             }
           ]
@@ -1046,24 +1077,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to the Sky Tower. Please take the lift on the left to the viewing platform."
+                    "text": "Have you seen the plan for the new shopping centre? It will be built in the park."
                   },
                   {
                     "speaker": "m",
-                    "text": "Thanks. How long does it take to get to the top?"
+                    "text": "Yes, the council posted it. I know it’ll bring jobs, my cousin is looking for one, but I couldn’t care less about that."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then it’s the traffic?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not really, they’re building a new road. It’s the park. I played football there every Sunday as a boy. They will cut down the oak tree where we put up the goal. It breaks my heart."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I understand, but we need shops."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "We have shops. We don’t have many oak trees."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does this conversation take place?",
+                "prompt": "How does the man feel about the plan for the shopping centre?",
                 "options": [
-                  "In a cinema",
-                  "In a shopping centre",
-                  "In a tall tower"
+                  "Pleased about the jobs",
+                  "Worried about the traffic",
+                  "Sad about losing the old park"
                 ],
                 "answer": 2,
-                "explanation": "The woman welcomes him to the Sky Tower and tells him which lift to take."
+                "explanation": "He does not care about the jobs and the road is planned; he is sad because the park with the oak tree will disappear."
               }
             },
             {
@@ -1090,24 +1137,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I think I am afraid of heights. Look how far down it is!"
+                    "text": "The council wants to knock down the old cinema."
                   },
                   {
                     "speaker": "f",
-                    "text": "Stay calm. Don't look down. Hold my hand, and we will walk slowly together."
+                    "text": "What a waste. The building is beautiful. But nobody goes there; it’s empty."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe we could sell it to a rich company?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They’d just build flats. No, I’d prefer to keep it and make it a library. We don’t have one in this part of town."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great idea. Children could study there after school, and old people could borrow books. Let’s write to the council together, and we can ask our neighbours to sign the letter."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What do the two speakers want to do with the old cinema?",
                 "options": [
-                  "Making a joke about heights",
-                  "Helping the man to feel calm",
-                  "Taking a photo from the top"
+                  "Make it into a library",
+                  "Sell it to a company",
+                  "Knock it down"
                 ],
-                "answer": 1,
-                "explanation": "She tells him not to look down and to hold her hand, so she helps him feel calm."
+                "answer": 0,
+                "explanation": "She rejects the idea of selling it and both dislike the demolition; they agree to ask for a library."
               }
             },
             {
@@ -1133,25 +1192,33 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Lena, do you like the new skyscraper? Everyone says it’s ugly."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "I have just heard that our design for the school hall has won the competition!"
+                    "text": "In the daytime I don’t care for it, it’s just a grey box. But at night, when the lights come on, it’s like a huge lamp over the city. I stop on my way home just to look at it."
                   },
                   {
                     "speaker": "m",
-                    "text": "That is fantastic! All your hard work was worth it. I am delighted."
+                    "text": "But it cost millions. Isn’t that a waste?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe, but the city paid for it with tourist taxes, so I’m not worried about the price. And as for the view, my office window faces the other way, so it doesn’t matter."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "What is the woman's opinion of the new skyscraper?",
                 "options": [
-                  "Delighted about the news",
-                  "Surprised by the prize",
-                  "Worried about the cost"
+                  "It blocks the view from her office",
+                  "It looks impressive at night",
+                  "It cost too much money"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is delighted."
+                "answer": 1,
+                "explanation": "She does not mind the price or the view from her office; she likes the lights at night."
               }
             },
             {
@@ -1178,24 +1245,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, could you tell me the way to the cathedral, please?"
+                    "text": "So you’re moving next week, Marta! Are you happy about leaving the old flat?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. Go over the bridge, and you will see it on your right."
+                    "text": "I’m very happy, I’ve wanted a garden since I was little. I’ll plant tomatoes and herbs."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Aren’t you sad about leaving your friends in this building?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A bit, but it’s only ten minutes by bike and Julia will visit every weekend."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about the neighbours? I heard they have loud parties."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Rumours. I met them yesterday, they were lovely. I can’t wait."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want?",
+                "prompt": "How does the woman feel about moving to a new flat?",
                 "options": [
-                  "A room for the night",
-                  "A ticket for a bus",
-                  "The way to a cathedral"
+                  "Excited about the garden",
+                  "Nervous about the neighbours",
+                  "Sad about leaving her friends"
                 ],
-                "answer": 2,
-                "explanation": "He asks for the way to the cathedral."
+                "answer": 0,
+                "explanation": "The friends are close by and the neighbours are lovely; what makes her happy is the garden."
               }
             },
             {
@@ -1222,24 +1305,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Today, I will explain how engineers decide the best place for a bridge."
+                    "text": "I hear you’re going to build your own house, Dan. Is it cheaper?"
                   },
                   {
                     "speaker": "m",
-                    "text": "That is a good question. I have always wondered about it."
+                    "text": "Not at all. It will probably cost more than buying one. And it’s not about my parents, they live two hours away anyway, and I’m not moving next to them."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then why?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Every house is a compromise. I’ve lived in so many flats where the kitchen is too dark, or the bedroom is too small. This time I’ll draw it myself, with a big kitchen window and a study, exactly as I imagine it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sounds like a lot of work."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe, but it’s my dream."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "Why does Dan want to build his own house?",
                 "options": [
-                  "Explaining a method",
-                  "Making a complaint",
-                  "Asking for advice"
+                  "To save money",
+                  "To live near his parents",
+                  "To get exactly what he wants"
                 ],
-                "answer": 0,
-                "explanation": "She says that she will explain how engineers decide where to put a bridge."
+                "answer": 2,
+                "explanation": "It will cost more and his parents live far away; he wants a kitchen and a study exactly as he imagines them."
               }
             },
             {
@@ -1265,25 +1364,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "How’s the new hotel? It looks so modern."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Oh no! I have left my camera at the top of the tower!"
+                    "text": "It’s beautiful and the room is not small at all. And the bed is like a cloud, I slept for ten hours the first night."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't panic. Let us ask at the information desk."
+                    "text": "So why do you look tired?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The street. It’s right in the middle of the nightlife, and the walls are thin as paper. The music goes on until four. I asked for a different room but they are full."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no. Take earplugs."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. I’ll buy some today."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "Why is the man unhappy at his hotel?",
                 "options": [
-                  "He has hurt his leg",
-                  "He has lost his train ticket",
-                  "He has left his camera behind"
+                  "The room is too small",
+                  "The street is too noisy",
+                  "The bed is uncomfortable"
                 ],
-                "answer": 2,
-                "explanation": "He says that he has left his camera at the top of the tower."
+                "answer": 1,
+                "explanation": "The room is big enough and the bed is great; the problem is the music from the street until four."
               }
             }
           ]
@@ -1308,55 +1423,55 @@
             "turns": [
               {
                 "speaker": "bernice",
-                "text": "Good morning, everyone. Today, I would like to tell you about one of the most famous bridges in the world, the Golden Gate Bridge in San Francisco. It opened in nineteen thirty-seven, after four years of building. The bridge is almost three kilometres long, and its two towers are more than two hundred metres high. You might be surprised to learn that the colour of the bridge is not gold. It is a bright orange-red, which engineers call international orange. The colour was chosen because it is easy to see in the thick fog that often covers the bay. About ten million cars cross the bridge every year, and many tourists walk or ride bicycles over it. Painters work on the bridge all year round to protect it from the salt in the air. If you ever visit, I recommend that you go in the morning, when the views are clearest."
+                "text": "Good morning, everyone. Today I would like to tell you about one of the most famous bridges in the world, the Golden Gate Bridge in San Francisco. Let’s begin with the dates. Work started in nineteen thirty-three, and many people thought the project was impossible. It opened to the public in nineteen thirty-seven, in the month of May. Some books say nineteen thirty-six, but that is when the last part was joined; the opening party was a year later. So, how long did it take? The builders worked for four years, although the plans took even longer, more than ten years of discussions. Now, size. The bridge is long, nearly three kilometres, but what impresses visitors most are the two towers. They are more than two hundred metres high, and when the bridge opened they were the tallest in the world. The cables are even thicker than you imagine, about a metre across. People often ask me about the name. It is called Golden, but it isn’t gold at all. Its colour is a kind of orange-red. Engineers chose it because it looks good against the green hills and the blue sea. The navy wanted black and yellow stripes, but the engineers refused. Another reason for this colour is that it is easy to see in the fog, which covers the bridge on many days, especially in summer. Rain is rare, but fog is common, and ships can see the towers even when the visibility is poor. Finally, let me give you some advice for your visit. Many people go in the afternoon, but the wind is very strong then and the car park is full. Some prefer the evening for the sunset, but it can be cold. I recommend the morning, when it’s quiet, and the light is soft for photographs. Walk across the bridge, it takes about an hour, and bring a warm jacket. Thank you, and enjoy your day."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The bridge opened in nineteen thirty-___",
+              "prompt": "The opening party took place in the year nineteen thirty-___",
               "answer": "seven",
               "accepted": [
                 "7"
               ],
-              "explanation": "It opened in nineteen thirty-seven."
+              "explanation": "Some books say nineteen thirty-six, but the opening party was a year later, in thirty-seven."
             },
             {
               "id": "l3-2",
-              "prompt": "It took ___ years to build",
+              "prompt": "The building work lasted ___ years",
               "answer": "four",
               "accepted": [
                 "4"
               ],
-              "explanation": "After four years of building."
+              "explanation": "The plans took more than ten years, but the builders worked for four years."
             },
             {
               "id": "l3-3",
-              "prompt": "The towers are more than ___ metres high",
+              "prompt": "Each of the two towers is taller than ___ metres",
               "answer": "two hundred",
               "accepted": [
                 "200"
               ],
-              "explanation": "More than two hundred metres high."
+              "explanation": "The bridge is nearly three kilometres long, but the towers are more than two hundred metres high."
             },
             {
               "id": "l3-4",
-              "prompt": "The bridge is painted orange-___",
+              "prompt": "The paint is a shade between orange and ___",
               "answer": "red",
-              "explanation": "It is a bright orange-red."
+              "explanation": "It is not gold and the navy wanted black and yellow, but the colour is orange-red."
             },
             {
               "id": "l3-5",
-              "prompt": "The colour is easy to see in the ___",
+              "prompt": "The colour helps ships to see the towers when there is ___",
               "answer": "fog",
-              "explanation": "Easy to see in the thick fog."
+              "explanation": "Rain is rare; the colour is easy to see in the fog."
             },
             {
               "id": "l3-6",
-              "prompt": "The best time to visit is in the ___",
+              "prompt": "The best part of the day for visitors is the ___",
               "answer": "morning",
-              "explanation": "I recommend that you go in the morning."
+              "explanation": "The afternoon is windy and the evening is cold, so she recommends the morning."
             }
           ]
         },
@@ -1388,51 +1503,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Emeric, you design houses and public buildings. When did you decide to become an architect?"
+                "text": "Emeric, you’re an architect. When did you first become interested in buildings?"
               },
               {
                 "speaker": "a",
-                "text": "When I was ten, I built a model of our house from cardboard. My parents kept it on a shelf for years, and I realised that I wanted to do this for a living."
+                "text": "Very early. When I was ten, my parents took me to see a famous bridge, and everybody was amazed, but honestly I was bored, I only wanted an ice cream. A school project was different: our teacher asked us to draw a plan of the school, and I got a bad mark, ha! But that same year I built a model of our house from cardboard, with every room and a tiny garden. I spent two weeks on it, and it’s still in my mother’s attic."
               },
               {
                 "speaker": "i",
-                "text": "What does an architect do all day?"
+                "text": "What does your day look like? Is it mostly drawing?"
               },
               {
                 "speaker": "a",
-                "text": "A lot of different things. I draw plans, but I also visit building sites, talk to clients and explain my ideas to the builders."
+                "text": "People imagine that, but I draw perhaps two hours a day. Teaching? I tried it at a night school for a year, and I didn’t continue. And I don’t sell land, that’s a different profession. Most of my day I’m talking: to clients about what they want, and to the builders about how to do it. A house is a conversation between many people."
               },
               {
                 "speaker": "i",
-                "text": "What makes a good building?"
+                "text": "Why do you say that a building must be useful before anything else?"
               },
               {
                 "speaker": "a",
-                "text": "It must be useful, safe and beautiful, in that order. If people do not feel happy inside a building, I have not done my job well."
+                "text": "It’s important that it looks beautiful, but to me that comes second. If a building is cheap, that’s good for the owner, but not the first thing. First, it must be useful, because people spend most of their lives inside buildings. A school with dark classrooms is a bad school, however pretty its walls are."
               },
               {
                 "speaker": "i",
-                "text": "What is the most difficult part?"
+                "text": "What do you find hardest in your work?"
               },
               {
                 "speaker": "a",
-                "text": "Money. Clients always want to spend less, and I always want to use better materials. We have to find a balance."
+                "text": "The computers are a pain, a new program every year, but I enjoy learning. Finding clients was hard when I began, now they come to me. The difficult part is money. Clients want more rooms and a lower price, and I have to say no to them. I hate that."
               },
               {
                 "speaker": "i",
-                "text": "Which of your buildings are you proudest of?"
+                "text": "You designed a village school. Why are you proud of it?"
               },
               {
                 "speaker": "a",
-                "text": "A small school in a village in the mountains. The children helped to paint the walls, and now they say that it is theirs."
+                "text": "It didn’t win any prize, and it’s not very tall, just one floor. But the children helped, and that’s what I love. They painted the walls in the corridor with their hands, and now the building belongs to them. When I visit, they show me their favourite corner."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to a young person?"
+                "text": "Finally, what do you advise young people who want to follow your career?"
               },
               {
                 "speaker": "a",
-                "text": "Look around you. Notice doors, windows and streets, and ask yourself why they look the way they do. That is the first lesson."
+                "text": "Don’t think you must study maths all day, though you need some. And you needn’t travel to famous cities at first. Just look carefully at the buildings around you: your street, your school, the bus station. Ask yourself why it’s built that way. That’s how I learned."
               }
             ]
           },
@@ -1446,40 +1561,40 @@
                 "He drew a plan of his school"
               ],
               "answer": 1,
-              "explanation": "He built a model of their house from cardboard."
+              "explanation": "The bridge was boring and the school plan got a bad mark; that year he built a cardboard model of his house."
             },
             {
               "id": "l4-2",
-              "prompt": "What does he do apart from drawing plans?",
+              "prompt": "What does Emeric do apart from drawing plans?",
               "options": [
-                "He works as a teacher at night",
-                "He talks to clients and builders",
-                "He sells land to new families"
+                "He teaches at night",
+                "He sells land to new families",
+                "He talks to clients and builders"
               ],
-              "answer": 1,
-              "explanation": "He visits building sites, talks to clients and explains his ideas to builders."
+              "answer": 2,
+              "explanation": "He drew only two hours a day, taught for just a year and does not sell land; most of his day he talks to clients and builders."
             },
             {
               "id": "l4-3",
-              "prompt": "What is the most important quality of a building?",
+              "prompt": "Why does Emeric think a building must be useful first?",
               "options": [
-                "That it is useful",
-                "That it is beautiful",
-                "That it is cheap"
+                "People spend most of their lives in it",
+                "It saves money for the owner",
+                "It looks better"
               ],
               "answer": 0,
-              "explanation": "It must be useful, safe and beautiful, in that order."
+              "explanation": "Beauty comes second and cheapness is not the first thing; people spend most of their lives inside buildings."
             },
             {
               "id": "l4-4",
-              "prompt": "What is the hardest part of his work?",
+              "prompt": "What does Emeric find hardest in his work?",
               "options": [
                 "Learning new computer programs",
                 "Finding enough clients",
                 "Dealing with money questions"
               ],
               "answer": 2,
-              "explanation": "Money: clients want to spend less and he wants better materials."
+              "explanation": "He enjoys learning programs and clients now come to him; what he hates is saying no about money."
             },
             {
               "id": "l4-5",
@@ -1490,18 +1605,18 @@
                 "It is the tallest in the area"
               ],
               "answer": 1,
-              "explanation": "The children helped to paint the walls and say that it is theirs."
+              "explanation": "It did not win a prize and is only one floor; the children painted the corridor walls, so it belongs to them."
             },
             {
               "id": "l4-6",
               "prompt": "What does he advise young people to do?",
               "options": [
-                "Look carefully at buildings around them",
-                "Study mathematics all day",
+                "Look carefully at the buildings around them",
+                "Study maths all day",
                 "Travel to famous cities"
               ],
               "answer": 0,
-              "explanation": "Look around you; notice doors, windows and streets."
+              "explanation": "He says maths all day and famous cities are not needed; he tells them to look carefully at nearby buildings."
             }
           ]
         }

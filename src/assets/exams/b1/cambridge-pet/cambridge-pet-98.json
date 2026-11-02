@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "How did the writer feel the first time?",
               "options": [
-                "Frightened",
+                "Angry and embarrassed",
                 "Bored and tired",
-                "Delighted and proud"
+                "Delighted and proud",
+                "Frightened"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She was terrified."
             },
             {
               "id": "r3-2",
               "prompt": "What did her aunt tell her to do?",
               "options": [
+                "Hold the rope tightly",
                 "Breathe slowly",
                 "Sit very quietly",
                 "Run away fast"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Her aunt told her to breathe slowly and stroke Bella's neck."
             },
             {
@@ -273,7 +275,8 @@
               "options": [
                 "Goodbye",
                 "Hunger",
-                "Hello"
+                "Hello",
+                "Thanks"
               ],
               "answer": 2,
               "explanation": "Her aunt said it meant \"hello\"."
@@ -282,22 +285,24 @@
               "id": "r3-4",
               "prompt": "What happened one afternoon?",
               "options": [
+                "She fell off",
+                "She learned to gallop",
                 "She got lost",
-                "She won a race",
-                "She fell off"
+                "She won a race"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Bella stopped suddenly, and she fell off."
             },
             {
               "id": "r3-5",
               "prompt": "What did Bella teach her?",
               "options": [
+                "Riders must never cry",
                 "Horses are hard to love",
-                "Bravery is not lack of fear",
-                "Falling is always painful"
+                "Falling is always painful",
+                "Bravery is not lack of fear"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "Being brave is not the same as not being afraid."
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "Horses in history",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Horses have lived beside people for about six thousand years. [1] The first people to ride them probably lived on the grasslands of Central Asia.\n\nAt first, horses were used for food, but later, people discovered how strong they were. [2] A horse could pull a plough, a cart or even a heavy gun.\n\nIn battles, soldiers on horseback could move much faster than soldiers on foot. [3] For hundreds of years, armies depended on horses to carry messages and supplies.\n\nOn farms, horses worked hard until the twentieth century. [4] When tractors arrived, the number of working horses fell quickly.\n\nToday, horses are mainly kept for sport and pleasure. [5] There are thousands of riding clubs around the world, and many people say that a horse is the best friend they have ever had.",
           "sentences": [
-            "This gave their owners a great advantage.",
-            "Their strong backs and legs made them useful for many jobs.",
-            "Nobody is sure exactly when this began.",
             "Then, things began to change.",
-            "They are no longer needed for heavy work.",
-            "Cats and dogs were kept in houses."
+            "Cats and dogs were kept in houses.",
+            "Nobody is sure exactly when this began.",
+            "Their strong backs and legs made them useful for many jobs.",
+            "This gave their owners a great advantage.",
+            "My uncle trains them every morning before breakfast.",
+            "Donkeys and camels were more useful in dry countries.",
+            "They are no longer needed for heavy work."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "D",
               "explanation": "Their strong backs and legs made them useful; the next sentence gives jobs such as pulling a plough."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "E",
               "explanation": "This gave their owners a great advantage; the next sentence says armies depended on horses."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "A",
               "explanation": "Then things began to change; the next sentence says what happened when tractors arrived."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "H",
               "explanation": "Horses are no longer needed for heavy work; the next sentence says there are riding clubs."
             }
           ]
@@ -734,6 +741,22 @@
                   {
                     "speaker": "b",
                     "text": "Thunder. He is black, with a white mark on his nose."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thunder is a great name. Is he brown like most horses? Or white like the horse in my picture book?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, he is black all over, except for the white mark on his nose. When I got him, he was very shy, but now he follows me everywhere."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "How old is he?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Six years old. He eats three apples every day, and he loves carrots."
                   }
                 ]
               },
@@ -778,6 +801,22 @@
                   {
                     "speaker": "b",
                     "text": "Twice a week, on Tuesdays and Saturdays."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Tuesdays and Saturdays? Not Mondays and Fridays? I thought that your lessons were at the beginning and end of the week."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, my lessons are on Tuesdays and Saturdays. On Sundays I go to my grandmother's house, so I never ride in the mornings that day."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "How long is each lesson?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "One hour. I learn to jump, and next month we will go on a ride in the hills."
                   }
                 ]
               },
@@ -822,6 +861,22 @@
                   {
                     "speaker": "b",
                     "text": "Very costly. Food, vet bills and stable costs add up to hundreds each month."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Hundreds a month! That is more than my father earns in a week. I thought horses were cheap, or almost free, because they eat grass."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "They do eat grass, but in winter they need hay, and they need special food. Then there are the vet bills and the shoes for their feet. It is a big job."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then I will wait. Maybe I will just take lessons."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That is a good idea. Many people love horses without owning one."
                   }
                 ]
               },
@@ -866,6 +921,22 @@
                   {
                     "speaker": "b",
                     "text": "Yes, but hold your hand flat so that he does not bite your fingers."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Should I throw it to him, or cut it small? I do not want to hurt him."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Do not throw it, and do not cut it. Just put it on the palm of your hand, with your fingers flat, and keep your hand open. He will take it gently with his lips."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Like this? Oh, it tickles!"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Well done. He likes you. Stroke his neck now, slowly."
                   }
                 ]
               },
@@ -910,6 +981,22 @@
                   {
                     "speaker": "b",
                     "text": "In the tack room, on the second hook from the door."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it in the car, or on the floor? I looked there, but I did not see it. I am sure I put it near the door yesterday."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It is on a hook, not on the floor and not in the car. The second hook from the door, under the red blanket. The bridle is on the first one."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Found it! It is heavy. Can you help me carry it to the stable?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course. Let us put it on Thunder first. He is waiting."
                   }
                 ]
               },
@@ -954,6 +1041,22 @@
                   {
                     "speaker": "b",
                     "text": "No, I came second. The winner was a girl called Mia."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Second! That is wonderful. Were you first for most of the race? Or were you third from last?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I was fourth for most of the race, but in the last turn I passed two horses. Mia was too far ahead. I was so close, only half a second behind."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You should be very proud. Next time you will win."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I hope so. Mia is very good, but I am practising every day."
                   }
                 ]
               },
@@ -998,6 +1101,22 @@
                   {
                     "speaker": "b",
                     "text": "It is the rule at our riding school, and it can save your life."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Does it look cool? In my day we had hats, and nobody wore a helmet."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It does not look cool, and it is warm, too warm in summer. But it is a rule, and nobody can ride without one. Last year, a girl fell off, and the helmet saved her head."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You are right. Safety is more important than fashion."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "My teacher says the same. She checks the helmets every morning."
                   }
                 ]
               },
@@ -1051,6 +1170,22 @@
                   {
                     "speaker": "b",
                     "text": "We have a beginners' group on Sunday mornings."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Sunday mornings are perfect for us. I am not looking for a job at the stables, and I do not want to buy a horse today. I only want a lesson for her."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Wonderful. The group has six children, and the teacher is very patient. The first lesson is on a quiet pony called Daisy."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "What does she need to bring?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "A pair of boots, long trousers and a warm jacket. We lend helmets, which are included in the price."
                   }
                 ]
               },
@@ -1095,6 +1230,22 @@
                   {
                     "speaker": "b",
                     "text": "Sorry, I will close it at once."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you. Horses do not like sudden movements or colours. It is not the rain that scares him, it is the umbrella opening."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I did not know that. The ground is wet, and I wanted to stay dry. I will leave it in the car."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good idea. Come here, and speak softly. He will relax in a minute."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Hello, beautiful. I am sorry I scared you."
                   }
                 ]
               },
@@ -1139,6 +1290,22 @@
                   {
                     "speaker": "b",
                     "text": "I will call the vet right away."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Please be quick. He is putting very little weight on it. Should we wash the horse or take a photo for the doctor? I think we should not touch the leg."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, do not wash it, and do not take photos now. Keep him calm and still. I will phone the vet, and she can be here in twenty minutes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I will stay with him and give him some water."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good. I will also ask the manager to close the arena, so nobody comes near."
                   }
                 ]
               },
@@ -1183,6 +1350,22 @@
                   {
                     "speaker": "b",
                     "text": "Can we stroke the foals?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, but only with an adult next to you, and only if the mother horse is calm. These are not homework or test results, they are rules for your safety. Please listen carefully."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "What should we do if a horse comes close to the fence?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Stay calm and do not run or shout. Horses are big animals, and sudden noises can frighten them. And never feed them without asking."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I understand. I will tell my friends."
                   }
                 ]
               },
@@ -1227,6 +1410,22 @@
                   {
                     "speaker": "b",
                     "text": "Take the number nine bus. It stops right outside the main gate."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you. I do not need prices of lessons or times of the buses, only the right bus. Does it run on Sundays?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, every fifteen minutes. It takes twenty minutes to get to the racecourse. Get off at the stop called Main Gate."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great. Is there a cafe near the entrance?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, and it sells good sandwiches. The first race is at two o'clock, so you have plenty of time."
                   }
                 ]
               },
@@ -1271,6 +1470,22 @@
                   {
                     "speaker": "b",
                     "text": "No problem. Come again next Saturday, and you can groom the ponies."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Can I really come back? I would love to brush the ponies. I do not want to buy one, and I am too small for the next show."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course you can come back. We always need help on Saturdays. You can feed them, clean their hooves and help the little children."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That sounds wonderful. What time should I come?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "At nine, and bring a pair of old boots. It can be muddy."
                   }
                 ]
               },
@@ -1308,7 +1523,7 @@
             "turns": [
               {
                 "speaker": "organiser",
-                "text": "Hello, everybody. This is Jem, the organiser of the Greenfield Horse Show. I would like to give you the final details. The show takes place on Sunday the ninth of August, and the gates open at eight in the morning. The first event is the children's pony race at ten o'clock. After that, there will be a jumping competition, which begins at noon. The grand parade, with more than forty horses, will start at three. We have a special area for picnics, and the cafe will sell hot food all day. Parking is free, but please do not park near the main gate. We also need volunteers to help with the stands. If you can help, please phone me before Friday. The telephone number is on the poster. See you all there!"
+                "text": "Hello, everybody. This is Jem, the organiser of the Greenfield Horse Show. This is the twentieth year of the show, and we expect more than three thousand visitors. I would like to give you the final details. Please write down the important times, because there will be no printed programme. The show takes place on Sunday the ninth of August, and the gates open at eight in the morning. The early visitors can see the horses arrive and watch the riders prepare. The first event is the children's pony race at ten o'clock. Children from six to twelve can take part, and every child receives a ribbon. After that, there will be a jumping competition, which begins at noon. Some of the best riders in the country will take part, and the fences are one metre forty high. The grand parade, with more than forty horses, will start at three. Each horse has a flower on its head, and the riders wear traditional clothes. We have a special area for picnics, and the cafe will sell hot food all day. You can also bring your own sandwiches, but please do not leave any rubbish. Parking is free, but please do not park near the main gate. Instead, use the big field behind the church, and a bus will take you to the entrance. We also need volunteers to help with the stands. You will sell tickets, give out programmes or help with the food, and you will get a free lunch. If you can help, please phone me before Friday. The telephone number is on the poster. See you all there!"
               }
             ]
           },
@@ -1400,11 +1615,35 @@
               },
               {
                 "speaker": "i",
+                "text": "Did you go to school normally?"
+              },
+              {
+                "speaker": "h",
+                "text": "Yes, but I did my homework in the stable. My teachers were very kind, and one of them even came to watch my first big race."
+              },
+              {
+                "speaker": "i",
                 "text": "Is it dangerous?"
               },
               {
                 "speaker": "h",
                 "text": "Yes. I have broken my collarbone twice and my wrist once. But I wear a helmet and a special jacket, and my team looks after me well."
+              },
+              {
+                "speaker": "i",
+                "text": "What do your parents say about the dangers?"
+              },
+              {
+                "speaker": "h",
+                "text": "They worry, of course. My mother checks my helmet every morning, and my father calls me after each race."
+              },
+              {
+                "speaker": "i",
+                "text": "How do you recover after an injury?"
+              },
+              {
+                "speaker": "h",
+                "text": "Slowly. First I rest, then I swim, and then I ride a quiet horse. The worst part is watching races on television while I wait."
               },
               {
                 "speaker": "i",
@@ -1416,11 +1655,35 @@
               },
               {
                 "speaker": "i",
+                "text": "How do you travel to races?"
+              },
+              {
+                "speaker": "h",
+                "text": "In a lorry with the horses, sometimes for six hours. I sleep in the back, on a pile of blankets, and the horses seem to like the company."
+              },
+              {
+                "speaker": "i",
+                "text": "Do you ever feel hungry?"
+              },
+              {
+                "speaker": "h",
+                "text": "All the time! But I have learned that a small meal, eaten slowly, can be very satisfying. After a race, I eat as much as I want, and my mother cooks my favourite dish."
+              },
+              {
+                "speaker": "i",
                 "text": "How do you get on with the horses?"
               },
               {
                 "speaker": "h",
                 "text": "Very close. I visit them early every morning, before breakfast. They know my voice and seem to know when I am nervous."
+              },
+              {
+                "speaker": "i",
+                "text": "Which horse do you love most?"
+              },
+              {
+                "speaker": "h",
+                "text": "A grey one called Mist. She is small but very brave, and she once won a race by a nose. When I whisper to her, she moves her ears."
               },
               {
                 "speaker": "i",
@@ -1432,11 +1695,35 @@
               },
               {
                 "speaker": "i",
+                "text": "What do you think about before a race?"
+              },
+              {
+                "speaker": "h",
+                "text": "I think about my breathing and about the first turn. I try to be calm, because horses feel what we feel."
+              },
+              {
+                "speaker": "i",
                 "text": "What would you do if you stopped racing?"
               },
               {
                 "speaker": "h",
                 "text": "I would become a trainer. I love teaching young riders, because they remind me of myself."
+              },
+              {
+                "speaker": "i",
+                "text": "Do you have a message for young riders?"
+              },
+              {
+                "speaker": "h",
+                "text": "Be patient and kind to your horse. A good rider listens to the horse, not only gives orders."
+              },
+              {
+                "speaker": "i",
+                "text": "Thank you, Pace, and good luck on Saturday."
+              },
+              {
+                "speaker": "h",
+                "text": "Thank you. I will do my best, and so will Mist."
               }
             ]
           },

@@ -250,21 +250,23 @@
               "prompt": "Why did the writer visit the repair café?",
               "options": [
                 "A neighbour asked for help.",
+                "The community centre was selling kitchen equipment.",
                 "The writer wanted to repair a toaster.",
-                "The community centre was selling kitchen equipment."
+                "The writer wanted to meet the volunteers."
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "Her toaster stopped working and a neighbour told her about the café, so she went there to repair the toaster."
             },
             {
               "id": "r4-3-2",
               "prompt": "What did the volunteer do first?",
               "options": [
-                "Explained how to test the cable safely.",
                 "Replaced the toaster with another one.",
-                "Asked the writer to buy a new tool."
+                "Explained how to test the cable safely.",
+                "Asked the writer to buy a new tool.",
+                "Brought the writer a cup of tea."
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "The volunteer showed her how to test the cable safely, and then the toaster worked again."
             },
             {
@@ -273,31 +275,34 @@
               "options": [
                 "They started working as electricians.",
                 "They opened a repair café at home.",
+                "They were given a prize by the volunteers.",
                 "They returned after repairing a radio themselves."
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "The teenagers came back this week with a radio they had repaired at home."
             },
             {
               "id": "r4-3-4",
               "prompt": "What does the writer like about the café?",
               "options": [
-                "It sells inexpensive household objects.",
                 "It has a welcoming feeling.",
-                "It is open every weekend."
+                "It sells inexpensive household objects.",
+                "It is open every weekend.",
+                "It gives free tools to everyone."
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "Her favourite part is the friendly atmosphere, which means it is welcoming."
             },
             {
               "id": "r4-3-5",
               "prompt": "What do the organisers need before opening more often?",
               "options": [
-                "Find additional helpers.",
+                "Raise money for a new building.",
                 "Move to a larger building.",
+                "Find additional helpers.",
                 "Charge visitors for repairs."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "They need more volunteers, which means additional helpers, before they can open two Saturdays a month."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A new cycle route",
-          "instructions": "Five sentences have been removed from the text. Choose the correct sentence for each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Last year, the town council asked residents how to make short journeys easier. [1] Many people said they would cycle if they felt safer near the busy shopping street. [2] The council painted a cycle lane and added signs at both ends. Work began in March, just before the weather became warmer. [3] During the first week, volunteers stood nearby and explained how to use the new route. They also asked cyclists to report any problems. [4] One corner was difficult to see, so the council moved a small sign. Since then, more parents have used the route to take their children to school. [5] The council now plans to connect it to the railway station.",
           "sentences": [
+            "That feedback helped the council make a small improvement.",
+            "This quick change made the crossing clearer.",
+            "The new bus lane opened two months later.",
             "The most common suggestion was a protected route into the centre.",
             "In response, they planned a route away from the main road.",
             "Local cyclists were invited to test the lane when it opened.",
-            "This quick change made the crossing clearer.",
-            "The council is also offering free bicycle lessons next month.",
-            "That feedback helped the council make a small improvement."
+            "Many shops on that street are closed on Sundays.",
+            "The council is also offering free bicycle lessons next month."
           ],
           "gaps": [
             {
               "id": "r4-4-1",
-              "answer": "A",
+              "answer": "D",
               "explanation": "“The most common suggestion was a protected route” follows the council asking residents and is followed by what many people said."
             },
             {
               "id": "r4-4-2",
-              "answer": "B",
+              "answer": "E",
               "explanation": "“In response, they planned a route away from the main road” answers the residents’ worry about the busy shopping street."
             },
             {
               "id": "r4-4-3",
-              "answer": "C",
+              "answer": "F",
               "explanation": "“Local cyclists were invited to test the lane” follows the work and leads to what happened in the first week."
             },
             {
               "id": "r4-4-4",
-              "answer": "F",
+              "answer": "A",
               "explanation": "“That feedback helped the council make a small improvement” follows cyclists reporting problems and leads to the moved sign."
             },
             {
               "id": "r4-4-5",
-              "answer": "E",
+              "answer": "H",
               "explanation": "“The council is also offering free bicycle lessons” follows the parents using the route and leads to the next plan. Sentence D would only fit straight after the sign was moved."
             }
           ]
@@ -757,11 +764,27 @@
                 "turns": [
                   {
                     "speaker": "peter",
-                    "text": "The bus is nearly here. Do you have the day ticket?"
+                    "text": "Ready to go? Have you got everything?"
                   },
                   {
                     "speaker": "alina",
-                    "text": "Oh no, I put it on the kitchen table."
+                    "text": "Let me check. Phone, yes. I nearly left it on the table, but it’s in my bag now."
+                  },
+                  {
+                    "speaker": "peter",
+                    "text": "And it’s cold outside. Coat?"
+                  },
+                  {
+                    "speaker": "alina",
+                    "text": "I’m wearing it, can’t you see? Oh no, the bus pass! I left it on the kitchen shelf."
+                  },
+                  {
+                    "speaker": "peter",
+                    "text": "The monthly one? Do you want to go back for it?"
+                  },
+                  {
+                    "speaker": "alina",
+                    "text": "There isn’t time. I’ll buy a single ticket from the driver. Come on, or we’ll miss the bus."
                   }
                 ]
               },
@@ -774,7 +797,7 @@
                   "A bus ticket"
                 ],
                 "answer": 2,
-                "explanation": "Alina says she put the day ticket on the kitchen table, so she has forgotten it."
+                "explanation": "Alina has her phone in her bag and is wearing her coat, but she left her bus pass at home, so she must buy a ticket from the driver."
               }
             },
             {
@@ -801,11 +824,27 @@
                 "turns": [
                   {
                     "speaker": "rob",
-                    "text": "I thought we were planting flowers today."
+                    "text": "What’s the plan for Saturday, Tessa? Are we starting with the flowers?"
                   },
                   {
                     "speaker": "tessa",
-                    "text": "We are, but first we’re clearing rubbish by the river."
+                    "text": "That’s the last job, in the afternoon, once the ground is ready. The fence comes after lunch."
+                  },
+                  {
+                    "speaker": "rob",
+                    "text": "So what are we doing first?"
+                  },
+                  {
+                    "speaker": "tessa",
+                    "text": "Rubbish. The path by the river is full of bottles and bags, and we can’t plant anything until it’s clean."
+                  },
+                  {
+                    "speaker": "rob",
+                    "text": "Okay. Gloves and bin bags, then. Where do we meet?"
+                  },
+                  {
+                    "speaker": "tessa",
+                    "text": "At the bridge at nine. Bring a hat."
                   }
                 ]
               },
@@ -818,7 +857,7 @@
                   "Build a fence"
                 ],
                 "answer": 1,
-                "explanation": "Tessa says that first they are clearing rubbish by the river."
+                "explanation": "Flowers are the last job and the fence comes after lunch; the first job is picking up the rubbish so that the river path is clean."
               }
             },
             {
@@ -845,11 +884,23 @@
                 "turns": [
                   {
                     "speaker": "mei",
-                    "text": "You’re walking your bike? What happened?"
+                    "text": "Are you off out, Idris? I thought you were meeting Sam today."
                   },
                   {
                     "speaker": "idris",
-                    "text": "My front tyre is flat. I’ll take it to the repair shop before it closes."
+                    "text": "That’s tomorrow. Today I’m taking my bicycle to the shop on Dale Street."
+                  },
+                  {
+                    "speaker": "mei",
+                    "text": "To buy a bus pass? You said that cycling was too tiring in winter."
+                  },
+                  {
+                    "speaker": "idris",
+                    "text": "I thought about it, but the pass costs forty pounds a month. No, the back wheel is bent since I hit that kerb. The man says he can do the repair by lunchtime."
+                  },
+                  {
+                    "speaker": "mei",
+                    "text": "Good. Can you bring me some milk on the way back?"
                   }
                 ]
               },
@@ -862,7 +913,7 @@
                   "To repair a bicycle"
                 ],
                 "answer": 2,
-                "explanation": "Idris’s front tyre is flat and he is taking the bike to the repair shop."
+                "explanation": "Idris is not meeting Sam until tomorrow and decided against the expensive bus pass; the shop will do the repair of his bent wheel."
               }
             },
             {
@@ -889,11 +940,27 @@
                 "turns": [
                   {
                     "speaker": "stefan",
-                    "text": "Do you still drive to work?"
+                    "text": "Joan, I saw your car outside the garage on Elm Road. Is it broken?"
                   },
                   {
                     "speaker": "joan",
-                    "text": "Usually, but the train is faster when there is traffic. I took it today."
+                    "text": "It’s being serviced, so I can’t drive today. I thought about my bicycle, but it’s pouring."
+                  },
+                  {
+                    "speaker": "stefan",
+                    "text": "So how will you get to work?"
+                  },
+                  {
+                    "speaker": "joan",
+                    "text": "The same as last Tuesday. The quarter past eight from Bridge Street, then a ten-minute walk."
+                  },
+                  {
+                    "speaker": "stefan",
+                    "text": "Last Tuesday you said it was too crowded."
+                  },
+                  {
+                    "speaker": "joan",
+                    "text": "It was packed, but at least the train is reliable. Better than getting wet."
                   }
                 ]
               },
@@ -906,7 +973,7 @@
                   "By bicycle"
                 ],
                 "answer": 1,
-                "explanation": "Joan took the train today because it is faster when there is traffic."
+                "explanation": "Her car is at the garage and it is too wet to cycle, so she will take the quarter past eight from Bridge Street, which is the train."
               }
             },
             {
@@ -932,12 +999,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "hassan",
+                    "text": "Would you like to look at these shopping bags?"
+                  },
+                  {
                     "speaker": "poppy",
-                    "text": "What’s special about these bags?"
+                    "text": "They look nice. Do they keep things cold? I need something for the picnic."
                   },
                   {
                     "speaker": "hassan",
-                    "text": "They’re made from recycled material, and they fold up so small that they fit in your pocket."
+                    "text": "No, that would be a different kind, with a lining. These are just cotton."
+                  },
+                  {
+                    "speaker": "poppy",
+                    "text": "Are they made by hand? The sign says \"handmade\" on the other table."
+                  },
+                  {
+                    "speaker": "hassan",
+                    "text": "Those ones are, and they cost twice as much. These come from a factory. But look, you fold it into a little square and slip it into your pocket."
+                  },
+                  {
+                    "speaker": "poppy",
+                    "text": "Oh, clever. I’ll take three."
                   }
                 ]
               },
@@ -950,7 +1033,7 @@
                   "They are made by hand."
                 ],
                 "answer": 0,
-                "explanation": "The bags fold up so small that they fit in a pocket, which makes them easy to carry."
+                "explanation": "The bags are not cold bags and are not handmade; the special thing is that they fold into a small square that fits into a pocket."
               }
             },
             {
@@ -977,11 +1060,31 @@
                 "turns": [
                   {
                     "speaker": "gwen",
-                    "text": "The park is lovely, but it’s going to rain."
+                    "text": "Shall we eat at home tonight? I could cook pasta."
                   },
                   {
                     "speaker": "callum",
-                    "text": "Let’s have our picnic in the café instead."
+                    "text": "I’d love that, but the fridge is empty. What about the park? A picnic?"
+                  },
+                  {
+                    "speaker": "gwen",
+                    "text": "It’s going to rain after five."
+                  },
+                  {
+                    "speaker": "callum",
+                    "text": "True. How about that little place on the corner, with the blue door?"
+                  },
+                  {
+                    "speaker": "gwen",
+                    "text": "The café that serves good soup? Yes! They’re open until nine."
+                  },
+                  {
+                    "speaker": "callum",
+                    "text": "I’ll book a table for seven, and I’ll ask for the one by the window. Do you want me to meet you there, or shall we walk together from your flat?"
+                  },
+                  {
+                    "speaker": "gwen",
+                    "text": "Let’s walk. I need some fresh air after sitting at the computer all day."
                   }
                 ]
               },
@@ -994,7 +1097,7 @@
                   "In a café"
                 ],
                 "answer": 2,
-                "explanation": "Because it is going to rain, Callum suggests having the picnic in the café."
+                "explanation": "Home has no food and the park will be wet, so they choose the little café on the corner with the blue door."
               }
             },
             {
@@ -1021,11 +1124,27 @@
                 "turns": [
                   {
                     "speaker": "ewan",
-                    "text": "What do you think of the new crossing?"
+                    "text": "Did you use the new crossing by the station, Dot?"
                   },
                   {
                     "speaker": "dot",
-                    "text": "It’s useful, although the traffic lights take a long time."
+                    "text": "Yes. It’s well lit, so I’d feel fine there even at night, and it isn’t difficult to find. The signs are big. You can’t miss it."
+                  },
+                  {
+                    "speaker": "ewan",
+                    "text": "So what do you think of it?"
+                  },
+                  {
+                    "speaker": "dot",
+                    "text": "Honestly, it’s very useful, because the road was so dangerous before. But the lights take forever to change. I waited nearly two minutes this morning."
+                  },
+                  {
+                    "speaker": "ewan",
+                    "text": "That’s long."
+                  },
+                  {
+                    "speaker": "dot",
+                    "text": "It is, but it’s better than nothing."
                   }
                 ]
               },
@@ -1038,7 +1157,7 @@
                   "It is difficult to find."
                 ],
                 "answer": 0,
-                "explanation": "Dot says the crossing is useful but the traffic lights take a long time."
+                "explanation": "Dot says it is well lit and easy to see, and she calls it very useful, but she complains that the lights take forever to change."
               }
             }
           ]
@@ -1074,24 +1193,44 @@
                 "turns": [
                   {
                     "speaker": "nell",
-                    "text": "Is this the bus for the sports centre?"
+                    "text": "Did you hear? The driver says the main road is closed for repairs, so we’ll go round through the villages."
                   },
                   {
                     "speaker": "barry",
-                    "text": "Yes, but it takes longer today because of roadworks."
+                    "text": "That adds about forty minutes, I think."
+                  },
+                  {
+                    "speaker": "nell",
+                    "text": "Will you miss your train?"
+                  },
+                  {
+                    "speaker": "barry",
+                    "text": "No, mine isn’t until six, and it’s only three. I’ve got plenty of time. Actually, it’s a bonus. I like seeing the villages."
+                  },
+                  {
+                    "speaker": "nell",
+                    "text": "I thought you’d be annoyed. Last time you shouted at the driver."
+                  },
+                  {
+                    "speaker": "barry",
+                    "text": "That was because he was rude. Today he’s been fine."
+                  },
+                  {
+                    "speaker": "nell",
+                    "text": "Well, I’m happy if you’re happy."
                   }
                 ]
               },
               "question": {
                 "id": "l4-8",
-                "prompt": "Why will the journey take longer?",
+                "prompt": "How does Barry feel about the longer journey?",
                 "options": [
-                  "The bus has broken down.",
-                  "There are road repairs.",
-                  "The driver is taking another passenger."
+                  "Worried about missing a train",
+                  "Relaxed about the extra time",
+                  "Angry with the driver"
                 ],
                 "answer": 1,
-                "explanation": "Barry says it takes longer today because of roadworks, which are road repairs."
+                "explanation": "Barry says his train is not until six and he likes seeing the villages, and the driver today has been fine, so he is relaxed."
               }
             },
             {
@@ -1118,28 +1257,40 @@
                 "turns": [
                   {
                     "speaker": "ola",
-                    "text": "The market closes at four, so we should go now."
+                    "text": "The market closes at six today, doesn’t it?"
                   },
                   {
                     "speaker": "kurt",
-                    "text": "I thought it stayed open until six."
+                    "text": "Yes, but the fish stalls pack up earlier, around four, and we need fish for the dinner."
                   },
                   {
                     "speaker": "ola",
-                    "text": "Not on Sundays."
+                    "text": "Can’t we go tomorrow morning instead?"
+                  },
+                  {
+                    "speaker": "kurt",
+                    "text": "The guests arrive at eleven, and I want to cook before they come. It has to be today."
+                  },
+                  {
+                    "speaker": "ola",
+                    "text": "I’ve got a meeting until half past three, and then I have to pick up the flowers from my sister’s house."
+                  },
+                  {
+                    "speaker": "kurt",
+                    "text": "Then run. I’ll meet you at the entrance at ten to four."
                   }
                 ]
               },
               "question": {
                 "id": "l4-9",
-                "prompt": "When must they visit the market?",
+                "prompt": "What do Ola and Kurt agree to do?",
                 "options": [
-                  "Before six today",
-                  "Tomorrow morning",
-                  "Before four today"
+                  "Go to the market before six today",
+                  "Go to the market tomorrow morning",
+                  "Go to the market before four today"
                 ],
                 "answer": 2,
-                "explanation": "The market closes at four on Sundays, so they must go before four today."
+                "explanation": "The market closes at six, but the fish stalls pack up at four and tomorrow morning is too late, so they plan to meet at ten to four."
               }
             },
             {
@@ -1166,28 +1317,40 @@
                 "turns": [
                   {
                     "speaker": "glen",
-                    "text": "I sent you the travel plan by email."
+                    "text": "I sent the plan for Saturday’s journey by email, but nobody replied."
                   },
                   {
                     "speaker": "fay",
-                    "text": "I haven’t seen it."
+                    "text": "People never read them. Another email wouldn’t help."
                   },
                   {
                     "speaker": "glen",
-                    "text": "Then I’ll print a copy for you."
+                    "text": "Should I change the journey, then? Take a shorter route?"
+                  },
+                  {
+                    "speaker": "fay",
+                    "text": "No, the route is fine. The problem is that nobody can open the file on a phone. Why don’t you make paper copies and hand them out at the meeting on Thursday?"
+                  },
+                  {
+                    "speaker": "glen",
+                    "text": "That’s a good idea."
+                  },
+                  {
+                    "speaker": "fay",
+                    "text": "It costs pennies on the office printer."
                   }
                 ]
               },
               "question": {
                 "id": "l4-10",
-                "prompt": "What will Glen do?",
+                "prompt": "What does Fay advise Glen to do?",
                 "options": [
-                  "Send another email",
                   "Print the plan",
+                  "Send another email",
                   "Change the journey"
                 ],
-                "answer": 1,
-                "explanation": "When Fay says she has not seen the email, Glen says he will print a copy."
+                "answer": 0,
+                "explanation": "Fay says a second email would not help and the route is fine, so she suggests giving out paper copies of the plan at the Thursday meeting."
               }
             },
             {
@@ -1214,28 +1377,44 @@
                 "turns": [
                   {
                     "speaker": "vic",
-                    "text": "Let’s walk to the cinema. It’s only ten minutes away."
+                    "text": "The concert starts at eight. A taxi from here costs about twenty pounds."
                   },
                   {
                     "speaker": "una",
-                    "text": "But I’m carrying these bags."
+                    "text": "Too much. We could walk. It’s about an hour."
                   },
                   {
                     "speaker": "vic",
-                    "text": "Then we can take the bus."
+                    "text": "In these shoes? No, my feet already hurt, and it’ll be dark by the time we come back."
+                  },
+                  {
+                    "speaker": "una",
+                    "text": "The number fourteen stops outside the hall, doesn’t it?"
+                  },
+                  {
+                    "speaker": "vic",
+                    "text": "Every ten minutes until eleven, and only three pounds."
+                  },
+                  {
+                    "speaker": "una",
+                    "text": "Settled, then. I’ll get the cash from the machine on the way, and we can leave at half past seven."
+                  },
+                  {
+                    "speaker": "vic",
+                    "text": "Perfect. I’ll meet you at the corner. Don’t be late this time."
                   }
                 ]
               },
               "question": {
                 "id": "l4-11",
-                "prompt": "How will they probably get there?",
+                "prompt": "How do Vic and Una decide to get to the concert?",
                 "options": [
-                  "By bus",
                   "On foot",
-                  "By taxi"
+                  "By taxi",
+                  "By bus"
                 ],
-                "answer": 0,
-                "explanation": "Una is carrying bags, so Vic suggests taking the bus instead of walking."
+                "answer": 2,
+                "explanation": "A taxi costs twenty pounds and a walk of an hour in the dark is a bad idea, so they take the number fourteen, which stops outside the hall."
               }
             },
             {
@@ -1262,24 +1441,40 @@
                 "turns": [
                   {
                     "speaker": "mo",
-                    "text": "Don’t forget to switch off the hall light before we go out."
+                    "text": "I’m off to the airport. Can you do a few things while I’m away?"
                   },
                   {
                     "speaker": "cora",
-                    "text": "I’ll do it now."
+                    "text": "Sure. Water the plants?"
+                  },
+                  {
+                    "speaker": "mo",
+                    "text": "Yes, but that’s Thursday. Before you go to work tomorrow, can you check the light in the hall? I always leave it on, and it uses a lot of electricity."
+                  },
+                  {
+                    "speaker": "cora",
+                    "text": "Fine. What about the windows? It gets very hot in the flat when the sun comes in."
+                  },
+                  {
+                    "speaker": "mo",
+                    "text": "I closed them all, and the neighbour’s cat can’t get in. And the gate is locked, I did it already. The spare key is under the blue pot if you need it."
+                  },
+                  {
+                    "speaker": "cora",
+                    "text": "Great. Have a good flight, and send me a message when you land."
                   }
                 ]
               },
               "question": {
                 "id": "l4-12",
-                "prompt": "What does the man remind his flatmate to do?",
+                "prompt": "What does Mo ask Cora to do?",
                 "options": [
-                  "Switch off a light",
-                  "Close a window",
-                  "Lock the garden gate"
+                  "Lock the garden gate",
+                  "Turn off a light",
+                  "Close the window"
                 ],
-                "answer": 0,
-                "explanation": "Mo reminds Cora to switch off the hall light before they go out."
+                "answer": 1,
+                "explanation": "Mo says the windows are closed and the gate is locked; his request is that Cora checks the hall light, which he always leaves on."
               }
             },
             {
@@ -1306,24 +1501,40 @@
                 "turns": [
                   {
                     "speaker": "dan",
-                    "text": "Would you like tea?"
+                    "text": "Come in, sit down. You look cold. Tea? I’ve got milk and sugar."
                   },
                   {
                     "speaker": "rhea",
-                    "text": "Yes, please, but no sugar. I’m trying to eat less sweet food."
+                    "text": "Not milk, thanks. It upsets my stomach. And I stopped taking sugar in January."
+                  },
+                  {
+                    "speaker": "dan",
+                    "text": "Oh. I could find some honey."
+                  },
+                  {
+                    "speaker": "rhea",
+                    "text": "No, thank you, I’m trying not to eat sweet things, even in the afternoon. But is there a lemon in the fridge? One slice is perfect."
+                  },
+                  {
+                    "speaker": "dan",
+                    "text": "There’s half of one. Coming up. Would you like a biscuit? I made them this morning, but they’re a bit burnt."
+                  },
+                  {
+                    "speaker": "rhea",
+                    "text": "Why not? I like them burnt."
                   }
                 ]
               },
               "question": {
                 "id": "l4-13",
-                "prompt": "What does the woman want in her tea?",
+                "prompt": "What does Rhea want in her tea?",
                 "options": [
-                  "Sugar",
-                  "No sugar",
-                  "Milk only"
+                  "A slice of lemon",
+                  "A little milk",
+                  "Some sugar"
                 ],
-                "answer": 1,
-                "explanation": "Rhea says “no sugar” because she is trying to eat less sweet food."
+                "answer": 0,
+                "explanation": "Rhea refuses milk, sugar and honey, but asks for a slice from the lemon in the fridge."
               }
             }
           ]
@@ -1348,49 +1559,46 @@
             "turns": [
               {
                 "speaker": "gemma",
-                "text": "Hello, everyone. I am Gemma, and I am organising our town clean-up day. We will meet at the library at nine o’clock on Saturday. Please wear old clothes because we will paint the wooden benches as well as collect litter. The council will provide bags and brushes. We will work in the park until one o’clock, then have lunch together. Bring a bottle of water, but sandwiches will be provided by the café. If you need to borrow gloves, tell me when you arrive."
+                "text": "Hello, everyone. I’m Gemma, and I’m organising our town clean-up day. Thank you for coming to this meeting. First, the place. In the past, we always met at the town hall, but it’s closed for repairs, so this time we will meet at the library. You’ll see me at the front door with a yellow flag. We start at nine o’clock. I know some people hoped for ten, but the rubbish lorry comes at ten, and we want to fill it. Now, what to wear? Please wear old clothes. We’ll be touching dirty things all day, so choose something that you don’t mind losing. Strong shoes are also a good idea, but we have plenty of gloves for everyone. Let me explain the work. The first group will pick up rubbish in the main street and along the canal. The second group will do some painting. Last year we painted the school wall, and everyone loved it. This year the job is the benches in the park, which are in a terrible state. We have the paint and brushes, but not enough overalls, so bring an apron if you have one. It will be a warm day, so bring a bottle of water. Don’t worry about juice or other drinks, because the café will give them out all day, but the water in the park fountain is not drinkable. At one o’clock, we all stop for lunch. We asked the school kitchen first, but they are closed on Saturdays, so the café is providing the sandwiches and fruit. They are being very kind, so please thank them. We finish at four, and the mayor will come to say hello. Thank you, and see you on Saturday."
               }
             ]
           },
           "gaps": [
             {
               "id": "l4-14",
-              "prompt": "Meeting place: the ___",
+              "prompt": "Meeting point (not the town hall): the ___",
               "answer": "library",
-              "explanation": "Gemma says they will meet at the library at nine on Saturday."
+              "explanation": "She says they used to meet at the town hall, but this time they meet at the library."
             },
             {
               "id": "l4-15",
-              "prompt": "Day: ___",
-              "answer": "Saturday",
-              "explanation": "The clean-up day is on Saturday."
+              "prompt": "The work starts at ___ o'clock in the morning",
+              "answer": "nine",
+              "explanation": "She says they start at nine; ten is when the rubbish lorry comes."
             },
             {
               "id": "l4-16",
-              "prompt": "Wear old ___",
-              "answer": "clothes",
-              "explanation": "She asks everyone to wear old clothes because they will paint."
+              "prompt": "Dress code: ___ that you don't mind getting dirty",
+              "answer": "old clothes",
+              "explanation": "She says to wear old clothes that you don’t mind losing; strong shoes are only a good idea."
             },
             {
               "id": "l4-17",
-              "prompt": "Work includes painting ___",
+              "prompt": "The painting job this year is the park ___",
               "answer": "benches",
-              "explanation": "They will paint the wooden benches as well as collect litter."
+              "explanation": "Last year they painted the school wall, but this year the job is the benches in the park."
             },
             {
               "id": "l4-18",
-              "prompt": "Bring a bottle of ___",
+              "prompt": "Bring a bottle of ___ (not juice)",
               "answer": "water",
-              "explanation": "Volunteers should bring a bottle of water."
+              "explanation": "She says to bring a bottle of water because the fountain water is not drinkable; the café gives out other drinks."
             },
             {
               "id": "l4-19",
-              "prompt": "Lunch is provided by the ___",
+              "prompt": "The sandwiches and fruit come from the ___",
               "answer": "café",
-              "accepted": [
-                "cafe"
-              ],
-              "explanation": "The sandwiches will be provided by the café."
+              "explanation": "The school kitchen is closed on Saturdays, so the café is providing the sandwiches and fruit."
             }
           ]
         },
@@ -1422,43 +1630,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Gareth, why did you become a town planner?"
+                "text": "Gareth, you’re a town planner. What first made you interested in the job?"
               },
               {
                 "speaker": "gareth",
-                "text": "I studied geography at college. During a work placement, I helped improve a small square near a school. People used it more after we added seats and trees, and I wanted to do similar work."
+                "text": "Funny story. As a teenager I worked in my uncle’s shop on Saturdays, and I enjoyed it, but I didn’t think about the street outside. Later they built a new hospital in our town, and everybody talked about it, but it wasn’t the hospital that interested me. It was the small square outside my school, which was just a car park until the council turned it into a place for benches and trees. I wanted to do that kind of thing."
               },
               {
                 "speaker": "interviewer",
-                "text": "What is your current project?"
+                "text": "And what are you working on now?"
               },
               {
                 "speaker": "gareth",
-                "text": "We are planning a safer route for people walking to the hospital. The main challenge is the busy morning traffic."
+                "text": "I’m not building a shopping centre, thank goodness, and the school has already been built. My current project is about the route to the hospital. At the moment people on foot and on bicycles have to cross a very busy road, and some of them are afraid of it. So I’m trying to make that route safer, with a new crossing and wider paths."
               },
               {
                 "speaker": "interviewer",
-                "text": "How do you know what local people need?"
+                "text": "Is it going well?"
               },
               {
                 "speaker": "gareth",
-                "text": "We organise meetings and ask residents to complete surveys. We also speak with shop owners because they understand how the area changes during the day."
+                "text": "Mostly, but there’s one big problem. The road isn’t too far away from the hospital, and residents do use it, as you’d expect. The difficulty is that in the morning the traffic is heavy for about two hours, and any change we make has to work then. It’s hard to test ideas when the road is full of cars and buses."
               },
               {
                 "speaker": "interviewer",
-                "text": "What part of your work do you enjoy?"
+                "text": "Why do you talk to shop owners?"
               },
               {
                 "speaker": "gareth",
-                "text": "Seeing people use a place that we have improved. Even a small change can make a daily journey easier."
+                "text": "People think I only meet residents, but shop owners have been there for twenty years, and they know how an area changes. They notice when a street gets busier or when customers stop coming. They aren’t in charge of choosing trees, and the residents’ meetings are organised by the council. But their knowledge is really valuable."
               },
               {
                 "speaker": "interviewer",
-                "text": "What advice would you give someone interested in this job?"
+                "text": "What do you enjoy most about your work?"
               },
               {
                 "speaker": "gareth",
-                "text": "Learn to listen carefully and explain your ideas clearly. Plans only work when people understand them."
+                "text": "I like making maps, and I enjoy presenting them to the council, though I get nervous. And finishing quickly is almost never possible in my job. The real pleasure is going back a year later and seeing families using a place that we improved. That makes the long meetings worth it."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What advice would you give to a young planner?"
+              },
+              {
+                "speaker": "gareth",
+                "text": "Talk to residents. Don’t avoid questions, even difficult ones. I don’t think you need a degree in business, although it can help. The most important thing is to listen carefully, and then explain your ideas clearly, without long words, so that everybody understands."
               }
             ]
           },
@@ -1472,7 +1688,7 @@
                 "Improving a square near a school"
               ],
               "answer": 2,
-              "explanation": "Gareth helped improve a small square near a school during a work placement."
+              "explanation": "Gareth says it was not his uncle’s shop or the new hospital; the small square outside his school became a place for benches and trees, and he wanted to do that."
             },
             {
               "id": "l4-20-2",
@@ -1483,7 +1699,7 @@
                 "A new school building"
               ],
               "answer": 1,
-              "explanation": "He is planning a safer route for people walking to the hospital."
+              "explanation": "He is not working on a shopping centre or a school; his current project is making the route to the hospital safer."
             },
             {
               "id": "l4-20-3",
@@ -1494,7 +1710,7 @@
                 "The morning traffic is heavy."
               ],
               "answer": 2,
-              "explanation": "He says the main challenge is the busy morning traffic."
+              "explanation": "The road is not too far and residents do use the hospital; the difficulty is that the morning traffic is heavy for about two hours."
             },
             {
               "id": "l4-20-4",
@@ -1505,7 +1721,7 @@
                 "They organise residents’ meetings."
               ],
               "answer": 0,
-              "explanation": "Shop owners understand how the area changes during the day."
+              "explanation": "Shop owners have been there for twenty years and know how an area changes; they do not choose trees or organise meetings."
             },
             {
               "id": "l4-20-5",
@@ -1516,7 +1732,7 @@
                 "Finishing projects quickly"
               ],
               "answer": 0,
-              "explanation": "He enjoys seeing people use a place that has been improved."
+              "explanation": "He likes maps and presenting but the real pleasure is going back a year later and seeing families using an improved place."
             },
             {
               "id": "l4-20-6",
@@ -1527,7 +1743,7 @@
                 "Listen and explain ideas clearly."
               ],
               "answer": 2,
-              "explanation": "He advises learning to listen carefully and explain ideas clearly."
+              "explanation": "He says not to avoid questions and that a business degree is not necessary; the most important thing is to listen carefully and explain ideas clearly."
             }
           ]
         }

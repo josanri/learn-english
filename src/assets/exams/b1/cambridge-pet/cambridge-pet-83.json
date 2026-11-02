@@ -251,7 +251,8 @@
               "options": [
                 "Her brother recommended it",
                 "It was cheaper than flying",
-                "She was afraid of planes"
+                "She was afraid of planes",
+                "A friend gave her free tickets"
               ],
               "answer": 0,
               "explanation": "Her brother said that trains were more relaxing."
@@ -261,10 +262,11 @@
               "prompt": "How did Maria help?",
               "options": [
                 "She gave her a ticket",
-                "She told stories",
-                "She carried her bag"
+                "She carried her bag",
+                "She taught her French",
+                "She told stories"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "Maria offered her biscuits and told stories about her trips."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "How did the writer sleep?",
               "options": [
                 "Badly, because of noise",
+                "Quickly, in the top bed",
                 "Not at all",
-                "Quickly, in the top bed"
+                "Slowly, after a long walk"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She climbed into the bed at the top and fell asleep quickly."
             },
             {
               "id": "r3-4",
               "prompt": "What did she enjoy in the morning?",
               "options": [
-                "The mountain view",
+                "A talk with the driver",
                 "A big hot breakfast",
+                "The mountain view",
                 "A very long shower"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She watched the view of the mountains and the pink snow for an hour."
             },
             {
               "id": "r3-5",
               "prompt": "What does she plan to do next year?",
               "options": [
+                "Take another night train",
                 "Go to see Maria again",
                 "Fly all the way to Rome",
-                "Take another night train"
+                "Stay with Maria in Vienna"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She plans to try the night train to Rome."
             }
           ]
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "The first railways",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The first railways did not use steam engines at all. [1] Horses pulled wagons along wooden or iron tracks, because this was easier than pulling them over muddy roads.\n\nIn 1804, an engineer built the first steam locomotive to run on rails. [2] It could carry ten tons of iron and seventy men, but it was so heavy that it broke the track.\n\nAbout twenty years later, the first public railway opened in England. [3] Passengers could now travel between two towns much faster than by horse.\n\nRailways changed people's lives quickly. [4] Fresh fish and milk could reach cities within hours, and workers could live far from their factories.\n\nBy 1900, there were railways on every continent except one. [5] Today, high-speed trains travel at three hundred kilometres an hour, and many countries are building new lines.",
           "sentences": [
-            "It was impressive, but it was not yet practical.",
+            "At that time, only the rich could afford to ride in them.",
             "Some stations are famous for their beautiful clocks.",
-            "Instead, the power came from animals.",
-            "Since then, trains have become faster and more comfortable.",
+            "It was impressive, but it was not yet practical.",
             "A steam engine pulled the carriages, and the public could buy tickets.",
-            "Food and goods could now travel much farther than before."
+            "Instead, the power came from animals.",
+            "Food and goods could now travel much farther than before.",
+            "Horses were still used to pull wagons in cities until the 1920s.",
+            "Since then, trains have become faster and more comfortable."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "E",
               "explanation": "The power came from animals, as the next sentence says horses pulled the wagons."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "C",
               "explanation": "The first locomotive was impressive but not practical, because it broke the track."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "D",
               "explanation": "A steam engine pulled the carriages and tickets were sold; the next sentence says passengers could travel faster."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "H",
               "explanation": "Since then trains have become faster; the next sentence describes high-speed trains today."
             }
           ]
@@ -725,11 +732,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time is the next train to Leeds?"
+                    "text": "Excuse me, the screen says my train to Bristol leaves from platform five."
                   },
                   {
                     "speaker": "b",
-                    "text": "At twenty past three, from platform two."
+                    "text": "It did this morning, but they changed it because of work on the track. Platform twelve is only for the long-distance trains to Scotland now."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh. Then where do I go? I don’t want to miss it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "The platform next to number one. Take the stairs on your left, and hurry, because it comes in two minutes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you so much. I have a big suitcase, so I’ll take the lift."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good idea. The lift is just behind you."
                   }
                 ]
               },
@@ -742,7 +765,7 @@
                   "Platform five"
                 ],
                 "answer": 1,
-                "explanation": "He says it leaves from platform two."
+                "explanation": "Five was the morning platform and twelve is for Scotland; the Bristol train now leaves from the platform next to number one, which is platform two."
               }
             },
             {
@@ -769,11 +792,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much is a return ticket to the coast?"
+                    "text": "How much is a ticket to Manchester, please?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Fifteen pounds, but after seven in the evening it is only ten."
+                    "text": "The normal return costs seventeen pounds, but there’s a cheaper one if you travel after nine."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is that the fifteen pounds one?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, fifteen is the flexible ticket, which you can use on any train. The cheaper one is five pounds less than that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then I’ll take the cheaper one, please."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Alright. Cash or card? And remember that you must take the exact train."
                   }
                 ]
               },
@@ -786,7 +825,7 @@
                   "Seventeen pounds"
                 ],
                 "answer": 0,
-                "explanation": "She says that after seven it is only ten pounds."
+                "explanation": "Seventeen is the normal return and fifteen is the flexible ticket; the cheaper one is five pounds less than fifteen."
               }
             },
             {
@@ -813,11 +852,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why are you late?"
+                    "text": "Dad, you’re late! The play started ten minutes ago."
                   },
                   {
                     "speaker": "b",
-                    "text": "My train was cancelled, so I had to take a bus."
+                    "text": "I’m sorry. I nearly missed the last bus too, because it was full. And I thought I’d lost my ticket at the station, but it was in my coat."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what happened?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "My train was cancelled without warning, and I had to wait forty minutes for another one. They said there was a problem on the line."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh. Well, the play is two hours long. Come in quietly."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I will. Which seats are ours?"
                   }
                 ]
               },
@@ -830,7 +885,7 @@
                   "He missed the last bus"
                 ],
                 "answer": 0,
-                "explanation": "He says his train was cancelled."
+                "explanation": "He did not miss the bus and he found his ticket; he was late because the train was cancelled and he had to wait for another one."
               }
             },
             {
@@ -844,24 +899,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is this seat free?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "Sorry, it is reserved. There are free ones in the next carriage."
+                    "text": "Good morning, passengers. This is your guard speaking. We are sorry that this train is very busy today because of the football match. Some of you are standing in the front carriage, where there are no more seats, and a few of you tried upstairs on the top deck, but that’s only on the double-decker trains, and ours has a single deck. If you are looking for a place to sit, please walk through the door at the back, because the next carriage has plenty of free seats. Please do not leave your bags in the corridor. We arrive in London in fifty minutes. Thank you."
                   }
                 ]
               },
@@ -874,7 +917,7 @@
                   "Upstairs on the top deck"
                 ],
                 "answer": 1,
-                "explanation": "She says there are free ones in the next carriage."
+                "explanation": "The front carriage is full and this train has no top deck; the carriage behind has plenty of free seats."
               }
             },
             {
@@ -901,11 +944,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How long does the journey take?"
+                    "text": "Which stations does your train stop at, Tim?"
                   },
                   {
                     "speaker": "b",
-                    "text": "About two hours, with one change in York."
+                    "text": "It goes to Derby first, then York, and ends in Leeds. My cousin lives in Derby, so I’ll see him on the way back."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So is Leeds where you change?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, that’s my grandma’s city, so I’m staying there. I change somewhere in the middle, and wait twenty minutes for the train to the coast."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh, I see. What do you do while you wait?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I usually have a sandwich at York station."
                   }
                 ]
               },
@@ -918,7 +977,7 @@
                   "York"
                 ],
                 "answer": 2,
-                "explanation": "He says there is one change in York."
+                "explanation": "Derby is a visit for the way back and Leeds is the end of the line; the stop in the middle is York."
               }
             },
             {
@@ -945,11 +1004,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I left my phone on the train."
+                    "text": "Excuse me, I left my scarf on a train. Where do I go?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Go to the lost property office. It is next to the ticket hall."
+                    "text": "You want the lost property office. A lot of people look for it at the back of the station, behind the café, but it was moved last year."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it on platform one, by the exit? My friend said that."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s where the toilets are. The office is next to the ticket hall, the one with the big clock."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you. Is it open now?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Until six, so you have plenty of time."
                   }
                 ]
               },
@@ -962,7 +1037,7 @@
                   "On platform one by the exit"
                 ],
                 "answer": 0,
-                "explanation": "He says it is next to the ticket hall."
+                "explanation": "It is not behind the café any more and platform one has the toilets; the office is next to the ticket hall."
               }
             },
             {
@@ -989,11 +1064,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you prefer trains or buses?"
+                    "text": "Do you always take the train to your grandma’s? The bus is cheaper, isn’t it?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Trains. They are faster, and I can read on the way."
+                    "text": "Yes, the bus costs less, and it’s also quieter because few people use it. Trains can be noisy, with the loud announcements."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So why the train?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "The bus takes three hours, and the train only one and a half. It takes half the time, and I like to arrive quickly."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I see. I’d rather save money."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Well, each person is different."
                   }
                 ]
               },
@@ -1006,7 +1097,7 @@
                   "They are quieter"
                 ],
                 "answer": 1,
-                "explanation": "She says trains are faster."
+                "explanation": "She agrees that the bus is cheaper and quieter; she takes the train because the journey takes half the time."
               }
             }
           ]
@@ -1042,24 +1133,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Excuse me, I need to change my ticket for tomorrow. I cannot travel today."
+                    "text": "Hello, I bought this ticket for Friday, but I have a meeting then."
                   },
                   {
                     "speaker": "b",
-                    "text": "That will cost five pounds extra."
+                    "text": "Do you want your money back? It will take two weeks and we keep a small fee."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not really, I still want to travel. Can I just change the ticket for Saturday?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, it’s free if it’s the same route. You pay the difference if the new train costs more."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Perfect. Saturday morning, then. And I’ll buy a newspaper from the kiosk for the journey."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the man want?",
+                "prompt": "What does the man decide to do about his ticket?",
                 "options": [
-                  "To buy a daily newspaper",
-                  "To get his money back now",
-                  "To change his ticket"
+                  "Get his money back",
+                  "Buy a daily newspaper",
+                  "Change it for another day"
                 ],
                 "answer": 2,
-                "explanation": "He says he needs to change his ticket for tomorrow."
+                "explanation": "He does not want the refund because it is slow and has a fee; he asks for Saturday, and the newspaper is only an extra."
               }
             },
             {
@@ -1086,24 +1189,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "This is a message for passengers on the train to Glasgow. Because of a signal problem, the train will be delayed by about twenty minutes. We are sorry for the delay."
+                    "text": "The board says our train is twenty minutes late."
                   },
                   {
                     "speaker": "b",
-                    "text": "Oh no, we will miss our bus."
+                    "text": "Oh no. Are you worried about your flight?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not really. It leaves at nine in the evening and it’s only noon. And I’m not angry either, the ticket was cheap this time. I’ll just read my book."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "You’re so relaxed. I’d be furious."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "What’s the point? It won’t make the train come faster. Let’s get a coffee."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good idea."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Let’s go before the queue grows."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the announcement about?",
+                "prompt": "How does the woman feel about the delay?",
                 "options": [
-                  "A cancelled ticket",
-                  "A late train",
-                  "A lost bag"
+                  "Angry about the lost time",
+                  "Relaxed because she has plenty of time",
+                  "Worried that she will miss her flight"
                 ],
                 "answer": 1,
-                "explanation": "The message says the train will be delayed by twenty minutes."
+                "explanation": "She says that she is not worried about her flight and not angry, and she will read; she is relaxed and calm."
               }
             },
             {
@@ -1130,28 +1253,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Look, there is a steam train over there!"
+                    "text": "What shall we do on Saturday? We could go to the railway museum."
                   },
                   {
                     "speaker": "b",
-                    "text": "Wow, I have never seen one in real life. Can we go for a ride?"
+                    "text": "I’ve been twice, and it’s closed for repairs this month. A picnic by the lake would be nice, but they say it’s going to rain."
                   },
                   {
                     "speaker": "a",
-                    "text": "There are rides on Saturdays. Let us come back then."
+                    "text": "Then what? Oh, I know, the steam train that runs to the village. It’s exciting and the carriages are warm, even if it rains."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Brilliant! I’ve never been on one. I’ll bring a camera."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And a sandwich for the journey."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What will they do on Saturday?",
+                "prompt": "What do the friends decide to do on Saturday?",
                 "options": [
                   "Ride on the steam train",
                   "Visit the railway museum",
                   "Have a picnic by the lake"
                 ],
                 "answer": 0,
-                "explanation": "She says there are rides on Saturdays and suggests coming back then."
+                "explanation": "The museum is closed and the picnic would be in the rain; they both like the idea of the steam train."
               }
             },
             {
@@ -1178,24 +1309,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Have you got everything? Your ticket, your phone and your wallet?"
+                    "text": "Have you got your ticket, Max?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, Mum. Stop worrying!"
+                    "text": "Yes, Mum, it’s in my pocket."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And your phone? Your charger? The sandwiches?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "All in my bag. Mum, I’m not late, the train leaves in half an hour."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I know, I’m not angry. I just don’t want you to forget something, because it’s a long trip. And take this twenty pounds, just in case."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thanks, but I have my own money."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Fine. Call me when you arrive."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the mother doing?",
+                "prompt": "Why does the mother ask so many questions?",
                 "options": [
-                  "Telling him off for being late",
-                  "Giving him some pocket money",
-                  "Checking he has everything"
+                  "She is annoyed that he is late",
+                  "She hopes he will carry less",
+                  "She wants to be sure he has everything"
                 ],
                 "answer": 2,
-                "explanation": "She asks if he has his ticket, phone and wallet."
+                "explanation": "She says she is not angry and he is not late; she checks his things so he does not forget anything on a long trip."
               }
             },
             {
@@ -1222,28 +1373,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I have to take two trains to get to school, so I leave home at six."
+                    "text": "I like my train ride to school. Forty minutes of peace."
                   },
                   {
                     "speaker": "b",
-                    "text": "That is very early. Does it make you tired?"
+                    "text": "I sleep most of the way, but I wake up at the last minute."
                   },
                   {
                     "speaker": "a",
-                    "text": "A bit, but I do my homework on the train."
+                    "text": "Sleeping makes me feel strange. I play games sometimes, but I get tired of the phone. The best use is homework. Nobody talks to me, and then I have my evening free."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Smart. I should try that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You can sit with me tomorrow."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Deal."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "See you at the station."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the girl do on the train?",
+                "prompt": "What does Lena like about her journey?",
                 "options": [
-                  "She does her homework",
-                  "She sleeps until she arrives",
-                  "She plays games on her phone"
+                  "Doing her homework in peace",
+                  "Sleeping before school",
+                  "Playing games on her phone"
                 ],
                 "answer": 0,
-                "explanation": "She says that she does her homework on the train."
+                "explanation": "She finds sleeping strange and gets tired of games; she likes the peace of the journey for doing her homework so that her evening is free."
               }
             },
             {
@@ -1270,24 +1437,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Shall we go to the coast by train or by car?"
+                    "text": "Why do you take the train to work, Sam? Your car is new."
                   },
                   {
                     "speaker": "b",
-                    "text": "Train. Parking is expensive there, and the view is nicer."
+                    "text": "People think I’m tired of driving, but I like it, I drive a lot at weekends. And the car is quicker, actually. The train takes an extra ten minutes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So why?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Parking in the city centre costs twenty pounds a day. That’s more than a train ticket for the week."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh, that’s a lot."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Exactly. The train is much cheaper in the end."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "Why does the boy prefer the train?",
+                "prompt": "Why does Sam take the train to work?",
                 "options": [
-                  "He dislikes driving a lot",
-                  "It is much faster than driving",
-                  "Parking is expensive"
+                  "The train is quicker",
+                  "Parking costs too much",
+                  "He does not like driving"
                 ],
-                "answer": 2,
-                "explanation": "He says parking is expensive there."
+                "answer": 1,
+                "explanation": "He likes driving and the car is quicker; the reason is the very high cost of parking in the city centre."
               }
             }
           ]
@@ -1312,52 +1495,46 @@
             "turns": [
               {
                 "speaker": "manager",
-                "text": "Hello, everyone, and welcome to the Heritage Railway. My name is Chet, and I am the station manager. Our steam train runs from this station to the lake and back. The whole journey takes fifty minutes. Trains leave every hour, starting at ten o'clock, and the last one departs at four. A return ticket costs twelve pounds for adults, but children go free. If you want to take photographs, the best place is the last carriage, because it has a window that opens. In the middle of the journey, we cross a bridge that is over one hundred years old. At the lake, there is a small cafe, and there is also a playground. You must be back at the station by half past five, because that is when we close the gates. Please enjoy your trip."
+                "text": "Hello, everyone, and welcome to the Heritage Railway. My name is Chet, and I am the station manager. Our steam train runs from this station to the lake and back. The whole journey takes fifty minutes. It used to be forty minutes, but we now go slowly so that you can enjoy the view. Trains leave every hour, starting at ten, and the last one leaves at four o’clock. In August we add a train at half past, but today we have only the normal timetable. Let me tell you about prices. A return ticket for an adult costs twelve pounds. For children it’s six, and a family ticket is thirty. The price includes a hot drink. If you want a single ticket, it is eight pounds, but most people prefer a return. Now, a tip for photographs. Most visitors go to the first carriage, because it’s near the engine, but it’s very noisy and full of smoke. The last carriage is the best place, because you can look back along the line. The big windows open, so be careful. Along the way, we cross an old stone bridge. It has stood here for more than a hundred years, and it was built by hand. The tunnel after that is even older. At the lake, the train stops for forty minutes. You can have a snack at the café, or walk around the water. Boat trips only run in the summer, but there’s a playground for children, with a slide and a wooden train. Please keep an eye on little ones. We leave exactly at the time on your ticket, and the whistle will blow two minutes before. Enjoy the ride!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The whole journey takes ___ minutes",
+              "prompt": "A trip to the lake and back takes ___ minutes",
               "answer": "fifty",
-              "accepted": [
-                "50"
-              ],
-              "explanation": "He says the whole journey takes fifty minutes."
+              "explanation": "The whole journey takes fifty minutes; forty minutes was the old time."
             },
             {
               "id": "l3-2",
-              "prompt": "Trains leave every ___",
+              "prompt": "Trains depart from the station every ___",
               "answer": "hour",
-              "explanation": "He says trains leave every hour."
+              "explanation": "Trains leave every hour; the extra August train comes at half past."
             },
             {
               "id": "l3-3",
-              "prompt": "A return ticket costs ___ pounds for adults",
+              "prompt": "An adult's return ticket costs ___ pounds",
               "answer": "twelve",
-              "accepted": [
-                "12"
-              ],
-              "explanation": "He says a return ticket costs twelve pounds for adults."
+              "explanation": "A return costs twelve pounds; six is the child price and eight is a single."
             },
             {
               "id": "l3-4",
-              "prompt": "The best place for photographs is the last ___",
+              "prompt": "For the best photographs, sit in the last ___",
               "answer": "carriage",
-              "explanation": "He says the best place is the last carriage."
+              "explanation": "The first carriage is noisy and smoky; the last carriage is the best place."
             },
             {
               "id": "l3-5",
-              "prompt": "The bridge is more than one hundred ___ old",
+              "prompt": "The stone bridge has stood for more than a hundred ___",
               "answer": "years",
-              "explanation": "He says the bridge is over one hundred years old."
+              "explanation": "The bridge is more than a hundred years old and the tunnel is even older."
             },
             {
               "id": "l3-6",
-              "prompt": "At the lake, children can play in the ___",
+              "prompt": "At the lake, children can use the ___",
               "answer": "playground",
-              "explanation": "He says there is a playground at the lake."
+              "explanation": "Boat trips only run in summer; the children have a playground."
             }
           ]
         },
@@ -1389,51 +1566,67 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Garan, you have been a train driver for twenty years. Why did you choose this job?"
+                "text": "Garan, why did you choose to be a train driver?"
               },
               {
                 "speaker": "h",
-                "text": "As a boy, I lived near a railway line, and I loved watching the trains go by. I wrote down every number that I saw."
+                "text": "People assume my father drove trains, but he was a baker. And I like travelling, but you could do that as a passenger. The real reason is simple: I loved watching trains. As a boy I sat on a bridge with a notebook and wrote down every number. I never grew out of it."
               },
               {
                 "speaker": "i",
-                "text": "What does a normal day look like?"
+                "text": "When does your working day begin?"
               },
               {
                 "speaker": "h",
-                "text": "I start at five in the morning, drive for four hours, have a break, and then drive back. I usually travel about four hundred kilometres."
+                "text": "It depends on the shift. Sometimes I start at seven in the evening and work all night, and I have done midnight starts too. But this week I begin at five in the morning, which means getting up at four. It’s dark and cold, but I like the quiet."
               },
               {
                 "speaker": "i",
-                "text": "Is it a stressful job?"
+                "text": "Is the job stressful?"
               },
               {
                 "speaker": "h",
-                "text": "Sometimes, mostly when the weather is bad. Fog, snow and heavy rain all make it harder to see the signals."
+                "text": "Not on Sundays, there are fewer trains. Heat isn’t a problem, the cabin has air conditioning. Bad weather is what worries me: fog, ice and heavy rain make the rails slippery, and I need to be careful with every bend. That’s when I feel under pressure."
               },
               {
                 "speaker": "i",
-                "text": "What is the best part?"
+                "text": "What do you like best about it?"
               },
               {
                 "speaker": "h",
-                "text": "The early mornings in summer. The sun comes up over the fields, and the whole country looks quiet and golden."
+                "text": "It’s not the people, although passengers wave to me at stations, and it’s not the breaks, which are short. For me it’s summer mornings. When the sun rises over the fields and there’s mist on the river, I think this is the best office in the world."
               },
               {
                 "speaker": "i",
-                "text": "Has anything surprising ever happened?"
+                "text": "Has anything surprising happened to you?"
               },
               {
                 "speaker": "h",
-                "text": "Once, a family of ducks walked across the line, and I had to stop the whole train until they reached the other side."
+                "text": "Once. The train was on time and the signals were fine, but a family of ducks was walking across the line, just in front of me. I stopped and waited five minutes until they were safe. The passengers thought we had a technical problem."
               },
               {
                 "speaker": "i",
-                "text": "Would you recommend the job?"
+                "text": "What would you say about the job?"
               },
               {
                 "speaker": "h",
-                "text": "Yes, but you have to be responsible and happy to work alone. It is not for everyone."
+                "text": "You must be happy on your own, because you spend hours without talking to anyone. It’s not easy to learn quickly, because the training takes two years, and the pay is just OK. But if you like your own company, it’s wonderful."
+              },
+              {
+                "speaker": "i",
+                "text": "Do passengers ever ask you for help?"
+              },
+              {
+                "speaker": "h",
+                "text": "At the station, yes, all the time. People ask me which platform to use, or what time the next train leaves. I always smile, and I tell them to look at the board, then I help them anyway."
+              },
+              {
+                "speaker": "i",
+                "text": "Thank you, Garan. One last question: would you do it again?"
+              },
+              {
+                "speaker": "h",
+                "text": "In a second. I still feel excited every time I leave a station. The boy with the notebook is still inside me."
               }
             ]
           },
@@ -1447,7 +1640,7 @@
                 "He wanted to travel"
               ],
               "answer": 1,
-              "explanation": "He lived near a railway line and loved watching the trains go by."
+              "explanation": "His father was a baker and he could travel as a passenger; he loved watching trains as a boy."
             },
             {
               "id": "l4-2",
@@ -1458,7 +1651,7 @@
                 "At midnight"
               ],
               "answer": 1,
-              "explanation": "He says he starts at five in the morning."
+              "explanation": "Evening and midnight starts are also possible, but this week he starts at five in the morning."
             },
             {
               "id": "l4-3",
@@ -1469,7 +1662,7 @@
                 "When it is hot"
               ],
               "answer": 0,
-              "explanation": "He says it is stressful mostly when the weather is bad."
+              "explanation": "Sundays and heat are not a problem; fog, ice and heavy rain worry him."
             },
             {
               "id": "l4-4",
@@ -1480,7 +1673,7 @@
                 "Summer mornings"
               ],
               "answer": 2,
-              "explanation": "He says the best part is the early mornings in summer."
+              "explanation": "People and breaks are not what he likes; he loves the sunrise and mist on summer mornings."
             },
             {
               "id": "l4-5",
@@ -1491,7 +1684,7 @@
                 "A broken signal"
               ],
               "answer": 1,
-              "explanation": "A family of ducks walked across the line."
+              "explanation": "The train was on time and the signals worked; ducks walking across the line surprised him."
             },
             {
               "id": "l4-6",
@@ -1502,7 +1695,7 @@
                 "It pays very well indeed"
               ],
               "answer": 0,
-              "explanation": "He says you have to be responsible and happy to work alone."
+              "explanation": "Training takes two years and the pay is only OK; he says that you must be happy on your own."
             }
           ]
         }

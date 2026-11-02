@@ -251,7 +251,8 @@
               "options": [
                 "She cut the hair of children",
                 "She washed customers' hair",
-                "She answered the telephone"
+                "She answered the telephone",
+                "She booked appointments by phone"
               ],
               "answer": 1,
               "explanation": "She only washed hair for the first two months."
@@ -262,9 +263,10 @@
               "options": [
                 "Wear the latest fashions",
                 "Work very quickly all day",
+                "Smile at every customer",
                 "Listen before she cuts"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "A good hairdresser must listen before she cuts."
             },
             {
@@ -272,6 +274,7 @@
               "prompt": "What is the worst part of the job?",
               "options": [
                 "Standing for eight hours",
+                "Arriving very early",
                 "Washing hair with cold water",
                 "Sweeping up the floor"
               ],
@@ -284,7 +287,8 @@
               "options": [
                 "Seeing their children",
                 "Getting big tips",
-                "Hearing their stories"
+                "Hearing their stories",
+                "Learning new skills from them"
               ],
               "answer": 2,
               "explanation": "The best part is hearing the stories of the customers."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What happened last week?",
               "options": [
-                "She trimmed a boy's fringe",
                 "She lost her job at the shop",
-                "She cut Kinga's own hair"
+                "She trimmed a boy's fringe",
+                "She cut Kinga's own hair",
+                "She asked for a pay rise"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Kinga let her trim a boy's fringe for the first time."
             }
           ]
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "A short history of hairstyles",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Hairstyles have always been a way of showing who we are. [1] In ancient Egypt, rich people wore wigs made from real hair, and they put sweet oils on them.\n\nIn the Middle Ages, women often covered their hair with scarves or hats. [2] It was considered polite for them to keep it hidden, except at home.\n\nIn the eighteenth century, hair became very tall and wide. [3] Some people even put little ships and flowers in their wigs, and went out for a ride in a coach with the roof open.\n\nIn the 1920s, many young women cut their hair short for the first time. [4] People said that it was very shocking, but the style soon became popular.\n\nToday, there are no strict rules about hair. [5] You can wear it long, short, curly, straight, blue or even pink, and nobody will be surprised.",
           "sentences": [
-            "Men and women could choose from many different colours.",
+            "In Egypt, the hair of poor children was often shaved.",
             "The styles were so large that people could hardly walk through doors.",
-            "It was a sign of freedom and of a new kind of life.",
-            "This was a rule that they were taught from a young age.",
             "Even thousands of years ago, hair was a matter of fashion.",
-            "In some countries, it took years to learn the skill."
+            "In some countries, it took years to learn the skill.",
+            "Many people still go to the same hairdresser all their lives.",
+            "Men and women could choose from many different colours.",
+            "This was a rule that they were taught from a young age.",
+            "It was a sign of freedom and of a new kind of life."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "E",
+              "answer": "C",
               "explanation": "Even thousands of years ago hair was a matter of fashion, which leads to the example from ancient Egypt."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "G",
               "explanation": "The rule that women hid their hair was taught from a young age, and the next sentence says it was polite to keep it hidden."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "C",
+              "answer": "H",
               "explanation": "Short hair was a sign of freedom, and the next sentence says people found it shocking."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "F",
               "explanation": "Many different colours follows the idea of no rules and leads to the blue and pink examples."
             }
           ]
@@ -722,24 +729,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Kamila",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much is a haircut at this salon?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Fifteen pounds for a trim, and twenty-five if you want a new style."
+                    "text": "Hello, and welcome to Kellan’s Barbers! Let me tell you about our prices this month. A full cut with a wash and a style is twenty-five pounds, and a beard shape costs twenty. But if you only need a quick trim to keep your hair tidy, it’s just fifteen pounds, and it takes about ten minutes. Last year the trim was eighteen, but we are trying to bring more people in. If you come before ten in the morning on a weekday, you also get a free coffee. You can book online or just walk in, but on Saturdays we are always busy, so I’d call first."
                   }
                 ]
               },
@@ -752,21 +747,13 @@
                   "Twenty-five pounds"
                 ],
                 "answer": 1,
-                "explanation": "She says that a trim costs fifteen pounds."
+                "explanation": "The full cut is twenty-five, the beard shape twenty and last year’s trim eighteen, but the trim now costs only fifteen pounds."
               }
             },
             {
               "id": "l1-2-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Katya",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Kemal",
@@ -778,25 +765,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Is it difficult to get an appointment on Saturday?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "Yes, it is the busiest day, so book at least a week before."
+                    "text": "Thank you for calling Hair by Kemal. We can’t answer right now. If you want a cut, you can usually come in on the same day, because those take only half an hour. For a trim, calling two days before is also fine, and it helps you to get your favourite time. But colouring takes up to three hours, and we only have two colourists, so please call at least a week before your appointment. In December I’d say even earlier, because everybody wants a party hairstyle. Leave your name and number after the tone, and we’ll call you back."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "When should the woman book?",
+                "prompt": "When should a customer book a colour appointment?",
                 "options": [
                   "A week before",
                   "On the same day",
                   "Two days before"
                 ],
                 "answer": 0,
-                "explanation": "He says that she should book at least a week before."
+                "explanation": "Cuts and trims can be booked on the same day or two days before, but colouring takes three hours, so customers should book a week before."
               }
             },
             {
@@ -823,11 +806,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you colour your hair yourself?"
+                    "text": "Kinga, I love your hair. That red looks so natural. Did you go to a hairdresser?"
                   },
                   {
                     "speaker": "f",
-                    "text": "No, my sister did it. It took two hours, and the kitchen was a mess."
+                    "text": "Thanks! I nearly did. I booked an appointment, but it was too expensive, so I cancelled it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So you did it yourself?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I bought a box and stood alone in the bathroom, reading the instructions three times, but I was too scared to start. In the end my sister came over with her kit. She learned colouring on a course last year."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "She did a good job."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She did, but she says it’s the last time. She wants to be paid next time!"
                   }
                 ]
               },
@@ -837,10 +836,10 @@
                 "options": [
                   "Her sister",
                   "A hairdresser",
-                  "She did it herself"
+                  "She did it alone"
                 ],
                 "answer": 0,
-                "explanation": "She says that her sister did it."
+                "explanation": "Kinga cancelled the salon and was too scared to use the box, so her sister did it."
               }
             },
             {
@@ -866,12 +865,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Kjell, you’re wearing a hat inside! Is it that cold?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Why do you wear that hat all the time?"
+                    "text": "Not at all, it’s warm today. I just don’t want people to see my hair."
                   },
                   {
                     "speaker": "m",
-                    "text": "Because my hair is a mess after the worst haircut of my life."
+                    "text": "Did you do something to it? Is it the colour?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, the colour is fine, I’d choose the same again. It’s my new haircut, I really hate it. The hairdresser took off far too much, and now I look like a soldier."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m sure it isn’t that bad. Let me see."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No way. I’ll keep the hat on until it grows back."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Poor you. It’ll take a month."
                   }
                 ]
               },
@@ -884,21 +903,13 @@
                   "He likes the colour"
                 ],
                 "answer": 1,
-                "explanation": "He says that he had the worst haircut of his life."
+                "explanation": "It is not cold and he likes the colour; what he hates is the new cut, so he hides it under a hat."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Kobi",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Kamila",
@@ -910,12 +921,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Where did you learn to cut hair?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "At college, then I worked for two years in a salon in Paris."
+                    "text": "Welcome to the Careers Evening at Westside College. My name is Kamila, and I’m a hair stylist. I studied here, in this building, for three years. After that I worked for two years in a salon in Paris, which was an amazing experience, although my French was terrible. Before that I had cut hair at home for my family and friends, and I never imagined I’d have a job like this. Now I have my own shop in my home town, and I come back here one evening a week to teach. So if you want to ask me something, don’t be shy."
                   }
                 ]
               },
@@ -928,7 +935,7 @@
                   "In a salon in Paris"
                 ],
                 "answer": 2,
-                "explanation": "She says that she worked in a salon in Paris."
+                "explanation": "She studied at the college and cut hair at home before, but she spent two years working in a salon in Paris."
               }
             },
             {
@@ -954,12 +961,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Kristof, I heard you’re making something for the school play."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "What do you do in your spare time?"
+                    "text": "Yes, three wigs for the actors. It’s my hobby, but I don’t do plays. I mean, I don’t write them. My cousin writes the plays."
                   },
                   {
                     "speaker": "m",
-                    "text": "I make wigs for the school theatre. It is a lot of fun."
+                    "text": "And at work you cut hair, don’t you?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not any more. I used to cut hair in my uncle’s shop, but now I work in an office. I do the wigs at night."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "How long does one take?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "About three weeks. It’s slow, but I love it."
                   }
                 ]
               },
@@ -972,7 +995,7 @@
                   "He writes plays"
                 ],
                 "answer": 0,
-                "explanation": "He says that he makes wigs for the school theatre."
+                "explanation": "He does not write the plays and no longer cuts hair; he makes wigs at night as a hobby."
               }
             },
             {
@@ -999,11 +1022,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Would you like a cup of tea while you wait?"
+                    "text": "Welcome back, Kora. Can I get you something while you wait? A cup of tea?"
                   },
                   {
                     "speaker": "f",
-                    "text": "No, thank you. I would prefer a glass of water, please."
+                    "text": "Tea would be lovely, but I had two cups at lunch, and I don’t sleep if I have more."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then a cold juice? We have orange and apple."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The juice is too sweet for me today. I’ve got a headache, and I think I’m dehydrated."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. Just water, then?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, a big glass, please. With some ice if you have it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Coming right up."
                   }
                 ]
               },
@@ -1016,7 +1059,7 @@
                   "A cold juice"
                 ],
                 "answer": 1,
-                "explanation": "She says that she would prefer a glass of water."
+                "explanation": "She has already had enough tea and finds the juice too sweet, so she asks for a big glass of water."
               }
             }
           ]
@@ -1052,24 +1095,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good morning, and welcome to the salon. Do you have an appointment?"
+                    "text": "The waiting area looks sad. Shall we buy some new magazines?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, at ten, for a haircut. My name is Kellan."
+                    "text": "People look at their phones now. Nobody reads them. What about repainting the walls?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s a big job and the room would be closed for a week. I’d rather have a coffee machine. Customers wait for twenty minutes sometimes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s true. And it’s cheap if we rent it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let’s ask the company for a price tomorrow."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fine. I’ll make the call."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "What do Kinga and Kellan agree to do in the waiting area?",
                 "options": [
-                  "In a library",
-                  "In a restaurant",
-                  "In a salon"
+                  "Buy some new magazines",
+                  "Get a coffee machine",
+                  "Paint the walls"
                 ],
-                "answer": 2,
-                "explanation": "The woman welcomes him to the salon and asks about his appointment."
+                "answer": 1,
+                "explanation": "Nobody reads magazines and painting would close the room for a week, so both like the idea of renting a coffee machine."
               }
             },
             {
@@ -1096,24 +1155,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am afraid that the hairdresser cut too much off the back!"
+                    "text": "I’m thinking of opening the salon on Sundays. We’d have more customers."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't worry. It will grow back, and honestly, it looks fine."
+                    "text": "Maybe, but the money isn’t the problem. Last time we tried, only three people came in all day."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then the staff could do it, because they get extra pay."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They already work six days. Nobody wants to lose the only day with their families. I think it’s too much for them."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I hadn’t thought about that."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let’s ask the team first, before you decide anything."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Kamila think about opening on Sundays?",
                 "options": [
-                  "Giving him a long bill",
-                  "Telling him not to worry",
-                  "Asking him to go away"
+                  "It would be too much for the staff",
+                  "It would bring many new customers",
+                  "It would cost too much money"
                 ],
-                "answer": 1,
-                "explanation": "She tells him not to worry and that it looks fine."
+                "answer": 0,
+                "explanation": "Kamila says that few customers came last time and that money is not the problem; the staff already work six days."
               }
             },
             {
@@ -1139,25 +1214,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "So, Katya, how was your first week at the salon?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "I have just got a job at the best salon in town!"
+                    "text": "Honestly, I thought I’d be washing hair all day, and I did, for the first two days. But it was never boring, people talk about everything."
                   },
                   {
                     "speaker": "m",
-                    "text": "Congratulations! You really deserve it. I am so pleased for you."
+                    "text": "And the customers? I’d be scared."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I was, on Monday. Now I just smile and ask them how their day is. I’ve learned more in five days than in my whole course."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Have you cut anything yet?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yesterday I finished a whole fringe on my own. My boss said it was perfect. I’m really proud."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Katya feel about her first week at the salon?",
                 "options": [
-                  "Pleased for the woman",
-                  "Surprised by the job",
-                  "Worried about her work"
+                  "Bored with the work",
+                  "Afraid of the customers",
+                  "Proud of what she has learned"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is so pleased for her."
+                "answer": 2,
+                "explanation": "The work was never boring and she was scared only on Monday; she has learned a lot and says she is really proud."
               }
             },
             {
@@ -1184,24 +1275,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, can I change my appointment from Friday to Saturday?"
+                    "text": "Hi Kinga, it’s Kian. I have an appointment at four tomorrow, but my train leaves at three."
                   },
                   {
                     "speaker": "f",
-                    "text": "Let me check the book. Yes, we have a free place at eleven."
+                    "text": "Oh dear. Do you want to cancel?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I still need the cut. I just wanted to ask if I could come earlier, at ten or eleven."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I have eleven. I can also put your shampoo aside, you asked about it last week."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, please, I’ll pay for that tomorrow. Thanks for changing the time."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want?",
+                "prompt": "Why does Kian talk to Kinga?",
                 "options": [
                   "To pay a bill",
-                  "To buy some shampoo",
-                  "To change his appointment"
+                  "To move his appointment",
+                  "To buy some shampoo"
                 ],
-                "answer": 2,
-                "explanation": "He asks to change his appointment from Friday to Saturday."
+                "answer": 1,
+                "explanation": "He does not want to cancel; he asks for an earlier time because of his train, and the shampoo is only something he will pay for tomorrow."
               }
             },
             {
@@ -1227,25 +1330,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "What do you think of my first haircut on a real person?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Today, I am going to teach you how to plait long hair."
+                    "text": "To be honest, it’s much better than I expected. The back is straight, and the sides are even."
                   },
                   {
                     "speaker": "m",
-                    "text": "Is it easy? My hands are not very good at that."
+                    "text": "The fringe is a bit short, isn’t it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Only a little, it will grow. You were slow, and you were nervous, but for a beginner it’s very good."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. I thought it looked different from the photo, to be honest."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Everyone’s hair is different from photos. Don’t worry."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What is Kora's opinion of Kemal's first haircut?",
                 "options": [
-                  "Teaching a skill",
-                  "Asking for payment",
-                  "Selling a product"
+                  "It was too short",
+                  "It looked different from the photo",
+                  "It was good for a beginner"
                 ],
-                "answer": 0,
-                "explanation": "She says that she is going to teach them how to plait hair."
+                "answer": 2,
+                "explanation": "Kora praises the back and the sides, says the short fringe will grow, and calls it very good for a beginner."
               }
             },
             {
@@ -1271,25 +1390,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "That will be thirty pounds, please."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Oh no! I have forgotten my wallet, and I cannot pay!"
+                    "text": "Oh no. My card isn’t working, and I left my wallet in the office. I’m so sorry, I’m so embarrassed."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't panic. You can come back tomorrow and pay then."
+                    "text": "Don’t worry, it happens."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m not angry with the machine or with you, of course. I just feel silly. Could I come back with the money tomorrow?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. Just bring it by lunchtime."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll come at nine, I promise. Thanks for your patience."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "How does Kobi feel about not being able to pay?",
                 "options": [
-                  "He has lost his bus pass",
-                  "He is late for work",
-                  "He cannot pay now"
+                  "Embarrassed about it",
+                  "Angry with the staff",
+                  "Calm about it"
                 ],
-                "answer": 2,
-                "explanation": "He says that he has forgotten his wallet and cannot pay."
+                "answer": 0,
+                "explanation": "He says it is embarrassing and that he feels silly; he is not angry with the staff."
               }
             }
           ]
@@ -1314,64 +1449,61 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Good morning, everybody, and welcome to my salon. My name is Kinga, and I have been a hairdresser for thirty years. I opened this shop twelve years ago, and today I have six stylists working for me. We are open from nine in the morning until six in the evening, except on Sundays and Mondays. A basic cut costs twenty pounds, but if you want colour as well, the price is sixty. We always use gentle products, because I do not like strong chemicals. On Tuesdays, students can get a cheaper price, and children under ten pay only ten pounds. If you have long hair and want to give some of it away, we have a special programme. We collect hair to make wigs for people who are ill. Last year, we sent one hundred and fifty bags to the charity. I am very proud of that. Now, who would like to be my first customer today?"
+                "text": "Good morning, everybody, and welcome to my salon. My name is Kinga, and I have been a hairdresser for thirty years. I started when I was eighteen, so now you can calculate my age. Before that I wanted to be a nurse, but I fainted the first time I saw blood. I opened this shop twelve years ago. It used to be a bakery, and you can still smell the bread sometimes, I swear. Many customers think it’s been ten years, because the time passes quickly, but it’s really twelve. Today there are six stylists here. We were four at the beginning, then eight at one point, but two left to start their own business, so six is a good number. They are friendly and very well trained, and I trust every one of them. Let’s talk about prices. A basic cut costs twenty pounds. A cut with a colour is sixty, and a full wedding style is eighty. Children under ten pay half price, and I think this is fair. Those between ten and fourteen pay the student price, which is fifteen pounds. Finally, a word about something special. We collect all the long hair that people cut off, and we send it to a charity in the north of England. They make wigs for people who lose their hair when they are ill. It could be for a child or for a patient in hospital. Last year we sent enough hair for forty wigs. Some people think we make hats or brushes, or that we throw it away, but no. If you want to give your hair, just ask your stylist to put it in a bag for you. Right, let’s go to the main room to meet the team."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Kinga has worked as a hairdresser for ___ years",
+              "prompt": "Kinga's experience as a hairdresser: ___ years",
               "answer": "thirty",
               "accepted": [
                 "30"
               ],
-              "explanation": "I have been a hairdresser for thirty years."
+              "explanation": "She has been a hairdresser for thirty years; eighteen is only the age when she started."
             },
             {
               "id": "l3-2",
-              "prompt": "She opened the shop ___ years ago",
+              "prompt": "The shop opened ___ years ago",
               "answer": "twelve",
               "accepted": [
                 "12"
               ],
-              "explanation": "I opened this shop twelve years ago."
+              "explanation": "Customers think ten years, but it is really twelve."
             },
             {
               "id": "l3-3",
-              "prompt": "She has ___ stylists",
+              "prompt": "Number of stylists in the team: ___",
               "answer": "six",
               "accepted": [
                 "6"
               ],
-              "explanation": "I have six stylists working for me."
+              "explanation": "There were four, then eight, but now there are six stylists."
             },
             {
               "id": "l3-4",
-              "prompt": "A basic cut costs ___ pounds",
+              "prompt": "The price of a basic cut: ___ pounds",
               "answer": "twenty",
               "accepted": [
                 "20"
               ],
-              "explanation": "A basic cut costs twenty pounds."
+              "explanation": "A basic cut costs twenty pounds; a cut with colour is sixty and a wedding style eighty."
             },
             {
               "id": "l3-5",
-              "prompt": "Children under ___ pay ten pounds",
+              "prompt": "Children under ___ pay half price",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "Children under ten pay only ten pounds."
+              "explanation": "Children under ten pay half price; those between ten and fourteen pay fifteen pounds."
             },
             {
               "id": "l3-6",
-              "prompt": "The salon collects hair to make ___",
+              "prompt": "The salon sends hair to make ___",
               "answer": "wigs",
               "accepted": [
                 "wig"
               ],
-              "explanation": "We collect hair to make wigs."
+              "explanation": "The hair goes to a charity that makes wigs, not hats or brushes."
             }
           ]
         },
@@ -1403,120 +1535,120 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Kellan, you have been a barber for twenty years. What do you like about it?"
+                "text": "Kellan, you’ve been a barber for twenty years. What do you like most about the job?"
               },
               {
                 "speaker": "h",
-                "text": "The conversations. People tell me about their jobs, their families, their worries. A barber's shop is like a small village."
+                "text": "People expect me to say the salary, and honestly it’s a decent job, but nobody gets rich. And the hours are long, I often finish at nine at night. No, what I love are the talks. People tell me about their holidays, their children, their problems. Sometimes I feel more like a friend than a barber."
               },
               {
                 "speaker": "i",
-                "text": "What is the strangest request that you have received?"
+                "text": "What’s the strangest thing a customer has asked for?"
               },
               {
                 "speaker": "h",
-                "text": "A man once asked me to cut a picture of his dog into the back of his head. It took an hour, and he was very happy."
+                "text": "Oh, there are a few. A man once wanted a very long beard shaped like a triangle, that took ages. Another asked for blue hair, which was fun. But the strangest was a picture of his dog, cut into the hair on the back of his head. I almost said no, but he showed me the photo and I did my best. He was so happy."
               },
               {
                 "speaker": "i",
-                "text": "What do you do when a customer is not happy?"
+                "text": "What do you do when a customer is unhappy?"
               },
               {
                 "speaker": "h",
-                "text": "First, I listen. Then I try to fix the problem. If I cannot, I offer a free cut next time. Honesty is more important than pride."
+                "text": "First, I listen. I never argue, even if I think the person is wrong. Then I ask what exactly they don’t like and try to fix it. Asking them to leave is never a good idea, and I wouldn’t bother my boss, because I am the boss. Most people are fine after ten minutes."
               },
               {
                 "speaker": "i",
-                "text": "How do you keep your skills up to date?"
+                "text": "How do you stay up to date?"
               },
               {
                 "speaker": "h",
-                "text": "I go to a workshop twice a year and watch videos online. Fashions change fast, and I do not want to be left behind."
+                "text": "Magazines are nice, and I do read them every month, but fashions change faster than that. I tried working abroad for a few months once, but it’s not necessary. What really helps is workshops, I go to three or four a year, and videos online, which I watch at night with a cup of tea."
               },
               {
                 "speaker": "i",
-                "text": "Is it a good job for young people?"
+                "text": "What do young people need to become good barbers?"
               },
               {
                 "speaker": "h",
-                "text": "Yes, if you enjoy meeting people and you are not afraid of long hours. You also need to be patient."
+                "text": "Not a university degree, certainly. And experience abroad is a bonus, not a must. What I look for is patience, because learning takes years, and a real love of meeting people. If someone doesn’t enjoy talking, it’s a very hard job."
               },
               {
                 "speaker": "i",
-                "text": "What would you like to do in the future?"
+                "text": "Why would you like to start a school?"
               },
               {
                 "speaker": "h",
-                "text": "I would like to open a small school for young barbers. I learned from an old master, and I want to pass on what he taught me."
+                "text": "It’s my dream. I’m not thinking about money, a school isn’t a business that makes much. And I’d still keep my shop, I’m not tired of it. The reason is simple: a lot of people helped me when I started, and I want to pass on everything I’ve learned to the next generation."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "What does Kellan like about his job?",
+              "prompt": "What does Kellan like most about his job?",
               "options": [
                 "The high salary",
                 "The talks with his customers",
                 "The short working hours"
               ],
               "answer": 1,
-              "explanation": "He loves the conversations, because a barber's shop is like a village."
+              "explanation": "He says nobody gets rich and the hours are long; what he loves are the talks, when he feels like a friend."
             },
             {
               "id": "l4-2",
-              "prompt": "What did a man once ask for?",
+              "prompt": "What did one customer ask Kellan for?",
               "options": [
                 "A very long beard",
                 "A picture of his dog on his head",
-                "A blue colour on his hair"
+                "Blue hair"
               ],
               "answer": 1,
-              "explanation": "He asked for a picture of his dog cut into the back of his head."
+              "explanation": "The beard and the blue hair were other customers; the strangest was a picture of a dog on the back of his head."
             },
             {
               "id": "l4-3",
-              "prompt": "What does he do for an unhappy customer?",
+              "prompt": "What does Kellan do for an unhappy customer?",
               "options": [
                 "He listens and tries to fix the problem",
                 "He asks the customer to leave",
                 "He asks his boss to help"
               ],
               "answer": 0,
-              "explanation": "First, he listens, then he tries to fix the problem."
+              "explanation": "He listens and tries to fix it; asking people to leave is never a good idea and he is the boss himself."
             },
             {
               "id": "l4-4",
-              "prompt": "How does he stay up to date?",
+              "prompt": "How does Kellan stay up to date?",
               "options": [
                 "He works abroad for a year",
                 "He reads magazines every month",
                 "He goes to workshops and watches videos"
               ],
               "answer": 2,
-              "explanation": "He goes to a workshop twice a year and watches videos online."
+              "explanation": "Magazines are too slow and working abroad is not necessary; workshops and online videos really help."
             },
             {
               "id": "l4-5",
-              "prompt": "What does he say that young people need?",
+              "prompt": "What does Kellan say young people need?",
               "options": [
                 "A degree from a university",
                 "Patience and a love of meeting people",
                 "Experience of working abroad"
               ],
               "answer": 1,
-              "explanation": "You need to enjoy meeting people, accept long hours and be patient."
+              "explanation": "A degree is not needed and experience abroad is only a bonus; he looks for patience and a love of meeting people."
             },
             {
               "id": "l4-6",
-              "prompt": "What would he like to do in the future?",
+              "prompt": "Why does Kellan want to open a school?",
               "options": [
-                "Open a school for young barbers",
-                "Sell his shop and travel",
-                "Write a book about hair"
+                "To share what he has learned",
+                "To make more money",
+                "To stop working in the shop"
               ],
               "answer": 0,
-              "explanation": "He would like to open a small school for young barbers."
+              "explanation": "He is not thinking about money and keeps his shop; he wants to pass on everything he has learned."
             }
           ]
         }

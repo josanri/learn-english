@@ -251,7 +251,8 @@
               "options": [
                 "At the weekend",
                 "Every evening",
-                "On school days"
+                "On school days",
+                "During the holidays only"
               ],
               "answer": 0,
               "explanation": "He works every Saturday and Sunday."
@@ -260,11 +261,12 @@
               "id": "r3-2",
               "prompt": "How did Mrs Alvarez react when he dropped the cups?",
               "options": [
-                "She laughed about it",
                 "She sent him home",
-                "She made him pay"
+                "She showed him how to hold it",
+                "She made him pay",
+                "She laughed about it"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She only laughed and said that everyone breaks cups in the first week."
             },
             {
@@ -273,7 +275,8 @@
               "options": [
                 "Learning to cook",
                 "Meeting regular customers",
-                "Eating free cake"
+                "Eating free cake",
+                "Chatting with Mrs Alvarez"
               ],
               "answer": 1,
               "explanation": "He says the best part is the regular customers."
@@ -284,7 +287,8 @@
               "options": [
                 "The cold weather",
                 "The early morning start",
-                "The noise of the machine"
+                "The noise of the machine",
+                "The low pay"
               ],
               "answer": 2,
               "explanation": "The coffee machine is noisy and gives him a headache."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What is he saving money for?",
               "options": [
+                "A trip to Italy",
+                "A new bike",
                 "A cooking course",
-                "A new phone",
-                "A trip to Italy"
+                "A new phone"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He is saving the rest of his pay for a trip to Italy."
             }
           ]
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "My sixteenth birthday dinner",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "For my sixteenth birthday, my parents took me to a restaurant in the old part of town. [1] I had walked past it many times, but I had never been inside.\n\nWe arrived at seven, and a waiter showed us to a table by the window. [2] My mother said it was the most beautiful table in the room. The menu was long, and I found it hard to choose.\n\nIn the end, I ordered a mushroom pasta, which was delicious. My father, who loves fish, asked the waiter for advice. [3] He recommended the grilled sea bass, and my father was very pleased with it.\n\nAfter the main course, the lights suddenly went out. [4] Everyone in the restaurant sang \"Happy Birthday\" while a waiter carried a cake with candles to our table. I was so surprised that I could not speak.\n\nIt was the best birthday of my life. [5] I have promised myself that I will bring my own children to the same restaurant one day.",
           "sentences": [
-            "At first, I thought there was a power cut.",
-            "It was a small place with red walls and old photographs.",
             "My brother could not come because of his exams.",
             "The food was perfect, and everybody looked so happy.",
+            "At first, I thought there was a power cut.",
+            "The prices on the menu were higher than I had expected.",
             "From there, we could see the river and the lights of the bridge.",
-            "The waiter was friendly and knew the menu very well."
+            "The waiter was friendly and knew the menu very well.",
+            "It was a small place with red walls and old photographs.",
+            "We booked the table three weeks before."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "G",
               "explanation": "The description of the small place leads to \"I had walked past it many times\"."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "C",
               "explanation": "\"At first, I thought\" explains the lights going out, before the birthday surprise."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "B",
               "explanation": "The sentence sums up why it was the best birthday, before the promise."
             }
           ]
@@ -729,6 +736,22 @@
                   {
                     "speaker": "f",
                     "text": "The pizza is eight pounds, and a drink is two, but the set menu with both is nine pounds."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That sounds like a good price. Is the drink any drink, or only some of them?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Any soft drink, or a glass of juice. Tea and coffee cost extra. The set menu was seven pounds last year, and with a dessert it is eleven pounds. Today it is nine pounds without dessert."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fine. Then I'll take the set menu for me and for my brother. We are very hungry after the football."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. Would you like to sit inside or outside? It is a warm evening."
                   }
                 ]
               },
@@ -773,6 +796,22 @@
                   {
                     "speaker": "m",
                     "text": "At nine thirty, but the bar stays open until midnight."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, I thought it closed at nine o'clock. We are a big group, and we are coming straight from the cinema."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then you have plenty of time. If you arrive before nine thirty, we can still take your order for the kitchen. After that, we only serve drinks at the bar."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That's perfect. We will be there at about nine, and we'll stay until midnight if the music is nice."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It is live music on Fridays. I'll keep a table near the stage for you."
                   }
                 ]
               },
@@ -817,6 +856,18 @@
                   {
                     "speaker": "f",
                     "text": "I'm sorry. We only have a table for two at that time. You could wait about twenty minutes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Twenty minutes is quite long. We have a little boy who is tired, and the film starts at nine."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I understand. We are open until eleven, so the restaurant is not closing early, and the menu is the same as last week. The only problem is the size of the table."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I see. We'll wait in the bar, then. Please call us when the table for four is ready."
                   }
                 ]
               },
@@ -861,6 +912,30 @@
                   {
                     "speaker": "m",
                     "text": "No, the soup is fine. But the chocolate dessert does, so please be careful."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. What about the bread? Does it have nuts in it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, the bread is made in our kitchen with flour, water and salt only. We don't use nuts in the soup or in the main courses. Only the dessert has them."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That is a relief. I'll take the soup and then the fish, and I won't order dessert."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Very good. I'll tell the chef about your allergy, just to be safe."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. Is the whole kitchen free of nuts, then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I can't say that none are used at all in the kitchen. Please tell your waiter every time you order."
                   }
                 ]
               },
@@ -905,6 +980,22 @@
                   {
                     "speaker": "f",
                     "text": "I'm very sorry. I'll bring you a fresh one straight away."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I don't want you to warm it up in the microwave. I would like a new plate, please."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. I'll ask the chef to cook a new portion. It will take about ten minutes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That's fine. And I don't want my money back, because I'm very hungry. I only want hot food."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Understood. Could I bring you some bread while you wait? It's free."
                   }
                 ]
               },
@@ -949,6 +1040,22 @@
                   {
                     "speaker": "f",
                     "text": "Far too spicy for me, but my sister loved it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh no. Was it cold as well? I have heard that the kitchen sometimes sends food late."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, it was hot, and it was not sweet at all. It was only too spicy. I drank four glasses of water."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And your sister liked it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She loved it. She asked the waiter for the recipe, and she wants to cook it at home next weekend."
                   }
                 ]
               },
@@ -993,6 +1100,22 @@
                   {
                     "speaker": "f",
                     "text": "Sorry, the machine is broken today. It is cash only."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh dear. I don't have much cash in my wallet. Is there a cash machine near here?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, there is one at the end of the street, next to the bank. It takes about two minutes to walk there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Can I pay by phone instead? I've got my phone with me, and it has my bank app."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I'm sorry, we can't take phones either. Only cash. I will keep your table, and you can pay when you come back."
                   }
                 ]
               },
@@ -1046,6 +1169,22 @@
                   {
                     "speaker": "m",
                     "text": "Of course. What is your address?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is twelve Park Road, flat four. Please ring the bell twice, because my sister is sleeping."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. Which pizzas would you like? And would you like any drinks or garlic bread with them?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "One margherita and one with mushrooms, both large. No drinks, thanks. I am not calling to complain about last week, and I don't want to book a table. I only want food at home."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That will be eighteen pounds, and it takes about thirty minutes."
                   }
                 ]
               },
@@ -1094,6 +1233,22 @@
                   {
                     "speaker": "m",
                     "text": "Good idea."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They say it is not expensive, and they have a lunch menu for ten pounds. We could go at one o'clock."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Should we cook at home instead? The fridge is full."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I don't want to cook on a Sunday. And a café is too small for a family lunch. Let's book a table at the Chinese restaurant."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "All right. I'll call them this morning."
                   }
                 ]
               },
@@ -1142,6 +1297,18 @@
                   {
                     "speaker": "f",
                     "text": "Call me straight away."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do I need to bring my own clothes?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, we give you a black shirt and an apron. Wash your hands often. I know it's a lot to learn on the first day, but you will be fine."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I'll try to remember everything."
                   }
                 ]
               },
@@ -1186,6 +1353,22 @@
                   {
                     "speaker": "f",
                     "text": "You're right, I'm sorry. I'll change it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. The food was excellent, and the table was clean, so we have no other complaint. The only thing was the bill."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I understand. Let me check the order again. Yes, there is one dessert on your table, and the system shows two. I'll bring you a new bill."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No hurry. The waiter was very friendly, and the food came quickly, so we are not annoyed."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That's kind of you. I will also give you a free coffee for the trouble."
                   }
                 ]
               },
@@ -1230,6 +1413,18 @@
                   {
                     "speaker": "m",
                     "text": "Yes, but she mustn't know. Let's plan a party with all her friends and keep it a surprise."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good idea. I'll call her friends tonight. We could invite thirty people, and ask the restaurant for a private room."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Let's not tell Aunt Rita, because she cannot keep a secret. We will say it's just a normal dinner, not a cooking class or a trip."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good. I will order a big cake with fifty candles."
                   }
                 ]
               },
@@ -1274,6 +1469,18 @@
                   {
                     "speaker": "m",
                     "text": "Actually, we do. Can you come tomorrow for a chat?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, I can. I finish school at three, so I can come at any time after that. Do I need to bring anything?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Bring your identity card and a parent's phone number. I am not offering you a table by the window or a free coffee, ha ha. This is a job interview, and it will take about twenty minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. I'll be there at four o'clock."
                   }
                 ]
               },
@@ -1311,7 +1518,7 @@
             "turns": [
               {
                 "speaker": "perpetua",
-                "text": "Good evening, and welcome to Tasty Hands Cooking School. I'm Perpetua, and tonight we're going to make a three-course meal. The class starts at half past six and finishes at nine. First, we'll make tomato soup. You'll need an apron, and you can borrow one from me. The knives are provided, but please be careful. For the main course, we'll cook chicken with rice, and for dessert, we'll bake an apple cake. At nine o'clock, we'll all eat together at the long table. Each class costs thirty pounds, and the ingredients are included in the price. Now, let's wash our hands and begin."
+                "text": "Good evening, and welcome to Tasty Hands Cooking School. We are a small school with only twelve students in each class, so everybody can ask questions. I'm Perpetua, and tonight we're going to make a three-course meal. Before we start, I want to say a few words about safety. The kitchen floor can be wet, so please walk slowly, and tie back long hair. The class starts at half past six and finishes at nine. There is a short break at eight, when you can have a cup of tea or a glass of water. First, we'll make tomato soup. The tomatoes are from a farm near the school, and they are very sweet. You'll need an apron, and you can borrow one from me. They are hanging on the hooks behind the door, and you should choose the right size. The knives are provided, but please be careful. Cut away from your body, and never leave a knife on the edge of the table. For the main course, we'll cook chicken with rice, and for dessert, we'll bake an apple cake. Everyone will get a small piece to take home in a box, so please bring a bag. The recipe sheets are on the table, and you can write notes on them. At nine o'clock, we'll all eat together at the long table. You can bring a guest to the meal, but please tell the office a day before. Each class costs thirty pounds, and the ingredients are included in the price. If you enjoy the class, there are six more evenings this month, and you can book them at the desk. Now, let's wash our hands and begin."
               }
             ]
           },
@@ -1399,11 +1606,27 @@
               },
               {
                 "speaker": "hugh",
+                "text": "What was your first job in a kitchen?"
+              },
+              {
+                "speaker": "marnie",
+                "text": "I washed plates in a hotel when I was sixteen. It was hard work, and my hands were red all the time, but I watched the chefs and learned something new every day."
+              },
+              {
+                "speaker": "hugh",
                 "text": "Did you study cooking?"
               },
               {
                 "speaker": "marnie",
                 "text": "Yes, I spent two years in a small town in Italy, working in a family kitchen. I learned that the best dishes are often the simplest."
+              },
+              {
+                "speaker": "hugh",
+                "text": "Was it easy to go back home after Italy?"
+              },
+              {
+                "speaker": "marnie",
+                "text": "Not at all. I missed the small town, the market and the family I worked for. But I was happy to see my own city again, and I opened a little café with a friend."
               },
               {
                 "speaker": "hugh",
@@ -1415,11 +1638,27 @@
               },
               {
                 "speaker": "hugh",
+                "text": "What do you eat after work?"
+              },
+              {
+                "speaker": "marnie",
+                "text": "Usually a bowl of cereal at midnight! Chefs eat very badly at home, because we cook for other people all day. On my day off, I cook a big meal for my friends."
+              },
+              {
+                "speaker": "hugh",
                 "text": "How many meals do you cook on a busy night?"
               },
               {
                 "speaker": "marnie",
                 "text": "On Saturdays, we serve about two hundred, and everything has to arrive hot at the same time. It is like a team sport."
+              },
+              {
+                "speaker": "hugh",
+                "text": "What happens when something goes wrong?"
+              },
+              {
+                "speaker": "marnie",
+                "text": "We stay calm. Last month a customer found a hair in the soup, and I went to the table myself to say sorry. Good restaurants always listen to their customers."
               },
               {
                 "speaker": "hugh",
@@ -1431,11 +1670,35 @@
               },
               {
                 "speaker": "hugh",
+                "text": "Do you like to try food from other countries?"
+              },
+              {
+                "speaker": "marnie",
+                "text": "Very much. When I travel, I go to markets before I visit the museums. I once ate a fruit in Thailand that smelled terrible but tasted wonderful."
+              },
+              {
+                "speaker": "hugh",
                 "text": "What are you planning for the future?"
               },
               {
                 "speaker": "marnie",
                 "text": "I'm writing a recipe book with my grandmother's best dishes. She is ninety, and she checks every page."
+              },
+              {
+                "speaker": "hugh",
+                "text": "Is there a dish you will never cook again?"
+              },
+              {
+                "speaker": "marnie",
+                "text": "Snails! I cooked them once for a special dinner, and the smell stayed in the kitchen for a week."
+              },
+              {
+                "speaker": "hugh",
+                "text": "Would you like to open your own restaurant?"
+              },
+              {
+                "speaker": "marnie",
+                "text": "Maybe one day, a small one with only ten tables, where I know every guest by name."
               }
             ]
           },

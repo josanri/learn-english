@@ -29,7 +29,7 @@ import { Passage, SplitLayout } from '../ui/layout';
         <app-flag-strip [entries]="flagEntries()" />
       </div>
       <div right>
-        <p class="hint">Each sentence is used once. One sentence is extra.</p>
+        <p class="hint">Each sentence is used once. {{ extraHint() }}</p>
         <ol class="sentences" aria-label="Sentences">
           @for (s of sentences(); track s.letter) {
             <li class="text-card">
@@ -56,6 +56,10 @@ export class GappedTextPart {
   readonly part = input.required<GappedText>();
   private readonly store = inject(ExamSessionStore);
 
+  protected readonly extraHint = computed(() => {
+    const extra = this.part().sentences.length - this.part().gaps.length;
+    return extra === 1 ? 'One sentence is extra.' : `${extra} sentences are extra.`;
+  });
   protected readonly sentences = computed(() =>
     this.part().sentences.map((text, i) => ({ letter: LETTERS[i], text })),
   );

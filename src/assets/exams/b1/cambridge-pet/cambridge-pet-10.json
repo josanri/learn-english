@@ -250,10 +250,11 @@
               "prompt": "What had the writer been told about the city’s summers?",
               "options": [
                 "They were longer than in other cities.",
-                "They did not get very hot at all.",
-                "They were often wet and windy."
+                "They were often wet and windy.",
+                "They were colder than in other cities.",
+                "They did not get very hot at all."
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "Everyone said the summers there were mild, which means not very hot."
             },
             {
@@ -262,6 +263,7 @@
               "options": [
                 "It was too noisy to sleep with at night.",
                 "It did not really make her cooler.",
+                "It stopped working in the first week.",
                 "It stopped working in the heat of July."
               ],
               "answer": 1,
@@ -271,33 +273,36 @@
               "id": "r3-3",
               "prompt": "What did her neighbour advise her to do?",
               "options": [
-                "Close the windows by day and open them at night.",
                 "Spend the hottest hours of the day in the library.",
-                "Buy an air conditioner for the bedroom."
+                "Buy an air conditioner for the bedroom.",
+                "Close the windows by day and open them at night.",
+                "Sleep on the floor at night."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He told her to keep the curtains and windows closed during the day and to open everything at night."
             },
             {
               "id": "r3-4",
               "prompt": "What happened at the fountain?",
               "options": [
+                "She met some of the people in her building.",
                 "She took photos of the children playing there.",
-                "She was asked to put her shoes back on.",
-                "She met some of the people in her building."
+                "She talked to a police officer.",
+                "She was asked to put her shoes back on."
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She talked to people from her building for the first time."
             },
             {
               "id": "r3-5",
               "prompt": "How does the writer feel about the summer now?",
               "options": [
-                "A little sad that it has finished.",
                 "Relieved that the hot weather is over.",
-                "Keen to move to a cooler city."
+                "Keen to move to a cooler city.",
+                "Keen to move to a different flat.",
+                "A little sad that it has finished."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She is “almost sorry” that autumn has arrived because the summer gave her new friends."
             }
           ]
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "A village after the floods",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Last winter, heavy rain fell on Dunmore for nearly two weeks. The river rose slowly at first, and then very quickly one night in January. [1] By morning, the water was a metre deep in the main street.\n\nMost families had time to leave, and the village hall became a shelter for fifty people. [2] Neighbours who had hardly spoken before were suddenly sharing blankets and soup. Local farmers arrived with tractors to move furniture to higher ground.\n\nWhen the water finally went down, the real work began. [3] Volunteers from nearby towns came to help shovel mud out of the houses, and the bakery, which had lost all its flour, reopened after ten days.\n\nSix months later, the village looks almost normal. [4] The council has also promised a higher wall beside the river, which should be finished next year. [5] “We were lucky to have each other,” said one shopkeeper.",
           "sentences": [
             "Many residents say the flood has made the community stronger.",
             "Cleaning up took far longer than anyone had expected.",
             "Heavy rain was forecast again for the following weekend.",
-            "Nobody in the village had expected the water to rise so fast.",
             "Most of the damaged houses have been repaired, and families are living in them again.",
+            "The river is the longest in the county.",
+            "Nobody in the village had expected the water to rise so fast.",
+            "The mayor visited the village the week after.",
             "It was crowded and noisy, but people stayed remarkably cheerful."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "F",
               "explanation": "“Nobody had expected the water to rise so fast” follows “very quickly one night”, and “By morning” continues the story."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "H",
               "explanation": "“It” refers to the village hall; the cheerful mood leads to the next sentence about neighbours sharing blankets and soup."
             },
             {
@@ -335,7 +342,7 @@
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "D",
               "explanation": "Repaired houses show the village looks “almost normal”, and “also” in the next sentence adds another good thing, the higher wall."
             },
             {
@@ -782,15 +789,27 @@
                 "turns": [
                   {
                     "speaker": "sunil",
-                    "text": "Have you seen the forecast for the weekend?"
+                    "text": "Indira, are we still having the barbecue on Saturday? The forecast looks cloudy."
                   },
                   {
                     "speaker": "indira",
-                    "text": "It says sunny on Saturday, but rain all day on Sunday."
+                    "text": "I checked this morning. Saturday should be dry, but a bit windy. We can put the grill at the back of the house, it’s sheltered there."
                   },
                   {
                     "speaker": "sunil",
-                    "text": "Then let’s have the barbecue on Saturday."
+                    "text": "Hmm. What about Sunday afternoon instead? I’m free all day."
+                  },
+                  {
+                    "speaker": "indira",
+                    "text": "The forecast says heavy rain from midday on Sunday. And next weekend I’m away at my sister’s, so that’s no good either."
+                  },
+                  {
+                    "speaker": "sunil",
+                    "text": "Okay, so the first plan was the right one. I’ll buy the sausages tonight."
+                  },
+                  {
+                    "speaker": "indira",
+                    "text": "And don’t forget to ask the neighbours. They always bring a lot of food."
                   }
                 ]
               },
@@ -803,7 +822,7 @@
                   "Next weekend instead"
                 ],
                 "answer": 0,
-                "explanation": "The sun is forecast for Saturday and rain for Sunday, so they choose Saturday."
+                "explanation": "Sunday afternoon will be rainy and Indira is away next weekend, so they keep their first plan for Saturday."
               }
             },
             {
@@ -830,11 +849,31 @@
                 "turns": [
                   {
                     "speaker": "tamar",
-                    "text": "Are you taking an umbrella?"
+                    "text": "Naveen, it’s pouring. How will you get home?"
                   },
                   {
                     "speaker": "naveen",
-                    "text": "I lost mine on the bus last week, and a raincoat is too warm at this time of year. I’ll borrow my dad’s big one."
+                    "text": "I wore my raincoat to work yesterday and left it at my parents’ house. Typical!"
+                  },
+                  {
+                    "speaker": "tamar",
+                    "text": "You can borrow mine. It’s in the cupboard."
+                  },
+                  {
+                    "speaker": "naveen",
+                    "text": "It’s bright pink and far too small, but thanks. I have a hat in my bag, but it’s useless, my neck always gets wet."
+                  },
+                  {
+                    "speaker": "tamar",
+                    "text": "So what will you do?"
+                  },
+                  {
+                    "speaker": "naveen",
+                    "text": "My dad is coming to pick up a parcel in ten minutes. He always has two umbrellas in his car, so I’ll take one of them."
+                  },
+                  {
+                    "speaker": "tamar",
+                    "text": "Great idea. Stay dry!"
                   }
                 ]
               },
@@ -842,26 +881,18 @@
                 "id": "l1-2q",
                 "prompt": "What will Naveen use to keep dry?",
                 "options": [
-                  "A raincoat that he already owns",
+                  "A raincoat borrowed from Tamar",
                   "A hat that keeps off the rain",
                   "An umbrella from his father"
                 ],
                 "answer": 2,
-                "explanation": "Naveen lost his umbrella and will borrow his dad’s big one; a raincoat is too warm."
+                "explanation": "Tamar’s raincoat is too small and the hat is useless, but his father always has two umbrellas in his car and is coming soon."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "nolan",
-                    "name": "Nolan",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "ciara",
                     "name": "Ciara",
@@ -873,12 +904,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "nolan",
-                    "text": "The road outside the school was very icy this morning."
-                  },
-                  {
                     "speaker": "ciara",
-                    "text": "I know. I’m leaving the car at home and I’ll walk. It’s safer."
+                    "text": "Hi Nolan, it’s Ciara. About tomorrow. The radio says there will be thick snow tonight, so the buses might not run, and I won’t take the bus if it stops in the middle of the road. I thought about driving slowly, but our road is steep and I don’t have winter tyres, so I’d rather not risk it. The school is only twenty-five minutes away on foot, and I have good boots, so I’ll just walk. I’ll leave early, at seven. I nearly asked you for a lift, but you start work on the other side of town. Please tell the head teacher if I’m late. Thanks. Bye!"
                   }
                 ]
               },
@@ -891,7 +918,7 @@
                   "She will drive slowly."
                 ],
                 "answer": 0,
-                "explanation": "The road is icy, so Ciara will leave the car at home and walk."
+                "explanation": "The buses may not run and she does not want to drive on the steep road in the snow, so she will go on foot."
               }
             },
             {
@@ -918,15 +945,27 @@
                 "turns": [
                   {
                     "speaker": "tara",
-                    "text": "Have you packed the sun cream for the beach?"
+                    "text": "Kane, we’re nearly out of sun cream, and the forecast for the beach is thirty degrees."
                   },
                   {
                     "speaker": "kane",
-                    "text": "Oh no, I forgot! Is there any in the bathroom?"
+                    "text": "There’s an old bottle in the bathroom. Use that."
                   },
                   {
                     "speaker": "tara",
-                    "text": "Only an empty bottle. I’ll buy some on the way."
+                    "text": "It’s from two summers ago, it doesn’t work any more. I’d ask you to buy some, but you’re at work until six and the shops close at half past five."
+                  },
+                  {
+                    "speaker": "kane",
+                    "text": "True. So what are you going to do?"
+                  },
+                  {
+                    "speaker": "tara",
+                    "text": "There’s a pharmacy at the station that’s open late. I’ll buy some on my way there."
+                  },
+                  {
+                    "speaker": "kane",
+                    "text": "Good plan. Get factor fifty, please. The last one burned me."
                   }
                 ]
               },
@@ -939,7 +978,7 @@
                   "Use the old bottle"
                 ],
                 "answer": 1,
-                "explanation": "The bottle at home is empty, so Tara says she will buy sun cream on the way."
+                "explanation": "The old bottle is no good and Kane finishes work after the shops close, so Tara will buy it herself at the pharmacy on the way to the station."
               }
             },
             {
@@ -966,15 +1005,27 @@
                 "turns": [
                   {
                     "speaker": "alana",
-                    "text": "The wind keeps blowing our napkins away."
+                    "text": "Oh no, it’s starting to rain on our picnic."
                   },
                   {
                     "speaker": "joaquin",
-                    "text": "Why don’t we move behind that wall? It’s more sheltered there."
+                    "text": "Shall we go home and finish it in the kitchen?"
                   },
                   {
                     "speaker": "alana",
-                    "text": "Good idea."
+                    "text": "It’s an hour on the bus, and the sandwiches would get soggy. Look, there are some trees by the lake."
+                  },
+                  {
+                    "speaker": "joaquin",
+                    "text": "We could eat our lunch inside the car instead, but it’s parked a long way away, and the heater is broken."
+                  },
+                  {
+                    "speaker": "alana",
+                    "text": "The trees will keep us dry, and just behind them there’s an old shelter with a roof. Let’s move the blanket there."
+                  },
+                  {
+                    "speaker": "joaquin",
+                    "text": "Good idea. Grab the bags."
                   }
                 ]
               },
@@ -987,21 +1038,13 @@
                   "Eat their lunch inside the car instead"
                 ],
                 "answer": 0,
-                "explanation": "Joaquin suggests moving behind the wall, where it is more sheltered, and Alana agrees."
+                "explanation": "Going home takes an hour and the car is far away, so they decide to go to the old shelter behind the trees."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "noura",
-                    "name": "Noura",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "emil",
                     "name": "Emil",
@@ -1013,16 +1056,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "noura",
-                    "text": "The power’s off again after that storm."
-                  },
-                  {
                     "speaker": "emil",
-                    "text": "I’ll find some candles. Is the torch in the kitchen?"
-                  },
-                  {
-                    "speaker": "noura",
-                    "text": "No, it’s in the hall cupboard."
+                    "text": "Noura, it’s Emil. You asked about the torch for tonight’s camping trip. I looked in the kitchen drawer where we usually keep it, but there are only batteries there. I thought it might be in the car, so I checked, and it wasn’t. Then I remembered that I used it last week when the lights went out. I put it on the small table near the front door, next to the umbrella. Yes, it’s in the hall, with the keys. I’ll bring it with me when I leave. See you at six."
                   }
                 ]
               },
@@ -1035,7 +1070,7 @@
                   "In the car"
                 ],
                 "answer": 1,
-                "explanation": "Noura says the torch is in the hall cupboard, not the kitchen."
+                "explanation": "It is not in the kitchen drawer or the car; Emil left it on the table near the front door, with the keys."
               }
             },
             {
@@ -1062,28 +1097,48 @@
                 "turns": [
                   {
                     "speaker": "natalie",
-                    "text": "It’s freezing today. Did you bring a scarf?"
+                    "text": "Brr, it’s freezing! My hands are like ice."
                   },
                   {
                     "speaker": "karthik",
-                    "text": "My scarf is too thin, but you can have my gloves."
+                    "text": "Here, take my scarf."
                   },
                   {
                     "speaker": "natalie",
-                    "text": "Thanks, that’s kind."
+                    "text": "It’s too thin, and you’ll need it."
+                  },
+                  {
+                    "speaker": "karthik",
+                    "text": "My winter coat, then? I’m warm, so I don’t need it."
+                  },
+                  {
+                    "speaker": "natalie",
+                    "text": "Your coat is enormous on me. Don’t you have something for my hands?"
+                  },
+                  {
+                    "speaker": "karthik",
+                    "text": "Oh, of course. I have a pair in my pocket. Here you are."
+                  },
+                  {
+                    "speaker": "natalie",
+                    "text": "Thanks, you’re a hero. These gloves are lovely and warm already. Now I can finally enjoy this walk by the river with you."
+                  },
+                  {
+                    "speaker": "karthik",
+                    "text": "You’re welcome. We can go home when you want."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "What does Karthik offer Natalie?",
+                "prompt": "What does Natalie borrow from Karthik?",
                 "options": [
                   "His thin scarf",
                   "His winter coat",
                   "His gloves"
                 ],
                 "answer": 2,
-                "explanation": "He says his scarf is too thin and offers his gloves."
+                "explanation": "The scarf is too thin and the coat is too big, but she wants something for her hands, so she takes what he has in his pocket, his gloves."
               }
             }
           ]
@@ -1119,28 +1174,44 @@
                 "turns": [
                   {
                     "speaker": "riley",
-                    "text": "Another thirty-degree day. I can’t work in this heat."
+                    "text": "It’s so hot in my flat. I can’t sleep or work."
                   },
                   {
                     "speaker": "quinn",
-                    "text": "Why not take your laptop to the library? It’s much cooler there."
+                    "text": "Have you tried a fan?"
                   },
                   {
                     "speaker": "riley",
-                    "text": "Good idea. I’ll go after lunch."
+                    "text": "Maybe I should buy one. Or I could work at home in the evenings, when it’s cooler."
+                  },
+                  {
+                    "speaker": "quinn",
+                    "text": "A fan only moves hot air, so don’t waste your money. And you’d still sleep badly. Why not go to the coast for a few days? It’s much cooler there."
+                  },
+                  {
+                    "speaker": "riley",
+                    "text": "But I have so much work."
+                  },
+                  {
+                    "speaker": "quinn",
+                    "text": "You can take your laptop. The sea air will do you good."
+                  },
+                  {
+                    "speaker": "riley",
+                    "text": "You know, that’s actually a great idea."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman suggest?",
+                "prompt": "What does Quinn suggest?",
                 "options": [
                   "Working from home in the evening",
                   "Buying a fan for his flat",
                   "Going somewhere cooler"
                 ],
                 "answer": 2,
-                "explanation": "Quinn suggests working in the library because it is much cooler there."
+                "explanation": "She says a fan is a waste of money and that he would still sleep badly, so she suggests going to the cooler coast for a few days."
               }
             },
             {
@@ -1167,24 +1238,40 @@
                 "turns": [
                   {
                     "speaker": "ramon",
-                    "text": "Should we have the party in the garden?"
+                    "text": "Are we still having the party in the garden on Saturday?"
                   },
                   {
                     "speaker": "sorcha",
-                    "text": "Only if we hire a tent. I don’t trust the forecast; it changes every day."
+                    "text": "I’m not sure. The forecast says sun, but last time it said that, and it poured."
+                  },
+                  {
+                    "speaker": "ramon",
+                    "text": "The garden is big enough for everyone, I counted."
+                  },
+                  {
+                    "speaker": "sorcha",
+                    "text": "Yes, size isn’t the problem, and the food is cheap, I’ve done the shopping. But what if the forecast is wrong again?"
+                  },
+                  {
+                    "speaker": "ramon",
+                    "text": "We could borrow a tent from my uncle, just in case."
+                  },
+                  {
+                    "speaker": "sorcha",
+                    "text": "Okay, that makes me feel better."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman worried about?",
+                "prompt": "What is Sorcha worried about?",
                 "options": [
-                  "The garden is too small for everyone",
-                  "The forecast is unreliable",
-                  "The food will cost too much money"
+                  "The garden is too small for everyone.",
+                  "The forecast is unreliable.",
+                  "The food will cost too much money."
                 ],
                 "answer": 1,
-                "explanation": "Sorcha does not trust the forecast because it changes every day."
+                "explanation": "She says the garden is big enough and the food is cheap, but the forecast was wrong last time and she cannot trust it."
               }
             },
             {
@@ -1210,25 +1297,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "eleanor",
+                    "text": "Tomasz, you’re forty minutes late! What happened?"
+                  },
+                  {
                     "speaker": "tomasz",
-                    "text": "Sorry I’m late. The fog was so thick I had to drive at ten miles an hour."
+                    "text": "Sorry. The fog was terrible on the motorway. I could hardly see ten metres, so I had to drive slowly, at thirty miles an hour, for nearly an hour."
                   },
                   {
                     "speaker": "eleanor",
-                    "text": "Don’t worry. The meeting hasn’t started yet."
+                    "text": "Did the car break down? You said last week it was making a noise."
+                  },
+                  {
+                    "speaker": "tomasz",
+                    "text": "No, it was fine, the mechanic fixed it. And I didn’t get lost, I know the road well. It was just slow."
+                  },
+                  {
+                    "speaker": "eleanor",
+                    "text": "Well, I’m glad you’re safe. Come in and have some tea."
+                  },
+                  {
+                    "speaker": "tomasz",
+                    "text": "Thanks, I need it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Why is the man late?",
+                "prompt": "Why is Tomasz late?",
                 "options": [
-                  "His car broke down",
-                  "He had to drive slowly",
-                  "He took the wrong road"
+                  "His car broke down.",
+                  "He had to drive slowly.",
+                  "He took the wrong road."
                 ],
                 "answer": 1,
-                "explanation": "The fog was so thick that Tomasz had to drive very slowly."
+                "explanation": "The car is fine and he did not get lost; the thick fog made him drive very slowly."
               }
             },
             {
@@ -1255,24 +1358,44 @@
                 "turns": [
                   {
                     "speaker": "tamar",
-                    "text": "Is the school trip still on for tomorrow?"
+                    "text": "Joaquin, is tomorrow’s school trip happening?"
                   },
                   {
                     "speaker": "joaquin",
-                    "text": "They’ll decide at lunchtime. If the weather stays this bad, they’ll cancel it."
+                    "text": "I heard the school was going to cancel it, but the head teacher said no, not yet. And it isn’t moved to next week either. They’ll decide tomorrow at seven, after checking the forecast, so everything depends on the weather."
+                  },
+                  {
+                    "speaker": "tamar",
+                    "text": "So if it rains..."
+                  },
+                  {
+                    "speaker": "joaquin",
+                    "text": "If there’s heavy rain, we stay at school. If it’s only cloudy, we go."
+                  },
+                  {
+                    "speaker": "tamar",
+                    "text": "I’ll pack my bag tonight anyway."
+                  },
+                  {
+                    "speaker": "joaquin",
+                    "text": "Me too. And I’m bringing a raincoat, just in case."
+                  },
+                  {
+                    "speaker": "tamar",
+                    "text": "Good thinking. Let’s hope for sun."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man say about tomorrow’s trip?",
+                "prompt": "What does Joaquin say about tomorrow's trip?",
                 "options": [
-                  "It has already been cancelled by the school",
-                  "It has been moved to next week",
-                  "It depends on the weather"
+                  "It has already been cancelled by the school.",
+                  "It has been moved to next week.",
+                  "It depends on the weather."
                 ],
                 "answer": 2,
-                "explanation": "The school will decide at lunchtime; it will cancel the trip if the weather stays bad."
+                "explanation": "It is not cancelled and not moved; the teachers will decide in the morning after seeing the forecast, so it depends on the weather."
               }
             },
             {
@@ -1299,24 +1422,44 @@
                 "turns": [
                   {
                     "speaker": "noura",
-                    "text": "How was the music festival?"
+                    "text": "How was the festival, Kane? I heard it rained all weekend."
                   },
                   {
                     "speaker": "kane",
-                    "text": "Brilliant, even though it rained all weekend. We danced in the mud!"
+                    "text": "Don’t remind me. I was soaked to my socks. But it was great fun."
+                  },
+                  {
+                    "speaker": "noura",
+                    "text": "Were the bands good?"
+                  },
+                  {
+                    "speaker": "kane",
+                    "text": "Some were average, but the main band was fantastic, and everyone was singing in the mud."
+                  },
+                  {
+                    "speaker": "noura",
+                    "text": "Do you regret going?"
+                  },
+                  {
+                    "speaker": "kane",
+                    "text": "Not at all. I’d go again tomorrow. I’d just wear better boots, that’s all. Next year you should come with me."
+                  },
+                  {
+                    "speaker": "noura",
+                    "text": "Maybe, if they promise some sun."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "How did the man feel about the festival?",
+                "prompt": "How did Kane feel about the festival?",
                 "options": [
-                  "He enjoyed it despite the rain",
-                  "He was disappointed by the bands",
-                  "He wished he had stayed at home"
+                  "He enjoyed it despite the rain.",
+                  "He was disappointed by the bands.",
+                  "He wished he had stayed at home."
                 ],
                 "answer": 0,
-                "explanation": "Kane says it was brilliant even though it rained, and they danced in the mud."
+                "explanation": "He was wet, but he says it was great fun, the main band was fantastic and he does not regret going."
               }
             },
             {
@@ -1343,24 +1486,48 @@
                 "turns": [
                   {
                     "speaker": "nolan",
-                    "text": "I need a new coat. This one isn’t waterproof."
+                    "text": "My jacket is useless. My shirt got wet on the way here."
                   },
                   {
                     "speaker": "alana",
-                    "text": "There’s a sale at the outdoor shop. The rain jackets are half price."
+                    "text": "I was in town yesterday, and Greenfield’s has a sale. Rain jackets are half price this week."
+                  },
+                  {
+                    "speaker": "nolan",
+                    "text": "I need boots too."
+                  },
+                  {
+                    "speaker": "alana",
+                    "text": "They’re not in the sale. There’s another shop on Mill Road that mends coats, but the zip on yours isn’t broken, it’s just old."
+                  },
+                  {
+                    "speaker": "nolan",
+                    "text": "Half price sounds good. How much is it?"
+                  },
+                  {
+                    "speaker": "alana",
+                    "text": "About twenty pounds. I’ll go on Friday."
+                  },
+                  {
+                    "speaker": "nolan",
+                    "text": "I’ll go on Friday too."
+                  },
+                  {
+                    "speaker": "alana",
+                    "text": "Go before Saturday, the sale ends then."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the woman tell the man about?",
+                "prompt": "What does Alana tell Nolan about?",
                 "options": [
                   "A sale on rain jackets",
                   "A shop that repairs coats",
                   "A cheaper place to buy boots"
                 ],
                 "answer": 0,
-                "explanation": "Alana says the rain jackets are half price in a sale at the outdoor shop."
+                "explanation": "Boots are not in the sale and a repair shop would not help; she tells him about a half-price sale on rain jackets."
               }
             }
           ]
@@ -1385,49 +1552,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Hello, everyone. I’m Tabitha, and every morning I present the weather on Dunmore Radio. Today I’m going to tell you what to expect in April. The first thing to know is that April weather changes very quickly. You can have sunshine, hail and rainbows all in one afternoon, so always check the forecast before you leave. The mornings are usually the best time for a walk, because the afternoons bring more showers. It’s also quite windy along the coast, so the cliffs are not a good place for a picnic. The evenings can still be cold, so please bring a warm jacket even if the day feels mild. The good news is that there are fewer visitors than in summer, so you’ll often have the paths to yourself. And keep your eyes open for the first blossom on the trees in the park."
+                "text": "Hello, everyone. I’m Tabitha, and every morning I present the weather on Dunmore Radio. Today I’m going to tell you what to expect in April, and how to enjoy it. The first thing to know is that April weather changes very quickly. You can have sunshine, a short shower and even a little hail in one afternoon, so don’t trust the sky at breakfast. Now some tips. If you want to go for a walk, the best time is the morning. The afternoons are often wetter, because clouds build up after lunch, and the evenings are cold. I walk by the river at eight, before most people are up. If you plan a trip to the coast, remember that it’s quite windy there, even on sunny days. Some people think the north coast is calmer, but the wind there is just as strong. The temperature isn’t a problem, it is usually eleven or twelve degrees, but the wind makes it feel colder. So bring a warm jacket for the evenings. You won’t need a heavy coat, and gloves aren’t necessary, but a good jacket is a must, because the temperature falls to five or six degrees after dark. The good news is that there are far fewer visitors than in summer. The beaches and the castles are quiet, and the hotels are cheaper. You don’t need to book weeks ahead, though some cafes close on Mondays. Finally, the thing I like best about April. Look out for the first blossom on the trees. It usually appears in the second week, first on the cherry trees in the park by the library. The leaves come later, in May. Take a photo, because it only lasts for about ten days. Thank you for listening, and I hope the sun shines for you."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "April weather changes very ___",
+              "prompt": "In April, the weather can change very ___",
               "answer": "quickly",
-              "explanation": "Tabitha says April weather changes very quickly."
+              "explanation": "She says April weather changes very quickly, with sun, a shower and hail in one afternoon."
             },
             {
               "id": "l3-2",
-              "prompt": "Best time for a walk: in the ___",
+              "prompt": "The best time for a walk is in the ___",
               "answer": "morning",
-              "accepted": [
-                "mornings"
-              ],
-              "explanation": "The mornings are the best time for a walk because the afternoons bring more showers."
+              "explanation": "The best time is the morning; afternoons are wetter and evenings are cold."
             },
             {
               "id": "l3-3",
-              "prompt": "The coast is quite ___",
+              "prompt": "At the coast, it is often ___ even when the sun shines",
               "answer": "windy",
-              "explanation": "It is quite windy along the coast."
+              "explanation": "She says it is quite windy at the coast, and the north coast is just as windy; the temperature is not the problem."
             },
             {
               "id": "l3-4",
-              "prompt": "Bring a warm ___ for the evenings",
+              "prompt": "Take a warm ___ with you for the evenings",
               "answer": "jacket",
-              "explanation": "The evenings can be cold, so she says to bring a warm jacket."
+              "explanation": "She recommends a warm jacket, not a heavy coat or gloves."
             },
             {
               "id": "l3-5",
-              "prompt": "Fewer ___ than in summer",
+              "prompt": "There are far fewer ___ than in summer",
               "answer": "visitors",
-              "explanation": "There are fewer visitors than in summer."
+              "explanation": "The beaches and castles are quiet because there are fewer visitors; hotels are also cheaper."
             },
             {
               "id": "l3-6",
-              "prompt": "Look out for the first ___ on the trees",
+              "prompt": "In the second week, look for the first ___ on the cherry trees",
               "answer": "blossom",
-              "explanation": "She tells listeners to look for the first blossom on the trees in the park."
+              "explanation": "The first blossom appears on the cherry trees in the second week; the leaves come later in May."
             }
           ]
         },
@@ -1459,27 +1623,27 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Dalton, how did you become a mountain guide?"
+                "text": "Dalton, how did you start working in the mountains?"
               },
               {
                 "speaker": "dalton",
-                "text": "Quite by accident. When I was nineteen, I got a summer job washing dishes in a mountain hut. The guides there were happy to show me the paths, and after three summers I trained as a guide myself."
+                "text": "Not through university, I left school at seventeen with no plan. And my father never climbed, he hated heights, believe it or not. At nineteen I got a summer job washing dishes in a mountain hut. The owner noticed that I knew the paths, and asked me to take guests on short walks. By the end of the season I knew I’d never work in an office."
               },
               {
                 "speaker": "interviewer",
-                "text": "Do you rely on weather forecasts?"
+                "text": "Why don’t you rely only on the forecast?"
               },
               {
                 "speaker": "dalton",
-                "text": "I read them, of course, but in the mountains they are often wrong. The weather can change in twenty minutes, so I watch the clouds and the wind as well."
+                "text": "I read it, of course, before every walk. I don’t check it every hour, the signal is weak anyway. The problem is the mountain itself. It makes its own weather. A valley can be sunny while the top is in a cloud. So I look at the sky, the wind and the clouds, and I trust my experience as much as the screen."
               },
               {
                 "speaker": "interviewer",
-                "text": "What is the worst weather you have faced?"
+                "text": "What’s the worst weather you’ve seen?"
               },
               {
                 "speaker": "dalton",
-                "text": "Fog. Once, on a high path, it was so thick that I could not see the path or the people behind me. Rain or snow is easier, because you can still see where you are."
+                "text": "Snow storms are dramatic, but I’m prepared for them, we carry warm clothes. The heat last summer was hard too. But the worst was fog, thick fog, on a high path. I couldn’t see my own boots. There were eight guests behind me, and one side of the path was a steep slope."
               },
               {
                 "speaker": "interviewer",
@@ -1487,23 +1651,23 @@
               },
               {
                 "speaker": "dalton",
-                "text": "We stopped, put on extra layers and waited together for about an hour until it cleared. It is easy to keep walking, but that is when people get lost."
+                "text": "Calling the rescue service was my first idea, but I decided that was too early, nobody was hurt. Finding another way down was too risky because I couldn’t see the other path. So I told everyone to sit down, drink tea from their flasks, and stay still. I waited until the fog cleared. After forty minutes the wind pushed it away and we walked down slowly."
               },
               {
                 "speaker": "interviewer",
-                "text": "What advice do you give people who go walking?"
+                "text": "What advice do you give to walkers?"
               },
               {
                 "speaker": "dalton",
-                "text": "Be ready to turn back. Nobody gets a prize for reaching the top in bad conditions. And always tell someone where you are going."
+                "text": "People think they need a huge rucksack with everything inside, but that only makes you slower. And walking in a big group isn’t always safer. The main thing is to accept that it’s fine to turn back. The mountain will still be there tomorrow. Nobody gives you a medal for reaching the top in a storm. I have turned back many times, and I’ve never regretted it."
               },
               {
                 "speaker": "interviewer",
-                "text": "And what do you enjoy most about the job?"
+                "text": "What do you enjoy most about your job?"
               },
               {
                 "speaker": "dalton",
-                "text": "The moment the cloud clears and the group sees the view. People who were tired and complaining suddenly go quiet. That never gets old."
+                "text": "I like some peace, but I’m never alone for days, there’s always a hut nearby. Photos are nice too, but the sunrise is for me, not for pictures. The best moment is when a guest reaches a viewpoint, goes quiet and then smiles. Seeing their faces makes me feel lucky every time."
               }
             ]
           },
@@ -1517,18 +1681,18 @@
                 "He started with a summer job in a hut."
               ],
               "answer": 2,
-              "explanation": "He got a summer job washing dishes in a mountain hut and then trained as a guide."
+              "explanation": "He did not study at university and his father never climbed; a summer job in a hut led to guiding walks."
             },
             {
               "id": "l4-2",
-              "prompt": "What does he say about weather forecasts?",
+              "prompt": "Why does Dalton not rely only on the forecast?",
               "options": [
-                "They are not always right in the mountains.",
-                "He never bothers to read them before a walk.",
-                "He checks them again every hour on the hill."
+                "The weather in the mountains can change suddenly.",
+                "It is only available in the morning.",
+                "It is difficult to understand."
               ],
               "answer": 0,
-              "explanation": "He reads them, but in the mountains they are often wrong, so he also watches clouds and wind."
+              "explanation": "He reads it before every walk but the mountain makes its own weather, so he also trusts the sky and his experience."
             },
             {
               "id": "l4-3",
@@ -1539,7 +1703,7 @@
                 "A very hot day in the summer"
               ],
               "answer": 1,
-              "explanation": "He says fog on a high path was the worst because he could not see the path or his group."
+              "explanation": "Snow and heat were prepared for or hard but the worst was thick fog on a high path."
             },
             {
               "id": "l4-4",
@@ -1550,7 +1714,7 @@
                 "He waited until the fog cleared."
               ],
               "answer": 2,
-              "explanation": "He and the group stopped and waited about an hour until it cleared."
+              "explanation": "Calling for help was too early and another route was too risky, so he told everyone to sit down and wait for the fog to clear."
             },
             {
               "id": "l4-5",
@@ -1561,7 +1725,7 @@
                 "Always go with a large group of friends."
               ],
               "answer": 0,
-              "explanation": "He says to be ready to turn back, because nobody gets a prize for reaching the top in bad conditions."
+              "explanation": "A huge rucksack and a big group are not the point; he says it is fine to turn back, because the mountain will be there tomorrow."
             },
             {
               "id": "l4-6",
@@ -1572,7 +1736,7 @@
                 "Taking photographs of the sunrise"
               ],
               "answer": 1,
-              "explanation": "He enjoys the moment the cloud clears and the group sees the view."
+              "explanation": "He is not alone for days and photos are not the point; he feels lucky when he sees the faces of guests at the viewpoint."
             }
           ]
         }

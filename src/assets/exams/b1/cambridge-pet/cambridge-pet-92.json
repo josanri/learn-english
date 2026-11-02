@@ -251,7 +251,8 @@
               "options": [
                 "His fur was dark brown",
                 "He wore a little coat",
-                "He had a red button eye"
+                "He had a red button eye",
+                "His ear looked like a button"
               ],
               "answer": 2,
               "explanation": "He had a red button instead of an eye."
@@ -262,7 +263,8 @@
               "options": [
                 "He fell into the sea",
                 "He was lost at the airport",
-                "A dog took him away"
+                "A dog took him away",
+                "He was sent home by post"
               ],
               "answer": 1,
               "explanation": "He disappeared at the airport."
@@ -273,9 +275,10 @@
               "options": [
                 "Her father",
                 "A policeman",
+                "A flight attendant",
                 "A cleaner"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "A cleaner appeared with the bear in her hand."
             },
             {
@@ -284,6 +287,7 @@
               "options": [
                 "She was embarrassed",
                 "He was very dirty",
+                "She was moving house",
                 "He was badly broken"
               ],
               "answer": 0,
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "How did the friends react last month?",
               "options": [
-                "Nobody laughed",
                 "They bought him a gift",
-                "They wanted him"
+                "They wanted him",
+                "Nobody laughed",
+                "They gave him a new name"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "None of them laughed."
             }
           ]
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "Toys through the ages",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Children have always played with toys. [1] Archaeologists have found small clay animals and dolls in graves that are four thousand years old.\n\nIn the past, most toys were made at home. [2] Fathers carved wooden horses, and mothers made dolls from cloth.\n\nIn the nineteenth century, factories began to produce toys in large numbers. [3] Suddenly, even poor families could afford a doll or a spinning top.\n\nPlastic arrived in the 1950s and changed everything. [4] The new toys were cheaper, brighter and almost impossible to break.\n\nToday, many toys use electronics and can talk, move or connect to the internet. [5] Even so, simple things such as wooden blocks and balls remain as popular as ever.",
           "sentences": [
             "Toys have been enjoyed by almost everyone.",
+            "Teddy bears became popular in the early twentieth century.",
             "The oldest ones may have been used in religious ceremonies.",
-            "Some experts worry that children play outside less.",
             "Prices dropped quickly.",
+            "Both were made of wood and cost very little.",
             "Factories could shape it into any form.",
-            "Parents used whatever they had."
+            "Parents used whatever they had.",
+            "Some experts worry that children play outside less."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "C",
               "explanation": "The oldest toys may have been ceremonial; the next sentence gives finds from graves."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "G",
               "explanation": "Parents used whatever they had; the next sentence gives fathers carving horses."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "F",
               "explanation": "Factories could shape plastic into any form; the next sentence says the new toys were cheaper."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "H",
               "explanation": "Some experts worry about outdoor play; the next sentence says simple toys remain popular."
             }
           ]
@@ -735,11 +742,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What is your favourite toy?"
+                    "text": "Is that your new robot, Danny? It looks very smart."
                   },
                   {
                     "speaker": "b",
-                    "text": "My robot. It can walk and talk, and it makes me laugh."
+                    "text": "Yes! My aunt sent it as a birthday gift. It came in a lovely box with a card, but that’s not why I like it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Was it expensive? It looks like it was."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I think so. Mum said it cost nearly a hundred pounds, which is crazy. I don’t mind about that. The reason is that it can walk and talk. Yesterday it fell over and said \"Oops, I’m tired\", and I couldn’t stop laughing."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Ha! I’d like to see that."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Come on, I’ll switch it on now. It does a funny dance as well."
                   }
                 ]
               },
@@ -752,7 +775,7 @@
                   "It was a nice gift"
                 ],
                 "answer": 1,
-                "explanation": "He says it makes him laugh."
+                "explanation": "He says the gift and the price do not matter; he likes the robot because its funny talk and dance made him laugh."
               }
             },
             {
@@ -779,11 +802,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How old is this doll?"
+                    "text": "That’s a beautiful old doll. Did your mum give it to you?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Nearly a hundred years. It belonged to my great-grandmother."
+                    "text": "Well, she gave it to me last year, but it wasn’t hers first. She thought it came from her aunt, so she asked her, and her aunt said no, she only kept it in a box."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So who had it before?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It belonged to my gran’s mother, so she’s my great-gran. She got it for Christmas when she was seven, nearly a hundred years ago. Gran has a photograph with the doll on her lap."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Amazing. It looks very good for its age."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Mum had to mend the dress, but the face is perfect."
                   }
                 ]
               },
@@ -796,7 +835,7 @@
                   "Her older aunt"
                 ],
                 "answer": 0,
-                "explanation": "She says it belonged to her great-grandmother."
+                "explanation": "Her mother and her mother’s aunt are rejected; the doll was first given to her gran’s mother, so a great-grandmother."
               }
             },
             {
@@ -823,11 +862,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can I have a new football for my birthday?"
+                    "text": "Excuse me, do you sell footballs? I need a new one. Mine is really old, and I think it’s broken."
                   },
                   {
                     "speaker": "b",
-                    "text": "You still have the old one, and it is quite new. It is only six months old."
+                    "text": "Let me see. Hmm, this isn’t old at all. It’s quite a new ball, a lot newer than you think. The label says it’s only a year since it was made."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Really? But it looks terrible, and it’s too small for me now."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s a size four, and for your age that’s right. The problem is only the valve, which lets the air out. It’s a ten-minute job. I’ll do it for free, and you can come back tomorrow."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Wow, thanks. That’s very kind."
                   }
                 ]
               },
@@ -840,21 +891,13 @@
                   "It is far too small"
                 ],
                 "answer": 0,
-                "explanation": "He says it is only six months old."
+                "explanation": "The man says the ball is much newer than the boy thinks, that it is only the valve and that the size is right."
               }
             },
             {
               "id": "l1-4-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Woman",
@@ -866,12 +909,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Where did you find these puzzles?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "At the charity shop. They cost only a pound each."
+                    "text": "Good morning, shoppers! Today is the first day of our puzzle week. Last month every puzzle in the shop cost ten pounds, and next week the very big ones will be two pounds in our special sale. But this week, all the puzzles in the red boxes are only a pound each. That’s right, a pound, the same as a cup of tea in our café! There are animals, castles and maps, and each one has a free pencil inside. Come to the second floor, ask any of our staff, and don’t forget that this offer ends on Friday."
                   }
                 ]
               },
@@ -884,7 +923,7 @@
                   "Two pounds"
                 ],
                 "answer": 1,
-                "explanation": "She says they cost only a pound each."
+                "explanation": "Ten pounds was the price last month and two pounds is the price of the sale next week; this week the puzzles cost a pound."
               }
             },
             {
@@ -911,11 +950,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Who is winning at chess?"
+                    "text": "How’s the quiz going, Leo?"
                   },
                   {
                     "speaker": "b",
-                    "text": "My sister. She has already taken both my castles."
+                    "text": "Dad, I thought I’d win, but my brother got the first three questions right, so he was in front. Then he got stuck on the geography round."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And who’s top now?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not Pete. Not you either, Dad. As a father you’re doing badly, you’re last! Mia has been sneaky. She’s been learning capital cities all week. She has fourteen points, and she’s my little sister!"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Ha! My own daughter is beating me."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll catch up in the music round, you’ll see."
                   }
                 ]
               },
@@ -928,21 +983,13 @@
                   "His sister"
                 ],
                 "answer": 2,
-                "explanation": "He says his sister has taken both his castles."
+                "explanation": "The brother was ahead at the start, the father is last, and Mia, the little sister, has fourteen points."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Man",
@@ -954,12 +1001,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Do you want to buy this kite?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "Maybe. Is it easy to fly when there is not much wind?"
+                    "text": "Hello Karen, it’s Paul. I’m in the shop with the kite. It’s a big one, and I know you wanted a quiet colour, but it’s bright orange. I think it’s lovely, and it’s only fifteen pounds, so the price is fine too. What bothers me is the weather. The forecast for Saturday says light wind, and a big kite needs a good breeze. If there is nothing at all, we’ll just stand there holding it. Tell me if I should keep it for a week or choose a smaller one. Phone me back when you can."
                   }
                 ]
               },
@@ -972,21 +1015,13 @@
                   "The bright colour"
                 ],
                 "answer": 0,
-                "explanation": "He asks if it is easy to fly when there is not much wind."
+                "explanation": "He likes the colour and the price is fine, but the forecast says light wind and a big kite needs a good breeze."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Boy",
@@ -998,12 +1033,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "What did you play with at the weekend?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "Mainly cards. We played until midnight."
+                    "text": "Hi Anna, it’s Jake. Sorry I missed your call. You asked what I did at Grandpa’s yesterday. I thought we would play chess, because he loves it, and he found the board in the attic. But two kings and a bishop were missing, so that was the end of that. Then we went outside to play football, but it started to rain after ten minutes. So we went back in, and Grandpa took out a pack of cards that he has had for forty years. We played until dinner, and I lost four times! Call me back and tell me about your weekend."
                   }
                 ]
               },
@@ -1016,7 +1047,7 @@
                   "Football"
                 ],
                 "answer": 1,
-                "explanation": "He says they played cards until midnight."
+                "explanation": "The chess pieces were missing and the football stopped because of the rain; they played with the old pack of cards."
               }
             }
           ]
@@ -1052,24 +1083,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Hello, I would like to return this toy car. It does not work."
+                    "text": "Look at this. The wheel of my nephew’s toy truck came off after one day."
                   },
                   {
                     "speaker": "b",
-                    "text": "May I see your receipt, please?"
+                    "text": "Can you glue it? I’ve got some strong glue in the garage."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I don’t think that’s a good idea. The plastic is thin and cheap, so it would break again."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "But he loves the colour. Maybe he can play with it as it is?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not really, it can’t move. I have the receipt, and it’s still under guarantee. I’ll go to the shop on Monday and ask for my money back. Then I’ll look for a stronger one."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Sensible."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman want?",
+                "prompt": "What does the woman decide to do with the broken toy?",
                 "options": [
-                  "To fix a broken toy",
-                  "To buy a new toy",
-                  "To return a toy"
+                  "Mend it with glue",
+                  "Keep it as it is",
+                  "Return it to the shop"
                 ],
                 "answer": 2,
-                "explanation": "She wants to return a toy car."
+                "explanation": "She rejects the glue because the plastic is cheap and the truck cannot move, so she will use the receipt to get her money back."
               }
             },
             {
@@ -1096,24 +1143,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Look at my new building set! It has three thousand pieces!"
+                    "text": "Look what I got for my birthday, a building set with two thousand pieces!"
                   },
                   {
                     "speaker": "b",
-                    "text": "Wow, where will you put it all?"
+                    "text": "Wow, it’s huge. Is it hard?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "The box says age ten and over, and I’m eleven, so it should be fine. Dad says it’ll take a week."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "A week! I’d get bored if I did it alone. But I love the picture on the box, a castle with towers. Could I help you at the weekend? I’ll bring my own small pieces to make a bridge."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Sure. Come on Saturday."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Great. I can’t wait."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What has the boy got?",
+                "prompt": "What does the girl want to do?",
                 "options": [
-                  "A new video game",
-                  "A building set",
-                  "A big model plane"
+                  "Buy the same set",
+                  "Build it together on Saturday",
+                  "Take it home for a week"
                 ],
                 "answer": 1,
-                "explanation": "He shows his new building set."
+                "explanation": "She likes the castle, would be bored alone, and asks if she can help at the weekend with her own pieces."
               }
             },
             {
@@ -1140,24 +1203,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Time to tidy your room. There are toys all over the floor."
+                    "text": "Max, the floor of your room looks like a toy shop after an earthquake."
                   },
                   {
                     "speaker": "b",
-                    "text": "Can I do it tomorrow? I am in the middle of a game."
+                    "text": "I know, Dad, but I’m in the middle of a game. Can I finish this level first? It’s nearly the end."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You said that an hour ago. Your friends come for dinner at six. I don’t mind about the game, or the noise when you play. I just want to walk through your room without stepping on a pirate ship."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "OK, OK. Can I put it all in boxes?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s fine, if the boxes go under the bed. Ten minutes, please."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the father want?",
+                "prompt": "What does the father want his son to do?",
                 "options": [
-                  "A tidy room",
-                  "A quiet house",
-                  "A finished game"
+                  "Tidy his room",
+                  "Stop making noise",
+                  "Finish his game"
                 ],
                 "answer": 0,
-                "explanation": "He tells the boy to tidy his room."
+                "explanation": "The father says that the game and the noise do not matter; he wants to walk through the room, so he wants Max to tidy up."
               }
             },
             {
@@ -1184,24 +1259,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Today, you may each bring one toy to show the class, and we will talk about toys. Tell us why it matters to you."
+                    "text": "Everyone remember, tomorrow is toy day. Please bring your favourite toy from home."
                   },
                   {
                     "speaker": "b",
-                    "text": "Can it be a very old one?"
+                    "text": "Miss, are we going to play in the garden with them? It’s going to be sunny."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe in the break, but not all day, Ella. I thought of a drawing competition, but the art room is being painted, so we can’t do that."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So what will we do in class?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Each of you will stand up and talk about your toy, where it came from and why you love it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Oh, I’m nervous, but I’ll do it. Mine has a funny story."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What will the class do?",
+                "prompt": "What will the class do tomorrow?",
                 "options": [
                   "Play outside all day",
                   "Draw some pictures",
                   "Talk about their toys"
                 ],
                 "answer": 2,
-                "explanation": "The teacher asks them to bring a toy and talk about it."
+                "explanation": "Playing outside is only for the break and the art room is closed, so every child will speak about a toy."
               }
             },
             {
@@ -1228,11 +1319,31 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Who left these toys in the garden? It is going to rain!"
+                    "text": "Tom, it’s starting to rain, and your toys are all in the garden!"
                   },
                   {
                     "speaker": "b",
-                    "text": "Sorry, Mum. I will bring them in at once."
+                    "text": "I forgot! I’m tired, though. Can’t I go to bed and bring them in tomorrow?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "They’ll be ruined. They’re not waterproof."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I could buy an umbrella for them! Joking, Mum, joking. I’m going."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you. Dry them with a towel, because the wet ones will smell. Then you can go to bed early if you’re sleepy."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "OK. I’ll be quick. Can I leave the big truck in the shed?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, that’s fine."
                   }
                 ]
               },
@@ -1240,12 +1351,12 @@
                 "id": "l2-5q",
                 "prompt": "What will the boy do?",
                 "options": [
+                  "Buy an umbrella",
                   "Bring the toys in",
-                  "Go to bed early",
-                  "Buy a new umbrella"
+                  "Go to bed early"
                 ],
-                "answer": 0,
-                "explanation": "He says he will bring them in at once."
+                "answer": 1,
+                "explanation": "He jokes about the umbrella and bed is for afterwards; his mother insists, so he will go and get the toys."
               }
             },
             {
@@ -1272,24 +1383,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I am looking for something for a baby, about one year old."
+                    "text": "I’m looking for a present for my nephew. He’s one year old. Maybe a big kite?"
                   },
                   {
                     "speaker": "b",
-                    "text": "These soft blocks are very popular. They are safe to chew."
+                    "text": "He’s too small, he can’t run. What about a puzzle?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "With big pieces?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Babies put everything in their mouths. I think soft blocks are best. They’re light and safe, and he can build towers and knock them down. That’s what my little brother loves."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Perfect. Which colour should I choose? He likes bright things."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "The red and yellow ones are cute, and they come in a bag, so you don’t need to wrap them."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great, I’ll go there now."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the girl recommend?",
+                "prompt": "What does the girl recommend as a present?",
                 "options": [
+                  "Soft blocks",
                   "A big kite",
-                  "A big puzzle",
-                  "Soft blocks"
+                  "A big puzzle"
                 ],
-                "answer": 2,
-                "explanation": "She recommends soft blocks that are safe to chew."
+                "answer": 0,
+                "explanation": "She says a one-year-old cannot run with a kite and would eat puzzle pieces, so she suggests light, safe soft blocks."
               }
             }
           ]
@@ -1314,59 +1445,59 @@
             "turns": [
               {
                 "speaker": "guide",
-                "text": "Good afternoon, everyone, and welcome to the Toy Museum. I am Dorota, and I will be showing you around today. The museum opened in nineteen ninety, when a local man gave us his collection of five hundred toys. Today we have more than six thousand. Our oldest object is a wooden horse from eighteen hundred. On the first floor, you will find dolls from different countries, and on the second floor, there are model trains. Children can play in the activity room, which is open from ten until three. Our shop sells postcards, puzzles and small wooden animals. Everything in the shop is made in this country. Please do not touch the toys in the glass cases, but you may take photos, as long as you do not use the flash."
+                "text": "Good afternoon, everyone, and welcome to the Toy Museum. I’m Dorota, and I’ll be your guide today. Before we start, a little history. Many people think that the museum is very old, but it isn’t. A collector called Mr Grey started it in his garage in nineteen eighty-five, and the doors opened to the public five years later, in nineteen ninety. When it opened, we had about four thousand toys. Today we have more than six thousand, and we receive new gifts every month. Now, our most famous object. You’ll see it in the first room, in the glass case. People always ask if it’s the old clay duck from Egypt. That’s the second oldest, and it’s about three thousand years old. The oldest one is a wooden horse with wheels, almost four thousand years old. Children pulled it along the street. Isn’t that lovely? The museum has three floors. On the ground floor, you will find the dolls and the dolls’ houses. Many visitors ask for the video games, and they are at the top, on the third floor. But the thing most people want is the model trains, and they are on the second floor, by the window. There’s a big switch that you can press, so don’t be shy. If you’d like to try something, the activity room is next to the shop. It opens at ten in the morning, and I know that the café closes at five, but the activity room is different. It closes at three, because the teachers come then to clean and prepare for tomorrow. So please go early. Everything is free. Finally, a few rules. You can take photos, and you can bring a small tripod if it’s not in the way. But please don’t use the flash. Light can damage old paint and cloth, and the guards will ask you to stop. Please also keep your food in the café. If you have any questions, ask any of us. We wear green shirts. Now, shall we begin with the horse?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The museum opened in ___",
+              "prompt": "The year of the first public visits: ___",
               "answer": "nineteen ninety",
               "accepted": [
                 "1990"
               ],
-              "explanation": "She says the museum opened in nineteen ninety."
+              "explanation": "Mr Grey started the museum in nineteen eighty-five, but it opened to the public five years later, in nineteen ninety."
             },
             {
               "id": "l3-2",
-              "prompt": "The museum now has more than ___ toys",
+              "prompt": "Toys in the collection today: more than ___",
               "answer": "six thousand",
               "accepted": [
                 "6000",
                 "6,000"
               ],
-              "explanation": "She says there are more than six thousand toys."
+              "explanation": "They had about four thousand when it opened; now there are more than six thousand."
             },
             {
               "id": "l3-3",
-              "prompt": "The oldest object is a wooden ___",
+              "prompt": "The most ancient item in the collection is a ___ with wheels",
               "answer": "horse",
-              "explanation": "She says the oldest object is a wooden horse."
+              "explanation": "The clay duck is the second oldest; the oldest is a wooden horse with wheels."
             },
             {
               "id": "l3-4",
-              "prompt": "The model trains are on the ___ floor",
+              "prompt": "The railway models are on the ___ floor",
               "answer": "second",
               "accepted": [
                 "2nd"
               ],
-              "explanation": "She says there are model trains on the second floor."
+              "explanation": "The dolls are on the ground floor and the video games on the third; the model trains are on the second floor."
             },
             {
               "id": "l3-5",
-              "prompt": "The activity room closes at ___",
+              "prompt": "Last activities in the workshop room end at ___",
               "answer": "three",
               "accepted": [
                 "3"
               ],
-              "explanation": "She says it is open from ten until three."
+              "explanation": "It opens at ten and the café closes at five, but the activity room closes at three."
             },
             {
               "id": "l3-6",
-              "prompt": "Visitors must not use the ___ for photos",
+              "prompt": "Photos are fine, but do not switch on the ___",
               "answer": "flash",
-              "explanation": "She says do not use the flash."
+              "explanation": "Small tripods are allowed, but the guards ask visitors to stop using the flash."
             }
           ]
         },
@@ -1398,51 +1529,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Holt, you design toys for children. How do you get your ideas?"
+                "text": "Holt, thank you for coming. Where do your ideas come from?"
               },
               {
                 "speaker": "h",
-                "text": "I watch children play. They always do the unexpected. Once, a boy turned a cardboard box into a spaceship, and I thought, why not sell a box?"
+                "text": "People think I read about toys, and I do look at magazines, but they are all full of the same things. Visiting shops helps a little, to see the prices. The best way is to sit in a park or a nursery and watch children play. They use a box as a car and a spoon as a microphone, and that tells me more than any report."
               },
               {
                 "speaker": "i",
-                "text": "Did you?"
+                "text": "Your most successful toy was a drawing box, wasn’t it? Why did it do so well?"
               },
               {
                 "speaker": "h",
-                "text": "Almost. We made a box with simple lines to draw on. It became our best seller, and it was very cheap."
+                "text": "Yes, and I’m still surprised. It wasn’t cheap, and no celebrity had one, so nobody paid for an advert. It sold well because children found so many ways to use it. It was a table, a house, even a boat. Parents told me that it was the toy that lasted longest at home."
               },
               {
                 "speaker": "i",
-                "text": "What makes a good toy?"
+                "text": "Not every toy is a success. What about the talking robot?"
               },
               {
                 "speaker": "h",
-                "text": "It must be safe, of course, but also simple. The best toys let children use their imagination. A stick can be a sword, a horse or a magic wand."
+                "text": "Oh, the robot. It cost a lot to make and the shops sold only a few. People expect me to be furious or ashamed, and I can understand that, but I wasn’t. I stayed relaxed, honestly. I learned that children prefer to talk themselves than to listen to a toy. So it was a useful lesson."
               },
               {
                 "speaker": "i",
-                "text": "How long does it take to produce a new toy?"
+                "text": "How long does it take to make a toy, from the first idea?"
               },
               {
                 "speaker": "h",
-                "text": "About eighteen months. We test every toy with children aged three to eight, and they are the toughest judges."
+                "text": "Much longer than people think. Not a few weeks, that’s only for the drawings. A simple toy needs about a year and a half, with models, tests and the factory. Eight years would be too long, but a big toy with electronics can take almost that."
               },
               {
                 "speaker": "i",
-                "text": "What do they say?"
+                "text": "Who tests your toys?"
               },
               {
                 "speaker": "h",
-                "text": "Honestly, things like, this is boring. Then I go back to my desk and start again."
+                "text": "We have a group of children from three to eight years old. Teachers sometimes give me their opinion, and I send parents a form, but I don’t trust that so much. Children can’t lie, and they never try to be polite. They tell you with their faces, and sometimes with a loud \"no\". If they put the toy down after two minutes, I know it’s not good."
               },
               {
                 "speaker": "i",
-                "text": "What was your favourite toy as a boy?"
+                "text": "And finally, you still keep a wooden train. Why?"
               },
               {
                 "speaker": "h",
-                "text": "A wooden train that my father made. I still have it in my office."
+                "text": "It’s not worth much money, and to be fair it doesn’t work well any more. The wheels are loose. But I built it with my grandfather when I was six, using his tools. Every time I look at it, I remember his workshop. That’s the reason I never sell it, even when collectors offer me a good price. Some things are not for sale."
               }
             ]
           },
@@ -1456,62 +1587,62 @@
                 "By visiting shops"
               ],
               "answer": 1,
-              "explanation": "He says he watches children play."
+              "explanation": "Magazines are full of the same things and shops only show prices; the best way is to watch children play."
             },
             {
               "id": "l4-2",
-              "prompt": "What was the best seller?",
+              "prompt": "Why did the drawing box sell so well?",
               "options": [
-                "A big talking robot",
-                "A box to draw on",
-                "A wooden toy sword"
+                "Children could use it in many ways",
+                "It was very cheap",
+                "A famous person had one"
               ],
-              "answer": 1,
-              "explanation": "The cardboard box with simple lines became the best seller."
+              "answer": 0,
+              "explanation": "It was not cheap and had no celebrity or advert; children used it as a table, a house and a boat."
             },
             {
               "id": "l4-3",
-              "prompt": "What makes a good toy?",
+              "prompt": "How did Holt feel when the talking robot did not sell?",
               "options": [
-                "It uses imagination",
-                "It has bright lights",
-                "It is very expensive"
+                "Very angry",
+                "Rather ashamed",
+                "Fairly relaxed"
               ],
-              "answer": 0,
-              "explanation": "He says the best toys let children use their imagination."
+              "answer": 2,
+              "explanation": "He says people expect him to be furious or ashamed, but he stayed relaxed and learned a lesson."
             },
             {
               "id": "l4-4",
-              "prompt": "How long does it take to produce a toy?",
+              "prompt": "How long does it take to make a simple toy?",
               "options": [
-                "About eight whole years",
                 "About eight busy weeks",
-                "About eighteen months"
+                "About eighteen months",
+                "About eight whole years"
               ],
-              "answer": 2,
-              "explanation": "He says about eighteen months."
+              "answer": 1,
+              "explanation": "Weeks are only for drawings and eight years would be too long; a simple toy needs about a year and a half."
             },
             {
               "id": "l4-5",
               "prompt": "Who tests the toys?",
               "options": [
                 "Teachers at their school",
-                "Children aged three to eight",
-                "Parents at their home"
+                "Parents at their home",
+                "Children aged three to eight"
               ],
-              "answer": 1,
-              "explanation": "They test them with children aged three to eight."
+              "answer": 2,
+              "explanation": "Teachers and parents give opinions, but he trusts the group of children from three to eight years old."
             },
             {
               "id": "l4-6",
-              "prompt": "What was his favourite toy?",
+              "prompt": "Why does Holt keep his wooden train?",
               "options": [
-                "A wooden train",
-                "A plastic racing car",
-                "A soft toy bear"
+                "He built it with his grandfather",
+                "It is worth a lot of money",
+                "It still works perfectly"
               ],
               "answer": 0,
-              "explanation": "It was a wooden train made by his father."
+              "explanation": "The train is not valuable and the wheels are loose; he keeps it because he built it with his grandfather."
             }
           ]
         }

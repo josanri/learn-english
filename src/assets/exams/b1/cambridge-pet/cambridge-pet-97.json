@@ -251,7 +251,8 @@
               "options": [
                 "Write a letter",
                 "Boil an egg",
-                "Ride a bus"
+                "Ride a bus",
+                "Iron a shirt"
               ],
               "answer": 1,
               "explanation": "He could hardly boil an egg."
@@ -260,31 +261,34 @@
               "id": "r3-2",
               "prompt": "What happened with the red sock?",
               "options": [
-                "Shirts turned pink",
                 "The machine broke down",
-                "It disappeared for ever"
+                "It disappeared for ever",
+                "The iron burnt it",
+                "Shirts turned pink"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "All his shirts came out pink."
             },
             {
               "id": "r3-3",
               "prompt": "What did Ruben suggest?",
               "options": [
+                "A timetable",
                 "A cleaning company",
                 "A new flat",
-                "A timetable"
+                "A shopping list"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Ruben politely suggested that they make a timetable."
             },
             {
               "id": "r3-4",
               "prompt": "What did the writer do on Mondays?",
               "options": [
+                "Cleaned the kitchen",
                 "Did the shopping",
-                "Cleaned the bathroom",
-                "Took out the rubbish"
+                "Took out the rubbish",
+                "Cleaned the bathroom"
               ],
               "answer": 2,
               "explanation": "On Mondays, he took out the rubbish."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "How does his mother feel now?",
               "options": [
-                "She is surprised and proud",
                 "She is worried and angry",
+                "She is surprised and proud",
+                "She is amused and relieved",
                 "She is tired and bored"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She can hardly believe it, and he thinks she is secretly proud."
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "A short history of the vacuum cleaner",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Cleaning the floor used to be very hard work. [1] People beat their carpets with sticks outside, and the dust flew everywhere.\n\nIn the 1860s, a man in the United States invented a machine with a brush that turned as you pushed it. [2] It collected some dust, but it did not remove the dirt that was deep in the carpet.\n\nThe real step forward came in 1901. [3] An engineer in London built a huge machine that sucked the dust through a pipe, and it was so big that it had to be pulled by horses.\n\nLater, inventors made smaller machines for the home. [4] In 1908, a caretaker named James Spangler added a bag, which made the machine easier to use.\n\nToday, some vacuum cleaners are small robots. [5] They move around the room on their own and return to their base when the battery is low.",
           "sentences": [
-            "Carpets also became cheaper at about the same time.",
-            "They do not need anybody to push them.",
-            "It was a step in the right direction.",
-            "But they were still noisy and difficult to empty.",
             "It was a completely new idea.",
-            "There were no electric machines at all."
+            "But they were still noisy and difficult to empty.",
+            "By 1950, nearly every house in Britain had one.",
+            "Nobody wanted to buy such a loud machine in those days.",
+            "It was a step in the right direction.",
+            "There were no electric machines at all.",
+            "They do not need anybody to push them.",
+            "Carpets also became cheaper at about the same time."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "E",
               "explanation": "It collected some dust, so it was a step in the right direction; the next sentence says it did not remove deep dirt."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "A",
               "explanation": "It was a completely new idea; the next sentence describes the huge machine."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "B",
               "explanation": "The small machines were difficult to empty, so a bag that \"made the machine easier to use\" follows."
             },
             {
               "id": "r4-5",
-              "answer": "B",
+              "answer": "G",
               "explanation": "Robots do not need anybody to push them; the next sentence says they move on their own."
             }
           ]
@@ -733,6 +740,22 @@
                   {
                     "speaker": "b",
                     "text": "Almost. I only need to put my books on the shelf."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "What about the floor? It looked dirty yesterday. And the bed is not made."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I washed the floor this morning, and I changed the sheets on Sunday. Only the books remain. They are all over the desk."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good. Please do it quickly, because we are going out at three."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It only takes five minutes. Then I will help you with the shopping."
                   }
                 ]
               },
@@ -777,6 +800,22 @@
                   {
                     "speaker": "b",
                     "text": "In the cupboard under the sink, next to the bucket."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "In the cupboard? I looked in the laundry room and on the washing machine, but I could not find it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It is not in the laundry room, and it is not on the machine. The cupboard under the sink is the place. The blue box, next to the bucket."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Found it! There is only a little left. Shall I buy more on my way home?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, please. And a bottle of soap for the dishes, if you do not mind."
                   }
                 ]
               },
@@ -821,6 +860,22 @@
                   {
                     "speaker": "b",
                     "text": "Yours. I already did them on Sunday and Monday."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "But I washed them on Saturday, and I am very tired after school. Did you break a plate again?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, I did not break anything this week. It is only fair that you wash the dishes today. I did them on Sunday and Monday, and I am tired too."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "All right, you are right. I will do them after dinner. Will you dry them?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Deal. I will put on some music."
                   }
                 ]
               },
@@ -865,6 +920,22 @@
                   {
                     "speaker": "b",
                     "text": "No, the bag is full. I will buy a new one this afternoon."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it the cable? It looks short to me, and the brush is old as well."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, the cable is fine, and the brush is not that old. It is only the bag. It is completely full, and it does not pick up the dust."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then let me go to the shop for you. Do you know the model?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It is written on the back of the machine. Thank you, Dad."
                   }
                 ]
               },
@@ -909,6 +980,22 @@
                   {
                     "speaker": "b",
                     "text": "Twice a year, in spring and autumn. That is more than enough."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Only twice a year? That is not much. I clean mine every month, and my neighbour does it twice a week."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Windows do not need so much work. If you clean them in spring and in autumn, they look good all year. I use vinegar and old newspaper, and it is very cheap."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Newspaper? I will try that. Does it leave marks?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not at all. But do it on a cloudy day, not in the sun, because the glass dries too fast."
                   }
                 ]
               },
@@ -953,6 +1040,22 @@
                   {
                     "speaker": "b",
                     "text": "First finish making your bed, then you can go."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "But I did my homework at school. And I took out the rubbish this morning before breakfast."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I know, and I am happy with you. The only job left is your bed. It takes two minutes. Then you can go to the park."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Can I take my football? My friends are waiting for me."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course. Be back before six for dinner."
                   }
                 ]
               },
@@ -997,6 +1100,22 @@
                   {
                     "speaker": "b",
                     "text": "Hang them outside. The sun is out, and there is a nice breeze."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I do not want to use the dryer machine. It is noisy, and it makes the towels hard. But I do not want to wash them again."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "You do not need to. They are only wet because of the rain yesterday. The wind and the sun will dry them in an hour."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Where is the washing line? In the garden, behind the apple tree?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, and the pegs are in a bag on the door. Please take the sheets as well."
                   }
                 ]
               },
@@ -1050,6 +1169,22 @@
                   {
                     "speaker": "b",
                     "text": "Sorry, I will wash them now."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It is not only the cups. The whole room is untidy! There are books on the sofa and papers on the floor, and the table is full of crumbs."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I know, I know. We had friends for dinner last night. The tea was cold anyway, and the table is not broken, it is only dirty."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then please start now. I want to invite my mother for lunch tomorrow."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "All right. I will wash the cups, and you can put the books on the shelf."
                   }
                 ]
               },
@@ -1094,6 +1229,22 @@
                   {
                     "speaker": "b",
                     "text": "Quick, put salt on it, then use a wet cloth."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Salt? Really? Why salt? I thought a cleaner could do it better. Should I call someone?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, you do not need a professional. Salt takes the juice out of the carpet. Wait for ten minutes, and then rub gently with a wet cloth. Do not move the whole carpet."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "All right. I will try it now. My mother will be angry if she sees the mark."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Do it quickly, before the juice dries. I will bring the salt from the kitchen."
                   }
                 ]
               },
@@ -1138,6 +1289,22 @@
                   {
                     "speaker": "b",
                     "text": "Twelve pounds. I bring my own products."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Twelve pounds is a fair price. I need someone for three hours every Tuesday. Are you a teacher or a cook, by the way? You sound very professional."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, I work as a cleaner. I have been doing it for six years. I clean offices in the morning, and houses in the afternoon."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Do you work on Tuesdays?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, from two o'clock. I can start next week, if you like. Can I have your address?"
                   }
                 ]
               },
@@ -1182,6 +1349,22 @@
                   {
                     "speaker": "b",
                     "text": "Do we have to sweep the floor too?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, please sweep it, and clean the windows as well. We do not need to paint the walls this time. Everyone has a job. Anna and Tom take the boards."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Can we leave a little early today? My mother is waiting outside."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Only when everything is clean. It will take ten minutes if you work together. Let us start."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Okay. I will take the broom."
                   }
                 ]
               },
@@ -1226,6 +1409,22 @@
                   {
                     "speaker": "b",
                     "text": "Try hanging your shirts in the bathroom while you have a hot shower. The steam helps."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "The steam? Does it really work? I thought that I needed a special machine."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It works very well. My mother taught me. Hang the shirt on a hanger on the door, and close the window. After fifteen minutes, the wrinkles are gone. And you do not need to buy new shirts."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "What a clever idea. I do not have to ask our neighbour for her iron any more."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Try it tonight, and tell me tomorrow if it worked."
                   }
                 ]
               },
@@ -1270,6 +1469,22 @@
                   {
                     "speaker": "b",
                     "text": "If you do more jobs around the house, we can talk about it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course. What kind of jobs? I already wash the car on Sundays, and I help Mum with the dishes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You can also tidy the garage, water the plants and take the dog for a walk twice a day. Each job has a price, and we can write a list."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Brilliant. I do not need to wait until Friday, and I do not need to ask Mum first, do I?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, I will talk to her. Let us make the list this evening."
                   }
                 ]
               },
@@ -1307,7 +1522,7 @@
             "turns": [
               {
                 "speaker": "caretaker",
-                "text": "Welcome to the laundry room, everyone. I am Isaiah, the caretaker. Here are a few rules to remember. The room is open from seven in the morning until ten at night, and you must take your clothes out immediately when the machine stops. There are six washing machines and four dryers. A wash costs two pounds fifty, and you can get a token from my office on the ground floor. Each dryer takes one pound for thirty minutes. Please do not use more than two machines at once, because other residents need to wash their clothes too. If a machine breaks, do not try to fix it. Write the number of the machine on the yellow notice board, and I will repair it. Finally, please remove the dust from the dryer filter after each use."
+                "text": "Welcome to the laundry room, everyone. I know it is not the most exciting place in the building, but it is important. I am Isaiah, the caretaker. I have lived in this building for twenty years, and I know every machine. Here are a few rules to remember. There are only six, so it is easy. The room is open from seven in the morning until ten at night, and you must take your clothes out immediately when the machine stops. Other people are waiting, and wet clothes on the floor make the room dirty. There are six washing machines and four dryers. Two of the washing machines are bigger, and they are for sheets and blankets. A wash costs two pounds fifty, and you can get a token from my office on the ground floor. The office is open from eight to six, and I am there almost every day. Each dryer takes one pound for thirty minutes. If your clothes are still wet, you can put in another coin. Please do not use more than two machines at once, because other residents need to wash their clothes too. Sometimes there is a queue on Sunday evening, so try to come in the morning. If a machine breaks, do not try to fix it. Write the number of the machine on the yellow notice board, and I will repair it. Usually it takes one or two days, because the engineer comes from another town. Finally, please remove the dust from the dryer filter after each use. It is a small job, but it is very important for safety."
               }
             ]
           },
@@ -1399,11 +1614,35 @@
               },
               {
                 "speaker": "i",
+                "text": "Do you have a routine?"
+              },
+              {
+                "speaker": "h",
+                "text": "Yes, always the same order. First I open the window, then I strip the bed, and then I clean the bathroom. The floor comes last, so I do not walk on clean places."
+              },
+              {
+                "speaker": "i",
                 "text": "How many rooms do you clean in a day?"
               },
               {
                 "speaker": "h",
                 "text": "Usually fourteen. Each takes about thirty minutes, so I have little time for breaks."
+              },
+              {
+                "speaker": "i",
+                "text": "Do you wear a uniform?"
+              },
+              {
+                "speaker": "h",
+                "text": "Yes, a blue dress and comfortable shoes. I walk about ten kilometres every day, so good shoes are very important."
+              },
+              {
+                "speaker": "i",
+                "text": "Do guests leave tips?"
+              },
+              {
+                "speaker": "h",
+                "text": "Sometimes, a few pounds on the pillow. It is not necessary, but it always makes me smile. Once someone left a chocolate and a thank-you note."
               },
               {
                 "speaker": "i",
@@ -1415,11 +1654,27 @@
               },
               {
                 "speaker": "i",
+                "text": "Has a guest ever asked you for something strange?"
+              },
+              {
+                "speaker": "h",
+                "text": "A man wanted me to feed his parrot while he was away. The parrot said my name all day, and I was surprised."
+              },
+              {
+                "speaker": "i",
                 "text": "Are guests generally tidy?"
               },
               {
                 "speaker": "h",
                 "text": "Most are, but some leave amazing mess. Once, a group of students left pizza under all the beds."
+              },
+              {
+                "speaker": "i",
+                "text": "What did you do about the pizza?"
+              },
+              {
+                "speaker": "h",
+                "text": "I threw it away, of course, and I opened the windows. The smell stayed for two days. The manager spoke to the students, and they apologised."
               },
               {
                 "speaker": "i",
@@ -1431,11 +1686,43 @@
               },
               {
                 "speaker": "i",
+                "text": "How did you learn the job?"
+              },
+              {
+                "speaker": "h",
+                "text": "A friend taught me on my first day. She showed me how to fold sheets in a hotel style, with sharp corners. Now I can make a bed in two minutes."
+              },
+              {
+                "speaker": "i",
+                "text": "What do you do on your day off?"
+              },
+              {
+                "speaker": "h",
+                "text": "I sleep late, read a book and go for a walk by the sea. I do not clean anything."
+              },
+              {
+                "speaker": "i",
                 "text": "Do you clean your own home with the same care?"
               },
               {
                 "speaker": "h",
                 "text": "Not at all! After work, I am too tired. My family say the cobbler's children have the worst shoes."
+              },
+              {
+                "speaker": "i",
+                "text": "What would you change about the work?"
+              },
+              {
+                "speaker": "h",
+                "text": "I would like more time. Fourteen rooms is too many, and I never have a break to sit down. But the hotel is hiring more people."
+              },
+              {
+                "speaker": "i",
+                "text": "Thank you, Onyx. A last word?"
+              },
+              {
+                "speaker": "h",
+                "text": "Be kind to cleaners. We are invisible, but we make every trip nicer."
               }
             ]
           },

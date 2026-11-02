@@ -251,7 +251,8 @@
               "options": [
                 "Her friends asked her to join.",
                 "She had won a prize for painting.",
-                "She wanted to paint something big and colourful."
+                "She wanted to paint something big and colourful.",
+                "The council paid her to paint."
               ],
               "answer": 2,
               "explanation": "She loved drawing and imagined a huge picture of the sea with colourful fish."
@@ -260,22 +261,24 @@
               "id": "r3-2",
               "prompt": "What was difficult about the planning?",
               "options": [
-                "Finding enough paint for the wall",
                 "Agreeing on one design",
+                "Finding enough paint for the wall",
+                "Climbing the ladders safely",
                 "Drawing on very large paper"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "It was hard because everybody had a different opinion about the design."
             },
             {
               "id": "r3-3",
               "prompt": "How did Ms Dorsey react when the writer dropped paint on her?",
               "options": [
-                "She laughed about it.",
                 "She asked her to leave.",
-                "She was angry for a moment."
+                "She was angry for a moment.",
+                "She asked her to be more careful.",
+                "She laughed about it."
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She just laughed."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "What did strangers do while the group was working?",
               "options": [
                 "They took photographs of the wall.",
-                "They offered to paint with them.",
-                "They brought them some drinks."
+                "They brought them some drinks.",
+                "They told them to stop.",
+                "They offered to paint with them."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "Some strangers brought them cold drinks, which they accepted."
             },
             {
               "id": "r3-5",
               "prompt": "What is the writer's secret?",
               "options": [
-                "Which fish she painted",
                 "The cost of the mural",
-                "The name of the mayor"
+                "The name of the mayor",
+                "Which fish she painted",
+                "Where she bought the paint"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She says nobody else knows which small orange fish she painted."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The artist of small stones",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Pablo is twenty-four, and he is probably the only artist in his town who paints on pebbles. [1] Some of his pieces are no bigger than a coin, but when you look at them closely, you can see hundreds of tiny details.\n\nHe started during a walk on the beach when he was eight. His grandfather picked up a smooth stone and asked him to draw a face on it. [2] Years later, he still keeps that pebble on his desk.\n\nEvery few weeks, Pablo goes to the sea to collect new stones. He chooses them carefully, because the shape of each one gives him an idea. [3] A long, thin stone, for example, can become a bird or a fish.\n\nHis work is now sold in shops in six countries. [4] However, he never paints the same thing twice, and he refuses to make copies for factories.\n\nPablo also teaches children to paint pebbles at the local library. [5] \"When they give one to their parents, you should see their faces,\" he says with a smile.",
           "sentences": [
-            "A round one might look like an apple, a face or the moon.",
             "That simple game changed his life.",
+            "Some of the pebbles he paints are millions of years old.",
+            "A round one might look like an apple, a face or the moon.",
+            "Painting is not his main job, as he works in a bank.",
             "People who see his stones often say they cannot believe that they were painted by hand.",
+            "He has never been to art school or taken a lesson.",
             "The classes are free, and there is always a long waiting list.",
-            "Many people want to buy a piece because it is so unusual.",
-            "Painting is not his main job, as he works in a bank."
+            "Many people want to buy a piece because it is so unusual."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "E",
               "explanation": "\"The only artist who paints on pebbles\" is followed by what people say about his work; the next sentence describes the size of the pieces."
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "A",
               "explanation": "His grandfather asked him to draw a face on a stone; \"That simple game changed his life\" leads to the pebble he still keeps."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "C",
               "explanation": "The shape of each stone gives him an idea; \"A round one might look like...\" continues, and the next sentence gives another example."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "H",
               "explanation": "His work is sold in six countries; \"Many people want to buy a piece\" explains why, and \"However\" introduces his rule about copies."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "G",
               "explanation": "He teaches children at the library; the classes are free with a waiting list, and the next sentence is about the children's pride."
             }
           ]
@@ -732,28 +739,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "briar",
-                    "name": "Briar",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "briar",
-                    "text": "What time does the gallery close? I thought it was six."
-                  },
-                  {
                     "speaker": "aldwin",
-                    "text": "Usually, yes, but today it closes at five because they are hanging a new exhibition."
-                  },
-                  {
-                    "speaker": "briar",
-                    "text": "Then I'd better go now."
+                    "text": "Attention, visitors. Thank you for coming to the Riverside Gallery today. We normally close at six, as it says at the entrance, but today is different because the staff need to prepare a new exhibition. So the gallery will close at five o’clock, one hour before usual. The doors for the opening party at seven are for invited guests only, so if you do not have an invitation, please leave in good time. The shop and the café will also close early. You still have time to see the sculpture room on the first floor, which is the most popular one. Thank you for your understanding."
                   }
                 ]
               },
@@ -766,7 +757,7 @@
                   "At seven o'clock"
                 ],
                 "answer": 1,
-                "explanation": "It usually closes at six, but today it closes at five."
+                "explanation": "The usual closing time is six and the party at seven is for guests only, but today the gallery closes one hour earlier, at five."
               }
             },
             {
@@ -792,16 +783,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "dashwood",
+                    "text": "Are you ready for your first pottery class tomorrow, Cosima?"
+                  },
+                  {
                     "speaker": "cosima",
-                    "text": "What do I need to bring to the pottery class?"
+                    "text": "Nearly. I wasn’t sure what to take. Do I need boots? The studio floor might be wet."
                   },
                   {
                     "speaker": "dashwood",
-                    "text": "Wear old clothes, and bring an apron if you have one. The clay gets everywhere."
+                    "text": "Not at all. It’s inside, and there’s a clean floor. I think the teacher said you don’t need anything special for your feet."
                   },
                   {
                     "speaker": "cosima",
-                    "text": "I'll bring my father's old apron."
+                    "text": "Good. And a notebook? I thought about taking notes."
+                  },
+                  {
+                    "speaker": "dashwood",
+                    "text": "I did that in my first class, but you can’t hold a pen with muddy hands. Just watch and listen."
+                  },
+                  {
+                    "speaker": "cosima",
+                    "text": "Fair. What about my clothes? Clay gets everywhere."
+                  },
+                  {
+                    "speaker": "dashwood",
+                    "text": "Take Mum’s old cooking apron, the blue one in the kitchen drawer. It saved my jumper last year."
+                  },
+                  {
+                    "speaker": "cosima",
+                    "text": "Brilliant idea!"
                   }
                 ]
               },
@@ -814,7 +825,7 @@
                   "A notebook"
                 ],
                 "answer": 0,
-                "explanation": "He tells her to bring an apron because the clay gets everywhere."
+                "explanation": "The floor is clean so she does not need boots, and notes are useless with muddy hands; she needs something for her clothes, Mum’s old apron."
               }
             },
             {
@@ -840,29 +851,53 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "elspeth",
+                    "text": "Good morning. Can I help you?"
+                  },
+                  {
                     "speaker": "fitzroy",
-                    "text": "How much is a ticket for the exhibition?"
+                    "text": "Two tickets for the exhibition, please. One for me and one for my son."
                   },
                   {
                     "speaker": "elspeth",
-                    "text": "Adults pay eight pounds, students four, and children under twelve are free."
+                    "text": "Certainly. Adults pay eight pounds. How old is your son?"
                   },
                   {
                     "speaker": "fitzroy",
-                    "text": "I'm a student, so four pounds, please."
+                    "text": "He’s ten."
+                  },
+                  {
+                    "speaker": "elspeth",
+                    "text": "Then he pays four pounds, because children under twelve get half price."
+                  },
+                  {
+                    "speaker": "fitzroy",
+                    "text": "Is there a cheaper ticket? I read about a family offer."
+                  },
+                  {
+                    "speaker": "elspeth",
+                    "text": "That’s only on Sundays, I’m afraid. Today is Saturday."
+                  },
+                  {
+                    "speaker": "fitzroy",
+                    "text": "Oh well. I’ll pay by card. Do you need my son’s name?"
+                  },
+                  {
+                    "speaker": "elspeth",
+                    "text": "No, that’s fine. Here are your tickets. Enjoy the exhibition."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "How much will the man pay?",
+                "prompt": "How much will the man pay in total?",
                 "options": [
                   "Four pounds",
                   "Eight pounds",
                   "Twelve pounds"
                 ],
-                "answer": 0,
-                "explanation": "A student ticket costs four pounds."
+                "answer": 2,
+                "explanation": "The father pays eight pounds and his ten-year-old son pays four, and the family offer is only on Sundays, so the total is twelve pounds."
               }
             },
             {
@@ -876,28 +911,12 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "hermia",
-                    "name": "Hermia",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "hermia",
-                    "text": "Where can I leave my coat and bag?"
-                  },
-                  {
                     "speaker": "godfrey",
-                    "text": "There's a cloakroom downstairs, next to the toilets. It's free, but you must take your phone and your money with you."
-                  },
-                  {
-                    "speaker": "hermia",
-                    "text": "Thanks. I'll go down now."
+                    "text": "Welcome to the Mill Museum. Many visitors ask where they can leave their coats, so let me explain. At the main entrance there used to be a rack, but it was removed last year, because people sometimes took the wrong coat. In the café you can hang your coat on your chair, but we cannot look after it there. So the best place is the cloakroom. It is downstairs, on the left side of the big hall, and it is free. The staff there will also look after bags and umbrellas, but please keep your money and phone with you. Enjoy your visit!"
                   }
                 ]
               },
@@ -910,7 +929,7 @@
                   "In the café"
                 ],
                 "answer": 1,
-                "explanation": "There is a cloakroom downstairs where coats and bags can be left."
+                "explanation": "The rack at the entrance was removed and the café is not safe, so the cloakroom downstairs is the place."
               }
             },
             {
@@ -936,16 +955,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "imelda",
+                    "text": "Jerome, I got your message. Is the drawing class still on Tuesday?"
+                  },
+                  {
                     "speaker": "jerome",
-                    "text": "When is your drawing class?"
+                    "text": "That was the old day. They moved it because the teacher has another job on Tuesdays."
                   },
                   {
                     "speaker": "imelda",
-                    "text": "It was on Tuesdays, but it has moved to Thursdays at six. The teacher has a new job."
+                    "text": "To Wednesday? I saw that on the website."
                   },
                   {
                     "speaker": "jerome",
-                    "text": "Thursday works well for me. May I join?"
+                    "text": "That’s the photography class. I was confused too, so I checked the email twice. The drawing class is a day later than that one."
+                  },
+                  {
+                    "speaker": "imelda",
+                    "text": "Oh, good. Thursday is better for me anyway. I work late on the other days."
+                  },
+                  {
+                    "speaker": "jerome",
+                    "text": "Mine too. And the class will be in the same room, so nothing else changes."
+                  },
+                  {
+                    "speaker": "imelda",
+                    "text": "Perfect. I’ll bring my new pencils."
                   }
                 ]
               },
@@ -953,12 +988,12 @@
                 "id": "l1-5q",
                 "prompt": "Which day is the drawing class now?",
                 "options": [
+                  "Thursday",
                   "Tuesday",
-                  "Wednesday",
-                  "Thursday"
+                  "Wednesday"
                 ],
-                "answer": 2,
-                "explanation": "The class has moved from Tuesdays to Thursdays at six."
+                "answer": 0,
+                "explanation": "Tuesday is the old day and Wednesday is the photography class; drawing is one day later than that, so it is Thursday."
               }
             },
             {
@@ -972,41 +1007,25 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "lorelei",
-                    "name": "Lorelei",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "lorelei",
-                    "text": "Which colour do you use most in your paintings?"
-                  },
-                  {
                     "speaker": "kingsley",
-                    "text": "Blue, definitely. It reminds me of the sea. I once painted a whole room in blue, and my mum was not pleased."
-                  },
-                  {
-                    "speaker": "lorelei",
-                    "text": "I prefer yellow. It's more cheerful."
+                    "text": "Hello everyone, my name’s Kingsley and I’m going to tell you about my paintings. When I started, I only used blue, because I love the sea and I painted boats all the time. My teacher said it was a bit boring, so I tried green last year for forests and fields. I used lots of it, and my mum put one of those pictures on the fridge. But my favourite colour now is a different one. I put it everywhere: in the sun, on the flowers, even on the faces, and my friends say my pictures look happy because of it. I buy a new tube every week because it finishes so fast. Thank you for listening."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "Which colour does the boy use most?",
+                "prompt": "Which colour does Kingsley use most now?",
                 "options": [
                   "Blue",
                   "Green",
                   "Yellow"
                 ],
-                "answer": 0,
-                "explanation": "He says he uses blue most because it reminds him of the sea."
+                "answer": 2,
+                "explanation": "He used blue and then green in the past, but now he uses the colour of the sun and the flowers, which is yellow."
               }
             },
             {
@@ -1033,15 +1052,27 @@
                 "turns": [
                   {
                     "speaker": "merrick",
-                    "text": "That's a lovely painting in your hall. Who painted it?"
+                    "text": "That’s a lovely painting above your sofa, Nanette. Is it by a famous artist?"
                   },
                   {
                     "speaker": "nanette",
-                    "text": "My grandmother. She painted it when she was twenty, in the village where she grew up."
+                    "text": "People always ask that! It looks professional, but no."
+                  },
+                  {
+                    "speaker": "merrick",
+                    "text": "Did your sister paint it? I know she studies art."
+                  },
+                  {
+                    "speaker": "nanette",
+                    "text": "She does, but she paints modern things with lots of colours. This one is a quiet scene of a farm, and the paint is very old. My grandmother painted it when she was young, before she got married."
                   },
                   {
                     "speaker": "merrick",
                     "text": "She was very talented."
+                  },
+                  {
+                    "speaker": "nanette",
+                    "text": "She never thought so. She gave it to me when I moved into this flat, and I’ll never sell it."
                   }
                 ]
               },
@@ -1054,7 +1085,7 @@
                   "A famous artist"
                 ],
                 "answer": 1,
-                "explanation": "Nanette says her grandmother painted it when she was twenty."
+                "explanation": "It looks professional but it is not by a famous artist, and her sister paints modern things; her grandmother painted the old farm."
               }
             }
           ]
@@ -1089,29 +1120,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "ottoline3",
+                    "text": "Have you thought about our art project? Maybe we could copy a famous painting, like the sunflowers."
+                  },
+                  {
                     "speaker": "pembroke",
-                    "text": "I have to paint a picture for school, but I have no idea what to paint."
+                    "text": "Mr Dunn hates copies. He wants something original. What about a portrait of him? He’d love it."
                   },
                   {
                     "speaker": "ottoline3",
-                    "text": "Why not paint something you see every day, like the view from your window?"
+                    "text": "He would hate that even more! He’s very shy. I think we should paint something we see every day. Like the view from the school bridge, with the river and the old mill."
                   },
                   {
                     "speaker": "pembroke",
-                    "text": "That's a good idea. I'll start tonight."
+                    "text": "That’s not a bad idea. And it’s easy to see it, we cross every day."
+                  },
+                  {
+                    "speaker": "ottoline3",
+                    "text": "Exactly, and the light there in the evening is beautiful."
+                  },
+                  {
+                    "speaker": "pembroke",
+                    "text": "OK, let’s go on Friday with our sketchbooks."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the girl suggest?",
+                "prompt": "What do the friends decide to paint?",
                 "options": [
-                  "Choosing a famous picture",
-                  "Asking the teacher for help",
-                  "Painting an ordinary view"
+                  "A copy of a famous picture",
+                  "A portrait of their teacher",
+                  "A view of their own town"
                 ],
                 "answer": 2,
-                "explanation": "She suggests painting something you see every day, such as the view from the window."
+                "explanation": "The teacher does not like copies and is too shy for a portrait, so they agree on the view from the school bridge."
               }
             },
             {
@@ -1137,16 +1180,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "radcliffe",
+                    "text": "What are you going to get your aunt for her birthday?"
+                  },
+                  {
                     "speaker": "quenby",
-                    "text": "I need a present for my aunt. She likes colourful things."
+                    "text": "I thought about painting a picture of her garden. But it would take weeks, and I’m not good enough."
                   },
                   {
                     "speaker": "radcliffe",
-                    "text": "How about this scarf? It's hand-painted, and each one is different."
+                    "text": "Then try this shop. I saw some nice things there."
                   },
                   {
                     "speaker": "quenby",
-                    "text": "It's perfect. I'll take it."
+                    "text": "I looked there yesterday, but I only found ugly mugs. Still, they have scarves in lots of colours."
+                  },
+                  {
+                    "speaker": "radcliffe",
+                    "text": "Shall we look in the market, then?"
+                  },
+                  {
+                    "speaker": "quenby",
+                    "text": "No, I’m tired, and I don’t want to spend all day shopping. She’s always cold, so I’ll get the blue one. It’s silk and it was in the window."
+                  },
+                  {
+                    "speaker": "radcliffe",
+                    "text": "Perfect. She’ll love it."
                   }
                 ]
               },
@@ -1154,12 +1213,12 @@
                 "id": "l2-2q",
                 "prompt": "What does the woman decide to do?",
                 "options": [
-                  "Paint a picture for her aunt",
                   "Buy a scarf as a gift",
+                  "Paint a picture for her aunt",
                   "Look in another shop"
                 ],
-                "answer": 1,
-                "explanation": "She decides to buy the hand-painted scarf as a present for her aunt."
+                "answer": 0,
+                "explanation": "A painting would take weeks and she does not want to search more; she chooses the silk scarf that her aunt will like."
               }
             },
             {
@@ -1186,28 +1245,40 @@
                 "turns": [
                   {
                     "speaker": "thisbe",
-                    "text": "Shh! There's too much noise. People are trying to look at the paintings, and you're talking on the phone."
+                    "text": "Excuse me, may I speak to you? I’m a bit annoyed."
                   },
                   {
                     "speaker": "sinclair",
-                    "text": "I'm so sorry. I'll take the call outside."
+                    "text": "Of course. What happened?"
                   },
                   {
                     "speaker": "thisbe",
-                    "text": "Thank you. It's a quiet place."
+                    "text": "Well, it’s not the noise, the school group is very quiet, and it’s not the temperature either, which is perfectly fine. It’s the people near the statue in room three. Three of them touched it just now, and one even leaned on it."
+                  },
+                  {
+                    "speaker": "sinclair",
+                    "text": "Oh dear. There’s a sign."
+                  },
+                  {
+                    "speaker": "thisbe",
+                    "text": "I know, but nobody reads it. Could you speak to them?"
+                  },
+                  {
+                    "speaker": "sinclair",
+                    "text": "Right away. Thank you for telling me."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the problem?",
+                "prompt": "Why is the woman annoyed?",
                 "options": [
-                  "Someone is making a noise.",
-                  "A painting is missing.",
-                  "The gallery is too crowded."
+                  "People are talking loudly.",
+                  "Visitors are touching the art.",
+                  "The gallery is too hot."
                 ],
-                "answer": 0,
-                "explanation": "A man is talking loudly on the phone in a quiet gallery."
+                "answer": 1,
+                "explanation": "She says that the noise and the temperature are fine, but several visitors touched the statue and one leaned on it."
               }
             },
             {
@@ -1233,16 +1304,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "upton",
+                    "text": "You look happy today, Verena. Are you going away for the summer?"
+                  },
+                  {
                     "speaker": "verena_x",
-                    "text": "My sister's paintings are going to be in the town hall exhibition. We're all invited to the opening."
+                    "text": "No, we’re staying here this year. But guess what! I found out last night that my sister is going to be in the new exhibition at the town hall."
                   },
                   {
                     "speaker": "upton",
-                    "text": "That's fantastic news! When is it?"
+                    "text": "Did she win the school competition, then?"
                   },
                   {
                     "speaker": "verena_x",
-                    "text": "Next Friday, at seven. There'll be music and snacks."
+                    "text": "She entered it last year but didn’t win. This time she didn’t enter anything. The organisers asked her, because they saw her photos online. She’s so nervous, but I’m really proud and excited."
+                  },
+                  {
+                    "speaker": "upton",
+                    "text": "That’s brilliant news. Can we go to see it?"
+                  },
+                  {
+                    "speaker": "verena_x",
+                    "text": "Of course, it opens on the tenth. I’ll take you."
                   }
                 ]
               },
@@ -1255,7 +1338,7 @@
                   "Her sister's work will be shown."
                 ],
                 "answer": 2,
-                "explanation": "Her sister's paintings will be in the town hall exhibition."
+                "explanation": "There is no holiday and no prize this time; the organisers asked her sister to show her photos."
               }
             },
             {
@@ -1282,28 +1365,40 @@
                 "turns": [
                   {
                     "speaker": "xenia",
-                    "text": "I don't understand modern art. Our visit was a bit of a waste of time."
+                    "text": "Did you like the modern painting? It’s only three black lines on a white wall."
                   },
                   {
                     "speaker": "winthrop_x",
-                    "text": "Maybe. But I like to ask myself how a picture makes me feel, not what it means."
+                    "text": "I did, strangely. Some people say it’s too simple, or it’s a waste of time. But I stood there for ten minutes."
                   },
                   {
                     "speaker": "xenia",
-                    "text": "Hmm, I'd never thought of that."
+                    "text": "Why? What did you see?"
+                  },
+                  {
+                    "speaker": "winthrop_x",
+                    "text": "Nothing, really, but I felt calm and a bit sad. I think that’s the point. Art doesn’t have to be easy to understand or pretty. It’s good when it moves you."
+                  },
+                  {
+                    "speaker": "xenia",
+                    "text": "I’d never thought like that. For me it’s about skill."
+                  },
+                  {
+                    "speaker": "winthrop_x",
+                    "text": "That’s fair, but I like the feeling more."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the boy say about art?",
+                "prompt": "What does the boy think good art should do?",
                 "options": [
-                  "It should make you feel something.",
-                  "It must be easy to understand.",
-                  "It is a waste of time."
+                  "Move the viewer",
+                  "Be easy to follow",
+                  "Take a short time"
                 ],
                 "answer": 0,
-                "explanation": "He says that he asks himself how a picture makes him feel."
+                "explanation": "He does not mind that it is simple or hard to understand; he stood there for ten minutes and says that art is good when it moves you."
               }
             },
             {
@@ -1329,29 +1424,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "yardley",
+                    "text": "Zenobia, you look terrible. What’s wrong?"
+                  },
+                  {
                     "speaker": "zenobia",
-                    "text": "Have you seen my sketchbook? I left it on the bus yesterday."
+                    "text": "I think I lost my bag on the bus. My bus pass was inside, and my drawings for the art class."
                   },
                   {
                     "speaker": "yardley",
-                    "text": "Did you phone the bus company? They keep things for a week."
+                    "text": "Oh no! Well, you can get another bus pass, and you can draw again. Is that all?"
                   },
                   {
                     "speaker": "zenobia",
-                    "text": "I'll do it now. All my best drawings are in it."
+                    "text": "No, my phone too. It had all of my photos, and my mum’s number. I can’t call anyone."
+                  },
+                  {
+                    "speaker": "yardley",
+                    "text": "Use mine and call the bus company."
+                  },
+                  {
+                    "speaker": "zenobia",
+                    "text": "Thanks. I don’t care about the drawings or the pass. I just want my phone back. It’s like losing my memory."
+                  },
+                  {
+                    "speaker": "yardley",
+                    "text": "Let’s go to the office together."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What has the girl lost?",
+                "prompt": "What is the girl most upset about losing?",
                 "options": [
                   "Her bus pass",
                   "Her phone",
                   "Her drawings"
                 ],
-                "answer": 2,
-                "explanation": "She left her sketchbook on the bus and all her best drawings are in it."
+                "answer": 1,
+                "explanation": "She says that she does not care about the drawings or the pass; she wants her phone back because of the photos and the number."
               }
             }
           ]
@@ -1376,55 +1487,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good evening, everyone, and welcome to the first lesson of our painting workshop. I'm Philomela, and I'll be your teacher for the next eight weeks. We meet every Wednesday evening at half past six, in the art room on the second floor. For the first lesson, you don't need to bring anything, because we provide paper, brushes and paints. However, I recommend bringing an old shirt, because paint can be messy. In the fourth week, we're going to visit the museum next door, where you can sketch some of the paintings. At the end of the course, there will be a small exhibition of your work in the entrance hall, and your friends and family are very welcome. The whole course costs ninety pounds, and you can pay by cash or by card at the desk."
+                "text": "Good evening, everyone, and welcome to the first lesson of our painting workshop. I’m Philomela, and I’ll be your teacher for the next eight weeks. We advertised a six-week course at first, but so many of you wanted more time that we made it longer. Let me tell you how things work. We meet every Wednesday evening, from half past six until nine. Some of you asked about Thursday, but that day is for the pottery group, and the art room can’t be used by two groups. The art room is on the second floor, at the end of the corridor. Please don’t go to the first floor, which has the music rooms, and don’t use the lift, it’s often broken. Painting is messy, so I need to tell you what to bring. You don’t have to bring brushes or paper, the school will give you those. But please bring an old shirt, because paint never comes off clothes. An apron isn’t enough, in my experience. Next, let me tell you about the plan. In the first three weeks we practise colours and shapes. In week four we are going to visit the museum on King Street, to see paintings by local artists. We’ll walk there together, because it’s only ten minutes. The old programme says we go to the gallery, but that is closed this term. After that, you will paint a picture of your own, and in the last week we’ll have a small exhibition in the hall. Your family and friends are welcome. Finally, some information about money. The course costs ninety pounds, which includes materials. I know that the sign in the hall says seventy, but that was the old price, and the price for the older course was a hundred and twenty, so we are somewhere in the middle. You can pay today or next week, by cash or card. Now, any questions before we start?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The course lasts ___ weeks",
+              "prompt": "The workshop will go on for ___ weeks",
               "answer": "eight",
-              "accepted": [
-                "8"
-              ],
-              "explanation": "Philomela says she will be the teacher for the next eight weeks."
+              "explanation": "It was advertised as six weeks but it is now eight weeks."
             },
             {
               "id": "l3-2",
-              "prompt": "The class meets every ___ evening",
+              "prompt": "Lessons take place each ___ evening",
               "answer": "Wednesday",
-              "explanation": "They meet every Wednesday evening."
+              "explanation": "Thursday is for the pottery group, so the painting class is on Wednesday."
             },
             {
               "id": "l3-3",
-              "prompt": "The art room is on the ___ floor",
+              "prompt": "The classroom is located on the ___ floor",
               "answer": "second",
-              "accepted": [
-                "2nd"
-              ],
-              "explanation": "The art room is on the second floor."
+              "explanation": "The music rooms are on the first floor; the art room is on the second."
             },
             {
               "id": "l3-4",
-              "prompt": "Students should bring an old ___",
+              "prompt": "Students are asked to bring an old ___ to protect their clothes",
               "answer": "shirt",
-              "explanation": "She recommends bringing an old shirt."
+              "explanation": "Brushes and paper are provided; they need an old shirt, and an apron is not enough."
             },
             {
               "id": "l3-5",
-              "prompt": "In week four, students visit the ___",
+              "prompt": "A walk to the ___ takes place in the fourth week",
               "answer": "museum",
-              "explanation": "In the fourth week, they will visit the museum next door."
+              "explanation": "The gallery in the old programme is closed, so they go to the museum on King Street."
             },
             {
               "id": "l3-6",
-              "prompt": "The course costs ___ pounds",
+              "prompt": "Fees for the course come to ___ pounds",
               "answer": "ninety",
-              "accepted": [
-                "90"
-              ],
-              "explanation": "The whole course costs ninety pounds."
+              "explanation": "The sign says seventy and the older course cost a hundred and twenty, but the price now is ninety pounds."
             }
           ]
         },
@@ -1456,87 +1558,87 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Annabel, you paint large pictures on the pavement with chalk. How did you start?"
+                "text": "Annabel, you draw enormous pictures on the pavement with chalk. How did you start?"
               },
               {
                 "speaker": "annabel",
-                "text": "By accident. When I was a student, I was waiting for a friend in the street, and I had some chalk in my bag. I started drawing a flower on the ground, and soon a small crowd had gathered. A man gave me a coin, and that was the first money I ever earned from art."
+                "text": "By accident, really. A friend didn’t ask me, and I didn’t enter any competition, that came much later. One day I was waiting for a bus with a piece of chalk in my bag, I was bored, and I started to draw a flower on the ground. A man stopped, then another, and soon there was a small crowd. I just carried on."
               },
               {
                 "speaker": "host",
-                "text": "How long does a picture take?"
+                "text": "How long does a picture last?"
               },
               {
                 "speaker": "annabel",
-                "text": "Usually about six hours, from the first line to the last. But it only lasts a day or two, because the rain washes it away, or people walk across it."
+                "text": "It depends on the weather. A week is possible in dry weather, if people are careful, and I’d love it to last for months, but chalk isn’t paint. Usually a day or two, then the rain or the feet of people wash it away. In winter, even less."
               },
               {
                 "speaker": "host",
-                "text": "Doesn't that make you sad?"
+                "text": "That sounds sad. How do you feel about your work disappearing?"
               },
               {
                 "speaker": "annabel",
-                "text": "Not really. I take a photograph of every picture, and I like the idea that it is only here for a short time. It makes people stop and look at it carefully."
+                "text": "People always ask that. I’m not upset at all, to be honest. I used to be, but not now. I like that it’s temporary, because it makes people stop and look today. A picture in a museum is always there, so you can look tomorrow. And rain doesn’t stop me: I paint in light rain when I can, with a big umbrella."
               },
               {
                 "speaker": "host",
-                "text": "What kind of pictures do you draw?"
+                "text": "Your three-dimensional pictures are famous. What do children enjoy most about them?"
               },
               {
                 "speaker": "annabel",
-                "text": "Some are copies of famous paintings. Others are three-dimensional, so that from one particular place it looks as if a hole has opened in the pavement. Children love to stand next to them and have their photo taken."
+                "text": "They love them! Some pictures look like a big hole in the ground, and children run to see. They don’t walk on them, because I ask them not to. I give them chalk of their own, and they colour next to me, which is nice, but the thing they really want is a photo. They stand at the edge of the hole, and the picture looks real. Parents take hundreds of photos."
               },
               {
                 "speaker": "host",
-                "text": "Is it a difficult life?"
+                "text": "What is the hardest thing about your job?"
               },
               {
                 "speaker": "annabel",
-                "text": "It can be. My knees hurt after a long day, and in winter, it is too cold to work. But I meet people from all over the world, and that makes up for it."
+                "text": "It’s not finding chalk, I can get it cheaply from a supplier. And people do look at my pictures, sometimes too much, so that’s not a worry either. It’s my body. I’m on my hands and knees for hours, and my knees hurt. In winter, it’s freezing, and my fingers go numb."
               },
               {
                 "speaker": "host",
-                "text": "What would you say to somebody who wants to try?"
+                "text": "What would you say to someone who would like to try?"
               },
               {
                 "speaker": "annabel",
-                "text": "Start with a small picture and a box of cheap chalk. Don't worry about making mistakes, because the rain will wash them away."
+                "text": "Start small, with just a flower or a face, and don’t worry about mistakes, because you can wipe them away. Don’t buy the most expensive chalk, the cheap one is fine at the beginning. And please don’t copy a famous painting exactly. Find your own idea, that’s much more fun."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "How did Annabel begin painting in the street?",
+              "prompt": "Why did Annabel start drawing in the street?",
               "options": [
-                "She was asked by a friend.",
-                "She started drawing by chance.",
-                "She won a competition."
+                "A friend asked her.",
+                "She was bored while waiting.",
+                "She wanted to win a prize."
               ],
               "answer": 1,
-              "explanation": "She had chalk in her bag while waiting for a friend and started drawing a flower."
+              "explanation": "A friend did not ask her and the competition came later; she was bored at a bus stop and drew a flower."
             },
             {
               "id": "l4-2",
               "prompt": "How long does a picture usually last?",
               "options": [
                 "A week",
-                "A day or two",
-                "Several months"
+                "Several months",
+                "A day or two"
               ],
-              "answer": 1,
-              "explanation": "A picture lasts only a day or two before rain or feet destroy it."
+              "answer": 2,
+              "explanation": "A week is possible in dry weather and she would love months, but usually a picture stays a day or two."
             },
             {
               "id": "l4-3",
               "prompt": "How does she feel about her pictures going away?",
               "options": [
-                "She likes the idea that it is temporary.",
-                "She is extremely upset about it all.",
-                "She never paints when it is raining."
+                "She likes that they are temporary.",
+                "She is extremely upset about it.",
+                "She never paints in the rain."
               ],
               "answer": 0,
-              "explanation": "She takes photographs and likes the idea that the picture is there only for a short time."
+              "explanation": "She used to be upset but not now; she likes that it is temporary, and she paints in light rain."
             },
             {
               "id": "l4-4",
@@ -1547,7 +1649,7 @@
                 "Standing next to them for photographs"
               ],
               "answer": 2,
-              "explanation": "Children love to stand next to them and have their photo taken."
+              "explanation": "They do not walk on them and colouring is nice, but what they really want is a photo at the edge of the hole."
             },
             {
               "id": "l4-5",
@@ -1558,7 +1660,7 @@
                 "People do not look at her pictures."
               ],
               "answer": 1,
-              "explanation": "She says her knees hurt after a long day and it is too cold in winter."
+              "explanation": "Chalk is cheap and people do look; the hard part is her knees and the freezing winter."
             },
             {
               "id": "l4-6",
@@ -1569,7 +1671,7 @@
                 "Copy a famous painting exactly"
               ],
               "answer": 0,
-              "explanation": "She suggests starting with a small picture and cheap chalk and not worrying about mistakes."
+              "explanation": "She says to start small, not to worry about mistakes, to buy cheap chalk and to find an own idea."
             }
           ]
         }

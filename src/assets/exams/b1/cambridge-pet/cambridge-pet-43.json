@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why were the sisters shocked?",
               "options": [
+                "Most of their food had plastic around it",
+                "Their friends had stopped buying plastic",
                 "The local shops were closed in January",
-                "Their kitchen was very untidy then",
-                "Most of their food had plastic around it"
+                "Their kitchen was very untidy then"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Almost everything was wrapped in plastic."
             },
             {
@@ -261,21 +262,23 @@
               "prompt": "What was difficult in the first week?",
               "options": [
                 "Carrying all their shopping home by bus",
-                "Finding a shop with loose vegetables",
-                "Making bread without using a recipe"
+                "Making bread without using a recipe",
+                "Making yoghurt without a machine",
+                "Finding a shop with loose vegetables"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "They had to walk two kilometres to find loose vegetables."
             },
             {
               "id": "r3-3",
               "prompt": "How did the market man react?",
               "options": [
-                "He seemed surprised but helped",
                 "He refused to use her jar",
-                "He gave her the olives for free"
+                "He seemed surprised but helped",
+                "He gave her the olives for free",
+                "He charged her extra for the jar"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He looked surprised but smiled and did it."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "They bought more plastic bottles",
                 "All of them stopped talking to her",
-                "Two of them copied the sisters"
+                "Two of them copied the sisters",
+                "They laughed and never changed"
               ],
               "answer": 2,
               "explanation": "Two friends copied the metal bottle idea."
@@ -294,6 +298,7 @@
               "prompt": "What was the result at the end of the month?",
               "options": [
                 "Their rubbish had become much smaller",
+                "They were proud of their friends",
                 "They no longer used any plastic at all",
                 "They spent a lot more money on food"
               ],
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A school that recycles",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Greenfield School has become famous in our town for the way that it deals with its rubbish. [1] Two years ago, a group of students asked their headteacher to do something about the problem, and she agreed at once.\n\nFirst, they put special bins in every classroom. [2] Each bin has a different colour, so that nobody gets confused, even the youngest children.\n\nThe students also made posters for the corridors. [3] The result was that more people began to take part.\n\nThe school now makes its own compost from food waste. [4] The vegetables grown there are served in the canteen at lunchtime. [5] Visitors from other schools often come to see how it works.",
           "sentences": [
+            "Glass bottles are collected once a week by a local company.",
+            "Visitors are asked to leave their bags at the door.",
+            "The school canteen is open from twelve until two.",
+            "The cooks say that the pupils now eat more vegetables.",
             "They are used for paper, plastic and tins.",
             "Not long ago, almost all of it went into one big bin.",
-            "The school canteen is open from twelve until two.",
-            "It is spread on the garden at the back of the building.",
             "They showed what could be recycled and what could not.",
-            "The cooks say that the pupils now eat more vegetables."
+            "It is spread on the garden at the back of the building."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "F",
               "explanation": "\"It\" is the school's rubbish: not long ago it all went into one bin, and then the students asked for a change."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "E",
               "explanation": "\"They\" refers to the special bins, and the colours are described next."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "G",
               "explanation": "The posters showed what could be recycled, which leads to more people taking part."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "H",
               "explanation": "The compost is spread on the garden, and the vegetables grown there follow."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "D",
               "explanation": "The vegetables are served in the canteen, and the cooks say the pupils now eat more of them."
             }
           ]
@@ -736,24 +743,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Which bin is for the plastic bottles?"
+                    "text": "Excuse me, I’ve got a bag of plastic bottles. Is this the blue bin?"
                   },
                   {
                     "speaker": "f",
-                    "text": "The yellow one. The blue one is for paper, and the green one is for glass."
+                    "text": "No, that’s for paper, it says so on the front. Plastic used to go in the blue one years ago, but they changed it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh, I see. So is it the green one, next to the door?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s for glass only. Plastic bottles and cans go in the one at the end, the colour of a lemon. The sign fell off last week, which is why people get confused."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. I nearly put them in the green one."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Everybody does. Just rinse them first, please, and take off the lids."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "Where do plastic bottles go?",
+                "prompt": "Where should plastic bottles go?",
                 "options": [
-                  "In the blue bin by the door",
+                  "In the blue bin",
                   "In the yellow bin",
-                  "In the green bin by the door"
+                  "In the green bin"
                 ],
                 "answer": 1,
-                "explanation": "Plastic goes in the yellow bin."
+                "explanation": "The blue bin is for paper and the green one is for glass; Althea points to the bin the colour of a lemon."
               }
             },
             {
@@ -780,11 +803,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why have you bought a cloth bag?"
+                    "text": "Nice bag, Lloyd. Is it new?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Plastic bags cost ten pence now, and I use a lot of them. This one will last for years."
+                    "text": "Yes, I got it at the market. I used to take a plastic one every time I went shopping, and they always broke after two or three trips."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Mine too! But aren’t cloth ones more expensive?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, I paid four pounds, and a plastic one is about thirty pence, so it isn’t about money. A friend said it looks smart, but honestly I don’t care about that either. The man at the stall told me it will last for years, and I’ve had it since March and it still looks new."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, you’ve convinced me. I’ll buy one on Saturday."
                   }
                 ]
               },
@@ -793,11 +828,11 @@
                 "prompt": "Why did the man buy a cloth bag?",
                 "options": [
                   "It will last longer",
-                  "It looks more modern than plastic",
-                  "It is much cheaper than plastic"
+                  "It looks more modern",
+                  "It is much cheaper"
                 ],
                 "answer": 0,
-                "explanation": "Because it will last for years."
+                "explanation": "The plastic bags are cheaper and he does not care how it looks; he bought it because the man said it lasts for years."
               }
             },
             {
@@ -811,24 +846,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Carol",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What time does the clean-up start on Saturday?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Nine o'clock at the park gate. Bring gloves if you have them."
+                    "text": "Hello, volunteers, this is Eric from the river clean-up. A reminder about Saturday. We meet at nine o’clock at the old bridge. We’ll give you gloves and bags, so don’t buy any. I know that some of you asked about lunch. At first we said you should bring sandwiches, but the café has offered us a free meal at one o’clock, so please leave those at home. The one thing we are short of is things to dig with and pick up rubbish with. Last time we had only five for thirty people. So if you have your own spade or rake, please bring it, and wear boots, because the bank is very muddy. See you on Saturday!"
                   }
                 ]
               },
@@ -836,12 +859,12 @@
                 "id": "l1-3q",
                 "prompt": "What should people bring on Saturday?",
                 "options": [
-                  "Gloves",
-                  "Some food to eat",
-                  "Gardening tools and boots"
+                  "Warm gloves",
+                  "Food for lunch",
+                  "Their own tools"
                 ],
-                "answer": 0,
-                "explanation": "She says to bring gloves if you have them."
+                "answer": 2,
+                "explanation": "The gloves are provided and lunch is free at the café, but they are short of things to dig with, so volunteers should bring their own spade or rake."
               }
             },
             {
@@ -868,11 +891,31 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "My old radio has stopped working. Should I throw it away?"
+                    "text": "My old radio has stopped working again. I think I’ll just throw it in the bin."
                   },
                   {
                     "speaker": "m",
-                    "text": "Wait. There is a repair cafe near the library. Someone might be able to mend it for free."
+                    "text": "Wait. Electrical things can’t go in the normal bin, it’s against the rules, actually."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I’ll order a new one online. There’s a nice one for twenty pounds."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s a waste if the old one is fine inside. My uncle has a little shop on Bridge Street where he mends things like this. He charges very little, and he repaired mine last month."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really? I thought nobody did that any more."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Take it there tomorrow and tell him I sent you."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, I will. Thanks, Darren."
                   }
                 ]
               },
@@ -882,10 +925,10 @@
                 "options": [
                   "Putting the radio in the bin",
                   "Taking the radio to be repaired",
-                  "Buying a new radio on the internet"
+                  "Buying a new radio online"
                 ],
                 "answer": 1,
-                "explanation": "He suggests the repair cafe."
+                "explanation": "Darren says electrical things cannot go in the bin and the new radio is a waste; he tells her to take the old one to his uncle’s shop, where they mend radios."
               }
             },
             {
@@ -912,11 +955,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Is that a new jacket?"
+                    "text": "That’s a great jacket, Lydia. Was it expensive?"
                   },
                   {
                     "speaker": "f",
-                    "text": "It is made from old plastic bottles! It is very warm, and I only paid twenty pounds."
+                    "text": "Not really, thirty pounds in the sale. I thought it would cost double, because it’s such good quality."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Was it a present from your sister? She has similar taste."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, I saw hers and went to the same shop. Look at the label inside. It says each jacket uses fifteen old plastic bottles, melted and made into thread."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No way! It feels like normal cloth."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know. That’s why I chose it, otherwise I’d have bought a cheaper plain one. And it’s so warm."
                   }
                 ]
               },
@@ -924,12 +983,12 @@
                 "id": "l1-5q",
                 "prompt": "What is special about the jacket?",
                 "options": [
-                  "It was very expensive to buy",
-                  "It was a gift from her friend",
-                  "It is made from plastic bottles"
+                  "It was expensive to buy",
+                  "It was a present from a friend",
+                  "It is made from recycled plastic"
                 ],
                 "answer": 2,
-                "explanation": "It is made from old plastic bottles."
+                "explanation": "It was only thirty pounds and she chose it herself; the label says it is made from fifteen old plastic bottles."
               }
             },
             {
@@ -956,11 +1015,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Do you want to go by bicycle to the market?"
+                    "text": "Are we taking the car to the market on Sunday?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Good idea. It is only two kilometres, and we will not need the car."
+                    "text": "I thought so, but the car park by the market is closed for the festival. And the bus only goes every hour on Sundays. Last time we waited forty minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "True. What about doing it the way we went in the summer? It was fun, and we can carry the shopping in the baskets."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "But it might rain."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The forecast says dry until four. And we need the exercise after all that cake."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fine. I’ll get the bicycles out of the shed and pump up the tyres tonight."
                   }
                 ]
               },
@@ -973,7 +1048,7 @@
                   "By bus"
                 ],
                 "answer": 0,
-                "explanation": "They will cycle."
+                "explanation": "The car park is closed and the bus is slow; they decide to go the way they went in the summer, and Malcolm will get the bicycles ready."
               }
             },
             {
@@ -1000,24 +1075,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How was the recycling talk at school?"
+                    "text": "How was the school trip, Frances?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Really interesting. I did not know that glass can be used again and again, without losing quality."
+                    "text": "Interesting! We visited the recycling plant. I thought paper would be the hard one because of the ink, but they make new paper quite easily."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And what about metal? It must cost a fortune."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Everybody knows that, so it wasn’t new. What surprised me was glass. I thought a bottle was used once and then crushed, but the guide said it can go round again and again, up to thirty times."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wow. I thought they just broke it up for road building."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Me too. Now I’ll take my bottles back to the shop."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "What did the girl learn?",
+                "prompt": "What did the girl learn at the plant?",
                 "options": [
-                  "Paper is very hard to recycle",
+                  "Paper is hard to recycle",
                   "Glass can be reused many times",
-                  "Metal costs a lot of money to make"
+                  "Metal costs a lot to make"
                 ],
                 "answer": 1,
-                "explanation": "She learned glass can be used again and again."
+                "explanation": "She expected paper to be difficult and already knew about metal; the surprise was that a glass bottle can go round again and again, up to thirty times."
               }
             }
           ]
@@ -1053,24 +1144,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "That is a mistake. You mustn't put food in the paper bin."
+                    "text": "Have you seen the new boxes in the office kitchen, Aaron? One for paper, one for plastic, one for food."
                   },
                   {
                     "speaker": "m",
-                    "text": "Sorry. I will put it in the compost one."
+                    "text": "Yes, I thought you’d hate them. You always complain when management changes something."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I did expect more work, I’ll admit. But it takes two seconds, and the pictures on the lids show what goes where. Before, I felt bad throwing everything together."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "But will people really use them? Last time they ignored the paper bin."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe some won’t, but that’s not my problem. I’m just glad it’s easy now."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fair enough. I’ll try it for a week."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the woman doing?",
+                "prompt": "How does Simone feel about the new recycling boxes at work?",
                 "options": [
-                  "Offering him some food",
-                  "Asking him for a favour",
-                  "Correcting a mistake"
+                  "Worried that they mean extra work",
+                  "Doubtful that colleagues will use them",
+                  "Glad that sorting is now simple"
                 ],
                 "answer": 2,
-                "explanation": "She tells him not to put food in the paper bin."
+                "explanation": "She expected more work but found it takes two seconds, and she says she feels glad it is easy now; the doubt about colleagues is Aaron’s."
               }
             },
             {
@@ -1097,24 +1204,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Welcome to the recycling centre. Please drive slowly, and put glass bottles in the big green container."
+                    "text": "Justine, you look great. Is that jacket new?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Thank you. Is it open on Sundays?"
+                    "text": "It’s from the charity shop, ten pounds! Everyone thinks I paid a lot."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I wasn’t sure about second-hand when I was younger, but my coat from the market has lasted five winters. A new one would have fallen apart by now."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Same with my boots. People say vintage things are trendy now, but I don’t care about fashion. I only care that I don’t throw money away."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And the shops are full these days, so it isn’t hard to find good stuff."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "True. Honestly, I prefer them. Better quality for half the price."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "Where are the speakers?",
+                "prompt": "What do Thomas and Justine agree about second-hand clothes?",
                 "options": [
-                  "At a large shopping centre",
-                  "At a recycling centre",
-                  "At a large garden centre"
+                  "They are better value than new ones",
+                  "They are more fashionable than new ones",
+                  "They are harder to find than before"
                 ],
-                "answer": 1,
-                "explanation": "The man welcomes the woman to the recycling centre."
+                "answer": 0,
+                "explanation": "Both say their old things last and cost less; only Justine mentions fashion and she does not care, and Thomas says it is not hard to find good clothes."
               }
             },
             {
@@ -1141,24 +1264,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "This old table is still good. We could paint it and use it in the garden."
+                    "text": "I’ve decided to go without plastic for a month, John. No bags, no bottles, no wrapping."
                   },
                   {
                     "speaker": "m",
-                    "text": "Brilliant idea! Why throw it out?"
+                    "text": "A month! Isn’t that going to cost a fortune? Everything without packaging is more expensive."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not at the market. I checked, and the vegetables are the same price."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hmm, okay. And what’s the point? One person won’t change the world."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe not, but I’ll learn how much I throw away, and I’d like to show my neighbours that it’s possible."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You know, I was against it two minutes ago, but I think I’d like to try with you. At least for a week. It could be fun, like a game."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What do they decide to do?",
+                "prompt": "What does John think at the end of the conversation?",
                 "options": [
-                  "Keep and paint the table",
-                  "Sell the old table online",
-                  "Take the old table to the tip"
+                  "The plan will cost too much",
+                  "The plan could be an enjoyable challenge",
+                  "The plan will change nothing"
                 ],
-                "answer": 0,
-                "explanation": "They decide to paint the table and use it."
+                "answer": 1,
+                "explanation": "He worried about the cost and the point, but Rachel answers both, and he finishes by saying that it could be fun, like a game."
               }
             },
             {
@@ -1184,25 +1323,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Hi Anastasia, it’s Maurice from the park committee. Have you got a minute?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "The town council will collect rubbish on Wednesdays instead of Mondays from next month."
+                    "text": "Sure. If it’s about the mess next to the lake, I saw it too. Disgusting."
                   },
                   {
                     "speaker": "m",
-                    "text": "I will tell my neighbours."
+                    "text": "Yes, that’s part of it. But I’m not calling to complain, the council has already promised to send a cleaner. We’re organising our own day too, because there’s so much to do. The first Sunday in May."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It won’t be cancelled because of the weather, like last year?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, we’ll go ahead whatever happens. We need at least ten people, and you’re so good with the children’s group. Could you join us and bring some of them?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’d love to. I’ll ask their parents tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is changing?",
+                "prompt": "Why does Maurice phone Anastasia?",
                 "options": [
-                  "The price of the whole service",
-                  "The colour of all the bins",
-                  "The day of the collection"
+                  "To ask her to join a clean-up day",
+                  "To say that an event is cancelled",
+                  "To complain about the mess in the park"
                 ],
-                "answer": 2,
-                "explanation": "Collection will be on Wednesdays instead of Mondays."
+                "answer": 0,
+                "explanation": "He says he is not calling to complain and the day will not be cancelled; he wants her to join the organised day and bring the children."
               }
             },
             {
@@ -1228,25 +1383,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "What are you making for the school fair, Blake?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Mum, can I take this tin to school? We are making pencil holders."
+                    "text": "I want to turn old tins into pencil holders. I’ve got twenty in the garage already. I’ll paint them and everything."
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, but wash it first."
+                    "text": "Hmm. Everybody does that. And don’t you need a lot of time to paint them well?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe, but I could finish in a weekend."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then how about a bird feeder from a milk bottle? Nobody else will think of it, and parents will buy it for their gardens."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s clever! But isn’t it harder than tins?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, a few cuts and some string. It’s actually easier. I made one last spring."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the boy want to do?",
+                "prompt": "Why does Bella suggest a different project?",
                 "options": [
-                  "Make something at school",
-                  "Give a tin to a good friend",
-                  "Throw away some more rubbish"
+                  "Tins are hard to find",
+                  "The first idea would take too long",
+                  "The new idea will stand out"
                 ],
-                "answer": 0,
-                "explanation": "They are making pencil holders from tins."
+                "answer": 2,
+                "explanation": "He has plenty of tins and can finish in a weekend; Bella says everybody does pencil holders and nobody else will think of a bird feeder."
               }
             },
             {
@@ -1272,25 +1447,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Rochelle, what’s that big black thing in your garden?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Our shop has a new service now: a place where you can fill your own bottle with washing liquid."
+                    "text": "My compost bin. I started it in March. I put in all the vegetable peelings and old leaves."
                   },
                   {
                     "speaker": "m",
-                    "text": "That is clever. It saves so much plastic."
+                    "text": "Doesn’t it smell terrible? My aunt had one and the whole street complained."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I was afraid of that too, and my neighbour looked a bit worried when I told him. But if you mix in dry leaves, there’s hardly any smell. And look at this, rich black soil. I grew these tomatoes in it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wow, they’re huge."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know! I never thought I could make something so good out of rubbish. I keep showing everybody."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman describing?",
+                "prompt": "How does Rochelle feel about her compost bin?",
                 "options": [
-                  "A television programme she saw",
-                  "A problem in her own home",
-                  "A new service in a shop"
+                  "Disgusted by the smell",
+                  "Proud of what she has done",
+                  "Worried about her neighbours"
                 ],
-                "answer": 2,
-                "explanation": "The supermarket has a place to fill your own bottle."
+                "answer": 1,
+                "explanation": "The smell and the neighbour’s worry were early fears that are gone; she grew big tomatoes and keeps showing everybody, so she is proud."
               }
             }
           ]
@@ -1315,52 +1506,46 @@
             "turns": [
               {
                 "speaker": "martin",
-                "text": "Hello, everyone, and thanks for coming to the new recycling centre. I'm Martin, the manager. The centre is open from eight in the morning until six in the evening, from Monday to Saturday. It is closed on Sundays. Entry is free for local people, but you will need to show a bill with your address. There are separate containers for glass, paper, metal and plastic. Garden waste goes in the large blue skip near the entrance. We also take old electrical items, such as televisions and fridges, but we cannot accept paint. Last year, we collected over four hundred tonnes of paper. If you want more information, visit our website, or ring the office on the number on the sign."
+                "text": "Hello, everyone, and thanks for coming to the opening of our new recycling centre. I’m Martin, the manager, and I’d like to explain a few things before you look around. First, the opening hours. Some of you read on the website that we open at seven, but that was a mistake and we’re changing it. We start at eight in the morning and close at six in the evening, so please don’t wait outside at seven, because the gates stay shut. Now, the days. When we ran the old site, we closed on Mondays, but Monday turned out to be one of the busiest days, so now we are open then. The only day that we are shut is Sunday. Next, a rule that surprises some people. To use the centre you must live in this town. Some people bring a passport, but that doesn’t show where you live. What we need is a recent bill, for gas or electricity, with your name and address on it. The staff will check it at the entrance. Let me show you the layout. As you come in, you’ll see a row of small green containers for glass bottles. Those are not for garden waste. Leaves, branches and old plants go in the big blue skip at the far end, near the exit. Don’t worry, there’s a sign. Now, what can’t we take? We accept batteries, old computers and metal, but we can’t take paint, because it’s dangerous and needs a special company. The staff will tell you where to go instead. Finally, a few numbers. At the old site we collected four hundred tonnes of paper last year. Glass came second, with about three hundred tonnes. I hope that with the new centre we can reach a thousand tonnes in total. So thank you for helping, and please ask any of the staff in yellow jackets if you need advice."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The centre opens at ___ in the morning",
+              "prompt": "Visitors can come in from ___ o'clock",
               "answer": "eight",
-              "accepted": [
-                "8"
-              ],
-              "explanation": "Open from eight in the morning."
+              "explanation": "The website said seven, but that was a mistake; they start at eight in the morning."
             },
             {
               "id": "l3-2",
-              "prompt": "It is closed on ___",
-              "answer": "Sundays",
-              "accepted": [
-                "Sunday"
-              ],
-              "explanation": "It is closed on Sundays."
+              "prompt": "The one day when the centre is shut is ___",
+              "answer": "Sunday",
+              "explanation": "Mondays were closed at the old site, but now the only day that they are shut is Sunday."
             },
             {
               "id": "l3-3",
-              "prompt": "You must show a ___ with your address",
+              "prompt": "As proof of where you live, take a ___ with your name on it",
               "answer": "bill",
-              "explanation": "You will need to show a bill with your address."
+              "explanation": "A passport does not show where you live; they need a recent bill for gas or electricity."
             },
             {
               "id": "l3-4",
-              "prompt": "Garden waste goes in the blue ___",
+              "prompt": "Leaves and branches go in the big blue ___",
               "answer": "skip",
-              "explanation": "Garden waste goes in the large blue skip."
+              "explanation": "Small green containers are for glass; garden waste goes in the big blue skip at the far end."
             },
             {
               "id": "l3-5",
-              "prompt": "The centre cannot accept ___",
+              "prompt": "Staff cannot take ___ because it is dangerous",
               "answer": "paint",
-              "explanation": "We cannot accept paint."
+              "explanation": "They accept batteries, old computers and metal, but they cannot take paint."
             },
             {
               "id": "l3-6",
-              "prompt": "Last year, they collected four hundred tonnes of ___",
+              "prompt": "The old site collected 400 tonnes of ___ last year",
               "answer": "paper",
-              "explanation": "We collected over four hundred tonnes of paper."
+              "explanation": "They collected four hundred tonnes of paper; glass was second with about three hundred."
             }
           ]
         },
@@ -1392,120 +1577,120 @@
             "turns": [
               {
                 "speaker": "gerard",
-                "text": "My guest today is Jenna Wells, who organises clean-ups on beaches. Jenna, how did you get started?"
+                "text": "Jenna, why did you start cleaning the beach?"
               },
               {
                 "speaker": "jenna",
-                "text": "I was walking on a beach with my grandfather, and he pointed to the rubbish. He said, 'It was clean when I was young.' I felt I had to do something."
+                "text": "People guess that it was a school project, or a television programme, but no. It was my grandfather. We walked along the beach every Sunday when I was nine, and he would stop and pick up a bottle or a piece of rope. One day he said, look how much more there is than last year. I had never noticed before. After that I couldn’t stop seeing it, and the next Sunday I took a bag."
               },
               {
                 "speaker": "gerard",
-                "text": "How many people take part?"
+                "text": "How many people join you now?"
               },
               {
                 "speaker": "jenna",
-                "text": "At first, there were only four of us. Now, we have about two hundred volunteers every month, which is wonderful."
+                "text": "At the start it was just me and my brother. Then four friends came. Last summer we were around twenty on a good day. But now, thanks to the website, we have about two hundred volunteers, although of course not all of them come every time. People bring their children and their dogs, and last month a whole football team arrived in matching shirts, which was lovely."
               },
               {
                 "speaker": "gerard",
-                "text": "What is the strangest thing you have found?"
+                "text": "What is the strangest thing that you have found?"
               },
               {
                 "speaker": "jenna",
-                "text": "A whole sofa! Nobody knows how it got there. We also found a lot of old shoes, mostly on one foot."
+                "text": "A fishing net is quite common, and an old bicycle, that happens on every beach. But one morning someone had left a sofa, complete with cushions, just by the rocks. We still don’t know how it got there, and nobody has ever come to ask about it. The police just laughed when I called them. We carried it to the road, and we all had a rest on it."
               },
               {
                 "speaker": "gerard",
-                "text": "Is it a hard job?"
+                "text": "What do you like least about the work?"
               },
               {
                 "speaker": "jenna",
-                "text": "The work is tiring, but not difficult. The worst part is the smell on warm days, to be honest."
+                "text": "The bags are heavy, but we share them, so that’s fine. And winter is cold, but I got used to that years ago. I wear three jumpers. What I really hate is on a warm day, when the sun is on the bags and the smell comes up. It is terrible, and I always say I’ll never do it in July again. But I always do."
               },
               {
                 "speaker": "gerard",
-                "text": "What do you do with the rubbish?"
+                "text": "What happens to all the rubbish?"
               },
               {
                 "speaker": "jenna",
-                "text": "We sort it carefully. About half of it can be recycled, and the rest goes to the town tip."
+                "text": "Years ago the council burned everything, but not any more. Now about half goes to the recycling plant, the bottles and the cans. The rest is too dirty or broken. But it’s not useless. An artist in town makes sculptures from our old nets and ropes, and she has sold some. Honestly, that makes me happier than any number we write on a chart. Something ugly became something beautiful."
               },
               {
                 "speaker": "gerard",
-                "text": "What message would you give to our listeners?"
+                "text": "What would you like people to take from your story?"
               },
               {
                 "speaker": "jenna",
-                "text": "Think before you throw something away. Small changes, like carrying a bottle, make a difference when many people do them."
+                "text": "Not that they need to be experts, because we aren’t. And I’m not asking them to buy lots of new products either, because that makes more rubbish. I’d just like them to stop for a second, before they throw something away, and think where it will end up."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "How did Jenna begin her work?",
+              "prompt": "Why did Jenna start cleaning the beach?",
               "options": [
-                "A teacher gave her a project to do",
-                "Her grandfather pointed out the rubbish",
-                "She saw a programme on television once"
+                "A teacher gave her a project",
+                "Her grandfather made her notice the rubbish",
+                "She saw a television programme"
               ],
               "answer": 1,
-              "explanation": "Her grandfather pointed to the rubbish on the beach."
+              "explanation": "She says it was not a project or a programme; her grandfather said there was more rubbish than last year and she had never noticed before."
             },
             {
               "id": "l4-2",
-              "prompt": "How many volunteers now take part?",
+              "prompt": "How many volunteers are there now?",
               "options": [
-                "Only about four people",
-                "About two hundred",
-                "Around twenty people"
+                "Only about four",
+                "Around twenty",
+                "About two hundred"
               ],
-              "answer": 1,
-              "explanation": "About two hundred volunteers every month."
+              "answer": 2,
+              "explanation": "Four friends came at the start and twenty on a good day last summer, but now there are about two hundred volunteers."
             },
             {
               "id": "l4-3",
-              "prompt": "What is the strangest thing they found?",
+              "prompt": "What is the strangest thing that they found?",
               "options": [
-                "A whole sofa",
-                "A very old bicycle",
-                "A large fishing net"
+                "A sofa",
+                "An old bicycle",
+                "A fishing net"
               ],
               "answer": 0,
-              "explanation": "They found a sofa."
+              "explanation": "A net and a bicycle are common; the strangest was a sofa with cushions by the rocks."
             },
             {
               "id": "l4-4",
-              "prompt": "What does Jenna say is the worst part?",
+              "prompt": "What does Jenna hate most about the work?",
               "options": [
-                "The weight of the heavy bags",
-                "The cold weather in the winter",
+                "The weight of the bags",
+                "The cold in winter",
                 "The smell on warm days"
               ],
               "answer": 2,
-              "explanation": "The worst part is the smell on warm days."
+              "explanation": "The bags are shared and she got used to the cold; what she really hates is the smell when the sun is on the bags."
             },
             {
               "id": "l4-5",
               "prompt": "What happens to the rubbish?",
               "options": [
                 "All of it is burned",
-                "Half of it can be recycled",
+                "About half is recycled",
                 "None of it is useful"
               ],
               "answer": 1,
-              "explanation": "About half can be recycled."
+              "explanation": "The council does not burn it any more; about half goes to the recycling plant and the rest is not useless because an artist uses it."
             },
             {
               "id": "l4-6",
               "prompt": "What is her message?",
               "options": [
-                "Think before you throw something away",
-                "Always buy things that are new",
-                "Leave this work to the experts only"
+                "Leave this work to experts",
+                "Always buy new products",
+                "Think before you throw things away"
               ],
-              "answer": 0,
-              "explanation": "Think before you throw something away."
+              "answer": 2,
+              "explanation": "She says that they do not need to be experts or buy new products; she wants people to stop and think where it will end up."
             }
           ]
         }

@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "Why was the writer excited about the visit?",
               "options": [
-                "He had only seen deserts in films",
                 "He wanted to learn to speak Arabic",
-                "He had never stayed with his uncle"
+                "He had never stayed with his uncle",
+                "He had only seen deserts in films",
+                "His uncle had promised him a camel ride"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He had only seen the desert in films."
             },
             {
               "id": "r3-2",
               "prompt": "Why did they walk early in the morning?",
               "options": [
+                "They wanted to see the stars",
                 "The sun was not high yet",
                 "His uncle had to go to work",
                 "The sand was too cold later"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "They must walk before the sun gets high."
             },
             {
@@ -272,21 +274,23 @@
               "prompt": "How did the writer feel on top of the dune?",
               "options": [
                 "Very frightened by the height",
+                "Surprised by the cool wind",
                 "Rather tired after the walk",
                 "Very small in the big landscape"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "From the top he could see gold in every direction and felt very small."
             },
             {
               "id": "r3-4",
               "prompt": "What rule did his uncle give him about water?",
               "options": [
-                "Leave some in a bottle at home",
                 "Take at least two litres with you",
+                "Never walk further than a kilometre",
+                "Leave some in a bottle at home",
                 "Drink only when you feel thirsty"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "He told him never to go anywhere without at least two litres of water."
             },
             {
@@ -295,7 +299,8 @@
               "options": [
                 "He studied maps with his uncle",
                 "He helped to cook dinner for guests",
-                "He watched shooting stars at night"
+                "He watched shooting stars at night",
+                "He wrote letters to his friends"
               ],
               "answer": 2,
               "explanation": "After dinner they lay on a blanket and counted shooting stars."
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The camel, the ship of the desert",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "People often call the camel the ship of the desert, and there is a good reason for this. [1] It can walk for many days across hot sand and carry a heavy load.\n\nA camel has a hump on its back. Many people think the hump is full of water, but this is not true. [2] When there is no food, the camel slowly uses the fat, and the hump gets smaller.\n\nCamels also have very long eyelashes. [3] Their wide, flat feet help them too, because they do not sink into the soft sand.\n\nAlthough camels can live without water for a long time, they drink a lot when they find it. [4] After that, they can walk again for a week or more.\n\nFor thousands of years, people have used camels for travel and trade. [5] Today, they are still important in many places, and some tourists enjoy riding them.",
           "sentences": [
+            "Camels were first brought to Australia about two hundred years ago.",
+            "Without them, long journeys across the desert would have been almost impossible.",
             "It stores fat, which gives the animal energy when it is hungry.",
             "They protect the eyes from the wind and the blowing sand.",
             "The animal is perfectly made for a life in very dry places.",
             "A thirsty camel can drink over a hundred litres in only a few minutes.",
-            "Camels were first brought to Australia about two hundred years ago.",
-            "Without them, long journeys across the desert would have been almost impossible."
+            "Their milk is drunk in many parts of the desert.",
+            "A baby camel can stand up and walk a few hours after it is born."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "E",
               "explanation": "The sentence about being perfectly made for dry places follows the name \"ship of the desert\" and leads to \"it can walk for many days\"."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "C",
               "explanation": "The hump is not full of water, but it stores fat, which the next sentence says the camel uses."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "D",
               "explanation": "The eyelashes protect the eyes from the wind and sand, and the next sentence adds the feet."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "F",
               "explanation": "The camel drinks a hundred litres in minutes, and \"after that\" it can walk for a week."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "B",
               "explanation": "Journeys across the desert would have been almost impossible without them, which links to \"used camels for travel\"."
             }
           ]
@@ -727,11 +734,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Shall we walk to the oasis this afternoon?"
+                    "text": "So, Adriana, when shall we walk to the oasis? I’d like to see the palm trees."
                   },
                   {
                     "speaker": "f",
-                    "text": "It is too hot now. Let us wait until the sun goes down."
+                    "text": "The guide said we should go before lunch, but I think it’s already too hot at that time. We were going to leave at eleven, and it would be forty degrees."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about the afternoon, then, when the shade is short?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s the hottest time of all. People get ill. I’d rather wait for the evening, once the sun has set. It’s cooler, and the sky will be full of stars."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. I’ll tell the guide and bring a torch."
                   }
                 ]
               },
@@ -744,7 +763,7 @@
                   "During the afternoon"
                 ],
                 "answer": 1,
-                "explanation": "She says to wait until the sun goes down."
+                "explanation": "The morning plan is too hot and the afternoon is the hottest time; they will walk in the evening after the sun has set."
               }
             },
             {
@@ -771,11 +790,19 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How many bottles of water should I take for the trip?"
+                    "text": "Aiko, how much water should I take on the hike tomorrow? Two bottles?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Take three. The walk is two hours, so take one for each hour and a spare one in case we get lost."
+                    "text": "Two is not enough. Last time I took two bottles and I finished them by noon, and I was thirsty all afternoon. My guide always carries four, but that’s because he walks the whole day, all the way to the next village. For a half day like yours, I’d say three. It’s heavy but you’ll be glad."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, three it is. Where can I buy them?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "At the shop next to the hotel. They’re cheap."
                   }
                 ]
               },
@@ -788,21 +815,13 @@
                   "Four bottles"
                 ],
                 "answer": 0,
-                "explanation": "He says to take three bottles."
+                "explanation": "Two bottles were not enough for him and four is for a whole day; for her half day he suggests three."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Ahmet",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Afia",
@@ -814,12 +833,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Is this your first time in a hot country?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Yes, and I love it, but I forgot my sunglasses at home."
+                    "text": "Hi, Ahmet, it’s Afia. I’m at the desert camp and I wanted to say sorry for forgetting to take the photos you wanted. And I’m sorry too that I was late. I packed in a hurry. I nearly forgot my sun cream, but I found it at the last moment, and I have a big bottle of water in my bag, so I’m safe. What I did leave at home are my sunglasses, and the light here is so strong that my eyes hurt. I’ll buy some in the market tomorrow. Speak soon."
                   }
                 ]
               },
@@ -832,7 +847,7 @@
                   "Her water bottle"
                 ],
                 "answer": 0,
-                "explanation": "She forgot her sunglasses at home."
+                "explanation": "She nearly forgot the sun cream but found it, and she has a bottle of water; she left her sunglasses at home."
               }
             },
             {
@@ -859,11 +874,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why do you wear that long white shirt?"
+                    "text": "Aarav, why are you wearing that long white shirt in this heat? Most tourists wear shorts."
                   },
                   {
                     "speaker": "m",
-                    "text": "It keeps me cool, because it lets the air move around my body."
+                    "text": "People often think it’s for photos, and I do look quite smart in it, but that’s not the point. The sleeves protect me from the sun, and the white colour reflects the light. The air can move under it, so it feels much cooler than a T-shirt."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about mosquitoes? I thought it was to keep insects away."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "There are hardly any here at this time of year. It’s really the temperature."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Now I understand. I’ll buy one too."
                   }
                 ]
               },
@@ -876,21 +903,13 @@
                   "It protects against insects"
                 ],
                 "answer": 1,
-                "explanation": "He says it keeps him cool."
+                "explanation": "He says the photos and the insects are not the reason; the white shirt reflects the light and lets air through, so he is cooler."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Aiden",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Abimbola",
@@ -902,12 +921,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "The desert train leaves at nine, doesn't it?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "It used to, but now there is only one train, and it leaves at ten."
+                    "text": "Attention, please. This is an announcement for passengers on the desert railway. The timetable on the wall says that the train to the coast leaves at nine, but that is the old timetable. Last week, the leaving time was changed to eleven, and some of you may have read that on the website. However, we have just received news of a change. The train will leave at ten o’clock today because of the heat. Please come to platform two by a quarter to ten. Thank you for your patience, and have a nice journey."
                   }
                 ]
               },
@@ -920,21 +935,13 @@
                   "At ten"
                 ],
                 "answer": 2,
-                "explanation": "The woman says that it leaves at ten."
+                "explanation": "The wall says nine and the website says eleven, but the train leaves at ten today because of the heat."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Adriana",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Adebayo",
@@ -946,12 +953,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Did you enjoy your camel ride yesterday?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "The camel was lovely, but I was sore for hours afterwards."
+                    "text": "Hi, Adriana, it’s Adebayo. I did the camel ride yesterday, as I told you I would. I wasn’t frightened at the start, even though the camel stood up so suddenly, and I thought the ride would be longer, but after an hour it felt quite enough. The problem came afterwards. When I got down, my legs hurt, my back hurt, everything hurt. I could hardly walk to the hotel, and I’m still stiff today. I’m glad that I tried it, but I won’t do it again soon. Call me."
                   }
                 ]
               },
@@ -964,7 +967,7 @@
                   "He was frightened at first"
                 ],
                 "answer": 0,
-                "explanation": "He says that he was sore for hours afterwards."
+                "explanation": "He was not frightened and the ride was long enough, but afterwards he was stiff and in pain."
               }
             },
             {
@@ -990,12 +993,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "It’s so hot, Achille! Shall we get an ice cream? There’s a van over there."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Do you want ice cream or a cold drink?"
+                    "text": "Good idea. I’m going to have a cone. Or maybe a fruit salad, they look healthy."
                   },
                   {
                     "speaker": "f",
-                    "text": "A cold drink, please. Ice cream melts so fast in this heat."
+                    "text": "I’d love an ice cream, but it will melt in a minute, and my hands will be sticky. And the fruit salad takes ages. What I really want is something cold to drink, with lots of ice."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Orange juice?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect, I’ll have that. A large one, please."
                   }
                 ]
               },
@@ -1008,7 +1023,7 @@
                   "A fruit salad"
                 ],
                 "answer": 1,
-                "explanation": "She chooses a cold drink because ice cream melts fast."
+                "explanation": "She likes the idea of ice cream but it would melt, and the fruit salad is slow; she wants a cold drink with ice."
               }
             }
           ]
@@ -1044,24 +1059,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to Desert Tours. How can I help you?"
+                    "text": "I saw the camel trek in the brochure, Ahmet. Did you book it?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I would like to book a two-day trip with a night in a tent."
+                    "text": "Yes, I did. People told me it was a lot of money, and I was a bit worried at first, because it’s more than the hotel for a night."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And is it safe? My mother said it can be dangerous."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The guides are very careful, and nobody has had an accident in ten years. You sleep under the stars and you see the dunes at sunrise. I think it’s the best thing in the whole trip. I’d pay double."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I’ll book it today."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where is the man?",
+                "prompt": "What does Ahmet think about the camel trek?",
                 "options": [
-                  "In a restaurant",
-                  "At a bus station",
-                  "At a tour company"
+                  "It costs too much",
+                  "It is worth the money",
+                  "It is too dangerous"
                 ],
-                "answer": 2,
-                "explanation": "He speaks to Desert Tours about booking a two-day trip."
+                "answer": 1,
+                "explanation": "He admits that it costs a lot and that Afia’s mother worries, but he says the guides are careful and the experience is the best, so it is worth the money."
               }
             },
             {
@@ -1088,24 +1115,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Look at the sky. I think a sandstorm is coming."
+                    "text": "Look at the sky, Agnieszka. It’s turning orange. I think a sandstorm is coming."
                   },
                   {
                     "speaker": "f",
-                    "text": "Quick! Let us get back to the car before it starts."
+                    "text": "Shall we stay in the tent until it’s over? We have food and water."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The tent won’t hold in strong wind, and I read that these storms can last a day. The guide has gone to town, so we can’t ask him."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then we should go. How far is it to the village?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Twenty minutes by car. If we leave now, we’ll arrive before it hits."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, let’s pack up and go."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What are the speakers worried about?",
+                "prompt": "What do Aarav and Agnieszka decide to do about the sandstorm?",
                 "options": [
-                  "A broken car engine",
-                  "A coming sandstorm",
-                  "A guide who is missing"
+                  "Wait in the tent",
+                  "Ask the guide for help",
+                  "Drive back to the village"
                 ],
-                "answer": 1,
-                "explanation": "They talk about a sandstorm that is coming."
+                "answer": 2,
+                "explanation": "The tent is not safe and the guide has gone, so they decide to leave now by car for the village."
               }
             },
             {
@@ -1132,24 +1175,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I can't believe I got a prize for my project on cacti!"
+                    "text": "Aiden, I have good news. My photo of the dunes won the prize at the competition!"
                   },
                   {
                     "speaker": "m",
-                    "text": "You worked so hard on it. I am really pleased for you."
+                    "text": "That’s fantastic! I knew you would. You worked so hard on it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. I thought you might feel a bit jealous, because you entered too."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Honestly, no. I’m just happy. My picture was nothing special. And the trip to get yours wasn’t cheap, so now it was worth it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You always say kind things."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s true. When are you going to show it to everybody?"
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Aiden feel about Abimbola's news?",
                 "options": [
-                  "Pleased about her news",
+                  "Proud of her success",
                   "Jealous of her prize",
-                  "Confused about the project"
+                  "Worried about the cost"
                 ],
                 "answer": 0,
-                "explanation": "He says that he is really pleased for her."
+                "explanation": "Aiden says he is not jealous and the cost was worth it; he says he knew she would win, so he is proud of her."
               }
             },
             {
@@ -1176,24 +1235,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, how far is it to the next petrol station?"
+                    "text": "I’m going to sleep in the desert tomorrow, Aiko. I’ll only bring light clothes."
                   },
                   {
                     "speaker": "f",
-                    "text": "About fifty kilometres, so my advice is to fill up your tank before you leave town."
+                    "text": "That’s what I did the first time, and I was freezing. The days are hot, but at night it falls to almost zero."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really? I thought I should buy a hat in the market."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’ll need one for the day, of course, and walking early helps. But take a thick coat. You’ll be glad of it when the sun goes down."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks for the warning. I’ll borrow my brother’s."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Aiko advise Adebayo to do?",
                 "options": [
-                  "Asking for help",
-                  "Making an offer",
-                  "Giving some advice"
+                  "Wear a hat in the market",
+                  "Take a warm coat for the night",
+                  "Start walking before sunrise"
                 ],
-                "answer": 2,
-                "explanation": "She tells him to fill up his tank before leaving."
+                "answer": 1,
+                "explanation": "She says the days are hot but the night is cold; a hat and an early start are good, but the main advice is the warm coat."
               }
             },
             {
@@ -1220,24 +1291,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Everyone, listen. This is a tour, so please stay together and do not walk off alone."
+                    "text": "Which hotel shall we choose, Abdul? The big one by the pool, or the small one in the old town?"
                   },
                   {
                     "speaker": "m",
-                    "text": "We will follow you. Which way are we going?"
+                    "text": "The small one. I know the pool looks nice, but there’s a party every night, and the music goes on till two."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The price is almost the same, isn’t it? And I heard the food at the big hotel is better."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m sure it is, and I don’t mind eating in town. What I want is a good night’s sleep. In the old town it’s silent after ten."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, you’ve convinced me."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Who is the woman?",
+                "prompt": "Why does Abdul prefer the small hotel?",
                 "options": [
-                  "A tour guide",
-                  "A shop owner",
-                  "A hotel cook"
+                  "The rooms are quiet",
+                  "The price is lower",
+                  "The food is better"
                 ],
                 "answer": 0,
-                "explanation": "She tells the group to stay together and walk behind her."
+                "explanation": "They say the prices are similar and the food is better at the big hotel, but he picks the small one for the quiet at night."
               }
             },
             {
@@ -1264,24 +1347,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you hear that the museum has closed for repairs?"
+                    "text": "Are you ready for the museum, Afia?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Oh no! I was hoping to go there tomorrow."
+                    "text": "I’d love to go, honestly. I’ve wanted to see it for years. But it’s closed on Mondays, and today’s Monday. I didn’t read the sign."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Never mind, we can see the old fort instead."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ve seen enough forts. I’m so disappointed, because tomorrow we fly home early. This was my only chance."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What a shame. Maybe next time?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hope so. I’ll put it on my list."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman's problem?",
+                "prompt": "How does Afia feel about the museum?",
                 "options": [
-                  "She does not like the heat",
-                  "She has lost her ticket",
-                  "She cannot visit the museum"
+                  "Tired of old things",
+                  "Sorry that she cannot go",
+                  "Excited to see it soon"
                 ],
-                "answer": 2,
-                "explanation": "The museum is closed and she wanted to visit it."
+                "answer": 1,
+                "explanation": "She has wanted to go for years, but it is closed and she flies home tomorrow, so she is sorry she cannot go."
               }
             }
           ]
@@ -1306,52 +1405,46 @@
             "turns": [
               {
                 "speaker": "saskia",
-                "text": "Good afternoon, everybody. Today, I will tell you about the Sahara, the largest hot desert in the world. It is about as big as the United States, and it covers eleven countries in Africa. Many people think that the Sahara is all sand, but in fact, only about one fifth of it is covered by sand dunes. The rest is made up of rocks, mountains and dry valleys. In the daytime, the temperature can reach fifty degrees, but at night it can fall to almost zero. Very little rain falls there, often less than two centimetres in a year. Even so, some animals live in the desert, such as the fennec fox, a small animal with enormous ears that help it to stay cool. People also live there, and the best known group are the Tuareg, who wear blue clothes and travel across the sand with their camels."
+                "text": "Good afternoon, everybody. Today, I will tell you about the Sahara, the largest hot desert in the world. It is about as big as the United States. Some books say that it covers nine countries, but that is not the whole picture. Most experts count eleven countries, from Egypt in the east to Morocco in the west. Many people think the Sahara is just sand, like in the films. But only about a fifth of the desert is sand. Another part is rocky, with mountains, and a large part is flat and stony, like a plain. The sand dunes are famous, but they are not the biggest part. Now, the weather. Here we have some surprises. During the day it can reach fifty degrees in summer. Last July, it was forty-eight in one place, which was a record at that time. But at night, it can fall to zero, so people need warm clothes. Let me turn to the animals. The fennec fox is my favourite. It is small, with a very short tail, but it has huge ears. Those ears let the heat out of its body, and also help it to hear insects under the sand. And now the people. There are a few groups who live in the Sahara. One of the best-known is the Tuareg. Some people mix them up with the Berber people, who live nearer to the coast, but the Tuareg are the ones who cross the sand with camels. They are often called the blue men. Their clothes are blue, not black, as you may think, because the colour comes from a special dye. The cloth leaves a little of the colour on their skin. If you travel there, be polite, take plenty of water, and listen to the guides. Thank you very much for your attention."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The Sahara covers ___ countries",
+              "prompt": "Most experts say that the desert crosses ___ countries",
               "answer": "eleven",
-              "accepted": [
-                "11"
-              ],
-              "explanation": "It covers eleven countries in Africa."
+              "explanation": "Some books say nine, but most experts count eleven."
             },
             {
               "id": "l3-2",
-              "prompt": "Only one ___ of the desert is sand",
+              "prompt": "Sand covers only about one ___ of the desert",
               "answer": "fifth",
-              "explanation": "Only about one fifth of it is covered by sand dunes."
+              "explanation": "A fifth is sand; the rest is rocky mountains and stony plains."
             },
             {
               "id": "l3-3",
-              "prompt": "Daytime temperatures can reach ___ degrees",
+              "prompt": "In summer the heat in the daytime can reach ___ degrees",
               "answer": "fifty",
-              "accepted": [
-                "50"
-              ],
-              "explanation": "The temperature can reach fifty degrees."
+              "explanation": "It can reach fifty degrees; forty-eight was last July’s record."
             },
             {
               "id": "l3-4",
-              "prompt": "The fennec fox has very big ___",
+              "prompt": "The fennec fox loses heat through its enormous ___",
               "answer": "ears",
-              "explanation": "A small animal with enormous ears."
+              "explanation": "The fox has a short tail but huge ears that let the heat out."
             },
             {
               "id": "l3-5",
-              "prompt": "A well-known group of people are the ___",
+              "prompt": "The people who cross the desert with camels are the ___",
               "answer": "Tuareg",
-              "explanation": "The best known group are the Tuareg."
+              "explanation": "The Berber people live nearer the coast; the Tuareg cross the sand with camels."
             },
             {
               "id": "l3-6",
-              "prompt": "The Tuareg wear ___ clothes",
+              "prompt": "The clothes of the Tuareg are ___",
               "answer": "blue",
-              "explanation": "They wear blue clothes."
+              "explanation": "They are often called the blue men; their clothes are blue, not black."
             }
           ]
         },
@@ -1383,51 +1476,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Adriana, you take pictures of deserts all over the world. When did you start?"
+                "text": "Adriana, welcome. You are known for your pictures of deserts. Where did it begin?"
               },
               {
                 "speaker": "p",
-                "text": "My father gave me a camera for my twelfth birthday, and I took it everywhere. A year later, we visited Arizona, and I fell in love with the desert."
+                "text": "Well, people expect that it started with a trip to Arizona, but I only went there years later. And I wasn’t a big reader as a child, so no book gave me the idea. On my twelfth birthday my father put a camera in my hands. It was old and heavy, but I took it everywhere. He taught me the basics and then left me alone."
               },
               {
                 "speaker": "i",
-                "text": "What is so special about deserts for you?"
+                "text": "What do you like about the light in the desert?"
               },
               {
                 "speaker": "p",
-                "text": "The light. In the morning and the evening, the sand turns orange and red, and the shadows are long. Every ten minutes, the picture is different."
+                "text": "I love it, and it’s a feeling more than a technique. The sky is not always a bright blue, sometimes it’s white or grey. And the light isn’t the same at noon as at six. What I adore is the way the sand goes from yellow to orange to deep red in a few minutes. You have to be quick, or you miss it."
               },
               {
                 "speaker": "i",
-                "text": "What is the hardest part of your work?"
+                "text": "Which part of the work is hardest?"
               },
               {
                 "speaker": "p",
-                "text": "Carrying the equipment. My bag weighs twenty kilos, and I often walk for hours in the heat. Sand also gets inside the camera, so I have to clean it every night."
+                "text": "It’s the weight. I carry two cameras, long lenses, a tripod, water and food, and in forty degrees every kilo seems like ten. Finding places is not hard, I plan carefully, and the villagers are usually very friendly and happy to talk. But my back is not so happy."
               },
               {
                 "speaker": "i",
-                "text": "Is there a place that you would like to visit?"
+                "text": "Where would you like to go next, and why?"
               },
               {
                 "speaker": "p",
-                "text": "Yes, the Atacama in Chile. It is the driest place on Earth, and some years, no rain falls at all. People say the night sky there is the clearest in the world."
+                "text": "The Atacama in Chile. It’s not the cold at night, although it can be freezing, and it’s not for the dunes, they’re not the tallest in the world. I want to go because it’s the driest place on Earth. In some places it hasn’t rained for hundreds of years, and the ground looks like another planet."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to a young photographer?"
+                "text": "Is it true that you once waited a long time for a single photograph?"
               },
               {
                 "speaker": "p",
-                "text": "Be patient. I once waited all day for the perfect picture of a lizard, and it only appeared at sunset. But it was worth it."
+                "text": "Yes, for a lizard. I didn’t travel for a week, it lived near a hotel, and I had my normal lens. I sat very still behind a rock for a whole day, from the morning until dusk. In the end it ran into the light and posed for a second. That was the shot."
               },
               {
                 "speaker": "i",
-                "text": "And what are you working on now?"
+                "text": "Tell us about your new book. Why did you choose that subject?"
               },
               {
                 "speaker": "p",
-                "text": "A book about the people of the desert. I want to show that, even in a harsh place, people have a rich and happy life."
+                "text": "It’s not about animals or about the history of photography. It’s about the people who live in the desert. I’ve met so many families who told me their stories over tea, and I felt that I had to share them. A photograph tells you part of a story, but a person tells you the rest."
               }
             ]
           },
@@ -1441,18 +1534,18 @@
                 "A book about deserts"
               ],
               "answer": 1,
-              "explanation": "Her father gave her a camera for her twelfth birthday."
+              "explanation": "Her trip to Arizona came later and no book gave her the idea; her father gave her a camera on her twelfth birthday."
             },
             {
               "id": "l4-2",
-              "prompt": "What does she like about the light in the desert?",
+              "prompt": "How does she feel about the light in the desert?",
               "options": [
-                "It makes the sky look bright blue",
-                "The sand changes colour quickly",
-                "It stays the same all day long"
+                "It makes the sky look blue",
+                "It changes the colour of the sand fast",
+                "It stays the same all day"
               ],
               "answer": 1,
-              "explanation": "Every ten minutes, the picture is different, with orange and red sand."
+              "explanation": "The sky is not always blue and the light is not the same all day; the sand goes from yellow to red in minutes."
             },
             {
               "id": "l4-3",
@@ -1463,7 +1556,7 @@
                 "Meeting people in small villages"
               ],
               "answer": 0,
-              "explanation": "Carrying the equipment: her bag weighs twenty kilos."
+              "explanation": "Finding places is not hard and the villagers are friendly; the heavy equipment in the heat is the difficult part."
             },
             {
               "id": "l4-4",
@@ -1474,7 +1567,7 @@
                 "It is the driest place on Earth"
               ],
               "answer": 2,
-              "explanation": "It is the driest place on Earth."
+              "explanation": "It is not the cold or the dunes; she wants to go because it is the driest place on Earth."
             },
             {
               "id": "l4-5",
@@ -1485,18 +1578,18 @@
                 "She used a special lens"
               ],
               "answer": 1,
-              "explanation": "She waited all day and the lizard only appeared at sunset."
+              "explanation": "She did not travel for a week or use a special lens; she waited behind a rock for a whole day."
             },
             {
               "id": "l4-6",
-              "prompt": "What is her new book about?",
+              "prompt": "Why did she choose to write about people?",
               "options": [
-                "The people who live there",
-                "The animals of the desert",
-                "The history of photography"
+                "They told her stories she wanted to share",
+                "A publisher asked her to",
+                "She is tired of photographing animals"
               ],
               "answer": 0,
-              "explanation": "A book about the people of the desert."
+              "explanation": "It is not about animals or the history of photography; the families told her stories and she felt that she had to share them."
             }
           ]
         }

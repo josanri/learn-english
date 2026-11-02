@@ -250,10 +250,11 @@
               "prompt": "Why did the writer decide to take lessons?",
               "options": [
                 "A doctor had told her to exercise more.",
-                "Her friends were planning a seaside holiday.",
-                "She wanted to take part in a race."
+                "She wanted to take part in a race.",
+                "Her husband wanted her to learn.",
+                "Her friends were planning a seaside holiday."
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She says that when her friends began planning a holiday by the sea, she decided it was time to change."
             },
             {
@@ -261,6 +262,7 @@
               "prompt": "How did the writer feel at the first lesson?",
               "options": [
                 "Worried that the others were better.",
+                "Proud that she had started.",
                 "Excited about meeting so many new people.",
                 "Angry that the lesson was going so slowly."
               ],
@@ -271,11 +273,12 @@
               "id": "r3-3",
               "prompt": "What did the teacher do in the first weeks?",
               "options": [
-                "She let the learners get used to the water.",
                 "She taught them to swim a length.",
-                "She asked them to jump into deep water."
+                "She asked them to jump into deep water.",
+                "She let the learners get used to the water.",
+                "She showed them how to dive into the pool."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "For three weeks they only got used to the water, blowing bubbles and floating."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "She now enjoys deep water much more than before.",
                 "She is proud but still uneasy in deep water.",
-                "She has decided to stop having lessons."
+                "She has decided to stop having lessons.",
+                "She is disappointed that she cannot swim far."
               ],
               "answer": 1,
               "explanation": "She swam two lengths and is very happy, but says she still does not like deep water."
@@ -295,9 +299,10 @@
               "options": [
                 "Spend most of the holiday in a hotel swimming pool.",
                 "Swim across a bay with her friends.",
+                "Learn to dive with her husband and children.",
                 "Try the sea carefully, wearing a life jacket."
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She will wear a life jacket on the boat trip and plans to get into the sea at least once, even only up to her knees."
             }
           ]
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "Walking to school in Ashcombe",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every morning at half past eight, the road outside Ashcombe Primary School used to be full of cars. Parents stopped in the wrong places, children ran between the vehicles, and the noise could be heard from the classrooms. [1] So the school decided to organise a walk-to-school month in October.\n\nThe idea was simple. Children who walked, cycled or scooted to school got a sticker for every day, and each class tried to collect the most stickers. [2] Some families lived too far away, so volunteers set up meeting points at the library and at the church, where groups could start their walk together with an adult.\n\nAt first, many parents doubted that it would work. [3] Then, after the first week, the school counted the cars and found that there were almost half as many as usual. The children liked arriving with their friends, and teachers said they seemed more awake in lessons.\n\nBy the end of the month, 70 per cent of the children had walked at least three times a week. [4] Several parents said they had discovered quiet streets they never knew existed, and one father even admitted that he had lost two kilos. [5] The school now plans to run the walking month every spring and autumn.",
           "sentences": [
-            "Earlier that year, the school had also won a prize for its garden.",
-            "Teachers worried that an accident was only a matter of time.",
             "That was far more than anyone had expected.",
             "Not every family could join in so easily, however.",
             "The biggest change, however, was the friendly mood at the school gate.",
-            "They said the mornings were too dark and cold for small children."
+            "Teachers worried that an accident was only a matter of time.",
+            "Earlier that year, the school had also won a prize for its garden.",
+            "They said the mornings were too dark and cold for small children.",
+            "The council has promised to build a new car park next year.",
+            "A new crossing has been painted outside the school gate."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "D",
               "explanation": "Sentence B shows the danger from the cars and leads to \"So the school decided to organise a walk-to-school month\"."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "B",
               "explanation": "\"Not every family could join in so easily, however\" contrasts with the game and introduces \"Some families lived too far away\"."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "C",
+              "answer": "A",
               "explanation": "\"That was far more than anyone had expected\" reacts to the figure of 70 per cent in the sentence before."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "C",
               "explanation": "Sentence E mentions the mood at the school gate, which leads to the final sentence about repeating the month. Sentence A is about a garden prize and fits nowhere."
             }
           ]
@@ -762,19 +769,27 @@
                 "turns": [
                   {
                     "speaker": "aamir",
-                    "text": "Hello. I have come to collect some tablets for my back."
+                    "text": "Excuse me, how should I take these tablets?"
                   },
                   {
                     "speaker": "courtney",
-                    "text": "Yes, they are ready. Take one three times a day, but only after meals, or they might upset your stomach."
+                    "text": "The doctor wrote \"before breakfast\" on the form, but that’s for your old ones. The new ones can upset your stomach if there’s nothing in it."
                   },
                   {
                     "speaker": "aamir",
-                    "text": "After meals, then. And can I still drive?"
+                    "text": "So I take them in the evening?"
                   },
                   {
                     "speaker": "courtney",
-                    "text": "Yes, they will not make you sleepy."
+                    "text": "Some people do, but you don’t need to limit it to that. It’s easy to link them to your meals. Take one just after you’ve eaten, morning and evening."
+                  },
+                  {
+                    "speaker": "aamir",
+                    "text": "Good. And if I forget?"
+                  },
+                  {
+                    "speaker": "courtney",
+                    "text": "Take it when you remember, but never two together."
                   }
                 ]
               },
@@ -787,7 +802,7 @@
                   "In the evening only"
                 ],
                 "answer": 0,
-                "explanation": "The pharmacist says to take one three times a day, but only after meals."
+                "explanation": "The form says before breakfast, but that is for the old tablets; the pharmacist says to link the new ones to meals and take one just after eating."
               }
             },
             {
@@ -814,19 +829,23 @@
                 "turns": [
                   {
                     "speaker": "daichi",
-                    "text": "I can offer you Monday at nine or Tuesday at half past ten."
+                    "text": "Marisol, is your dentist appointment at eleven?"
                   },
                   {
                     "speaker": "marisol",
-                    "text": "I work on Mondays, so Tuesday is better. Could you make it eleven?"
+                    "text": "At first they said nine, but I can’t do that because I’m at work. Then they offered eleven, but the dentist has an early lunch, so they’ve put me half an hour before that."
                   },
                   {
                     "speaker": "daichi",
-                    "text": "Sorry, half past ten is the last appointment before lunch."
+                    "text": "Oh, that means half past ten. I can drive you if you like. My shift doesn’t start until noon."
                   },
                   {
                     "speaker": "marisol",
-                    "text": "All right, I will take that one then."
+                    "text": "Would you? That would be wonderful. The bus takes forever, and I hate waiting in the rain."
+                  },
+                  {
+                    "speaker": "daichi",
+                    "text": "No problem. I’ll pick you up at ten."
                   }
                 ]
               },
@@ -839,7 +858,7 @@
                   "11.00"
                 ],
                 "answer": 1,
-                "explanation": "Eleven is not possible, so Marisol takes the Tuesday appointment at half past ten."
+                "explanation": "Nine was too early because of work, eleven was moved because of the dentist’s lunch, and she got a slot half an hour before that, at half past ten."
               }
             },
             {
@@ -865,16 +884,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "tamsin",
+                    "text": "What are you having for lunch today, Kwame? Pasta salad?"
+                  },
+                  {
                     "speaker": "kwame",
-                    "text": "Is the pasta salad still available?"
+                    "text": "That was my plan, but the shop has sold out. I nearly bought a sandwich, but this is my main meal today, and I’d be hungry again by three."
                   },
                   {
                     "speaker": "tamsin",
-                    "text": "Sorry, that finished at twelve. There is vegetable soup or a cheese sandwich."
+                    "text": "What else is there?"
                   },
                   {
                     "speaker": "kwame",
-                    "text": "I had a sandwich yesterday, so I will have the soup. And an apple, please."
+                    "text": "The canteen has something hot, with bread. It’s leek and potato, I think. The soup of the day is always good on a cold afternoon."
+                  },
+                  {
+                    "speaker": "tamsin",
+                    "text": "I might have the same. Let’s go before the queue gets long."
                   }
                 ]
               },
@@ -887,7 +914,7 @@
                   "Soup"
                 ],
                 "answer": 2,
-                "explanation": "The pasta salad has finished and Kwame had a sandwich yesterday, so he chooses the vegetable soup."
+                "explanation": "The pasta salad has sold out and a sandwich would not be enough, so Kwame chooses the hot soup of the day in the canteen."
               }
             },
             {
@@ -913,20 +940,32 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "lacey",
-                    "text": "Are you going to yoga tonight?"
-                  },
-                  {
                     "speaker": "eamon",
-                    "text": "I just got a message. It has been cancelled."
+                    "text": "Did you see the notice? Tonight’s yoga is cancelled."
                   },
                   {
                     "speaker": "lacey",
-                    "text": "Oh no. Is the room being used for something else?"
+                    "text": "I thought it might be the painters. They were in the studio yesterday."
                   },
                   {
                     "speaker": "eamon",
-                    "text": "No, the teacher has a stomach bug. The class starts again next week."
+                    "text": "No, they finished on Monday. And it’s not because only four of us booked. They’d still run it for four."
+                  },
+                  {
+                    "speaker": "lacey",
+                    "text": "So why?"
+                  },
+                  {
+                    "speaker": "eamon",
+                    "text": "our teacher Karen caught a bad cold and lost her voice, and nobody can replace her. She’s been ill since Sunday."
+                  },
+                  {
+                    "speaker": "lacey",
+                    "text": "Poor Karen. Is it back next week?"
+                  },
+                  {
+                    "speaker": "eamon",
+                    "text": "Yes, same time."
                   }
                 ]
               },
@@ -939,7 +978,7 @@
                   "The teacher is ill."
                 ],
                 "answer": 2,
-                "explanation": "Eamon says the teacher has a stomach bug, which means the teacher is ill."
+                "explanation": "The painters finished on Monday and four people are enough to run the class; the notice is because Karen is ill and nobody can replace her."
               }
             },
             {
@@ -965,20 +1004,20 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "hamza",
-                    "text": "Have you seen my blue water bottle?"
-                  },
-                  {
                     "speaker": "mhairi",
-                    "text": "Did you take it into the changing room?"
+                    "text": "Hamza, are you looking for your water bottle again?"
                   },
                   {
                     "speaker": "hamza",
-                    "text": "I looked there. I think I left it on the bench near the tennis courts when we finished."
+                    "text": "Yes! I checked the changing room, but there’s only a towel. I even went to the car park, thinking it might be in my car, but I’d put nothing there. I only had it when I sat down to change my shoes outside the tennis courts."
                   },
                   {
                     "speaker": "mhairi",
-                    "text": "I will come with you and look."
+                    "text": "Then it’s probably still where you sat. Try the benches by the courts."
+                  },
+                  {
+                    "speaker": "hamza",
+                    "text": "Of course! Thanks, I’ll run over there now."
                   }
                 ]
               },
@@ -991,7 +1030,7 @@
                   "In his car"
                 ],
                 "answer": 1,
-                "explanation": "Hamza has already looked in the changing room and thinks he left it on the bench near the tennis courts."
+                "explanation": "The bottle is not in the changing room or the car; Mhairi says it is probably where he sat to change his shoes, by the courts."
               }
             },
             {
@@ -1018,15 +1057,27 @@
                 "turns": [
                   {
                     "speaker": "felipe",
-                    "text": "Excuse me, does the number twelve go to the hospital?"
+                    "text": "Is it the number twelve that goes to the stadium?"
                   },
                   {
                     "speaker": "dannielle",
-                    "text": "No, that goes to the station. You need the twenty-one, from the stop across the road."
+                    "text": "No, that goes to the hospital. It’s easy to mix them up."
                   },
                   {
                     "speaker": "felipe",
-                    "text": "Thank you very much."
+                    "text": "So the twenty-two, then? That’s what the poster says."
+                  },
+                  {
+                    "speaker": "dannielle",
+                    "text": "The twenty-two only runs at weekends. Today you need the twenty-one, from the stop opposite the bank."
+                  },
+                  {
+                    "speaker": "felipe",
+                    "text": "Brilliant, thank you. How often does it come? And do I pay the driver or buy a ticket from the machine?"
+                  },
+                  {
+                    "speaker": "dannielle",
+                    "text": "Every quarter of an hour, and you pay the driver. You’ll be there in plenty of time."
                   }
                 ]
               },
@@ -1039,7 +1090,7 @@
                   "Number 22"
                 ],
                 "answer": 1,
-                "explanation": "The twelve goes to the station; Dannielle tells him to take the twenty-one."
+                "explanation": "The number twelve goes to the hospital and the twenty-two only runs at weekends, so Dannielle sends him to the twenty-one."
               }
             },
             {
@@ -1066,15 +1117,27 @@
                 "turns": [
                   {
                     "speaker": "valerie",
-                    "text": "Well done, Warren. All finished. Put this sticker on to show you have donated today."
+                    "text": "How are you feeling, Warren? You still look a bit pale."
                   },
                   {
                     "speaker": "warren",
-                    "text": "Can I go straight to the gym?"
+                    "text": "I’m fine. Actually, I want to go to the gym. I have a session at five."
                   },
                   {
                     "speaker": "valerie",
-                    "text": "I would not. Sit down with a drink and a biscuit for ten minutes first, and no hard exercise today."
+                    "text": "I wouldn’t go straight to the gym, not today. After giving blood, hard exercise isn’t a good idea."
+                  },
+                  {
+                    "speaker": "warren",
+                    "text": "Okay. Should I take the sticker off?"
+                  },
+                  {
+                    "speaker": "valerie",
+                    "text": "Leave it on until tomorrow morning. First, sit in the rest area for ten minutes and have a drink and a biscuit."
+                  },
+                  {
+                    "speaker": "warren",
+                    "text": "All right. Thanks for looking after me."
                   }
                 ]
               },
@@ -1087,7 +1150,7 @@
                   "Take the sticker off"
                 ],
                 "answer": 0,
-                "explanation": "Valerie tells him to sit with a drink and a biscuit for ten minutes and avoid hard exercise."
+                "explanation": "Valerie advises against the gym and says to keep the sticker on; the first thing he must do is rest and have a drink."
               }
             }
           ]
@@ -1123,28 +1186,40 @@
                 "turns": [
                   {
                     "speaker": "dervla",
-                    "text": "You look tired, Trevor."
+                    "text": "You look exhausted, Trevor. Are you sleeping badly?"
                   },
                   {
                     "speaker": "trevor",
-                    "text": "I only slept five hours. I stay up too late watching videos on my phone, and then my alarm goes off at six."
+                    "text": "Not at all. Once I’m in bed, I sleep like a log. I don’t wake up at night."
                   },
                   {
                     "speaker": "dervla",
-                    "text": "Try leaving your phone in another room."
+                    "text": "Is it your neighbour? Last month you said the music was loud."
+                  },
+                  {
+                    "speaker": "trevor",
+                    "text": "That’s finished. They moved out. No, the problem is me. I watch series on my laptop until two in the morning, and then the alarm rings at seven. It’s very late, I know."
+                  },
+                  {
+                    "speaker": "dervla",
+                    "text": "Then it’s easy to fix."
+                  },
+                  {
+                    "speaker": "trevor",
+                    "text": "I know, but I always say \"just one more episode\"."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Why is the man tired?",
+                "prompt": "What does Trevor think is the cause of his tiredness?",
                 "options": [
-                  "He wakes up during the night.",
-                  "He stays up too late.",
-                  "He has a noisy neighbour."
+                  "He wakes up during the night",
+                  "He goes to bed too late",
+                  "His neighbour is noisy"
                 ],
                 "answer": 1,
-                "explanation": "Trevor says he stays up too late watching videos and sleeps only five hours before his alarm goes off at six."
+                "explanation": "Trevor says he sleeps well and the noisy neighbour has moved out; he admits that he watches series until two in the morning."
               }
             },
             {
@@ -1171,32 +1246,40 @@
                 "turns": [
                   {
                     "speaker": "troy",
-                    "text": "I have had a headache every afternoon this week."
+                    "text": "I get a headache every afternoon. Maybe I should take a tablet."
                   },
                   {
                     "speaker": "ayesha",
-                    "text": "Do you drink much during the day?"
+                    "text": "That only hides the problem. Have you had your eyes tested?"
                   },
                   {
                     "speaker": "troy",
-                    "text": "Only coffee."
+                    "text": "Last month. The optician said everything was fine, and he even changed my glasses for free."
                   },
                   {
                     "speaker": "ayesha",
-                    "text": "That could be the reason. Try water instead, a glass at every break."
+                    "text": "How much do you drink at work?"
+                  },
+                  {
+                    "speaker": "troy",
+                    "text": "Only coffee, three or four cups."
+                  },
+                  {
+                    "speaker": "ayesha",
+                    "text": "There you are. Try water first, a big bottle on your desk, and drink it before lunch. I had the same problem, and it disappeared in a week."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does Ayesha suggest?",
+                "prompt": "What does Ayesha advise Troy to do about his headaches?",
                 "options": [
-                  "Taking a tablet",
-                  "Seeing an eye doctor",
-                  "Drinking more water"
+                  "Take a tablet",
+                  "See an eye doctor",
+                  "Drink more water"
                 ],
                 "answer": 2,
-                "explanation": "Ayesha says his headaches could come from drinking only coffee and advises water at every break."
+                "explanation": "Troy has already had his eyes tested and a tablet only hides the problem; Ayesha thinks he only drinks coffee, so he should drink water."
               }
             },
             {
@@ -1222,29 +1305,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "saoirse",
+                    "text": "Are you going to join the new gym, Toby?"
+                  },
+                  {
                     "speaker": "toby",
-                    "text": "I am thinking of joining Ashcombe Fitness."
+                    "text": "I’m not sure. It’s only ten minutes from my flat, so that’s fine. And I’ve been before at six in the evening, it was quiet."
                   },
                   {
                     "speaker": "saoirse",
-                    "text": "It is near your office, isn't it?"
+                    "text": "Then what’s the problem?"
                   },
                   {
                     "speaker": "toby",
-                    "text": "True, and I have heard it is quiet at lunchtime. But the cost is a problem. Forty-five pounds a month is a lot for me. I might just run in the park."
+                    "text": "The price. Forty pounds a month, plus a joining fee of sixty. For a student it’s a lot of money."
+                  },
+                  {
+                    "speaker": "saoirse",
+                    "text": "There might be a discount. Ask them."
+                  },
+                  {
+                    "speaker": "toby",
+                    "text": "I will. If it’s still too expensive, I’ll just run in the park."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the man's main problem with the gym?",
+                "prompt": "What is Toby's main problem with the gym?",
                 "options": [
-                  "The cost",
+                  "The price",
                   "The distance",
                   "The crowds"
                 ],
                 "answer": 0,
-                "explanation": "Toby says forty-five pounds a month is a lot for him, so the cost is the problem."
+                "explanation": "The gym is close and quiet, but Toby is worried about forty pounds a month plus a sixty-pound joining fee."
               }
             },
             {
@@ -1271,32 +1366,40 @@
                 "turns": [
                   {
                     "speaker": "courtney",
-                    "text": "No biscuits today, Daichi?"
+                    "text": "You look different, Daichi. Are you on a diet?"
                   },
                   {
                     "speaker": "daichi",
-                    "text": "I am trying a new diet. No more sweet things like cakes or fizzy drinks. I am having fruit instead."
+                    "text": "Sort of. I tried missing lunch for a week, but I got dizzy in the afternoon, so I stopped that."
                   },
                   {
                     "speaker": "courtney",
-                    "text": "Do you miss them?"
+                    "text": "Is it about money, then?"
                   },
                   {
                     "speaker": "daichi",
-                    "text": "Only in the afternoon!"
+                    "text": "No, I buy the same food as before. What I’ve done is give up biscuits, cakes and fizzy drinks. I only allow myself fruit when I want something sweet."
+                  },
+                  {
+                    "speaker": "courtney",
+                    "text": "How long has it been?"
+                  },
+                  {
+                    "speaker": "daichi",
+                    "text": "Three weeks, and I feel much better."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is Daichi doing?",
+                "prompt": "What has Daichi decided to do to eat more healthily?",
                 "options": [
-                  "Skipping some of his meals",
-                  "Buying much cheaper food",
-                  "Avoiding sweet things"
+                  "Skip some meals",
+                  "Buy cheaper food",
+                  "Stop eating sweet things"
                 ],
                 "answer": 2,
-                "explanation": "He has stopped eating cakes and fizzy drinks and eats fruit instead."
+                "explanation": "He tried missing lunch but felt dizzy and the food is not cheaper; his change is no biscuits, cakes or fizzy drinks."
               }
             },
             {
@@ -1323,28 +1426,40 @@
                 "turns": [
                   {
                     "speaker": "tamsin",
-                    "text": "Good morning, Eamon. It is Tamsin from Ashcombe Surgery. I am calling about tomorrow at ten."
+                    "text": "Hello, Eamon, it’s Tamsin from the health centre. Do you have a minute?"
                   },
                   {
                     "speaker": "eamon",
-                    "text": "Oh yes, my appointment. Do I need to bring anything?"
+                    "text": "Of course. Is it about the blood test?"
                   },
                   {
                     "speaker": "tamsin",
-                    "text": "Just a list of your medicines, and please arrive ten minutes early."
+                    "text": "No, the results aren’t back yet. And don’t worry, your appointment is still at ten fifteen tomorrow. I’m calling because last time you forgot to come."
+                  },
+                  {
+                    "speaker": "eamon",
+                    "text": "Yes, I’m sorry about that. I put it in my phone this time."
+                  },
+                  {
+                    "speaker": "tamsin",
+                    "text": "Good. Please arrive five minutes early."
+                  },
+                  {
+                    "speaker": "eamon",
+                    "text": "I will. Thanks for ringing."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Why is Tamsin phoning?",
+                "prompt": "Why is Tamsin phoning Eamon?",
                 "options": [
                   "To change the time of his appointment",
-                  "To remind him about an appointment",
+                  "To remind him about his appointment",
                   "To give him some test results"
                 ],
                 "answer": 1,
-                "explanation": "She rings about tomorrow's visit and reminds him what to bring and when to arrive."
+                "explanation": "The results are not ready and the time is the same; Tamsin phones because Eamon forgot last time and she wants him to remember."
               }
             },
             {
@@ -1371,15 +1486,27 @@
                 "turns": [
                   {
                     "speaker": "felipe",
-                    "text": "Does the walking club make you much fitter?"
+                    "text": "How is the walking club, Mhairi?"
                   },
                   {
                     "speaker": "mhairi",
-                    "text": "A bit, but we go slowly. For me the best part is the chatting. I have met so many new people since I joined."
+                    "text": "I love it. I thought I’d get fit quickly, but in fact I’m still slow after three months. And I’ve seen deer only once."
                   },
                   {
                     "speaker": "felipe",
-                    "text": "Maybe I should come along one Saturday."
+                    "text": "So what do you like?"
+                  },
+                  {
+                    "speaker": "mhairi",
+                    "text": "The people. I didn’t know anyone in the town when I came, and now I have six friends. We have tea after every walk and talk for ages."
+                  },
+                  {
+                    "speaker": "felipe",
+                    "text": "That sounds nice. Can I come on Saturday?"
+                  },
+                  {
+                    "speaker": "mhairi",
+                    "text": "Of course. Bring boots!"
                   }
                 ]
               },
@@ -1392,7 +1519,7 @@
                   "Seeing wildlife"
                 ],
                 "answer": 0,
-                "explanation": "She says the best part is chatting and that she has made many friends."
+                "explanation": "Mhairi says she is not fit yet and has seen deer only once; the best thing is that she has made six friends."
               }
             }
           ]
@@ -1417,52 +1544,46 @@
             "turns": [
               {
                 "speaker": "haruka",
-                "text": "Good morning, everyone. My name is Haruka and I am a community nurse here in Ashcombe. I would like to tell you about our free health-check day, which takes place on the second Saturday of May at the town hall. The doors open at nine and close at four. You do not need to book, but if you want a particular time, call the number on the posters. First, a nurse will measure your blood pressure and check your weight. Then you can have a short talk with a doctor, who will answer questions about sleep or food. There will also be a free eye test for anyone over forty. Please bring a list of any medicine you take. Children are welcome, and there is a play area with a helper. Finally, wear comfortable shoes, because we will finish with a short walk around the park."
+                "text": "Good morning, everyone. My name is Haruka, and I am a community nurse here in Ashcombe. I would like to tell you about our free health-check day, which is for everybody in the town. It takes place in the town hall. Last year we used the library, but it was too small, so please remember the new place. The day is on the second Saturday of May. Some people think it is the first, but that is the day of the market. The doors open at nine, and it finishes at four in the afternoon. There are several stations, and you can visit as many as you like. The first check, near the door, is blood pressure. It takes only a few minutes. After that you can have a blood test, but that needs an appointment, so ask at the desk. We also offer a free eye test for people over forty. Last year it was sixty, but this year we have more opticians. If you are younger, you can still talk to them about glasses. Now, what should you bring? Please bring a list of your medicine, with the doses, if you take any. It helps the doctors a great deal. You don’t need to bring your glasses, because the opticians have their own. For parents, there is good news. We know that it is difficult to wait with small children, so there is a play area next to the entrance, with toys and two helpers. Everything is free, including the tea and biscuits. And finally, if you have any questions, ring the number on the poster, which is in all the shops. Thank you for listening, and I hope to see you there."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Place: the town ___",
+              "prompt": "The free health-check is held in the town ___",
               "answer": "hall",
-              "explanation": "Haruka says the health-check day takes place at the town hall."
+              "explanation": "She says they used the library last year, but this year the day is in the town hall."
             },
             {
               "id": "l3-2",
-              "prompt": "Date: the second ___ of May",
+              "prompt": "The event is on the second ___ of May",
               "answer": "Saturday",
-              "explanation": "The event is on the second Saturday of May."
+              "explanation": "She says it is the second Saturday of May; the first one is the day of the market."
             },
             {
               "id": "l3-3",
-              "prompt": "First check: blood ___",
+              "prompt": "Near the door, the first test checks your blood ___",
               "answer": "pressure",
-              "explanation": "First a nurse measures your blood pressure and checks your weight."
+              "explanation": "The first check, near the door, is blood pressure; a blood test needs an appointment."
             },
             {
               "id": "l3-4",
-              "prompt": "Free eye test for people over ___",
+              "prompt": "Free eye tests for anybody older than ___",
               "answer": "forty",
-              "accepted": [
-                "40"
-              ],
-              "explanation": "There is a free eye test for anyone over forty."
+              "explanation": "Last year the age was sixty, but this year free eye tests are for people over forty."
             },
             {
               "id": "l3-5",
-              "prompt": "Bring a list of your ___",
+              "prompt": "Bring a list of the ___ that you take",
               "answer": "medicine",
-              "accepted": [
-                "medicines"
-              ],
-              "explanation": "Visitors should bring a list of any medicine they take."
+              "explanation": "She asks for a list of medicine with the doses, and says that glasses are not necessary."
             },
             {
               "id": "l3-6",
-              "prompt": "For children: a ___ area",
+              "prompt": "Parents can leave small children in the ___ area",
               "answer": "play",
-              "explanation": "Children are welcome and there is a play area with a helper."
+              "explanation": "There is a play area next to the entrance with toys and two helpers."
             }
           ]
         },
@@ -1494,51 +1615,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Gwilym, you ran your first marathon at fifty. What made you start running so late?"
+                "text": "Gwilym, you started running at fifty. Why did you begin to exercise?"
               },
               {
                 "speaker": "gwilym",
-                "text": "Honestly, it was a visit to the doctor. I was forty-six, I had put on a lot of weight and my blood pressure was too high. I did not want to take tablets for the rest of my life, so I asked what else I could do. She said, \"Just start by walking for half an hour every day.\""
+                "text": "Everyone assumes it was a challenge, that a friend dared me to do a big race. It wasn’t, the race came much later. And I didn’t think about joining a club, I’d never been in one. The truth is my doctor looked at my blood tests and said, \"You’ll have to change something.\" I was frightened, so I bought some shoes the next day."
               },
               {
                 "speaker": "interviewer",
-                "text": "But you did not stay with walking."
+                "text": "I’ve heard you were embarrassed at the start."
               },
               {
                 "speaker": "gwilym",
-                "text": "No. After a few weeks I started to jog between two lamp posts, then three. I was terrible. I remember stopping outside the bakery because I could not breathe, and a boy shouted, \"Come on, grandad!\" I was so embarrassed."
+                "text": "Very. I was running past the bakery on my first morning, red-faced and breathing like a train. I didn’t fall over, though I thought I might, and I didn’t drop anything either, I wasn’t carrying anything. A small boy at the door pointed at me and asked his mum why that old man was running. I wanted to disappear."
               },
               {
                 "speaker": "interviewer",
-                "text": "What kept you going?"
+                "text": "But you carried on. What made you stay with it?"
               },
               {
                 "speaker": "gwilym",
-                "text": "A neighbour told me about the Saturday parkrun in Ashcombe Park. Nobody there cares how fast you are. People clap for the last runner as loudly as for the first. That is when I realised running could be friendly, not just painful."
+                "text": "A neighbour told me about a Saturday run in the park. I expected fast people in expensive clothes, but nobody there was famous, and nobody gave prizes either. What I liked was that everybody was encouraged, however slow they were. The fastest runners waited at the end and clapped for the last ones. I thought, I can do this."
               },
               {
                 "speaker": "interviewer",
-                "text": "Was it hard to find time to train?"
+                "text": "When do you train now?"
               },
               {
                 "speaker": "gwilym",
-                "text": "I run early in the morning, before work, at six, when the streets are empty. The first month I hated getting up. Now I cannot sleep late even at weekends."
+                "text": "I tried lunchtimes, but my office is far from any park. And evenings are for my grandchildren, so that’s no good. These days I get up at half past five and I’m out of the house before it’s light. It’s quiet and cold, but I feel great for the whole day."
               },
               {
                 "speaker": "interviewer",
-                "text": "And the marathon itself?"
+                "text": "You’ve run a marathon. How did you survive the hardest part?"
               },
               {
                 "speaker": "gwilym",
-                "text": "I trained for eight months with a plan from a book. The race was harder than I expected. At thirty kilometres I wanted to stop, but a woman next to me said, \"Just reach the next water station.\" I did that again and again, and suddenly I could see the finish line."
+                "text": "Around thirty kilometres, my legs felt like stone. I didn’t stop to walk with anyone, and music would have driven me mad, I never run with it. What worked was a simple trick: I didn’t think about the finish, I only thought about the next water station, about a kilometre away. Then the next one, and the next one."
               },
               {
                 "speaker": "interviewer",
-                "text": "Any advice for people who start late?"
+                "text": "Finally, a question about equipment. Did your first running shoes work out?"
               },
               {
                 "speaker": "gwilym",
-                "text": "Two things. Buy proper shoes: my first cheap pair gave me sore knees for a month. And be patient, because nothing happens in the first weeks."
+                "text": "Oh dear. They were the right size, and they lasted for years, which was the problem, because after a month my knees were sore every night. The shop assistant had sold me shoes for a lighter runner. When I changed them, the pain disappeared."
               }
             ]
           },
@@ -1552,7 +1673,7 @@
                 "His doctor was worried about his health."
               ],
               "answer": 2,
-              "explanation": "His weight and blood pressure were high, and the doctor told him to start walking."
+              "explanation": "Gwilym says it was not a challenge or a club; his doctor looked at his blood tests and told him to change something."
             },
             {
               "id": "l4-2",
@@ -1563,18 +1684,18 @@
                 "He dropped his shopping on the road."
               ],
               "answer": 1,
-              "explanation": "He had to stop because he could not breathe, and a boy shouted \"Come on, grandad!\""
+              "explanation": "He did not fall or drop anything; a small boy asked his mum why that old man was running."
             },
             {
               "id": "l4-3",
               "prompt": "What did Gwilym like about the Saturday run?",
               "options": [
-                "Everyone was supported, however slow they were.",
-                "Prizes were given to new runners.",
-                "He ran with famous athletes."
+                "All runners were encouraged",
+                "New runners got prizes",
+                "Famous athletes took part"
               ],
               "answer": 0,
-              "explanation": "Nobody cares how fast you are, and people clap for the last runner as loudly as for the first."
+              "explanation": "Nobody was famous and there were no prizes; what he liked was that everybody was encouraged, however slow they were."
             },
             {
               "id": "l4-4",
@@ -1585,7 +1706,7 @@
                 "Early in the morning"
               ],
               "answer": 2,
-              "explanation": "He runs before work at six, when the streets are empty."
+              "explanation": "Lunchtimes are too far from the park and evenings are for his grandchildren, so he gets up at half past five and goes out before it is light."
             },
             {
               "id": "l4-5",
@@ -1596,7 +1717,7 @@
                 "By listening to loud music all the way"
               ],
               "answer": 0,
-              "explanation": "A woman told him to reach the next water station, and he repeated that again and again."
+              "explanation": "He did not walk with anyone or use music; he only thought about the next water station, about a kilometre away."
             },
             {
               "id": "l4-6",
@@ -1607,7 +1728,7 @@
                 "They broke after a month."
               ],
               "answer": 1,
-              "explanation": "He says his first cheap pair gave him sore knees for a month."
+              "explanation": "The shoes were the right size and lasted for years, but his knees were sore after a month because they were for a lighter runner."
             }
           ]
         }

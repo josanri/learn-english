@@ -251,6 +251,7 @@
               "options": [
                 "He had been ill for some weeks recently.",
                 "Her grandfather could not keep him.",
+                "His cage had broken at the flat.",
                 "Her parents had always wanted a pet."
               ],
               "answer": 1,
@@ -261,43 +262,47 @@
               "prompt": "What was the problem with the way Pepper talked?",
               "options": [
                 "He only spoke at night when everyone was asleep.",
+                "He talked only when the family was eating.",
                 "He said rude words to the visitors who came.",
                 "He copied sounds that confused the family."
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "He copies the doorbell, the washing machine and phones, so the family run to answer things that do not exist."
             },
             {
               "id": "r3-3",
               "prompt": "How did the writer's feelings change?",
               "options": [
+                "She enjoyed having a listener at home.",
+                "She taught him to talk to visitors.",
                 "She began to teach him new words.",
-                "She became angry with her father.",
-                "She enjoyed having a listener at home."
+                "She became angry with her father."
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She started to talk to Pepper about her day and appreciated that he was a patient listener."
             },
             {
               "id": "r3-4",
               "prompt": "What happened when Pepper's owner phoned last week?",
               "options": [
-                "He said he could take Pepper back.",
                 "He offered to send Pepper's food.",
+                "He said he wanted to visit them.",
+                "He said he could take Pepper back.",
                 "He asked for a few more weeks of time."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "The grandfather said his new landlord had changed his mind and asked if the family wanted him to take Pepper back."
             },
             {
               "id": "r3-5",
               "prompt": "How did the family react to the offer?",
               "options": [
-                "They all refused immediately.",
                 "They asked to keep him for longer.",
-                "They argued about it for days."
+                "They all refused immediately.",
+                "They argued about it for days.",
+                "They asked for more time to decide."
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "They all said no at the same time, which means they refused straight away."
             }
           ]
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "Dogs that work",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Many people think that dogs are simply pets, but some dogs have a very serious job. Assistance dogs help people who have problems seeing, hearing or moving. [1] The training takes about two years, and it begins when the puppies are only a few weeks old.\n\nAt first, the puppies live with volunteer families. [2] They learn to walk calmly on a lead, to sit quietly in shops and to ignore food on the floor. These lessons are not easy for a young dog.\n\nAt about twelve months, the dogs move to a training centre. [3] For example, a dog may learn to open doors, pick up a dropped phone or press the button at a pedestrian crossing.\n\nNot every puppy passes the course. [4] Some are too nervous, and others find it hard to stay calm near traffic. These dogs are not failures: most of them find loving homes as family pets.\n\nWhen a dog finally meets its new owner, the first meeting is often emotional. [5] \"It changed my life,\" says one owner. \"I go out on my own now.\"",
           "sentences": [
-            "Trainers teach them useful tasks that match each owner's needs.",
-            "Their job is to give the dogs experience of everyday life.",
             "Some dogs also work for the police.",
+            "Their job is to give the dogs experience of everyday life.",
+            "These clever animals are trained to be calm and to obey many commands.",
             "The dogs must also like working and be happy to learn.",
             "Within weeks, the two usually become a close team.",
-            "These clever animals are trained to be calm and to obey many commands."
+            "Trainers teach them useful tasks that match each owner's needs.",
+            "Their owners must pay for the food and for the vet.",
+            "Police dogs usually wear a special jacket with a badge."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "F",
+              "answer": "C",
               "explanation": "\"Assistance dogs help people...\" leads to sentence F, which explains how the dogs are trained to be calm and obey commands; the next sentence is about the training."
             },
             {
@@ -330,7 +337,7 @@
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "F",
               "explanation": "\"The dogs move to a training centre\" leads to trainers teaching useful tasks; the next sentence begins \"For example\"."
             },
             {
@@ -737,28 +744,12 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "fitzgerald",
-                    "name": "Fitzgerald",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "leocadia",
-                    "text": "Hello, I'd like to book an appointment for my cat. He's been sneezing all week."
-                  },
-                  {
-                    "speaker": "fitzgerald",
-                    "text": "We can see him tomorrow at ten, or on Friday afternoon."
-                  },
-                  {
-                    "speaker": "leocadia",
-                    "text": "Tomorrow is better. I work on Friday."
+                    "text": "Hello, this is Leocadia Hart. I have an appointment for my cat Milo on Friday afternoon, but I’m calling to change it. He hasn’t eaten anything for two days and I’m really worried, so Friday is too far away. Your receptionist said there might be a free place this evening, but I can’t leave work before seven and you close at six. So I’ll bring him tomorrow, before I go to work, if there’s a space. Please phone me back on my mobile. Thank you."
                   }
                 ]
               },
@@ -771,7 +762,7 @@
                   "This evening"
                 ],
                 "answer": 1,
-                "explanation": "She chooses tomorrow at ten because she works on Friday."
+                "explanation": "Friday is too far away and the clinic closes at six, before she leaves work, so she will bring the cat tomorrow before work."
               }
             },
             {
@@ -797,16 +788,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "maren",
+                    "text": "Guess what, Torvald! We finally got some pets for the children."
+                  },
+                  {
                     "speaker": "torvald",
-                    "text": "Did you buy the goldfish in the end?"
+                    "text": "Great! Did you buy the goldfish that you wanted?"
                   },
                   {
                     "speaker": "maren",
-                    "text": "No, I wanted one, but the tank costs too much. I got a pair of rabbits from my neighbour instead."
+                    "text": "I was going to, but a neighbour told me they are boring and die quickly. My brother offered us his cat and his dog, but we don’t have the space or the time for those two."
                   },
                   {
                     "speaker": "torvald",
-                    "text": "Rabbits? Won't they eat your garden?"
+                    "text": "So what did you choose?"
+                  },
+                  {
+                    "speaker": "maren",
+                    "text": "A pair of rabbits. They’re from the farm shop, one white and one brown. They need company, so we couldn’t take just one."
+                  },
+                  {
+                    "speaker": "torvald",
+                    "text": "The kids must be delighted."
                   }
                 ]
               },
@@ -819,7 +822,7 @@
                   "Two goldfish"
                 ],
                 "answer": 0,
-                "explanation": "She says she got a pair of rabbits from her neighbour."
+                "explanation": "Goldfish were her plan, but she heard they die quickly, and she had no space for her brother’s cat and dog, so she took a pair of rabbits."
               }
             },
             {
@@ -845,16 +848,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "bettina",
+                    "text": "Shall we take the dog out this afternoon, Cyprian? It’s lovely and dry."
+                  },
+                  {
                     "speaker": "cyprian",
-                    "text": "Shall we take Rex along the river path today?"
+                    "text": "Yes, but where? The river path would be nice, though it’s still muddy after the rain, and Buster hates having wet paws."
                   },
                   {
                     "speaker": "bettina",
-                    "text": "It's muddy after the rain. Let's go through the park instead; the paths are dry there."
+                    "text": "True. And I don’t want to walk along the street again. The traffic is horrible and he pulls on the lead."
                   },
                   {
                     "speaker": "cyprian",
-                    "text": "Fine. And the lead? I think it's in the car."
+                    "text": "What about the big green space behind the library? He can run there, with no cars, and we can walk around the lake as well."
+                  },
+                  {
+                    "speaker": "bettina",
+                    "text": "Perfect. I’ll find his ball."
+                  },
+                  {
+                    "speaker": "cyprian",
+                    "text": "I’ll bring a bag for the mess."
                   }
                 ]
               },
@@ -867,7 +882,7 @@
                   "Along the street"
                 ],
                 "answer": 0,
-                "explanation": "Bettina says the river path is muddy and suggests the park, where the paths are dry."
+                "explanation": "The river path is muddy and the street has too much traffic, so they choose the green space behind the library, which is the park."
               }
             },
             {
@@ -881,28 +896,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "rupert",
-                    "name": "Rupert",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "rupert",
-                    "text": "What's your dog called, by the way?"
-                  },
-                  {
                     "speaker": "odile",
-                    "text": "Bella. My brother wanted to call her Rocket, but she's so slow and lazy that it didn't suit her."
-                  },
-                  {
-                    "speaker": "rupert",
-                    "text": "Ha! Bella is a lovely name."
+                    "text": "Hello, everybody. This is a message for anyone near Maple Road. I have lost my dog. She is a small brown dog with white feet, and she wears a red collar. Her name is Bella. Some of the neighbours know her as Biscuit, but that’s the name of the cat next door, so please don’t be confused. And Rocket was our first dog, who died two years ago. Bella ran away at about five o’clock yesterday. If you see her, please phone me on the number on the lamp posts. There’s a reward for anyone who finds her."
                   }
                 ]
               },
@@ -915,7 +914,7 @@
                   "Biscuit"
                 ],
                 "answer": 1,
-                "explanation": "Odile says the dog is called Bella; Rocket was her brother's idea."
+                "explanation": "Biscuit is the neighbour’s cat and Rocket was an earlier dog that died, so the lost dog is Bella."
               }
             },
             {
@@ -929,41 +928,25 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "isidore",
-                    "name": "Isidore",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "saskia",
-                    "text": "How much is this bag of cat food?"
-                  },
-                  {
-                    "speaker": "isidore",
-                    "text": "It's nine pounds, but if you buy two, the second is half price."
-                  },
-                  {
-                    "speaker": "saskia",
-                    "text": "Then I'll take two, please."
+                    "text": "Welcome to Paws and Claws, your friendly pet shop on Main Street. This week we have good news for everyone with cats, dogs or rabbits. Our big bags of pet food are the same size as always, and most of them cost the same as last month. But if you buy one bag, you can take a second bag home for half the price. That’s a saving of up to four pounds. It’s the best deal of the year, and it finishes on Saturday. Come and ask our staff for advice about the best food for your animal."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "Why does the woman buy two bags?",
+                "prompt": "Why is this week a good time to buy two bags?",
                 "options": [
-                  "The bags are very small this week.",
-                  "She has two cats and a rabbit at home.",
-                  "The second bag is half price."
+                  "The bags are smaller than usual.",
+                  "Cats and rabbits like them most.",
+                  "The second one costs less."
                 ],
                 "answer": 2,
-                "explanation": "The second bag is half price, so buying two is cheaper."
+                "explanation": "The bags are normal size and the deal is not about the animals, but the second bag costs half the usual price."
               }
             },
             {
@@ -989,16 +972,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "marguerite",
+                    "text": "Evander, where shall we put the hamster’s cage? I have to decide today."
+                  },
+                  {
                     "speaker": "evander",
-                    "text": "Where did you put the hamster's cage?"
+                    "text": "Not in the bedroom, definitely. Hamsters wake up at night and run on their wheel. You won’t sleep."
                   },
                   {
                     "speaker": "marguerite",
-                    "text": "In my bedroom, but he's noisy at night, running on his wheel. I'm going to move it to the hall."
+                    "text": "You’re right. How about the kitchen? There’s a warm corner by the fridge."
                   },
                   {
                     "speaker": "evander",
-                    "text": "Good idea. He'll be warmer there too, near the radiator."
+                    "text": "It’s too hot when you cook, and she doesn’t like the smell of food. I’d put it near the front door, on that little table. It’s cooler there, and everybody walks past and says hello."
+                  },
+                  {
+                    "speaker": "marguerite",
+                    "text": "Good idea. I’ll move the flowers."
                   }
                 ]
               },
@@ -1011,7 +1002,7 @@
                   "In the kitchen"
                 ],
                 "answer": 0,
-                "explanation": "She is going to move the cage from her bedroom to the hall."
+                "explanation": "The bedroom is too noisy at night and the kitchen is hot and smelly, so the cage goes on the table in the hall."
               }
             },
             {
@@ -1025,28 +1016,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "casimir",
-                    "name": "Casimir",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "casimir",
-                    "text": "Are you free on Saturday? The farm is having a sheep show."
-                  },
-                  {
                     "speaker": "philippa",
-                    "text": "I'd love to, but I'm looking after my aunt's dog all weekend."
-                  },
-                  {
-                    "speaker": "casimir",
-                    "text": "Bring him! Dogs are allowed if they're on a lead."
+                    "text": "Hi Casimir, it’s Philippa. Thanks for the invitation to the farm on Saturday. I’d love to go, but I’m afraid I can’t, and it’s not what you think. I’m not scared of the sheep any more, I quite like them now. And I can borrow my dad’s car, so the journey isn’t a problem. The real problem is my neighbour’s dog. She’s on holiday and I promised to look after Ruby the whole weekend, so I can’t leave her. Maybe next time. Speak soon."
                   }
                 ]
               },
@@ -1059,7 +1034,7 @@
                   "She has no car."
                 ],
                 "answer": 1,
-                "explanation": "She is looking after her aunt's dog all weekend."
+                "explanation": "She likes the sheep now and can borrow a car, but she promised to look after the neighbour’s dog all weekend."
               }
             }
           ]
@@ -1094,16 +1069,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "winifred",
+                    "text": "Lucan, look at my garden! The new plants are all over the path."
+                  },
+                  {
                     "speaker": "lucan",
-                    "text": "Mum, the neighbours' cat is in our garden again, digging up your flowers."
+                    "text": "Maybe it’s the wind. Or the frost. Are the flowers dying?"
                   },
                   {
                     "speaker": "winifred",
-                    "text": "Oh, no! I only planted them on Sunday."
+                    "text": "No, they’re fine. And Mr Brown from next door has been very kind, he even gave me some seeds. But every morning I find holes in the soil and the roots are out. Yesterday I saw a big grey cat digging there."
                   },
                   {
                     "speaker": "lucan",
-                    "text": "I'll put the net back over the flower bed."
+                    "text": "Cats love soft earth. You could put some sticks on the ground."
+                  },
+                  {
+                    "speaker": "winifred",
+                    "text": "I’ll try it tonight. I’m so tired of this."
                   }
                 ]
               },
@@ -1116,7 +1099,7 @@
                   "A cat is damaging the garden."
                 ],
                 "answer": 2,
-                "explanation": "The neighbours' cat is digging up the newly planted flowers."
+                "explanation": "The flowers are fine and the neighbour is friendly; the trouble is the holes made every morning by a big grey cat."
               }
             },
             {
@@ -1142,16 +1125,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "henrietta",
+                    "text": "Ptolemy, Max hasn’t touched his dinner for two days. I’m getting worried."
+                  },
+                  {
                     "speaker": "ptolemy",
-                    "text": "Our dog hasn't eaten since yesterday morning, and he's very quiet."
+                    "text": "Maybe he doesn’t like the new food. We could go back to the old kind."
                   },
                   {
                     "speaker": "henrietta",
-                    "text": "I'll phone the vet now. Don't give him anything else until we know what's wrong."
+                    "text": "I tried that this morning, and he still turned his head away. Before I do anything else, I want a professional to look at him."
                   },
                   {
                     "speaker": "ptolemy",
-                    "text": "Good, I'm worried."
+                    "text": "I agree. Dogs can have a problem with their teeth, and we can’t see it."
+                  },
+                  {
+                    "speaker": "henrietta",
+                    "text": "I’ll call the vet, Dr Wells, now. We aren’t going to give him away, of course."
+                  },
+                  {
+                    "speaker": "ptolemy",
+                    "text": "Of course not! Ask for an appointment tomorrow."
                   }
                 ]
               },
@@ -1164,7 +1159,7 @@
                   "Buy a different food"
                 ],
                 "answer": 1,
-                "explanation": "Henrietta says she will phone the vet to find out what is wrong."
+                "explanation": "Old food did not help and they do not want to give him away, so Henrietta wants an expert to look at him and will call the doctor for animals."
               }
             },
             {
@@ -1191,15 +1186,23 @@
                 "turns": [
                   {
                     "speaker": "octavia",
-                    "text": "I'd love a horse, but you have to feed it twice a day, even in winter."
+                    "text": "Leopold, I found a lovely horse on the internet. It costs two thousand pounds."
                   },
                   {
                     "speaker": "leopold",
-                    "text": "And pay for the stable, and the vet. It costs a fortune."
+                    "text": "I know, you’ve talked about it for months. But have you counted the rest? The food, the vet, the stable. Your friend says she’d let us keep it at her farm, but she wants money every month."
                   },
                   {
                     "speaker": "octavia",
-                    "text": "Maybe I'll just keep going to riding lessons."
+                    "text": "I suppose so. And we’re always away at the weekends. Winter would be especially hard, with the snow and the dark mornings."
+                  },
+                  {
+                    "speaker": "leopold",
+                    "text": "Exactly. A horse needs time every single day."
+                  },
+                  {
+                    "speaker": "octavia",
+                    "text": "Then it’s not fair on the animal. Let’s go riding at the centre instead."
                   }
                 ]
               },
@@ -1212,7 +1215,7 @@
                   "To buy a horse in the winter"
                 ],
                 "answer": 0,
-                "explanation": "They talk about the work and costs, and Octavia says she will just keep taking lessons."
+                "explanation": "The cost, the weekend travel and the hard winter work all show it would not be fair, so they will not have a horse and ride at the centre."
               }
             },
             {
@@ -1239,28 +1242,40 @@
                 "turns": [
                   {
                     "speaker": "cordelia",
-                    "text": "Did you see the TV programme about owls last night?"
+                    "text": "Did you watch the programme about birds last night, Bartholomew?"
                   },
                   {
                     "speaker": "bartholomew",
-                    "text": "Yes! I didn't know they could turn their heads almost all the way round."
+                    "text": "I fell asleep after half an hour. It seemed to last forever."
                   },
                   {
                     "speaker": "cordelia",
-                    "text": "I want to visit the bird centre now."
+                    "text": "Really? It was long, but I didn’t notice. I loved the part about the swifts that fly for ten months without landing. I understood everything, the narrator explained it well."
+                  },
+                  {
+                    "speaker": "bartholomew",
+                    "text": "So you liked it."
+                  },
+                  {
+                    "speaker": "cordelia",
+                    "text": "Yes! I’m going to the library tomorrow to look for a book. I want to learn more about them, because there’s so much to know."
+                  },
+                  {
+                    "speaker": "bartholomew",
+                    "text": "Maybe I’ll watch the rest."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What are they talking about?",
+                "prompt": "What does the girl think of the programme about birds?",
                 "options": [
-                  "A school project",
-                  "A holiday abroad",
-                  "A programme about birds"
+                  "It was too long.",
+                  "It made her want to learn more.",
+                  "It was too difficult."
                 ],
-                "answer": 2,
-                "explanation": "They discuss a television programme about owls."
+                "answer": 1,
+                "explanation": "She agrees it was long but did not mind and understood it; she wants to go to the library and find out more."
               }
             },
             {
@@ -1287,28 +1302,40 @@
                 "turns": [
                   {
                     "speaker": "rosalind",
-                    "text": "Can I stay with my dog in the hotel room?"
+                    "text": "The receptionist says dogs aren’t allowed in the rooms, but they can stay in the garden house for a small fee."
                   },
                   {
                     "speaker": "anselm2",
-                    "text": "Yes, but there is a charge of ten pounds a night, and he can't be left alone in the room."
+                    "text": "How much is it?"
                   },
                   {
                     "speaker": "rosalind",
-                    "text": "That's fine. He goes everywhere with me."
+                    "text": "Ten pounds a night. That’s less than the kennel by the beach."
+                  },
+                  {
+                    "speaker": "anselm2",
+                    "text": "I don’t want to leave Scout with the neighbour. She’s always forgetting to feed him."
+                  },
+                  {
+                    "speaker": "rosalind",
+                    "text": "And other hotels are more expensive anyway, and further from the beach. I think we should book this one."
+                  },
+                  {
+                    "speaker": "anselm2",
+                    "text": "Agreed. I’ll phone them right away, and ask for the room with the balcony."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the receptionist say about dogs?",
+                "prompt": "What do they agree to do about the dog?",
                 "options": [
-                  "They can stay for a fee.",
-                  "They are not allowed.",
-                  "They must sleep downstairs."
+                  "Book the hotel and pay for him",
+                  "Leave him with a neighbour",
+                  "Look for a cheaper hotel"
                 ],
                 "answer": 0,
-                "explanation": "Dogs can stay, but there is a charge of ten pounds a night."
+                "explanation": "Leaving him with the neighbour is not a good idea and other hotels cost more, so they agree to book this hotel and pay the fee."
               }
             },
             {
@@ -1334,16 +1361,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "tabitha",
+                    "text": "You look exhausted, Ignatius. Did you work late again?"
+                  },
+                  {
                     "speaker": "ignatius",
-                    "text": "You look tired. Were you up all night?"
+                    "text": "Not this week, the deadline is finished. And I didn’t go out last night, so I’m not tired from walking."
                   },
                   {
                     "speaker": "tabitha",
-                    "text": "The puppy cried every hour. He misses his mother, I think."
+                    "text": "Then what happened?"
                   },
                   {
                     "speaker": "ignatius",
-                    "text": "It'll get better in a few days. Put a warm blanket in his bed."
+                    "text": "The puppy! She cried from midnight to five. I took her out into the garden, I gave her water, I even slept on the sofa next to her, and still she cried."
+                  },
+                  {
+                    "speaker": "tabitha",
+                    "text": "Oh, poor you. It gets better in a few days, I promise."
+                  },
+                  {
+                    "speaker": "ignatius",
+                    "text": "I hope so. I need a very strong coffee this morning."
                   }
                 ]
               },
@@ -1356,7 +1395,7 @@
                   "Her new puppy kept her awake."
                 ],
                 "answer": 2,
-                "explanation": "The puppy cried every hour, so she did not sleep."
+                "explanation": "The deadline is over and he stayed at home; the puppy cried from midnight to five and he could not sleep."
               }
             }
           ]
@@ -1381,52 +1420,52 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Hello, everyone. I'm Gideon, and I'll be your guide on Thursday's visit to Hillside Zoo. The coach leaves school at nine o'clock, so please arrive ten minutes early. At the zoo, we will first meet the keepers in the penguin house, where you can watch the birds being fed. After lunch, there's a talk about snakes in the reptile centre, and you can touch one of the smaller ones if you want to. Please bring a packed lunch and a waterproof jacket, because it may rain. Remember to wear comfortable shoes, because we will walk about five kilometres altogether. If you would like to buy something at the gift shop, you can take up to five pounds. We expect to be back at school before four o'clock."
+                "text": "Hello, everyone. I’m Gideon, and I’ll be your guide on Thursday’s visit to Hillside Zoo. I know you were hoping to go on Wednesday, but the zoo is closed to visitors that day for repairs, so we’re going on Thursday instead. The coach leaves school at nine o’clock, so please arrive ten minutes early. Last time some of you were late, and we waited for half an hour. When we arrive, we’ll go straight to the penguin house, where you can watch the birds being fed. It’s the most popular part of the day, and it’s much better in the morning, when they’re hungry. We’ll see the monkeys afterwards, and I’ll tell you more about them while we walk. We’ll stop for lunch at twelve, near the picnic area. Bring your own lunch, because the cafe is expensive, and don’t forget to take your rubbish home. After lunch there is a talk about snakes. I know some of you hate them, and the lizards have a talk of their own tomorrow, but the snake keeper is so funny that I’m sure everybody will enjoy it. You may even be able to touch one! Now, the weather. It has been sunny recently, but the forecast says showers in the afternoon. You won’t need a hat or sun cream, but please bring a waterproof jacket. An umbrella is not a good idea in a crowd, because it could hurt somebody’s eye. Finally, the gift shop. You will have some free time at the end of the day. Most of the toys cost around ten pounds, which is a lot, so I’ll ask you to spend a maximum of five pounds. Postcards and pencils are cheaper. Any questions? No? Then see you on Thursday morning!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The trip is on ___",
+              "prompt": "The visit to the zoo is arranged for a ___",
               "answer": "Thursday",
-              "explanation": "Gideon says it is on Thursday's visit to the zoo."
+              "explanation": "Wednesday is not possible because of repairs; the trip is on Thursday."
             },
             {
               "id": "l3-2",
-              "prompt": "The coach leaves at ___ o'clock",
+              "prompt": "Students must be at school before ___ o'clock to take the coach",
               "answer": "nine",
               "accepted": [
                 "9"
               ],
-              "explanation": "The coach leaves school at nine o'clock."
+              "explanation": "The coach leaves at nine o’clock; people should arrive ten minutes earlier."
             },
             {
               "id": "l3-3",
-              "prompt": "First, visitors watch the birds being fed in the ___ house",
+              "prompt": "The first activity is watching the penguins eat in their ___",
               "answer": "penguin",
-              "explanation": "The group meets keepers in the penguin house to watch the birds being fed."
+              "explanation": "They go straight to the penguin house; monkeys are afterwards."
             },
             {
               "id": "l3-4",
-              "prompt": "After lunch there is a talk about ___",
+              "prompt": "In the afternoon, a keeper gives a talk on a kind of reptile: ___",
               "answer": "snakes",
-              "explanation": "After lunch there is a talk about snakes."
+              "explanation": "The talk is about snakes; the lizard talk is tomorrow."
             },
             {
               "id": "l3-5",
-              "prompt": "Students should bring a waterproof ___",
+              "prompt": "Because of the possible showers, students should bring a ___ that keeps them dry",
               "answer": "jacket",
-              "explanation": "Gideon says to bring a packed lunch and a waterproof jacket."
+              "explanation": "A hat and sun cream are not needed; an umbrella is not a good idea, so they bring a waterproof jacket."
             },
             {
               "id": "l3-6",
-              "prompt": "Students can spend up to ___ pounds in the gift shop",
+              "prompt": "The maximum amount of money for the shop is ___ pounds",
               "answer": "five",
               "accepted": [
                 "5"
               ],
-              "explanation": "Students can take up to five pounds to the gift shop."
+              "explanation": "Toys cost ten pounds but the limit is five pounds."
             }
           ]
         },
@@ -1458,51 +1497,51 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Perdita, you run a rescue centre for wild animals. How did it start?"
+                "text": "Perdita, you run a rescue centre for wild animals. How did it all begin?"
               },
               {
                 "speaker": "perdita",
-                "text": "Quite by accident. Ten years ago, I found a baby hedgehog in my garden, and it was very weak. I took it to a vet, who showed me how to look after it. Soon, other people began to bring me animals that they had found."
+                "text": "I didn’t go to university to become a vet, I wanted to, but I couldn’t afford it. And no, there wasn’t a farm waiting for me from a relative, I’ve always lived in a small house with a garden. What happened is that I found a hedgehog in the road one cold November evening. It was hurt and I kept it in a box, and people started bringing me more animals."
               },
               {
                 "speaker": "host",
-                "text": "What kind of animals do you get?"
+                "text": "People often find young birds on the ground. What should they do?"
               },
               {
                 "speaker": "perdita",
-                "text": "Mostly hedgehogs, birds and the occasional fox. In the summer we also get a lot of young birds that have fallen out of nests."
+                "text": "The first reaction is to take it home and feed it, and everybody thinks bread is a good idea, but it’s dangerous for them. In most cases the baby is just learning to fly. Its parents are watching from a tree nearby, and they’ll look after it. So the best thing is usually to leave it alone, and walk away."
               },
               {
                 "speaker": "host",
-                "text": "Should people pick up an animal when they find it?"
+                "text": "When should people phone you?"
               },
               {
                 "speaker": "perdita",
-                "text": "Not always. If it is a baby bird with feathers, its parents are probably nearby. The best thing is to watch from a distance. We only need to be called if the animal is injured or in the road."
+                "text": "Not just because it’s raining, or because it’s dark. Lots of animals are perfectly happy at night, and the weather doesn’t bother them. I’d say phone me when you see blood, or when the animal can’t move normally. If it’s hurt, then speak to us immediately, any time of day."
               },
               {
                 "speaker": "host",
-                "text": "What is the hardest part of your work?"
+                "text": "What is the hardest thing for you?"
               },
               {
                 "speaker": "perdita",
-                "text": "Saying goodbye. I look after the animals for weeks, and I get attached to them. But the aim is always to put them back in the wild, so I know I've done my job well when they run away from me."
+                "text": "Cleaning the cages isn’t pleasant, but I’m used to it. Money is a worry, because we only have donations, but we survive. The hardest moment is the day that an animal I looked after for months goes back to the wild. I’m happy for it, of course, but I always cry in the car park, and then I need a cup of tea."
               },
               {
                 "speaker": "host",
-                "text": "Do you have any help?"
+                "text": "You also have teenage volunteers. What is their role?"
               },
               {
                 "speaker": "perdita",
-                "text": "Twenty volunteers. Some of them are teenagers who come after school, and they're very good with the animals. Yesterday one of them taught a nervous young fox to drink from a bottle."
+                "text": "They’re brilliant. They don’t take donations from the visitors, we have a box for that, and they aren’t allowed to drive because they’re too young. What they do is feed the baby animals with tiny bottles every three hours, and they clean their little beds. It teaches them to be patient and gentle."
               },
               {
                 "speaker": "host",
-                "text": "What would you like people to do?"
+                "text": "Summer is coming. Any advice for hot weather?"
               },
               {
                 "speaker": "perdita",
-                "text": "Put out a shallow bowl of water in their gardens in hot weather. It is such a simple thing, but it saves many animals."
+                "text": "Yes, a simple one. Put a bowl of fresh water in the garden, in the shade. Birds, hedgehogs and foxes all need to drink. You don’t have to give them extra food, since they find plenty in summer. And keeping your own pets in the house all day is not necessary, just give them water and a cool place."
               }
             ]
           },
@@ -1516,7 +1555,7 @@
                 "She inherited a farm from her uncle."
               ],
               "answer": 1,
-              "explanation": "She found a weak baby hedgehog in her garden, and other people began to bring her animals."
+              "explanation": "She could not afford university and had no farm from a relative; she found a hedgehog in the road and kept it in a box."
             },
             {
               "id": "l4-2",
@@ -1527,7 +1566,7 @@
                 "They should be fed bread."
               ],
               "answer": 1,
-              "explanation": "She says that a baby bird with feathers probably has its parents nearby, so people should watch from a distance."
+              "explanation": "Bread is dangerous, and it is better not to take them home; the parents are watching from a tree nearby."
             },
             {
               "id": "l4-3",
@@ -1538,7 +1577,7 @@
                 "When it is night"
               ],
               "answer": 0,
-              "explanation": "People should phone if the animal is injured or in the road."
+              "explanation": "Rain and darkness are not reasons to phone; she says to phone when the animal is bleeding or cannot move normally."
             },
             {
               "id": "l4-4",
@@ -1549,7 +1588,7 @@
                 "Letting the animals go"
               ],
               "answer": 2,
-              "explanation": "She says the hardest part is saying goodbye to animals she has looked after."
+              "explanation": "Cleaning cages and money are not the biggest worry; the hardest moment is when an animal goes back to the wild."
             },
             {
               "id": "l4-5",
@@ -1560,7 +1599,7 @@
                 "They drive the animals to the vet."
               ],
               "answer": 1,
-              "explanation": "One teenager taught a nervous young fox to drink from a bottle, so they look after the animals."
+              "explanation": "Visitors give money to a box and the teenagers cannot drive; they feed the baby animals with bottles every three hours."
             },
             {
               "id": "l4-6",
@@ -1571,7 +1610,7 @@
                 "Keep all pets inside the house"
               ],
               "answer": 0,
-              "explanation": "She asks people to put out a shallow bowl of water in their gardens."
+              "explanation": "Extra food and keeping pets inside are not necessary; the simple advice is a bowl of fresh water in the shade."
             }
           ]
         }

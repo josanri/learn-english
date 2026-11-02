@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why was the writer’s family responsible for this year’s reunion?",
               "options": [
-                "His grandmother had chosen them for the job.",
                 "It was their turn to organise it.",
+                "Their grandmother was too old to do it.",
+                "His grandmother had chosen them for the job.",
                 "They have the biggest house in the family."
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "The reunion is held every five years, and this summer “it was our turn to organise it”."
             },
             {
@@ -262,42 +263,46 @@
               "options": [
                 "To send invitations to all the relatives.",
                 "To book the hall and order the food.",
+                "To cook for forty-three people.",
                 "To collect old pictures and show them."
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "His job was to put together a slideshow of old family photos, which meant asking relatives for pictures."
             },
             {
               "id": "r3-3",
               "prompt": "What went wrong on the day?",
               "options": [
-                "Many people arrived before the family was ready.",
                 "Several guests forgot that the reunion was on.",
-                "There were not enough chairs for everybody there."
+                "Many people arrived before the family was ready.",
+                "There were not enough chairs for everybody there.",
+                "The food arrived much later than planned."
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Half the guests arrived an hour early, while the family was still putting up tables."
             },
             {
               "id": "r3-4",
               "prompt": "How did he feel about his cousins after meeting them?",
               "options": [
-                "Pleased to find that they shared his tastes.",
                 "Worried that they would not remember him at all.",
-                "Disappointed that they lived so far away from him."
+                "Disappointed that they lived so far away from him.",
+                "Pleased to find that they shared his tastes.",
+                "Surprised to find that they were so different."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "They liked the same bands and supported the same football team, so he found they had a lot in common."
             },
             {
               "id": "r3-5",
               "prompt": "What does the writer say at the end?",
               "options": [
-                "A reunion every year would be much better for all.",
                 "He has already begun to prepare the next one.",
+                "A reunion every year would be much better for all.",
+                "His grandmother wants to move to a smaller house.",
                 "The slideshow was far too long for the guests."
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "He says he has already started a folder on his laptop for the next reunion."
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "Friends since the age of four",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Eimear and Anika have known each other since they were four, when they sat next to each other on their first day at primary school. [1] Nineteen years later, they still speak almost every day.\n\nAs children, they lived on the same street in Elmstead, so they walked to school together every morning. [2] Their parents say the two girls hardly ever argued, and when they did, they made up within an hour.\n\nThings changed when Eimear moved to a city far away to study. [3] Anika, on the other hand, stayed in Elmstead to train as a nurse. They were afraid that the distance would end their friendship. [4] “We wrote long emails and had a video call every Sunday evening,” says Eimear.\n\nNext month, Anika will stand next to Eimear at her wedding. [5] “Good friends do not need to see each other all the time,” says Anika, “but they never forget each other’s birthdays.”",
           "sentences": [
             "It was the beginning of a friendship that has never stopped.",
             "Neither of them has ever enjoyed travelling by plane.",
+            "It was the first time that they had lived in different cities.",
+            "Instead, they found new ways to stay in touch.",
             "At secondary school, they joined the same choir and the same netball team.",
             "Both of them agree that such a long friendship has taught them something important.",
-            "It was the first time that they had lived in different cities.",
-            "Instead, they found new ways to stay in touch."
+            "He sent them a card every year on their birthday.",
+            "Nobody in either family had ever lived abroad."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "E",
               "explanation": "After the primary-school years, “At secondary school” continues the history; it leads to what their parents say about the two girls."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "C",
               "explanation": "“The first time that they had lived in different cities” follows Eimear’s move and prepares “Anika, on the other hand, stayed in Elmstead”."
             },
             {
               "id": "r4-4",
-              "answer": "F",
+              "answer": "D",
               "explanation": "“Instead” contrasts with the fear that distance would end the friendship, and the quotation explains how they stayed in touch."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "F",
               "explanation": "The sentence about what the friendship has taught them leads into Anika’s opinion about good friends. Sentence B is about flying and fits no gap."
             }
           ]
@@ -767,15 +774,27 @@
                 "turns": [
                   {
                     "speaker": "victor",
-                    "text": "What shall we do for Mum’s birthday?"
+                    "text": "What shall we do for Mum’s birthday? I was going to book that Italian restaurant."
                   },
                   {
                     "speaker": "sharni",
-                    "text": "A restaurant is too expensive. How about a picnic by the river? She loves being outdoors."
+                    "text": "She doesn’t like restaurants these days. She says they’re too noisy. And a day at the seaside is too much, it’s two hours away and she gets tired in the car."
                   },
                   {
                     "speaker": "victor",
-                    "text": "Good idea. If it rains, we’ll cook at home."
+                    "text": "So what do you suggest?"
+                  },
+                  {
+                    "speaker": "sharni",
+                    "text": "Remember the park near her house, the one with the lake? She loves it there. We could have a picnic there, outdoors, with sandwiches and her favourite lemon cake, and sit on a blanket under the big tree. If it’s sunny, of course."
+                  },
+                  {
+                    "speaker": "victor",
+                    "text": "That sounds perfect. I’ll make the cake myself."
+                  },
+                  {
+                    "speaker": "sharni",
+                    "text": "Great. I’ll bring the sandwiches and some lemonade."
                   }
                 ]
               },
@@ -788,7 +807,7 @@
                   "A day at the seaside"
                 ],
                 "answer": 1,
-                "explanation": "Sharni says a restaurant is too expensive and suggests a picnic by the river, and Victor agrees."
+                "explanation": "Their mother finds restaurants noisy and the seaside is too far, so they will take sandwiches and cake to the park by the lake."
               }
             },
             {
@@ -802,28 +821,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "elif",
-                    "name": "Elif",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "julian",
-                    "text": "My cousin is coming on Friday. Can he sleep in your spare room?"
-                  },
-                  {
-                    "speaker": "elif",
-                    "text": "It’s full of boxes, I’m afraid. He can have the sofa bed in the study."
-                  },
-                  {
-                    "speaker": "julian",
-                    "text": "Perfect, thanks."
+                    "text": "Hi Elif, it’s Julian. About my cousin who is coming on Friday. I thought she could sleep in the spare room, but it’s full of boxes and the floor is still wet from the paint, so that’s no good. You said there’s a hotel nearby, and she’d like that, but she’s a student and doesn’t have much money. So here’s my idea. We put the sofa bed in the living room. It’s very comfortable, and she can watch television late. Please find clean sheets for it. I’ll move the table tomorrow. Thanks, see you tonight."
                   }
                 ]
               },
@@ -836,7 +839,7 @@
                   "In a hotel nearby"
                 ],
                 "answer": 1,
-                "explanation": "The spare room is full of boxes, so he will sleep on the sofa bed in the study."
+                "explanation": "The spare room is full of boxes and a hotel is too expensive for a student, so the cousin will sleep on the sofa bed in the living room."
               }
             },
             {
@@ -850,28 +853,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "youssef",
-                    "name": "Youssef",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "brigid",
-                    "text": "Can you look after the twins on Saturday evening? We’re going to a wedding."
-                  },
-                  {
-                    "speaker": "youssef",
-                    "text": "Sure. What time shall I come?"
-                  },
-                  {
-                    "speaker": "brigid",
-                    "text": "Half past six, please. They go to bed at eight."
+                    "text": "Hi Youssef, it’s Brigid. Thanks for offering to help with Mum’s dinner on Sunday. Dinner is at eight, and the guests are arriving at half past seven. I know you asked to come at seven thirty because you work until late on Sundays, but I need you earlier, to chop the vegetables and put the plates on the table. Please come at six thirty. I will make you a coffee when you arrive. If it’s impossible, just send me a text. Otherwise I’ll see you then."
                   }
                 ]
               },
@@ -884,7 +871,7 @@
                   "At eight o’clock"
                 ],
                 "answer": 0,
-                "explanation": "Brigid asks him to come at half past six; eight o’clock is the twins’ bedtime."
+                "explanation": "Guests come at half past seven and dinner is at eight, but she needs him earlier to help with the cooking, so he should arrive at half past six."
               }
             },
             {
@@ -910,16 +897,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "dai",
+                    "text": "Whitney, where are you? Your flight should be here by now."
+                  },
+                  {
                     "speaker": "whitney",
-                    "text": "Hi Dad, I’m at the airport, but my flight is two hours late."
+                    "text": "Hi Dai. We landed an hour ago, but the bags are very slow. I’m still waiting."
                   },
                   {
                     "speaker": "dai",
-                    "text": "Don’t worry, love. I’ll wait at home until you text me to say you’ve landed."
+                    "text": "Shall I drive to the airport right now? I can be there in twenty minutes."
                   },
                   {
                     "speaker": "whitney",
-                    "text": "Thanks, Dad. I’ll text you as soon as we land."
+                    "text": "Please don’t. It will be at least another hour before I’m out. I’ll send you a text when I have my suitcase and I’m ready to go."
+                  },
+                  {
+                    "speaker": "dai",
+                    "text": "Okay. And do you want me to book you another flight for next week?"
+                  },
+                  {
+                    "speaker": "whitney",
+                    "text": "No, no. The airline already gave me a seat for the return."
+                  },
+                  {
+                    "speaker": "dai",
+                    "text": "Fine. I’ll sit here with my coffee and wait for your text."
+                  },
+                  {
+                    "speaker": "whitney",
+                    "text": "Thanks. You’re a star."
                   }
                 ]
               },
@@ -932,7 +939,7 @@
                   "Wait for her to send a text"
                 ],
                 "answer": 2,
-                "explanation": "Dai will stay at home until Whitney texts to say that she has landed."
+                "explanation": "He offers to drive now and to book another flight, but she says no to both; she will message him when she has her bag, so he waits for her text."
               }
             },
             {
@@ -959,15 +966,31 @@
                 "turns": [
                   {
                     "speaker": "jodie",
-                    "text": "Look, I’ve found Grandma’s old photo album."
+                    "text": "Look at this old photo from the beach. Our father is wearing that silly big hat."
                   },
                   {
                     "speaker": "radek",
-                    "text": "Is that me in the huge hat?"
+                    "text": "No, our father has his straw hat on, and he’s holding the umbrella. The big hat is on somebody else."
                   },
                   {
                     "speaker": "jodie",
-                    "text": "Yes, Radek, you were about four. And that’s Dad on his first day at work."
+                    "text": "Is it me? I remember a hat like that."
+                  },
+                  {
+                    "speaker": "radek",
+                    "text": "Jodie, you had a little pink one, with the flower. I was wearing Gran’s hat. I thought it was hilarious."
+                  },
+                  {
+                    "speaker": "jodie",
+                    "text": "Of course! Now I can see it. Your face is under the brim, and you look about six."
+                  },
+                  {
+                    "speaker": "radek",
+                    "text": "I was seven, actually. I wore it all afternoon."
+                  },
+                  {
+                    "speaker": "jodie",
+                    "text": "We should put this photo on the wall."
                   }
                 ]
               },
@@ -980,7 +1003,7 @@
                   "Radek"
                 ],
                 "answer": 2,
-                "explanation": "Radek asks if he is the one in the huge hat, and Jodie says yes, he was about four."
+                "explanation": "Their father has a smaller straw hat and Jodie’s hat was a little pink one; the big one was Gran’s hat, which Radek wore."
               }
             },
             {
@@ -1007,15 +1030,27 @@
                 "turns": [
                   {
                     "speaker": "skye",
-                    "text": "You promised to wash up last night, and you didn’t."
+                    "text": "Osian, where were you? It’s nearly midnight."
                   },
                   {
                     "speaker": "osian",
-                    "text": "I’m sorry. I had football practice, and I forgot."
+                    "text": "Sorry, I missed the bus, but I’m only ten minutes late."
                   },
                   {
                     "speaker": "skye",
-                    "text": "Well, next time just tell me."
+                    "text": "It isn’t that. You came back late yesterday too, and I was fine with it. I’m annoyed about my sister’s present. You said you would pick it up from the shop on your way home."
+                  },
+                  {
+                    "speaker": "osian",
+                    "text": "Oh no! I completely forgot."
+                  },
+                  {
+                    "speaker": "skye",
+                    "text": "The shop is closed now, and her party is tomorrow. And somebody ate my food, a whole plate of lasagne, but I know that was Dad."
+                  },
+                  {
+                    "speaker": "osian",
+                    "text": "I’m really sorry. I’ll go first thing in the morning."
                   }
                 ]
               },
@@ -1028,21 +1063,13 @@
                   "He ate some of the food that was hers"
                 ],
                 "answer": 0,
-                "explanation": "Osian promised to wash up and forgot because of football practice."
+                "explanation": "She says being late is not the problem and she blames her father for the lasagne; she is annoyed because Osian forgot to collect the present that he promised."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "bao",
-                    "name": "Bao",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "aylin",
                     "name": "Aylin",
@@ -1054,12 +1081,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "bao",
-                    "text": "I nearly bought you a book, but then I saw this."
-                  },
-                  {
                     "speaker": "aylin",
-                    "text": "A scarf! It’s lovely. Thank you."
+                    "text": "Hi Bao, it’s Aylin. Thank you so much for the lovely present! I was sure that you would buy me a book, because I’m always reading, and when I saw the flowers on the table I thought they were from you. But they were from my aunt. Your gift is much better. It’s the softest scarf I’ve ever owned, and the colour goes perfectly with my winter coat. I wore it all day today. Anyway, I hope you have a good weekend. Call me soon!"
                   }
                 ]
               },
@@ -1072,7 +1095,7 @@
                   "Some flowers"
                 ],
                 "answer": 0,
-                "explanation": "Aylin says “A scarf! It’s lovely”; Bao only nearly bought a book."
+                "explanation": "She expected a book and the flowers were from her aunt; Bao gave her a soft scarf."
               }
             }
           ]
@@ -1108,32 +1131,40 @@
                 "turns": [
                   {
                     "speaker": "nabil",
-                    "text": "Why do you look so annoyed, Ploy?"
+                    "text": "Did you see what I did to your phone? I changed the language to Japanese!"
                   },
                   {
                     "speaker": "ploy",
-                    "text": "My little brother keeps hiding my phone to annoy me."
+                    "text": "Very funny. It took me an hour to change it back."
                   },
                   {
                     "speaker": "nabil",
-                    "text": "Why don’t you tell your parents?"
+                    "text": "Are you going to tell our parents?"
                   },
                   {
                     "speaker": "ploy",
-                    "text": "No, I’ll hide his football boots tomorrow. Then we’ll see how he likes it."
+                    "text": "No, I won’t bother them. And I don’t need a new phone, it works fine. But tomorrow you’ll find your laptop screen upside down and everything in Greek."
+                  },
+                  {
+                    "speaker": "nabil",
+                    "text": "You wouldn’t dare."
+                  },
+                  {
+                    "speaker": "ploy",
+                    "text": "Wait and see. I’m a very patient person."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the woman going to do?",
+                "prompt": "What is Ploy going to do?",
                 "options": [
                   "Tell her parents about it",
                   "Buy herself a new phone",
                   "Do the same to him"
                 ],
                 "answer": 2,
-                "explanation": "Ploy plans to hide her brother’s football boots, which is the same trick he played on her."
+                "explanation": "She will not tell her parents and does not need a new phone, but she plans to play a trick on his laptop in return."
               }
             },
             {
@@ -1159,25 +1190,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "abena",
+                    "text": "How are you feeling about the interview, Fintan? You look so confident in that suit."
+                  },
+                  {
                     "speaker": "fintan",
-                    "text": "My job interview is tomorrow, and I feel sick."
+                    "text": "Looks are deceiving. Honestly, my stomach hurts. I’ve practised the answers all week and I still think I’ll forget them."
                   },
                   {
                     "speaker": "abena",
-                    "text": "Practise with me tonight. You’ll be fine."
+                    "text": "You’ll be fine. You know the job well."
+                  },
+                  {
+                    "speaker": "fintan",
+                    "text": "I’m not angry about the job, I left my old one happily. I just can’t stop thinking about tomorrow at ten o’clock. I can’t eat anything."
+                  },
+                  {
+                    "speaker": "abena",
+                    "text": "Try to sleep early tonight. Then it will go well."
+                  },
+                  {
+                    "speaker": "fintan",
+                    "text": "I’ll try."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Fintan feel?",
                 "options": [
                   "Angry about the job",
                   "Nervous about tomorrow",
                   "Confident about the interview"
                 ],
                 "answer": 1,
-                "explanation": "Fintan says he feels sick about the interview, so he is nervous; Abena offers to help him practise."
+                "explanation": "She says he looks confident, but he says his stomach hurts and he cannot stop thinking about tomorrow, so he is nervous."
               }
             },
             {
@@ -1204,28 +1251,40 @@
                 "turns": [
                   {
                     "speaker": "roisin",
-                    "text": "I haven’t spoken to my old school friend since she moved abroad."
+                    "text": "I miss my old friend Kara. She moved to Canada and we haven’t talked for a year."
                   },
                   {
                     "speaker": "nnamdi",
-                    "text": "Have you tried looking for her online?"
+                    "text": "Why don’t you search for her online? Most people have a profile."
                   },
                   {
                     "speaker": "roisin",
-                    "text": "No, but I’ll try tonight."
+                    "text": "I could write her a long letter, but she has probably moved house again."
+                  },
+                  {
+                    "speaker": "nnamdi",
+                    "text": "A letter takes weeks to arrive. And visiting Canada is expensive. Just look her up, then send a short message."
+                  },
+                  {
+                    "speaker": "roisin",
+                    "text": "Good idea. I’ll try tonight."
+                  },
+                  {
+                    "speaker": "nnamdi",
+                    "text": "Tell me what happens."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the man suggest?",
+                "prompt": "What does Nnamdi suggest?",
                 "options": [
                   "Looking for her online",
                   "Writing her a long letter",
                   "Visiting her in her new country"
                 ],
                 "answer": 0,
-                "explanation": "Nnamdi asks whether she has tried looking for her friend online."
+                "explanation": "He thinks a letter takes too long and a visit costs too much; he says she should search for Kara online and send her a message."
               }
             },
             {
@@ -1252,15 +1311,31 @@
                 "turns": [
                   {
                     "speaker": "whitney",
-                    "text": "Could you send me Grandma’s recipe for fruit cake?"
+                    "text": "I want to make Gran’s apple cake for Sunday, but I can’t find the recipe."
                   },
                   {
                     "speaker": "osian",
-                    "text": "She never wrote it down. I only know it because I watched her cook."
+                    "text": "Is it in the old recipe book?"
                   },
                   {
                     "speaker": "whitney",
-                    "text": "Then you’ll have to show me at Christmas."
+                    "text": "The book is here on the shelf, I checked. Gran wasn’t a person who wrote things down. She cooked by feel."
+                  },
+                  {
+                    "speaker": "osian",
+                    "text": "Didn’t Mum say it had too much sugar?"
+                  },
+                  {
+                    "speaker": "whitney",
+                    "text": "Maybe, but that’s not the issue. I’ll ask Aunt Rosa, she watched Gran bake for years."
+                  },
+                  {
+                    "speaker": "osian",
+                    "text": "Good luck."
+                  },
+                  {
+                    "speaker": "whitney",
+                    "text": "Thanks. I’ll write it down this time."
                   }
                 ]
               },
@@ -1273,7 +1348,7 @@
                   "It was never written down."
                 ],
                 "answer": 2,
-                "explanation": "Osian says Grandma never wrote the recipe down."
+                "explanation": "The book is on the shelf and the sugar is not the issue; Gran never wrote the recipe down, she cooked by feel."
               }
             },
             {
@@ -1299,29 +1374,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "bao",
+                    "text": "Your friend Mira is moving to Bristol, isn’t she? You must be happy for her."
+                  },
+                  {
                     "speaker": "elif",
-                    "text": "My best friend is moving to another city next month."
+                    "text": "Of course. The new job is a big step, and visiting her will be fun, I’m sure."
                   },
                   {
                     "speaker": "bao",
-                    "text": "You can still talk every day on video calls."
+                    "text": "Is she going soon?"
                   },
                   {
                     "speaker": "elif",
-                    "text": "I know, but it won’t be the same. I’m going to miss her."
+                    "text": "Next month. Everyone says it’s good for her, but I keep thinking about our Saturday coffees. I’ll miss her so much."
+                  },
+                  {
+                    "speaker": "bao",
+                    "text": "Are you relieved that it’s finally decided?"
+                  },
+                  {
+                    "speaker": "elif",
+                    "text": "Not really. The waiting wasn’t hard. It’s the goodbye that I’m afraid of."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "How does the woman feel about her friend’s move?",
+                "prompt": "How does Elif feel about her friend's move?",
                 "options": [
                   "Excited about visiting her",
                   "Sad that she will miss her",
                   "Relieved that it is happening"
                 ],
                 "answer": 1,
-                "explanation": "Elif says it will not be the same and she is going to miss her friend."
+                "explanation": "She says the job is a good step and visiting will be fun, but she keeps thinking about their Saturday coffees and is afraid of the goodbye, so she is sad."
               }
             },
             {
@@ -1348,24 +1435,40 @@
                 "turns": [
                   {
                     "speaker": "radek",
-                    "text": "Dad told that same joke at dinner again!"
+                    "text": "Dad told his joke about the penguin again at lunch."
                   },
                   {
                     "speaker": "brigid",
-                    "text": "I know. I’ve heard it fifty times, but I still laugh."
+                    "text": "The same one! It’s so old. He has told it for twenty years."
+                  },
+                  {
+                    "speaker": "radek",
+                    "text": "I know all the words. And yet I laughed, it’s still funny."
+                  },
+                  {
+                    "speaker": "brigid",
+                    "text": "Me too. It isn’t new, it isn’t difficult, and it isn’t rude. It’s just his face when he tells it, and he always forgets the end."
+                  },
+                  {
+                    "speaker": "radek",
+                    "text": "We’ll be telling it to our kids."
+                  },
+                  {
+                    "speaker": "brigid",
+                    "text": "And they’ll laugh too."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What do they say about their father’s joke?",
+                "prompt": "What do they say about their father's joke?",
                 "options": [
-                  "It is old but still funny to them",
-                  "It is new and hard to understand fully",
-                  "It is rude and not very funny at all"
+                  "It is old but still funny to them.",
+                  "It is new and hard to understand fully.",
+                  "It is rude and not very funny at all."
                 ],
                 "answer": 0,
-                "explanation": "Brigid has heard it fifty times but still laughs."
+                "explanation": "They know the joke by heart after twenty years, it is not rude or difficult, and they still laugh because of how he tells it."
               }
             }
           ]
@@ -1390,46 +1493,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Good evening, everyone, and welcome. I’m Dustin, the oldest of Gran and Grandad’s eight grandkids, and I have the pleasure of saying a few words tonight. Fifty years ago this June, they got married in a tiny church here in Elmstead. They had first met on a bus. Gran dropped her umbrella, Grandad picked it up, and that was that. Their first home was a small flat above a bakery, where the smell of fresh bread woke them every morning. Grandad worked as a bus driver for thirty years, and Gran taught music at the primary school. People often ask them for the secret of a long marriage. Gran says it is never to go to bed angry. Grandad says it is to laugh every day, usually at his own jokes. So please raise your glasses to fifty golden years."
+                "text": "Good evening, everyone, and welcome. I’m Dustin, the oldest of Gran and Grandad’s eight grandkids, and I have the pleasure of saying a few words tonight. Fifty years ago this month, Gran and Grandad got married. They wanted to marry in May, but the church was full, so the wedding was in June. They had met three years earlier, on a bus. Grandad likes to say it was a train, but Gran says it was a bus, the number twelve, and she is always right. After the wedding, they didn’t have much money. Their first home was a small flat above a bakery. Every morning they woke up to the smell of fresh bread, which Gran says was the best alarm clock in the world. Next door there was a butcher’s, and Grandad still says he preferred the smell of that, but nobody believes him. Now, Grandad’s job. For thirty years he was a driver on those same city routes, and he knew every street and every passenger. People still stop him in the supermarket to say hello. Gran, meanwhile, taught music at the primary school. She wanted to teach art, but the school needed a music teacher, and she learned to love it. Half of this room had a lesson with her! And she can still play the piano better than any of us. People always ask them the secret of their long marriage. Grandad usually says, never eat fish on Fridays. But Gran has a serious answer. She says, never go to bed angry. If you argue, you talk about it before you sleep, even if it takes until three o’clock. So please, everyone, raise your glasses to Gran and Grandad!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Wedding month: ___",
+              "prompt": "They got married fifty years ago, in the month of ___",
               "answer": "June",
-              "explanation": "Dustin says they got married fifty years ago this June."
+              "explanation": "They wanted May but the church was full, so the wedding was in June."
             },
             {
               "id": "l3-2",
               "prompt": "They first met on a ___",
               "answer": "bus",
-              "explanation": "They had first met on a bus when Gran dropped her umbrella."
+              "explanation": "Grandad says it was a train, but Gran says it was a bus, number twelve."
             },
             {
               "id": "l3-3",
-              "prompt": "First home: a small flat above a ___",
+              "prompt": "Their first home was a small flat above a ___",
               "answer": "bakery",
-              "explanation": "Their first home was a small flat above a bakery."
+              "explanation": "The flat was above a bakery; the butcher’s was next door."
             },
             {
               "id": "l3-4",
-              "prompt": "Grandad’s job: bus ___",
+              "prompt": "For thirty years Grandad worked as a bus ___",
               "answer": "driver",
-              "explanation": "Grandad worked as a bus driver for thirty years."
+              "explanation": "He was a driver on the city routes for thirty years."
             },
             {
               "id": "l3-5",
-              "prompt": "Gran taught ___ at the primary school",
+              "prompt": "At the primary school, Gran taught ___",
               "answer": "music",
-              "explanation": "Gran taught music at the primary school."
+              "explanation": "She wanted to teach art but the school needed a music teacher."
             },
             {
               "id": "l3-6",
-              "prompt": "Gran’s secret: never go to bed ___",
+              "prompt": "Gran's secret of a long marriage: never go to bed ___",
               "answer": "angry",
-              "explanation": "Gran says the secret is never to go to bed angry."
+              "explanation": "Grandad’s joke is about fish, but Gran’s real secret is never to go to bed angry."
             }
           ]
         },
@@ -1461,51 +1564,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Fiona, you found your brother after forty years. When did you first learn that he existed?"
+                "text": "Fiona, what did you learn when you were thirty-one?"
               },
               {
                 "speaker": "fiona",
-                "text": "When I was thirty-one. My mother told me that she had a baby boy before she met my father, and that he had been adopted by another family. She had never told anyone."
+                "text": "My mother wasn’t ill, that’s what I first feared, when she asked me to sit down. And my father didn’t have another family. It was my mother’s secret. She told me that years before I was born she had a baby boy, and she had to give him up for adoption. For thirty years I thought I was her only child."
               },
               {
                 "speaker": "interviewer",
-                "text": "How did you start looking for him?"
+                "text": "How did you start your search?"
               },
               {
                 "speaker": "fiona",
-                "text": "I went through the box of my mother’s old letters, hoping to find a name. I found a letter from the adoption office, but it only gave a first name and a date."
+                "text": "I didn’t ask relatives, because my mother wanted it kept private. And the adoption office came later, as I needed his name first. I found a box in the attic with letters that my mother had written in that period, but never sent. They had the hospital, the date and a first name for the baby. That’s where I started."
               },
               {
                 "speaker": "interviewer",
-                "text": "Was it difficult?"
+                "text": "Why was the search so difficult?"
               },
               {
                 "speaker": "fiona",
-                "text": "Very. The records from that time were incomplete, and several offices said they could not help. I nearly gave up after two years."
+                "text": "My mother helped as much as she could. She just didn’t remember much. Money wasn’t a big problem either, the search was free in many places. The real problem was the records. In those years hospitals didn’t write everything down, and papers were lost. Half the pages were missing, and the other half had mistakes."
               },
               {
                 "speaker": "interviewer",
-                "text": "So how did you finally find him?"
+                "text": "How did you finally find him?"
               },
               {
                 "speaker": "fiona",
-                "text": "A cousin of mine put my details on a family-history website. A man in another country saw them and wrote to say that his birth date matched. We did a DNA test to be sure."
+                "text": "A friend from school offered to ask around, which was kind, but nobody knew. I wrote to a television programme, but they said no. In the end I posted all the details, the date, the hospital and the name, on a website for adopted people. Three months later I got a message from a man: I think I’m your brother."
               },
               {
                 "speaker": "interviewer",
-                "text": "How did you feel when you spoke for the first time?"
+                "text": "How did you feel the first time you spoke?"
               },
               {
                 "speaker": "fiona",
-                "text": "I thought I would cry, but I was calm. We just talked for hours. It felt as if we had known each other all our lives."
+                "text": "I’d been scared for weeks, and I wrote notes on my hand in case I couldn’t speak. I thought I would cry and not say a word. But when he said hello, his voice was so friendly that I felt calmer than I expected. We talked for three hours. He didn’t feel like a stranger at all."
               },
               {
                 "speaker": "interviewer",
-                "text": "And how are things between you now?"
+                "text": "How are things between you now?"
               },
               {
                 "speaker": "fiona",
-                "text": "We speak every week, and we meet up twice a year. Next summer he is coming to stay with us for the first time."
+                "text": "We live four hundred kilometres apart, so we’re not in the same town, and we see each other only twice a year. But we speak on the phone every Sunday, sometimes for an hour. He’s met my children, and he’s like an uncle to them. Next summer, we plan to travel together to the village where he grew up, and I can’t wait."
               }
             ]
           },
@@ -1519,7 +1622,7 @@
                 "Her mother had been seriously ill for years."
               ],
               "answer": 0,
-              "explanation": "Her mother told her about a baby boy who had been adopted by another family."
+              "explanation": "She was afraid her mother was ill but she was not, and her father had no other family; the secret was a baby boy given up for adoption."
             },
             {
               "id": "l4-2",
@@ -1530,18 +1633,18 @@
                 "By reading her mother’s old letters at home"
               ],
               "answer": 2,
-              "explanation": "She went through her mother’s box of old letters, hoping to find a name."
+              "explanation": "She did not ask relatives and went to the adoption office later; she began with her mother’s old letters in the attic."
             },
             {
               "id": "l4-3",
-              "prompt": "What made the search difficult?",
+              "prompt": "Why was the search so difficult?",
               "options": [
                 "Her mother refused to give her any more details.",
                 "The records from that time were not complete.",
                 "She did not have enough money to keep going."
               ],
               "answer": 1,
-              "explanation": "The records were incomplete and several offices could not help."
+              "explanation": "Her mother helped and money was not a big problem; hospitals did not write everything down and pages were missing."
             },
             {
               "id": "l4-4",
@@ -1552,7 +1655,7 @@
                 "Through details that were put on a website"
               ],
               "answer": 2,
-              "explanation": "A cousin put her details on a family-history website, where her brother saw them."
+              "explanation": "A school friend and a television programme did not help; she posted the details on a website for adopted people."
             },
             {
               "id": "l4-5",
@@ -1563,7 +1666,7 @@
                 "Disappointed that he was a stranger"
               ],
               "answer": 1,
-              "explanation": "She thought she would cry but was calm, and they talked for hours."
+              "explanation": "She was scared and expected to say nothing, but his friendly voice helped her relax and he did not feel like a stranger."
             },
             {
               "id": "l4-6",
@@ -1574,7 +1677,7 @@
                 "They see each other in person every month."
               ],
               "answer": 0,
-              "explanation": "They speak every week and meet up twice a year."
+              "explanation": "They live far apart and meet only twice a year, but they speak on the phone every Sunday."
             }
           ]
         }

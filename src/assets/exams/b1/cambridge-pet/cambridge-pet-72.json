@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "Why was Grandma upset?",
               "options": [
-                "A cake she had made was gone",
+                "Her guests arrived too early",
                 "The children broke a plate",
+                "A cake she had made was gone",
                 "The party was cancelled"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "A big cake disappeared, and she had baked it for a party."
             },
             {
               "id": "r3-2",
               "prompt": "What did the children find on the floor?",
               "options": [
-                "A torn piece of paper",
                 "Brown footprints",
-                "A broken cup"
+                "A torn piece of paper",
+                "A broken cup",
+                "Some cake crumbs"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "There were small brown footprints."
             },
             {
@@ -272,21 +274,23 @@
               "prompt": "Where did the footprints lead?",
               "options": [
                 "To the front gate",
+                "To the kitchen window",
                 "To the neighbour's house",
                 "To a tree in the garden"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "They stopped under a big tree."
             },
             {
               "id": "r3-4",
               "prompt": "Who had taken the cake?",
               "options": [
-                "The neighbour's dog",
                 "Tom's older brother",
-                "A visitor from the village"
+                "The neighbour's dog",
+                "A visitor from the village",
+                "Tom himself"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Max, the neighbour's dog, was asleep with chocolate on his nose."
             },
             {
@@ -295,7 +299,8 @@
               "options": [
                 "A new notebook",
                 "A toy police car",
-                "A magnifying glass"
+                "A magnifying glass",
+                "A detective hat"
               ],
               "answer": 2,
               "explanation": "He has asked for a magnifying glass."
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "The queen of crime",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Agatha Christie is one of the most famous writers in the world. [1] Her books have been sold more than two billion times, and only the Bible and Shakespeare have sold more.\n\nShe was born in 1890 in the south of England. As a child, she did not go to school. [2] She learned to read when she was only five, and from then on she spent hours with books.\n\nDuring the First World War, she worked in a hospital. [3] This knowledge later helped her to write about poisons in her stories.\n\nHer first detective book appeared in 1920. [4] It introduced Hercule Poirot, a little Belgian detective with a famous moustache.\n\nShe wrote over eighty books in her life. [5] People still enjoy trying to guess who the criminal is before the end.",
           "sentences": [
-            "Her mother taught her at home, in a house full of books.",
-            "It was soon followed by many more cases for him to solve.",
+            "He was her favourite character, and she became tired of him.",
+            "At the age of ten, she moved to a school in Paris.",
             "There, she learned a great deal about medicines.",
+            "No other writer of detective stories has been as successful as she has.",
             "Some of them have been made into films and television series.",
-            "She was already well known when she was still quite young.",
-            "No other writer of detective stories has been as successful as she has."
+            "It was soon followed by many more cases for him to solve.",
+            "Her mother taught her at home, in a house full of books.",
+            "She was already well known when she was still quite young."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "F",
+              "answer": "D",
               "explanation": "No other writer has been as successful; the next sentence gives sales."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "G",
               "explanation": "Her mother taught her at home, which explains why she did not go to school."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "F",
               "explanation": "It was followed by many more cases for Poirot, introduced in the sentence before."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "E",
               "explanation": "Some of them were made into films, and the next sentence says people still enjoy them."
             }
           ]
@@ -730,25 +737,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "You found the spare key, Gus? I thought it was lost for good."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Where did you find the missing key?"
+                    "text": "I looked in my coat pocket first, because that’s where I always put things, but there was only an old ticket. Then I was about to call the locksmith."
                   },
                   {
                     "speaker": "f",
-                    "text": "Under the sofa. The dog must have pushed it there."
+                    "text": "And what happened?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I went to move the cushions, because I dropped my phone there yesterday. When I pushed the sofa, I saw something shining on the floor. It had been there all the time, next to a pen."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "My guess was behind the door, where you keep the hooks."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I checked there as well, twice. Never mind. It’s solved."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "Where was the key?",
+                "prompt": "Where was the spare key?",
                 "options": [
                   "In a coat pocket",
                   "Under the sofa",
                   "Behind the door"
                 ],
                 "answer": 1,
-                "explanation": "She says that she found it under the sofa."
+                "explanation": "The coat pocket only had a ticket and he checked the door twice, but he saw the key shining on the floor when he moved the sofa."
               }
             },
             {
@@ -762,24 +785,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Gideon",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What time did the robbery happen?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "About two in the morning, according to the police. Nobody heard anything."
+                    "text": "Police are asking for help after a robbery at Baker’s jewellery shop on Mill Street. The owner locked up himself at ten in the evening, and nothing was wrong then. Some neighbours remember a noise at about two in the afternoon of the day before, but that was only a delivery van, so it is not connected. We know that the alarm rang at two o’clock this morning, when the street was empty, and the thieves left in a few minutes. If you were in the area, or if you have a camera on your house, please contact Millbrook police station. Every detail may help us, however small."
                   }
                 ]
               },
@@ -792,7 +803,7 @@
                   "About ten in the evening"
                 ],
                 "answer": 0,
-                "explanation": "He says that it happened about two in the morning."
+                "explanation": "The shop was locked at ten and the afternoon noise was a delivery van; the alarm rang at two o’clock this morning."
               }
             },
             {
@@ -819,11 +830,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you enjoy the detective film last night?"
+                    "text": "How was the new detective film, Gwen? Was it as scary as the posters said?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, but I guessed the ending halfway through, so it was a bit easy."
+                    "text": "The posters promised a lot. It was supposed to be frightening, but I didn’t jump once. It was long, three hours, but I didn’t look at my watch."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So did you enjoy it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not very much. After half an hour I knew who did it. The clues were so obvious, the man with the scar, the strange letter. I could guess the end, so there was no surprise."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My brother said the same."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Next time I’ll choose a comedy."
                   }
                 ]
               },
@@ -831,12 +858,12 @@
                 "id": "l1-3q",
                 "prompt": "What did the woman think of the film?",
                 "options": [
-                  "It was too easy to guess",
+                  "It was very frightening",
                   "It was far too long",
-                  "It was very frightening"
+                  "It was too easy to guess"
                 ],
-                "answer": 0,
-                "explanation": "She says that she guessed the ending halfway through."
+                "answer": 2,
+                "explanation": "It was not scary and the length did not bother her, but she knew who did it after half an hour and could guess the end."
               }
             },
             {
@@ -863,11 +890,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why were you late for school?"
+                    "text": "Gray, your bike! Where was it? I thought somebody stole it."
                   },
                   {
                     "speaker": "m",
-                    "text": "Someone had taken my bike, so I had to walk. Then I found it behind the shop."
+                    "text": "So did I. On Monday I walked round the school, because a girl said that she had seen one like mine, but it was a different make."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And your garden? You often leave it by the fence."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I looked there a hundred times. Then yesterday I went to buy milk, and there it was, behind the shop, near the bins. Somebody had just left it there."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s lucky!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I know. It only needed some air in the tyres."
                   }
                 ]
               },
@@ -880,21 +923,13 @@
                   "In his garden"
                 ],
                 "answer": 1,
-                "explanation": "He says that he found it behind the shop."
+                "explanation": "The school bike was a different make and he looked in the garden many times; he found it near the bins behind the shop."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Gus",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Gemma",
@@ -906,12 +941,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Do you know who borrowed my notebook?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I think that Gilda did. I saw her with a blue notebook this morning."
+                    "text": "Hi Gus, it’s Gemma. I’m phoning about your notebook, the red one with the maths notes. You asked me whether I had it, and I haven’t, I’m afraid. I thought about borrowing it on Tuesday, but I decided not to, because I have my own notes. Gilda wanted it too, and I think she is going to ask next week for her project, but she hasn’t done it yet. The person who has it is Gabe. He took it on Wednesday, for the exam. I’m sure that he will give it back on Friday, because I see him every day. Call me if you need anything else."
                   }
                 ]
               },
@@ -923,8 +954,8 @@
                   "Gemma",
                   "Gilda"
                 ],
-                "answer": 2,
-                "explanation": "She says that she thinks Gilda did."
+                "answer": 0,
+                "explanation": "Gemma did not borrow it and Gilda has not asked yet; Gabe took it on Wednesday for the exam."
               }
             },
             {
@@ -951,11 +982,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How did you learn so much about crime?"
+                    "text": "You tell great mystery stories, Gideon. Where did you get the one about the missing ship?"
                   },
                   {
                     "speaker": "m",
-                    "text": "My uncle is a police officer. He tells me stories about his cases at dinner."
+                    "text": "Not from my uncle, though he talks all day. He mostly tells jokes, and I think he makes up half of them. And my teacher only gives us books to read."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Who then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Mrs Hartley. She has been our neighbour for fifty years, and she’s ninety-one. I take her some biscuits every Sunday, and she tells me about the town in the war. She remembers everything."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That sounds lovely."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It is. I always go home with a new story."
                   }
                 ]
               },
@@ -967,8 +1014,8 @@
                   "His teacher",
                   "His neighbour"
                 ],
-                "answer": 0,
-                "explanation": "He says that his uncle tells him stories."
+                "answer": 2,
+                "explanation": "The uncle tells jokes and the teacher gives books; Mrs Hartley, who lives next door, tells him stories on Sundays."
               }
             },
             {
@@ -995,11 +1042,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Are you coming to the mystery party on Saturday?"
+                    "text": "Are you coming to Leo’s party on Saturday, Gaby?"
                   },
                   {
                     "speaker": "f",
-                    "text": "I would love to, but I have a dentist appointment in the morning."
+                    "text": "I want to, but I’m not sure. I had a cold last week and felt quite ill, but I’m much better now, so that’s not a problem. And I’m not going away until the holidays, in August."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I have to see the dentist at five, and it was the only appointment they had. If it finishes early I’ll come, but it may take a long time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Come anyway, even if you’re late."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "OK. I’ll text you when I leave."
                   }
                 ]
               },
@@ -1012,7 +1075,7 @@
                   "She is going away"
                 ],
                 "answer": 1,
-                "explanation": "She says that she has a dentist appointment."
+                "explanation": "She is better after her cold and does not travel until August; the dentist at five is the only time they had."
               }
             }
           ]
@@ -1048,24 +1111,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good evening, ladies and gentlemen. Welcome to the murder mystery dinner."
+                    "text": "Well, what did you think of the mystery dinner, Gray?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Thank you. Which character will I be tonight?"
+                    "text": "Ninety pounds is a lot, I must say, but the food was lovely, so I didn’t mind."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The price? My aunt paid, so I can’t complain. But the actors weren’t great. One forgot his words."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Did he? I didn’t notice. I thought they were funny. But did you see how it started? Nobody tells you who the victim is until the soup. That idea is completely new to me. I’ve never been to anything like it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Exactly. I’d go again just for that. A dinner where everybody solves a crime together, brilliant."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "What do Gina and Gray agree about the mystery dinner?",
                 "options": [
-                  "In a school hall",
-                  "At a police station",
-                  "At a mystery dinner"
+                  "It was too expensive",
+                  "The actors were poor",
+                  "The idea was new"
                 ],
                 "answer": 2,
-                "explanation": "She welcomes guests to the murder mystery dinner."
+                "explanation": "He thinks it is expensive and she thinks the actors were poor, but both say that the idea was different from anything else they know."
               }
             },
             {
@@ -1092,24 +1167,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I think the gardener is the criminal. He had dirty shoes."
+                    "text": "It was the gardener, Gwen. I’m sure. His shoes were muddy and he was near the study."
                   },
                   {
                     "speaker": "f",
-                    "text": "That is not enough evidence. Everyone has dirty shoes in the country."
+                    "text": "Maybe, but the garden is full of mud after the rain. Everybody’s shoes are muddy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He said he was in the kitchen, and the cook says that he wasn’t."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She also told us she heard nothing, so she isn’t very reliable. I’d wait. You have a story, not proof."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what do I do, call the police?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not yet. You would look silly. Find something more first."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does the woman think about the man's idea?",
                 "options": [
-                  "Saying he has found enough evidence",
-                  "Saying there is not enough evidence",
-                  "Asking him for some more shoes"
+                  "He needs more proof",
+                  "He has solved the case",
+                  "He should call the police"
                 ],
-                "answer": 1,
-                "explanation": "She says that it is not enough evidence."
+                "answer": 0,
+                "explanation": "She says the mud and the cook are not reliable, that he has a story and not proof, and tells him to find something more first."
               }
             },
             {
@@ -1136,24 +1227,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I solved the puzzle in under five minutes!"
+                    "text": "Still on the crossword, Gideon? You’ve been at it since lunch."
                   },
                   {
                     "speaker": "m",
-                    "text": "Well done! I have been trying for an hour and still cannot do it."
+                    "text": "I know. I have four clues left and my head hurts."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do you want a hint? I did one like this last week."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, don’t tell me! I’m not angry, honestly. It’s actually the best part. If you give me the answer, there’s no fun."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought you’d be furious by now."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I might be in an hour. But I’ll keep trying. Give me twenty minutes and a coffee."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does the man feel about the crossword?",
                 "options": [
-                  "Unable to solve the puzzle yet",
-                  "Sure that he will soon win",
-                  "Annoyed with the woman today"
+                  "Angry that it is so hard",
+                  "Eager to keep trying",
+                  "Ready to ask for help"
                 ],
-                "answer": 0,
-                "explanation": "He has tried for an hour and still cannot do the puzzle."
+                "answer": 1,
+                "explanation": "He refuses a hint, says it is the best part and asks for twenty more minutes, so he wants to keep trying."
               }
             },
             {
@@ -1180,24 +1287,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, I think someone has taken my umbrella."
+                    "text": "I can’t find my wallet. Everything was in it, even my bus pass."
                   },
                   {
                     "speaker": "f",
-                    "text": "Have you checked the stand by the door? Many people leave them there."
+                    "text": "Where did you last have it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "In the café, I think. I’ll buy a new one. I need one anyway."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "But your cards and your bus pass! Cancelling them takes ages. Don’t spend any money yet."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Should I call the police then?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s too early for that. They would ask if you’d looked everywhere. Walk back the way you came, from the café to the station, step by step, and ask in the shops. I’d bet it’s on a bench."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the woman suggest?",
+                "prompt": "What does the woman suggest to the man?",
                 "options": [
-                  "Buying a new one",
+                  "Buying a new wallet",
                   "Calling the police",
-                  "Looking by the door"
+                  "Going back over his steps"
                 ],
                 "answer": 2,
-                "explanation": "She suggests checking the stand by the door."
+                "explanation": "She says not to spend money and that it is too early for the police; she tells him to walk back the way he came and ask in the shops."
               }
             },
             {
@@ -1224,24 +1347,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "The police have found a new clue in the garden."
+                    "text": "Gray, look! There’s a note inside this book. \"Meet me under the clock at nine.\" What do you think?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Really? Let us go there and have a look before it rains."
+                    "text": "We should take it to the police. It could be a crime."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s probably just a joke. And the police station is closed on Sundays anyway."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then should we wait until tomorrow? It might be too late."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let’s ask the librarian first. She knows who borrowed this book last, and she is here until six."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. That’s faster than anything else."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What will they do next?",
+                "prompt": "What do the friends decide to do about the note?",
                 "options": [
-                  "Look at the clue",
-                  "Phone the police",
+                  "Ask the librarian",
+                  "Take it to the police",
                   "Wait until tomorrow"
                 ],
                 "answer": 0,
-                "explanation": "He suggests going to the garden to look at the clue."
+                "explanation": "The police station is closed and waiting may be too late, so they go to the librarian, who knows who had the book."
               }
             },
             {
@@ -1267,25 +1406,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Gus, you look terrible. Did you break something? I heard glass this morning. Was it the kitchen window?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I have lost my phone, and I have a very important message to send."
+                    "text": "No, that was the cat. She knocked a glass off the table. It’s not that."
                   },
                   {
                     "speaker": "f",
-                    "text": "Use mine. Then we can search the classroom for yours."
+                    "text": "Is it your phone? You lost it last month."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s here in my pocket. The problem is Dad’s message. He told me to be at the station at four, and I only read it at six. He waited for two hours in the cold."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no. Is he angry?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He says he isn’t, but I feel awful."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "What is the boy most upset about?",
                 "options": [
-                  "He broke a window",
-                  "He missed a message",
-                  "He has lost his phone"
+                  "Breaking a window",
+                  "Missing a message",
+                  "Losing his phone"
                 ],
-                "answer": 2,
-                "explanation": "He says that he has lost his phone."
+                "answer": 1,
+                "explanation": "The glass was broken by the cat and the phone is in his pocket; he is upset because he read his father’s message two hours late."
               }
             }
           ]
@@ -1310,60 +1465,59 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Good afternoon, everybody. Today I would like to talk to you about Sherlock Holmes, the most famous detective in fiction. He was invented by a Scottish writer, Arthur Conan Doyle, who was also a doctor. The first story appeared in 1887, and Holmes became so popular that readers sent him letters, as if he were real. Holmes lived at 221B Baker Street in London, with his friend Doctor Watson. He played the violin, smoked a pipe and wore a hat that covered his ears. He did not use guns often. Instead, he used his brain, and he noticed tiny details that other people missed. Doyle wrote fifty-six short stories and four novels about him. Once, he got tired of the character and killed him in a story, but readers were so angry that he had to bring him back. If you would like to see where the stories take place, there is a museum at the address, and it is open every day from nine thirty."
+                "text": "Good afternoon, everybody. Today I’d like to talk about the most famous detective in fiction, Sherlock Holmes, and about the writer who invented him, Arthur Conan Doyle. Many people think that Doyle was English, because the stories happen in London, and he lived in the south of England for years. But in fact he was born in Edinburgh, so he was a Scottish writer. He was also a doctor, and he started to write while he waited for patients who never came. The first Holmes story appeared in eighteen eighty-seven. Some people believe it was in eighteen ninety-one, but that is when the stories became really popular in a magazine. Now, a few facts about the detective. Holmes lives at 221B Baker Street, and he shares the flat with his friend, Doctor Watson. There is another doctor in one of the stories, Doctor Mortimer, but he only visits once. Watson tells most of the stories, and he is the one who writes everything down. Holmes is very clever, but he has some strange habits. He doesn’t play football, and he doesn’t play the piano, as some films show. When he is thinking, he plays the violin, often at night, which makes Watson rather angry. Doyle wrote four long novels about Holmes and also fifty-six short stories. Together that makes sixty adventures, and readers still enjoy them today. Finally, if you would like to learn more, there is a museum in Baker Street. It is open every day. On Sundays it used to open at ten, but now every day it opens at half past nine, and it closes at six. The tickets are cheaper online, so please look at the website. Thank you for listening."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Sherlock Holmes was invented by a ___ writer",
+              "prompt": "The creator of Holmes was a ___ author",
               "answer": "Scottish",
-              "accepted": [],
-              "explanation": "He was invented by a Scottish writer."
+              "explanation": "Doyle lived in England and the stories are in London, but he was born in Edinburgh, so he was Scottish.",
+              "accepted": []
             },
             {
               "id": "l3-2",
-              "prompt": "The first story appeared in ___",
+              "prompt": "The first Holmes story was published in ___",
               "answer": "1887",
+              "explanation": "The first story appeared in eighteen eighty-seven; eighteen ninety-one is when they became popular.",
               "accepted": [
                 "eighteen eighty-seven"
-              ],
-              "explanation": "The first story appeared in 1887."
+              ]
             },
             {
               "id": "l3-3",
-              "prompt": "Holmes lived with Doctor ___",
+              "prompt": "Holmes shares his flat with Doctor ___",
               "answer": "Watson",
-              "accepted": [],
-              "explanation": "He lived with his friend Doctor Watson."
+              "explanation": "He lives with Doctor Watson; Doctor Mortimer only visits once.",
+              "accepted": []
             },
             {
               "id": "l3-4",
-              "prompt": "Holmes played the ___",
+              "prompt": "When Holmes thinks, he plays the ___",
               "answer": "violin",
-              "accepted": [],
-              "explanation": "He played the violin."
+              "explanation": "He does not play the piano; when he thinks he plays the violin."
             },
             {
               "id": "l3-5",
-              "prompt": "Doyle wrote ___ short stories",
+              "prompt": "Doyle wrote ___ short stories about Holmes",
               "answer": "fifty-six",
+              "explanation": "He wrote four novels and fifty-six short stories.",
               "accepted": [
                 "56"
-              ],
-              "explanation": "Doyle wrote fifty-six short stories."
+              ]
             },
             {
               "id": "l3-6",
-              "prompt": "The museum opens every day at ___",
+              "prompt": "Every day the museum opens at ___",
               "answer": "nine thirty",
+              "explanation": "It used to open at ten on Sundays, but now it opens at half past nine every day.",
               "accepted": [
                 "9.30",
                 "9:30",
                 "half past nine"
-              ],
-              "explanation": "It is open every day from nine thirty."
+              ]
             }
           ]
         },
@@ -1395,35 +1549,35 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Gideon, you have been a detective for fifteen years. Is the job like it is on television?"
+                "text": "Gideon, is real police work like television?"
               },
               {
                 "speaker": "h",
-                "text": "Not at all. On television, cases are solved in one hour. In real life, they can take months, and most of the work is reading and talking."
+                "text": "Not really, I’m afraid. On television, a detective solves everything in one hour, and there is always a chase. Sometimes there is danger, and I have had a few bad evenings, but it’s rare. And most days aren’t exciting at all. I read papers and make phone calls. A real case can take months, and some take years before we find the answer."
               },
               {
                 "speaker": "i",
-                "text": "What skills do you need?"
+                "text": "What does a good detective need?"
               },
               {
                 "speaker": "h",
-                "text": "Patience and a good memory. You also have to listen carefully, because small details in people's stories often show the truth."
+                "text": "People imagine that you must be strong and quick, and it helps to be fit, but I have caught more thieves with my head than with my legs. I use a computer every day, like everybody, though the young officers are better than me. What really matters is being patient and remembering details, a name, a face, something that somebody said three weeks ago."
               },
               {
                 "speaker": "i",
-                "text": "What is the hardest part?"
+                "text": "Is there a part of the job that you don’t like?"
               },
               {
                 "speaker": "h",
-                "text": "Speaking to the families of people who have been hurt. You must be calm and kind, even when it is very sad."
+                "text": "The reports are boring, but I write them and forget them. And I don’t mind working at night, because after twenty years I am used to it. The hardest part is talking to the families after a crime. You can’t make anything better, and you see how much they suffer. Even now, I find it difficult to choose the right words."
               },
               {
                 "speaker": "i",
-                "text": "Do you ever take your work home?"
+                "text": "What does your wife say about your work?"
               },
               {
                 "speaker": "h",
-                "text": "Sometimes. I cannot stop thinking about a case. My wife says I talk about it in my sleep!"
+                "text": "She jokes a lot. She says I am always at the office, but that isn’t true, because I work normal hours now. What she tells everybody is that I talk in my sleep, saying names and places. Last month I woke up and shouted, \"It was the brother!\" She laughed for an hour."
               },
               {
                 "speaker": "i",
@@ -1431,15 +1585,15 @@
               },
               {
                 "speaker": "h",
-                "text": "The moment when all the pieces finally fit together. That feeling is worth all the long hours."
+                "text": "Medals? We get them sometimes, but mine are in a drawer. I don’t want to see my name in the newspapers either, and my boss prefers it when we keep quiet. What I love is the moment when the pieces fit. For weeks you have a hundred little facts that mean nothing, then one phone call, and suddenly everything is clear."
               },
               {
                 "speaker": "i",
-                "text": "What do you do to relax?"
+                "text": "How do you relax after a hard week?"
               },
               {
                 "speaker": "h",
-                "text": "I do crossword puzzles and I walk in the hills with my dog. It clears my head."
+                "text": "Some colleagues play football on Fridays, and I joined them once, but I hurt my knee. I thought reading crime books would be nice, but after work it feels like more of the same. So I walk along the river near my house. An hour there, without my phone, and I forget the whole thing."
               }
             ]
           },
@@ -1453,62 +1607,62 @@
                 "It is more exciting"
               ],
               "answer": 1,
-              "explanation": "In real life, cases can take months."
+              "explanation": "Danger is rare and most days are not exciting; a real case can take months or years."
             },
             {
               "id": "l4-2",
-              "prompt": "What skills does a detective need?",
+              "prompt": "What does a detective need most?",
               "options": [
-                "Great strength and speed",
                 "Patience and a good memory",
-                "Skill with a computer"
+                "Strength and speed",
+                "Computer skills"
               ],
-              "answer": 1,
-              "explanation": "Patience and a good memory."
+              "answer": 0,
+              "explanation": "Being fit helps and he uses a computer, but what matters is being patient and remembering details."
             },
             {
               "id": "l4-3",
-              "prompt": "What is the hardest part of the job?",
+              "prompt": "What does Gideon find hardest about his job?",
               "options": [
-                "Speaking to the families",
                 "Working at night",
-                "Writing the reports"
+                "Writing reports",
+                "Talking to families"
               ],
-              "answer": 0,
-              "explanation": "Speaking to the families of people who have been hurt."
+              "answer": 2,
+              "explanation": "He is used to night work and forgets the reports; he finds it hard to choose words for the families."
             },
             {
               "id": "l4-4",
-              "prompt": "What does his wife say?",
+              "prompt": "What does his wife say about him?",
               "options": [
-                "He never comes home",
                 "He works too many hours",
-                "He talks about cases in his sleep"
+                "He talks in his sleep",
+                "He never comes home"
               ],
-              "answer": 2,
-              "explanation": "She says he talks about cases in his sleep."
+              "answer": 1,
+              "explanation": "He works normal hours now and he comes home; she tells everybody that he talks in his sleep."
             },
             {
               "id": "l4-5",
-              "prompt": "What does he enjoy most?",
+              "prompt": "What does Gideon enjoy most?",
               "options": [
-                "Getting medals from the police",
-                "When the pieces fit together",
-                "Appearing in the newspapers"
+                "When the facts fit together",
+                "Getting medals",
+                "Appearing in the papers"
               ],
-              "answer": 1,
-              "explanation": "The moment when all the pieces finally fit together."
+              "answer": 0,
+              "explanation": "His medals are in a drawer and he does not want to see his name in the newspapers; he loves the moment when the pieces fit."
             },
             {
               "id": "l4-6",
-              "prompt": "How does he relax?",
+              "prompt": "How does Gideon relax?",
               "options": [
-                "By doing puzzles and walking",
-                "By playing sport with friends",
-                "By reading detective stories"
+                "By playing football",
+                "By reading crime books",
+                "By walking by the river"
               ],
-              "answer": 0,
-              "explanation": "He does crossword puzzles and walks in the hills."
+              "answer": 2,
+              "explanation": "Football hurt his knee and crime books feel like more of the same; he walks along the river without his phone."
             }
           ]
         }

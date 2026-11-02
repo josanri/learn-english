@@ -250,10 +250,11 @@
               "prompt": "What does the writer say about her school?",
               "options": [
                 "It is closed during the winter months",
+                "It has only twelve pupils in total",
                 "It is in the same building as the church",
-                "It has only twelve pupils in total"
+                "It has two hundred pupils in total"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "Our school has just twelve pupils."
             },
             {
@@ -262,6 +263,7 @@
               "options": [
                 "The ferry could not sail for nine days",
                 "The shop was closed for a week",
+                "A big storm broke the pier",
                 "The island lost its power for a day"
               ],
               "answer": 0,
@@ -273,20 +275,22 @@
               "options": [
                 "She helps her cousin with homework",
                 "She works in the island shop",
+                "She sails with her friends",
                 "She looks for crabs and shells"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She goes to the beach with friends to look for crabs and shells."
             },
             {
               "id": "r3-4",
               "prompt": "What does she miss about the mainland?",
               "options": [
-                "A cinema close to home",
+                "A football pitch near the church",
                 "A bigger school to attend",
+                "A cinema close to home",
                 "A shop with more bread"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "There is no cinema on the island."
             },
             {
@@ -295,7 +299,8 @@
               "options": [
                 "She will leave and never return",
                 "She will return to her home one day",
-                "She will start a business on the island"
+                "She will start a business on the island",
+                "She will become a ferry captain"
               ],
               "answer": 1,
               "explanation": "She says she will always come back, because this is her home."
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A holiday on a tiny island",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Coral Cay is a tiny island in the Caribbean. It is only two kilometres long, and you can walk all the way round it in about an hour. [1] There are no big hotels, no cars and no traffic lights.\n\nMost visitors arrive on the little boat from the larger island. [2] The journey takes thirty minutes, and passengers often see dolphins on the way.\n\nThere are only five places to sleep on the island. [3] Most of them have a view of the sea from every window, and the owners cook breakfast for each guest.\n\nDuring the day, visitors swim, rest in the shade or take a small boat to a nearby reef. [4] The water is so clear that you can see the fish from the beach.\n\nIn the evening, everyone eats together on the sand. [5] Many people say that it is the most relaxing holiday they have ever had.",
           "sentences": [
-            "All of them are small family houses near the beach.",
-            "It leaves every morning at nine and returns at five.",
             "Even in the hottest weather, there is a nice cool breeze.",
-            "There are many shops in the centre of the capital.",
+            "All of them are small family houses near the beach.",
+            "Visitors can rent a bicycle on the larger island.",
             "Afterwards, they sit and watch the stars come out.",
-            "This makes it one of the quietest places that you can find."
+            "This makes it one of the quietest places that you can find.",
+            "The ferry from the mainland takes three hours.",
+            "It leaves every morning at nine and returns at five.",
+            "There are many shops in the centre of the capital."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "F",
+              "answer": "E",
               "explanation": "The island is tiny, so it is one of the quietest places, and the next sentence lists what it does not have."
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "G",
               "explanation": "The boat leaving at nine matches \"the little boat\", and the journey then takes thirty minutes."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "B",
               "explanation": "The five places to sleep are small family houses, which explains the owners and the sea views."
             },
             {
               "id": "r4-4",
-              "answer": "C",
+              "answer": "A",
               "explanation": "The breeze after swimming and resting in the shade connects to the clear water in the next sentence."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "D",
               "explanation": "Watching the stars after eating together leads to the comment on a relaxing holiday."
             }
           ]
@@ -719,24 +726,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Allegra",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Does the ferry go at eight or at nine?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "It leaves at nine on Sundays, so we have an extra hour in bed."
+                    "text": "Good morning, passengers. A short reminder about the ferry timetable for the island. During the week, the first ferry leaves at eight, and that is the one that most workers take. On Sundays, it is different. The ferry does not go at eight, because the crew has a day off, and the service is slower. It leaves at nine, and not at ten, as some people think, because ten is the time for the boat to the next island. I know that the timetable at the harbour office still shows the old time, so please ignore it and be at the quay early."
                   }
                 ]
               },
@@ -749,7 +744,7 @@
                   "At ten o'clock"
                 ],
                 "answer": 1,
-                "explanation": "The ferry leaves at nine on Sundays."
+                "explanation": "Eight is the weekday ferry and ten is the boat to another island; on Sundays the ferry leaves at nine."
               }
             },
             {
@@ -776,11 +771,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Where shall we have lunch today?"
+                    "text": "Alfonso, have you tried the café at the harbour? Everybody says that it’s the place to go."
                   },
                   {
                     "speaker": "m",
-                    "text": "The café at the harbour makes the best fish soup on the island."
+                    "text": "I went on Friday. The chairs were hard, and you sit outside in the wind, so that wasn’t comfortable. And it isn’t cheap, either, it cost me more than my hotel breakfast."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then why is it so popular?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Because of the soup. They make it every morning from the fish that the boats bring in, with potatoes and a bit of cream. It’s thick, and it tastes of the sea. I had two bowls."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Now I’m hungry. Shall we go?"
                   }
                 ]
               },
@@ -793,21 +800,13 @@
                   "Its chairs are very soft and big"
                 ],
                 "answer": 0,
-                "explanation": "He says it makes the best fish soup."
+                "explanation": "He says the chairs are hard and the café is not cheap, but the soup made from the morning catch is what makes it special."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Aleksander",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Alessia",
@@ -819,12 +818,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Did you see the dolphins from the boat?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Yes, three of them, jumping right next to us!"
+                    "text": "Hello, Aleksander, it’s Alessia. I’m on the boat, and I had to tell you about the dolphins. The captain said that the week before he saw five, jumping all around the boat, so I was hoping for a big group. In the first hour I only saw two, far away near the rocks, and I took a blurry photo. I was disappointed, but then, near the end of the trip, a group came right up to the side. I counted them carefully, and there were three. It was a magical moment. I’ll show you the video later."
                   }
                 ]
               },
@@ -837,7 +832,7 @@
                   "Five"
                 ],
                 "answer": 0,
-                "explanation": "She saw three of them."
+                "explanation": "The captain saw five last week, she saw two at the start, but a group came near the end and she counted three."
               }
             },
             {
@@ -864,11 +859,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Is the water warm enough for swimming?"
+                    "text": "The water looks lovely, Amaru. Is it warm enough for a swim now? It’s only eight o’clock."
                   },
                   {
                     "speaker": "m",
-                    "text": "It is a bit cold in the morning, but it is lovely by the afternoon."
+                    "text": "Not yet. In the morning it’s cold, because the night cooled it down. You’d shiver for ten minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about the evening? We could go after dinner."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "By then the sun has gone and the wind comes up, so it feels fresh again. The warmest time is the afternoon, when the sun has been on it for hours. I always swim at about three."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Great, I’ll wait until then and read my book."
                   }
                 ]
               },
@@ -881,21 +888,13 @@
                   "In the evening"
                 ],
                 "answer": 1,
-                "explanation": "It is lovely by the afternoon."
+                "explanation": "The morning water is cold from the night, and the evening is cool after sunset; the afternoon is the warmest because of the sun."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Ainsley",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Alberta",
@@ -907,25 +906,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Have you got your passport for the trip?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "No need. It is the same country, so I only need my ticket."
+                    "text": "Welcome to Blue Wave Ferries. Before you go to the gate, please listen carefully. Many of you have asked if you need your bank card to show at the gate, but we only use it at the café, where you pay for coffee. Some travellers think they must bring a passport, but that is only for trips abroad, and this ferry stays inside the country. What every passenger needs is the printed paper that we sent by email yesterday evening. Without it, the staff cannot let you on the boat. Have a pleasant journey."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "What does the woman need for the journey?",
+                "prompt": "What must passengers show at the gate?",
                 "options": [
-                  "Her bank card",
-                  "Her passport only",
-                  "Her ticket only"
+                  "Their bank card",
+                  "Their passport",
+                  "Their printed paper"
                 ],
                 "answer": 2,
-                "explanation": "She says that she only needs her ticket."
+                "explanation": "The bank card is used at the café and the passport is for trips abroad; every passenger must show the paper they printed from the email, which is the ticket."
               }
             },
             {
@@ -939,24 +934,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Alexei",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why are you carrying so many sandwiches?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "There is no shop on the north beach, and we will be there all day."
+                    "text": "Hi, Alexei, it’s Allegra. Don’t be surprised when you see my bag. I made a lot of sandwiches this morning. You know that I get hungry quite quickly, and my brother always laughs at me, but that is not why I’m doing this. The sandwiches in the market yesterday were cheap, and I thought about buying some, but then I remembered that there is nothing to eat where we are going. No shop, no café, just rocks and birds on the island. So bring something too, and plenty of water."
                   }
                 ]
               },
@@ -969,7 +952,7 @@
                   "They were cheap in the market"
                 ],
                 "answer": 0,
-                "explanation": "He says that there is no shop on the north beach."
+                "explanation": "She admits that she gets hungry and that the sandwiches in the market were cheap, but the reason is that there is no shop on the island."
               }
             },
             {
@@ -996,11 +979,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Shall we stay another night?"
+                    "text": "Can’t you stay one more day, Alisha? The weather’s going to be perfect on Sunday."
                   },
                   {
                     "speaker": "f",
-                    "text": "I would love to, but my boss needs me at work on Monday morning."
+                    "text": "I’d love to. I called the hotel, and they said they have rooms for the weekend, so that isn’t a problem. And the ferry runs as normal, even with the wind."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what’s the matter?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m back at the office on Monday morning at eight. I have a big meeting with a customer, and I haven’t finished the report. I can’t miss it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What a pity. Come back in the summer, then."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I will. I promise."
                   }
                 ]
               },
@@ -1013,7 +1012,7 @@
                   "The ferry is cancelled"
                 ],
                 "answer": 1,
-                "explanation": "She says that her boss needs her at work on Monday."
+                "explanation": "The hotel has rooms and the ferry is running; she must be at work on Monday morning for a meeting."
               }
             }
           ]
@@ -1049,24 +1048,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good morning, passengers. This is your captain. Our boat will arrive at the island in forty minutes."
+                    "text": "How was your first sailing lesson, Aleksander? I thought you’d be terrified."
                   },
                   {
                     "speaker": "m",
-                    "text": "Thank you. Is the sea going to be calm all the way?"
+                    "text": "I was a little, before we left the harbour. But the waves weren’t big and the instructor stayed next to me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Was she a good teacher?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, very patient, and there was always something to do. By the end I was steering the boat on my own, and I turned it round without help. I felt so pleased that I wanted to phone my parents."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s great. Can I come with you next time?"
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where are the speakers?",
+                "prompt": "How does Aleksander feel about his first sailing lesson?",
                 "options": [
-                  "In a hotel",
-                  "In a classroom",
-                  "On a boat"
+                  "Frightened by the waves",
+                  "Proud of what he learned",
+                  "Bored by the teacher"
                 ],
-                "answer": 2,
-                "explanation": "The woman is the captain talking to passengers about arriving at the island."
+                "answer": 1,
+                "explanation": "The waves were not frightening and the teacher was good; he steered alone at the end and felt so pleased that he wanted to phone his parents."
               }
             },
             {
@@ -1093,24 +1104,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I think I left my sunglasses on the beach."
+                    "text": "Ouch! My back is red and it really hurts. I forgot the cream."
                   },
                   {
                     "speaker": "f",
-                    "text": "Go back and look for them. I will wait here with the bags."
+                    "text": "You look like a lobster. It’s not that serious, though. You don’t need a doctor, I had the same thing last year and a cold shower helped."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Should I buy a hat? I’ve lost mine."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A hat is good for your head, but your back is the problem. Just stay inside or under the umbrella tomorrow, and wear a loose shirt. Give your skin a day to rest."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I suppose you’re right. It’s a boring plan but it’s sensible."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the man's problem?",
+                "prompt": "What does Ambika think Amaru should do?",
                 "options": [
-                  "He has missed the ferry",
-                  "He has lost his sunglasses",
-                  "He has burnt his skin"
+                  "Stay out of the sun tomorrow",
+                  "Go to see a doctor",
+                  "Buy a new hat"
                 ],
-                "answer": 1,
-                "explanation": "He thinks that he left his sunglasses on the beach."
+                "answer": 0,
+                "explanation": "She says a doctor is not necessary and a hat would not protect his back; the plan is to keep out of the sun for a day."
               }
             },
             {
@@ -1137,24 +1160,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to the Pearl Hotel. Do you have a booking?"
+                    "text": "So, Ainsley, how is your room? I thought you’d be disappointed because it’s so small."
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, a room for three nights in the name of Ainsley."
+                    "text": "It is small, but I don’t mind that. I only sleep there. And the view of the sea is beautiful, that’s a good point."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is something wrong, then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, the bar underneath. There’s loud music every night until two in the morning, and last night I didn’t sleep at all. I’m going to ask for another room."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Poor you. Tell the manager today."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the man doing?",
+                "prompt": "How does Ainsley feel about the hotel room?",
                 "options": [
-                  "Checking in at a hotel",
-                  "Asking for the time",
-                  "Buying a boat ticket"
+                  "Pleased with the view",
+                  "Unhappy about the size",
+                  "Annoyed by the noise"
                 ],
-                "answer": 0,
-                "explanation": "He gives his booking for three nights at a hotel."
+                "answer": 2,
+                "explanation": "He does not mind the size and likes the view, but he complains about the loud music from the bar every night."
               }
             },
             {
@@ -1181,24 +1216,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I cannot believe that the storm has cancelled our boat again! It is so annoying."
+                    "text": "There’s a storm coming, Alexei, so we can’t dive tomorrow. I’m sorry, I know you were looking forward to it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't be upset. At least we can enjoy another day on the island."
+                    "text": "Don’t worry about it. I’m not angry. Honestly, I’m quite relieved."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really? I thought you’d be upset about losing a day."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We’ve been up at six every morning this week, and my legs are tired. A day with a book and a hot chocolate sounds perfect. And the boat is in the harbour, so it’s safe."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re very calm about it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ve learned to be."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "How does the man feel about the storm?",
+                "prompt": "How does Alexei feel about the storm?",
                 "options": [
-                  "Afraid of the big waves",
-                  "Pleased about the rest",
-                  "Annoyed about the storm"
+                  "Worried about the boat",
+                  "Pleased to have a rest",
+                  "Angry about the lost day"
                 ],
-                "answer": 2,
-                "explanation": "He says that he cannot believe the storm has cancelled the boat again."
+                "answer": 1,
+                "explanation": "Alisha thinks he will be upset, but he is tired after early mornings and is happy for a day of rest."
               }
             },
             {
@@ -1225,24 +1276,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Today I will give a short talk on how fishermen on this island catch fish without a net."
+                    "text": "I saw you at the fish stall at six this morning, Allegra. Do you really start that early?"
                   },
                   {
                     "speaker": "m",
-                    "text": "That sounds interesting. Do they use their hands?"
+                    "text": "Every day. I carry the boxes from the boats, put ice on the fish, and talk to customers. It’s heavy, and I’m wet and cold all day."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I couldn’t do it. It’s not boring, there’s always something happening, and I’m sure the money’s fine, but I’d be exhausted."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You get used to it. I love it, honestly."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I admire you. I’d never get up so early."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Alfonso think about Allegra's job?",
                 "options": [
-                  "Giving a talk about fishing",
-                  "Asking about the weather today",
-                  "Selling some fresh fish at a stall"
+                  "It is hard work",
+                  "It is boring",
+                  "It is badly paid"
                 ],
                 "answer": 0,
-                "explanation": "She tells a group how fishermen catch fish."
+                "explanation": "He says it is not boring and the money is probably good, but he thinks he would be exhausted, so he sees it as hard work."
               }
             },
             {
@@ -1269,24 +1332,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Would you like to join our beach clean tomorrow morning?"
+                    "text": "What shall we do on Saturday, Alessia? I could teach a swimming class for the children."
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, I would love to. What time shall I come?"
+                    "text": "That’s kind, but the pool is closed that weekend. And I wanted to go to town by boat, but the shops will be shut because of the holiday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I got a message from the council. They need volunteers to clean the beach after the storm."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s a better idea. It’s good exercise and the beach is dirty. Let’s bring gloves and bags."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll text the others."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the woman agree to do?",
+                "prompt": "What do Aleksander and Alessia agree to do on Saturday?",
                 "options": [
                   "Teach a swimming class",
-                  "Take a boat to the town",
+                  "Take a boat to town",
                   "Help to clean the beach"
                 ],
                 "answer": 2,
-                "explanation": "She says that she would love to join the beach clean."
+                "explanation": "The pool is closed and the shops are shut, so they agree to help clean the beach after the storm."
               }
             }
           ]
@@ -1311,51 +1386,51 @@
             "turns": [
               {
                 "speaker": "sigrun",
-                "text": "Good morning, everyone. In today's lesson, I will tell you about Iceland, a large island in the North Atlantic Ocean. About four hundred thousand people live there, and more than half of them live in the capital city, Reykjavik. The island has more than a hundred volcanoes, and some of them are still active. Many people also enjoy bathing in hot pools, which are heated naturally by the ground. In summer, the sun hardly goes down at all, so there are almost twenty-four hours of daylight. In winter, it is the opposite, and the days are very short. The most popular food is fish, and Icelandic people eat it in many different ways. If you visit in winter, you may see the northern lights, which are green and pink lights in the sky. Many tourists say that this is the most beautiful thing they have ever seen."
+                "text": "Good morning, everyone. In today’s lesson, I will tell you about Iceland, a large island in the North Atlantic Ocean. It is a small country in terms of people. Some students think that millions of people live there, but only about four hundred thousand live in the whole country. About a third of them live in the capital, which has a population of a hundred and thirty thousand. The capital city is called Reykjavik. It is not the oldest town, but it is the largest. Another city, Akureyri, is in the north, but it is much smaller. Iceland is also famous for its nature. It has glaciers and lakes, but what visitors remember are the volcanoes. There are more than a hundred of them, and some are still active. Under the ground, the earth is very hot, and Icelanders use this heat for their houses and for swimming. Their hot pools are heated by the ground, so people sit in warm water outside, even in snow. This is cheap and clean. Now let me talk about food. Icelanders love lamb, which is cooked in many ways. But the most popular food is fish, which people have eaten for hundreds of years, because the sea is so rich. A traditional dish is fish soup, and in the supermarkets you can see many kinds of fish. And the last topic, the sky. In summer, the sun hardly sets, so you can read at midnight. But in winter, the nights are long, and on clear nights, you may see the northern lights, with green and pink colours moving across the sky. It is something that nobody forgets. I recommend visiting from September to March for the best chance. Thank you for listening."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "About ___ people live in Iceland",
+              "prompt": "The number of people in the country is about ___",
               "answer": "four hundred thousand",
               "accepted": [
                 "400,000",
                 "400000",
                 "400 000"
               ],
-              "explanation": "About four hundred thousand people live there."
+              "explanation": "Only about four hundred thousand live in the country; the capital has a hundred and thirty thousand."
             },
             {
               "id": "l3-2",
-              "prompt": "The capital city is called ___",
+              "prompt": "The largest city, where about a third of the people live, is ___",
               "answer": "Reykjavik",
-              "explanation": "The capital city, Reykjavik."
+              "explanation": "The capital is Reykjavik; Akureyri in the north is much smaller."
             },
             {
               "id": "l3-3",
-              "prompt": "There are more than a hundred ___",
+              "prompt": "Visitors remember the more than a hundred ___",
               "answer": "volcanoes",
-              "explanation": "The island has more than a hundred volcanoes."
+              "explanation": "There are glaciers and lakes, but visitors remember the volcanoes, more than a hundred of them."
             },
             {
               "id": "l3-4",
-              "prompt": "Hot pools are heated by the ___",
+              "prompt": "People enjoy warm outdoor pools because the ___ heats them",
               "answer": "ground",
-              "explanation": "Hot pools, which are heated naturally by the ground."
+              "explanation": "The pools are heated by the ground; the heat comes from under the earth."
             },
             {
               "id": "l3-5",
-              "prompt": "The most popular food is ___",
+              "prompt": "The food that Icelanders eat most is ___",
               "answer": "fish",
-              "explanation": "The most popular food is fish."
+              "explanation": "They love lamb, but the most popular food is fish."
             },
             {
               "id": "l3-6",
-              "prompt": "In winter, you may see the northern ___",
+              "prompt": "On clear winter nights it is possible to see the northern ___",
               "answer": "lights",
-              "explanation": "You may see the northern lights."
+              "explanation": "In winter you may see the northern lights with green and pink colours."
             }
           ]
         },
@@ -1387,65 +1462,65 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Ainsley, you live and work on a very small island. How long have you been here?"
+                "text": "Ainsley, you live alone on a small island. How did you get there in the first place?"
               },
               {
                 "speaker": "k",
-                "text": "Nineteen years now. I came for one summer as a volunteer, and I never left."
+                "text": "Not through my work, my company never sent me there. And I didn’t buy a house after a holiday, I couldn’t afford one. I came as a volunteer for one summer to help repair the tower, and I never left. That was eight years ago, and I still enjoy it."
               },
               {
                 "speaker": "i",
-                "text": "What does your job involve?"
+                "text": "What do you do every week?"
               },
               {
                 "speaker": "k",
-                "text": "I check the light every evening and clean it every week. The lamp is automatic now, but boats still need someone to look after it, especially in storms."
+                "text": "There are a lot of jobs. The tower needs painting, but we do that once a year, in the spring. And the boats belong to the fishermen, I don’t repair them. Every week I clean the light. Salt covers the glass and the light cannot shine well, so I wash it by hand. It takes a whole morning."
               },
               {
                 "speaker": "i",
-                "text": "Is it lonely?"
+                "text": "Do you ever feel lonely?"
               },
               {
                 "speaker": "k",
-                "text": "Sometimes, but there are four other families here, and we eat together every Sunday. I also talk to my daughter on the phone each night."
+                "text": "Sometimes, in the dark months. I don’t plan to move to the city, I’d hate it. And I only go to town for supplies once a month. The thing that helps is the neighbours, and honestly, I talk to the radio a lot too, which is a bit silly. Three families live on the island, and every Sunday we have lunch together at somebody’s house, so I know I’ll see them."
               },
               {
                 "speaker": "i",
-                "text": "What is the best thing about island life?"
+                "text": "What do you like best about island life?"
               },
               {
                 "speaker": "k",
-                "text": "The silence. In the city, I could never hear the sea at night. Here, it is the first sound I hear when I wake up."
+                "text": "I know people say the food from the garden is special, and the beach is a short walk from my door, which is lovely. But what I like best is the quiet. There are no cars, no phones ringing, only the sound of the sea. It clears my head."
               },
               {
                 "speaker": "i",
-                "text": "And what is the worst thing?"
+                "text": "What happened last winter?"
               },
               {
                 "speaker": "k",
-                "text": "The wind. In winter, it blows for days and the house shakes. Last year, a window broke and I had to fix it in the dark."
+                "text": "We had a terrible storm in January. The boat that brings food came as usual, so that wasn’t the problem, and the light kept working all night. But the wind broke one of my windows. I stuck a board over it and sat in the kitchen with three jumpers on. It was scary, and I admit that I was thinking about the old keepers who lived through worse winters than this one."
               },
               {
                 "speaker": "i",
-                "text": "Do many tourists visit?"
+                "text": "Do tourists visit the lighthouse?"
               },
               {
                 "speaker": "k",
-                "text": "In summer, about thirty come every week. I show them the top of the lighthouse, and they take photos. It is the only time that I need to wear a clean shirt."
+                "text": "In summer, yes, and I love it. I take them to the top of the tower, and the view is incredible. I don’t serve them tea, I’m too busy, and I’m not good at telling long stories. I let the view speak, and most of them go quiet at the top, which I love to see. Some of them even cry, and that always surprises me."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "How did Ainsley first come to the island?",
+              "prompt": "Why did Ainsley first come to the island?",
               "options": [
-                "He was sent there by his company",
-                "He came as a volunteer for one summer",
-                "He bought a house there after a holiday"
+                "His company sent him",
+                "He volunteered for one summer",
+                "He wanted a house there"
               ],
               "answer": 1,
-              "explanation": "He came for one summer as a volunteer, and never left."
+              "explanation": "His company did not send him and he could not afford a house; he came as a volunteer to help repair the tower."
             },
             {
               "id": "l4-2",
@@ -1456,7 +1531,7 @@
                 "He repairs the boats"
               ],
               "answer": 1,
-              "explanation": "He checks the light every evening and cleans it every week."
+              "explanation": "Painting is done once a year and he does not repair the boats; every week he washes the salt off the light."
             },
             {
               "id": "l4-3",
@@ -1467,18 +1542,18 @@
                 "He goes to town every weekend"
               ],
               "answer": 0,
-              "explanation": "There are four other families, and they eat together every Sunday."
+              "explanation": "He does not plan to move or go to town often; the Sunday lunches with neighbours help."
             },
             {
               "id": "l4-4",
               "prompt": "What does he like best about island life?",
               "options": [
-                "The short walk to the beach every day",
-                "The fresh food from his own garden",
-                "The quiet and the sound of the sea"
+                "The beach near his door",
+                "Food from the garden",
+                "The peace and the sea"
               ],
               "answer": 2,
-              "explanation": "The silence, and the sea is the first sound he hears."
+              "explanation": "He says that the garden food and the beach are nice, but the quiet and the sound of the sea are the best."
             },
             {
               "id": "l4-5",
@@ -1489,7 +1564,7 @@
                 "The light stopped working"
               ],
               "answer": 1,
-              "explanation": "A window broke and he had to fix it in the dark."
+              "explanation": "The boat came as usual and the light kept working; the wind broke a window."
             },
             {
               "id": "l4-6",
@@ -1500,7 +1575,7 @@
                 "Tells them long stories about old ships"
               ],
               "answer": 0,
-              "explanation": "He shows them the top of the lighthouse."
+              "explanation": "He takes tourists to the top of the tower; he does not serve tea or tell long stories."
             }
           ]
         }

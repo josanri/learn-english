@@ -250,54 +250,59 @@
               "prompt": "Why did the writer agree to try climbing?",
               "options": [
                 "He wanted to get stronger",
-                "His friend said it was safe",
-                "He was not afraid of heights"
+                "He was not afraid of heights",
+                "He wanted to meet new people",
+                "His friend said it was safe"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "Tomas promised that the ropes were safe, so he agreed."
             },
             {
               "id": "r3-2",
               "prompt": "What helped the writer at the start?",
               "options": [
+                "Closing his eyes tightly",
+                "Looking at the next hold",
                 "Holding his friend's hand",
-                "Listening to loud music",
-                "Looking at the next hold"
+                "Listening to loud music"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "Reena told him to stop thinking about the top and look for the next hold."
             },
             {
               "id": "r3-3",
               "prompt": "What has the writer learned about climbing?",
               "options": [
-                "It needs planning and strength",
                 "It is easier for tall people",
-                "It is mostly a summer sport"
+                "It is mostly a summer sport",
+                "It needs planning and strength",
+                "It is dangerous without a partner"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Climbing is as much about thinking as about strength, because you plan every move."
             },
             {
               "id": "r3-4",
               "prompt": "What do the climbers often do afterwards?",
               "options": [
+                "Have coffee together",
                 "Clean the equipment",
                 "Go for a short run",
-                "Have coffee together"
+                "Take photos of the wall"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "They often have coffee together afterwards."
             },
             {
               "id": "r3-5",
               "prompt": "How did the writer feel about the outdoor climb?",
               "options": [
-                "It was worth the effort",
                 "It was too frightening",
-                "It was easier than the wall"
+                "It was too windy to enjoy",
+                "It was easier than the wall",
+                "It was worth the effort"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "It was much harder, but the view made it worth it."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A weekend on the mountain",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "We left the car park at seven o'clock on Saturday morning, with heavy rucksacks and high hopes. [1] The path was steep, and after an hour my brother had already asked three times if we were nearly there.\n\nBy midday, we had reached a small lake. [2] We sat on a flat rock and ate our sandwiches while a few sheep watched us. The air was fresh and quiet, and I felt very far from the city.\n\nIn the afternoon, clouds began to gather. [3] Our guide, Mr Orsini, decided that we should go down to a hut instead of continuing to the top. I was disappointed, but he reminded us that mountains are dangerous in bad weather. [4] When we arrived, the hut owner gave us hot soup, and it was the best meal I have ever had.\n\nThe next morning, the sky was clear, and we climbed to the summit in two hours. [5] I took a photograph, but it can never show how amazing it felt.",
           "sentences": [
+            "We reached the hut just before the rain started.",
             "It was the perfect place to stop for lunch.",
+            "A helicopter flew over us while we were eating.",
             "For the first hour, we walked through a forest of tall pine trees.",
-            "The view from the top was bigger than I had imagined.",
             "My brother wants to become a mountain guide.",
+            "The view from the top was bigger than I had imagined.",
             "It was clear that the weather was going to change.",
-            "We reached the hut just before the rain started."
+            "Mr Orsini has climbed this mountain more than a hundred times."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "D",
               "explanation": "The forest walk describes the first part, and \"the path was steep\" continues the description."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "B",
               "explanation": "\"Perfect place to stop\" explains why they sat down and ate their sandwiches."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "G",
               "explanation": "The gathering clouds lead to \"the weather was going to change\", then the guide's decision."
             },
             {
               "id": "r4-4",
-              "answer": "F",
+              "answer": "A",
               "explanation": "They reached the hut, and \"when we arrived\" refers to this arrival, just before the rain."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "F",
               "explanation": "The summit is the top, and the sentence describes the view from there."
             }
           ]
@@ -729,28 +736,48 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much is the cable car?"
+                    "text": "Hi, one ticket for the climbing wall, please."
                   },
                   {
                     "speaker": "f",
-                    "text": "It is fifteen pounds return, or ten pounds one way."
+                    "text": "It’s twenty-five pounds for a day, but members pay fifteen. Are you a member?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I'll walk down, so one way, please."
+                    "text": "Yes, here’s my card. Oh, and I have this voucher from the newspaper."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That takes five pounds off the member price."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Brilliant. Do I have to hire shoes?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Only if you don’t have your own pair."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I do. I bought them last summer."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Great. Enjoy the wall, and have a good climb."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "How much will the man pay?",
+                "prompt": "How much will the man pay for the ticket?",
                 "options": [
                   "Fifteen pounds",
                   "Ten pounds",
                   "Twenty-five pounds"
                 ],
                 "answer": 1,
-                "explanation": "He wants a one-way ticket, which costs ten pounds."
+                "explanation": "The normal price is twenty-five and the member price fifteen, but the voucher takes five pounds off the member price."
               }
             },
             {
@@ -764,28 +791,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Dougal",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What time does the last cable car go down?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "It's half past five, but in winter it goes an hour earlier."
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "It's December, so I must hurry."
+                    "text": "Good morning, visitors. This is a message from the cable car station. Some of you may know that the last cable car down usually leaves at half past five in the evening. Today we expect strong wind in the late afternoon, so it will leave an hour earlier. Please plan your walk at the top so that you are back at the station in time. In summer the last cable car goes at half past six, but that timetable ends in September, so please don’t rely on the old notice at the bottom. If you miss the last one, you will have to walk down, which takes three hours. Thank you, and enjoy your day."
                   }
                 ]
               },
@@ -798,7 +809,7 @@
                   "At half past six"
                 ],
                 "answer": 0,
-                "explanation": "It is winter, so it goes an hour earlier than half past five."
+                "explanation": "The usual time is half past five and the summer time is half past six; today the last cable car leaves an hour earlier because of the wind."
               }
             },
             {
@@ -825,24 +836,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Should I wear my jeans for the walk?"
+                    "text": "Iris, can I wear jeans for the hike tomorrow? I don’t have walking trousers."
                   },
                   {
                     "speaker": "f",
-                    "text": "I wouldn't. When jeans get wet, they stay wet for hours, and you get very cold."
+                    "text": "I wouldn’t, to be honest. Some people say they’re too thin and won’t keep you warm, but they’re actually quite thick. And yes, they’re a bit heavy, but you forget that after an hour. The real problem is the rain. If they get wet, they stay wet for hours, and then you’re cold and miserable."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hmm. I don’t want to buy new trousers."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I can lend you my old ones. They dry in twenty minutes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really? You’re the best."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "What does the woman say about jeans?",
+                "prompt": "What does Iris say about jeans?",
                 "options": [
-                  "They stay wet for hours",
                   "They are too thin",
-                  "They are too heavy"
+                  "They are too heavy",
+                  "They stay wet for hours"
                 ],
-                "answer": 0,
-                "explanation": "She says that wet jeans stay wet for hours."
+                "answer": 2,
+                "explanation": "She says that jeans are thick enough and that the weight is not a problem; the real problem is that they stay wet for hours in the rain."
               }
             },
             {
@@ -869,11 +892,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Will the weather be good for the climb on Saturday?"
+                    "text": "Ronald, what’s the weather going to be like this afternoon? I want to go up to the lake."
                   },
                   {
                     "speaker": "m",
-                    "text": "Sunny until midday, then it will turn cloudy, with a chance of storms in the evening."
+                    "text": "I looked at the forecast. It’s sunny now, and the morning will stay sunny until about twelve. Then clouds come from the west, so the afternoon will be grey. It won’t rain, though."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it windy?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The wind comes tomorrow. Today the air is calm."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I’ll go this morning for the views, and come back for lunch."
                   }
                 ]
               },
@@ -886,7 +921,7 @@
                   "Windy"
                 ],
                 "answer": 1,
-                "explanation": "After midday it will turn cloudy."
+                "explanation": "The sunshine lasts only until twelve and the wind comes tomorrow; in the afternoon the sky will be grey."
               }
             },
             {
@@ -913,11 +948,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I've lost one of my gloves."
+                    "text": "I’ve lost a glove, Elspeth. A black one, with a red line. I must have dropped it on the path."
                   },
                   {
                     "speaker": "f",
-                    "text": "You could try looking in the hut. People often leave things there."
+                    "text": "Have you asked the people at the bus stop? Somebody might have found it and left it there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I thought of that, but I’ve just come from there. Nothing. I was thinking of buying new gloves in the village."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Hold on, they cost a lot. Why don’t you look in the hut? Walkers leave things on the table by the stove. I found my hat there once."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. It’s on my way. Thanks."
                   }
                 ]
               },
@@ -930,7 +977,7 @@
                   "Looking in the hut"
                 ],
                 "answer": 2,
-                "explanation": "She suggests looking in the hut."
+                "explanation": "He has been to the bus stop and wants new gloves, but she tells him to look in the hut, where walkers leave things."
               }
             },
             {
@@ -944,24 +991,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Finn",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Why didn't you reach the top?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "My knee started hurting halfway up, so we turned back."
+                    "text": "Hi, Finn, it’s Hester. We didn’t reach the top, I’m afraid. The path was open, because we saw other people going up, and we left early, at seven, so time wasn’t a problem. We got to the last hill, and my knee started to hurt, so badly that I couldn’t go on. I sat down and waited while the others went up. I was disappointed, but I took lots of photos from there. I’ll tell you everything tomorrow. Bye!"
                   }
                 ]
               },
@@ -974,7 +1009,7 @@
                   "It was too late"
                 ],
                 "answer": 0,
-                "explanation": "Her knee started hurting halfway up."
+                "explanation": "The path was open and they left early, but her knee hurt too much on the last hill."
               }
             },
             {
@@ -1001,11 +1036,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Would you rather go rafting or climbing?"
+                    "text": "Kerensa, shall we try the climbing today or the rafting?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Rafting. I'm not good with heights, and I love being on the water."
+                    "text": "Rafting, definitely. I’m not a great swimmer, to be honest, but you wear a life jacket. And my friends are on the climbing course, so I’d see them there, but that’s not why."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What’s the problem with climbing, then?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hate heights. Even the top of a ladder makes my legs shake."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fair enough. Rafting it is."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks. Remember, I don’t swim very well, but the guide will stay close to us."
                   }
                 ]
               },
@@ -1018,7 +1069,7 @@
                   "She wants to meet friends"
                 ],
                 "answer": 1,
-                "explanation": "She says she is not good with heights."
+                "explanation": "She is not a strong swimmer and her friends are climbing, but she chooses rafting because she is afraid of heights."
               }
             }
           ]
@@ -1054,24 +1105,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Hello, I'd like to book a lesson for my ten-year-old son, please."
+                    "text": "Keith, hi, it’s Marisol. I’m calling about the ski school."
                   },
                   {
                     "speaker": "m",
-                    "text": "Certainly. We have places on Saturday morning at ten."
+                    "text": "Do you want to change your booking? You booked a week in March, didn’t you?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, the week is perfect. And I saw the prices online, they’re fine. I want to book a lesson for my sister. She’s never skied, and she’s really nervous."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A beginner lesson? We have one on Monday at ten with Pedro. He’s very patient."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Brilliant. Please book her in."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Done."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Why is the woman phoning?",
+                "prompt": "Why is Marisol phoning Keith?",
                 "options": [
                   "To change a booking",
                   "To ask about prices",
                   "To book a lesson"
                 ],
                 "answer": 2,
-                "explanation": "She wants to book a lesson for her son."
+                "explanation": "She does not need to change the week and the prices are fine; she wants a lesson for her nervous sister."
               }
             },
             {
@@ -1097,29 +1164,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "What shall we do tomorrow? I’m tired of skiing. My legs hurt."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Shall we go skiing or snowboarding tomorrow?"
+                    "text": "We could stay at the hotel and use the pool."
                   },
                   {
                     "speaker": "m",
-                    "text": "Snowboarding. My cousin can lend us two boards, so we do not need to hire anything."
+                    "text": "It’s snowing, though, which is perfect, and we only have two days left. I don’t want to waste it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Perfect, that saves money."
+                    "text": "True. Snowboarding? I’ve always wanted to try."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Me too. It looks hard, but the instructor said that after a morning most people can do it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Let’s do it. I’ll book the lesson."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What do they decide to do?",
+                "prompt": "What do Ignatz and Philomela decide to do?",
                 "options": [
-                  "Go skiing",
                   "Go snowboarding",
+                  "Go skiing",
                   "Stay at the hotel"
                 ],
-                "answer": 1,
-                "explanation": "They choose snowboarding because they can borrow boards."
+                "answer": 0,
+                "explanation": "He is tired of skiing and does not want to waste the snow by staying in; they agree to try snowboarding."
               }
             },
             {
@@ -1146,28 +1225,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Before we start, I want to explain the rules. Always keep your helmet on, and never go ahead of the guide."
+                    "text": "Marlowe, before the group arrives, can you help me with the briefing?"
                   },
                   {
                     "speaker": "m",
-                    "text": "What if we are tired?"
+                    "text": "Sure. Should I sell the helmets at the desk?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Tell me and we will stop."
+                    "text": "No, those are hired, not sold. And I’m not asking you to collect money from anyone. I want you to repeat the rules: stay on the marked path, never go alone, and tell us if you’re tired."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Okay. Is it OK if I add a joke? They listen better."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Fine, but keep it short. Safety comes first."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Gwendolen want Marlowe to do?",
                 "options": [
-                  "Explaining safety rules",
-                  "Selling equipment",
-                  "Asking for money"
+                  "Sell equipment",
+                  "Explain the safety rules",
+                  "Ask for money"
                 ],
-                "answer": 0,
-                "explanation": "She explains rules such as keeping the helmet on."
+                "answer": 1,
+                "explanation": "The helmets are hired and no money is collected; she wants him to repeat the rules about the path and being tired."
               }
             },
             {
@@ -1194,24 +1281,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "You will never guess! I won a competition, and the prize is a holiday in the mountains."
+                    "text": "Barney, guess what!"
                   },
                   {
                     "speaker": "m",
-                    "text": "That is wonderful! Who are you taking?"
+                    "text": "You got the bike you wanted for your birthday?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, Dad says that’s for next year. And I haven’t got my exam result yet. This is even better. Remember the competition at school? I won first prize."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The holiday to the mountains? Seriously?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A week in a cabin for the whole family, with hiking and horse riding!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wow, I’m so jealous. Can I come?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course you can! We have a place for you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What good news does the girl have?",
+                "prompt": "What good news does Annika have?",
                 "options": [
                   "She got a new bike",
                   "She passed a test",
                   "She won a holiday"
                 ],
                 "answer": 2,
-                "explanation": "She won a competition with a week in the mountains as the prize."
+                "explanation": "The bike is for next year and the result is not ready; she won a week in a cabin in the competition."
               }
             },
             {
@@ -1238,24 +1345,44 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I'd like to bring these boots back. They hurt my feet. They're too small."
+                    "text": "Jessamy, I can’t walk in these boots."
                   },
                   {
                     "speaker": "f",
-                    "text": "I'm sorry about that. Let me find you the next size up."
+                    "text": "Are they broken? The sole looks fine."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "They aren’t broken, and I know where they are, they’re on my feet. They’re a size too small. I bought them last year, and my feet must have grown."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can’t go on a ten-kilometre walk like that. Borrow my brother’s."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. What size?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Forty-three, the same as you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks, I’ll try them now, and I’ll bring them back."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the man's problem?",
+                "prompt": "What is Sylvester's problem?",
                 "options": [
                   "His boots are too small",
                   "His boots are broken",
                   "He has lost his boots"
                 ],
                 "answer": 0,
-                "explanation": "He says the boots hurt because they are too small."
+                "explanation": "The sole is fine and he is wearing them, but they are a size too small, so he will borrow other boots."
               }
             },
             {
@@ -1282,11 +1409,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Mum, can I go on the school trip to the mountains?"
+                    "text": "Mum, can I go on the camping trip with Jack’s family this weekend?"
                   },
                   {
                     "speaker": "f",
-                    "text": "I'm a bit worried, but you can go if you phone me every night."
+                    "text": "Who’s paying? Because I can’t, this month."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Jack’s parents invited me, so it’s free. I would have used my savings, but they didn’t let me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then there’s no problem with money. But I don’t like you going without knowing where you are."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll text you every night."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Phone me, actually. A message isn’t enough. If you do that, you can go."
                   },
                   {
                     "speaker": "m",
@@ -1296,14 +1439,14 @@
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the mother say?",
+                "prompt": "What does Torvald's mother say?",
                 "options": [
                   "He must pay himself",
-                  "He may not go",
-                  "He may go if he phones"
+                  "He may go if he phones",
+                  "He may not go"
                 ],
-                "answer": 2,
-                "explanation": "She allows him to go if he phones every night."
+                "answer": 1,
+                "explanation": "The trip is free, so money is not the issue; she says he can go if he phones her every night."
               }
             }
           ]
@@ -1328,55 +1471,46 @@
             "turns": [
               {
                 "speaker": "tania",
-                "text": "Good morning, everyone, and welcome to Highpoint Adventure Centre. My name is Tania, and I'll be your guide today. We're going on a day walk to Eagle Lake. It's about ten kilometres, and the walk will take around five hours, including a stop for lunch. Everyone must wear strong boots. Trainers are not allowed, because the path is rocky. You will carry your own lunch and a litre of water. I have a first-aid kit, so don't worry if someone hurts a foot. If the weather turns bad, we'll come back by the shorter path. We expect to be back at the centre by three o'clock. The price is twenty-five pounds, and that includes a map of the area to take home. Does anyone have any questions?"
+                "text": "Good morning, everyone, and welcome to Highpoint Adventure Centre. My name is Tania, and I’ll be your guide today. We’re going on a day walk to Eagle Rock. The brochure says it’s twelve kilometres, but that is the long route. Today we’re doing the standard one, which is ten kilometres. It takes about five hours, including a lunch stop. Some people say four, but we walk slowly and take photos. We start at nine from the front of the centre, so please be ready by ten to. Now, equipment. Many of you are wearing trainers, and I’m sorry, but they’re not good on wet rocks. Everyone must wear strong boots. If you don’t have them, you can hire a pair at the desk for three pounds. A waterproof coat is also important, though I hope we won’t need it. Now, food and drink. Take lunch in your rucksack, and each person needs one litre of water. Some people carry two, and that’s fine, but it’s heavy, and we have a stop at a stream where you can fill your bottle. About the weather. The forecast is good, but mountains change quickly. If it turns bad, we won’t go to the top. We’ll take the shorter path along the river and have lunch in the hut. It’s less beautiful, but safer. One last thing. The day costs thirty pounds. The fee includes a map of the area that you can keep, and a hot drink at the hut. Lunch is not included, so please bring your own. Does anyone have any questions before we leave? Good, then follow me."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The walk is about ___ kilometres",
+              "prompt": "Today's route is ___ kilometres long",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "The walk to Eagle Lake is about ten kilometres."
+              "explanation": "The brochure says twelve, but that is the long route; today’s route is ten."
             },
             {
               "id": "l3-2",
-              "prompt": "The walk takes about ___ hours",
+              "prompt": "Allow about ___ hours for the walk",
               "answer": "five",
-              "accepted": [
-                "5"
-              ],
-              "explanation": "It takes around five hours, including a stop for lunch."
+              "explanation": "Some people say four, but they walk slowly and stop for lunch, so it takes about five hours."
             },
             {
               "id": "l3-3",
-              "prompt": "Everyone must wear strong ___",
+              "prompt": "Walkers must have suitable ___ for wet rocks",
               "answer": "boots",
-              "explanation": "Everyone must wear strong boots; trainers are not allowed."
+              "explanation": "Trainers are not good on wet rocks; everyone must wear strong boots."
             },
             {
               "id": "l3-4",
-              "prompt": "Each person carries a ___ of water",
+              "prompt": "Each person should carry one ___ of water",
               "answer": "litre",
-              "accepted": [
-                "liter"
-              ],
-              "explanation": "Each person carries their lunch and a litre of water."
+              "explanation": "Some people carry two, but one litre is enough because there is a stream."
             },
             {
               "id": "l3-5",
-              "prompt": "In bad weather, the group will use the ___ path",
+              "prompt": "If the weather is bad, the group follows the ___ route",
               "answer": "shorter",
-              "explanation": "If the weather turns bad, they will come back by the shorter path."
+              "explanation": "They will not go to the top; they take the shorter path along the river."
             },
             {
               "id": "l3-6",
-              "prompt": "The price includes a ___",
+              "prompt": "The fee includes a ___ of the area",
               "answer": "map",
-              "explanation": "The price includes a map of the area."
+              "explanation": "The fee covers a map and a hot drink; lunch is not included."
             }
           ]
         },
@@ -1408,11 +1542,11 @@
             "turns": [
               {
                 "speaker": "clementine",
-                "text": "Today I'm with Gethin Rees, who has worked as a mountain guide for twenty years. Gethin, when did you first climb a mountain?"
+                "text": "Gethin, you’ve guided people for twenty years. What made you start climbing?"
               },
               {
                 "speaker": "gethin",
-                "text": "I was seven. I grew up in a village in Wales, and my father took me up the hill behind our house. I was cold and tired, but I wanted to go again the next day."
+                "text": "I’d love to say it was a film, and I did see a famous one at university, but I’d been climbing for years by then. And nobody offered me a job after school. I just had a rucksack and an old map. It was a school trip when I was seven. Our teacher took us up a small hill in Wales, and I thought I had reached the top of the world."
               },
               {
                 "speaker": "clementine",
@@ -1420,15 +1554,15 @@
               },
               {
                 "speaker": "gethin",
-                "text": "I check the weather at five in the morning. A good guide never starts a walk before looking at the sky and the forecast."
+                "text": "Before I phone my clients or pack the ropes, I check the weather. Always. I look at three different websites, and then I look at the sky. The mountain doesn’t care about our plans, so the plan must change if the weather changes."
               },
               {
                 "speaker": "clementine",
-                "text": "What is the most dangerous thing in the mountains?"
+                "text": "What is the most dangerous thing for you?"
               },
               {
                 "speaker": "gethin",
-                "text": "Thick fog. Storms are frightening, but you can see them coming. Fog can arrive in minutes, and then you cannot see the path."
+                "text": "Everyone expects me to say wild animals, but I’ve never had a problem with them. Heavy rucksacks hurt your back, but that isn’t dangerous. Thick fog is the real problem. You can’t see the path or the edge, and people panic. It can take just a minute to lose the group."
               },
               {
                 "speaker": "clementine",
@@ -1436,92 +1570,100 @@
               },
               {
                 "speaker": "gethin",
-                "text": "Most of them take too little water. People think that it is cool in the mountains, so they don't drink, but they get tired quickly."
+                "text": "They’re very enthusiastic, and they certainly don’t start too early, that’s the opposite problem. New boots are a classic one, they give you blisters, but we usually warn people to try them first. The mistake I see most is that they don’t bring enough water. They think the cold means they won’t be thirsty, and then they feel ill by lunchtime."
               },
               {
                 "speaker": "clementine",
-                "text": "What's your best memory?"
+                "text": "What is your best memory?"
               },
               {
                 "speaker": "gethin",
-                "text": "A beginner, a man of seventy, who cried with joy at the top. He had never been above a thousand metres, and he thanked me for an hour."
+                "text": "A woman in her sixties, who had never climbed before. When she reached the top, she started crying with joy and hugged everybody. That’s much better than climbing alone at night, which I did once for a bet, or winning a race, which I did only for fun."
               },
               {
                 "speaker": "clementine",
-                "text": "What are you planning for next year?"
+                "text": "What’s next for you?"
               },
               {
                 "speaker": "gethin",
-                "text": "I'm going to train young guides. I want them to learn that the best decision is often to turn back."
+                "text": "Next year I’m not going to stop working, even if my knees say otherwise, and I’m not opening a shop either. My wife suggested it, but I’d hate to stay inside. I’m going to train young guides. There aren’t enough of them, and I’d like to share what I know."
+              },
+              {
+                "speaker": "clementine",
+                "text": "Do you have any final advice?"
+              },
+              {
+                "speaker": "gethin",
+                "text": "Respect the mountain, take enough water and turn back if you are not sure. The summit will always be there tomorrow."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "When did Gethin first climb a mountain?",
+              "prompt": "What made Gethin start climbing?",
               "options": [
-                "At university",
-                "When he was seven",
-                "After he left school"
+                "A film he saw at university",
+                "A school trip when he was seven",
+                "A job offer after he left school"
               ],
               "answer": 1,
-              "explanation": "He was seven when his father took him up the hill."
+              "explanation": "He saw a film at university but had been climbing for years, and nobody offered a job; it was a school trip at seven."
             },
             {
               "id": "l4-2",
               "prompt": "What does he do first on a working day?",
               "options": [
-                "Phone his clients",
                 "Check the weather",
+                "Phone his clients",
                 "Pack the ropes"
               ],
-              "answer": 1,
-              "explanation": "He checks the weather at five in the morning."
+              "answer": 0,
+              "explanation": "Before phoning clients or packing ropes he always checks the weather."
             },
             {
               "id": "l4-3",
-              "prompt": "What does he think is most dangerous?",
+              "prompt": "What does he think is the most dangerous thing?",
               "options": [
-                "Thick fog",
+                "Wild animals",
                 "Heavy rucksacks",
-                "Wild animals"
+                "Thick fog"
               ],
-              "answer": 0,
-              "explanation": "He says thick fog is the most dangerous because it arrives so quickly."
+              "answer": 2,
+              "explanation": "Animals were never a problem and rucksacks only hurt your back; fog hides the path and the edge."
             },
             {
               "id": "l4-4",
               "prompt": "What mistake do his clients often make?",
               "options": [
                 "They start too early",
-                "They wear new boots",
-                "They take too little water"
+                "They take too little water",
+                "They wear new boots"
               ],
-              "answer": 2,
-              "explanation": "Most of them take too little water."
+              "answer": 1,
+              "explanation": "They do not start too early and he warns them about new boots, but they often bring too little water."
             },
             {
               "id": "l4-5",
               "prompt": "What is his best memory?",
               "options": [
-                "Climbing alone at night",
                 "A beginner crying with joy",
+                "Climbing alone at night",
                 "Winning a mountain race"
               ],
-              "answer": 1,
-              "explanation": "A seventy-year-old beginner cried with joy at the top."
+              "answer": 0,
+              "explanation": "A woman who had never climbed cried with joy at the top; the night climb was for a bet and the race was for fun."
             },
             {
               "id": "l4-6",
               "prompt": "What will he do next year?",
               "options": [
-                "Train young guides",
                 "Open a shop",
-                "Stop working"
+                "Stop working",
+                "Train young guides"
               ],
-              "answer": 0,
-              "explanation": "He is going to train young guides."
+              "answer": 2,
+              "explanation": "He will not stop working and does not want a shop; he wants to train young guides."
             }
           ]
         }

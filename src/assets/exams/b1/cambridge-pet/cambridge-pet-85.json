@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "How did Ana react at first?",
               "options": [
+                "She was bored",
+                "She laughed",
                 "She felt worried",
-                "She got angry",
-                "She laughed"
+                "She got angry"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "Ana laughed when the writer told her about the marathon."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "The group",
                 "The weather",
-                "The music"
+                "The music",
+                "The prize"
               ],
               "answer": 0,
               "explanation": "She says that what kept her going was the group."
@@ -271,11 +273,12 @@
               "id": "r3-3",
               "prompt": "How did she feel on the day of the race?",
               "options": [
+                "Too tired to sleep",
                 "Completely calm",
-                "Too nervous to eat",
-                "Very hungry"
+                "Very hungry",
+                "Too nervous to eat"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She was so nervous that she could not eat."
             },
             {
@@ -283,8 +286,9 @@
               "prompt": "What did Ana do in the last part of the race?",
               "options": [
                 "Gave her some water",
-                "Ran far ahead",
-                "Talked about silly things"
+                "Carried her bag",
+                "Talked about silly things",
+                "Ran far ahead"
               ],
               "answer": 2,
               "explanation": "Ana stayed next to her and talked about silly things to make her laugh."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What does the writer plan to do next year?",
               "options": [
-                "Try to beat her time",
                 "Give up running",
+                "Try to beat her time",
+                "Train with a new group",
                 "Run a much longer race"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She plans to do it again and to beat her time."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "How to prepare for a race",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Preparing for a race starts weeks before the big day. [1] Beginners should run three times a week, with rest days in between, so that their legs can recover.\n\nFood is also important. [2] Many runners eat pasta the night before, because it gives them energy for the next day.\n\nOn the morning of the race, you should get up early. [3] This gives your body time to digest breakfast, and it stops you from rushing.\n\nDuring the race, do not start too fast. [4] Many people run the first kilometres too quickly, and then they have no energy left at the end.\n\nAfter the race, you should walk slowly for a few minutes. [5] Then drink plenty of water and eat something light, and your body will recover much faster.",
           "sentences": [
+            "Good shoes are more important than expensive clothes.",
             "Save your energy for the second half of the race.",
             "Increase the distance slowly, week by week.",
-            "Stopping suddenly can make your muscles stiff.",
-            "Running shoes are becoming more colourful every year.",
+            "Cold weather is the best time to run fast.",
+            "Aim to finish eating at least two hours before the start.",
             "What you eat in the last days can make a big difference.",
-            "Aim to finish eating at least two hours before the start."
+            "Stopping suddenly can make your muscles stiff.",
+            "Running shoes are becoming more colourful every year."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "C",
               "explanation": "Training starts weeks before; the next sentence says how often beginners should run."
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "F",
               "explanation": "Food is important, and the next sentence gives pasta as an example."
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "E",
               "explanation": "You should get up early to finish eating two hours before; the next sentence says this gives time to digest."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "B",
               "explanation": "Do not start too fast and save energy; the next sentence says many people run too quickly."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "G",
               "explanation": "Walking slowly after the race is because stopping suddenly makes muscles stiff."
             }
           ]
@@ -724,11 +731,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How far did you run today?"
+                    "text": "How was your run today, Dan? Did you manage the eighteen kilometres you planned?"
                   },
                   {
                     "speaker": "b",
-                    "text": "About eight kilometres. My legs feel like jelly now."
+                    "text": "No way, that’s the distance for next month, when I do the half marathon. Today I started at the park gate and ran to the river and back, eight kilometres altogether. I wanted ten, but my knee started to hurt."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh no. How far did you run last week?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Only four, so this is an improvement. I put some ice on my knee and I feel much better now."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good. Take it easy tomorrow."
                   }
                 ]
               },
@@ -741,7 +760,7 @@
                   "Four kilometres"
                 ],
                 "answer": 1,
-                "explanation": "He says he ran about eight kilometres."
+                "explanation": "Eighteen is the plan for next month, and four was last week; today he ran from the park gate to the river and back, eight kilometres."
               }
             },
             {
@@ -755,24 +774,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time does the race start?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "At a quarter to ten, so we should arrive by nine."
+                    "text": "Good morning, runners, this is a message from the Riverside race organisers. Last year we asked everybody to arrive by ten, but the car park filled up and many people missed the start. This year we are changing it. The race begins at ten, so please come early, by nine, to collect your number and leave your bag. The gates open at half past eight. Anyone who arrives by half past nine will have to wait in a long queue and may be late. Remember to bring your confirmation email. Have a great run, and thank you very much."
                   }
                 ]
               },
@@ -785,7 +792,7 @@
                   "By half past nine"
                 ],
                 "answer": 0,
-                "explanation": "She says they should arrive by nine."
+                "explanation": "Last year the time was ten and half past nine is too late, so the organisers ask runners to arrive by nine."
               }
             },
             {
@@ -812,11 +819,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you run with music?"
+                    "text": "I see you never wear headphones when you run, Tom. Don’t you get bored?"
                   },
                   {
                     "speaker": "b",
-                    "text": "No, I prefer to hear the birds. It is more relaxing."
+                    "text": "I used to listen to music all the time. In fact, I nearly bought a new pair last week."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Did you lose the old ones?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, on holiday. But then I started running early in the park, and I love hearing the birds. It’s much better than any song."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "People say music makes them tired, though."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It never bothered me. I just prefer the sound of the morning."
                   }
                 ]
               },
@@ -829,7 +852,7 @@
                   "It makes him tired"
                 ],
                 "answer": 0,
-                "explanation": "He says he prefers to hear the birds."
+                "explanation": "He nearly bought new headphones, and music never made him tired; he prefers the sound of the birds in the park."
               }
             },
             {
@@ -856,11 +879,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where did you buy those shoes?"
+                    "text": "Nice shoes! They look new."
                   },
                   {
                     "speaker": "b",
-                    "text": "In the sports shop in the high street. They were half price."
+                    "text": "Thanks. I got them last Saturday for twenty pounds, and the normal price is forty. I thought about the second-hand shop in town, where you can find some for ten, but the sizes are never right. Then my mum said the old pair from her cupboard would do, but they’re about eight years old and falling apart. So I waited for the sale at the sports shop."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Smart. Are they comfortable?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Very. I ran five kilometres in them yesterday."
                   }
                 ]
               },
@@ -873,21 +904,13 @@
                   "They were very old"
                 ],
                 "answer": 1,
-                "explanation": "She says they were half price."
+                "explanation": "He paid twenty pounds when the price is usually forty, after rejecting the second-hand shop and his mum’s old pair."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Man",
@@ -899,25 +922,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Are you going to the park run on Saturday?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "I would love to, but I have to work."
+                    "text": "Hi Lucy, it’s Mark. I’m sorry, but I can’t come to the charity run on Sunday. I told you last week that I’d be there, and I was really looking forward to it. I thought I might still manage it, because I was going to be helping a friend, my cousin, to move house, but he found a van company, so that’s not a problem. And I’m not on holiday until August. The real problem is that my manager has changed the rota, and I’ll be at work from eight until six. Please say hello to everybody, and good luck."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "Why can the man not go?",
+                "prompt": "Why can't the caller go to the charity run?",
                 "options": [
                   "He is helping a friend",
                   "He is on holiday",
                   "He has to work"
                 ],
                 "answer": 2,
-                "explanation": "He says he has to work."
+                "explanation": "His cousin does not need help and the holiday is in August; his manager changed the rota, so he will be at work all day."
               }
             },
             {
@@ -944,11 +963,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How did you finish the race?"
+                    "text": "Congratulations on the race, Ben! My dad said you won."
                   },
                   {
                     "speaker": "b",
-                    "text": "Fourth! Just two seconds behind the winner."
+                    "text": "Ha, no. The first runner was a man from Spain, a professional. At the end I thought I came fourteenth because there were so many people around me."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what was your place?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "The official list says I was in front of the boy in the red shirt, so I finished in fourth place. That means no medal, because only the top three get one."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s so close! Next year, maybe."
                   }
                 ]
               },
@@ -961,7 +992,7 @@
                   "Fourteenth"
                 ],
                 "answer": 0,
-                "explanation": "He says he finished fourth."
+                "explanation": "He did not win and he was not fourteenth; the official list shows him in fourth place, just outside the medals."
               }
             },
             {
@@ -988,24 +1019,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can I borrow a bottle of water?"
+                    "text": "My throat is so dry. Where’s my water bottle? I looked on the bench and it isn’t there."
                   },
                   {
                     "speaker": "b",
-                    "text": "Sure. There is a spare one in my bag, next to the towel."
+                    "text": "No, I moved it, in case it rained. You wanted to leave it in the car, remember? But I was afraid you’d be thirsty after the race."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So where is it?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Where do you keep your sandwiches?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "In my bag, obviously."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Well, that’s where I put it too, next to your keys."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh, you’re a lifesaver. I’d lose my head if it wasn’t attached."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s why I carry the spare keys."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "Where is the bottle of water?",
+                "prompt": "Where is the water bottle?",
                 "options": [
                   "On the bench",
                   "In the bag",
                   "In the car"
                 ],
                 "answer": 1,
-                "explanation": "She says there is a spare one in her bag."
+                "explanation": "The bench and the car are rejected; he keeps his sandwiches in his bag, and the friend says that is where she put the bottle."
               }
             }
           ]
@@ -1041,24 +1096,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "You started too fast again. Remember, slow and steady wins races."
+                    "text": "The race is on Sunday and I can’t sleep."
                   },
                   {
                     "speaker": "b",
-                    "text": "I know. I just got excited."
+                    "text": "Why? You’ve trained for months. And think about the prize, a free weekend for the winner!"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Ha, I’m not going to win. I’m not worried about the time either. My legs are ready."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "There will be two thousand people. I might fall or get lost in the middle of all of them. I hate the noise and the pushing of the crowd."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Everybody feels like that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not me, normally. Just this once."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Run next to me, then."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the coach tell the girl?",
+                "prompt": "How does Rafa feel about Sunday's race?",
                 "options": [
-                  "To rest for a week",
-                  "To run much faster",
-                  "To start more slowly"
+                  "Worried about his time",
+                  "Excited about winning a prize",
+                  "Afraid of the large crowd"
                 ],
                 "answer": 2,
-                "explanation": "He tells her that slow and steady wins races."
+                "explanation": "He is not worried about his time and does not expect a prize; what frightens him is the two thousand people around him."
               }
             },
             {
@@ -1085,24 +1164,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why are you wearing that crazy costume?"
+                    "text": "I read that you should run for two hours every Sunday."
                   },
                   {
                     "speaker": "b",
-                    "text": "It is for a charity run. We are all dressed as animals!"
+                    "text": "I tried that, and my legs hurt all week. My cousin runs thirty minutes four times a week and she’s much better than me."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Really? That’s easier to fit in."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "And you don’t need a coach. A plan from the internet is enough."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "True. I prefer mornings, but I’m too sleepy before work, so evenings are fine too."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then let’s run thirty minutes, four times a week, after work."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Deal. I’ll buy a notebook for the plan."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "Why is the boy wearing a costume?",
+                "prompt": "What do the friends agree about training?",
                 "options": [
-                  "For a party",
-                  "For a charity run",
-                  "For a school play"
+                  "Short runs work better than long ones",
+                  "Coaches are too expensive",
+                  "Mornings are the best time"
                 ],
-                "answer": 1,
-                "explanation": "He says it is for a charity run."
+                "answer": 0,
+                "explanation": "Both prefer the plan of thirty minutes four times a week; the coach and the morning are only mentioned by one speaker."
               }
             },
             {
@@ -1129,24 +1228,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Hello, I would like to register for the marathon, please."
+                    "text": "I bought the shoes that everyone talks about. Ninety pounds."
                   },
                   {
                     "speaker": "b",
-                    "text": "Certainly. The entry fee is forty pounds. Can I take your details?"
+                    "text": "Ninety? That’s a lot."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I know, but my old pair cost forty and lasted three months. These have a guarantee for two years."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So every month you save money."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Exactly. And they’re really light, so no complaints about weight."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I thought they’d look more modern."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Ha, I don’t care how they look. They’re perfect for me. I’m going to run my first long race in them next month, and then I’ll tell you what I really think."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Fine, but don’t forget to wear them in first."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the woman want to do?",
+                "prompt": "What does Nina think about her new shoes?",
                 "options": [
-                  "Register for a marathon",
-                  "Book a hotel",
-                  "Buy some shoes"
+                  "They are too heavy",
+                  "They are worth the money",
+                  "They look old-fashioned"
                 ],
-                "answer": 0,
-                "explanation": "She says she would like to register for the marathon."
+                "answer": 1,
+                "explanation": "She compares the price with her old pair that lasted three months and says they are light, so she is happy with what she paid."
               }
             },
             {
@@ -1173,24 +1296,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "You have been running every day this week. Are you not tired?"
+                    "text": "I’m thinking of leaving the Park Runners."
                   },
                   {
                     "speaker": "b",
-                    "text": "A bit, but I want to be ready for the school race."
+                    "text": "Because it’s far? It takes you half an hour by bus."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not that. And the price is fine, only ten pounds a month. It’s just that nobody pushes me. Everyone chats and walks."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So what do you want?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "People who are quicker than me, so I improve."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "There’s a club by the stadium. They train on Tuesdays."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "With the fast ones? Let’s go and see."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "Why does the boy run every day?",
+                "prompt": "Why does Tomas want to join a different club?",
                 "options": [
-                  "To win a bet",
-                  "To make new friends",
-                  "To get ready for a race"
+                  "To run with faster people",
+                  "To live nearer the track",
+                  "To pay less every month"
                 ],
-                "answer": 2,
-                "explanation": "He says he wants to be ready for the school race."
+                "answer": 0,
+                "explanation": "Distance and cost are not the problem; he wants quicker runners so that he improves."
               }
             },
             {
@@ -1217,24 +1360,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Good morning, runners. Because of the heat, we have added an extra water station at the fifteen-kilometre point. Please drink often."
+                    "text": "Well done! How do you feel?"
                   },
                   {
                     "speaker": "b",
-                    "text": "That is a good idea."
+                    "text": "My legs are like jelly. And my time was awful, nearly five hours."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Does that bother you?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not really. I never expected more. The organisers gave us good water and a free medal, so no complaints there. The only thing is I can’t stand up."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You did it, though! Did you have to walk at the end?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Only for two minutes, at the hill near the finish."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s nothing. Honestly, you should be proud."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I did. I’m happy I finished. I never thought I would get to the end."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the announcement about?",
+                "prompt": "How does Jess feel after the marathon?",
                 "options": [
-                  "An extra water station",
-                  "A change of route",
-                  "A late start"
+                  "Disappointed with her time",
+                  "Annoyed with the organisers",
+                  "Happy to have finished"
                 ],
-                "answer": 0,
-                "explanation": "The announcer says they have added an extra water station."
+                "answer": 2,
+                "explanation": "She does not mind her slow time and has no complaints about the organisers; she is glad she got to the end."
               }
             },
             {
@@ -1261,28 +1428,52 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you want to join the running club?"
+                    "text": "Shall we run the long route on Saturday?"
                   },
                   {
                     "speaker": "b",
-                    "text": "I am not sure. I am quite slow."
+                    "text": "My knee still hurts, and the forecast says rain."
                   },
                   {
                     "speaker": "a",
-                    "text": "Everyone is welcome, and there is a group for slow runners."
+                    "text": "Cycling to the lake is fine in the rain."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not with that muddy path. I’d slip. I’d rather stay home."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then the football match is on at three."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Great, I’ll make popcorn."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And I’ll bring the drinks. Rest is good for your knee anyway."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thanks for understanding. Next week we’ll go for a proper run, I promise, as long as the weather is nice."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Don’t worry about it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the boy say about the club?",
+                "prompt": "What do Paula and Ian decide to do this weekend?",
                 "options": [
-                  "It meets only at night",
-                  "It is too expensive",
-                  "There is a group for slow runners"
+                  "Run a long route",
+                  "Stay home and watch the match",
+                  "Cycle to the lake"
                 ],
-                "answer": 2,
-                "explanation": "The girl says there is a group for slow runners."
+                "answer": 1,
+                "explanation": "The knee and the rain rule out the run and the muddy path rules out the lake, so they stay at home for the match."
               }
             }
           ]
@@ -1307,7 +1498,7 @@
             "turns": [
               {
                 "speaker": "organiser",
-                "text": "Good evening, everyone, and thank you for coming to this meeting for volunteers. The city marathon takes place on the second Sunday of April. We expect about six thousand runners. The race starts at nine o'clock in front of the cathedral, and the finish is in the main stadium. Volunteers should arrive at seven for a short briefing. Each person will receive a yellow T-shirt, which you must wear all day. There are twelve water stations along the route, and I need at least five volunteers at each one. If you cannot stand for a long time, you can help at the finish line, giving out medals. Lunch will be provided for all volunteers in the stadium. After the race, we will have a party, with music and free pizza. Please sign the form by the door before you go."
+                "text": "Good evening, everyone, and thank you for coming to this meeting for volunteers. My name is Gower, and I’m the organiser. First, the date. Last year the marathon was on the first Sunday of April, but that was Easter weekend and many people were away, so this year it takes place on the second Sunday of April. The charity dinner is the night before, on Saturday, and you’re all invited. We expect a lot of runners. Two years ago we had four thousand, and last year five thousand, but this time about six thousand people have signed up, so we need all of you. Now, the timetable. The first runners will start at nine o’clock, not at eight as in the past, because the city council wants the roads to be closed for a shorter time. Volunteers should arrive at seven, so that we have time to prepare. You will all receive a T-shirt. The runners wear white and the staff of the city wear green, so we chose a different colour for you: yellow. That way everybody can see you from far away. Please wear dark trousers with it. On the route there are water stations. In the old plan there were ten, but it will be hot this year, so we’ve added two more, which makes twelve altogether. Each station needs eight volunteers, and I’ll give you the map at the end. One more thing: you’ll be standing for a long time, so wear comfortable shoes. Finally, a thank you. After the race, in the main square, there will be free food for all volunteers. Some of you asked for sandwiches, and the café on the corner offered cakes, but in the end the best price was from the pizza restaurant by the river, so you’ll get a slice and a drink. Thank you, and see you in April."
               }
             ]
           },
@@ -1316,46 +1507,37 @@
               "id": "l3-1",
               "prompt": "The marathon takes place on the second ___ of April",
               "answer": "Sunday",
-              "explanation": "He says the marathon is on the second Sunday of April."
+              "explanation": "He says it takes place on the second Sunday of April; Saturday is the charity dinner."
             },
             {
               "id": "l3-2",
               "prompt": "About ___ thousand runners are expected",
               "answer": "six",
-              "accepted": [
-                "6"
-              ],
-              "explanation": "He says they expect about six thousand runners."
+              "explanation": "Four and five thousand were earlier years; this time about six thousand have signed up."
             },
             {
               "id": "l3-3",
               "prompt": "The race starts at ___ o'clock",
               "answer": "nine",
-              "accepted": [
-                "9"
-              ],
-              "explanation": "He says the race starts at nine o'clock."
+              "explanation": "It starts at nine, not at eight as in the past; volunteers arrive at seven."
             },
             {
               "id": "l3-4",
               "prompt": "Volunteers will receive a ___ T-shirt",
               "answer": "yellow",
-              "explanation": "He says each person will receive a yellow T-shirt."
+              "explanation": "Runners wear white and city staff wear green, so the volunteers’ colour is yellow."
             },
             {
               "id": "l3-5",
               "prompt": "There are ___ water stations along the route",
               "answer": "twelve",
-              "accepted": [
-                "12"
-              ],
-              "explanation": "He says there are twelve water stations."
+              "explanation": "There were ten in the old plan and they added two more, which makes twelve."
             },
             {
               "id": "l3-6",
               "prompt": "After the race, there will be free ___",
               "answer": "pizza",
-              "explanation": "He says there will be music and free pizza."
+              "explanation": "Sandwiches and cakes were offered, but the volunteers will get pizza and a drink."
             }
           ]
         },
@@ -1387,19 +1569,19 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Pardo, you ran across a desert last year. Why?"
+                "text": "Pardo, you ran a race of two hundred and fifty kilometres in the desert. Why did you enter it?"
               },
               {
                 "speaker": "h",
-                "text": "I wanted to test myself. After my fortieth birthday, I realised that I had never done anything really difficult. So I entered a race of two hundred kilometres."
+                "text": "Everybody asks me that. I’d like to say the prize money, because the winner gets a lot, but honestly, I never expected to win. I’m an amateur and a teacher. I wasn’t looking for new friends either, I have plenty. I read an article about this race years ago, and one question kept coming back: could I do it? I needed to know what my body and my head could really do."
               },
               {
                 "speaker": "i",
-                "text": "How long did it take?"
+                "text": "Where did you sleep during the race?"
               },
               {
                 "speaker": "h",
-                "text": "Five days. We carried our own food and slept in tents. Every night, we sat around a fire and shared stories."
+                "text": "That surprised people. I thought we would have a small hotel at the end of each day, and I even looked for one in the first village, but they were full of tourists. Some of the support staff slept in their cars, but the runners could not. The organisers put us in tents. Ten of us shared one, and the noise was incredible, because everybody snored."
               },
               {
                 "speaker": "i",
@@ -1407,31 +1589,31 @@
               },
               {
                 "speaker": "h",
-                "text": "The heat in the afternoon. It reached forty degrees, and the sand burned through my shoes. But the worst thing was the blisters. I had twelve on one foot."
+                "text": "Many people think it’s the cold at night, and yes, the temperature fell to almost zero, but a good sleeping bag solved that. Loneliness wasn’t a problem either. On the long stretches there is silence, and I enjoyed it. The real enemy was the sun, forty-five degrees at noon, and my feet. By the second day I had eleven blisters and I could hardly put on my shoes."
               },
               {
                 "speaker": "i",
-                "text": "Did you ever want to give up?"
+                "text": "What helped you on the third day?"
               },
               {
                 "speaker": "h",
-                "text": "On the third day, yes. A runner from Japan walked beside me and said, Just reach the next rock. I did, and then the next one."
+                "text": "Honestly, I wanted to quit that morning. A day of rest wasn’t allowed, because the race doesn’t stop, and a big breakfast only made me feel sick. Then an older woman from Canada ran beside me for an hour. Her advice was simple. She told me how to look after my feet and to divide the distance into small parts. After that I felt like a different person."
               },
               {
                 "speaker": "i",
-                "text": "What did you learn?"
+                "text": "So what did you learn?"
               },
               {
                 "speaker": "h",
-                "text": "That small steps lead to big distances, and that strangers can become friends very quickly."
+                "text": "I don’t believe people who say that races like this are quite easy, because nothing about it was easy. Prizes don’t matter either, the winner had a big cheque and looked sad. What I learned is that if you take one small step and then another, you can go very far. It works for life as well as for running."
               },
               {
                 "speaker": "i",
-                "text": "Will you do another race?"
+                "text": "And what’s next for you?"
               },
               {
                 "speaker": "h",
-                "text": "Yes, but not in a desert. I am thinking of running across the mountains of Spain."
+                "text": "People think I’ll stop, and my wife would love that, but no. Another desert? Maybe later, the sand finished me. Next year I’m going to run in the mountains, in Peru, for ten days. It will be cold and the air is thin, so it will be a different kind of test."
               }
             ]
           },
@@ -1445,7 +1627,7 @@
                 "To meet new people"
               ],
               "answer": 1,
-              "explanation": "He says he wanted to test himself."
+              "explanation": "He says he never expected the prize, he has plenty of friends, and he wanted to know what his body and head could do."
             },
             {
               "id": "l4-2",
@@ -1456,7 +1638,7 @@
                 "In their cars"
               ],
               "answer": 1,
-              "explanation": "He says they carried food and slept in tents."
+              "explanation": "The hotels were full and only the staff had cars; the organisers gave each group a tent."
             },
             {
               "id": "l4-3",
@@ -1467,18 +1649,18 @@
                 "The long silences"
               ],
               "answer": 0,
-              "explanation": "He says the heat and the blisters were the hardest."
+              "explanation": "The cold was solved by a sleeping bag and he liked the silence; the sun and the blisters were the problem."
             },
             {
               "id": "l4-4",
-              "prompt": "What helped him on the third day?",
+              "prompt": "Why did Pardo feel better on the third day?",
               "options": [
-                "A day of rest",
-                "A big meal",
-                "A runner's advice"
+                "He had a long rest",
+                "He ate a large meal",
+                "He got some advice"
               ],
               "answer": 2,
-              "explanation": "A runner from Japan told him to reach the next rock."
+              "explanation": "A day of rest was not allowed and the breakfast made him sick; a Canadian woman told him what to do."
             },
             {
               "id": "l4-5",
@@ -1489,7 +1671,7 @@
                 "Prizes matter most"
               ],
               "answer": 1,
-              "explanation": "He says small steps lead to big distances."
+              "explanation": "He says races are not easy and prizes do not matter; what he learned is that small steps take you far."
             },
             {
               "id": "l4-6",
@@ -1500,7 +1682,7 @@
                 "Stop running for good"
               ],
               "answer": 0,
-              "explanation": "He is thinking of running across the mountains of Spain."
+              "explanation": "He will not stop and not go to another desert yet; next year he will run in the mountains in Peru."
             }
           ]
         }

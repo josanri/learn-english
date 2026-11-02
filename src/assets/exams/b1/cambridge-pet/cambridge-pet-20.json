@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "How did the writer feel about volunteering at first?",
               "options": [
-                "Not very interested",
                 "Keen to start",
-                "Afraid of old people"
+                "Afraid of old people",
+                "Not very interested",
+                "Excited about meeting people"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She says she was not keen and imagined boring jobs."
             },
             {
               "id": "r3-2",
               "prompt": "Why did the writer's first question surprise Mr Bellamy?",
               "options": [
+                "Nobody had talked to him for a week.",
+                "It was not a very polite question.",
                 "He was not used to being asked anything.",
-                "He had expected a longer speech.",
-                "It was not a very polite question."
+                "He had expected a longer speech."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She asked him if he was bored, which was a stupid question; he looked at her and then laughed."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "What did the writer learn from Mr Bellamy?",
               "options": [
                 "How to speak another language",
-                "How to cook a simple dish",
-                "How to play a game"
+                "How to play a game",
+                "How to repair a boat",
+                "How to cook a simple dish"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "He taught her to make a perfect omelette."
             },
             {
               "id": "r3-4",
               "prompt": "Why was Mr Bellamy happy one day?",
               "options": [
+                "He received a message from a relative.",
                 "He had a visit from a friend.",
                 "He won a prize at the home.",
-                "He received a message from a relative."
+                "His family came to see him."
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "His niece wrote to him from Canada and he showed the message to everyone."
             },
             {
               "id": "r3-5",
               "prompt": "What is the writer doing now?",
               "options": [
-                "Preparing to help in a hospital",
                 "Writing a book about Mr Bellamy",
-                "Working in a ship's kitchen"
+                "Working in a ship's kitchen",
+                "Preparing to help in a hospital",
+                "Studying to be a cook"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She is training to help at a hospital because she has learnt that listening is a kind of help."
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "A moustache for charity",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every November, thousands of people in the UK take part in a charity challenge called Movember. [1] The name comes from \"moustache\" and \"November\", and the aim is to raise money for men's health.\n\nThe idea began in Australia about twenty years ago, when two friends decided to grow moustaches for a month. [2] They wanted to start a conversation about health problems that men often do not like to discuss.\n\nToday, the challenge is one of the largest in the world. [3] Women can also take part by supporting the men in their lives, or by walking or running every day. Many companies encourage their staff to join in.\n\nThe money pays for research and for services such as telephone helplines. [4] Some of the people who call say that the helpline saved their lives.\n\nFor those who take part, it is also a chance to have fun. People send photos of their moustaches to friends, and offices play games. [5] As one volunteer says, \"It started as a joke, but it became something serious.\"",
           "sentences": [
             "Men start the month with a clean face and let their moustaches grow for thirty days.",
+            "A moustache can look very different on every face.",
+            "The first moustache was grown by a man named Fred in 1954.",
             "The helplines are open all day and night, and anybody can call.",
-            "Millions of pounds have been raised since it began.",
-            "Doctors also advise men to visit them once a year.",
+            "However, the competition also makes people think about serious problems.",
             "They got a lot of attention, and people wanted to know why.",
-            "However, the competition also makes people think about serious problems."
+            "Millions of pounds have been raised since it began.",
+            "Doctors also advise men to visit them once a year."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "F",
               "explanation": "The two friends grew moustaches; they got attention and people wanted to know why, so they wanted to start a conversation."
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "G",
               "explanation": "\"One of the largest in the world\" is supported by the fact that millions of pounds have been raised; the next sentence adds that women can join too."
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "D",
               "explanation": "The money pays for services such as helplines; the next sentence refers to the helplines being open day and night, and the callers."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "E",
               "explanation": "\"However\" links the fun of competitions with the serious side; the volunteer's comment continues the contrast."
             }
           ]
@@ -728,28 +735,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "benedikta",
-                    "name": "Benedikta",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "benedikta",
-                    "text": "Is the volunteers' meeting still at ten tomorrow?"
-                  },
-                  {
                     "speaker": "aurelio",
-                    "text": "No, it's been put back an hour, to eleven, because the hall isn't free until then."
-                  },
-                  {
-                    "speaker": "benedikta",
-                    "text": "Fine, that gives me time to go to the bank."
+                    "text": "Hi Benedikta, it’s Aurelio. I’m calling about the volunteers’ meeting tomorrow. I know we planned it for nine, and then I sent a message to say ten o’clock because of the bus times. Please forget both. The director’s train from London is delayed, and she doesn’t want to start without her, so the meeting is now at eleven, in the same room as always. There will be coffee and biscuits, and you can still bring your ideas for the spring fair. See you tomorrow, and thanks for being so flexible."
                   }
                 ]
               },
@@ -762,7 +753,7 @@
                   "At nine o'clock"
                 ],
                 "answer": 1,
-                "explanation": "It was at ten but has been put back an hour, so it is at eleven."
+                "explanation": "The meeting was planned for nine, then ten, but the director’s train is late, so it is now at eleven."
               }
             },
             {
@@ -789,15 +780,27 @@
                 "turns": [
                   {
                     "speaker": "cornelia",
-                    "text": "What do I need to bring for the beach clean-up?"
+                    "text": "Desmond, I’m so excited about the beach clean on Saturday. What do I need to bring?"
                   },
                   {
                     "speaker": "desmond",
-                    "text": "Just a pair of strong gloves. We provide the bags and the pickers."
+                    "text": "The council gives us sacks, so there’s no need for bags. And we’ll have lunch at the café after, so I wouldn’t bring a picnic either."
                   },
                   {
                     "speaker": "cornelia",
-                    "text": "I have gardening gloves. Would they be OK?"
+                    "text": "What about my hands? Last time I got a cut from a broken bottle."
+                  },
+                  {
+                    "speaker": "desmond",
+                    "text": "That’s the most important thing. Bring your thick gardening ones, or buy some in the shop on the corner. They cost two pounds."
+                  },
+                  {
+                    "speaker": "cornelia",
+                    "text": "Good plan. I’ll get them tomorrow."
+                  },
+                  {
+                    "speaker": "desmond",
+                    "text": "Great. Don’t forget a hat if it’s sunny."
                   }
                 ]
               },
@@ -810,7 +813,7 @@
                   "A picnic"
                 ],
                 "answer": 0,
-                "explanation": "Desmond says she only needs strong gloves; the bags are provided."
+                "explanation": "The council gives the sacks and lunch is at the café, so she only needs gardening gloves to protect her hands from broken glass."
               }
             },
             {
@@ -837,15 +840,27 @@
                 "turns": [
                   {
                     "speaker": "ernesto",
-                    "text": "How much money did the sponsored walk raise?"
+                    "text": "Frederika, I’ve added up the money from the cake sale and the raffle. We raised three hundred and forty pounds."
                   },
                   {
                     "speaker": "frederika",
-                    "text": "More than we hoped. We were aiming for three hundred pounds, and we raised three hundred and forty."
+                    "text": "That’s wonderful! We hoped for three hundred, but I didn’t think we’d get so much."
                   },
                   {
                     "speaker": "ernesto",
-                    "text": "Brilliant! That will pay for a lot of food."
+                    "text": "Last year’s total was four hundred and thirty, don’t forget, but that was a bigger event, with a concert."
+                  },
+                  {
+                    "speaker": "frederika",
+                    "text": "Still, this is a good result for a small school. Shall we tell the headteacher?"
+                  },
+                  {
+                    "speaker": "ernesto",
+                    "text": "Yes, let’s put it in the newsletter. I’ll write a short article tonight."
+                  },
+                  {
+                    "speaker": "frederika",
+                    "text": "Perfect. Please thank everyone who baked."
                   }
                 ]
               },
@@ -858,7 +873,7 @@
                   "£430"
                 ],
                 "answer": 0,
-                "explanation": "The target was three hundred pounds and they raised three hundred and forty."
+                "explanation": "They hoped for three hundred and last year they got four hundred and thirty, but this year the total is three hundred and forty."
               }
             },
             {
@@ -884,16 +899,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "gustavo",
+                    "text": "Hildegarde, where shall we meet on Sunday morning for the litter pick? I was thinking of the café, because it opens early."
+                  },
+                  {
                     "speaker": "hildegarde",
-                    "text": "Where shall we meet for the clean-up on Saturday?"
+                    "text": "It’ll be packed with tourists, and we won’t find each other. What about the car park?"
                   },
                   {
                     "speaker": "gustavo",
-                    "text": "By the lifeguard hut at the north end of the beach. It's easy to find."
+                    "text": "Not that one. It’s closed this weekend for repairs. And the worst rubbish is at the other end, anyway, past the rocks."
                   },
                   {
                     "speaker": "hildegarde",
-                    "text": "Good. I'll bring my little brother."
+                    "text": "Then let’s meet at the north end of the beach, by the big flag. It’s quiet and we can start straight away."
+                  },
+                  {
+                    "speaker": "gustavo",
+                    "text": "Brilliant. I’ll bring the sacks."
                   }
                 ]
               },
@@ -906,7 +929,7 @@
                   "At the car park"
                 ],
                 "answer": 1,
-                "explanation": "They agree to meet by the lifeguard hut at the north end of the beach."
+                "explanation": "The café will be crowded and the car park is closed, so they will meet at the quiet north end where the worst rubbish is."
               }
             },
             {
@@ -920,28 +943,12 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "jeremiah",
-                    "name": "Jeremiah",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "jeremiah",
-                    "text": "Which charity is your school supporting this year?"
-                  },
-                  {
                     "speaker": "isadora",
-                    "text": "We're collecting money for the dog shelter. It's the one on the edge of town, with the red gate."
-                  },
-                  {
-                    "speaker": "jeremiah",
-                    "text": "I'd like to give them something too."
+                    "text": "Dear parents and students, thank you for coming to our winter fair. I have good news about the money. When we planned the day, we talked about helping the elderly people in the village, and the teachers suggested the children’s ward at the hospital. In the end, the students voted, and they chose something different. All the money will go to the animal shelter on Pine Road, to buy food and blankets for the dogs that wait there for a new home. Thank you for your kindness, and have a lovely evening."
                   }
                 ]
               },
@@ -954,7 +961,7 @@
                   "Dogs in the shelter"
                 ],
                 "answer": 2,
-                "explanation": "The school is collecting money for the dog shelter."
+                "explanation": "The older people and the sick children were ideas, but the students voted for the shelter, so the dogs will receive the money."
               }
             },
             {
@@ -968,28 +975,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "lavinia",
-                    "name": "Lavinia",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "lavinia",
-                    "text": "How are we getting to the food bank on Saturday?"
-                  },
-                  {
                     "speaker": "kasper",
-                    "text": "The minibus leaves from outside the school at eight sharp. Don't be late."
-                  },
-                  {
-                    "speaker": "lavinia",
-                    "text": "I'll set two alarms."
+                    "text": "Hello, volunteers. This is Kasper with the travel plan for Saturday’s tree planting. We’ll meet at the school at eight. Some of you suggested taking the public bus, but it only runs every two hours and we’d be late. A few people wanted to cycle, because it’s good exercise, but the road to the forest is steep and dangerous. So I’ve hired a minibus from the sports club. It takes fifteen people and leaves at eight fifteen sharp. Please bring your boots and a coat, and we’ll be home by four."
                   }
                 ]
               },
@@ -1002,7 +993,7 @@
                   "By bicycle"
                 ],
                 "answer": 0,
-                "explanation": "Kasper says the minibus leaves from outside the school at eight."
+                "explanation": "The public bus is too slow and the road is dangerous for cyclists, so he has hired a minibus from the sports club."
               }
             },
             {
@@ -1028,16 +1019,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "marcellus",
+                    "text": "Nerissa, my nephew wants to volunteer at the charity shop on Saturday. What can he do?"
+                  },
+                  {
                     "speaker": "nerissa",
-                    "text": "What are you going to do at the community centre this afternoon?"
+                    "text": "Well, we have the tea table, but the older ladies like to do that. Cleaning the floor is another job, though he did that last time, and he found it boring."
                   },
                   {
                     "speaker": "marcellus",
-                    "text": "I'll be packing parcels with the others. Maybe I'll serve tea if they need me."
+                    "text": "He’s strong and likes things organised."
                   },
                   {
                     "speaker": "nerissa",
-                    "text": "I'd love to help, but I have a lesson."
+                    "text": "Then the best job is the back room. People bring us clothes and toys, and we need someone to put them in boxes and stick on the labels for the post. He can do that all day."
+                  },
+                  {
+                    "speaker": "marcellus",
+                    "text": "He’ll love it. Thanks, Nerissa."
                   }
                 ]
               },
@@ -1050,7 +1049,7 @@
                   "Clean the floor"
                 ],
                 "answer": 1,
-                "explanation": "He says he will be packing parcels and maybe serve tea if needed."
+                "explanation": "Tea is done by the older ladies and he found the floor boring; because he is strong and organised, he will put things in boxes and label them for the post."
               }
             }
           ]
@@ -1086,15 +1085,27 @@
                 "turns": [
                   {
                     "speaker": "octavian",
-                    "text": "I've been asked to help at the charity shop, but I'm not sure I'd be good at it."
+                    "text": "Petronella, the hospital asked me to help in the library, but I’m not sure."
                   },
                   {
                     "speaker": "petra2",
-                    "text": "You're great with people. You'd be perfect. Just give it a try."
+                    "text": "Why not? You love books."
                   },
                   {
                     "speaker": "octavian",
-                    "text": "I suppose it wouldn't hurt. I'll go on Saturday."
+                    "text": "I’m afraid it’s not for me. I’d like a job with a salary, and it’s every Saturday. I can’t ask for money, they said no."
+                  },
+                  {
+                    "speaker": "petra2",
+                    "text": "I don’t think you should look for something else. Go on a Saturday, see how it feels. If you hate it, you can leave after a month."
+                  },
+                  {
+                    "speaker": "octavian",
+                    "text": "That’s true. There’s nothing to lose."
+                  },
+                  {
+                    "speaker": "petra2",
+                    "text": "Exactly. I’ll bet you enjoy it, and the other volunteers are lovely."
                   }
                 ]
               },
@@ -1107,7 +1118,7 @@
                   "Give the work a try"
                 ],
                 "answer": 2,
-                "explanation": "She tells him to give it a try because he is great with people."
+                "explanation": "He is not sure and cannot be paid, but she says to go once, see how it feels and leave if he hates it."
               }
             },
             {
@@ -1133,16 +1144,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "quirina",
+                    "text": "Good morning, Seaview Hotel, how can I help?"
+                  },
+                  {
                     "speaker": "raphael",
-                    "text": "I'm sorry, I can't do the shift on Sunday. My car has broken down, so can we change it?"
+                    "text": "Hello. I booked a room for the charity weekend, for Friday and Saturday. I’m calling because I can’t arrive on Friday after all. My train has been cancelled."
                   },
                   {
                     "speaker": "quirina",
-                    "text": "Don't worry. I'll ask somebody else. Can you do next week instead?"
+                    "text": "I’m sorry to hear that. Was there a problem with the room?"
                   },
                   {
                     "speaker": "raphael",
-                    "text": "Yes, I'll be fine by then."
+                    "text": "No, it’s all perfect, the room and the staff. I found the hotel easily, I’ve been before. I’d like to book for Saturday and Sunday instead."
+                  },
+                  {
+                    "speaker": "quirina",
+                    "text": "I can do that. Let me change it for you. Would you like breakfast on both mornings?"
+                  },
+                  {
+                    "speaker": "raphael",
+                    "text": "Yes, please, it’s included, isn’t it?"
                   }
                 ]
               },
@@ -1155,7 +1178,7 @@
                   "To ask for directions"
                 ],
                 "answer": 1,
-                "explanation": "He cannot work on Sunday and agrees to do next week instead."
+                "explanation": "He has no complaint and knows the way; the train is cancelled, so he wants to move his booking to Saturday and Sunday."
               }
             },
             {
@@ -1181,29 +1204,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "sylvester",
+                    "text": "Tabea, how’s the book collection going for the school sale?"
+                  },
+                  {
                     "speaker": "tabea",
-                    "text": "I'd like to give some old books to the charity shop."
+                    "text": "Great. We have two boxes already. People are very generous."
                   },
                   {
                     "speaker": "sylvester",
-                    "text": "Thank you, but we can only take books in good condition: clean, without torn pages. Could I look at them first?"
+                    "text": "Good, but please remind everybody that we can’t use books with missing pages or torn covers. Last year we had a lot of old ones, and nobody bought them."
                   },
                   {
                     "speaker": "tabea",
-                    "text": "Of course. I'll go and get the box."
+                    "text": "Right. We don’t have to buy new ones, do we?"
+                  },
+                  {
+                    "speaker": "sylvester",
+                    "text": "No, that’s not the idea. We want things that people can enjoy. Clean books, with all the pages."
+                  },
+                  {
+                    "speaker": "tabea",
+                    "text": "I’ll put up a notice today, with a picture of a clean one."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the man say about the books?",
+                "prompt": "What does the man want people to do with their books?",
                 "options": [
-                  "They must be in good condition.",
-                  "They are not needed.",
-                  "They must be bought."
+                  "Bring only clean books",
+                  "Bring every book they own",
+                  "Buy new ones for the sale"
                 ],
                 "answer": 0,
-                "explanation": "He says the shop can only take clean books without torn pages."
+                "explanation": "He is not asking for new books to be bought; he says that damaged ones do not sell, so he wants clean books with all the pages."
               }
             },
             {
@@ -1229,16 +1264,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "ulysses",
+                    "text": "Valentina, you look tired. How was your day in the town centre?"
+                  },
+                  {
                     "speaker": "valentina",
-                    "text": "It's so tiring to collect money in the street. People just walk past."
+                    "text": "My feet hurt, my voice is almost gone, and I stood for six hours. I’m exhausted!"
                   },
                   {
                     "speaker": "ulysses",
-                    "text": "I know, but the woman in the red coat just gave us ten pounds."
+                    "text": "Was it boring? Were people unkind?"
                   },
                   {
                     "speaker": "valentina",
-                    "text": "That made my day! I'm exhausted, but I'm pleased."
+                    "text": "Not at all. Most people were friendly. A man gave me twenty pounds and an old lady gave me her whole purse of coins. We raised more than last year. I’m really glad I did it."
+                  },
+                  {
+                    "speaker": "ulysses",
+                    "text": "Well done. You deserve a hot chocolate, and a long bath with your feet up."
                   }
                 ]
               },
@@ -1251,7 +1294,7 @@
                   "Exhausted but pleased"
                 ],
                 "answer": 2,
-                "explanation": "She finds it tiring, but she is delighted when someone gives ten pounds."
+                "explanation": "She is tired from standing for six hours, but people were friendly and they raised more than last year, so she feels glad."
               }
             },
             {
@@ -1277,16 +1320,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "winifred2",
+                    "text": "Xavier, some people say the volunteers at the hospital should get a salary."
+                  },
+                  {
                     "speaker": "xavier",
-                    "text": "Do you think volunteers should get paid?"
+                    "text": "It might be fair. They work hard, sometimes eight hours a day."
                   },
                   {
                     "speaker": "winifred2",
-                    "text": "No, I think the point is to give your time freely. But the charity should pay for our bus tickets."
+                    "text": "But then it wouldn’t be volunteering. The whole point is that you give your time for nothing, because you care. If you paid people, the charity would have less money for patients."
                   },
                   {
                     "speaker": "xavier",
-                    "text": "That sounds fair to me."
+                    "text": "I see. Maybe a lunch or a bus ticket?"
+                  },
+                  {
+                    "speaker": "winifred2",
+                    "text": "Yes, that would be okay. But I think the hours are a personal choice. I enjoy mine, so I wouldn’t change anything."
                   }
                 ]
               },
@@ -1299,7 +1350,7 @@
                   "Volunteers should work for fewer hours."
                 ],
                 "answer": 0,
-                "explanation": "She says the point of volunteering is to give your time freely."
+                "explanation": "Paying would stop it from being volunteering and the charity would have less money, so she thinks people should give their time for nothing."
               }
             },
             {
@@ -1326,15 +1377,27 @@
                 "turns": [
                   {
                     "speaker": "yolanda",
-                    "text": "Thank you so much for helping us today. We couldn't have done it without you."
+                    "text": "Zacharias, hi! It’s Yolanda from the charity shop. How are you?"
                   },
                   {
                     "speaker": "zacharias",
-                    "text": "It was my pleasure. I learned a lot about how the food bank works."
+                    "text": "Hello, Yolanda. I’m fine, thanks. Is everything okay?"
                   },
                   {
                     "speaker": "yolanda",
-                    "text": "Would you like to come back next month?"
+                    "text": "Everything’s fine, but we miss you on Saturdays. Since you left in September, the shelves have been so untidy. Nobody organises the books like you do."
+                  },
+                  {
+                    "speaker": "zacharias",
+                    "text": "That’s kind. I stopped because of my exams, but they finish next week."
+                  },
+                  {
+                    "speaker": "yolanda",
+                    "text": "Then could you come back at the end of the month? We would be really happy."
+                  },
+                  {
+                    "speaker": "zacharias",
+                    "text": "Of course, I’d love to. I’ll bring some books from home, too."
                   }
                 ]
               },
@@ -1347,7 +1410,7 @@
                   "Asking a helper to come back"
                 ],
                 "answer": 2,
-                "explanation": "She thanks him and asks if he would like to come again next month."
+                "explanation": "She says they miss him since September and asks if he can come back at the end of the month."
               }
             }
           ]
@@ -1372,53 +1435,53 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Hello, everyone, and thank you for coming. I'm Dorothea, and I'm organising this year's Fun Run for the children's hospital. The run will take place on Sunday, and the distance is five kilometres. We will start in Millford Park, next to the lake, and finish at the same place. Everyone who takes part will receive a yellow T-shirt, so that you are easy to see. You can register online, on our website, and the entry is free, but we ask you to collect money from your friends and family. All the money we raise will be used to buy toys and books for the hospital. If you would like to help as a volunteer on the day, please speak to me after the talk."
+                "text": "Hello, everyone, and thank you for coming. I’m Dorothea, and I’m organising this year’s Fun Run for the children’s hospital. Let me give you the details. The run will take place on Sunday. Last year it was held on a Saturday, but a lot of families couldn’t come because of football matches, so we moved it. We expect about three hundred runners. There are two routes, a long one of ten kilometres for serious runners, and a shorter one of five kilometres for families, and most people choose this one. It’s flat, and children can walk if they get tired. The start is in Millford Park. Some people believe it begins in Millford Square, because that’s where the finish line was last time, but this year everything is in the park, by the big fountain. There’s a cafe, toilets and plenty of space for the pushchairs. At the start, every runner will get a T-shirt. Last year they were blue, but we have changed the colour to yellow, which is more cheerful, and the children’s hospital will be on the front. Please wear it on the day, so that we can see you from far away. Now, how do you sign up? You can call the office on weekdays, but the line is always busy, so it’s much quicker to register on our website. It takes about two minutes, and you pay by card. The entry fee for adults is ten pounds, and children run for free. Finally, why are we doing this? The hospital has a small waiting room for the young patients. With the money, we plan to buy toys and books for it. Last year we bought a television, but the children told us they would prefer something to read. Thank you for listening, and I hope to see you all there!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The run takes place on ___",
+              "prompt": "The charity run is held on a ___ this year",
               "answer": "Sunday",
-              "explanation": "Dorothea says the run will take place on Sunday."
+              "explanation": "They moved it from Saturday to Sunday."
             },
             {
               "id": "l3-2",
-              "prompt": "The run is ___ kilometres",
+              "prompt": "The shorter route, which most families choose, is ___ kilometres long",
               "answer": "five",
               "accepted": [
                 "5"
               ],
-              "explanation": "The distance is five kilometres."
+              "explanation": "The long route is ten kilometres; most people choose the five-kilometre one."
             },
             {
               "id": "l3-3",
-              "prompt": "It starts in Millford ___",
+              "prompt": "Everybody gathers in Millford ___ by the fountain",
               "answer": "Park",
-              "explanation": "The run starts in Millford Park next to the lake."
+              "explanation": "It is not the square; everything is in the park."
             },
             {
               "id": "l3-4",
-              "prompt": "Runners get a ___ T-shirt",
+              "prompt": "Each runner will receive a ___ shirt with the hospital's name",
               "answer": "yellow",
-              "explanation": "Everyone receives a yellow T-shirt."
+              "explanation": "Last year’s shirts were blue; this year they are yellow."
             },
             {
               "id": "l3-5",
-              "prompt": "You can register on the ___",
+              "prompt": "The quickest way to sign up is on the charity's ___",
               "answer": "website",
               "accepted": [
                 "internet",
                 "online"
               ],
-              "explanation": "People can register online, on the website."
+              "explanation": "The phone line is always busy; the quickest way is the website."
             },
             {
               "id": "l3-6",
-              "prompt": "The money will buy toys and ___",
+              "prompt": "The hospital's waiting room will get toys and ___",
               "answer": "books",
-              "explanation": "The money will be used to buy toys and books for the hospital."
+              "explanation": "Last year they bought a television; this time the children prefer something to read, so books."
             }
           ]
         },
@@ -1450,19 +1513,19 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Cuthbert, you manage a kitchen that gives free meals to people in need. How did it begin?"
+                "text": "Cuthbert, you run a soup kitchen in the city centre. How did it start?"
               },
               {
                 "speaker": "barnaby3",
-                "text": "Fifteen years ago, I was a chef in a hotel. One winter night, I saw a hungry man in the street, looking for food in a bin. That shocked me. The next day I started to take the leftovers to the people who slept near the station."
+                "text": "Fifteen years ago, I was a chef in a hotel. One winter night, I saw a hungry man in the street, looking for food in a bin. That shocked me. A hotel manager did ask me about helping once, but that was later, and I have never seen the programme about it on television. It was that man, that night. The next day I started to take the leftovers to the people who slept near the station. I had no plan, only a few big pots and a lot of worry. Within a month, thirty people were waiting for me every night."
               },
               {
                 "speaker": "host",
-                "text": "How many people come now?"
+                "text": "Who works in the kitchen today?"
               },
               {
                 "speaker": "barnaby3",
-                "text": "About a hundred and fifty every evening. We have a team of forty volunteers, and some of them used to be customers themselves."
+                "text": "Not just trained chefs, though two of my old friends from the hotel still come. We have forty volunteers. Some of them are students, some are retired, and a few are people who used to eat here and now want to give something back. I’m very proud of that, and it makes the room feel like a family. They understand the customers better than anybody."
               },
               {
                 "speaker": "host",
@@ -1470,23 +1533,23 @@
               },
               {
                 "speaker": "barnaby3",
-                "text": "Mostly from supermarkets, which give us fruit and vegetables that are slightly damaged but perfectly good. Local restaurants also help, and farmers bring potatoes at harvest time."
+                "text": "Mostly from supermarkets, which give us fruit and vegetables that are slightly damaged but perfectly good. Farmers bring potatoes at harvest time, but that’s only for a few weeks. Hotels sometimes send us bread, but not regularly, because they plan carefully and waste little."
               },
               {
                 "speaker": "host",
-                "text": "What is the hardest part of the work?"
+                "text": "Is winter different?"
               },
               {
                 "speaker": "barnaby3",
-                "text": "The cold. In winter, the queue is longer, and standing outside for an hour is hard for people. We are trying to find a bigger building with a waiting room."
+                "text": "There’s no more food then, in fact there’s less, because people buy more for Christmas. And the number of customers doesn’t drop either. The cold is the problem. The queue grows longer, and standing outside for an hour is hard for people. We are trying to find a bigger building with a waiting room, but the rents in this part of the city are very high, so it may take a long time."
               },
               {
                 "speaker": "host",
-                "text": "What do you want people to understand?"
+                "text": "What would you like people to understand?"
               },
               {
                 "speaker": "barnaby3",
-                "text": "That anybody can end up in difficulty. A job loss, an illness, a family problem, and everything can change very quickly. The people who come here are not different from you or me."
+                "text": "That anybody can end up in difficulty. A job loss, an illness, a family problem, and everything can change very quickly. Some think that our customers don’t want to work, but that isn’t true, many have jobs. And we help everyone, whether they live here or not. The people who come here are not different from you or me. I really want everyone to remember that."
               },
               {
                 "speaker": "host",
@@ -1494,7 +1557,7 @@
               },
               {
                 "speaker": "barnaby3",
-                "text": "Money helps, of course, but time is even more valuable. Even two hours a month makes a difference. And a smile and a kind word cost nothing."
+                "text": "Old clothes are welcome, but we send them to another charity. Money helps, of course, but time is even more valuable. Even two hours a month makes a difference. And a smile and a kind word cost nothing."
               }
             ]
           },
@@ -1508,18 +1571,18 @@
                 "A television programme"
               ],
               "answer": 1,
-              "explanation": "He saw a man looking for food in a bin and was shocked."
+              "explanation": "The hotel manager came later and he never saw the programme; it was the hungry man looking in a bin that shocked him."
             },
             {
               "id": "l4-2",
               "prompt": "Who works in the kitchen?",
               "options": [
-                "Only trained chefs",
-                "A team of volunteers, some who were once customers",
-                "Staff from a local hotel"
+                "Chefs from big hotels",
+                "Local school teachers",
+                "Helpers who were once customers"
               ],
-              "answer": 1,
-              "explanation": "He has about forty volunteers, and some used to be customers."
+              "answer": 2,
+              "explanation": "Two old friends are chefs, but most of the forty volunteers are students and retired people, and some used to eat there."
             },
             {
               "id": "l4-3",
@@ -1530,7 +1593,7 @@
                 "Hotels"
               ],
               "answer": 0,
-              "explanation": "Mostly from supermarkets, which give slightly damaged but good fruit and vegetables."
+              "explanation": "Farmers only bring potatoes for a few weeks and hotels send bread rarely; most of the food is from supermarkets."
             },
             {
               "id": "l4-4",
@@ -1541,7 +1604,7 @@
                 "People queue outside in the cold."
               ],
               "answer": 2,
-              "explanation": "In winter the queue is longer and standing outside for an hour is hard."
+              "explanation": "There is less food and the same number of customers; the problem is the long queue in the cold."
             },
             {
               "id": "l4-5",
@@ -1552,7 +1615,7 @@
                 "The service is only for local people."
               ],
               "answer": 1,
-              "explanation": "He says anybody can end up in difficulty after a job loss, an illness or a family problem."
+              "explanation": "Customers do want to work and the help is for everyone; he wants people to know that anybody can end up in difficulty."
             },
             {
               "id": "l4-6",
@@ -1563,7 +1626,7 @@
                 "Old clothes"
               ],
               "answer": 0,
-              "explanation": "He says money helps, but time is even more valuable."
+              "explanation": "Clothes go to another charity and money helps, but time is even more valuable."
             }
           ]
         }

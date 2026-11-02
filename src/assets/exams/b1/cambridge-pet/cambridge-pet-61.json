@@ -251,6 +251,7 @@
               "options": [
                 "They thought she was too young",
                 "They believed the job needs great strength",
+                "They thought she had not passed the exams",
                 "They did not like working with new people"
               ],
               "answer": 1,
@@ -260,31 +261,34 @@
               "id": "r3-2",
               "prompt": "How did she answer their doubts?",
               "options": [
+                "She trained harder than everyone",
                 "She talked to the chief officer",
                 "She asked for an easier job",
-                "She trained harder than everyone"
+                "She learned to drive the engine faster"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She trained harder than anyone."
             },
             {
               "id": "r3-3",
               "prompt": "How long does she have to get ready when the alarm sounds?",
               "options": [
-                "About two minutes",
+                "About one hour",
                 "About ten minutes",
-                "About half an hour"
+                "About half an hour",
+                "About two minutes"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She has only two minutes to put on her boots and jump on the engine."
             },
             {
               "id": "r3-4",
               "prompt": "What did the writer's mother do after missing the party?",
               "options": [
+                "She gave the guests a ride on the engine",
                 "She sent a message from work",
-                "She phoned a friend to help",
-                "She came home with a cake"
+                "She came home with a cake",
+                "She phoned a friend to help"
               ],
               "answer": 2,
               "explanation": "She came home in the morning with a present and a cake."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What does her mother like best about the job?",
               "options": [
-                "Helping a frightened person to safety",
                 "Driving the engine at speed",
-                "Working long shifts with friends"
+                "Helping a frightened person to safety",
+                "Working long shifts with friends",
+                "Freeing a cat from a tall tree"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "The best moment is when she sees a scared person come out safely."
             }
           ]
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "Staying safe from fire at home",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every year, hundreds of fires start in people's homes, but most of them could have been prevented. Fire officers give some simple advice. [1] Fit a smoke alarm on every floor and test it once a month.\n\nThe kitchen is the most dangerous room. [2] Never leave a pan on the cooker when you go to answer the phone or the door.\n\nElectrical problems are another cause. [3] If a wire looks damaged, ask an adult to replace it, and never use too many plugs in one socket.\n\nIt is also important to have a plan. [4] Everybody in the family should know the quickest way out of every room, and where to meet outside.\n\nIf a fire starts, do not try to be a hero. [5] Get out, stay out and call the emergency number from a safe place.",
           "sentences": [
+            "A candle can be pretty, but it should never be left alone.",
+            "Many kinds of animals are afraid of smoke.",
             "Most of these happen when someone is cooking and forgets the food.",
-            "The first rule is to make sure that you will hear a warning.",
-            "Fire spreads much faster than most people think.",
             "You should talk about it together a few times a year.",
+            "Most of those are found in old buildings.",
             "Check that all the wires and plugs are in good condition.",
-            "Many kinds of animals are afraid of smoke."
+            "Fire spreads much faster than most people think.",
+            "The first rule is to make sure that you will hear a warning."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "H",
               "explanation": "The first rule is to hear a warning, and the next sentence says to fit a smoke alarm."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "C",
               "explanation": "Most fires start when someone is cooking and forgets the food, so never leave a pan."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "F",
               "explanation": "Checking wires and plugs fits the electrical problems and the next sentence about damaged wires."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "G",
               "explanation": "Fire spreads faster than most people think, so it is better to get out and call."
             }
           ]
@@ -710,37 +717,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Gaia",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What time does the fire station open on Saturday?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "At ten, but the best show, with the ladders, is at two o'clock."
+                    "text": "Good morning, everyone, and welcome to the open day at Eastfield Fire Station. Here are a few changes. The ladder show was going to be at ten o’clock, as it says on the programme, but our big engine was called out to a farm this morning, so we have moved the show to two in the afternoon. At four there will be a prize draw for the children, and the winner will sit in the driver’s seat. Until then, you can look at the engines, try on a helmet or have a hot drink in the garden. The first aid class starts at eleven in the main hall. Enjoy your day."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "When is the ladder show?",
+                "prompt": "When is the ladder show at the open day?",
                 "options": [
                   "At ten o'clock",
                   "At two o'clock",
                   "At four o'clock"
                 ],
                 "answer": 1,
-                "explanation": "She says that the ladder show is at two."
+                "explanation": "The programme says ten but the show was moved because the engine was called out; four is the prize draw, so the show is at two."
               }
             },
             {
@@ -767,11 +762,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How many fire engines are there at the station?"
+                    "text": "What a beautiful old fire engine! Is it from the fifties?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Three. The red one is the oldest, and it is more than thirty years old."
+                    "text": "Everyone says that, because it looks like the ones in old films. It’s not that old, it isn’t nearly fifty. It’s thirty-five years old, the same age as me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it still used?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Only for parades now. The white one, which is about ten years old, goes out to the real fires."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And do you like driving the old one?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I love it, but the steering wheel is huge."
                   }
                 ]
               },
@@ -784,21 +795,13 @@
                   "Nearly fifty years"
                 ],
                 "answer": 0,
-                "explanation": "He says it is more than thirty years old."
+                "explanation": "It looks like an old film engine but is not nearly fifty; the white one is ten years old, and the red one is thirty-five."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Gaspar",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Gerda",
@@ -810,25 +813,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Did you hear the alarm last night?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Yes, it woke me up, but it was only a cooker with a burnt pizza."
+                    "text": "Hello, this is Gerda, the manager of Park House. I’m calling about the fire alarm last night. Many of you thought it was caused by a party in flat twelve, because of the loud music, but the music had nothing to do with it. Others said that Mr Lee burnt a pizza again. He did that in May, but last night he was at his sister’s. The fire fighters checked every flat and found that the cooker in flat four was broken, there was a fault in the electric cable and it made smoke. It will be repaired tomorrow. Nobody was hurt. Thank you for waiting outside so calmly."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "What caused the alarm?",
+                "prompt": "What caused the fire alarm?",
                 "options": [
                   "A burnt pizza",
-                  "A broken cooker",
-                  "A neighbour's party"
+                  "A neighbour's party",
+                  "A broken cooker"
                 ],
-                "answer": 0,
-                "explanation": "She says it was a cooker with a burnt pizza."
+                "answer": 2,
+                "explanation": "The party and the pizza were guesses, and Mr Lee was away; the broken cooker in flat four made the smoke."
               }
             },
             {
@@ -855,11 +854,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why do fire fighters wear such heavy clothes?"
+                    "text": "Why do you wear such heavy clothes, Giacomo? It’s thirty degrees today!"
                   },
                   {
                     "speaker": "m",
-                    "text": "To protect their skin from the heat and from falling pieces of wood."
+                    "text": "I know, I sweat a lot. Everyone thinks it’s to keep warm in winter, but we wear them all year. And it’s not for looks, although the children love the helmet."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So why?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fire can burn your skin in seconds. The jacket and trousers are made of a special material that doesn’t catch fire. Without them I couldn’t go near the flames."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That makes sense."
                   }
                 ]
               },
@@ -872,7 +883,7 @@
                   "To keep warm in winter"
                 ],
                 "answer": 1,
-                "explanation": "He says that it is to protect their skin from heat."
+                "explanation": "They wear them all year, so not for winter, and not for looks; the special material stops fire from burning the skin."
               }
             },
             {
@@ -899,24 +910,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Would you like to be a fire fighter?"
+                    "text": "Gisela, you’ve been at the station for a week. What’s your favourite thing to do?"
                   },
                   {
                     "speaker": "f",
-                    "text": "I would love to, but I am afraid of heights, so I would prefer to drive the engine."
+                    "text": "I tried the ladder on Monday, and the view was great, but my legs shook, so it’s not for me. And I’ve worked in the office, it’s a nice job, but I want to be outside."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what would you choose?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "To sit behind the wheel of that enormous red engine with the siren on, and take the team to the fire. I have my driving test next month and then the course for heavy vehicles."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m sure you’ll be the best driver."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "What would the woman like to do?",
+                "prompt": "What would the woman like to do at the fire station?",
                 "options": [
-                  "Work in the office",
-                  "Climb up the ladder",
-                  "Drive the fire engine"
+                  "Drive the fire engine",
+                  "Climb the ladder",
+                  "Work in the office"
                 ],
-                "answer": 2,
-                "explanation": "She says that she would prefer to drive the engine."
+                "answer": 0,
+                "explanation": "The ladder frightened her and she wants to be outside the office; her dream is to take the red engine to a fire."
               }
             },
             {
@@ -930,37 +953,25 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Gael",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Where is the fire blanket?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "In the corridor, next to the door of the science lab."
+                    "text": "Good morning, class. Our fire practice is on Friday, so please remember where the safety equipment is. The fire blanket used to be by the science lab door, but the lab moved last year, so that corner is empty now. A few of you think it is in the kitchen because cooking is where fires start, but the kitchen has only an extinguisher. The blanket is on the first floor, at the top of the stairs, on the wall next to the window. Please remember that, and walk quickly, don’t run, when the bell rings."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "Where is the fire blanket?",
+                "prompt": "Where is the fire blanket in the school?",
                 "options": [
                   "By the science lab door",
-                  "Inside the kitchen",
-                  "On the first floor stairs"
+                  "In the kitchen",
+                  "At the top of the first floor stairs"
                 ],
-                "answer": 0,
-                "explanation": "He says that it is in the corridor next to the door of the science lab."
+                "answer": 2,
+                "explanation": "It used to be by the lab door and the kitchen has only an extinguisher; the blanket is now at the top of the stairs on the first floor."
               }
             },
             {
@@ -987,24 +998,32 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Have you seen the new smoke alarm in the hall?"
+                    "text": "Did you hear the alarm this morning, Gaia? It sounded like yours."
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, it is very loud. It beeped for ten minutes when I made toast."
+                    "text": "Yes, it was mine! I was making toast and I went to answer the phone. When I came back, it was a bit dark on the edges, but not black. I thought there would be smoke, but the window was open, so the kitchen was fine. Then the alarm started to beep, so loudly that my neighbour knocked on the door."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Did you turn it off?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, with a tea towel."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "What happened when the woman made toast?",
+                "prompt": "What happened when the woman made toast this morning?",
                 "options": [
                   "The toast was burnt black",
                   "The alarm beeped loudly",
                   "The kitchen filled with smoke"
                 ],
                 "answer": 1,
-                "explanation": "She says that the alarm beeped for ten minutes."
+                "explanation": "The toast was only dark at the edges and there was no smoke; the alarm beeped so loudly that the neighbour knocked."
               }
             }
           ]
@@ -1040,24 +1059,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Emergency services. Which service do you need?"
+                    "text": "So, how is your first week at the fire station, Gaspar?"
                   },
                   {
                     "speaker": "m",
-                    "text": "The fire brigade, please. There is smoke coming from my neighbour's house."
+                    "text": "Great! My colleagues are all friendly. The team made me a cake on Monday, and they showed me how everything works. I feel like part of the family."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Aren’t you scared? It’s dangerous work."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "They train us for it, so I’m quite calm. A bit nervous before the first fire, perhaps."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And the training, isn’t it boring?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s hard, but it isn’t boring. Every day is different."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the man doing?",
+                "prompt": "How does the man feel about his new job at the fire station?",
                 "options": [
-                  "Selling a house",
-                  "Asking for a room",
-                  "Phoning the emergency services"
+                  "Pleased with his colleagues",
+                  "Worried about the danger",
+                  "Bored by the training"
                 ],
-                "answer": 2,
-                "explanation": "He asks the emergency services for the fire brigade."
+                "answer": 0,
+                "explanation": "He is calm about the danger and the training is hard but not boring; he likes the friendly team."
               }
             },
             {
@@ -1084,24 +1119,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am so nervous about my first day as a fire fighter."
+                    "text": "The fire in my kitchen was small, but everything is black."
                   },
                   {
                     "speaker": "f",
-                    "text": "Stay calm. Everyone feels that way at first, and you will do well."
+                    "text": "Poor you. You should come and stay here tonight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks, but I’ll sleep at my brother’s, he lives round the corner. I want to replace the cooker at once."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wait. Before buying anything, check your insurance policy. They may pay for it all, and they’ll want pictures of the damage."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good point, I haven’t read it for years."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Take photos today before you clean."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does the woman advise the man to do after the fire in his kitchen?",
                 "options": [
-                  "Giving him a small gift",
-                  "Telling him to stay calm",
-                  "Asking about his new job"
+                  "Buy a new cooker",
+                  "Stay with her for a few days",
+                  "Check his insurance"
                 ],
-                "answer": 1,
-                "explanation": "She tells him to stay calm and that he will do well."
+                "answer": 2,
+                "explanation": "He will sleep at his brother’s and wants to buy a cooker at once, but she tells him to wait and check his insurance."
               }
             },
             {
@@ -1127,25 +1178,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Congratulations, Giulia! I heard you passed the fire fighter test!"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "I have just heard that I passed my fire fighter exam!"
+                    "text": "Thanks! Honestly, I’m still a bit shocked, but I hoped for it. I studied for months."
                   },
                   {
                     "speaker": "m",
-                    "text": "Congratulations! You worked so hard, and I am really proud of you."
+                    "text": "So you’re thrilled?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Mostly relieved. The last week was terrible, I couldn’t eat or sleep. Now I just want to rest. And I’ll miss college, but not very much."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You deserve it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. I think I will sleep for two whole days before the training starts."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You will have earned it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does the woman feel about passing the test?",
                 "options": [
-                  "Proud of the woman",
-                  "Angry with the woman",
-                  "Surprised at the exam"
+                  "Surprised at the result",
+                  "Relieved that it is over",
+                  "Sad to leave college"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is really proud of her."
+                "answer": 1,
+                "explanation": "She hoped for the result and will not miss college much; mostly she is relieved after a terrible last week."
               }
             },
             {
@@ -1171,25 +1242,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Have you put up the new smoke alarm, Gilberto?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Excuse me, where is the nearest fire exit, please?"
+                    "text": "Yes, and I wish I hadn’t. It cost only ten pounds, I’m not complaining about that, and fitting it was easy, I used two screws. But it goes off when I fry an egg. Every time!"
                   },
                   {
                     "speaker": "f",
-                    "text": "Go along this corridor and take the second door on the left."
+                    "text": "Maybe it’s too near the kitchen."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s in the hall. My wife says it can smell my cooking. I’ll take it down."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Try cooking with the window open first."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want to know?",
+                "prompt": "Why does the man dislike his new smoke alarm?",
                 "options": [
-                  "When the lesson starts",
-                  "How to call the police",
-                  "Where the fire exit is"
+                  "It was too expensive",
+                  "It is difficult to fit",
+                  "It goes off too easily"
                 ],
                 "answer": 2,
-                "explanation": "He asks where the nearest fire exit is."
+                "explanation": "The price was low and fitting it was easy; the problem is that it goes off whenever he fries an egg."
               }
             },
             {
@@ -1215,25 +1298,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Hello, Gwyneira. What brings you to the station? Are you selling something again?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Today, I am going to teach you how to put out a small fire with a blanket."
+                    "text": "Not today. And I’m not asking for a favour either, although I may later! I want to learn first aid. My son choked on a sweet last month. I didn’t know what to do, and I was so afraid."
                   },
                   {
                     "speaker": "m",
-                    "text": "That looks heavy. Is it difficult to hold?"
+                    "text": "We have a course on Saturday. Four hours, free of charge."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect, put my name down."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Done. See you at nine."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "Why does the woman come to the fire station?",
                 "options": [
-                  "Teaching a safety skill",
-                  "Selling some equipment",
-                  "Asking for a favour"
+                  "To learn first aid",
+                  "To sell some equipment",
+                  "To ask for a favour"
                 ],
                 "answer": 0,
-                "explanation": "She says that she is going to teach them how to put out a small fire."
+                "explanation": "She is not selling anything and not asking for a favour; she wants to learn first aid because her son choked."
               }
             },
             {
@@ -1259,12 +1354,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Galen, you sound terrible. Where are you?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I have locked myself out of the house, and I do not have my phone."
+                    "text": "I’m outside my flat. It’s midnight and I’m locked out. The keys are inside, on the kitchen table."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't panic. Come to my flat and we will call someone to help."
+                    "text": "Didn’t you take the bus home? I thought you were late."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I took the last one, thank goodness. And my phone is in my pocket, I’ve called you with it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll call the landlord. Or you can sleep here."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’d rather get inside; the landlord has a spare."
                   }
                 ]
               },
@@ -1273,11 +1384,11 @@
                 "prompt": "What is the man's problem?",
                 "options": [
                   "He has missed the last bus",
-                  "He has lost his keys in a river",
-                  "He is locked out"
+                  "He is locked out of his flat",
+                  "He has lost his phone"
                 ],
-                "answer": 2,
-                "explanation": "He says that he has locked himself out of the house."
+                "answer": 1,
+                "explanation": "He caught the last bus and has his phone; his keys are inside, so he cannot get in."
               }
             }
           ]
@@ -1302,61 +1413,61 @@
             "turns": [
               {
                 "speaker": "gwendolyn",
-                "text": "Good morning, boys and girls. My name is Gerda, and I am a fire officer. I would like to tell you about my job. The fire brigade in our town has fifty fire fighters, and they work in teams of ten. When an alarm sounds, the first fire engine leaves the station in less than two minutes. Our engines carry a lot of equipment: ladders, hoses, ropes and a big tank of water. Many people think that we only put out fires, but we do many other things. We rescue animals, we help after floods and we give safety talks at schools like yours. Every fire fighter has to be very fit, so we exercise every day at the station gym. We also practise in a special building where we use real smoke, so we are ready for the real thing. If you ever need us, the emergency number is nine nine nine. Please remember to call only when there is a real emergency."
+                "text": "Good morning, boys and girls. My name is Gerda, and I am a fire officer. I would like to tell you about my job. The fire brigade in our town has fifty fire fighters. That sounds like a lot, but they don’t all work together. At any time, there are only ten at the station, and the others are resting or training at home. When the alarm rings, the first engine leaves in less than two minutes. We practise that all the time. Sometimes the journey takes five minutes, if the fire is on the other side of town, but the engine always leaves fast. What is in the engine? There are ladders, long hoses and strong ropes, and, most important, a tank of water. Some people think we carry foam for every fire, but we use foam only for special fires, for example with oil. Water is the main thing, and we carry enough for about an hour. Fire fighters don’t only fight fires. We also go to schools to give safety talks. Last year we visited twelve schools, and I hope we will come to yours soon. We have also visited hospitals, but only to check the alarms. Of course, you can’t be a fire fighter without being fit. Every morning we exercise in the gym at the station, with running machines and weights. Some people like to swim, there is a pool nearby, but most of us prefer the gym because it is next to the engines. Now, the most important thing I want you to remember. In an emergency, you dial nine nine nine. Say it with me. Nine nine nine. In some countries it’s one one two, but in our country it’s nine nine nine. Stay calm and give your address. Thank you for listening, and now you can ask me anything."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The fire brigade has ___ fire fighters",
+              "prompt": "The total number of fire fighters in the town",
               "answer": "fifty",
               "accepted": [
                 "50"
               ],
-              "explanation": "The fire brigade in our town has fifty fire fighters."
+              "explanation": "Only ten are at the station at any time, but the brigade has fifty fire fighters."
             },
             {
               "id": "l3-2",
-              "prompt": "The first engine leaves in less than ___ minutes",
+              "prompt": "The first engine leaves the station in under ___ minutes",
               "answer": "two",
               "accepted": [
                 "2"
               ],
-              "explanation": "It leaves the station in less than two minutes."
+              "explanation": "A long journey can take five minutes, but the engine leaves in less than two."
             },
             {
               "id": "l3-3",
-              "prompt": "Engines carry ladders, hoses, ropes and a tank of ___",
+              "prompt": "Besides ladders, hoses and ropes, an engine carries a tank of",
               "answer": "water",
-              "explanation": "A big tank of water."
+              "explanation": "Foam is only for special fires; the most important thing in the engine is the tank of water."
             },
             {
               "id": "l3-4",
-              "prompt": "Fire fighters also give safety talks at ___",
+              "prompt": "Besides fires, they visit children to give safety talks at",
               "answer": "schools",
               "accepted": [
                 "school"
               ],
-              "explanation": "We give safety talks at schools like yours."
+              "explanation": "They also visited hospitals, but only to check alarms; the safety talks are at schools."
             },
             {
               "id": "l3-5",
-              "prompt": "Fire fighters exercise in the ___",
+              "prompt": "For training every morning, they use the",
               "answer": "gym",
               "accepted": [
                 "gymnasium"
               ],
-              "explanation": "We exercise every day at the station gym."
+              "explanation": "Some like to swim in the nearby pool, but most prefer the gym at the station."
             },
             {
               "id": "l3-6",
-              "prompt": "The emergency number is nine nine ___",
+              "prompt": "In an emergency, people should dial 99 and then",
               "answer": "nine",
               "accepted": [
                 "9"
               ],
-              "explanation": "The emergency number is nine nine nine."
+              "explanation": "In some countries the number is one one two, but here it is nine nine nine."
             }
           ]
         },
@@ -1388,65 +1499,65 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Gaspar, you drive an ambulance in a busy city. What is a normal shift like?"
+                "text": "Gaspar, you drive an ambulance. How long is a normal shift?"
               },
               {
                 "speaker": "d",
-                "text": "There is no normal shift, but each one is twelve hours long. Some nights, we answer ten calls, and other nights, only two. We start at six in the evening and finish at six the next morning."
+                "text": "People often think it’s eight hours, like an office job, and I used to work ten hours when I started. But now we do twelve hours, with a few short breaks. We start at seven in the morning and finish at seven in the evening, or the other way round at night."
               },
               {
                 "speaker": "i",
-                "text": "What kind of calls do you get?"
+                "text": "That’s long. What happened last week?"
               },
               {
                 "speaker": "d",
-                "text": "Everything from small accidents to serious illness. Last week, we helped a woman who was having a baby in the back of the ambulance."
+                "text": "Oh, last week was special. We didn’t have an accident, thank goodness. A call came from a school, but it was only a child with a sore arm. The real surprise was a baby. A woman was on her way to hospital, but the baby was in a hurry. It was born in the back of the ambulance, with the paramedic helping. It was a girl, and I cried a little."
               },
               {
                 "speaker": "i",
-                "text": "Is it ever frightening?"
+                "text": "What is the hardest part of the job for you?"
               },
               {
                 "speaker": "d",
-                "text": "Sometimes, but the training helps. The hardest thing is to stay calm when everyone around you is in a panic."
+                "text": "Staying calm. When a family is panicking, and shouting, and someone is badly hurt, I have to be the quiet one. Driving fast through traffic is stressful, but I’ve done it for years, so it’s not new. And I’m used to working at night. The difficult thing is to stay calm when everybody around me isn’t."
               },
               {
                 "speaker": "i",
-                "text": "How do you relax after a hard night?"
+                "text": "How do you relax after a hard shift?"
               },
               {
                 "speaker": "d",
-                "text": "I go home, eat a big breakfast and sleep until the afternoon. Then I play football with my sons in the park."
+                "text": "I’m not a great cook, my wife does the cooking. And I love books but I fall asleep after two pages. What I really love is playing football with my two sons in the park. It clears my head, and they think I’m a hero, even if I’m not very good."
               },
               {
                 "speaker": "i",
-                "text": "What do people forget to do when they see an ambulance?"
+                "text": "What should drivers do when they hear a siren?"
               },
               {
                 "speaker": "d",
-                "text": "They forget to move out of the way. Please, if you hear a siren, pull over carefully. Every minute counts."
+                "text": "Don’t stop in the middle of the road, please. That is the worst thing, because we can’t pass. And don’t drive more slowly than normal, either. The best thing is to move over carefully, to the side, and let us pass. Signal, and don’t make sudden moves."
               },
               {
                 "speaker": "i",
-                "text": "What do you like best about your job?"
+                "text": "What do you enjoy most about the job?"
               },
               {
                 "speaker": "d",
-                "text": "Getting a thank-you card. Last month, a boy sent me a drawing of the ambulance with a big smile. It is on my wall at the station."
+                "text": "It’s not the money, of course, and I certainly don’t enjoy the long hours, though I like days off. The best moment is when I get a card from a family that says thank you. I keep them all in a box at home. Last month a little boy drew me a picture of the ambulance. I’ll never throw it away."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "How long is Gaspar's shift?",
+              "prompt": "How long is Gaspar's shift now?",
               "options": [
                 "Eight hours",
-                "Twelve hours",
-                "Ten hours"
+                "Ten hours",
+                "Twelve hours"
               ],
-              "answer": 1,
-              "explanation": "He starts at six in the evening and finishes at six the next morning."
+              "answer": 2,
+              "explanation": "Eight hours is what people think and ten hours was his old shift; now he works twelve."
             },
             {
               "id": "l4-2",
@@ -1457,29 +1568,29 @@
                 "A call came from a school"
               ],
               "answer": 1,
-              "explanation": "They helped a woman who was having a baby in the back of the ambulance."
+              "explanation": "There was no accident and the school call was a sore arm; a baby was born in the back of the ambulance."
             },
             {
               "id": "l4-3",
-              "prompt": "What is the hardest part of the job?",
+              "prompt": "Why is staying calm the hardest part for Gaspar?",
               "options": [
-                "Staying calm in a panic",
-                "Driving fast through traffic",
-                "Working in the night"
+                "Everyone around him is panicking",
+                "Driving fast is dangerous",
+                "He is tired at night"
               ],
               "answer": 0,
-              "explanation": "The hardest thing is to stay calm when everyone else is in a panic."
+              "explanation": "He is used to driving fast and to working at night; the difficult thing is to be calm when everybody else is panicking."
             },
             {
               "id": "l4-4",
-              "prompt": "What does he do to relax?",
+              "prompt": "What does Gaspar do to relax?",
               "options": [
                 "Cooks dinner for the family",
                 "Reads a book in the garden",
                 "Plays football with his sons"
               ],
               "answer": 2,
-              "explanation": "He plays football with his sons in the park."
+              "explanation": "His wife does the cooking and he falls asleep over books; what he loves is playing football with his sons."
             },
             {
               "id": "l4-5",
@@ -1490,18 +1601,18 @@
                 "Drive more slowly than normal"
               ],
               "answer": 1,
-              "explanation": "They should pull over carefully."
+              "explanation": "Stopping in the road is the worst thing and slow driving is not wanted; the best thing is to move over carefully."
             },
             {
               "id": "l4-6",
-              "prompt": "What does he enjoy most?",
+              "prompt": "What does Gaspar enjoy most about the job?",
               "options": [
-                "Receiving a thank-you card",
-                "Getting a pay rise",
-                "Having a day off"
+                "A card of thanks from a family",
+                "A day off",
+                "A good salary"
               ],
               "answer": 0,
-              "explanation": "Getting a thank-you card; a boy sent a drawing."
+              "explanation": "He says it is not the money, and days off are only nice; the best moment is a thank-you card."
             }
           ]
         }

@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why did the writer fail the first test?",
               "options": [
-                "He forgot to check his mirror",
                 "He drove through a red light",
-                "He hit another car in the street"
+                "He forgot to check his mirror",
+                "He hit another car in the street",
+                "He drove too fast near the school"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He forgot to look in his mirror before pulling away."
             },
             {
@@ -261,21 +262,23 @@
               "prompt": "What happened during the second test?",
               "options": [
                 "He got lost in the old town",
+                "It started to snow heavily",
                 "The engine suddenly stopped working",
                 "A dog ran across the road"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "He saw a dog running across the road and stopped suddenly."
             },
             {
               "id": "r3-3",
               "prompt": "How did Hilda help the writer?",
               "options": [
-                "She lent him her own small car",
                 "She taught him to stay calm",
-                "She spoke to the examiner for him"
+                "She lent him her own small car",
+                "She spoke to the examiner for him",
+                "She told him to avoid the test"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She taught him to breathe slowly and treat the test like a normal drive."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "It was foggy and rather cold",
                 "It was bright and very sunny",
-                "It was raining hard"
+                "It was raining hard",
+                "It was snowing and windy"
               ],
               "answer": 2,
               "explanation": "It was raining hard."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "How did the writer react to passing?",
               "options": [
-                "He telephoned his mother in tears",
                 "He drove straight home again",
-                "He thanked the examiner very loudly"
+                "He telephoned his mother in tears",
+                "He thanked the examiner very loudly",
+                "He gave the examiner a present"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He called his mother and cried for five minutes."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The history of the car",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The first cars appeared more than a hundred and thirty years ago, and they were very different from the ones we know today. [1] They were slow, noisy and often broke down, and in many places, people were afraid of them.\n\nIn the beginning, only rich people could afford a car. [2] Everything changed in the early twentieth century, when an American businessman began to build cars on a moving line in his factory.\n\nThis made cars much cheaper, so ordinary families could buy them. [3] Soon, roads were built all over the country, and petrol stations appeared in every town.\n\nToday there are more than a billion cars in the world. [4] Many experts believe that most cars will run on electricity within twenty years. [5] Whatever happens, it seems clear that the car will remain an important part of life.",
           "sentences": [
-            "Many drivers now think about the damage that they cause to the air.",
-            "Each one had to be made by hand, which took weeks.",
-            "Some of them looked more like carriages without horses.",
             "People could travel further and more quickly than ever before.",
-            "The best way to learn to drive is with a good teacher.",
-            "The future may bring cars that drive themselves."
+            "Some of them looked more like carriages without horses.",
+            "The future may bring cars that drive themselves.",
+            "Most families had to wait six months for their first car.",
+            "Each one had to be made by hand, which took weeks.",
+            "Many drivers now think about the damage that they cause to the air.",
+            "The Romans built straight roads across Europe two thousand years ago.",
+            "The best way to learn to drive is with a good teacher."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "B",
               "explanation": "Carriages without horses describes how different the first cars looked, and \"they were slow\" follows."
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "E",
               "explanation": "Each car made by hand explains why only rich people could afford one."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "A",
               "explanation": "The cheaper cars meant people could travel further, and then roads were built."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "F",
               "explanation": "Damage to the air links to the billion cars and to electric cars."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "C",
               "explanation": "Cars that drive themselves is a future thought leading to the concluding sentence."
             }
           ]
@@ -746,6 +753,22 @@
                   {
                     "speaker": "m",
                     "text": "Good, I will only be here for three hours, from two until five."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then you will pay for three hours, and that is six pounds. After six in the evening it is free, but you will have left by then."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Three hours at two pounds. Is there a cash machine here? I have only notes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The ticket machine takes cards and coins, and there is a cash machine by the entrance. Do not forget to put the ticket inside your window."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. There is nothing at all to pay only after six, so I will pay for three hours. Six pounds is fair."
                   }
                 ]
               },
@@ -790,6 +813,22 @@
                   {
                     "speaker": "m",
                     "text": "There is an accident ahead, and the police are directing the traffic."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "An accident! Is it a bad one? Is the road closed?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, only one lane is closed. It is not raining hard and the road is not being repaired, so the traffic should move soon."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hope so. We are going to be late for the wedding."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do not worry. We have forty minutes, and the church is only five kilometres away."
                   }
                 ]
               },
@@ -834,6 +873,22 @@
                   {
                     "speaker": "f",
                     "text": "It is second-hand, but it is in excellent condition. I paid three thousand pounds."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Three thousand pounds! That is a good price. Is it a bit old, or is it nearly new?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is eight years old, but the engine is excellent. It is not brand new, and it was not a present from my father. I saved the money for two years."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Can I come for a ride?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. Come on Saturday, and I will take you to the lake."
                   }
                 ]
               },
@@ -878,6 +933,22 @@
                   {
                     "speaker": "m",
                     "text": "There is a garage at the next corner. It is closed on Sundays, though."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Closed on Sundays? That is a problem. Is there another one near the motorway?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, but it is too far from here, about twenty kilometres. And it sells very little petrol, only diesel, I think. Do you have enough for ten kilometres?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The light is on, so maybe five. I will try the garage at the next corner anyway."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "If it is shut, we can ask the neighbours for a few litres."
                   }
                 ]
               },
@@ -922,6 +993,22 @@
                   {
                     "speaker": "f",
                     "text": "No, thank you. I would rather drive. You get lost every time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is not fair! I only get lost in big cities, because the signs there are bad. I enjoy driving, too, but I do not mind this time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The car belongs to me, so I am the one who pays the insurance. I would rather drive. Please sit back and relax."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "All right. I will look at the map and tell you where to turn."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. But please do not talk about the route all the time."
                   }
                 ]
               },
@@ -966,6 +1053,22 @@
                   {
                     "speaker": "m",
                     "text": "Awful. The motorway was closed, so we had to take the old road through the mountains. It took us six hours."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Six hours! That is terrible. I thought it takes only four and a half hours by motorway."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, usually it does, and two and a half hours by train. But this time we were unlucky. We stopped twice for coffee, and the children were hungry and tired."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Poor you. Come in and have a rest. I made a big dinner."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. We are exhausted."
                   }
                 ]
               },
@@ -1010,6 +1113,22 @@
                   {
                     "speaker": "f",
                     "text": "Yes, for the fourteenth of March. I have got five more lessons before then."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The fourteenth of March? That is soon. Are you nervous? I thought you would take it in five weeks."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I am a bit nervous. The test is on a Friday, and my instructor says that the next Friday is full. I practise every evening with my father."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do not worry. You are a careful driver. I am sure you will pass."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you. Please keep your fingers crossed."
                   }
                 ]
               },
@@ -1063,6 +1182,22 @@
                   {
                     "speaker": "m",
                     "text": "Of course. Do you have a driving licence?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, I have, and I can show it to you now. I do not want to buy a new car, and I am not selling my old one. I just need a car for a week, because mine is at the garage."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Which size do you want? We have small cars and big cars, and the big ones are more expensive."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A small one is fine, because I travel alone. How much is it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It is forty pounds a day, and the petrol is not included."
                   }
                 ]
               },
@@ -1107,6 +1242,22 @@
                   {
                     "speaker": "f",
                     "text": "This is a garage, so I will take a look. Come back at five, and I will tell you what it will cost."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is a good idea. This morning, I was driving down the hill, and it was dangerous. I do not want to have an accident."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I will lift the car and look under it. It does not take long. Do not worry, I have seen this problem many times."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I will wait in the café across the road. Is there a car park near here? I am not in a supermarket, but I need to buy bread afterwards."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The supermarket is next door, and it is open until eight."
                   }
                 ]
               },
@@ -1151,6 +1302,22 @@
                   {
                     "speaker": "m",
                     "text": "Oh, I forgot! Thanks for reminding me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No problem. It is the law, and it keeps you safe. I am not asking for directions, and I do not want to tell you a long story. I only want us to arrive safely."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I know. My dad always says the same thing. Where are we going first?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "First to the supermarket, and then to your grandmother's house. She is waiting with lunch."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great, I am hungry already."
                   }
                 ]
               },
@@ -1195,6 +1362,22 @@
                   {
                     "speaker": "m",
                     "text": "You are right. Let us leave the car at home."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And at night it is worse, because there are many lorries on the motorway. I do not want to drive at night, and a new car is too expensive."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The train is quick, and it leaves every half hour. We can read a book on the way."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect. I will check the timetable on my phone."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Let us take the nine o'clock train, so we arrive before lunch."
                   }
                 ]
               },
@@ -1239,6 +1422,22 @@
                   {
                     "speaker": "f",
                     "text": "Wait until you are older: seventeen, and not before. Be patient."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "But my friend Max is already seventeen, and he is learning. His father lets him borrow the family car on Saturdays."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That is his father's decision. In our family, we wait. You will start lessons next year, and then we will see about the car."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is so far away. Can I at least sit in the front seat on the way to school?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, you can, but only if you do your homework first."
                   }
                 ]
               },
@@ -1283,6 +1482,22 @@
                   {
                     "speaker": "m",
                     "text": "Thank you. And how much is the ticket?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The ticket is eight pounds, and you can buy it from the driver. The flight departs at ten, so you do not need to hurry, but it takes forty minutes to get to the airport."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I see. Can I book a seat online, or do I just get on the bus?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You just get on. The buses are never full at this time. And please keep your suitcase beside you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you very much for your help."
                   }
                 ]
               },
@@ -1320,7 +1535,7 @@
             "turns": [
               {
                 "speaker": "reginald",
-                "text": "Good evening, everybody. I'm Reginald, and I run the Safe Drive school. Today I'd like to tell you how our courses work. You can start learning when you are seventeen. Most people need about forty lessons, and each one lasts an hour. We usually recommend two lessons a week. The price for each lesson is thirty pounds, but we offer a discount if you pay for ten at once. Our cars are blue, with the school name on the doors. Before the practical test, you must pass a theory test on a computer, which has fifty questions. You need to answer at least forty-three correctly. Our office is open from nine until six, and you can book lessons by phone or online."
+                "text": "Good evening, everybody. I'm Reginald, and I run the Safe Drive school. We have taught more than five thousand people to drive, and many of them come back with their children. Today I'd like to tell you how our courses work. Please ask me if there is anything you do not understand. You can start learning when you are seventeen. Younger people can come to the office and watch the lessons, but they cannot drive the cars. Most people need about forty lessons, and each one lasts an hour. The teacher will tell you what to practise before the next lesson. We usually recommend two lessons a week. If you have time, three lessons are even better, but more than that is too tiring. The price for each lesson is thirty pounds, but we offer a discount if you pay for ten at once. You can also pay in two parts, if you prefer. Our cars are blue, with the school name on the doors. Every car has two sets of pedals, so the teacher can stop the car if there is a problem. Before the practical test, you must pass a theory test on a computer, which has fifty questions. Many students practise at home on a free website, and that helps a lot. You need to answer at least forty-three correctly. If you do not pass, you can try again after three days, but you have to pay again. Our office is open from nine until six, and you can book lessons by phone or online. Our teachers are friendly, patient and very experienced, and they love their job."
               }
             ]
           },
@@ -1414,11 +1629,27 @@
               },
               {
                 "speaker": "bertram",
+                "text": "Do you work every day of the week?"
+              },
+              {
+                "speaker": "kezia",
+                "text": "Six days. On Sundays I visit my daughter and her children. We have lunch together, and then I sleep for the whole afternoon."
+              },
+              {
+                "speaker": "bertram",
                 "text": "What is a typical day like?"
               },
               {
                 "speaker": "kezia",
                 "text": "I start at six in the morning, taking people to the station. Then I drive shoppers, tourists and sometimes children to school."
+              },
+              {
+                "speaker": "bertram",
+                "text": "Do you listen to music in the car?"
+              },
+              {
+                "speaker": "kezia",
+                "text": "Only quiet music. Some passengers ask for the radio, but most of them like silence in the morning. I think they are still waking up."
               },
               {
                 "speaker": "bertram",
@@ -1430,11 +1661,27 @@
               },
               {
                 "speaker": "bertram",
+                "text": "Did she give you a signed photo?"
+              },
+              {
+                "speaker": "kezia",
+                "text": "No, but she gave me two tickets for her concert. I took my husband, and we sat in the front row. It was a wonderful night."
+              },
+              {
+                "speaker": "bertram",
                 "text": "Have you ever had a problem with a passenger?"
               },
               {
                 "speaker": "kezia",
                 "text": "Rarely. Once a man left without paying, so I followed him. He was very embarrassed and gave me double."
+              },
+              {
+                "speaker": "bertram",
+                "text": "Do you ever feel afraid when you drive at night?"
+              },
+              {
+                "speaker": "kezia",
+                "text": "Not often. I lock the doors, I keep my phone near me, and I tell my office where I am. And I never take a passenger who looks angry."
               },
               {
                 "speaker": "bertram",
@@ -1446,11 +1693,27 @@
               },
               {
                 "speaker": "bertram",
+                "text": "How do you stay calm in a traffic jam?"
+              },
+              {
+                "speaker": "kezia",
+                "text": "I breathe slowly and listen to audio books. Last month I finished a very long story about a ship while waiting for a bus to move."
+              },
+              {
+                "speaker": "bertram",
                 "text": "Do you think driverless taxis will replace you?"
               },
               {
                 "speaker": "kezia",
                 "text": "Maybe one day, but I'm not worried. People like to chat, and a computer can't tell you where the best café is."
+              },
+              {
+                "speaker": "bertram",
+                "text": "What would you say to a young person who wants to drive a taxi?"
+              },
+              {
+                "speaker": "kezia",
+                "text": "Learn the streets, be polite and keep the car clean. People remember a friendly driver, and they will ask for you the next time."
               }
             ]
           },

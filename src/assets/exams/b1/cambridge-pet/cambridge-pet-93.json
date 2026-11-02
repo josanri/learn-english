@@ -250,10 +250,11 @@
               "prompt": "How old is the oak thought to be?",
               "options": [
                 "Almost six years",
+                "More than six hundred years",
                 "About sixty years",
-                "More than six hundred years"
+                "Nearly one thousand years"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "People say it is more than six hundred years old."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "Played hide-and-seek",
                 "Studied for exams",
-                "Sold fruit"
+                "Sold fruit",
+                "Had meetings with farmers"
               ],
               "answer": 0,
               "explanation": "They played hide-and-seek among its roots."
@@ -273,9 +275,10 @@
               "options": [
                 "A farmer wanted the land",
                 "The leaves turned brown",
+                "Visitors damaged the roots",
                 "A storm broke a branch"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "A storm broke one of the biggest branches."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "What did the expert say about the oak?",
               "options": [
                 "It was dying slowly",
+                "It had been planted recently",
                 "It was strong and healthy",
                 "It needed to be cut down"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "He said the oak was strong and healthy."
             },
             {
               "id": "r3-5",
               "prompt": "Why did the villagers build a fence?",
               "options": [
-                "To protect the roots",
                 "To keep animals away",
+                "To protect the roots",
+                "To stop children measuring it",
                 "To mark the road"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "The fence protects the roots from visitors' feet."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Why forests matter",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Forests cover almost one third of the land on Earth. [1] They are home to more than half of all the animals and plants that live on land.\n\nTrees also help us breathe. [2] During the day, their leaves take in carbon dioxide from the air and give back oxygen, which people and animals need.\n\nForests protect the soil too. [3] Without roots to hold the earth together, heavy rain can wash it away and cause floods.\n\nSadly, every year, millions of hectares of forest disappear. [4] Farmers, builders and companies cut them down to make space or to sell the wood.\n\nHowever, there is some good news. [5] In many countries, people are planting new trees and creating protected areas where nothing may be cut down.",
           "sentences": [
-            "Roots keep it firmly in place.",
-            "Large areas are lost for ever.",
-            "The air in a forest is very clean.",
             "Nature is slowly beginning to recover in some places.",
+            "Wood from forests is also used to make paper and furniture.",
+            "Roots keep it firmly in place.",
+            "In autumn, the leaves of many trees turn red and gold.",
+            "The smaller trees grow faster than the large ones.",
+            "Large areas are lost for ever.",
             "They are found on every continent except Antarctica.",
-            "The smaller trees grow faster than the large ones."
+            "The air in a forest is very clean."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "E",
+              "answer": "G",
               "explanation": "Forests are found on every continent; the next sentence goes on with \"They are home to\" more than half of all animals and plants."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "H",
               "explanation": "The air in a forest is clean; the next sentence says trees give back oxygen."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "C",
               "explanation": "Roots keep the soil in place; the next sentence says without roots rain washes it away."
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "F",
               "explanation": "Large areas are lost for ever; the next sentence says farmers and builders cut them down."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "A",
               "explanation": "Nature is recovering in some places; the next sentence says people are planting trees."
             }
           ]
@@ -735,11 +742,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How old is this tree?"
+                    "text": "This oak is enormous. The sign says it’s thirteen years old, but that can’t be right."
                   },
                   {
                     "speaker": "b",
-                    "text": "About three hundred years. You can count the rings if you cut it."
+                    "text": "No, the sign is wrong. A guide told me that the path has been here for thirty years, and I think that’s where the mistake comes from. The tree itself is much older."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "How much older?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It started to grow in seventeen twenty, so it’s three hundred years and a bit. That’s before the town even existed."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Incredible. Imagine everything that it has seen."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "And it still grows a little every year."
                   }
                 ]
               },
@@ -752,7 +775,7 @@
                   "Thirteen years"
                 ],
                 "answer": 1,
-                "explanation": "He says about three hundred years."
+                "explanation": "The sign (thirteen) is wrong and thirty years is the age of the path; the tree started to grow in seventeen twenty, so it is about three hundred years old."
               }
             },
             {
@@ -779,11 +802,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you see the squirrel?"
+                    "text": "Look! A squirrel on the path. It’s carrying something big, a stick, I think."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, it was climbing that pine tree and carrying a nut."
+                    "text": "Hmm, it’s too small for that. Maybe it’s a leaf for its nest."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, look, it’s round and brown. It’s stopping to dig a hole."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "You’re right, it’s burying it. It’s saving food for the winter, like nuts and seeds."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I wish I could give it a sandwich, but my mum says not to feed the animals."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "She’s right. They find enough in the forest. Oh, it’s gone up the tree now."
                   }
                 ]
               },
@@ -796,7 +835,7 @@
                   "A stick"
                 ],
                 "answer": 0,
-                "explanation": "She says it was carrying a nut."
+                "explanation": "The boy first guesses a stick and the girl a leaf, but the squirrel is carrying something round and brown that it buries as winter food, a nut."
               }
             },
             {
@@ -823,11 +862,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where shall we put the picnic?"
+                    "text": "Where shall we have our picnic? There’s the old oak by the lake, but we’d have to walk."
                   },
                   {
                     "speaker": "b",
-                    "text": "Under the beech tree. There is lots of shade there."
+                    "text": "The oak is very old, but I don’t mind that. I’d rather sit under the beech tree, next to the car park. We could keep the food in the car."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "True, but it’s a hot day."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s why I prefer the beech. Its leaves are so thick that the sun doesn’t reach the grass. We’ll be cool in the shade, and the children won’t get burnt."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Fine. I’ll bring the blanket."
                   }
                 ]
               },
@@ -840,21 +891,13 @@
                   "It is very old"
                 ],
                 "answer": 0,
-                "explanation": "She says there is lots of shade there."
+                "explanation": "She says the oak is old and the car park is close, but she chooses the beech because its thick leaves keep the sun away and give shade."
               }
             },
             {
               "id": "l1-4-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Boy",
@@ -866,25 +909,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "What are you doing this weekend?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "My uncle is a forester, so I am helping him to plant trees."
+                    "text": "Hi Zoe. About the school project on woodland jobs: you asked if my uncle could help. At first I thought of my uncle Ben, because he is a farmer, but his fields are ten kilometres from here, and he’s busy at this time of the year. My other uncle, Tom, used to teach in our school, but he doesn’t live here any more. Dad suggested Uncle Sam, who looks after the big forest by the river. He plants new trees, cuts the old ones and checks that they’re healthy. He says we can visit on Saturday morning. Call me back and tell me if that’s OK."
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "What does the boy's uncle do?",
+                "prompt": "What does the uncle who will help with the project do?",
                 "options": [
                   "He is a farmer",
                   "He is a forester",
                   "He is a teacher"
                 ],
                 "answer": 1,
-                "explanation": "He says his uncle is a forester."
+                "explanation": "Ben is a farmer who is too busy and Tom used to be a teacher, but Sam looks after the forest and plants and cuts trees, so he is a forester."
               }
             },
             {
@@ -911,11 +950,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is it far to the lake?"
+                    "text": "Excuse me, is it far to the lake?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Not really. Follow the path through the woods for ten minutes."
+                    "text": "Well, the sign at the gate says one hour, but that’s the long way round the hill. My dad and I go straight through the wood, and it takes us twenty minutes, because we stop to look at birds."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That sounds good. Is it easy?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "There’s a steep bit at the start, but you look fit. If you walk quickly, you’ll be at the water in ten minutes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great. Thank you very much."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Enjoy it. The lake is beautiful in the morning."
                   }
                 ]
               },
@@ -928,7 +983,7 @@
                   "Ten minutes"
                 ],
                 "answer": 2,
-                "explanation": "He says ten minutes through the woods."
+                "explanation": "One hour is the sign for the long way and twenty minutes is the boy’s slow pace with his dad; the woman, who walks fast, needs ten minutes."
               }
             },
             {
@@ -942,24 +997,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why is the path closed?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "A tree fell across it in last night's storm."
+                    "text": "Attention, all walkers. The path to the waterfall is closed today. Yesterday some people saw smoke near the car park, and we thought it was a small fire, but it was only a barbecue and it’s now out. Next month we’ll repair the bridge on the same path, but that work hasn’t started. The real reason is the storm last night. A large pine tree fell across the path near the second gate, and it’s too heavy to move by hand. A team with a chainsaw is coming tomorrow morning. Until then, please use the red path, which is longer but safe. Thank you."
                   }
                 ]
               },
@@ -972,7 +1015,7 @@
                   "It is being repaired"
                 ],
                 "answer": 0,
-                "explanation": "She says a tree fell across it."
+                "explanation": "The smoke was only a barbecue and the bridge repair is next month; the path is closed because a pine fell across it in the storm."
               }
             },
             {
@@ -999,11 +1042,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can I light a fire here?"
+                    "text": "Excuse me, I want to make hot chocolate, but I’m not allowed to light a fire."
                   },
                   {
                     "speaker": "b",
-                    "text": "No, it is far too dry. You can use the stove instead."
+                    "text": "No fires, that’s right. Do you have a candle? Actually, don’t use that either, it’s dangerous in a tent."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I have a torch, but I need heat, not light."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then go to the camp kitchen. There’s a gas stove with a blue button, and you can use it until nine."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Brilliant. Is it free?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, but please wash the pan afterwards, and turn the gas off. Some campers forget, and then the next person finds a hot kitchen."
                   }
                 ]
               },
@@ -1016,7 +1075,7 @@
                   "A torch"
                 ],
                 "answer": 1,
-                "explanation": "The man says he can use the stove."
+                "explanation": "The boy cannot light a fire, the man rejects the candle, and the torch gives light but no heat; the camp kitchen has a gas stove that he can use."
               }
             }
           ]
@@ -1052,24 +1111,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Welcome to the forest centre. Would you like a map of the trails?"
+                    "text": "Good morning. Can I help you?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, please. Which one is best for children?"
+                    "text": "I hope so. We’re planning a two-day walk, and I wondered if I could book a place on the campsite or a tour."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "The campsite is full this weekend, I’m afraid, and the guided tours only run in summer."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Oh. Well, I don’t need a bed. I have a tent, and I’ll find somewhere. I just want to know which paths are open, and which are easy for my father, who is seventy."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Of course. Take this map. Avoid the north path, it’s steep. The lake path is flat."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s exactly what I needed."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman want?",
+                "prompt": "What does the woman want from the park office?",
                 "options": [
                   "A guided tour",
                   "A place to sleep",
-                  "Advice on trails"
+                  "Advice on routes"
                 ],
                 "answer": 2,
-                "explanation": "She asks which trail is best for children."
+                "explanation": "The campsite and the tours are not what she needs; she asks which paths are open and easy for her father, which is advice on routes."
               }
             },
             {
@@ -1096,24 +1171,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Look at all these leaves! They are red, orange and yellow."
+                    "text": "There are so many leaves in our garden. Dad wants to burn them."
                   },
                   {
                     "speaker": "b",
-                    "text": "It is autumn. Let us collect some for our art project."
+                    "text": "Smoke is bad for the neighbours, and it’s not allowed here. My mum gives hers away to the farm for the animals’ beds."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "The farm is too far, and Dad says they don’t take them now. But I have an idea for school. Our art teacher wants autumn pictures."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Oh yes, we can stick them on paper and paint around them. Great idea."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ll collect the best ones, the red and yellow."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll bring the glue."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What will they do with the leaves?",
+                "prompt": "What do the two friends agree to do with the leaves?",
                 "options": [
-                  "Burn them",
                   "Use them in art",
+                  "Burn them",
                   "Give them away"
                 ],
-                "answer": 1,
-                "explanation": "He suggests collecting them for their art project."
+                "answer": 0,
+                "explanation": "Burning is bad and the farm is too far, so they decide to stick the leaves on paper for the art class."
               }
             },
             {
@@ -1140,24 +1231,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Excuse me, this forest belongs to the national park. You cannot take branches."
+                    "text": "Good morning, Mr Lane. I saw you cleaning the pond last week."
                   },
                   {
                     "speaker": "b",
-                    "text": "Oh, I did not know. I will put it back."
+                    "text": "Oh, hello. Yes, somebody had to do it. Was my dog a problem?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not at all. He’s lovely. I was going to say thank you, but then I thought of something better. We need volunteers on Saturday to plant trees, and you clearly like the park."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’d love to, but I don’t have much experience."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Don’t worry, we show you everything. Bring gloves."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Count me in. Should I meet you at the pond, or at the main gate?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "At the main gate, at nine."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Who is the woman?",
+                "prompt": "Why is the woman speaking to the man?",
                 "options": [
-                  "A park worker",
-                  "A teacher",
-                  "A neighbour"
+                  "To complain about his dog",
+                  "To ask him to help in the park",
+                  "To say thank you for his work"
                 ],
-                "answer": 0,
-                "explanation": "She speaks as a person looking after the national park."
+                "answer": 1,
+                "explanation": "The dog is not a problem and thanks was only her first idea; she invites him to plant trees on Saturday and he agrees."
               }
             },
             {
@@ -1184,24 +1295,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Next week, we are going on a school trip to the woods to study insects. Please wear long trousers and bring a notebook."
+                    "text": "Daniel, have you given me the form for the forest trip?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Will there be spiders?"
+                    "text": "Not yet, Miss. I’m not sure if I can go. I thought it would cost a lot, like the museum trip last year."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "This time it’s free. The school pays for the bus, and we bring sandwiches."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Really? Then I’ll definitely come. I was afraid I’d have to stay in school, and I love the forest."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good. And bring a coat, it’ll be cold."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll ask my mum for the form tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the teacher talking about?",
+                "prompt": "What was the boy worried about?",
                 "options": [
-                  "A sports day",
-                  "A holiday",
-                  "A school trip"
+                  "The weather",
+                  "The long bus journey",
+                  "The price of the trip"
                 ],
                 "answer": 2,
-                "explanation": "She talks about going to the woods next week with the class."
+                "explanation": "The teacher mentions the cold and the bus, but Daniel’s worry was the cost, like last year’s museum trip; the trip is free."
               }
             },
             {
@@ -1228,24 +1355,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you know what kind of tree this is?"
+                    "text": "Look at all these nuts under the tree! Can we eat them? They look like chestnuts."
                   },
                   {
                     "speaker": "b",
-                    "text": "It is a chestnut. You can eat the nuts, but they must be cooked."
+                    "text": "Be careful. Some are poisonous. Horse chestnuts aren’t safe, but these have spiky cases, so I think they’re sweet chestnuts."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great, I’ll try one now."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not raw! Grandma says they taste awful and can make you ill. We should cook them on the fire and then peel them."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, you know more than me. Shall we give some to the birds?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, let’s keep them. They’re a treat."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the girl say about the nuts?",
+                "prompt": "What does the girl advise about the nuts?",
                 "options": [
-                  "They must be cooked",
-                  "They are poisonous",
-                  "They taste of apples"
+                  "Cook the nuts first",
+                  "Leave the nuts alone",
+                  "Feed the nuts to the birds"
                 ],
                 "answer": 0,
-                "explanation": "She says you can eat them only if you cook them."
+                "explanation": "She says they are probably safe but should not be eaten raw; she wants to cook them and rejects giving them to the birds."
               }
             },
             {
@@ -1272,11 +1415,31 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I am cold and my feet are wet. Can we go back now?"
+                    "text": "Welcome to the forest. Shall we start with a photo by the entrance? Everyone does."
                   },
                   {
                     "speaker": "b",
-                    "text": "Soon, but first let us find the old oak. It is only five minutes away."
+                    "text": "Maybe at the end. The light is better in the afternoon. I’m starving, but I’d rather eat later, once we’ve done the walk. First, the oak. I’ve read so much about it that I can’t wait to see it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It’s twenty minutes along this path."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Perfect. Let’s go."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Don’t forget your boots. It’s wet."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ve got them on. Lead the way. I hope we see some deer on the way, I’ve never seen one in the wild."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Fingers crossed."
                   }
                 ]
               },
@@ -1285,11 +1448,11 @@
                 "prompt": "What does the woman want to do first?",
                 "options": [
                   "Take photographs",
-                  "Eat lunch",
-                  "See the oak"
+                  "See the oak",
+                  "Eat lunch"
                 ],
-                "answer": 2,
-                "explanation": "She wants to find the old oak first."
+                "answer": 1,
+                "explanation": "Photos will be later in the afternoon and lunch after the walk; she is most eager to see the oak first."
               }
             }
           ]
@@ -1314,60 +1477,51 @@
             "turns": [
               {
                 "speaker": "presenter",
-                "text": "Welcome back to the afternoon show. This weekend, the town is holding its annual Forest Festival in Green Park. It begins on Saturday at ten in the morning and finishes on Sunday evening. There will be music from local bands, and the famous storyteller Mrs Dale will read tales about woodland animals. Children can paint their faces and make nests out of leaves. There will also be a competition for the best wooden sculpture, and the winner will receive a hundred pounds. Entry is free, but visitors are asked to bring a bag for their rubbish. Parking is limited, so please come by bus. The number six bus stops right outside the park. If it rains, the festival moves to the sports hall. I hope to see you all there!"
+                "text": "Welcome back to the afternoon show. This weekend, the town is holding its annual Forest Festival, and I can tell you everything you need to know. Last year we were in Mill Park, near the river, but it was too small, so this year the festival moves to Green Park, behind the library. The stall holders arrive at nine on Saturday, but the festival itself begins at ten in the morning. There’s music at twelve, and it finishes at six in the evening. On Sunday it starts a little later, at eleven. Now, the programme. There’ll be stories for children in the big tent, told by Mrs Dale, who teaches at the primary school. Mr Reed, the other storyteller, was ill, so he can’t come, but he sends his best wishes. In the green area, children can collect leaves and sticks and make nests for birds, and those will hang in the trees afterwards. If your children prefer masks, there’s a table for that too, but it’s smaller. And for the grown-ups, there is the sculpture competition. People have been making wooden animals for weeks. The winner will take home a hundred pounds. Last year the prize was only fifty, so it’s more exciting now. Entry is free, and there’s food, but I’d bring a bottle of water, because it will be hot. Parking is a problem, so please don’t bring your car. The number sixteen bus stops near the library, but it’s slow. The number six goes right to the main gate, and it runs every ten minutes. Finally, if it rains, the festival continues inside the sports hall. Remember to wear comfortable shoes, because the grass will be wet in the morning. Have a lovely weekend, and see you there!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The festival takes place in ___ Park",
+              "prompt": "This year the festival will be held in ___ Park",
               "answer": "Green",
-              "explanation": "He says the festival is in Green Park."
+              "explanation": "Last year it was in Mill Park, but this year it moves to Green Park."
             },
             {
               "id": "l3-2",
-              "prompt": "The festival begins on Saturday at ___ o'clock",
+              "prompt": "The official start on Saturday is at ___ o'clock",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "He says it begins at ten in the morning."
+              "explanation": "The stall holders arrive at nine and the music is at twelve, but the festival begins at ten."
             },
             {
               "id": "l3-3",
-              "prompt": "The storyteller is called Mrs ___",
+              "prompt": "Stories for children will be told by Mrs ___",
               "answer": "Dale",
-              "explanation": "He says the storyteller is Mrs Dale."
+              "explanation": "Mr Reed was ill, so the stories are told by Mrs Dale."
             },
             {
               "id": "l3-4",
-              "prompt": "Children can make ___ out of leaves",
+              "prompt": "Children can use leaves and sticks to build ___ for birds",
               "answer": "nests",
-              "accepted": [
-                "nest"
-              ],
-              "explanation": "He says children can make nests out of leaves."
+              "explanation": "The masks table is smaller; children make nests from leaves and sticks."
             },
             {
               "id": "l3-5",
-              "prompt": "The sculpture winner will get ___ pounds",
+              "prompt": "The best sculpture earns ___ pounds",
               "answer": "a hundred",
               "accepted": [
                 "100",
                 "one hundred",
                 "hundred"
               ],
-              "explanation": "He says the winner will receive a hundred pounds."
+              "explanation": "Last year the prize was fifty pounds; now the winner takes home a hundred."
             },
             {
               "id": "l3-6",
-              "prompt": "Visitors should come by number ___ bus",
+              "prompt": "Visitors should take bus number ___ to the main gate",
               "answer": "six",
-              "accepted": [
-                "6"
-              ],
-              "explanation": "He says the number six bus stops outside the park."
+              "explanation": "The number sixteen is slow and stops near the library; the number six goes to the main gate."
             }
           ]
         },
@@ -1399,51 +1553,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Tove, you work as a forest ranger. What is a normal day like?"
+                "text": "Tove, what is a normal day like for a forest ranger?"
               },
               {
                 "speaker": "h",
-                "text": "There is no normal day. Every day is different. I might repair a path in the morning, rescue a lost walker at lunchtime and count owls at night."
+                "text": "There’s no such thing, really. People imagine that it’s very quiet, and sometimes it is, but then a visitor gets lost or a branch falls across the road. I never do the same thing two days in a row. In fact, that’s what I love about the work, because I’d go crazy in an office."
               },
               {
                 "speaker": "i",
-                "text": "What is the best part of the job?"
+                "text": "Which part of the day do you like most?"
               },
               {
                 "speaker": "h",
-                "text": "The silence. In a big forest, early in the morning, you hear only birds and the wind. It is like a church."
+                "text": "The early morning. The summer evenings are lovely, and the visitors are interesting, I meet them all day long. But at six, when the sun comes up, there is nobody here, only birds and the wind in the trees. That silence is the reason why I chose this job, and I still feel lucky every morning."
               },
               {
                 "speaker": "i",
-                "text": "What is the worst part?"
+                "text": "What annoys you most?"
               },
               {
                 "speaker": "h",
-                "text": "Litter. People leave bottles, bags and even mattresses. Last month, I found a washing machine."
+                "text": "Well, dogs running free are a problem, mostly in spring, because many birds nest on the ground. The noise from the road is also bad on Sundays. But what really makes me angry is the rubbish. People leave bottles, bags and plastic everywhere, and the forest isn’t a bin."
               },
               {
                 "speaker": "i",
-                "text": "Have you ever been scared?"
+                "text": "Tell me about the snowstorm last winter. How did you feel?"
               },
               {
                 "speaker": "h",
-                "text": "Once, in winter, I got caught in a snowstorm. I built a shelter from branches and waited until morning."
+                "text": "I was alone in the north area when the snow started. A helicopter would have taken hours to arrive, and I didn’t climb a tree, that’s silly. I wasn’t frightened, and it wasn’t exciting either. I stayed calm because I knew what to do. I had trained for it three years before, and I remembered every step. I built a shelter with branches and sat inside until the morning."
               },
               {
                 "speaker": "i",
-                "text": "What is your advice for people who visit forests?"
+                "text": "What advice do you give visitors about mobile phones?"
               },
               {
                 "speaker": "h",
-                "text": "Tell someone where you are going, take water and a charged phone, and never walk alone after dark."
+                "text": "Some people think we should ban them, but I disagree. I don’t mind photos, they’re nice memories. The important thing is that the battery is full. If you hurt your leg, a phone is the only way for us to find you. So please charge it before you come, and tell somebody which path you are taking. I once found a family who had no idea where they were, and the phone saved the day."
               },
               {
                 "speaker": "i",
-                "text": "Do you have a favourite tree?"
+                "text": "And is it true that you say hello to a tree every day?"
               },
               {
                 "speaker": "h",
-                "text": "A huge old beech near the north gate. I say hello to it every day. My colleagues think I am mad."
+                "text": "It’s true! There’s a beech near my office, about two hundred years old. I don’t plant a tree every day, that would be amazing, and my reports are very short. But I always stop and say good morning to it. People laugh, but it makes me smile, and it’s the best part of my walk to work."
               }
             ]
           },
@@ -1457,40 +1611,40 @@
                 "They are always the same"
               ],
               "answer": 1,
-              "explanation": "She says there is no normal day."
+              "explanation": "People imagine quiet days, but visitors get lost and branches fall; she never does the same thing two days in a row."
             },
             {
               "id": "l4-2",
-              "prompt": "What does she like best?",
+              "prompt": "Why does she like the early morning best?",
               "options": [
-                "The warm summer evenings",
-                "The silence early in the morning",
-                "The meetings with visitors"
+                "It is very quiet",
+                "It is warm",
+                "She meets visitors"
               ],
-              "answer": 1,
-              "explanation": "She loves the silence in the early morning."
+              "answer": 0,
+              "explanation": "The summer evenings and the visitors are pleasant, but the silence at six with only birds is why she chose the job."
             },
             {
               "id": "l4-3",
-              "prompt": "What annoys her most?",
+              "prompt": "What makes her most angry?",
               "options": [
-                "Litter left by visitors",
                 "Noise from the road",
-                "Dogs without leads"
+                "Dogs without leads",
+                "Litter left by visitors"
               ],
-              "answer": 0,
-              "explanation": "She says the worst part is litter."
+              "answer": 2,
+              "explanation": "Dogs and road noise are problems, but the rubbish that people leave makes her really angry."
             },
             {
               "id": "l4-4",
-              "prompt": "What did she do in the snowstorm?",
+              "prompt": "How did she feel in the snowstorm?",
               "options": [
-                "Climbed a tree",
-                "Called a helicopter",
-                "Built a shelter"
+                "Very frightened",
+                "Quite calm",
+                "Really excited"
               ],
-              "answer": 2,
-              "explanation": "She built a shelter from branches."
+              "answer": 1,
+              "explanation": "She says she was not frightened and it was not exciting; she stayed calm because she knew what to do."
             },
             {
               "id": "l4-5",
@@ -1501,7 +1655,7 @@
                 "Use it only for photos"
               ],
               "answer": 1,
-              "explanation": "She says to take water and a charged phone."
+              "explanation": "She does not want a ban and photos are fine, but the battery must be full so rangers can find an injured visitor."
             },
             {
               "id": "l4-6",
@@ -1512,7 +1666,7 @@
                 "Writes a long report"
               ],
               "answer": 0,
-              "explanation": "She says hello to her favourite beech tree every day."
+              "explanation": "She does not plant a tree daily and her reports are short; she stops and says good morning to the old beech."
             }
           ]
         }

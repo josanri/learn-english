@@ -250,10 +250,11 @@
               "prompt": "Why did the writer first visit the garden?",
               "options": [
                 "A colleague invited her.",
-                "She needed a job at the library.",
-                "She wanted to try something new."
+                "She wanted to try something new.",
+                "She was looking for a place to live.",
+                "She needed a job at the library."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She says she had never planted anything but decided to give it a try, because she wanted something new at weekends."
             },
             {
@@ -261,10 +262,11 @@
               "prompt": "What was the writer worried about?",
               "options": [
                 "Having to share the vegetables.",
-                "Not being able to help.",
-                "Meeting people from work."
+                "Meeting people from work.",
+                "Working with sharp tools.",
+                "Not being able to help."
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She worried she would be useless, which means she was afraid she could not help."
             },
             {
@@ -273,7 +275,8 @@
               "options": [
                 "Meeting people nearby.",
                 "Learning how to cook.",
-                "Taking fresh food home."
+                "Taking fresh food home.",
+                "Having a quiet weekend."
               ],
               "answer": 0,
               "explanation": "She says the best part was getting to know people from the neighbourhood."
@@ -283,8 +286,9 @@
               "prompt": "What is planned for next summer?",
               "options": [
                 "A new library building.",
-                "A larger vegetable market.",
-                "A café with local entertainment."
+                "A market for old books.",
+                "A café with local entertainment.",
+                "A larger vegetable market."
               ],
               "answer": 2,
               "explanation": "The last paragraph says a small café with food from the garden and local musicians is planned for next summer."
@@ -295,7 +299,8 @@
               "options": [
                 "She thinks it is becoming too expensive.",
                 "She is happy, but wants it to stay welcoming.",
-                "She would prefer to leave the garden."
+                "She would prefer to leave the garden.",
+                "She is proud and wants to start again elsewhere."
               ],
               "answer": 1,
               "explanation": "She is pleased the project is growing, but hopes it keeps the friendly feeling."
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "A day without a phone",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Last month, our teacher challenged the class to spend one Saturday without a mobile phone. I thought it would be easy because I rarely use mine. [1] By breakfast, I had already reached for it twice.\n\nI put the phone in a drawer and went to meet my cousin. [2] We walked through the park and talked about our plans for the summer. Later, we visited a bookshop and found a travel guide to the coast.\n\nAt lunchtime, I wanted to check the weather. [3] Instead, the shop assistant told us that rain was expected in the afternoon. We bought two cheap umbrellas.\n\nThe rain began while we were on the bus home. [4] I noticed that I had been paying more attention to the people around me.\n\nI still use my phone every day, but now I leave it in my bag when I am with friends. [5] The challenge was more useful than I expected.",
           "sentences": [
-            "My friends say I am better company now.",
-            "Fortunately, we were ready for it.",
             "It felt strange to arrive without a way to tell her I was late.",
+            "Fortunately, we were ready for it.",
+            "My cousin has a new phone with a very good camera.",
+            "Some people turn their phones off for a whole week.",
             "But I soon discovered how much I depended on it.",
+            "My friends say I am better company now.",
             "I decided not to ask anyone for their phone.",
-            "My cousin has a new phone with a very good camera."
+            "We had seen the weather forecast on the shop's television."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "E",
               "explanation": "“But I soon discovered how much I depended on it” contrasts with “I thought it would be easy” and explains “reached for it twice”."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "A",
               "explanation": "After putting the phone in the drawer and going to meet her cousin, the writer feels strange arriving without a way to tell her she was late."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "G",
               "explanation": "“I decided not to ask anyone for their phone” follows wanting to check the weather, and “Instead” introduces what the shop assistant said."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "F",
               "explanation": "“My friends say I am better company now” follows leaving the phone in the bag with friends and leads to the conclusion."
             }
           ]
@@ -764,19 +771,31 @@
                 "turns": [
                   {
                     "speaker": "dana",
-                    "text": "Are we still meeting at the café?"
+                    "text": "Are we still meeting at the café at half past ten?"
                   },
                   {
                     "speaker": "kofi",
-                    "text": "I’m afraid it’s closed today."
+                    "text": "I was just about to call you. I walked past it and there’s a sign on the door. It’s closed for the whole week."
                   },
                   {
                     "speaker": "dana",
-                    "text": "Oh, then let’s meet outside the bookshop at half past ten."
+                    "text": "Oh no. Shall we try the station, then? There’s a coffee stand near the ticket office."
                   },
                   {
                     "speaker": "kofi",
-                    "text": "Fine. See you there."
+                    "text": "Hmm, it’s always packed on Saturdays. We’d never find a seat."
+                  },
+                  {
+                    "speaker": "dana",
+                    "text": "True. Well, what about that little bookshop on Mill Street, the one with cushions upstairs? They sell drinks too."
+                  },
+                  {
+                    "speaker": "kofi",
+                    "text": "Perfect. I’ll wait outside for you."
+                  },
+                  {
+                    "speaker": "dana",
+                    "text": "Great. See you at half past ten."
                   }
                 ]
               },
@@ -789,7 +808,7 @@
                   "At the café"
                 ],
                 "answer": 0,
-                "explanation": "The café is closed, so Dana suggests meeting outside the bookshop."
+                "explanation": "Dana suggests the station, but Kofi says it is always packed, so they agree on the little bookshop on Mill Street instead of the closed café."
               }
             },
             {
@@ -803,24 +822,12 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "luke",
-                    "name": "Luke",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "luke",
-                    "text": "Is this the right stop for the station bus? I thought it left at twenty past ten."
-                  },
-                  {
                     "speaker": "hannah",
-                    "text": "So did I, but the board says quarter to eleven. We’ve got ten minutes."
+                    "text": "Attention please. This announcement is for passengers waiting for the station bus. The bus normally leaves at twenty past ten, but today it is running late because of roadworks. Earlier, a driver told us it would arrive by ten thirty-five, but that was before another delay on the bridge. The bus will now leave at quarter to eleven. Please stay at the stop and don’t wait in the car park, because the bus will not stop there. Tickets from the machine are still valid. Thank you for your patience, and we are sorry for the trouble."
                   }
                 ]
               },
@@ -833,7 +840,7 @@
                   "10:45"
                 ],
                 "answer": 2,
-                "explanation": "The board says quarter to eleven, which is 10:45. Twenty past ten was only what Luke remembered."
+                "explanation": "The normal time was twenty past ten and the driver’s guess was ten thirty-five, but because of the second delay the bus will leave at quarter to eleven."
               }
             },
             {
@@ -864,7 +871,31 @@
                   },
                   {
                     "speaker": "ines",
-                    "text": "I usually do, but it’s raining hard. I’ll take the number six bus instead."
+                    "text": "I was going to go on foot. It only takes twenty minutes. But look at that rain."
+                  },
+                  {
+                    "speaker": "ravi",
+                    "text": "You could borrow my bicycle. It’s in the garage."
+                  },
+                  {
+                    "speaker": "ines",
+                    "text": "Thanks, but I nearly fell off it last time. The brakes are terrible."
+                  },
+                  {
+                    "speaker": "ravi",
+                    "text": "Fair enough. It is a bit old."
+                  },
+                  {
+                    "speaker": "ines",
+                    "text": "I’ll get on the number six bus. It stops right outside my house."
+                  },
+                  {
+                    "speaker": "ravi",
+                    "text": "It’ll be crowded, though."
+                  },
+                  {
+                    "speaker": "ines",
+                    "text": "I don’t mind. I’ll just listen to music."
                   }
                 ]
               },
@@ -877,7 +908,7 @@
                   "By bus"
                 ],
                 "answer": 2,
-                "explanation": "Because of the heavy rain, Ines will take the number six bus instead of walking."
+                "explanation": "Ines was going to walk, but it is raining. She refuses Ravi’s old bicycle because of the brakes and says she will get on the number six bus."
               }
             },
             {
@@ -904,11 +935,27 @@
                 "turns": [
                   {
                     "speaker": "carmen",
-                    "text": "Which jacket do you like for the trip, Joel?"
+                    "text": "Did you buy the blue jacket in the end?"
                   },
                   {
                     "speaker": "joel",
-                    "text": "The blue one looks good, but the green one is warmer. I’ll buy that one."
+                    "text": "I nearly did. Then the assistant showed me the label, and it isn’t waterproof. We’ll be walking in the hills for three days."
+                  },
+                  {
+                    "speaker": "carmen",
+                    "text": "Oh, that’s true. Was there anything else?"
+                  },
+                  {
+                    "speaker": "joel",
+                    "text": "There’s a green one next to it. It’s a bit more expensive, but it’s really warm."
+                  },
+                  {
+                    "speaker": "carmen",
+                    "text": "Maybe neither jacket is worth it. You could wait for the sale."
+                  },
+                  {
+                    "speaker": "joel",
+                    "text": "The sale doesn’t start until next month, and the trip is in two weeks. I’ll go back tomorrow and get the heavier one."
                   }
                 ]
               },
@@ -921,7 +968,7 @@
                   "Neither jacket"
                 ],
                 "answer": 1,
-                "explanation": "Joel says the green jacket is warmer and he will buy that one."
+                "explanation": "Joel nearly bought the blue jacket, but it is not waterproof. He decides to go back for the heavier, warmer green one rather than wait for the sale."
               }
             },
             {
@@ -952,11 +999,31 @@
                   },
                   {
                     "speaker": "nora",
-                    "text": "I’d love to, but I forgot my kit."
+                    "text": "I’d love to, but I left my kit at my sister’s. And honestly, I’m tired."
                   },
                   {
                     "speaker": "pablo",
-                    "text": "No problem. Let’s go for a walk instead."
+                    "text": "Shopping, then? I need a birthday present for my mum."
+                  },
+                  {
+                    "speaker": "nora",
+                    "text": "The shops close at six. We’d never make it."
+                  },
+                  {
+                    "speaker": "pablo",
+                    "text": "Right. Then let’s take a walk along the river. It’s light until eight."
+                  },
+                  {
+                    "speaker": "nora",
+                    "text": "Good idea. I could do with some fresh air."
+                  },
+                  {
+                    "speaker": "pablo",
+                    "text": "I’ll bring a sandwich and a flask of tea. There’s a bench by the bridge where we can sit for a while."
+                  },
+                  {
+                    "speaker": "nora",
+                    "text": "Lovely. Let’s meet at the gate at half past five."
                   }
                 ]
               },
@@ -969,7 +1036,7 @@
                   "Go shopping"
                 ],
                 "answer": 0,
-                "explanation": "Nora forgot her swimming kit, so they go for a walk instead."
+                "explanation": "Swimming is impossible because Nora left her kit, and the shops close at six, so Pablo suggests a walk along the river and Nora agrees."
               }
             },
             {
@@ -996,11 +1063,35 @@
                 "turns": [
                   {
                     "speaker": "yuki",
-                    "text": "Is the museum open on Mondays?"
+                    "text": "Hi, I’d like to check if the museum is open on Mondays."
                   },
                   {
                     "speaker": "clerk",
-                    "text": "It normally is, but it’s closed tomorrow for repairs."
+                    "text": "It normally is, yes. But I’m afraid tomorrow is different."
+                  },
+                  {
+                    "speaker": "yuki",
+                    "text": "Oh? Is it because the staff are away? Last year it closed for a staff holiday."
+                  },
+                  {
+                    "speaker": "clerk",
+                    "text": "That was in August. And it isn’t because it’s quiet, either. We’ve had lots of visitors this month."
+                  },
+                  {
+                    "speaker": "yuki",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "clerk",
+                    "text": "Builders are coming to fix the roof in the main hall. They say the repairs will take two days."
+                  },
+                  {
+                    "speaker": "yuki",
+                    "text": "I see. When does it reopen?"
+                  },
+                  {
+                    "speaker": "clerk",
+                    "text": "Wednesday morning at nine."
                   }
                 ]
               },
@@ -1013,7 +1104,7 @@
                   "It is being repaired"
                 ],
                 "answer": 2,
-                "explanation": "The clerk says the museum is closed tomorrow for repairs."
+                "explanation": "The clerk says the staff holiday was in August and visitor numbers are high, but builders are coming to fix the roof and the repairs will take two days."
               }
             },
             {
@@ -1044,11 +1135,35 @@
                   },
                   {
                     "speaker": "greta",
-                    "text": "Sorry, we’ve run out. The vegetable pie is very popular."
+                    "text": "Sorry, we’ve run out. The chef is making more, but it won’t be ready for half an hour."
                   },
                   {
                     "speaker": "oscar",
-                    "text": "All right, I’ll have that."
+                    "text": "Hmm, that’s too long. A salad, then?"
+                  },
+                  {
+                    "speaker": "greta",
+                    "text": "Of course. Though the dressing has nuts in it."
+                  },
+                  {
+                    "speaker": "oscar",
+                    "text": "I’m allergic, so I’d better not."
+                  },
+                  {
+                    "speaker": "greta",
+                    "text": "Then I’d suggest the pie. It’s the vegetable one, with mushrooms and spinach, and it comes with potatoes."
+                  },
+                  {
+                    "speaker": "oscar",
+                    "text": "Does it contain any fish?"
+                  },
+                  {
+                    "speaker": "greta",
+                    "text": "No, nothing like that."
+                  },
+                  {
+                    "speaker": "oscar",
+                    "text": "Great. I’ll have that, please."
                   }
                 ]
               },
@@ -1061,7 +1176,7 @@
                   "A salad"
                 ],
                 "answer": 1,
-                "explanation": "The soup has run out, so Oscar chooses the vegetable pie."
+                "explanation": "The soup has run out and the salad dressing has nuts, which Oscar cannot eat, so he accepts the pie with mushrooms and spinach."
               }
             }
           ]
@@ -1097,28 +1212,48 @@
                 "turns": [
                   {
                     "speaker": "tariq",
-                    "text": "Did you like the concert?"
+                    "text": "How was the concert?"
                   },
                   {
                     "speaker": "maeve",
-                    "text": "The music was great, but the hall was so crowded I couldn’t see the stage."
+                    "text": "The band was great, honestly better than I expected."
                   },
                   {
                     "speaker": "tariq",
-                    "text": "Maybe we should book seats next time."
+                    "text": "Better than the last one?"
+                  },
+                  {
+                    "speaker": "maeve",
+                    "text": "Much better. But the tickets, forty pounds!"
+                  },
+                  {
+                    "speaker": "tariq",
+                    "text": "That’s what I paid last time, and it seemed fair."
+                  },
+                  {
+                    "speaker": "maeve",
+                    "text": "Yes, I don’t mind the price. What I minded was the hall. You couldn’t move. I stood behind a pillar for two hours."
+                  },
+                  {
+                    "speaker": "tariq",
+                    "text": "Same for me last year. They should sell fewer tickets."
+                  },
+                  {
+                    "speaker": "maeve",
+                    "text": "Exactly. All those people! I’d go again if it were somewhere bigger."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What did the woman dislike?",
+                "prompt": "What do Maeve and Tariq agree about?",
                 "options": [
-                  "The crowd",
-                  "The music",
-                  "The tickets"
+                  "The tickets cost too much",
+                  "There were too many people",
+                  "The band was better than expected"
                 ],
-                "answer": 0,
-                "explanation": "Maeve says the hall was so crowded that she could not see the stage."
+                "answer": 1,
+                "explanation": "Maeve says she does not mind the price and liked the band; what annoyed her was the hall, and Tariq agrees that too many tickets are sold for all those people."
               }
             },
             {
@@ -1145,24 +1280,48 @@
                 "turns": [
                   {
                     "speaker": "selma",
-                    "text": "Have you finished the report?"
+                    "text": "Still working on the report?"
                   },
                   {
                     "speaker": "adam",
-                    "text": "Almost. I just need to check the final numbers before I send it this afternoon."
+                    "text": "Yes, it’s due tomorrow at nine."
+                  },
+                  {
+                    "speaker": "selma",
+                    "text": "Do you want me to read it? You sound worried."
+                  },
+                  {
+                    "speaker": "adam",
+                    "text": "A bit, to be honest, but not about the writing. The text is done. I just need to check a few figures against last year’s."
+                  },
+                  {
+                    "speaker": "selma",
+                    "text": "Then you’ll be ready by tonight."
+                  },
+                  {
+                    "speaker": "adam",
+                    "text": "Easily. Mr Lang did ask me to add a section yesterday, which was annoying, but it was only one page."
+                  },
+                  {
+                    "speaker": "selma",
+                    "text": "Well, I’m glad it’s under control."
+                  },
+                  {
+                    "speaker": "adam",
+                    "text": "Me too. I should finish before dinner, and then I’m going home to sleep."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the man still need to do?",
+                "prompt": "How does Adam feel about his report?",
                 "options": [
-                  "Send an email to his manager",
-                  "Write the whole report",
-                  "Check some information"
+                  "Sure he can finish it in time",
+                  "Unhappy with what he has written",
+                  "Annoyed that his manager changed the plan"
                 ],
-                "answer": 2,
-                "explanation": "Adam still needs to check the final numbers before sending the report."
+                "answer": 0,
+                "explanation": "Adam says the text is done and only a few figures need checking, so he expects to finish before dinner; the extra page was annoying but small."
               }
             },
             {
@@ -1188,29 +1347,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "lucy",
+                    "text": "Shall we take the car to Bath?"
+                  },
+                  {
                     "speaker": "kai",
-                    "text": "Shall we drive to Grandma’s?"
+                    "text": "Parking is awful there, and petrol is expensive."
                   },
                   {
                     "speaker": "lucy",
-                    "text": "The roads will be busy. The train is quicker, and we can read on the way."
+                    "text": "Okay. What about the coach? It’s the cheapest, only eight pounds."
                   },
                   {
                     "speaker": "kai",
-                    "text": "Good idea."
+                    "text": "But it takes two and a half hours with all the stops."
+                  },
+                  {
+                    "speaker": "lucy",
+                    "text": "True. The train is quicker, but it costs more."
+                  },
+                  {
+                    "speaker": "kai",
+                    "text": "I don’t mind paying a bit extra if I can read and not worry about traffic."
+                  },
+                  {
+                    "speaker": "lucy",
+                    "text": "Same here. I might even sleep."
+                  },
+                  {
+                    "speaker": "kai",
+                    "text": "Then let’s book the ten o’clock one."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How will they travel?",
+                "prompt": "What do Lucy and Kai agree about the trip to Bath?",
                 "options": [
-                  "By train",
-                  "By bus",
-                  "By car"
+                  "The car would be the cheapest way",
+                  "The coach takes too long",
+                  "The train is the best choice"
                 ],
-                "answer": 0,
-                "explanation": "Lucy says the train is quicker and they can read on the way, and Kai agrees."
+                "answer": 2,
+                "explanation": "Both reject the car because of parking and petrol, and the coach because of the long journey; they agree to pay extra to go by train and book the ten o’clock one."
               }
             },
             {
@@ -1237,24 +1416,44 @@
                 "turns": [
                   {
                     "speaker": "ian",
-                    "text": "I’m thinking of joining the photography club."
+                    "text": "I want to get better at taking photos. Should I do an evening course?"
                   },
                   {
                     "speaker": "beth",
-                    "text": "You should! You take great pictures, and they go on trips at weekends."
+                    "text": "They cost two hundred pounds, and you just sit and listen."
+                  },
+                  {
+                    "speaker": "ian",
+                    "text": "Hmm. Or should I buy a proper camera?"
+                  },
+                  {
+                    "speaker": "beth",
+                    "text": "I did that, and my pictures weren’t any better, honestly. My phone is fine. What helped was the Thursday group at the library. You go out together and everyone shows what they took."
+                  },
+                  {
+                    "speaker": "ian",
+                    "text": "Do they mind beginners?"
+                  },
+                  {
+                    "speaker": "beth",
+                    "text": "Not at all. You get comments straight away from other people, and it’s free."
+                  },
+                  {
+                    "speaker": "ian",
+                    "text": "That sounds better than a classroom. I’ll come on Thursday."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the woman advise her friend to do?",
+                "prompt": "What is Beth's opinion about learning photography?",
                 "options": [
-                  "Buy a camera",
-                  "Join a club",
-                  "Take a course"
+                  "Learning with others is better",
+                  "Courses are too expensive",
+                  "A better camera is essential"
                 ],
-                "answer": 1,
-                "explanation": "Ian says he is thinking of joining the club and Beth says “You should!”."
+                "answer": 0,
+                "explanation": "Beth rejects the expensive course and the new camera, and says the free Thursday group helped because everyone shows photos and gives comments."
               }
             },
             {
@@ -1281,28 +1480,44 @@
                 "turns": [
                   {
                     "speaker": "rosie",
-                    "text": "I bought these shoes yesterday, but they’re too small."
+                    "text": "Hi, I bought these last week, but they’re a bit tight."
                   },
                   {
                     "speaker": "assistant",
-                    "text": "Do you still have the receipt?"
+                    "text": "Are they uncomfortable, or is there a problem with them?"
                   },
                   {
                     "speaker": "rosie",
-                    "text": "Yes, here it is. I’d like to exchange them for a larger pair."
+                    "text": "They’re fine. No marks, nothing broken. Can I just get my money back?"
+                  },
+                  {
+                    "speaker": "assistant",
+                    "text": "We’d be happy to refund you, but the sale has ended, so I can only give you a voucher."
+                  },
+                  {
+                    "speaker": "rosie",
+                    "text": "Oh. I’d rather have shoes."
+                  },
+                  {
+                    "speaker": "assistant",
+                    "text": "We have a bigger size in the same style. Let me check the back."
+                  },
+                  {
+                    "speaker": "rosie",
+                    "text": "Please do. I really like the colour."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Why has the customer come back?",
+                "prompt": "What does Rosie want the assistant to do?",
                 "options": [
-                  "The shoes are uncomfortable",
-                  "The shoes are the wrong size",
-                  "The shoes are damaged"
+                  "Give her the money back",
+                  "Mend the shoes",
+                  "Find a bigger size"
                 ],
-                "answer": 1,
-                "explanation": "The shoes are too small and Rosie wants a larger pair."
+                "answer": 2,
+                "explanation": "Rosie says nothing is broken and she would rather have shoes than a voucher; the assistant offers the same style in a bigger size and she asks him to check."
               }
             },
             {
@@ -1328,25 +1543,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "neil",
+                    "text": "How was the picnic?"
+                  },
+                  {
                     "speaker": "wendy",
-                    "text": "The picnic was lovely until the weather changed and it started raining."
+                    "text": "Mixed. It started sunny, then dark clouds came."
                   },
                   {
                     "speaker": "neil",
-                    "text": "At least we found a shelter and finished our lunch there."
+                    "text": "Did you go home?"
+                  },
+                  {
+                    "speaker": "wendy",
+                    "text": "Eventually, but first we sat in the car and ate the sandwiches. It was funny. I thought Ben had forgotten the drinks, but they were in the boot."
+                  },
+                  {
+                    "speaker": "neil",
+                    "text": "So was it a waste of a day?"
+                  },
+                  {
+                    "speaker": "wendy",
+                    "text": "No, I’m happy we didn’t cancel. Whatever the weather did, we had a lovely hour before the rain. The picnic in the car was a laugh."
+                  },
+                  {
+                    "speaker": "neil",
+                    "text": "Sounds better than my day."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What happened during the picnic?",
+                "prompt": "How does Wendy feel about the picnic?",
                 "options": [
-                  "They forgot their lunch",
-                  "They went home early",
-                  "The weather changed"
+                  "Annoyed that they had to leave",
+                  "Pleased they went despite the weather",
+                  "Embarrassed that Ben forgot the drinks"
                 ],
-                "answer": 2,
-                "explanation": "Wendy says the picnic was lovely until the weather changed and it started raining."
+                "answer": 1,
+                "explanation": "Wendy says she is happy they did not cancel, because they had a lovely hour before the rain and the picnic in the car was fun."
               }
             }
           ]
@@ -1371,46 +1606,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Hello, everyone. I’m Priya, and I help run the Green Steps nature club. We meet every Saturday morning at the entrance to West Park. Our next project is to clean the river path, so please wear old shoes. We’ll provide gloves and bags. Bring a bottle of water, because we’ll be outside for about three hours. At midday, we’ll have lunch in the community room. New members can join for free this month. If you need more information, email greensteps at example dot org."
+                "text": "Hello, everyone, and welcome to this evening’s meeting. I’m Priya, and I help to run the Green Steps nature club. Let me tell you what we do and how you can take part. First, the timing. We used to meet on Sunday afternoons, but so few people could come that we changed it. Now we gather every Saturday morning at nine o’clock, and nobody has to stay all day. Next, the place. Some people think we start at the main gate on Church Road, but that’s wrong. We meet at the lake entrance of West Park, and you’ll see a green flag. Our next project is to clean the river path, which gets very muddy. So please wear old shoes. You don’t need walking boots, because they’re too heavy for that path. We’ll provide gloves and bags. Bring a bottle of water, because we’ll be outside for about three hours. Please don’t bring juice, because it brings wasps. At midday we’ll stop for lunch. Last year we ate in the garden, but it rained, so this time we’ve booked the community room at the sports centre. Everyone brings something to share, and there’ll be tea and coffee. In the afternoon, we count the birds along the river and write down what we see. We send the numbers to a national survey, which is a lot of fun. Finally, membership. Normally it costs twenty pounds a year, and the new term starts in April. But if you join before the end of March, it’s free. Just give me your name at the end of this meeting. Thank you very much, and I hope to see you on Saturday."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Meeting day: every ___ morning",
+              "prompt": "The group meets once a week, on ___ mornings",
               "answer": "Saturday",
-              "explanation": "Priya says the club meets every Saturday morning."
+              "explanation": "Priya says they used to meet on Sunday afternoons, but now they gather every Saturday morning."
             },
             {
               "id": "l3-2",
-              "prompt": "Meeting place: West ___ entrance",
-              "answer": "Park",
-              "explanation": "They meet at the entrance to West Park."
+              "prompt": "Meeting point: the lake entrance of ___",
+              "answer": "West Park",
+              "explanation": "She says the main gate on Church Road is wrong; they meet at the lake entrance of West Park."
             },
             {
               "id": "l3-3",
-              "prompt": "Wear old ___",
+              "prompt": "Footwear for the river path: ___ that can get dirty",
               "answer": "shoes",
-              "explanation": "Priya says to wear old shoes because they will clean the river path."
+              "explanation": "She asks for old shoes and says walking boots are too heavy."
             },
             {
               "id": "l3-4",
-              "prompt": "Bring a bottle of ___",
+              "prompt": "Take a drink containing ___ (not juice)",
               "answer": "water",
-              "explanation": "Members should bring a bottle of water."
+              "explanation": "Priya asks everyone to bring a bottle of water and says juice brings wasps."
             },
             {
               "id": "l3-5",
-              "prompt": "Lunch is in the community ___",
-              "answer": "room",
-              "explanation": "Lunch is in the community room."
+              "prompt": "Lunch will be in the ___ at the sports centre",
+              "answer": "community room",
+              "explanation": "The garden was used last year, but this time they booked the community room."
             },
             {
               "id": "l3-6",
-              "prompt": "Membership is free this ___",
-              "answer": "month",
-              "explanation": "New members can join for free this month."
+              "prompt": "Joining is free if you apply before the end of ___",
+              "answer": "March",
+              "explanation": "Membership normally costs twenty pounds, but it is free before the end of March; April is when the new term starts."
             }
           ]
         },
@@ -1442,43 +1677,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Ella, when did you first become interested in cooking?"
+                "text": "Ella, you’re one of the youngest head chefs in the city. When did you first get interested in cooking?"
               },
               {
                 "speaker": "ella",
-                "text": "My grandmother used to let me help her make bread when I was about eight. I liked making things with my hands, but I didn’t think of it as a job then."
+                "text": "Quite early, actually. My grandmother had a big garden, and I spent a lot of time there, but honestly I found pulling up carrots a bit boring. What I loved was her kitchen on Sundays, when she let me help with the dough. I must have been eight. Her bread was famous in the village. I didn’t read cookbooks, because she never used one. It was all in her head."
               },
               {
                 "speaker": "interviewer",
-                "text": "What did you do after school?"
+                "text": "But you didn’t go straight into a kitchen after school, did you?"
               },
               {
                 "speaker": "ella",
-                "text": "I studied science because my parents thought it would give me more choices. I enjoyed it, but during my final year I worked in a café at weekends. That’s when I realised I wanted to cook professionally."
+                "text": "No. I studied science at university, and I’d love to say it was my own idea. It wasn’t a plan to become a doctor or anything like that, and I didn’t need it for a job either. My parents just kept telling me it would keep my options open, and I trusted them. I’m glad now, because I understand why food behaves the way it does."
               },
               {
                 "speaker": "interviewer",
-                "text": "Was it easy to find work?"
+                "text": "How did you find your first job in a professional kitchen?"
               },
               {
                 "speaker": "ella",
-                "text": "Not at first. I sent my CV to several restaurants and heard nothing. A friend told me about a small hotel that needed weekend help. I learned a lot there, especially how to work quickly when the kitchen was busy."
+                "text": "That was harder than I expected. I had put my CV on a few websites, and I’d noticed an advert for a kitchen assistant, but I never heard back. My old teacher offered to make a phone call, but I wanted to do it on my own. In the end my friend Marta, who was washing dishes at a small hotel, told me they needed someone on Saturdays, and that’s how I started."
               },
               {
                 "speaker": "interviewer",
-                "text": "What do you enjoy most now?"
+                "text": "What did the hotel teach you?"
               },
               {
                 "speaker": "ella",
-                "text": "I like creating new dishes, but seeing customers enjoy them is even better. I’m still learning every day."
+                "text": "Mostly that you can’t stand still. We served two hundred breakfasts on a busy morning, and I had to keep up. I didn’t learn anything about managing the place, because that was the owner’s job, and I never helped with the menu either. But after six months I could work faster than anyone my age."
               },
               {
                 "speaker": "interviewer",
-                "text": "What advice would you give someone starting out?"
+                "text": "What do you enjoy most about it these days?"
               },
               {
                 "speaker": "ella",
-                "text": "Don’t worry if your first attempts go wrong. Ask questions, practise often, and be patient. I also think it’s important to learn about ingredients, not just follow recipes."
+                "text": "Well, finishing early would be nice, but that never happens in a restaurant! And yes, I work with my cousin, though that wasn’t why I chose this place. The best moment is when I look through the little window and see people smiling at something I invented that morning."
+              },
+              {
+                "speaker": "interviewer",
+                "text": "What would you say to someone who is just starting out?"
+              },
+              {
+                "speaker": "ella",
+                "text": "Don’t spend your savings on expensive knives. I used a cheap one for years. You can follow recipes at first, but don’t be afraid to ignore them later. The thing is to keep cooking, even when it goes wrong. I burnt so many dinners, and each of my mistakes taught me something."
               }
             ]
           },
@@ -1492,7 +1735,7 @@
                 "Reading cookbooks"
               ],
               "answer": 0,
-              "explanation": "Ella says her grandmother used to let her help make bread."
+              "explanation": "Ella says she loved her grandmother’s kitchen and helping with the dough; the bread was famous, while she found the garden boring and her grandmother never used a cookbook."
             },
             {
               "id": "l4-2",
@@ -1503,7 +1746,7 @@
                 "She wanted to become a doctor"
               ],
               "answer": 1,
-              "explanation": "She studied science because her parents thought it would give her more choices."
+              "explanation": "Ella says science was not for a job or to become a doctor; her parents kept telling her it would keep her options open."
             },
             {
               "id": "l4-3",
@@ -1514,7 +1757,7 @@
                 "A friend told her about it"
               ],
               "answer": 2,
-              "explanation": "A friend told her about a small hotel that needed weekend help."
+              "explanation": "Her teacher offered to help and an advert got no reply, but her friend Marta told her the hotel needed someone on Saturdays."
             },
             {
               "id": "l4-4",
@@ -1525,7 +1768,7 @@
                 "How to design a menu"
               ],
               "answer": 0,
-              "explanation": "At the hotel she learned how to work quickly when the kitchen was busy."
+              "explanation": "Ella says she did not learn management or menus; the hotel taught her to keep up and work faster."
             },
             {
               "id": "l4-5",
@@ -1536,7 +1779,7 @@
                 "Finishing early each day"
               ],
               "answer": 0,
-              "explanation": "She likes creating new dishes, but seeing customers enjoy them is even better."
+              "explanation": "Ella says the best moment is seeing people smiling at something she invented; finishing early never happens and working with her cousin was not the reason."
             },
             {
               "id": "l4-6",
@@ -1547,7 +1790,7 @@
                 "Follow recipes exactly"
               ],
               "answer": 1,
-              "explanation": "She says not to worry about first attempts going wrong, and to practise often."
+              "explanation": "Ella says that she burnt many dinners and that each of her mistakes taught her something, while expensive knives and recipes are not necessary."
             }
           ]
         }

@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "How did the writer feel about his mother's decision?",
               "options": [
-                "He thought it was a joke",
                 "He was glad to have a rest",
-                "He agreed to it at once"
+                "He agreed to it at once",
+                "He thought it was a joke",
+                "He was pleased with the idea"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He thought it was a terrible joke."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "Calm and relaxed",
                 "Lost and worried",
-                "Proud of himself"
+                "Proud of himself",
+                "Bored and sleepy"
               ],
               "answer": 1,
               "explanation": "By the evening he felt strangely lost and imagined that everyone was talking about him."
@@ -271,11 +273,12 @@
               "id": "r3-3",
               "prompt": "What happened on the third day?",
               "options": [
+                "He talked to his friends in person",
                 "He visited a group of friends",
                 "He used his phone in secret",
                 "He read a book and went walking"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "He read a whole book and went for a long walk with his dog."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "He had missed family conversation",
                 "The food was much better",
-                "His parents were angry with him"
+                "His parents were angry with him",
+                "His dog needed to go for more walks"
               ],
               "answer": 0,
               "explanation": "He talked with his parents for an hour and realised how much he had missed it."
@@ -295,7 +299,8 @@
               "options": [
                 "Reads books instead of sleeping",
                 "Never uses a phone any more",
-                "Switches off his phone at night"
+                "Switches off his phone at night",
+                "Uses it only at weekends"
               ],
               "answer": 2,
               "explanation": "He now turns his phone off at ten o'clock."
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "How to stay safe online",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Millions of teenagers use social media every day, and most of them have a great time. [1] However, there are a few simple rules that can help you avoid problems.\n\nFirst, choose strong passwords. A good password has at least twelve letters and includes numbers. [2] Never use the same password for different accounts, because if one is stolen, all the others are in danger.\n\nSecond, think carefully before you share a photograph. [3] Once a picture is online, you cannot control who sees it or where it goes. Ask yourself whether you would be happy for your teacher or your grandmother to look at it.\n\nThird, be careful about meeting people that you only know online. [4] If you do decide to meet someone, take a friend with you and choose a public place. Finally, remember that you can always talk to an adult if something makes you feel uncomfortable. [5] They will not be angry, and they might be able to help.",
           "sentences": [
             "Photos can stay on the internet for years.",
             "Many adults forget their passwords too.",
             "The internet can be a wonderful place to make friends and learn new things.",
+            "Not everyone is honest about who they are.",
             "Using your pet's name is not a good idea.",
             "Parents and teachers usually understand more than you expect.",
-            "Not everyone is honest about who they are."
+            "Ask a teacher to show you how to report a problem.",
+            "Some websites ask you to give your date of birth."
           ],
           "gaps": [
             {
@@ -325,7 +332,7 @@
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "E",
               "explanation": "A good password is described, and a pet's name is an example of what to avoid."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "F",
+              "answer": "D",
               "explanation": "Not everyone is honest explains why meeting online friends is risky."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "F",
               "explanation": "\"They\" refers to parents and teachers, who will not be angry."
             }
           ]
@@ -487,11 +494,11 @@
               "id": "r6-4",
               "answer": "away",
               "explanation": "\"Give away\" means to tell someone else.",
-              "tags": [
-                "phrasal-verbs"
-              ],
               "accepted": [
                 "out"
+              ],
+              "tags": [
+                "phrasal-verbs"
               ]
             },
             {
@@ -732,11 +739,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "My phone battery is dead. Can I charge it here?"
+                    "text": "Hi Wanda! My phone’s nearly dead. Could I borrow your charger for an hour?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Of course. There's a socket behind the sofa, but you'll need your own charger."
+                    "text": "I’d love to help, but I can’t. I changed phones in June, and yours is the new kind, isn’t it? Mine wouldn’t even fit the socket."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh no. Maybe the café downstairs sells them?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought so too, but I asked this morning and they only sell coffee and sandwiches. Nothing for phones."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what do I do?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "There’s a phone shop near the station, and they have cheap ones. You use your phone all day, so you should have one of your own."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re right. I’ll go at lunchtime."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Take your coat, it’s cold outside."
                   }
                 ]
               },
@@ -749,7 +780,7 @@
                   "They sell chargers in the café"
                 ],
                 "answer": 1,
-                "explanation": "She says he will need his own charger."
+                "explanation": "Wanda’s charger does not fit and the café does not sell them; she says that he should have one of his own."
               }
             },
             {
@@ -776,15 +807,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How much does the screen repair cost?"
+                    "text": "Excuse me, how much is this phone case? The sticker says sixty pounds."
                   },
                   {
                     "speaker": "m",
-                    "text": "Sixty pounds, but only ten if you have insurance."
+                    "text": "That’s the old price. It’s in the sale now. Last week it was sixty, but today it’s only ten pounds."
                   },
                   {
                     "speaker": "f",
-                    "text": "I do have insurance."
+                    "text": "Really? That’s much better. My friend bought a similar one online for fifty, and she was sorry afterwards."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, online isn’t always cheaper. Would you like a bag?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, thanks, I’ll put it in my pocket. Can I pay by card?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. Just put your card here."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Here you go. Thank you very much."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you, and have a nice day."
                   }
                 ]
               },
@@ -797,7 +848,7 @@
                   "Fifty pounds"
                 ],
                 "answer": 0,
-                "explanation": "She has insurance, so she pays only ten pounds."
+                "explanation": "Sixty pounds was the old price and fifty is what her friend paid online; the case is in the sale for ten pounds."
               }
             },
             {
@@ -811,24 +862,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Odessa",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I'll video-call you at eight tonight."
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "I'm an hour ahead of you, so make it seven your time, and then it will be eight for me."
+                    "text": "Hi Odessa, it’s Abel. Sorry I missed you. About tomorrow night. I thought I would call you at eight, after dinner, but my brother is arriving then, so that won’t work. Nine would be possible, but I know you go to bed early with the baby, so it’s too late. I’ll ring you at seven, before he gets here. If that’s a problem for you, send me a text and I’ll try again on Thursday. Anyway, I hope the baby is better. Speak tomorrow. Bye!"
                   }
                 ]
               },
@@ -841,7 +880,7 @@
                   "At nine"
                 ],
                 "answer": 0,
-                "explanation": "She is an hour ahead, so he should call at seven his time."
+                "explanation": "Eight is cancelled because his brother arrives, nine is too late for her, so he will call before his brother gets there, at seven."
               }
             },
             {
@@ -868,11 +907,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Someone I don't know has sent me a friend request."
+                    "text": "Kendrick, someone I don’t know sent me a friend request. His photo looks nice."
                   },
                   {
                     "speaker": "m",
-                    "text": "Don't accept it. Only add people you know in real life."
+                    "text": "Have you got any friends in common?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No. I thought of blocking him, but that seems rude when I don’t know him."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I wouldn’t go that far. Just leave it. I’d never accept requests from strangers, and don’t click on his profile."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Should I write back quickly and ask who he is?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No! That’s what these people want. A reply can bring you trouble."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "OK. I’ll leave it alone."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good. Tell me if he writes to you again."
                   }
                 ]
               },
@@ -885,7 +948,7 @@
                   "To reply quickly"
                 ],
                 "answer": 1,
-                "explanation": "He tells her not to accept the request."
+                "explanation": "He would not accept requests from strangers; blocking is too much and replying is what they want."
               }
             },
             {
@@ -912,11 +975,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why did you delete your account?"
+                    "text": "Did you hear that Lucy deleted her account?"
                   },
                   {
                     "speaker": "f",
-                    "text": "I was spending far too much time on it, and I was forgetting my homework."
+                    "text": "Yes. Everybody thinks she lost her password, but she told me she remembers it very well."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe she was afraid of strangers. Some of her followers were people she had never met."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought so too. But no, her profile was private, and she wasn’t worried about that at all."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So why did she do it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She told me that she was online for hours every evening, and then she had no time for her homework or her friends. She says she feels much better now."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good for her."
                   }
                 ]
               },
@@ -929,7 +1012,7 @@
                   "She spent too much time on it"
                 ],
                 "answer": 2,
-                "explanation": "She says she spent far too much time on it."
+                "explanation": "It was not the password and not strangers; she was online for hours every evening and had no time for homework or friends."
               }
             },
             {
@@ -943,24 +1026,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Cecil",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Do you prefer texting or calling?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Calling. I can hear when someone is joking, and a text can sound rude."
+                    "text": "Hi Cecil, it’s me. I know you’ll laugh because I’m calling you instead of writing, and I know a message is much quicker. I’m not saying that it costs less either, because on my plan it costs the same. But when I read a text, I can never tell if you’re joking or angry. When I hear your voice, I understand immediately how you feel. So please pick up next time, even if you are busy with your homework. Anyway, call me back when you can. Bye!"
                   }
                 ]
               },
@@ -973,21 +1044,13 @@
                   "It is much quicker"
                 ],
                 "answer": 0,
-                "explanation": "She says she can hear when someone is joking."
+                "explanation": "She admits that messages are quicker and cost the same, but a voice shows her how he feels."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Basil",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Gita",
@@ -999,12 +1062,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "I can't connect to the Wi-Fi."
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Try restarting your phone first. If that doesn't work, I'll give you the new password."
+                    "text": "Thank you for calling the phone help line. Please listen carefully. If you cannot open your email, many people ask us for a new password straight away. Others walk to a different room to find a better signal. Please don’t do either of those yet. The first thing is simpler: switch your phone off, wait ten seconds and turn it on again. It solves about half of our calls. If your problem is still there after that, then try another room, and as a last step press one to ask for a password."
                   }
                 ]
               },
@@ -1017,7 +1076,7 @@
                   "Move to another room"
                 ],
                 "answer": 1,
-                "explanation": "She tells him to try restarting his phone first."
+                "explanation": "Before a new password or another room, the first step is to switch the phone off and on again, which is a restart."
               }
             }
           ]
@@ -1052,12 +1111,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Technical help, Barnard speaking."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Hello, I'm calling because I can't remember my password, and I can't open my account."
+                    "text": "Hello, I need help with my phone. I dropped it yesterday and I thought the screen was broken, but it works perfectly."
                   },
                   {
                     "speaker": "m",
-                    "text": "No problem. I'll send you a link to choose a new one."
+                    "text": "Good. So what’s the problem?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I left it on the bus last week and I was sure it was stolen, but somebody handed it in. Today I changed the code and now I can’t remember it. I’m locked out."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Don’t worry, it happens to a lot of people. We can send a link to your email."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, that would be wonderful. I can use my laptop for that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great. Tell me your address."
                   }
                 ]
               },
@@ -1070,7 +1149,7 @@
                   "She forgot her password"
                 ],
                 "answer": 2,
-                "explanation": "She cannot remember her password."
+                "explanation": "The screen is fine and the phone was handed in; she changed her code and cannot remember it, so she needs a reset link."
               }
             },
             {
@@ -1096,16 +1175,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Did you see that photo of me at the party? Somebody posted it without asking."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Did you see that my picture is online? I asked you not to post it."
+                    "text": "Yes, I saw it. I felt terrible when my friends posted one of mine last week."
                   },
                   {
                     "speaker": "m",
-                    "text": "Sorry. From now on, I'll always ask first."
+                    "text": "Maybe we should delete our accounts and forget the whole thing."
                   },
                   {
                     "speaker": "f",
-                    "text": "Thanks."
+                    "text": "That’s too much. I’d miss my friends’ news, and I like seeing their photos too."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "True. I use mine all day. So what can we do?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ask first. If everybody asks before posting, there’s no problem."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s reasonable. Shall we tell the others tonight?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, let’s text the group."
                   }
                 ]
               },
@@ -1118,7 +1217,7 @@
                   "To delete their accounts"
                 ],
                 "answer": 1,
-                "explanation": "He promises always to ask first before posting."
+                "explanation": "Deleting accounts is too much for Bridie; they both agree to ask each other first and tell the group."
               }
             },
             {
@@ -1145,28 +1244,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Tomorrow, instead of normal lessons, a police officer will talk to you about staying safe online."
+                    "text": "Boris, tomorrow’s lesson will be a bit different. There’s no test, don’t worry."
                   },
                   {
                     "speaker": "m",
-                    "text": "Do we need to bring anything?"
+                    "text": "Oh, good. I was afraid of that. What are we doing, then?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Just a notebook."
+                    "text": "A police officer will come to talk about staying safe online. I know some students wanted to visit the computer shop in town, but we can’t go this term."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s a pity, but I don’t mind. I’ve always wanted to know how to protect my accounts, so I can’t wait."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Excellent. Bring a notebook."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Will there be time for questions?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, at the end."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What will the class do tomorrow?",
+                "prompt": "How does Boris feel about tomorrow's lesson?",
                 "options": [
-                  "Hear a talk about safety",
-                  "Take a short computer test",
-                  "Visit a computer shop in town"
+                  "Keen to hear the talk",
+                  "Worried about the test",
+                  "Unhappy about the visit"
                 ],
                 "answer": 0,
-                "explanation": "A police officer will talk to the class about staying safe online."
+                "explanation": "There is no test and the shop visit is cancelled, but Boris says he has always wanted to learn this and cannot wait."
               }
             },
             {
@@ -1193,11 +1308,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I'm looking for a cheap phone, but with a good camera."
+                    "text": "Good morning. I’m looking for a laptop for work, but I think I already have too many."
                   },
                   {
                     "speaker": "f",
-                    "text": "We have this one for a hundred pounds. The pictures are excellent."
+                    "text": "Well, we have a sale on tablets, if you need one for your family."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My son is only four, he’d break it in a day. No, I’m here because my old phone is dying."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What do you need?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Nothing special. I only make calls, and I like taking pictures. I don’t want to spend a lot."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then look at this one. It’s cheap and the camera is quite good."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Perfect. I’ll take it."
                   }
                 ]
               },
@@ -1210,7 +1345,7 @@
                   "A cheap phone with a camera"
                 ],
                 "answer": 2,
-                "explanation": "He wants a cheap phone with a good camera."
+                "explanation": "He has enough laptops and his son is too young for a tablet; his old phone is dying and he wants a cheap one that takes pictures."
               }
             },
             {
@@ -1241,20 +1376,44 @@
                   },
                   {
                     "speaker": "m",
-                    "text": "Not yet. You can have one when you are thirteen."
+                    "text": "Not everybody. And you’re eleven, Noor. Mum and I agreed that thirteen is a good age."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "But my birthday is in May. Can’t I have it then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I’m afraid not. A birthday doesn’t change anything. You’re still very young."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I could buy it with my pocket money."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s not about money. When you’re older, we’ll talk about it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s not fair!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I know you’re disappointed, but my answer is no."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the father say?",
+                "prompt": "What is the father's opinion about Noor having a phone?",
                 "options": [
-                  "She has to wait until thirteen",
-                  "She can have one for her birthday",
-                  "She has to pay for it herself"
+                  "She is too young for one now",
+                  "She should wait for her birthday",
+                  "She should save to buy it"
                 ],
                 "answer": 0,
-                "explanation": "He says she can have one when she is thirteen."
+                "explanation": "Her birthday and her pocket money do not change his mind; he says she is still too young and they will talk when she is older."
               }
             },
             {
@@ -1280,12 +1439,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Shall we play the new game? I’ll be the red car."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "It's my turn on the game! You have played for an hour."
+                    "text": "I want to be the red one too. Let’s both play at the same time."
                   },
                   {
                     "speaker": "m",
-                    "text": "All right. Let's take turns, twenty minutes each."
+                    "text": "There’s only one controller, so we can’t play together."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then let’s stop and do something else."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I want to play. It’s a new game!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "OK, then you play one race, and I play the next one."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hmm. Then we switch after every race? Okay, that’s fair. You go first, because I chose the game."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks. I’ll be red."
                   }
                 ]
               },
@@ -1298,7 +1481,7 @@
                   "Take turns"
                 ],
                 "answer": 2,
-                "explanation": "They agree to take turns, twenty minutes each."
+                "explanation": "They cannot play together and Kyle does not want to stop, so they agree that each plays one race and then switches."
               }
             }
           ]
@@ -1323,58 +1506,46 @@
             "turns": [
               {
                 "speaker": "ellery",
-                "text": "Welcome to our Computer Club, everyone. We meet every Thursday after school, from four o'clock until half past five. This term, we're going to learn how to build a simple website. Each student needs a USB stick to save their work. They cost three pounds in the school shop. In the first lesson, we'll talk about passwords. A good password has at least ten characters, and it never includes your name. There are fifteen places in the club, so please sign up at the office before Friday. The club is free, but you must come regularly. At the end of term, we'll show our websites to your parents."
+                "text": "Welcome to our Computer Club, everyone. My name is Mr Ellery, and I’ll be your teacher. First, when we meet. The club used to be on Tuesdays, but the room is being painted, so from this term we meet every Thursday after school. We start at four o’clock and we finish at half past five. Some of you asked me if we could stay until six, but the school bus leaves at a quarter to six, so that’s not possible. Now, what are we going to do? Many of you hope to make a computer game, and we may do a little of that at the end of the year, but this term we are going to learn how to build a website. By December, each of you will have your own. You will need a USB stick to keep your work. You can buy one in the school shop for three pounds. Last year they cost five pounds, but the shop found a cheaper supplier. If you already have an old one at home, that’s fine, as long as it has enough space. Next, safety. I’ll teach you a lot about this, but let me start with passwords. Many people think eight characters are enough. It used to be true, but now experts say you need at least ten characters, with numbers and letters. Please don’t use your name or your birthday. Finally, how many of us can there be? The room has twenty computers, but we need space to move around, and I can’t help more than fifteen students at a time. So there are fifteen places, and so far twelve students have signed up. If you have friends who want to join, tell them to see me by Friday. That’s all. Any questions?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The club meets every ___",
+              "prompt": "The club happens each ___ after lessons",
               "answer": "Thursday",
-              "explanation": "The club meets every Thursday after school."
+              "explanation": "Mr Ellery says it used to be Tuesdays, but now it meets every Thursday."
             },
             {
               "id": "l3-2",
-              "prompt": "The club finishes at half past ___",
+              "prompt": "Students go home at ___ thirty",
               "answer": "five",
-              "accepted": [
-                "5"
-              ],
-              "explanation": "It runs from four until half past five."
+              "explanation": "The club finishes at half past five; six is not possible because of the bus."
             },
             {
               "id": "l3-3",
-              "prompt": "Students will learn to build a ___",
+              "prompt": "The main project this term is a ___ for each student",
               "answer": "website",
-              "explanation": "This term, they will learn how to build a simple website."
+              "explanation": "They may do a game later in the year, but this term they learn to build a website."
             },
             {
               "id": "l3-4",
-              "prompt": "A USB stick costs ___ pounds",
+              "prompt": "A memory stick from the school shop costs ___ pounds",
               "answer": "three",
-              "accepted": [
-                "3"
-              ],
-              "explanation": "A USB stick costs three pounds in the school shop."
+              "explanation": "It costs three pounds now; last year it was five pounds."
             },
             {
               "id": "l3-5",
-              "prompt": "A good password has at least ___ characters",
+              "prompt": "Experts advise a password of at least ___ letters and numbers",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "A good password has at least ten characters."
+              "explanation": "Eight characters used to be enough, but now experts say at least ten."
             },
             {
               "id": "l3-6",
-              "prompt": "There are ___ places in the club",
+              "prompt": "The teacher can only help ___ students at once",
               "answer": "fifteen",
-              "accepted": [
-                "15"
-              ],
-              "explanation": "There are fifteen places in the club."
+              "explanation": "The room has twenty computers, but there are only fifteen places."
             }
           ]
         },
@@ -1406,51 +1577,51 @@
             "turns": [
               {
                 "speaker": "concetta",
-                "text": "Today I'm talking to Kasimir Brandt, who is seventeen and makes videos. Kasimir, what were your first videos about?"
+                "text": "Kasimir, you’re sixteen and you make videos. What were your first ones about?"
               },
               {
                 "speaker": "kasimir",
-                "text": "Skateboarding. I was thirteen, and I filmed my friends doing tricks. The pictures were shaky, but people seemed to enjoy them."
+                "text": "Well, I thought I’d make cooking videos, because my mum is a great cook. I filmed two, but they were boring, mostly me cutting onions. A friend suggested music and dance, and we tried one, but it was a disaster. Then I filmed my friends skateboarding in the park, and it felt right. People started watching, and I haven’t stopped since."
               },
               {
                 "speaker": "concetta",
-                "text": "How many people follow your channel now?"
+                "text": "How many followers do you have?"
               },
               {
                 "speaker": "kasimir",
-                "text": "About two thousand. It isn't a huge number, but I know many of them by name because they write to me."
+                "text": "A lot of people think it’s twenty thousand, because my best video has that many views. But that’s just one video. Last year I had about two hundred followers, and now it’s about two thousand. It isn’t huge, but I’m really happy with it, because most of those people write to me and I know their names."
               },
               {
                 "speaker": "concetta",
-                "text": "Do you ever get unkind comments?"
+                "text": "How do you feel about unkind comments?"
               },
               {
                 "speaker": "kasimir",
-                "text": "Sometimes. At the beginning, they made me feel terrible. Now I just ignore them. Arguing only makes things worse."
+                "text": "Honestly, they don’t really bother me now. I used to answer them, and that only made it worse. I thought about deleting a video once, but it seemed silly to let one person decide. These days I just don’t read them, and I tell my friends to do the same when they start filming. My brother says I’m too calm, but it works for me."
               },
               {
                 "speaker": "concetta",
-                "text": "Do you follow any safety rules?"
+                "text": "What’s your most important safety rule?"
               },
               {
                 "speaker": "kasimir",
-                "text": "Yes, the most important one is never to show where I live. I always check the background of a video before I post it."
+                "text": "My real name is on the channel, and my parents agreed to that, so it isn’t the rule. Filming in public is hard to avoid, because skateboarding happens outside. The rule I never break is that I don’t show where I live, so no street signs and no house number in the background. I check each video twice before I post it, and my dad checks it once more."
               },
               {
                 "speaker": "concetta",
-                "text": "How do you find time for school?"
+                "text": "When do you make them?"
               },
               {
                 "speaker": "kasimir",
-                "text": "I only film at weekends. During the week, homework comes first, and my mother makes sure that I stick to that."
+                "text": "I’m too tired after school to film in the evenings. The holidays are great because I have more time, but I can’t wait three months for the next video. So I film on Saturday with my friends, and I edit on Sunday afternoon. That’s my routine, and I keep to it, even when it rains and the park is empty."
               },
               {
                 "speaker": "concetta",
-                "text": "What would you like to do in the future?"
+                "text": "Why do you want to study film-making?"
               },
               {
                 "speaker": "kasimir",
-                "text": "I'd like to study film-making at university, and perhaps make documentaries one day."
+                "text": "I thought about computer science, because I like editing on the computer, and my teacher says I’m good at music, because I make my own soundtracks. But what I love most is telling a story with pictures. A film can make people laugh or cry, and that’s what I want to do. That’s why I’d like to go to film school."
               }
             ]
           },
@@ -1464,7 +1635,7 @@
                 "Music and dance"
               ],
               "answer": 1,
-              "explanation": "He filmed his friends doing skateboarding tricks."
+              "explanation": "Cooking was boring and the dance video was a disaster; he found his topic when he filmed friends skateboarding."
             },
             {
               "id": "l4-2",
@@ -1475,18 +1646,18 @@
                 "About two hundred"
               ],
               "answer": 1,
-              "explanation": "He has about two thousand followers."
+              "explanation": "Twenty thousand is the views of one video and two hundred was last year, so the channel has about two thousand."
             },
             {
               "id": "l4-3",
-              "prompt": "How does he deal with unkind comments?",
+              "prompt": "How does Kasimir feel about unkind comments?",
               "options": [
-                "He ignores them",
-                "He answers them",
-                "He deletes the video"
+                "They do not really bother him",
+                "They make him want to stop",
+                "They make him angry"
               ],
               "answer": 0,
-              "explanation": "Now he ignores them."
+              "explanation": "He used to answer them and once thought about deleting a video, but now they do not bother him."
             },
             {
               "id": "l4-4",
@@ -1497,7 +1668,7 @@
                 "Never show where he lives"
               ],
               "answer": 2,
-              "explanation": "He never shows where he lives."
+              "explanation": "His real name is on the channel and filming in public is hard to avoid; the rule he never breaks is not to show where he lives."
             },
             {
               "id": "l4-5",
@@ -1508,18 +1679,18 @@
                 "Only in the holidays"
               ],
               "answer": 1,
-              "explanation": "He only films at weekends."
+              "explanation": "He is too tired in the evenings and the holidays are too far apart, so he films on Saturday and edits on Sunday."
             },
             {
               "id": "l4-6",
-              "prompt": "What does he want to study?",
+              "prompt": "Why does he want to study film-making?",
               "options": [
-                "Film-making",
-                "Computer science",
-                "Music and sound"
+                "He loves telling stories with pictures",
+                "His parents work in the cinema",
+                "He wants to become famous"
               ],
               "answer": 0,
-              "explanation": "He would like to study film-making at university."
+              "explanation": "He liked computer science and music, but what he loves most is telling a story with pictures."
             }
           ]
         }

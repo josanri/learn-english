@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "What was the first price?",
               "options": [
+                "Fifty euros",
+                "Twenty-five euros",
                 "Thirty-two euros",
-                "Twenty euros",
-                "Fifty euros"
+                "Twenty euros"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "The seller asked fifty euros."
             },
             {
               "id": "r3-2",
               "prompt": "What did the local man advise?",
               "options": [
-                "Offer half",
                 "Walk away",
-                "Pay at once"
+                "Check the label",
+                "Pay at once",
+                "Offer half"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He said never accept the first price and offer half."
             },
             {
@@ -273,7 +275,8 @@
               "options": [
                 "He was really angry",
                 "He pretended to be shocked",
-                "He agreed immediately"
+                "He agreed immediately",
+                "He laughed at the joke"
               ],
               "answer": 1,
               "explanation": "He acted shocked and said his family would go hungry, but it was part of the game."
@@ -282,22 +285,24 @@
               "id": "r3-4",
               "prompt": "What happened after they agreed?",
               "options": [
-                "They chatted over tea",
                 "They argued about money",
+                "They exchanged addresses",
+                "They chatted over tea",
                 "They visited a cafe"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He gave her mint tea, and they talked about football."
             },
             {
               "id": "r3-5",
               "prompt": "How did the writer feel at the end?",
               "options": [
+                "Pleased with the experience",
                 "Disappointed with the lamp",
                 "Angry about the price",
-                "Pleased with the experience"
+                "Embarrassed in front of everyone"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She did not mind; she had learned something and made a friend."
             }
           ]
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "The oldest markets in the world",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Markets are older than shops. [1] Long before there were coins, people met in open places to swap food, tools and cloth.\n\nIn ancient cities, markets were often the busiest and loudest place in town. [2] Crowds of people came from the villages to sell their goods and to hear the news.\n\nIn the Middle Ages, European towns held weekly market days. [3] The law said that nobody was allowed to sell goods outside the market square.\n\nSome markets became famous across the world. [4] The Grand Bazaar in Istanbul has over four thousand shops, and some of them have been owned by the same family for centuries.\n\nToday, many people buy online, but markets are still popular. [5] They offer something that a website cannot: a chance to touch, smell and taste before you buy.",
           "sentences": [
-            "Each town had its own rules.",
-            "Many people say they prefer the lively atmosphere.",
             "Nobody knows when the first one began.",
-            "People like to meet and talk as well as shop.",
+            "Many people say they prefer the lively atmosphere.",
+            "Their prices were fixed by the king.",
+            "Few of them had walls.",
             "Millions of visitors go to see them every year.",
-            "Few of them had walls."
+            "Everyone brought their own bags and baskets.",
+            "Each town had its own rules.",
+            "People like to meet and talk as well as shop."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "A",
               "explanation": "Nobody knows when the first market began; the next sentence says people met before coins."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "H",
               "explanation": "People liked to meet and talk; the next sentence says crowds came from the villages."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "G",
               "explanation": "Each town had its own rules; the next sentence says nobody could sell outside the square."
             },
             {
@@ -717,37 +724,25 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much are the tomatoes?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "Two pounds a kilo, or three kilos for five."
+                    "text": "Good morning, everyone, and welcome to Riverside Market. Before you start your shopping, here is a quick change to our timetable. The leaflet at the gate says that we close at five on Saturdays, but that is the old information, so please ignore it. From this week we stay open later, because so many of you asked for it. We nearly stayed open until nine, but the traders wanted to go home to their families, so we agreed to close at seven. We thought about opening on Sundays too, but the council said no. Finally, the cheese stall has moved next to the fountain. Enjoy your shopping!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "What do three kilos of tomatoes cost?",
+                "prompt": "What time does the market close on Saturdays?",
                 "options": [
-                  "Six pounds",
-                  "Five pounds",
-                  "Two pounds"
+                  "At five o.clock",
+                  "At seven o.clock",
+                  "At nine o.clock"
                 ],
                 "answer": 1,
-                "explanation": "He says three kilos for five pounds."
+                "explanation": "The leaflet says five but that is the old information; nine was nearly chosen, but the traders wanted to go home, so the market now closes at seven."
               }
             },
             {
@@ -774,24 +769,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where did you get that bag?"
+                    "text": "That’s a nice scarf! Was it expensive?"
                   },
                   {
                     "speaker": "b",
-                    "text": "At the market. A man was selling them for ten pounds, but I got it for eight."
+                    "text": "Not really. The label said fourteen pounds, which was too much for me, so I nearly walked away."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "But you didn’t."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, the woman said there was a small mark on it, and she took two pounds off."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Twelve pounds, then. That’s still quite a lot."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Well, I also had a card from my mum, and it gives you two pounds off again."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh, so that’s even cheaper. Clever!"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, and it’s so soft and warm. I’m really pleased."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "How much did the girl pay?",
+                "prompt": "How much did the girl pay for the scarf?",
                 "options": [
-                  "Eight pounds",
                   "Ten pounds",
-                  "Eighteen pounds"
+                  "Twelve pounds",
+                  "Fourteen pounds"
                 ],
                 "answer": 0,
-                "explanation": "She says she got it for eight."
+                "explanation": "The label said fourteen, the woman took two pounds off, and the card took off two more, so she paid less than twelve, and the answer is ten."
               }
             },
             {
@@ -818,24 +837,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you sell second-hand books?"
+                    "text": "Excuse me, do you sell second-hand travel books?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, at the back, on the table with the red cloth."
+                    "text": "Yes, we do. They used to be in the window, but the sun was making them yellow, so we moved them last month."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Are they on that table on the pavement? I saw some books there."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Those are only old comics. We thought about putting the travel books out there too, but it rains too much in this town. Look for the big hat stand. They’re right beside the place where you pay."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great. Is there a section for Spain?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, on the second shelf. Just ask me if you need help."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thanks very much."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "Where are the books?",
+                "prompt": "Where can the man find the travel books?",
                 "options": [
-                  "At the back",
-                  "At the front",
-                  "Outside"
+                  "In the window",
+                  "On the pavement",
+                  "Beside the cash desk"
                 ],
-                "answer": 0,
-                "explanation": "She says they are at the back."
+                "answer": 2,
+                "explanation": "The books left the window because of the sun and the pavement table is only for comics; they are now by the hat stand, beside the place where you pay."
               }
             },
             {
@@ -849,37 +888,25 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Boy",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why did you not buy the vase?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "It had a crack in it. The seller did not mention it."
+                    "text": "Hi Dad, it’s Emma. I’m sorry, but I can’t meet you at the market at ten. I woke up with a sore throat, and for a minute I thought I’d stay in bed all day. But I took a tablet and I feel fine now, so that isn’t the problem. I was also going to bring my brother, but he has a football match, so he’s not coming anyway. The real problem is the transport. The bus drivers are on strike, and the buses do not run until eleven. I’ll try a taxi, if you can lend me some money. Call me back, please. Bye."
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "Why did the boy not buy the vase?",
+                "prompt": "Why can't Emma come to the market at ten?",
                 "options": [
-                  "It was too heavy",
-                  "It had a crack",
-                  "It cost too much"
+                  "She has a sore throat",
+                  "The buses are not running",
+                  "Her brother has a match"
                 ],
                 "answer": 1,
-                "explanation": "He says it had a crack in it."
+                "explanation": "She feels fine now and her brother’s match does not matter; the real problem is the strike, which means that no buses run until eleven."
               }
             },
             {
@@ -906,24 +933,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is the market open on Sundays?"
+                    "text": "Are you going to do the shopping now?"
                   },
                   {
                     "speaker": "b",
-                    "text": "No, only Tuesday, Friday and Saturday."
+                    "text": "Yes. I need fish for dinner tonight, and some vegetables."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Do the fish last. It has to stay cold in your bag."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good point. And the vegetables?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Do those in the middle, when you have already walked around. But before that, you must get the bread. The baker sells out by nine, and it’s already half past eight."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Oh, you’re right. I always forget that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So the baker comes first, then the vegetables, and then the fish."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Perfect. See you in an hour."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "When is the market not open?",
+                "prompt": "What does the man buy first?",
                 "options": [
-                  "On Saturdays",
-                  "On Fridays",
-                  "On Sundays"
+                  "Fish",
+                  "Vegetables",
+                  "Bread"
                 ],
                 "answer": 2,
-                "explanation": "He says it is not open on Sunday."
+                "explanation": "The fish is to be bought last and the vegetables in the middle, and she says that before that he must go to the baker."
               }
             },
             {
@@ -950,11 +1001,35 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can I try this cheese?"
+                    "text": "Hello. Are those pieces of cheese for people to try?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Of course. Here is a little piece on a stick."
+                    "text": "Yes, would you like some? This one is from a farm near here."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, please. Mmm, it’s really good."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’m glad. Would you like a bag of apples as well? They’re very sweet this week."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, thanks. I’ve got some at home."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s quite cold today. How about a cup of tea? I have a flask here."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s kind, but my mum’s waiting for me by the car. Maybe next time."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course. Come back soon!"
                   }
                 ]
               },
@@ -967,7 +1042,7 @@
                   "A cup of tea"
                 ],
                 "answer": 0,
-                "explanation": "She gives him a little piece of cheese on a stick."
+                "explanation": "She lets him try the cheese; he says no to the apples because he has some at home, and he refuses the tea because his mum is waiting."
               }
             },
             {
@@ -994,24 +1069,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time shall we meet?"
+                    "text": "Can we leave at seven on Saturday?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Ten, by the big clock. The best bargains go early."
+                    "text": "That early? The market doesn’t close until seven in the evening. There’s no need to rush."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I know, but all the best bargains have gone by nine. Last time I wanted a jacket, and by the time we arrived somebody had bought it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Oh dear. And I suppose it’s also cooler in the morning?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s true, but it’s not the reason. I just don’t want to miss anything again."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Fine. I’ll set my alarm for six."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thanks! I’ll buy you a coffee."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "Why does she want to go early?",
+                "prompt": "Why does the girl want to go early?",
                 "options": [
                   "The stalls close soon",
-                  "The bargains go fast",
+                  "The bargains go quickly",
                   "It is cooler"
                 ],
                 "answer": 1,
-                "explanation": "She says the best bargains go early."
+                "explanation": "The market is open until the evening and being cooler is only a bonus; the real reason is that the best things have gone by nine."
               }
             }
           ]
@@ -1047,24 +1142,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Excuse me, can you reduce the price? I only have twenty pounds."
+                    "text": "So, how is the flower stall? You started two weeks ago, didn’t you?"
                   },
                   {
                     "speaker": "b",
-                    "text": "All right. Take it for twenty, but do not tell anyone!"
+                    "text": "That’s right. To be honest, I thought it would be boring, standing in the cold all day."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And is it?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not at all, it is better than I expected. I chat to everybody, and some customers already come back every week. The mornings are a bit hard, and the pay isn’t great, but I’d never go back to the office."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Really? I thought you hated leaving your old job."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I did think about quitting after the first week, when it rained all day. But now I look forward to Mondays!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman do?",
+                "prompt": "How does the woman feel about her new job at the flower stall?",
                 "options": [
-                  "Calls the police",
-                  "Refuses to sell",
-                  "Lowers the price"
+                  "It is more boring than she thought",
+                  "It is better than she expected",
+                  "It is too tiring for her"
                 ],
-                "answer": 2,
-                "explanation": "She agrees to sell for twenty pounds."
+                "answer": 1,
+                "explanation": "She expected boredom, and she admits that the mornings are hard, but she enjoys talking to the customers and would not return to the office."
               }
             },
             {
@@ -1091,24 +1202,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I think someone has stolen my purse!"
+                    "text": "Did you like the new cafe at the market?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Stay calm. Let us tell the police officer by the gate."
+                    "text": "The pizza was great. But we waited forty minutes, which is crazy."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I know. My friend told me it was cheap, but I thought it was quite expensive."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Well, I don’t mind the price. For fresh food, it’s reasonable. But the noise was awful."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Actually, I didn’t mind the noise. It’s a market! But I’d go back for the pizza."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Me too, even if the waiting is long."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Shall we go on Sunday?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, but let’s arrive early."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What has happened?",
+                "prompt": "What do the friends agree about the new cafe?",
                 "options": [
-                  "A bad accident today",
-                  "A stolen purse",
-                  "A small fire nearby"
+                  "The food is worth waiting for",
+                  "The prices are too high",
+                  "The noise is a problem"
                 ],
-                "answer": 1,
-                "explanation": "She thinks someone has taken her purse."
+                "answer": 0,
+                "explanation": "Each of them complains about something different, the price or the noise, but both would return for the pizza even with a long wait."
               }
             },
             {
@@ -1135,24 +1270,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "These oranges are not fresh. Look, the skin is soft."
+                    "text": "You look upset, Dan. What happened?"
                   },
                   {
                     "speaker": "b",
-                    "text": "I am sorry, madam. Let me choose some better ones for you."
+                    "text": "The manager moved my stall to the corner by the car park."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh no. Is the position worse? I suppose fewer people walk there."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Probably, but that’s not it. I can get used to a new place. And the rent is the same, I checked."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I found out from another trader this morning. Nobody phoned me and nobody sent an email. I’ve worked here for ten years!"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s rude. You should talk to her."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I will. I’m seeing her at lunch."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the woman complain about?",
+                "prompt": "Why is the man annoyed?",
                 "options": [
-                  "The oranges are old",
-                  "The price is high",
-                  "The queue is long"
+                  "His stall has a worse position",
+                  "His rent has become higher",
+                  "Nobody told him about the change"
                 ],
-                "answer": 0,
-                "explanation": "She says the oranges are not fresh."
+                "answer": 2,
+                "explanation": "He accepts the corner and the rent has not changed; he is upset because he heard about it from another trader after ten years of work."
               }
             },
             {
@@ -1179,24 +1338,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "On our visit to the market, you must work in pairs and write down five prices."
+                    "text": "Hello, Gina. How’s the school market project going?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Can we also take photographs?"
+                    "text": "Quite well, thanks. We’ve got forty stalls, and the parents are making cakes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great. Are you phoning about the tickets? I thought they were ready."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "They are, thanks. And I don’t need money, the school pays for everything. What I need is some help, a favour."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Of course. What kind?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Could you drive the van on Friday and bring the tables from the hall? We’re only four students and they’re really heavy."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Sure, I’d be glad to."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thank you so much!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the school activity?",
+                "prompt": "Why is Gina phoning?",
                 "options": [
-                  "A music class",
-                  "A sports event",
-                  "A market project"
+                  "To check the tickets",
+                  "To ask for his help",
+                  "To ask for some money"
                 ],
-                "answer": 2,
-                "explanation": "The teacher asks the pairs to visit the market and write down prices."
+                "answer": 1,
+                "explanation": "The tickets are ready and the school pays for everything; she wants him to drive the van and bring the tables."
               }
             },
             {
@@ -1223,24 +1406,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Mum, can I have a pancake? It smells so good."
+                    "text": "I’m going to sell my old comics at the market on Sunday. I’ll be rich!"
                   },
                   {
                     "speaker": "b",
-                    "text": "Only if you share it with your sister."
+                    "text": "Rich? Hmm. You’ll probably make about twenty pounds, and you’ll stand there for six hours."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe, but I could buy a new game."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "True, and it would stop the comics from gathering dust. But I think what you’ll enjoy is talking to all those people. When I did it, I met so many interesting people."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So you think it’s a waste of time?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not at all! Just don’t expect much money. Go for the fun."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, I’ll try to enjoy it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the mother say?",
+                "prompt": "What does the woman think about the boy's plan?",
                 "options": [
-                  "He must share",
-                  "He must wait",
-                  "He must pay"
+                  "It is a waste of time",
+                  "It will make him rich",
+                  "It will be fun for him"
                 ],
-                "answer": 0,
-                "explanation": "She says only if he shares it with his sister."
+                "answer": 2,
+                "explanation": "She says he will earn little money but it is not a waste of time; she thinks he will enjoy talking to people."
               }
             },
             {
@@ -1267,24 +1470,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is this the way to the flower stall?"
+                    "text": "Do you really go to the market every week? The supermarket is so close."
                   },
                   {
                     "speaker": "b",
-                    "text": "Go past the fountain and turn left. You cannot miss it."
+                    "text": "I know, but the food at the market is better, and the atmosphere is lovely. They taste of something."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "But isn’t it cheaper at the supermarket?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Sometimes, but not always. Honestly, I never check. And I admit it takes me an hour instead of fifteen minutes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "An hour! I’d hate that."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I don’t mind. I see my friends there, and the sellers know me. It’s part of my week."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Well, I suppose that’s nice."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the man ask about?",
+                "prompt": "Why does the girl shop at the market?",
                 "options": [
-                  "The time of closing",
-                  "The price of flowers",
-                  "The way to a stall"
+                  "She likes the food and the atmosphere",
+                  "She saves money every week",
+                  "She wants to save some time"
                 ],
-                "answer": 2,
-                "explanation": "He asks the way to the flower stall."
+                "answer": 0,
+                "explanation": "Price is not her reason and she loses time; she goes for better-tasting vegetables and for the friendly atmosphere."
               }
             }
           ]
@@ -1309,58 +1532,46 @@
             "turns": [
               {
                 "speaker": "manager",
-                "text": "Good morning, traders and visitors. This is Enoch, the market manager, with some news. As of next month, the market will open an hour earlier, at seven in the morning. We will also add a new day, Thursday, so we will be open four days a week. The new food court will be in the south corner, near the car park, and will have twelve stalls. In the middle of the square, we are building a small stage, where musicians will perform at weekends. All stall owners must pay an extra five pounds for the electricity. We are also introducing a new rule about plastic: from the first of May, no plastic bags will be allowed. Customers should bring their own bags or buy a cloth bag from the information stand for one pound. Thank you for your help."
+                "text": "Good morning, traders and visitors. This is Enoch, the market manager, with some news about changes at Riverside Market. First, the opening time. Many of you told me that seven is too early on the cold winter days, and some people wanted nine. After a long meeting, we have decided on eight. That’s a small change, but I hope it helps the traders. Second, the days. At the moment we are open on Wednesdays and Saturdays. A new day will be added, but not Sunday, because the council said no. From next month we will also open on Fridays, because lots of people finish work early then. Third, the food court. We have always had eight food stalls, and next month there will be twelve. That’s four new stalls, with food from Turkey, Mexico and Nigeria. The new area will be in the old car park, next to the main gate. Fourth, music. We’ll have live musicians every Saturday. People asked for them in the square, and we thought of using the roof of the town hall, but that is too dangerous. So there will be a small stage in the middle of the square, next to the fountain. Fifth, the fees. Because we are spending money on all this, stall owners must pay a little more each week. I was going to ask for ten pounds extra, which seemed too much, so after talking to many traders we agreed on five pounds. Last of all, our green plan. From the first of June we will not give out plastic bags. You can bring your own bag, or buy a cloth one. They were going to cost two pounds, but in the end we chose a cheaper price, just one pound. Remember, you can read all the details on the notice board by the main gate. Thank you for listening, and have a great week."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The market will open at ___ in the morning",
-              "answer": "seven",
-              "accepted": [
-                "7"
-              ],
-              "explanation": "He says the market will open at seven."
+              "prompt": "The market will start at ___ in the morning",
+              "answer": "eight",
+              "explanation": "Seven was too early and nine was suggested, but the meeting decided on eight."
             },
             {
               "id": "l3-2",
-              "prompt": "The new day will be ___",
-              "answer": "Thursday",
-              "explanation": "He says they will add Thursday."
+              "prompt": "An extra market day will be ___",
+              "answer": "Friday",
+              "explanation": "The market is open on Wednesdays and Saturdays; Sunday was refused, and the new day will be Friday."
             },
             {
               "id": "l3-3",
-              "prompt": "The food court will have ___ stalls",
+              "prompt": "Food stalls will increase from eight to ___",
               "answer": "twelve",
-              "accepted": [
-                "12"
-              ],
-              "explanation": "He says it will have twelve stalls."
+              "explanation": "There have always been eight food stalls, and next month there will be twelve."
             },
             {
               "id": "l3-4",
-              "prompt": "Musicians will play on a ___ in the square",
+              "prompt": "Live music will be played on a ___ in the square",
               "answer": "stage",
-              "explanation": "He says a small stage is being built."
+              "explanation": "The roof of the town hall is too dangerous, so there will be a small stage."
             },
             {
               "id": "l3-5",
-              "prompt": "Stall owners must pay ___ pounds extra",
+              "prompt": "Stall owners will pay ___ pounds more each week",
               "answer": "five",
-              "accepted": [
-                "5"
-              ],
-              "explanation": "He says an extra five pounds for the electricity."
+              "explanation": "He was going to ask for ten pounds but they agreed on five."
             },
             {
               "id": "l3-6",
-              "prompt": "A cloth bag costs ___ pound",
+              "prompt": "A reusable bag will be sold for ___ pound",
               "answer": "one",
-              "accepted": [
-                "1"
-              ],
-              "explanation": "He says a cloth bag is one pound."
+              "explanation": "The cloth bags were going to cost two pounds, but the final price is one pound."
             }
           ]
         },
@@ -1392,120 +1603,120 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Pike, you have sold vegetables at this market for thirty years. What do you love about it?"
+                "text": "Pike, you’ve worked at this market for thirty years. What do you love most about it?"
               },
               {
                 "speaker": "h",
-                "text": "The people. I know all my customers by name, and I know what they like. Mrs Brown always wants the smallest potatoes."
+                "text": "Well, people think it must be the money, but honestly it’s not great, and some weeks I earn very little. The fresh air is nice, though in winter it’s freezing. No, it’s the customers. I know their names, their children’s names, even their dogs’ names. Some of them have been buying from me for twenty years, and we’ve shared so many stories. That’s what keeps me coming back every morning."
               },
               {
                 "speaker": "i",
-                "text": "Is it a hard life?"
+                "text": "Your day starts very early, doesn’t it? Why is that?"
               },
               {
                 "speaker": "h",
-                "text": "Very. I get up at three in the morning to buy fresh produce at the wholesale market. By six, my stall must be ready."
+                "text": "Three in the morning, yes. People think I need to avoid the traffic, but at that hour there’s no traffic anyway, and I’ve no garden to look after, because my vegetables come from the farm. I go to the wholesale market so that I can choose the best vegetables before the restaurants buy them. If you arrive late, you get what’s left. After that I drive to the stall and set up."
               },
               {
                 "speaker": "i",
-                "text": "What do you do in bad weather?"
+                "text": "What about bad weather? How do you feel about it?"
               },
               {
                 "speaker": "h",
-                "text": "We stay. Rain, wind or snow, customers still need their vegetables. I wear three jumpers and a hat."
+                "text": "Oh, I’ve seen everything: rain, snow, wind that blew my umbrella away. I used to be furious when it happened, and I did lose money on some days. I’m not scared of it, though, and I don’t worry about it any more. It’s part of the job, so I put on three jackets and I carry on. A customer in the rain is a special customer, and they like it that I’m there."
               },
               {
                 "speaker": "i",
-                "text": "How has the business changed?"
+                "text": "Tell me about your carrots. People say they are famous."
               },
               {
                 "speaker": "h",
-                "text": "Supermarkets are the main competition. But people say that my carrots taste better, and I think they are right."
+                "text": "Ha, they are! They’re not cheaper than the supermarket ones, in fact they cost a bit more. And they aren’t pretty either, because some are crooked and some are small. But when you taste one, you understand. They come from soil that the farmer has looked after for forty years. Nobody forgets that flavour, especially children."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to a young trader?"
+                "text": "What advice would you give to somebody who starts a stall today?"
               },
               {
                 "speaker": "h",
-                "text": "Be honest, smile and never sell anything you would not eat yourself."
+                "text": "Don’t copy the supermarkets, you’ll never win that game. Working longer hours won’t help, you’ll just be tired, and I tried that for a year. Just tell the truth about what you sell and smile, even on a bad day. If a tomato isn’t good, say so. People remember that, and they come back."
               },
               {
                 "speaker": "i",
-                "text": "Will you retire soon?"
+                "text": "And finally, who will take over the stall one day, and why are you happy about it?"
               },
               {
                 "speaker": "h",
-                "text": "My daughter wants to take over the stall, so I think I can stop in a few years. But I will visit every Saturday."
+                "text": "My daughter, Mia. She didn’t study business, she studied art, and I don’t think she’ll earn a lot at first. But she has stood next to me every Saturday since she was eight, so she knows every customer and every trick. I’m sure she’ll do it better than me. I’ll retire happily."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "What does Pike love about the market?",
+              "prompt": "What does Pike enjoy most about the market?",
               "options": [
-                "The money",
-                "The people",
-                "The weather"
+                "The money he earns",
+                "The people he meets",
+                "The fresh air he gets"
               ],
               "answer": 1,
-              "explanation": "He says the people."
+              "explanation": "The money is not great and the air is cold in winter; what he loves is knowing the customers and their stories."
             },
             {
               "id": "l4-2",
-              "prompt": "When does he get up?",
+              "prompt": "Why does Pike get up so early?",
               "options": [
-                "At six in the morning",
-                "At three in the morning",
-                "At noon"
+                "To miss the traffic",
+                "To look after a garden",
+                "To choose the best vegetables"
               ],
-              "answer": 1,
-              "explanation": "He gets up at three in the morning."
+              "answer": 2,
+              "explanation": "There is no traffic at that hour and he has no garden; he goes early so that he can choose before the restaurants buy."
             },
             {
               "id": "l4-3",
-              "prompt": "What does he do in bad weather?",
+              "prompt": "How does Pike feel about bad weather now?",
               "options": [
-                "He stays at the stall",
-                "He closes early",
-                "He goes home"
+                "He accepts it as part of the job",
+                "He is angry about it",
+                "He is afraid of it"
               ],
               "answer": 0,
-              "explanation": "He says they stay and wear three jumpers."
+              "explanation": "He used to be furious and he lost money, but he is not scared and he just puts on jackets and carries on."
             },
             {
               "id": "l4-4",
-              "prompt": "What does he say about his carrots?",
+              "prompt": "What does Pike say about his carrots?",
               "options": [
-                "They cost less",
-                "They look prettier",
-                "They taste better"
+                "They are cheaper than others",
+                "They have a special flavour",
+                "They are very pretty"
               ],
-              "answer": 2,
-              "explanation": "People say his carrots taste better than supermarket ones."
+              "answer": 1,
+              "explanation": "They cost a bit more and some are crooked, but the taste is something nobody forgets."
             },
             {
               "id": "l4-5",
-              "prompt": "What is his advice?",
+              "prompt": "What is Pike's advice for new traders?",
               "options": [
-                "Work longer hours",
-                "Be honest and smile",
-                "Copy the supermarket"
+                "Work much longer hours",
+                "Copy the big supermarkets",
+                "Be honest and friendly"
               ],
-              "answer": 1,
-              "explanation": "He says to be honest, smile and sell only what you would eat."
+              "answer": 2,
+              "explanation": "Copying supermarkets and working longer hours do not work; he tells them to tell the truth and smile."
             },
             {
               "id": "l4-6",
-              "prompt": "Who will take over the stall?",
+              "prompt": "Why is Pike happy that his daughter will take over?",
               "options": [
-                "His daughter",
-                "His son",
-                "His brother"
+                "She has helped him for years",
+                "She will earn more than he does",
+                "She has studied business"
               ],
               "answer": 0,
-              "explanation": "His daughter wants to take it over."
+              "explanation": "She did not study business and she will not earn much at first, but she has stood next to him every Saturday since she was eight."
             }
           ]
         }

@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "Why did the writer not eat breakfast?",
               "options": [
+                "His mother woke him up",
                 "He had already eaten",
                 "He had no time left",
                 "He felt too nervous"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "His heart was beating fast and he could not eat."
             },
             {
               "id": "r3-2",
               "prompt": "What did the writer do in the corridor?",
               "options": [
-                "Talked about football",
                 "Whispered some formulas",
+                "Talked about football",
+                "Asked a friend for help",
                 "Read his notes again"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He talked to Dani about football."
             },
             {
@@ -272,10 +274,11 @@
               "prompt": "What happened when the exam began?",
               "options": [
                 "He forgot his pen",
+                "He ran out of paper",
                 "His hands were shaking",
                 "He felt very confident"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "For a moment he could not read because his hands were shaking."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "Tired but relieved",
                 "Angry with himself",
-                "Certain of a high mark"
+                "Certain of a high mark",
+                "Bored and sleepy"
               ],
               "answer": 0,
               "explanation": "He felt tired but relieved."
@@ -294,10 +298,11 @@
               "prompt": "What does the writer think about his mother's advice?",
               "options": [
                 "It was unnecessary",
+                "It was too late",
                 "It was surprising",
                 "It was correct"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "He says \"My mother was right.\""
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "Revising for exams",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every year, thousands of students feel worried as exams get closer, but a few simple habits can help. [1] Many students try to study for six hours without a break, but this is not a good idea.\n\nIt is better to work for forty minutes and then rest for ten. [2] Walk around, drink some water or listen to music for a short time.\n\nAnother useful idea is to explain what you have learnt to someone else. [3] If you cannot explain it, you probably need to study it again.\n\nSleep is also very important. [4] Your brain needs rest to remember what you have studied. [5] Finally, remember that one exam does not decide your future.",
           "sentences": [
-            "You may be surprised how much you remember.",
-            "Do not stay up late studying the night before the test.",
-            "First, make a plan that includes regular breaks.",
             "Use this time to do something relaxing.",
+            "Coffee can keep you awake, but it makes some people nervous.",
+            "First, make a plan that includes regular breaks.",
+            "Do not stay up late studying the night before the test.",
+            "You may be surprised how much you remember.",
+            "Try to keep calm and be proud of your effort.",
             "Some exams are held in July and others in January.",
-            "Try to keep calm and be proud of your effort."
+            "It also helps to read the questions twice."
           ],
           "gaps": [
             {
@@ -325,17 +332,17 @@
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "A",
               "explanation": "The relaxing activities listed after the gap fit \"use this time to do something relaxing\"."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "E",
               "explanation": "\"You may be surprised how much you remember\" fits after explaining things to others."
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "D",
               "explanation": "Staying up late is the opposite of the importance of sleep, and the next sentence gives the reason."
             },
             {
@@ -736,6 +743,22 @@
                   {
                     "speaker": "f",
                     "text": "No, it was moved to Wednesday morning at nine. Look at the board."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wednesday! I thought it was on Monday morning. I studied all weekend for the wrong day."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Don't worry. The teacher told us last Friday, but you were ill. It starts at nine, not in the afternoon, so don't be late."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. Which room is it in?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The main hall. And bring two pens, because the school doesn't lend them."
                   }
                 ]
               },
@@ -780,6 +803,22 @@
                   {
                     "speaker": "m",
                     "text": "Not yet. I still have to do chemistry, but I've done maths and history."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Chemistry is difficult. I'm glad I finished it last week. Do you want to study it together?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, please. I've done maths and history twice, so I can spend the whole evening on chemistry."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good. Come to my house at six, and bring your notebook."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. I will make some tea for us, too."
                   }
                 ]
               },
@@ -824,6 +863,22 @@
                   {
                     "speaker": "f",
                     "text": "Forty, and you have an hour. So you can't spend too long on each one."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Forty questions! My last test had twenty, and we had forty minutes. Is it two hours in total?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, the whole test is one hour. Our teacher says you should answer the easy questions first and come back to the difficult ones."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good advice. I'll wear a watch, so I can check the time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, there isn't a clock in the room."
                   }
                 ]
               },
@@ -868,6 +923,22 @@
                   {
                     "speaker": "m",
                     "text": "Sorry, dictionaries aren't allowed. You can only bring pens and a ruler."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no. Can I use my phone to check a word, then?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, phones aren't allowed either. You have to leave them in your bag at the front of the room."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I'll buy a ruler today. Do you know a shop near here?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Try the bookshop opposite the school. It sells pens and rulers, and it opens at eight."
                   }
                 ]
               },
@@ -912,6 +983,22 @@
                   {
                     "speaker": "f",
                     "text": "Until two in the morning. I know that I should not have done it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Two in the morning! Did you get up early as well? You must be exhausted."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, I got up at eight, like always. I slept fine, but only for six hours. The problem was the late night of studying."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You should rest tonight. The exam isn't until Friday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You're right. Tonight I'll go to bed at ten."
                   }
                 ]
               },
@@ -956,6 +1043,22 @@
                   {
                     "speaker": "m",
                     "text": "Congratulations! I knew you would pass."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you! Last week I was worried about the result, but now I'm very happy. The teacher even wrote excellent on my story."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wonderful. And you were angry with her about the extra homework, remember?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but now I understand why she gave it to us. It really helped me."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Let's celebrate. I'll buy you an ice cream after school."
                   }
                 ]
               },
@@ -1000,6 +1103,22 @@
                   {
                     "speaker": "f",
                     "text": "The library's closed. How about my house? My mum can make us a snack."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Your house is good for me. But does your little brother make a lot of noise? Last time we couldn't concentrate."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not today. He's at a football match until six, and we can use the table in the kitchen."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great. Is the classroom open? We could use it tomorrow morning, too."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but the library is closed until Monday, and we need a quiet place today. Come at three."
                   }
                 ]
               },
@@ -1053,6 +1172,22 @@
                   {
                     "speaker": "m",
                     "text": "Phew, I thought it would never end."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Please do not talk until you have left the room. Leave your papers on the desk, and take your pens and your water bottles with you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Excuse me, may I go to the toilet? It was a very long exam."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but wait until the teacher at the door says you can go. Everyone will leave in rows."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I'll have a coffee at the café and a rest in the library afterwards."
                   }
                 ]
               },
@@ -1097,6 +1232,22 @@
                   {
                     "speaker": "f",
                     "text": "Of course. Look, you divide first, and then you subtract."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Now I see the first part. But why do we subtract at the end, and not add?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Because you take away the money you already spent. Try the next question yourself, and I'll check your answer."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. I have a pen, and we have a good table here, so I'm happy. I only need help with the hard questions."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good. Let's do five more together, and then you can try the test paper."
                   }
                 ]
               },
@@ -1141,6 +1292,22 @@
                   {
                     "speaker": "m",
                     "text": "I know. I always rush."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I'm not setting homework today, because you have done enough. But my advice is simple. Underline the key words in each question before you write."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I will try that. Is it OK if I take extra time at the start of the exam?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, two or three minutes to read is fine. The lesson starts at ten, so we can talk again after it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you, Miss. I feel better already."
                   }
                 ]
               },
@@ -1185,6 +1352,22 @@
                   {
                     "speaker": "m",
                     "text": "Where is the list?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is on the notice board outside the school office. There are classes for maths, English and science, and each one lasts an hour."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Are they free? And is there a new timetable for them?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They are free for all students. There is no new timetable and no school trip, only extra classes. The last day to sign up is Friday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I'll sign up for maths today."
                   }
                 ]
               },
@@ -1229,6 +1412,22 @@
                   {
                     "speaker": "f",
                     "text": "Ask in the office. People often hand in things they find."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I looked in my school bag and in the classroom, but it isn't there. I need the calculator for the exam tomorrow."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it only the pencil case? Do you still have your exam paper and your bag?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, they are fine. It's only the pencil case, and it is blue with a picture of a dog."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then describe it to the secretary in the office. I'll come with you after lunch."
                   }
                 ]
               },
@@ -1273,6 +1472,22 @@
                   {
                     "speaker": "m",
                     "text": "I can not. I have a test on Monday, and I need to study all weekend."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What a pity! Are you going away this weekend, or are you ill? It's Maya's birthday, and everyone will be there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I'm not going away, and I feel fine. I just have to study. The test is on Monday, and I have a lot of work."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then come for one hour, at least. You can study afterwards."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I'd love to, but I know I'd stay all night. Send my love to Maya, and give her this card."
                   }
                 ]
               },
@@ -1310,7 +1525,7 @@
             "turns": [
               {
                 "speaker": "helen",
-                "text": "Good afternoon, everybody. Today I'm going to give you some advice about studying for exams. My first tip is to find a quiet place. Many students prefer the library, but a bedroom can work too. Second, switch off your phone, because it is a big distraction. Third, study for about forty minutes and then take a break for ten. During your break, have a glass of water or a piece of fruit. The best time to study is in the morning, when your head is fresh. Finally, you should get at least eight hours of sleep. I know that sounds like a lot, but it makes a big difference. There will be a revision class on Tuesday, so please come if you need extra help."
+                "text": "Good afternoon, everybody. Please sit down and take out a pen, because there are a few things to write down. Today I'm going to give you some advice about studying for exams. I am a teacher, and I have helped students with exams for twenty years, so these are tips that really work. My first tip is to find a quiet place. It should be a place without a television and without your brothers or sisters. Many students prefer the library, but a bedroom can work too. Just make sure that your desk is tidy, and that you have good light. Second, switch off your phone, because it is a big distraction. If you want, you can put it in another room, so that you cannot see the messages. Third, study for about forty minutes and then take a break for ten. Use a timer, and do not forget to stand up and walk around. During your break, have a glass of water or a piece of fruit. Do not eat sweets or drink fizzy drinks, because they give you energy for a short time and then you feel tired. The best time to study is in the morning, when your head is fresh. After lunch, many people feel sleepy, so use that time for easy tasks like writing summaries. Finally, you should get at least eight hours of sleep. I know that sounds like a lot, but it makes a big difference. Tired students make more mistakes, and they forget things more easily. There will be a revision class on Tuesday, so please come if you need extra help. It starts at four o'clock in room ten, and it is free."
               }
             ]
           },
@@ -1392,11 +1607,35 @@
               },
               {
                 "speaker": "gerard",
+                "text": "Was the exam hall quiet?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Very quiet. You could hear every pen. At the beginning, that frightened me, but after the first question I stopped noticing the silence."
+              },
+              {
+                "speaker": "gerard",
                 "text": "How did you prepare?"
               },
               {
                 "speaker": "jenna",
                 "text": "I made a timetable in March, so I wasn't in a hurry. I studied one subject each evening and wrote summaries on coloured paper."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Which subject did you enjoy most?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "English, because I could write about my own ideas. The teacher said my essay about the sea was original, and I still keep it in a folder."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Did you study with friends?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Sometimes, on Saturdays. We asked each other questions in turn. It worked well for history, but not for maths, because we only talked about the party afterwards."
               },
               {
                 "speaker": "gerard",
@@ -1408,11 +1647,35 @@
               },
               {
                 "speaker": "gerard",
+                "text": "What did your brother do to help?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "He drew diagrams on big sheets of paper. Forces, speed, energy: everything became a picture. I remembered those pictures in the exam."
+              },
+              {
+                "speaker": "gerard",
                 "text": "What did you do to relax?"
               },
               {
                 "speaker": "jenna",
                 "text": "I went running every afternoon. It cleared my mind, and then I could study again with energy."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Did you eat well during the exams?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "My mum cooked pasta every evening, and I carried a banana to every exam. I tried to avoid coffee, because it made me nervous."
+              },
+              {
+                "speaker": "gerard",
+                "text": "Did your teachers help?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "A lot. My English teacher stayed after school every Thursday to answer questions, and my maths teacher gave us old exam papers to practise with."
               },
               {
                 "speaker": "gerard",
@@ -1424,11 +1687,35 @@
               },
               {
                 "speaker": "gerard",
+                "text": "What did you do while you waited?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "I went to the beach with my friends and read novels. And I deleted all the exam messages from my phone, so I would not think about them."
+              },
+              {
+                "speaker": "gerard",
                 "text": "What are you going to do now?"
               },
               {
                 "speaker": "jenna",
                 "text": "I'm going to travel for a few months, and then I'll go to university to study biology."
+              },
+              {
+                "speaker": "gerard",
+                "text": "How did you feel when the results came?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "I opened the envelope in the garden with my parents. My hands were shaking. I passed everything, even physics, and we all shouted so loudly that the neighbours came out."
+              },
+              {
+                "speaker": "gerard",
+                "text": "What would you say to students starting their exams?"
+              },
+              {
+                "speaker": "jenna",
+                "text": "Start early, take breaks and ask for help. And remember, an exam is only one day of your life, not your whole future."
               }
             ]
           },

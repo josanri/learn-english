@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "What is special about the bakery?",
               "options": [
-                "It has hardly changed since 1985",
                 "It is the biggest in the city",
-                "It is open every night"
+                "It is open every night",
+                "It has hardly changed since 1985",
+                "It has the longest queue in town"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "It opened in 1985 and has hardly changed."
             },
             {
@@ -261,10 +262,11 @@
               "prompt": "What did the writer do at first?",
               "options": [
                 "Served customers",
+                "Washed the trays",
                 "Mixed the eggs",
-                "Washed the trays"
+                "Decorated the cakes"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "At first he only washed trays."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "What does his grandmother say about machines?",
               "options": [
                 "She wants to buy one",
-                "She never uses one",
-                "She is afraid of them"
+                "She is afraid of them",
+                "She says they are too slow",
+                "She never uses one"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She never uses a machine; your hands know how long to mix."
             },
             {
               "id": "r3-4",
               "prompt": "What is the secret of the cake?",
               "options": [
+                "Good chocolate and a little coffee",
+                "Fresh eggs and a lot of butter",
                 "A new type of flour",
-                "A lot of sugar and butter",
-                "Good chocolate and a little coffee"
+                "A lot of sugar and butter"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She buys the best chocolate and adds a spoonful of coffee."
             },
             {
               "id": "r3-5",
               "prompt": "How does the writer feel about next year?",
               "options": [
-                "Afraid he will miss the bakery",
                 "Excited to leave the town",
-                "Sure of a job in the shop"
+                "Sure of a job in the shop",
+                "Afraid he will miss the bakery",
+                "Worried that she will have to sell it"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He is afraid that he will miss the bakery."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The story of chocolate",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Chocolate comes from the seeds of the cacao tree. [1] Today, we think of it as a sweet food, but it was not always so.\n\nThe first people to use cacao were the Maya, in Central America, more than two thousand years ago. [2] They mixed the seeds with water and chilli to make a bitter, spicy drink.\n\nWhen Spanish explorers arrived in the sixteenth century, they took cacao home to Europe. [3] They added sugar, which made the drink much sweeter, and soon it became fashionable among the rich.\n\nThe first solid chocolate bar appeared in England in 1847. [4] Before that, people could only drink it, and it was too expensive for most families.\n\nToday, chocolate is made all over the world. [5] Experts say that each person in some countries eats about eight kilos of it a year.",
           "sentences": [
+            "The seeds are dried in the sun for about a week.",
             "It was one of the most important events in the history of food.",
             "The tree grows only in warm, wet places near the equator.",
             "It was so valuable that they used the seeds as money.",
-            "At first, Europeans did not like the taste.",
+            "Some people cannot eat it because of an allergy.",
+            "In Switzerland, chocolate was first mixed with milk in 1875.",
             "People never seem to get tired of this sweet food.",
-            "Some people cannot eat it because of an allergy."
+            "At first, Europeans did not like the taste."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "C",
               "explanation": "The tree grows only in warm places, which leads on to how we think of chocolate today."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "D",
               "explanation": "The seeds were so valuable that they were used as money, and the next sentence says what the Maya did with them."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "H",
               "explanation": "At first Europeans did not like the taste, so they added sugar."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "B",
               "explanation": "The first chocolate bar was one of the most important events, and the next sentence says before that people could only drink it."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "G",
               "explanation": "People never get tired of this sweet food, and the next sentence gives how much people eat."
             }
           ]
@@ -731,11 +738,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Which ice cream flavour do you want?"
+                    "text": "Hi, what can I get you? The mango is our new flavour. A lot of people love it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Strawberry, please. I tried mango last week and it was too sour."
+                    "text": "I’m tempted. Mango is my favourite fruit, but I had mango yesterday. I always have vanilla at this shop, so today I want a change."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then what about the strawberry? It’s made with fruit from a farm just outside the town."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect, strawberry, please. Two scoops, in a cone."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Here you are. That’s four pounds."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you, it looks delicious."
                   }
                 ]
               },
@@ -748,7 +771,7 @@
                   "Vanilla"
                 ],
                 "answer": 1,
-                "explanation": "She says that she wants strawberry."
+                "explanation": "She had mango yesterday and always has vanilla, so today she picks the strawberry from the farm."
               }
             },
             {
@@ -762,24 +785,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Cedric",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How much are these chocolates?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "Six pounds a box, but if you take two, the second box is half price."
+                    "text": "Welcome to Celia’s Sweet Corner! This week our famous toffee boxes are six pounds each. Many people ask if two boxes cost twelve, and the answer is no: when you buy a second, you pay only three for it, that is half the price. Last month we gave a free bag with every purchase, but we ran out of bags, so that offer is finished. On Saturday we have free tasting from ten until two, and our baker can write a name on the lid. Come and see us in the high street!"
                   }
                 ]
               },
@@ -792,7 +803,7 @@
                   "Both cost six pounds"
                 ],
                 "answer": 0,
-                "explanation": "He says that the second box is half price."
+                "explanation": "A box costs six pounds, but the second box costs only three; the free bag offer was last month."
               }
             },
             {
@@ -819,24 +830,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you make this pudding yourself?"
+                    "text": "This pudding is amazing, Carys. Is the secret fresh cream?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, from my grandmother's recipe. It needs plenty of butter, that is her secret."
+                    "text": "Everybody thinks that, but no, I use milk. Some people add a spoon of coffee to make the chocolate taste stronger. I tried it once, but I didn’t like it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what is it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Butter. A lot of it, more than you’d believe, almost a whole packet. My grandmother taught me, and she told me never to tell anybody."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Your secret is safe with me."
                   }
                 ]
               },
               "question": {
                 "id": "l1-3q",
-                "prompt": "What is the secret of the pudding?",
+                "prompt": "What is the secret of the woman's pudding?",
                 "options": [
-                  "Lots of butter",
+                  "Plenty of butter",
                   "A little coffee",
                   "Fresh cream"
                 ],
                 "answer": 0,
-                "explanation": "She says that it needs plenty of butter."
+                "explanation": "It is not the cream, and she did not like the coffee idea; the secret is a lot of butter."
               }
             },
             {
@@ -863,11 +886,31 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why have you stopped eating sweets?"
+                    "text": "Colm, you didn’t take a sweet. You always have a bag with you!"
                   },
                   {
                     "speaker": "m",
-                    "text": "My dentist told me that I had two bad teeth, so I am being careful."
+                    "text": "I’ve stopped. Not because I want to lose weight, I’m fine as I am. And I’d still love them, honestly."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what happened?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My dentist told me last month that I have three holes in my teeth. He said that if I continue, I’ll lose one."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no. Poor you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll eat fruit instead."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good idea. Fruit is better for you."
                   }
                 ]
               },
@@ -880,21 +923,13 @@
                   "He does not like them"
                 ],
                 "answer": 1,
-                "explanation": "He says that his dentist found two bad teeth."
+                "explanation": "He does not want to lose weight and still loves sweets; his dentist found holes in his teeth."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Cosmo",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Celia",
@@ -906,12 +941,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Are you coming to the sweet shop with us?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I cannot. I have to finish my homework before dinner."
+                    "text": "Hi Cosmo, it’s Celia. I got your message about dinner at the new burger place tonight, and I would really love to come. I’m hungry, I haven’t eaten since breakfast. And you don’t need to offer to pay for me, I’ve got money, I took some out yesterday. But I can’t come. My history homework is due tomorrow morning at nine and I’ve only written one page. I’ll be at my desk until midnight. Please eat a chip for me, and tell me all about it! Bye."
                   }
                 ]
               },
@@ -924,7 +955,7 @@
                   "She has homework"
                 ],
                 "answer": 2,
-                "explanation": "She says that she has to finish her homework."
+                "explanation": "She is hungry and has money, but she must finish her history homework."
               }
             },
             {
@@ -951,11 +982,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What did you have for dessert at the party?"
+                    "text": "Did you have dessert at the restaurant, Cedric?"
                   },
                   {
                     "speaker": "m",
-                    "text": "A fruit salad with cream. I was too full for the cake."
+                    "text": "I wanted a slice of the chocolate cake, but they had finished it. Then I almost ordered ice cream, but it was the only flavour I don’t like, so I had a fruit salad with cream."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Healthy, then."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not really, the cream was huge. It was delicious, though."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Lucky you."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It was the best part of the evening, and the service was friendly too."
                   }
                 ]
               },
@@ -968,21 +1015,13 @@
                   "Some ice cream"
                 ],
                 "answer": 0,
-                "explanation": "He says that he had a fruit salad with cream."
+                "explanation": "The cake was finished and the ice cream was not to his taste, so he ate fruit salad with cream."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Colm",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Cara",
@@ -994,12 +1033,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Where did you buy this lovely chocolate?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "It is from Belgium. My aunt brought it back from her holiday."
+                    "text": "Hi everybody! Before we start the party, I want to say thank you for the chocolate. Most of you think it was my cousin, because she promised to bring some from Belgium, but her trip was cancelled. And my friend from school brought only flowers. The chocolate came from my aunt, who lives in Brussels. She arrived on Sunday with two big boxes, one for me and one for the party. So please say thank you to her when she comes in. Now let’s eat, because it’s getting late!"
                   }
                 ]
               },
@@ -1012,7 +1047,7 @@
                   "A friend from school"
                 ],
                 "answer": 1,
-                "explanation": "She says that her aunt brought it back."
+                "explanation": "Her cousin cancelled her trip and her school friend brought flowers; the chocolate came from her aunt in Brussels."
               }
             }
           ]
@@ -1048,24 +1083,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good afternoon. Can I help you?"
+                    "text": "Mum’s birthday is on Sunday. Shall we buy a cake from the shop?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, I would like a slice of the lemon cake and a cup of tea, please."
+                    "text": "It’s boring, and they’re expensive. We could order one online, but it might arrive late."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "True. What if we bake it ourselves? You can make the chocolate sponge."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m not good at baking, but I’ll try if you help with the cream."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Deal. We’ll buy the ingredients on Saturday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good. I’ll tell Mum we have a surprise for her."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "What do Carys and Cosmo agree to do for their mum's birthday?",
                 "options": [
-                  "In a school",
-                  "In a supermarket",
-                  "In a café"
+                  "Buy a cake in a shop",
+                  "Bake a cake together",
+                  "Order a cake online"
                 ],
-                "answer": 2,
-                "explanation": "He orders a slice of cake and a cup of tea from the woman who serves him."
+                "answer": 1,
+                "explanation": "The shop cake is boring and expensive and the online cake could be late, so they will bake it with a shared job."
               }
             },
             {
@@ -1092,24 +1143,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am sorry. I have eaten the last piece of your cake."
+                    "text": "There’s one piece of cake left. Do you want it?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Oh no! I was saving it for later. Never mind, I can bake another."
+                    "text": "I do, but my friend Amy made this cake and I’ve already had two slices. I feel a little guilty."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Take it, she won’t mind."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m not angry with Amy or anything, I just feel greedy. And I didn’t make it, so I can’t be proud, can I? Maybe I should ask her first."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Take it! It’s yours."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, thanks."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "How does the woman feel?",
+                "prompt": "How does Celia feel about eating the last piece of cake?",
                 "options": [
-                  "Angry with her friend",
-                  "Sad about the last piece",
-                  "Happy about the cake"
+                  "Guilty about taking it",
+                  "Proud of making it",
+                  "Angry with her friend"
                 ],
-                "answer": 1,
-                "explanation": "She says oh no, because she was saving it, but then says never mind."
+                "answer": 0,
+                "explanation": "She says she feels guilty and greedy; she is not angry with Amy and did not make the cake."
               }
             },
             {
@@ -1136,24 +1203,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Be careful! The sugar is very hot. Stir it slowly."
+                    "text": "Colm, your sauce is burning. Turn the heat down."
                   },
                   {
                     "speaker": "m",
-                    "text": "Like this? It is starting to turn brown already."
+                    "text": "Should I add more sugar? It’s not sweet enough."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, it’s sweet already. And don’t try to heat it quickly, it will go lumpy. Just stir it slowly in one direction, like this."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Like this?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect. Keep going for ten minutes, and don’t stop, or it will stick to the pan."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Okay, thank you."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’re welcome. Now taste it, and tell me what you think."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Cara tell Colm to do with the sauce?",
                 "options": [
-                  "Telling him to stir slowly",
-                  "Asking him for a recipe",
-                  "Ordering a hot meal"
+                  "Add more sugar",
+                  "Heat it quickly",
+                  "Stir it slowly"
                 ],
-                "answer": 0,
-                "explanation": "She tells him to be careful and stir the sugar slowly."
+                "answer": 2,
+                "explanation": "Cara says it is sweet enough and that quick heat makes it lumpy; he should stir slowly in one direction."
               }
             },
             {
@@ -1180,24 +1267,44 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Would you like to try this new chocolate with orange?"
+                    "text": "Try this new dark chocolate from the shop. It’s seventy per cent."
                   },
                   {
                     "speaker": "f",
-                    "text": "Thank you. Mmm, it is delicious! I think I will buy two bars."
+                    "text": "Hmm. Is it a bit bitter?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A little. Some people find it too bitter, but I love it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought it would be, but it’s actually delicious. Rich and not too sweet. And it’s cheap for what it is."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good price, too."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll buy two bars."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good choice. I’ll buy a bar for my sister too, because she loves chocolate."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the woman think of the chocolate?",
+                "prompt": "What does Carys think of the new dark chocolate?",
                 "options": [
-                  "She thinks it is too dear",
-                  "She thinks it is too bitter",
-                  "She thinks it is delicious"
+                  "It is too bitter",
+                  "It is delicious",
+                  "It is too expensive"
                 ],
-                "answer": 2,
-                "explanation": "She says that it is delicious and will buy two bars."
+                "answer": 1,
+                "explanation": "She expected it to be bitter but says it is delicious, rich and cheap."
               }
             },
             {
@@ -1224,24 +1331,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "The shop opens at nine, so we should leave at half past eight."
+                    "text": "Shall we book a restaurant for the party on Saturday?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Good idea. Then we will get the best cakes before they run out."
+                    "text": "Too expensive, and they close at eleven."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then maybe we should move the party to next week, when I get paid."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Our friends are only free on Saturday. Why don’t we have it at my place? I’ll cook."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A home party! Great, everyone will love that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll make pasta and a big salad. Can you bring the drinks?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course, and I’ll ask everyone to bring a dessert."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What are the speakers planning?",
+                "prompt": "What do Celia and Colm decide about their party?",
                 "options": [
-                  "A trip to the shop",
-                  "A visit to the dentist",
-                  "A party at home"
+                  "Hold it in a restaurant",
+                  "Move it to next week",
+                  "Make it a party at home"
                 ],
-                "answer": 0,
-                "explanation": "They plan to leave at half past eight so that they reach the shop when it opens."
+                "answer": 2,
+                "explanation": "The restaurant costs too much and the friends are free only on Saturday, so they hold a party at his home."
               }
             },
             {
@@ -1268,24 +1395,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, this soup is cold, and I asked for a hot one."
+                    "text": "Excuse me, this soup is cold."
                   },
                   {
                     "speaker": "f",
-                    "text": "I am very sorry. I will take it back and bring you a fresh bowl."
+                    "text": "I’m so sorry, I’ll take it back to the kitchen."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m a bit annoyed, I’ll be honest, but I know you’re busy. I’ve been waiting forty minutes, and now this."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll ask the chef for a hot one right away, and I won’t charge you for it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you, that’s kind of you."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Please enjoy your meal. I’m sorry again for the wait, and I hope you will come back soon."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "How does Cosmo feel about the cold soup?",
                 "options": [
-                  "His bill is wrong",
-                  "His order is late",
-                  "His soup is cold"
+                  "Annoyed but polite",
+                  "Happy with the price",
+                  "Surprised that it is late"
                 ],
-                "answer": 2,
-                "explanation": "He says that the soup is cold and he asked for a hot one."
+                "answer": 0,
+                "explanation": "He says he is a bit annoyed but understands that the waitress is busy, and he thanks her."
               }
             }
           ]
@@ -1310,63 +1453,60 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Welcome to our chocolate factory. My name is Carys, and I will be your guide today. We make about twenty thousand bars every day, and we send them to forty countries. The factory was started by a family of bakers in 1920. Today, it is still owned by the same family. First, we will see how the cacao beans arrive from Ghana. They are cleaned, then roasted in big ovens for about an hour. After that, they are crushed into a thick paste. The paste is mixed with sugar and milk, and then it is stirred for three days to make it smooth. Finally, the chocolate is poured into shapes and cooled. At the end of the tour, you can try three different kinds. Please do not touch the machines, and remember that photographs are only allowed in the shop. Shall we begin?"
+                "text": "Welcome to our chocolate factory. My name is Carys, and I will be your guide today. We make about twenty thousand bars every day. Last year it was fifteen thousand, and when the factory was small it was only two thousand, so you can see that we have grown. We send our chocolate to forty countries. Some people think it’s more, perhaps fifty, because they see our bars on holiday everywhere, but it’s forty. The factory was started in nineteen twenty by a farmer called Mr Hale. It was nineteen twenty, not nineteen thirty as some websites say, and it was in the little building on your left, which is now our shop. Now to the cacao beans. They arrive from Ghana, in big bags, every month. Before, we bought them from Brazil, but now Ghana is better for our recipes. Some beans also come from Peru, but only for our special bars. Then there is the mixing. The mixture is stirred for three days. I know it sounds like a very long time. Other factories do it in one day, and a few famous brands stir for five, but we think that three days gives the smoothest taste. You can watch the machines through the big windows. Finally, the tasting. At the end of the tour, you can try five kinds of chocolate: milk, dark, white, orange and chilli. Most visitors choose milk, but I recommend the chilli. Please do not touch the machines, wear your hair net all the time, and stay with me, because the floor can be slippery. Now, let’s go and see the first room."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The factory makes about ___ bars every day",
+              "prompt": "Daily production: about ___ bars",
               "answer": "twenty thousand",
               "accepted": [
                 "20,000",
                 "20000"
               ],
-              "explanation": "We make about twenty thousand bars every day."
+              "explanation": "They make about twenty thousand bars a day; it was fifteen thousand last year."
             },
             {
               "id": "l3-2",
-              "prompt": "The chocolate is sent to ___ countries",
+              "prompt": "Number of countries that buy the chocolate: ___",
               "answer": "forty",
               "accepted": [
                 "40"
               ],
-              "explanation": "We send them to forty countries."
+              "explanation": "Some people think fifty, but it is forty countries."
             },
             {
               "id": "l3-3",
-              "prompt": "The factory was started in ___",
+              "prompt": "The year the factory began: ___",
               "answer": "1920",
               "accepted": [
                 "nineteen twenty"
               ],
-              "explanation": "The factory was started by a family of bakers in 1920."
+              "explanation": "It was started in nineteen twenty, not nineteen thirty."
             },
             {
               "id": "l3-4",
-              "prompt": "The cacao beans arrive from ___",
+              "prompt": "Country that supplies the cacao beans: ___",
               "answer": "Ghana",
               "accepted": [],
-              "explanation": "The cacao beans arrive from Ghana."
+              "explanation": "The beans now arrive from Ghana; they came from Brazil before."
             },
             {
               "id": "l3-5",
-              "prompt": "The mixture is stirred for ___ days",
+              "prompt": "Days that the mixture is stirred: ___",
               "answer": "three",
               "accepted": [
                 "3"
               ],
-              "explanation": "It is stirred for three days to make it smooth."
+              "explanation": "The mixture is stirred for three days; other factories use one or five."
             },
             {
               "id": "l3-6",
-              "prompt": "Visitors can try ___ kinds of chocolate",
-              "answer": "three",
-              "accepted": [
-                "3"
-              ],
-              "explanation": "At the end of the tour, you can try three different kinds."
+              "prompt": "Kinds of chocolate to taste at the end: ___",
+              "answer": "five",
+              "explanation": "Visitors can try five kinds: milk, dark, white, orange and chilli."
             }
           ]
         },
@@ -1398,35 +1538,35 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Colm, you make desserts for a famous hotel. How did you get the job?"
+                "text": "Colm, how did you get your job at the hotel?"
               },
               {
                 "speaker": "h",
-                "text": "I started as a kitchen helper when I was seventeen. I watched the chefs and asked a lot of questions. Four years later they gave me my own place."
+                "text": "People expect a story about a cooking contest, and I did enter one once, but I lost in the first round. And I didn’t study abroad either, I’ve never left this country for more than a week. I started at sixteen as a kitchen helper, washing pots and carrying flour. The chef noticed that I got up early and never complained, and he gave me small jobs in the pastry corner."
               },
               {
                 "speaker": "i",
-                "text": "What is the most popular dessert in the hotel?"
+                "text": "Your chocolate fondant is famous. Why is it special?"
               },
               {
                 "speaker": "h",
-                "text": "Definitely the chocolate fondant. It is warm in the middle, and people always ask for the recipe. I never give it!"
+                "text": "It’s not the cheapest, in fact it’s one of the most expensive desserts on our menu, because of the quality of the chocolate. And there is no secret sauce, only a little cream. What makes it special is that it’s warm and runny in the middle. When you cut it, the chocolate flows out onto the plate. Guests always smile at that moment."
               },
               {
                 "speaker": "i",
-                "text": "What is the hardest part of your work?"
+                "text": "What’s the hardest part of your work?"
               },
               {
                 "speaker": "h",
-                "text": "Timing. A dessert must be ready exactly when the main course finishes, so the whole kitchen has to work together."
+                "text": "Timing, no question. A fondant needs exactly eleven minutes. One minute more and it’s a normal cake, one minute less and it’s soup. Washing up is boring but easy, and buying food is a pleasure, I love going to the market. But timing wakes me up at night, even on holiday."
               },
               {
                 "speaker": "i",
-                "text": "Do you eat a lot of sweet food yourself?"
+                "text": "Why do you eat cheese and fruit at home?"
               },
               {
                 "speaker": "h",
-                "text": "Surprisingly, no. I taste everything I make, but just a little. At home, I prefer cheese and fruit."
+                "text": "People imagine my kitchen is full of cakes, and I know my family would love that. Pasta and bread are fine, but no. After ten hours with sugar and butter, I’m tired of sweet things. I don’t want to see a cake. And money isn’t the reason, my salary is good."
               },
               {
                 "speaker": "i",
@@ -1434,15 +1574,15 @@
               },
               {
                 "speaker": "h",
-                "text": "I go hiking in the hills. After a week in a hot kitchen, I need fresh air and some quiet."
+                "text": "I don’t visit restaurants, I see enough kitchens during the week, and I don’t sleep all day, though I’d like to. I go hiking in the hills with my dog. It’s quiet, it’s the opposite of the kitchen, and it clears my head."
               },
               {
                 "speaker": "i",
-                "text": "Do you have a message for young people who want to be chefs?"
+                "text": "What advice would you give to a young cook?"
               },
               {
                 "speaker": "h",
-                "text": "Be patient and be curious. Everyone makes mistakes. The ones who learn from them become the best."
+                "text": "Be patient and curious. Don’t expect to be a chef in a year, it takes time. Ask questions, try new things, taste everything. And don’t be afraid of mistakes, I make them too. A burnt cake teaches you more than ten perfect ones. If you can’t make mistakes and never ask why, you won’t learn."
               }
             ]
           },
@@ -1456,7 +1596,7 @@
                 "He studied in another country"
               ],
               "answer": 1,
-              "explanation": "He started as a kitchen helper at seventeen."
+              "explanation": "He lost the contest and never studied abroad; he began at sixteen as a kitchen helper."
             },
             {
               "id": "l4-2",
@@ -1467,51 +1607,51 @@
                 "It has a secret sauce"
               ],
               "answer": 1,
-              "explanation": "It is warm in the middle."
+              "explanation": "It is expensive and has no secret sauce; it is warm and runny in the middle."
             },
             {
               "id": "l4-3",
-              "prompt": "What is the hardest part of his work?",
+              "prompt": "What is the hardest part of Colm's work?",
               "options": [
                 "Timing",
                 "Washing up",
                 "Buying food"
               ],
               "answer": 0,
-              "explanation": "He says that timing is the hardest."
+              "explanation": "Washing up is boring but easy and shopping is a pleasure; timing wakes him at night."
             },
             {
               "id": "l4-4",
-              "prompt": "What does he eat at home?",
+              "prompt": "Why does Colm eat cheese and fruit at home?",
               "options": [
-                "Pasta and bread",
-                "Cakes and biscuits",
-                "Cheese and fruit"
+                "His family does not like cakes",
+                "He wants to save money",
+                "He is tired of sweet things"
               ],
               "answer": 2,
-              "explanation": "At home, he prefers cheese and fruit."
+              "explanation": "His family would love cakes and money is not the reason; after ten hours with sugar he is tired of sweet things."
             },
             {
               "id": "l4-5",
-              "prompt": "What does he do on his days off?",
+              "prompt": "What does Colm do on his days off?",
               "options": [
                 "He visits other restaurants",
                 "He goes hiking",
                 "He sleeps all day"
               ],
               "answer": 1,
-              "explanation": "He goes hiking in the hills."
+              "explanation": "He sees enough kitchens and does not sleep all day; he goes hiking with his dog."
             },
             {
               "id": "l4-6",
-              "prompt": "What advice does he give?",
+              "prompt": "What advice does Colm give to a young cook?",
               "options": [
                 "Be patient and curious",
-                "Work only at night",
+                "Always follow the recipe",
                 "Never make a mistake"
               ],
               "answer": 0,
-              "explanation": "Be patient and be curious."
+              "explanation": "Do not expect to be a chef in a year; be patient, ask questions and do not be afraid of mistakes."
             }
           ]
         }

@@ -250,21 +250,23 @@
               "prompt": "How did the writer feel about the violin when she was young?",
               "options": [
                 "She was afraid of her teacher.",
+                "She thought it was too hard.",
                 "She disliked it at first.",
                 "She loved it for years."
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She says that for years she loved the violin and Mrs Okafor was strict but kind."
             },
             {
               "id": "r3-2",
               "prompt": "Why did she stop playing?",
               "options": [
-                "She lost interest and wanted free time.",
                 "She broke her instrument.",
-                "Her teacher moved away."
+                "She lost interest and wanted free time.",
+                "Her teacher moved away.",
+                "She hurt her hand."
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She wanted to go to the park with her friends and said she was no longer enjoying it."
             },
             {
@@ -272,8 +274,9 @@
               "prompt": "How did Mrs Okafor react when the writer wanted to stop?",
               "options": [
                 "She was angry.",
-                "She asked her parents to talk to her.",
-                "She understood."
+                "She cried.",
+                "She understood.",
+                "She asked her parents to talk to her."
               ],
               "answer": 2,
               "explanation": "She said she understood, though both of them were sad."
@@ -284,7 +287,8 @@
               "options": [
                 "Her mother asked for a favourite song for a birthday.",
                 "She wanted to join the school orchestra.",
-                "Her grandmother bought her a new violin."
+                "Her grandmother bought her a new violin.",
+                "She wanted to show her friends."
               ],
               "answer": 0,
               "explanation": "Her mother asked her to play her grandmother's favourite song for her birthday."
@@ -294,10 +298,11 @@
               "prompt": "What does she say about her music now?",
               "options": [
                 "She practises every day.",
-                "She plays for pleasure with a group.",
-                "She plays in a famous orchestra."
+                "She teaches young children to play it.",
+                "She plays in a famous orchestra.",
+                "She plays for pleasure with a group."
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She plays for fun, not for exams, and has joined a small group that meets on Saturdays."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A street musician",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every weekday morning, at half past eight, Tomas opens his guitar case at the corner of the market square and starts to play. He is nineteen, and he has been a street musician for two years. [1] Some people stop to listen, and a few of them leave a coin or two.\n\nTomas did not plan to be a busker. He studied music at college, but he found it hard to get work after he finished. [2] He decided to play outside, just to practise, and to his surprise, people liked it.\n\nThe job is not as easy as it looks. In winter, his fingers get so cold that he can hardly move them. [3] Rain is the worst problem, because he cannot play at all, and he goes home with no money.\n\nHowever, there are also moments that he will never forget. A few months ago, a small girl danced in front of him for ten minutes. [4] Another time, an old man told him that his song had reminded him of his wife.\n\nTomas hopes to record an album one day. [5] \"Meanwhile,\" he says with a smile, \"the square is my concert hall.\"",
           "sentences": [
+            "Tomas likes playing the piano more than the guitar.",
+            "He uses an old guitar that once belonged to his uncle.",
             "Her parents had to carry her away when the song finished.",
             "He wears thick gloves with the tips cut off, but it is still difficult.",
-            "He needed money, and the only free place to try was the street.",
-            "Many people who pass are on their way to work and do not have much time.",
+            "Some of them gave him a lot of money.",
             "He has already written about twelve songs for it.",
-            "Tomas likes playing the piano more than the guitar."
+            "He needed money, and the only free place to try was the street.",
+            "Many people who pass are on their way to work and do not have much time."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "H",
               "explanation": "The people who pass on their way to work are introduced before \"Some people stop to listen\"."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "G",
               "explanation": "\"He found it hard to get work\" leads to needing money and using the street as a place to play; the next sentence says he decided to play outside."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "D",
               "explanation": "\"His fingers get so cold\" is followed by the gloves with the tips cut off, and then the worst problem is rain."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "C",
               "explanation": "The girl dancing for ten minutes continues with the parents carrying her away when the song finished."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "F",
               "explanation": "\"Tomas hopes to record an album\" is followed by the songs he has written for it; then \"Meanwhile\" introduces his present concert hall."
             }
           ]
@@ -741,28 +748,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "ysolde",
-                    "name": "Ysolde",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "ysolde",
-                    "text": "What time does the school concert start?"
-                  },
-                  {
                     "speaker": "beaumont",
-                    "text": "The programme says seven, but the headteacher wants everyone in their seats by a quarter to."
-                  },
-                  {
-                    "speaker": "ysolde",
-                    "text": "Then I'll leave work early."
+                    "text": "Good evening, ladies and gentlemen, and welcome to the Greenfield School spring concert. The doors are open now. The concert will start at seven o’clock, and the ushers will begin to close the doors at five to seven. For this reason, we ask everybody to be in your seats by a quarter to seven. If you arrive after that, you will have to wait outside until the first song finishes. The doors opened at half past six, so you have had plenty of time. Please switch off your phones, and enjoy the music."
                   }
                 ]
               },
@@ -775,7 +766,7 @@
                   "At half past six"
                 ],
                 "answer": 1,
-                "explanation": "The concert starts at seven, but everyone should be seated by a quarter to."
+                "explanation": "The concert starts at seven and the doors opened at half past six, but latecomers wait outside, so everybody should be seated by a quarter to seven."
               }
             },
             {
@@ -801,16 +792,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "clementine",
+                    "text": "Hadrian, guess what I got for my birthday!"
+                  },
+                  {
                     "speaker": "hadrian",
-                    "text": "Did you get the keyboard you wanted for your birthday?"
+                    "text": "A guitar? You’ve wanted one since the summer."
                   },
                   {
                     "speaker": "clementine",
-                    "text": "My parents said it was too expensive, so I got a cheaper ukulele. It's smaller, so I can take it on the bus."
+                    "text": "I did ask for one, but my hands are too small, and the teacher said I’d have to wait. A keyboard was my second idea, though it was too expensive for my parents."
                   },
                   {
                     "speaker": "hadrian",
-                    "text": "That's useful. Can you play anything yet?"
+                    "text": "So what did you get?"
+                  },
+                  {
+                    "speaker": "clementine",
+                    "text": "Something tiny with four strings. It’s from Hawaii and it only cost forty pounds. I’ve learned three songs already."
+                  },
+                  {
+                    "speaker": "hadrian",
+                    "text": "Oh, a ukulele! Brilliant. Will you play something for us at lunch tomorrow?"
+                  },
+                  {
+                    "speaker": "clementine",
+                    "text": "Maybe, if I don’t get too nervous."
                   }
                 ]
               },
@@ -823,7 +830,7 @@
                   "A guitar"
                 ],
                 "answer": 0,
-                "explanation": "Her parents said the keyboard was too expensive, so she received a ukulele."
+                "explanation": "A guitar is too big for her hands and a keyboard is too expensive, so her parents gave her the small instrument with four strings, a ukulele."
               }
             },
             {
@@ -849,16 +856,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "leontine",
+                    "text": "Hello, thanks for calling Harmony Music School. How can I help?"
+                  },
+                  {
                     "speaker": "barnaby2",
-                    "text": "How much are tickets for the festival?"
+                    "text": "Hi. I’d like to book a guitar lesson. How much is it?"
                   },
                   {
                     "speaker": "leontine",
-                    "text": "Adults pay twenty pounds, but students get ten off if they show a card."
+                    "text": "A normal lesson is twenty pounds for an hour. But your first one is half price, so you can try it before you decide."
                   },
                   {
                     "speaker": "barnaby2",
-                    "text": "I'm a student, so I'll pay ten pounds then."
+                    "text": "That’s good. And what about the book? Is it included?"
+                  },
+                  {
+                    "speaker": "leontine",
+                    "text": "No, the book is thirty pounds, but you don’t need it until the second lesson. You can think about that next week."
+                  },
+                  {
+                    "speaker": "barnaby2",
+                    "text": "Great. I’ll take the first lesson, then. Can I come on Saturday?"
                   }
                 ]
               },
@@ -871,7 +890,7 @@
                   "Thirty pounds"
                 ],
                 "answer": 0,
-                "explanation": "A student gets ten pounds off the twenty-pound price, so he pays ten pounds."
+                "explanation": "A normal lesson costs twenty and the book thirty, but the first lesson is half price."
               }
             },
             {
@@ -885,28 +904,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "quentin",
-                    "name": "Quentin",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "quentin",
-                    "text": "Is drum practice still on Tuesdays?"
-                  },
-                  {
                     "speaker": "rosamund",
-                    "text": "No, it moved to Thursdays because the hall is being painted on Tuesday."
-                  },
-                  {
-                    "speaker": "quentin",
-                    "text": "Thursday is fine for me."
+                    "text": "Hi everybody, it’s Rosamund, with a message about the band practice. I know we usually meet on Wednesday, but this week we’re going to meet on Friday afternoon instead. Don’t worry, Miss Harper is perfectly fine, she’s just got a cold, so she can still teach us. And the concert isn’t until next month, so we have plenty of time. The real reason is that the hall will be painted on Wednesday and Thursday, and there won’t be space for the drums. Please bring your music and a bottle of water."
                   }
                 ]
               },
@@ -919,7 +922,7 @@
                   "There is a concert."
                 ],
                 "answer": 1,
-                "explanation": "The hall is being painted on Tuesday, so practice moved to Thursday."
+                "explanation": "The teacher is fine and the concert is next month; the practice moves because the hall is going to be painted."
               }
             },
             {
@@ -933,28 +936,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "thaddea",
-                    "name": "Thaddea",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "florian",
-                    "text": "Who sings the song that's playing? I know I've heard it before."
-                  },
-                  {
-                    "speaker": "thaddea",
-                    "text": "It's Mia Lund. She used to be in the band that played at the school dance."
-                  },
-                  {
-                    "speaker": "florian",
-                    "text": "Of course! I'll download her album tonight."
+                    "text": "Hey Thaddea, it’s Florian. I’m sorry that I can’t come to the school dance tonight. I was going to go, but my feet still hurt from the football match. I could phone Marcus and ask if he wants to go to the cinema, but he’s at his grandmother’s this week, so that’s a no. Instead, I’ve decided to stay at home and put some new songs on my phone. The band you told me about has an album, and I want to hear it before Saturday. Have a great time tonight!"
                   }
                 ]
               },
@@ -967,7 +954,7 @@
                   "Download some music"
                 ],
                 "answer": 2,
-                "explanation": "He says he will download her album tonight."
+                "explanation": "He is too tired for the dance and Marcus is away, so he will stay in and put the new songs on his phone."
               }
             },
             {
@@ -994,15 +981,27 @@
                 "turns": [
                   {
                     "speaker": "eulalia",
-                    "text": "Where did you leave my guitar?"
+                    "text": "Gawain, have you seen my guitar? I need it for the lesson at four."
                   },
                   {
                     "speaker": "gawain",
-                    "text": "It's in the car boot. I wanted to bring it in, but you were still talking to the teacher."
+                    "text": "Isn’t it in the classroom? You left it there on Monday."
                   },
                   {
                     "speaker": "eulalia",
-                    "text": "I'll get it now. Thanks for taking care of it."
+                    "text": "I checked this morning and it wasn’t there. Mr Jones said he’d take it home to change the strings, but he brought it back last night."
+                  },
+                  {
+                    "speaker": "gawain",
+                    "text": "So where is it?"
+                  },
+                  {
+                    "speaker": "eulalia",
+                    "text": "I remember now! Dad drove me to school this morning, and I put it on the back seat. It’s in the boot, or on the seat, anyway."
+                  },
+                  {
+                    "speaker": "gawain",
+                    "text": "Then run outside. You’ve got ten minutes."
                   }
                 ]
               },
@@ -1015,7 +1014,7 @@
                   "At the teacher's house"
                 ],
                 "answer": 0,
-                "explanation": "Gawain says the guitar is in the boot of the car."
+                "explanation": "It was not in the classroom and the teacher brought it back, but she remembers putting it on the back seat of Dad’s car."
               }
             },
             {
@@ -1041,16 +1040,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "ignatz",
+                    "text": "Winona, what shall I play at the school party on Saturday? I can’t decide."
+                  },
+                  {
                     "speaker": "winona_x",
-                    "text": "Could you play something by the Beatles at the party?"
+                    "text": "Something modern, like a pop song. Everyone will recognise it."
                   },
                   {
                     "speaker": "ignatz",
-                    "text": "I don't know many of their songs, but I could do 'Let It Be'."
+                    "text": "I tried one last week, but the ending is difficult and I can’t play it fast. My teacher suggested a classical piece, but I don’t think the party is right for that."
                   },
                   {
                     "speaker": "winona_x",
-                    "text": "That would be lovely."
+                    "text": "What about a song by the Beatles? Your grandad’s favourite band."
+                  },
+                  {
+                    "speaker": "ignatz",
+                    "text": "Good point. I know two of their songs already, so I can practise tonight."
+                  },
+                  {
+                    "speaker": "winona_x",
+                    "text": "Great, I’m sure it’ll be popular."
                   }
                 ]
               },
@@ -1063,7 +1074,7 @@
                   "A classical piece"
                 ],
                 "answer": 1,
-                "explanation": "He agrees to play 'Let It Be', which is a Beatles song."
+                "explanation": "The pop song is hard and the classical piece is not right for a party, so he follows the idea of the band that his grandfather likes."
               }
             }
           ]
@@ -1098,16 +1109,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "rhiannon",
+                    "text": "Dashiell, how was your practice last night? Did your neighbours complain again?"
+                  },
+                  {
                     "speaker": "dashiell",
-                    "text": "I can't practise at home. The neighbours bang on the wall whenever I start the drums."
+                    "text": "Yes, a lady knocked on the wall at nine. Drums are loud, even with the window closed. I’m thinking of switching to the flute, but I love the drums."
                   },
                   {
                     "speaker": "rhiannon",
-                    "text": "Why don't you rent a room at the music centre? It's not expensive."
+                    "text": "Don’t give up. Why don’t you ask your teacher if you can use a room at school after lessons? It’s empty then."
                   },
                   {
                     "speaker": "dashiell",
-                    "text": "I didn't know you could do that. I'll look into it."
+                    "text": "Hmm, I hadn’t thought of that. Should I speak to the neighbours first?"
+                  },
+                  {
+                    "speaker": "rhiannon",
+                    "text": "I wouldn’t, they’ll just be angry. Practise in a place where nobody minds."
                   }
                 ]
               },
@@ -1120,7 +1139,7 @@
                   "Practising somewhere else"
                 ],
                 "answer": 2,
-                "explanation": "She suggests that he rents a room at the music centre."
+                "explanation": "She says don’t change the instrument or talk to the neighbours; he should use an empty room at school."
               }
             },
             {
@@ -1146,16 +1165,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "augusta",
+                    "text": "Lysander, are you ready for tonight’s rehearsal? We start at six."
+                  },
+                  {
                     "speaker": "lysander",
-                    "text": "I'm sorry to ring so late. I'm afraid I can't come to the rehearsal tomorrow. I've got a sore throat."
+                    "text": "I’m afraid I can’t come. I woke up with a terrible cough, and I can hardly talk. I can’t sing like this."
                   },
                   {
                     "speaker": "augusta",
-                    "text": "Oh no. Rest your voice, and drink lots of tea. We'll manage without you."
+                    "text": "Oh no! Is it because of the concert on Sunday?"
                   },
                   {
                     "speaker": "lysander",
-                    "text": "Thanks. I'll be back on Friday."
+                    "text": "No, that’s my brother’s band, I’m only a guest, and I’ve got my music for tonight. It’s just my throat. The doctor says to rest for two days."
+                  },
+                  {
+                    "speaker": "augusta",
+                    "text": "I’ll tell the director. Get well soon, and drink something hot."
                   }
                 ]
               },
@@ -1168,7 +1195,7 @@
                   "He lost his music."
                 ],
                 "answer": 1,
-                "explanation": "He has a sore throat, so he cannot sing."
+                "explanation": "He has the music and the other concert is not until Sunday; the doctor says to rest because his throat is sore."
               }
             },
             {
@@ -1195,15 +1222,23 @@
                 "turns": [
                   {
                     "speaker": "ottilie",
-                    "text": "Did you enjoy the concert last night?"
+                    "text": "Crispin, how was the concert? You’ve been quiet since you came back."
                   },
                   {
                     "speaker": "crispin",
-                    "text": "The music was great, but the seats were terrible and I could hardly see the stage."
+                    "text": "The singer was wonderful, and I loved the songs, especially the slow ones. But we were at the back, and the chairs were so hard that my back hurt after an hour."
                   },
                   {
                     "speaker": "ottilie",
-                    "text": "I'd have paid for better seats if I'd known."
+                    "text": "Oh no, that’s a shame. Didn’t you pay extra?"
+                  },
+                  {
+                    "speaker": "crispin",
+                    "text": "Yes, I did, and I’m a bit angry about it. The music was good, so I’d go again, but not in those seats."
+                  },
+                  {
+                    "speaker": "ottilie",
+                    "text": "Next time we’ll book the front rows."
                   }
                 ]
               },
@@ -1216,7 +1251,7 @@
                   "The music"
                 ],
                 "answer": 0,
-                "explanation": "He says the seats were terrible and he could hardly see the stage."
+                "explanation": "He liked the singer and the music, but the hard chairs hurt his back for an hour, which annoyed him."
               }
             },
             {
@@ -1243,15 +1278,27 @@
                 "turns": [
                   {
                     "speaker": "placid",
-                    "text": "Are you coming to the school musical audition?"
+                    "text": "Hermione, are you going to the audition for the school musical?"
                   },
                   {
                     "speaker": "hermione",
-                    "text": "I'm too nervous. I'd be sick if I had to sing in front of everyone."
+                    "text": "I’d love to, and I know all the songs. I practise every evening in my room, and I’m sure I’d be good."
                   },
                   {
                     "speaker": "placid",
-                    "text": "You have a lovely voice. Try it, even just for fun."
+                    "text": "Then what’s stopping you?"
+                  },
+                  {
+                    "speaker": "hermione",
+                    "text": "When I stand in front of a group, my voice shakes and my hands go cold. In the bathroom I sound perfect, but at the audition I’ll panic."
+                  },
+                  {
+                    "speaker": "placid",
+                    "text": "I’ll come with you, if you like."
+                  },
+                  {
+                    "speaker": "hermione",
+                    "text": "Thanks, but I’m still afraid to do it."
                   }
                 ]
               },
@@ -1264,7 +1311,7 @@
                   "Too nervous to sing in front of people"
                 ],
                 "answer": 2,
-                "explanation": "She says she is too nervous to sing in front of everyone."
+                "explanation": "She loves the idea and knows the songs, but her voice shakes in front of a group, so she feels afraid."
               }
             },
             {
@@ -1291,15 +1338,27 @@
                 "turns": [
                   {
                     "speaker": "zinnia",
-                    "text": "Turn it down, please! I can't stand the noise. I'm trying to revise."
+                    "text": "Alaric, I’ve got a history test tomorrow. Could you do me a favour?"
                   },
                   {
                     "speaker": "cormac2",
-                    "text": "Sorry. I'll put my headphones on."
+                    "text": "Sure. Do you want me to test you on the dates?"
                   },
                   {
                     "speaker": "zinnia",
-                    "text": "Thank you. I can hear it through the wall."
+                    "text": "No, I’ve been through those. It’s just that I can’t concentrate with your music in the next room. It’s a great song, but I’ve heard it eleven times!"
+                  },
+                  {
+                    "speaker": "cormac2",
+                    "text": "Sorry, I didn’t realise it was so loud. I could play something different."
+                  },
+                  {
+                    "speaker": "zinnia",
+                    "text": "That wouldn’t help, I need quiet. Could you turn it off, please, or use headphones?"
+                  },
+                  {
+                    "speaker": "cormac2",
+                    "text": "Of course."
                   }
                 ]
               },
@@ -1312,7 +1371,7 @@
                   "Help her study"
                 ],
                 "answer": 0,
-                "explanation": "She asks him to turn the music down, and he puts on headphones."
+                "explanation": "She does not need help with her studies, and a different song would not solve the problem; she needs silence, so she asks him to stop it."
               }
             },
             {
@@ -1338,29 +1397,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "veronika",
+                    "text": "Wystan, you should join the school music club. It’s fun."
+                  },
+                  {
                     "speaker": "wystan",
-                    "text": "I'd like to join the guitar club. When do you meet?"
+                    "text": "I’d like to, but I don’t know. Is it expensive?"
                   },
                   {
                     "speaker": "veronika",
-                    "text": "On Mondays at lunchtime in the music room. There's no fee, but you must bring your own guitar."
+                    "text": "No, it’s free. And it meets right after school, at half past three, so you can still be home for dinner."
                   },
                   {
                     "speaker": "wystan",
-                    "text": "That's fine. I have one."
+                    "text": "That’s good news. The problem is that the rules say members must bring an instrument, and mine broke last year."
+                  },
+                  {
+                    "speaker": "veronika",
+                    "text": "Oh. The teacher has some spare ones. Ask her."
+                  },
+                  {
+                    "speaker": "wystan",
+                    "text": "I will. Thanks. Are you going on Monday?"
+                  },
+                  {
+                    "speaker": "veronika",
+                    "text": "Of course, I’m the one who plays the piano at the start, so please come and say hello."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the girl say about the club?",
+                "prompt": "What makes the boy hesitate about joining the club?",
                 "options": [
-                  "Members pay a small fee.",
-                  "It meets after school.",
-                  "Members must bring an instrument."
+                  "He has to pay a fee.",
+                  "It meets too late.",
+                  "He has no instrument of his own."
                 ],
                 "answer": 2,
-                "explanation": "There is no fee, but members must bring their own guitar."
+                "explanation": "The club is free and meets right after school; the only thing that worries him is that he needs an instrument and his broke."
               }
             }
           ]
@@ -1385,52 +1460,52 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Welcome, everyone, to the Brindle Summer Music Camp. I'm Ferdinand, the camp leader. The camp lasts for five days, and it begins on Monday at nine o'clock. In the mornings, you will have lessons in small groups, with a teacher for each instrument. In the afternoons, you will practise together in the orchestra, and on Wednesday we have a trip to a recording studio. Everyone will take part in the final concert, which is on Friday evening in the school hall. Lunch is provided, but you must bring your own water bottle. If you have your own instrument, please bring it, and write your name clearly on the case. The camp costs sixty pounds, and you can pay at the front desk today."
+                "text": "Welcome, everyone, to the Brindle Summer Music Camp. I’m Ferdinand, the camp leader. The camp lasts for five days, and it begins on Monday at nine o’clock. I know that some of you hoped for a whole week, but the college needs the rooms at the weekend. Let me tell you the plan. In the mornings we have lessons in small groups. Many of you asked for private lessons, but there aren’t enough teachers, so you will be in groups of four. This is actually better, because you learn from the others. In the afternoons you can choose between singing, drums and the orchestra. On Wednesday we’re going on a special trip. You might expect a visit to a concert hall, but we’re going to a recording studio in the city. A producer will show you how bands record an album, and you’ll be allowed to try the equipment. We’ll go by bus after breakfast and come back by four. The highlight of the week is our final concert. We used to hold it in the afternoon, but the parents asked for a later time, so it takes place on Friday evening, in the main hall. Your family and friends are welcome, and there’ll be tea and cake. Now, some practical things. The camp provides lunch, and there are water fountains everywhere, but please bring your own water bottle, and don’t forget to write your name on it. You don’t need to bring your own instrument, except for the guitarists. Lastly, the price. The full course used to cost eighty pounds, but this year it is only sixty, because the town council helps us. You can pay by card or in cash at the office. I look forward to meeting you all on Monday morning. Thank you!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The camp lasts ___ days",
+              "prompt": "The camp runs for ___ days",
               "answer": "five",
               "accepted": [
                 "5"
               ],
-              "explanation": "Ferdinand says the camp lasts for five days."
+              "explanation": "The camp lasts five days; the college needs the rooms at the weekend."
             },
             {
               "id": "l3-2",
-              "prompt": "Lessons in the mornings are in small ___",
+              "prompt": "There are no private lessons; students learn in small ___",
               "answer": "groups",
-              "explanation": "In the mornings, students have lessons in small groups."
+              "explanation": "Private lessons were not possible; students are in groups of four."
             },
             {
               "id": "l3-3",
-              "prompt": "On Wednesday there is a trip to a recording ___",
+              "prompt": "The Wednesday trip is to a place where bands make albums: a ___",
               "answer": "studio",
-              "explanation": "On Wednesday, there is a trip to a recording studio."
+              "explanation": "They go to a recording studio, not a concert hall."
             },
             {
               "id": "l3-4",
-              "prompt": "The final concert is on Friday ___",
+              "prompt": "The parents asked for the final concert to be on Friday ___",
               "answer": "evening",
-              "explanation": "The final concert is on Friday evening."
+              "explanation": "It used to be in the afternoon; it is now on Friday evening."
             },
             {
               "id": "l3-5",
-              "prompt": "Students should bring their own water ___",
+              "prompt": "Students should write their name on their ___",
               "answer": "bottle",
-              "explanation": "Lunch is provided, but students must bring their own water bottle."
+              "explanation": "The camp provides lunch and fountains, but they bring a water bottle."
             },
             {
               "id": "l3-6",
-              "prompt": "The camp costs ___ pounds",
+              "prompt": "The price of the course this year is ___ pounds",
               "answer": "sixty",
               "accepted": [
                 "60"
               ],
-              "explanation": "The camp costs sixty pounds."
+              "explanation": "It used to cost eighty pounds; this year it is sixty."
             }
           ]
         },
@@ -1462,51 +1537,51 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Sigrun, you are only sixteen, and you already play in a band. When did you start?"
+                "text": "Sigrun, you’re only seventeen and you play drums in two bands. How did you get interested?"
               },
               {
                 "speaker": "sigrun",
-                "text": "When I was eight. I banged on pots and pans in the kitchen, and my dad said it was time to give me proper drumsticks. I joined a school group when I was ten."
+                "text": "My father took me to a concert when I was eight, and it was amazing, but I didn’t think about drums then. No teacher suggested it either. The real start was at home, in the kitchen. I was about five, and I took the pots and pans from the cupboard and played them with wooden spoons for hours. My mum still remembers the noise, and she says she never found some of the spoons."
               },
               {
                 "speaker": "host",
-                "text": "Did you have lessons?"
+                "text": "How did you learn your skills?"
               },
               {
                 "speaker": "sigrun",
-                "text": "Yes, but I learned most things by watching videos. I would play along with my favourite bands until I could copy every beat."
+                "text": "I had weekly lessons for a year, but I found them slow and I stopped. And I can’t read music well, so the books didn’t help. What worked was the internet. I watched videos of other drummers, then paused them, and copied the movements until I got them right. I learned a lot that way."
               },
               {
                 "speaker": "host",
-                "text": "What is it like to play in a band?"
+                "text": "People think the drummer just makes the noise. Is that true?"
               },
               {
                 "speaker": "sigrun",
-                "text": "You have to listen very carefully. The drummer keeps everybody together, so if I make a mistake, the whole song falls apart. It is a lot to carry."
+                "text": "Not at all. Some say it’s the easiest job, but it isn’t, and I don’t think it’s the most famous one either, because the singer gets all the attention. What a drummer does is keep the time, so everyone plays together. If I make a mistake, the whole band falls apart."
               },
               {
                 "speaker": "host",
-                "text": "Do you ever get nervous?"
+                "text": "Has anything funny happened at a concert? Tell us about it."
               },
               {
                 "speaker": "sigrun",
-                "text": "Always, just before we start. But once the first beat begins, the nerves disappear. The worst thing was last year, when a drumstick flew out of my hand during a concert. I picked up another one and carried on."
+                "text": "Oh yes. Last year, in the middle of a fast song, I lost one of my sticks. It flew across the stage and hit the guitarist, who thought it was a bird! I forgot a song once, but that was a rehearsal. And the power cut was during another show, but it didn’t affect us."
               },
               {
                 "speaker": "host",
-                "text": "What do your neighbours think?"
+                "text": "How do your parents feel about the noise at home?"
               },
               {
                 "speaker": "sigrun",
-                "text": "They were not happy at first, so my parents built a small wooden room in the garden. Now I can practise as much as I like, and nobody complains."
+                "text": "My parents were very patient, but the neighbours weren’t. They didn’t move house, because they couldn’t afford it, and they didn’t tell me to play less either. My dad built a little room at the end of the garden with thick walls and special foam. It’s like a small studio, and now I can practise all evening."
               },
               {
                 "speaker": "host",
-                "text": "What are your plans?"
+                "text": "Last question. What would you like to do in the future?"
               },
               {
                 "speaker": "sigrun",
-                "text": "We are going to record our first single this summer, and after that I hope to study music at university. I would like to teach one day, too."
+                "text": "I’d like to study music at university, and later maybe teach children. I’m no good as a singer, believe me. Travelling would be nice, and I’ll probably do that with the band, but it’s not the main plan. I want to share what I love, and to show other girls that the drums are not only for boys. That matters a lot to me."
               }
             ]
           },
@@ -1520,7 +1595,7 @@
                 "A teacher asked her to try them."
               ],
               "answer": 1,
-              "explanation": "She banged on pots and pans in the kitchen, and her father then gave her drumsticks."
+              "explanation": "Her father took her to a concert at eight and no teacher suggested drums; she began in the kitchen with pots and pans at five."
             },
             {
               "id": "l4-2",
@@ -1531,7 +1606,7 @@
                 "By reading music books"
               ],
               "answer": 1,
-              "explanation": "She learned most things by watching videos and playing along with her favourite bands."
+              "explanation": "Lessons were slow and books were no help; she learned by watching other drummers online and copying them."
             },
             {
               "id": "l4-3",
@@ -1542,7 +1617,7 @@
                 "It is the easiest job in the band."
               ],
               "answer": 0,
-              "explanation": "She says the drummer keeps everybody together, so a mistake can spoil the song."
+              "explanation": "It is not the easiest or the most famous job; the drummer keeps the time so that everyone plays together."
             },
             {
               "id": "l4-4",
@@ -1553,7 +1628,7 @@
                 "A drumstick left her hand."
               ],
               "answer": 2,
-              "explanation": "A drumstick flew out of her hand and she picked up another one."
+              "explanation": "The power cut was another show and the forgotten song was a rehearsal; at the concert, her stick flew across the stage."
             },
             {
               "id": "l4-5",
@@ -1564,7 +1639,7 @@
                 "They asked her to play less."
               ],
               "answer": 1,
-              "explanation": "They built a small wooden room in the garden."
+              "explanation": "They did not move house and did not tell her to play less; her dad built a little room at the end of the garden."
             },
             {
               "id": "l4-6",
@@ -1575,7 +1650,7 @@
                 "Travel round the world"
               ],
               "answer": 0,
-              "explanation": "She plans to study music at university and would like to teach one day."
+              "explanation": "She wants to study music and later teach children; travel is not the main plan and she is no good as a singer."
             }
           ]
         }

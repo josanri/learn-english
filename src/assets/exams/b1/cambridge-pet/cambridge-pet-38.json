@@ -251,9 +251,10 @@
               "options": [
                 "A famous space mission",
                 "The inside of a rocket",
+                "Training for the next mission",
                 "Life on the space station"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "It showed her floating and drinking water from a bubble in space."
             },
             {
@@ -261,6 +262,7 @@
               "prompt": "What did the astronaut find hardest?",
               "options": [
                 "Missing her family and home",
+                "Waking up very early every day",
                 "Being in danger",
                 "Eating in space"
               ],
@@ -273,7 +275,8 @@
               "options": [
                 "She was never afraid at all",
                 "She was afraid of the food",
-                "She was most afraid before the launch"
+                "She was most afraid before the launch",
+                "She was afraid of floating"
               ],
               "answer": 2,
               "explanation": "She was most afraid before the launch, not during it."
@@ -282,11 +285,12 @@
               "id": "r3-4",
               "prompt": "What does she say space agencies need?",
               "options": [
+                "People who are good at sport",
                 "Patient people who work in teams",
                 "Only very clever scientists",
                 "Young people under twenty"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She says you need patience and teamwork."
             },
             {
@@ -294,10 +298,11 @@
               "prompt": "What has the writer decided?",
               "options": [
                 "To write a book",
-                "To study physics",
-                "To become an astronaut"
+                "To work for a newspaper",
+                "To become an astronaut",
+                "To study physics"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "He has already decided to study physics."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A short history of space travel",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "People have always looked up at the sky and wondered what was out there. [1] The first rocket to leave the Earth's atmosphere was launched in 1944, but nobody travelled in it.\n\nThe first person in space was Yuri Gagarin, a Russian pilot, who orbited the Earth in 1961. [2] The whole journey lasted only one hour and forty-eight minutes, but it changed history.\n\nEight years later, in July 1969, Neil Armstrong became the first person to walk on the Moon. [3] About six hundred million people watched on television as he stepped onto the grey dust.\n\nSince then, scientists have sent machines to Mars, Jupiter and even beyond the solar system. [4] Today, astronauts live on a space station for months at a time, and companies are planning holidays in space. [5] Some people believe that one day humans will live on other planets.",
           "sentences": [
             "Armstrong later became a university professor.",
-            "Many dreamed of travelling there, but it took until the twentieth century to do it.",
+            "His landing was shown live all over the world.",
+            "Their names are known to children all over the world.",
             "Some of these machines are still sending pictures today.",
-            "He was only twenty-seven years old.",
+            "A dog was the first animal to orbit the Earth.",
+            "Many dreamed of travelling there, but it took until the twentieth century to do it.",
             "Ideas like these once seemed like science fiction.",
-            "His landing was shown live all over the world."
+            "He was only twenty-seven years old."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "F",
               "explanation": "\"Travelling there\" and \"the twentieth century\" lead to the first rocket in 1944."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "H",
               "explanation": "His age is extra information about Gagarin before the length of the journey."
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "B",
               "explanation": "\"Shown live\" explains why millions of people watched on television."
             },
             {
               "id": "r4-4",
-              "answer": "C",
+              "answer": "D",
               "explanation": "\"These machines\" refers to the machines sent to other planets."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "G",
               "explanation": "\"Ideas like these\" refers to space holidays, which once seemed like science fiction."
             }
           ]
@@ -725,11 +732,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What time is the show?"
+                    "text": "Wolfgang, what time does the planetarium show finish? The website says half past five."
                   },
                   {
                     "speaker": "m",
-                    "text": "It starts at a quarter past four and finishes at five."
+                    "text": "That’s the old timetable, I think. It was longer in the summer."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what is it now?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I phoned them yesterday. The show starts at a quarter past four and lasts forty-five minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, good. Then we have time for a coffee afterwards."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, and we can still be home before dinner."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Great. Shall I buy the tickets online?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, please. Two adults. I’ll bring my brother, he says he has never seen a planetarium before."
                   }
                 ]
               },
@@ -742,7 +773,7 @@
                   "At half past five"
                 ],
                 "answer": 1,
-                "explanation": "The show finishes at five."
+                "explanation": "Half past five is the old summer timetable; the show starts at a quarter past four and lasts forty-five minutes, so it ends at five."
               }
             },
             {
@@ -769,28 +800,48 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much are the tickets?"
+                    "text": "Hello, one ticket for the evening show, please. How much is it?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Adults pay eight pounds, and children pay half price."
+                    "text": "Adults pay twenty pounds. Children are twelve."
                   },
                   {
                     "speaker": "m",
-                    "text": "Then one adult and two children is sixteen pounds."
+                    "text": "Oh, I’m a student. I’ve got my card here."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then you get four pounds off. Let me check. Yes, that works."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great. I nearly brought my daughter, but she has a test tomorrow."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What a pity. Do you want a programme as well?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, thanks. I have to save my money for the bus home, and for a sandwich before the show."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No problem. Enjoy the show."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "How much will the man pay?",
+                "prompt": "How much will the man pay for his ticket?",
                 "options": [
                   "Sixteen pounds",
                   "Twelve pounds",
                   "Twenty pounds"
                 ],
                 "answer": 0,
-                "explanation": "Eight pounds plus two half-price tickets of four pounds makes sixteen pounds."
+                "explanation": "Twenty is the adult price and twelve is the children’s price; as a student he gets four pounds off the adult price."
               }
             },
             {
@@ -804,24 +855,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Merrick",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Will the sky be clear tonight?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "The forecast says clouds until midnight, and then it should clear."
+                    "text": "Good evening, and now the weather for stargazers. Many of you hope for a clear sky all evening long, but I’m afraid that won’t happen. The clouds will stay over the region for most of the night. We thought they would move away before dinner, but they are slower than we expected. The wind will arrive later and push them to the sea, so the sky will be open after midnight. If you can stay up, you will see the stars very well. Tomorrow evening will be cloudy again, so tonight is your only chance this week."
                   }
                 ]
               },
@@ -834,7 +873,7 @@
                   "All evening long"
                 ],
                 "answer": 0,
-                "explanation": "The man says it should clear after midnight."
+                "explanation": "The clouds will not go before dinner or leave soon; the wind will clear the sky after midnight."
               }
             },
             {
@@ -861,11 +900,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Do I need a telescope to see the Moon?"
+                    "text": "I want to see the Moon properly. Do I need a camera with a lens?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Not at all. A pair of binoculars is enough."
+                    "text": "Not at all. I thought I would need one, and I asked in a shop, but they cost hundreds of pounds."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So can I just look up with my eyes?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can see the Moon like that, of course, but you won’t see the craters. A pair of binoculars is plenty, and they’re cheap. I borrowed my dad’s."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Are they heavy?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A bit, so rest your arms on a wall or a gate."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great idea. I’ll ask my uncle if he has some."
                   }
                 ]
               },
@@ -878,7 +937,7 @@
                   "Nothing at all"
                 ],
                 "answer": 1,
-                "explanation": "She says a pair of binoculars is enough."
+                "explanation": "A lens is too expensive and eyes alone do not show craters; she says binoculars are plenty."
               }
             },
             {
@@ -892,24 +951,12 @@
                       "lang": "en-GB",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Cassius",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Would you like to live on Mars one day?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "No way. I'd miss the sea and my friends too much."
+                    "text": "Some people ask me if I’d live on Mars. My brother says no because it would be too hot, but he’s wrong, it’s very cold up there. My cousin says that rockets are scary, and he’s right, I suppose, but I’ve tried a simulator and I wasn’t afraid at all. The real reason is simple. I’d miss my room, my dog and my friends so much. Maybe I could visit for a week, but my home is here, on Earth, and I wouldn’t change it for anything."
                   }
                 ]
               },
@@ -922,21 +969,13 @@
                   "She would miss her home"
                 ],
                 "answer": 2,
-                "explanation": "She says she would miss the sea and her friends."
+                "explanation": "It is cold, not hot, and she is not afraid of rockets; she would miss her room, her dog and her friends."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Ptolemy",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Hester",
@@ -948,12 +987,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Shall we watch the documentary tonight or go out?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Let's stay in and watch it. It's about the first Moon landing."
+                    "text": "Hi Ptolemy, it’s Hester. About tonight. I booked a table at Luigi’s, but they phoned me this morning and said they have a leak in the kitchen, so they’re closed. Then I thought about the museum, but it closes at five and we won’t finish work until six. So I’ve decided we should stay in. I found a new film about the planets, and I’ll make some pasta. Come at seven and bring a bottle of juice. See you later!"
                   }
                 ]
               },
@@ -966,7 +1001,7 @@
                   "Visit a museum"
                 ],
                 "answer": 0,
-                "explanation": "They decide to stay in and watch the documentary."
+                "explanation": "The restaurant has a leak and the museum closes early; they will stay in to watch a film about the planets."
               }
             },
             {
@@ -993,11 +1028,31 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How far away is the Moon?"
+                    "text": "Lionel, how long does it take to fly to the Moon?"
                   },
                   {
                     "speaker": "m",
-                    "text": "About four hundred thousand kilometres. A rocket needs three days to get there."
+                    "text": "I read that it’s about a week."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s for the small probes that use very little fuel. The first astronauts needed more than three days. I think it was three, yes."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And four days?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s the time for the cheaper route that some new companies plan. But the journey that people have really done is the one I said, just a little more than that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s faster than I thought. Like a long weekend."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Exactly."
                   }
                 ]
               },
@@ -1010,7 +1065,7 @@
                   "About a week"
                 ],
                 "answer": 1,
-                "explanation": "A rocket needs three days to get there."
+                "explanation": "The small probes take a week and the cheaper route four days; the astronauts took three days."
               }
             }
           ]
@@ -1046,11 +1101,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Hello, I'd like to ask about your opening times for visitors, please."
+                    "text": "Hello, is that the Science Museum? I’d like to ask something."
                   },
                   {
                     "speaker": "f",
-                    "text": "We are open on the first Friday of every month, from eight until eleven."
+                    "text": "Yes, how can I help?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m a teacher, and I’m thinking of bringing my class in March. I don’t want to book a trip yet because I need to check the dates with the head teacher."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s fine."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My students also asked about a telescope that they saw in the gift shop, but I’ll ask about that when I come. What I need to know now is when you are open."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Tuesday to Sunday, from ten to five."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Closed on Mondays. Perfect, thank you."
                   }
                 ]
               },
@@ -1063,7 +1138,7 @@
                   "To ask about opening times"
                 ],
                 "answer": 2,
-                "explanation": "He asks about the opening times for visitors."
+                "explanation": "He does not want to book yet and the telescope can wait; what he needs to know is when the museum is open."
               }
             },
             {
@@ -1089,12 +1164,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Sebastian, you look pale. Do you have a headache?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Mum, I can't sleep. I keep thinking about the black hole in that documentary."
+                    "text": "No, I’m fine. I lost my book this morning, but it’s not that either. I found it under the bed."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't worry, darling. It's millions of kilometres away, and it can't hurt us."
+                    "text": "So what’s the matter?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "We learned about black holes today. Miss Reed says a black hole can swallow a whole star. What if there’s one near us?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, sweetheart, the nearest one is thousands of years of travel away."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Really?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really. We would never notice it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK. I feel better now."
                   }
                 ]
               },
@@ -1107,7 +1206,7 @@
                   "He has a headache"
                 ],
                 "answer": 1,
-                "explanation": "He cannot sleep because he keeps thinking about the black hole."
+                "explanation": "He is not ill and has found his book; he is worried because a black hole can swallow a star."
               }
             },
             {
@@ -1133,25 +1232,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Quinn, here is the homework for the weekend. Draw the planets and label each one."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "What is our homework, sir?"
+                    "text": "Oh, that’s great! I love drawing. Can I use colours?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Draw the solar system and label all the planets. Colour them if you like."
+                    "text": "Of course, as many as you like. I’d also like you to write a paragraph about the Moon, but that’s optional."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll skip that, I think, but the drawing is no problem. Are we building the rocket model too?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, that was last term. Just the drawing this time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Brilliant. I’ll start tonight, and I’ll show it to my mum on Sunday. She thinks I only play games."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Well, now you can prove her wrong."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What must the students do?",
+                "prompt": "How does Quinn feel about the homework?",
                 "options": [
-                  "Draw and label the planets",
-                  "Write about the Moon",
-                  "Build a rocket"
+                  "Pleased because he likes drawing",
+                  "Worried about writing so much",
+                  "Unhappy about building something"
                 ],
                 "answer": 0,
-                "explanation": "They must draw the solar system and label the planets."
+                "explanation": "He loves drawing, will skip the optional writing, and the rocket model was last term."
               }
             },
             {
@@ -1182,7 +1301,35 @@
                   },
                   {
                     "speaker": "m",
-                    "text": "The pictures were brilliant, but the ending was terrible."
+                    "text": "Well, the music was great, I’ll say that."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I loved it too. And I didn’t mind that it was short."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I didn’t notice the time. But the ending... I couldn’t believe it. After two hours they say it was all a dream!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know, but I quite liked it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I felt cheated. Really."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Hmm, OK. Maybe the book is better."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe. I’ll borrow it from the library next week, and then I’ll tell you which ending is better."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Deal."
                   }
                 ]
               },
@@ -1195,7 +1342,7 @@
                   "The ending was terrible"
                 ],
                 "answer": 2,
-                "explanation": "He says the ending was terrible."
+                "explanation": "He liked the music and did not mind the length, but he felt cheated by the dream ending."
               }
             },
             {
@@ -1222,24 +1369,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Hello, I'd like a map of the stars, please. I'm a complete beginner."
+                    "text": "I want to learn about the stars, Xavier. I’m thinking of buying a telescope."
                   },
                   {
                     "speaker": "m",
-                    "text": "This one is perfect. It shows the stars you can see from here each month."
+                    "text": "Wait. Don’t spend a lot yet. A beginner doesn’t know where to look. Start with a map of the stars. It’s cheap, and you can use it in the garden."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about a book about rockets? I saw a nice one."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s interesting, but rockets aren’t the same as stars. First the map, and in a few months a telescope, if you still like it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s sensible. I’ll go to the bookshop this afternoon."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good plan."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the woman want to buy?",
+                "prompt": "What does Xavier advise Livia to buy first?",
                 "options": [
                   "A map of the stars",
                   "A telescope",
                   "A book about rockets"
                 ],
                 "answer": 0,
-                "explanation": "She asks for a map of the stars."
+                "explanation": "He says a telescope can wait and a rocket book is a different subject, so the map comes first."
               }
             },
             {
@@ -1266,24 +1429,48 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "There's going to be a meteor shower before dawn on Thursday. Shall we get up early and watch it?"
+                    "text": "Ewart, the meteors will be best at dawn on Saturday."
                   },
                   {
                     "speaker": "m",
-                    "text": "Definitely! I'll set my alarm for four."
+                    "text": "I’d love to see them. Shall we go to the museum afterwards?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It doesn’t open until ten, and we’d be asleep. What about camping?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "We have no tent. Hmm. We could just go to the hill behind the school at five."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "With flasks of tea and blankets."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Done. I’ll bring a map."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wonderful. Let’s tell the others tonight, and ask them to bring something warm to wear, because the hill is windy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What are they planning?",
+                "prompt": "What do they agree to do on Saturday?",
                 "options": [
-                  "To visit a museum",
-                  "To go camping",
-                  "To watch meteors at dawn"
+                  "Visit the museum",
+                  "Go camping",
+                  "Watch the meteors at dawn"
                 ],
                 "answer": 2,
-                "explanation": "They plan to get up early to watch a meteor shower."
+                "explanation": "The museum is too late and they have no tent, so they decide to go to the hill early and watch the meteors."
               }
             }
           ]
@@ -1308,61 +1495,46 @@
             "turns": [
               {
                 "speaker": "hadrian",
-                "text": "Good evening, everybody, and welcome to Hilltop Observatory. Tonight, we are open from eight until eleven o'clock. Please speak quietly, and switch off your phones, because the light from the screens makes it hard for your eyes to see in the dark. First, we will look at the Moon, which is almost full this evening. Then we will point the telescope at Saturn. Our telescope is one hundred years old, and its mirror is thirty centimetres wide. Each person can look for two minutes, so please be patient. Afterwards, there is hot chocolate in the café for one pound fifty. If you would like to come again, our next open night is on the fourth of March."
+                "text": "Good evening, everybody, and welcome to Hilltop Observatory. Tonight we are open from eight until eleven o’clock. Normally we close at ten, but because it is a special night with many visitors, we will stay open an hour longer. Please speak quietly, and switch off your phones, because the light of a screen makes it hard for everyone to see the sky. You may use the small red torches that we give you at the door. Now, what will you see? Many people hope to start with Saturn, and you will see it later, at about ten, when it is higher in the sky. But first, we will look at the Moon, because it is bright and easy, and it helps your eyes get used to the dark. Our telescope here is a big one. The mirror inside is thirty centimetres wide. The telescope in our other building has a mirror of sixty centimetres, but it is only for scientists. Ours can show you the rings of Saturn clearly. Because many people are waiting, each person can look for two minutes. I know it is short, and I am sorry. Last year we gave five minutes, but the queue was too long. If you want to look again, you can join the end of the queue. While you wait, please visit our café. It is in the room next to the entrance. A cup of tea is two pounds, but I recommend the hot chocolate, which is one pound fifty. Finally, please do not touch the telescope, and do not use flash photography. If you have any questions, please ask one of our guides in the green jackets, who will be happy to help you. Have a wonderful evening."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The observatory closes at ___ o'clock",
+              "prompt": "The observatory is open until ___ o'clock tonight",
               "answer": "eleven",
-              "accepted": [
-                "11"
-              ],
-              "explanation": "The observatory is open until eleven o'clock."
+              "explanation": "Normally they close at ten, but tonight they stay open an hour longer."
             },
             {
               "id": "l3-2",
-              "prompt": "Visitors should switch off their ___",
+              "prompt": "Visitors must turn off their ___ so that screens do not shine",
               "answer": "phones",
-              "accepted": [
-                "mobiles"
-              ],
-              "explanation": "He asks visitors to switch off their phones."
+              "explanation": "Phones must be switched off; red torches are allowed."
             },
             {
               "id": "l3-3",
-              "prompt": "The first thing to look at is the ___",
+              "prompt": "The first object that visitors will look at is the ___",
               "answer": "Moon",
-              "explanation": "First, they will look at the Moon."
+              "explanation": "Saturn comes later, at about ten; first they look at the Moon."
             },
             {
               "id": "l3-4",
-              "prompt": "The mirror is ___ centimetres wide",
+              "prompt": "The mirror in tonight's telescope measures ___ centimetres across",
               "answer": "thirty",
-              "accepted": [
-                "30"
-              ],
-              "explanation": "The mirror is thirty centimetres wide."
+              "explanation": "The telescope in the other building has sixty, but this mirror is thirty."
             },
             {
               "id": "l3-5",
-              "prompt": "Each person can look for ___ minutes",
+              "prompt": "Visitors have ___ minutes each at the telescope",
               "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "Each person can look for two minutes."
+              "explanation": "Last year they gave five minutes, but this year it is two."
             },
             {
               "id": "l3-6",
-              "prompt": "Hot chocolate costs ___ pound fifty",
+              "prompt": "The price of a hot chocolate is ___ pound fifty",
               "answer": "one",
-              "accepted": [
-                "1"
-              ],
-              "explanation": "Hot chocolate is one pound fifty."
+              "explanation": "Tea is two pounds; the hot chocolate is one pound fifty."
             }
           ]
         },
@@ -1394,51 +1566,51 @@
             "turns": [
               {
                 "speaker": "rosalind",
-                "text": "Today I'm speaking to Dr Kavya Menon, a young astronomer. Kavya, how did you become interested in space?"
+                "text": "Kavya, how did you become interested in space?"
               },
               {
                 "speaker": "kavya",
-                "text": "When I was nine, my uncle gave me a small telescope for my birthday. The first time I saw the rings of Saturn, I could not believe that they were real."
+                "text": "A lot of people think it was a film, and I did love science fiction, but it only made me laugh. The planetarium was a school trip, and I fell asleep! No, it started when my uncle gave me a small telescope for my tenth birthday. The first night, I looked at the Moon, and I couldn’t believe how close it seemed. I’ve never stopped since."
               },
               {
                 "speaker": "rosalind",
-                "text": "What is the hardest part of your work?"
+                "text": "What’s the hardest part of your work?"
               },
               {
                 "speaker": "kavya",
-                "text": "Working through the night. Telescopes work best in the dark, so I often sleep in the daytime. My friends say I live like a vampire."
+                "text": "People assume it’s the maths, and yes, there’s a lot of it, but I enjoy it. Travelling to other countries to use the big telescopes is exciting, not hard. What’s really difficult is working through the night. Telescopes need dark skies, so I work from ten until six, and then I can’t sleep in the daytime. It took me years to get used to it."
               },
               {
                 "speaker": "rosalind",
-                "text": "What do you do on a normal day?"
+                "text": "What do you do on most days?"
               },
               {
                 "speaker": "kavya",
-                "text": "Mostly, I sit at a computer and study pictures sent by telescopes. I look for tiny changes that show something is moving or exploding."
+                "text": "Not what you imagine. I don’t build instruments, that’s the engineers’ job, and I only teach one class each term. Most days I sit at a computer and study pictures from telescopes, looking for tiny changes in the light of a star. It’s like detective work, and I really love it, even when nothing happens for weeks."
               },
               {
                 "speaker": "rosalind",
-                "text": "Which object in the sky do you like best?"
+                "text": "Why do you like Saturn best?"
               },
               {
                 "speaker": "kavya",
-                "text": "Still Saturn. I have seen thousands of beautiful pictures, but nothing has ever made me feel the way that first look did."
+                "text": "Mars is popular, and I like the Moon, but Saturn is special. It’s not the first planet I ever saw, that was Jupiter, and it isn’t the biggest one. But even after ten years, when I look at the rings, my breath stops for a second. They look unreal, like a painting."
               },
               {
                 "speaker": "rosalind",
-                "text": "What advice do you have for beginners?"
+                "text": "What advice do you give to young people?"
               },
               {
                 "speaker": "kavya",
-                "text": "Look at the sky every night, and learn the names of a few stars. You do not need an expensive telescope to begin."
+                "text": "Some say, study only physics, but you need other subjects too, like English, to write about your work. Others say, buy an expensive telescope. Please don’t. Just go outside and look at the sky every night. After one month you’ll know the stars better than most of your friends."
               },
               {
                 "speaker": "rosalind",
-                "text": "And what do you hope to do in the future?"
+                "text": "How do you feel about your future work?"
               },
               {
                 "speaker": "kavya",
-                "text": "I want to be part of a team that finds planets around other stars, planets where life might be possible."
+                "text": "I’m excited. I want to find new worlds around other stars, maybe some like ours. Some days I’m tired of looking at pictures, I admit, but never tired of the job. I was afraid when I left my last job, but that’s over. I’d love to fly into space, but I’d rather stay here, and I may write a book one day, later, when I am a little older and have more time."
               }
             ]
           },
@@ -1452,7 +1624,7 @@
                 "She watched a film"
               ],
               "answer": 1,
-              "explanation": "Her uncle gave her a small telescope when she was nine."
+              "explanation": "Films only made her laugh and she fell asleep at the planetarium; her uncle’s gift of a small telescope started it."
             },
             {
               "id": "l4-2",
@@ -1463,7 +1635,7 @@
                 "Travelling to other countries"
               ],
               "answer": 1,
-              "explanation": "She says the hardest part is working through the night."
+              "explanation": "The maths is enjoyable and travelling is exciting; working through the night is what is really difficult."
             },
             {
               "id": "l4-3",
@@ -1474,18 +1646,18 @@
                 "Teach students at a school"
               ],
               "answer": 0,
-              "explanation": "She mostly studies pictures sent by telescopes."
+              "explanation": "She does not build instruments and teaches only one class; most days she studies pictures from telescopes."
             },
             {
               "id": "l4-4",
-              "prompt": "Which object in the sky does she like best?",
+              "prompt": "Why does Kavya like Saturn best?",
               "options": [
-                "Mars",
-                "The Moon",
-                "Saturn"
+                "It was the first planet she saw",
+                "It is the biggest planet",
+                "Its rings still amaze her"
               ],
               "answer": 2,
-              "explanation": "She still likes Saturn best."
+              "explanation": "Saturn was not the first planet and is not the biggest, but the rings still make her breath stop."
             },
             {
               "id": "l4-5",
@@ -1496,18 +1668,18 @@
                 "Buy an expensive telescope"
               ],
               "answer": 1,
-              "explanation": "She says to look at the sky every night."
+              "explanation": "She says physics only and an expensive telescope are not necessary; she tells people to look at the sky every night."
             },
             {
               "id": "l4-6",
-              "prompt": "What does she hope to do in the future?",
+              "prompt": "How does Kavya feel about her future work?",
               "options": [
-                "Find planets around other stars",
-                "Fly into space",
-                "Write books about space"
+                "Excited to look for new worlds",
+                "Tired of looking at pictures",
+                "Afraid of leaving her job"
               ],
               "answer": 0,
-              "explanation": "She wants to help find planets around other stars."
+              "explanation": "She is sometimes tired and was once afraid when she changed jobs, but she is excited to look for new worlds."
             }
           ]
         }

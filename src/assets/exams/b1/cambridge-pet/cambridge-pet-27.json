@@ -250,6 +250,7 @@
               "prompt": "Why did the writer first read on her phone?",
               "options": [
                 "She always had it with her",
+                "Her teacher advised her to do it",
                 "It cost less than buying books",
                 "Her friends told her to do it"
               ],
@@ -260,22 +261,24 @@
               "id": "r3-2",
               "prompt": "What problem did she notice in January?",
               "options": [
+                "She was reading too slowly to finish",
                 "She was spending too much on books",
-                "She could not remember finishing a book",
-                "She no longer enjoyed good stories"
+                "She no longer enjoyed good stories",
+                "She could not remember finishing a book"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She read for hours but could not remember the last book she had finished."
             },
             {
               "id": "r3-3",
               "prompt": "How did she feel on the first evening?",
               "options": [
-                "She found it hard to stay with the book",
                 "She enjoyed it from the first minute",
+                "She found it hard to stay with the book",
+                "She was too tired to read anything",
                 "She fell asleep after ten minutes"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She kept reaching for her pocket and got up after ten minutes."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "She thinks screens are bad for children",
                 "She has stopped using her phone completely",
-                "She does not prefer paper to screens"
+                "She does not prefer paper to screens",
+                "She believes screens damage the eyes"
               ],
               "answer": 2,
               "explanation": "She says she does not think paper is better and that she still uses her phone for news and messages."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What does she do when friends say they could not do it?",
               "options": [
+                "She offers to lend them a book",
+                "She stops talking to them about it",
                 "She explains her rule to them again",
-                "She tells them to buy a paperback",
-                "She offers to lend them a book"
+                "She tells them to buy a paperback"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She lends them a book and tells them to try it for one evening."
             }
           ]
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "The little library on Alder Street",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "On Alder Street, between a bakery and a bus stop, there is a small wooden box with a glass door. Inside, there are about thirty books. It is a street library, and anyone can borrow a book from it for free. [1] The idea belongs to Maureen Tait, a retired teacher who built the box herself three years ago.\n\n'I got tired of seeing good books in rubbish bins,' she says. [2] Within a week, the shelves were full, and neighbours were leaving notes inside the covers about their favourite stories.\n\nThe rules are simple. Take a book, and bring it back when you have finished, or leave a different one instead. [3] Maureen says that this surprised her, because she had expected some books to disappear. 'In three years, the number of books has hardly changed,' she says.\n\nNow street libraries are appearing in other parts of the town. [4] Maureen helped the first two groups to build theirs, and she gives them advice about wood and paint. 'The hardest part is the roof,' she laughs. [5] 'If it leaks, you will have thirty wet books and thirty unhappy readers.'",
           "sentences": [
             "Some are run by schools, and others by neighbours or shops.",
-            "Nobody has to sign a form or show a card.",
-            "The bakery next door sells fresh bread and cakes every morning.",
-            "The box must keep the books dry, or the whole idea fails.",
+            "So she built a small box, painted it blue and filled it with her own books.",
+            "Before that, the street had no shops at all.",
+            "Maureen's husband helped her to paint the roof.",
             "Most people follow them, and very few books are ever lost.",
-            "So she built a small box, painted it blue and filled it with her own books."
+            "The box must keep the books dry, or the whole idea fails.",
+            "Nobody has to sign a form or show a card.",
+            "The bakery next door sells fresh bread and cakes every morning."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "G",
               "explanation": "The sentence explains that the books are free and that no card is needed, which follows \"borrow a book from it for free\"."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "B",
               "explanation": "The sentence tells what she did next, and the following sentence says the shelves were full within a week."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "F",
               "explanation": "The sentence explains why the roof matters, and Maureen then talks about leaks and wet books."
             }
           ]
@@ -745,6 +752,22 @@
                   {
                     "speaker": "lorna",
                     "text": "Of course. Just show me your card."
+                  },
+                  {
+                    "speaker": "vaughn",
+                    "text": "Thanks. I'd like something about gardening this time. Do you have a section for that?"
+                  },
+                  {
+                    "speaker": "lorna",
+                    "text": "Yes, it's behind you, next to the window. The new books are on the top shelf, and they're very popular."
+                  },
+                  {
+                    "speaker": "vaughn",
+                    "text": "Great, I'll look there first."
+                  },
+                  {
+                    "speaker": "lorna",
+                    "text": "Remember, the fine is never more than one pound. Please pay at the desk before you go."
                   }
                 ]
               },
@@ -797,6 +820,22 @@
                   {
                     "speaker": "dougal",
                     "text": "Ten minutes' walk."
+                  },
+                  {
+                    "speaker": "sabine",
+                    "text": "Good. I want to buy a present for my brother, and I know the shop has a lot of cookbooks."
+                  },
+                  {
+                    "speaker": "dougal",
+                    "text": "It does. There's a sale at the moment, and everything in the red section is half price. You should go now."
+                  },
+                  {
+                    "speaker": "sabine",
+                    "text": "Thanks for your help. I'll go straight there."
+                  },
+                  {
+                    "speaker": "dougal",
+                    "text": "Don't forget, on a normal day it closes at six o'clock, but tomorrow it closes earlier."
                   }
                 ]
               },
@@ -853,6 +892,14 @@
                   {
                     "speaker": "maud",
                     "text": "But the story in the book is more interesting."
+                  },
+                  {
+                    "speaker": "lennox",
+                    "text": "Maybe, but the book is very long. I fell asleep after the first hundred pages."
+                  },
+                  {
+                    "speaker": "maud",
+                    "text": "That's because you read it at night! The actors were good, I agree, but you should try the book again on a quiet Sunday."
                   }
                 ]
               },
@@ -905,6 +952,18 @@
                   {
                     "speaker": "ewart",
                     "text": "It's two hundred pages! I'll read until midnight if I have to."
+                  },
+                  {
+                    "speaker": "tamara",
+                    "text": "Poor you. What is the book about?"
+                  },
+                  {
+                    "speaker": "ewart",
+                    "text": "A boy who sails round the world alone. It's quite good, but there are too many names, and the test has twenty questions."
+                  },
+                  {
+                    "speaker": "tamara",
+                    "text": "Well, good luck. We'll go to the cinema next week, and I'll buy the tickets."
                   }
                 ]
               },
@@ -961,6 +1020,18 @@
                   {
                     "speaker": "aurora",
                     "text": "Perfect, I'll take it."
+                  },
+                  {
+                    "speaker": "tobin",
+                    "text": "I'm sure he'll like it. It isn't about sport, but one chapter has a football match. It's not very expensive, either. Shall I wrap it?"
+                  },
+                  {
+                    "speaker": "aurora",
+                    "text": "Yes, please. And do you have a card with a birthday message?"
+                  },
+                  {
+                    "speaker": "tobin",
+                    "text": "It is quite cheap for a new book, but that isn't the best thing about it."
                   }
                 ]
               },
@@ -1013,6 +1084,18 @@
                   {
                     "speaker": "tavish",
                     "text": "That's true, but I still prefer paper."
+                  },
+                  {
+                    "speaker": "cerys",
+                    "text": "Do you miss the cover pictures? Mine shows them in colour."
+                  },
+                  {
+                    "speaker": "tavish",
+                    "text": "A little, but the weight is not a problem for me. I just like the feeling of the paper under my fingers."
+                  },
+                  {
+                    "speaker": "cerys",
+                    "text": "Well, I can't change your mind. But come and try mine one day."
                   }
                 ]
               },
@@ -1061,6 +1144,18 @@
                   {
                     "speaker": "eilidh",
                     "text": "Oh good, then I can have dinner first."
+                  },
+                  {
+                    "speaker": "hamish",
+                    "text": "The talk lasts an hour, so it finishes at half past eight, and then she signs books."
+                  },
+                  {
+                    "speaker": "eilidh",
+                    "text": "Then I'll buy my copy before the talk. Is the bookshop in the hall open before eight o'clock?"
+                  },
+                  {
+                    "speaker": "hamish",
+                    "text": "Yes, it opens at six. You will have time for a quick dinner and a visit."
                   }
                 ]
               },
@@ -1122,6 +1217,18 @@
                   {
                     "speaker": "marcia",
                     "text": "Of course. Can I take your number?"
+                  },
+                  {
+                    "speaker": "piers",
+                    "text": "Yes, it's on the form. Also, do you know if the author has written another book about the mountains?"
+                  },
+                  {
+                    "speaker": "marcia",
+                    "text": "She has, and it comes out in the spring. I'll put your name on the list for that one too."
+                  },
+                  {
+                    "speaker": "piers",
+                    "text": "Perfect. I'll come on Friday, after work."
                   }
                 ]
               },
@@ -1174,6 +1281,18 @@
                   {
                     "speaker": "sunniva",
                     "text": "They've got a café inside now, so people talk all the time. I'll go back to the old one."
+                  },
+                  {
+                    "speaker": "hadley",
+                    "text": "Is it far from your house? I thought it was next to the station."
+                  },
+                  {
+                    "speaker": "sunniva",
+                    "text": "It's not far at all, ten minutes by bus, and there are plenty of chairs. But I need silence when I study."
+                  },
+                  {
+                    "speaker": "hadley",
+                    "text": "Then try the reading room on the top floor."
                   }
                 ]
               },
@@ -1226,6 +1345,14 @@
                   {
                     "speaker": "pearl",
                     "text": "We have a very good one for young readers. You can borrow it for three weeks."
+                  },
+                  {
+                    "speaker": "jude",
+                    "text": "Wonderful. Can I borrow two books at the same time?"
+                  },
+                  {
+                    "speaker": "pearl",
+                    "text": "Yes, you can take out five. I work at this desk every afternoon, so ask me if you need help. I'm not a teacher, and this isn't a shop, so everything here is free."
                   }
                 ]
               },
@@ -1278,6 +1405,18 @@
                   {
                     "speaker": "corbin",
                     "text": "OK, I'll make the poster if you talk to your colleagues."
+                  },
+                  {
+                    "speaker": "willa",
+                    "text": "Perfect. I'll choose the first book. I'm thinking of a short mystery, so everyone can finish it in two weeks."
+                  },
+                  {
+                    "speaker": "corbin",
+                    "text": "Sounds good. We can meet on Thursday evenings in the café."
+                  },
+                  {
+                    "speaker": "willa",
+                    "text": "Great. I'll ask my boss if we can use a room at work as well."
                   }
                 ]
               },
@@ -1330,6 +1469,14 @@
                   {
                     "speaker": "rufus",
                     "text": "I'll get you one from the back."
+                  },
+                  {
+                    "speaker": "dilys",
+                    "text": "Thank you. I don't need a discount or my money back. I only want the book, and I'm happy to wait."
+                  },
+                  {
+                    "speaker": "rufus",
+                    "text": "Here it is. I've checked every page this time, so you can be sure."
                   }
                 ]
               },
@@ -1382,6 +1529,14 @@
                   {
                     "speaker": "lionel",
                     "text": "Try a children's classic. The sentences are short, and you'll understand most of it."
+                  },
+                  {
+                    "speaker": "anwen",
+                    "text": "I don't want a long, hard novel yet. And I look up every word in the dictionary, which takes forever."
+                  },
+                  {
+                    "speaker": "lionel",
+                    "text": "Don't do that. Guess from the story, and only look up the words that appear again and again."
                   }
                 ]
               },
@@ -1419,7 +1574,7 @@
             "turns": [
               {
                 "speaker": "hannelore",
-                "text": "Hello, everyone, and welcome to the Summer Reading Challenge at Brookfield Library. My name is Hannelore, and I look after the children's section. The challenge starts on the first of July and finishes at the end of August. Every child who joins receives a free folder, and each time you read a book, you get a sticker for it. If you read six books, you win a medal. We have more than two hundred new books on the shelves this year, including some about space and football. On Saturdays, we also have a reading club at eleven o'clock, where a storyteller reads aloud. It takes place in the garden if the weather is good. To join, you only need to give us your name at the front desk. It is completely free, but you must be a member of the library. Parents are welcome to stay and listen, but please keep the noise down. I hope to see you all soon!"
+                "text": "Hello, everyone, and welcome to the Summer Reading Challenge at Brookfield Library. This is the tenth year of the challenge, and last year more than three hundred children took part. My name is Hannelore, and I look after the children's section. The challenge starts on the first of July and finishes at the end of August. That gives you two whole months, so there is no need to hurry. Every child who joins receives a free folder, and each time you read a book, you get a sticker for it. You put the stickers in your folder, and you can show the folder to your friends. If you read six books, you win a medal. If you read twelve books, you also get your name on the big poster by the door. We have more than two hundred new books on the shelves this year, including some about space and football. There are funny stories, and there are also books with a lot of pictures for younger readers. On Saturdays, we also have a reading club at eleven o'clock, where a storyteller reads aloud. She uses different voices for the characters, and the children love it. It takes place in the garden if the weather is good. To join, you only need to give us your name at the front desk. It is completely free, but you must be a member of the library. If you are not a member yet, it only takes five minutes to join, and the card is free for children. Parents are welcome to stay and listen, but please keep the noise down. I hope to see you all soon!"
               }
             ]
           },
@@ -1498,11 +1653,27 @@
               },
               {
                 "speaker": "philip",
+                "text": "Is it easy to find time with young children?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "Not really, so I use every quiet moment. I keep a notebook in my bag, and I write on the bus, in the park and even in the queue at the supermarket."
+              },
+              {
+                "speaker": "philip",
                 "text": "Where do your ideas come from?"
               },
               {
                 "speaker": "lottie",
                 "text": "Mostly from things that my own children say. My son once told me that his teddy bear had a job, and that became my first book."
+              },
+              {
+                "speaker": "philip",
+                "text": "How long does a book take?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "About a year, from the first idea to the last page. The writing is quick, but the changes take much longer, because I rewrite every chapter three or four times."
               },
               {
                 "speaker": "philip",
@@ -1514,11 +1685,27 @@
               },
               {
                 "speaker": "philip",
+                "text": "Do your children read your books before they are printed?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "Yes, they are my first readers, and they are very honest. If a page is boring, my daughter tells me at once and then asks for a biscuit. Their opinion is worth more than a hundred reviews."
+              },
+              {
+                "speaker": "philip",
                 "text": "What do children say when you visit schools?"
               },
               {
                 "speaker": "lottie",
                 "text": "They ask very direct questions. One boy asked me why my characters were always so naughty. I told him that good characters are boring."
+              },
+              {
+                "speaker": "philip",
+                "text": "Do you enjoy talking about your work?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "I love it. Children are brave, and they often give me ideas. After one visit, a girl told me about her cat who hates rain, and that is now a short story in my drawer."
               },
               {
                 "speaker": "philip",
@@ -1530,11 +1717,27 @@
               },
               {
                 "speaker": "philip",
+                "text": "Did you always want to be a writer?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "No. I was a teacher for eight years. I wrote stories at night for my pupils, and after one summer holiday a publisher read them. That was a lucky chance, and I still can't believe it."
+              },
+              {
+                "speaker": "philip",
                 "text": "And what are you working on now?"
               },
               {
                 "speaker": "lottie",
                 "text": "A book about a girl who collects shadows. It's nearly finished, but I'm not sure about the ending."
+              },
+              {
+                "speaker": "philip",
+                "text": "What advice do you give to young writers?"
+              },
+              {
+                "speaker": "lottie",
+                "text": "Read as much as you can, and write a little every day, even if it is only one page. Don't show your first draft to anyone. Wait a week, then read it again, and you'll see what to change."
               }
             ]
           },

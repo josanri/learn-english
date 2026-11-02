@@ -249,41 +249,45 @@
               "id": "r3-1",
               "prompt": "Why did the writer laugh at the invitation?",
               "options": [
-                "She remembered a bad experience on stage.",
                 "She thought the play sounded boring.",
-                "She did not have enough free time."
+                "She did not have enough free time.",
+                "She remembered a bad experience on stage.",
+                "She was too old to learn acting."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She had been on stage only once, at ten, when she forgot the words and ran off in tears."
             },
             {
               "id": "r3-2",
               "prompt": "What did the director often tell the writer to do?",
               "options": [
-                "Speak more loudly",
                 "Speak more slowly",
-                "Learn more lines"
+                "Speak more loudly",
+                "Learn more lines",
+                "Stand closer to the others"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "The director kept telling her to speak more slowly because she talks fast when nervous."
             },
             {
               "id": "r3-3",
               "prompt": "How did she feel just before the first performance?",
               "options": [
-                "Very nervous",
                 "Confident because her parents were there",
-                "Bored by the long wait"
+                "Annoyed by her friend",
+                "Bored by the long wait",
+                "Very nervous"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She says she felt sick on the first night and saw the full theatre through the curtain."
             },
             {
               "id": "r3-4",
               "prompt": "Why did she feel less afraid on the stage?",
               "options": [
-                "She knew all the other actors very well.",
+                "The director told her to be brave.",
                 "She could not see the audience.",
+                "She knew all the other actors very well.",
                 "Her parents smiled at her from the front row."
               ],
               "answer": 1,
@@ -293,9 +297,10 @@
               "id": "r3-5",
               "prompt": "What is she going to do next?",
               "options": [
+                "Give up acting",
                 "Leave the group",
-                "Look after the costumes only",
-                "Accept a bigger part"
+                "Accept a bigger part",
+                "Look after the costumes only"
               ],
               "answer": 2,
               "explanation": "She has been offered a bigger part and says she is going to say yes."
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "A student film festival",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every year in June, the students of Garrow Quay College organise a film festival. This year it took place over a long weekend, and I was one of the volunteers. [1] I spent most of the first day carrying chairs and fixing posters to doors, so I was not expecting to enjoy it much.\n\nOn Friday evening, the first films were shown in the college theatre. All of them were made by students, and none was longer than ten minutes. [2] One was about a boy and his grandmother's garden, and it made half the audience cry. Another was a silly comedy filmed entirely in a supermarket at night.\n\nOn Saturday, a well-known film director came to give a talk. [3] He said he had made his first film on his father's old camera when he was fourteen, and that nobody could teach you to tell a story better than making mistakes. [4] I wrote that down, and many other people did too.\n\nThe winners were announced on Sunday afternoon. The prize for best film went to a group of first-year students, who had made a film about a lost dog. [5] I hope next year I will be brave enough to enter a film of my own.",
           "sentences": [
-            "He was friendly and spoke in a very simple way, which the students liked.",
-            "Everyone clapped loudly, even the people whose films had not won.",
+            "That was why she had decided to make films about animals.",
             "They were much better than I had imagined.",
             "The college theatre was built more than fifty years ago.",
+            "It was the first time I had worked at such a big event.",
             "I thought that was the best advice of the whole weekend.",
-            "It was the first time I had worked at such a big event."
+            "Everyone clapped loudly, even the people whose films had not won.",
+            "He was friendly and spoke in a very simple way, which the students liked.",
+            "She is also the head of the drama department."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "F",
+              "answer": "D",
               "explanation": "Sentence F explains why the writer was a volunteer without experience; \"I spent most of the first day carrying chairs\" continues the idea."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "B",
               "explanation": "\"They were much better than I had imagined\" refers to the student films and leads to the examples that follow."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "G",
               "explanation": "Sentence A describes the director who gave the talk; \"He said he had made his first film\" continues with \"he\"."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "B",
+              "answer": "F",
               "explanation": "Sentence B shows the audience's reaction to the winners and leads to the writer's hope for next year. Sentence D is about the building and fits nowhere."
             }
           ]
@@ -759,16 +766,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "bushra",
+                    "text": "Garrow Quay Playhouse, Bushra speaking. How can I help?"
+                  },
+                  {
                     "speaker": "percy",
-                    "text": "I would like tickets for Saturday's show, please. Two adults and my daughter."
+                    "text": "Hello. I’d like tickets for Saturday afternoon’s show, please. One for me and one for my daughter. She’s four."
                   },
                   {
                     "speaker": "bushra",
-                    "text": "Adults are twelve pounds each. Under-sixteens are half price, but children under ten pay nothing with an adult. How old is she?"
+                    "text": "An adult ticket is twelve pounds. For children between five and sixteen it’s six pounds."
                   },
                   {
                     "speaker": "percy",
-                    "text": "She is eight."
+                    "text": "Oh, I thought I’d pay six for her. That’s what we paid for her brother last winter."
+                  },
+                  {
+                    "speaker": "bushra",
+                    "text": "Well, she’s under five, so she can sit on your knee, and we charge nothing for that. You only pay for yourself."
+                  },
+                  {
+                    "speaker": "percy",
+                    "text": "That’s great news. So it’s just the twelve pounds."
+                  },
+                  {
+                    "speaker": "bushra",
+                    "text": "Yes. Shall I take your card number now?"
                   }
                 ]
               },
@@ -781,7 +804,7 @@
                   "Twelve pounds"
                 ],
                 "answer": 0,
-                "explanation": "Children under ten go free with an adult, and his daughter is eight."
+                "explanation": "Six pounds is the price for children from five, and twelve pounds is for the adult, but Percy’s daughter is only four, so she sits on his knee and they charge nothing."
               }
             },
             {
@@ -808,19 +831,31 @@
                 "turns": [
                   {
                     "speaker": "jessica",
-                    "text": "What can I get you?"
+                    "text": "Zachary, I’m at the snack bar. Do you want the usual, a large popcorn and a big cola?"
                   },
                   {
                     "speaker": "zachary",
-                    "text": "A large popcorn, please. No, wait, that is too much for one person. A medium one, and a cola."
+                    "text": "Not tonight. I nearly ordered that on Friday, but I felt terrible afterwards."
                   },
                   {
                     "speaker": "jessica",
-                    "text": "Medium popcorn and a cola. Anything else?"
+                    "text": "So a medium popcorn and a small cola?"
                   },
                   {
                     "speaker": "zachary",
-                    "text": "On second thoughts, a bottle of water instead of the cola. I have had too many sugary drinks this week."
+                    "text": "Hmm, actually the cola is too sweet for me now. I’d rather have a bottle of water."
+                  },
+                  {
+                    "speaker": "jessica",
+                    "text": "Water? You? Okay. And the popcorn?"
+                  },
+                  {
+                    "speaker": "zachary",
+                    "text": "Medium. I never finish a large one before the film begins."
+                  },
+                  {
+                    "speaker": "jessica",
+                    "text": "Fine. Medium popcorn and water. See you in screen four."
                   }
                 ]
               },
@@ -833,7 +868,7 @@
                   "Medium popcorn and water"
                 ],
                 "answer": 2,
-                "explanation": "He changes to a medium popcorn and replaces the cola with water."
+                "explanation": "He nearly ordered the large popcorn and big cola last Friday, and he rejects the small cola because it is too sweet, so he asks for medium popcorn and water."
               }
             },
             {
@@ -859,20 +894,32 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "emre",
-                    "text": "I have lost my ticket for the film."
-                  },
-                  {
                     "speaker": "naomi",
-                    "text": "Did you book online?"
+                    "text": "Sorry, sir, I can’t let you in without a ticket."
                   },
                   {
                     "speaker": "emre",
-                    "text": "Yes."
+                    "text": "I have one, but I left the paper at home. I booked online three weeks ago."
                   },
                   {
                     "speaker": "naomi",
-                    "text": "Then open the booking email on your phone and show me the code. You do not need the paper ticket."
+                    "text": "I could print a new one at the desk, but that costs two pounds."
+                  },
+                  {
+                    "speaker": "emre",
+                    "text": "No, I’d rather not pay twice. I thought of asking my friend Hana to come out, but she’s already inside with her phone off."
+                  },
+                  {
+                    "speaker": "naomi",
+                    "text": "Did they send you a confirmation?"
+                  },
+                  {
+                    "speaker": "emre",
+                    "text": "Yes, hold on. It’s still in my inbox. Look, here’s the booking number and my seat."
+                  },
+                  {
+                    "speaker": "naomi",
+                    "text": "That’s perfect. Go ahead and enjoy the show."
                   }
                 ]
               },
@@ -885,21 +932,13 @@
                   "By asking a friend to help"
                 ],
                 "answer": 0,
-                "explanation": "Naomi tells him to show the booking email with the code on his phone."
+                "explanation": "He will not pay for a new ticket and his friend has her phone off, but he shows the confirmation message with his booking number on his phone."
               }
             },
             {
               "id": "l1-4-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "rebecca",
-                    "name": "Rebecca",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "fearghal",
                     "name": "Fearghal",
@@ -911,16 +950,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "rebecca",
-                    "text": "Is tomorrow's rehearsal still at six?"
-                  },
-                  {
                     "speaker": "fearghal",
-                    "text": "It starts half an hour later. The hall is used for a yoga class until six."
-                  },
-                  {
-                    "speaker": "rebecca",
-                    "text": "Thanks. I will tell the others."
+                    "text": "Hi everyone, it’s Fearghal with a message about tomorrow’s rehearsal. We normally start at six, and that’s what I told you on Monday. But the school hall is being used for a concert until six, so I asked the caretaker if we could begin at five thirty in the small room. He said it’s closed for painting, sorry! So please come at six thirty instead, and bring your scripts. We’ll finish at nine at the latest. If you can’t come, text me tonight, because tomorrow I’ll be busy until the very last minute. See you then!"
                   }
                 ]
               },
@@ -933,7 +964,7 @@
                   "6.30"
                 ],
                 "answer": 2,
-                "explanation": "The rehearsal starts half an hour later than six, so at half past six."
+                "explanation": "The usual time is six and the small room at five thirty is not available, so the rehearsal is moved to six thirty."
               }
             },
             {
@@ -960,23 +991,31 @@
                 "turns": [
                   {
                     "speaker": "kavya",
-                    "text": "Shall we see the comedy tonight?"
+                    "text": "Which film shall we see on Saturday? Everyone says the new comedy is hilarious."
                   },
                   {
                     "speaker": "alistair",
-                    "text": "I have seen it already. How about the space adventure?"
+                    "text": "I saw the trailer. The jokes weren’t very funny, and the reviews are terrible."
                   },
                   {
                     "speaker": "kavya",
-                    "text": "I am not keen on science fiction, but it got great reviews. What about the cartoon?"
+                    "text": "Then what about the cartoon? My little cousin is coming with us."
                   },
                   {
                     "speaker": "alistair",
-                    "text": "That is for little kids."
+                    "text": "Your cousin can come another day. The cartoon is for little kids, and he’s twelve."
                   },
                   {
                     "speaker": "kavya",
-                    "text": "All right, the space film it is."
+                    "text": "True. So what do you want to see?"
+                  },
+                  {
+                    "speaker": "alistair",
+                    "text": "The one with the spaceship and the robots. I love science fiction. It’s long, but the special effects are amazing."
+                  },
+                  {
+                    "speaker": "kavya",
+                    "text": "Okay, you win. I’ll book seats for eight o’clock."
                   }
                 ]
               },
@@ -989,7 +1028,7 @@
                   "The cartoon for little kids"
                 ],
                 "answer": 1,
-                "explanation": "Alistair has already seen the comedy and the cartoon is for little kids, so they agree on the space adventure."
+                "explanation": "The comedy has bad reviews and the cartoon is for little kids, so Alistair suggests the one with the spaceship and robots, which is the science-fiction film."
               }
             },
             {
@@ -1003,28 +1042,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "parvati",
-                    "name": "Parvati",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "dafydd",
-                    "text": "Is it all right to take photos inside?"
-                  },
-                  {
-                    "speaker": "parvati",
-                    "text": "Yes, but no flash. And please put your phone on silent before we go in."
-                  },
-                  {
-                    "speaker": "dafydd",
-                    "text": "No problem."
+                    "text": "Good evening, ladies and gentlemen, and welcome to the Garrow Quay Playhouse. Before you take your seats, a few quick reminders. Some of you have large bags with you. In the past we asked everyone to leave them in the cloakroom, but there’s no need now, as long as they fit under your seat. You can buy a programme at the stalls in the foyer, but you don’t have to, because the cast list is on the screens. The most important thing is your mobile. Please put it on silent, not just vibrate, and keep it in your pocket during the show. The performance begins in ten minutes. Enjoy it!"
                   }
                 ]
               },
@@ -1037,21 +1060,13 @@
                   "Buy a programme for the show"
                 ],
                 "answer": 1,
-                "explanation": "The guide asks everyone to put their phone on silent before entering."
+                "explanation": "Bags only had to be left outside in the past and the programme is not necessary, but the speaker says the most important thing is to put your mobile on silent."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "manish",
-                    "name": "Manish",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "martha",
                     "name": "Martha",
@@ -1063,24 +1078,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "manish",
-                    "text": "I cannot find the remote control anywhere."
-                  },
-                  {
                     "speaker": "martha",
-                    "text": "Did you look on the shelf?"
-                  },
-                  {
-                    "speaker": "manish",
-                    "text": "Yes, nothing."
-                  },
-                  {
-                    "speaker": "martha",
-                    "text": "Try under the sofa. The cat sleeps there sometimes."
-                  },
-                  {
-                    "speaker": "manish",
-                    "text": "Got it!"
+                    "text": "Hi Manish, it’s Martha. I found the remote control at last! I know you looked on the shelf this morning, and I checked it again just to be sure, but it wasn’t there. Then I thought of the kitchen, because you were making tea earlier. I nearly gave up and bought a new one online. But when I moved the cushions to clean the living room, I saw it on the floor, right at the back, beneath the sofa. It was probably there since Sunday’s match. Anyway, I’ll leave it on the table. Call me when you get home. Bye!"
                   }
                 ]
               },
@@ -1093,7 +1092,7 @@
                   "In the kitchen"
                 ],
                 "answer": 0,
-                "explanation": "Manish has already checked the shelf; Martha suggests looking under the sofa, and he finds it."
+                "explanation": "The shelf and the kitchen did not have it; Martha saw it on the floor beneath the sofa when she moved the cushions."
               }
             }
           ]
@@ -1129,15 +1128,35 @@
                 "turns": [
                   {
                     "speaker": "amelia",
-                    "text": "How was the concert?"
+                    "text": "Wei, you went to the Rivers concert on Friday. How was it?"
                   },
                   {
                     "speaker": "wei",
-                    "text": "The band was brilliant, but it was so loud that my ears hurt afterwards. Next time I will bring ear plugs."
+                    "text": "The band was brilliant, and the show lasted two hours, so I can’t complain about that."
                   },
                   {
                     "speaker": "amelia",
-                    "text": "Good idea. I will bring some as well."
+                    "text": "And was it expensive? I heard tickets were sixty pounds."
+                  },
+                  {
+                    "speaker": "wei",
+                    "text": "I paid thirty because I booked early. No, my problem was different. I stood near the speakers, and my ears were ringing for two days."
+                  },
+                  {
+                    "speaker": "amelia",
+                    "text": "Oh no! Could you hear the words at least?"
+                  },
+                  {
+                    "speaker": "wei",
+                    "text": "Hardly. Everything was a big noise. I won’t go again without ear plugs."
+                  },
+                  {
+                    "speaker": "amelia",
+                    "text": "Next time we’ll stand at the back. Deal?"
+                  },
+                  {
+                    "speaker": "wei",
+                    "text": "Deal."
                   }
                 ]
               },
@@ -1150,7 +1169,7 @@
                   "It was too expensive."
                 ],
                 "answer": 0,
-                "explanation": "He liked the band but says it was so loud that his ears hurt."
+                "explanation": "The show was long enough and the ticket cost thirty pounds, but Wei stood near the speakers, his ears rang for two days and he could hardly hear the words, so it was too loud."
               }
             },
             {
@@ -1177,15 +1196,35 @@
                 "turns": [
                   {
                     "speaker": "kirsty",
-                    "text": "Are you watching the cooking competition tonight?"
+                    "text": "Are you watching the new reality show tonight, Meirion?"
                   },
                   {
                     "speaker": "meirion",
-                    "text": "I do not believe those shows. The arguments are planned, so they are not genuine."
+                    "text": "Not really. I watched one episode and that was enough."
                   },
                   {
                     "speaker": "kirsty",
-                    "text": "Fair enough. I will watch it on my own, then."
+                    "text": "It’s two hours long, I know, but it teaches useful skills, like how to manage your money."
+                  },
+                  {
+                    "speaker": "meirion",
+                    "text": "Length isn’t the problem. I can watch for hours. It’s that everything is planned. The producers tell people what to say, and the arguments are acted."
+                  },
+                  {
+                    "speaker": "kirsty",
+                    "text": "Really? I thought the people were just being themselves."
+                  },
+                  {
+                    "speaker": "meirion",
+                    "text": "I’ve read interviews with former contestants. There’s nothing genuine about it. It’s all a script."
+                  },
+                  {
+                    "speaker": "kirsty",
+                    "text": "That’s a pity. I enjoy them anyway."
+                  },
+                  {
+                    "speaker": "meirion",
+                    "text": "Fine, but I’d rather watch a documentary."
                   }
                 ]
               },
@@ -1198,7 +1237,7 @@
                   "They are not genuine."
                 ],
                 "answer": 2,
-                "explanation": "He says he does not believe the shows and that the arguments are planned, so they are not genuine."
+                "explanation": "Kirsty mentions the length and useful skills, but Meirion says that the producers plan what people say and that the arguments are acted, so he thinks the shows are not genuine."
               }
             },
             {
@@ -1224,29 +1263,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "liam",
+                    "text": "Have you seen the film of The Silver Road yet?"
+                  },
+                  {
                     "speaker": "thandi",
-                    "text": "Have you seen the film of that novel?"
+                    "text": "Not yet. I read the book last year and I’m not sure I want to."
                   },
                   {
                     "speaker": "liam",
-                    "text": "It was fine, but they left out my favourite character."
+                    "text": "Why not? The film is only ninety minutes, and the book took you weeks."
                   },
                   {
                     "speaker": "thandi",
-                    "text": "That always happens. I prefer the book, because I can imagine everything myself."
+                    "text": "Speed doesn’t matter to me. And I don’t think the film is boring. The reviews are good."
+                  },
+                  {
+                    "speaker": "liam",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "thandi",
+                    "text": "In the book I made my own pictures of the characters and the old house. I imagine everything differently from a director. When I see actors, those pictures disappear."
+                  },
+                  {
+                    "speaker": "liam",
+                    "text": "I never thought of that. I like seeing it all at once."
+                  },
+                  {
+                    "speaker": "thandi",
+                    "text": "Good for you. For me, the best images are in my head, so I’ll stay with the book."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Why does Thandi prefer the book?",
+                "prompt": "Why does Thandi prefer the book to the film?",
                 "options": [
                   "It is quicker to finish than a film.",
                   "The film is too long and boring.",
                   "She can imagine the story herself."
                 ],
                 "answer": 2,
-                "explanation": "She says she can imagine everything herself when she reads."
+                "explanation": "The film is shorter and the reviews are good, but Thandi likes the pictures she creates in her head when she reads, and the film would replace them."
               }
             },
             {
@@ -1273,15 +1332,35 @@
                 "turns": [
                   {
                     "speaker": "dafydd",
-                    "text": "I booked seats in the front row, so we can see everything."
+                    "text": "Jessica, are you okay? You keep moving in your seat."
                   },
                   {
                     "speaker": "jessica",
-                    "text": "Oh, I get a sore neck when I sit that close. Can we change to the middle, nearer the door?"
+                    "text": "Honestly, no. Can we change seats?"
                   },
                   {
                     "speaker": "dafydd",
-                    "text": "Of course. The middle is better anyway."
+                    "text": "Is it the screen? It’s very bright tonight."
+                  },
+                  {
+                    "speaker": "jessica",
+                    "text": "It’s not that, I like it big. It’s the front row. I have to look up all the time and my neck hurts."
+                  },
+                  {
+                    "speaker": "dafydd",
+                    "text": "I see. There are two seats in row F, but they’re far from Amira and the others."
+                  },
+                  {
+                    "speaker": "jessica",
+                    "text": "I don’t mind if I sit with them or not. I’d rather be comfortable."
+                  },
+                  {
+                    "speaker": "dafydd",
+                    "text": "Okay, let’s move before the film starts."
+                  },
+                  {
+                    "speaker": "jessica",
+                    "text": "Thanks. I’ll never choose the front again."
                   }
                 ]
               },
@@ -1294,7 +1373,7 @@
                   "She wants to sit with a friend."
                 ],
                 "answer": 1,
-                "explanation": "She gets a sore neck when she sits so close to the screen."
+                "explanation": "She says it is not the screen and she does not care about sitting with friends; looking up all the time makes her neck hurt, so the front row is uncomfortable."
               }
             },
             {
@@ -1320,29 +1399,49 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "rebecca",
+                    "text": "Emre, how’s the costume for the school play? Let me see."
+                  },
+                  {
                     "speaker": "emre",
-                    "text": "How is the costume?"
+                    "text": "It’s lovely, but look at the sleeves. They cover my hands, and the trousers drag on the floor."
                   },
                   {
                     "speaker": "rebecca",
-                    "text": "The colour is perfect, but the coat is so big that I keep tripping over it. Can you take it in?"
+                    "text": "Hmm. Is the colour wrong? I thought the director asked for green."
                   },
                   {
                     "speaker": "emre",
-                    "text": "Sure, I will pin it now."
+                    "text": "No, it’s green, as she asked. And nothing is torn, the wardrobe lady checked everything."
+                  },
+                  {
+                    "speaker": "rebecca",
+                    "text": "So it’s just a matter of size?"
+                  },
+                  {
+                    "speaker": "emre",
+                    "text": "Yes, it’s made for a taller, wider man. I’d trip on stage."
+                  },
+                  {
+                    "speaker": "rebecca",
+                    "text": "I’ll pin it up for you now. Stand still."
+                  },
+                  {
+                    "speaker": "emre",
+                    "text": "Thanks, you’re a star."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the problem with the costume?",
+                "prompt": "Why is Emre unhappy with the costume?",
                 "options": [
                   "It is too big.",
                   "It is the wrong colour.",
                   "It is torn."
                 ],
                 "answer": 0,
-                "explanation": "The colour is fine but the coat is so big that she trips over it."
+                "explanation": "The colour is right and nothing is torn, but the sleeves cover his hands and the trousers drag on the floor, so the costume is made for a bigger man."
               }
             },
             {
@@ -1368,16 +1467,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "kavya",
+                    "text": "Percy, I saw the bank charge for your streaming subscription. Do you still use it?"
+                  },
+                  {
                     "speaker": "percy",
-                    "text": "I am going to cancel my streaming subscription. Fifteen pounds a month, and I have watched only two series this year."
+                    "text": "Not really. I’m going to cancel it this week."
                   },
                   {
                     "speaker": "kavya",
-                    "text": "Really? I use mine every night."
+                    "text": "Is it the programmes? You said all the shows were old."
                   },
                   {
                     "speaker": "percy",
-                    "text": "Well, I will decide this weekend."
+                    "text": "They are a bit old, but they change them every month, so that’s fine. And the speed is fine too, even at night."
+                  },
+                  {
+                    "speaker": "kavya",
+                    "text": "Then why cancel?"
+                  },
+                  {
+                    "speaker": "percy",
+                    "text": "Because I open it once a month. I’m paying ten pounds for almost nothing."
+                  },
+                  {
+                    "speaker": "kavya",
+                    "text": "That makes sense. I’d cancel too."
+                  },
+                  {
+                    "speaker": "percy",
+                    "text": "I may start again in winter."
                   }
                 ]
               },
@@ -1390,7 +1509,7 @@
                   "The service is too slow at night."
                 ],
                 "answer": 1,
-                "explanation": "He has watched only two series this year, so he is not using it enough for the price."
+                "explanation": "The programmes are a bit old and the speed is fine; Percy opens it only once a month, so he does not watch it enough to justify the cost."
               }
             }
           ]
@@ -1415,53 +1534,46 @@
             "turns": [
               {
                 "speaker": "ashleigh",
-                "text": "Hello, everyone, and welcome to Garrow Quay Playhouse. I am Ashleigh, the manager, and I would like to tell you about our summer programme. It begins in June and runs until the end of August, with a different show every week. The doors open one hour before each performance, so you can enjoy a drink in the café first. Our opening show is a musical about a sailor coming home, written by a local teacher, with more than forty people in the cast. Tickets can be booked online or at the box office. Students pay half price on Tuesdays and Wednesdays. For families, there are free workshops on Saturday mornings, where children can try acting, making masks and playing drums. Finally, if you would like to help, we always need volunteers to sell programmes."
+                "text": "Hello, everyone, and welcome to Garrow Quay Playhouse. I am Ashleigh, the manager, and I’d like to tell you about our summer programme. It begins in June. We had planned to start in May, but the roof needed repairs, so the first night is on the second of June. Now, about the evenings. The shows start at half past seven, and the doors open one hour before that, at half past six, so you can have a drink in the cafe. Some people think we open at five, but that’s only for the staff. Let me tell you about the shows. Our opening show is a musical about a sailor coming home after many years. We first thought of a comedy for the opening night, but the musical was a better choice, because the songs are wonderful. Later in July there will be a comedy, and in August we have a detective play. Now, about tickets. A normal ticket is fifteen pounds. Students pay half the normal price on Tuesdays and Wednesdays, just show your card at the door. On Thursdays, people over sixty-five get a smaller discount, but it isn’t half. We also have free workshops on Saturday mornings. They are for children between six and ten, and they learn to make masks and to move on stage. Teenagers can join a drama club, but that’s on Sunday afternoons and it isn’t free. Finally, how to book. You can book online, which is the cheapest way, or you can come to the box office, next to the main door. It’s open from ten until six, every day. We used to sell tickets in the cafe, but we stopped that last year. If you have any questions, please ask me, or any of my colleagues. Thank you for listening, and I hope to see you all this summer."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The summer programme begins in ___",
+              "prompt": "The first night of the summer season is in ___",
               "answer": "June",
-              "explanation": "Ashleigh says the summer programme begins in June."
+              "explanation": "She says the season begins in June; May was the earlier plan, before the roof repairs."
             },
             {
               "id": "l3-2",
-              "prompt": "Doors open one ___ before each show",
+              "prompt": "Visitors can come into the theatre one ___ before a show starts",
               "answer": "hour",
-              "accepted": [
-                "hours"
-              ],
-              "explanation": "The doors open one hour before each performance."
+              "explanation": "Doors open one hour before the show, at half past six; five o’clock is only for the staff."
             },
             {
               "id": "l3-3",
-              "prompt": "The opening show is a ___ about a sailor coming home",
+              "prompt": "The first show of the summer is a ___ about a sailor coming home",
               "answer": "musical",
-              "explanation": "The opening show is a musical about a sailor coming home."
+              "explanation": "The opening show is a musical; a comedy was the first idea but the musical was better, and the comedy comes in July."
             },
             {
               "id": "l3-4",
-              "prompt": "Students pay half ___ on Tuesdays and Wednesdays",
+              "prompt": "Students pay half the normal ___ on Tuesdays and Wednesdays",
               "answer": "price",
-              "explanation": "Students pay half price on Tuesdays and Wednesdays."
+              "explanation": "Students pay half the normal price on Tuesdays and Wednesdays; the Thursday discount for older people is smaller."
             },
             {
               "id": "l3-5",
               "prompt": "Free workshops on Saturday mornings are for ___",
               "answer": "children",
-              "accepted": [
-                "families",
-                "family"
-              ],
-              "explanation": "The free Saturday workshops are for children."
+              "explanation": "The free workshops are for children between six and ten; the teenagers’ club is on Sunday and costs money."
             },
             {
               "id": "l3-6",
-              "prompt": "Book tickets online or at the box ___",
+              "prompt": "The cheapest way to buy tickets is online, or you can go to the box ___",
               "answer": "office",
-              "explanation": "Tickets can be booked online or at the box office."
+              "explanation": "Tickets are sold online or at the box office next to the main door; the cafe stopped selling tickets last year."
             }
           ]
         },
@@ -1493,51 +1605,51 @@
             "turns": [
               {
                 "speaker": "interviewer",
-                "text": "Llewellyn, you have been acting on stage for twenty years. Was it always your dream?"
+                "text": "Llewellyn, how did you first get interested in acting?"
               },
               {
                 "speaker": "llewellyn",
-                "text": "Not at all. I wanted to be a footballer, but I broke my leg at sixteen and spent three months at home. My mum gave me a pile of plays to keep me busy, and I started reading all the parts aloud."
+                "text": "It wasn’t a school trip, though we went to a pantomime once and I was bored. A teacher did tell me to try the drama club, but I said no, I preferred football. Then I broke my leg at fifteen and stayed at home for two months. My aunt gave me a pile of old plays, and I read them all, doing the voices. That’s when I fell in love with it."
               },
               {
                 "speaker": "interviewer",
-                "text": "What do you find hardest about stage work?"
+                "text": "What’s the hardest thing about stage work?"
               },
               {
                 "speaker": "llewellyn",
-                "text": "Doing the same show six nights a week! The audience should feel it is the first time, but by the fortieth night you know every word. I try to find something new in each performance, even a tiny change in how I say one line."
+                "text": "Everyone expects it to be the lines, but I’m quite good at that. I just repeat them on the bus. The other actors are lovely too, we’re like a family. The difficult bit is the hundredth night. You say the same words again, and you must make them sound new, as if it were the first time. When I get it right, it’s magic."
               },
               {
                 "speaker": "interviewer",
-                "text": "Have you ever had a disaster on stage?"
+                "text": "Tell me about the night when your beard fell off. How did you feel?"
               },
               {
                 "speaker": "llewellyn",
-                "text": "Oh, many. Once the beard I was wearing fell off in the middle of a serious speech. The audience laughed, so I picked it up, put it in my pocket and carried on as if nothing had happened. The other actors were trying not to laugh."
+                "text": "It was a serious scene, and in the middle of my speech half of it dropped on the floor. For a second I wanted to run off the stage, and I thought about stopping the show. But then I decided it didn’t matter. I picked it up, put it in my pocket and carried on as if it was part of the plan. The audience clapped at the end."
               },
               {
                 "speaker": "interviewer",
-                "text": "Do you prefer theatre to film?"
+                "text": "Why do you prefer the theatre to film?"
               },
               {
                 "speaker": "llewellyn",
-                "text": "They are different. On film you can do a scene again and again, but in the theatre it is live and anything can happen. That is why I prefer the stage."
+                "text": "The money is better in films, I won’t pretend it isn’t, and the hours on a film set are longer. But on a film set you do the scene ten times and then it’s finished. In the theatre it’s live, and anything can happen. A phone rings, someone forgets a line. That danger keeps me alert, and I love it."
               },
               {
                 "speaker": "interviewer",
-                "text": "What do you do before a show?"
+                "text": "And how do you relax before a show?"
               },
               {
                 "speaker": "llewellyn",
-                "text": "I have the same routine. I get to the theatre two hours early, drink a cup of tea and walk around the empty stage. Then I always sing a silly song in the dressing room to relax."
+                "text": "People think I eat a lot, but I never eat before a show, I’d feel sick. I do practise my lines for an hour, but with the whole cast, in the corridor, not alone. Then, ten minutes before, I sing a silly song to myself in the dressing room, always the same one about a duck. It makes me laugh and my nerves disappear."
               },
               {
                 "speaker": "interviewer",
-                "text": "Any advice for young people who want to act?"
+                "text": "What advice would you give to young people?"
               },
               {
                 "speaker": "llewellyn",
-                "text": "Join a local group, even if you only carry the chairs. You learn so much just by watching. And do not wait for someone to give you a part. Make your own: put on a show in your garden."
+                "text": "Don’t wait for a phone call with a great part, it may never come. Drama schools are good, but they’re expensive, and you don’t need years there to start. I’d say, find a local group. You learn how to work with others, how to build scenery, you make friends, and you get on stage every month. That’s how I really began."
               }
             ]
           },
@@ -1551,7 +1663,7 @@
                 "A teacher suggested it to him."
               ],
               "answer": 1,
-              "explanation": "After breaking his leg he read plays aloud at home."
+              "explanation": "Llewellyn says it was not the school trip or his teacher’s idea; he read old plays at home while his broken leg got better."
             },
             {
               "id": "l4-2",
@@ -1562,18 +1674,18 @@
                 "Keeping each performance fresh"
               ],
               "answer": 2,
-              "explanation": "He says the audience should feel it is the first time, so he looks for something new in each show."
+              "explanation": "He says lines are easy for him and the actors are lovely; the difficult part is making the hundredth night sound new."
             },
             {
               "id": "l4-3",
-              "prompt": "What did he do when his beard fell off?",
+              "prompt": "How did Llewellyn feel when his beard fell off?",
               "options": [
-                "He continued the scene calmly.",
-                "He stopped the performance at once.",
-                "He left the stage to find a mirror."
+                "He stayed calm and carried on.",
+                "He was so embarrassed that he stopped.",
+                "He was so angry that he left the stage."
               ],
               "answer": 0,
-              "explanation": "He put the beard in his pocket and carried on as if nothing had happened."
+              "explanation": "He wanted to run off and thought about stopping, but he decided it did not matter, put the beard in his pocket and carried on."
             },
             {
               "id": "l4-4",
@@ -1584,7 +1696,7 @@
                 "The working hours are shorter."
               ],
               "answer": 0,
-              "explanation": "In the theatre it is live and anything can happen."
+              "explanation": "Films pay more and have longer hours, but he prefers the theatre because it is live and anything can happen."
             },
             {
               "id": "l4-5",
@@ -1595,7 +1707,7 @@
                 "He sings a silly song in his dressing room."
               ],
               "answer": 2,
-              "explanation": "He sings a silly song in the dressing room to relax."
+              "explanation": "He does not eat and does not practise alone; he sings a silly song in his dressing room."
             },
             {
               "id": "l4-6",
@@ -1606,7 +1718,7 @@
                 "Study at a drama school for some years."
               ],
               "answer": 1,
-              "explanation": "He tells them to join a local group, even carrying chairs, and not to wait for someone to give them a part."
+              "explanation": "He says not to wait for a part and that drama school is expensive and not needed; he recommends a local group."
             }
           ]
         }

@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "What did the writer used to do while friends went on rides?",
               "options": [
+                "Hold their bags at the bottom",
                 "Buy ice cream for everyone",
                 "Wait in the long queue",
-                "Hold their bags at the bottom"
+                "Take photos of the riders at the exit"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She waited at the bottom and held their bags."
             },
             {
@@ -261,8 +262,9 @@
               "prompt": "How did she feel in the queue?",
               "options": [
                 "Bored by the long wait",
-                "Calm and rather happy",
-                "Frightened as the ride came nearer"
+                "Proud of herself for being there",
+                "Frightened as the ride came nearer",
+                "Calm and rather happy"
               ],
               "answer": 2,
               "explanation": "With every step, her heart beat faster."
@@ -272,32 +274,35 @@
               "prompt": "What happened at the top of the ride?",
               "options": [
                 "The train stopped for a minute",
-                "There was a short silence",
-                "A worker spoke to the riders"
+                "A worker spoke to the riders",
+                "The train went backwards slowly",
+                "There was a short silence"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "At the top, there was a short silence, and then they shot down."
             },
             {
               "id": "r3-4",
               "prompt": "How did she feel when the ride ended?",
               "options": [
-                "She wanted to ride it again",
                 "She felt too ill to stand",
-                "She was sorry she came"
+                "She wanted to ride it again",
+                "She was sorry she came",
+                "She was sorry to leave Alex"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She shouted \"Again!\""
             },
             {
               "id": "r3-5",
               "prompt": "What does her cousin say now?",
               "options": [
-                "She is braver than he is",
+                "He wants to go on a smaller ride",
                 "She should try a bigger ride",
+                "She is braver than he is",
                 "She must come back next week"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Alex says that she is now braver than he is."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The story of the funfair",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Funfairs have been popular for hundreds of years. [1] In the Middle Ages, people travelled to markets, and the traders often brought musicians and acrobats to attract crowds.\n\nOver time, the entertainment became more important than the trading. [2] By the nineteenth century, fairs had swings, merry-go-rounds and small steam engines to pull the rides.\n\nThen, in the twentieth century, the first big amusement parks opened. [3] Families could now spend a whole day in one place, with food, rides and shows all together.\n\nToday, the biggest theme parks have roller coasters that reach speeds of over a hundred and fifty kilometres an hour. [4] Designers use computers to test every turn, and the rides must pass many safety checks.\n\nDespite all this technology, the old funfair is still alive. [5] Every summer, small fairs with simple games and sweets arrive in towns and villages.",
           "sentences": [
-            "At first, they were only a part of the market days.",
-            "Most of these were built near large cities or at the seaside.",
-            "Those fairs sometimes stay for just a week before they move on.",
-            "People paid a few coins to play games or to win a prize.",
+            "It was always very difficult to find an empty space.",
+            "That is why the tickets cost so much today.",
             "Safety is the most important thing for the people who build them.",
-            "It was always very difficult to find an empty space."
+            "Those fairs sometimes stay for just a week before they move on.",
+            "Most of these were built near large cities or at the seaside.",
+            "People paid a few coins to play games or to win a prize.",
+            "At first, they were only a part of the market days.",
+            "The first roller coasters were made of wood and stone."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "G",
               "explanation": "At first, funfairs were part of the market days, which leads to the example from the Middle Ages."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "F",
               "explanation": "People paid coins to play games and win prizes, which shows the entertainment becoming more important."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "E",
               "explanation": "The big amusement parks were built near large cities, and families could then spend a whole day there."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "C",
               "explanation": "Safety is the most important thing, and the next sentence says designers test every turn."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "D",
               "explanation": "Those fairs stay for a week and then move on, which links to the small fairs in towns every summer."
             }
           ]
@@ -731,6 +738,22 @@
                   {
                     "speaker": "f",
                     "text": "Thirty pounds for adults and twenty for children under twelve."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Twenty pounds for a child! I have two children, aged eight and ten, and my wife is coming too. How much will that be altogether?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Two adults and two children is one hundred pounds. But we have a family ticket for eighty pounds, so you save twenty."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is much better. Can I buy it here?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, at this window. The family ticket is valid all day, including the fireworks."
                   }
                 ]
               },
@@ -775,6 +798,22 @@
                   {
                     "speaker": "m",
                     "text": "At eight, but the last ride starts at half past seven."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Half past seven is early. I wanted to ride the big wheel when the sun sets. Does it close before that?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, the big wheel runs until the park closes at eight. But if you want to ride the last roller coaster, you must be in the line at seven, or you will miss it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks. We will go to the roller coaster first, and the big wheel afterwards."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good plan. Enjoy the evening, and don't forget the fireworks in the main square."
                   }
                 ]
               },
@@ -819,6 +858,22 @@
                   {
                     "speaker": "f",
                     "text": "Yes, and I got soaked, so I had to buy a dry T-shirt."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Did you lose your bag as well? I saw you at the shop with a plastic bag."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, I never lost my bag. That is my wet clothes. The slide is great, but the water splashes everywhere. I did not buy the T-shirt because of the design, though it has a cute dragon on it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Was the slide very long?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "About forty metres, with three big curves. You must go! But take a towel with you."
                   }
                 ]
               },
@@ -863,6 +918,22 @@
                   {
                     "speaker": "m",
                     "text": "I had a big lunch, and I think that it would make me feel ill."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, I thought you were afraid of heights. Last time you did not go on the Space Wheel."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, heights are not a problem for me. I just ate two burgers and a big ice cream. If I ride now, I will be sick. I have my ticket, so I will go later."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good idea. Shall we have a drink on the bench until you feel better?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, please. A glass of water would be perfect."
                   }
                 ]
               },
@@ -907,6 +978,22 @@
                   {
                     "speaker": "f",
                     "text": "At the shooting game near the entrance. I needed three tries."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Three tries! That is not bad. My friend needed ten tries, and he did not win anything. Was it expensive?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Each try costs two pounds, so I paid six pounds. Five tries would have been too much. I decided to stop after the third one if I did not win."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What will you do with the bear? It is as big as you!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I will give it to my little cousin. She has a birthday next week, and she loves teddy bears."
                   }
                 ]
               },
@@ -951,6 +1038,22 @@
                   {
                     "speaker": "m",
                     "text": "Definitely on a weekday. The queues are much shorter then."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Are the tickets cheaper on weekdays too? And what about the weather?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The tickets cost the same every day, and the weather is the same, of course. The only difference is the queues. On Saturday, you wait for an hour for the big roller coaster. On Tuesday, ten minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I will take a day off work. My children will not mind missing school for one day!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Ha, ha. Perhaps you should ask the school first."
                   }
                 ]
               },
@@ -995,6 +1098,22 @@
                   {
                     "speaker": "f",
                     "text": "No, thank you. I hate being scared, so I would rather go on the carousel."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "But it is only a game, and the actors are friendly. They give you a sweet when you come out."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I do not want to eat sweets in the haunted house. I prefer to have an ice cream after the carousel. The carousel has beautiful horses, and the music is lovely."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "All right, I will come with you. The haunted house can wait until I come with my brother."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good idea. He loves scary things, doesn't he?"
                   }
                 ]
               },
@@ -1048,6 +1167,22 @@
                   {
                     "speaker": "m",
                     "text": "Thanks. Which is the best one for a family with small children?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "For small children, I recommend the Rainbow Train and the Duck Pond. Both are gentle, and children under six can go with a parent. The big rides have a height limit of one metre."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Wonderful. My daughter is five, and she is quite small. Is there a place to eat near these rides?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, the Picnic Garden is just behind the Duck Pond. You can bring your own food, or buy sandwiches there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you very much. We are going to have a lovely day."
                   }
                 ]
               },
@@ -1092,6 +1227,22 @@
                   {
                     "speaker": "f",
                     "text": "Don't worry. You will feel better soon. I will sit next to you, and you can hold my hand."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I know it is silly. It is not the price of the ticket, I paid that this morning. It is the first drop. It looks very high."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is only for ten seconds, and then it is over. Close your eyes if you want, and think about the ice cream that we are going to have afterwards."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "All right. You are right. I will try, but if I scream, please do not laugh."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I promise. I will not make any jokes. Here we go, take a deep breath."
                   }
                 ]
               },
@@ -1136,6 +1287,22 @@
                   {
                     "speaker": "m",
                     "text": "You lucky thing! I am delighted for you. We can go together."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It was in a competition at the supermarket. I only had to write my name on a card and put it in a box. I never win anything, so I am still in shock!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That is wonderful. I am not angry or jealous, I am delighted. We can go every month, and ride all the big roller coasters."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can come with me for free on the first day. The pass has a guest ticket."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great! I will never get tired of this idea. Let us plan it for the summer holidays."
                   }
                 ]
               },
@@ -1180,6 +1347,22 @@
                   {
                     "speaker": "f",
                     "text": "Of course. They are behind the Ghost Train, next to the café."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. I am looking for them because my son is in a hurry. Is it far from here?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, it takes only two minutes. Go straight on, turn left at the carousel, and you will see the Ghost Train. The sign has a picture of a skeleton, so you cannot miss it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great. And is there somewhere to sit near the café? We are tired."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, there are some benches under the trees, and the café sells cold drinks and sandwiches."
                   }
                 ]
               },
@@ -1224,6 +1407,22 @@
                   {
                     "speaker": "m",
                     "text": "Quick, let us find a place near the front!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Today's show is called The Magic Circus, and it lasts forty-five minutes. There will be acrobats, clowns and a famous magician. Please do not take photos with a flash."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is there a place for people with prams? My little sister is with us."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, there is a special area on the left side. The staff will help you. Please put your rubbish in the bins, because our park cleaners work all day to keep the park beautiful."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "We will. Thank you, it sounds great!"
                   }
                 ]
               },
@@ -1268,6 +1467,22 @@
                   {
                     "speaker": "f",
                     "text": "What a pity! I came all this way just to go on that ride."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I am sorry. It says that a technician is repairing it, and it will probably be closed all day. Your ticket is fine, and the park is not too crowded. It is just this ride."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Typical! I travelled two hours by train, and I paid for a day ticket. Can I get my money back?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I do not think so, but there are still fifty other rides. The Space Wheel is excellent, and the water slide is open."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "All right, I will try those. But I will come back in the summer for the roller coaster."
                   }
                 ]
               },
@@ -1305,7 +1520,7 @@
             "turns": [
               {
                 "speaker": "philippa",
-                "text": "Good afternoon, everybody. Today, I would like to tell you about the biggest theme park in my country. It opened thirty years ago, and every year, about five million people come to visit. The park covers an area as big as two hundred football fields. There are more than fifty rides, and the oldest one is a small wooden carousel. The tallest roller coaster is a hundred metres high, and it goes at ninety kilometres an hour. The park employs about three thousand people, and in the summer, many students work there as ride attendants. There are also twenty restaurants and a big firework show every night at ten. If you decide to visit, I recommend buying your tickets online, because it is cheaper. And please, wear comfortable shoes, because you will walk a lot. Most visitors say that the best moment of the day is the fireworks at the end."
+                "text": "Good afternoon, everybody. I have visited this park more than twenty times, so I know it very well. Today, I would like to tell you about the biggest theme park in my country. It opened thirty years ago, and every year, about five million people come to visit. Most of them arrive by car or by bus, and there is a big car park with space for ten thousand cars. The park covers an area as big as two hundred football fields. You can walk from one end to the other in about forty minutes. There are more than fifty rides, and the oldest one is a small wooden carousel. It came from an old fair in the north of the country, and children still love it. The tallest roller coaster is a hundred metres high, and it goes at ninety kilometres an hour. People scream the whole time, but they always want to ride again. The park employs about three thousand people, and in the summer, many students work there as ride attendants. They learn the job in one week, and many of them come back every summer. There are also twenty restaurants and a big firework show every night at ten. The show lasts fifteen minutes, with music and lights over the lake. If you decide to visit, I recommend buying your tickets online, because it is cheaper. You also save time, because you do not need to wait at the ticket office. And please, wear comfortable shoes, because you will walk a lot. The ground is flat, but the park is large. Most visitors say that the best moment of the day is the fireworks at the end."
               }
             ]
           },
@@ -1398,11 +1613,27 @@
               },
               {
                 "speaker": "i",
+                "text": "How long is your shift?"
+              },
+              {
+                "speaker": "o",
+                "text": "Eight hours, with two breaks of thirty minutes. I start at nine, and the park opens at ten, so I check the ride carefully before the first visitors arrive."
+              },
+              {
+                "speaker": "i",
                 "text": "What is the best part of the job?"
               },
               {
                 "speaker": "o",
                 "text": "The smiles. When people come off the ride laughing, I feel really happy. It makes the long, hot days worth it."
+              },
+              {
+                "speaker": "i",
+                "text": "Do you meet famous people?"
+              },
+              {
+                "speaker": "o",
+                "text": "Once, a singer came with her children. She was very friendly, and she asked me to take a photo. I did not recognise her until my colleague told me."
               },
               {
                 "speaker": "i",
@@ -1414,11 +1645,27 @@
               },
               {
                 "speaker": "i",
+                "text": "How do you stay cool?"
+              },
+              {
+                "speaker": "o",
+                "text": "We have a cold-water machine near the exit, and I keep a wet towel around my neck. The best moment is when the ride is closed for cleaning and I sit in the shade."
+              },
+              {
+                "speaker": "i",
                 "text": "Do you ever get nervous people?"
               },
               {
                 "speaker": "o",
                 "text": "All the time. Last week, a boy was crying in the queue. I told him that he did not have to go, but he said that he wanted to try. He loved it in the end."
+              },
+              {
+                "speaker": "i",
+                "text": "What do you say to children who are afraid?"
+              },
+              {
+                "speaker": "o",
+                "text": "I tell them that I am a little afraid of the dark, but that I feel safe here. It helps when they see that adults are afraid too."
               },
               {
                 "speaker": "i",
@@ -1430,11 +1677,35 @@
               },
               {
                 "speaker": "i",
+                "text": "How did you feel when the ride stopped?"
+              },
+              {
+                "speaker": "o",
+                "text": "I was calm, because we practise this every month. But the people were cold and wet, so we gave them blankets and told jokes until the storm passed."
+              },
+              {
+                "speaker": "i",
                 "text": "Would you recommend this job to students?"
               },
               {
                 "speaker": "o",
                 "text": "Yes. You meet many new friends, and the money is good. Just be ready to stand for eight hours a day!"
+              },
+              {
+                "speaker": "i",
+                "text": "What do you do in the winter?"
+              },
+              {
+                "speaker": "o",
+                "text": "I go back to university, where I study engineering. One day I want to design rides, not only operate them."
+              },
+              {
+                "speaker": "i",
+                "text": "Thank you, Ikenna. Is there a message for our listeners?"
+              },
+              {
+                "speaker": "o",
+                "text": "Come in September, when the queues are short and the weather is still warm!"
               }
             ]
           },

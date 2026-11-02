@@ -249,22 +249,24 @@
               "id": "r3-1",
               "prompt": "Why did the writer agree to go?",
               "options": [
-                "To impress his grandfather",
                 "He loves being outside at night",
-                "He was curious about badgers"
+                "His grandfather paid him",
+                "He was curious about badgers",
+                "To impress his grandfather"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He thought it would be boring but agreed because he wanted to impress his grandfather."
             },
             {
               "id": "r3-2",
               "prompt": "What did his grandfather say about badgers?",
               "options": [
+                "Their eyesight is poor",
                 "They are afraid of people",
                 "They only come out in winter",
-                "Their eyesight is poor"
+                "They are easy to see in the dark"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Badgers have terrible eyesight, but their hearing and sense of smell are excellent."
             },
             {
@@ -272,21 +274,23 @@
               "prompt": "How did the writer feel during the first hour?",
               "options": [
                 "Frightened of the dark",
+                "Excited about the night",
                 "Cold and uncomfortable",
-                "Excited about the night"
+                "Angry with his grandfather"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "His legs hurt, he was cold, and nothing happened."
             },
             {
               "id": "r3-4",
               "prompt": "What happened just before they went home?",
               "options": [
+                "His grandfather fell asleep",
                 "Young badgers came out of a hole",
                 "A fox ran across the grass",
                 "His grandfather took a photograph"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "A face appeared from a hole, and then three young badgers began to play on the grass."
             },
             {
@@ -294,10 +298,11 @@
               "prompt": "What does the writer do now?",
               "options": [
                 "Takes photos for a nature magazine",
+                "Takes photographs on his own",
                 "Watches badgers alone at night",
                 "Goes out with his grandfather"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "He goes with his grandfather every Friday."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Beavers return to the valley",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "For about four hundred years, there were no beavers in this part of the country. [1] Last spring, however, two pairs were released into a quiet river valley, and the results have surprised everyone.\n\nBeavers are famous builders. They cut down small trees with their strong teeth and use them to build dams across streams. [2] The pools behind the dams are home to fish, frogs and insects that could not live there before.\n\nNot everyone was pleased at first. Some farmers were afraid that the water would flood their fields. [3] The project manager, Dr Karim Dale, visited each farm to explain the plan, and he promised to move the beavers if there were any problems.\n\nSo far, there have been none. In fact, one farmer has said that the new pools are useful for his cows in dry weather. [4] Visitors can now watch the animals from a wooden platform, although they must be quiet. [5] 'Most people are happy just to see the signs of beavers,' says Dr Dale, 'because they are very shy, especially in daytime.'",
           "sentences": [
-            "The area has also become popular with tourists.",
-            "They had been hunted until the last one disappeared.",
-            "The first beavers arrived by lorry in large wooden boxes.",
-            "Seeing a beaver is not easy, though.",
             "These dams slow the water and make new pools.",
-            "Some even asked the council to stop the project."
+            "Seeing a beaver is not easy, though.",
+            "Some even asked the council to stop the project.",
+            "The first beavers arrived by lorry in large wooden boxes.",
+            "They had been hunted until the last one disappeared.",
+            "The area has also become popular with tourists.",
+            "They will be moved next year to a bigger forest.",
+            "Since then, the farmers have refused to speak to Dr Dale."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "E",
               "explanation": "The sentence explains why there were no beavers, and \"however\" in the next sentence shows the change last spring."
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "A",
               "explanation": "The sentence explains what the dams do, and the next sentence talks about the pools behind them."
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "C",
               "explanation": "The sentence shows how strongly some farmers felt, and the next sentence says that Dr Dale visited each farm."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "F",
               "explanation": "The sentence says the area attracts tourists, and the next sentence describes the platform where visitors watch."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "B",
               "explanation": "The sentence says that seeing a beaver is difficult, and the manager then says that people enjoy seeing signs of them."
             }
           ]
@@ -737,20 +744,28 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "rhoswen",
-                    "text": "How much is a ticket for the nature park?"
-                  },
-                  {
                     "speaker": "colm",
-                    "text": "Adults pay twelve pounds, and children under five go in free."
+                    "text": "Good morning. How can I help you?"
                   },
                   {
                     "speaker": "rhoswen",
-                    "text": "I'm coming with my seven-year-old daughter."
+                    "text": "Two tickets for the zoo, please. One for me and one for my daughter. She’s eight."
                   },
                   {
                     "speaker": "colm",
-                    "text": "Then she pays six pounds."
+                    "text": "An adult ticket is twelve pounds, and children under ten pay six. There’s also a family ticket for twenty-four pounds, but that’s for four people, so it isn’t worth it for you."
+                  },
+                  {
+                    "speaker": "rhoswen",
+                    "text": "No, that’s too much for just the two of us. Does she really have to pay? She’s tall for her age."
+                  },
+                  {
+                    "speaker": "colm",
+                    "text": "I’m afraid so. She’s under ten, so it’s the same price as any other child. Would you like a free map?"
+                  },
+                  {
+                    "speaker": "rhoswen",
+                    "text": "Yes, please. Thank you."
                   }
                 ]
               },
@@ -763,7 +778,7 @@
                   "Twenty-four pounds"
                 ],
                 "answer": 1,
-                "explanation": "The woman pays twelve pounds and her seven-year-old pays six, which makes eighteen."
+                "explanation": "The adult ticket costs twelve and the family ticket twenty-four, but the daughter is under ten and pays the child price, so they pay twelve plus six."
               }
             },
             {
@@ -777,32 +792,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "seamus",
-                    "name": "Seamus",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "hester",
-                    "text": "Is the seal trip at ten o'clock?"
-                  },
-                  {
-                    "speaker": "seamus",
-                    "text": "It used to be, but because of the tide it's at eleven today."
-                  },
-                  {
-                    "speaker": "hester",
-                    "text": "And how long is it?"
-                  },
-                  {
-                    "speaker": "seamus",
-                    "text": "About an hour."
+                    "text": "Good morning, visitors, and welcome to Seabay Wildlife Park. A short message about today’s seal trip. Our boat normally leaves at ten o’clock, and many of you have booked that time. Unfortunately, the captain has to collect fuel this morning, so the first trip will leave an hour later than usual. We had thought of moving it to the afternoon, but the tide is wrong after one. There was also an idea of a twelve o’clock trip, but that boat is already full with a school group. So please come to the harbour gate a little before the new time. Seals are very active just then. Thank you for your patience."
                   }
                 ]
               },
@@ -815,7 +810,7 @@
                   "At twelve o'clock"
                 ],
                 "answer": 0,
-                "explanation": "Because of the tide, the trip is at eleven today."
+                "explanation": "The trip usually leaves at ten, but because of the fuel it will leave one hour later; the afternoon and the full noon boat were rejected."
               }
             },
             {
@@ -841,16 +836,20 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "morgan",
+                    "text": "Tilly, which animal did you like best today? The elephants were huge."
+                  },
+                  {
                     "speaker": "tilly",
-                    "text": "What's your favourite animal at the zoo?"
+                    "text": "They were amazing, and I took a hundred photos of them, but then I got a bit bored. I’d planned to love the penguins most. I’ve wanted to see them for years. But they were asleep all afternoon."
                   },
                   {
                     "speaker": "morgan",
-                    "text": "The penguins. They're so funny when they walk."
+                    "text": "What about the ones on the hill?"
                   },
                   {
                     "speaker": "tilly",
-                    "text": "I prefer the elephants. They're clever and gentle."
+                    "text": "Oh, those! I nearly bought a toy one in the shop. They kept stealing each other’s food and chasing each other round. I laughed so much that I couldn’t take any photos. That was my favourite bit of the day."
                   }
                 ]
               },
@@ -862,8 +861,8 @@
                   "The penguins",
                   "The monkeys"
                 ],
-                "answer": 0,
-                "explanation": "She says she prefers the elephants."
+                "answer": 2,
+                "explanation": "She was bored with the elephants and the penguins were asleep; the animals on the hill, the monkeys, made her laugh and she nearly bought a toy one."
               }
             },
             {
@@ -890,32 +889,40 @@
                 "turns": [
                   {
                     "speaker": "delia",
-                    "text": "Have you seen my binoculars? I left them on a bench by the lake."
+                    "text": "Quincy, I’m looking for my binoculars. Did you see them anywhere?"
                   },
                   {
                     "speaker": "quincy",
-                    "text": "I saw a pair on a table in the café."
+                    "text": "I saw a pair by the lake this morning, on a bench, but I think they belonged to a man with a green hat. Were yours black?"
                   },
                   {
                     "speaker": "delia",
-                    "text": "Brown, with a leather strap?"
+                    "text": "Yes, mine are black with a red strap. I was in the car park earlier, so I’ll look there too."
                   },
                   {
                     "speaker": "quincy",
-                    "text": "That's right."
+                    "text": "Wait. I saw another pair on a table next to a cup of tea. A red strap, I’m sure."
+                  },
+                  {
+                    "speaker": "delia",
+                    "text": "That must be mine! I had a coffee there after the walk."
+                  },
+                  {
+                    "speaker": "quincy",
+                    "text": "Go quickly before somebody takes them."
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "Where did Quincy see the binoculars?",
+                "prompt": "Where are Delia's binoculars?",
                 "options": [
                   "By the lake",
                   "In the café",
                   "In the car park"
                 ],
                 "answer": 1,
-                "explanation": "He says that he saw a pair on a table in the café."
+                "explanation": "The pair by the lake belonged to a man in a green hat; the black ones with a red strap were next to a cup of tea, in the place where she had a coffee."
               }
             },
             {
@@ -942,19 +949,27 @@
                 "turns": [
                   {
                     "speaker": "mairi",
-                    "text": "Shall we go to the reserve on Saturday?"
+                    "text": "Jarrah, are we still going to the wetlands on Saturday? The forecast says rain."
                   },
                   {
                     "speaker": "jarrah",
-                    "text": "I'd like to, but it's going to rain all day."
+                    "text": "Yes, I saw that. I haven’t got a waterproof coat, but I could borrow my brother’s, so that doesn’t matter."
                   },
                   {
                     "speaker": "mairi",
-                    "text": "Does that matter? We have waterproof coats."
+                    "text": "It’s an hour by train, but there’s a direct one."
                   },
                   {
                     "speaker": "jarrah",
-                    "text": "It does for the birds. They hide in the rain, so we won't see much."
+                    "text": "The distance is fine. It’s just that in the rain the birds stay in the reeds and you can’t see anything. We went once and saw nothing but wet grass."
+                  },
+                  {
+                    "speaker": "mairi",
+                    "text": "Hmm, fair. What about Sunday?"
+                  },
+                  {
+                    "speaker": "jarrah",
+                    "text": "Sunday is supposed to be dry. Let’s wait for that."
                   }
                 ]
               },
@@ -967,7 +982,7 @@
                   "Birds hide in the rain"
                 ],
                 "answer": 2,
-                "explanation": "He says that birds hide in the rain, so they would not see much."
+                "explanation": "He can borrow a coat and the journey is fine; his problem is that the birds stay hidden in the reeds when it rains."
               }
             },
             {
@@ -981,28 +996,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "hubert",
-                    "name": "Hubert",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "lettice",
-                    "text": "Can I give the monkeys some of my sandwich?"
-                  },
-                  {
-                    "speaker": "hubert",
-                    "text": "No, please don't. It's against the rules, and human food can make them ill."
-                  },
-                  {
-                    "speaker": "lettice",
-                    "text": "Sorry, I didn't know."
+                    "text": "Welcome to Monkey Hill. Before we go in, a few rules. Please keep your bags closed. And please do not feed the monkeys, even if they look hungry and come right up to you. Some people think it’s safer to give them something, or the animals might bite you. That’s not true. Our monkeys are very gentle. But human food, like crisps, biscuits or sweets, is terrible for their stomachs, and last summer two of them were ill for a week because of it. We do sell a special bag of fruit at the shop, but it is only for the keepers, not for visitors. Thank you, and enjoy the visit."
                   }
                 ]
               },
@@ -1015,7 +1014,7 @@
                   "The zoo sells special food"
                 ],
                 "answer": 0,
-                "explanation": "The man says that human food can make them ill."
+                "explanation": "The monkeys are gentle, so biting is not the reason, and the special fruit is for the keepers; human food made two monkeys ill."
               }
             },
             {
@@ -1042,19 +1041,23 @@
                 "turns": [
                   {
                     "speaker": "gwenllian",
-                    "text": "We could see the seals on Sunday."
+                    "text": "Silvio, about the seals. The website says Saturday morning at seven."
                   },
                   {
                     "speaker": "silvio",
-                    "text": "Sunday's no good. I'm working. What about Saturday?"
+                    "text": "That’s what I thought too, but I phoned them, and they said the early boat is only in summer. In winter there’s one at half past two."
                   },
                   {
                     "speaker": "gwenllian",
-                    "text": "I'm busy on Saturday morning, but the afternoon's fine."
+                    "text": "Half past two on Saturday?"
                   },
                   {
                     "speaker": "silvio",
-                    "text": "Great, let's go on Saturday afternoon."
+                    "text": "Yes, in the afternoon. Sunday is at ten, but you said you’re at your gran’s then."
+                  },
+                  {
+                    "speaker": "gwenllian",
+                    "text": "Right, I’m there all morning. Then Saturday it is. I’ll tell the others."
                   }
                 ]
               },
@@ -1067,7 +1070,7 @@
                   "On Saturday morning early"
                 ],
                 "answer": 1,
-                "explanation": "They both agree on Saturday afternoon."
+                "explanation": "The website was out of date for the early boat, and Sunday is when she visits her gran, so they go on the Saturday boat at half past two."
               }
             }
           ]
@@ -1103,32 +1106,48 @@
                 "turns": [
                   {
                     "speaker": "aoife",
-                    "text": "Hello, I found a small bird on my lawn. It can't fly."
+                    "text": "Ward, look! I found a small bird in the garden. It can’t fly."
                   },
                   {
                     "speaker": "ward",
-                    "text": "Is it injured?"
+                    "text": "Poor thing. What are you going to do?"
                   },
                   {
                     "speaker": "aoife",
-                    "text": "I don't think so. It's very young, and its feathers are soft."
+                    "text": "I thought I’d give it some bread and a bowl of water."
                   },
                   {
                     "speaker": "ward",
-                    "text": "Then don't touch it. Its parents are probably nearby. Watch from a window for an hour, and phone again if they don't come."
+                    "text": "Bread isn’t good for them, honestly. And it will be frightened if you keep touching it."
+                  },
+                  {
+                    "speaker": "aoife",
+                    "text": "Should I take it to a vet, then? There’s one near the station."
+                  },
+                  {
+                    "speaker": "ward",
+                    "text": "A vet might be right if it was bleeding, but this one looks fine. It’s probably a young bird learning to fly, and its parents are nearby."
+                  },
+                  {
+                    "speaker": "aoife",
+                    "text": "So you think I should do nothing?"
+                  },
+                  {
+                    "speaker": "ward",
+                    "text": "Just keep the cat inside and watch from the window. Leave it alone for a few hours."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the man tell the woman to do?",
+                "prompt": "What does Ward think Aoife should do?",
                 "options": [
-                  "Give it bread and water",
-                  "Take it to a vet at once",
+                  "Give the bird bread and water",
+                  "Take the bird to a vet at once",
                   "Leave the bird alone"
                 ],
                 "answer": 2,
-                "explanation": "He says not to touch the bird and to watch from a window for an hour."
+                "explanation": "He says that bread is not good, a vet is only for a bleeding bird, and the young bird’s parents are near, so they should watch and leave it alone."
               }
             },
             {
@@ -1155,19 +1174,31 @@
                 "turns": [
                   {
                     "speaker": "adaline",
-                    "text": "Did you watch the programme about sharks?"
+                    "text": "Did you watch the whale programme last night, Roderick?"
                   },
                   {
                     "speaker": "roderick",
-                    "text": "Yes. It was very good, but I didn't like the music. It was too dramatic."
+                    "text": "I did. The pictures were stunning, especially the ones under the water."
                   },
                   {
                     "speaker": "adaline",
-                    "text": "I thought the pictures were incredible."
+                    "text": "I know! And it was nearly two hours, but I didn’t notice the time."
                   },
                   {
                     "speaker": "roderick",
-                    "text": "They were. I just wish they had left the sea sounds without music."
+                    "text": "Me neither. Honestly, I could have watched three. What I couldn’t stand was the music."
+                  },
+                  {
+                    "speaker": "adaline",
+                    "text": "Really? I thought it was quite nice."
+                  },
+                  {
+                    "speaker": "roderick",
+                    "text": "It was so loud and dramatic that I couldn’t hear the commentator half of the time. I turned the volume down."
+                  },
+                  {
+                    "speaker": "adaline",
+                    "text": "Oh, I hadn’t realised it bothered you."
                   }
                 ]
               },
@@ -1180,7 +1211,7 @@
                   "The length of the film"
                 ],
                 "answer": 1,
-                "explanation": "He says that he did not like the music because it was too dramatic."
+                "explanation": "He loved the pictures and did not mind the length, but the loud, dramatic music stopped him hearing the commentator."
               }
             },
             {
@@ -1207,32 +1238,44 @@
                 "turns": [
                   {
                     "speaker": "marielle",
-                    "text": "Excuse me, is it safe to walk around the lake? I saw a sign about adders."
+                    "text": "Excuse me, Mr Penn. Is it true that the council wants to build a new path through the reserve?"
                   },
                   {
                     "speaker": "penn",
-                    "text": "Yes, but please stay on the reserve paths and wear boots. Adders are shy. They bite only if you step on them."
+                    "text": "Yes, and I’m against it."
                   },
                   {
                     "speaker": "marielle",
-                    "text": "And what should I do if I see one?"
+                    "text": "Really? It would make it easier for visitors with pushchairs."
                   },
                   {
                     "speaker": "penn",
-                    "text": "Stay still and let it move away."
+                    "text": "I agree, and the cost isn’t the issue. The council pays. But the birds nest in that corner in spring. People and dogs would frighten them away."
+                  },
+                  {
+                    "speaker": "marielle",
+                    "text": "Couldn’t you close it in the nesting season?"
+                  },
+                  {
+                    "speaker": "penn",
+                    "text": "We could try, but who would check? I think the old path is enough."
+                  },
+                  {
+                    "speaker": "marielle",
+                    "text": "Fair. Thanks, I’ll sign your petition."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Who is the man?",
+                "prompt": "What does Mr Penn think about the new path?",
                 "options": [
-                  "A worker at the reserve",
-                  "A tourist from the city",
-                  "A school science teacher"
+                  "It would disturb the wildlife",
+                  "It would cost too much money",
+                  "It would be too hard for visitors"
                 ],
                 "answer": 0,
-                "explanation": "He gives rules about the reserve and tells visitors how to behave around snakes."
+                "explanation": "He agrees the path would help visitors and the council would pay, but the birds nest there and people and dogs would frighten them."
               }
             },
             {
@@ -1259,32 +1302,44 @@
                 "turns": [
                   {
                     "speaker": "casey",
-                    "text": "Shall we go to the zoo or the aquarium on Saturday?"
+                    "text": "Torin, shall we go to the beach on Saturday?"
                   },
                   {
                     "speaker": "torin",
-                    "text": "The aquarium is indoors, so we'd be dry if it rains."
+                    "text": "The forecast is awful. Wind and rain all day."
                   },
                   {
                     "speaker": "casey",
-                    "text": "True. And my little brother loves fish."
+                    "text": "The zoo, then? It’s cheap on Saturdays."
                   },
                   {
                     "speaker": "torin",
-                    "text": "Then it's the aquarium."
+                    "text": "Most of it is outdoors, and it’s an hour away. I’d hate to stand in the rain looking at wet lions."
+                  },
+                  {
+                    "speaker": "casey",
+                    "text": "Good point. What about the aquarium? It’s twice the price, and it’s farther than the beach."
+                  },
+                  {
+                    "speaker": "torin",
+                    "text": "True, but everything’s inside, so it doesn’t matter what the weather is doing."
+                  },
+                  {
+                    "speaker": "casey",
+                    "text": "OK, you’ve convinced me. We’ll stay dry all day."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "Where will they go on Saturday?",
+                "prompt": "Why do Casey and Torin choose the aquarium?",
                 "options": [
-                  "To the beach",
-                  "To the zoo",
-                  "To the aquarium"
+                  "It is cheaper than the other places",
+                  "It is closer to their homes",
+                  "It is open whatever the weather"
                 ],
                 "answer": 2,
-                "explanation": "They decide on the aquarium because it is indoors."
+                "explanation": "The aquarium costs more and is farther away, but everything is inside, so the weather does not matter."
               }
             },
             {
@@ -1310,20 +1365,36 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "rubina",
-                    "text": "My cat keeps bringing dead birds into the house. I feel awful."
-                  },
-                  {
                     "speaker": "kenzo",
-                    "text": "Put a bell on her collar. Then the birds can hear her coming."
+                    "text": "Rubina, you look upset. Is it your cat?"
                   },
                   {
                     "speaker": "rubina",
-                    "text": "I tried that, but she took it off."
+                    "text": "Not really. Mimi’s healthy, the vet checked her last week, and she never goes far from the house. It’s what she brings home. Yesterday she caught a little bird, in the kitchen."
                   },
                   {
                     "speaker": "kenzo",
-                    "text": "Then keep her inside in the early morning and evening, when birds are most active."
+                    "text": "Cats do that."
+                  },
+                  {
+                    "speaker": "rubina",
+                    "text": "I know, but I feel terrible. There are so many birds in our street, and I put out seeds for them in winter."
+                  },
+                  {
+                    "speaker": "kenzo",
+                    "text": "Have you tried a bell on her collar?"
+                  },
+                  {
+                    "speaker": "rubina",
+                    "text": "Yes, but she learned to move without making a sound."
+                  },
+                  {
+                    "speaker": "kenzo",
+                    "text": "Hmm. Keep her inside in the morning, when birds are busiest?"
+                  },
+                  {
+                    "speaker": "rubina",
+                    "text": "Good idea. I’ll try that."
                   }
                 ]
               },
@@ -1336,7 +1407,7 @@
                   "Her cat being ill"
                 ],
                 "answer": 0,
-                "explanation": "Her cat keeps bringing dead birds into the house."
+                "explanation": "The cat is healthy and stays near home; Rubina feels terrible because the cat caught a bird in the kitchen."
               }
             },
             {
@@ -1362,20 +1433,28 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "vanessa",
-                    "text": "I'm going on safari next year!"
-                  },
-                  {
                     "speaker": "terence",
-                    "text": "Isn't it very expensive?"
+                    "text": "Vanessa, I hear you’re going on safari. Is it for your photography job?"
                   },
                   {
                     "speaker": "vanessa",
-                    "text": "Yes, but I've been saving for five years. I want to see lions in the wild, not in a cage."
+                    "text": "People think so, but no. I’ll take the camera, but only for fun. My boss didn’t ask me."
                   },
                   {
                     "speaker": "terence",
-                    "text": "I prefer the zoo. It's closer, and you always see the animals."
+                    "text": "Do you have friends there?"
+                  },
+                  {
+                    "speaker": "vanessa",
+                    "text": "My cousin lives in Nairobi, and it will be lovely to see her, but that’s not why I’m going. When I was little, my dad showed me a film of lions walking across the grassland at sunset. I promised myself I’d see them in the wild one day."
+                  },
+                  {
+                    "speaker": "terence",
+                    "text": "Wow. That’s a dream."
+                  },
+                  {
+                    "speaker": "vanessa",
+                    "text": "Exactly. I’ve saved for three years."
                   }
                 ]
               },
@@ -1384,11 +1463,11 @@
                 "prompt": "Why does Vanessa want to go on safari?",
                 "options": [
                   "To visit some friends",
-                  "To take photographs for work",
-                  "To see lions in the wild"
+                  "To see lions in the wild",
+                  "To take photographs for work"
                 ],
-                "answer": 2,
-                "explanation": "She says that she wants to see lions in the wild, not in a cage."
+                "answer": 1,
+                "explanation": "The camera is just for fun and the cousin is a bonus; her dream since childhood is to see lions in the wild."
               }
             }
           ]
@@ -1413,52 +1492,46 @@
             "turns": [
               {
                 "speaker": "bertrand",
-                "text": "Good morning, and welcome to Marshfield Wetland Reserve. My name is Bertrand, and I'm the head warden. The reserve is open daily from eight in the morning until five in the afternoon. Entry costs four pounds, and members get in free. There are three bird hides around the lake. The one near the entrance is the best place for seeing kingfishers. Please speak quietly in the hides, because loud voices frighten the birds. We run guided walks every Saturday, starting at ten o'clock, and each walk lasts about two hours. You can hire binoculars from the shop for three pounds. If you are lucky, you might see an otter at dawn or dusk. Finally, a request: please don't leave any litter. Everything that you bring in, you should take home with you. Thank you, and enjoy your visit."
+                "text": "Good morning, and welcome to Marshfield Wetland Reserve. My name is Bertrand, and I’m the head warden. The reserve is open daily from eight in the morning. In summer we close at seven, but at this time of year it gets dark early, so we lock the gates at five. Please be back at the entrance by then. Now, tickets. An adult ticket costs four pounds. Last year it was three, and some people tell me they’ve heard it will go up to five next year, but for now four is correct. Children under twelve come in free. Next, the hides. We have three of them. The biggest is by the lake, and people like it, but for kingfishers go to the small hide near the entrance. It’s only two minutes from the car park, and the birds sit on the branch above the stream. The one at the far end is good for ducks, not for kingfishers. If you’d like to learn more, we have guided walks. They used to be on Sundays, but now they take place every Saturday, starting at ten in the morning and lasting about an hour. There’s no need to book. Many visitors forget their binoculars. If that’s you, don’t worry. You can hire a pair from the shop, next to the café. Some people think the café has them, but it only sells coffee and cakes. Finally, what will you see? Herons and swans, almost every day. Early in the morning, if you’re lucky and quiet, you can see an otter. Most people expect the most exciting animal to be a deer, but those are in the woods, not near the water. The otters swim near the lake just after dawn. Thank you, and enjoy your visit."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The reserve closes at ___ o'clock in the afternoon",
+              "prompt": "In winter the reserve closes at ___",
               "answer": "five",
-              "accepted": [
-                "5"
-              ],
-              "explanation": "The reserve is open until five in the afternoon."
+              "explanation": "Summer closing time is seven, but in winter they lock the gates at five."
             },
             {
               "id": "l3-2",
-              "prompt": "Entry costs ___ pounds",
+              "prompt": "An adult ticket costs ___ pounds",
               "answer": "four",
-              "accepted": [
-                "4"
-              ],
-              "explanation": "Entry costs four pounds."
+              "explanation": "It was three last year and may be five next year, but now it is four."
             },
             {
               "id": "l3-3",
-              "prompt": "The best hide for kingfishers is near the ___",
+              "prompt": "For kingfishers, choose the hide close to the ___",
               "answer": "entrance",
-              "explanation": "The hide near the entrance is the best place for kingfishers."
+              "explanation": "The big hide is by the lake and the far one is for ducks; the kingfisher hide is near the entrance."
             },
             {
               "id": "l3-4",
-              "prompt": "Guided walks take place every ___",
+              "prompt": "There are guided walks every ___ morning",
               "answer": "Saturday",
-              "explanation": "Guided walks run every Saturday."
+              "explanation": "They used to be on Sundays, but now they take place every Saturday."
             },
             {
               "id": "l3-5",
-              "prompt": "Binoculars can be hired from the ___",
+              "prompt": "You can hire binoculars from the ___",
               "answer": "shop",
-              "explanation": "You can hire binoculars from the shop."
+              "explanation": "The café only sells coffee and cakes; the binoculars come from the shop."
             },
             {
               "id": "l3-6",
-              "prompt": "Visitors might see an ___ at dawn",
+              "prompt": "Early in the morning, visitors may see an ___",
               "answer": "otter",
-              "explanation": "With luck, visitors may see an otter at dawn or dusk."
+              "explanation": "Deer are in the woods, but otters swim near the lake just after dawn."
             }
           ]
         },
@@ -1490,35 +1563,35 @@
             "turns": [
               {
                 "speaker": "anneka",
-                "text": "My guest today is Dirk Olander, a wildlife photographer. Dirk, how did you start?"
+                "text": "Dirk, how did you start taking photographs?"
               },
               {
                 "speaker": "dirk",
-                "text": "My father gave me an old camera for my twelfth birthday, and I took it everywhere. My first photo was of a duck. It was terrible, but I was proud of it."
+                "text": "I didn’t join the photography club at school. I tried, but it met on the same day as football. My father gave me his old camera when I was ten, the kind with a long lens, and I took it into the garden the very next day. A magazine in the library helped me later, but the camera came first."
               },
               {
                 "speaker": "anneka",
-                "text": "What's the hardest part of your job?"
+                "text": "What’s the hardest part of your job?"
               },
               {
                 "speaker": "dirk",
-                "text": "Waiting. Once I spent nine days in a small tent to photograph a rare eagle. In the end, it appeared for ninety seconds."
+                "text": "People think it’s the bags. Yes, my equipment weighs twenty kilos, but you get used to that. And the long flights aren’t pleasant, though I love seeing new places. The real challenge is patience. Animals do what they want, and you wait, sometimes for days, in the cold, without moving."
               },
               {
                 "speaker": "anneka",
-                "text": "Weren't you bored?"
+                "text": "Tell us about your eagle photo."
               },
               {
                 "speaker": "dirk",
-                "text": "Cold, mainly. I learned to bring warm socks and a good book. Boredom is part of the job."
+                "text": "That’s the one I’m proudest of. I waited nine days on a cliff in Scotland. The picture didn’t win a prize, and I didn’t mind that, and I wasn’t in danger, the cliff was safe enough. But the eagle only stayed in view for ninety seconds, and I had to be ready in that very short time. That’s why I remember it so well."
               },
               {
                 "speaker": "anneka",
-                "text": "Have you ever been in danger?"
+                "text": "Do you ever feel in danger?"
               },
               {
                 "speaker": "dirk",
-                "text": "Only once, in Africa, when an elephant walked towards my car. I stayed still, and it just looked at me and left. Most animals want to avoid us."
+                "text": "People ask me that all the time. I’ve had a few small injuries, a bite from a monkey once, but nothing serious. Elephants look scary, though I’m more worried about driving on bad roads. Most animals want to stay away from us. If you stay calm and respectful, they usually walk away."
               },
               {
                 "speaker": "anneka",
@@ -1526,15 +1599,15 @@
               },
               {
                 "speaker": "dirk",
-                "text": "I want them to care. If someone sees a beautiful picture of a forest and thinks, 'I want to protect that,' then I've done my job."
+                "text": "The colours are nice, and I like it when people say wow, but that isn’t my aim. Fear? No, I never want people to be afraid of animals. They aren’t monsters. I hope people think, I want to look after this. My photos are a way to say that the planet is beautiful and that we could lose it."
               },
               {
                 "speaker": "anneka",
-                "text": "What advice would you give to a young person?"
+                "text": "What advice would you give to young people?"
               },
               {
                 "speaker": "dirk",
-                "text": "Begin in your own garden. You'll find insects, birds, even foxes. Learning to see them is the first lesson."
+                "text": "You don’t need an expensive camera. Mine was cheap and second-hand for the first five years. Travelling is great, but it’s not the first step. Begin in your own garden or the park near your house. Watch a bird for an hour. You’ll learn how animals behave, and that will make your photos better."
               }
             ]
           },
@@ -1545,54 +1618,54 @@
               "options": [
                 "He joined a school club",
                 "His father gave him a camera",
-                "He saw a magazine in a library"
+                "He found a magazine in a library"
               ],
               "answer": 1,
-              "explanation": "His father gave him an old camera for his twelfth birthday."
+              "explanation": "He tried the club but it clashed with football; his father gave him a camera at ten, and the magazine came later."
             },
             {
               "id": "l4-2",
               "prompt": "What does he say is the hardest part of his job?",
               "options": [
                 "Carrying heavy equipment",
-                "Waiting for animals",
-                "Travelling to distant places"
+                "Travelling to far places",
+                "Waiting for animals"
               ],
-              "answer": 1,
-              "explanation": "He says the hardest part is waiting."
+              "answer": 2,
+              "explanation": "The bags are heavy and the flights are not nice, but the real challenge is patience while waiting for the animals."
             },
             {
               "id": "l4-3",
-              "prompt": "How long did the eagle stay in view?",
+              "prompt": "Why does he remember the eagle photo so well?",
               "options": [
-                "For ninety seconds",
-                "For nine days",
-                "For about an hour"
+                "The bird stayed for a very short time",
+                "It won him a competition",
+                "He was in danger on the cliff"
               ],
               "answer": 0,
-              "explanation": "After nine days, it appeared for ninety seconds."
+              "explanation": "The picture won nothing and the cliff was safe; he waited nine days for only ninety seconds."
             },
             {
               "id": "l4-4",
               "prompt": "What does he say about danger?",
               "options": [
                 "He has often been hurt",
-                "Elephants are the most dangerous",
-                "Animals usually avoid people"
+                "Animals usually avoid people",
+                "Elephants are the most dangerous"
               ],
-              "answer": 2,
-              "explanation": "He says that most animals want to avoid us."
+              "answer": 1,
+              "explanation": "He has had a few small injuries only, he worries more about bad roads than elephants, and most animals want to stay away."
             },
             {
               "id": "l4-5",
               "prompt": "What does he hope people feel when they see his photos?",
               "options": [
                 "Surprise at the colours",
-                "A wish to protect nature",
-                "Fear of wild animals"
+                "Fear of wild animals",
+                "A wish to protect nature"
               ],
-              "answer": 1,
-              "explanation": "He hopes people will think, \"I want to protect that\"."
+              "answer": 2,
+              "explanation": "He likes the wow but that is not his aim, he does not want fear; he hopes people want to look after the planet."
             },
             {
               "id": "l4-6",
@@ -1603,7 +1676,7 @@
                 "Travel as much as possible"
               ],
               "answer": 0,
-              "explanation": "He says to begin in your own garden."
+              "explanation": "He says an expensive camera is not needed and travelling is not the first step; begin in your garden or park."
             }
           ]
         }

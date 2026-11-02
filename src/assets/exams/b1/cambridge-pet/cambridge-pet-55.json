@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "Why did the writer's grandfather take her to the beach?",
               "options": [
+                "He used to find fossils there",
+                "He wanted her to meet his old friends",
                 "He needed to collect some shells",
-                "He wanted to teach her to swim",
-                "He used to find fossils there"
+                "He wanted to teach her to swim"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He had found fossils there as a boy."
             },
             {
               "id": "r3-2",
               "prompt": "How did the writer feel after two hours on the beach?",
               "options": [
-                "She was ready to stop looking",
+                "She was proud of her grandfather",
                 "She was thrilled with her finds",
+                "She was ready to stop looking",
                 "She was angry with her grandfather"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She was about to give up when something shiny caught her eye."
             },
             {
               "id": "r3-3",
               "prompt": "What did she find?",
               "options": [
-                "A round stone with a spiral pattern",
                 "A large bone from a dinosaur",
-                "A piece of old and shiny glass"
+                "A piece of old and shiny glass",
+                "A silver coin from a very old ship",
+                "A round stone with a spiral pattern"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "It was a round stone with a beautiful spiral pattern."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "How old was the fossil, according to the grandfather?",
               "options": [
                 "About fifty million years",
-                "About one thousand years",
-                "About a hundred and fifty million years"
+                "About a hundred and fifty million years",
+                "About one hundred and five thousand years",
+                "About one thousand years"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He says it is about a hundred and fifty million years old."
             },
             {
               "id": "r3-5",
               "prompt": "What did the writer give her grandfather last week?",
               "options": [
+                "A photograph of the two of them",
                 "A photograph of the beach",
                 "A new ammonite in a box",
                 "A book about geology"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "She gave him a small box with a new ammonite inside."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The king of the dinosaurs",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Tyrannosaurus rex, often called T. rex, is probably the most famous dinosaur of all. [1] It lived about sixty-seven million years ago, in the area that is now North America.\n\nT. rex was about twelve metres long and as heavy as an African elephant. [2] Its head alone was over a metre and a half long, and its teeth were as long as bananas.\n\nFor a long time, people thought that T. rex was a slow animal. [3] Scientists now believe that it could probably walk quickly but could not run very fast.\n\nThe arms of T. rex were very short, and they could not even reach its mouth. [4] They were strong, however, and may have helped the animal to hold its food.\n\nThe first almost complete skeleton was found in 1902. [5] Today, you can see a copy of it in museums all over the world.",
           "sentences": [
-            "It had a huge head with a very powerful bite.",
-            "This is why children everywhere love to draw and read about it.",
             "Its bones were found in rocks in places such as Canada and the United States.",
-            "For many years, scientists did not know what they were for.",
             "It was sold to a museum for a large amount of money.",
-            "New studies show that this idea may not be correct."
+            "This is why children everywhere love to draw and read about it.",
+            "New studies show that this idea may not be correct.",
+            "Some of them were over forty metres long.",
+            "Plants also grew much taller than they do today.",
+            "It had a huge head with a very powerful bite.",
+            "For many years, scientists did not know what they were for."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "A",
               "explanation": "The sentence about bones found in Canada and the United States follows the place where it lived."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "G",
               "explanation": "A huge head with a powerful bite follows the animal's size, and the next sentence gives the head's length."
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "D",
               "explanation": "New studies show the idea of a slow animal may be wrong, so scientists now believe it could walk quickly."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "H",
               "explanation": "Scientists did not know what the short arms were for, and the next sentence says they were strong."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "B",
               "explanation": "The skeleton sold to a museum explains why a copy can be seen in museums today."
             }
           ]
@@ -717,24 +724,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Azra",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How big was the biggest dinosaur?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Some were over thirty metres long, which is longer than three buses."
+                    "text": "Welcome to the dinosaur hall, everybody. Let me start by asking you to think about how big the dinosaurs were. Many children think they were as small as a horse, three metres long, like the little one next to the door, but that was a baby. The famous T-rex was about twelve metres, as long as a bus, and it is the one that everybody remembers. But the real giants were the plant-eaters. This skeleton behind me, with its long neck, was more than thirty metres from nose to tail, longer than two buses. Please stay behind the rope."
                   }
                 ]
               },
@@ -747,21 +742,13 @@
                   "Nearly twelve metres"
                 ],
                 "answer": 1,
-                "explanation": "She says some were over thirty metres long."
+                "explanation": "Three metres is a baby and twelve metres is the tyrannosaurus; the long-necked giant behind the guide was more than thirty metres."
               }
             },
             {
               "id": "l1-2-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Astrid",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Atticus",
@@ -773,12 +760,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Did you buy a ticket for the museum?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "Yes, but I left it on the kitchen table, so I need to go back home."
+                    "text": "Hi, it’s Atticus. I’m standing at the museum entrance and the girl at the desk says I need my ticket to go in. I thought I had left it in the museum shop yesterday, when I bought that postcard, so I phoned them, but they haven’t got it. I also searched the bus seat, and the driver said nobody handed anything in. I think I know now. When I was making coffee this morning, I put it down beside the cups in the kitchen, and then I left in a hurry. Could you bring it to me, please. Hurry up!"
                   }
                 ]
               },
@@ -791,21 +774,13 @@
                   "On the bus seat"
                 ],
                 "answer": 0,
-                "explanation": "He left it on the kitchen table."
+                "explanation": "The shop and the bus did not have it; he left it beside the cups where he made coffee, in the kitchen."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Baptiste",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Benita",
@@ -817,12 +792,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Did you like the dinosaur exhibition?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "It was brilliant, especially the moving models, but it was far too crowded."
+                    "text": "Hi, Baptiste, it’s Benita. I wanted to tell you about the dinosaur exhibition. It was good, I think, but there were way too many people. You couldn’t move in the first room, and children were screaming. I wouldn’t go on a Saturday again. The models that move were great, and not scary like I’d feared, and the ticket price, nine pounds, was fair. But I couldn’t see anything because of the crowd, so my advice is to go on a weekday morning. Anyway, call me back and tell me when you’re free."
                   }
                 ]
               },
@@ -835,7 +806,7 @@
                   "The ticket price"
                 ],
                 "answer": 0,
-                "explanation": "She says that it was far too crowded."
+                "explanation": "She liked the moving models and thought the price was fair; what she disliked were the crowds on Saturday."
               }
             },
             {
@@ -862,38 +833,38 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What did you find on the beach this morning?"
+                    "text": "Did you find that fossil, Avery? Your sister said you were looking on the beach."
                   },
                   {
                     "speaker": "m",
-                    "text": "Only a few shells, but my sister found a piece of an old fossil."
+                    "text": "I was looking, but it was my sister who found it. She was walking behind me, and I was going to turn over a rock, but she saw it first. It’s a beautiful shell, pressed in the stone."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "My brother found one last month, but it was broken. I think I’ll go with him next weekend and see."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good luck. Tell him to look after the tide."
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "Who found a fossil?",
+                "prompt": "Who found the fossil on the beach?",
                 "options": [
-                  "The man himself",
-                  "The man's sister",
+                  "Avery",
+                  "Avery's sister",
                   "The woman's brother"
                 ],
                 "answer": 1,
-                "explanation": "He says that his sister found a piece of an old fossil."
+                "explanation": "She says her brother found a broken one last month, and he was about to turn a rock, but his sister saw it first."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Bence",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Bethan",
@@ -905,12 +876,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Are you coming to the fossil talk on Friday?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I cannot, I am afraid. I have a swimming lesson at six."
+                    "text": "Hi, Bence, it’s Bethan. I’m so sorry, but I can’t come to the talk about fossils tonight. I really wanted to. I had planned to go to the cinema with my cousin afterwards, so that wouldn’t have been a problem, and my mum is going to look after my little brother. But my swimming teacher has moved our lesson to six o’clock, and it’s the last before the competition. I can’t miss it. Could you record the talk on your phone, please. Thanks so much, you’re a star."
                   }
                 ]
               },
@@ -923,7 +890,7 @@
                   "She has a swimming lesson"
                 ],
                 "answer": 2,
-                "explanation": "She says that she has a swimming lesson at six."
+                "explanation": "The cinema was for after the talk and her mum will look after her brother; the reason is that the swimming lesson moved to six."
               }
             },
             {
@@ -950,11 +917,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What is that big yellow thing on your desk?"
+                    "text": "Bertie, your son’s dinosaur skull looks amazing. Did you buy it in that shop on the high street?"
                   },
                   {
                     "speaker": "m",
-                    "text": "It is a model of a dinosaur skull. I made it myself from paper."
+                    "text": "No, they’re too expensive. And we didn’t find it on the beach either, we’re not that lucky. He made it from paper and glue, over two weekends. It’s all in layers, and he painted it white."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It looks so real!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He spent hours on the teeth. He wants to take it to school on Monday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "He’ll be the star of the class."
                   }
                 ]
               },
@@ -967,7 +946,7 @@
                   "He found it on a beach"
                 ],
                 "answer": 0,
-                "explanation": "He says that he made it himself from paper."
+                "explanation": "The shop was too expensive and they did not find it on the beach; the boy made it from paper and glue."
               }
             },
             {
@@ -994,11 +973,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Shall we meet at the entrance to the museum?"
+                    "text": "Astrid, where shall we meet on Saturday for the fossil walk? At the entrance of the park?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Let us meet in the café instead, because it might rain."
+                    "text": "There’ll be a lot of people there, and it’s hard to find anyone. I’d prefer the car park, but the guide said it will be closed for building work."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about the little place on the corner?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, let’s do that. We can have a hot chocolate while we wait for the others, and it’s warm inside. Shall I book a table for ten o’clock?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Perfect."
                   }
                 ]
               },
@@ -1011,7 +1002,7 @@
                   "In the car park"
                 ],
                 "answer": 1,
-                "explanation": "She says to meet in the café, in case it rains."
+                "explanation": "The entrance will be crowded and the car park will be closed; they choose the place on the corner, where they can have a hot chocolate, which is a café."
               }
             }
           ]
@@ -1047,24 +1038,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Good morning, children. This museum is home to the biggest dinosaur skeleton in the country."
+                    "text": "Well, here we are in the museum, Avery. You didn’t want to come, did you?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Wow! Can we touch the bones?"
+                    "text": "I expected it to be boring, and I am surprised, honestly. It isn’t as crowded as I feared, and it’s quiet. Look at that huge skeleton!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I told you. The guide is excellent too."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He is. I learnt more in an hour than in a month at school. I think I’ll bring my little cousins here next week."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wonderful. And you were going to stay at home!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does the conversation take place?",
+                "prompt": "What does Avery think about the museum?",
                 "options": [
-                  "In a classroom",
-                  "In a toy shop",
-                  "In a museum"
+                  "It is too crowded",
+                  "It is better than he expected",
+                  "It is too noisy"
                 ],
-                "answer": 2,
-                "explanation": "The woman says that this museum is home to the biggest skeleton."
+                "answer": 1,
+                "explanation": "He expected it to be boring and busy, but it is quiet and he learned a lot, so it is better than he expected."
               }
             },
             {
@@ -1091,24 +1094,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I lost my bag with all my fossil samples in it!"
+                    "text": "I missed the talk about fossils, Benita. The bus was late."
                   },
                   {
                     "speaker": "f",
-                    "text": "Stay calm. Let us ask at the lost property desk."
+                    "text": "Oh no, you were looking forward to it. Are you upset?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A bit annoyed at the bus, not at myself, it wasn’t my fault. And I can’t say that I lost anything important, I’d only have taken notes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what will you do?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "They are putting a video on the website tomorrow. I’ll watch it at home with a tea, and pause it when I want. Probably it’s even better."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s a relief."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the man's problem?",
+                "prompt": "How does Baptiste feel about missing the talk?",
                 "options": [
-                  "He has broken a fossil",
-                  "He has lost his samples",
-                  "He has missed the talk"
+                  "Angry with himself",
+                  "Sad about losing the notes",
+                  "Calm because he can watch it later"
                 ],
-                "answer": 1,
-                "explanation": "He says that he lost his bag with all his fossil samples."
+                "answer": 2,
+                "explanation": "He is a little annoyed with the bus but not with himself, and he does not lose anything because a video will be online, so he is calm."
               }
             },
             {
@@ -1135,24 +1154,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I won the school prize for my dinosaur drawing!"
+                    "text": "Bence, I got first prize in the science competition!"
                   },
                   {
                     "speaker": "m",
-                    "text": "Congratulations! I am so pleased for you. I always thought it was the best one."
+                    "text": "Brilliant, Bethan! I am really pleased for you, you deserve it. You worked on it for months."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I was afraid you’d be sad because you entered too. I know your result wasn’t as good."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not at all. I’m not jealous, I’m delighted. My project wasn’t as good as yours, and I’m not worried about it. I’ll try again next year. Tonight we should celebrate."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thank you, you’re a true friend."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Bence feel about Bethan's success?",
                 "options": [
-                  "Pleased for her success",
-                  "Sorry about the result",
-                  "Worried about his own work"
+                  "Pleased for her",
+                  "Worried about his own result",
+                  "Jealous of her prize"
                 ],
                 "answer": 0,
-                "explanation": "He congratulates her and says it was the best drawing."
+                "explanation": "She thinks he might be sad about his own result, but he says he is delighted for her and not jealous."
               }
             },
             {
@@ -1179,24 +1210,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Could you tell me how to get to the fossil hall, please?"
+                    "text": "Excuse me, how do I get to the fossil hall? Is it this way?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Go straight on, and it is the second door on your right."
+                    "text": "It’s upstairs, to the left. Are you meeting somebody there? It gets busy."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I’m on my own. And I don’t have a camera, I’ll just look. They have a huge fish from three hundred million years ago, and I’ve dreamed of seeing it since I was little."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’ll love it. It’s behind the big glass door."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you so much. I’m so excited!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man want to know?",
+                "prompt": "Why does Bertie want to go to the fossil hall?",
                 "options": [
-                  "The price of a museum ticket",
-                  "The time of the next talk",
-                  "The way to the fossil hall"
+                  "To meet a friend",
+                  "To see a special fossil",
+                  "To take some pictures"
                 ],
-                "answer": 2,
-                "explanation": "He asks how to get to the fossil hall."
+                "answer": 1,
+                "explanation": "She asks if he is meeting someone and he says he is alone with no camera; he wants to see the huge fish that he has dreamed about."
               }
             },
             {
@@ -1223,24 +1266,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Today, I am showing you how scientists clean a fossil with tiny brushes."
+                    "text": "Watch this, Axel. I put the stones in this tray, add water, and the small bones float to the top."
                   },
                   {
                     "speaker": "m",
-                    "text": "That looks very slow and difficult."
+                    "text": "Really? I thought you needed a week and some special tools."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s not hard, you can learn it in a minute. I used to look through the sand with my fingers, for hours."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So this is much quicker. You must finish in half the time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, I do. Would you like to try?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Absolutely. It’s brilliant."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Axel think about Aubrey's method?",
                 "options": [
-                  "Showing a method to a group",
-                  "Asking for some help",
-                  "Telling a joke to a friend"
+                  "It is too slow",
+                  "It is hard to learn",
+                  "It saves a lot of time"
                 ],
-                "answer": 0,
-                "explanation": "She says that she is showing them how scientists clean a fossil."
+                "answer": 2,
+                "explanation": "He first expects it to be slow and hard to learn, but she says it takes a minute to learn and he sees it makes the work half as long."
               }
             },
             {
@@ -1267,24 +1326,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am sorry, but the dinosaur film is sold out for tonight."
+                    "text": "Is that the new dinosaur film on at the cinema? I’d love to see it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Oh dear. Do you have tickets for tomorrow?"
+                    "text": "Me too. Shall we buy tickets online tonight?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The tickets are the same price at the desk, and we don’t need to hurry. Tomorrow evening is free for me, and it’s Friday, so there’s no school the next day."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We could go at the weekend, but it will be full."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Exactly. Tomorrow, then. I’ll buy popcorn."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman's next question about?",
+                "prompt": "What do Atticus and Astrid agree to do about the film?",
                 "options": [
-                  "The length of the film",
-                  "The price of a seat",
-                  "Tickets for tomorrow"
+                  "See it tomorrow",
+                  "Wait for the weekend",
+                  "Buy tickets online tonight"
                 ],
-                "answer": 2,
-                "explanation": "She asks if there are tickets for tomorrow."
+                "answer": 0,
+                "explanation": "Tickets are the same price at the desk and the weekend will be crowded, so they decide to go tomorrow evening."
               }
             }
           ]
@@ -1309,52 +1380,52 @@
             "turns": [
               {
                 "speaker": "marguerite",
-                "text": "Hello, everyone, and welcome to our fossil workshop. A fossil is the remains of a plant or an animal that lived a very long time ago. Most fossils are found in a kind of rock called limestone. When an animal died, its body was sometimes covered by mud, and over millions of years, the mud became hard stone. The soft parts of the animal, such as the skin, usually disappeared, but the bones and the shells stayed. This is why most fossils that we find are teeth, bones and shells. The biggest fossil ever discovered was a plant, a tree that was over thirty metres tall. Some fossils are very small, and you need a microscope to see them. To find fossils, the best places are beaches with high cliffs, because the sea washes the rocks away and shows what is inside. Always wear a hard hat there, and never dig at the bottom of a cliff. Remember to bring a notebook so that you can write down where you found each fossil."
+                "text": "Hello, everyone, and welcome to our fossil workshop. A fossil is the remains of a plant or an animal that lived a very long time ago. Most fossils are found in a type of rock which is called limestone. You will also find some in sandstone, but limestone is the best for the type of fossils that we can look for here. How does a fossil form? Let me explain. When an animal dies in water, its body goes down to the bottom. The mud covers it. Over millions of years, more mud arrives on top, and the pressure is very strong. The mud slowly becomes stone. The bones are inside, and they are not lost. Soft parts are different. Skin and muscles are not strong, so in most cases they disappeared completely over time. We rarely find them. Many people think that the largest fossil ever found was a dinosaur, but I read that it was a tree. It was a giant tree, and it was so long that they could not move it. Today, you will not find anything that big. Let me give you a few rules for the afternoon. First, safety. The cliffs are high and stones can fall, so you must wear a hard hat. I will give you one. You do not need boots, ordinary shoes are fine. Second, take care of what you find. Take a notebook and write down where you found each fossil, and the date. Some of you have a camera, and that is good for photographs, but the notebook is what scientists use. Without that information, a fossil is only a stone. I hope you have a great afternoon, and don’t forget to ask me questions."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Most fossils are found in a rock called ___",
+              "prompt": "Most fossils are found in a type of rock called ___",
               "answer": "limestone",
-              "explanation": "A kind of rock called limestone."
+              "explanation": "Sandstone has some fossils too, but limestone is the best here."
             },
             {
               "id": "l3-2",
-              "prompt": "The mud slowly became ___",
+              "prompt": "After millions of years the mud turns into ___",
               "answer": "stone",
               "accepted": [
                 "rock"
               ],
-              "explanation": "Over millions of years, the mud became hard stone."
+              "explanation": "The mud slowly becomes stone because of the pressure."
             },
             {
               "id": "l3-3",
-              "prompt": "Skin usually ___",
+              "prompt": "Soft parts like skin usually ___ over time",
               "answer": "disappeared",
-              "explanation": "The soft parts, such as the skin, usually disappeared."
+              "explanation": "Skin and muscles are not strong, so they usually disappear."
             },
             {
               "id": "l3-4",
-              "prompt": "The largest fossil was a ___",
+              "prompt": "The biggest fossil that was ever found came from a ___",
               "answer": "tree",
               "accepted": [
                 "plant"
               ],
-              "explanation": "The biggest fossil ever discovered was a plant, a tree."
+              "explanation": "Many people think it was a dinosaur, but it was a giant tree."
             },
             {
               "id": "l3-5",
-              "prompt": "Visitors should wear a hard ___ near cliffs",
+              "prompt": "Visitors must put on a hard ___ because of the cliffs",
               "answer": "hat",
-              "explanation": "Always wear a hard hat there."
+              "explanation": "The cliffs are high and stones can fall, so a hard hat is needed; ordinary shoes are fine."
             },
             {
               "id": "l3-6",
-              "prompt": "Write down where you found each fossil in a ___",
+              "prompt": "The place and date of each find go in a ___",
               "answer": "notebook",
-              "explanation": "Bring a notebook so you can write where you found it."
+              "explanation": "A camera is good, but scientists use a notebook to write where and when."
             }
           ]
         },
@@ -1386,51 +1457,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Atticus, you have a famous collection of fossils. How did it begin?"
+                "text": "Atticus, you have a famous collection of fossils. How did it start?"
               },
               {
                 "speaker": "c",
-                "text": "When I was ten, I found a small shell fossil on a school trip. My teacher said it was a million years old, and from that day I was hooked."
+                "text": "It started when I was ten. I didn’t go to a big museum, we lived far from one, and I hadn’t read a book about dinosaurs yet. I was playing on the beach and I found a little shell in a stone. It was like magic. I took it home in my pocket, and I still have it."
               },
               {
                 "speaker": "i",
-                "text": "How many fossils do you have now?"
+                "text": "Where do you keep your best pieces?"
               },
               {
                 "speaker": "c",
-                "text": "More than three thousand. Most of them are in boxes in my garage, but the best ones are in the glass cases in my living room."
+                "text": "You’d think they are in boxes in the garage, and that’s where the rubbish is. The ones I love are in glass cases in my living room, with a lamp above each. My wife says it’s like living in a museum. And no, the museum doesn’t have a room for me, though they have asked me many times."
               },
               {
                 "speaker": "i",
-                "text": "Which one is your favourite?"
+                "text": "You have a favourite, a fish. Why?"
               },
               {
                 "speaker": "c",
-                "text": "A tiny fish, only the size of my thumb. You can see every bone, even the eyes. It was found in a quarry in Germany."
+                "text": "It’s not the most expensive, I got it for a very small price in a market, and it’s not the largest either. It’s the details. You can see every bone, even the tiny ones in the tail, and the scales. It’s as if it swam yesterday. That’s what makes me happy when I look at it."
               },
               {
                 "speaker": "i",
-                "text": "Have you ever been in danger?"
+                "text": "You had an accident once. What did you learn?"
               },
               {
                 "speaker": "c",
-                "text": "Once. I was digging below a cliff when a large rock fell next to me. Luckily, I was wearing a helmet. Since then, I have always worked with a friend."
+                "text": "I was digging in a cliff, on my own, and the ground fell. I broke my leg and waited for three hours until somebody came. I bought stronger tools after that, but the tools didn’t matter. Nor do I avoid cliffs, I’d miss them too much. The lesson was never to go alone. Now I always have a friend with a phone."
               },
               {
                 "speaker": "i",
-                "text": "Do you ever sell fossils?"
+                "text": "What do you do with your fossils?"
               },
               {
                 "speaker": "c",
-                "text": "Never. I think they belong to everyone. I lend many of them to schools, so that children can touch them."
+                "text": "I don’t sell them to museums, it would feel wrong. And I give some away to friends, but only the common ones. The real joy is lending to local schools. The children touch them, ask questions, and some of them become scientists. That’s why I do it."
               },
               {
                 "speaker": "i",
-                "text": "What advice do you have for beginners?"
+                "text": "What would you say to a beginner?"
               },
               {
                 "speaker": "c",
-                "text": "Start in your own area. Ask at the local museum where people find fossils, and join a club. You will learn faster with other people."
+                "text": "Join a club. The members will teach you, show you the best places and tell you what you have found, so you learn in months, not years. Don’t buy fossils in a shop, because that is not the same as finding them, and you don’t need to travel abroad. There are fossils near almost every town."
               }
             ]
           },
@@ -1444,7 +1515,7 @@
                 "He read a book about dinosaurs"
               ],
               "answer": 1,
-              "explanation": "He found a small shell fossil on a school trip."
+              "explanation": "He did not visit a museum or read a book; he found a little shell in a stone on the beach when he was ten."
             },
             {
               "id": "l4-2",
@@ -1455,7 +1526,7 @@
                 "In a room at the museum"
               ],
               "answer": 1,
-              "explanation": "The best ones are in the glass cases in his living room."
+              "explanation": "The garage holds only the rubbish and the museum has no room for him; the best ones are in glass cases in his living room."
             },
             {
               "id": "l4-3",
@@ -1466,7 +1537,7 @@
                 "It is the biggest in his collection"
               ],
               "answer": 0,
-              "explanation": "You can see every bone, even the eyes."
+              "explanation": "It was not expensive or the largest; he likes the fish because every bone and scale can be seen."
             },
             {
               "id": "l4-4",
@@ -1477,7 +1548,7 @@
                 "To always work with a friend"
               ],
               "answer": 2,
-              "explanation": "Since then, he has always worked with a friend."
+              "explanation": "The tools did not matter and he does not avoid cliffs; the lesson was never to go alone."
             },
             {
               "id": "l4-5",
@@ -1488,18 +1559,18 @@
                 "He gives them to friends"
               ],
               "answer": 1,
-              "explanation": "He lends many of them to schools."
+              "explanation": "He does not sell them and gives only common ones to friends; he lends some to local schools."
             },
             {
               "id": "l4-6",
-              "prompt": "What advice does he give to beginners?",
+              "prompt": "Why does he advise beginners to join a club?",
               "options": [
-                "Join a club to learn faster",
-                "Buy fossils from a shop",
-                "Travel abroad to find them"
+                "Members teach each other",
+                "Clubs sell cheap fossils",
+                "Clubs have the best cliffs"
               ],
               "answer": 0,
-              "explanation": "Join a club; you will learn faster with other people."
+              "explanation": "People will show you the places and tell you what you found, so you learn faster; a shop or travelling abroad is not needed."
             }
           ]
         }

@@ -17,4 +17,6 @@ Short version:
 6. Blind solve with `sheet` and `grade`; change every item that disagrees.
 7. `npm run lint`, `npm test`, `npm run build`.
 
+Listening must be as long and as hard as the real paper: follow "Listening difficulty" in `docs/authoring-exams.md` (script lengths, distractors in the script, paraphrased keys).
+
 Never copy official papers. Only Cambridge B1 Preliminary is offered in the UI.

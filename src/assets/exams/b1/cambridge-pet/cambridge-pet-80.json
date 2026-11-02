@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "Why did the writer join the radio station?",
               "options": [
-                "A friend said they needed someone",
                 "Her teacher chose her",
-                "She wanted to play music"
+                "She wanted to play music",
+                "A friend said they needed someone",
+                "She won a school prize"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Her friend Hana told her they needed a new presenter."
             },
             {
               "id": "r3-2",
               "prompt": "How did she feel the first time on air?",
               "options": [
+                "Embarrassed about her voice",
+                "Pleased with the sound of her voice",
                 "Bored with the music",
-                "Proud of herself",
-                "Embarrassed about her voice"
+                "Proud of herself"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Her voice sounded so high that she wanted to hide under the table."
             },
             {
               "id": "r3-3",
               "prompt": "Which part of the programme does she like best?",
               "options": [
+                "Writing the plan",
                 "Choosing the songs",
-                "The interviews",
-                "Reading the news"
+                "Reading the news",
+                "The interviews"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She says the interviews are the part she enjoys most."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "What did the head teacher once do?",
               "options": [
                 "Won a quiz show",
+                "Played in a rock band",
                 "Worked on the radio",
-                "Played in a rock band"
+                "Studied music in the city"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "The head teacher told her that she used to play in a rock band."
             },
             {
               "id": "r3-5",
               "prompt": "What would she like to do in the future?",
               "options": [
-                "Work at a radio station",
                 "Study music",
-                "Become a teacher"
+                "Become a teacher",
+                "Work at a radio station",
+                "Be a famous singer"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She would like to work for a real radio station."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The story of radio",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Radio is more than a hundred years old. [1] Before that, news travelled slowly, by letter or newspaper.\n\nIn the 1920s, the first radio stations started to broadcast music and news. [2] Families gathered around a big wooden box in the evening to listen together.\n\nDuring the Second World War, radio became even more important. [3] People in many countries listened to the news for hours each day, to find out what was happening.\n\nIn the 1960s, small radios with batteries appeared. [4] Young people could now listen to music wherever they were, on the beach or in the park.\n\nToday, many people listen online or through podcasts. [5] This means that anyone with a microphone and a computer can share their ideas with the world.",
           "sentences": [
-            "It was often the only way to hear important news.",
-            "Some old radios are now worth a lot of money.",
-            "Making programmes has also become much cheaper.",
+            "Television arrived in many homes in the 1950s.",
             "Suddenly, a voice could travel through the air for many kilometres.",
-            "They were light enough to carry in a pocket.",
-            "Soon, most homes in towns had a radio."
+            "She listened to it every night after dinner.",
+            "Some old radios are now worth a lot of money.",
+            "Soon, most homes in towns had a radio.",
+            "It was often the only way to hear important news.",
+            "Making programmes has also become much cheaper.",
+            "They were light enough to carry in a pocket."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "B",
               "explanation": "A voice could travel through the air; the next sentence says that before that, news travelled slowly."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "E",
               "explanation": "Most homes had a radio; the next sentence says families gathered around the box."
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "F",
               "explanation": "Radio was the only way to hear important news; the next sentence says people listened for hours."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "H",
               "explanation": "The small radios were light; the next sentence says young people could listen anywhere."
             },
             {
               "id": "r4-5",
-              "answer": "C",
+              "answer": "G",
               "explanation": "Programmes are cheaper; \"this means\" in the next sentence says anyone can share ideas."
             }
           ]
@@ -715,24 +722,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Boy",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time does your favourite radio programme start?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "At seven. I listen to it while I have my breakfast."
+                    "text": "Hello, listeners, this is Radio Bay with a quick change to tonight’s programme. Our teen music show, Teen Beat, used to start at six, but not this week. Tonight, the news is at six, and straight after it we have a full hour of football talk, because of the big match. Teen Beat comes after that, with seven new songs in its first hour, so please don’t switch off. And do stay with us, because at eight o’clock we have the Friday quiz, with a prize of fifty pounds. If you want to take part, send us a text during the show. Enjoy the evening, everyone!"
                   }
                 ]
               },
@@ -745,7 +740,7 @@
                   "At six"
                 ],
                 "answer": 1,
-                "explanation": "He says it starts at seven."
+                "explanation": "Six is the old time and eight is the quiz; Teen Beat comes after the news and an hour of football talk, so it starts at seven."
               }
             },
             {
@@ -772,11 +767,31 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why is the sound so bad?"
+                    "text": "Why can’t you hear the music, Mia? Is the phone out of battery?"
                   },
                   {
                     "speaker": "b",
-                    "text": "My headphones are broken. I will buy new ones tomorrow."
+                    "text": "No, it’s at eighty per cent. I charged it all night. And the radio app is on, I checked."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Try the volume."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s up. Wait, I’ve found it. One side of the headphones is cut, near the wire. My dog chewed it this morning!"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh no. Lucky it wasn’t the phone."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll borrow my sister’s old ones until I buy new ones."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "There’s a cheap pair in the shop on the corner."
                   }
                 ]
               },
@@ -789,7 +804,7 @@
                   "The radio is switched off"
                 ],
                 "answer": 0,
-                "explanation": "She says her headphones are broken."
+                "explanation": "The phone has plenty of battery and the radio app is on; the problem is that the dog chewed the wire of the headphones."
               }
             },
             {
@@ -816,11 +831,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Have you heard the new podcast about space?"
+                    "text": "Did you hear the new space podcast, Nora? Everyone’s talking about it."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, I listened to the first episode on the train. It was fascinating."
+                    "text": "Yes. I wanted to listen in bed, like always, but I fell asleep after two minutes the last time, so I waited. Our teacher played ten minutes at school on Tuesday, but I missed the beginning."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So when did you hear it?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "On my way to my cousin’s yesterday. The journey takes an hour and the train was almost empty, so I heard the whole thing. Nobody was playing music for once."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Lucky you. I’ll try it on the bus."
                   }
                 ]
               },
@@ -833,7 +860,7 @@
                   "In bed"
                 ],
                 "answer": 0,
-                "explanation": "She says she listened to it on the train."
+                "explanation": "She decided not to listen in bed and missed the start in class; she heard the whole podcast during the hour-long journey on the train."
               }
             },
             {
@@ -860,11 +887,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How long is each episode?"
+                    "text": "Is the radio drama very long? I have to leave at five."
                   },
                   {
                     "speaker": "b",
-                    "text": "About forty minutes, but there is a shorter version of ten."
+                    "text": "The full version lasts forty minutes, but I wouldn’t listen to that today."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is there a shorter one?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, there’s a short one on the website. It says fourteen minutes, but four of those are adverts at the beginning."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then that’s fine. I’ll skip the adverts and listen to the story only."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good idea. It’s a lovely story about a girl and a very old clock, and you’ll finish before you leave."
                   }
                 ]
               },
@@ -877,7 +920,7 @@
                   "Fourteen minutes"
                 ],
                 "answer": 1,
-                "explanation": "He says there is a shorter version of ten minutes."
+                "explanation": "Forty minutes is the full version and fourteen includes four minutes of adverts, so the short story itself is ten minutes."
               }
             },
             {
@@ -904,11 +947,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you want to be on the radio?"
+                    "text": "Are you ready for tomorrow, Dan? You’ll be on the school radio at nine."
                   },
                   {
                     "speaker": "b",
-                    "text": "No way! I would be too nervous."
+                    "text": "I think so. People say I should be excited, and my mum is, but I’m not. I just want to get it over with."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Bored then? You looked bored in the rehearsal."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, I was tired. I couldn’t sleep, and I woke up three times last night. My hands are cold and I keep forgetting my first line."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You must be nervous, I suppose. Take a deep breath. You’ll be great."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thanks. Will you sit with me in the studio?"
                   }
                 ]
               },
@@ -921,7 +980,7 @@
                   "Nervous"
                 ],
                 "answer": 2,
-                "explanation": "He says he would be too nervous."
+                "explanation": "He is not excited and he explains that he was only tired, but his cold hands and the forgotten line show that he is nervous."
               }
             },
             {
@@ -935,24 +994,12 @@
                       "lang": "en-AU",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Which station is this?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "It is the local one. They play lots of music from our region."
+                    "text": "If you are new in town, tune in to Riverside FM, ninety-six point two. Some people think we only play old songs, because their grandparents listen to us, and yes, we play a few in the afternoon. We also have the news every hour, but that takes just five minutes. What makes us different is the rest of the day: bands from our own streets, garage groups, school choirs and folk singers from the villages around. If you play music yourself, send us a recording, and maybe we’ll play it. Riverside FM: the sound of our local area."
                   }
                 ]
               },
@@ -965,7 +1012,7 @@
                   "Only news"
                 ],
                 "answer": 0,
-                "explanation": "She says they play lots of music from the region."
+                "explanation": "Old songs are only a few in the afternoon and the news takes five minutes; most of the day is bands and singers from the town and its villages."
               }
             },
             {
@@ -992,11 +1039,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can I borrow your portable radio?"
+                    "text": "Thanks for lending me your radio, Jamie. I’ll use it at the weekend."
                   },
                   {
                     "speaker": "b",
-                    "text": "Of course. Just remember to put the batteries back in afterwards."
+                    "text": "No problem. But it’s old, so be gentle. I took the batteries out because they were leaking."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Ah, I see. Do I need to clean it? The box looks dusty."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Don’t worry about that, I did it this morning. Just remember to put the batteries in again before you switch it on, or it won’t work."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good. And when do you want it back?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Sunday is fine. I’ll be at my grandma’s today, so there’s no rush."
                   }
                 ]
               },
@@ -1009,7 +1072,7 @@
                   "To clean it carefully"
                 ],
                 "answer": 1,
-                "explanation": "He says she must put the batteries back in afterwards."
+                "explanation": "He has already cleaned it and Sunday is fine for the return; the one thing she must do is put the batteries in again."
               }
             }
           ]
@@ -1045,24 +1108,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "You are on the air. What would you like to say?"
+                    "text": "Good afternoon, you’re on Radio Bay. Who’s calling?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Hello, I want to thank the presenter for playing my favourite song on my birthday."
+                    "text": "Hello, it’s Linda. I didn’t want to complain, though the programme did start late on Monday. And I won’t ask for a prize either."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So how can we help?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I just wanted to tell you that your advice about sleep helped my son. He’s slept all night since he followed your tips, and I’m so grateful."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s wonderful news."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thank you for doing the show. I listen every day while I make breakfast, and my whole family loves it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Why is the woman phoning?",
+                "prompt": "Why does Linda phone the radio show?",
                 "options": [
-                  "To ask for money",
-                  "To complain",
-                  "To say thank you"
+                  "To complain about a late programme",
+                  "To win a prize",
+                  "To thank the presenter for some help"
                 ],
                 "answer": 2,
-                "explanation": "She wants to thank the presenter for the song."
+                "explanation": "She says she does not want to complain or win a prize; her son sleeps well after the advice and she is grateful."
               }
             },
             {
@@ -1089,28 +1168,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "For homework, listen to a radio programme and write three sentences about it."
+                    "text": "For homework, I’d like you to listen to a radio programme and tell us about it."
                   },
                   {
                     "speaker": "b",
-                    "text": "Does it have to be in English?"
+                    "text": "Can we choose it ourselves, Miss?"
                   },
                   {
                     "speaker": "a",
-                    "text": "Yes, it does."
+                    "text": "Yes, any programme you like. It can be about music or history or sport. Then next week, you’ll talk for two minutes in class and I’ll record you, so you can hear your English."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Record me? Oh no. I hate hearing my voice. Choosing the programme is fine, because I listen to the radio all the time, but I get so nervous in front of a microphone."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Don’t worry. You can practise at home first."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "OK, I’ll try. Maybe my mum can listen to me first."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What must the students do?",
+                "prompt": "How does the boy feel about the homework?",
                 "options": [
-                  "Record their voices",
-                  "Listen to a programme",
-                  "Read a magazine"
+                  "Looking forward to speaking in class",
+                  "Worried about being recorded",
+                  "Unsure which programme to choose"
                 ],
                 "answer": 1,
-                "explanation": "The teacher asks them to listen to a radio programme."
+                "explanation": "Choosing a programme is easy for him, but he hates his voice and gets nervous in front of a microphone, so the recording worries him."
               }
             },
             {
@@ -1137,28 +1228,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I think I am going to give up my podcast."
+                    "text": "I think I’m going to stop my podcast, Tom."
                   },
                   {
                     "speaker": "b",
-                    "text": "Why? You have more than a thousand listeners!"
+                    "text": "Really? Is it because nobody listens? You have two hundred listeners."
                   },
                   {
                     "speaker": "a",
-                    "text": "I know, but it takes up too much time."
+                    "text": "No, that’s quite good for me. And it’s free, because I use the school’s microphone."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So what’s wrong?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Every episode takes me a whole weekend to write, record and edit. I haven’t seen my friends for weeks, and I have exams soon."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I see. Maybe you can make one every two weeks. Your listeners would wait for you, I’m sure."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe. I’ll think about it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "Why does the girl want to stop?",
+                "prompt": "Why does Rosa want to stop making her podcast?",
                 "options": [
-                  "It takes too much time",
+                  "It takes up too much of her time",
                   "Nobody listens to it",
                   "It costs too much money"
                 ],
                 "answer": 0,
-                "explanation": "He says it takes up too much time."
+                "explanation": "Two hundred listeners is good and the microphone is free; each episode uses a whole weekend, so she has no time for friends or exams."
               }
             },
             {
@@ -1185,28 +1292,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Please turn the volume down. I cannot hear myself think."
+                    "text": "Sam, it’s ten o’clock. Why are you still awake?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Sorry, Mum. I am revising for my test."
+                    "text": "I’m listening to the radio, Mum. It’s the best part of the show."
                   },
                   {
                     "speaker": "a",
-                    "text": "Then use headphones."
+                    "text": "I don’t mind about the time, because tomorrow is Saturday. And I know you’ll switch off the light when you finish. But your music is shaking the walls. Your sister is trying to sleep."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Sorry! I didn’t realise my music was making that much noise. I’ll use my headphones."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you. That’s much better."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the mother want the boy to do?",
+                "prompt": "What is the mother's problem with Sam?",
                 "options": [
-                  "Go to bed early",
-                  "Switch off the lights",
-                  "Turn the volume down"
+                  "He is awake too late",
+                  "He has left the lights on",
+                  "He is making too much noise"
                 ],
                 "answer": 2,
-                "explanation": "She asks him to turn the volume down and use headphones."
+                "explanation": "She does not mind the late hour or the light; her complaint is that his music shakes the walls while his sister sleeps."
               }
             },
             {
@@ -1233,24 +1348,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like a microphone for recording a podcast."
+                    "text": "I’d like to start recording music at home. What do you recommend?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Then this one would suit you. It is easy to use, and it is on offer this week."
+                    "text": "What do you have already?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "A laptop, and some headphones I got for my birthday. I thought I could buy another, cheaper laptop."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "You don’t need that. The laptop you have is fine. What you need is a microphone. This one is on offer this week, only thirty pounds, half the usual price."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it good?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Very good for beginners. I wouldn’t wait for the winter sales, because the offer ends on Saturday."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, I’ll take it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the man recommend?",
+                "prompt": "What does the man advise the girl to do?",
                 "options": [
-                  "A microphone on offer",
-                  "A cheap laptop",
-                  "Some headphones"
+                  "Buy a microphone now",
+                  "Get a better laptop",
+                  "Wait for the winter sales"
                 ],
                 "answer": 0,
-                "explanation": "He recommends a microphone that is on offer this week."
+                "explanation": "He says a new laptop is not necessary and that the offer ends on Saturday, so she should get a microphone now."
               }
             },
             {
@@ -1277,28 +1412,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you hear the weather forecast?"
+                    "text": "Did you listen to the weather on the radio? They said snow tomorrow."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, it is going to snow tomorrow."
+                    "text": "Snow? In October? I don’t believe it. The forecast on my phone says wind."
                   },
                   {
                     "speaker": "a",
-                    "text": "Great! Perhaps school will be closed."
+                    "text": "The radio man is usually right. It will be very cold, too."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then our picnic is a bad idea. We could have it in my house, but my mum is painting the kitchen."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Let’s wait until next Saturday, a week from now. I’ll tell the others tonight."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good plan. I’d rather have a nice day, and we can bring more food for everyone."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What will the weather be like tomorrow?",
+                "prompt": "What do the friends decide about their picnic?",
                 "options": [
-                  "It will be windy",
-                  "It will rain",
-                  "It will snow"
+                  "Have it indoors",
+                  "Put it off for a week",
+                  "Go ahead as planned"
                 ],
-                "answer": 2,
-                "explanation": "The girl says it is going to snow tomorrow."
+                "answer": 1,
+                "explanation": "The weather will be cold and the house is being painted, so they agree to wait until next Saturday."
               }
             }
           ]
@@ -1323,49 +1470,46 @@
             "turns": [
               {
                 "speaker": "presenter",
-                "text": "Good morning, listeners, and welcome to Morning Waves, the programme that starts your day. I am Sandor. Today we have a special show, because we are celebrating twenty years on the radio. First, at seven thirty, we will have a guest from the town museum, who will tell us about a new exhibition of old radios. At eight o'clock, we will play five songs chosen by you. If you want to take part, send a message through our website before eight. At nine, our weather expert will tell us if the sunny weather will continue this weekend. We also have a competition. The prize is two tickets for a concert, and to win you must answer one question: what is the name of our radio's mascot? The answer is a hedgehog called Spike. Do not go away."
+                "text": "Good morning, listeners, and welcome to Morning Waves, the programme that starts your day. I’m Sandor. Today is a special show, because this radio station is twenty years old. I joined five years later, but I’ve heard so many stories from the first presenters. At first, the studio was a small room above a bakery, and the presenters smelled fresh bread all day! Our first guest this morning is Mrs Ruth Hale. She comes from the town museum, not the big one in the city, and she’s going to tell us about their new exhibition. It is all about old radios. I thought it would be about telephones, which is what the poster said last week, but the plan changed. They have more than a hundred radios from the nineteen thirties, and some of them still work! Then, after the news, it’s time for your songs. You can send your messages and requests through our website, and we’ll read the best ones on air. Please don’t phone the studio this time, because the lines are busy preparing the quiz, and don’t use the app either, because it’s down for repairs. Now, the competition. Last year the prize was cinema tickets, but today a lucky winner will get two tickets for a concert next month. Just answer a question about radio history at ten o’clock. Finally, I’d like you to meet our new mascot, a hedgehog. We first called him Bubbles, but a young listener sent in a better name, so now he’s Spike. You can buy a small Spike toy at the station shop on Saturdays. He is a very popular little animal, and we hope that he will make our children’s hour even more fun. Stay with us, because we have a lot of music coming up!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The station is celebrating ___ years on the radio",
+              "prompt": "Morning Waves is on a station that began ___ years ago",
               "answer": "twenty",
-              "accepted": [
-                "20"
-              ],
-              "explanation": "He says they are celebrating twenty years."
+              "explanation": "The station is twenty years old; Sandor joined five years later."
             },
             {
               "id": "l3-2",
-              "prompt": "The first guest comes from the ___ museum",
+              "prompt": "The first guest works at the ___ museum",
               "answer": "town",
-              "explanation": "He says the guest is from the town museum."
+              "explanation": "She comes from the town museum, not the big one in the city."
             },
             {
               "id": "l3-3",
-              "prompt": "The exhibition is about old ___",
+              "prompt": "The museum's new exhibition is about ___ from the past",
               "answer": "radios",
-              "explanation": "He says it is an exhibition of old radios."
+              "explanation": "The exhibition is about old radios; telephones were the first plan."
             },
             {
               "id": "l3-4",
-              "prompt": "Listeners send their song messages through the ___",
+              "prompt": "Listeners should send their song requests through the station's ___",
               "answer": "website",
-              "explanation": "He says to send a message through the website."
+              "explanation": "They should use the website, not the phone or the app."
             },
             {
               "id": "l3-5",
-              "prompt": "The competition prize is two tickets for a ___",
+              "prompt": "The winner of the competition will get two tickets to a ___",
               "answer": "concert",
-              "explanation": "He says the prize is two tickets for a concert."
+              "explanation": "The prize is two tickets for a concert; cinema tickets were last year’s prize."
             },
             {
               "id": "l3-6",
-              "prompt": "The mascot is a hedgehog called ___",
+              "prompt": "The new mascot is called ___",
               "answer": "Spike",
-              "explanation": "He says the answer is a hedgehog called Spike."
+              "explanation": "A listener suggested Spike; Bubbles was the first name."
             }
           ]
         },
@@ -1397,51 +1541,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Cass, you present the breakfast show on a local station. What time do you get up?"
+                "text": "Cass, your show starts at six. What time do you get to the studio?"
               },
               {
                 "speaker": "h",
-                "text": "At four in the morning! I am at the studio by five, and we go on air at six. Luckily, I go to bed at eight."
+                "text": "My alarm goes off at four, but I live close, so I don’t leave until a quarter to five. I get in at five, make a strong coffee, and read the news. Some people think I come at six because that’s when the red light goes on, but no, I need an hour to prepare."
               },
               {
                 "speaker": "i",
-                "text": "What is the best part of your job?"
+                "text": "What’s the best thing about the job?"
               },
               {
                 "speaker": "h",
-                "text": "Talking to listeners. They phone to tell me about their lives, and some of those stories stay in my mind for weeks."
+                "text": "I get this question a lot. Choosing the music is fun, and I’ve met some singers, which was exciting at first. But now what I enjoy most is speaking to listeners, the people who call at seven in the morning. A woman once told me that I was the first voice she heard each day, and that made me feel important."
               },
               {
                 "speaker": "i",
-                "text": "Is there anything you do not like?"
+                "text": "Is there anything you don’t like?"
               },
               {
                 "speaker": "h",
-                "text": "The silence. Sometimes the music stops, or there is a technical problem, and I have to talk without any warning. My heart beats very fast."
+                "text": "Silence. When you’re live and the computer stops, those few seconds seem like an hour, and your heart beats so fast. I don’t mind early mornings now, and I don’t write reports because there’s a team for that. But a gap on the air still scares me, and I dream about it sometimes. My colleagues laugh at me, and then they tell me about their own worst moments."
               },
               {
                 "speaker": "i",
-                "text": "How did you find your first job?"
+                "text": "How did you get your first job?"
               },
               {
                 "speaker": "h",
-                "text": "I started as a volunteer on my university radio. Then I sent recordings to forty stations, and only one replied!"
+                "text": "I didn’t go to a famous school, just a small college. I did enter a competition for young presenters, but I came last! In the end, I recorded myself reading local news and sent the recordings to about twenty stations. Only one called me back, and I started the next month."
               },
               {
                 "speaker": "i",
-                "text": "What advice would you give to someone who wants to be a presenter?"
+                "text": "What advice would you give to people who want to do this?"
               },
               {
                 "speaker": "h",
-                "text": "Listen to as many different presenters as you can, and record yourself. At first, you will hate your voice, but you will get used to it."
+                "text": "Record yourself, every day, and listen to it. It’s horrible at first, but you’ll hear the mistakes. You don’t need to sing well, and you don’t need years of study. Honestly, a phone and some patience are enough. I started in my bedroom with a cheap phone, and my cat was my only audience for months, but she never complained."
               },
               {
                 "speaker": "i",
-                "text": "Do you see yourself doing the same job in ten years?"
+                "text": "And what’s your dream for the future?"
               },
               {
                 "speaker": "h",
-                "text": "I hope so, but I would also like to write a children's story and read it on the radio."
+                "text": "I’d love to read a children’s story on the radio, a bedtime story, with different voices for the animals. I don’t want to move to television, because I’m shy about my face, and a bookshop would be a nice hobby, but I’d have no time. The story is my real wish. I even have a favourite book ready, and I practise reading it to my nephews at weekends."
               }
             ]
           },
@@ -1455,7 +1599,7 @@
                 "At four"
               ],
               "answer": 1,
-              "explanation": "She says she is at the studio by five."
+              "explanation": "Her alarm is at four and she leaves at a quarter to five; the red light at six is not when she arrives, she gets in at five."
             },
             {
               "id": "l4-2",
@@ -1466,7 +1610,7 @@
                 "Meeting singers"
               ],
               "answer": 1,
-              "explanation": "She says the best part is talking to listeners."
+              "explanation": "Choosing music and meeting singers were exciting at first, but now she enjoys talking to the listeners who call."
             },
             {
               "id": "l4-3",
@@ -1477,7 +1621,7 @@
                 "Writing reports"
               ],
               "answer": 0,
-              "explanation": "She says the silence is what she dislikes."
+              "explanation": "She does not mind early mornings and does not write reports; what scares her is a gap on the air."
             },
             {
               "id": "l4-4",
@@ -1488,7 +1632,7 @@
                 "She sent recordings to stations"
               ],
               "answer": 2,
-              "explanation": "She sent recordings to forty stations and only one replied."
+              "explanation": "She did not go to a famous school and she came last in the competition; she sent recordings to twenty stations."
             },
             {
               "id": "l4-5",
@@ -1499,7 +1643,7 @@
                 "Study for many years"
               ],
               "answer": 1,
-              "explanation": "She advises listening to other presenters and recording yourself."
+              "explanation": "She says to record yourself every day; singing and years of study are not necessary."
             },
             {
               "id": "l4-6",
@@ -1510,7 +1654,7 @@
                 "Open a bookshop"
               ],
               "answer": 0,
-              "explanation": "She would like to write a children's story and read it on the radio."
+              "explanation": "She does not want television and a bookshop would take too much time; she wants to read a children’s story on the radio."
             }
           ]
         }

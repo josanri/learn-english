@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "Why did the writer start drawing?",
               "options": [
+                "She was too shy to talk",
                 "She was bored at home",
                 "Her teacher told her to",
-                "She was too shy to talk"
+                "She wanted to be famous"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She says she was too shy to talk in class, so she drew pictures instead."
             },
             {
               "id": "r3-2",
               "prompt": "Who suggested putting the comics online?",
               "options": [
-                "Her art teacher",
                 "Her cousin",
-                "Her best friend"
+                "Her best friend",
+                "Her art teacher",
+                "A famous cartoonist"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "Her art teacher suggested it last year."
             },
             {
               "id": "r3-3",
               "prompt": "How many readers did she have in the first month?",
               "options": [
-                "Five",
                 "Four",
-                "Three thousand"
+                "Three thousand",
+                "Twelve",
+                "Five"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She says she got only five readers, and four were relatives."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "Her school changed her timetable",
                 "Many people visited her site",
-                "She won a big prize"
+                "She won a big prize",
+                "Her relatives read it"
               ],
               "answer": 1,
               "explanation": "Over three thousand people visited her site by the next morning."
@@ -293,9 +297,10 @@
               "id": "r3-5",
               "prompt": "What does she do now?",
               "options": [
+                "Sells her drawings",
                 "Watches cartoons for hours",
-                "Draws only at weekends",
-                "Draws every day"
+                "Draws every day",
+                "Draws only at weekends"
               ],
               "answer": 2,
               "explanation": "She tries to draw something every day."
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "How a cartoon film is made",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Making a cartoon film takes a great deal of time and many people. [1] Writers decide what will happen and in which order, and artists make simple drawings of each scene.\n\nNext, the artists create the characters. [2] A character must look the same from the front, from the side and from behind, so that the audience always recognises it.\n\nThen comes the animation. In the past, artists drew thousands of pictures by hand. [3] Today, most of the work is done on computers, which saves months of effort.\n\nVoices are recorded separately. [4] The actors often read their lines in a small room with a microphone, and they sometimes watch the drawings while they speak.\n\nFinally, music and sound are added. [5] A single minute of a film can take several weeks to finish.",
           "sentences": [
-            "They try out many different faces, clothes and colours.",
-            "Many cartoon characters are later sold as toys.",
             "The story always comes first.",
+            "They are usually paid by the hour.",
+            "Many cartoon characters are later sold as toys.",
             "This is often done before the pictures are finished.",
-            "Each picture was only slightly different from the one before.",
-            "All of this work needs a lot of patience."
+            "A cartoon about animals needs only a few characters.",
+            "All of this work needs a lot of patience.",
+            "They try out many different faces, clothes and colours.",
+            "Each picture was only slightly different from the one before."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "A",
               "explanation": "The story comes first; the next sentence says writers decide what will happen."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "G",
               "explanation": "The artists create the characters and try out faces, clothes and colours; then a character must always look the same."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "H",
               "explanation": "Artists drew thousands of pictures by hand, each slightly different, before computers."
             },
             {
@@ -723,11 +730,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much was your comic?"
+                    "text": "Is that the new Captain Comet? How much did you pay, Jack?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Four pounds fifty. It was cheaper online."
+                    "text": "The sticker says five pounds fifteen, but there was a sale this week, so it was cheaper."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh nice. I saw a second-hand copy for four pounds, but the cover was torn, so I didn’t buy it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Mine is perfect. I paid fifty pence more than that second-hand one. Not bad, right?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not at all. Can I borrow it after you?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Sure. Read it tonight and bring it back on Monday, because my brother wants it next."
                   }
                 ]
               },
@@ -740,7 +763,7 @@
                   "Five pounds fifteen"
                 ],
                 "answer": 1,
-                "explanation": "He says it cost four pounds fifty."
+                "explanation": "The sticker price of five fifteen was not paid because of the sale, and the old copy cost four pounds; Jack paid fifty pence more than that."
               }
             },
             {
@@ -767,11 +790,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Which character is your favourite?"
+                    "text": "That’s a lovely robot on your T-shirt, Sam. Is it from a cartoon?"
                   },
                   {
                     "speaker": "b",
-                    "text": "The little robot. He is so funny."
+                    "text": "Yes, it’s Bolt. Everybody says he’s the best because he’s so strong and fast, but I don’t care about that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe you like him because he’s clever and brave, like a hero?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Well, he does help people, but that’s not why. It’s his jokes. He says silly things when he’s in trouble, and I laugh all the time. He’s the funniest robot on television."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That sounds like fun. Does he have his own show?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, on Saturday mornings. You can watch it with me if you want."
                   }
                 ]
               },
@@ -784,7 +823,7 @@
                   "He is strong and fast"
                 ],
                 "answer": 0,
-                "explanation": "He says the robot is so funny."
+                "explanation": "Others like Bolt for being strong and fast, and the woman suggests clever and brave, but Sam rejects both and likes his silly jokes that make him laugh."
               }
             },
             {
@@ -811,11 +850,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where did you get that cartoon poster?"
+                    "text": "Wow, where did you get that poster, Maya? It’s huge."
                   },
                   {
                     "speaker": "b",
-                    "text": "My uncle gave it to me for my birthday."
+                    "text": "My teacher wanted to give me one from the school art club, but I said no because I already have too many on the wall."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Was it from your cousin, then? He works at the comic shop, doesn’t he?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "He does, and he offered one too. But in the end I got this from my mum’s brother. He was at a comic fair in Dublin and sent it in the post."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Lucky you! Is it signed?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, look in the corner. He waited an hour to get it."
                   }
                 ]
               },
@@ -828,7 +883,7 @@
                   "Her cousin"
                 ],
                 "answer": 0,
-                "explanation": "She says her uncle gave it to her."
+                "explanation": "Maya refused the teacher’s poster and the cousin only offered one; this poster came from her mum’s brother, who went to the fair."
               }
             },
             {
@@ -855,11 +910,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "When does the cartoon start?"
+                    "text": "Is the new cartoon on tonight? The TV guide says half past five."
                   },
                   {
                     "speaker": "b",
-                    "text": "At a quarter past five, after the news."
+                    "text": "That was the old time. I checked the channel website. They moved it because of the football."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So is it at five o’clock now?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, that’s the news. The cartoon comes right after it, and the news lasts only fifteen minutes."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great, I’ll make sure the kids are home by then. They never miss it, and last week they were so upset when they arrived late."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then tell them to hurry. I’m sure they can have some popcorn while they watch!"
                   }
                 ]
               },
@@ -872,7 +943,7 @@
                   "At five o'clock"
                 ],
                 "answer": 1,
-                "explanation": "She says it starts at a quarter past five."
+                "explanation": "Half past five is the old time and five o’clock is the news; the cartoon starts after the fifteen-minute news, so at a quarter past five."
               }
             },
             {
@@ -886,24 +957,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Boy",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can you draw this character?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "I can try, but his hair is hard to draw."
+                    "text": "Hi everyone, and welcome to my drawing channel. Lots of you asked me which part of a character is the hardest, so here is my answer. Many people say hands, and yes, five fingers are difficult when you start. I used to hate them too, but I practised a lot and now they’re fine. Shoes are easy, just a simple shape, so don’t worry. For me the real problem is the hair. Every little line must go in the right direction, and when I do too many, the head looks like a bush! I spent two hours on a single ponytail last night. So tomorrow I’ll show you my tricks. Don’t forget to like the video. See you soon!"
                   }
                 ]
               },
@@ -916,7 +975,7 @@
                   "His hair"
                 ],
                 "answer": 2,
-                "explanation": "He says the character's hair is hard to draw."
+                "explanation": "Hands were difficult in the past and shoes are easy; the speaker spent two hours on one ponytail, so the hair is the hardest part."
               }
             },
             {
@@ -943,11 +1002,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Why are you laughing?"
+                    "text": "Did you read the comic I lent you, Ruby?"
                   },
                   {
                     "speaker": "b",
-                    "text": "I have just read the funniest page in this comic. Look at the dog's face!"
+                    "text": "Yes! I loved it. I thought the title would be the funny part because it’s a pun, but it’s quite boring when you say it aloud."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And the ending? Everybody tells me it’s the best bit."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s good, but you can guess it after ten pages. What made me laugh the most was how the dog looks when he sees the cat. That face! Those big eyes and that open mouth! I showed it to my sister, and she couldn’t stop laughing."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I knew you would like it."
                   }
                 ]
               },
@@ -960,7 +1031,7 @@
                   "The ending"
                 ],
                 "answer": 0,
-                "explanation": "She says to look at the dog's face."
+                "explanation": "The title is a boring pun and the ending is easy to guess; what makes Ruby laugh is the dog’s face when he sees the cat."
               }
             },
             {
@@ -987,11 +1058,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you finish your drawing for homework?"
+                    "text": "Is your drawing ready for the competition, Zoe? The deadline is Friday."
                   },
                   {
                     "speaker": "b",
-                    "text": "Almost. I only have to colour it, and then I am done."
+                    "text": "Nearly. I was afraid I wouldn’t start in time, but I finished the pencil lines on Sunday."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Excellent. And you have to give it to Mr Pratt at the office, don’t you?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I know, but I won’t do that until it’s finished. I haven’t added any colour, because I need new pens. I’ll buy them tomorrow."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then you’ve got three days. You can do it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, I’ll paint all of Wednesday night."
                   }
                 ]
               },
@@ -1004,7 +1091,7 @@
                   "Hand it in"
                 ],
                 "answer": 1,
-                "explanation": "She says she only has to colour it."
+                "explanation": "The drawing is already started and she will hand it in when it is finished; she still needs new pens and has not added colour."
               }
             }
           ]
@@ -1040,24 +1127,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Excuse me, do you have any comics for a seven-year-old?"
+                    "text": "I need a present for my nephew. He’s eight, and it’s his birthday on Sunday."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, over here. These are very popular with young children."
+                    "text": "We have some lovely pencil cases with superheroes on them. Many children like those."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "He has three already, so that’s no good. What about a card with money inside?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That works, but it’s a little dull. How about a comic? The Jungle Gang is very popular with eight-year-olds."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Hmm, he likes reading, and it’s cheap. Yes, let me see one."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Here you are. It has a free badge on the cover."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Perfect. I’ll take it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman want?",
+                "prompt": "What does the woman decide to buy for her nephew?",
                 "options": [
-                  "A new pencil case",
-                  "A birthday card",
-                  "A comic for a child"
+                  "A pencil case with superheroes",
+                  "A card with some money inside",
+                  "A comic for him to read"
                 ],
                 "answer": 2,
-                "explanation": "She asks for comics for a seven-year-old."
+                "explanation": "He already has three pencil cases and the card is dull; since he likes reading and it is cheap, she chooses the comic."
               }
             },
             {
@@ -1084,24 +1191,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Hello, I ordered a comic last week, but it has not arrived yet."
+                    "text": "Hello, I ordered a comic book from your website two weeks ago, and it still hasn’t come."
                   },
                   {
                     "speaker": "b",
-                    "text": "I am sorry. Let me check your order number."
+                    "text": "I’m very sorry. Let me check. Oh, I see the problem. The address has a mistake. It says Park Lane instead of Park Road."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Really? I typed it carefully. Well, never mind. Can you send it again?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course, free of charge, and you’ll get it tomorrow. And I’ll add a poster for the wait."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s very kind. Honestly, I was getting angry, but you’ve been so helpful that I feel much better."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thanks for being patient."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the man's problem?",
+                "prompt": "How does the man feel at the end of the call?",
                 "options": [
-                  "He paid too much",
-                  "His order has not arrived",
-                  "He got the wrong comic"
+                  "Angry about the shop's mistake",
+                  "Pleased with the help he receives",
+                  "Worried that he will pay twice"
                 ],
                 "answer": 1,
-                "explanation": "He says the comic he ordered has not arrived yet."
+                "explanation": "He was angry before, but the shop sends it again for free with a poster, and he says that she was so helpful that he feels better."
               }
             },
             {
@@ -1128,28 +1251,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I do not read comics any more."
+                    "text": "Do you still read as much as before, Ben?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Really? You used to love them."
+                    "text": "Not really. I used to finish a book a week. Now I’d rather watch films, to be honest."
                   },
                   {
                     "speaker": "a",
-                    "text": "I know, but now I prefer films."
+                    "text": "Is that because of homework? I have so much that I never have time for anything."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, I have plenty of time. And my friends mostly play games, so it isn’t that either. It’s just that in a film everything moves. In a book I sometimes get bored after twenty pages."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I get that, but books give you more details."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Maybe, but I like the action of a film."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the girl prefer now?",
+                "prompt": "Why does Ben prefer films to books now?",
                 "options": [
-                  "Films",
-                  "Books",
-                  "Games"
+                  "He finds them more exciting",
+                  "He does not have enough time",
+                  "He wants to do what his friends do"
                 ],
                 "answer": 0,
-                "explanation": "He says he prefers films now."
+                "explanation": "He has plenty of time and does not copy his friends, who play games; he gets bored in books and likes the action of films."
               }
             },
             {
@@ -1176,28 +1311,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Today we are going to make our own cartoon characters. Think about the personality first."
+                    "text": "Today we’ll start a new project, class. Last term you wrote long stories, and some of you found that hard."
                   },
                   {
                     "speaker": "b",
-                    "text": "Can the character be an animal?"
+                    "text": "Miss, can we watch a film instead? It would be more fun."
                   },
                   {
                     "speaker": "a",
-                    "text": "Of course!"
+                    "text": "I’d like that, but we don’t have time. This time you’ll create your own cartoon heroes. Think of their names, their clothes and their special powers."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Oh, that’s great! I love drawing. I have my own ideas already."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good. Bring a sketch next week."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Can I have a villain as well?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Of course."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What will the students do?",
+                "prompt": "How does Tom feel about the new project?",
                 "options": [
-                  "Write a long story",
-                  "Watch a film",
-                  "Design characters"
+                  "Disappointed that there will be no film",
+                  "Annoyed that he must write a long story",
+                  "Happy because he likes drawing"
                 ],
                 "answer": 2,
-                "explanation": "The teacher says they will make their own cartoon characters."
+                "explanation": "Tom asked for a film but accepts the answer, and the stories were last term; he is happy because he loves drawing and has ideas."
               }
             },
             {
@@ -1224,32 +1375,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Mum, can I buy this comic with my pocket money?"
+                    "text": "Mum, can I buy the new Lizzie Lark book? Everyone at school is reading it."
                   },
                   {
                     "speaker": "b",
-                    "text": "How much is it?"
+                    "text": "How much is it? Fifteen pounds? That’s a lot, Ellie. You’ll read it once."
                   },
                   {
                     "speaker": "a",
-                    "text": "Seven pounds."
+                    "text": "I could wait for my birthday, but that’s in March! Maybe Dad can buy it."
                   },
                   {
                     "speaker": "b",
-                    "text": "That is a lot. Why do you not borrow it from the library?"
+                    "text": "Dad said no more books this month, and you know how he is. Why don’t you check the library? They always get the new ones, and it’s free."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "But there’ll be a long waiting list."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then put your name down today. It’s better than spending your pocket money."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, I’ll go on Saturday."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the mother suggest?",
+                "prompt": "What does the mother think the girl should do?",
                 "options": [
-                  "Borrowing it from the library",
-                  "Waiting for her birthday",
-                  "Asking her father"
+                  "Borrow the book from the library",
+                  "Wait for her birthday",
+                  "Ask her father to buy it"
                 ],
                 "answer": 0,
-                "explanation": "The mother suggests borrowing the comic from the library."
+                "explanation": "The birthday is too far away and Dad said no more books; the mother suggests the library, which is free, and Ellie agrees."
               }
             },
             {
@@ -1275,29 +1438,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "b",
+                    "text": "Are you coming to the comic fair on Saturday, Jonah? It’s going to be amazing, with all the artists."
+                  },
+                  {
                     "speaker": "a",
-                    "text": "I am going to the comic fair on Saturday. Are you coming?"
+                    "text": "I’d love to, but I can’t. We have a football match in the afternoon, and the coach said that everybody has to play."
                   },
                   {
                     "speaker": "b",
-                    "text": "I would love to, but I have a football match."
+                    "text": "Oh no. Can’t you tell him it’s important?"
                   },
                   {
                     "speaker": "a",
-                    "text": "What a pity! It is only once a year."
+                    "text": "I tried, but it’s the final. I can’t let down the team, even though I’m sad about the fair. I’ve read every comic by that artist."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll get you a signed one, then."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Really? Thanks! That would make me feel better."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "Why can the boy not go?",
+                "prompt": "How does Jonah feel about missing the comic fair?",
                 "options": [
-                  "He does not like it",
-                  "He has no money",
-                  "He has a football match"
+                  "Relieved because he does not like comics",
+                  "Disappointed but he has a good reason",
+                  "Angry with his football coach"
                 ],
-                "answer": 2,
-                "explanation": "He says he has a football match."
+                "answer": 1,
+                "explanation": "He has read every comic by the artist and is sad, but he cannot let the team down in the final; he does not blame the coach."
               }
             }
           ]
@@ -1322,52 +1497,46 @@
             "turns": [
               {
                 "speaker": "cartoonist",
-                "text": "Hello, everyone. My name is Olin, and I have been a cartoonist for twelve years. Today's workshop is about drawing a funny face. First, you need a pencil, not a pen, because you will make mistakes. Start with a circle for the head. Then add two big eyes, because large eyes make a face look friendly. Do not forget the eyebrows. They are the best way to show feelings, so try to make them move up and down in your drawing. Next, draw a large mouth. A wide smile looks happy, and a small straight line looks bored. After that, you can use a black pen to go over your pencil lines. Wait until it is dry, and then rub out the pencil. Finally, colour your picture with bright markers. The workshop finishes at four, and you can take your picture home."
+                "text": "Hello, everyone. My name is Olin, and I have been a cartoonist for twelve years. Before that I taught art in a school for eight years, but I always wanted to draw for a living, so one day I took the risk. Welcome to today’s workshop about drawing a funny face. Please sit at a table and take a piece of paper. Now, a lot of you have a pen in your hand. Please put it away. Beginners always think a pen looks more professional, and I did the same, but a mistake in pen can’t be fixed. Start with a soft pencil, and use an eraser as often as you like. Marker pens are for the end. Let’s talk about the eyes. If you want the face to look friendly, draw large ones. Small eyes look serious, even a bit angry. Big ears are very funny, and we’ll draw some later, but they don’t make the face friendly. Next, feelings. Most people think the mouth does all the work. It helps, of course, but the eyebrows are the real secret. Move them up and the character is surprised. Move them down and he is angry. Try it on your paper now. Then we come to the mouth. A wide smile means that the character is happy. A small, straight line means he is bored, and a downward curve is sad. Some people draw teeth, but I think it’s better to keep it simple. We’ll take a short break at half past two, with biscuits and juice in the hall. The workshop finishes at four, and you can take your drawings home. I thought about five o’clock, but the school needs the room. Don’t forget to sign the list at the door if you’d like to come next month. Right, let’s start. Pencils ready?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Olin has been a cartoonist for ___ years",
+              "prompt": "Olin's job as a cartoonist began ___ years ago",
               "answer": "twelve",
-              "accepted": [
-                "12"
-              ],
-              "explanation": "He says he has been a cartoonist for twelve years."
+              "explanation": "He has been a cartoonist for twelve years; eight years is the time that he taught art."
             },
             {
               "id": "l3-2",
-              "prompt": "You should start with a ___, not a pen",
+              "prompt": "Begin the first lines of your drawing with a soft ___",
               "answer": "pencil",
-              "explanation": "He says you need a pencil, not a pen."
+              "explanation": "He tells them to put the pen away and start with a soft pencil."
             },
             {
               "id": "l3-3",
-              "prompt": "Large ___ make a face look friendly",
+              "prompt": "To make a face look friendly, draw large ___",
               "answer": "eyes",
-              "explanation": "He says large eyes make a face look friendly."
+              "explanation": "Large eyes look friendly; small eyes look serious and big ears are only funny."
             },
             {
               "id": "l3-4",
-              "prompt": "The best way to show feelings is with the ___",
+              "prompt": "Characters show their feelings best with their ___",
               "answer": "eyebrows",
-              "explanation": "He says the eyebrows are the best way to show feelings."
+              "explanation": "Most people think of the mouth, but the eyebrows are the real secret."
             },
             {
               "id": "l3-5",
-              "prompt": "A wide ___ looks happy",
+              "prompt": "A character looks happy when he has a wide ___",
               "answer": "smile",
-              "explanation": "He says a wide smile looks happy."
+              "explanation": "A wide smile is happy, a straight line is bored and a downward curve is sad."
             },
             {
               "id": "l3-6",
-              "prompt": "The workshop finishes at ___",
+              "prompt": "The workshop will end at ___",
               "answer": "four",
-              "accepted": [
-                "4"
-              ],
-              "explanation": "He says the workshop finishes at four."
+              "explanation": "It finishes at four; five o’clock was an idea that they dropped."
             }
           ]
         },
@@ -1399,11 +1568,11 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Kendal, you draw a popular online comic. How did it begin?"
+                "text": "Kendal, your webcomic has thousands of readers now. How did it all begin?"
               },
               {
                 "speaker": "h",
-                "text": "I drew it during boring lessons at university. I did not plan to show anyone, but my flatmate persuaded me to put one page online."
+                "text": "By accident, really. I wanted to win a drawing competition at school, and I did enter one, but I didn’t win, so that wasn’t it. A teacher once told me to draw more, though that’s not the reason either. The truth is I was bored in maths and history lessons, so I filled my notebooks with a little character called Pip. My friends loved him, and they asked for a new drawing every Monday, so one day I put him online. I never expected anyone else to look at it."
               },
               {
                 "speaker": "i",
@@ -1411,53 +1580,53 @@
               },
               {
                 "speaker": "h",
-                "text": "Twice a week, on Tuesdays and Fridays. I plan the story months in advance, but I draw each page in about eight hours."
+                "text": "People think I do one every day, and I wish I could! Each page takes me about six hours, so it would be impossible. A monthly update would be too slow, and readers would forget the story. So I post twice a week, on Tuesday and Friday. I keep to that, and my readers know it."
               },
               {
                 "speaker": "i",
-                "text": "Where do you get your ideas?"
+                "text": "Where do your ideas come from?"
               },
               {
                 "speaker": "h",
-                "text": "From ordinary life. The funniest things happen on trains and in cafes. I always carry a small notebook."
+                "text": "Everywhere, honestly. I don’t need to search the internet, because most of it is nonsense, and old books are lovely but not very useful for jokes. I get them on the bus, in the supermarket, or at the café. Last week a man argued with a pigeon for ten minutes, and that went straight into the comic."
               },
               {
                 "speaker": "i",
-                "text": "Do your readers ever disagree with you?"
+                "text": "I heard that you changed the name of a character. Why?"
               },
               {
                 "speaker": "h",
-                "text": "All the time! Last year I changed a character's name after hundreds of readers told me they hated it."
+                "text": "Yes, the grandmother, Mrs Winterbottom-Hartley. It was a very long name, but that wasn’t a problem for me. My flatmate said it looked funny, but I ignored that. In the end, I changed it because readers wrote to me saying that they couldn’t pronounce it, and some didn’t like it. Now she’s Mrs Winter, which is nicer, and nobody has complained since."
               },
               {
                 "speaker": "i",
-                "text": "Is it difficult to earn money from comics?"
+                "text": "What did you do before you could draw full time?"
               },
               {
                 "speaker": "h",
-                "text": "In the beginning, yes. I worked in a shop for three years. Now I earn enough from my readers and from selling books, so I draw full time."
+                "text": "For four years I worked in a clothes shop. I never taught, and I didn’t travel, although I would love to see Japan one day. I drew on my breaks and late at night. It was tiring, but I’m glad I did it, because I paid my rent and kept drawing."
               },
               {
                 "speaker": "i",
-                "text": "What would you say to someone who wants to start?"
+                "text": "What advice would you give to young artists?"
               },
               {
                 "speaker": "h",
-                "text": "Draw something every day, even if it is bad. Your own style only appears after a lot of practice."
+                "text": "Practise a little every day, even ten minutes. You don’t need an expensive teacher or fancy pens. I started with a cheap pencil and school paper. The more you draw, the faster you improve."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "How did Kendal's comic begin?",
+              "prompt": "Why did Kendal start her comic?",
               "options": [
-                "She won a competition",
-                "She drew it in boring lessons",
+                "She wanted to win a competition",
+                "She was bored in lessons",
                 "A teacher asked her to"
               ],
               "answer": 1,
-              "explanation": "She says she drew it during boring lessons at university."
+              "explanation": "She did not win a competition and the teacher is not the reason; she was bored in maths and history, so she filled notebooks with Pip."
             },
             {
               "id": "l4-2",
@@ -1468,7 +1637,7 @@
                 "Once a month"
               ],
               "answer": 1,
-              "explanation": "She posts twice a week, on Tuesdays and Fridays."
+              "explanation": "Every day is impossible and monthly is too slow; she posts on Tuesday and Friday, so twice a week."
             },
             {
               "id": "l4-3",
@@ -1479,18 +1648,18 @@
                 "On the internet"
               ],
               "answer": 0,
-              "explanation": "She says the funniest things happen on trains and in cafes."
+              "explanation": "She does not use the internet or old books; she finds ideas on the bus, in the supermarket and at the café."
             },
             {
               "id": "l4-4",
-              "prompt": "Why did she change a character's name?",
+              "prompt": "Why did Kendal change the grandmother's name?",
               "options": [
                 "It was too long",
-                "Her flatmate asked her",
-                "Readers disliked it"
+                "Her flatmate asked her to",
+                "Readers did not like it"
               ],
               "answer": 2,
-              "explanation": "Hundreds of readers told her they hated the name."
+              "explanation": "The length was not a problem and she ignored her flatmate; readers could not pronounce it and some disliked it."
             },
             {
               "id": "l4-5",
@@ -1501,7 +1670,7 @@
                 "Travelled abroad"
               ],
               "answer": 1,
-              "explanation": "She says she worked in a shop for three years."
+              "explanation": "She worked in a clothes shop for four years; she never taught and did not travel."
             },
             {
               "id": "l4-6",
@@ -1512,7 +1681,7 @@
                 "Buy good equipment"
               ],
               "answer": 0,
-              "explanation": "She says to draw something every day, because style comes with practice."
+              "explanation": "She says to practise a little every day; a teacher and fancy pens are not needed."
             }
           ]
         }

@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Where did the writer get her skateboard?",
               "options": [
+                "From her cousin",
                 "From a neighbour",
-                "From a shop",
-                "From her cousin"
+                "From her teacher",
+                "From a shop"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "Her cousin gave her his old board."
             },
             {
@@ -261,30 +262,33 @@
               "prompt": "What went wrong on the first day?",
               "options": [
                 "She lost the board",
-                "She fell off many times",
-                "She hurt her wrist badly"
+                "She hurt her wrist badly",
+                "The wheels came off",
+                "She fell off many times"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She fell off nine times in half an hour."
             },
             {
               "id": "r3-3",
               "prompt": "What did Noor tell her to do?",
               "options": [
+                "Wear her old shoes",
                 "Bend her knees",
                 "Go much faster",
                 "Practise only at night"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Bend your knees and look where you want to go."
             },
             {
               "id": "r3-4",
               "prompt": "What did Noor say about falling?",
               "options": [
+                "It teaches you to jump",
                 "It never hurts",
-                "Only beginners do it",
-                "Everybody does it"
+                "Everybody does it",
+                "Only beginners do it"
               ],
               "answer": 2,
               "explanation": "Everybody falls; the best skaters fall less."
@@ -294,6 +298,7 @@
               "prompt": "What might she do next month?",
               "options": [
                 "Enter a contest",
+                "Meet Noor's cousin",
                 "Buy a better board",
                 "Teach another beginner"
               ],
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "The story of skateboarding",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Skateboarding began in California in the 1950s. [1] They were bored when the sea was flat, so they wanted something to do on land.\n\nThe first boards were simply wooden boxes on roller-skate wheels. [2] Later, people made them from solid planks, which were easier to control.\n\nIn the 1970s, a new kind of wheel made from plastic was invented. [3] Skateboarding became popular all over the world, and new parks were built.\n\nIn the 1980s, the sport became more dangerous. [4] Many parks were closed because they were too expensive to insure.\n\nToday, skateboarding is back, and it will be part of the Olympic Games. [5] Experts say that more than eighty million people now ride boards worldwide.",
           "sentences": [
-            "The idea came from surfers looking for something to do.",
-            "They were rather heavy and not very comfortable.",
             "It was a big improvement because the board gripped the ground better.",
-            "Some young skaters tried high jumps and more risky tricks.",
+            "Some riders wear special shoes with flat soles.",
+            "They were rather heavy and not very comfortable.",
             "This shows how much the sport has grown in seventy years.",
-            "In some countries, it was banned by the government."
+            "Some young skaters tried high jumps and more risky tricks.",
+            "In some countries, it was banned by the government.",
+            "By 1965, more than fifty million boards had been sold.",
+            "The idea came from surfers looking for something to do."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "H",
               "explanation": "The idea came from surfers; the next sentence says they were bored when the sea was flat."
             },
             {
               "id": "r4-2",
-              "answer": "B",
+              "answer": "C",
               "explanation": "The first boards were wooden boxes; they were heavy and uncomfortable."
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "A",
               "explanation": "The new wheel was a big improvement, and the next sentence says skating became popular."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "E",
               "explanation": "Some skaters tried high jumps, which made the sport more dangerous."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "D",
               "explanation": "This shows how much the sport has grown, after the number of riders."
             }
           ]
@@ -727,11 +734,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Where did you buy your new skateboard?"
+                    "text": "Maia, nice board! Was it expensive?"
                   },
                   {
                     "speaker": "f",
-                    "text": "At the shop near the bus station. It was on sale, so it was cheap."
+                    "text": "Hardly anything. Thirty pounds, and it usually costs sixty."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Second-hand, right? From the market?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, I would never buy a used one, because you never know about the wheels. This one is brand new, with four perfect wheels. The shop had its end-of-season sale, and everything was half price."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Lucky you! I wish I had known. I paid full price for mine in September."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can still go. They have a few left, I think."
                   }
                 ]
               },
@@ -744,7 +767,7 @@
                   "It had a broken wheel"
                 ],
                 "answer": 1,
-                "explanation": "She says that it was on sale."
+                "explanation": "It is new, not used, and the wheels are perfect; the shop had its end-of-season sale and everything was half price."
               }
             },
             {
@@ -758,24 +781,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Max",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What time does the skate park close?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "At nine in the evening in summer, but at six in winter."
+                    "text": "Good morning, skaters, and welcome to Riverside Skate Park. A quick note about the opening hours. In summer we are open until nine in the evening, because the sun goes down late. Last winter we closed at seven, but the council wanted us to close earlier after some accidents in the dark. So from the first of November, the park shuts at six o’clock every day, with no exceptions. Please be ready to leave at ten to six, so that the staff can lock the gates. If you want to skate later, the indoor hall in town stays open until ten. Thank you, and have a good ride."
                   }
                 ]
               },
@@ -788,7 +799,7 @@
                   "At seven"
                 ],
                 "answer": 0,
-                "explanation": "He says that it closes at six in winter."
+                "explanation": "Nine is the summer time and seven was last winter; from November the park shuts at six."
               }
             },
             {
@@ -815,11 +826,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you hurt yourself when you fell?"
+                    "text": "I heard you fell, Neve. Did you break your hand? I saw you holding it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Only my hand. The doctor said that it will be better in a week."
+                    "text": "I put my hands out, and they’re fine, only a bit red. My leg hurts too, but it’s just a bruise from the board."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So why do you have that plaster?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I hit the ground with my head. I was wearing my helmet, luckily, but I still had a terrible headache all night. The doctor said no skating for a week."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A week! That’s a long time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know. I’ll be bored at home."
                   }
                 ]
               },
@@ -831,8 +858,8 @@
                   "Her leg",
                   "Her head"
                 ],
-                "answer": 0,
-                "explanation": "She says that she hurt only her hand."
+                "answer": 2,
+                "explanation": "Her hands are only red and her leg has a bruise; she hit the ground with her head and has to rest for a week."
               }
             },
             {
@@ -859,11 +886,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why are you not skating today?"
+                    "text": "Nico, you’re just sitting. Where’s your board? Did you forget it again?"
                   },
                   {
                     "speaker": "m",
-                    "text": "It is raining, and the ground is too wet. It is easy to slip."
+                    "text": "I brought it. It’s in my bag, look."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Are you tired? You were up late for the exam."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A little, but I would skate anyway. Look at the ground. It rained all night, and it’s still full of water in the bowls. It’s dangerous, because the wheels slide on it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. Let’s wait for the sun."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The weather forecast says one o’clock, so not long."
                   }
                 ]
               },
@@ -876,21 +919,13 @@
                   "He is too tired"
                 ],
                 "answer": 1,
-                "explanation": "He says that the ground is too wet."
+                "explanation": "The board is in his bag and he is only a little tired; it rained all night and the wheels slide on the water."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Mika",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Maia",
@@ -902,12 +937,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Who taught you to do that trick?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I learned it from a video online. I watched it about fifty times!"
+                    "text": "Hi Mika, it’s Maia. You asked me how I learned the ollie, so here is the long answer. My brother tried to teach me last summer, but he laughed so much that I gave up after ten minutes. Then I did two lessons with a coach, but there were ten children in the group, and he never looked at me. In the end, I found a video of a girl from Canada, in slow motion, and I watched it about fifty times in my room. After that, I practised in the garden every day. Call me if you want to try it together."
                   }
                 ]
               },
@@ -920,7 +951,7 @@
                   "By watching a video"
                 ],
                 "answer": 2,
-                "explanation": "She says that she learned it from a video online."
+                "explanation": "Her brother laughed and the coach had ten children to watch; she learned it from a slow-motion clip that she watched fifty times."
               }
             },
             {
@@ -947,11 +978,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What are you doing at the weekend?"
+                    "text": "Are you skating at the weekend, Max?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I am going climbing with my father. We start at seven in the morning."
+                    "text": "I was going to, but they’re painting the park, so it’s closed until Monday. Then I thought about the climbing wall, but it’s full of school groups on Saturday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what are you going to do?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "My cousin has a card for the new pool, and there’s a slide. We’ll swim all day, and then eat something."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Sounds nice. I’m stuck at home with my little brothers."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Come with us! The card is for four people."
                   }
                 ]
               },
@@ -959,12 +1006,12 @@
                 "id": "l1-6q",
                 "prompt": "What will the boy do at the weekend?",
                 "options": [
-                  "Go climbing",
                   "Go skating",
+                  "Go climbing",
                   "Go swimming"
                 ],
-                "answer": 0,
-                "explanation": "He says that he is going climbing with his father."
+                "answer": 2,
+                "explanation": "The park is closed for painting and the climbing wall is full; his cousin has a card for the new pool, where they will swim."
               }
             },
             {
@@ -991,24 +1038,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much was your helmet?"
+                    "text": "Is that your new helmet? It looks heavy."
                   },
                   {
                     "speaker": "f",
-                    "text": "Twenty pounds. It was more expensive than I wanted, but it is very light."
+                    "text": "That’s what I thought, and my old one gave me a sore neck. But this one weighs almost nothing. I forget that I’m wearing it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It must have been expensive."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I wouldn’t call it cheap, forty pounds, but it’s the best money I’ve spent. It’s so light that I could wear it all day."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I should get one then. Where did you buy it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "At the shop by the station."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "What does the girl say about the helmet?",
+                "prompt": "What does the girl say about her helmet?",
                 "options": [
                   "It is heavy",
                   "It is light",
                   "It is cheap"
                 ],
                 "answer": 1,
-                "explanation": "She says that it is very light."
+                "explanation": "The old one gave her a sore neck and this one weighs almost nothing; it was forty pounds, so not cheap."
               }
             }
           ]
@@ -1043,25 +1106,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Noor, I’d love to start skating. Shall I buy a board this weekend?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Welcome to the skate park. Do you have your own board?"
+                    "text": "A good one costs a hundred pounds. What if you don’t like it?"
                   },
                   {
                     "speaker": "m",
-                    "text": "No, I do not. Can I hire one for the afternoon?"
+                    "text": "True. I thought I would join the club first, but you pay a yearly fee, and I can’t afford it now."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And the helmet?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll buy that anyway, because it’s for safety. But for the board I’ll just hire one at the park for a few weeks."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s smart."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the boy want to do?",
+                "prompt": "What does the boy want to do before he buys a board?",
                 "options": [
                   "Join a club",
                   "Buy a helmet",
-                  "Hire a board"
+                  "Hire one first"
                 ],
                 "answer": 2,
-                "explanation": "He asks if he can hire a board for the afternoon."
+                "explanation": "The club has a yearly fee and the helmet he will buy anyway; for the board he decides to hire one at the park for some weeks."
               }
             },
             {
@@ -1088,24 +1167,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I cannot do the jump. I have tried twenty times."
+                    "text": "I can’t do the kickflip. Three weeks and nothing. I’m going to give up."
                   },
                   {
                     "speaker": "f",
-                    "text": "Keep going! You are getting closer. Try to bend your knees more."
+                    "text": "Don’t. It took me two months. And remember last year, you couldn’t even stand on the board."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Maybe I should try basketball instead. At least I’m good at it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Basketball isn’t the same, and you would miss this. The coach says that every beginner gets stuck at this point. Come tomorrow, and I’ll film you. You’re closer than you think."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK, I’ll keep practising for another week."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does the woman want the boy to do?",
                 "options": [
-                  "Telling him to give up",
-                  "Telling him to keep going",
-                  "Telling him to go home"
+                  "Keep practising the trick",
+                  "Try a different sport",
+                  "Ask the coach for help"
                 ],
-                "answer": 1,
-                "explanation": "She tells him to keep going because he is getting closer."
+                "answer": 0,
+                "explanation": "She reminds him that it took her two months and that he has improved; basketball is not the same, so he should come back tomorrow."
               }
             },
             {
@@ -1131,25 +1222,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Maia, your video has two hundred views already!"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "My video has had over a thousand views since yesterday!"
+                    "text": "I know, but I didn’t check. I don’t care about views. The last one had five, and I loved it anyway."
                   },
                   {
                     "speaker": "m",
-                    "text": "Wow, that is amazing! You must be so excited."
+                    "text": "You look happy."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m really proud. It took me three weeks to film the jump, and my friends helped with the music. When I watched it, I thought, I made this."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Are you going to make another one?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe next month. I’m a bit tired, but not bored."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the girl feel?",
+                "prompt": "How does the girl feel about her video?",
                 "options": [
-                  "Excited about the video",
                   "Worried about the views",
-                  "Tired of her friends"
+                  "Proud of what she made",
+                  "Bored with making videos"
                 ],
-                "answer": 0,
-                "explanation": "He says that she must be so excited."
+                "answer": 1,
+                "explanation": "She does not care about the number of views and is not bored; she is happy about the three weeks of work and the music."
               }
             },
             {
@@ -1176,24 +1283,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, can you tell me how to get to the skate park?"
+                    "text": "Excuse me, I’m lost. I’m looking for the new skate park."
                   },
                   {
                     "speaker": "f",
-                    "text": "Go straight on, then turn right at the cinema. It is five minutes from there."
+                    "text": "Is your board broken? You are carrying it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, it’s fine, thank you. I was going to see a film in town, but the cinema is sold out. So I thought I would go skating. Which way is it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Straight on, then left at the lights. It’s about ten minutes on foot."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you so much."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No problem. Enjoy it!"
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man ask for?",
+                "prompt": "What does the man want?",
                 "options": [
-                  "Help with a board",
+                  "Help with his board",
                   "A ticket for a film",
                   "Directions to the park"
                 ],
                 "answer": 2,
-                "explanation": "He asks how to get to the skate park."
+                "explanation": "His board is fine and the cinema is sold out, so he asks for the way to the park, straight on and left at the lights."
               }
             },
             {
@@ -1220,24 +1343,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Our team has won the competition, and the prize is a trip to London!"
+                    "text": "Oscar, look at this! The park is holding a contest next Saturday, and the prize is fifty pounds."
                   },
                   {
                     "speaker": "m",
-                    "text": "Let us tell the others. They will be so happy."
+                    "text": "Great. Shall we pack our bags and go practise somewhere else now?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We practised all morning, and my legs are shaking. A break would be good."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "OK, a break then, and then we pack."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wait. First let’s message everybody from the club. More people means a better atmosphere. Do it now, before we forget."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. I’ll write to the group chat."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What will they do next?",
+                "prompt": "What do the friends decide to do first?",
                 "options": [
-                  "Tell their friends",
+                  "Tell their friends about the contest",
                   "Pack their bags",
                   "Take a break"
                 ],
                 "answer": 0,
-                "explanation": "He suggests telling the others."
+                "explanation": "A break and packing are possible later, but first they want to write to everybody in the club."
               }
             },
             {
@@ -1263,25 +1402,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Mika, you look annoyed. Did you fall again?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "One of my wheels has come off, and I cannot find it anywhere."
+                    "text": "No, I didn’t fall. My shoes are wet from the rain, but that’s normal. And the helmet is fine, it has only a scratch."
                   },
                   {
                     "speaker": "f",
-                    "text": "Do not worry. I have a spare one in my bag. You can borrow it."
+                    "text": "So what’s wrong?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I took the board out of the bag, and one wheel wasn’t there. It’s lost somewhere between home and the park. It’s the third time!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I have a spare in my bag. Do you want it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re a hero."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the boy's problem?",
+                "prompt": "Why is the boy annoyed?",
                 "options": [
                   "His shoes are wet",
-                  "His helmet is broken",
-                  "A wheel is missing"
+                  "A wheel is missing",
+                  "His helmet is broken"
                 ],
-                "answer": 2,
-                "explanation": "He says that one of his wheels has come off and he cannot find it."
+                "answer": 1,
+                "explanation": "The shoes are wet but that is normal and the helmet is fine; one wheel fell off somewhere for the third time."
               }
             }
           ]
@@ -1306,64 +1461,64 @@
             "turns": [
               {
                 "speaker": "nathalie",
-                "text": "Hello, everyone, and welcome to the opening of our new skate park. My name is Noor, and I am the manager. The park cost three hundred thousand pounds to build, and most of the money came from the town. It is open every day from eight in the morning until nine at night. There are three areas: a beginners' bowl, a street section with rails and steps, and a big ramp for experts. Entry is free, but you must wear a helmet. If you do not have one, you can hire it at the café for two pounds. On Saturdays, there is a free lesson for children aged ten to fourteen. It starts at ten and lasts one hour. Every month, we also hold a contest, with a prize of fifty pounds. Please be kind to others, and let beginners have their space. Finally, a big thank you to the volunteers who painted the walls. Enjoy the park!"
+                "text": "Hello, everyone, and welcome to the opening of our new skate park. My name is Noor, and I’m the manager. First, some facts. The park cost three hundred thousand pounds to build. The council paid one hundred thousand, and the rest came from local businesses and from people like you, who sold cakes. Let me describe the park. We planned four areas, but there was no space for the fourth, so there are three. The first is the bowl, for experienced skaters. The second is the street area, with steps and rails. And the third is a small, flat area for beginners and little children. Opening hours start at eight in the morning. The park closes at nine in the evening, because of the lights, and the neighbours asked us not to stay later. On Sundays we close earlier, at seven, but that’s the only day. You can hire a board for five pounds, but you don’t need to if you have your own. The helmet is compulsory, and it costs two pounds to hire. Without one, nobody can enter. Next, lessons. On Saturday morning we have a lesson for children aged ten to fourteen. Last year it was ten to twelve, but we received so many requests from teenagers that we changed it. On Sundays there are lessons for adults, over sixteen, but you must book. Finally, every month we hold a contest. The winner gets fifty pounds, and the person in second place gets twenty. Come and watch, because it’s a lot of fun. Thank you, and enjoy the park."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The park cost ___ thousand pounds to build",
+              "prompt": "Building the park cost ___ thousand pounds",
               "answer": "three hundred",
               "accepted": [
                 "300"
               ],
-              "explanation": "It cost three hundred thousand pounds."
+              "explanation": "The council paid one hundred thousand, but the total cost was three hundred thousand pounds."
             },
             {
               "id": "l3-2",
-              "prompt": "The park closes at ___ in the evening",
+              "prompt": "On most days the park shuts at ___ in the evening",
               "answer": "nine",
               "accepted": [
                 "9"
               ],
-              "explanation": "Open from eight until nine at night."
+              "explanation": "On Sundays they close at seven, but every other day the park closes at nine."
             },
             {
               "id": "l3-3",
-              "prompt": "The park has ___ areas",
+              "prompt": "The park is divided into ___ areas",
               "answer": "three",
               "accepted": [
                 "3"
               ],
-              "explanation": "There are three areas."
+              "explanation": "They planned four areas, but there is space for three."
             },
             {
               "id": "l3-4",
-              "prompt": "A helmet costs ___ pounds to hire",
+              "prompt": "Renting a helmet costs ___ pounds",
               "answer": "two",
               "accepted": [
                 "2"
               ],
-              "explanation": "You can hire it for two pounds."
+              "explanation": "A board costs five pounds to hire; the helmet costs two pounds."
             },
             {
               "id": "l3-5",
-              "prompt": "The Saturday lesson is for children aged ten to ___",
+              "prompt": "The Saturday lesson accepts children up to the age of ___",
               "answer": "fourteen",
               "accepted": [
                 "14"
               ],
-              "explanation": "A free lesson for children aged ten to fourteen."
+              "explanation": "Last year the lesson was for ten to twelve, but it is now for ten to fourteen."
             },
             {
               "id": "l3-6",
-              "prompt": "The monthly contest prize is ___ pounds",
+              "prompt": "Each month the contest winner receives ___ pounds",
               "answer": "fifty",
               "accepted": [
                 "50"
               ],
-              "explanation": "A prize of fifty pounds."
+              "explanation": "The winner gets fifty pounds and the person in second place gets twenty."
             }
           ]
         },
@@ -1395,51 +1550,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Max, you are a professional skater at only seventeen. How did you start?"
+                "text": "Max, why did you begin to skate?"
               },
               {
                 "speaker": "h",
-                "text": "I got my first board when I was six. My older sister skated, and I wanted to be like her. I fell a lot, but I loved it."
+                "text": "I would love to say that my school had a team, but we only had football. A friend of mine won a prize at some contest, a really nice board, and he showed it to me, but I wasn’t impressed. The truth is my sister. She’s four years older than me, and she skated everywhere. I followed her to the park every day because I wanted to be as good as her. She’s still better at some tricks, but don’t tell anyone."
               },
               {
                 "speaker": "i",
-                "text": "How often do you practise?"
+                "text": "You need strength for the tricks. How do you keep strong?"
               },
               {
                 "speaker": "h",
-                "text": "Almost every day, for about four hours. I also go to the gym three times a week to stay strong."
+                "text": "People assume that I swim, because swimmers are strong, and I do a few lengths on holiday, but not every morning. I go to the gym once a week to lift weights, and it helps, but it’s a small part. What really works is running in the hills every day. It builds my legs and my breathing, and it’s quiet up there. I take my dog, so he’s fitter than me."
               },
               {
                 "speaker": "i",
-                "text": "Have you had any serious injuries?"
+                "text": "You broke your arm two years ago. What did you do during that time?"
               },
               {
                 "speaker": "h",
-                "text": "I broke my arm two years ago. It was awful, because I could not skate for three months. But I used the time to study and to watch other skaters."
+                "text": "It was the worst month of my life. I couldn’t take part in contests, and the sponsors said no problem, but I knew I was losing time. I didn’t travel either, because I had to stay near the hospital. So I studied. I watched hundreds of videos of other skaters, slowly, and I made notes about how they land. When the arm was better, I came back with ten new ideas."
               },
               {
                 "speaker": "i",
-                "text": "What do you enjoy most about the sport?"
+                "text": "What do you enjoy most about your life?"
               },
               {
                 "speaker": "h",
-                "text": "The freedom. There are no coaches shouting at you. You can create your own style and make friends all over the world."
+                "text": "The prizes are nice, and I have a shelf for them in my room, but I never look at it. The money is good, I won’t lie, and I have a nice flat thanks to it. But what I love is the freedom. On a board nobody tells you where to go or what to do. If I want to ride to the sea at midnight, I just do it."
               },
               {
                 "speaker": "i",
-                "text": "Do you have a message for beginners?"
+                "text": "What advice do you give to young skaters?"
               },
               {
                 "speaker": "h",
-                "text": "Be patient. Nobody learns a trick in one day. Film yourself and watch it to find mistakes."
+                "text": "Don’t buy the most expensive board. The shop assistant will tell you to, but a cheap one is fine to start. And skating in the evening is not a rule, you can skate whenever you can. My real advice is to be patient. A trick can take months to learn. Film yourself, and watch the video, because you will see mistakes that you can’t feel."
               },
               {
                 "speaker": "i",
-                "text": "What are your goals for the future?"
+                "text": "What do you want to do when you stop competing?"
               },
               {
                 "speaker": "h",
-                "text": "I would like to compete in the Olympics, and later, I want to build skate parks for young people in poorer countries."
+                "text": "I would like to coach, maybe, because kids ask me all the time, but I’m not a patient teacher. A shop? My cousin has one, and the work is boring. What I dream about is building skate parks, designing the bowls and the rails, because I know what skaters like. I have drawn a few already, and the city asked me about one."
               }
             ]
           },
@@ -1453,18 +1608,18 @@
                 "A friend gave him a prize"
               ],
               "answer": 1,
-              "explanation": "His older sister skated, and he wanted to be like her."
+              "explanation": "The school only had football and the friend’s board did not impress him; he followed his sister because he wanted to be as good as her."
             },
             {
               "id": "l4-2",
-              "prompt": "How does he keep strong?",
+              "prompt": "How does Max keep strong?",
               "options": [
                 "He swims every morning",
                 "He goes to the gym every week",
                 "He runs in the hills every day"
               ],
-              "answer": 1,
-              "explanation": "He goes to the gym three times a week."
+              "answer": 2,
+              "explanation": "He swims only on holiday and the gym is a small part; what really works is running in the hills every day."
             },
             {
               "id": "l4-3",
@@ -1475,29 +1630,29 @@
                 "Took part in contests"
               ],
               "answer": 0,
-              "explanation": "He used the time to study and watch other skaters."
+              "explanation": "He could not enter contests or travel; he watched videos and made notes about how skaters land."
             },
             {
               "id": "l4-4",
-              "prompt": "What does he enjoy most?",
+              "prompt": "What does Max enjoy most?",
               "options": [
                 "The prizes",
-                "The money",
-                "The freedom"
+                "The freedom",
+                "The money"
               ],
-              "answer": 2,
-              "explanation": "He says that he enjoys the freedom."
+              "answer": 1,
+              "explanation": "He never looks at the prizes and the money is good, but what he loves is the freedom."
             },
             {
               "id": "l4-5",
               "prompt": "What advice does he give?",
               "options": [
                 "Buy the most expensive board",
-                "Be patient and film yourself",
-                "Skate only in the evenings"
+                "Skate only in the evenings",
+                "Be patient and film yourself"
               ],
-              "answer": 1,
-              "explanation": "Be patient; film yourself and watch it to find mistakes."
+              "answer": 2,
+              "explanation": "A cheap board is fine and evenings are not a rule; he says to be patient and to watch videos of yourself."
             },
             {
               "id": "l4-6",
@@ -1508,7 +1663,7 @@
                 "Open a shop"
               ],
               "answer": 0,
-              "explanation": "He wants to build skate parks for young people."
+              "explanation": "He is not patient enough to coach and a shop is boring; he dreams about designing skate parks."
             }
           ]
         }

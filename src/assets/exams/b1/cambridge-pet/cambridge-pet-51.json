@@ -251,7 +251,8 @@
               "options": [
                 "She chose to live in the forest for a year",
                 "She took far too many bags on her journey",
-                "She went to Peru with no plan at all"
+                "She went to Peru with no plan at all",
+                "She had never travelled by plane or by boat"
               ],
               "answer": 0,
               "explanation": "Her friends thought she was mad when she said she would spend a year in the rainforest."
@@ -262,20 +263,22 @@
               "options": [
                 "The long walk to the nearest town",
                 "The animals made noises all night",
+                "The weak signal for her mobile phone in the hut",
                 "The afternoon rain and the wet clothes"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "It rained almost every afternoon, and her clothes never dried."
             },
             {
               "id": "r3-3",
               "prompt": "Why did she learn to walk quietly?",
               "options": [
+                "Her notebook made too much noise at night",
                 "The monkeys ran off when they heard her",
                 "The guide had asked her to do so",
                 "The ground was covered in wet leaves"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "The monkeys ran away if they heard her coming."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "How to take good photos of monkeys",
                 "How to build a safe wooden hut quickly",
-                "How to find her way in the forest"
+                "How to find her way in the forest",
+                "Which animals were safe to touch"
               ],
               "answer": 2,
               "explanation": "He showed her how to find her way using the sun and the sounds of the river."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What does the writer plan to do next year?",
               "options": [
-                "Write a book about her time",
                 "Go back and take students along",
+                "Visit a different country with her friends",
+                "Write a book about her time",
                 "Study a different kind of animal"
               ],
-              "answer": 1,
+              "answer": 0,
               "explanation": "She plans to go back next year and bring some students with her."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "A visit to the world's biggest rainforest",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The Amazon is the largest rainforest on Earth. It covers parts of nine countries, and it is so big that you could fit most of Europe inside it. [1] Scientists believe that about one in ten of all the animals and plants in the world live there.\n\nA trip to the Amazon usually begins in a river town. [2] From there, small boats carry visitors deep into the forest, where there are no roads at all.\n\nThe weather is hot and wet all year, and the air feels like a warm bath. [3] Visitors are told to pack light clothes that dry fast and a good raincoat.\n\nIn the evening, the forest becomes noisy. [4] Guides say that it is the best time to see frogs, insects and even small cats.\n\nSadly, every year large areas of forest are cut down for farms. [5] Many visitors leave with a strong wish to protect this special place.",
           "sentences": [
-            "Because of this, many animals are losing their homes.",
-            "It can rain for an hour and then the sun comes out again.",
             "This means there are more kinds of life here than almost anywhere else.",
-            "Tourists can buy food, water and tickets at the busy market there.",
+            "Several million people live in the Amazon, many of them in cities.",
             "The sounds of thousands of creatures fill the dark.",
-            "The roads there were built over fifty years ago."
+            "The roads there were built over fifty years ago.",
+            "Because of this, many animals are losing their homes.",
+            "That is why the river is brown for most of the year.",
+            "Tourists can buy food, water and tickets at the busy market there.",
+            "It can rain for an hour and then the sun comes out again."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "A",
               "explanation": "The extra sentence about more kinds of life follows the size of the forest and leads to the scientists' figure."
             },
             {
               "id": "r4-2",
-              "answer": "D",
+              "answer": "G",
               "explanation": "The market in the river town explains where visitors get supplies before the boats leave."
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "H",
               "explanation": "Rain followed by sun explains why light, fast-drying clothes and a raincoat are needed."
             },
             {
               "id": "r4-4",
-              "answer": "E",
+              "answer": "C",
               "explanation": "The sounds of creatures in the dark explain why the evening is noisy."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "E",
               "explanation": "Cutting down forests for farms explains why animals lose their homes."
             }
           ]
@@ -730,11 +737,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you bring an umbrella to the jungle walk?"
+                    "text": "Marisol, you’re not going into the forest like that, are you? It’s going to pour any moment."
                   },
                   {
                     "speaker": "f",
-                    "text": "No, but the guide says we can borrow a raincoat at the gate."
+                    "text": "I know. I thought about buying an umbrella from the shop, but they’re big and I’d hit every branch. Anyway, they cost twelve dollars."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about waiting for the guide? He said he’d bring spare things."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "He’s stuck in town, and I don’t want to lose an hour. But the man at the gate told me they lend coats for the rain, and it’s free. I’ll take one when I sign in."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good plan. I’ll come with you."
                   }
                 ]
               },
@@ -747,7 +766,7 @@
                   "Wait for the guide"
                 ],
                 "answer": 1,
-                "explanation": "She says that they can borrow a raincoat at the gate."
+                "explanation": "She does not want a big umbrella and will not wait for the late guide; the gate lends coats for the rain, so she will borrow a raincoat."
               }
             },
             {
@@ -761,24 +780,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Kenneth",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How long is the boat trip on the river?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "It takes three hours, but we stop for lunch after the first one."
+                    "text": "Good morning, everyone, and welcome aboard. Let me tell you about the day. I know the programme says we will have lunch at the end of the trip, at about four, but that was an old plan, and it was too late for most people. We are going to stop at a village on the river after we have walked for one hour, and the cooks will give us hot rice and fish. The boat leaves at eleven, but we will be back long before that, so you won’t miss it. Please keep your bottles full."
                   }
                 ]
               },
@@ -791,7 +798,7 @@
                   "Before the boat leaves"
                 ],
                 "answer": 0,
-                "explanation": "They stop for lunch after the first hour of the trip."
+                "explanation": "The programme said the end of the trip, but the plan changed, and the boat leaves at eleven when they are back; lunch is in a village after one hour of walking."
               }
             },
             {
@@ -818,11 +825,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What is the bird with the big yellow beak?"
+                    "text": "Look, Philomena, a toucan! I thought they lived near the river bank."
                   },
                   {
                     "speaker": "f",
-                    "text": "It is a toucan. It lives in the tops of the tallest trees."
+                    "text": "You do see them there, drinking in the morning, and one lazy bird once walked on the forest floor, but that’s unusual. They like the highest branches, where they build nests in holes in old trunks."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So we’ll rarely see one close."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not unless you bring binoculars. The guide says that at the tops of the tall trees they have everything: fruit, shade and safety."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then I’ll take a lot of photos with the zoom."
                   }
                 ]
               },
@@ -835,7 +854,7 @@
                   "On the forest floor"
                 ],
                 "answer": 0,
-                "explanation": "The woman says it lives in the tops of the tallest trees."
+                "explanation": "She says toucans drink at the bank and sometimes walk on the floor, but they live in the highest branches of the tall trees."
               }
             },
             {
@@ -862,11 +881,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Is the rainforest cooler than the city?"
+                    "text": "I’m sorry, I’m going to sit down. I don’t understand why the forest feels so hot. The sun is not even out."
                   },
                   {
                     "speaker": "m",
-                    "text": "A little, but there is so much water in the air that it feels hotter."
+                    "text": "Because of the air, I think. It’s full of water, so it feels like a steam room."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really? I thought it was because of the sun."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "In a clearing, perhaps, but under the trees there’s lots of shade. Even so, the leaves hold the moisture, and it stays close to the ground."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I see. So that’s why my clothes are wet."
                   }
                 ]
               },
@@ -879,7 +910,7 @@
                   "There are no trees to give shade"
                 ],
                 "answer": 1,
-                "explanation": "The man says the air is so wet that it feels hotter."
+                "explanation": "She believes it is the sun and he mentions the shade; the real reason is that the air is full of water."
               }
             },
             {
@@ -906,11 +937,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Have you seen my torch? We need it for the night walk."
+                    "text": "Have you seen my torch, Winnifred? We need it for tonight’s walk."
                   },
                   {
                     "speaker": "f",
-                    "text": "It is on the table next to your hat."
+                    "text": "Did you leave it in the hut under the bed? I thought I saw it there on Monday."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I looked there, and I also dug through my rucksack, even the little pockets. It’s nowhere."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wait. You came in with your hat and your tea last night, and you put things down, didn’t you?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I did! Oh, there it is, right next to the hat, where the tea was. I feel silly."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Don’t worry. Let’s go!"
                   }
                 ]
               },
@@ -923,21 +970,13 @@
                   "On the table near his hat"
                 ],
                 "answer": 2,
-                "explanation": "It is on the table next to your hat."
+                "explanation": "It was not under the bed or in the rucksack; he had put it on the table next to his hat."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Bridie",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Tiernan",
@@ -949,12 +988,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Why are you writing so much in that notebook?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "I am making a list of every insect I find, so that I can use it in my next lesson."
+                    "text": "Hi, Bridie, it’s Tiernan. I’m sitting at the lodge writing a long list of every animal we saw today, with the Latin names. I know you think it’s for you, and I’ll send you pictures later, but not this. The guide asked if he could have a copy for his office, but I need it for school. I’m teaching a class about the rainforest next week, and the children are going to learn all the names. So don’t worry, I’ll send you something nice instead. Speak soon."
                   }
                 ]
               },
@@ -967,21 +1002,13 @@
                   "To send it to a friend"
                 ],
                 "answer": 0,
-                "explanation": "He wants to use his list of insects in his next lesson."
+                "explanation": "He says his friend and the guide would like it, but he explains that he is teaching a class next week."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Ludovic",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Ondine",
@@ -993,12 +1020,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Shall we go on the zip wire or on the tree walk?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "I would rather do the tree walk. I am afraid of going so fast."
+                    "text": "Hi, Ludovic, it’s Ondine. I’m at the camp, and I’m writing to say that it’s amazing here. Everybody wants to try the zip wire, and I’ll admit I did think about it. But when I looked down, I changed my mind. Another group stayed in their tents all afternoon and played cards, and I was not interested. There’s a walk high up on bridges between the tree tops, and I booked a place for the morning. That’s what I want to do. You should come, it’s only twenty dollars. Call me later and tell me what you think."
                   }
                 ]
               },
@@ -1011,7 +1034,7 @@
                   "Stay at the camp"
                 ],
                 "answer": 1,
-                "explanation": "She would rather do the tree walk."
+                "explanation": "She thought about the zip wire but changed her mind, and she did not want to stay at the camp; she booked the walk on bridges among the tree tops."
               }
             }
           ]
@@ -1047,24 +1070,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Please keep your hands inside the boat and do not stand up."
+                    "text": "Are you all right, Lochlan? You’ve been quiet since we got in the boat."
                   },
                   {
                     "speaker": "m",
-                    "text": "Of course. I just want to take a photo of that monkey."
+                    "text": "Actually, I’m fine. I thought I’d be nervous, because I can’t swim well, but the water’s calm and the life jackets feel safe."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And what about the animals? We haven’t seen many."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s true, but I don’t mind. The air is fresh, the trees are huge and it’s so peaceful. It’s much better than the city. I’d stay here all day."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Me too. Let’s ask the driver to go slowly."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where are the speakers?",
+                "prompt": "How does Lochlan feel about the boat trip?",
                 "options": [
-                  "In a classroom",
-                  "At a zoo gate",
-                  "In a small boat"
+                  "Worried about the water",
+                  "Pleased to be on the river",
+                  "Disappointed about the animals"
                 ],
-                "answer": 2,
-                "explanation": "They talk about keeping hands inside the boat."
+                "answer": 1,
+                "explanation": "He expected to be nervous but is not, and he does not mind the lack of animals; he enjoys the calm river, so he is pleased to be there."
               }
             },
             {
@@ -1091,24 +1126,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I think I left my bag near the river, but I cannot find it now."
+                    "text": "Gwyneth, my bag has gone. I had it when we got off the boat."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't worry. We will go back and look for it together."
+                    "text": "Are you sure it’s not on the boat? I can run back and look."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The driver left five minutes ago, so that won’t help. I could phone the hotel, but I haven’t been there since breakfast."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then ask the guide. He saw everybody climb off, and he walks the path every day, so he’d know."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good point. He’s talking to the cook now. I’ll go and find him."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll come with you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the man's problem?",
+                "prompt": "What do Cassius and Gwyneth decide to do about the lost bag?",
                 "options": [
-                  "He has missed the boat",
-                  "He cannot find his bag",
-                  "He has hurt his arm"
+                  "Look for it in the boat",
+                  "Phone the hotel",
+                  "Ask the guide"
                 ],
-                "answer": 1,
-                "explanation": "He says that he cannot find the bag that he left near the river."
+                "answer": 2,
+                "explanation": "The boat driver has gone and the bag was not left at the hotel, so they decide to ask the guide, who sees everyone."
               }
             },
             {
@@ -1134,25 +1185,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "I heard you took your class into the forest, Thandi. How was it?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Today I am going to teach you how scientists count the trees in a forest."
+                    "text": "Wonderful. I thought the children would run off, but they stayed together and asked questions all day. Preparation was easy, I just made a list."
                   },
                   {
                     "speaker": "m",
-                    "text": "Is it difficult? There must be millions of them."
+                    "text": "So it didn’t take a lot of effort?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not at all. And what surprised me was the mood. Everybody was smiling, even the shy ones. In class, I have to work hard to get a smile. Out there, they learned and laughed at the same time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’d like to try it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What does Thandi think about teaching outdoors?",
                 "options": [
-                  "Teaching a lesson",
-                  "Asking for directions",
-                  "Selling some tickets"
+                  "It is harder to keep attention",
+                  "It is more fun than a classroom",
+                  "It takes more time to prepare"
                 ],
-                "answer": 0,
-                "explanation": "She says that she will teach how scientists count trees."
+                "answer": 1,
+                "explanation": "She expected problems with attention and a lot of preparation, but found neither; the children smiled and laughed, so it was more fun."
               }
             },
             {
@@ -1178,25 +1241,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "You must be annoyed about the rain, Ewart. We were going to climb the hill today."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "This is the third time that the rain has stopped our picnic!"
+                    "text": "Not at all. We can climb tomorrow. Honestly, I’m relieved. It was so hot yesterday that I could hardly breathe."
                   },
                   {
                     "speaker": "f",
-                    "text": "I know. Next time let us bring a big tent."
+                    "text": "But the path will be slippery, won’t it? And the river could flood."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The guide says it never gets that high. And I’d rather have a wet path than a burning sun. Listen, it’s so much quieter now. Let’s have coffee on the porch."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Okay, you’ve convinced me."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "How does the man feel?",
+                "prompt": "How does Ewart feel about the rain?",
                 "options": [
-                  "Pleased about the weather",
-                  "Afraid of the forest",
-                  "Annoyed about the rain"
+                  "Glad that it cools the air",
+                  "Afraid that the path will flood",
+                  "Angry that it ruins the trip"
                 ],
-                "answer": 2,
-                "explanation": "He complains that the rain has stopped their picnic for the third time."
+                "answer": 0,
+                "explanation": "Saoirse suggests that he is annoyed and mentions flooding, but he is relieved because the rain makes it cooler than the hot day before."
               }
             },
             {
@@ -1223,24 +1298,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to the Rainforest Restaurant. Table for two?"
+                    "text": "Shall we try that restaurant in town tonight? It’s got good reviews."
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, please. And could we sit by the window?"
+                    "text": "The food looks great, but it’s twenty minutes by taxi. And you know I’m shattered after the walk."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Is it a money problem? The hotel is cheaper."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, it’s not about that, and I’m sure the town place is open. I just want to sit down, have a hot meal and go to bed early."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’re right, I’m not much better. The hotel it is."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. We’ll go to the town one tomorrow."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Where are the speakers?",
+                "prompt": "Why do they decide to eat in the hotel tonight?",
                 "options": [
-                  "In a restaurant",
-                  "In a hotel",
-                  "In a zoo"
+                  "It is cheaper than the town",
+                  "The town restaurant is closed",
+                  "They are too tired to go out"
                 ],
-                "answer": 0,
-                "explanation": "The woman welcomes them to the restaurant and asks about a table for two."
+                "answer": 2,
+                "explanation": "Imelda mentions the price and Thaddeus is sure the town place is open; he says he is shattered, and both are tired, so they stay at the hotel."
               }
             },
             {
@@ -1267,24 +1358,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I would like to be a volunteer in the group that plants trees at weekends."
+                    "text": "Lilibet, I heard that you are signing up for the volunteer programme. Is it because of the free trip?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Great! Fill in this form and we will phone you on Friday."
+                    "text": "No, the trip isn’t free, we pay for our food and the bed. And I have plenty of friends already."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then why?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Last year I saw a young monkey that had lost its home because of a fire. They were saving it, and I felt I had to be a part of it. I want to protect those animals so that my grandchildren can see them."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s a lovely reason. Can I join you?"
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the man want to do?",
+                "prompt": "Why does Lilibet want to become a volunteer?",
                 "options": [
-                  "Take photographs",
-                  "Buy some plants",
-                  "Become a volunteer"
+                  "To help protect animals",
+                  "To meet new people",
+                  "To get a free holiday"
                 ],
-                "answer": 2,
-                "explanation": "He would like to be a volunteer in the group that plants trees."
+                "answer": 0,
+                "explanation": "She says the trip is not free and she has many friends; she saw a young monkey being saved and wants to protect animals."
               }
             }
           ]
@@ -1309,49 +1412,46 @@
             "turns": [
               {
                 "speaker": "hanne",
-                "text": "Hello everyone, and thank you for coming. Today I would like to tell you about my favourite place, the Amazon rainforest. The river that runs through it is the longest in South America, and in some places it is so wide that you cannot see the other side. About thirty million people live in the Amazon region, and many of them travel by boat because there are almost no roads. The forest is home to thousands of kinds of fish, and one of them, the piranha, has very sharp teeth. In the trees, you can find the sloth, an animal that moves so slowly that green plants grow on its fur. The best time to visit is between June and November, when there is less rain. If you go, remember to take a hat, because the sun is very strong in the afternoon."
+                "text": "Hello everyone, and thank you for coming. Today I would like to tell you about my favourite place, the Amazon rainforest. Let me start with the river. Many people think that the Nile is the biggest river in the world, and there are some people who say the Amazon is the widest. But in South America, no other river goes as far as this one, so we call it the longest. Because the forest is so thick, there are very few roads, so it is not a good idea to hire a car. Some people use small planes, but most people travel by boat. You can take a big boat with a roof, or a small canoe if you prefer. Now let me tell you about some animals. The most famous fish is the piranha. Many people believe that it has big claws, but it has no claws at all. What it does have is a mouth full of very sharp teeth. Don’t worry, they rarely attack people. Another animal I love is the sloth. A cheetah moves fast, but the sloth is the opposite. It hangs in a tree and moves very slowly, so slowly that green plants grow on its fur. If you’d like to visit, think about the season. It’s wet from December until May, and the rivers rise. The best time to visit is from June to November, when you can walk on the paths and see the animals. October is hot, but a lot of people think that it’s the nicest month. Finally, a few tips. The sun is strong, even under the trees, so take a hat. An umbrella is not much use in the forest, and a coat is too warm. Bring good boots and some medicine for insect bites. And most of all, bring your curiosity. Thank you, and enjoy the Amazon!"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The river in the Amazon is the ___ in South America",
+              "prompt": "No other river in South America goes as far as the Amazon, so it is the ___",
               "answer": "longest",
-              "explanation": "The river is the longest in South America."
+              "explanation": "She says that in South America no other river goes as far, so they call it the longest."
             },
             {
               "id": "l3-2",
-              "prompt": "People travel by ___ because there are few roads",
+              "prompt": "Most people get around the forest by ___",
               "answer": "boat",
-              "accepted": [
-                "boats"
-              ],
-              "explanation": "Many people travel by boat because there are almost no roads."
+              "explanation": "There are few roads; some use planes but most people use a boat."
             },
             {
               "id": "l3-3",
-              "prompt": "The piranha has very sharp ___",
+              "prompt": "A piranha has a mouth full of sharp ___",
               "answer": "teeth",
-              "explanation": "The piranha has very sharp teeth."
+              "explanation": "She says it has no claws, but a mouth full of sharp teeth."
             },
             {
               "id": "l3-4",
-              "prompt": "The sloth moves very ___",
+              "prompt": "Green plants grow on the fur of the sloth because it moves so ___",
               "answer": "slowly",
-              "explanation": "The sloth moves so slowly."
+              "explanation": "The sloth is the opposite of a cheetah and moves very slowly."
             },
             {
               "id": "l3-5",
-              "prompt": "The best time to visit is from June to ___",
+              "prompt": "The dry season ends in ___",
               "answer": "November",
-              "explanation": "The best time to visit is between June and November."
+              "explanation": "The best time is June to November, when the paths are dry."
             },
             {
               "id": "l3-6",
-              "prompt": "Visitors should take a ___ for the sun",
+              "prompt": "Take a ___ because the sun is strong",
               "answer": "hat",
-              "explanation": "Remember to take a hat."
+              "explanation": "She says take a hat; an umbrella is not much use and a coat is too warm."
             }
           ]
         },
@@ -1383,51 +1483,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Duarte, you work as a guide in the rainforest. How did you start?"
+                "text": "Duarte, welcome to the programme. You have worked in the forest for twenty years. How did it all start?"
               },
               {
                 "speaker": "g",
-                "text": "I grew up in a village next to the forest. My grandfather was a guide, and he took me with him when I was only eight years old."
+                "text": "Well, you might think I read about it at school, but my school had very few books, and I never saw a film about wild animals when I was a boy. It was my grandfather. He was a guide too, and from the age of six I walked behind him on every path. He taught me the names of the trees by touch, with my eyes closed."
               },
               {
                 "speaker": "i",
-                "text": "What do you enjoy most about your job?"
+                "text": "Tell us about a moment you remember from last week."
               },
               {
                 "speaker": "g",
-                "text": "I love showing people things that they have never seen before. Last week a visitor saw a blue butterfly the size of a plate, and she cried with happiness."
+                "text": "A woman from Germany started to cry on the path. I was frightened for a moment, and I thought she was scared of the dark under the trees, but she said she was fine. A big blue butterfly had landed on her hand, and she said that she had never seen anything so beautiful. It made my day."
               },
               {
                 "speaker": "i",
-                "text": "Is it ever dangerous?"
+                "text": "What is the biggest danger for visitors?"
               },
               {
                 "speaker": "g",
-                "text": "Not if you follow the rules. The biggest danger is getting lost, so I always tell people to stay close to me and never walk alone."
+                "text": "People expect snakes and jaguars, and of course you must be careful, but the animals avoid us. And the river is safe if you listen to the boatman. The real danger is getting lost. Everything looks the same, the paths close behind you, and one wrong turn can be a disaster. That’s why I always count my visitors."
               },
               {
                 "speaker": "i",
-                "text": "Have you noticed any changes in the forest over the years?"
+                "text": "Have you noticed any changes over the years?"
               },
               {
                 "speaker": "g",
-                "text": "Yes, sadly. The rivers are lower in the dry season, and some birds that I saw as a boy have disappeared from this area."
+                "text": "Yes, sadly. The trees are not taller, they are as old as they were. We also have more visitors than before, which is good for the villages. What worries me is the birds. There are some that my grandfather showed me, and I haven’t seen them for ten years. They have gone."
               },
               {
                 "speaker": "i",
-                "text": "What do you tell young people who want to do your job?"
+                "text": "What advice do you give to young people who want your job?"
               },
               {
                 "speaker": "g",
-                "text": "Learn English, because most visitors speak it, and learn to be patient. You can wait two hours for an animal that shows itself for one minute."
+                "text": "Don’t spend years in a university, you don’t need that. And you needn’t be fast or a good swimmer either. Be patient, because the forest shows you things only when you wait, and learn English, because most of our visitors speak it. That is the most useful thing."
               },
               {
                 "speaker": "i",
-                "text": "And what is your plan for the future?"
+                "text": "Do you have any dreams for the future?"
               },
               {
                 "speaker": "g",
-                "text": "I would like to open a small school for children from the villages, so that they can learn to guide visitors and look after their forest."
+                "text": "I do. I won’t write a book, I’m too tired in the evenings, and I wouldn’t move to the city, I’d miss the sounds. I’d like to open a school in my village. The children now walk two hours to get to school, and many stop going. If it were close, they could learn and still help their families."
               }
             ]
           },
@@ -1441,18 +1541,18 @@
                 "From a film about wild animals he saw"
               ],
               "answer": 1,
-              "explanation": "His grandfather was a guide and took him along at the age of eight."
+              "explanation": "He did not read about it at school or see a film; his grandfather, a guide, taught him from the age of six."
             },
             {
               "id": "l4-2",
-              "prompt": "What did a visitor do last week?",
+              "prompt": "Why did a visitor cry last week?",
               "options": [
-                "She lost her way in the dark trees",
-                "She cried when she saw a butterfly",
-                "She took a photo of a rare bird"
+                "She was scared of the dark",
+                "She was moved by a butterfly",
+                "She was sad to leave"
               ],
               "answer": 1,
-              "explanation": "A visitor saw a blue butterfly and cried with happiness."
+              "explanation": "He thought she was scared of the dark, but she was touched by a butterfly on her hand."
             },
             {
               "id": "l4-3",
@@ -1463,7 +1563,7 @@
                 "Crossing the river by boat"
               ],
               "answer": 0,
-              "explanation": "He says the biggest danger is getting lost."
+              "explanation": "Animals avoid us and the river is safe; the real danger is getting lost because everything looks the same."
             },
             {
               "id": "l4-4",
@@ -1474,7 +1574,7 @@
                 "Some birds have disappeared"
               ],
               "answer": 2,
-              "explanation": "Some birds that he saw as a boy have disappeared from the area."
+              "explanation": "The trees are as old as before and there are more visitors, but some birds have not been seen for ten years."
             },
             {
               "id": "l4-5",
@@ -1485,18 +1585,18 @@
                 "Practise running and swimming"
               ],
               "answer": 1,
-              "explanation": "He tells them to learn English and to be patient."
+              "explanation": "He says do not spend years at university and you need not be fast; be patient and learn English."
             },
             {
               "id": "l4-6",
-              "prompt": "What does Duarte want to do in the future?",
+              "prompt": "Why does Duarte want to open a school?",
               "options": [
-                "Open a school for village children",
-                "Write a book about the forest",
-                "Move to a much bigger city"
+                "Children walk far to school",
+                "He enjoyed school as a boy",
+                "Tourists asked him to"
               ],
               "answer": 0,
-              "explanation": "He would like to open a small school for children from the villages."
+              "explanation": "He does not want to write a book or move to the city; the children walk two hours to school and many stop going."
             }
           ]
         }

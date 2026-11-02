@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "What happened to the windmill before the group saved it?",
               "options": [
+                "It was destroyed by a fire",
                 "It was a farm shop for a while",
                 "Nobody used it for fifty years",
                 "It was closed because it was unsafe"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "The text says it stood empty for fifty years."
             },
             {
@@ -261,10 +262,11 @@
               "prompt": "How did the writer feel on the first day?",
               "options": [
                 "Pleased with the birds' nests",
-                "Afraid of the great height",
-                "Tired and a little bored"
+                "Tired and a little bored",
+                "Angry with Jean",
+                "Afraid of the great height"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "He says he was tired and a little bored, and wondered why he had come."
             },
             {
@@ -272,10 +274,11 @@
               "prompt": "What changed the way he felt about the work?",
               "options": [
                 "Meeting other young volunteers",
+                "Finding an old photograph of the mill",
                 "Getting thanks from Jean",
                 "Learning how the machinery worked"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "After Jean explained the stones, he understood how much effort bread took and looked at everything differently."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "Repair and paint parts of the building",
                 "Build a new roof for the windmill",
-                "Make flour for the first visitors"
+                "Make flour for the first visitors",
+                "Teach visitors about bread"
               ],
               "answer": 0,
               "explanation": "They painted the doors, repaired the stairs and put glass in two windows."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "Why does he want to take his grandmother to the windmill?",
               "options": [
-                "She knew it when she was young",
                 "She wants to help with the painting",
-                "She has never seen a windmill"
+                "She has never seen a windmill",
+                "She knew it when she was young",
+                "She wants to buy the mill"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "His grandmother remembers the mill from when she was a girl."
             }
           ]
@@ -306,31 +311,33 @@
           "id": "reading-4",
           "number": 4,
           "title": "The old bridge at Oakham",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "The Old Bridge in Oakham is only four metres wide, and cars have not been allowed on it since 1975. [1] Every day, hundreds of walkers and cyclists use it to get to the market on the other side.\n\nThe bridge was built in 1420 by local monks, who needed a safe way to carry their goods across the river. [2] It is said that the builders mixed eggs into the mortar, which made the stones stronger. Scientists tested this idea last year, and they found that it was probably true.\n\nIn 1968, the town council wanted to knock the bridge down and build a wider one. [3] Thousands of people signed a letter, and a newspaper wrote about the plan. In the end, the council changed its mind.\n\nToday, the bridge is looked after by a group of volunteers. [4] They also pull rubbish out of the water every spring. At the end of the bridge, a small sign tells the story of its history in three languages. [5] Visitors often stop to read it and take photographs before they cross.",
           "sentences": [
             "Every month, they check the stones and repair any that have become loose.",
+            "Before then, people had to cross the river in a small boat, which was often dangerous.",
             "The river itself is one of the cleanest in the country.",
             "Local people were angry and decided to fight the plan.",
             "Instead, it has become one of the most popular walks in the area.",
+            "The monks later built a larger church in the town.",
             "The words were written by pupils from the local school.",
-            "Before then, people had to cross the river in a small boat, which was often dangerous."
+            "The town of Oakham is about two hundred kilometres from the sea."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "D",
+              "answer": "E",
               "explanation": "The sentence says what the bridge is now, and the next sentence says that hundreds of walkers and cyclists use it."
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "B",
               "explanation": "The sentence explains the need for a bridge, because the monks wanted a safe way to cross and the next sentence tells how it was built."
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "D",
               "explanation": "The sentence shows how people reacted to the plan, and then thousands signed a letter."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "G",
               "explanation": "The sentence says who wrote the words on the sign, which visitors then stop to read."
             }
           ]
@@ -750,6 +757,14 @@
                   {
                     "speaker": "hartley",
                     "text": "Then that's sixteen pounds altogether."
+                  },
+                  {
+                    "speaker": "rosario",
+                    "text": "Thank you. Is there a café inside? The children are hungry after the long drive."
+                  },
+                  {
+                    "speaker": "hartley",
+                    "text": "Yes, it's on the ground floor, and the tickets include a free juice for each child."
                   }
                 ]
               },
@@ -802,6 +817,18 @@
                   {
                     "speaker": "brendan",
                     "text": "Only until twelve o'clock."
+                  },
+                  {
+                    "speaker": "thora",
+                    "text": "Then I must hurry. Is there anything interesting inside?"
+                  },
+                  {
+                    "speaker": "brendan",
+                    "text": "The windows are very old, and there is a small tower with a view of the river. Don't look next to the bank, that's only the library. Behind the station there's just a car park."
+                  },
+                  {
+                    "speaker": "thora",
+                    "text": "Thank you very much. I'll walk."
                   }
                 ]
               },
@@ -850,6 +877,22 @@
                   {
                     "speaker": "leila",
                     "text": "I thought it was fascinating."
+                  },
+                  {
+                    "speaker": "rowan",
+                    "text": "The guide wasn't boring at all, and it wasn't crowded. It was only the length. We walked through forty rooms."
+                  },
+                  {
+                    "speaker": "leila",
+                    "text": "Well, I'd happily go again. Next time, take comfortable shoes."
+                  },
+                  {
+                    "speaker": "rowan",
+                    "text": "Good idea. And I'll bring a bottle of water."
+                  },
+                  {
+                    "speaker": "leila",
+                    "text": "Then let's go to the café now. I'm tired, and I want some tea."
                   }
                 ]
               },
@@ -902,6 +945,14 @@
                   {
                     "speaker": "merlin",
                     "text": "OK, I'll meet you there at two."
+                  },
+                  {
+                    "speaker": "calista",
+                    "text": "Good. The mill has a small café too. We can have tea and cake after the tour."
+                  },
+                  {
+                    "speaker": "merlin",
+                    "text": "Sounds nice. It's not my uncle or the dentist, I just have my match, and I can't miss it, because I'm in the team."
                   }
                 ]
               },
@@ -954,6 +1005,18 @@
                   {
                     "speaker": "alfie",
                     "text": "You should take it to the museum. They might want to see it."
+                  },
+                  {
+                    "speaker": "winnie",
+                    "text": "I won't sell it to a collector, and I won't put it back in the garden. I'd like to know how old it is."
+                  },
+                  {
+                    "speaker": "alfie",
+                    "text": "The museum has an expert who looks at objects on Tuesday mornings. Take a photo too."
+                  },
+                  {
+                    "speaker": "winnie",
+                    "text": "Good idea. I'll go this week."
                   }
                 ]
               },
@@ -998,6 +1061,22 @@
                   {
                     "speaker": "murdoch",
                     "text": "The oldest part is two hundred and fifty years old. They built the front a hundred years later."
+                  },
+                  {
+                    "speaker": "kerensa",
+                    "text": "So the front is the newer part. Who lived here at the beginning?"
+                  },
+                  {
+                    "speaker": "murdoch",
+                    "text": "A family of farmers. Later it became a school, and now it's a museum. The back is the oldest part, and the front is a hundred years younger."
+                  },
+                  {
+                    "speaker": "kerensa",
+                    "text": "Thanks. That's very interesting."
+                  },
+                  {
+                    "speaker": "murdoch",
+                    "text": "You're welcome. The tour of the house starts in ten minutes."
                   }
                 ]
               },
@@ -1050,6 +1129,18 @@
                   {
                     "speaker": "garth",
                     "text": "Until the end of the month, so you'll have to go round by the motorway."
+                  },
+                  {
+                    "speaker": "tansy",
+                    "text": "The motorway will take forty minutes longer. I'll leave earlier."
+                  },
+                  {
+                    "speaker": "garth",
+                    "text": "The bridge isn't too old for cars, the storm just damaged it. There is also a street party tonight on the high street, so the traffic is very slow."
+                  },
+                  {
+                    "speaker": "tansy",
+                    "text": "Then I'll park outside the town and walk. Thanks."
                   }
                 ]
               },
@@ -1111,6 +1202,14 @@
                   {
                     "speaker": "calder",
                     "text": "Then I'll reserve a guide for you. She'll show you the main rooms, and the whole visit takes about an hour."
+                  },
+                  {
+                    "speaker": "verity",
+                    "text": "Excellent. The last tour was wonderful, so I'm not phoning to complain, and I don't want a job there. I just want a good day out for the students."
+                  },
+                  {
+                    "speaker": "calder",
+                    "text": "Please bring a form from the school, and we'll see you at ten o'clock."
                   }
                 ]
               },
@@ -1163,6 +1262,18 @@
                   {
                     "speaker": "clover",
                     "text": "Maybe. Let me see how I feel when we get to the bottom."
+                  },
+                  {
+                    "speaker": "barclay",
+                    "text": "You could stay at the bottom and I'll take photos for you."
+                  },
+                  {
+                    "speaker": "clover",
+                    "text": "I'm not bored. I love old buildings, and I'd like to see the view. I just feel nervous when I'm high up."
+                  },
+                  {
+                    "speaker": "barclay",
+                    "text": "Then we'll go slowly, and I'll hold your arm."
                   }
                 ]
               },
@@ -1211,6 +1322,14 @@
                   {
                     "speaker": "jocasta",
                     "text": "About two hundred. And the fireplace at the end was big enough to cook a whole pig."
+                  },
+                  {
+                    "speaker": "eoghan",
+                    "text": "Wow. And where did the cooks work?"
+                  },
+                  {
+                    "speaker": "jocasta",
+                    "text": "In the kitchen in the cellar. You can see it later. The museum shop is near the exit, if you'd like a book. We're not in a church, although there is a small chapel upstairs."
                   }
                 ]
               },
@@ -1259,6 +1378,18 @@
                   {
                     "speaker": "noelle",
                     "text": "Then let's buy them at the door. The queue is never long on weekdays."
+                  },
+                  {
+                    "speaker": "kit",
+                    "text": "True. But it isn't possible to go on the weekend, because I work."
+                  },
+                  {
+                    "speaker": "noelle",
+                    "text": "Okay, then let's go on Thursday and pay at the entrance. I'd rather not pay on the website and choose a time that doesn't work."
+                  },
+                  {
+                    "speaker": "kit",
+                    "text": "Agreed. I'll get there at nine and meet you at the gate."
                   }
                 ]
               },
@@ -1311,6 +1442,14 @@
                   {
                     "speaker": "bea",
                     "text": "I'll ask a colleague to check. Meanwhile, you can use this one."
+                  },
+                  {
+                    "speaker": "ludwig",
+                    "text": "Thank you. I understood the guide very well, and I know where I am. It's only that I lost the thing."
+                  },
+                  {
+                    "speaker": "bea",
+                    "text": "No problem. We have a basket for lost items, and we'll call you if we find it."
                   }
                 ]
               },
@@ -1359,6 +1498,22 @@
                   {
                     "speaker": "marnie",
                     "text": "Now I watch documentaries, and I realise that it's all stories about real people. That's what makes it interesting."
+                  },
+                  {
+                    "speaker": "teague",
+                    "text": "I agree. My teacher also made it boring, but now I read biographies."
+                  },
+                  {
+                    "speaker": "marnie",
+                    "text": "Yes! A better teacher would have helped, but learning more dates never worked for me. A person's life is more exciting than a date."
+                  },
+                  {
+                    "speaker": "teague",
+                    "text": "Which documentary do you recommend?"
+                  },
+                  {
+                    "speaker": "marnie",
+                    "text": "The one about a woman who sailed alone. I'll lend it to you."
                   }
                 ]
               },
@@ -1396,7 +1551,7 @@
             "turns": [
               {
                 "speaker": "mattias",
-                "text": "Good morning, and welcome to the Heritage Weekend in Stanton. My name is Mattias, and I'm the organiser. The weekend begins today at nine and ends on Sunday at six. About thirty old buildings in the town are open to the public, and all of them are free. You can pick up a map from the information tent in the main square. If you like churches, don't miss St Anne's, where there is a concert of old music at three o'clock. The old school is showing photographs from 1920. The train station has a small museum for children, and they can try on old uniforms. Buses between the buildings are free and leave every twenty minutes. If you would like lunch, there's a restaurant in the town hall that serves traditional soup, but you should reserve a table, because it fills quickly. Finally, please remember to take your rubbish with you. Enjoy the weekend!"
+                "text": "Good morning, and welcome to the Heritage Weekend in Stanton. My name is Mattias, and I'm the organiser. This is the twelfth year of the weekend, and we expect more than five thousand visitors. The weekend begins today at nine and ends on Sunday at six. On Saturday evening there is also a short fireworks show over the river. About thirty old buildings in the town are open to the public, and all of them are free. Normally, some of them cost money, but this weekend the town pays for everything. You can pick up a map from the information tent in the main square. It also has a list of events for every hour, so please take one. If you like churches, don't miss St Anne's, where there is a concert of old music at three o'clock. The old school is showing photographs from 1920. There are pictures of children in their classrooms and of the teachers, and you can see how the town has changed. The train station has a small museum for children, and they can try on old uniforms. A photographer is there too, and you can take a photo home for a pound. Buses between the buildings are free and leave every twenty minutes. The first bus is at half past nine, and the last bus is at five. If you would like lunch, there's a restaurant in the town hall that serves traditional soup, but you should reserve a table, because it fills quickly. The soup comes with bread, and there is a vegetarian choice. Finally, please remember to take your rubbish with you. Enjoy the weekend!"
               }
             ]
           },
@@ -1489,11 +1644,27 @@
               },
               {
                 "speaker": "harlan",
+                "text": "Do you work alone?"
+              },
+              {
+                "speaker": "margit",
+                "text": "Never. A dig needs at least ten people. Some are students, some are experts in bones or pots, and there is always one person whose job is to draw everything on a map. I love working in a team."
+              },
+              {
+                "speaker": "harlan",
                 "text": "What's the most exciting thing you've found?"
               },
               {
                 "speaker": "margit",
                 "text": "A child's toy, a little horse made of clay. Somebody lost it almost three thousand years ago, and I was the first person to touch it since then."
+              },
+              {
+                "speaker": "harlan",
+                "text": "What do you do in the evenings?"
+              },
+              {
+                "speaker": "margit",
+                "text": "We camp near the dig. After dinner we sit around a fire and talk about the day. Sometimes someone plays the guitar, but most people go to bed early, because they are very tired."
               },
               {
                 "speaker": "harlan",
@@ -1505,6 +1676,14 @@
               },
               {
                 "speaker": "harlan",
+                "text": "Have you ever found nothing?"
+              },
+              {
+                "speaker": "margit",
+                "text": "Often. A whole month can pass with only small pieces of broken pot. But each piece is part of a story, and that is why I keep going."
+              },
+              {
+                "speaker": "harlan",
                 "text": "What happens to the things you find?"
               },
               {
@@ -1513,11 +1692,27 @@
               },
               {
                 "speaker": "harlan",
+                "text": "Is it hard to be away from home?"
+              },
+              {
+                "speaker": "margit",
+                "text": "Sometimes, especially in winter. But my family visits me twice a season, and my dog loves the camp. I write long letters to my mother, which she keeps in a box."
+              },
+              {
+                "speaker": "harlan",
                 "text": "What would you say to someone who wants to do this work?"
               },
               {
                 "speaker": "margit",
                 "text": "Study hard, but also join a local dig as a volunteer. You'll learn a great deal in two weeks in the field."
+              },
+              {
+                "speaker": "harlan",
+                "text": "Will you ever stop?"
+              },
+              {
+                "speaker": "margit",
+                "text": "I hope not. I am sixty next year, but my knees are still strong. When I stop, I want to teach children, because I know how exciting the first discovery feels."
               }
             ]
           },

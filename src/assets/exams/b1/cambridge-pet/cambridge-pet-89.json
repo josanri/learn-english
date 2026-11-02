@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "What were Tom's friends' jokes about?",
               "options": [
-                "His lateness",
                 "His clothes and hair",
+                "His lateness",
+                "His new shoes",
                 "His marks at school"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "They joked that he would be late for his own birthday."
             },
             {
@@ -261,21 +262,23 @@
               "prompt": "What task did Mr Ellis give Tom?",
               "options": [
                 "Draw a picture of a clock",
-                "Write down his morning",
-                "Learn a long poem by heart"
+                "Learn a long poem by heart",
+                "Run to school every morning",
+                "Write down his morning"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "He asked him to write down everything he does before school."
             },
             {
               "id": "r3-3",
               "prompt": "What did Tom find?",
               "options": [
+                "He wasted a lot of time",
                 "He woke up far too early",
                 "He walked much too slowly",
-                "He wasted a lot of time"
+                "He lived too far away"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He spent twenty-five minutes looking for shoes and fifteen on his phone."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "Got up at five each morning",
                 "Bought himself a new watch",
-                "Got ready the night before"
+                "Got ready the night before",
+                "Asked his friends to call him"
               ],
               "answer": 2,
               "explanation": "He put his shoes by the door at night and left his phone in the hall."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What was his new problem?",
               "options": [
-                "Too much free time",
                 "Too much work at home",
+                "Too much free time",
+                "Too many early lessons",
                 "Too little sleep at night"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "He said he had too much time before lessons."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "How people measured time",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Long ago, people measured time by looking at the sky. [1] When the Sun was high, it was noon, and when it went down, the day was over.\n\nLater, the Egyptians made sundials. [2] The shadow of a stick moved round a circle, and it showed the hours.\n\nBut sundials did not work at night or on cloudy days. [3] Water clocks solved this problem, because water ran slowly from one container to another.\n\nThen, in the fourteenth century, mechanical clocks appeared in Europe. [4] They were so large that they were built into church towers.\n\nToday, we can wear a tiny watch on our wrist. [5] Some of them are accurate to less than a second in a million years.",
           "sentences": [
-            "The most exact ones use atoms to count the seconds.",
+            "They were simple but clever.",
+            "Few of them could read the numbers on a clock face.",
             "Many people wear no watch at all.",
+            "The most exact ones use atoms to count the seconds.",
+            "In 1675, a Dutch scientist invented the pendulum clock.",
             "People needed another way to tell the time.",
             "Everyone in the town could hear the bells and know the time.",
-            "They were simple but clever.",
             "The Sun told them when to wake, eat and work."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "F",
+              "answer": "H",
               "explanation": "The Sun told them when to wake, eat and work; the next sentence gives noon."
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "A",
               "explanation": "Sundials were simple but clever; the next sentence explains how they worked."
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "F",
               "explanation": "Sundials failed at night and on cloudy days, so people needed another way to tell the time; water clocks \"solved this problem\"."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "G",
               "explanation": "Clocks in church towers could be heard by everyone in the town."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "D",
               "explanation": "The most exact watches use atoms; the previous sentence says they can be tiny."
             }
           ]
@@ -440,7 +447,7 @@
               "answer": 1,
               "explanation": "\"Make things easier\": make + object + adjective.",
               "tags": [
-                "collocations"
+                "word-choice"
               ]
             }
           ]
@@ -729,11 +736,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time is the film?"
+                    "text": "Let’s meet at half past eight outside the station on Saturday."
                   },
                   {
                     "speaker": "b",
-                    "text": "It starts at a quarter past eight, so we should meet at eight."
+                    "text": "That’s a bit late. The museum opens at nine, and a lot of people queue. I wanted seven, but my brother says that’s too early for a Saturday. How about eight? Then we can buy tickets first and get a good place in the queue."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK, eight. Don’t be late! The first bus is at ten past."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I won’t. I’ll set two alarms."
                   }
                 ]
               },
@@ -746,7 +761,7 @@
                   "At seven"
                 ],
                 "answer": 1,
-                "explanation": "She says they should meet at eight."
+                "explanation": "Half past eight is suggested but she says it is late, and seven is too early; they agree on eight."
               }
             },
             {
@@ -773,11 +788,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is that watch new?"
+                    "text": "I like your watch. Is it new?"
                   },
                   {
                     "speaker": "b",
-                    "text": "No, it belonged to my grandfather. It is eighty years old."
+                    "text": "No, it’s second-hand. My favourite uncle gave it to me last year. Before that I wore my elder brother’s, which finally broke. But the very first one, when I was a boy, came from my grandfather. It was too big for my arm, so my mother had to make a new strap."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s lovely. Do you still have it?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course, in a drawer at home."
                   }
                 ]
               },
@@ -790,21 +813,13 @@
                   "His favourite uncle's"
                 ],
                 "answer": 0,
-                "explanation": "He says it belonged to his grandfather."
+                "explanation": "His uncle’s watch is the latest and his brother’s came before it, but the first one came from his grandfather."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Boy",
@@ -816,12 +831,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Why were you late?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "My bus broke down, so I had to walk."
+                    "text": "Hi Mia, it’s Tom. Sorry I’m late, I’m on my way now. It’s not because I slept too long, my alarm rang at seven and I got up at once. And for once I have my keys in my pocket, I checked three times. The problem was the bus. It stopped after five minutes, outside the cinema, and the driver said that it had broken down. We had to wait twenty minutes for another one. I’ll be there soon. Please save me a seat."
                   }
                 ]
               },
@@ -834,7 +845,7 @@
                   "He lost his keys again"
                 ],
                 "answer": 0,
-                "explanation": "He says his bus broke down."
+                "explanation": "He did not oversleep and he has his keys; the first bus broke down and he waited for another."
               }
             },
             {
@@ -848,24 +859,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How long does the journey take?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "About fifty minutes by train, but only half an hour by car."
+                    "text": "Good morning, passengers. This is an announcement about the train to Oakford. Normally the journey takes thirty minutes, and last Friday it took an hour because of snow. Today there is work on the line, so the train goes by Marston, and the journey will take fifty minutes. Please don’t worry, you will still arrive before lunch. The next train leaves in fifteen minutes from platform four. Tickets are valid as usual. We are sorry for the delay, and thank you for your patience."
                   }
                 ]
               },
@@ -878,7 +877,7 @@
                   "Fifteen minutes"
                 ],
                 "answer": 1,
-                "explanation": "She says it is about fifty minutes by train."
+                "explanation": "Thirty minutes is the normal time and an hour was last Friday; today, by Marston, the journey takes fifty minutes."
               }
             },
             {
@@ -905,11 +904,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Can I borrow your clock?"
+                    "text": "Dad, is the kitchen clock right? It says ten past eight, but my phone says five to eight."
                   },
                   {
                     "speaker": "b",
-                    "text": "Sure, but it is five minutes fast, so take care."
+                    "text": "It’s not broken, we changed the battery yesterday. And it isn’t slow, if it were slow it would show an earlier time than your phone."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So why is it wrong?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It runs ten minutes ahead. I did that on purpose, so that you all get out of the house on time."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s cheating! I’m always late anyway."
                   }
                 ]
               },
@@ -922,21 +933,13 @@
                   "It is fast"
                 ],
                 "answer": 2,
-                "explanation": "He says it is five minutes fast."
+                "explanation": "It works and it shows a later time than the phone, so it runs ahead, on purpose."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Girl",
@@ -948,12 +951,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Have you finished your homework?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "Almost. I will do the last part tomorrow before school."
+                    "text": "Hello Mrs Cole, it’s Anna. I’m calling about the history essay. I said I would finish it tonight after dinner, but we have visitors, and my cousins will stay until late. The deadline is the end of the week, so I could wait until Friday, but I’d rather send it earlier. I’ll get up early and finish it tomorrow morning, before school, and then I’ll email it to you. I hope that’s all right. Thanks, goodbye."
                   }
                 ]
               },
@@ -966,7 +965,7 @@
                   "At the end of the week"
                 ],
                 "answer": 0,
-                "explanation": "She says she will do it tomorrow before school."
+                "explanation": "Tonight is not possible because of the visitors and the end of the week is the deadline, but she will get up early and finish before school."
               }
             },
             {
@@ -993,11 +992,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time do you go to bed on school nights?"
+                    "text": "How many hours do you sleep, Ben? Eight?"
                   },
                   {
                     "speaker": "b",
-                    "text": "About ten. I need nine hours of sleep."
+                    "text": "Eight is what my friends sleep. The doctor told me that at my age I need nine. Some boys need ten, but that’s for younger children."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And do you manage it?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not always. When I only sleep eight, I’m grumpy all day and I can’t concentrate in class."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then go to bed earlier, and no phone after nine."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll try that. Thanks for the advice."
                   }
                 ]
               },
@@ -1010,7 +1025,7 @@
                   "Ten hours"
                 ],
                 "answer": 1,
-                "explanation": "He says he needs nine hours of sleep."
+                "explanation": "His friends sleep eight and younger children need ten; the doctor told him that he needs nine."
               }
             }
           ]
@@ -1046,24 +1061,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Attention, please. The train to Leeds has been delayed by twenty minutes."
+                    "text": "The nine-fifteen is delayed by twenty minutes."
                   },
                   {
                     "speaker": "b",
-                    "text": "That is annoying."
+                    "text": "Oh no. My meeting is at ten, and it takes half an hour from the station. I’ll miss the start."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Shall we complain at the desk?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "There’s no point. It isn’t the company’s fault, it’s the snow. I’m not angry, I’m just nervous. I have to give a presentation."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Send them a message to say that you’re coming."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good idea."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Don’t worry. I’ll buy us a coffee while we wait."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the announcement about?",
+                "prompt": "How does the man feel about the late train?",
                 "options": [
-                  "A closed station",
-                  "A new ticket",
-                  "A late train"
+                  "Calm because he has time",
+                  "Worried about missing a meeting",
+                  "Angry with the railway company"
                 ],
-                "answer": 2,
-                "explanation": "The train has been delayed by twenty minutes."
+                "answer": 1,
+                "explanation": "He is not calm or angry; the delay and the half hour from the station mean he might not arrive in time."
               }
             },
             {
@@ -1090,24 +1125,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I cannot find my watch anywhere."
+                    "text": "I can’t find my watch. I took it off in the gym."
                   },
                   {
                     "speaker": "b",
-                    "text": "Did you check your bag? You usually leave it there."
+                    "text": "Is it the one you bought last month? You can buy another."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It’s not that one. It’s the one Gran gave me on my twelfth birthday. It isn’t expensive, but I can never replace it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Did you check the changing room?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Twice. And my phone is fine, thank you, before you ask. I’m just very sad."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Let’s look once more together. I’ll check under the bench."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the girl looking for?",
+                "prompt": "Why is the girl upset?",
                 "options": [
-                  "Her school bag",
-                  "Her watch",
-                  "Her house keys"
+                  "She lost her gran's watch",
+                  "She broke her phone",
+                  "She forgot her homework"
                 ],
-                "answer": 1,
-                "explanation": "She cannot find her watch."
+                "answer": 0,
+                "explanation": "She says that it is not the new watch and not the phone; it was a present from her grandmother and cannot be replaced."
               }
             },
             {
@@ -1134,24 +1185,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like to change my appointment, please."
+                    "text": "Hello, I have an appointment on Tuesday at nine, but I have to travel for work. Could I come another day?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Certainly. Is Thursday at three suitable?"
+                    "text": "We have space on Wednesday or Thursday."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thursday is better. And no, I don’t want to change my doctor, Dr Lopes is great. I don’t need a refund either, I haven’t paid yet."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then I’ll move you to Thursday at nine."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thanks. That’s very kind."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "See you on Thursday, then. Please arrive ten minutes early."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What does the man want?",
+                "prompt": "Why does the man phone the clinic?",
                 "options": [
-                  "Another day",
-                  "A refund",
-                  "A new doctor"
+                  "To change his doctor",
+                  "To ask for his money back",
+                  "To move his appointment"
                 ],
-                "answer": 0,
-                "explanation": "He wants to change his appointment."
+                "answer": 2,
+                "explanation": "He does not want a different doctor or his money back; Tuesday does not suit him, so he asks for Thursday."
               }
             },
             {
@@ -1178,24 +1245,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "You have only ten minutes left in this exam. Please check your answers."
+                    "text": "Ten minutes left, everyone."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, Miss."
+                    "text": "Excuse me, miss, I’m not finished. The first question took me a long time because of the diagram. Could I have fifteen more minutes?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I can’t give you fifteen, but I’ll give you five."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thank you. The noise in the corridor was a problem earlier, but it’s quiet now. And I’m not ill, I’m just slow today."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then write fast."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, miss. I’ll try to finish all the questions in time."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "Where is the boy?",
+                "prompt": "Why does the boy speak to the teacher?",
                 "options": [
-                  "On a very full bus",
-                  "In a shopping centre",
-                  "In an exam"
+                  "To ask for more time",
+                  "To complain about the noise",
+                  "To say that he is ill"
                 ],
-                "answer": 2,
-                "explanation": "The teacher tells him he has ten minutes to check his answers."
+                "answer": 0,
+                "explanation": "He does not complain about the noise or feel ill; the diagram made him slow, so he asks for more minutes."
               }
             },
             {
@@ -1222,24 +1305,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Mum, can I stay up until eleven tonight?"
+                    "text": "Mum, can I stay at Zoe’s party until midnight?"
                   },
                   {
                     "speaker": "b",
-                    "text": "No, it is a school night. Ten at the latest."
+                    "text": "No way. Ten at the latest, that’s the rule."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "But everybody else stays late! Please, Mum. Eleven, then. I’ll take a taxi."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "When I was your age, I had to go to bed at half past nine, and I never complained. Well, it is a special night. Eleven, not a minute later."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you, Mum!"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "And I’ll collect you at eleven, so don’t take a taxi."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the mother say?",
+                "prompt": "What does the mother finally agree to?",
                 "options": [
-                  "Ten at the latest",
-                  "Eleven o'clock is fine",
+                  "Ten o'clock",
+                  "Eleven o'clock",
                   "Bed at half past nine"
                 ],
-                "answer": 0,
-                "explanation": "She says ten at the latest."
+                "answer": 1,
+                "explanation": "Her mother first says ten and talks about half past nine in the past, but she accepts eleven for the party."
               }
             },
             {
@@ -1266,24 +1365,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How long will it take to repair my watch?"
+                    "text": "Hello, I’ve come for my watch. The one with the black strap. You said it would be ready today."
                   },
                   {
                     "speaker": "b",
-                    "text": "Two days. You can collect it on Friday afternoon."
+                    "text": "I’m sorry, we are still waiting for a part. It will arrive on Friday."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh. Is it a big repair? I thought it wasn’t expensive."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s fifteen pounds, as I told you. And we are open until six."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It’s not that. I wanted to wear it for my birthday tomorrow."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’m sorry. I’ll call you as soon as it comes."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "When can the boy collect his watch?",
+                "prompt": "Why is the boy disappointed?",
                 "options": [
-                  "On Monday",
-                  "On Thursday",
-                  "On Friday"
+                  "The repair is expensive",
+                  "The shop is closed",
+                  "The watch is not ready"
                 ],
                 "answer": 2,
-                "explanation": "The man says he can collect it on Friday afternoon."
+                "explanation": "The price is as agreed and the shop is open; he is sad that the watch is delayed and he cannot wear it tomorrow."
               }
             }
           ]
@@ -1308,55 +1423,46 @@
             "turns": [
               {
                 "speaker": "teacher",
-                "text": "Good morning, class. Next Thursday, we are going on a trip to the Science Museum. The bus leaves school at a quarter to nine, so please be here at half past eight. Do not be late, because the bus will not wait. We will arrive at ten, and the first activity is a workshop about clocks. After that, we will have lunch in the museum garden. Please bring a packed lunch and a bottle of water. At one o'clock, you will have free time to visit the shop. The bus will return at four, but you should not make any plans for the evening before five. Each student must bring a signed form. You can collect the forms from my desk today."
+                "text": "Good morning, class. Next week, we are going on a trip to the Science Museum, and I want to give you all the details. First, the day. We wanted to go on Wednesday, but the museum is closed that day, so we will go on Thursday. Please write it in your diaries. The bus leaves school at a quarter to nine. Please be here at half past eight, so we can check the names. The museum opens at half past nine, but we will arrive earlier, so there is no queue. Now, the programme. The first activity is a workshop about clocks. You will see how old clocks work and take one apart, so wear old clothes. The second activity is a show about the planets, and in the afternoon there is a robot display, but you only see these after the workshop. Lunch will be in the museum garden, near the fountain. If it rains, we will go to the café, but I hope that the weather is good. Please bring your own sandwiches and a bottle of water. The café sells hot food, but it is expensive. Lunch is at twelve, and free time begins at one o’clock. That is when you can walk around in small groups and visit the shop. You must stay with your partner, and you must come back to the front door at half past two. Finally, the paperwork. Each student must bring a signed form from a parent. You don’t need money, because the school has paid for the tickets. I can’t take anyone without the form, so please give it to me on Monday. Any questions? Good. See you on Thursday."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The trip is on ___",
+              "prompt": "The class will go to the museum on ___",
               "answer": "Thursday",
-              "explanation": "He says the trip is next Thursday."
+              "explanation": "Wednesday was the first idea but the museum is closed that day."
             },
             {
               "id": "l3-2",
-              "prompt": "The students must arrive at half past ___",
+              "prompt": "The students must be at school by half past ___",
               "answer": "eight",
-              "accepted": [
-                "8"
-              ],
-              "explanation": "He says to be at school at half past eight."
+              "explanation": "The bus leaves at a quarter to nine and the museum opens at half past nine, but they must arrive at half past eight."
             },
             {
               "id": "l3-3",
-              "prompt": "The first activity is a workshop about ___",
+              "prompt": "The morning workshop is about ___",
               "answer": "clocks",
-              "accepted": [
-                "clock"
-              ],
-              "explanation": "He says the first activity is a workshop about clocks."
+              "explanation": "The workshop is about clocks; the planets show and the robot display come later."
             },
             {
               "id": "l3-4",
               "prompt": "Lunch will be in the museum ___",
               "answer": "garden",
-              "explanation": "He says lunch will be in the museum garden."
+              "explanation": "If it rains they will use the café, but the plan is the garden near the fountain."
             },
             {
               "id": "l3-5",
-              "prompt": "Free time begins at ___ o'clock",
+              "prompt": "The students have free time from ___ o'clock",
               "answer": "one",
-              "accepted": [
-                "1"
-              ],
-              "explanation": "He says free time is at one o'clock."
+              "explanation": "Lunch is at twelve and the students must return at half past two; free time begins at one."
             },
             {
               "id": "l3-6",
-              "prompt": "Each student must bring a signed ___",
+              "prompt": "Students need a signed ___ from a parent",
               "answer": "form",
-              "explanation": "He says each student must bring a signed form."
+              "explanation": "They do not need money, because the school paid for the tickets, but they need the form."
             }
           ]
         },
@@ -1392,47 +1498,55 @@
               },
               {
                 "speaker": "h",
-                "text": "Every watch is like a tiny machine with hundreds of parts. When I open one, I feel that I am meeting the person who made it."
+                "text": "They aren’t cheap to buy, so it’s not that. And they’re not all large, some are as small as a coin. What I love is that inside a tiny case you find hundreds of tiny parts, each with a job. When you open one, it feels like opening a small city."
               },
               {
                 "speaker": "i",
-                "text": "How did you learn the job?"
+                "text": "Who taught you the job?"
               },
               {
                 "speaker": "h",
-                "text": "My uncle taught me. He gave me a broken pocket watch when I was twelve, and it took me a whole summer to fix it."
+                "text": "I went to a technical school, but my teacher only knew modern things, so I learned very little there. My mother liked looking at clocks, but she never repaired them. It was my uncle Joe who taught me. He had a shop on a corner, and I worked there every summer from the age of fourteen."
               },
               {
                 "speaker": "i",
-                "text": "What is the hardest part?"
+                "text": "Why is your work so hard?"
               },
               {
                 "speaker": "h",
-                "text": "The patience. The pieces are smaller than a grain of rice, and one mistake can ruin everything. I often work with a magnifying glass."
+                "text": "People think you need clever hands, but most of all you need patience. Sometimes one screw takes an hour to put back. I don’t have trouble finding customers, there are always a few waiting, and the instructions are not a problem, because there aren’t any. Each watch is a puzzle."
               },
               {
                 "speaker": "i",
-                "text": "Do you wear a watch yourself?"
+                "text": "What do you do each morning?"
               },
               {
                 "speaker": "h",
-                "text": "Always. It is a plain one, but it never loses a minute. I wind it up every morning."
+                "text": "First I open the shop, but not early, we start at ten. Then I sometimes clean my tools on Fridays only. But the first thing I do every day, before coffee, is wind up my watch. It is a habit from my uncle, and it takes five seconds. I like the small click."
               },
               {
                 "speaker": "i",
-                "text": "Why do people still buy mechanical watches?"
+                "text": "Why do people buy mechanical watches?"
               },
               {
                 "speaker": "h",
-                "text": "They are beautiful, and they last for a lifetime. A phone will be old in three years, but a good watch can be given to your family."
+                "text": "Not because they are cheaper, a phone costs less and shows the time just as well. And they’re not light, many are heavy. People buy them because they last a lifetime. If you look after one, you can leave it to your children, and it will tell the time for another fifty years."
               },
               {
                 "speaker": "i",
-                "text": "Have you ever lost time in your own life?"
+                "text": "Have you ever forgotten something important?"
               },
               {
                 "speaker": "h",
-                "text": "Often! Once I was so busy mending a clock that I forgot my own wedding anniversary."
+                "text": "Oh yes. Once I spent a whole day with a very rare watch, and I forgot my anniversary. I didn’t forget my car keys, and my lunch was in my bag. But I did forget the dinner that my husband booked. He wasn’t angry, he said that the watch was a good excuse."
+              },
+              {
+                "speaker": "i",
+                "text": "What would you tell someone who wants to learn this job?"
+              },
+              {
+                "speaker": "h",
+                "text": "Find an old watch that doesn’t work, open it, and try to understand it. Take photos of every step, so you can put it back together."
               }
             ]
           },
@@ -1446,7 +1560,7 @@
                 "They are all very large"
               ],
               "answer": 1,
-              "explanation": "She says every watch has hundreds of parts."
+              "explanation": "They are not cheap and not all large; what she loves is the hundreds of tiny parts inside."
             },
             {
               "id": "l4-2",
@@ -1457,18 +1571,18 @@
                 "Her mother"
               ],
               "answer": 1,
-              "explanation": "Her uncle taught her."
+              "explanation": "Her teacher knew modern things and her mother did not repair clocks; her uncle Joe taught her."
             },
             {
               "id": "l4-3",
-              "prompt": "What is the hardest part of her work?",
+              "prompt": "Why is her work so hard?",
               "options": [
-                "The patience needed",
-                "Finding customers",
-                "Reading instructions"
+                "She needs great patience",
+                "She finds few customers",
+                "The instructions are difficult"
               ],
               "answer": 0,
-              "explanation": "She says the hardest part is the patience."
+              "explanation": "Customers are not a problem and there are no instructions; one screw can take an hour."
             },
             {
               "id": "l4-4",
@@ -1479,7 +1593,7 @@
                 "Winds up her watch"
               ],
               "answer": 2,
-              "explanation": "She winds it up every morning."
+              "explanation": "She opens at ten and cleans her tools on Fridays; the first thing every day is to wind up her watch."
             },
             {
               "id": "l4-5",
@@ -1490,7 +1604,7 @@
                 "They are very light"
               ],
               "answer": 1,
-              "explanation": "She says they last for a lifetime."
+              "explanation": "A phone costs less and many watches are heavy; they last a lifetime."
             },
             {
               "id": "l4-6",
@@ -1501,7 +1615,7 @@
                 "Her packed lunch"
               ],
               "answer": 0,
-              "explanation": "She forgot her wedding anniversary."
+              "explanation": "She remembered her keys and lunch, but forgot the anniversary dinner."
             }
           ]
         }

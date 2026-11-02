@@ -251,7 +251,8 @@
               "options": [
                 "She had prepared carefully.",
                 "She had a teacher to help her.",
-                "She had won a prize before."
+                "She had won a prize before.",
+                "She had won the contest before."
               ],
               "answer": 0,
               "explanation": "She read about it online and watched three videos, so she felt sure nothing could go wrong."
@@ -260,11 +261,12 @@
               "id": "r3-2",
               "prompt": "Why did she test the volcano in the kitchen?",
               "options": [
-                "The weather was bad.",
                 "She wanted her mother to see it.",
-                "The garden was too small."
+                "The garden was too small.",
+                "The weather was bad.",
+                "Her mother had asked her to."
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She tested it in the kitchen because it was raining outside."
             },
             {
@@ -272,30 +274,33 @@
               "prompt": "What did she do that caused the problem?",
               "options": [
                 "She used too much baking soda.",
-                "She added extra vinegar.",
-                "She forgot the food colour."
+                "She dropped the red food colour.",
+                "She forgot the food colour.",
+                "She added extra vinegar."
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "She decided the volcano was not big enough and added another cup of vinegar."
             },
             {
               "id": "r3-4",
               "prompt": "How did her mother react?",
               "options": [
+                "She was too tired to speak.",
+                "She was kinder than expected.",
                 "She stopped the competition.",
-                "She shouted at the dog.",
-                "She was kinder than expected."
+                "She shouted at the dog."
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "She was not angry and even helped to clean up."
             },
             {
               "id": "r3-5",
               "prompt": "What happened at the competition?",
               "options": [
+                "The judges laughed at the kitchen story.",
                 "The volcano exploded again.",
-                "The judges did not like the volcano.",
-                "The writer came second."
+                "The writer came second.",
+                "The judges did not like the volcano."
               ],
               "answer": 2,
               "explanation": "She took a smaller volcano, it worked perfectly, and she came second."
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "The story of the light bulb",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Today we take electric light for granted, but just 150 years ago, most people used candles or oil lamps in the evening. [1] The idea of a light bulb was not new, and many inventors had tried to make one.\n\nIn the 1870s, two men were working on the problem, one in England and one in the United States. [2] Their bulbs were very different from those we have now, and they did not last long.\n\nThe American inventor, Thomas Edison, tested thousands of materials to find the best thread for his bulb. [3] Finally, he found that a thin thread made of cotton and burned in a special way could give light for over a thousand hours.\n\nHowever, a light bulb is not much use without electricity in the home. [4] It took many years before every town had power stations and wires to bring electricity to the houses.\n\nToday, the old bulbs are being replaced by new ones, which are much cheaper to use. [5] Perhaps in a hundred years, our children will wonder how we managed with such wasteful lamps.",
           "sentences": [
-            "A single modern bulb can last for twenty years.",
             "Edison also had to find a way to produce and supply the power.",
+            "His assistant later became rich by selling his own lamp.",
+            "A single modern bulb can last for twenty years.",
             "Both of them came close to success.",
-            "Some of his tests failed after only a few minutes.",
             "Candles are still popular for birthday cakes.",
-            "It was the invention of the light bulb that changed this."
+            "It was the invention of the light bulb that changed this.",
+            "Some of his tests failed after only a few minutes.",
+            "The cost of a bulb was too high for most families."
           ],
           "gaps": [
             {
@@ -325,22 +332,22 @@
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "D",
               "explanation": "Two men worked on the problem; \"Both of them came close\" continues, and the next sentence says their bulbs did not last long."
             },
             {
               "id": "r4-3",
-              "answer": "D",
+              "answer": "G",
               "explanation": "Edison tested thousands of materials; some failed within minutes, and \"Finally\" introduces the success."
             },
             {
               "id": "r4-4",
-              "answer": "B",
+              "answer": "A",
               "explanation": "A bulb needs electricity at home; the sentence about producing and supplying power leads to the many years before towns had power stations."
             },
             {
               "id": "r4-5",
-              "answer": "A",
+              "answer": "C",
               "explanation": "Old bulbs are being replaced by cheaper ones; a modern bulb lasting twenty years supports this, and the next sentence looks to the future."
             }
           ]
@@ -737,41 +744,25 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "fleur",
-                    "name": "Fleur",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "fleur",
-                    "text": "Can we get tickets for the three o'clock planet show?"
-                  },
-                  {
                     "speaker": "eustace",
-                    "text": "Sorry, that one is full. The next show is at four, and there are plenty of seats."
-                  },
-                  {
-                    "speaker": "fleur",
-                    "text": "Four is fine. We'll look at the dinosaurs first."
+                    "text": "Welcome to the Starlight Planetarium, ladies and gentlemen. A short message about today’s programme. The planet show was going to start at three, as it says on your tickets, but we need extra time to clean the dome, so it has been moved to a later time. We also have a space film at five, but that is a different show, for older children, and it has its own tickets. The planet show will begin at four, and it lasts about forty minutes. Please come to the main door ten minutes before, because the seats are not reserved. Thank you, and enjoy the stars."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "When will they see the planet show?",
+                "prompt": "When does the planet show start?",
                 "options": [
                   "At three o'clock",
                   "At four o'clock",
                   "At five o'clock"
                 ],
                 "answer": 1,
-                "explanation": "The three o'clock show is full, so they will go to the show at four."
+                "explanation": "The tickets say three and the space film is at five, but the planet show has been moved and now begins at four."
               }
             },
             {
@@ -797,16 +788,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "gilbert",
+                    "text": "Hortense, do you know where we have science this afternoon? The timetable says the lab."
+                  },
+                  {
                     "speaker": "hortense",
-                    "text": "Is the science lab open this afternoon?"
+                    "text": "That was the plan, but they’re repainting it. Mr Cole sent a message this morning."
                   },
                   {
                     "speaker": "gilbert",
-                    "text": "No, the ceiling is being repaired, so the class will meet in the library instead."
+                    "text": "So are we going to the library? We did a project there last week."
                   },
                   {
                     "speaker": "hortense",
-                    "text": "Right, I'll tell the others."
+                    "text": "He thought about it, but it’s too small for thirty people, and we need space for the experiments. So he’s booked the big hall where we have the school plays, the one with the stage."
+                  },
+                  {
+                    "speaker": "gilbert",
+                    "text": "Oh, I like that. Do we need to bring anything?"
+                  },
+                  {
+                    "speaker": "hortense",
+                    "text": "Just your notebook and your safety glasses. See you there at two."
+                  },
+                  {
+                    "speaker": "gilbert",
+                    "text": "Great. Thanks for telling me."
                   }
                 ]
               },
@@ -814,12 +821,12 @@
                 "id": "l1-2q",
                 "prompt": "Where will the class be this afternoon?",
                 "options": [
-                  "In the library",
                   "In the lab",
+                  "In the library",
                   "In the hall"
                 ],
-                "answer": 0,
-                "explanation": "The lab is closed for repairs, so the class meets in the library."
+                "answer": 2,
+                "explanation": "The lab is being repainted and the library is too small, so Mr Cole booked the big hall with the stage."
               }
             },
             {
@@ -845,16 +852,36 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "ignatius3",
+                    "text": "Hello, how can I help?"
+                  },
+                  {
                     "speaker": "jemima",
-                    "text": "How much is this torch that you charge with a handle?"
+                    "text": "Hi, I’d like a ticket for the science fair, please. It says thirty pounds on the website."
                   },
                   {
                     "speaker": "ignatius3",
-                    "text": "It's thirty pounds, but there's ten per cent off today."
+                    "text": "That’s the full price, yes. Are you a student?"
                   },
                   {
                     "speaker": "jemima",
-                    "text": "Then I'll pay twenty-seven pounds. That's a good price."
+                    "text": "Yes, I am. I have my card here."
+                  },
+                  {
+                    "speaker": "ignatius3",
+                    "text": "Then you get three pounds off. And children under twelve pay twenty, but that’s not for you, I’m afraid."
+                  },
+                  {
+                    "speaker": "jemima",
+                    "text": "That’s a pity! My brother is eleven, so he’s coming too. How much is his?"
+                  },
+                  {
+                    "speaker": "ignatius3",
+                    "text": "He pays the children’s price. And I can give you both the audio guide free today."
+                  },
+                  {
+                    "speaker": "jemima",
+                    "text": "Lovely. I’ll take my own ticket now, and I’ll pay with this card."
                   }
                 ]
               },
@@ -867,7 +894,7 @@
                   "Twenty pounds"
                 ],
                 "answer": 0,
-                "explanation": "Ten per cent off thirty pounds is twenty-seven pounds."
+                "explanation": "Thirty pounds is the full price and twenty is for children, but as a student she gets three pounds off the full price."
               }
             },
             {
@@ -881,41 +908,25 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "lysandra",
-                    "name": "Lysandra",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "lysandra",
-                    "text": "Does the new tablet last all day?"
-                  },
-                  {
                     "speaker": "kenelm",
-                    "text": "The battery lasts about eight hours, so it's fine for a school day, but you need to charge it at night."
-                  },
-                  {
-                    "speaker": "lysandra",
-                    "text": "Eight hours is good enough for me."
+                    "text": "Are you looking for a tablet for school. Come to Brightbyte this week and see the new Spark. Last year’s Spark was popular, but many of you told us that it stopped after about six hours, which was not enough for a long day. So our engineers have worked hard, and now the battery gives you two hours more than before. Don’t believe the shops that say a battery lasts all week, because that is only true if you hardly touch the screen. The new Spark is light, strong and costs two hundred pounds. Visit us on Station Road or order from our website. Brightbyte: technology that keeps going!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "How long does the battery last?",
+                "prompt": "How long does the new Spark battery last?",
                 "options": [
                   "About six hours",
                   "About eight hours",
                   "All week"
                 ],
                 "answer": 1,
-                "explanation": "Kenelm says the battery lasts about eight hours."
+                "explanation": "The old model lasted six hours, shops that promise a week are exaggerating, and the new one adds two hours to the old six."
               }
             },
             {
@@ -942,28 +953,40 @@
                 "turns": [
                   {
                     "speaker": "nerys",
-                    "text": "What is your science experiment about this term?"
+                    "text": "Marmaduke, why is there a lamp over the beans in the kitchen?"
                   },
                   {
                     "speaker": "mortimer2",
-                    "text": "I'm growing beans in the dark and in the light to see which grow faster."
+                    "text": "Mum, it’s for my school project. I was going to test the magnets from my toy set, but Gran did the same with my cousin last year. So I thought about the batteries in the torch, but Mr Reid said that is too easy."
                   },
                   {
                     "speaker": "nerys",
-                    "text": "I bet the ones in the light win."
+                    "text": "So what’s with the lamp?"
+                  },
+                  {
+                    "speaker": "mortimer2",
+                    "text": "I’m putting some seeds in two cups. One has light, the other is in the cupboard. I’ll measure the plants every day for two weeks."
+                  },
+                  {
+                    "speaker": "nerys",
+                    "text": "Careful with the water, please. Not on the table."
+                  },
+                  {
+                    "speaker": "mortimer2",
+                    "text": "Don’t worry. I’m using a small spoon. I’ll show you the results on Friday."
                   }
                 ]
               },
               "question": {
                 "id": "l1-5q",
-                "prompt": "What is the boy testing?",
+                "prompt": "What is the boy testing in his project?",
                 "options": [
                   "How magnets pull",
                   "How batteries work",
                   "How plants grow"
                 ],
                 "answer": 2,
-                "explanation": "He is growing beans in the dark and in the light to compare their growth."
+                "explanation": "He rejected the magnets and the batteries, and he is putting seeds in light and in the dark to see how they grow."
               }
             },
             {
@@ -977,41 +1000,25 @@
                       "lang": "en-US",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "petronilla",
-                    "name": "Petronilla",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "petronilla",
-                    "text": "I'd like to test my solar charger tomorrow. What's the weather going to be like?"
-                  },
-                  {
                     "speaker": "osmund",
-                    "text": "The forecast says sunny until the afternoon, then cloudy. So go in the morning."
-                  },
-                  {
-                    "speaker": "petronilla",
-                    "text": "Good, then I'll start early."
+                    "text": "Hi Petronilla, it’s Osmund. I’m calling about your solar charger, because you asked me when you should test it. Don’t wait until the afternoon, the weather forecast says clouds and rain from lunchtime. And the evening is pointless, of course, because the sun has gone by then. My advice is to try it early tomorrow, at nine or so, when the morning sky is still clear and the light is strong. Leave it on the window for a couple of hours, then plug in your phone and see how much power it has collected. Call me if you have any problems. Good luck!"
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "When should the girl test her solar charger?",
+                "prompt": "When should Petronilla test her solar charger?",
                 "options": [
                   "In the morning",
                   "In the afternoon",
                   "In the evening"
                 ],
                 "answer": 0,
-                "explanation": "The forecast says it will be sunny until the afternoon, so she should go in the morning."
+                "explanation": "Rain is forecast for the afternoon and there is no sun in the evening, so he advises to test it early, around nine, while the sky is clear."
               }
             },
             {
@@ -1037,29 +1044,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "quillon",
+                    "text": "Rosalie, is the science project due on Wednesday? I’ve nearly finished."
+                  },
+                  {
                     "speaker": "rosalie",
-                    "text": "When do we have to hand in the science projects?"
+                    "text": "Wednesday was the original date, but the lab is closed that day, so the teacher changed it. She told us in class yesterday."
                   },
                   {
                     "speaker": "quillon",
-                    "text": "Friday morning, before the first lesson. The teacher said no excuses."
+                    "text": "Oh. Then it’s Thursday, isn’t it? I thought somebody said Thursday."
                   },
                   {
                     "speaker": "rosalie",
-                    "text": "Then I have to work all weekend, I mean, all week!"
+                    "text": "That was for the other class. They have to hand theirs in a day earlier than us. We have until the end of the week, the last school day."
+                  },
+                  {
+                    "speaker": "quillon",
+                    "text": "Great, that gives me one more night. I still have to print the pictures."
+                  },
+                  {
+                    "speaker": "rosalie",
+                    "text": "Me too. Let’s meet in the library on Thursday afternoon and finish together."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "When is the project due?",
+                "prompt": "When is the science project due?",
                 "options": [
                   "On Wednesday",
-                  "On Friday",
+                  "At the end of the week",
                   "On Thursday"
                 ],
                 "answer": 1,
-                "explanation": "The projects must be handed in on Friday morning."
+                "explanation": "Wednesday was the old date and Thursday is for the other class; their class has until the last school day, which is Friday."
               }
             }
           ]
@@ -1094,29 +1113,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "sylvanus",
+                    "text": "Your phone looks terrible. Did you drop it?"
+                  },
+                  {
                     "speaker": "theophila",
-                    "text": "My phone won't switch on. I charged it all night."
+                    "text": "Twice! The screen is cracked, but it works fine, so I don’t mind."
                   },
                   {
                     "speaker": "sylvanus",
-                    "text": "Maybe the battery is old. How long have you had it?"
+                    "text": "But you charge it three times a day."
                   },
                   {
                     "speaker": "theophila",
-                    "text": "Nearly four years. I suppose it's time for a new one."
+                    "text": "I know. The battery is the real problem. The shop wanted three hundred pounds for a new phone, which is crazy. Then I found out that they change the battery for forty."
+                  },
+                  {
+                    "speaker": "sylvanus",
+                    "text": "That’s cheap."
+                  },
+                  {
+                    "speaker": "theophila",
+                    "text": "Exactly, so I’ll do that on Saturday. The old phone is fine for me, and it saves a lot of money."
+                  },
+                  {
+                    "speaker": "sylvanus",
+                    "text": "Good plan. Maybe I’ll do the same with mine."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman think is wrong with her phone?",
+                "prompt": "What does the woman decide to do about her phone?",
                 "options": [
-                  "The screen is broken.",
-                  "It has been dropped.",
-                  "It needs a new battery."
+                  "Replace the battery",
+                  "Buy a new phone",
+                  "Mend the screen"
                 ],
-                "answer": 2,
-                "explanation": "The man suggests an old battery, and she agrees it is time for a new one."
+                "answer": 0,
+                "explanation": "She does not mind the cracked screen and a new phone is too dear, so she will change the battery for forty pounds."
               }
             },
             {
@@ -1142,29 +1177,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "vivienne",
+                    "text": "Have you tried the new coffee robot at the station?"
+                  },
+                  {
                     "speaker": "ulick",
-                    "text": "I can't believe they have a robot that can make coffee!"
+                    "text": "Yes, this morning. I expected it to be slow, but I got my coffee in thirty seconds."
                   },
                   {
                     "speaker": "vivienne",
-                    "text": "Yes, but it takes five minutes, and it spills half of it."
+                    "text": "Me too. And it was cheaper than the café next door."
                   },
                   {
                     "speaker": "ulick",
-                    "text": "I'd still prefer a human at the counter."
+                    "text": "True, though that’s not why I liked it. I’m a bit sad that there’s no person to talk to. The woman who worked there knew my name."
+                  },
+                  {
+                    "speaker": "vivienne",
+                    "text": "Yes, I miss her too. The coffee itself is nice, but the machine doesn’t smile."
+                  },
+                  {
+                    "speaker": "ulick",
+                    "text": "Exactly. I’d pay more for a chat."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the man think about the coffee robot?",
+                "prompt": "What do the speakers agree about the coffee robot?",
                 "options": [
-                  "It is very fast and tidy.",
-                  "He prefers a human to a robot.",
-                  "It is cheap and easy to use."
+                  "The coffee is too expensive.",
+                  "The machine is hard to use.",
+                  "They would prefer to talk to a person."
                 ],
-                "answer": 1,
-                "explanation": "He says he would still prefer a human at the counter."
+                "answer": 2,
+                "explanation": "Both say the robot is quick and cheap, but they miss the friendly woman who used to work there."
               }
             },
             {
@@ -1191,28 +1238,48 @@
                 "turns": [
                   {
                     "speaker": "wolfram_x",
-                    "text": "Why have you got so many wires on the table?"
+                    "text": "Is that for your homework?"
                   },
                   {
                     "speaker": "ximena2",
-                    "text": "I'm making a lamp that turns on when you clap. It's a present for my brother's birthday."
+                    "text": "No, no, it’s a surprise for Mum’s birthday. A little robot made from old parts."
                   },
                   {
                     "speaker": "wolfram_x",
-                    "text": "That's clever. Can I help you?"
+                    "text": "Is it working? I thought the computer was broken."
+                  },
+                  {
+                    "speaker": "ximena2",
+                    "text": "It was, but my dad is fixing it tonight. I just needed the old wires from it."
+                  },
+                  {
+                    "speaker": "wolfram_x",
+                    "text": "And your homework?"
+                  },
+                  {
+                    "speaker": "ximena2",
+                    "text": "Done already, on the bus. This is much more fun. I hope she likes it."
+                  },
+                  {
+                    "speaker": "wolfram_x",
+                    "text": "She will. Can I help you with the paint?"
+                  },
+                  {
+                    "speaker": "ximena2",
+                    "text": "Yes, please! Come to my house after lunch, and bring some glue. We have until six o’clock, when she gets home."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the girl doing?",
+                "prompt": "Why is the girl using old computer parts?",
                 "options": [
-                  "Making a present",
-                  "Repairing a computer",
-                  "Doing homework"
+                  "To repair her computer",
+                  "To make a birthday present",
+                  "To finish her homework"
                 ],
-                "answer": 0,
-                "explanation": "She is building a lamp that turns on when you clap for her brother's birthday."
+                "answer": 1,
+                "explanation": "The computer is being fixed by her father and the homework is done; she wants a surprise for her mother’s birthday."
               }
             },
             {
@@ -1239,28 +1306,40 @@
                 "turns": [
                   {
                     "speaker": "yarrow",
-                    "text": "The scientist on the radio said that we might live on Mars one day."
+                    "text": "They say people will live on Mars in thirty years. Imagine that!"
                   },
                   {
                     "speaker": "zachary",
-                    "text": "I don't believe it. It's too cold and there's no air."
+                    "text": "I read that article. I’d love to be an astronaut, so I’d be the first to sign up, but I don’t think it will happen."
                   },
                   {
                     "speaker": "yarrow",
-                    "text": "He said they are already inventing ways to solve that."
+                    "text": "Why not? Scientists are working on it."
+                  },
+                  {
+                    "speaker": "zachary",
+                    "text": "Because it costs so much, and nobody knows how to grow food there. Maybe a few visits, but not a town. People say it will be soon, but they said the same about flying cars when my grandad was young."
+                  },
+                  {
+                    "speaker": "yarrow",
+                    "text": "Ha! Maybe you’re right."
+                  },
+                  {
+                    "speaker": "zachary",
+                    "text": "I’ll stay on Earth, then, and keep dreaming."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the boy's opinion?",
+                "prompt": "What is the boy's opinion about living on Mars?",
                 "options": [
-                  "He is sure that people will go soon.",
-                  "He wants to be an astronaut one day.",
-                  "He does not believe it will happen."
+                  "He expects it to happen soon.",
+                  "He hopes to travel there himself.",
+                  "He doubts that it will happen."
                 ],
                 "answer": 2,
-                "explanation": "He says he does not believe it because it is too cold and there is no air."
+                "explanation": "He would like to be an astronaut, but he says that it costs too much and compares it with the flying cars that never came."
               }
             },
             {
@@ -1287,28 +1366,44 @@
                 "turns": [
                   {
                     "speaker": "alaric",
-                    "text": "We have to do a presentation about an inventor. Who shall we choose?"
+                    "text": "What shall we do for the history of science presentation? I thought about writing a book report."
                   },
                   {
                     "speaker": "beata",
-                    "text": "How about the person who invented the zip? Everyone uses zips, but nobody knows who made them."
+                    "text": "Too boring, and it would take weeks. Maybe we could visit the factory where they make glass?"
                   },
                   {
                     "speaker": "alaric",
-                    "text": "Good idea. Let's look him up."
+                    "text": "The teacher said the visits are cancelled this term. Pity."
+                  },
+                  {
+                    "speaker": "beata",
+                    "text": "OK, so what about choosing a famous inventor? Marie Curie, or Edison?"
+                  },
+                  {
+                    "speaker": "alaric",
+                    "text": "Edison, definitely. We can show his lamp. Everyone loves a good lamp."
+                  },
+                  {
+                    "speaker": "beata",
+                    "text": "Let’s do that. I’ll find some pictures tonight, and you can write the short text about his life."
+                  },
+                  {
+                    "speaker": "alaric",
+                    "text": "Deal. We’ll finish it by Thursday."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What do the two students decide?",
+                "prompt": "What do both students want to do for their presentation?",
                 "options": [
-                  "To choose an inventor",
-                  "To write a book",
-                  "To visit a factory"
+                  "Talk about an inventor",
+                  "Write a book report",
+                  "Go to a factory"
                 ],
                 "answer": 0,
-                "explanation": "They agree to choose the inventor of the zip for their presentation."
+                "explanation": "The book report is boring and the factory visits are cancelled, so they pick a famous inventor, Edison."
               }
             },
             {
@@ -1334,29 +1429,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "cadmus",
+                    "text": "You look exhausted, Dulcie. Late night?"
+                  },
+                  {
                     "speaker": "dulcie",
-                    "text": "I stayed up until two o'clock watching a documentary about deep-sea creatures."
+                    "text": "Yes. A friend invited me to swim after school, but I said no. And I nearly went to the cinema with Hana, because there’s a new film, but I decided to stay at home."
                   },
                   {
                     "speaker": "cadmus",
-                    "text": "Is that why you're yawning? What did you learn?"
+                    "text": "Why? Was it the exam?"
                   },
                   {
                     "speaker": "dulcie",
-                    "text": "That some fish make their own light. It was amazing."
+                    "text": "Exactly. I studied chemistry until two in the morning, and my head still hurts. I hope it was worth it."
+                  },
+                  {
+                    "speaker": "cadmus",
+                    "text": "I’m sure it was. You always get good marks."
+                  },
+                  {
+                    "speaker": "dulcie",
+                    "text": "Thanks. I’m so nervous, though. I want to do well, and I can’t think about anything else."
+                  },
+                  {
+                    "speaker": "cadmus",
+                    "text": "Try to relax tonight. Go to bed early."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "Why is the girl tired?",
+                "prompt": "Why is Dulcie tired?",
                 "options": [
-                  "She went swimming with her friends.",
-                  "She studied hard for a big exam.",
-                  "She watched a film late at night."
+                  "She went swimming with friends.",
+                  "She stayed up to study.",
+                  "She watched a film late."
                 ],
-                "answer": 2,
-                "explanation": "She stayed up until two o'clock watching a documentary."
+                "answer": 1,
+                "explanation": "She refused the swimming and the cinema and stayed at home, revising chemistry until two in the morning."
               }
             }
           ]
@@ -1381,53 +1492,46 @@
             "turns": [
               {
                 "speaker": "speaker-1",
-                "text": "Hello, everyone, and welcome to the Discovery Science Museum. My name's Gwendolen, and I will show you round this morning. We are going to begin on the ground floor, in the space hall, where you can see a real rocket engine. After that, we will walk up to the first floor to visit the electricity room. There, you will be able to make your own hair stand up with a machine, which is always popular with children. At eleven o'clock, there is a show about robots in the main theatre. Lunch is at half past twelve in the café, and the tour finishes at two o'clock. Please do not touch anything with a red label, because those objects are very old and fragile. If you get lost, please look for a member of staff in a blue jacket."
+                "text": "Hello, everyone, and welcome to the Discovery Science Museum. My name’s Gwendolen, and I will show you round this morning. We are going to begin on the ground floor, so please follow me. Many people think the tour starts at the top, in the dome, but we save that for the end of the visit, because it’s a long way up. On the ground floor, you’ll find the space hall. There are models of planets and a satellite, and a film about astronauts, but the thing I like best is a real rocket engine, which was used in the nineteen seventies. You can’t touch it, but you can stand very close. Next, we go up to the first floor, to the electricity room. Be careful, it is not dangerous, but it’s strange! If you hold the silver ball, the electricity makes your hair stand up. Some visitors want to try with a hat, but it doesn’t work, so please take your hats off. After that, we have the robot show. It was at ten, but it moved, and now it starts at eleven. It lasts about twenty minutes, and the robots are the stars. Then it’s time for lunch. We have a picnic area in the garden, but it’s raining today, so please use the café on the second floor. The sandwiches are good, and the soup is cheap. In the afternoon you can explore on your own. But I need to warn you about the labels. Green means you can touch, yellow means ask first, and the one to be careful about is red. Those objects are very fragile or very hot, so please don’t touch anything with that label. If you have any problems, ask anyone wearing a blue T-shirt. They’ll be happy to help. Right, are we ready? Let’s start our adventure."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The tour begins on the ___ floor",
+              "prompt": "Our group begins its visit on the ___ floor",
               "answer": "ground",
-              "explanation": "Gwendolen says they will begin on the ground floor."
+              "explanation": "The dome at the top is saved for the end; they begin on the ground floor."
             },
             {
               "id": "l3-2",
-              "prompt": "In the space hall there is a real ___ engine",
+              "prompt": "The main exhibit in the space hall is a genuine ___ engine",
               "answer": "rocket",
-              "explanation": "In the space hall, visitors can see a real rocket engine."
+              "explanation": "There are models of planets and a satellite, but she likes best the real rocket engine."
             },
             {
               "id": "l3-3",
-              "prompt": "In the electricity room you can make your ___ stand up",
+              "prompt": "In the electricity room, the silver ball makes your ___ stand up",
               "answer": "hair",
-              "explanation": "They will make their hair stand up with a machine."
+              "explanation": "Hats do not work; the electricity makes your hair stand up."
             },
             {
               "id": "l3-4",
-              "prompt": "The robot show is at ___ o'clock",
+              "prompt": "The robot show has moved and now begins at ___ o'clock",
               "answer": "eleven",
-              "accepted": [
-                "11"
-              ],
-              "explanation": "The show about robots is at eleven o'clock."
+              "explanation": "It was at ten, but it moved to eleven."
             },
             {
               "id": "l3-5",
-              "prompt": "Lunch is in the ___",
+              "prompt": "Because of the rain, visitors will have lunch in the ___",
               "answer": "café",
-              "accepted": [
-                "cafe",
-                "cafeteria"
-              ],
-              "explanation": "Lunch is at half past twelve in the café."
+              "explanation": "The picnic area in the garden is not used; they eat in the café on the second floor."
             },
             {
               "id": "l3-6",
-              "prompt": "Do not touch objects with a ___ label",
+              "prompt": "Visitors must not touch things with a ___ label",
               "answer": "red",
-              "explanation": "Visitors should not touch anything with a red label."
+              "explanation": "Green is for touching and yellow is ask first; red objects are fragile or hot."
             }
           ]
         },
@@ -1459,11 +1563,11 @@
             "turns": [
               {
                 "speaker": "host",
-                "text": "Hildebrand, you invented a bicycle light that charges itself. How did the idea come to you?"
+                "text": "Hildebrand, your bicycle light is sold in twenty countries. How did the idea start?"
               },
               {
                 "speaker": "hildebrand",
-                "text": "I was cycling home in the dark one winter evening, and my battery light stopped working. I almost had an accident. I thought, why can't a light make its own power while I am pedalling?"
+                "text": "I’d love to say it came from a science lesson, but I was a bad student! And I don’t watch much television. No, one winter evening I was cycling home along a dark country road, my old lamp ran out of battery, and I couldn’t see anything. I nearly ended up in a ditch. I thought, why can’t a light make its own power?"
               },
               {
                 "speaker": "host",
@@ -1471,39 +1575,47 @@
               },
               {
                 "speaker": "hildebrand",
-                "text": "Not at all. My first version was much too heavy, and it made a terrible noise. I worked in my parents' garage for two years, and I made more than fifty different models."
+                "text": "Not at all. My first version worked, and it wasn’t expensive, I made it from parts in my garage. Nor was it hard to sell, a friend at work wanted one at once. The trouble was that it was big and very noisy, like a coffee grinder on your wheel. Nobody wanted a heavy lamp that sounds like that."
               },
               {
                 "speaker": "host",
-                "text": "Did you ever want to give up?"
+                "text": "Did anyone help you to continue?"
               },
               {
                 "speaker": "hildebrand",
-                "text": "Many times. Once I spent a whole summer on a model that did not work at all. But my sister told me that every mistake was a lesson, and that helped me to continue."
+                "text": "My sister did. My father thought it was only a hobby, and my old teacher said I should find a proper job. But my sister told me to carry on. She even tested the lights in the rain for me, and she never complained."
               },
               {
                 "speaker": "host",
-                "text": "How did you find the money to start?"
+                "text": "How did you start the company?"
               },
               {
                 "speaker": "hildebrand",
-                "text": "I entered a competition for young inventors and won a small prize. A local company then offered to make the lights and sell them. Today, we sell them in twelve countries."
+                "text": "A bank refused to lend me any money, and my parents didn’t have any to give. In the end, I entered a competition for young inventors and won second prize. A big company saw my light at the final and helped me to make it in a factory."
               },
               {
                 "speaker": "host",
-                "text": "What do you enjoy most about your work?"
+                "text": "What do you enjoy most about the job today?"
               },
               {
                 "speaker": "hildebrand",
-                "text": "Seeing someone use something that I have made. Last month, I saw a girl riding past my window with my light on her bike. I felt very proud."
+                "text": "I’m lucky to travel to other countries, and I’ve met some famous people, which is fun. But my favourite thing, honestly, is when I’m in a city and I see a child riding with my light on the front. That makes me smile every time. It is a small thing, but it’s very special."
               },
               {
                 "speaker": "host",
-                "text": "What would you say to young people who want to be inventors?"
+                "text": "Do you ever think about stopping?"
               },
               {
                 "speaker": "hildebrand",
-                "text": "Look around you and ask what is annoying or difficult in everyday life. That's where the best ideas come from. And do not be afraid of failure."
+                "text": "Never. There are always new ideas in my notebook, and my team is full of young people with energy. Working with them keeps me curious, and I learn something new every week."
+              },
+              {
+                "speaker": "host",
+                "text": "What would you say to a young inventor?"
+              },
+              {
+                "speaker": "hildebrand",
+                "text": "Look around you, at ordinary life. Every small problem, like a broken umbrella, is a chance for an idea. Don’t copy other people, and you don’t need to study abroad, I never went to a university. Just be curious and keep trying, even when it goes wrong."
               }
             ]
           },
@@ -1517,18 +1629,18 @@
                 "A television programme"
               ],
               "answer": 1,
-              "explanation": "His battery light stopped working in the dark and he almost had an accident."
+              "explanation": "He was a bad student and does not watch television; his old lamp stopped on a dark country road."
             },
             {
               "id": "l4-2",
-              "prompt": "What was the problem with his first version?",
+              "prompt": "Why did nobody want his first lamp?",
               "options": [
                 "It cost too much money.",
-                "It was heavy and noisy.",
-                "It was difficult to sell."
+                "It was difficult to sell.",
+                "It was heavy and noisy."
               ],
-              "answer": 1,
-              "explanation": "His first version was much too heavy and made a terrible noise."
+              "answer": 2,
+              "explanation": "It was cheap and easy to sell, but it was big, noisy and heavy."
             },
             {
               "id": "l4-3",
@@ -1539,40 +1651,40 @@
                 "His father"
               ],
               "answer": 0,
-              "explanation": "His sister told him that every mistake was a lesson."
+              "explanation": "His father thought it was a hobby and his teacher told him to find a proper job; his sister told him to carry on."
             },
             {
               "id": "l4-4",
               "prompt": "How did he get started with the business?",
               "options": [
-                "A bank gave him a large loan to start.",
-                "His parents paid for all of the parts.",
+                "A bank gave him a loan.",
+                "His parents paid for the parts.",
                 "He won a prize and a company helped."
               ],
               "answer": 2,
-              "explanation": "He won a small prize in a competition and a local company offered to make and sell the lights."
+              "explanation": "The bank refused and his parents had no money, but he won second prize and a big company helped him."
             },
             {
               "id": "l4-5",
-              "prompt": "What is his favourite part of the job?",
+              "prompt": "What does he enjoy most about his job?",
               "options": [
                 "Visiting other countries",
-                "Seeing people use his invention",
+                "Seeing children use his light",
                 "Meeting famous people"
               ],
               "answer": 1,
-              "explanation": "He enjoys seeing someone using something he has made, like the girl on a bike."
+              "explanation": "Travel and famous people are fun, but his favourite thing is seeing a child riding with his light."
             },
             {
               "id": "l4-6",
               "prompt": "What advice does he give to young inventors?",
               "options": [
-                "Look for problems in everyday life",
+                "Look for problems in daily life",
                 "Study at a university abroad",
                 "Copy successful inventions"
               ],
               "answer": 0,
-              "explanation": "He says to ask what is annoying or difficult in everyday life, because the best ideas come from there."
+              "explanation": "He says to look at ordinary life for problems, not to copy others, and that he never went to a university."
             }
           ]
         }

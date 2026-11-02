@@ -250,21 +250,23 @@
               "prompt": "Why did the writer's family choose the tour?",
               "options": [
                 "It was very cheap",
-                "They had read good reviews",
-                "A friend recommended it"
+                "A friend recommended it",
+                "It was part of their hotel price",
+                "They had read good reviews"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "They had read good reviews."
             },
             {
               "id": "r3-2",
               "prompt": "What was wrong with Dario's voice?",
               "options": [
+                "It was too quiet",
+                "It was too deep",
                 "It was too fast",
-                "It was too loud",
-                "It was too quiet"
+                "It was too loud"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He spoke so quietly that people could not hear him."
             },
             {
@@ -273,7 +275,8 @@
               "options": [
                 "Asked for her money",
                 "Left the group",
-                "Corrected a date"
+                "Corrected a date",
+                "Asked a question about a church"
               ],
               "answer": 2,
               "explanation": "She politely said the square was built in the sixteenth century."
@@ -282,22 +285,24 @@
               "id": "r3-4",
               "prompt": "How did the tour end?",
               "options": [
-                "In a cafe",
                 "At the castle",
-                "At the station"
+                "In a cafe",
+                "At the station",
+                "In a square"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Dario stopped at a cafe and said the tour was over."
             },
             {
               "id": "r3-5",
               "prompt": "What did the cafe owner do?",
               "options": [
-                "Gave them a map",
+                "Showed them the church",
                 "Called the police",
-                "Phoned the guide"
+                "Phoned the guide",
+                "Gave them a map"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He gave them free coffee and a map with the sights marked."
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "The history of souvenirs",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "People have always brought things home from their travels. [1] Pilgrims in the Middle Ages, for example, took small badges from holy places to show that they had been there.\n\nIn the eighteenth century, rich young Europeans toured Italy and France. [2] They bought paintings, statues and books, and sent them back by ship.\n\nWhen railways and cheaper hotels arrived, ordinary people could travel too. [3] Their shops sold small, cheap objects with the name of the town on them.\n\nPostcards became very popular in the twentieth century. [4] A simple picture and a few words could tell friends that you were thinking of them.\n\nToday, many souvenirs are made in distant factories. [5] The best ones, however, are still made by local people using traditional skills.",
           "sentences": [
             "Seaside towns soon filled with gift shops.",
             "These are often cheaper but less special.",
             "The idea was to prove that you had really been there.",
+            "Most of them travelled for many months.",
+            "Most of these cost more than a week's wages.",
+            "Hotels sometimes give a small gift to their guests.",
             "They were easy to buy, light and quick to send.",
-            "Visitors often prefer to buy food.",
-            "Most of them travelled for many months."
+            "Visitors often prefer to buy food."
           ],
           "gaps": [
             {
@@ -325,7 +332,7 @@
             },
             {
               "id": "r4-2",
-              "answer": "F",
+              "answer": "D",
               "explanation": "Most of them travelled for many months; the next sentence says what they bought."
             },
             {
@@ -335,7 +342,7 @@
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "G",
               "explanation": "They were easy to buy, light and quick to send; the next sentence says a simple picture could tell friends."
             },
             {
@@ -738,11 +745,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much is this magnet?"
+                    "text": "Hello, I’d like some fridge magnets for my friends. How much are they?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Two pounds, or three for five."
+                    "text": "Normally they’re two pounds each, so three would be six pounds. But this week we have an offer, and you can take three for five pounds."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s good. What about the bookmarks? Are they in the offer too?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, I’m afraid not. They’re three pounds each, whatever you buy. But they’re made of leather, so they last for years."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ll just take the magnets, then. Three of the sea ones, please."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Of course. Would you like a bag?"
                   }
                 ]
               },
@@ -755,7 +778,7 @@
                   "Three pounds"
                 ],
                 "answer": 1,
-                "explanation": "He says three for five pounds."
+                "explanation": "Six pounds is the usual price for three, and the bookmarks cost three pounds; this week three magnets are five pounds."
               }
             },
             {
@@ -782,11 +805,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What did you buy for your grandmother?"
+                    "text": "Did you find something for your grandma in the market?"
                   },
                   {
                     "speaker": "b",
-                    "text": "A silk scarf. It was the only thing she asked for."
+                    "text": "I nearly bought a small vase. It was cute, but it was heavy, and I would have to carry it for the whole trip. Then I saw some leather gloves, which I loved, but she has about ten pairs already. In the end I chose something light that she can wear around her neck in spring. The woman at the stall said it’s real silk, made by hand."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Can I see it?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It’s in my bag. Careful, it’s very soft."
                   }
                 ]
               },
@@ -799,7 +830,7 @@
                   "A small vase"
                 ],
                 "answer": 0,
-                "explanation": "She bought a silk scarf."
+                "explanation": "The vase was too heavy and she has many gloves; she chose something light to wear around her neck, made of silk, so a scarf."
               }
             },
             {
@@ -826,11 +857,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time does the tour start?"
+                    "text": "Excuse me, I’m looking for the walking tour. The leaflet says it starts at the station."
                   },
                   {
                     "speaker": "b",
-                    "text": "At ten thirty, from the front of the cathedral."
+                    "text": "That’s old information. It used to leave from the station, but there’s a lot of building work now, so they moved it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "To the museum, then? Someone told me it’s there."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s where it ends, with free drinks for everyone. It starts at the cathedral, at ten sharp, by the big doors."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ve got half an hour, then."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Plenty of time. It’s only five minutes from here."
                   }
                 ]
               },
@@ -843,21 +890,13 @@
                   "At the museum"
                 ],
                 "answer": 0,
-                "explanation": "She says it starts at the front of the cathedral."
+                "explanation": "The leaflet is old and the museum is where the tour ends; it now starts at the cathedral by the big doors."
               }
             },
             {
               "id": "l1-4-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Man",
@@ -869,12 +908,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Is the guide speaking English?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "Yes, and Spanish too, but this group will be in English."
+                    "text": "Good morning, everyone, and welcome to the castle tour. My name is Pedro. Many of you speak Spanish, and I do too, so I’ll be happy to answer questions in Spanish at the end. Last week we had a group of French students, so the tour was in French, but today we don’t have any. Since you come from many different countries, the tour will be in the language that I’m speaking now, the one that you all studied at school. Please stay together, listen for my whistle, and don’t forget that the castle is cold inside, even in summer."
                   }
                 ]
               },
@@ -887,7 +922,7 @@
                   "French"
                 ],
                 "answer": 1,
-                "explanation": "He says this group will be in English."
+                "explanation": "Spanish is only for questions at the end and French was last week’s group; the tour is in the language that Pedro is using now, English."
               }
             },
             {
@@ -914,11 +949,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you take lots of photos?"
+                    "text": "Show me your photos from the castle, Ben."
                   },
                   {
                     "speaker": "b",
-                    "text": "Over three hundred, but half of them are blurry."
+                    "text": "Here. I thought some were missing, because I could only see forty and I took sixty, but I found the rest on my sister’s phone. The ones inside the tower aren’t as dark as I feared, because I used the flash."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "This one is bad, though. I can’t see the face."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, it moved when I pressed the button, so everything is out of focus. A few others are the same. I should hold the camera with two hands."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Delete them, but keep the nice ones."
                   }
                 ]
               },
@@ -931,21 +978,13 @@
                   "They are blurry"
                 ],
                 "answer": 2,
-                "explanation": "He says half of them are blurry."
+                "explanation": "Photos are not missing and the tower pictures are not too dark; the problem is that a few moved and look blurred."
               }
             },
             {
               "id": "l1-6-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Girl",
@@ -957,25 +996,21 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Can I pay by card?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "I am sorry, the machine is broken. Cash only today."
+                    "text": "Dear visitors, please read this notice before you queue. Today the card machine at the ticket office is broken, and the phone app is not working either, because the internet is down in the whole street. We are sorry about that. It means that you can only pay with cash today, in pounds or in euros. If you have no cash with you, there is a machine round the corner, next to the bakery, and you can come back to the front of the queue with your receipt. Thank you very much for your patience."
                   }
                 ]
               },
               "question": {
                 "id": "l1-6q",
-                "prompt": "How must the man pay?",
+                "prompt": "How must visitors pay for tickets today?",
                 "options": [
-                  "In cash",
                   "By card",
+                  "In cash",
                   "By phone"
                 ],
-                "answer": 0,
-                "explanation": "She says cash only today."
+                "answer": 1,
+                "explanation": "The card machine and the phone app are both out of order, so only cash is accepted."
               }
             },
             {
@@ -989,37 +1024,25 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where can I buy stamps?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "At the kiosk next to the bus stop. They sell postcards too."
+                    "text": "Hi Mum, it’s me. I’m in the old town and I need to buy a map. I went into the museum first because somebody said there’s a small kiosk inside, but it only opens for tours. Then I walked to the church, because a woman said there’s a good one behind it, but it closed at noon. It’s one o’clock now. Finally I found one on the main road, close to the bus stop, and it stays open until the evening. So I’ll buy the map there and call you when I’m back at the hotel."
                   }
                 ]
               },
               "question": {
                 "id": "l1-7q",
-                "prompt": "Where is the kiosk?",
+                "prompt": "Where is the kiosk that is open?",
                 "options": [
                   "Inside the museum",
                   "Next to the bus stop",
                   "Behind the church"
                 ],
                 "answer": 1,
-                "explanation": "She says it is next to the bus stop."
+                "explanation": "The kiosk in the museum opens only for tours and the one behind the church closes at noon; the open one is by the bus stop."
               }
             }
           ]
@@ -1055,24 +1078,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Welcome to the gallery, everybody. Please stay together, and do not touch the paintings."
+                    "text": "What do you think of this one? It’s the most famous painting in the room."
                   },
                   {
                     "speaker": "b",
-                    "text": "How long will the tour take?"
+                    "text": "Honestly, I expected more. It’s smaller than in the books, and the colours are so dark that I can hardly see the faces."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "The light was better before they changed the lamps. I like the story, though: the woman is waiting for her husband."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Is she? Well, the one across the hall I like more, the one with the blue sea. I could look at that all day."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Let’s go and see it, then."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where are these people?",
+                "prompt": "What does the woman think of the famous painting?",
                 "options": [
-                  "In a station",
-                  "In a hotel",
-                  "In an art gallery"
+                  "She likes it more than the book",
+                  "She is a bit disappointed",
+                  "She finds it very funny"
                 ],
-                "answer": 2,
-                "explanation": "The guide tells the group not to touch the paintings."
+                "answer": 1,
+                "explanation": "She says it is smaller and darker than in the books and she prefers the painting of the blue sea, so she is a bit disappointed."
               }
             },
             {
@@ -1099,24 +1134,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I want a souvenir, but I cannot decide between the blue mug and the green one."
+                    "text": "I need something for my brother. A T-shirt costs fifteen pounds. That’s too much."
                   },
                   {
                     "speaker": "b",
-                    "text": "Take the blue one. It matches the colour of the sea."
+                    "text": "What about a key ring? They’re only two pounds."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "He’s got hundreds. Hmm. How about postcards of the city? He collects them, and there are twelve in this pack for four pounds."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Perfect, and you can write on them."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ll take two packs, one for him and one for me. I’d like to send some to my grandparents too, they never get any post."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good idea. Old people love real letters, and the pictures are really pretty."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the girl doing?",
+                "prompt": "What does the girl decide to buy for her brother?",
                 "options": [
-                  "Ordering food",
-                  "Choosing a souvenir",
-                  "Packing her bag"
+                  "A pack of postcards",
+                  "A key ring",
+                  "A T-shirt"
                 ],
-                "answer": 1,
-                "explanation": "She cannot decide between two mugs."
+                "answer": 0,
+                "explanation": "The T-shirt is too expensive and he already has many key rings; the brother collects postcards, so she buys a pack."
               }
             },
             {
@@ -1143,24 +1194,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Excuse me, I have lost my group. Have you seen thirty people in red caps?"
+                    "text": "Excuse me, I’ve lost my group. We were at the fountain and I stopped to buy water."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, they went towards the fountain a few minutes ago."
+                    "text": "Don’t worry. Was it a big group with red hats?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes! They have a guide with a red umbrella. I called him, but there’s no signal here. It’s not the bus, we leave at six, and I’m not angry. I just hate that they will all wait for me and worry."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I saw a red umbrella near the bridge ten minutes ago."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh, thank you! I’ll run."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the woman's problem?",
+                "prompt": "What is the woman most worried about?",
                 "options": [
-                  "She lost her group",
-                  "She lost her ticket",
-                  "She lost her bag"
+                  "Missing the bus",
+                  "Her bad phone signal",
+                  "Making the group worry"
                 ],
-                "answer": 0,
-                "explanation": "She says she has lost her group."
+                "answer": 2,
+                "explanation": "The bus leaves at six and the signal is only a small problem; what bothers her is that the whole group will wait and worry."
               }
             },
             {
@@ -1187,24 +1250,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "On our trip, you may buy one small souvenir. Please spend less than five euros."
+                    "text": "Remember, you can spend a maximum of ten pounds in the gift shop."
                   },
                   {
                     "speaker": "b",
-                    "text": "Can I buy two cheap ones instead?"
+                    "text": "Only ten? Last year we had twenty."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, but some children came home with nothing for their parents. Some spent everything in ten minutes."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I understand. Actually, ten is enough for me. I only want a postcard and a pencil for my sister."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good. And be back at the bus by three."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I will. Thank you, Miss. Can we go in groups of three, or does everybody have to stay with the class?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Groups of three are fine, but stay on the ground floor."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What rule does the teacher give?",
+                "prompt": "What does the girl think of the spending limit?",
                 "options": [
-                  "A noise rule",
-                  "A time limit",
-                  "A spending limit"
+                  "It is too low",
+                  "It is fair enough",
+                  "It is hard to understand"
                 ],
-                "answer": 2,
-                "explanation": "She says to spend less than five euros."
+                "answer": 1,
+                "explanation": "She first compares it with last year, but then she accepts the reasons and says it is enough for her."
               }
             },
             {
@@ -1231,24 +1314,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Hello, I would like to book two places on tomorrow's boat trip."
+                    "text": "The boat trip is full today. The man says the next free places are on Thursday."
                   },
                   {
                     "speaker": "b",
-                    "text": "I am sorry, it is full, but there are tickets for Thursday."
+                    "text": "That’s a pity. We leave on Wednesday."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "We could ask the other company, but they charge twice as much, and the boats are small."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’m not paying that. What about the bus tour? There are places at two."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Not my favourite, but fine. The boat can wait until our next visit."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Agreed. Let’s go and buy the tickets before they sell out as well. Shall we have lunch first, or after the tour?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "After. I’m not hungry yet."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the problem?",
+                "prompt": "What do the two people decide to do?",
                 "options": [
-                  "The trip is full",
-                  "The boat is late",
-                  "The price is high"
+                  "Take a bus tour",
+                  "Pay for a small boat",
+                  "Come back on Thursday"
                 ],
                 "answer": 0,
-                "explanation": "She says it is full."
+                "explanation": "Thursday is too late and the other company is too expensive, so they agree on the bus tour."
               }
             },
             {
@@ -1275,24 +1378,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "This statue looks very old. Is it real?"
+                    "text": "Is this the real statue? I read that it’s two thousand years old."
                   },
                   {
                     "speaker": "b",
-                    "text": "No, it is a copy. The real one is in the museum in the capital."
+                    "text": "The real one is inside the museum, because rain damages stone. This one is a copy, made last century."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh. I’m a bit sad. I thought it was the original."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I understand, but the copy is exactly the same size, and you can touch it, which you can’t do inside."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s true. I’ll take a photo here, and then I’ll go in."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good plan. The museum café is nice too, and it has a lovely view of the square."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then I’ll have a hot chocolate in there."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the man say about the statue?",
+                "prompt": "How does the boy feel about the statue?",
                 "options": [
-                  "It is for sale",
-                  "It is very new",
-                  "It is a copy"
+                  "Surprised that it is so new",
+                  "Happy to touch it",
+                  "Slightly disappointed"
                 ],
                 "answer": 2,
-                "explanation": "He says it is a copy."
+                "explanation": "He says he is a bit sad that it is a copy; touching it is a small advantage but he still wants to see the original inside."
               }
             }
           ]
@@ -1317,58 +1440,58 @@
             "turns": [
               {
                 "speaker": "clerk",
-                "text": "Hello, and thank you for calling the Seaview Tourist Office. We are open from nine to five every day, except Sunday. This week, we are offering a special deal on our boat trips. The trip to the island lasts about three hours and costs eighteen pounds for adults and ten for children. It leaves at half past ten from the harbour. On the island, you can visit an old lighthouse and have lunch at the cafe. If you are interested in walking, our guide Beck will lead a tour of the cliffs on Wednesday morning. Please bring comfortable shoes and a raincoat, because the weather can change quickly. To make a booking, you can leave a message after the beep with your name and phone number, and we will call you back."
+                "text": "Hello, and thank you for calling the Seaview Tourist Office. We are open from nine to five every day, except Sunday, when we are closed. On Saturdays we close early, at one o’clock. This week, we are offering a special trip to Gull Island, and I’d like to tell you about it. The boat trip takes about three hours, including one hour on the island. Many people think that it takes only an hour, because the island looks so close, but the sea is rough around the rocks, so the boat goes slowly. Now, the prices. An adult ticket costs eighteen pounds, and a child ticket costs twelve. Students pay fifteen with their card. You can buy them here in the office or on our website. The boat leaves from the harbour at ten past ten. It doesn’t leave from the beach, as some visitors think, and it doesn’t leave from the station either. Please arrive twenty minutes early, because we count everybody before we go. We also have the cliff tour, which is on Wednesday morning at nine. There is another one on Thursday afternoon, but it’s full already. Our guide has worked here for twenty years and he knows every bird. Now, what to bring. The weather here changes quickly, so even if it’s sunny when you leave, you should bring a raincoat. A hat and sun cream are useful too, but you can buy those at the harbour shop. Finally, if the sea is too rough, we will cancel the trip, and you will get your money back. We’ll send you a message at eight, so please check your phone. Thank you for calling, and we look forward to seeing you."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The office is closed on ___",
+              "prompt": "The tourist office does not open on ___",
               "answer": "Sunday",
-              "explanation": "She says they are open every day except Sunday."
+              "explanation": "It is open every day except Sunday; on Saturdays it only closes early."
             },
             {
               "id": "l3-2",
-              "prompt": "The trip to the island lasts about ___ hours",
+              "prompt": "The journey to the island takes about ___ hours",
               "answer": "three",
               "accepted": [
                 "3"
               ],
-              "explanation": "She says it lasts about three hours."
+              "explanation": "It looks like one hour, but the boat goes slowly; the trip takes about three hours."
             },
             {
               "id": "l3-3",
-              "prompt": "An adult ticket costs ___ pounds",
+              "prompt": "A ticket for a grown-up costs ___ pounds",
               "answer": "eighteen",
               "accepted": [
                 "18"
               ],
-              "explanation": "She says it costs eighteen pounds for adults."
+              "explanation": "A child ticket is twelve and a student ticket fifteen; the adult price is eighteen."
             },
             {
               "id": "l3-4",
-              "prompt": "The boat leaves from the ___",
+              "prompt": "Boats depart from the ___",
               "answer": "harbour",
               "accepted": [
                 "harbor"
               ],
-              "explanation": "She says it leaves from the harbour."
+              "explanation": "The boat does not leave from the beach or the station but from the harbour."
             },
             {
               "id": "l3-5",
-              "prompt": "The cliff tour is on ___ morning",
+              "prompt": "The walk along the cliffs is on ___ morning",
               "answer": "Wednesday",
-              "explanation": "She says the cliff tour is on Wednesday morning."
+              "explanation": "The Thursday tour is in the afternoon and it is full; the cliff tour is on Wednesday morning."
             },
             {
               "id": "l3-6",
-              "prompt": "Visitors should bring a ___",
+              "prompt": "Because of the changeable weather, visitors should bring a ___",
               "answer": "raincoat",
               "accepted": [
                 "coat"
               ],
-              "explanation": "She says to bring comfortable shoes and a raincoat."
+              "explanation": "A hat and sun cream can be bought at the harbour shop, but visitors must bring a raincoat."
             }
           ]
         },
@@ -1400,51 +1523,51 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Beck, you have been a tour guide for fifteen years. How did you start?"
+                "text": "Beck, how did you become a tour guide?"
               },
               {
                 "speaker": "h",
-                "text": "By accident. I took a friend's group round the castle, and I enjoyed it so much that I applied for a proper job."
+                "text": "By accident, to be honest. I didn’t answer an advert, and I never studied history, I trained as a chef, and I thought I would work in a restaurant forever. A friend of mine had a group of tourists one day and he was ill, so he asked me to take them round the old town. I was terrified, but they loved it, and I never went back to the kitchen."
               },
               {
                 "speaker": "i",
-                "text": "What do you need to be a good guide?"
+                "text": "What does a good guide need?"
               },
               {
                 "speaker": "h",
-                "text": "Patience, a loud voice and a good sense of humour. People remember jokes better than dates."
+                "text": "People think a university degree, or a fast car, but a guide walks most of the time. What you really need is patience and a sense of humour. Some visitors ask the same question five times, and you have to smile every time."
               },
               {
                 "speaker": "i",
-                "text": "Do you ever get bored of showing the same places?"
+                "text": "Why is the work never boring?"
               },
               {
                 "speaker": "h",
-                "text": "Never. The sights are the same, but the visitors are always different. Last week, I met a man who was celebrating his hundredth birthday."
+                "text": "The routes are almost always the same, and the weather in this city is lovely, so that isn’t it. What changes is the people. Every group is different. I’ve had singers, football fans and a group of retired judges. They all notice different things, and I learn something new each time."
               },
               {
                 "speaker": "i",
-                "text": "What is the strangest question you have been asked?"
+                "text": "What was the strangest question a visitor has asked you?"
               },
               {
                 "speaker": "h",
-                "text": "Someone once asked me if the castle was built before or after the Second World War. It is more than seven hundred years old!"
+                "text": "Oh, the toilet and the ticket price I hear ten times a day, those are normal. The strangest was from a woman who asked if the castle had a swimming pool. She’d read about a royal bath in a book. I tried not to laugh, and I said that the king was a very clean man."
               },
               {
                 "speaker": "i",
-                "text": "What do tourists often get wrong?"
+                "text": "What do tourists get wrong?"
               },
               {
                 "speaker": "h",
-                "text": "They try to see everything in one day. It is better to choose three or four places and enjoy them calmly."
+                "text": "They try to see everything in one day. They have a list, and they run from the cathedral to the museum to the castle, and by six in the evening they are exhausted. They don’t wake up late, in fact, many get up too early. I always tell them to choose three places and to enjoy them."
               },
               {
                 "speaker": "i",
-                "text": "What is your advice for a first visit to a new city?"
+                "text": "What do you suggest for somebody in a new city?"
               },
               {
                 "speaker": "h",
-                "text": "Walk. You discover much more on foot. And talk to local people, because they know the best cafes."
+                "text": "A taxi tour is quick, and staying in the hotel is safe, but you don’t learn much. Take a map, walk without hurrying, and talk to the people who live there. Ask the baker where he eats, or the old man on the bench what has changed. That’s how I learned my own city, and I’m still learning it after twenty years. There’s always one more street that I don’t know, and one more story behind a door."
               }
             ]
           },
@@ -1458,62 +1581,62 @@
                 "By studying history"
               ],
               "answer": 1,
-              "explanation": "He took a friend's group round the castle and enjoyed it."
+              "explanation": "He did not answer an advert or study history; a sick friend asked him to take a group round the old town."
             },
             {
               "id": "l4-2",
               "prompt": "What does a good guide need?",
               "options": [
-                "A fast car",
                 "Patience and humour",
+                "A fast car",
                 "A university degree"
               ],
-              "answer": 1,
-              "explanation": "He says patience, a loud voice and a sense of humour."
+              "answer": 0,
+              "explanation": "A guide walks most of the time and does not need a degree or a car; patience and a sense of humour are the key."
             },
             {
               "id": "l4-3",
               "prompt": "Why is the work never boring?",
               "options": [
-                "The visitors are different",
                 "The routes change",
-                "The weather is lovely"
+                "The weather is lovely",
+                "The visitors are different"
               ],
-              "answer": 0,
-              "explanation": "He says the visitors are always different."
+              "answer": 2,
+              "explanation": "The routes are the same and the weather is nice, but every group of people is different."
             },
             {
               "id": "l4-4",
-              "prompt": "What was the strange question?",
+              "prompt": "What was the strangest question a visitor asked?",
               "options": [
-                "About the nearest toilet",
-                "About the price of tickets",
-                "About the age of the castle"
+                "Whether the castle had a swimming pool",
+                "Where the nearest toilet was",
+                "How much the tickets cost"
               ],
-              "answer": 2,
-              "explanation": "Someone asked if the castle was built before or after the Second World War."
+              "answer": 0,
+              "explanation": "Toilets and ticket prices are normal; the strange one was whether the castle had a swimming pool."
             },
             {
               "id": "l4-5",
-              "prompt": "What do tourists get wrong?",
+              "prompt": "Why are tourists exhausted by the evening?",
               "options": [
-                "They spend too much",
-                "They try to see everything",
-                "They wake up late"
+                "They get up too early",
+                "They try to see everything in a day",
+                "They carry heavy bags"
               ],
               "answer": 1,
-              "explanation": "They try to see everything in one day."
+              "explanation": "They do not wake up late, in fact many get up early; they run from place to place trying to see everything."
             },
             {
               "id": "l4-6",
               "prompt": "What does Beck suggest for a new city?",
               "options": [
-                "Walk and talk to locals",
                 "Take a taxi tour",
-                "Stay in the hotel"
+                "Stay in the hotel",
+                "Walk and talk to locals"
               ],
-              "answer": 0,
-              "explanation": "He says to walk and to talk to local people."
+              "answer": 2,
+              "explanation": "A taxi tour is quick and the hotel is safe, but he recommends walking slowly and talking to the people who live there."
             }
           ]
         }

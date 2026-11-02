@@ -250,10 +250,11 @@
               "prompt": "Why did the writer decide to paint the bathroom?",
               "options": [
                 "It cost much less",
+                "She had free time",
                 "Her brother said it was easy",
-                "She had free time"
+                "A friend gave her free paint"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "Her brother said that it was easy."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "It looked far too dark",
                 "It looked far too bright",
-                "It dried too slowly"
+                "It dried too slowly",
+                "It ran down the walls"
               ],
               "answer": 0,
               "explanation": "On the walls it was dark, almost black."
@@ -272,21 +274,23 @@
               "prompt": "What happened to her eye?",
               "options": [
                 "Dust blew into it",
+                "A nail scratched it",
                 "Her brush hit it",
                 "Paint fell in it"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "A drop of paint fell on her head and went in her eye."
             },
             {
               "id": "r3-4",
               "prompt": "How did the evening end?",
               "options": [
-                "With footprints everywhere",
                 "With a nice meal",
-                "With a call to her brother"
+                "With footprints everywhere",
+                "With a call to her brother",
+                "With a visit from the neighbours"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "She stepped in the tin and left blue footprints."
             },
             {
@@ -295,7 +299,8 @@
               "options": [
                 "Every job herself",
                 "No jobs at all",
-                "Easy jobs only"
+                "Easy jobs only",
+                "Friends do all the jobs"
               ],
               "answer": 2,
               "explanation": "She does easy jobs and pays professionals for the rest."
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "How to hang a picture",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Hanging a picture sounds simple, but many people make mistakes. [1] A few careful steps will save you a lot of time and trouble.\n\nFirst, decide where you want the picture to go. [2] The centre should be at about the height of your eyes.\n\nNext, mark the spot with a pencil. If you are not sure, hold the picture against the wall and ask a friend to tell you if it looks straight. [3] It is easier to rub out a pencil mark than to fill a hole in the wall.\n\nThen, choose a nail or a screw that is strong enough. [4] Heavy mirrors need a special fixing that goes deep into the wall.\n\nFinally, stand back and look at your work. [5] If it is not straight, a small tap on one corner usually puts it right.",
           "sentences": [
-            "Most of these mistakes are easy to avoid.",
+            "Pictures look best when they hang in pairs.",
+            "A hammer is the only tool you will need.",
             "Do this before you make any holes.",
-            "Pictures are heavier than they look.",
             "Old pictures can be worth a lot of money.",
             "Think about the other furniture in the room.",
-            "Check whether the picture really is level."
+            "Check whether the picture really is level.",
+            "Pictures are heavier than they look.",
+            "Most of these mistakes are easy to avoid."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "A",
+              "answer": "H",
               "explanation": "\"These mistakes\" are the mistakes that many people make; the next sentence gives the careful steps that avoid them."
             },
             {
@@ -330,12 +337,12 @@
             },
             {
               "id": "r4-3",
-              "answer": "B",
+              "answer": "C",
               "explanation": "Do this before you make any holes; the next sentence says a pencil mark is easier to rub out than a hole."
             },
             {
               "id": "r4-4",
-              "answer": "C",
+              "answer": "G",
               "explanation": "Pictures are heavier than they look, so the nail must be strong; the next sentence mentions heavy mirrors."
             },
             {
@@ -731,11 +738,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you have a hammer I can borrow?"
+                    "text": "Do you know where the hammer is? I need to hang a picture in the hall."
                   },
                   {
                     "speaker": "b",
-                    "text": "There is one in the shed, next to the ladder."
+                    "text": "It’s usually in the kitchen drawer, with the screwdrivers. But I used it last week to fix the fence, so it won’t be there."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Is it in the garage, on the workbench, then?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I looked there too, when I was searching for nails, and it wasn’t there. In the end I found it behind the lawnmower, and I put it back this morning, so you can go and get it now."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thanks. I’ll get the nails as well."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "They’re in the blue box on the top shelf of the shed."
                   }
                 ]
               },
@@ -748,7 +771,7 @@
                   "In the garage"
                 ],
                 "answer": 1,
-                "explanation": "He says there is one in the shed."
+                "explanation": "It is not in the kitchen drawer or on the workbench in the garage; the man found it behind the lawnmower and put it back in the shed."
               }
             },
             {
@@ -775,11 +798,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What colour will you paint your room?"
+                    "text": "Which colour for your bedroom, Lily? The yellow is so bright. It would wake me up in the morning!"
                   },
                   {
                     "speaker": "b",
-                    "text": "Light green. It is calmer than my old pink."
+                    "text": "I like yellow, but I’d never sleep. And the red paint is the cheapest one in the shop, but it’s not worth it. I’m going with the green, the pale one. It reminds me of a forest and I feel so relaxed when I look at it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It does look quiet and soft."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Exactly. I want a room where I can read and rest after school, not one that makes me excited."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good choice. Let’s pay for it."
                   }
                 ]
               },
@@ -792,7 +827,7 @@
                   "It is brighter"
                 ],
                 "answer": 0,
-                "explanation": "She says green is calmer than pink."
+                "explanation": "The yellow is too bright and the red is the cheapest but not worth it; she chooses the green because it is calm and relaxing."
               }
             },
             {
@@ -823,7 +858,23 @@
                   },
                   {
                     "speaker": "b",
-                    "text": "About twenty minutes, if I can find the right part."
+                    "text": "The company said two hours when you booked, but that’s because they don’t know that it’s an easy job. I’ve done this a hundred times. It’s about twenty minutes, and then I need to clean up."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s much better. What time are you starting?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I’ll arrive at twelve minutes past ten, if the traffic is good. So I’ll be finished before eleven."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Perfect. I’ll make some tea."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Lovely, thanks. No sugar, please."
                   }
                 ]
               },
@@ -836,21 +887,13 @@
                   "Twelve minutes"
                 ],
                 "answer": 0,
-                "explanation": "She says about twenty minutes."
+                "explanation": "Two hours was the company’s guess and twelve minutes past ten is only the arrival time; the repair is about twenty minutes."
               }
             },
             {
               "id": "l1-4-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Boy",
@@ -862,12 +905,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Why is the floor wet?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "The washing machine is leaking again. I have called a plumber."
+                    "text": "Hi Dad, it’s me. There’s water coming from under the kitchen sink, and the floor is wet. First I thought of calling the neighbour, Mr Brown, because he knows a lot about houses, but he’s on holiday. Then I almost called an electrician, because the light also went out, but then I remembered that the water is the real problem. So I phoned the plumber whose number is on the fridge, the one who repaired the bath last year. He says he’ll be here in half an hour. Don’t worry, I’ve put a bucket under the pipe."
                   }
                 ]
               },
@@ -880,21 +919,13 @@
                   "A neighbour"
                 ],
                 "answer": 1,
-                "explanation": "He says he has called a plumber."
+                "explanation": "The neighbour is away and the electrician was only an idea; he phoned the plumber from the fridge."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Woman",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Man",
@@ -906,12 +937,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Are you coming to the DIY class?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "I would like to, but I have to work late on Thursday."
+                    "text": "Hi Anna, it’s Dan. I got your message about painting the kitchen on Saturday, and I’d love to come, but I can’t. I’m at the office until nine on both days, because we have a big deadline on Monday. I know you asked about my cold last week, but I’m fine now, so that’s not the problem. And I do have my own brush, so don’t worry about tools either. It’s just that I have to work late. Sunday is better for me, because I’m free all day and I can arrive at nine. Call me back and tell me."
                   }
                 ]
               },
@@ -924,7 +951,7 @@
                   "He must work late"
                 ],
                 "answer": 2,
-                "explanation": "He says he has to work late on Thursday."
+                "explanation": "He is better from his cold and has his own brush; he cannot come because he must work late at the office."
               }
             },
             {
@@ -951,11 +978,35 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How many screws do I need?"
+                    "text": "I need screws for a shelf. Ten, I think."
                   },
                   {
                     "speaker": "b",
-                    "text": "Eight, plus two spare ones in case you drop them."
+                    "text": "Let’s check. How many brackets do you have?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Two brackets, and each one has four holes."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "So you need eight screws. We sell them in boxes of ten."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh, ten is what I thought, but I only need eight. I don’t want to waste money."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No problem. I can sell you eight on their own, thirty pence each. Do you have the right drill?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, my dad lent me his."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then you’re ready. Don’t forget the wall plugs."
                   }
                 ]
               },
@@ -968,21 +1019,13 @@
                   "Two"
                 ],
                 "answer": 0,
-                "explanation": "The man says eight, plus two spare."
+                "explanation": "He first says ten but the two brackets have four holes each, so he needs eight."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Woman",
@@ -994,12 +1037,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Can I help you to carry the paint?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "Thanks. Just take the small tin. The big ones are heavy."
+                    "text": "Lucy, could you help me carry things to the car, please. Don’t take the big tins, they are too heavy for you, and I’ll bring those myself. The brushes are in the car already, I put them in this morning. Just carry the small tin of white paint, and be careful with the lid, because it’s not on tight. Put it in the boot, next to the ladder. Thank you, you’re a star. After that, we can have a drink and then drive to Grandma’s house to start painting."
                   }
                 ]
               },
@@ -1012,7 +1051,7 @@
                   "The brushes"
                 ],
                 "answer": 1,
-                "explanation": "She asks her to take the small tin."
+                "explanation": "The woman will carry the big tins herself and the brushes are in the car; she asks for the small tin of white paint."
               }
             }
           ]
@@ -1048,24 +1087,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Excuse me, I need something to cut metal. Do you sell saws?"
+                    "text": "Hello, I need something to fix my garden gate."
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, aisle four. These ones are made for metal."
+                    "text": "Is it wooden? Wood glue is cheap and strong."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It’s metal, unfortunately, and one side is bent, so I have to cut off a piece. I thought of buying a ladder to reach the top, but I can do it standing."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then you want a saw for metal. This one has a good handle and the blade is strong."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great, I’ll take it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Wonderful. Do you need gloves as well?"
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the man want?",
+                "prompt": "What does the man decide to buy?",
                 "options": [
                   "A new ladder",
-                  "Some wood glue",
-                  "A tool for metal"
+                  "A saw for metal",
+                  "Some wood glue"
                 ],
-                "answer": 2,
-                "explanation": "He needs something to cut metal."
+                "answer": 1,
+                "explanation": "The gate is metal so glue is useless and he can reach the top without a ladder; he needs a saw to cut the bent piece."
               }
             },
             {
@@ -1092,24 +1147,44 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I think the plug is broken. The lamp will not turn on."
+                    "text": "The toaster is making a funny noise and there’s smoke!"
                   },
                   {
                     "speaker": "b",
-                    "text": "Do not touch it! Let us ask Dad."
+                    "text": "Don’t touch it! I’ll pull the plug, stay back."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Should we throw it away?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Not yet. Dad can look at it when he comes home. It might be an easy repair, a wire or something like that."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "OK. I’ll open the window."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good idea. And please don’t put your hand near it, it could be hot."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thanks. I’ll wait in the kitchen."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What does the boy say?",
+                "prompt": "What does the boy want the girl to do?",
                 "options": [
-                  "Turn it off",
-                  "Do not touch it",
-                  "Throw it out"
+                  "Switch it off herself",
+                  "Throw it away",
+                  "Leave it alone"
                 ],
-                "answer": 1,
-                "explanation": "He says do not touch it and ask Dad."
+                "answer": 2,
+                "explanation": "He says do not touch it and refuses to throw it away yet; he wants her to stay away until Dad comes."
               }
             },
             {
@@ -1136,24 +1211,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "The door keeps banging every time the wind blows."
+                    "text": "That door squeaks every time you open it. I hear it in my sleep."
                   },
                   {
                     "speaker": "b",
-                    "text": "I will put a little oil on the hinges. That might stop the noise."
+                    "text": "It’s not so bad. A drop of oil would fix it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I tried that, and it only worked for a day. I wake up every night when my son goes to the bathroom. I’m exhausted."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then replace the hinges. It’s an easy job."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Maybe at the weekend. I’m sick of this noise."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I can bring my tools on Saturday morning, if you like."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the problem?",
+                "prompt": "How does the woman feel about the noisy door?",
                 "options": [
-                  "A noisy door",
-                  "A broken window",
-                  "A cold house"
+                  "She is tired of the sound",
+                  "She finds it funny",
+                  "She is afraid of it"
                 ],
                 "answer": 0,
-                "explanation": "The door bangs and the hinges make noise."
+                "explanation": "She is woken every night by the squeak and the oil only worked for a day, so she is exhausted and sick of the noise."
               }
             },
             {
@@ -1180,11 +1271,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "In technology class, you will each make a wooden box. Safety glasses must be worn at all times."
+                    "text": "Before you start sawing, everyone must put on safety glasses."
                   },
                   {
                     "speaker": "b",
-                    "text": "Do we have to buy the wood?"
+                    "text": "They’re uncomfortable, Mr Clark. And my handwriting in the notes will be messy with them."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I don’t mind about neat writing today, and I’m happy if you talk quietly. But the glasses are not optional. A piece of wood in the eye can be a disaster."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "OK. I’ll wear them."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thank you, Sara. And please tell the others."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I will, Sir."
                   }
                 ]
               },
@@ -1193,11 +1300,11 @@
                 "prompt": "What does the teacher insist on?",
                 "options": [
                   "Silent work",
-                  "Neat writing",
-                  "Safety glasses"
+                  "Safety glasses",
+                  "Neat writing"
                 ],
-                "answer": 2,
-                "explanation": "He says safety glasses must be worn at all times."
+                "answer": 1,
+                "explanation": "He says that neat writing and quiet talking are not important, but the glasses are not optional."
               }
             },
             {
@@ -1224,24 +1331,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Mum, the bike chain has come off again."
+                    "text": "My bike chain keeps falling off. I’ll have to buy a new bike."
                   },
                   {
                     "speaker": "b",
-                    "text": "Put on old gloves, and I will show you how to put it back."
+                    "text": "Not yet. Chains are easy to repair. I could call the shop and ask for a mechanic, but that costs money. If you like, I’ll show you how to do it. I’ve done it a hundred times."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Would you? That’d be great. I’d like to learn."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Bring the bike to the garage, and we’ll start after lunch."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Thanks, Mum. I’ll bring the tools as well."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Don’t forget the oil."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the mother offer?",
+                "prompt": "What does the mother offer to do?",
                 "options": [
-                  "To show him how",
-                  "To buy a bike",
-                  "To call the shop"
+                  "Buy a new bike",
+                  "Call the shop",
+                  "Show him how to repair it"
                 ],
-                "answer": 0,
-                "explanation": "She offers to show him how to put the chain back."
+                "answer": 2,
+                "explanation": "A new bike is not needed and a mechanic costs money, so she offers to teach him herself."
               }
             },
             {
@@ -1268,24 +1391,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How much is it to repair my phone screen?"
+                    "text": "I’ve dropped my phone and the screen is cracked. Can you repair it?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Sixty pounds, and it will be quick. It will be ready in an hour."
+                    "text": "Yes, we do it every day. It’s not free, I’m afraid, it’s forty pounds, but it’s quick. You can wait here."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "How long will it take?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "About half an hour. Have a coffee, and it’ll be finished when you come back. It isn’t broken inside, so there’s no problem."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That’s a relief. I thought it was impossible."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, it’s a simple job."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the girl say?",
+                "prompt": "What does the girl say about the repair?",
                 "options": [
-                  "It is free",
-                  "It cannot be fixed",
-                  "It will be quick"
+                  "It will be very quick",
+                  "It will be free",
+                  "It is impossible"
                 ],
-                "answer": 2,
-                "explanation": "She says it will be ready in an hour."
+                "answer": 0,
+                "explanation": "She says it is not free and not impossible, but it takes only half an hour."
               }
             }
           ]
@@ -1310,58 +1449,58 @@
             "turns": [
               {
                 "speaker": "decorator",
-                "text": "Hello, this is Berit, the decorator. I am calling about the living room. I came to look at it yesterday, and I have a few questions. First, the walls need a lot of preparation. There are several cracks near the window, and the paint on the ceiling is peeling. I suggest two coats of white paint, which will cost about three hundred pounds. If you want a different colour on one wall, it will be twenty pounds more. The job will take three days, and I can start on the fourteenth. I will cover the floor and the furniture with plastic sheets. Please remove any pictures from the walls before I arrive. The smell of the paint will disappear after about two days, but I recommend that you keep the window open. Please call me back on this number, and we can discuss the details."
+                "text": "Hello, this is Berit, the decorator. I’m calling about your living room. I came to look at it yesterday, and I have a few things to tell you before I start. First, the walls. They are in good condition, except for some cracks near the window. I thought they were next to the door, because that’s where the old picture was, but no, it’s the window, probably because the frame is very old. I’ll fill them before painting. The paint on the ceiling is also peeling, and I think it’s due to damp from the bathroom upstairs. The paint on the walls is fine. Please ask the owner of the flat upstairs to check the pipe. Now, the price. I said on the phone that it would be two hundred and fifty pounds, but that was without the ceiling. With everything, the whole job will cost about three hundred pounds. If you want a different colour on one wall, say a dark blue behind the sofa, it costs twenty pounds more, because I need extra paint and a second coat. How long will it take? I’d say three days: the first for the cracks, the second for the ceiling and the third for the walls. Not two, as I said before, because the paint needs time to dry. Please move the small things, like books and plants. I’ll cover the furniture with plastic sheets. I don’t use old newspapers, because they stick to the table. Finally, I’ll arrive at eight each morning and leave at four. Please call me if you have any questions, and I hope you enjoy the new room."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The living room has cracks near the ___",
+              "prompt": "There are cracks in the wall close to the ___",
               "answer": "window",
-              "explanation": "She says there are several cracks near the window."
+              "explanation": "She thought they were next to the door, but they are near the window."
             },
             {
               "id": "l3-2",
-              "prompt": "The paint on the ___ is peeling",
+              "prompt": "Paint is coming off the ___",
               "answer": "ceiling",
-              "explanation": "She says the paint on the ceiling is peeling."
+              "explanation": "The walls are fine; the paint on the ceiling is peeling."
             },
             {
               "id": "l3-3",
-              "prompt": "The job will cost about ___ pounds",
+              "prompt": "Altogether the work will cost around ___ pounds",
               "answer": "three hundred",
               "accepted": [
                 "300"
               ],
-              "explanation": "She says it will cost about three hundred pounds."
+              "explanation": "Two hundred and fifty was the price without the ceiling; the whole job is about three hundred."
             },
             {
               "id": "l3-4",
-              "prompt": "A different colour on one wall costs ___ pounds more",
+              "prompt": "For one wall in another colour, add ___ pounds",
               "answer": "twenty",
               "accepted": [
                 "20"
               ],
-              "explanation": "She says it will be twenty pounds more."
+              "explanation": "A dark blue wall needs extra paint and a second coat, which costs twenty pounds more."
             },
             {
               "id": "l3-5",
-              "prompt": "The job will take ___ days",
+              "prompt": "The work needs ___ days",
               "answer": "three",
               "accepted": [
                 "3"
               ],
-              "explanation": "She says the job will take three days."
+              "explanation": "She said two before, but the paint needs time to dry, so it will take three days."
             },
             {
               "id": "l3-6",
-              "prompt": "She will cover the furniture with plastic ___",
+              "prompt": "Plastic ___ will protect the furniture",
               "answer": "sheets",
               "accepted": [
                 "sheet"
               ],
-              "explanation": "She says she will cover things with plastic sheets."
+              "explanation": "She will not use newspapers; she covers the furniture with plastic sheets."
             }
           ]
         },
@@ -1393,19 +1532,19 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Eitan, how did you become a carpenter?"
+                "text": "Eitan, you have been a carpenter for thirty years. What did you make when you were a boy?"
               },
               {
                 "speaker": "h",
-                "text": "My grandfather had a workshop. As a child, I loved the smell of wood, and he let me make little boats from the scraps."
+                "text": "My grandfather had a workshop, and I spent every Saturday there. He made me a few wooden toys, as grandfathers do, but I started with small boats. I cut them from pieces of pine, and I sailed them in the bath. My mother wasn’t happy about the water on the floor."
               },
               {
                 "speaker": "i",
-                "text": "What is your favourite thing to make?"
+                "text": "Today you are famous for chairs. Why do you like making them?"
               },
               {
                 "speaker": "h",
-                "text": "Chairs. A table is simple, but a chair has to be strong, comfortable and beautiful all at once."
+                "text": "They aren’t quick, and they don’t make me rich, so it isn’t that. A chair has to carry a person for fifty years. It has to be strong, and it should be beautiful as well. Making something that is both is very difficult, and that’s why I love it."
               },
               {
                 "speaker": "i",
@@ -1413,31 +1552,35 @@
               },
               {
                 "speaker": "h",
-                "text": "About two weeks. The shaping is quick, but the wood must dry slowly, and the joints must fit perfectly."
+                "text": "Not two days, that’s what customers hope. Two months would be a big table with carvings. A good chair takes me about two weeks, if I work every day. The wood needs time to dry and the glue needs time to set, and you can’t hurry that."
               },
               {
                 "speaker": "i",
-                "text": "What was your biggest mistake?"
+                "text": "Tell me about your biggest mistake."
               },
               {
                 "speaker": "h",
-                "text": "Once, I made a bed that was too big to get out of the workshop door. I had to take the wall down."
+                "text": "Oh, I can laugh about it now. A chair that broke would be a small embarrassment, and I once built a table with three legs, because I forgot one. But the worst was a beautiful bed for a customer. Nothing was wrong with it, except that it was too big for the door. We had to take out a window to get it in."
               },
               {
                 "speaker": "i",
-                "text": "Can anyone learn to work with wood?"
+                "text": "What advice do you give to beginners?"
               },
               {
                 "speaker": "h",
-                "text": "Yes. Start with something small, like a box, and use sharp tools, because a blunt knife is more dangerous than a sharp one."
+                "text": "Don’t buy new machines. They are expensive and you don’t need them at the beginning. And don’t be in a hurry. The most important thing is to keep your tools sharp. A sharp tool is safer, because you don’t need to push so hard, and the cut is cleaner."
               },
               {
                 "speaker": "i",
-                "text": "Why do you still use hand tools?"
+                "text": "You still use hand tools. Why?"
               },
               {
                 "speaker": "h",
-                "text": "They are quiet, and they give me a feeling of the wood. A machine is faster, but it does not teach you anything."
+                "text": "Machines are faster, and they make a lot of dust, but the hand tools aren’t really cheaper. For me, it’s about learning. When you use a plane, you feel the wood: the way it wants to go and where it is hard. A machine hides all of that from you. I think a carpenter who doesn’t know the wood is only an operator."
+              },
+              {
+                "speaker": "i",
+                "text": "Thank you very much, Eitan."
               }
             ]
           },
@@ -1451,40 +1594,40 @@
                 "Small tables"
               ],
               "answer": 1,
-              "explanation": "His grandfather let him make little boats from the scraps."
+              "explanation": "His grandfather made him toys, but Eitan began with small boats cut from pine."
             },
             {
               "id": "l4-2",
               "prompt": "Why does he like making chairs?",
               "options": [
-                "They are very quick to make",
                 "They must be strong and beautiful",
+                "They are very quick to make",
                 "They sell for a high price"
               ],
-              "answer": 1,
-              "explanation": "A chair has to be strong, comfortable and beautiful at once."
+              "answer": 0,
+              "explanation": "Chairs are not quick and do not make him rich; he loves the difficulty of making them strong and beautiful."
             },
             {
               "id": "l4-3",
-              "prompt": "How long does a chair take?",
+              "prompt": "How long does a good chair take?",
               "options": [
-                "About two weeks",
                 "About two days",
-                "About two months"
+                "About two months",
+                "About two weeks"
               ],
-              "answer": 0,
-              "explanation": "He says about two weeks."
+              "answer": 2,
+              "explanation": "Two days is what customers hope and two months is for a big table; a good chair takes about two weeks."
             },
             {
               "id": "l4-4",
-              "prompt": "What was his big mistake?",
+              "prompt": "What was his biggest mistake?",
               "options": [
+                "A bed too big for the door",
                 "A chair that broke",
-                "A table with three legs",
-                "A bed too big for the door"
+                "A table with three legs"
               ],
-              "answer": 2,
-              "explanation": "He made a bed too big to get out of the workshop."
+              "answer": 0,
+              "explanation": "The chair and the table were small embarrassments; the worst was a bed that did not fit through the door."
             },
             {
               "id": "l4-5",
@@ -1495,18 +1638,18 @@
                 "Work very fast"
               ],
               "answer": 1,
-              "explanation": "He says a blunt knife is more dangerous than a sharp one."
+              "explanation": "He says do not buy machines and do not hurry; keep the tools sharp."
             },
             {
               "id": "l4-6",
               "prompt": "Why does he use hand tools?",
               "options": [
-                "They teach him about the wood",
                 "They are much cheaper",
-                "They make less dust"
+                "They make less dust",
+                "They teach him about the wood"
               ],
-              "answer": 0,
-              "explanation": "Hand tools give him a feeling of the wood and teach him."
+              "answer": 2,
+              "explanation": "Machines make dust but hand tools are not cheaper; he uses them to feel and learn the wood."
             }
           ]
         }

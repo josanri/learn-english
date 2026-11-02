@@ -250,10 +250,11 @@
               "prompt": "Why did the writer take a year off?",
               "options": [
                 "Because his parents asked him to",
+                "Because he could not choose a university",
                 "Because he failed his final exams",
                 "To see the world before choosing a career"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "He wanted to see the world before choosing a career."
             },
             {
@@ -262,6 +263,7 @@
               "options": [
                 "To earn money for his plans",
                 "To learn useful business skills",
+                "To pay for his university course",
                 "To please his worried teacher"
               ],
               "answer": 0,
@@ -271,9 +273,10 @@
               "id": "r3-3",
               "prompt": "What did he do in Peru?",
               "options": [
+                "He built houses for a charity",
                 "He worked on a farm for a family",
-                "He studied Spanish in a language school",
-                "He taught English in a village school"
+                "He taught English in a village school",
+                "He studied Spanish in a language school"
               ],
               "answer": 2,
               "explanation": "He spent six months teaching English."
@@ -282,8 +285,9 @@
               "id": "r3-4",
               "prompt": "How did he learn Spanish?",
               "options": [
-                "From lessons in the evening",
+                "From a course in Lima",
                 "From the children he taught",
+                "From lessons in the evening",
                 "From a book he bought"
               ],
               "answer": 1,
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "How does he feel about the year now?",
               "options": [
-                "He is very glad that he did it",
                 "He thinks it was too long",
-                "He wishes he had saved more"
+                "He thinks he lost too much time",
+                "He wishes he had saved more",
+                "He is very glad that he did it"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He does not regret it and calls it the best decision."
             }
           ]
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "Starting your first job",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Starting your first job can be exciting and a little frightening at the same time. [1] Everything is new, from the people you meet to the rules you must follow, so it is normal to feel nervous.\n\nOn your first day, arrive a little early. [2] Smile, introduce yourself and try to remember people's names, even if it is difficult at first.\n\nDo not be afraid to ask questions. [3] Your colleagues would much prefer that you ask than make a mistake that nobody notices until later.\n\nIt is also important to be reliable. [4] If you say that you will finish something by Friday, make sure that you do. Over time, people will learn to trust you. [5] Finally, remember that everybody makes mistakes when they start, and what matters is that you learn from them.",
           "sentences": [
             "Nobody expects you to know everything immediately.",
             "This means that people can depend on you.",
-            "Many people feel this way before the first morning arrives.",
-            "Then they will start to give you more interesting work.",
+            "You may need to travel a long way to get there.",
+            "You will probably get your first pay at the end of the month.",
             "This is the moment when you make your first impression.",
-            "You may need to travel a long way to get there."
+            "Then they will start to give you more interesting work.",
+            "Many young people find their first job through a friend.",
+            "Many people feel this way before the first morning arrives."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "H",
               "explanation": "Feeling this way before the first morning leads to why everything is new."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "F",
               "explanation": "When people trust you, they start to give you more interesting work."
             }
           ]
@@ -733,24 +740,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What time does the careers fair start?"
+                    "text": "Hello, Mrs Doyle? It’s Justin, Ben’s dad. What time should Ben go to the careers fair on Friday?"
                   },
                   {
                     "speaker": "f",
-                    "text": "It starts at ten, and finishes at three. But the best companies leave early, so go in the morning."
+                    "text": "It’s open all day. The morning is the busiest, because the whole school goes then, and you can hardly talk to anybody. There is a talk at three o’clock, but the engineers leave by two. Ben is interested in engineering, isn’t he?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes, he is."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I’d go straight after lunch, around one. There are fewer students, and all the engineers are there."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great, I’ll tell him. Does he need to take anything with him?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Just a notebook and a pen. They give out free bags and plenty of leaflets."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "When should the boy go to the fair?",
+                "prompt": "When should the boy go to the careers fair?",
                 "options": [
-                  "At three o'clock",
                   "In the morning",
-                  "After lunch"
+                  "After lunch",
+                  "At three o'clock"
                 ],
                 "answer": 1,
-                "explanation": "She says the best companies leave early, so go in the morning."
+                "explanation": "The morning is too crowded and the talk at three comes after the engineers leave; she says to go straight after lunch."
               }
             },
             {
@@ -777,24 +800,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How was your interview?"
+                    "text": "How was the interview, Eli?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Better than I expected. They asked about my hobbies, and I talked about football for ten minutes!"
+                    "text": "Better than I thought. I had prepared for questions about my school marks, but they hardly mentioned them. They asked about my last job at the supermarket for a few minutes, but mostly they wanted to know what I do in my free time. I talked about football and my guitar for ten minutes."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s a surprise. Did they like it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I think so. They kept smiling and asking more questions."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I hope you get the job. When will they tell you?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Next Friday, they said."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then try not to think about it until then."
                   }
                 ]
               },
               "question": {
                 "id": "l1-2q",
-                "prompt": "What did the interviewers ask about?",
+                "prompt": "What did the interviewers mostly ask about?",
                 "options": [
-                  "His hobbies",
+                  "His free-time activities",
                   "His school marks",
                   "His last job"
                 ],
                 "answer": 0,
-                "explanation": "They asked about his hobbies."
+                "explanation": "He prepared for the school marks and they asked briefly about the supermarket, but they mostly asked about football and the guitar."
               }
             },
             {
@@ -821,11 +864,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much will you earn at the café?"
+                    "text": "How much are you going to get for the Saturday job at the café, Adele?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Eight pounds an hour, and I will work eight hours on Saturdays."
+                    "text": "Eight pounds an hour. I start at eight in the morning and finish at four, and I get a free lunch."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s better than my job last summer. I got forty for the whole day at the shop."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really? Then I’m lucky. The manager says that I may work more hours in the holidays too."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not bad at all. You’ll be rich by Christmas. Is it hard work, or can you sit down sometimes?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s hard, but the customers are friendly, and I like the other girls."
                   }
                 ]
               },
@@ -833,12 +892,12 @@
                 "id": "l1-3q",
                 "prompt": "How much will she earn each Saturday?",
                 "options": [
-                  "Sixty-four pounds",
                   "Eight pounds",
-                  "Forty pounds"
+                  "Forty pounds",
+                  "Sixty-four pounds"
                 ],
-                "answer": 0,
-                "explanation": "Eight pounds for eight hours is sixty-four pounds."
+                "answer": 2,
+                "explanation": "She earns eight pounds an hour and works from eight to four, which is eight hours, so she gets more than the forty that Felix earned."
               }
             },
             {
@@ -865,11 +924,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What would you like to be when you grow up?"
+                    "text": "Is your son still planning to be a vet, Dean?"
                   },
                   {
                     "speaker": "m",
-                    "text": "A vet. I love animals, and I would like to help them when they are ill."
+                    "text": "Yes, Leo told me yesterday that he definitely wants it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Because of you? You work with animals, don’t you?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m a farmer, and my wife and I would like him to take over the farm one day, but he says no."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ah, so he loves being outdoors?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not really, he hates the rain. What changed him was our dog’s illness last year, when the vet saved her. Leo said he wants to be the one who makes sick animals better."
                   }
                 ]
               },
@@ -877,12 +952,12 @@
                 "id": "l1-4q",
                 "prompt": "Why does the boy want to be a vet?",
                 "options": [
-                  "He likes working outdoors",
+                  "His parents asked him to",
                   "He wants to help ill animals",
-                  "His father is a vet"
+                  "He likes working outdoors"
                 ],
                 "answer": 1,
-                "explanation": "He loves animals and wants to help them when they are ill."
+                "explanation": "His parents want him to take over the farm and he hates the rain; he was moved when a vet saved the family’s dog."
               }
             },
             {
@@ -909,11 +984,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Are you going to university?"
+                    "text": "Have you decided what to do after school, Jolene?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Not yet. I am going to work for a year first, and save some money."
+                    "text": "I’ve been accepted at university, but I’m not starting this September. Many of my friends are going straight away, though."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "And you’re going travelling, aren’t you?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, I want to go to Asia for three months, but that isn’t the first thing. Before that I need to earn money, so I’ll work at my uncle’s shop for a year. Then I’ll go travelling, and when I come back I’ll start my course."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That sounds like a good plan."
                   }
                 ]
               },
@@ -926,7 +1013,7 @@
                   "Work for a year"
                 ],
                 "answer": 2,
-                "explanation": "She is going to work for a year first."
+                "explanation": "She will not start university now and travelling comes later; before that she needs money, so she will work at her uncle’s shop for a year."
               }
             },
             {
@@ -953,11 +1040,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Do you enjoy your new job?"
+                    "text": "How’s the new job, Bruce?"
                   },
                   {
                     "speaker": "m",
-                    "text": "The work is fine, but the journey is long. I spend two hours on the train every day."
+                    "text": "Great, honestly. The salary is better than at the last place, so I can’t complain. And the office is open-plan, but people are quiet."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what’s wrong? You look tired."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s the journey. It takes an hour and a half each way, with two trains and a bus. I leave at six and get home at eight."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s awful. Can’t you work from home?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Two days a week, starting next month. I can’t wait. I’ll have time to cook dinner for once, and maybe I’ll even start running again."
                   }
                 ]
               },
@@ -970,7 +1073,7 @@
                   "The noisy office"
                 ],
                 "answer": 0,
-                "explanation": "He spends two hours on the train every day."
+                "explanation": "The pay is better and the office is quiet; he is tired because the journey to work takes an hour and a half each way."
               }
             },
             {
@@ -997,15 +1100,19 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I did a week of work experience at a hotel."
+                    "text": "How was Kenji’s work experience at the hotel, Dahlia?"
                   },
                   {
                     "speaker": "f",
-                    "text": "How was it?"
+                    "text": "He loved it. At first he was sad, because his friends were together in an office and he was alone. And the lunch break was only twenty minutes! But what changed everything was the guests. People came from Spain, Japan and Brazil, and every day he practised his English and learnt words in other languages."
                   },
                   {
                     "speaker": "m",
-                    "text": "Hard work, but I loved meeting guests from different countries."
+                    "text": "That sounds great."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "He wants to do it again next summer, and he has already asked the manager if there is a job for him. I think he may study languages now."
                   }
                 ]
               },
@@ -1018,7 +1125,7 @@
                   "Having long lunch breaks"
                 ],
                 "answer": 1,
-                "explanation": "He loved meeting guests from different countries."
+                "explanation": "He was alone and the lunch break was short; he enjoyed the guests from Spain, Japan and Brazil and practising languages with them."
               }
             }
           ]
@@ -1054,24 +1161,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Thank you for coming to this interview. Please sit down. Tell me a little about yourself."
+                    "text": "Big day tomorrow, Jacob. Are you ready for the interview?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Of course. I have just finished a course in cooking."
+                    "text": "I’ve practised answers for a week, so I know what to say. But my stomach has been strange all day."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’ll be fine. You always say you’ll fail, and then you do well."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m not saying I’ll fail. I’m not saying I’ll get it either. It’s a great company, and honestly I can’t wait to meet them. I just wish it were over."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Take a deep breath and enjoy it. Go to bed early, and send me a message when it is finished."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where are the speakers?",
+                "prompt": "How does Jacob feel about his interview tomorrow?",
                 "options": [
-                  "At a restaurant",
-                  "At a cooking lesson",
-                  "At a job interview"
+                  "Sure that he will get the job",
+                  "Worried that he is not ready",
+                  "Nervous but looking forward to it"
                 ],
                 "answer": 2,
-                "explanation": "She asks him to tell her about himself, as in an interview."
+                "explanation": "He has practised, so he is not unprepared, and he does not promise success; he is nervous but can’t wait to meet the company."
               }
             },
             {
@@ -1097,25 +1216,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "I heard you’re leaving the bank, Patrick. Is it the money?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I have decided to quit my job and study to become a teacher."
+                    "text": "No, I earn well, and my colleagues are lovely. I’ll miss them. But I spend all day moving numbers, and at the end I never feel I’ve done anything."
                   },
                   {
                     "speaker": "f",
-                    "text": "That is a big change, but I think you will be very good at it."
+                    "text": "So what will you do?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m training to be a nurse. It’s a big change at forty-five, and half the money, but I want to go home feeling that I helped someone."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That sounds brave. What does your family think? Your wife must be worried about the money."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "She is, a little, but she supports me, and we have saved enough for two years."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the man going to do?",
+                "prompt": "Why is Patrick leaving the bank?",
                 "options": [
-                  "Retire from work",
-                  "Change his career",
-                  "Move to a new city"
+                  "He wants to feel that he helps people",
+                  "He is unhappy with his salary",
+                  "He has problems with his colleagues"
                 ],
-                "answer": 1,
-                "explanation": "He will quit his job and study to be a teacher."
+                "answer": 0,
+                "explanation": "He says the money and colleagues are fine; he wants a job where he goes home feeling that he helped someone."
               }
             },
             {
@@ -1142,24 +1277,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "We are sorry, Julius, but we have chosen another person for the job."
+                    "text": "Julius, did the company phone?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I understand. Thank you for your time."
+                    "text": "Yes. They gave the job to somebody else."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, I’m so sorry. You must be angry."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Funny, but no. They were polite, and they gave me feedback. And to be honest, after the second interview I wasn’t sure I wanted to travel an hour every day. I think I’m a little relieved. My family knows already, and they were fine about it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then I’m glad. There will be other jobs, and next time you will know what they ask in the interview."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What news does Julius receive?",
+                "prompt": "How does Julius feel about not getting the job?",
                 "options": [
-                  "He did not get the job",
-                  "He has a new office",
-                  "He will be paid more"
+                  "Angry with the company",
+                  "Partly relieved",
+                  "Embarrassed in front of his family"
                 ],
-                "answer": 0,
-                "explanation": "They chose another person."
+                "answer": 1,
+                "explanation": "He is not angry because they were polite, and the family was fine about it; he says that he is a little relieved."
               }
             },
             {
@@ -1185,25 +1332,33 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "How’s the new job, Jacinta? And the new manager? My friends say he’s terrible."
+                  },
+                  {
                     "speaker": "f",
-                    "text": "We have a job vacancy. Our company is looking for an assistant. You would answer the phone and organise meetings."
+                    "text": "Strict? Not at all. People said he was cold, but he’s actually warm. The first week was a bit chaotic, I couldn’t find anything in the shared folder, but that’s normal. The best thing is that he trusts me. He says, you decide how to do it, and I can start early or work from home."
                   },
                   {
                     "speaker": "m",
-                    "text": "That sounds interesting. When could I start?"
+                    "text": "That sounds ideal. I wish my boss was like that."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It is. I feel really lucky."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the woman describing?",
+                "prompt": "What does Jacinta think of her new manager?",
                 "options": [
-                  "A holiday offer",
-                  "A training course",
-                  "A job vacancy"
+                  "He is too strict",
+                  "He is rather disorganised",
+                  "He lets her decide for herself"
                 ],
                 "answer": 2,
-                "explanation": "She describes the work of an assistant that the company needs."
+                "explanation": "He is not strict and the chaos was only the first week; the best thing is that he trusts her and says that she decides how to do it."
               }
             },
             {
@@ -1229,25 +1384,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Are you looking for a summer job, Milo?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "I am so nervous. Tomorrow is my first day at the factory."
+                    "text": "Yes, but the pay is terrible. Last year I got five pounds an hour at the ice-cream stand."
                   },
                   {
                     "speaker": "f",
-                    "text": "Stay calm and do not worry. Just be yourself, and ask if you have any questions."
+                    "text": "Same for me at the cinema. It’s not much, but I don’t mind. And it was easy to get, I just asked the manager."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Lucky you, it took me weeks. But I learnt a lot, how to deal with angry customers, how to work in a team, how to arrive on time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Exactly! That helped me at school too."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the woman doing?",
+                "prompt": "What do Ellie and Milo agree about summer jobs?",
                 "options": [
-                  "Keeping the boy calm",
-                  "Offering him a new job",
-                  "Teaching him a skill"
+                  "They are easy to get",
+                  "They teach useful skills",
+                  "They pay better than people say"
                 ],
-                "answer": 0,
-                "explanation": "She tells him not to worry."
+                "answer": 1,
+                "explanation": "Only Ellie found a job easily and both say that the pay is low; they agree on what they learnt, like teamwork and arriving on time."
               }
             },
             {
@@ -1274,24 +1441,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "I can not decide between studying law or medicine."
+                    "text": "I can’t decide between nursing and teaching, Larry. The university wants an answer by March."
                   },
                   {
                     "speaker": "m",
-                    "text": "Why not talk to a lawyer and a doctor? They can tell you what the work is really like."
+                    "text": "Why not wait until next year? Lots of people take a year out."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought of that, but my parents wouldn’t be happy, and I don’t want to lose a year."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then try the shorter course, to see."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It doesn’t help. It only exists for teaching."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Honestly, I’d phone a nurse and a teacher and ask them what a normal day is like. That’s what I did, and it made my choice easy."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the man advise her to do?",
+                "prompt": "What does Larry advise Sienna to do?",
                 "options": [
-                  "Wait until next year",
-                  "Choose the shorter course",
-                  "Talk to people who do the jobs"
+                  "Talk to people with different jobs",
+                  "Wait for another year",
+                  "Take the shorter course"
                 ],
-                "answer": 2,
-                "explanation": "He says she should talk to a lawyer and a doctor."
+                "answer": 0,
+                "explanation": "Waiting for a year would upset her parents and the short course only exists for teaching; he advises phoning a nurse and a teacher to ask about their days."
               }
             }
           ]
@@ -1316,58 +1499,46 @@
             "turns": [
               {
                 "speaker": "hilary",
-                "text": "Good morning, Year Ten. Today I want to explain how work experience will work this summer. You will spend two weeks in a workplace, starting on the fifth of June. You can choose a place yourself, but it must be less than ten kilometres from your home. You should wear smart clothes, and you must arrive on time every day. Most placements are unpaid, but some companies will give you lunch. During the second week, a teacher will visit you to see how you are getting on. At the end, you will write a report of about five hundred words. Before you go, please bring the form that your parents have signed. If you have any questions, come and see me in Room Twelve."
+                "text": "Good morning, Year Ten. Today I want to explain how work experience will work this summer. You will spend two weeks in a workplace, starting on the fifth of June. The letter that we sent home says the twelfth, but that is a mistake, so please tell your parents. Now, the place. You can choose almost anything, a shop, a vet’s, an office, but it must be easy to get to. Last year a boy chose a company forty kilometres away and spent three hours on trains every day. This year the rule is that your workplace must be within ten kilometres of your home. If you are a little further away, say twenty, we can talk about it, but I will probably say no. What should you wear? Many of you will think that jeans and trainers are fine. They aren’t. Some jobs are casual, but the first impression matters, so I want you to wear smart clothes, a shirt or a blouse and tidy shoes. If the company gives you a uniform, then of course wear it. What about food? Some companies will give you lunch in their canteen. It isn’t a rule, so bring a sandwich just in case. They will not pay for your travel, either. During the two weeks you will keep a diary, and afterwards you must write a short report. It should be about five hundred words. Last year some students wrote a thousand, and that is too long, because I have to read all of them. In the report, tell me what you did, what you learnt and whether you would like this kind of job. If you have questions, come and see me. My room is on the first floor. It is Room Twelve, next to the library. Don’t go to Room Fourteen, that’s the science lab. Thank you for listening, and good luck."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The placements start on the ___ of June",
+              "prompt": "Placements begin on the ___ of June",
               "answer": "fifth",
-              "accepted": [
-                "5th"
-              ],
-              "explanation": "Starting on the fifth of June."
+              "explanation": "The letter says the twelfth, but that is a mistake; the placements start on the fifth."
             },
             {
               "id": "l3-2",
-              "prompt": "The workplace must be less than ___ kilometres from home",
+              "prompt": "Your workplace must be no further than ___ kilometres from home",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "Less than ten kilometres from your home."
+              "explanation": "Last year’s boy travelled forty kilometres and twenty needs permission; the rule is within ten kilometres."
             },
             {
               "id": "l3-3",
-              "prompt": "You should wear ___ clothes",
+              "prompt": "Students are asked to dress in ___ clothes",
               "answer": "smart",
-              "explanation": "You should wear smart clothes."
+              "explanation": "Jeans and trainers are not fine and some jobs are casual, but she wants smart clothes."
             },
             {
               "id": "l3-4",
-              "prompt": "Some companies will give you ___",
+              "prompt": "Some firms will give you a free ___",
               "answer": "lunch",
-              "explanation": "Some companies will give you lunch."
+              "explanation": "Some companies give lunch in their canteen, but they will not pay for travel."
             },
             {
               "id": "l3-5",
-              "prompt": "The report should be about ___ words",
+              "prompt": "After the placement, the report should have around ___ words",
               "answer": "five hundred",
-              "accepted": [
-                "500"
-              ],
-              "explanation": "About five hundred words."
+              "explanation": "Last year some students wrote a thousand, which is too long; it should be about five hundred."
             },
             {
               "id": "l3-6",
-              "prompt": "Mrs Hilary's room is Room ___",
+              "prompt": "To see the teacher, go to Room ___",
               "answer": "Twelve",
-              "accepted": [
-                "12"
-              ],
-              "explanation": "Come and see me in Room Twelve."
+              "explanation": "Her room is Room Twelve, next to the library; Room Fourteen is the science lab."
             }
           ]
         },
@@ -1399,51 +1570,51 @@
             "turns": [
               {
                 "speaker": "victor",
-                "text": "Today's guest is Ingrid Solberg, who spent a year working as a volunteer in Africa. Ingrid, what made you go?"
+                "text": "Ingrid, why did you decide to volunteer in Africa?"
               },
               {
                 "speaker": "ingrid",
-                "text": "I had finished my degree, but I didn't feel ready to start a normal job. I wanted to do something useful first."
+                "text": "People assume I had no choice, that I couldn’t find a job at home. In fact, I had two offers. And it wasn’t about language, because they speak English in the village, and I never learned the local one well. The truth is simple: after university I felt that my life was all about me, exams and money. I wanted to do something that was useful for other people."
               },
               {
                 "speaker": "victor",
-                "text": "What kind of work did you do?"
+                "text": "What was your job in the village?"
               },
               {
                 "speaker": "ingrid",
-                "text": "I helped to build a small clinic in a village. I mixed cement, carried bricks and painted walls. I had never done anything like it."
+                "text": "I’m not a teacher, although the children asked me to join their lessons, and I worked on a farm for a few days at harvest time. But my main task was building a small clinic. I carried bricks, mixed cement and painted the walls. It took seven months, with about twenty people from the village."
               },
               {
                 "speaker": "victor",
-                "text": "Was it difficult?"
+                "text": "What was the hardest part?"
               },
               {
                 "speaker": "ingrid",
-                "text": "Physically, yes, especially in the heat. But the hardest part was missing my family. The internet was slow, so I could only talk to them once a week."
+                "text": "The heat was awful in the afternoon, but we stopped work from twelve to three, so it was okay. The food was strange at first, but I loved it after a week. What really hurt was missing my family. I phoned my mother on Sundays, but the line was bad, and I cried a lot. Birthdays were the worst."
               },
               {
                 "speaker": "victor",
-                "text": "What did you learn?"
+                "text": "What did you learn there?"
               },
               {
                 "speaker": "ingrid",
-                "text": "To be patient. Things happen slowly there, but people are generous. They shared their food with us even when they had very little."
+                "text": "I didn’t learn to drive a lorry, although I sat in one. I cooked a lot, but I had done that before. The main thing is patience. Nothing happens on time. The cement arrives a week late, it rains, and you can do nothing about it. Shouting doesn’t help. You wait, you smile, and you start again tomorrow."
               },
               {
                 "speaker": "victor",
-                "text": "How did the year change your plans?"
+                "text": "Have your plans changed?"
               },
               {
                 "speaker": "ingrid",
-                "text": "Before I left, I was going to be an engineer. Now I want to train as a doctor, so I can work in places like that village."
+                "text": "Yes, completely. I studied engineering, and I thought I would build bridges. Now I’m not so sure. A doctor visited the clinic every month, and I watched her work. I’m applying for medicine next year. It will take six years, but I’m ready. Art teacher? No, that was a childhood dream."
               },
               {
                 "speaker": "victor",
-                "text": "Would you advise others to do the same?"
+                "text": "What advice would you give to somebody who wants to do the same?"
               },
               {
                 "speaker": "ingrid",
-                "text": "Yes, if they can. But choose a project carefully, and talk to people who have been there before."
+                "text": "Don’t rush. Some people go as soon as they decide, and they end up in a place where the organisation doesn’t look after them. Money isn’t a problem, you need very little. But take time to check the project. Ask questions, talk to others who went. A good project is a wonderful thing, and a bad one is a disaster. I was lucky, and I would go again tomorrow if my family could come too."
               }
             ]
           },
@@ -1453,33 +1624,33 @@
               "prompt": "Why did Ingrid decide to go to Africa?",
               "options": [
                 "She could not find a job at home",
-                "She wanted to do something useful",
-                "She needed to learn another language"
+                "She needed to learn a language",
+                "She wanted to do something useful"
               ],
-              "answer": 1,
-              "explanation": "She wanted to do something useful first."
+              "answer": 2,
+              "explanation": "She had two job offers and language was not the reason; she wanted to do something useful for other people."
             },
             {
               "id": "l4-2",
-              "prompt": "What was her job in the village?",
+              "prompt": "What was her main job in the village?",
               "options": [
-                "Teaching in the school",
                 "Helping to build a clinic",
+                "Teaching in the school",
                 "Working on a farm"
               ],
-              "answer": 1,
-              "explanation": "She helped to build a small clinic."
+              "answer": 0,
+              "explanation": "The teaching was only joining lessons and the farm was a few days at harvest; her main task was building the clinic."
             },
             {
               "id": "l4-3",
               "prompt": "What was the hardest part for Ingrid?",
               "options": [
-                "Missing her family",
                 "Working in the heat",
+                "Missing her family",
                 "Eating strange food"
               ],
-              "answer": 0,
-              "explanation": "The hardest part was missing her family."
+              "answer": 1,
+              "explanation": "They stopped work in the heat and she loved the food after a week; what really hurt was missing her family."
             },
             {
               "id": "l4-4",
@@ -1490,29 +1661,29 @@
                 "To be patient"
               ],
               "answer": 2,
-              "explanation": "She learned to be patient."
+              "explanation": "She only sat in a lorry and had cooked before; the main thing she learnt is patience."
             },
             {
               "id": "l4-5",
               "prompt": "How have her plans changed?",
               "options": [
+                "She now wants to study medicine",
                 "She now wants to be an engineer",
-                "She now wants to train as a doctor",
                 "She now wants to teach art"
               ],
-              "answer": 1,
-              "explanation": "She wants to train as a doctor."
+              "answer": 0,
+              "explanation": "Engineering was her old plan and art teacher was a childhood dream; she is now applying for medicine."
             },
             {
               "id": "l4-6",
               "prompt": "What advice does she give?",
               "options": [
-                "Choose a project carefully",
                 "Go as soon as possible",
+                "Check the project carefully",
                 "Take a lot of money"
               ],
-              "answer": 0,
-              "explanation": "Choose a project carefully and talk to people who have been."
+              "answer": 1,
+              "explanation": "She says do not rush and money is not a problem; she says to take time to check the project."
             }
           ]
         }

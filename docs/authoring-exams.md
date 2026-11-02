@@ -73,7 +73,7 @@ grade <examId> <file.json>   compare {itemId: answer} with the keys; prints only
 
 ## Cambridge B1 Preliminary shape
 
-- Reading 6 parts: notices (5), matching (5 people, 8 texts), multiple-choice (5), gapped-text (5 gaps, 6 sentences), multiple-choice-cloze (6, FOUR options), open-cloze (6).
+- Reading 6 parts: notices (5), matching (5 people, 8 texts), multiple-choice (5, FOUR options), gapped-text (5 gaps, 8 sentences: three are extra), multiple-choice-cloze (6, FOUR options), open-cloze (6).
 - Writing: email (4 content points) + choice of article or story (a story gives the exact opening sentence). About 100 words each.
 - Listening 7 + 6 + 6 + 6 items (3 options; note completion takes one or two words, a number, a date or a time). Each recording is heard twice.
 - Speaking: interview, one photo, collaborative task with 4 or more photos, discussion.
@@ -91,11 +91,65 @@ Rules that the machine cannot check:
 - Target B1 everyday communication: personal, social, travel, study, work, health, leisure, shopping, transport, food, environment. The Cambridge vocabulary list (also in the app at `/vocabulary/b1`) is a guide, not a whitelist.
 - One defensible key per item. For each gap and question ask whether a competent B1 candidate could choose another option or word. If yes, change the item or add the equivalent to `accepted`. Typical traps: verbs that also fit the gap (get/make/take a trip), prepositions with several correct options, comparatives that are also correct, extra sentences that fit another gap.
 - Distractors are plausible and parallel in length and grammar. No "all/none of the above". The key is not conspicuously longer and does not hold the only keyword of the stem.
-- Gapped text: each sentence depends on its neighbours through reference, linking or time. The extra sentence fits no gap.
+- Gapped text: each sentence depends on its neighbours through reference, linking or time. No extra sentence fits a gap, and at least one extra sentence is on the same topic as a gap.
 - Every part and passage title describes its own content.
 - Listening: each recording lists `speakers` (id, name, `voice.lang`, `voice.gender`) and `turns`. Each person has their own speaker with a different voice. Scripts sound spoken (contractions, short turns). A note-completion prompt must not show its answer.
 - Speaking photo prompts describe what the photo really shows.
+- Listening difficulty: follow the next section.
 - Writing: audience, purpose, `notes`, `contentPoints` (2 or more lower-case keywords each), approximate length; stories need an exact `openingSentence`.
+
+## Listening difficulty
+
+These rules come from a study of the 2022 Cambridge sample paper (its shape and technique, not its content). A candidate must listen to the whole recording: the answer is never the first thing that they hear, and the key words of the options are all in the script. The validator warns about script length (`scriptWords` in `board-rules.mjs`) and about Part 1 options that the script does not mention.
+
+Length (words of each recording):
+
+| Part | Recording                             | Words   | Turns                                   |
+| ---- | ------------------------------------- | ------- | --------------------------------------- |
+| 1    | dialogue or monologue, one per item   | 70-130  | 6-10 in a dialogue                      |
+| 2    | dialogue of two friends, one per item | 70-130  | 6-10                                    |
+| 3    | monologue (talk, radio, guide)        | 260-400 | one turn                                |
+| 4    | interview, six questions              | 380-560 | short questions, answers of 50-80 words |
+
+All parts:
+
+- About half of the Part 1 clips are monologues: an announcement, a phone message, a radio or shop advert, a talk by a guide. The rest are dialogues. Part 2 is always a dialogue between two people who know each other.
+- Start with one or two turns of context that do not answer the question.
+- Use natural spoken English: fillers (well, I mean, actually, I guess), short replies (Oh no!, Really?), self-correction (I nearly did... but in the end), questions back to the other speaker.
+- Never repeat the words of the key option in the script. Paraphrase the key (an assistant was kind and gave advice → the staff are helpful). The words of the distractors can be heard as they are written.
+- Put the key in any position in the script, often after a distractor and before another one. Never put it always last.
+- Signal the change with contrast words (but, though, actually, in the end, instead, before that) and not with emphasis.
+
+Part 1 (detail, three options):
+
+- Mention all three options in the script. The two distractors are rejected by one of these techniques; use at least three different techniques in the seven clips:
+  - a plan that changed: "we were going to... but it was full";
+  - a thing that almost happened: "I nearly bought one";
+  - the past or the future instead of the time of the question: "last time", "maybe next week";
+  - a suggestion that the other speaker rejects or that the speaker does not take;
+  - a correction of a fact: "it says 10:20... no, sorry, that's the old timetable";
+  - the order of events: the question asks what is first, the script names it last and says "before that".
+- Numbers, prices and times: say all three values in the script, each with a different role (the price of one offer, the price for the gift, the price of another offer).
+- At least one key in each part is not named: the speaker refers back to it ("the same as you", "the other one", "that's what I got").
+
+Part 2 (attitude, opinion, feeling, agreement, purpose):
+
+- The question asks what a speaker thinks, feels, wants, or what both speakers agree about. Do not test a plain fact.
+- Each distractor is related to something that a speaker says: a topic that the first speaker suggests and the second speaker corrects ("Actually, it's not that, it's..."), a fact that is true but does not answer the question, or an opinion of only one speaker in an "agree" question.
+- The key is a summary of two or more turns, not one sentence.
+
+Part 3 (note completion, six gaps):
+
+- One speaker talks for the whole recording. Answers come in the order of the notes, spread through the talk (about one gap in each 50 words).
+- For each gap, the script names a second word of the same type near the key (two places, two foods, two days, two prices), and the context rejects it: "I thought it was going to be X, but it was Y", "most people liked X, though Y was my favourite".
+- The note paraphrases the sentence of the script. It does not repeat the words around the key, so the candidate must recognise the meaning.
+- The key is a word or two words that the speaker says exactly, with common B1 spelling. Numbers and dates are said in a natural way (the twenty-third of May).
+
+Part 4 (interview, six questions):
+
+- An interviewer asks short questions; the guest gives long answers that include all three options of the question. Questions follow the order of the interview.
+- Reject distractors with negation and concession: "that wasn't where it started", "I got used to that", "it didn't matter in the end", "that wasn't the main reason".
+- At least two questions test the reason or the feeling of the guest, not a fact.
 
 ## Grammar tags and difficulty
 

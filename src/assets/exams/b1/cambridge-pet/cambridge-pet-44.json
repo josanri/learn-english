@@ -250,8 +250,9 @@
               "prompt": "What did the writer first think about the injury?",
               "options": [
                 "That it would heal by itself",
-                "That it was a very serious break",
-                "That it was only a bruise"
+                "That a friend had hit it",
+                "That it was only a bruise",
+                "That it was a very serious break"
               ],
               "answer": 2,
               "explanation": "He thought it was only a bad bruise."
@@ -260,11 +261,12 @@
               "id": "r3-2",
               "prompt": "What did one of the paramedics do?",
               "options": [
-                "He made a joke to cheer the writer up",
                 "He gave the writer a pain killer",
-                "He told the writer to stand up"
+                "He made a joke to cheer the writer up",
+                "He told the writer to stand up",
+                "He put a plaster on it"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "One made a joke that made him laugh."
             },
             {
@@ -272,32 +274,35 @@
               "prompt": "What was unpleasant about the waiting room?",
               "options": [
                 "It was cold and had no chairs at all",
-                "It was crowded and noisy for three hours",
-                "It was far from the X-ray department"
+                "It was far from the X-ray department",
+                "It was clean and quiet but very hot",
+                "It was crowded and noisy for three hours"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "He waited three hours in a crowded room."
             },
             {
               "id": "r3-4",
               "prompt": "Why was the writer disappointed?",
               "options": [
+                "He could not go skiing in February",
                 "He had to miss his exams at school",
                 "He had to stay in hospital for weeks",
-                "He could not go skiing in February"
+                "He missed a party with Pia"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He had planned to go skiing in February."
             },
             {
               "id": "r3-5",
               "prompt": "What has the writer decided?",
               "options": [
-                "To check the ice before skating",
                 "To stop skating for the rest of his life",
-                "To take a first aid course next winter"
+                "To take a first aid course next winter",
+                "To check the ice before skating",
+                "To buy a better pair of skates"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "He will check how thick the ice is."
             }
           ]
@@ -306,16 +311,18 @@
           "id": "reading-4",
           "number": 4,
           "title": "Learning first aid",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Last month, I joined a first aid course at the local hospital. I had never done anything like it before, but my mother thought it was a useful skill to learn. [1] We were divided into groups of six, and each group had a different teacher.\n\nOur teacher was a nurse called Mrs Dale, who had worked in hospitals for twenty years. [2] She showed us how to stop bleeding from a cut and how to put a bandage on a hurt knee.\n\nThe most difficult part was learning what to do when someone stops breathing. [3] We practised on a plastic model, pressing on its chest again and again until our arms were tired.\n\nAt the end of the day, we took a short test. [4] I was very proud of myself when I received my certificate. [5] Now, whenever I see an accident in a film, I know exactly what I would do.",
           "sentences": [
             "About thirty people had come, from teenagers to grandparents.",
             "She had a loud voice and a great sense of humour.",
-            "It is important to stay calm and call for an ambulance first.",
-            "Luckily, I answered nearly all the questions correctly.",
+            "Most of the pupils were hoping to become doctors.",
             "The course was held in a large room on the second floor.",
-            "It is a day that I will remember for a very long time."
+            "Luckily, I answered nearly all the questions correctly.",
+            "It is important to stay calm and call for an ambulance first.",
+            "It is a day that I will remember for a very long time.",
+            "Some of them had come with their friends from work."
           ],
           "gaps": [
             {
@@ -330,17 +337,17 @@
             },
             {
               "id": "r4-3",
-              "answer": "C",
+              "answer": "F",
               "explanation": "Calling an ambulance is the key step when someone stops breathing, and then they practised."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "E",
               "explanation": "Answering the questions is about the test, and then he is proud of the certificate."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "G",
               "explanation": "A day to remember closes the text, followed by the film comment."
             }
           ]
@@ -735,11 +742,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What time are visiting hours on Sunday?"
+                    "text": "Hi, I’ve come to see my grandmother in Ward Five. Her name is Peters."
                   },
                   {
                     "speaker": "f",
-                    "text": "From two until eight, same as every other day. But only two visitors at a time."
+                    "text": "Of course. Are you on your own?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, my parents are parking the car, and my brother and sister are coming later."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m afraid we only allow a few people at the bed. It used to be four, with the old rules, but the ward got crowded and noisy. Now it’s two at a time. Just one would be too strict for a family, and the manager agreed with that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then my parents can go first, and my brother and sister can wait in the café."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s fine. Visiting hours are until eight o’clock."
                   }
                 ]
               },
@@ -752,7 +775,7 @@
                   "One"
                 ],
                 "answer": 1,
-                "explanation": "Only two visitors at a time."
+                "explanation": "The old rule of four visitors has changed and one would be too strict; the new rule is two at a time."
               }
             },
             {
@@ -778,12 +801,28 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "How did your appointment go, Julia?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "My throat is very sore, and I have a temperature."
+                    "text": "Not bad. I was afraid he would send me to hospital for tests, but it’s only a bad flu."
                   },
                   {
                     "speaker": "m",
-                    "text": "You should stay in bed and drink plenty of water. If it is no better in two days, come back to see me."
+                    "text": "Did he give you any tablets?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "He said I could take something for the pain if I wanted, two tablets after dinner, but he didn’t say I must. The main thing is to stay in bed for three days and drink lots of water."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That sounds easy."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Easy for you! I’m bored already, and I haven’t even started. My sister says she will bring me magazines."
                   }
                 ]
               },
@@ -791,12 +830,12 @@
                 "id": "l1-2q",
                 "prompt": "What does the doctor tell her to do?",
                 "options": [
-                  "Rest and drink water",
                   "Take two tablets today",
-                  "Go to hospital at once"
+                  "Go to hospital at once",
+                  "Stay in bed and drink water"
                 ],
-                "answer": 0,
-                "explanation": "He says to stay in bed and drink water."
+                "answer": 2,
+                "explanation": "She does not have to go to hospital and the tablets are optional; the doctor’s main advice is to stay in bed and drink lots of water."
               }
             },
             {
@@ -823,11 +862,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Where is the X-ray department, please?"
+                    "text": "Excuse me, I have a letter for the X-ray department. Is it on the ground floor?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Take the lift to the second floor and turn left. It is opposite the café."
+                    "text": "It used to be, but it moved last spring when they built the new entrance. The ground floor has the pharmacy and the café now."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh, so it’s near the pharmacy?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, that’s the blood test room next to it. Take the lift to the second floor, turn left, and you’ll see big blue doors."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you. And is there a toilet up there?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, just opposite the lift. Please don’t use the stairs if you have a heavy bag, because they are steep."
                   }
                 ]
               },
@@ -840,7 +895,7 @@
                   "Next to the pharmacy"
                 ],
                 "answer": 0,
-                "explanation": "It is on the second floor."
+                "explanation": "It moved from the ground floor last spring; the pharmacy has a blood test room next to it, and the X-ray doors are upstairs on the second floor."
               }
             },
             {
@@ -867,11 +922,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "How did you hurt your hand?"
+                    "text": "Gary, what happened to your hand? It’s huge."
                   },
                   {
                     "speaker": "m",
-                    "text": "I was cooking, and the knife slipped. It is not deep, but it bled a lot."
+                    "text": "I’d like to say it was a bicycle accident, because that sounds brave, but the truth is boring."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Did you walk into a door? Last year you ran into the glass door at the gym."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That was my nose, not my hand. No, I was cutting onions while I was talking on the phone, and the knife slipped. Seven stitches."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Ouch! Did it hurt?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Only when I saw the blood. Then I nearly fainted, and the nurse laughed at me."
                   }
                 ]
               },
@@ -880,25 +951,17 @@
                 "prompt": "How did the man hurt his hand?",
                 "options": [
                   "In a bicycle accident",
-                  "With a kitchen knife",
-                  "On a glass door"
+                  "On a glass door",
+                  "With a kitchen knife"
                 ],
-                "answer": 1,
-                "explanation": "The knife slipped while he was cooking."
+                "answer": 2,
+                "explanation": "He jokes about a bicycle accident and the glass door was last year, but this time he was cutting onions and the knife slipped."
               }
             },
             {
               "id": "l1-5-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Phil",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Michelle",
@@ -910,12 +973,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Have you taken your medicine today?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Yes, I took two tablets after breakfast. I must take one more this evening."
+                    "text": "Hello, this is Michelle from Lindon Pharmacy, with a message for Mrs Hall. I think I put the wrong advice on your label. It says before breakfast, but that was only for the first week, which you’ve finished. The second week is different. You take just one tablet a day, and the best moment is after your lunch, with a glass of water. Some people prefer the evening, but it works better with food in the middle of the day. So your next one is tomorrow, not tonight. If you aren’t sure, please phone us on the number on the bag. Have a nice day."
                   }
                 ]
               },
@@ -927,8 +986,8 @@
                   "After lunch",
                   "In the evening"
                 ],
-                "answer": 2,
-                "explanation": "She must take one more this evening."
+                "answer": 1,
+                "explanation": "The label said before breakfast but that was for the first week; the pharmacist says that the best moment is after lunch tomorrow, not in the evening."
               }
             },
             {
@@ -955,11 +1014,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Would you like to be a nurse when you grow up?"
+                    "text": "So, Earl, did you enjoy your visit to the hospital?"
                   },
                   {
                     "speaker": "m",
-                    "text": "No, I would like to be a doctor. I want to help people with serious illnesses."
+                    "text": "Yes! The nurses were so kind. I thought I’d like to be one, because I love helping, but you have to work nights and I hate staying awake."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about your dentist, Mr Carter? You said he was funny."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He is funny, but I don’t want to look at teeth all day. No, I want to be like the person who looked at my leg, Dr Silva, and decide which medicine people need. I’d like to do the operations too."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That takes seven years of study."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I know. I’m ready."
                   }
                 ]
               },
@@ -972,7 +1047,7 @@
                   "A dentist"
                 ],
                 "answer": 0,
-                "explanation": "He wants to be a doctor."
+                "explanation": "He likes the nurses but hates nights and does not want to look at teeth; he wants to be like Dr Silva, who decides on the medicine."
               }
             },
             {
@@ -999,11 +1074,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I feel dizzy. I have not eaten anything since yesterday."
+                    "text": "Suzanne, thanks for coming. I’m much better, but the hospital food is awful."
                   },
                   {
                     "speaker": "f",
-                    "text": "Sit down, and I will bring you a sandwich and a glass of juice."
+                    "text": "When I found you on the kitchen floor I nearly called an ambulance, and you said you were fine."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Well, I wasn’t! Anyway, that’s the past."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do you want me to take you home today?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The doctor says tomorrow at the earliest."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then tonight I’ll make you something from my kitchen. How about soup?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Perfect, with bread, but no fish, please."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll cook it after work and come at seven."
                   }
                 ]
               },
@@ -1016,7 +1115,7 @@
                   "Take him home"
                 ],
                 "answer": 1,
-                "explanation": "She will bring him a sandwich and juice."
+                "explanation": "The ambulance was nearly called in the past and he cannot go home until tomorrow; she will cook soup and bring it this evening."
               }
             }
           ]
@@ -1052,24 +1151,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Hello, I would like to make an appointment to see Doctor Hill."
+                    "text": "Ross, could you come with me on Thursday to the clinic?"
                   },
                   {
                     "speaker": "m",
-                    "text": "She is free on Thursday at ten. Is that convenient?"
+                    "text": "Sure, but do you need a lift? I thought you didn’t like driving in the city."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I do have the car, and I know the road, I’ve been there twice. It’s the doctor. He speaks so fast, and he uses long words. Last time I forgot half of what he said."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Are you nervous about the injection?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, the injection is easy. I just want somebody to listen as well, and then we can remember it together."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. I’ll take notes."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the woman doing?",
+                "prompt": "Why does Gladys want Ross to come with her to the clinic?",
                 "options": [
-                  "Buying medicine",
-                  "Cancelling a visit",
-                  "Making an appointment"
+                  "She is worried about an injection",
+                  "She needs help to remember advice",
+                  "She cannot find the way there"
                 ],
-                "answer": 2,
-                "explanation": "She wants to make an appointment."
+                "answer": 1,
+                "explanation": "The injection is easy and she knows the road, but the doctor speaks fast and she forgot half of what he said, so she wants someone to listen too."
               }
             },
             {
@@ -1096,24 +1211,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Welcome to the clinic. Do not worry, this will only hurt a little. Look at the picture on the wall."
+                    "text": "How are you feeling, Matilda? Are you bored in here?"
                   },
                   {
                     "speaker": "f",
-                    "text": "OK. Is it nearly finished?"
+                    "text": "A little, in the afternoons. But I have my books, and my daughter comes every day, so I’m not lonely."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The food must be terrible."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s not great, I’ll admit, but I don’t mind. You should see how the nurses treat us. Last night one stayed with me for an hour because I couldn’t sleep."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s kind of her. Most people only think of doctors."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’d be lost without them. I want to thank them somehow, maybe with a card and a big box of chocolates."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "Where are the speakers?",
+                "prompt": "How does Matilda feel about her stay in hospital?",
                 "options": [
-                  "At a hotel reception",
-                  "At a dentist or a clinic",
-                  "At a sports centre"
+                  "Lonely during the day",
+                  "Unhappy with the meals",
+                  "Thankful for the staff"
                 ],
-                "answer": 1,
-                "explanation": "He gives an injection or treatment and tells her not to worry."
+                "answer": 2,
+                "explanation": "Her daughter visits every day and the food does not bother her; she talks warmly about a nurse who stayed an hour and wants to thank them."
               }
             },
             {
@@ -1140,24 +1271,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "You must not play football for at least two weeks."
+                    "text": "Did you pay for parking at the hospital? Four pounds an hour!"
                   },
                   {
                     "speaker": "m",
-                    "text": "Two weeks? I am so upset! We have an important match next Saturday!"
+                    "text": "It’s ridiculous. For a visit of two hours you pay eight pounds, and that’s for people who are already worried about someone."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I know. But the space isn’t the problem, I always find a place."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Right, though the walk is long. Ten minutes to the main door, and I have a bad leg."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I never mind walking. It’s the price that makes me angry. They should offer free parking for patients."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Absolutely. I wrote to the hospital about it last month, but nobody answered."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the boy feel?",
+                "prompt": "What do Sally and Timothy agree about the hospital car park?",
                 "options": [
-                  "Upset about the news",
-                  "Pleased with the doctor",
-                  "Surprised by the food"
+                  "It costs too much",
+                  "It is too far from the entrance",
+                  "It is too small"
                 ],
                 "answer": 0,
-                "explanation": "He is upset he cannot play in his match."
+                "explanation": "Both complain about the four pounds an hour; only Timothy complains about the long walk, and Sally says she always finds a space."
               }
             },
             {
@@ -1183,25 +1330,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Opal, I heard that you got an offer from the private clinic. More money, no weekends!"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Is there anyone here who knows first aid? A man has fallen in the street!"
+                    "text": "True. It’s tempting, honestly, and I’m tired of the early starts."
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, I do. Please call an ambulance while I stay with him."
+                    "text": "So you’re going?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I told them no this morning. It isn’t the money or the hours. I’ve worked with the children’s team for eight years. When a child who was very ill comes back, three years later, to say hello, I can’t leave that."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I understand. I’d stay too, even for a smaller salary. Will you tell your manager today?"
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the man ask the woman to do?",
+                "prompt": "Why does Opal refuse the new job?",
                 "options": [
-                  "Wait in the street",
-                  "Bring a blanket",
-                  "Call an ambulance"
+                  "The money would be less",
+                  "The hours would be longer",
+                  "She is happy with her team"
                 ],
                 "answer": 2,
-                "explanation": "He asks her to call an ambulance."
+                "explanation": "The new job offers more money and no weekends, but she says it is not about that; she has worked eight years with the children’s team and does not want to leave."
               }
             },
             {
@@ -1228,24 +1387,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Mum, I do not want to go to school. My stomach hurts."
+                    "text": "You look tired, Alma."
                   },
                   {
                     "speaker": "f",
-                    "text": "Let me take your temperature first. You do feel quite hot."
+                    "text": "Marco had a temperature at three in the morning. Thirty-eight, nearly thirty-nine. I thought about calling the doctor, but after some medicine it went down and he slept."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So he can go to school tomorrow?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "He says he’s fine and wants to see his friends, but I’m not sure that’s sensible. He’d be tired, and in a class of thirty he could pass it to others. I’ll keep him with me one more day."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Probably wise. Do you want me to look after him this afternoon? I finish early on Fridays."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What is the mother going to do?",
+                "prompt": "What does Alma decide about her son tomorrow?",
                 "options": [
-                  "Check his temperature",
-                  "Take him to school",
-                  "Give him breakfast"
+                  "Keep him at home",
+                  "Take him to the doctor",
+                  "Send him to school"
                 ],
                 "answer": 0,
-                "explanation": "She will take his temperature."
+                "explanation": "She thought about the doctor but the temperature went down, and he wants school; she says she will keep him with her one more day."
               }
             },
             {
@@ -1271,25 +1442,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "So, how was your first day as a hospital volunteer, Romy?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Are you the next patient? Please come through to the doctor's room."
+                    "text": "Honestly, I thought I’d be scared. I was afraid of seeing people in pain."
                   },
                   {
                     "speaker": "m",
-                    "text": "Thank you. I have been waiting for an hour."
+                    "text": "And were you?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A bit at the start, but everyone was so friendly. And the jobs were simple, like pushing books around on a trolley and chatting to patients. One old man told me stories for an hour."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Boring?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Not at all! I enjoyed it much more than I expected. I’m going back on Friday, and I may even do a whole day."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the woman doing?",
+                "prompt": "How does Romy feel about her first day as a volunteer?",
                 "options": [
-                  "Cleaning the waiting room",
-                  "Giving out some medicine",
-                  "Calling the next patient"
+                  "Frightened by the patients",
+                  "Surprised that she enjoyed it",
+                  "Disappointed by the jobs"
                 ],
-                "answer": 2,
-                "explanation": "She invites the next patient into the doctor's room."
+                "answer": 1,
+                "explanation": "She was afraid at first but people were friendly, the jobs were simple but not boring, and she enjoyed it more than she expected."
               }
             }
           ]
@@ -1314,64 +1501,46 @@
             "turns": [
               {
                 "speaker": "donna",
-                "text": "Good morning, everyone, and welcome to St Mary's Hospital. I'm Donna, one of the nurses. First, a few facts. The hospital opened in nineteen fifty-two, and today more than two thousand people work here. We have six hundred beds. The busiest department is Emergency, which treats about three hundred patients every day. The children's ward is on the third floor, and it has a playroom with books and toys. There is a garden on the roof where patients can sit in good weather. The café opens at seven and closes at five. We also have a small shop that sells flowers and magazines. If you want to become a volunteer, you must be at least sixteen years old. Please ask at reception for a form."
+                "text": "Good morning, everyone, and welcome to the volunteer team at St Mary’s Hospital. I’m Donna, one of the nurses, and I’ll explain your first day. Please come to the reception desk by nine o’clock. Some of you were told ten, but that was the time of last year’s course, so please be there at nine, because we start with a short talk. Next, what to wear. We give you a shirt. The nurses wear blue and the doctors wear white, so you will have a green one, and people will know that you’re a volunteer. Keep it clean, and wear comfortable shoes. Now, where you will work. Most new volunteers start with the young patients. I always thought that ward was on the second floor, as it was before, but it moved in the summer, and now it is on the third floor. Take the lift on the left. What will you do there? On Wednesdays you bring the library trolley and give out books. The children love them. Some of you asked if you could bring flowers, but we don’t allow them on the ward because of allergies. Breaks are important. You get a free lunch, but please don’t go to the café, because that’s for visitors and it gets crowded. The staff canteen is on the ground floor behind reception, and the food is cheap and surprisingly good. Finally, your promise. We don’t ask for much. After a trial of three months, we hope that you’ll stay for at least six months, because the children get used to you, and it’s sad when a friendly face disappears. One more thing: if you have a cold, please stay at home and phone us, because many of our patients are very weak and they catch things easily. That’s all from me. Does anybody have any questions before we go upstairs?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The hospital opened in nineteen fifty-___",
-              "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "The hospital opened in nineteen fifty-two."
+              "prompt": "Volunteers must reach reception at ___ o'clock",
+              "answer": "nine",
+              "explanation": "Some were told ten, but that was last year’s course; they must be at reception by nine."
             },
             {
               "id": "l3-2",
-              "prompt": "It has ___ beds",
-              "answer": "six hundred",
-              "accepted": [
-                "600"
-              ],
-              "explanation": "We have six hundred beds."
+              "prompt": "Volunteers are easy to recognise by their ___ shirts",
+              "answer": "green",
+              "explanation": "Nurses wear blue and doctors wear white, so the volunteers have a green one."
             },
             {
               "id": "l3-3",
-              "prompt": "Emergency treats about ___ patients every day",
-              "answer": "three hundred",
-              "accepted": [
-                "300"
-              ],
-              "explanation": "About three hundred patients every day."
+              "prompt": "The young patients are looked after on the ___ floor",
+              "answer": "third",
+              "explanation": "The ward used to be on the second floor, but it moved in the summer and now it is on the third floor."
             },
             {
               "id": "l3-4",
-              "prompt": "The children's ward is on the ___ floor",
-              "answer": "third",
-              "accepted": [
-                "3rd"
-              ],
-              "explanation": "The children's ward is on the third floor."
+              "prompt": "On Wednesdays, volunteers hand out ___ from a trolley",
+              "answer": "books",
+              "explanation": "They bring the library trolley and give out books; flowers are not allowed."
             },
             {
               "id": "l3-5",
-              "prompt": "The café closes at ___",
-              "answer": "five",
-              "accepted": [
-                "5"
-              ],
-              "explanation": "The café opens at seven and closes at five."
+              "prompt": "Volunteers eat their free lunch in the ___",
+              "answer": "canteen",
+              "explanation": "The café is for visitors; the staff canteen is behind reception."
             },
             {
               "id": "l3-6",
-              "prompt": "Volunteers must be at least ___ years old",
-              "answer": "sixteen",
-              "accepted": [
-                "16"
-              ],
-              "explanation": "You must be at least sixteen."
+              "prompt": "Volunteers are asked to stay for a minimum of ___ months",
+              "answer": "six",
+              "explanation": "After a trial of three months, they hope that the volunteers will stay for at least six months."
             }
           ]
         },
@@ -1403,51 +1572,51 @@
             "turns": [
               {
                 "speaker": "gerard",
-                "text": "Today I'm talking to Jenna Reed, a paramedic. Jenna, what does a normal day look like?"
+                "text": "Jenna, what is a normal day like for a paramedic?"
               },
               {
                 "speaker": "jenna",
-                "text": "There isn't one. One hour, I'm helping someone with a cut finger, and the next, I'm at a serious road accident."
+                "text": "People expect me to say that I start at five in the morning, and my shift does start early, but that isn’t the interesting part. And it’s never quiet and easy, although some mornings are calm until the radio starts. The truth is that there is no normal day. Yesterday I helped a child with a broken arm, then an old man who fell in his garden, and then a woman who was having a baby in a taxi."
               },
               {
                 "speaker": "gerard",
-                "text": "How long did your training take?"
+                "text": "How long did you train?"
               },
               {
                 "speaker": "jenna",
-                "text": "Three years at university, and then six months with an experienced partner. I learned something new every day."
+                "text": "First I studied for three years at university, health and emergency care. I looked at the hospital route as well, which takes six years, but it wasn’t for me. After university came six months in the ambulance with an experienced partner, just watching and learning. A year at a special school was the old way, and it doesn’t exist any more."
               },
               {
                 "speaker": "gerard",
-                "text": "What is the most difficult part of the job?"
+                "text": "What do you find hardest about the job?"
               },
               {
                 "speaker": "jenna",
-                "text": "Staying calm when other people are frightened. If I panic, the patient will panic too."
+                "text": "Not the driving. We have training for fast driving, and I quite enjoy it. The reports are boring, but you write them in the morning with a coffee. The hardest thing is keeping calm when everybody around me is frightened. The family shouts and cries, and I have to speak slowly and quietly, as if I’m not worried. Inside, I may be very worried."
               },
               {
                 "speaker": "gerard",
-                "text": "Do you ever feel sad?"
+                "text": "When do you feel sad?"
               },
               {
                 "speaker": "jenna",
-                "text": "Sometimes, yes, when we cannot save someone. But then I remember all the people we have helped."
+                "text": "Working at night is tiring, but I don’t feel sad then, and a colleague who is late is just annoying. It’s when a patient cannot be saved. We try everything, and sometimes it isn’t enough. I still think about some of those people, even after years."
               },
               {
                 "speaker": "gerard",
-                "text": "What do you do to relax after a hard day?"
+                "text": "How do you relax after a bad day?"
               },
               {
                 "speaker": "jenna",
-                "text": "I walk my dog on the beach. It clears my head, and the dog doesn't ask me any questions."
+                "text": "I like films with friends, but I’m usually too tired to go to the cinema. And I read, but I can’t concentrate in the garden because of my neighbour’s radio. The best thing is to take my dog to the beach, whatever the weather. The wind and the water clear my head."
               },
               {
                 "speaker": "gerard",
-                "text": "Would you recommend this job?"
+                "text": "Would you recommend the job?"
               },
               {
                 "speaker": "jenna",
-                "text": "Definitely, if you like people and can work in a team. It is hard work, but it's the best job in the world."
+                "text": "Not for everyone. It’s tiring, I won’t lie, and driving is not a reason to do it. But if you like people, if you enjoy talking to strangers on the worst day of their life and helping them, then yes, absolutely. It’s the best job I can imagine. Every shift I go home knowing that I did something useful, and not many people can say that. I also work with wonderful colleagues, who are like a second family."
               }
             ]
           },
@@ -1456,45 +1625,45 @@
               "id": "l4-1",
               "prompt": "What does Jenna say about her normal day?",
               "options": [
-                "It always starts very early",
+                "It always begins very early",
                 "There is no normal day",
                 "It is mostly quiet and easy"
               ],
               "answer": 1,
-              "explanation": "She says there isn't a normal day."
+              "explanation": "Her shift starts early but that is not the point, and it is not quiet; she says that there is no normal day."
             },
             {
               "id": "l4-2",
               "prompt": "How long did her training take?",
               "options": [
-                "Six years in a hospital ward",
-                "Three years at university, then six months",
-                "One year at a special school"
+                "Six years on a hospital ward",
+                "One year at a special school",
+                "Three years at university, then six months"
               ],
-              "answer": 1,
-              "explanation": "Three years at university plus six months."
+              "answer": 2,
+              "explanation": "The hospital route takes six years and the special school is the old way; she did three years at university and six months in the ambulance."
             },
             {
               "id": "l4-3",
               "prompt": "What does she find hardest?",
               "options": [
                 "Staying calm when others are frightened",
-                "Driving the ambulance very quickly",
-                "Writing long reports every night"
+                "Driving the ambulance fast",
+                "Writing reports"
               ],
               "answer": 0,
-              "explanation": "Staying calm when other people are frightened."
+              "explanation": "She enjoys the driving and writes reports with coffee; the hardest thing is keeping calm when everybody around her is frightened."
             },
             {
               "id": "l4-4",
               "prompt": "When does she feel sad?",
               "options": [
-                "When her colleagues are late",
-                "When she has to work at night",
+                "When colleagues are late",
+                "When she works at night",
                 "When a patient cannot be saved"
               ],
               "answer": 2,
-              "explanation": "When they cannot save someone."
+              "explanation": "Night work is tiring and late colleagues are annoying; she feels sad when a patient cannot be saved."
             },
             {
               "id": "l4-5",
@@ -1502,21 +1671,21 @@
               "options": [
                 "By watching films with friends",
                 "By walking her dog on the beach",
-                "By reading books in the garden"
+                "By reading in the garden"
               ],
               "answer": 1,
-              "explanation": "She walks her dog on the beach."
+              "explanation": "She is too tired for films, and she cannot read in the garden because of the radio; she takes her dog to the beach."
             },
             {
               "id": "l4-6",
-              "prompt": "Does she recommend the job?",
+              "prompt": "Why does she recommend the job?",
               "options": [
-                "Yes, for people who like people",
-                "No, because it is too tiring",
-                "Only for people who like driving"
+                "It is good for people who like people",
+                "It is a good way to learn driving",
+                "It is easy and not tiring"
               ],
               "answer": 0,
-              "explanation": "Yes, if you like people and can work in a team."
+              "explanation": "She says it is tiring and driving is not a reason; she recommends it if you like talking to strangers and helping them."
             }
           ]
         }

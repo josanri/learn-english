@@ -250,6 +250,13 @@ export function checkListening(exam) {
         warnings.push(
           `${q.id}: no word of the correct option appears in the script; check it is paraphrased clearly`,
         );
+      // Part 1 tests detail: the candidate hears all three options and rejects two of them.
+      if (part.type === 'short-dialogues')
+        q.options.forEach((o, i) => {
+          const oStems = contentWords(o).map(stem);
+          if (i !== q.answer && oStems.length && !oStems.some((s) => script.includes(s)))
+            warnings.push(`${q.id}: the wrong option "${o}" is not mentioned in the script`);
+        });
     }
     void statements;
   }

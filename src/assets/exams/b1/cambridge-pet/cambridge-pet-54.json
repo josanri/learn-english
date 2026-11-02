@@ -251,9 +251,10 @@
               "options": [
                 "They were sleeping in their beds",
                 "They were eating a late dinner",
+                "They were watching the news on television",
                 "They were busy with quiet activities"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "The father was cooking, the mother was reading, and the children played cards."
             },
             {
@@ -262,7 +263,8 @@
               "options": [
                 "A lorry passing in the street",
                 "A storm coming from the hills",
-                "A neighbour moving some furniture"
+                "A neighbour moving some furniture",
+                "Thunder coming from the mountains"
               ],
               "answer": 0,
               "explanation": "She thought that a lorry was passing in the street."
@@ -271,11 +273,12 @@
               "id": "r3-3",
               "prompt": "What did the family do when the shaking started?",
               "options": [
-                "They hid under the dining table",
                 "They ran outside to the street",
-                "They called their neighbours for help"
+                "They called their neighbours for help",
+                "They hid under the dining table",
+                "They ran into the garden at once"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "They crawled under the table when her mother shouted."
             },
             {
@@ -284,6 +287,7 @@
               "options": [
                 "The neighbours had all left town",
                 "A long crack ran along the road",
+                "Many walls in the building fell",
                 "Some people in the building were hurt"
               ],
               "answer": 1,
@@ -294,10 +298,11 @@
               "prompt": "What does the writer's mother say was good about that night?",
               "options": [
                 "The streets were empty and calm",
+                "Nobody needed to go to work",
                 "The earthquake lasted only a minute",
                 "They were together for the evening"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "She says they spent the whole evening together, talking and laughing."
             }
           ]
@@ -306,36 +311,38 @@
           "id": "reading-4",
           "number": 4,
           "title": "How does a volcano work?",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "A volcano is a hole in the Earth's surface through which hot, melted rock can escape. [1] Deep underground, the rock is so hot that it turns into a thick liquid called magma.\n\nMagma is lighter than the rock around it, so it slowly rises. [2] When it reaches the surface, we call it lava, and it can be hotter than a thousand degrees.\n\nNot all eruptions are the same. Some volcanoes send out a slow river of lava that moves only a few metres an hour. [3] Others explode with great force and throw ash and stones high into the sky.\n\nScientists watch many volcanoes day and night. [4] If the ground begins to shake, they know that an eruption may be near and can warn the people.\n\nAlthough volcanoes can be dangerous, they also bring good things. [5] This is why many farmers choose to grow their crops on the slopes of old volcanoes.",
           "sentences": [
             "The soil formed from old ash is rich and full of minerals.",
+            "Fortunately, they are far from any town.",
             "Many of these are in countries around the Pacific Ocean.",
             "It collects in a large space under the mountain and pushes upwards.",
-            "They use special instruments to measure small movements of the ground.",
+            "Sometimes it finds a crack and bursts out into the air.",
             "The fastest of these can destroy houses and roads in a short time.",
-            "Sometimes it finds a crack and bursts out into the air."
+            "One of the biggest eruptions in history happened in Indonesia in 1815.",
+            "They use special instruments to measure small movements of the ground."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "C",
               "explanation": "Many volcanoes are around the Pacific Ocean, and the next sentence explains why the rock deep underground is so hot."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "D",
               "explanation": "Magma that rises collects in a space under the mountain and pushes upwards, then bursts out."
             },
             {
               "id": "r4-3",
-              "answer": "E",
+              "answer": "F",
               "explanation": "Slow rivers are compared with the fastest ones, which can destroy houses and roads."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "H",
               "explanation": "Scientists use special instruments to measure small movements, and the next sentence says the ground may shake."
             },
             {
@@ -457,11 +464,11 @@
               "id": "r6-1",
               "answer": "are",
               "explanation": "They are taught: passive form with a plural subject.",
-              "tags": [
-                "verb-forms"
-              ],
               "accepted": [
                 "were"
+              ],
+              "tags": [
+                "verb-forms"
               ]
             },
             {
@@ -710,14 +717,6 @@
               "recording": {
                 "speakers": [
                   {
-                    "id": "m",
-                    "name": "Anand",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
-                  },
-                  {
                     "id": "f",
                     "name": "Anaya",
                     "voice": {
@@ -728,12 +727,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "What time does the volcano tour start tomorrow?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "We meet at the bus stop at half past five in the morning."
+                    "text": "Hi, Anand, it’s Anaya. About tomorrow’s trip to the volcano museum. I said a quarter to six when we spoke yesterday, but I’ve checked the bus, and it leaves from the station at a quarter past six, so that’s far too late for the first tour. I thought of six o’clock too, but then you’d have to run, and the doors open at six. The best plan is half an hour before that. So let’s meet in front of the station at the time when the sky is just getting light. Bring a warm jacket. See you there!"
                   }
                 ]
               },
@@ -746,7 +741,7 @@
                   "At six o'clock"
                 ],
                 "answer": 1,
-                "explanation": "She says to meet at half past five in the morning."
+                "explanation": "A quarter to six was her first idea and six is when the doors open; the plan is half an hour before that, so they meet at half past five."
               }
             },
             {
@@ -773,11 +768,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Did you feel the earthquake last night?"
+                    "text": "Arjun, did you feel the earthquake this morning? It was on the news, and my cups were shaking."
                   },
                   {
                     "speaker": "m",
-                    "text": "No, I was asleep, but my brother says that his bed shook."
+                    "text": "Honestly, I slept through the whole thing. My brother says that he ran out of the house in his pyjamas, and the neighbours were shouting in the street. They said there was a terrible noise, like a lorry."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I heard it too. It was like thunder."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Well, I missed it. I woke up at eight, had breakfast, and only read about it on my phone. I feel a bit silly."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’re lucky. I couldn’t sleep afterwards."
                   }
                 ]
               },
@@ -790,7 +797,7 @@
                   "He heard a very loud noise"
                 ],
                 "answer": 0,
-                "explanation": "He says that he was asleep."
+                "explanation": "Others heard a noise and his brother ran out, but he slept and felt nothing."
               }
             },
             {
@@ -804,24 +811,12 @@
                       "lang": "en-US",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Angelica",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Is the volcano near here still active?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "It last erupted a hundred years ago, so it is quiet now."
+                    "text": "Good morning, and welcome to the Volcano Visitor Centre. Many of you ask me when the volcano last erupted. Some people believe it was last summer, because there was smoke over the top for a week, but that was only steam from the hot ground. A more recent event happened ten years ago, when a small crack opened on the side, and the village was quiet for a few days. But the last real eruption, with fire and ash, was about a hundred years ago. My grandmother told me stories about it. So nothing big has happened in a long time, and you are safe on our walk."
                   }
                 ]
               },
@@ -834,7 +829,7 @@
                   "Last summer"
                 ],
                 "answer": 0,
-                "explanation": "She says it last erupted a hundred years ago."
+                "explanation": "Smoke last summer was only steam, and the crack ten years ago was small; the last real eruption was about a hundred years ago."
               }
             },
             {
@@ -861,11 +856,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why have you put a torch next to your bed?"
+                    "text": "Why do you keep a torch next to your bed, Armand? Do you read at night?"
                   },
                   {
                     "speaker": "m",
-                    "text": "In case the lights go out during a storm or an earthquake."
+                    "text": "A friend gave it to me as a present, but that isn’t the reason, and I read with my phone. It’s there for the power cuts."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Do you have a lot of them?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "In winter, quite often. The wind knocks down the lines, and the whole street goes dark. Once I fell over the cat trying to find the door. Now I can find my way without hurting myself."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s a sensible idea. I should do the same."
                   }
                 ]
               },
@@ -878,7 +885,7 @@
                   "It helps him to read at night"
                 ],
                 "answer": 1,
-                "explanation": "He says it is in case the lights go out."
+                "explanation": "It was a present and he reads on his phone; he keeps it for when the lights go out in a power cut."
               }
             },
             {
@@ -905,11 +912,11 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How was the film about the volcano?"
+                    "text": "Hi, Asha, it’s Aneurin. I wanted to ask about the film you saw. Did you like it? My friend said the plot was ridiculous, and a lot of people left halfway because it was so slow."
                   },
                   {
                     "speaker": "f",
-                    "text": "Exciting, but the ending was a bit sad, so I cried."
+                    "text": "Hi, Aneurin. Funny that you call. I know what they mean, and I admit I looked at my watch twice in the middle, but I wasn’t angry or bored. I stayed, and when the main character said goodbye to her dog at the end, I started to cry. The last scene was so sad that I couldn’t speak in the car. You should see it, but bring tissues."
                   }
                 ]
               },
@@ -922,7 +929,7 @@
                   "Sad about the ending"
                 ],
                 "answer": 2,
-                "explanation": "She says that the ending was sad and she cried."
+                "explanation": "The plot was slow, and she looked at her watch, but she was not angry or bored; the last scene made her cry."
               }
             },
             {
@@ -936,24 +943,12 @@
                       "lang": "en-AU",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Anand",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Where are the rocks from the volcano?"
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "They are in the glass case behind the dinosaur skeleton."
+                    "text": "Welcome to the museum, everyone. Before you start, a few words about our rock collection, which many of you come to see. Please don’t look for it near the entrance, next to the ticket desk. That’s where we used to keep it, but we got tired of children touching things. A few people also ask about the shelf near the door, but that has our postcards. The rocks, the best ones from the last eruption, are now protected inside a glass case in the first room, just after the stairs. You can look as long as you like, but please don’t lean on it."
                   }
                 ]
               },
@@ -966,7 +961,7 @@
                   "Next to the ticket desk"
                 ],
                 "answer": 0,
-                "explanation": "They are in the glass case behind the skeleton."
+                "explanation": "The old place was next to the ticket desk and the shelf near the door has postcards; the rocks are in a glass case in the first room."
               }
             },
             {
@@ -993,11 +988,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Would you like to live near a volcano?"
+                    "text": "I saw a house for sale at the foot of the mountain, Anaya. It’s cheap and the garden is huge. Would you live there?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Not really. I prefer somewhere flat, and I am afraid of heights."
+                    "text": "No way. I don’t mind the heat, it’s the opposite of a problem. And the price isn’t the point, I’d buy it today if I could."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what’s wrong with it?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "The ash. Every time the mountain wakes up, ash covers everything and you can’t breathe. My cousin lives in one of those villages, and she wears a mask at home. I’d be afraid all the time."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I didn’t think about that."
                   }
                 ]
               },
@@ -1010,7 +1017,7 @@
                   "She hates the smell of smoke"
                 ],
                 "answer": 1,
-                "explanation": "She says that she is afraid of heights."
+                "explanation": "She says the heat does not bother her and the price is good; she would be afraid of the ash falling from the volcano."
               }
             }
           ]
@@ -1046,24 +1053,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Class, the school bell is ringing. This is a practice, so please go under your desks."
+                    "text": "Are you doing the volcano project with your class, Antoine? It sounds hard."
                   },
                   {
                     "speaker": "m",
-                    "text": "Is this the earthquake drill that you told us about?"
+                    "text": "I thought so too, because the topic is big. But the children understood everything. We built a model with paper and vinegar, and they watched it erupt, and they wanted to do it again."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wasn’t it expensive?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not at all, we used things from the kitchen. The best part is that they are asking questions all the time. I’ve never seen them so curious. I’d say it was my best lesson this year."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I might copy the idea."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Where does this conversation take place?",
+                "prompt": "What does Antoine think of the volcano project?",
                 "options": [
-                  "In a museum",
-                  "In a shop",
-                  "In a school"
+                  "It is too difficult for his class",
+                  "It is interesting for the students",
+                  "It costs too much money"
                 ],
-                "answer": 2,
-                "explanation": "A teacher talks to the class about going under desks."
+                "answer": 1,
+                "explanation": "He expected a hard topic but the children understood, the materials were cheap, and they ask questions all the time, so the project is interesting for them."
               }
             },
             {
@@ -1090,24 +1109,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "The volcano is smoking again, and I am a little worried."
+                    "text": "I’ve found a flat next to the mountain, Asha. I’m going to take it."
                   },
                   {
                     "speaker": "f",
-                    "text": "Don't panic. Please calm down. The scientists say that it is nothing unusual."
+                    "text": "Is it for the view? It’s beautiful, I admit."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The view is good, of course, but it isn’t the main reason. It’s ten minutes from my office, but I could get that anywhere in the town. What I like is the rent. It’s half the price of my last flat, and I can finally save money."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I understand, but isn’t it dangerous?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll worry about that later."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What is the woman doing?",
+                "prompt": "Why does Armand want the flat?",
                 "options": [
-                  "Making a complaint about noise",
-                  "Telling the man to calm down",
-                  "Giving some directions to town"
+                  "The view of the mountain",
+                  "The short walk to work",
+                  "The low rent"
                 ],
-                "answer": 1,
-                "explanation": "She tells him not to panic because it is nothing unusual."
+                "answer": 2,
+                "explanation": "She mentions the view and he admits the walk to work could be found anywhere, but the main reason is that the rent is half the price."
               }
             },
             {
@@ -1134,24 +1165,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "We have just heard that our town will get help after the earthquake!"
+                    "text": "Did you hear about the new visitor centre near the volcano, Arjun? Some people are angry about it."
                   },
                   {
                     "speaker": "m",
-                    "text": "That is wonderful news. Many people need it."
+                    "text": "I know. They say it will spoil the view of the mountain, and I understand that, it is a lovely place. And the town council will pay a lot of money for it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So are you against it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I’m in favour. Honestly, my cousins have no work, and the centre will need guides, cooks and cleaners. That’s much more important than a view. I think the town needs it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe you’re right."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "How does the man feel about the news?",
+                "prompt": "What does Arjun think of the plan for a new visitor centre?",
                 "options": [
-                  "Pleased for the town",
-                  "Afraid of the future",
-                  "Surprised by the date"
+                  "It will bring jobs to the town",
+                  "It will spoil the view",
+                  "It will cost too much"
                 ],
                 "answer": 0,
-                "explanation": "He says it is wonderful news that many people need."
+                "explanation": "He accepts that the building may spoil the view and cost money, but he supports it because it will give work to people in the town."
               }
             },
             {
@@ -1177,25 +1220,41 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Good morning, can I help you?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Excuse me, where can I find books on volcanoes?"
+                    "text": "I hope so. I want to know if you are open on Sundays. I work all week and I can only come at the weekend."
                   },
                   {
                     "speaker": "f",
-                    "text": "Go up to the second floor and turn left at the stairs."
+                    "text": "We close on Saturday at one, I’m afraid, and we don’t open on Sundays."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s a pity. I wanted to find a book about volcanoes, but I can look at the website. And I don’t have anything to return, I gave my books back last week."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You can also use the machine outside at night."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea, thanks."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the man doing?",
+                "prompt": "Why does Aragorn visit the library?",
                 "options": [
-                  "Asking about opening hours",
-                  "Returning a library card",
-                  "Looking for some books"
+                  "To look for a book on volcanoes",
+                  "To ask when it opens on Sundays",
+                  "To give back a book"
                 ],
-                "answer": 2,
-                "explanation": "He asks where he can find books on volcanoes."
+                "answer": 1,
+                "explanation": "He asks about Sunday hours; he can look for the volcano book online and has nothing to return."
               }
             },
             {
@@ -1222,24 +1281,36 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Ladies and gentlemen, welcome to the crater tour. Please stay behind the rope."
+                    "text": "So you’re a guide on the volcano, Asha. Isn’t that dangerous?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Thanks. Can we take photos from here?"
+                    "text": "Not really. We follow safe paths, and there are rules. People think I must earn very little, but the money is fair."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m sure it is. I was going to say that you’re brave, but I think it’s more than that. You’re outside every day, with the sky and the mountain, and you meet people from everywhere. I’m stuck in an office."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Come with me one day."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’d love to. I’d even do it for free."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "Who is the woman?",
+                "prompt": "What does Aneurin think about Asha's job?",
                 "options": [
-                  "A tour guide",
-                  "A park police officer",
-                  "A volcano scientist"
+                  "It sounds dangerous",
+                  "It sounds badly paid",
+                  "He would like to try it"
                 ],
-                "answer": 0,
-                "explanation": "She welcomes the group to the crater and gives rules, like a tour guide."
+                "answer": 2,
+                "explanation": "He does not worry about danger or pay; he says it is better than his office and he wants to do it."
               }
             },
             {
@@ -1266,24 +1337,36 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "My flight to Iceland is cancelled because of the ash cloud!"
+                    "text": "My flight has been cancelled because of the ash cloud, Anaya. I don’t know what to do. I could buy a new ticket."
                   },
                   {
                     "speaker": "f",
-                    "text": "Oh no! What are you going to do?"
+                    "text": "Don’t. The airline has to pay for your hotel and your meals when the flight is cancelled, so you shouldn’t spend any money."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about taking the train home? I’d go tonight."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s twelve hours, and you’ll be exhausted. Go to the desk and tell them you need a room. They’ll move you to the next flight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re right. I’ll go there now."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is the man's problem?",
+                "prompt": "What does Anaya advise Anand to do?",
                 "options": [
-                  "His ticket is too old",
-                  "His bag has been lost",
-                  "His flight was cancelled"
+                  "Ask the airline for a hotel",
+                  "Buy a new ticket",
+                  "Take the train home"
                 ],
-                "answer": 2,
-                "explanation": "He says that his flight to Iceland is cancelled."
+                "answer": 0,
+                "explanation": "A new ticket is not needed because the airline pays, and the train is too long; she tells him to ask the airline for a hotel."
               }
             }
           ]
@@ -1308,55 +1391,55 @@
             "turns": [
               {
                 "speaker": "livia",
-                "text": "Hello, everyone. Today, I would like to talk about Mount Vesuvius, a famous volcano in southern Italy. In the year seventy-nine, it erupted and buried two Roman towns, called Pompeii and Herculaneum, under a thick layer of ash. The people had very little time to escape, and about two thousand of them died. The towns stayed hidden for more than sixteen hundred years. In the eighteenth century, workers began to dig, and they found streets, shops and houses in almost perfect condition. Today, about two and a half million tourists visit Pompeii every year. You can walk along the old roads, see the paintings on the walls and even find a bakery where bread was still in the oven. Scientists keep a close watch on Vesuvius, because about three million people live nearby. The last eruption was in nineteen forty-four."
+                "text": "Hello, everyone. Today, I would like to talk about Mount Vesuvius, a famous volcano. Some visitors think that it is in Greece, but it is in the south of Italy, close to the city of Naples. You can see it from the bay, and many photographers love it. The most famous eruption happened in the year seventy-nine. There was another big one in sixteen thirty-one, but seventy-nine is the one that everybody remembers. On that day, two towns near the mountain, Pompeii and Herculaneum, were buried. You may think that rivers of lava killed the people, but in fact, it was the ash that covered the streets and the houses. It fell for hours, and it was hot, so the people could not escape. For many centuries the towns stayed under the ground. Workers started to dig in the eighteenth century, a long time after the eruption. In the nineteenth century, a lot more work was done, and the first big museum opened, but it was in the seventeen hundreds that the digging began. It took a long time to uncover the streets. Today you can walk in them. One of the most interesting places is an old bakery. You can see the oven, and there are even loaves of bread inside. People often ask about the shops, but the bakery is the one with the bread, and it is the most photographed place. Finally, you may ask about the volcano today. It has not been quiet all the time. There was an eruption in nineteen hundred and six, which damaged villages. The last eruption was in nineteen forty-four. Since then, it has been calm, but scientists watch it carefully, day and night. Thank you for listening."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "Vesuvius is in the south of ___",
+              "prompt": "The volcano is in the south of ___, close to Naples",
               "answer": "Italy",
-              "explanation": "A famous volcano in southern Italy."
+              "explanation": "Some visitors think it is in Greece, but it is in southern Italy."
             },
             {
               "id": "l3-2",
-              "prompt": "It erupted in the year ___",
+              "prompt": "The eruption that everybody remembers happened in the year ___",
               "answer": "seventy-nine",
               "accepted": [
                 "79"
               ],
-              "explanation": "In the year seventy-nine, it erupted."
+              "explanation": "Another eruption was in sixteen thirty-one, but the one that everybody remembers was in seventy-nine."
             },
             {
               "id": "l3-3",
-              "prompt": "The towns were covered with ___",
+              "prompt": "What killed the people was not lava but the ___ that fell for hours",
               "answer": "ash",
-              "explanation": "Buried under a thick layer of ash."
+              "explanation": "The speaker says that it was the ash that covered the streets and the houses."
             },
             {
               "id": "l3-4",
-              "prompt": "Workers began to dig in the ___ century",
+              "prompt": "The digging began in the ___ century",
               "answer": "eighteenth",
               "accepted": [
                 "18th"
               ],
-              "explanation": "In the eighteenth century, workers began to dig."
+              "explanation": "The first museum opened in the nineteenth century, but digging started in the eighteenth."
             },
             {
               "id": "l3-5",
-              "prompt": "Visitors can see a ___ with bread in the oven",
+              "prompt": "Tourists can see loaves of bread in an old ___",
               "answer": "bakery",
-              "explanation": "A bakery where bread was still in the oven."
+              "explanation": "The old bakery has an oven with loaves of bread inside."
             },
             {
               "id": "l3-6",
-              "prompt": "The last eruption was in ___",
+              "prompt": "There has been no eruption since ___",
               "answer": "nineteen forty-four",
               "accepted": [
                 "1944"
               ],
-              "explanation": "The last eruption was in nineteen forty-four."
+              "explanation": "There was an eruption in nineteen hundred and six, but the last one was in nineteen forty-four."
             }
           ]
         },
@@ -1388,65 +1471,65 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Andile, you study volcanoes for a living. What made you choose this career?"
+                "text": "Andile, you study volcanoes for a living. When did you first get interested?"
               },
               {
                 "speaker": "s",
-                "text": "When I was nine, my teacher showed us a video of an eruption in Hawaii. I was amazed, and I decided that I wanted to see one for myself."
+                "text": "I’d like to say it was a family holiday, but we never went near one, and I didn’t read about lava in a book either. It was a short video at school. The teacher showed it on a rainy Monday, and I couldn’t stop looking at the glowing rivers. I remember that I asked her if I could watch it again."
               },
               {
                 "speaker": "i",
-                "text": "What does a normal working day look like?"
+                "text": "What do you do on a normal day?"
               },
               {
                 "speaker": "s",
-                "text": "There is no normal day. Some days I sit at a computer and read information from machines on the volcano. Other days, I climb the mountain and collect rocks."
+                "text": "People imagine I run up mountains every day, but most days I sit at a desk. I’m not a writer, and I don’t teach at a university, at least not yet. I look at numbers from machines that we place on the volcano, and they tell us how the ground moves and how hot it is."
               },
               {
                 "speaker": "i",
-                "text": "Is your job dangerous?"
+                "text": "How do you stay safe near the crater?"
               },
               {
                 "speaker": "s",
-                "text": "It can be, so we are always careful. We wear helmets and special masks, and we never go near the crater without a radio and a partner."
+                "text": "First of all, we wear a helmet and a mask, because the gas can hurt your lungs. That’s the most important rule. We don’t go only in the cold, the weather doesn’t change the danger, and we carry little food because it’s heavy. But we always check the wind before we start to walk."
               },
               {
                 "speaker": "i",
-                "text": "What was the most exciting moment of your career?"
+                "text": "Tell me about the most exciting moment in your career."
               },
               {
                 "speaker": "s",
-                "text": "Two years ago, I saw red lava coming out of the ground at night. It was beautiful and frightening at the same time, and I could feel the heat from fifty metres away."
+                "text": "It wasn’t a prize, although I was proud when I won one, and I haven’t met any famous scientist. It was one night when I saw red lava coming out of the ground. I was a long way away, but the colour was so strong that I forgot to take pictures. I just stood there and smiled. I was amazed."
               },
               {
                 "speaker": "i",
-                "text": "Can scientists really predict an eruption?"
+                "text": "Can scientists tell when a volcano is going to erupt?"
               },
               {
                 "speaker": "s",
-                "text": "We cannot name the exact day, but we can see the signs, such as small earthquakes. In this way, we give people enough time to leave."
+                "text": "We can’t say the exact day, that’s impossible, and nobody can stop lava with machines. What we can do is look for signs. Before an eruption, there are often a lot of small earthquakes, and the ground starts to rise. When we see these signs, we warn the villages."
               },
               {
                 "speaker": "i",
-                "text": "What would you say to a student who wants to follow your path?"
+                "text": "What should young people study if they want your job?"
               },
               {
                 "speaker": "s",
-                "text": "Learn maths and physics, and be curious. The Earth still has many secrets, and there is a lot to discover."
+                "text": "Maths and physics, without question. I know they are not everybody’s favourite, but you need them to understand the data. Art and languages are interesting, but they won’t help you read what the machine says. So work hard at school, and don’t give up."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "How did Andile first become interested in volcanoes?",
+              "prompt": "Why did Andile become interested in volcanoes?",
               "options": [
-                "She visited a volcano with her family",
-                "She saw a video at school",
-                "She read a book about lava"
+                "A family holiday took her to one",
+                "A video at school fascinated her",
+                "A book about lava excited her"
               ],
               "answer": 1,
-              "explanation": "Her teacher showed the class a video of an eruption in Hawaii."
+              "explanation": "She never went near a volcano and did not read about lava; a video shown at school made her want to see it again."
             },
             {
               "id": "l4-2",
@@ -1457,7 +1540,7 @@
                 "Teaches classes at a university"
               ],
               "answer": 1,
-              "explanation": "Some days she reads information from machines on the volcano."
+              "explanation": "She does not write stories or teach; she looks at numbers from machines on the volcano."
             },
             {
               "id": "l4-3",
@@ -1468,18 +1551,18 @@
                 "By carrying a lot of food and water"
               ],
               "answer": 0,
-              "explanation": "They wear helmets and special masks and carry a radio."
+              "explanation": "She wears a helmet and a mask because of the gas; cold weather and food are not what keep her safe."
             },
             {
               "id": "l4-4",
-              "prompt": "What was her most exciting moment?",
+              "prompt": "How did she feel when she saw red lava at night?",
               "options": [
-                "Winning a prize for her work",
-                "Meeting a famous scientist",
-                "Seeing red lava come out at night"
+                "Afraid and ready to leave",
+                "Proud of her own work",
+                "Amazed by the colour"
               ],
               "answer": 2,
-              "explanation": "She saw red lava coming out of the ground at night."
+              "explanation": "She says the prize was not it and she has met no famous scientist; the lava was so strong that she forgot to take pictures and smiled."
             },
             {
               "id": "l4-5",
@@ -1490,18 +1573,18 @@
                 "Stop the lava with big machines"
               ],
               "answer": 1,
-              "explanation": "They cannot name the exact day, but they can see signs like small earthquakes."
+              "explanation": "They cannot give the exact date or stop lava; they look for small earthquakes and the ground rising."
             },
             {
               "id": "l4-6",
-              "prompt": "What does she advise young people to study?",
+              "prompt": "Why does she advise maths and physics?",
               "options": [
-                "Maths and physics",
-                "Art and music",
-                "Languages and history"
+                "They help to understand the data",
+                "They are easy to learn",
+                "They are the favourite subjects"
               ],
               "answer": 0,
-              "explanation": "Learn maths and physics, and be curious."
+              "explanation": "She knows they are not everybody’s favourite, but you need them to understand the data."
             }
           ]
         }

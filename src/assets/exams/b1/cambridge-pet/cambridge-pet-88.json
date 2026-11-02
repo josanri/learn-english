@@ -250,8 +250,9 @@
               "prompt": "What had the writer hoped for?",
               "options": [
                 "A pair of socks",
-                "A card",
-                "A bicycle"
+                "A pair of boots",
+                "A bicycle",
+                "A card"
               ],
               "answer": 2,
               "explanation": "She had hoped for a bicycle."
@@ -262,6 +263,7 @@
               "options": [
                 "Told her to be polite",
                 "Gave her another gift",
+                "Asked her to wear them",
                 "Took the socks away"
               ],
               "answer": 0,
@@ -273,9 +275,10 @@
               "options": [
                 "They were very expensive",
                 "They came from a shop",
+                "They were a present from her mother",
                 "Her aunt had made them"
               ],
-              "answer": 2,
+              "answer": 3,
               "explanation": "Her aunt had made the socks herself."
             },
             {
@@ -284,7 +287,8 @@
               "options": [
                 "Relieved",
                 "Ashamed",
-                "Angry"
+                "Angry",
+                "Amused"
               ],
               "answer": 1,
               "explanation": "She felt terrible."
@@ -293,11 +297,12 @@
               "id": "r3-5",
               "prompt": "What does she think of the socks now?",
               "options": [
-                "They are precious",
                 "They are useless",
-                "They are funny"
+                "They are funny",
+                "They are precious",
+                "They are old-fashioned"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She would not give them away for any bicycle."
             }
           ]
@@ -306,21 +311,23 @@
           "id": "reading-4",
           "number": 4,
           "title": "Birthdays around the world",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "People celebrate birthdays in very different ways. [1] In many countries, the main thing is to have a cake with candles, and the birthday child makes a wish before blowing them out.\n\nIn some places, there are special customs. [2] For example, in Denmark, the flag is put outside the window on the morning of a birthday.\n\nIn Mexico, children often have a piñata. [3] When it breaks, sweets and small toys fall out, and everyone runs to pick them up.\n\nIn some parts of China, people eat long noodles on their birthday. [4] They believe that the longer the noodles, the longer the person will live.\n\nWhatever the tradition, the idea is the same. [5] A birthday is a day when family and friends show someone that they are special.",
           "sentences": [
-            "It is a paper animal filled with treats, and the children hit it with a stick.",
+            "Cakes are cheaper in supermarkets than in bakeries.",
             "The noodles must not be cut, so people try to eat them in one go.",
-            "Some customs are known all over the world.",
-            "Some of them may surprise visitors.",
             "The way of celebrating may change, but the day is always important.",
-            "Cakes are cheaper in supermarkets than in bakeries."
+            "Some of them may surprise visitors.",
+            "Children there often wake up to find presents beside their beds.",
+            "It is a paper animal filled with treats, and the children hit it with a stick.",
+            "Some customs are known all over the world.",
+            "Some families keep the candles to use again next year."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "G",
               "explanation": "Some customs are known all over the world, for example the cake with candles in the next sentence."
             },
             {
@@ -330,7 +337,7 @@
             },
             {
               "id": "r4-3",
-              "answer": "A",
+              "answer": "F",
               "explanation": "The piñata is a paper animal with treats; the next sentence says that when it breaks, sweets fall out."
             },
             {
@@ -340,7 +347,7 @@
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "C",
               "explanation": "\"Whatever the tradition, the idea is the same\": the way of celebrating changes, but the day is always important."
             }
           ]
@@ -726,11 +733,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What are you giving your mum?"
+                    "text": "I want to buy a scarf for Gran’s birthday. She loves red, I think."
                   },
                   {
                     "speaker": "b",
-                    "text": "A scarf. I chose a blue one because it is her favourite colour."
+                    "text": "She wore a red one last winter, and it’s getting old, so she may like something new. Green matches her coat, but she already has two green ones."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "What do you suggest, then?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Her eyes are blue, and the lady in the shop told me that blue goes well with grey hair. Do you want me to come with you?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, please. It’s a big surprise for her, so let’s be quick."
                   }
                 ]
               },
@@ -743,7 +762,7 @@
                   "Green"
                 ],
                 "answer": 1,
-                "explanation": "He says he chose a blue one."
+                "explanation": "Red was last year’s scarf and she already has two green ones; the shop lady said that the colour of her eyes suits grey hair."
               }
             },
             {
@@ -770,11 +789,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "When is your birthday?"
+                    "text": "When’s your birthday, Pete? I need to buy a card."
                   },
                   {
                     "speaker": "b",
-                    "text": "The fourteenth of March, but I will be away that weekend."
+                    "text": "The fourth of March. No, wait, that’s my brother’s. Mine is the fourteenth of March. I’m turning forty this year, the big four-oh, which is why my wife is planning something."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Forty! You don’t look it."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thanks. She wants a party in the garden, but it will be cold, so I’m not sure."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ll put the date in my diary. The fourteenth."
                   }
                 ]
               },
@@ -787,7 +818,7 @@
                   "The fortieth of March"
                 ],
                 "answer": 0,
-                "explanation": "He says it is the fourteenth of March."
+                "explanation": "He first says the fourth, but that is his brother’s birthday, and he corrects himself to the fourteenth of March."
               }
             },
             {
@@ -801,24 +832,12 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Girl",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How many people are coming to the party?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "About fifteen. We need more chairs."
+                    "text": "Hi Sally, it’s Max. I’ve counted everything for the party. Food is no problem, my mum has made enough sandwiches and cakes for thirty people, so we’ll have plenty. And I don’t need to worry about music, because Dan is bringing his speakers and a long list of songs. But there are only ten chairs for twenty guests, and some of them are in the garage with a broken leg. Please ask your neighbours to lend us some. Call me back when you can. Thanks."
                   }
                 ]
               },
@@ -831,7 +850,7 @@
                   "More music"
                 ],
                 "answer": 0,
-                "explanation": "She says they need more chairs."
+                "explanation": "He has plenty of food and Dan brings the music, but there are only ten chairs for twenty guests."
               }
             },
             {
@@ -858,11 +877,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you want me to wrap the present?"
+                    "text": "Here’s the paper and the scissors. Do you need anything else for the wrapping?"
                   },
                   {
                     "speaker": "b",
-                    "text": "No, thanks. I am quite good at it. Just pass me the tape."
+                    "text": "I already have paper, thanks, and my scissors are in my bag. My problem is that the corners won’t stay down, and my hands aren’t big enough."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Do you want some glue?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It would stain the paper. You’ve got the tape in the drawer, haven’t you? The clear one."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Of course. Here you are. Be careful, it’s the last piece of the roll."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Don’t worry, I only need a little."
                   }
                 ]
               },
@@ -875,7 +910,7 @@
                   "The scissors"
                 ],
                 "answer": 1,
-                "explanation": "She asks him to pass her the tape."
+                "explanation": "She does not need paper or scissors; the corners will not stay down, so she asks for the clear tape in the drawer."
               }
             },
             {
@@ -889,24 +924,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I forgot to buy a card!"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "There is a shop on the corner. It closes at five, so hurry."
+                    "text": "Hi Dad, it’s Ruby. I’m at the card shop in the high street. I’m not in a rush because of the party, it starts at six and I have more than an hour. And the card isn’t expensive, it only costs three pounds, so I have enough money. But the lady has just told me that the shop closes in fifteen minutes. So I’ll choose one quickly, pay, and come straight home. See you soon. Please don’t start without me!"
                   }
                 ]
               },
@@ -919,7 +942,7 @@
                   "The shop closes soon"
                 ],
                 "answer": 2,
-                "explanation": "He says the shop closes at five."
+                "explanation": "The party is far away and the card is cheap; the shop closes in fifteen minutes."
               }
             },
             {
@@ -946,11 +969,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you like your present?"
+                    "text": "What did you get for your birthday, Leo? A bicycle?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, I love the football. I played with it all afternoon."
+                    "text": "I wanted one. Dad said maybe next year, when I’m taller. And Auntie Rose offered to buy me a guitar, but I can’t play a note. In the end I got a football, the same one as my friend Max’s, with a gold star on it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Great. Are you going to try it today?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, after lunch, in the park."
                   }
                 ]
               },
@@ -963,7 +994,7 @@
                   "A guitar"
                 ],
                 "answer": 0,
-                "explanation": "He says he loves the football."
+                "explanation": "He wanted a bicycle but must wait, and he cannot play a guitar; he got a football like Max’s."
               }
             },
             {
@@ -977,24 +1008,12 @@
                       "lang": "en-IE",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Where shall we have the party?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "At the sports centre. They have a hall, and it is cheap."
+                    "text": "Hello Uncle Tom, it’s Josh. It’s about my birthday. Mum said we could have the party at home, but it’s too small for fifteen people. So I suggest the sports centre. I know it’s not near, we need to go there by bus. It isn’t quiet either, because people are swimming and playing basketball at the same time. But it’s really cheap, the best price, only forty pounds for two hours, and there is a room with tables. Please tell me what you think. Bye."
                   }
                 ]
               },
@@ -1007,7 +1026,7 @@
                   "It is quiet"
                 ],
                 "answer": 1,
-                "explanation": "He says the hall is cheap."
+                "explanation": "The centre is far away and noisy, but the price is very good, forty pounds for two hours."
               }
             }
           ]
@@ -1043,24 +1062,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like to return this jumper. It is too small."
+                    "text": "I’d like to return this jumper, please. It was a present."
                   },
                   {
                     "speaker": "b",
-                    "text": "Of course. Do you have the receipt?"
+                    "text": "Is there a problem with it? Some people don’t like the colour."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, I love the green. And my aunt paid a fair price. It’s just two sizes too big. I look like a tent."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Would you like a smaller one?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Yes, if you have it. Otherwise I’ll take a gift card. My aunt will be happy to know that I’ll wear it every day, once it fits."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Let me check the back of the shop."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the woman want to do?",
+                "prompt": "Why does the woman want to return the jumper?",
                 "options": [
-                  "Order a cake",
-                  "Buy a gift",
-                  "Return a jumper"
+                  "It is too big for her",
+                  "It is not her colour",
+                  "It cost too much"
                 ],
-                "answer": 2,
-                "explanation": "She wants to return a jumper that is too small."
+                "answer": 0,
+                "explanation": "She likes the colour and the price, but the jumper is two sizes bigger than she needs."
               }
             },
             {
@@ -1087,24 +1122,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Shh! It is a surprise! She is coming. Everybody hide!"
+                    "text": "Shh, Mum is at the door. Hide the balloons!"
                   },
                   {
                     "speaker": "b",
-                    "text": "Turn off the lights!"
+                    "text": "I can’t believe we’re doing this. The cost is nothing, I used my pocket money. And the cake is ready, but I’m not that excited about it, it’s just a cake. I’m nervous that she’ll look in the cupboard."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "She never goes in there."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Today she might. It’s her birthday! She’ll want to look for a present for herself, you know what she’s like."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Let’s put everything in the garage, then."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What are they doing?",
+                "prompt": "How does the girl feel about the surprise party?",
                 "options": [
-                  "Playing a game",
-                  "Preparing a surprise",
-                  "Practising a play"
+                  "Worried about the cost",
+                  "Excited about the cake",
+                  "Nervous that Mum will find out"
                 ],
-                "answer": 1,
-                "explanation": "They hide and turn off the lights as she is coming."
+                "answer": 2,
+                "explanation": "The cost is paid and the cake is not important; she is afraid that her mother will find the surprise."
               }
             },
             {
@@ -1131,24 +1178,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Happy birthday, darling! This present is from Grandad and me."
+                    "text": "Look what Gran gave me, a book of poems with my name inside."
                   },
                   {
                     "speaker": "b",
-                    "text": "Oh, thank you! Can I open it now?"
+                    "text": "I thought you wanted a phone."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I did, I told Mum at Christmas. But I like this more. Gran wrote a message in the front, and it’s all about me. It’s quite big, but I don’t care."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That’s lovely. She’s the best."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ll read one every night, and I’ll write a letter to say thank you. I can’t wait to show it to my friends tomorrow, because nobody has a present like this."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the girl doing?",
+                "prompt": "How does the girl feel about her present?",
                 "options": [
-                  "Getting a present",
-                  "Leaving a party",
-                  "Choosing a cake"
+                  "Disappointed it is not a phone",
+                  "Pleased with a thoughtful gift",
+                  "Embarrassed it is so big"
                 ],
-                "answer": 0,
-                "explanation": "She receives a present and asks to open it."
+                "answer": 1,
+                "explanation": "She wanted a phone and the book is large, but she is delighted that her grandmother wrote about her inside."
               }
             },
             {
@@ -1175,24 +1234,36 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What would you like for your birthday?"
+                    "text": "Happy birthday, son. What would you like? Some money? A new phone?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Honestly, I do not need anything. Maybe we could just spend some time together, Dad, at the cinema."
+                    "text": "I already have a phone, and I’m saving for a game, so I don’t need money. What I’d really like is to go fishing with you, like we used to, just the two of us."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’d love to spend time with you, but I’m very busy at the moment, with the new job."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "I know, but maybe on Sunday?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "You’re right. Let’s go on Sunday morning."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What does the boy want?",
+                "prompt": "What does the boy really want for his birthday?",
                 "options": [
+                  "Time with his dad",
                   "A new phone",
-                  "Money to spend",
-                  "Time together"
+                  "Money to spend"
                 ],
-                "answer": 2,
-                "explanation": "He would like to go to the cinema together."
+                "answer": 0,
+                "explanation": "The boy refuses the phone and the money; he wants to spend a morning fishing with his father."
               }
             },
             {
@@ -1219,24 +1290,28 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Please can you deliver a cake to this address on Saturday morning?"
+                    "text": "Hello, I ordered a birthday cake for Saturday. There’s nothing wrong with it, I saw the picture and it looks wonderful. The problem is that you said ten in the morning, but the party begins at noon, and I’m out until half past eleven. Could it come at one instead?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Certainly. Between ten and twelve is our usual time."
+                    "text": "Of course. One o’clock is fine. We can change the time without any extra charge. The driver will call you before he arrives, so please keep your phone on."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Perfect, thank you so much. The cake looks great in the photo, and my daughter is going to love it. I’ll recommend your bakery to all my friends."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the woman arrange?",
+                "prompt": "Why is the woman phoning the bakery?",
                 "options": [
-                  "A cake delivery",
-                  "A table booking",
-                  "A taxi ride"
+                  "To order a cake",
+                  "To complain about a cake",
+                  "To change the delivery time"
                 ],
-                "answer": 0,
-                "explanation": "She asks for a cake to be delivered."
+                "answer": 2,
+                "explanation": "She already has the cake and is happy with it; she needs it later, at one o’clock."
               }
             },
             {
@@ -1263,24 +1338,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Did you send the invitations?"
+                    "text": "Have you written the invitations?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Yes, but half of the people have not replied. I will phone them tonight."
+                    "text": "Twenty! It’s too many. Mum says the house is small. I thought of cancelling the party, but I don’t want to disappoint anyone. So I’ll cut the list to ten, close friends only."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Do you want me to help you?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, please. Then I’ll tell everybody by message, not by phone, it’s faster."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Make a list on paper first, and be careful to include Anna, because she was angry last year when you forgot her."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I won’t forget her again, don’t worry."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What will the boy do?",
+                "prompt": "What does the boy decide about his party?",
                 "options": [
-                  "Cancel the party",
-                  "Write more invitations",
-                  "Phone the guests"
+                  "Cancel it",
+                  "Invite fewer people",
+                  "Phone everybody"
                 ],
-                "answer": 2,
-                "explanation": "He says he will phone them tonight."
+                "answer": 1,
+                "explanation": "He thinks about cancelling but does not want to disappoint his friends, so he makes a shorter list of ten."
               }
             }
           ]
@@ -1305,62 +1396,46 @@
             "turns": [
               {
                 "speaker": "organiser",
-                "text": "Hello, this is Keren from Sunny Parties. I am calling about the birthday party for your daughter on the twenty-second of June. First, the good news: the room is free from two to five. The price is ninety pounds, which includes a clown for an hour. You asked about food. We offer pizza, sandwiches or a hot meal, and most families choose pizza. Remember to tell me how many children are coming by the first of June, because the price depends on that. The maximum is twenty-five. There is a car park behind the building, and it is free on Saturdays. If you want a photographer, we can arrange one for thirty pounds. Please call me back on this number."
+                "text": "Hello, this is Keren from Sunny Parties. I am calling about the birthday party for your daughter. First, the date. You asked for the second of June, but the room is taken, so I have booked it for the twenty-second of June, a Saturday. The room is free from two o’clock in the afternoon. Another party has it in the morning until twelve, and then we clean. You must finish by five o’clock, because the cleaners arrive at half past five. Now the price. The room alone is fifty pounds, and the food and drinks are an extra thirty. But we have a package, and with the food and drinks and everything else the price is ninety pounds. The package includes a clown for an hour. Some customers prefer a magician, but he costs extra, forty pounds, and the clown is already included. Next, the guests. The room is big, but the fire rules say that the maximum is twenty-five children. Last time you invited thirty, which is too many, so please keep to twenty-five. Parents who stay are not counted, but they must sit at the back, where the tables are. Please also tell the families that there is no parking at the front, so the car park behind the library is better. Finally, the extras. A photographer costs thirty pounds for the afternoon. A cake costs fifteen pounds, but you said you would bring your own, so we don’t need to arrange it. Call me back if you want the photographer, because I need to book one a week before. Thank you, and I look forward to hearing from you. Have a lovely week, and say hello to your daughter from all of us at Sunny Parties."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The party is on the ___ of June",
+              "prompt": "The party will take place on the ___ of June",
               "answer": "twenty-second",
-              "accepted": [
-                "22nd",
-                "22"
-              ],
-              "explanation": "She says the party is on the twenty-second of June."
+              "explanation": "She wanted the second of June, but the room is taken, so it is on the twenty-second."
             },
             {
               "id": "l3-2",
-              "prompt": "The room is free from two to ___",
+              "prompt": "The room must be empty by ___ o'clock",
               "answer": "five",
-              "accepted": [
-                "5"
-              ],
-              "explanation": "She says it is free from two to five."
+              "explanation": "The cleaners come at half past five, and the previous party ends at twelve; the family must finish by five."
             },
             {
               "id": "l3-3",
-              "prompt": "The price is ___ pounds",
+              "prompt": "The package with food and drinks costs ___ pounds",
               "answer": "ninety",
-              "accepted": [
-                "90"
-              ],
-              "explanation": "She says the price is ninety pounds."
+              "explanation": "The room alone is fifty and the food extra thirty, but the whole package is ninety."
             },
             {
               "id": "l3-4",
-              "prompt": "The price includes a ___ for an hour",
+              "prompt": "The package gives the children a ___ for an hour",
               "answer": "clown",
-              "explanation": "She says it includes a clown for an hour."
+              "explanation": "The magician is an extra at forty pounds; the clown is included."
             },
             {
               "id": "l3-5",
-              "prompt": "The maximum number of children is ___",
+              "prompt": "The room can hold no more than ___ children",
               "answer": "twenty-five",
-              "accepted": [
-                "25"
-              ],
-              "explanation": "She says the maximum is twenty-five."
+              "explanation": "Last time there were thirty, which was too many; the maximum is twenty-five."
             },
             {
               "id": "l3-6",
-              "prompt": "A photographer costs ___ pounds",
+              "prompt": "A photographer for the afternoon costs ___ pounds",
               "answer": "thirty",
-              "accepted": [
-                "30"
-              ],
-              "explanation": "She says they can arrange one for thirty pounds."
+              "explanation": "The cake costs fifteen and they bring their own; the photographer costs thirty."
             }
           ]
         },
@@ -1392,19 +1467,19 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Lyra, you make birthday cakes for a living. How did you start?"
+                "text": "Lyra, you make cakes for a living. What happened with your first cake?"
               },
               {
                 "speaker": "h",
-                "text": "I made a cake for my brother when I was nine. It fell apart, but he still ate it. I have been baking ever since."
+                "text": "Ha, it was a disaster. I was twelve, and I wanted a birthday cake for my dad. It wasn’t perfect and it didn’t burn, the oven was fine. But I didn’t wait for it to cool, so when I cut it, it fell apart in my hands. We ate it with spoons, and my dad said it was the best one he’d ever eaten."
               },
               {
                 "speaker": "i",
-                "text": "What is the strangest cake that you have made?"
+                "text": "What was the strangest cake you’ve made?"
               },
               {
                 "speaker": "h",
-                "text": "A cake in the shape of a washing machine, for a man who loved cleaning. Inside, it had three layers of chocolate."
+                "text": "A man asked for a football pitch, which is quite common, and another for a car, but the strangest was a washing machine. It had a door made of sugar glass and little clothes inside, made of fondant, turning round in blue jelly water. The customer was a laundry owner, so it was a perfect present. He cried when he saw it, and he took photographs for an hour before he cut it."
               },
               {
                 "speaker": "i",
@@ -1412,31 +1487,31 @@
               },
               {
                 "speaker": "h",
-                "text": "About two days. I bake on the first day, and I decorate on the second. The decoration is the slow part."
+                "text": "People think two hours, because that’s the time for a normal cake, and nobody takes two weeks for one. For a wedding cake, I need about two days. One day for the sponge and the filling, and another for the decoration. If I hurry, the cake shows it. Cakes need rest, like people. When I started I tried to finish in one night, and the result was terrible."
               },
               {
                 "speaker": "i",
-                "text": "What is the hardest thing about your job?"
+                "text": "Why is your job hard sometimes?"
               },
               {
                 "speaker": "h",
-                "text": "Making people happy! They expect the cake to look exactly like the picture in their head, so I always ask lots of questions."
+                "text": "The clean-up takes hours, but I put music on and I don’t mind. Finding ingredients is easy, I have good suppliers. The hardest thing is that people want different things. The bride wants it simple, the mother wants five floors, and the groom wants chocolate. I have to make everybody happy, and sometimes I need three sketches before the family agrees."
               },
               {
                 "speaker": "i",
-                "text": "Do you eat a lot of cake yourself?"
+                "text": "Why do you eat toast after a day of tasting?"
               },
               {
                 "speaker": "h",
-                "text": "Surprisingly, no. After a day of tasting, I prefer a plain piece of toast."
+                "text": "After so much cake, I’m tired of sweet things. I don’t want another slice, or even soup. I want something dry and plain. A piece of toast with nothing on it is like a holiday for my mouth."
               },
               {
                 "speaker": "i",
-                "text": "What is your advice for people who want to bake at home?"
+                "text": "What is your advice for people who bake at home?"
               },
               {
                 "speaker": "h",
-                "text": "Start simple, follow the recipe exactly and never open the oven door too early."
+                "text": "Follow the recipe exactly, at least the first time. Don’t use lots of sugar, because the cake gets heavy, and don’t try to bake it fast with a hot oven, it will burn outside and stay raw inside. Weigh everything, be patient, and then you can start inventing."
               }
             ]
           },
@@ -1450,7 +1525,7 @@
                 "It burnt"
               ],
               "answer": 1,
-              "explanation": "She says it fell apart, but her brother ate it."
+              "explanation": "It was not perfect and it did not burn; she did not wait for it to cool, so it fell apart."
             },
             {
               "id": "l4-2",
@@ -1461,7 +1536,7 @@
                 "A car"
               ],
               "answer": 1,
-              "explanation": "It was in the shape of a washing machine."
+              "explanation": "A football pitch and a car are common; the strangest was a washing machine with a sugar glass door."
             },
             {
               "id": "l4-3",
@@ -1472,29 +1547,29 @@
                 "About two weeks"
               ],
               "answer": 0,
-              "explanation": "She says about two days."
+              "explanation": "A normal cake takes two hours, nobody needs two weeks; a big cake needs about two days."
             },
             {
               "id": "l4-4",
-              "prompt": "What is the hardest thing?",
+              "prompt": "Why is her job hard sometimes?",
               "options": [
-                "Cleaning up afterwards",
-                "Finding the ingredients",
-                "Making people happy"
+                "Because the clean-up takes hours",
+                "Because ingredients are hard to find",
+                "Because people want different things"
               ],
               "answer": 2,
-              "explanation": "She says making people happy is the hardest thing."
+              "explanation": "The clean-up does not bother her and ingredients are easy; the problem is to please a bride, a mother and a groom."
             },
             {
               "id": "l4-5",
-              "prompt": "What does she like to eat after a day of tasting?",
+              "prompt": "Why does she eat toast after a day of tasting?",
               "options": [
-                "A slice of cake",
-                "A plain piece of toast",
-                "A bowl of soup"
+                "She has no time to cook",
+                "She is tired of sweet food",
+                "Her family likes it"
               ],
               "answer": 1,
-              "explanation": "She prefers a plain piece of toast."
+              "explanation": "After so much cake she wants something plain and dry, not another slice or soup."
             },
             {
               "id": "l4-6",
@@ -1505,7 +1580,7 @@
                 "Bake it very fast"
               ],
               "answer": 0,
-              "explanation": "She says to follow the recipe exactly."
+              "explanation": "Use the recipe exactly; sugar and a hot oven are mistakes."
             }
           ]
         }

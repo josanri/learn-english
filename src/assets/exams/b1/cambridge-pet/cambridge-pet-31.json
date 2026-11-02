@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "How did the writer get the job?",
               "options": [
+                "His uncle helped him",
                 "A teacher recommended him",
-                "He answered an advert",
-                "His uncle helped him"
+                "His sister recommended him",
+                "He answered an advert"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "His uncle, a sound engineer, found him the job."
             },
             {
               "id": "r3-2",
               "prompt": "What did Greta tell the writer?",
               "options": [
-                "To listen and to be on time",
+                "To look for the director",
                 "To stay away from the actors",
+                "To listen and to be on time",
                 "To wear a hat on the set"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She said, \"Listen carefully, and never be late.\""
             },
             {
               "id": "r3-3",
               "prompt": "What did the writer learn about filming?",
               "options": [
-                "It goes very slowly",
+                "It costs a great deal of money",
                 "It needs a big crew",
-                "It is very noisy"
+                "It is very noisy",
+                "It goes very slowly"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He says filming is mostly waiting, and a one-minute scene can take five hours."
             },
             {
@@ -284,6 +287,7 @@
               "options": [
                 "He wanted to learn the words",
                 "He saw small differences each time",
+                "He became friends with the actors",
                 "The actors made him laugh"
               ],
               "answer": 1,
@@ -293,9 +297,10 @@
               "id": "r3-5",
               "prompt": "How does the writer feel at the end of the week?",
               "options": [
+                "Angry about the early start",
                 "Pleased that it is over",
-                "Unsure about coming back",
-                "Tired but ready to return"
+                "Tired but ready to return",
+                "Unsure about coming back"
               ],
               "answer": 2,
               "explanation": "He is tired but happy and says yes at once to returning next summer."
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "Our school film festival",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Every year in March, our school holds a film festival, and this year I decided to enter a short film. [1] My friend Pia had a good idea about a boy who finds an old camera in the attic, so we wrote the story together.\n\nWe filmed during the Easter holidays, mostly in my grandmother's house. [2] That was a problem, because we needed bright light for the attic scenes. In the end, we borrowed two big lamps from the drama teacher.\n\nThe editing took much longer than we expected. [3] Pia is good with computers, so she did most of this, while I chose the music. [4] We were so nervous that we could hardly watch.\n\nOur film did not win the first prize, but the judges gave it a special mention for its story. [5] We are already planning next year's film, and this time we want to make a comedy.",
           "sentences": [
-            "On the day of the festival, our film was shown to two hundred people.",
-            "I knew that I could not make a film alone.",
-            "It rained almost every day, so the house was very dark.",
-            "We had to cut an hour of filming down to eight minutes.",
+            "Pia was the only one who knew how to use the camera.",
             "Making it taught us how much teamwork a film needs.",
+            "The festival lasted two evenings and ended with a party.",
+            "We had to cut an hour of filming down to eight minutes.",
+            "It rained almost every day, so the house was very dark.",
+            "I knew that I could not make a film alone.",
+            "On the day of the festival, our film was shown to two hundred people.",
             "Pia wants to be an actor when she leaves school."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "F",
               "explanation": "\"I could not make a film alone\" leads to \"My friend Pia\", who helps with the idea."
             },
             {
               "id": "r4-2",
-              "answer": "C",
+              "answer": "E",
               "explanation": "\"That was a problem\" refers to the dark house, which made bright light difficult."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "G",
               "explanation": "The nervous audience scene follows the film being shown to two hundred people."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "B",
               "explanation": "The sentence about teamwork sums up the experience before the plans for next year."
             }
           ]
@@ -726,16 +733,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Next, please. What can I do for you?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "How much is a ticket for the evening film?"
+                    "text": "One ticket for the seven o’clock film, please. How much is it?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Adults pay nine pounds, but students get three pounds off."
+                    "text": "Adults pay nine pounds, and children under twelve pay three. But there are cheaper seats for students if you have a card."
                   },
                   {
                     "speaker": "f",
-                    "text": "Good, I have my student card with me."
+                    "text": "I do have one, here it is. I’m studying at the university across the road."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then you pay three pounds less than the adult price. Would you like popcorn with that? There’s an offer today."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, thanks. I had a big lunch. Do you take cards?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. Just tap here."
                   }
                 ]
               },
@@ -748,7 +771,7 @@
                   "Nine pounds"
                 ],
                 "answer": 1,
-                "explanation": "Nine pounds minus three pounds off for students makes six pounds."
+                "explanation": "Adults pay nine and children three, but a student pays three pounds less than the adult price."
               }
             },
             {
@@ -774,16 +797,24 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Ciaran, what time will we be out? I told my dad I’d be home by half past ten."
+                  },
+                  {
                     "speaker": "m",
-                    "text": "What time will the film finish? My bus leaves at ten."
+                    "text": "The website says twenty to ten, but that’s wrong. There are twenty minutes of adverts first. The film itself starts at twenty past eight and lasts an hour and a half."
                   },
                   {
                     "speaker": "f",
-                    "text": "It starts at twenty to eight and lasts two hours and ten minutes."
+                    "text": "So we finish at ten past ten?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Then I will just catch it."
+                    "text": "No, no. An hour and a half from twenty past eight is ten to ten. Then it’s a ten-minute walk to the bus stop."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh, good. That’s plenty of time. I’ll tell my dad."
                   }
                 ]
               },
@@ -796,7 +827,7 @@
                   "At twenty to ten"
                 ],
                 "answer": 0,
-                "explanation": "Twenty to eight plus two hours and ten minutes is ten to ten."
+                "explanation": "The website time is wrong because of the adverts; twenty past eight plus an hour and a half is ten to ten, not ten past ten."
               }
             },
             {
@@ -810,24 +841,12 @@
                       "lang": "en-US",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Gareth",
-                    "voice": {
-                      "lang": "en-GB",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Where would you like to sit?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Near the back, please. When I sit close to the screen, I get a headache."
+                    "text": "Hello, this is Christina Hale, calling about my booking for Friday night. I’d like four seats together, please. Last time we sat at the front and my neck hurt for two days, so definitely not there again. My sister says the middle is best for the sound, and I did think about that, but we have to leave early to catch the last bus. So I’d like the last row, the one at the back, near the door, so we don’t disturb anybody. If those seats are free, please keep them for me. I’ll collect the tickets at seven. Thanks very much, bye."
                   }
                 ]
               },
@@ -840,7 +859,7 @@
                   "At the front"
                 ],
                 "answer": 0,
-                "explanation": "She asks for a seat near the back because the screen close up gives her a headache."
+                "explanation": "The front hurt her neck and the middle is best for sound, but she must leave early, so she wants the last row near the door."
               }
             },
             {
@@ -867,24 +886,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Did you enjoy the film?"
+                    "text": "Did you enjoy the film, Cody? You were very quiet."
                   },
                   {
                     "speaker": "m",
-                    "text": "The acting was great, and so was the music, but the story was far too slow."
+                    "text": "Parts of it were good. The acting was excellent, especially the old man, and the soundtrack was beautiful. I’m going to download it."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what didn’t you like?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The story. It started well, but then everything happened by accident, and the ending made no sense. Why did she leave the house after all that?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I thought that was clever, actually."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Well, I felt a bit cheated. I’d still say go and see it for the actors."
                   }
                 ]
               },
               "question": {
                 "id": "l1-4q",
-                "prompt": "What did the man dislike about the film?",
+                "prompt": "What did Cody dislike about the film?",
                 "options": [
                   "The acting",
                   "The story",
                   "The music"
                 ],
                 "answer": 1,
-                "explanation": "He liked the acting and the music but says the story was too slow."
+                "explanation": "He praises the actors and the soundtrack, but the plot depends on accidents and the ending made no sense."
               }
             },
             {
@@ -911,15 +946,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Shall we see the new comedy tonight?"
+                    "text": "What shall we do tonight? The comedy at the Odeon looks good."
                   },
                   {
                     "speaker": "f",
-                    "text": "I've seen it already. Let's try the science-fiction film instead. It starts at eight."
+                    "text": "I saw the trailer. It wasn’t funny at all. Let’s stay in and watch something on the sofa."
                   },
                   {
                     "speaker": "m",
-                    "text": "OK, good idea."
+                    "text": "We did that all week, though. I’m fed up with the TV."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then what about the new science-fiction one at the Rex? It starts at eight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Great idea. I’ll book the tickets online, and we can get a pizza before."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect. I’ll bring a coat. The cinema is always cold."
                   }
                 ]
               },
@@ -932,7 +979,7 @@
                   "See a science-fiction film"
                 ],
                 "answer": 2,
-                "explanation": "The woman has seen the comedy, so they choose the science-fiction film."
+                "explanation": "The comedy was not funny in the trailer and staying at home happened all week, so they choose the science-fiction film at the Rex."
               }
             },
             {
@@ -946,28 +993,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "m",
-                    "name": "Nolan",
-                    "voice": {
-                      "lang": "en-AU",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Excuse me, I can't find my phone. I think I left it in Screen 4."
-                  },
-                  {
-                    "speaker": "m",
-                    "text": "I'll go and look. What colour is it?"
-                  },
-                  {
-                    "speaker": "f",
-                    "text": "Black, with a red case."
+                    "text": "Hello, this is Teresa Monroe. I was at your cinema last night, in screen four, for the eight o’clock showing. I think I dropped my phone between the seats, a blue one with a cracked cover. At first I thought of asking for my money back, because the film was awful and the sound kept stopping, but no, the ticket doesn’t matter. I’d also like a better seat next time, though I’ll write to you about that later. What I really need today is for someone to look in lost property and call me back. My number is zero seven seven, two two five, nine one six. Thank you."
                   }
                 ]
               },
@@ -980,7 +1011,7 @@
                   "To get her money back"
                 ],
                 "answer": 0,
-                "explanation": "She says she cannot find her phone and thinks she left it in Screen 4."
+                "explanation": "She thought of a refund and of a better seat later, but the thing she needs now is for someone to look for what she dropped."
               }
             },
             {
@@ -1007,11 +1038,23 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Do you want to go to the cinema with Pablo's group?"
+                    "text": "Annelise, Pablo’s group is going to the cinema on Friday. Do you want to come?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Not really. They talk all the time during films. I'd rather go with you and your sister."
+                    "text": "I don’t think so. They always arrive late, which is annoying, but I could live with that. And I don’t mind horror films. I like them, actually."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So what’s the problem?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "They talk all the time. They comment on every scene and laugh at things that aren’t funny. Last time a lady in front turned around and asked us to be quiet. I was so embarrassed."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I see. Come with my group, then. We never speak during a film."
                   }
                 ]
               },
@@ -1024,7 +1067,7 @@
                   "They arrive late"
                 ],
                 "answer": 1,
-                "explanation": "She says they talk all the time during films."
+                "explanation": "She can accept lateness and likes horror, but the group talks and laughs during the film, which embarrassed her."
               }
             }
           ]
@@ -1060,28 +1103,48 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Hello, I'd like to book a room for my daughter's birthday party."
+                    "text": "Paul, it’s Abigail. You work at the Plaza, don’t you?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Of course. How many children are coming?"
+                    "text": "Yes, I do. Is something wrong?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Twelve. We would like to watch a film and have some cake."
+                    "text": "Not at all. I don’t need times either, my sister will choose the film. It’s her birthday on the twentieth, and I want a nice surprise for her and ten friends."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Do you want to see a film?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’d love that, but not with queues. Is there a small screen, a private room, that I can pay for?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "There is, actually. Room Three holds twelve people, and you can bring your own cake."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect. Can you reserve it for the Saturday afternoon?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll check with my manager and call you tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "Why is the woman phoning?",
+                "prompt": "Why is Abigail phoning Paul?",
                 "options": [
                   "To complain about a ticket",
                   "To ask about film times",
                   "To book a room for a party"
                 ],
                 "answer": 2,
-                "explanation": "She wants to book a room for her daughter's birthday party."
+                "explanation": "Nothing is wrong and she does not need times; she wants a private room for her sister’s birthday with ten friends."
               }
             },
             {
@@ -1107,25 +1170,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "How was the new cinema, Murat?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Excuse me, I need to talk to someone about last night. The sound was so loud that my little boy covered his ears."
+                    "text": "Terrible, honestly. The seats were fine, really comfortable, and I didn’t mind that the film was almost three hours long."
                   },
                   {
                     "speaker": "f",
-                    "text": "I'm very sorry. I'll tell the manager, and I can give you two free tickets."
+                    "text": "So what went wrong?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The sound. It was so loud during the action scenes that the floor was shaking, and I had a headache at the end."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Did you tell somebody?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I did. A young man said they’d check it. Maybe tonight it will be better."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll wait a week, then."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What was the man's problem?",
+                "prompt": "What annoyed Murat about the new cinema?",
                 "options": [
-                  "The seats were broken",
                   "The sound was too loud",
+                  "The seats were broken",
                   "The film was too long"
                 ],
-                "answer": 1,
-                "explanation": "He complains that the sound was so loud his son covered his ears."
+                "answer": 0,
+                "explanation": "The seats were comfortable and the length did not matter; the action scenes were so loud that he had a headache."
               }
             },
             {
@@ -1152,28 +1235,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "For homework, I would like you to watch a film of your choice."
+                    "text": "Jonty, have you chosen a film for your review?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Do we have to write about it?"
+                    "text": "Not yet, Mrs Pike. I was afraid I wouldn’t find a good one, but I’ve got a few ideas now."
                   },
                   {
                     "speaker": "f",
-                    "text": "Yes, a review of two hundred words, please. Say what you liked and what you did not like."
+                    "text": "I think you’ll write better about something you like. It should be two pages."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Two pages is fine. I wrote more last time. The thing I’m worried about is reading it to the class."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Why? You speak well."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "When I get nervous, I speak too fast."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Practise at home, in front of your mother."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What must the students do for homework?",
+                "prompt": "What worries Jonty about the review?",
                 "options": [
-                  "Write a review of a film",
-                  "Make a short film",
-                  "Read a book about films"
+                  "Choosing a film",
+                  "Reading it to the class",
+                  "Writing enough pages"
                 ],
-                "answer": 0,
-                "explanation": "The teacher asks for a review of two hundred words about a film they watch."
+                "answer": 1,
+                "explanation": "He has ideas for a film and two pages is easy; the problem is that he gets nervous and speaks too fast when he reads to the class."
               }
             },
             {
@@ -1199,29 +1298,45 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Shall we go to the cinema this weekend, Wanjiru?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Are you free on Friday? We could go to the cinema then."
+                    "text": "Friday is the cheap night, but it’s always full."
                   },
                   {
                     "speaker": "m",
-                    "text": "I'm playing football on Friday. What about Sunday?"
+                    "text": "Good point. Sunday is quieter, though it costs more. Or we could try the Odeon."
                   },
                   {
                     "speaker": "f",
-                    "text": "Sunday's good. I'll book the tickets."
+                    "text": "That’s too far. I don’t mind paying a bit more if it’s relaxed. What about asking Dina and Leo to come as well?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Yes! We get a group discount if there are four, and it’s more fun."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then Sunday it is, with the four of us."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’ll message them tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "When will they go to the cinema?",
+                "prompt": "What do Rafael and Wanjiru agree about the cinema trip?",
                 "options": [
-                  "On Friday",
-                  "Next week",
-                  "On Sunday"
+                  "They should go on the cheap night",
+                  "They should try a different cinema",
+                  "They should invite two friends"
                 ],
                 "answer": 2,
-                "explanation": "He is busy on Friday, so they agree on Sunday."
+                "explanation": "Friday is full and the Odeon is too far; they agree to invite Dina and Leo for the discount and the fun."
               }
             },
             {
@@ -1248,24 +1363,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What do you want to do when you leave school?"
+                    "text": "Kenzo, you’re always filming things on your phone. Do you want to be an actor?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I'd love to be a film director. I'm not interested in being an actor, I just like telling stories with a camera."
+                    "text": "Me? No. I get nervous in front of a camera, and I hate learning lines."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Maybe a writer? Your stories are great."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I enjoy writing, but I prefer working with others. What I love is deciding where the camera goes and how the scene looks, and telling everybody what to do."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s a director!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Exactly. My uncle is one, and he says I can visit his set."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Lucky you."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What does the boy want to do in the future?",
+                "prompt": "What would Kenzo like to be in the future?",
                 "options": [
-                  "Be a film director",
-                  "Be an actor",
-                  "Be a writer"
+                  "A film director",
+                  "An actor",
+                  "A writer"
                 ],
                 "answer": 0,
-                "explanation": "He says he would love to be a film director and does not want to act."
+                "explanation": "He does not want to act or write alone; he loves choosing where the camera goes and telling people what to do."
               }
             },
             {
@@ -1292,24 +1427,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Hello, I saw a poster about a film club. How do I join?"
+                    "text": "Hugh, what are you doing on Friday? I’m thinking of hiring a film and staying in."
                   },
                   {
                     "speaker": "m",
-                    "text": "You fill in this form, and it costs ten pounds for the whole year."
+                    "text": "Again? You did that last week. Why not go out?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Tickets are so expensive now. I did see an offer for two tickets for the price of one, but only on Mondays."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "There’s a film club at the library. It costs five pounds for the whole year, and they show an old film every Thursday with tea and biscuits."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That sounds nice, and I’d meet people."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Come with me this week."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "OK, I’ll sign up. Thanks."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What does the woman want to do?",
+                "prompt": "What does Briar decide to do?",
                 "options": [
                   "Buy some tickets",
-                  "Hire a film",
-                  "Join a film club"
+                  "Join a film club",
+                  "Hire a film"
                 ],
-                "answer": 2,
-                "explanation": "She asks how to join the film club she saw on a poster."
+                "answer": 1,
+                "explanation": "Tickets are expensive and the offer is only on Mondays; she prefers the cheap library club where she can meet people."
               }
             }
           ]
@@ -1334,58 +1489,46 @@
             "turns": [
               {
                 "speaker": "marguerite",
-                "text": "Good afternoon, and welcome to the Hartwell Film Studio tour. I'm Marguerite, and I'll be your guide today. The tour lasts ninety minutes, so please stay together. First, we'll visit the costume room, where you can try on old clothes from famous films. Then we'll walk to the sound studio, where you'll learn how to make the noise of rain by shaking a bag of rice. After that, there's a short break at the café, where a piece of cake costs two pounds. In the last part, you'll see the model city that was built for a space film. It took six months to make. You can take photos everywhere except in the sound studio, because the equipment is very delicate. Tickets for next month's tour can be booked online. I hope you enjoy your visit."
+                "text": "Good afternoon, and welcome to the Hartwell Film Studio tour. I’m Marguerite, and I’ll be your guide today. The website says the tour takes two hours, but that includes time in the café. The tour itself lasts ninety minutes, so please switch off your phones unless I tell you that you can use them. We start in the costume room. Here you can put on some of the old costumes from our films, a pirate coat, a queen’s dress, even a robot suit. Many children enjoy the hats, but I think the costumes are better for a photograph. Please ask me before you touch the shoes, because they are very old. Next we go to the sound room. Sound is half of a film, and it’s more fun than you think. Look at this bag. It’s full of rice. When I move it slowly, you hear rain on a roof. Not the sea, as most people say, because for the waves we use a different box. Now we have a break at the café. A coffee costs three pounds, a sandwich five, and a piece of cake only two pounds, so I’d recommend that. After the break we visit the model city. It’s my favourite. A team of twelve people built it. They say it took a year, but that is the whole film. The city itself took six months. Look closely at the tiny street lamps, because each one lights up. You can take as many photos as you like there. The last place is the big sound studio, where actors speak their lines after the filming. Please don’t take photographs in that studio. The flash can ruin a recording. Finally, there’s a gift shop at the exit, which sells posters and postcards. Thank you."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The tour lasts ___ minutes",
+              "prompt": "The tour itself takes ___ minutes",
               "answer": "ninety",
-              "accepted": [
-                "90"
-              ],
-              "explanation": "The guide says the tour lasts ninety minutes."
+              "explanation": "The website says two hours, but that includes the café; the tour is ninety minutes."
             },
             {
               "id": "l3-2",
-              "prompt": "In the first room, visitors try on old ___",
-              "answer": "clothes",
-              "accepted": [
-                "costumes"
-              ],
-              "explanation": "In the costume room visitors try on old clothes from famous films."
+              "prompt": "In the first room, visitors can dress in old ___",
+              "answer": "costumes",
+              "explanation": "They put on old costumes from the films; the hats are for children and the shoes are not to be touched."
             },
             {
               "id": "l3-3",
-              "prompt": "Rice in a bag makes the noise of ___",
+              "prompt": "A bag of rice is used to make the sound of ___",
               "answer": "rain",
-              "explanation": "She explains how to make the noise of rain with a bag of rice."
+              "explanation": "She says rain on a roof, not the sea, because waves need a different box."
             },
             {
               "id": "l3-4",
-              "prompt": "A piece of cake costs ___ pounds",
+              "prompt": "A piece of cake in the café costs ___ pounds",
               "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "Cake at the café costs two pounds."
+              "explanation": "A coffee is three and a sandwich five; the cake is two pounds."
             },
             {
               "id": "l3-5",
-              "prompt": "The model city took ___ months to make",
+              "prompt": "The model city took ___ months to build",
               "answer": "six",
-              "accepted": [
-                "6"
-              ],
-              "explanation": "It took six months to make the model city."
+              "explanation": "The whole film took a year, but the city itself took six months."
             },
             {
               "id": "l3-6",
-              "prompt": "Photos are not allowed in the ___ studio",
+              "prompt": "Visitors may not take pictures in the ___ studio",
               "answer": "sound",
-              "explanation": "You can take photos everywhere except in the sound studio."
+              "explanation": "Photos are fine in the model city, but not in the sound studio, because the flash can ruin a recording."
             }
           ]
         },
@@ -1417,19 +1560,19 @@
             "turns": [
               {
                 "speaker": "philippa",
-                "text": "Today I'm talking to Jarrah Quill, who works as a stunt performer in films. Jarrah, what exactly do you do?"
+                "text": "Jarrah, welcome. Many people think you are the actor in the fight scenes. What do you do exactly?"
               },
               {
                 "speaker": "jarrah",
-                "text": "I do the dangerous things that actors can't or shouldn't do, like jumping from a moving train or falling off a roof. I always train for weeks before a big scene."
+                "text": "I don’t plan the safety of the scenes, a coordinator does that, and I’m not a teacher, though I sometimes give advice about how to move. My job is to take the actor’s place when something is too dangerous: the car crash, the fall from a window. The audience sees the star’s face, but it’s my body."
               },
               {
                 "speaker": "philippa",
-                "text": "Did you always want this job?"
+                "text": "You were a gymnast before. Why did you stop?"
               },
               {
                 "speaker": "jarrah",
-                "text": "Not at all. I was a gymnast, but I hurt my knee when I was nineteen and had to stop. A friend told me that film crews needed people who could move well, so I applied."
+                "text": "It wasn’t a lost competition. I actually won my last one, and I didn’t want a different job. I injured my knee badly at nineteen, and the doctor told me not to compete again. It was a terrible time, but a friend suggested stunt work, and I could still do falls."
               },
               {
                 "speaker": "philippa",
@@ -1437,31 +1580,39 @@
               },
               {
                 "speaker": "jarrah",
-                "text": "Honestly, no. Safety is the most important thing on set. There are mats, ropes and a doctor nearby, and we practise each move slowly many times before we film it."
+                "text": "It can be, and that’s why safety is the most important thing on set. Some people think it slows the filming, and I admit we spend an hour preparing a ten-second scene. But nobody forgets it. We check everything three times. If someone says stop, we stop."
               },
               {
                 "speaker": "philippa",
-                "text": "What is the best part of the job?"
+                "text": "How do you feel when you watch the finished film?"
               },
               {
                 "speaker": "jarrah",
-                "text": "Seeing the finished film with my family. They never know which parts are me, so I whisper, 'That was me,' and they laugh."
+                "text": "I used to watch it alone, because I was shy about seeing myself. Nervous? A little, in the first years. Now I take my family to the cinema, my mother, my brothers, my wife. They shout \"That’s Jarrah!\" every time I fall off something. It’s the best part."
               },
               {
                 "speaker": "philippa",
-                "text": "Do you have any advice for young people?"
+                "text": "What do directors look for when they hire a stunt performer?"
               },
               {
                 "speaker": "jarrah",
-                "text": "Learn a sport really well and look after your body. Directors like people who are calm and patient, not only brave."
+                "text": "You’d think they want someone tall, strong, or even famous, but not at all. Many of the best performers are small. They want somebody calm, who can wait for hours in the cold and stay patient, and then do it perfectly on the first try."
               },
               {
                 "speaker": "philippa",
-                "text": "And what's next for you?"
+                "text": "And what are you working on next?"
               },
               {
                 "speaker": "jarrah",
-                "text": "I'm going to Canada in March to work on a film about a mountain rescue."
+                "text": "I had planned a holiday in March, and the training course I’ve been thinking about starts in the summer. But a film company in Canada offered me a part, so I’ll be there for six weeks. I can’t say no to snow and horses!"
+              },
+              {
+                "speaker": "philippa",
+                "text": "Is there any advice you would give to a young person who wants to do this?"
+              },
+              {
+                "speaker": "jarrah",
+                "text": "Start with a sport you love, like gymnastics or judo, and learn to fall safely. Never try a stunt at home."
               }
             ]
           },
@@ -1475,62 +1626,62 @@
                 "He teaches actors how to move"
               ],
               "answer": 1,
-              "explanation": "He does the dangerous things that actors cannot or should not do."
+              "explanation": "The coordinator plans safety and he is not a teacher; he takes the actor’s place for the crash or the fall."
             },
             {
               "id": "l4-2",
               "prompt": "Why did Jarrah stop being a gymnast?",
               "options": [
-                "He lost a competition",
                 "He hurt his knee",
-                "He wanted a new job"
+                "He lost an important competition",
+                "He wanted a different job"
               ],
-              "answer": 1,
-              "explanation": "He hurt his knee at nineteen and had to stop."
+              "answer": 0,
+              "explanation": "He won his last competition and did not want a different job; his knee was badly injured at nineteen."
             },
             {
               "id": "l4-3",
               "prompt": "What does he say about safety on set?",
               "options": [
-                "It is the most important thing",
+                "It makes filming too slow",
                 "People sometimes forget about it",
-                "It makes filming too slow"
+                "It is the most important thing"
               ],
-              "answer": 0,
-              "explanation": "He says safety is the most important thing on set."
+              "answer": 2,
+              "explanation": "Some people think it slows filming, but nobody forgets it and he calls it the most important thing."
             },
             {
               "id": "l4-4",
               "prompt": "How does he feel about watching the finished film?",
               "options": [
                 "He prefers to watch it alone",
-                "He feels nervous about it",
-                "He enjoys it with his family"
+                "He enjoys it with his family",
+                "He feels nervous about it"
               ],
-              "answer": 2,
-              "explanation": "He enjoys seeing the finished film with his family and whispers that a part was him."
+              "answer": 1,
+              "explanation": "He used to watch alone and was a little nervous at first, but now he loves it with his family."
             },
             {
               "id": "l4-5",
               "prompt": "What do directors like in a stunt performer?",
               "options": [
-                "Someone tall and strong",
                 "Someone calm and patient",
+                "Someone tall and strong",
                 "Someone famous"
               ],
-              "answer": 1,
-              "explanation": "Directors like people who are calm and patient, not only brave."
+              "answer": 0,
+              "explanation": "Tall, strong and famous are not what they want; they want someone calm who can wait for hours."
             },
             {
               "id": "l4-6",
               "prompt": "What will Jarrah do in March?",
               "options": [
-                "Work in Canada",
                 "Go on holiday",
-                "Start a training course"
+                "Start a training course",
+                "Work in Canada"
               ],
-              "answer": 0,
-              "explanation": "He is going to Canada in March to work on a film."
+              "answer": 2,
+              "explanation": "The holiday was only planned and the course starts in the summer; in March he will be in Canada for six weeks."
             }
           ]
         }

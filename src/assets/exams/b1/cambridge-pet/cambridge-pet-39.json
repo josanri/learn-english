@@ -249,11 +249,12 @@
               "id": "r3-1",
               "prompt": "Why did the writer not know what to do with the camera at first?",
               "options": [
+                "It was old and unfamiliar",
                 "It was completely broken inside",
                 "It was far too expensive for her",
-                "It was old and unfamiliar"
+                "It had belonged to a stranger"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "It is a heavy metal camera from the 1970s that uses film."
             },
             {
@@ -261,21 +262,23 @@
               "prompt": "What did the shop owner advise?",
               "options": [
                 "To buy a lot more film to practise",
+                "To take pictures only of people",
                 "To think before taking a picture",
                 "To always use a flash indoors"
               ],
-              "answer": 1,
+              "answer": 2,
               "explanation": "He told her to think before pressing the button."
             },
             {
               "id": "r3-3",
               "prompt": "How was the old camera different from the phone?",
               "options": [
-                "It took only thirty-six pictures",
                 "It was much lighter to carry around",
-                "It could send pictures to friends"
+                "It could send pictures to friends",
+                "It was easier to use",
+                "It took only thirty-six pictures"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "The film allowed only thirty-six pictures, while the phone takes hundreds."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "Why did the writer's mother cry?",
               "options": [
                 "The pictures she saw were all blurry",
-                "The dog in the picture looked ill",
-                "It looked like an old family photo"
+                "It looked like an old family photo",
+                "The photo was of her grandmother",
+                "The dog in the picture looked ill"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "The photograph of the sleeping dog looked just like an old family picture."
             },
             {
               "id": "r3-5",
               "prompt": "How does the writer feel about photography now?",
               "options": [
-                "She looks at things more carefully",
+                "She wants a faster camera",
                 "She prefers using her phone again now",
+                "She looks at things more carefully",
                 "She is bored with photography by now"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She takes fewer pictures but looks at the world more carefully."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Taking better photographs",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Many people think that you need an expensive camera to take good photographs, but this is not true. [1] The following tips will help you take better pictures with any camera, even a phone.\n\nFirst, think about the light. The best time to take photographs is early in the morning or just before sunset, when the light is soft and golden. [2] In the middle of the day, the sun is high and can make faces look hard and shadowy.\n\nSecond, get closer to your subject. Beginners often stand too far away, so the person looks tiny. [3] If you are photographing a friend, try to fill the picture with their face.\n\nThird, look at the background before you press the button. [4] A tree growing out of someone's head is one of the most common mistakes! Moving one step to the side can solve the problem.\n\nFinally, do not be afraid to take many photographs. [5] Nobody becomes an expert without making mistakes, so keep practising.",
           "sentences": [
-            "Sometimes there is something strange behind your subject.",
-            "My brother likes to take photographs of birds.",
             "Many beautiful pictures are taken with very simple cameras.",
-            "You can always delete the ones that you do not like.",
+            "My brother likes to take photographs of birds.",
+            "Sometimes there is something strange behind your subject.",
             "Photographs taken then often look warm and magical.",
-            "This makes the details clearer and the picture more interesting."
+            "Do not forget to charge your phone before you go out.",
+            "You can always delete the ones that you do not like.",
+            "This makes the details clearer and the picture more interesting.",
+            "Flash makes faces look flat and white."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "A",
               "explanation": "\"This is not true\" is followed by evidence that simple cameras can produce beautiful pictures."
             },
             {
               "id": "r4-2",
-              "answer": "E",
+              "answer": "D",
               "explanation": "\"Taken then\" refers to early morning or sunset, when the light is soft and golden."
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "G",
               "explanation": "\"This\" refers to getting closer, which shows details; the example with a friend's face follows."
             },
             {
               "id": "r4-4",
-              "answer": "A",
+              "answer": "C",
               "explanation": "The strange thing behind the subject leads to the example of a tree growing out of a head."
             },
             {
               "id": "r4-5",
-              "answer": "D",
+              "answer": "F",
               "explanation": "\"The ones you do not like\" refers to the many photographs that you take."
             }
           ]
@@ -732,11 +739,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much is this camera?"
+                    "text": "Hi, I’d like this lens, please. How much is it?"
                   },
                   {
                     "speaker": "f",
-                    "text": "It is one hundred and twenty pounds, but there is a ten-pound discount today."
+                    "text": "It’s one hundred and twenty pounds, but it’s part of our weekend offer, so you get ten pounds off."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Oh, great. I saw the same lens online for one hundred, though."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes, but that one is out of stock, and the delivery costs extra. You’d wait two weeks."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "In that case I’ll buy it here. Can I pay by card?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. Would you like a case for it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, thanks. I already have a bag at home."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Fine. Just put your card in here."
                   }
                 ]
               },
@@ -749,21 +780,13 @@
                   "One hundred pounds"
                 ],
                 "answer": 1,
-                "explanation": "One hundred and twenty minus a ten-pound discount makes one hundred and ten."
+                "explanation": "The lens costs one hundred and twenty with ten pounds off; the online price of one hundred is out of stock and has extra delivery."
               }
             },
             {
               "id": "l1-2-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "f",
-                    "name": "Philippa",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "female"
-                    }
-                  },
                   {
                     "id": "m",
                     "name": "Wystan",
@@ -775,12 +798,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "When will my photos be ready?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "They'll be ready tomorrow at noon."
+                    "text": "Good afternoon, Ms Philippa. This is Wystan from Quick Photo. I told you yesterday that your photos would be ready today at five o’clock, but I’m afraid our machine broke this morning, so that’s not possible. I thought you would have to wait until next week on Monday, because the new part was coming from another city. But it arrived an hour ago, and the engineer fixed the machine. So you can come tomorrow at noon. Call me back if that’s not convenient. Thank you!"
                   }
                 ]
               },
@@ -793,7 +812,7 @@
                   "Next week on Monday"
                 ],
                 "answer": 0,
-                "explanation": "The photos will be ready tomorrow at noon."
+                "explanation": "Today at five is cancelled because the machine broke, and Monday is no longer needed because the part arrived; they are ready tomorrow at noon."
               }
             },
             {
@@ -820,11 +839,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "My camera won't switch on."
+                    "text": "My camera won’t switch on. I think it’s dead. I was going to buy a new one today."
                   },
                   {
                     "speaker": "f",
-                    "text": "It's probably the battery. Charge it for two hours and try again."
+                    "text": "Wait. Before you spend any money, have you charged the battery?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Not since last week, but it’s brand new."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Even so, try it first. You could take it to a repair shop, but they ask for thirty pounds just to look at it."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Hmm. And the shops have a sale next week, so I shouldn’t buy one today anyway."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Exactly. Plug it in tonight and see."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "You’re right. If it still doesn’t work tomorrow, then I’ll think about the shop."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good plan."
                   }
                 ]
               },
@@ -837,7 +880,7 @@
                   "Taking it to a repair shop"
                 ],
                 "answer": 0,
-                "explanation": "She says to charge the battery for two hours."
+                "explanation": "A new camera is not a good idea before the sale, and a repair shop is expensive; she says to plug in the battery first."
               }
             },
             {
@@ -864,11 +907,35 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Where should I take the photo of the lake?"
+                    "text": "Colm, where is the best place to take a picture of the lake?"
                   },
                   {
                     "speaker": "m",
-                    "text": "From the bridge. You'll see the mountains in the background."
+                    "text": "Most people stand at the edge of the water, but there are reeds there, and they hide the reflection."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "What about the hill behind the lake?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The view is great, but it takes forty minutes to climb, and you will be tired."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh. So where?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Go to the old stone bridge, halfway across. You can see the whole lake and the mill at the same time."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect. Is it far?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Ten minutes from the car park."
                   }
                 ]
               },
@@ -881,7 +948,7 @@
                   "On the hill behind it"
                 ],
                 "answer": 1,
-                "explanation": "He tells her to take it from the bridge."
+                "explanation": "The edge of the water has reeds and the hill takes forty minutes; the best view is halfway across the old stone bridge."
               }
             },
             {
@@ -895,24 +962,12 @@
                       "lang": "en-GB",
                       "gender": "male"
                     }
-                  },
-                  {
-                    "id": "f",
-                    "name": "Marianne",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "female"
-                    }
                   }
                 ],
                 "turns": [
                   {
-                    "speaker": "f",
-                    "text": "Do you prefer portraits or landscapes?"
-                  },
-                  {
                     "speaker": "m",
-                    "text": "Landscapes. People always move, but mountains wait for you."
+                    "text": "People often ask me why I prefer landscapes to portraits or animals. Some think it’s because you need less equipment, but I carry just as much as anybody else. Others think landscapes are easier to sell, but I’ve sold many more pictures of people. The real reason is much simpler. A mountain doesn’t move, it waits for you. A child runs away, a bird flies off, and a horse turns its head at the last second. With a landscape you have all the time you need to find the right place. For me, that’s the most relaxing way to work."
                   }
                 ]
               },
@@ -925,7 +980,7 @@
                   "They do not move"
                 ],
                 "answer": 2,
-                "explanation": "He says people always move, but mountains wait."
+                "explanation": "It is not about equipment or sales; a mountain waits, while children, birds and horses move."
               }
             },
             {
@@ -952,11 +1007,35 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Why are your photos so dark?"
+                    "text": "Rhonda, your photos from the party are very dark."
                   },
                   {
                     "speaker": "f",
-                    "text": "I forgot to turn on the flash when we were inside."
+                    "text": "I know. I thought at first that the lens was dirty, because it rained and I wiped it with my sleeve."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The lens looks clean to me. Is the camera too old?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s ten years old, but it works fine. No, the problem is simpler. It was dark in the room and I forgot to turn it on."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "The flash?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Yes. I never remember it in a dark room. Next time I’ll check before I take the first picture."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. You can still brighten them on a computer."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ll try that."
                   }
                 ]
               },
@@ -969,21 +1048,13 @@
                   "The camera was too old to work"
                 ],
                 "answer": 0,
-                "explanation": "She forgot to turn on the flash."
+                "explanation": "The lens was clean and the camera works; she forgot to turn on the flash in a dark room."
               }
             },
             {
               "id": "l1-7-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "m",
-                    "name": "Alvin",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "f",
                     "name": "Bonnie",
@@ -995,12 +1066,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "m",
-                    "text": "Could you take a group photo of us, please?"
-                  },
-                  {
                     "speaker": "f",
-                    "text": "Of course. Stand a little closer together, and everybody smile."
+                    "text": "Right, everyone, your attention, please. We’re going to take the group picture. Some of you are standing in the bright sun, but your eyes will close, so let’s stay in the shade by the wall. A few people want to sit on the grass, but it’s still wet from the rain, so please stand. And I can see there are too many gaps. I can’t fit all twenty of you into the picture. Come a bit nearer to each other, please. Yes, that’s better. Smile, everybody!"
                   }
                 ]
               },
@@ -1013,7 +1080,7 @@
                   "Sit down on the soft grass"
                 ],
                 "answer": 1,
-                "explanation": "She asks them to stand a little closer together."
+                "explanation": "They stay in the shade and stand because the grass is wet; the problem is gaps, so she asks them to come nearer to each other."
               }
             }
           ]
@@ -1048,12 +1115,32 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Good morning. What seems to be the problem?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "I bought this camera last week, and it doesn't work. I'd like my money back, please."
+                    "text": "I bought this camera here last Saturday and it doesn’t work properly. The screen goes black after two minutes."
                   },
                   {
                     "speaker": "m",
-                    "text": "I am sorry. Do you have the receipt?"
+                    "text": "I’m sorry. We can change it for another colour, if you like."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I like this colour. And a longer guarantee doesn’t help me when the thing is already broken."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "We could swap it for another one then."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’ve lost my trust in it, to be honest. I’d rather have my money back, please. I’ve got the receipt here."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Of course. One moment, please."
                   }
                 ]
               },
@@ -1066,7 +1153,7 @@
                   "Her money back"
                 ],
                 "answer": 2,
-                "explanation": "She says she would like her money back."
+                "explanation": "She does not want another colour or a longer guarantee; she has lost her trust in the camera and asks for a refund."
               }
             },
             {
@@ -1093,15 +1180,31 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Who is going to take photos at the party?"
+                    "text": "Ernest here. Faith, we need someone to take photos at Gran’s birthday party."
                   },
                   {
                     "speaker": "f",
-                    "text": "I will. I've got a really good camera, and I know how to use it."
+                    "text": "Shall we hire a professional? I think it’s about a hundred and fifty pounds."
                   },
                   {
                     "speaker": "m",
-                    "text": "Great, thanks."
+                    "text": "That’s a lot. We could just enjoy the day and not take any."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, we’ll be sorry later. It’s a memory. What about our cousin Lily? She has a good camera."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Lily! She’s only fifteen, but she loves it. And she’s free on Sunday."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Then it’s decided. I’ll call her tonight."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Brilliant. Thanks."
                   }
                 ]
               },
@@ -1114,7 +1217,7 @@
                   "They will not take any photos at all"
                 ],
                 "answer": 1,
-                "explanation": "She says she will take photos with her good camera."
+                "explanation": "A professional is too expensive and they want photos as a memory, so they decide to ask their cousin Lily."
               }
             },
             {
@@ -1141,28 +1244,44 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "For your project, I want you to photograph your neighbourhood and write a short sentence about each picture."
+                    "text": "Glenn, your project on the neighbourhood: I’d like you to photograph it."
                   },
                   {
                     "speaker": "m",
-                    "text": "How many pictures do we need?"
+                    "text": "Take photos? I thought we had to draw a map or interview a neighbour."
                   },
                   {
                     "speaker": "f",
-                    "text": "Ten."
+                    "text": "Those were last year’s ideas. This year you choose five places that matter to you and photograph them."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s great! I love walking around with my camera, and now it counts for school."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "I’m glad you like it. You have two weeks."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It won’t take long. I can start today."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Wonderful. Bring them on a memory stick."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the homework?",
+                "prompt": "How does Glenn feel about the homework?",
                 "options": [
-                  "Photograph the neighbourhood",
-                  "Draw a large map of the whole area",
-                  "Interview a neighbour about it"
+                  "Interested because it is outdoors",
+                  "Worried about the time it takes",
+                  "Bored by the topic"
                 ],
                 "answer": 0,
-                "explanation": "The students must photograph their neighbourhood."
+                "explanation": "The map and interview were last year; Glenn loves walking with his camera, so he is pleased with the homework."
               }
             },
             {
@@ -1189,11 +1308,43 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Excuse me, could you take a photo of me in front of the statue?"
+                    "text": "Excuse me, could you help me?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Sure. Do you want me to take two or three, to be safe?"
+                    "text": "Sure. Are you lost? The station is that way."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "No, I know the way, thanks. And I have my own camera. I just want a photo of me in front of the castle, and I have nobody with me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. Where do you want to stand?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Here, with the tower behind me."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Say cheese!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you so much. Can you take one more, in case I blinked?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No problem at all."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thank you, you’re very kind. Enjoy your holiday!"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You too."
                   }
                 ]
               },
@@ -1206,7 +1357,7 @@
                   "Take his photo"
                 ],
                 "answer": 2,
-                "explanation": "He asks her to take a photo of him in front of the statue."
+                "explanation": "He knows the way and has his own camera; he needs a stranger to take a photo of him."
               }
             },
             {
@@ -1233,24 +1384,48 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "What would you like for your birthday, Fred?"
+                    "text": "What shall we get Tom for his birthday?"
                   },
                   {
                     "speaker": "m",
-                    "text": "A camera, Mum. A proper one, so I can take pictures at the football matches."
+                    "text": "He asked for a computer game, but he plays too much already."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And a new bike for school?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "His old one is fine. What he talks about all the time is a camera."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "True, he took my phone last week to take pictures of the cat. Let’s buy one then."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "A cheap one, so he can learn."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Agreed. And we’ll hide it in the wardrobe until Saturday, because he always looks in the cupboards."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Good idea. I’ll wrap it tonight, when he’s in bed."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What present does the boy want?",
+                "prompt": "What do the two adults agree to give the boy?",
                 "options": [
                   "A camera",
-                  "A new bike for school",
+                  "A new bike",
                   "A computer game"
                 ],
                 "answer": 0,
-                "explanation": "He asks for a proper camera."
+                "explanation": "The game is bad for him and the bike is not necessary; the adults agree on a cheap camera."
               }
             },
             {
@@ -1277,11 +1452,39 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "You won't believe it! My photo of the harbour won the competition."
+                    "text": "Seamus, guess what? I have some great news."
                   },
                   {
                     "speaker": "m",
-                    "text": "That is fantastic! Congratulations!"
+                    "text": "A new part-time job? You said you needed one."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "No, I’m still looking."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Did you pass your driving test?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "That’s next month. No, my photo of the sunset won the school competition!"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Fantastic! What do you win?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "A weekend course, and they’ll print the photo in the school magazine."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m so proud of you. Your mum will be thrilled, and your teacher too. You worked so hard on that picture."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Thanks. I got up at five to catch the light!"
                   }
                 ]
               },
@@ -1294,7 +1497,7 @@
                   "She won a competition"
                 ],
                 "answer": 2,
-                "explanation": "Her photo of the harbour won the competition."
+                "explanation": "She is still looking for a job and the driving test is next month; her sunset photo won the school competition."
               }
             }
           ]
@@ -1319,55 +1522,46 @@
             "turns": [
               {
                 "speaker": "sylvester",
-                "text": "Hello, everyone, and welcome to today's photography workshop. We'll start at the park gate at ten o'clock and finish at one. First, I'll show you how to hold your camera properly. Use both hands, and keep your elbows close to your body. Then we'll practise taking pictures of flowers near the lake. After a break for lunch, we'll try photographing moving things, such as birds. Don't worry if your photos are blurry at first. At the end, we'll choose the three best photographs, and the winner gets a book about photography. The workshop costs fifteen pounds. Please wear comfortable shoes, because we'll walk about three kilometres altogether."
+                "text": "Hello, everyone, and welcome to today’s photography workshop. My name is Sylvester. We will start at the park gate at ten o’clock and finish at one. Please don’t come at nine, because nobody will be here and the gate is locked. First, I’ll show you how to hold your camera, because most beginners take blurry pictures. Many people hold it with one hand, like a phone, but you should use both hands and keep your elbows close to your body. Next, the subject. We are going to walk to the lake. Many of you will want to photograph the ducks and the boats, and you can do that at the end, but for the first exercise I want you to photograph flowers. They stay still, and they teach you about light. Now, the competition. At the end of the day, I’ll choose the best picture. The winner doesn’t get a camera, I’m afraid, but a book about photography, with beautiful pictures by famous photographers. Next, money. The workshop costs fifteen pounds for each person. It was twenty last year, but our new sponsor helps us. Members of the photo club pay only ten, but only if they show their card, so please find it now. Finally, the walk. The path around the lake is five kilometres long, but we won’t do all of it. We will walk about three kilometres and stop often to take pictures. Please wear comfortable shoes, and bring water and a hat in case it’s sunny. If you have a tripod, bring it, but it isn’t necessary. I will also give you a printed map of the park at the gate, and a list of the rules for taking photos near the water. Please keep it with you all day. Are there any questions before we start?"
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The workshop starts at ___ o'clock",
+              "prompt": "Participants meet at the park gate at ___ o'clock",
               "answer": "ten",
-              "accepted": [
-                "10"
-              ],
-              "explanation": "The workshop starts at the park gate at ten o'clock."
+              "explanation": "They finish at one and nobody comes at nine; the workshop starts at ten."
             },
             {
               "id": "l3-2",
-              "prompt": "Hold the camera with both ___",
+              "prompt": "To avoid blurry pictures, hold the camera with two ___",
               "answer": "hands",
-              "explanation": "He says to use both hands."
+              "explanation": "Most beginners use one hand; he says to use both hands."
             },
             {
               "id": "l3-3",
-              "prompt": "The class will photograph ___ near the lake",
+              "prompt": "For the first exercise, the class will take pictures of ___",
               "answer": "flowers",
-              "explanation": "They will practise taking pictures of flowers near the lake."
+              "explanation": "Ducks and boats are for the end; first they photograph flowers."
             },
             {
               "id": "l3-4",
-              "prompt": "The winner gets a ___ about photography",
+              "prompt": "The prize for the best picture is a ___ with photos by famous people",
               "answer": "book",
-              "explanation": "The winner gets a book about photography."
+              "explanation": "The winner does not get a camera but a book about photography."
             },
             {
               "id": "l3-5",
-              "prompt": "The workshop costs ___ pounds",
+              "prompt": "Each person pays ___ pounds",
               "answer": "fifteen",
-              "accepted": [
-                "15"
-              ],
-              "explanation": "The workshop costs fifteen pounds."
+              "explanation": "It was twenty last year and club members pay ten; the normal price is fifteen."
             },
             {
               "id": "l3-6",
-              "prompt": "The group will walk about ___ kilometres",
+              "prompt": "The group's route is roughly ___ kilometres long",
               "answer": "three",
-              "accepted": [
-                "3"
-              ],
-              "explanation": "They will walk about three kilometres altogether."
+              "explanation": "The path is five kilometres, but they walk about three."
             }
           ]
         },
@@ -1399,27 +1593,27 @@
             "turns": [
               {
                 "speaker": "roisin",
-                "text": "My guest today is Marlon Dacey, a travel photographer. Marlon, how did you pay for your first camera?"
+                "text": "Marlon, how did you pay for your first camera?"
               },
               {
                 "speaker": "marlon",
-                "text": "I was fourteen, and I delivered newspapers every morning for eight months. It was a secondhand camera, but I thought it was the most beautiful thing in the world."
+                "text": "My parents wanted to buy it, but I said no, I wanted to earn it myself. I won a school competition once, but the prize was a book, so that didn’t help. At thirteen I delivered newspapers every morning for eight months, in rain and in snow, and I saved everything. When I finally bought that camera, I felt really proud."
               },
               {
                 "speaker": "roisin",
-                "text": "Has anything ever gone badly wrong?"
+                "text": "You had a problem in Peru. How did you feel?"
               },
               {
                 "speaker": "marlon",
-                "text": "Yes. In Peru, I dropped my camera into a river and lost six hundred pictures. I sat on the bank for an hour and nearly gave up."
+                "text": "People think I lost my passport and my money, or that my camera was stolen, because those things happen to travellers. No, I slipped on a rock and the camera fell into the river. Strangely, I was calm, because I had saved the pictures that morning. The camera was expensive, but I wasn’t worried about the money. My guide felt terrible, and I wasn’t angry with him at all, it was my fault, and I laughed about it that evening."
               },
               {
                 "speaker": "roisin",
-                "text": "Which is your favourite country to photograph?"
+                "text": "Why do you like photographing Iceland?"
               },
               {
                 "speaker": "marlon",
-                "text": "Iceland. The light changes every few minutes, so you can stand in one place and take twenty completely different pictures."
+                "text": "It isn’t cheap, honestly, tourists spend a fortune there. And the people are friendly, but they are friendly in other countries too. What I love is the light. It changes every minute: clear blue, then grey cloud, then orange. You never take the same photo twice, and that keeps me interested after so many visits. I’ve been four times."
               },
               {
                 "speaker": "roisin",
@@ -1427,23 +1621,23 @@
               },
               {
                 "speaker": "marlon",
-                "text": "It tells a story. You look at it and wonder what happened before and what will happen next. The colours matter less than people think."
+                "text": "A famous place isn’t enough. You see those pictures everywhere, and they’re boring. Colour is nice, but black and white can be wonderful too. A good photograph tells a story. When you look at it, you ask: who is this person, and what happens next? That’s the difference between a postcard and a real picture."
               },
               {
                 "speaker": "roisin",
-                "text": "What advice would you give to a beginner?"
+                "text": "What advice do you give beginners?"
               },
               {
                 "speaker": "marlon",
-                "text": "Print your photographs. On a screen, you glance and move on, but a printed picture makes you look properly."
+                "text": "Don’t buy expensive equipment. My first camera was cheap, and I learned more with it. Don’t photograph only people either, try everything. My best advice is to print your photographs. On a screen you see them for two seconds, but on a wall you notice the details and the mistakes."
               },
               {
                 "speaker": "roisin",
-                "text": "And what comes next for you?"
+                "text": "What are you planning for next year?"
               },
               {
                 "speaker": "marlon",
-                "text": "I'm having an exhibition in London next year, with pictures from twenty years of travelling."
+                "text": "A book about Peru is an idea, my publisher asks me every month, but I’m not ready. Teaching abroad sounds nice, but I’d miss my own work. What’s certain is an exhibition in London in May. I’m excited, and a little nervous, to be honest. Fifty of my photographs will be on the wall, and I still have to choose them."
               }
             ]
           },
@@ -1457,18 +1651,18 @@
                 "He won it in a competition"
               ],
               "answer": 1,
-              "explanation": "He delivered newspapers every morning for eight months."
+              "explanation": "His parents offered to pay and the competition prize was a book; he delivered newspapers for eight months."
             },
             {
               "id": "l4-2",
-              "prompt": "What went wrong in Peru?",
+              "prompt": "How did Marlon feel after he dropped his camera in the river?",
               "options": [
-                "He lost his passport and his money",
-                "He dropped his camera in a river",
-                "His camera was stolen from his bag"
+                "Angry with his guide",
+                "Calm because he had saved the pictures",
+                "Worried about the cost"
               ],
               "answer": 1,
-              "explanation": "He dropped his camera into a river and lost six hundred pictures."
+              "explanation": "He was not angry with his guide and not worried about money; he was calm because he had saved the pictures."
             },
             {
               "id": "l4-3",
@@ -1479,7 +1673,7 @@
                 "The people there are very friendly"
               ],
               "answer": 0,
-              "explanation": "The light changes every few minutes, so he can take very different pictures."
+              "explanation": "Tourists spend a fortune and the people are friendly everywhere; what he loves is that the light changes every minute."
             },
             {
               "id": "l4-4",
@@ -1490,7 +1684,7 @@
                 "It tells a story"
               ],
               "answer": 2,
-              "explanation": "He says a good photograph tells a story."
+              "explanation": "A famous place is boring and colour is only nice; a good photograph tells a story."
             },
             {
               "id": "l4-5",
@@ -1501,7 +1695,7 @@
                 "Only photograph people"
               ],
               "answer": 1,
-              "explanation": "He tells beginners to print their photographs."
+              "explanation": "He says that expensive equipment is not necessary and people are not the only subject; he advises printing photographs."
             },
             {
               "id": "l4-6",
@@ -1512,7 +1706,7 @@
                 "A new job as a teacher abroad"
               ],
               "answer": 0,
-              "explanation": "He is having an exhibition in London next year."
+              "explanation": "The book and the teaching job are only ideas; the exhibition in London in May is certain."
             }
           ]
         }

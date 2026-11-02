@@ -249,33 +249,36 @@
               "id": "r3-1",
               "prompt": "Why do they leave at five?",
               "options": [
+                "The water is warmer then",
                 "The path is very long",
-                "Fish are hungry at dawn",
-                "The river is crowded"
+                "The river is crowded",
+                "Fish are hungry at dawn"
               ],
-              "answer": 1,
+              "answer": 3,
               "explanation": "He says that the fish are most hungry at dawn."
             },
             {
               "id": "r3-2",
               "prompt": "What did the writer think about fishing before?",
               "options": [
+                "It was boring",
                 "It was too expensive",
                 "It was dangerous",
-                "It was boring"
+                "It was too noisy"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "She used to find fishing boring."
             },
             {
               "id": "r3-3",
               "prompt": "What did she notice by the water?",
               "options": [
-                "Birds and animals",
                 "Boats and people",
+                "Rocks and plants",
+                "Birds and animals",
                 "Some rubbish"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "She noticed a kingfisher and an otter."
             },
             {
@@ -283,21 +286,23 @@
               "prompt": "Why did they put the big fish back?",
               "options": [
                 "It was not good to eat",
+                "The river needs big fish",
                 "It was too heavy to carry",
-                "The river needs big fish"
+                "It belonged to her grandfather"
               ],
-              "answer": 2,
+              "answer": 1,
               "explanation": "Her grandfather explained that big fish are the mothers, and the river needs them."
             },
             {
               "id": "r3-5",
               "prompt": "How did she feel at the end?",
               "options": [
-                "Sad but proud",
+                "Nervous and hungry",
                 "Angry and tired",
-                "Bored and cold"
+                "Bored and cold",
+                "Sad but proud"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "She felt a little sad, but also proud."
             }
           ]
@@ -306,41 +311,43 @@
           "id": "reading-4",
           "number": 4,
           "title": "Rivers around the world",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "Rivers have always been important for people. [1] The earliest cities grew up beside great rivers, because the land there was good for farming.\n\nA river starts as a small stream high in the mountains. [2] As it moves downhill, more streams join it, and it becomes wider and stronger.\n\nMany rivers carry boats and goods. [3] Before roads and railways, it was often the fastest way to travel from one town to another.\n\nRivers are also home to many animals. [4] Otters, fish and birds all depend on clean water to survive.\n\nUnfortunately, some rivers are becoming polluted. [5] If we want to keep them healthy, everyone must help to protect them.",
           "sentences": [
+            "Ships and barges can carry heavy loads over long distances.",
+            "Bridges were built wherever the river was narrow.",
+            "Hundreds of tourists swim in it every summer.",
             "Rain and melting snow feed it from the beginning.",
             "Fishing is a popular hobby in many countries.",
             "They supplied water for drinking, washing and growing food.",
-            "Some species live nowhere else on Earth.",
             "Factories and farms sometimes pour waste into the water.",
-            "Ships and barges can carry heavy loads over long distances."
+            "Some species live nowhere else on Earth."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "C",
+              "answer": "F",
               "explanation": "Rivers supplied water and food, and the next sentence says early cities grew beside them."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "D",
               "explanation": "Rain and snow feed the stream; the next sentence says more streams join it."
             },
             {
               "id": "r4-3",
-              "answer": "F",
+              "answer": "A",
               "explanation": "Ships carry heavy loads, and the next sentence says it was the fastest way before roads."
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "H",
               "explanation": "Some species live nowhere else; the next sentence lists otters, fish and birds."
             },
             {
               "id": "r4-5",
-              "answer": "E",
+              "answer": "G",
               "explanation": "Waste is poured into the water, which causes pollution; the next sentence says we must protect rivers."
             }
           ]
@@ -734,11 +741,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What did you catch?"
+                    "text": "That’s a nice fish, young man. Are you taking it home for dinner?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Just a small trout, so I put it back."
+                    "text": "I thought about cooking it at home, my dad loves trout. And my friend Leo wanted it for his cat. But it’s under the size limit, and it was still alive, so I let it go. It swam back into the water really fast."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Good boy. Fishing is all about patience."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, and I’ll catch a bigger one next time."
                   }
                 ]
               },
@@ -751,7 +766,7 @@
                   "Gave it to a friend"
                 ],
                 "answer": 1,
-                "explanation": "He says he put the small trout back."
+                "explanation": "He thought about cooking it and about giving it to Leo, but the fish was too small, so he returned it to the water."
               }
             },
             {
@@ -778,11 +793,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How deep is the river here?"
+                    "text": "Is it safe to swim across? How deep is the river?"
                   },
                   {
                     "speaker": "b",
-                    "text": "About two metres in the middle, but it is shallow near the bank."
+                    "text": "Near the bank it’s only about one metre, so you can stand. In the middle it’s about two metres, enough to cover your head. The sign by the bridge says twelve, but that’s for the lake, not the river. Nobody has corrected it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Twelve metres would be a very deep river!"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Exactly. Anyway, the middle is only two metres, but it’s still not a place for a beginner."
                   }
                 ]
               },
@@ -795,21 +818,13 @@
                   "About one metre"
                 ],
                 "answer": 0,
-                "explanation": "He says it is about two metres in the middle."
+                "explanation": "The sign that says twelve is wrong for the river; near the bank it is one metre and in the middle about two."
               }
             },
             {
               "id": "l1-3-clip",
               "recording": {
                 "speakers": [
-                  {
-                    "id": "a",
-                    "name": "Boy",
-                    "voice": {
-                      "lang": "en-IE",
-                      "gender": "male"
-                    }
-                  },
                   {
                     "id": "b",
                     "name": "Woman",
@@ -821,12 +836,8 @@
                 ],
                 "turns": [
                   {
-                    "speaker": "a",
-                    "text": "Where can I hire a rod?"
-                  },
-                  {
                     "speaker": "b",
-                    "text": "From the shop by the bridge. They open at six."
+                    "text": "Hello, this is Greta from River Bait and Tackle with news for all anglers. We used to open at eight, like every other shop in town. Last summer we tried seven, but customers told us that the fish bite best at dawn. So from this Monday we will open at six, and you can buy your bait before sunrise. Maybe in winter we will change again, when it’s dark and cold, but for now six is the time. We also sell hot tea. See you soon."
                   }
                 ]
               },
@@ -839,7 +850,7 @@
                   "At eight"
                 ],
                 "answer": 0,
-                "explanation": "She says the shop opens at six."
+                "explanation": "They opened at eight and then at seven, and winter might bring a change; from Monday the shop opens at six."
               }
             },
             {
@@ -866,11 +877,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Is it a good place to swim?"
+                    "text": "Are you going to swim here, Jamie?"
                   },
                   {
                     "speaker": "b",
-                    "text": "No, the current is too strong, but it is great for fishing."
+                    "text": "It looks lovely and clear. I thought the water would be dirty, like near the factory, but it isn’t. And it’s July, so it can’t be too cold."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Look at the sticks. They’re moving so fast. The current is very strong here, and last year it pulled a man away. Go to the beach instead."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "OK. It’s a pity, though. I brought my new swimming shorts and everything."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "There’s a safe lake twenty minutes from here, with a lifeguard. We can go there after lunch."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Great idea."
                   }
                 ]
               },
@@ -883,7 +910,7 @@
                   "The water is too cold"
                 ],
                 "answer": 1,
-                "explanation": "He says the current is too strong."
+                "explanation": "The water is clean and warm enough, but the sticks are moving fast, which shows the current is strong."
               }
             },
             {
@@ -910,11 +937,19 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "How was your weekend?"
+                    "text": "Did you have a nice weekend in the city, Hana?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Wonderful. We camped by the river and cooked fish on a fire."
+                    "text": "I was going to go. My cousin lives in a big city and we planned to visit museums, but it was too expensive. We wanted a hotel as well, but all of them were full. So in the end we put up a tent next to the river near my grandma’s village. We could hear the water all night."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "That sounds peaceful."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "It was. I’ll go to the city in the summer."
                   }
                 ]
               },
@@ -927,7 +962,7 @@
                   "Camped by a river"
                 ],
                 "answer": 2,
-                "explanation": "She says they camped by the river."
+                "explanation": "The city and the hotel were plans that failed; instead she slept in a tent beside the river."
               }
             },
             {
@@ -954,11 +989,27 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Do you want some bread for the ducks?"
+                    "text": "Look, the ducks are coming! I’ll give them my sandwich."
                   },
                   {
                     "speaker": "b",
-                    "text": "Better not. Our teacher says it is bad for them."
+                    "text": "Wait, don’t. There’s a sign that says bread makes them ill. They need seeds or peas."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Oh, I didn’t know. I thought the problem was that they were asleep at this time, or that there is none left in the shop."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, they’re awake, you can see them. And it’s not true that there is none left, we still have plenty in the bag, but please keep it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Fine. Let’s buy some peas then. There’s a shop near the car park, and we can come back before it gets dark."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Good plan. The ducks will be happy."
                   }
                 ]
               },
@@ -971,7 +1022,7 @@
                   "There is none left"
                 ],
                 "answer": 0,
-                "explanation": "He says their teacher says bread is bad for the ducks."
+                "explanation": "He says the sign warns that bread makes the ducks ill; they are awake and there is plenty of bread."
               }
             },
             {
@@ -985,24 +1036,12 @@
                       "lang": "en-IE",
                       "gender": "female"
                     }
-                  },
-                  {
-                    "id": "b",
-                    "name": "Man",
-                    "voice": {
-                      "lang": "en-US",
-                      "gender": "male"
-                    }
                   }
                 ],
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "What time does the boat leave?"
-                  },
-                  {
-                    "speaker": "b",
-                    "text": "At twenty past two, from the harbour steps."
+                    "text": "Good afternoon, and welcome to River Tours. Last summer our boat left from the old bridge, but it is closed for repairs. Some customers walk to the car park because the sign still points that way, but the boat cannot get there. The correct place is the steps by the harbour, next to the ice-cream stand. Please arrive twenty minutes early and bring a coat, because it can be cold on the water. Tickets are on sale at the harbour office. Thank you for choosing River Tours."
                   }
                 ]
               },
@@ -1015,7 +1054,7 @@
                   "The car park"
                 ],
                 "answer": 1,
-                "explanation": "He says it leaves from the harbour steps."
+                "explanation": "The old bridge is closed and the sign to the car park is wrong; passengers must go to the steps by the harbour."
               }
             }
           ]
@@ -1051,28 +1090,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "I would like a permit for the lake, please."
+                    "text": "Do you really sit for five hours with a rod, Hal? I’d be bored."
                   },
                   {
                     "speaker": "b",
-                    "text": "A day permit or a weekly one?"
+                    "text": "Everyone says that, and my wife says it’s a waste of time as well, but I disagree. I turn off my phone, listen to the water, and my head feels clear for the first time in the week."
                   },
                   {
                     "speaker": "a",
-                    "text": "A day permit, please."
+                    "text": "But what if you catch nothing?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "That happens often. It doesn’t matter."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Then why do you go?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Because I come home so calm. Honestly, it’s very relaxing, even when the fish ignore me."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What does the man want?",
+                "prompt": "What does Hal think about waiting for fish?",
                 "options": [
-                  "Some bait",
-                  "A new rod",
-                  "A day permit"
+                  "It is boring",
+                  "It is relaxing",
+                  "It is a waste of time"
                 ],
-                "answer": 2,
-                "explanation": "He asks for a day permit."
+                "answer": 1,
+                "explanation": "His friend and his wife say it is boring or useless, but Hal says he turns off his phone and comes home calm."
               }
             },
             {
@@ -1099,24 +1150,48 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "You are covered in mud! What have you been doing?"
+                    "text": "Rory, why are you all wet?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Fishing. I fell in the river, but I caught two fish!"
+                    "text": "I slipped on a stone and fell in. All my friends were watching, and they laughed. I wanted to disappear."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Did you lose your phone?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, it was in my bag, safe. And my brother wasn’t even there, he was at home. I’m just so embarrassed. I’ll never go back."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "It could happen to anybody."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, but not in front of everyone. And now I have to walk home in these wet trousers, past the whole village."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "I’ll lend you my jacket."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Thanks, that helps a little."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "What happened to the boy?",
+                "prompt": "How does the boy feel about falling in the river?",
                 "options": [
-                  "He lost his phone",
-                  "He fell in the river",
-                  "He missed school"
+                  "Angry with his brother",
+                  "Worried about his phone",
+                  "Embarrassed in front of his friends"
                 ],
-                "answer": 1,
-                "explanation": "He says he fell in the river."
+                "answer": 2,
+                "explanation": "His phone is safe and his brother was at home; what bothers him is that his friends saw him and laughed."
               }
             },
             {
@@ -1143,24 +1218,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Please remember to take your litter home. Last week we found fishing lines in the trees, and they can hurt birds."
+                    "text": "Do many visitors come now?"
                   },
                   {
                     "speaker": "b",
-                    "text": "We are sorry. We will be more careful."
+                    "text": "More every year. That’s good for the café, but they bring bags, bottles and cans, and the birds eat bits of plastic."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Do they make a lot of noise?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "No, people are quiet by the water, and most are friendly and polite when I talk to them. They ask questions about the birds and the fish, which I like."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "And fires?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Very rarely, the signs work. It’s the litter I can’t stand."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the ranger worried about?",
+                "prompt": "What is the ranger most unhappy about?",
                 "options": [
-                  "Litter hurting birds",
-                  "Too much noise",
+                  "Litter that harms the birds",
+                  "The noise of visitors",
                   "Fires near the trees"
                 ],
                 "answer": 0,
-                "explanation": "She says fishing lines in the trees can hurt birds."
+                "explanation": "Visitors are quiet and fires are rare; the ranger cannot stand the bags and plastic that the birds eat."
               }
             },
             {
@@ -1187,24 +1278,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Fancy fishing on Sunday?"
+                    "text": "Shall we fish on Saturday?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Sounds good, but let me check the weather first. If it pours, I would rather stay at home."
+                    "text": "The bait costs a lot now, but my dad has some worms in the garden, so that’s fine. And the river isn’t far, only twenty minutes by bike."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "So it all depends on the forecast, doesn’t it? I’d hate to carry the rods for nothing."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes, if it rains the path is muddy and the river is high. Let’s decide on Friday night."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Agreed. I’ll check the website tonight and send you a message. If it’s dry, meet me at the bridge at eight."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Perfect, I’ll bring the sandwiches."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What will the girl do first?",
+                "prompt": "What do the friends agree about Saturday?",
                 "options": [
-                  "Ask her father",
-                  "Buy some bait",
-                  "Check the weather"
+                  "The bait is too expensive",
+                  "The river is too far away",
+                  "It depends on the weather"
                 ],
                 "answer": 2,
-                "explanation": "She says she wants to check the weather first."
+                "explanation": "Bait and distance are solved; both say that rain would make the path muddy, so they will decide after the forecast."
               }
             },
             {
@@ -1231,24 +1338,40 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "For your project, choose a river and find out three facts about it. You can use the library or the internet."
+                    "text": "Have you picked a river for the project, Sam?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Can we work in pairs?"
+                    "text": "Not yet. My first idea was the Thames, because it’s famous, but everybody will choose that. Then I thought about the river near my grandad’s, but I don’t know anything about it."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Do you like the topic?"
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Honestly, yes, it’s just hard to decide."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Take until Friday, then. I can give you a book about rivers if you want some ideas."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Yes please, that would be really useful. I’ll start reading tonight."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "What must the students do?",
+                "prompt": "How does Sam feel about the river project?",
                 "options": [
-                  "Research a river",
-                  "Write a story",
-                  "Draw a map"
+                  "Sure about his topic",
+                  "Unsure what to choose",
+                  "Bored by the subject"
                 ],
-                "answer": 0,
-                "explanation": "The teacher asks them to choose a river and find out three facts."
+                "answer": 1,
+                "explanation": "He has two ideas that he rejects and he likes the topic, but he cannot decide."
               }
             },
             {
@@ -1275,11 +1398,23 @@
                 "turns": [
                   {
                     "speaker": "a",
-                    "text": "Hello, I booked a boat trip for tomorrow, but I need to change it to Friday."
+                    "text": "Hello, I booked the river trip for Saturday for four people. But my sister can’t come, and my husband has a cold, so now it’s only two. Could we go on Sunday?"
                   },
                   {
                     "speaker": "b",
-                    "text": "Let me check. Yes, we have places on Friday at ten."
+                    "text": "Sunday has space. Is the price a problem?"
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "No, I’m not asking about the price, it’s fine. And I don’t want to cancel, we still want to go."
+                  },
+                  {
+                    "speaker": "b",
+                    "text": "Then I’ll change the booking to Sunday at eleven. You have to pay nothing extra."
+                  },
+                  {
+                    "speaker": "a",
+                    "text": "Lovely, thank you very much. I’ll tell my husband, he’ll be happy to rest on Saturday."
                   }
                 ]
               },
@@ -1287,12 +1422,12 @@
                 "id": "l2-6q",
                 "prompt": "What does the woman want to do?",
                 "options": [
+                  "Change her booking",
                   "Ask about the price",
-                  "Cancel a trip",
-                  "Change a booking"
+                  "Cancel the trip"
                 ],
-                "answer": 2,
-                "explanation": "She wants to change her boat trip to Friday."
+                "answer": 0,
+                "explanation": "She does not ask the price and does not cancel; she wants the trip on a different day for two people."
               }
             }
           ]
@@ -1317,7 +1452,7 @@
             "turns": [
               {
                 "speaker": "guide",
-                "text": "Good morning, everyone, and welcome to Lakeside Fishing Day. My name is Ziv. First, let me explain the rules. You may keep up to two fish, and they must be longer than twenty centimetres. Smaller fish go back in the water. Fishing starts at seven and finishes at three, and there is a lunch break at noon, when the cafe serves sandwiches and soup. Use the red buckets for fish and the green bins for rubbish. The best fish usually bite near the old tree on the north side of the lake, but please do not climb on it. At two o'clock, there will be a prize for the biggest fish. If you need help, wave to one of our guides, who wear orange jackets. Good luck!"
+                "text": "Good morning, everyone, and welcome to Lakeside Fishing Day. My name is Ziv. First, let me explain the rules. Last year people could take home four fish, but the lake is smaller now, so you may keep up to two fish. If you catch more, please put them back. Also think about size. Fish smaller than ten centimetres are babies, and for the tiny kind the law says fifteen, but for the fish in this lake the minimum is twenty centimetres. We have rulers on every table. Now the timetable. Breakfast is at six, but fishing doesn’t start then. Some people ask to begin earlier, because the fish are active at dawn, but the council doesn’t allow it. You can put your lines in the water at seven o’clock, and we stop at noon. Next, buckets. You will find buckets at every place. The blue ones are for water and the green ones are for bait, so please don’t mix them. The fish you want to keep go in the red buckets. Remember to change the water in them every hour. Where to fish? Many people stay near the dock, because it is easy to reach, but the fish there are small. The best fish usually bite near the old tree on the north side, where the water is deeper and it’s shady. It takes ten minutes to walk there. Finally, if you need help, look for the guides. We wear orange jackets, so you can see us from far away. Last year our jackets were yellow, but that confused people, because the safety staff wear yellow. So now we are orange. If you have any problem, put your hand up and we’ll come. Right, let’s get started! Pick up a rod and a bucket, and enjoy the day."
               }
             ]
           },
@@ -1326,46 +1461,37 @@
               "id": "l3-1",
               "prompt": "Visitors may keep up to ___ fish",
               "answer": "two",
-              "accepted": [
-                "2"
-              ],
-              "explanation": "He says you may keep up to two fish."
+              "explanation": "Four fish was last year’s limit; now they may keep two."
             },
             {
               "id": "l3-2",
               "prompt": "Fish must be longer than ___ centimetres",
               "answer": "twenty",
-              "accepted": [
-                "20"
-              ],
-              "explanation": "He says they must be longer than twenty centimetres."
+              "explanation": "Ten and fifteen are other sizes; for this lake the minimum is twenty centimetres."
             },
             {
               "id": "l3-3",
               "prompt": "Fishing starts at ___ o'clock",
               "answer": "seven",
-              "accepted": [
-                "7"
-              ],
-              "explanation": "He says fishing starts at seven."
+              "explanation": "Breakfast is at six but the lines go in the water at seven."
             },
             {
               "id": "l3-4",
-              "prompt": "Fish should go in the ___ buckets",
+              "prompt": "Fish that visitors keep go in the ___ buckets",
               "answer": "red",
-              "explanation": "He says to use the red buckets for fish."
+              "explanation": "Blue buckets are for water and green for bait; the fish go in the red ones."
             },
             {
               "id": "l3-5",
               "prompt": "The best fish usually bite near the old ___",
               "answer": "tree",
-              "explanation": "He says the best fish bite near the old tree."
+              "explanation": "The dock is easy to reach but has small fish; the best are near the old tree."
             },
             {
               "id": "l3-6",
               "prompt": "The guides wear ___ jackets",
               "answer": "orange",
-              "explanation": "He says the guides wear orange jackets."
+              "explanation": "Last year the jackets were yellow, but the safety staff wear yellow, so now they are orange."
             }
           ]
         },
@@ -1397,11 +1523,11 @@
             "turns": [
               {
                 "speaker": "i",
-                "text": "Cyd, you work as a river ranger. What does your job involve?"
+                "text": "Cyd, you work on the river every day. What does your job involve?"
               },
               {
                 "speaker": "h",
-                "text": "Every day is different. I check the water, count the fish and talk to visitors about how to keep the river clean."
+                "text": "People imagine I sell fishing permits all day, and my colleague in the office does that. I’m not a swimming teacher either, although I’m happy when children learn. What I do is walk along the bank in the morning, test the water and count the fish. It sounds simple, but it takes hours, and I write everything in a notebook that is almost falling apart."
               },
               {
                 "speaker": "i",
@@ -1409,39 +1535,39 @@
               },
               {
                 "speaker": "h",
-                "text": "Plastic. We find bottles, bags and even old bicycles. Last year, volunteers collected two tonnes of rubbish in one weekend."
+                "text": "Noise isn’t a problem, and floods happen once or twice a year, but the water goes down again and the river recovers. What worries me every day is plastic: bottles, bags, bits of fishing line. It stays in the water for years and animals eat it. I find more every spring."
               },
               {
                 "speaker": "i",
-                "text": "Are there any animals that surprise people?"
+                "text": "Why are visitors surprised when they see the river?"
               },
               {
                 "speaker": "h",
-                "text": "Otters. Many people do not know that they have returned. They almost disappeared in the 1970s, but the water is cleaner now."
+                "text": "Because otters live there again. Twenty years ago there were none, and the water was too dirty. Now it’s clean enough, and a family of otters has made a home under the old bridge. People expect to see big fish, but the fish are normal size. The otters are the surprise, and children love them. Last month a school came and sat on the bank for two hours with binoculars, completely silent."
               },
               {
                 "speaker": "i",
-                "text": "How can ordinary people help?"
+                "text": "How can people help?"
               },
               {
                 "speaker": "h",
-                "text": "Take your rubbish home, do not pour chemicals down the sink, and join a clean-up day."
+                "text": "It’s easy. We don’t need more boats, the river is busy enough. And I’d say fish less, not more, in the summer, when the water is warm. The best thing is to take your rubbish home with you. If everybody did that, my job would be so much easier."
               },
               {
                 "speaker": "i",
-                "text": "Do you ever get tired of the job?"
+                "text": "What did you see last week?"
               },
               {
                 "speaker": "h",
-                "text": "Never. Last week, I saw a kingfisher dive and come up with a silver fish. I still get goosebumps."
+                "text": "Something beautiful. I wasn’t lucky with a huge fish and I haven’t seen a rare frog this year. But I stood very still by the bridge, and a kingfisher dived right in front of me, blue and orange, and came up with a tiny fish. I felt so lucky that I forgot my notebook."
               },
               {
                 "speaker": "i",
-                "text": "What is your favourite season?"
+                "text": "Why is autumn your favourite season?"
               },
               {
                 "speaker": "h",
-                "text": "Autumn. The colours reflect in the water, and the paths are almost empty."
+                "text": "Many people choose summer, and spring is lovely with the flowers. But autumn is quiet. The visitors go home, the leaves fall on the water, and I can walk for hours and meet nobody. I have the whole river to myself, and that’s what I like."
               }
             ]
           },
@@ -1455,7 +1581,7 @@
                 "Teaches people to swim"
               ],
               "answer": 1,
-              "explanation": "She checks the water, counts the fish and talks to visitors."
+              "explanation": "She says she does not sell permits or teach swimming; she tests the water and counts the fish."
             },
             {
               "id": "l4-2",
@@ -1466,18 +1592,18 @@
                 "Flooding"
               ],
               "answer": 1,
-              "explanation": "She says the biggest problem is plastic."
+              "explanation": "Noise is not a problem and floods pass; the plastic stays in the water for years and animals eat it."
             },
             {
               "id": "l4-3",
-              "prompt": "What surprises people?",
+              "prompt": "Why are visitors surprised?",
               "options": [
-                "Otters have returned",
-                "Fish are very big",
-                "The river is dirty"
+                "Because otters live there again",
+                "Because the fish are very big",
+                "Because the river is dirty"
               ],
               "answer": 0,
-              "explanation": "Many people do not know that otters have returned."
+              "explanation": "The fish are a normal size and the water is clean; the surprise is the otters under the old bridge."
             },
             {
               "id": "l4-4",
@@ -1488,7 +1614,7 @@
                 "Take their rubbish home"
               ],
               "answer": 2,
-              "explanation": "She says to take your rubbish home, among other things."
+              "explanation": "Boats are not needed and people should fish less; the best help is to take rubbish home."
             },
             {
               "id": "l4-5",
@@ -1499,18 +1625,18 @@
                 "A rare frog"
               ],
               "answer": 1,
-              "explanation": "She saw a kingfisher dive and come up with a silver fish."
+              "explanation": "There was no huge fish or rare frog; a kingfisher dived in front of her."
             },
             {
               "id": "l4-6",
-              "prompt": "What is her favourite season?",
+              "prompt": "Why is autumn her favourite season?",
               "options": [
-                "Autumn",
-                "Summer",
-                "Spring"
+                "There are fewer visitors",
+                "The leaves are beautiful",
+                "The fish are the biggest"
               ],
               "answer": 0,
-              "explanation": "She says her favourite season is autumn."
+              "explanation": "Others prefer summer or spring; she likes autumn because the visitors go home and the river is quiet."
             }
           ]
         }

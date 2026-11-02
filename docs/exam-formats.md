@@ -6,14 +6,14 @@ Part types are the types of `src/app/models/exam.ts`. Sources were consulted in 
 
 ## Cambridge B1 Preliminary (`cambridge-pet`)
 
-Source: https://www.cambridgeenglish.org/exams-and-tests/preliminary/exam-format/
+Source: https://www.cambridgeenglish.org/exams-and-tests/preliminary/exam-format/ and https://www.cambridgeenglish.org/images/update-2020-b1-preliminary.pdf (Reading Part 3 has four options)
 
-| Skill                              | Parts                                                                                                                                                                                                                                           |
-| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Reading (45 min, 32 items)         | 1 `notices` 5 items, 3 options. 2 `matching` 5 people, 8 texts, each text used once. 3 `multiple-choice` 5 items, 3 options. 4 `gapped-text` 5 gaps, 6 sentences. 5 `multiple-choice-cloze` 6 gaps, 4 options. 6 `open-cloze` 6 gaps, one word. |
-| Writing (45 min)                   | 1 `email`, about 100 words. 2 `choice-task`: one article and one story (the story gives an opening sentence), about 100 words.                                                                                                                  |
-| Listening (about 30 min, 25 items) | 1 `short-dialogues` 7 items, 3 options. 2 `gist-dialogues` 6 items, 3 options. 3 `note-completion` 6 gaps. 4 `listening-interview` 6 items, 3 options. Each recording is played twice.                                                          |
-| Speaking (4 parts)                 | `interview`, `photo-description` (one photo), `collaborative-task` (at least four visuals), `discussion`.                                                                                                                                       |
+| Skill                              | Parts                                                                                                                                                                                                                                                         |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reading (45 min, 32 items)         | 1 `notices` 5 items, 3 options. 2 `matching` 5 people, 8 texts, each text used once. 3 `multiple-choice` 5 items, 4 options. 4 `gapped-text` 5 gaps, 8 sentences (three extra). 5 `multiple-choice-cloze` 6 gaps, 4 options. 6 `open-cloze` 6 gaps, one word. |
+| Writing (45 min)                   | 1 `email`, about 100 words. 2 `choice-task`: one article and one story (the story gives an opening sentence), about 100 words.                                                                                                                                |
+| Listening (about 30 min, 25 items) | 1 `short-dialogues` 7 items, 3 options. 2 `gist-dialogues` 6 items, 3 options. 3 `note-completion` 6 gaps. 4 `listening-interview` 6 items, 3 options. Each recording is played twice.                                                                        |
+| Speaking (4 parts)                 | `interview`, `photo-description` (one photo), `collaborative-task` (at least four visuals), `discussion`.                                                                                                                                                     |
 
 Guidance (warnings): Part 3 text 140-400 words, Part 4 100-350, Parts 5 and 6 60-250.
 

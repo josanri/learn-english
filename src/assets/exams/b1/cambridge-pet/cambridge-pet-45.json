@@ -249,42 +249,46 @@
               "id": "r3-1",
               "prompt": "Why did the writer want to improve?",
               "options": [
-                "His cousin often teased him",
                 "His school had a big race",
+                "His cousin often teased him",
+                "Max promised to help him",
                 "His parents were disappointed in him"
               ],
-              "answer": 0,
+              "answer": 1,
               "explanation": "Max liked to remind him he rode earlier."
             },
             {
               "id": "r3-2",
               "prompt": "How did the grandfather help?",
               "options": [
+                "He encouraged from the middle of the path",
+                "He rode beside him on his own bike",
                 "He ran beside the bike all the way",
-                "He held the back of the seat",
-                "He encouraged from the middle of the path"
+                "He held the back of the seat"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "He stood in the middle of the path and cheered."
             },
             {
               "id": "r3-3",
               "prompt": "What was the secret of success?",
               "options": [
-                "Looking at the end of the path",
                 "Pedalling as fast as he possibly could",
-                "Using a smaller bicycle than before"
+                "Using a smaller bicycle than before",
+                "Wearing a helmet all the time",
+                "Looking at the end of the path"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "He stopped looking at his feet and looked at the end of the path."
             },
             {
               "id": "r3-4",
               "prompt": "How did the grandfather react to the success?",
               "options": [
+                "He told him to try again",
                 "He took a photograph of him",
-                "He gave him a brand new bike",
-                "He clapped very happily"
+                "He clapped very happily",
+                "He gave him a brand new bike"
               ],
               "answer": 2,
               "explanation": "He clapped as if the boy had won a race."
@@ -295,7 +299,8 @@
               "options": [
                 "Max never learnt to ride",
                 "He once overtook Max on a hill",
-                "Max still rides much faster"
+                "Max still rides much faster",
+                "Max has stopped riding"
               ],
               "answer": 1,
               "explanation": "Last year he overtook Max on a hill."
@@ -306,26 +311,28 @@
           "id": "reading-4",
           "number": 4,
           "title": "A cycle to work scheme",
-          "instructions": "Choose the sentence that fits each gap. There is one extra sentence.",
+          "instructions": "Choose the sentence that fits each gap. There are three extra sentences.",
           "type": "gapped-text",
           "passage": "More and more people in our city are cycling to work, and the council wants to encourage even more. [1] Last year, it spent two million pounds on new cycle lanes that are separated from the traffic, so that cyclists feel much safer than before.\n\nThe council has also started a new scheme with local companies. [2] In return, the companies must provide showers and safe places for bikes.\n\nWorkers say that the changes are making a difference. [3] One office worker, Anita, says she now saves twenty pounds a week on bus tickets and arrives at work feeling fresher. [4] Not everyone is convinced, though. Some drivers complain that the cycle lanes take space from the roads.\n\n[5] The council promises to keep listening to everybody and says that more changes will follow next year.",
           "sentences": [
-            "Employees who cycle to work get a small payment for every journey.",
-            "It has already made a number of changes to the streets.",
-            "The number of cyclists has gone up by a third in two years.",
             "Cycling is also cheaper than going by car or by bus.",
+            "This debate is likely to continue for some time.",
+            "The number of cyclists has gone up by a third in two years.",
+            "Employees who cycle to work get a small payment for every journey.",
+            "More than half of them are under thirty.",
+            "It has already made a number of changes to the streets.",
             "The company was started more than fifty years ago.",
-            "This debate is likely to continue for some time."
+            "The company started its own bike shop last spring."
           ],
           "gaps": [
             {
               "id": "r4-1",
-              "answer": "B",
+              "answer": "F",
               "explanation": "The council has already made changes, and the next sentence gives an example."
             },
             {
               "id": "r4-2",
-              "answer": "A",
+              "answer": "D",
               "explanation": "The scheme gives a payment to employees, and \"in return\" the companies provide showers."
             },
             {
@@ -335,12 +342,12 @@
             },
             {
               "id": "r4-4",
-              "answer": "D",
+              "answer": "A",
               "explanation": "\"Also cheaper\" adds to the benefits, before the objection from some drivers."
             },
             {
               "id": "r4-5",
-              "answer": "F",
+              "answer": "B",
               "explanation": "The debate will continue is a fitting link to the council promising to listen."
             }
           ]
@@ -734,28 +741,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "How much does it cost to hire a bike?"
+                    "text": "Hello, I’d like to rent a bike for the day, please."
                   },
                   {
                     "speaker": "f",
-                    "text": "Five pounds an hour, or twenty for the whole day."
+                    "text": "Sure. It’s fifteen pounds for the day, plus a deposit of twenty pounds, but you get that back when you return the bike."
                   },
                   {
                     "speaker": "m",
-                    "text": "I will take it for the day, please."
+                    "text": "And do I need a lock?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s five pounds extra, and it’s up to you. You’ll be at the riverside café, so I’d take one."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m only going along the path and I’ll stay near the bike all day, so I’ll go without. Can I pay by card?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course. I’ll take the deposit now as well."
                   }
                 ]
               },
               "question": {
                 "id": "l1-1q",
-                "prompt": "How much will the man pay?",
+                "prompt": "How much will the man pay for renting the bike?",
                 "options": [
                   "Five pounds",
                   "Twenty pounds",
                   "Fifteen pounds"
                 ],
-                "answer": 1,
-                "explanation": "He takes the bike for the whole day, which costs twenty pounds."
+                "answer": 2,
+                "explanation": "The deposit of twenty is returned and he refuses the five-pound lock, so he pays only the fifteen for the day."
               }
             },
             {
@@ -782,11 +801,27 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "My front tyre is flat. Can you mend it?"
+                    "text": "Archie, why are you walking? Where’s your bike?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, it is only a puncture. It will be ready in about twenty minutes."
+                    "text": "Don’t ask. The chain came off again this morning, but I put it back in two minutes, I’m used to that. The brakes were worse last week, but the shop fixed them."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So what is it today?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I rode over some glass near the park and heard a hiss. The air was gone before I got to the bridge, and now the tyre is completely flat."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Oh no. Do you have a repair kit?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "At home, of course. Not here."
                   }
                 ]
               },
@@ -795,11 +830,11 @@
                 "prompt": "What is wrong with the bike?",
                 "options": [
                   "The tyre has a puncture",
-                  "The brakes are badly broken",
-                  "The chain has come off again"
+                  "The brakes are broken",
+                  "The chain has come off"
                 ],
                 "answer": 0,
-                "explanation": "The front tyre has a puncture."
+                "explanation": "The chain was fixed in two minutes and the brakes were repaired last week; he rode over glass and the tyre went flat."
               }
             },
             {
@@ -826,11 +861,19 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Which way is the cycle path?"
+                    "text": "Excuse me, how do I get to the cycle track?"
                   },
                   {
                     "speaker": "f",
-                    "text": "Go past the church and turn right at the traffic lights. You can not miss it."
+                    "text": "Go straight along this road. At the traffic lights, many people turn right, but that takes you to the motorway. Keep going until you see the oldest building in town, the one with the tall tower and the bells. Turn right there. After that you’ll see the new bridge on the river, but don’t cross it, it only leads to the industrial estate."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Thanks. Is it far?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "About ten minutes by bike."
                   }
                 ]
               },
@@ -839,11 +882,11 @@
                 "prompt": "Where should the man turn right?",
                 "options": [
                   "At the traffic lights",
-                  "At the old church building",
-                  "At the new river bridge"
+                  "At the old church",
+                  "At the new bridge"
                 ],
-                "answer": 0,
-                "explanation": "She says to turn right at the traffic lights."
+                "answer": 1,
+                "explanation": "The lights lead to the motorway and the bridge leads to the industrial estate; she tells him to turn at the old building with the tall tower and the bells."
               }
             },
             {
@@ -870,11 +913,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Why are you wearing that helmet in the house?"
+                    "text": "Why has Tim got his helmet on in the kitchen? Is he leaving for school already?"
                   },
                   {
                     "speaker": "m",
-                    "text": "I am trying to get used to it. I have to wear one for the race on Saturday."
+                    "text": "No, it’s too early. And he’s not training for Saturday’s race either, he wears his old helmet for that. This is a new one from his grandmother. He wants to see if it’s comfortable before he wears it outside."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "And is it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "He says it’s a bit tight at the back, so we’ll change the straps."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Good idea. I’ll make him some breakfast, and then you can both go to the shop to buy the right size."
                   }
                 ]
               },
@@ -882,12 +937,12 @@
                 "id": "l1-4q",
                 "prompt": "Why is the boy wearing a helmet?",
                 "options": [
-                  "He is going to school soon",
-                  "He is practising for a race",
-                  "He is cleaning his bike outside"
+                  "He is about to cycle to school",
+                  "He is getting ready for a race",
+                  "He is trying out a new one"
                 ],
-                "answer": 1,
-                "explanation": "He has to wear one for the race on Saturday."
+                "answer": 2,
+                "explanation": "He is not leaving for school and the race helmet is the old one; this helmet is a present from his grandmother and he is testing it."
               }
             },
             {
@@ -914,11 +969,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "Did you enjoy your cycling holiday?"
+                    "text": "How was your cycling holiday, Vera?"
                   },
                   {
                     "speaker": "f",
-                    "text": "The scenery was beautiful, but the weather was terrible, and it rained for four days out of seven."
+                    "text": "Lovely, mostly. The roads were quiet, even in August, which surprised me. And it only rained on the last day, so it didn’t spoil anything."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "So nothing went wrong?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Just one thing. The hotel in the first town. The photos looked great, but when we arrived the room smelled strange and there were crumbs in the bed. We moved to another place."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s awful. Did you complain?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Of course, and they gave us our money back for that night, and a free breakfast the next day as well."
                   }
                 ]
               },
@@ -927,11 +998,11 @@
                 "prompt": "What was the problem on the holiday?",
                 "options": [
                   "The hotel was rather dirty",
-                  "The roads were very busy",
+                  "The roads were busy",
                   "The weather was wet"
                 ],
-                "answer": 2,
-                "explanation": "It rained for four days."
+                "answer": 0,
+                "explanation": "The roads were quiet and it rained only on the last day; the room smelled strange and had crumbs in the bed."
               }
             },
             {
@@ -958,11 +1029,23 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Do you go to work by car?"
+                    "text": "Do you really cycle to work every day, Stuart?"
                   },
                   {
                     "speaker": "m",
-                    "text": "Not any more. I cycle now. It takes twenty minutes, and I do not have to look for a parking space."
+                    "text": "Almost, yes. People think it’s because of the money, but a bus ticket is only two pounds, so that’s not it. And parking isn’t a problem, my office gives me a place."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "So why do you do it?"
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "It’s the time. By bike I’m there in twenty minutes. The car takes forty in the morning traffic, and the bus takes even longer, because it goes round the whole town."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Really? I’d never have guessed."
                   }
                 ]
               },
@@ -970,12 +1053,12 @@
                 "id": "l1-6q",
                 "prompt": "Why does the man like cycling to work?",
                 "options": [
-                  "It saves him the trouble of parking",
-                  "It is the fastest way to travel in town",
-                  "It is much cheaper than a bus ticket"
+                  "He avoids parking problems",
+                  "It is the quickest way to travel",
+                  "It costs less than the bus"
                 ],
-                "answer": 0,
-                "explanation": "He does not have to look for a parking space."
+                "answer": 1,
+                "explanation": "The bus is cheap and parking is easy, but by bike he arrives in twenty minutes, faster than the car or the bus."
               }
             },
             {
@@ -1002,11 +1085,27 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "What did you get for your birthday?"
+                    "text": "Did Zoe enjoy her birthday, Britta?"
                   },
                   {
                     "speaker": "f",
-                    "text": "A bike light and a bell. My parents are saving to buy me a new bike for Christmas."
+                    "text": "Very much. She was hoping for a new bicycle, and we nearly bought one, but the old one is only a year old and it still fits her, so we waited."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What did she get in the end?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Two small things for the old bike, a light for the front and a bell. Her grandfather offered a helmet and gloves, but she already has those from last Christmas."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "I’m sure she was thrilled."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "She put them on straight away and rang the bell for an hour!"
                   }
                 ]
               },
@@ -1019,7 +1118,7 @@
                   "A helmet and gloves"
                 ],
                 "answer": 1,
-                "explanation": "She got a bike light and a bell."
+                "explanation": "They nearly bought a bicycle but waited, and the helmet and gloves were not needed; she got a light and a bell."
               }
             }
           ]
@@ -1055,24 +1154,40 @@
                 "turns": [
                   {
                     "speaker": "f",
-                    "text": "Welcome to the bike shop. Are you looking for anything special?"
+                    "text": "Byron, have you seen the forecast for Saturday? Rain from noon."
                   },
                   {
                     "speaker": "m",
-                    "text": "Yes, I need a bicycle for my daughter. She is ten, and she wants a blue one."
+                    "text": "I did. We could wait until next month, but the hostel is booked and we’d lose the money."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We could do a shorter route, only the first thirty kilometres."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Then why come at all? The best part is the lake at the end. Anyway, it’s only showers."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "You’re right. We have waterproof jackets, after all."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Let’s go, then. Meet at eight o’clock at my house, and bring something to eat, because the café at the lake is always full."
                   }
                 ]
               },
               "question": {
                 "id": "l2-1q",
-                "prompt": "What is the man doing?",
+                "prompt": "What do Ariadne and Byron decide about their trip on Saturday?",
                 "options": [
-                  "Returning something that he bought",
-                  "Asking the shop to repair a bicycle",
-                  "Looking for a bike for his child"
+                  "Delay it until next month",
+                  "Cycle a shorter route",
+                  "Go ahead as planned"
                 ],
                 "answer": 2,
-                "explanation": "He needs a bicycle for his daughter."
+                "explanation": "Waiting would lose the hostel money and a short route would miss the lake, so they agree to go in spite of the rain."
               }
             },
             {
@@ -1098,25 +1213,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Are you ready for Sunday’s race, Constance?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "Attention, all riders. The race starts in five minutes. Please go to the start line."
+                    "text": "I think so. Everyone talks about the big hill at kilometre twenty, but I’ve practised on it every weekend for two months, so I’m not afraid of it."
                   },
                   {
                     "speaker": "m",
-                    "text": "I am ready!"
+                    "text": "And your bike? It’s quite old."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "It’s old, but it’s light and I like it. I don’t care what other people think. I don’t expect to win, but I’m sure that I’ll get to the end."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "That’s the spirit. I’ll wait for you at the finish with a big cup of tea, and I’ll take a photo when you arrive."
                   }
                 ]
               },
               "question": {
                 "id": "l2-2q",
-                "prompt": "Where are the speakers?",
+                "prompt": "How does Constance feel about the race on Sunday?",
                 "options": [
-                  "At a bicycle shop",
-                  "At a cycling race",
-                  "At a school sports day"
+                  "Worried about the big hill",
+                  "Sure that she will finish",
+                  "Embarrassed about her bike"
                 ],
                 "answer": 1,
-                "explanation": "The announcement says the race starts in five minutes."
+                "explanation": "She has practised the hill and does not care about the old bike; she says that she is sure to get to the end."
               }
             },
             {
@@ -1142,25 +1269,33 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Does your son cycle to school now, Enid?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "A warning, Roy: slow down! You are going much too fast on this road."
+                    "text": "Since September. I was against it at first, honestly. He’s only twelve and the road by the school is busy. I wanted him on the bus."
                   },
                   {
                     "speaker": "m",
-                    "text": "Sorry, Mum. I will be careful."
+                    "text": "And now?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "We did the route together four times. He has lights, a bright jacket, and he knows to use the cycle path. He’s sensible, so I’ve stopped worrying. It’s good for him too, because he used to sit in the car and play with his phone all the way."
                   }
                 ]
               },
               "question": {
                 "id": "l2-3q",
-                "prompt": "What is the mother doing?",
+                "prompt": "What does Enid think about her son cycling to school?",
                 "options": [
-                  "Warning her son",
-                  "Praising her son",
-                  "Teaching her son"
+                  "She trusts him to ride sensibly",
+                  "She would prefer him to take the bus",
+                  "She thinks he is too young"
                 ],
                 "answer": 0,
-                "explanation": "She tells him to slow down because he is going too fast."
+                "explanation": "She wanted the bus at first because of his age, but she now trusts him because he is careful and sensible."
               }
             },
             {
@@ -1186,25 +1321,33 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "f",
+                    "text": "Is that an electric bike, Bill? When did you buy it?"
+                  },
+                  {
                     "speaker": "m",
-                    "text": "Excuse me, I have lost my bike lock key. Can you help me?"
+                    "text": "Last month. My son laughed and said it was cheating, and I felt a bit guilty at first. But I still pedal, the motor just helps on the hills."
                   },
                   {
                     "speaker": "f",
-                    "text": "I think the shop next door can cut the lock for you."
+                    "text": "What about the battery? My neighbour says it dies after an hour."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Mine lasts all day, no problems. And I can reach the lake now, thirty kilometres, which I never did before. I’m delighted. My wife says I now talk about nothing else, but I think she is secretly jealous."
                   }
                 ]
               },
               "question": {
                 "id": "l2-4q",
-                "prompt": "What is the man's problem?",
+                "prompt": "How does Bill feel about his new electric bike?",
                 "options": [
-                  "He has a broken wheel",
-                  "He has lost his bicycle",
-                  "He cannot open his lock"
+                  "Guilty about using a motor",
+                  "Annoyed by the battery",
+                  "Pleased to be able to go further"
                 ],
                 "answer": 2,
-                "explanation": "He has lost his lock key."
+                "explanation": "He felt guilty at first and the battery is no problem; he is delighted that he can reach the lake, thirty kilometres away."
               }
             },
             {
@@ -1231,24 +1374,40 @@
                 "turns": [
                   {
                     "speaker": "m",
-                    "text": "I am so excited! Dad says I can ride to the shops by myself now!"
+                    "text": "Maureen, do you want to cycle with me after work? We could do the river path."
                   },
                   {
                     "speaker": "f",
-                    "text": "That is wonderful news. But you must be back in an hour."
+                    "text": "Not in the evenings, no. In autumn it gets dark so early, and the path has no lamps. I can’t see the holes in the road."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Is it the cold? Or the dogs that people take there?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Neither. I like the cold, and I like dogs. It’s only the lack of light."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "What about Saturday morning?"
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Perfect. Let’s meet at the bridge at nine, and I’ll bring a flask of coffee for both of us."
                   }
                 ]
               },
               "question": {
                 "id": "l2-5q",
-                "prompt": "How does the boy feel?",
+                "prompt": "Why does Maureen avoid cycling in the evenings?",
                 "options": [
-                  "Excited about more freedom",
-                  "Worried about the busy traffic",
-                  "Tired after a very long ride"
+                  "She cannot see well in the dark",
+                  "She is afraid of dogs",
+                  "She finds it too cold"
                 ],
                 "answer": 0,
-                "explanation": "He is happy he can ride alone."
+                "explanation": "She says it is not the cold or the dogs; the path has no lamps and she cannot see the holes in the road."
               }
             },
             {
@@ -1274,25 +1433,37 @@
                 ],
                 "turns": [
                   {
+                    "speaker": "m",
+                    "text": "Have you heard about the new cycle lane on Mill Street?"
+                  },
+                  {
                     "speaker": "f",
-                    "text": "The council is building a new cycle lane along the river, and it will open next spring."
+                    "text": "Yes, the council says it will cost two million pounds. People are complaining, but I think that’s fair."
                   },
                   {
                     "speaker": "m",
-                    "text": "That will be much safer for everyone."
+                    "text": "I’m not sure about the price either, but the street is dangerous, and a child was hurt there last year."
+                  },
+                  {
+                    "speaker": "f",
+                    "text": "Exactly. And at least they promised to finish by spring. Some of my neighbours worry that the work will take ages, but I don’t."
+                  },
+                  {
+                    "speaker": "m",
+                    "text": "Me neither. If it keeps children safe, it’s worth it. I just hope the drivers will respect it."
                   }
                 ]
               },
               "question": {
                 "id": "l2-6q",
-                "prompt": "What is being discussed?",
+                "prompt": "What do Larry and Sienna think about the new cycle lane?",
                 "options": [
-                  "A shop that has closed down",
-                  "A holiday by the river bank",
-                  "A plan for a cycle lane"
+                  "It will cost too much",
+                  "It will make the street safer",
+                  "The work will take too long"
                 ],
-                "answer": 2,
-                "explanation": "A new cycle lane along the river."
+                "answer": 1,
+                "explanation": "The price and the length of the work are not their main worry; both think it is worth it if it keeps children safe on a dangerous street."
               }
             }
           ]
@@ -1317,55 +1488,46 @@
             "turns": [
               {
                 "speaker": "peter",
-                "text": "Hello, everyone, and welcome to the Riverside Cycling Club. I'm Peter, the club secretary. We meet every Sunday at nine in the morning outside the library. We have three groups. The slow group rides about twenty kilometres, the medium group thirty-five, and the fast group sixty. Everyone must wear a helmet, and we recommend bright jackets. Membership costs thirty pounds a year, which includes insurance. For young people under eighteen, it is only fifteen pounds. After each ride, we usually stop at a café for tea and cake. In July, we organise a weekend trip to the coast, and last year thirty people joined us. If you want to try a ride before you join, you can come for free the first time."
+                "text": "Hello, everyone, and welcome to the Riverside Cycling Club. I’m Peter, the club secretary, and I’ll tell you how a Sunday works. Let’s start with the time. The fast group leaves at eight, but those riders have been cycling for years. The group for new riders meets at nine, so you’ll have a calm start, with a coffee. Where do we meet? Years ago it was outside the station, but the car park there is too small and the taxis get angry, so we moved. Now we gather outside the library, next to the fountain. Please don’t go to the station, because nobody will be there. Now the distance. Each Sunday, the easiest ride is twenty kilometres, on flat roads by the river. The medium group does forty, with some hills, and when you’re stronger you can move up. But please don’t try forty on your first day. Safety is important. We lend you a bright jacket in the first month, and gloves are nice in winter, but you don’t have to wear them. The one thing that everyone must have, with no exceptions, is a helmet. If you don’t have one, we can’t let you ride. Next, money. Membership is thirty pounds a year. Students pay half, fifteen, if they show a card. That includes insurance and the club newsletter. After the ride we always stop for tea and cake. You pay for your own cake, but it’s the best part of the day. Finally, our summer trip. Last year we went to the mountains and it was very hard work, so this year we’ve chosen something easier. In July we’ll cycle to the coast, and sleep in a hostel near the beach. I hope many of you will join us. Thanks for listening."
               }
             ]
           },
           "gaps": [
             {
               "id": "l3-1",
-              "prompt": "The club meets outside the ___",
-              "answer": "library",
-              "explanation": "We meet outside the library."
+              "prompt": "The group for new riders sets off at ___ o'clock",
+              "answer": "nine",
+              "explanation": "The fast group leaves at eight, but the group for new riders meets at nine."
             },
             {
               "id": "l3-2",
-              "prompt": "The medium group rides ___ kilometres",
-              "answer": "thirty-five",
-              "accepted": [
-                "35"
-              ],
-              "explanation": "The medium group rides thirty-five."
+              "prompt": "The meeting point is outside the ___",
+              "answer": "library",
+              "explanation": "They used to meet outside the station, but now they gather outside the library."
             },
             {
               "id": "l3-3",
-              "prompt": "Everyone must wear a ___",
-              "answer": "helmet",
-              "explanation": "Everyone must wear a helmet."
+              "prompt": "The easiest ride covers ___ kilometres",
+              "answer": "twenty",
+              "explanation": "The easiest ride is twenty kilometres; the medium group does forty."
             },
             {
               "id": "l3-4",
-              "prompt": "Membership costs ___ pounds a year",
-              "answer": "thirty",
-              "accepted": [
-                "30"
-              ],
-              "explanation": "Membership costs thirty pounds a year."
+              "prompt": "The only compulsory item of equipment is a ___",
+              "answer": "helmet",
+              "explanation": "The jacket is lent and gloves are optional, but everyone must have a helmet."
             },
             {
               "id": "l3-5",
-              "prompt": "After each ride, they stop at a ___",
-              "answer": "café",
-              "accepted": [
-                "cafe"
-              ],
-              "explanation": "We usually stop at a café."
+              "prompt": "A year of membership costs adults ___ pounds",
+              "answer": "thirty",
+              "explanation": "Membership is thirty pounds a year; students pay half, fifteen."
             },
             {
               "id": "l3-6",
-              "prompt": "The July trip is to the ___",
+              "prompt": "The summer trip in July goes to the ___",
               "answer": "coast",
-              "explanation": "A weekend trip to the coast."
+              "explanation": "Last year’s trip was to the mountains; in July they will cycle to the coast."
             }
           ]
         },
@@ -1397,19 +1559,19 @@
             "turns": [
               {
                 "speaker": "gerard",
-                "text": "Today, I'm talking to Marisol Park, who cycled around Europe last summer. Marisol, why did you decide to do that?"
+                "text": "Marisol, you cycled across Europe. Why did you decide to do it?"
               },
               {
                 "speaker": "jenna",
-                "text": "I wanted to see the countries slowly. When you are on a bike, you notice everything: the smells, the sounds and the people."
+                "text": "Everybody thinks it’s about sport, but I’m not a racer, and I don’t need a trip to keep fit. I’d travelled by plane and train all my life, and I realised that I never really saw anything. From a train window, villages pass in seconds. On a bike, you see the baker open his door and you hear the church bells. I wanted to go slowly enough to notice things."
               },
               {
                 "speaker": "gerard",
-                "text": "How far did you go?"
+                "text": "How far did you travel?"
               },
               {
                 "speaker": "jenna",
-                "text": "About four thousand kilometres in nine weeks. Some days I rode a hundred kilometres, but on others I only did thirty."
+                "text": "My first plan was four hundred kilometres, just through France. Then I added Italy, and then I kept going. Friends guessed fourteen thousand, because they thought I was crazy, but my counter said just over four thousand, in ninety days. That is quite enough for me."
               },
               {
                 "speaker": "gerard",
@@ -1417,7 +1579,7 @@
               },
               {
                 "speaker": "jenna",
-                "text": "A mixture of cheap hostels and campsites. Once I slept in a farmer's barn, which was really comfortable."
+                "text": "Mostly in a tent. One night on a beach in Spain was lovely, and in Switzerland I stayed in a hotel, a very expensive one, because of a storm. But my favourite was a farmer in Slovenia who let me sleep in his barn, with the cows next to me. The hay was warm, and in the morning his wife gave me bread and honey."
               },
               {
                 "speaker": "gerard",
@@ -1425,48 +1587,48 @@
               },
               {
                 "speaker": "jenna",
-                "text": "I had four punctures and one broken chain. In Austria, a kind man helped me to fix the chain, and he refused to take any money."
+                "text": "The police never stopped me, although I was nervous about border checks, and I didn’t lose anything important, only a small bag with socks. But in Austria my chain broke on a mountain road, and I didn’t have the right tool. A man in a van stopped, and he mended it in ten minutes with his own tools. He refused to take any money."
               },
               {
                 "speaker": "gerard",
-                "text": "What was your favourite moment?"
+                "text": "What was your best moment?"
               },
               {
                 "speaker": "jenna",
-                "text": "Reaching the top of a high mountain in Italy. I was exhausted, but the view was incredible, and the ride down was wonderful."
+                "text": "Arriving in the capital cities was exciting, but they were crowded, so it wasn’t the best. Crossing the border into Spain was nice, and I cried a little. But the best moment was on a mountain pass in Italy, when after four hours of climbing I could see the whole valley, and I shouted with joy. Nobody heard me, which was perfect."
               },
               {
                 "speaker": "gerard",
-                "text": "Would you do it again?"
+                "text": "Will you go again?"
               },
               {
                 "speaker": "jenna",
-                "text": "Definitely. Next year I would like to cycle through Asia, but first I need to save some money."
+                "text": "Yes. People ask me to write a book, but I’m not interested, and my friends want me to go with them, but I need to go alone. Next year I want to do another trip, because what I loved most was the freedom. I woke up every day with no timetable and no plan, and I miss it already. I even keep my tent on top of the wardrobe, ready, in case I get a free week."
               }
             ]
           },
           "questions": [
             {
               "id": "l4-1",
-              "prompt": "Why did Marisol want to cycle around Europe?",
+              "prompt": "Why did Marisol want to cycle across Europe?",
               "options": [
                 "To train for a big race",
                 "To notice things around her slowly",
-                "To keep fit during her holiday trip"
+                "To keep fit on holiday"
               ],
               "answer": 1,
-              "explanation": "She wanted to see the countries slowly."
+              "explanation": "She says it is not about sport or keeping fit; from trains she saw nothing, so she wanted to go slowly enough to notice things."
             },
             {
               "id": "l4-2",
               "prompt": "How far did she travel?",
               "options": [
-                "About four hundred kilometres in total",
-                "About four thousand kilometres",
-                "About fourteen thousand kilometres in total"
+                "About four hundred kilometres",
+                "About fourteen thousand kilometres",
+                "About four thousand kilometres"
               ],
-              "answer": 1,
-              "explanation": "About four thousand kilometres in nine weeks."
+              "answer": 2,
+              "explanation": "Four hundred was her first plan and fourteen thousand was her friends’ guess; her counter said just over four thousand."
             },
             {
               "id": "l4-3",
@@ -1474,43 +1636,43 @@
               "options": [
                 "In a farmer's barn",
                 "In a tent on a beach",
-                "In an expensive hotel room"
+                "In an expensive hotel"
               ],
               "answer": 0,
-              "explanation": "Once she slept in a farmer's barn."
+              "explanation": "The beach and the hotel were other nights, but her favourite was the Slovenian farmer’s barn with the cows."
             },
             {
               "id": "l4-4",
               "prompt": "What happened in Austria?",
               "options": [
-                "She was stopped by the police there",
-                "She lost her passport and money",
-                "A man helped her fix her chain"
+                "She was stopped by the police",
+                "She lost her passport",
+                "A man helped her mend her bike"
               ],
               "answer": 2,
-              "explanation": "A kind man helped her to fix the chain."
+              "explanation": "The police never stopped her and she lost nothing important; a man in a van mended her broken chain."
             },
             {
               "id": "l4-5",
-              "prompt": "What was her favourite moment?",
+              "prompt": "What was her best moment?",
               "options": [
-                "Crossing a border into Spain",
-                "Reaching a mountain top in Italy",
-                "Arriving in the big capital city"
+                "Crossing the border into Spain",
+                "Reaching a mountain pass in Italy",
+                "Arriving in a capital city"
               ],
               "answer": 1,
-              "explanation": "Reaching the top of a high mountain in Italy."
+              "explanation": "The capitals were crowded and Spain was only nice; the best moment was the view from the pass in Italy."
             },
             {
               "id": "l4-6",
-              "prompt": "What does Marisol want to do next year?",
+              "prompt": "Why does she want to take another trip?",
               "options": [
-                "Cycle through Asia",
-                "Write a book about her trip",
-                "Return to the same countries again"
+                "She misses the freedom",
+                "She wants to write a book",
+                "Her friends have asked her"
               ],
               "answer": 0,
-              "explanation": "She wants to cycle through Asia."
+              "explanation": "She is not interested in a book and she needs to go alone; she loved the freedom and misses it already."
             }
           ]
         }
