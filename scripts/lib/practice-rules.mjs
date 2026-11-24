@@ -198,3 +198,143 @@ export function indexEntry(story) {
   const { id, title, summary, topic, level } = story;
   return { id, title, summary, topic, level, words: countStoryWords(story.paragraphs) };
 }
+
+/** Icon names declared in `src/app/shared/ui/icon.ts` (keys of the ICONS object). */
+export function iconNamesFrom(source) {
+  const block = source.slice(source.indexOf('ICONS'), source.indexOf('export type IconName'));
+  return new Set([...block.matchAll(/^ {2}'?([a-z][a-z0-9-]*)'?:/gm)].map((m) => m[1]));
+}
+
+/** Text inside [[...]] markers, in order. */
+function markedTexts(example) {
+  return [...example.matchAll(/\[\[([^\]]+)\]\]/g)].map((m) => m[1]);
+}
+
+/**
+ * Basic vocabulary (`assets/vocabulary/basic-vocabulary.json`): topics with an icon and model
+ * phrases, and words whose example marks the word itself once with [[ ]]. `exists(path)`, when
+ * given, checks that a non-empty `img` (relative to src/) is a real file.
+ */
+export function checkBasicVocabulary(file, iconNames, exists) {
+  const errors = [];
+  const topics = file?.topics;
+  const words = file?.words;
+  if (!Array.isArray(topics) || topics.length === 0)
+    errors.push('"topics" must be a non-empty list.');
+  if (!Array.isArray(words) || words.length === 0)
+    return [...errors, '"words" must be a non-empty list.'];
+  const topicIds = checkIds(topics ?? [], 'topic', errors);
+  for (const topic of topics ?? []) {
+    const where = `topic "${topic?.id ?? '?'}"`;
+    for (const field of ['name', 'intro', 'icon'])
+      if (!text(topic?.[field])) errors.push(`${where}: "${field}" is missing or empty.`);
+    if (typeof topic?.img !== 'string')
+      errors.push(`${where}: "img" must be a string (empty for now).`);
+    if (text(topic?.icon) && iconNames && !iconNames.has(topic.icon))
+      errors.push(`${where}: unknown icon "${topic.icon}".`);
+    if (!Array.isArray(topic?.phrases) || topic.phrases.length < 3)
+      errors.push(`${where}: needs at least three phrases.`);
+    for (const phrase of topic?.phrases ?? [])
+      if (!text(phrase) || !/[.!?]$/.test(phrase.trim()))
+        errors.push(`${where}: phrase "${phrase}" must be a sentence that ends with . ! or ?`);
+  }
+  const ids = checkIds(words, 'word', errors);
+  const seen = new Set();
+  for (const word of words) {
+    const where = `word "${word?.id ?? '?'}"`;
+    for (const field of ['w', 't', 'g', 'd', 'e'])
+      if (!text(word?.[field])) errors.push(`${where}: "${field}" is missing or empty.`);
+    if (typeof word?.img !== 'string')
+      errors.push(`${where}: "img" must be a string (empty for now).`);
+    else if (word.img && !/^assets\/images\/basic\/[a-z0-9-]+\.svg$/.test(word.img))
+      errors.push(`${where}: "img" must be assets/images/basic/<name>.svg.`);
+    else if (word.img && exists && !exists(word.img))
+      errors.push(`${where}: "${word.img}" does not exist.`);
+    if (word?.fill !== undefined) {
+      if (!word.img) errors.push(`${where}: "fill" needs an "img" line drawing.`);
+      else if (!/^assets\/images\/basic\/[a-z0-9-]+-fill\.svg$/.test(word.fill ?? ''))
+        errors.push(`${where}: "fill" must be assets/images/basic/<name>-fill.svg.`);
+      else if (exists && !exists(word.fill))
+        errors.push(`${where}: "${word.fill}" does not exist.`);
+    }
+    if (!text(word?.w) || !text(word?.e) || !text(word?.d)) continue;
+    if (!topicIds.has(word.t)) errors.push(`${where}: unknown topic "${word.t}".`);
+    if (word.w.includes('/')) errors.push(`${where}: write one form only (no "/").`);
+    const marked = markedTexts(word.e);
+    if (marked.length !== 1) errors.push(`${where}: mark the word once in the example with [[ ]].`);
+    else if (marked[0].toLowerCase() !== word.w.toLowerCase())
+      errors.push(`${where}: the marked text "${marked[0]}" must be "${word.w}".`);
+    if (!/[.!?]$/.test(word.e.trim())) errors.push(`${where}: the example must end with . ! or ?`);
+    const escaped = word.w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    if (new RegExp(`\\b${escaped}\\b`, 'i').test(word.d))
+      errors.push(`${where}: the definition gives the word away.`);
+    const key = `${word.t}|${word.w.toLowerCase()}`;
+    if (seen.has(key)) errors.push(`${where}: "${word.w}" appears twice in "${word.t}".`);
+    seen.add(key);
+    for (const other of word.similar ?? []) {
+      if (other === word.id) errors.push(`${where}: "similar" lists the word itself.`);
+      else if (!ids.has(other)) errors.push(`${where}: "similar" lists unknown id "${other}".`);
+    }
+  }
+  for (const topic of topics ?? []) {
+    const count = words.filter((w) => w.t === topic.id).length;
+    if (count < 4) errors.push(`topic "${topic.id}": needs at least four words (has ${count}).`);
+  }
+  return errors;
+}
+
+/** Speaking kit (`assets/speaking/speaking-kit.json`): answer steps, phrases, questions, checklist. */
+export function checkSpeakingKit(file) {
+  const errors = [];
+  if (!Array.isArray(file?.steps) || file.steps.length === 0)
+    errors.push('"steps" must be a non-empty list.');
+  for (const [i, step] of (file?.steps ?? []).entries()) {
+    if (!text(step?.title) || !text(step?.hint))
+      errors.push(`step ${i + 1}: needs a title and a hint.`);
+    if (!Array.isArray(step?.starters) || !step.starters.every(text))
+      errors.push(`step ${i + 1}: "starters" must be a list of texts.`);
+  }
+  if (!text(file?.example?.question) || !text(file?.example?.answer))
+    errors.push('"example" needs a question and an answer.');
+  const groups = Array.isArray(file?.phraseGroups) ? file.phraseGroups : [];
+  if (groups.length === 0) errors.push('"phraseGroups" must be a non-empty list.');
+  checkIds(groups, 'phrase group', errors);
+  for (const group of groups) {
+    const where = `phrase group "${group?.id ?? '?'}"`;
+    if (!text(group?.name) || !text(group?.intro))
+      errors.push(`${where}: needs a name and an intro.`);
+    if (!Array.isArray(group?.phrases) || group.phrases.length === 0)
+      errors.push(`${where}: needs phrases.`);
+    for (const phrase of group?.phrases ?? [])
+      if (!text(phrase?.text) || !text(phrase?.use))
+        errors.push(`${where}: every phrase needs "text" and "use".`);
+  }
+  const topics = Array.isArray(file?.topics) ? file.topics : [];
+  if (topics.length === 0) errors.push('"topics" must be a non-empty list.');
+  checkIds(topics, 'question topic', errors);
+  checkIds(
+    topics.flatMap((t) => t?.questions ?? []),
+    'question',
+    errors,
+  );
+  for (const topic of topics) {
+    const where = `question topic "${topic?.id ?? '?'}"`;
+    if (!text(topic?.name)) errors.push(`${where}: "name" is empty.`);
+    if (!Array.isArray(topic?.questions) || topic.questions.length < 3)
+      errors.push(`${where}: needs at least three questions.`);
+    for (const question of topic?.questions ?? []) {
+      if (!text(question?.q) || !question.q.trim().endsWith('?'))
+        errors.push(`question "${question?.id}": "q" must end with a question mark.`);
+      if (!text(question?.model)) errors.push(`question "${question?.id}": "model" is empty.`);
+    }
+  }
+  const checklist = Array.isArray(file?.checklist) ? file.checklist : [];
+  if (checklist.length === 0) errors.push('"checklist" must be a non-empty list.');
+  checkIds(checklist, 'checklist item', errors);
+  for (const item of checklist) {
+    if (!text(item?.text)) errors.push(`checklist item "${item?.id}": "text" is empty.`);
+    if (item?.link !== undefined && !/^\/[a-z0-9/-]*$/.test(item.link))
+      errors.push(`checklist item "${item?.id}": "link" must be an app path such as /grammar.`);
+  }
+  return errors;
+}

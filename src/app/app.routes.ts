@@ -113,6 +113,20 @@ export const routes: Routes = [
           import('./features/flashcards/flashcards-page').then((m) => m.FlashcardsPage),
       },
       {
+        path: 'basic',
+        title: 'Basic vocabulary | Learn English',
+        loadComponent: () =>
+          import('./features/basic-vocabulary/basic-vocabulary-page').then(
+            (m) => m.BasicVocabularyPage,
+          ),
+      },
+      {
+        path: 'basic/:topic',
+        title: 'Basic vocabulary topic | Learn English',
+        loadComponent: () =>
+          import('./features/basic-vocabulary/basic-topic-page').then((m) => m.BasicTopicPage),
+      },
+      {
         path: 'phrasal-verbs',
         title: 'Phrasal verbs | Learn English',
         loadComponent: () =>
@@ -135,6 +149,12 @@ export const routes: Routes = [
         loadComponent: () => import('./features/reader/story-page').then((m) => m.StoryPage),
       },
     ],
+  },
+  {
+    path: 'practice/speaking',
+    title: 'Speaking kit | Learn English',
+    loadComponent: () =>
+      import('./features/speaking-kit/speaking-kit-page').then((m) => m.SpeakingKitPage),
   },
   {
     path: 'practice/mistakes',

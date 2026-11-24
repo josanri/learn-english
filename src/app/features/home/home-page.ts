@@ -223,6 +223,14 @@ export class HomePage {
   protected readonly daily: (SkillCard & { link: string })[] = [
     {
       kind: 'vocabulary',
+      title: 'Basic vocabulary',
+      text: 'Clothes, food, the house, your town: 20 everyday topics, five short exercises.',
+      tone: 'blue',
+      tilt: -1.25,
+      link: '/vocabulary/basic',
+    },
+    {
+      kind: 'vocabulary',
       title: 'Flashcards',
       text: 'Over 500 B1 words. Each one comes back just before you forget it.',
       tone: 'cream',
@@ -244,6 +252,14 @@ export class HomePage {
       tone: 'blue',
       tilt: 1,
       link: '/reader',
+    },
+    {
+      kind: 'speaking',
+      title: 'Speaking kit',
+      text: 'Common questions with model answers, phrases to gain time and a checklist.',
+      tone: 'white',
+      tilt: 1.25,
+      link: '/practice/speaking',
     },
     {
       kind: 'mistakes',

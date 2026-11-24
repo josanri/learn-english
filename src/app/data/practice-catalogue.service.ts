@@ -1,11 +1,18 @@
 import { httpResource } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import type { FlashcardFile, PhrasalVerbsFile, Story, StoryIndex } from '../models/practice';
+import type {
+  BasicVocabularyFile,
+  FlashcardFile,
+  PhrasalVerbsFile,
+  SpeakingKitFile,
+  Story,
+  StoryIndex,
+} from '../models/practice';
 
 /** Folder (relative to the base href) with the graded reader stories. */
 export const READER_ROOT = 'assets/reader';
 
-/** Lazily loads the daily practice data (flashcards, phrasal verbs, stories) as static JSON. */
+/** Lazily loads the daily practice data (flashcards, phrasal verbs, basic words, speaking kit, stories) as static JSON. */
 @Injectable({ providedIn: 'root' })
 export class PracticeCatalogueService {
   flashcards() {
@@ -14,6 +21,14 @@ export class PracticeCatalogueService {
 
   phrasalVerbs() {
     return httpResource<PhrasalVerbsFile>(() => 'assets/vocabulary/phrasal-verbs.json');
+  }
+
+  basicVocabulary() {
+    return httpResource<BasicVocabularyFile>(() => 'assets/vocabulary/basic-vocabulary.json');
+  }
+
+  speakingKit() {
+    return httpResource<SpeakingKitFile>(() => 'assets/speaking/speaking-kit.json');
   }
 
   storyIndex() {

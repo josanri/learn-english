@@ -2,13 +2,16 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { test } from 'node:test';
 import {
+  checkBasicVocabulary,
   checkFlashcards,
   checkPhrasalVerbs,
+  checkSpeakingKit,
   checkStory,
   checkStoryIndex,
   countStoryWords,
   exampleUsesWord,
   glossKeys,
+  iconNamesFrom,
   indexEntry,
 } from './practice-rules.mjs';
 
@@ -130,11 +133,135 @@ test('story index must match the files', () => {
   assert.ok(errors.some((e) => e.includes('"ghost" is in index.json but has no file')));
 });
 
+const basicWord = (patch = {}) => ({
+  id: 'dress',
+  w: 'dress',
+  t: 'clothes',
+  g: 'Clothes',
+  d: 'one piece of clothing that covers the body and part of the legs',
+  e: 'She wore a red [[dress]].',
+  img: '',
+  ...patch,
+});
+const basicFile = (words, topicPatch = {}) => ({
+  topics: [
+    {
+      id: 'clothes',
+      name: 'Clothes',
+      intro: 'Say what people wear.',
+      icon: 'bag',
+      img: '',
+      phrases: ['I wear jeans.', 'She has a red dress.', 'He likes hats.'],
+      ...topicPatch,
+    },
+  ],
+  words,
+});
+const fourWords = () => [
+  basicWord(),
+  basicWord({
+    id: 'skirt',
+    w: 'skirt',
+    d: 'clothing that hangs from the waist',
+    e: 'A [[skirt]].',
+  }),
+  basicWord({ id: 'coat', w: 'coat', d: 'a long, warm thing to wear outside', e: 'My [[coat]].' }),
+  basicWord({ id: 'hat', w: 'hat', d: 'a thing for your head', e: 'A [[hat]]!' }),
+];
+
+test('basic vocabulary accepts a valid file', () => {
+  assert.deepEqual(checkBasicVocabulary(basicFile(fourWords()), new Set(['bag'])), []);
+});
+
+test('basic vocabulary needs the word marked, a fair definition and a known icon', () => {
+  const words = fourWords();
+  words[0] = basicWord({ e: 'She wore a red [[dresses]].', d: 'a dress for parties' });
+  words[1] = { ...words[1], e: 'A skirt.', similar: ['ghost'] };
+  const errors = checkBasicVocabulary(basicFile(words, { icon: 'unicorn' }), new Set(['bag']));
+  assert.ok(errors.some((e) => e.includes('must be "dress"')));
+  assert.ok(errors.some((e) => e.includes('gives the word away')));
+  assert.ok(errors.some((e) => e.includes('mark the word once')));
+  assert.ok(errors.some((e) => e.includes('unknown id "ghost"')));
+  assert.ok(errors.some((e) => e.includes('unknown icon "unicorn"')));
+});
+
+test('basic vocabulary pictures must be existing SVG files', () => {
+  const words = fourWords();
+  words[0] = { ...words[0], img: 'assets/images/basic/dress.svg' };
+  words[1] = { ...words[1], img: 'photos/skirt.jpg' };
+  const errors = checkBasicVocabulary(basicFile(words), new Set(['bag']), () => false);
+  assert.ok(errors.some((e) => e.includes('"assets/images/basic/dress.svg" does not exist')));
+  assert.ok(errors.some((e) => e.includes('must be assets/images/basic/<name>.svg')));
+});
+
+test('a colour layer needs a line drawing and a -fill.svg file', () => {
+  const words = fourWords();
+  words[0] = { ...words[0], fill: 'assets/images/basic/dress-fill.svg' };
+  words[1] = {
+    ...words[1],
+    img: 'assets/images/basic/skirt.svg',
+    fill: 'assets/images/basic/skirt.svg',
+  };
+  words[2] = {
+    ...words[2],
+    img: 'assets/images/basic/hat.svg',
+    fill: 'assets/images/basic/hat-fill.svg',
+  };
+  const exists = (p) => !p.endsWith('-fill.svg');
+  const errors = checkBasicVocabulary(basicFile(words), new Set(['bag']), exists);
+  assert.ok(errors.some((e) => e.includes('"fill" needs an "img"')));
+  assert.ok(errors.some((e) => e.includes('<name>-fill.svg')));
+  assert.ok(errors.some((e) => e.includes('"assets/images/basic/hat-fill.svg" does not exist')));
+});
+
+test('basic vocabulary needs four words per topic', () => {
+  const errors = checkBasicVocabulary(basicFile([basicWord()]), new Set(['bag']));
+  assert.ok(errors.some((e) => e.includes('at least four words')));
+});
+
+test('icon names are read from the icon source', () => {
+  const source =
+    "const ICONS = {\n  sun: '<x/>',\n  'fire-truck': '<y/>',\n};\nexport type IconName = 1;";
+  assert.deepEqual([...iconNamesFrom(source)], ['sun', 'fire-truck']);
+});
+
+test('speaking kit checks questions and checklist links', () => {
+  const kit = {
+    steps: [{ title: 'Answer', hint: 'Say it.', starters: ['Yes.'] }],
+    example: { question: 'Q?', answer: 'A.' },
+    phraseGroups: [
+      { id: 'time', name: 'Time', intro: 'Think.', phrases: [{ text: 'Well', use: 'u' }] },
+    ],
+    topics: [
+      {
+        id: 'home',
+        name: 'Home',
+        questions: [
+          { id: 'home-1', q: 'Where do you live?', model: 'In a flat.' },
+          { id: 'home-2', q: 'Describe your room', model: 'It is small.' },
+          { id: 'home-1', q: 'Is it big?', model: '' },
+        ],
+      },
+    ],
+    checklist: [{ id: 'a', text: 'Do it.', link: 'https://example.com' }],
+  };
+  const errors = checkSpeakingKit(kit);
+  assert.ok(errors.some((e) => e.includes('"home-2": "q" must end')));
+  assert.ok(errors.some((e) => e.includes('"home-1": duplicate id')));
+  assert.ok(errors.some((e) => e.includes('"model" is empty')));
+  assert.ok(errors.some((e) => e.includes('must be an app path')));
+});
+
 test('the real practice files pass', () => {
   const root = new URL('../../src/assets/', import.meta.url);
   const read = (p) => JSON.parse(readFileSync(new URL(p, root), 'utf8'));
   assert.deepEqual(checkFlashcards(read('vocabulary/flashcards.json')), []);
   assert.deepEqual(checkPhrasalVerbs(read('vocabulary/phrasal-verbs.json')), []);
+  const icons = iconNamesFrom(
+    readFileSync(new URL('../../src/app/shared/ui/icon.ts', import.meta.url), 'utf8'),
+  );
+  assert.deepEqual(checkBasicVocabulary(read('vocabulary/basic-vocabulary.json'), icons), []);
+  assert.deepEqual(checkSpeakingKit(read('speaking/speaking-kit.json')), []);
   const ids = readdirSync(new URL('reader/stories/', root)).map((n) => n.replace(/\.json$/, ''));
   const stories = ids.map((id) => read(`reader/stories/${id}.json`));
   for (const s of stories) assert.deepEqual(checkStory(s, s.id), [], s.id);

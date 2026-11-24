@@ -196,6 +196,42 @@ export class LocalStorageService {
     this.updatePractice((p) => ({ ...p, phrasal: {} }));
   }
 
+  /** Counts one answer for a basic vocabulary word and marks today as a practice day. */
+  recordBasicResult(wordId: string, correct: boolean): void {
+    const now = new Date().toISOString();
+    this.updatePractice((p) => {
+      const current = p.basic[wordId] ?? { right: 0, wrong: 0, lastSeen: '', streak: 0 };
+      return {
+        ...p,
+        basic: {
+          ...p.basic,
+          [wordId]: {
+            right: current.right + (correct ? 1 : 0),
+            wrong: current.wrong + (correct ? 0 : 1),
+            streak: correct ? current.streak + 1 : 0,
+            lastSeen: localDay(new Date(now)) ?? current.lastSeen,
+          },
+        },
+      };
+    }, now);
+  }
+
+  resetBasic(): void {
+    this.updatePractice((p) => ({ ...p, basic: {} }));
+  }
+
+  /** Ticks or unticks one item of the speaking kit checklist. */
+  setChecklistItem(itemId: string, done: boolean): void {
+    this.updatePractice((p) => {
+      const rest = p.checklist.filter((id) => id !== itemId);
+      return { ...p, checklist: done ? [...rest, itemId] : rest };
+    });
+  }
+
+  resetChecklist(): void {
+    this.updatePractice((p) => ({ ...p, checklist: [] }));
+  }
+
   /** Saves the questions score of a finished story (the latest try replaces the earlier one). */
   finishStory(storyId: string, correct: number, total: number): void {
     const now = new Date().toISOString();

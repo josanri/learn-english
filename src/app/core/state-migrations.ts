@@ -21,7 +21,7 @@ export const STORAGE_KEY = 'learn-english:v1';
 /** localStorage key written by the React version ("Northstar B1"). Kept untouched after migration. */
 export const LEGACY_STORAGE_KEY = 'northstar-practice-v3';
 /** Version of the `PersistedState` document. Bump it and add a step to `STEPS` to change the shape. */
-export const CURRENT_SCHEMA_VERSION = 5;
+export const CURRENT_SCHEMA_VERSION = 6;
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'system',
@@ -94,6 +94,8 @@ export function emptyPractice(): PracticeState {
     phrasal: {},
     stories: {},
     mistakes: {},
+    basic: {},
+    checklist: [],
   };
 }
 
@@ -130,16 +132,24 @@ export function sanitizePractice(raw: unknown): PracticeState {
     if (state) cards[id] = state;
   }
 
-  const phrasal: Record<string, PhrasalProgress> = {};
-  for (const [id, value] of Object.entries(isRecord(r['phrasal']) ? r['phrasal'] : {})) {
-    if (!isRecord(value)) continue;
-    phrasal[id] = {
-      right: int(value['right']),
-      wrong: int(value['wrong']),
-      lastSeen: str(value['lastSeen']),
-      streak: int(value['streak']),
-    };
-  }
+  const counters = (source: unknown): Record<string, PhrasalProgress> => {
+    const result: Record<string, PhrasalProgress> = {};
+    for (const [id, value] of Object.entries(isRecord(source) ? source : {})) {
+      if (!isRecord(value)) continue;
+      result[id] = {
+        right: int(value['right']),
+        wrong: int(value['wrong']),
+        lastSeen: str(value['lastSeen']),
+        streak: int(value['streak']),
+      };
+    }
+    return result;
+  };
+  const phrasal = counters(r['phrasal']);
+  const basic = counters(r['basic']);
+  const checklist = Array.isArray(r['checklist'])
+    ? [...new Set(r['checklist'].filter((id): id is string => typeof id === 'string'))]
+    : [];
 
   const stories: Record<string, StoryProgress> = {};
   for (const [id, value] of Object.entries(isRecord(r['stories']) ? r['stories'] : {})) {
@@ -167,6 +177,8 @@ export function sanitizePractice(raw: unknown): PracticeState {
     phrasal,
     stories,
     mistakes,
+    basic,
+    checklist,
   };
 }
 
@@ -217,6 +229,15 @@ const STEPS: Record<number, (state: Record<string, unknown>) => Record<string, u
   4: (state) => ({
     ...state,
     practice: { ...(isRecord(state['practice']) ? state['practice'] : {}), mistakes: {} },
+  }),
+  // v5 -> v6: basic vocabulary and the speaking kit checklist.
+  5: (state) => ({
+    ...state,
+    practice: {
+      ...(isRecord(state['practice']) ? state['practice'] : {}),
+      basic: {},
+      checklist: [],
+    },
   }),
 };
 

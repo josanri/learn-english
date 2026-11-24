@@ -1,6 +1,6 @@
 # Persistence
 
-One localStorage key, `learn-english:v1` (schemaVersion 5):
+One localStorage key, `learn-english:v1` (schemaVersion 6):
 
 ```
 { schemaVersion, settings, progress: { [examId]: ExamProgress }, activity: string[], grammar: { verbs }, practice, migrations }
@@ -10,7 +10,7 @@ One localStorage key, `learn-english:v1` (schemaVersion 5):
 
 ## Practice
 
-`practice: { cards: { [cardId]: CardState }, newPerDay, phrasal: { [verbId]: { right, wrong, lastSeen, streak } }, stories: { [storyId]: { finishedAt, correct, total } }, mistakes: { [mistakeId]: { added, card? } } }` (types in `models/practice.ts`, details in practice.md). Written through `LocalStorageService.saveCard / setNewCardsPerDay / resetCards / recordPhrasalResult / resetPhrasal / finishStory / resetStories / addMistakes / saveMistakeReview / removeMistakes / resetMistakes`; answers add the day to `activity`. Version 3 documents get an empty record (`emptyPractice()`), version 4 documents an empty `mistakes`, and `sanitizePractice` drops broken entries (that card or verb simply starts again; a mistake with a broken schedule stays without it).
+`practice: { cards: { [cardId]: CardState }, newPerDay, phrasal: { [verbId]: { right, wrong, lastSeen, streak } }, stories: { [storyId]: { finishedAt, correct, total } }, mistakes: { [mistakeId]: { added, card? } }, basic: { [wordId]: { right, wrong, lastSeen, streak } }, checklist: string[] }` (types in `models/practice.ts`, details in practice.md). Written through `LocalStorageService.saveCard / setNewCardsPerDay / resetCards / recordPhrasalResult / resetPhrasal / finishStory / resetStories / addMistakes / saveMistakeReview / removeMistakes / resetMistakes / recordBasicResult / resetBasic / setChecklistItem / resetChecklist`; answers add the day to `activity`. Version 3 documents get an empty record (`emptyPractice()`), version 4 documents an empty `mistakes`, version 5 documents an empty `basic` and `checklist`, and `sanitizePractice` drops broken entries (that card or verb simply starts again; a mistake with a broken schedule stays without it).
 
 `mistakes` keys come from `core/mistakes.ts`: `exam:<examId>:<itemId>` and `phrasal:<verbId>`. `addMistakes` (section submit, backfill) and a wrong `recordPhrasalResult` set `{ added }`, which also restarts the schedule of an item that was already there. `card` is the flashcard `CardState` (see practice.md).
 

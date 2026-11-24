@@ -151,6 +151,8 @@ describe('state migrations', () => {
       phrasal: {},
       stories: {},
       mistakes: {},
+      basic: {},
+      checklist: [],
     });
     expect(state.grammar.verbs['go'].right).toBe(1);
   });
@@ -205,9 +207,38 @@ describe('state migrations', () => {
       practice: { cards: {}, newPerDay: 20, phrasal: {}, stories: {} },
       migrations: {},
     });
-    expect(state.schemaVersion).toBe(5);
+    expect(state.schemaVersion).toBe(CURRENT_SCHEMA_VERSION);
     expect(state.practice.newPerDay).toBe(20);
     expect(state.practice.mistakes).toEqual({});
+  });
+
+  it('adds empty basic vocabulary and checklist records when it upgrades a version 5 document', () => {
+    const state = migrateState({
+      schemaVersion: 5,
+      progress: {},
+      activity: [],
+      settings: {},
+      grammar: { verbs: {} },
+      practice: { cards: {}, newPerDay: 12, phrasal: {}, stories: {}, mistakes: {} },
+      migrations: {},
+    });
+    expect(state.schemaVersion).toBe(6);
+    expect(state.practice.newPerDay).toBe(12);
+    expect(state.practice.basic).toEqual({});
+    expect(state.practice.checklist).toEqual([]);
+  });
+
+  it('keeps valid basic vocabulary and checklist records', () => {
+    const state = migrateState({
+      schemaVersion: CURRENT_SCHEMA_VERSION,
+      practice: {
+        basic: { dress: { right: 3, wrong: 0, lastSeen: '2026-11-20', streak: 3 }, bad: 'x' },
+        checklist: ['describe-person', 4, 'describe-person', 'book-hotel'],
+      },
+    });
+    expect(state.practice.basic['dress'].streak).toBe(3);
+    expect(state.practice.basic['bad']).toBeUndefined();
+    expect(state.practice.checklist).toEqual(['describe-person', 'book-hotel']);
   });
 
   it('keeps valid mistakes and drops broken ones', () => {

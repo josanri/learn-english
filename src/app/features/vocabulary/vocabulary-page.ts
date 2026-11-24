@@ -36,6 +36,15 @@ const POS_OPTIONS = [
         <h2 id="practise-title" class="visually-hidden">Practise words</h2>
         <div class="grid">
           <app-illustrated-card
+            heading="Basic vocabulary"
+            tone="white"
+            [rotate]="-1.25"
+            link="/vocabulary/basic"
+          >
+            <app-skill-art art kind="vocabulary" />
+            <p>About 480 everyday words in 20 topics, with model sentences and five exercises.</p>
+          </app-illustrated-card>
+          <app-illustrated-card
             heading="Flashcards"
             tone="cream"
             [rotate]="1.25"

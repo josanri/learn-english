@@ -1,12 +1,14 @@
-# Daily practice: flashcards, phrasal verbs, graded reader
+# Daily practice: flashcards, phrasal verbs, basic vocabulary, speaking kit, graded reader
 
-Three short activities for every day, outside the exams. All content is original (definitions, example sentences and stories were written for this app). Progress lives in `PersistedState.practice` (see persistence.md).
+Short activities for every day, outside the exams. All content is original (definitions, example sentences and stories were written for this app). Progress lives in `PersistedState.practice` (see persistence.md).
 
-| Route                       | Page                                              | Content file                                                               |
-| --------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------- |
-| `/vocabulary/flashcards`    | `features/flashcards/flashcards-page.ts`          | `assets/vocabulary/flashcards.json` (about 520 cards)                      |
-| `/vocabulary/phrasal-verbs` | `features/phrasal-verbs/phrasal-verbs-page.ts`    | `assets/vocabulary/phrasal-verbs.json` (250 in 10 groups)                  |
-| `/reader`, `/reader/:story` | `features/reader/reader-page.ts`, `story-page.ts` | `assets/reader/index.json`, `assets/reader/stories/<id>.json` (40 stories) |
+| Route                                           | Page                                              | Content file                                                               |
+| ----------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------- |
+| `/vocabulary/flashcards`                        | `features/flashcards/flashcards-page.ts`          | `assets/vocabulary/flashcards.json` (about 520 cards)                      |
+| `/vocabulary/phrasal-verbs`                     | `features/phrasal-verbs/phrasal-verbs-page.ts`    | `assets/vocabulary/phrasal-verbs.json` (250 in 10 groups)                  |
+| `/reader`, `/reader/:story`                     | `features/reader/reader-page.ts`, `story-page.ts` | `assets/reader/index.json`, `assets/reader/stories/<id>.json` (40 stories) |
+| `/vocabulary/basic`, `/vocabulary/basic/:topic` | `features/basic-vocabulary/`                      | `assets/vocabulary/basic-vocabulary.json` (20 topics, about 480 words)     |
+| `/practice/speaking`                            | `features/speaking-kit/speaking-kit-page.ts`      | `assets/speaking/speaking-kit.json` (56 questions)                         |
 
 Files are loaded with `httpResource` through `PracticeCatalogueService`. Home, `/vocabulary/b1` and `/grammar` link to the three pages.
 
@@ -49,6 +51,24 @@ Engine: `features/phrasal-verbs/phrasal-engine.ts`.
 - Questions are multiple choice (three or four options, one `answer`, an `explanation`). When all are answered, `finishStory` saves `{ finishedAt, correct, total }` and the page offers the next unread story.
 - `storyOfTheDay` picks the first unread story from a starting point that moves every day.
 
+## Basic vocabulary
+
+`basic-vocabulary.json`: `{ topics: [{ id, name, intro, icon, img, phrases }], words: [{ id, w, t, g, d, e, img, similar? }] }` — word, topic id, group label inside the topic, definition, example. The example marks the word once with `[[ ]]` and the marked text is the word itself (`She wore a red [[dress]].`). `icon` is a key of `shared/ui/icon.ts`. Word ids are progress keys: never rename them. The topics come from everyday speaking themes (clothes, appearance, town, directions, house, food, family, work, bookings, weather, transport and others).
+
+- Pictures: every word has a drawing, `assets/images/basic/<id>.svg` (original drawings, so no credit is needed). Style: viewBox 48, black 2.25 strokes with round caps and joins, three tones (`fill-opacity` .2 for surfaces, .55 for hair and dark parts, solid black for small details). The word list shows each picture on a white paper tile (`--paper-white`, the same in both themes) and uses the SVG as a CSS mask filled with `--paper-ink`, so pictures look the same in light and dark mode; only alpha counts, so a white fill does not hide what is under it (cut holes with `fill-rule="evenodd"` or a `clipPath`) and two tinted shapes that overlap look darker. About 170 words also have `fill: assets/images/basic/<id>-fill.svg`, a colour layer with fills only that the list shows under the mask. Use colour only where it is part of the meaning (flags, fruit and food, drinks, weather, animals with a typical colour, sun and moon, hair, signs such as traffic lights); people, furniture, buildings, arrows and diagrams stay monochrome. Take the colours from one shared palette of mid-saturation hues that read on the white tile (flags use their real colours), and keep the coloured areas free of tint in the line drawing so the colour is not darkened. A word with an empty `img` shows a dashed slot with the topic icon. The validator checks that each `img` and `fill` file exists.
+- Pages: the topic list with the learnt count of each topic, and a topic page with **Learn** (`basic-word-list.ts`: words by group, listen buttons, model sentences) and **Practice**.
+- Exercises (`basic-engine.ts`): **Choose the word** (definition → word), **Meaning** (word → definition), **Complete the sentence** (the gap shows the definition as a clue, because many words of one topic fit the same sentence), **Listen** (the speech voice says the word; hidden when the browser cannot speak) and **Spell it** (type the word; case, spaces, hyphens, apostrophes and accents do not count). Mixed sessions rotate them.
+- Wrong options come from the same group first, then the same topic. They never include the word itself or a `similar` entry, in either direction.
+- Sessions have 10 words, picked with the phrasal verb weights. Saved per word in `practice.basic`, with the same counters as the phrasal verbs (three right in a row = learnt).
+
+## Speaking kit
+
+`speaking-kit.json`: `{ steps, example, phraseGroups, topics: [{ id, name, questions: [{ id, q, model }] }], checklist: [{ id, text, link? }] }`. All text is original.
+
+- The page shows the four-step answer (answer, explain, example, finish) and three sections: **Questions** (a random question of a topic, read aloud on request, with a model answer to compare after the learner speaks), **Phrases** (connectors, time to think, opinions, agreeing, asking for help, preferences, describing a photo) and **Checklist**.
+- The model answers are examples, not a score. Nothing is recorded or marked here.
+- Ticked checklist ids are saved in `practice.checklist`. Checklist ids are progress keys: never rename them.
+
 ## My mistakes (`/practice/mistakes`)
 
 `features/mistakes/`: `mistake-queue.ts` (pure: due, counts, grading), `mistake-card.ts` (pure: the card of an exam item), `mistakes-page.ts`.
@@ -61,5 +81,5 @@ Engine: `features/phrasal-verbs/phrasal-engine.ts`.
 ## Adding content
 
 1. Edit the JSON file (or add `assets/reader/stories/<id>.json` and its line in `index.json`, with `words` equal to the word count of the paragraphs without markers).
-2. Run `npm run validate:practice`. It checks ids, topics and groups, that every card example uses its word, that phrasal verb markers match the particles, that every glossed word has a meaning and every glossary entry is used, word counts and questions.
+2. Run `npm run validate:practice`. It checks ids, topics and groups, that every card example uses its word, the basic vocabulary markers, icons and definitions (a definition must not contain its word), the speaking kit questions and checklist links, that phrasal verb markers match the particles, that every glossed word has a meaning and every glossary entry is used, word counts and questions.
 3. Keep the language at B1: short sentences, common words, and gloss anything above the level.

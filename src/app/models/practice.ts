@@ -158,4 +158,105 @@ export interface PracticeState {
   phrasal: Record<string, PhrasalProgress>;
   stories: Record<string, StoryProgress>;
   mistakes: Record<string, MistakeState>;
+  /** Basic vocabulary words (same counters as the phrasal verbs), keyed by word id. */
+  basic: Record<string, PhrasalProgress>;
+  /** Ids of the speaking kit checklist items that the learner ticked. */
+  checklist: string[];
+}
+
+/** One topic of the basic vocabulary (`assets/vocabulary/basic-vocabulary.json`). */
+export interface BasicTopic {
+  /** Stable id, used in the address (`/vocabulary/basic/<id>`). */
+  id: string;
+  name: string;
+  /** One sentence shown under the name. */
+  intro: string;
+  /** Name of an icon of `shared/ui/icon.ts`. */
+  icon: string;
+  /** Picture of the topic: empty until a credited local file exists. */
+  img: string;
+  /** Original model sentences that use the words of the topic. */
+  phrases: string[];
+}
+
+/**
+ * One basic word. `e` marks the word with double brackets (`She has a red [[dress]].`); the marked
+ * text is the word itself, so the gap exercise can blank it.
+ */
+export interface BasicWord {
+  /** Stable id, never renamed (it is the progress key). */
+  id: string;
+  /** Word or short phrase, as the learner writes it. */
+  w: string;
+  /** Topic id. */
+  t: string;
+  /** Group label inside the topic, for example `Fruit`. */
+  g: string;
+  /** Simple definition in English. */
+  d: string;
+  /** Original example sentence with the word marked. */
+  e: string;
+  /** Line drawing of the word (`assets/images/basic/<id>.svg`, used as a mask), or empty. */
+  img: string;
+  /** Optional colour layer shown under the line drawing (fills only, fixed colours). */
+  fill?: string;
+  /** Ids of words close enough in meaning that they must not be offered as wrong answers. */
+  similar?: string[];
+}
+
+export interface BasicVocabularyFile {
+  topics: BasicTopic[];
+  words: BasicWord[];
+}
+
+/** One useful phrase of the speaking kit. */
+export interface SpeakingPhrase {
+  text: string;
+  /** When to use it, in simple English. */
+  use: string;
+}
+
+export interface SpeakingPhraseGroup {
+  id: string;
+  name: string;
+  intro: string;
+  phrases: SpeakingPhrase[];
+}
+
+/** One step of the four-step answer. */
+export interface AnswerStep {
+  title: string;
+  hint: string;
+  starters: string[];
+}
+
+export interface SpeakingQuestion {
+  /** Stable id. */
+  id: string;
+  q: string;
+  /** Original model answer that follows the four steps. */
+  model: string;
+}
+
+export interface SpeakingQuestionTopic {
+  id: string;
+  name: string;
+  questions: SpeakingQuestion[];
+}
+
+export interface ChecklistItem {
+  /** Stable id, never renamed (it is the progress key). */
+  id: string;
+  text: string;
+  /** App link that helps with the item, for example `/vocabulary/basic/clothes`. */
+  link?: string;
+}
+
+/** `assets/speaking/speaking-kit.json`. */
+export interface SpeakingKitFile {
+  steps: AnswerStep[];
+  example: { question: string; answer: string };
+  phraseGroups: SpeakingPhraseGroup[];
+  topics: SpeakingQuestionTopic[];
+  checklist: ChecklistItem[];
 }
