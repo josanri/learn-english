@@ -21,6 +21,7 @@ import {
 const FORMATS: SegmentOption[] = [
   { value: 'all', label: 'All formats' },
   { value: 'cambridge', label: 'Cambridge' },
+  { value: 'aptis', label: 'Aptis' },
 ];
 
 interface ExamCard {
@@ -68,7 +69,7 @@ interface ExamCard {
             <label for="topic-filter">Topic</label>
             <select id="topic-filter" [value]="topic()" (change)="onTopicChange($event)">
               <option value="all" [selected]="topic() === 'all'">
-                <app-icon name="grid" [size]="16" />All topics ({{ allExams().length }})
+                <app-icon name="grid" [size]="16" />All topics ({{ formatExams().length }})
               </option>
               @for (t of topics(); track t.id) {
                 <option [value]="t.id" [selected]="topic() === t.id">
@@ -101,57 +102,81 @@ interface ExamCard {
       } @else {
         @for (group of groups(); track group.id) {
           <section class="group" [attr.aria-labelledby]="'board-' + group.id">
-            <h2 class="section-title" [id]="'board-' + group.id">{{ group.name }}</h2>
+            <h2 class="section-title" [id]="'board-' + group.id">
+              <button
+                type="button"
+                class="group-toggle"
+                [attr.aria-expanded]="!isCollapsed(group.id)"
+                [attr.aria-controls]="'board-list-' + group.id"
+                (click)="toggleGroup(group.id)"
+              >
+                <span class="group-heading">
+                  {{ group.name }}
+                  <app-badge>{{ group.cards.length }}</app-badge>
+                </span>
+                <span class="group-action">
+                  {{ isCollapsed(group.id) ? 'Show' : 'Hide' }}
+                  <app-icon
+                    name="arrow"
+                    [size]="18"
+                    class="chev"
+                    [class.open]="!isCollapsed(group.id)"
+                  />
+                </span>
+              </button>
+            </h2>
             <p class="muted">{{ group.description }}</p>
-            <ul class="exam-list">
-              @for (card of group.cards; track card.exam.id) {
-                <li class="exam">
-                  <div class="top">
-                    <app-chip
-                      ><app-icon [name]="card.category.icon" [size]="16" />{{
-                        card.exam.theme
-                      }}</app-chip
-                    >
-                    <app-progress-ring
-                      [value]="card.status.fraction"
-                      [size]="56"
-                      [label]="'Sections completed in ' + card.exam.title"
-                    />
-                  </div>
-                  <h3>
-                    <a
-                      [routerLink]="['/exams', level(), card.exam.board, card.exam.id, 'reading']"
-                      >{{ card.exam.title }}</a
-                    >
-                  </h3>
-                  <p class="muted">{{ card.exam.subtitle }}</p>
-                  <div class="meta">
-                    <app-chip [command]="true" [prompt]="false"
-                      >{{ card.exam.estimatedMinutes }} min</app-chip
-                    >
-                    @switch (card.status.status) {
-                      @case ('completed') {
-                        <app-badge tone="success">
-                          Completed
+            @if (!isCollapsed(group.id)) {
+              <ul class="exam-list" [id]="'board-list-' + group.id">
+                @for (card of group.cards; track card.exam.id) {
+                  <li class="exam">
+                    <div class="top">
+                      <app-chip
+                        ><app-icon [name]="card.category.icon" [size]="16" />{{
+                          card.exam.theme
+                        }}</app-chip
+                      >
+                      <app-progress-ring
+                        [value]="card.status.fraction"
+                        [size]="56"
+                        [label]="'Sections completed in ' + card.exam.title"
+                      />
+                    </div>
+                    <h3>
+                      <a
+                        [routerLink]="['/exams', level(), card.exam.board, card.exam.id, 'reading']"
+                        >{{ card.exam.title }}</a
+                      >
+                    </h3>
+                    <p class="muted">{{ card.exam.subtitle }}</p>
+                    <div class="meta">
+                      <app-chip [command]="true" [prompt]="false"
+                        >{{ card.exam.estimatedMinutes }} min</app-chip
+                      >
+                      @switch (card.status.status) {
+                        @case ('completed') {
+                          <app-badge tone="success">
+                            Completed
+                            @if (card.status.scorePercent !== null) {
+                              &middot; {{ card.status.scorePercent }}%
+                            }
+                          </app-badge>
+                        }
+                        @case ('in-progress') {
+                          <app-badge tone="accent">In progress</app-badge>
                           @if (card.status.scorePercent !== null) {
-                            &middot; {{ card.status.scorePercent }}%
+                            <app-badge>Last score {{ card.status.scorePercent }}%</app-badge>
                           }
-                        </app-badge>
-                      }
-                      @case ('in-progress') {
-                        <app-badge tone="accent">In progress</app-badge>
-                        @if (card.status.scorePercent !== null) {
-                          <app-badge>Last score {{ card.status.scorePercent }}%</app-badge>
+                        }
+                        @default {
+                          <app-badge>Not started</app-badge>
                         }
                       }
-                      @default {
-                        <app-badge>Not started</app-badge>
-                      }
-                    }
-                  </div>
-                </li>
-              }
-            </ul>
+                    </div>
+                  </li>
+                }
+              </ul>
+            }
           </section>
         }
       }
@@ -243,6 +268,52 @@ interface ExamCard {
       font-size: var(--step-3);
       margin-bottom: var(--space-2);
     }
+    .group-toggle {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+      width: 100%;
+      min-height: var(--target);
+      padding: var(--space-2) 0;
+      border: 0;
+      border-bottom: var(--bw) solid var(--border-muted);
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+    .group-toggle:hover {
+      border-bottom-color: var(--border);
+    }
+    .group-toggle:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 4px;
+      border-radius: var(--radius-sm);
+    }
+    .group-heading {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    .group-action {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--step--1);
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .chev {
+      display: inline-flex;
+      transition: transform var(--dur);
+    }
+    .chev.open {
+      transform: rotate(90deg);
+    }
     .exam-list {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
@@ -324,11 +395,30 @@ export class LevelPage {
   );
 
   protected readonly topic = signal('all');
+  private readonly collapsed = signal<ReadonlySet<string>>(new Set());
 
-  /** Topics that have at least one exam, in the order of `EXAM_CATEGORIES`, with their exam count. */
+  protected isCollapsed(boardId: string): boolean {
+    return this.collapsed().has(boardId);
+  }
+
+  protected toggleGroup(boardId: string): void {
+    this.collapsed.update((current) => {
+      const next = new Set(current);
+      if (next.has(boardId)) next.delete(boardId);
+      else next.add(boardId);
+      return next;
+    });
+  }
+
+  protected readonly formatExams = computed(() => {
+    const format = this.format();
+    return this.allExams().filter((e) => format === 'all' || e.board.startsWith(format));
+  });
+
+  /** Topics that have at least one exam in the chosen format, in the order of `EXAM_CATEGORIES`, with their exam count. */
   protected readonly topics = computed(() => {
     const counts = new Map<string, number>();
-    for (const exam of this.allExams()) {
+    for (const exam of this.formatExams()) {
       const id = exam.category in EXAM_CATEGORIES ? exam.category : 'misc';
       counts.set(id, (counts.get(id) ?? 0) + 1);
     }

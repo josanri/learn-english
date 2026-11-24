@@ -106,4 +106,70 @@ describe('LevelPage', () => {
     choose('all');
     expect(cards()).toBe(3);
   });
+
+  it('filters by exam format (Cambridge vs Aptis) and collapses board sections', async () => {
+    TestBed.configureTestingModule({
+      providers: [provideRouter([]), provideHttpClient(), provideHttpClientTesting()],
+    });
+    const fixture = TestBed.createComponent(LevelPage);
+    fixture.componentRef.setInput('level', 'b1');
+    fixture.detectChanges();
+    await Promise.resolve();
+
+    const index: LevelIndex = {
+      schemaVersion: 2,
+      level: 'B1',
+      boards: [
+        { id: 'cambridge-pet', name: 'Cambridge PET', description: 'Cambridge papers.' },
+        { id: 'aptis-b1', name: 'Aptis B1', description: 'Aptis papers.' },
+      ],
+      exams: [
+        {
+          id: 'cambridge-pet-01',
+          level: 'B1',
+          board: 'cambridge-pet',
+          title: 'Cambridge 1',
+          subtitle: 'Sub',
+          theme: 'Theme',
+          category: 'people',
+          estimatedMinutes: 137,
+          skills: ['reading'],
+          path: 'b1/cambridge-pet/cambridge-pet-01.json',
+        },
+        {
+          id: 'aptis-b1-01',
+          level: 'B1',
+          board: 'aptis-b1',
+          title: 'Aptis 1',
+          subtitle: 'Sub',
+          theme: 'Pottery',
+          category: 'arts',
+          estimatedMinutes: 137,
+          skills: ['reading'],
+          path: 'b1/aptis-b1/aptis-b1-01.json',
+        },
+      ],
+    };
+    TestBed.inject(HttpTestingController).expectOne('assets/exams/b1/index.json').flush(index);
+    await fixture.whenStable();
+
+    const element = fixture.nativeElement as HTMLElement;
+    expect(element.querySelectorAll('.exam-list .exam').length).toBe(2);
+
+    // Collapse the Cambridge board section.
+    const firstToggle = element.querySelector<HTMLButtonElement>('.group-toggle')!;
+    firstToggle.click();
+    fixture.detectChanges();
+    expect(firstToggle.getAttribute('aria-expanded')).toBe('false');
+    expect(element.querySelectorAll('.exam-list .exam').length).toBe(1);
+
+    // Filter to Aptis only via the segmented format control.
+    const aptisRadio = Array.from(element.querySelectorAll<HTMLInputElement>('.filter input')).find(
+      (i) => i.value === 'aptis',
+    )!;
+    aptisRadio.click();
+    fixture.detectChanges();
+    expect(element.querySelectorAll('.group').length).toBe(1);
+    expect(element.querySelector('.exam-list a')?.textContent).toContain('Aptis 1');
+  });
 });

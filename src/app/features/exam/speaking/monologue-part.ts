@@ -12,27 +12,29 @@ import { SpeakingResponse } from './speaking-response';
   imports: [PrepTimer, QuestionSequence, SpeakingResponse],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <fieldset class="topics" [disabled]="store.locked()">
-      <legend>1. Choose a topic</legend>
-      @for (topic of part().topics; track topic.id) {
-        <label class="opt">
-          <input
-            type="radio"
-            [name]="'topic-' + part().id"
-            [value]="topic.id"
-            [checked]="topic.id === chosenId()"
-            (change)="choose(topic.id)"
-          />
-          <span>{{ topic.prompt }}</span>
-        </label>
-      }
-    </fieldset>
+    @if (!singleTopic()) {
+      <fieldset class="topics" [disabled]="store.locked()">
+        <legend>1. Choose a topic</legend>
+        @for (topic of part().topics; track topic.id) {
+          <label class="opt">
+            <input
+              type="radio"
+              [name]="'topic-' + part().id"
+              [value]="topic.id"
+              [checked]="topic.id === chosenId()"
+              (change)="choose(topic.id)"
+            />
+            <span>{{ topic.prompt }}</span>
+          </label>
+        }
+      </fieldset>
+    }
 
     <div class="fold-panel">
       @if (chosen(); as topic) {
-        <h3 class="step">2. Prepare (optional)</h3>
+        <h3 class="step">{{ stepOffset() }}. Prepare (optional)</h3>
         <app-prep-timer [seconds]="part().preparationSeconds" />
-        <h3 class="step">3. Give your talk</h3>
+        <h3 class="step">{{ stepOffset() + 1 }}. Give your talk</h3>
         <app-speaking-response
           [itemId]="talkId()"
           [heading]="topic.prompt"
@@ -40,13 +42,15 @@ import { SpeakingResponse } from './speaking-response';
           [partType]="part().type"
           [targetSeconds]="part().speakingSeconds"
         />
-        <h3 class="step">4. Answer the follow-up questions</h3>
-        <app-question-sequence
-          [questions]="followUps()"
-          partType="discussion"
-          [targetSeconds]="30"
-          label="Follow-up questions"
-        />
+        @if (followUps().length > 0) {
+          <h3 class="step">{{ stepOffset() + 2 }}. Answer the follow-up questions</h3>
+          <app-question-sequence
+            [questions]="followUps()"
+            partType="discussion"
+            [targetSeconds]="30"
+            label="Follow-up questions"
+          />
+        }
       } @else {
         <p class="muted">Choose a topic to start.</p>
       }
@@ -92,13 +96,16 @@ export class MonologuePart {
   readonly part = input.required<MonologueTopicPart>();
   protected readonly store = inject(ExamSessionStore);
 
+  protected readonly singleTopic = computed(() => this.part().topics.length === 1);
+  protected readonly stepOffset = computed(() => (this.singleTopic() ? 1 : 2));
   protected readonly chosenId = computed(() => {
     const value = this.store.answer(topicKey(this.part().id));
     return typeof value === 'string' ? value : '';
   });
-  protected readonly chosen = computed(
-    () => this.part().topics.find((t) => t.id === this.chosenId()) ?? null,
-  );
+  protected readonly chosen = computed(() => {
+    if (this.singleTopic()) return this.part().topics[0] ?? null;
+    return this.part().topics.find((t) => t.id === this.chosenId()) ?? null;
+  });
   protected readonly talkId = computed(() => monologueId(this.part().id));
   protected readonly followUps = computed(() =>
     this.part().followUpQuestions.map((q) => ({ id: q.id, label: q.prompt })),
