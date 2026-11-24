@@ -95,7 +95,7 @@ function brief(board) {
   const spec = BOARD_SPECS[board];
   if (!spec) fail(`Unknown board "${board}". Known: ${Object.keys(BOARD_SPECS).join(', ')}`);
   console.log(`Board ${board}: shape of the paper (enforced by validate:exams)`);
-  for (const [skill, parts] of Object.entries(spec.parts)) {
+  for (const [skill, parts] of Object.entries(spec.parts ?? {})) {
     const text = parts
       .map((p) => {
         const types = [...(p.types ?? [])].join('|');

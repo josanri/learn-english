@@ -189,11 +189,37 @@ test('listening: one name keeps one voice gender in the exam', () => {
   );
 });
 
-test('matching: two people cannot share a text', () => {
+test('matching: two people cannot share a text when texts >= questions', () => {
   const exam = clone(load(1));
   const part = partOf(exam, 'reading-2');
   part.questions[1].answer = part.questions[0].answer;
   assert.ok(checkMatching(exam).errors[0].includes('share the same text'));
+});
+
+test('matching: repeated keys are allowed when questions outnumber texts', () => {
+  const exam = {
+    sections: [
+      {
+        skill: 'reading',
+        parts: [
+          {
+            id: 'reading-3',
+            type: 'matching',
+            texts: [
+              { id: 'A', title: 'A', text: 'a' },
+              { id: 'B', title: 'B', text: 'b' },
+            ],
+            questions: [
+              { id: 'r3-1', prompt: '1', options: ['A', 'B'], answer: 0 },
+              { id: 'r3-2', prompt: '2', options: ['A', 'B'], answer: 1 },
+              { id: 'r3-3', prompt: '3', options: ['A', 'B'], answer: 0 },
+            ],
+          },
+        ],
+      },
+    ],
+  };
+  assert.deepEqual(checkMatching(exam).errors, []);
 });
 
 test('images: file, credit, licence, alt and hints are enforced', () => {

@@ -281,7 +281,7 @@ export function checkMatching(exam) {
       if (part.type === 'matching') {
         const labels = part.texts.map((t) => t.id);
         const letters = part.questions.map((q) => q.options[q.answer]);
-        if (new Set(letters).size !== letters.length)
+        if (part.questions.length <= part.texts.length && new Set(letters).size !== letters.length)
           errors.push(`${part.id}: two people share the same text`);
         for (const q of part.questions)
           if (q.options.length !== part.texts.length)
