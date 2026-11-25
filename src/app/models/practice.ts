@@ -196,10 +196,8 @@ export interface BasicWord {
   d: string;
   /** Original example sentence with the word marked. */
   e: string;
-  /** Line drawing of the word (`assets/images/basic/<id>.svg`, used as a mask), or empty. */
+  /** Full-colour picture of the word (`assets/images/basic/<id>.svg`), or empty. */
   img: string;
-  /** Optional colour layer shown under the line drawing (fills only, fixed colours). */
-  fill?: string;
   /** Ids of words close enough in meaning that they must not be offered as wrong answers. */
   similar?: string[];
 }

@@ -213,7 +213,7 @@ function markedTexts(example) {
 /**
  * Basic vocabulary (`assets/vocabulary/basic-vocabulary.json`): topics with an icon and model
  * phrases, and words whose example marks the word itself once with [[ ]]. `exists(path)`, when
- * given, checks that a non-empty `img` (relative to src/) is a real file.
+ * given, checks that a non-empty `img` (relative to src/) is a real file (one full-colour SVG).
  */
 export function checkBasicVocabulary(file, iconNames, exists) {
   const errors = [];
@@ -250,13 +250,9 @@ export function checkBasicVocabulary(file, iconNames, exists) {
       errors.push(`${where}: "img" must be assets/images/basic/<name>.svg.`);
     else if (word.img && exists && !exists(word.img))
       errors.push(`${where}: "${word.img}" does not exist.`);
-    if (word?.fill !== undefined) {
-      if (!word.img) errors.push(`${where}: "fill" needs an "img" line drawing.`);
-      else if (!/^assets\/images\/basic\/[a-z0-9-]+-fill\.svg$/.test(word.fill ?? ''))
-        errors.push(`${where}: "fill" must be assets/images/basic/<name>-fill.svg.`);
-      else if (exists && !exists(word.fill))
-        errors.push(`${where}: "${word.fill}" does not exist.`);
-    }
+    // Pictures are single full-colour SVG files; the old two-layer "fill" is gone.
+    if (word?.fill !== undefined)
+      errors.push(`${where}: "fill" is not used any more (the picture in "img" is in colour).`);
     if (!text(word?.w) || !text(word?.e) || !text(word?.d)) continue;
     if (!topicIds.has(word.t)) errors.push(`${where}: unknown topic "${word.t}".`);
     if (word.w.includes('/')) errors.push(`${where}: write one form only (no "/").`);

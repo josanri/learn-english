@@ -222,7 +222,7 @@ export class HomePage {
   /** Short daily practice outside the exams. */
   protected readonly daily: (SkillCard & { link: string })[] = [
     {
-      kind: 'vocabulary',
+      kind: 'basic',
       title: 'Basic vocabulary',
       text: 'Clothes, food, the house, your town: 20 everyday topics, five short exercises.',
       tone: 'blue',

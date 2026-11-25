@@ -41,7 +41,7 @@ const POS_OPTIONS = [
             [rotate]="-1.25"
             link="/vocabulary/basic"
           >
-            <app-skill-art art kind="vocabulary" />
+            <app-skill-art art kind="basic" />
             <p>About 480 everyday words in 20 topics, with model sentences and five exercises.</p>
           </app-illustrated-card>
           <app-illustrated-card
@@ -192,9 +192,19 @@ const POS_OPTIONS = [
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+      grid-template-columns: minmax(0, 1fr);
       gap: var(--space-6);
       padding-right: 6px;
+    }
+    @media (min-width: 34rem) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 64rem) {
+      .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
     }
     .filters {
       display: grid;

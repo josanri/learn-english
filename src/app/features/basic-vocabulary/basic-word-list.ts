@@ -26,10 +26,7 @@ export interface WordGroup {
             <li>
               @if (w.img) {
                 <span class="pic" aria-hidden="true">
-                  @if (w.fill) {
-                    <img class="fill" [src]="w.fill" alt="" />
-                  }
-                  <span class="art" [style.mask-image]="'url(' + w.img + ')'"></span>
+                  <img class="art" [src]="w.img" alt="" loading="lazy" decoding="async" />
                 </span>
               } @else {
                 <span class="pic empty" aria-hidden="true"
@@ -119,8 +116,8 @@ export interface WordGroup {
       border-radius: var(--radius);
       background: var(--surface);
     }
-    /* Picture slot: the drawing of the word on a white paper tile with dark ink in both themes
-       (the colour layers are made for a light ground), otherwise the topic icon in a dashed box. */
+    /* Picture slot: the full-colour drawing of the word on a white paper tile, the same in both
+       themes (the colours are made for a light ground), otherwise the topic icon in a dashed box. */
     .pic {
       display: grid;
       place-items: center;
@@ -130,22 +127,10 @@ export interface WordGroup {
       border-radius: var(--radius);
       background: var(--paper-white);
     }
-    /* Many words have a colour layer under the line drawing. */
-    .pic > .fill,
-    .pic > .art {
-      grid-area: 1 / 1;
-    }
-    .fill {
-      width: 3.5rem;
-      height: 3.5rem;
-    }
     .art {
+      display: block;
       width: 3.5rem;
       height: 3.5rem;
-      background: var(--paper-ink);
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-size: contain;
     }
     .pic.empty {
       border-style: dashed;

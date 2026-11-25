@@ -1,15 +1,17 @@
 import { DOCUMENT } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
 import { NavigationEnd, NavigationStart, Router, type Event } from '@angular/router';
-import { SwUpdate, type VersionEvent } from '@angular/service-worker';
+import { SwUpdate, type UnrecoverableStateEvent, type VersionEvent } from '@angular/service-worker';
 import { Subject } from 'rxjs';
 import { AppUpdateService } from './app-update.service';
 
 describe('AppUpdateService', () => {
   function setup(isEnabled: boolean, url = '/') {
     const versionUpdates = new Subject<VersionEvent>();
+    const unrecoverable = new Subject<UnrecoverableStateEvent>();
     const routerEvents = new Subject<Event>();
     const checkForUpdate = vi.fn().mockResolvedValue(false);
+    const activateUpdate = vi.fn().mockResolvedValue(true);
     const reload = vi.fn();
     const setInterval = vi.fn();
     const listeners = new Map<string, () => void>();
@@ -21,7 +23,10 @@ describe('AppUpdateService', () => {
     };
     TestBed.configureTestingModule({
       providers: [
-        { provide: SwUpdate, useValue: { isEnabled, versionUpdates, checkForUpdate } },
+        {
+          provide: SwUpdate,
+          useValue: { isEnabled, versionUpdates, unrecoverable, checkForUpdate, activateUpdate },
+        },
         { provide: DOCUMENT, useValue: fakeDocument },
         { provide: Router, useValue: { url, events: routerEvents } },
       ],
@@ -35,9 +40,11 @@ describe('AppUpdateService', () => {
       });
     return {
       versionUpdates,
+      unrecoverable,
       versionReady,
       routerEvents,
       checkForUpdate,
+      activateUpdate,
       reload,
       setInterval,
       listeners,
@@ -53,26 +60,35 @@ describe('AppUpdateService', () => {
     expect(checkForUpdate).toHaveBeenCalledTimes(2);
   });
 
-  it('reloads at once when the new version is ready and the learner is on Home', () => {
-    const { versionUpdates, versionReady, reload } = setup(true, '/?ref=pwa');
+  it('reloads at once when the new version is ready and the learner is on Home', async () => {
+    const { versionUpdates, versionReady, activateUpdate, reload } = setup(true, '/?ref=pwa');
 
     versionUpdates.next({ type: 'VERSION_DETECTED', version: { hash: 'b' } });
     expect(reload).not.toHaveBeenCalled();
 
     versionReady();
-    expect(reload).toHaveBeenCalledTimes(1);
+    await vi.waitFor(() => expect(reload).toHaveBeenCalledTimes(1));
+    expect(activateUpdate).toHaveBeenCalled();
   });
 
-  it('waits for the next navigation to finish when the learner is on another page', () => {
-    const { versionReady, routerEvents, reload } = setup(true, '/exams/b1');
+  it('waits for the next navigation to finish when the learner is on another page', async () => {
+    const { versionReady, routerEvents, activateUpdate, reload } = setup(true, '/exams/b1');
 
     versionReady();
+    expect(activateUpdate).toHaveBeenCalledTimes(1);
     expect(reload).not.toHaveBeenCalled();
 
     routerEvents.next(new NavigationStart(1, '/grammar'));
     expect(reload).not.toHaveBeenCalled();
 
     routerEvents.next(new NavigationEnd(1, '/grammar', '/grammar'));
+    await vi.waitFor(() => expect(reload).toHaveBeenCalledTimes(1));
+  });
+
+  it('reloads at once when the service worker enters an unrecoverable state', () => {
+    const { unrecoverable, reload } = setup(true, '/exams/b1');
+
+    unrecoverable.next({ type: 'UNRECOVERABLE_STATE', reason: 'Missing chunk' });
     expect(reload).toHaveBeenCalledTimes(1);
   });
 

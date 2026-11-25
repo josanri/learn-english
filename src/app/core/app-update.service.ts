@@ -30,13 +30,18 @@ export class AppUpdateService {
       .pipe(filter((event): event is VersionReadyEvent => event.type === 'VERSION_READY'))
       .subscribe(() => {
         this.updateReady = true;
-        if (this.onHome()) this.reload();
+        void this.sw.activateUpdate().catch(() => undefined);
+        if (this.onHome()) void this.reload();
       });
+
+    this.sw.unrecoverable.subscribe(() => {
+      this.doc.location.reload();
+    });
 
     // The address bar already shows the new page when navigation ends, so the reload opens it.
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe(() => this.reload());
+      .subscribe(() => void this.reload());
 
     this.doc.addEventListener('visibilitychange', () => {
       if (this.doc.visibilityState === 'visible') this.check();
@@ -49,8 +54,10 @@ export class AppUpdateService {
     return this.router.url.split(/[?#]/)[0] === '/';
   }
 
-  private reload(): void {
-    if (this.updateReady) this.doc.location.reload();
+  private async reload(): Promise<void> {
+    if (!this.updateReady) return;
+    await this.sw.activateUpdate().catch(() => undefined);
+    this.doc.location.reload();
   }
 
   private check(): void {

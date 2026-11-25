@@ -7,6 +7,7 @@ export type ArtKind =
   | 'speaking'
   | 'mediation'
   | 'vocabulary'
+  | 'basic'
   | 'dictionary'
   | 'reader'
   | 'mistakes'
@@ -37,6 +38,19 @@ export type ArtKind =
           <rect class="paper" x="14" y="32" width="106" height="70" rx="8" />
           <path d="M34 88l14-38 14 38M39 76h18M94 66v22" />
           <circle cx="84" cy="78" r="10" />
+        }
+        @case ('basic') {
+          <rect class="paper" x="16" y="8" width="58" height="42" rx="7" />
+          <path class="thin" d="M32 30l13-11 13 11M36 28v13h18V28" />
+          <rect class="mark" x="86" y="8" width="58" height="42" rx="7" />
+          <circle class="thin" cx="115" cy="29" r="11" />
+          <path class="thin" d="M115 23v6l4 3" />
+          <rect class="mark" x="16" y="60" width="58" height="42" rx="7" />
+          <circle class="thin" cx="45" cy="74" r="5.5" />
+          <path class="thin" d="M33 92a12 10 0 0 1 24 0" />
+          <rect class="paper" x="86" y="60" width="58" height="42" rx="7" />
+          <rect class="thin" x="102" y="75" width="26" height="17" rx="3" />
+          <path class="thin" d="M109 75v-4a6 6 0 0 1 12 0v4" />
         }
         @case ('dictionary') {
           <path class="paper" d="M34 22L50 6H132L116 22Z" />

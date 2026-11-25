@@ -280,9 +280,1348 @@
         "It takes me twenty minutes to get to work.",
         "I usually go to school on foot."
       ]
+    },
+    {
+      "id": "feelings",
+      "name": "Feelings and descriptions",
+      "intro": "Say how you feel and what things are like.",
+      "icon": "heartbeat",
+      "img": "",
+      "phrases": [
+        "I'm a bit tired today.",
+        "I was really excited about the trip.",
+        "The film was long and boring."
+      ]
+    },
+    {
+      "id": "body",
+      "name": "The body",
+      "intro": "Name the parts of the body.",
+      "icon": "people",
+      "img": "",
+      "phrases": ["My back hurts.", "She has hurt her knee.", "Wash your hands before dinner."]
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "intro": "Say what is wrong and get help.",
+      "icon": "heartbeat",
+      "img": "",
+      "phrases": [
+        "I've got a headache.",
+        "You should see a doctor.",
+        "Take this medicine twice a day."
+      ]
+    },
+    {
+      "id": "school",
+      "name": "School and study",
+      "intro": "Talk about lessons and study.",
+      "icon": "gradcap",
+      "img": "",
+      "phrases": [
+        "I'm studying English.",
+        "I have an exam next week.",
+        "Can I borrow your pen, please?"
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping",
+      "intro": "Buy things and ask about prices.",
+      "icon": "bag",
+      "img": "",
+      "phrases": ["How much is this?", "Have you got it in a smaller size?", "Can I pay by card?"]
+    },
+    {
+      "id": "technology",
+      "name": "Technology",
+      "intro": "Talk about phones and computers.",
+      "icon": "monitor",
+      "img": "",
+      "phrases": [
+        "I use my mobile phone every day.",
+        "The internet isn't working.",
+        "I'll send you an email."
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature",
+      "intro": "Describe the countryside.",
+      "icon": "mountains",
+      "img": "",
+      "phrases": [
+        "We went for a walk in the forest.",
+        "There is a river near my village.",
+        "The sky is very clear tonight."
+      ]
+    },
+    {
+      "id": "actions",
+      "name": "Daily actions",
+      "intro": "Describe your day.",
+      "icon": "clock",
+      "img": "",
+      "phrases": [
+        "I get up at seven.",
+        "I have a shower and get dressed.",
+        "I usually go to bed at eleven."
+      ]
     }
   ],
   "words": [
+    {
+      "id": "wake-up",
+      "w": "wake up",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to stop sleeping",
+      "e": "I [[wake up]] at seven.",
+      "img": "assets/images/basic/wake-up.svg"
+    },
+    {
+      "id": "get-up",
+      "w": "get up",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to leave your bed",
+      "e": "I [[get up]] straight away.",
+      "img": "assets/images/basic/get-up.svg"
+    },
+    {
+      "id": "have-a-shower",
+      "w": "have a shower",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to wash under running water",
+      "e": "I [[have a shower]] every morning.",
+      "img": "assets/images/basic/have-a-shower.svg"
+    },
+    {
+      "id": "get-dressed",
+      "w": "get dressed",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to put your clothes on",
+      "e": "Hurry up and [[get dressed]].",
+      "img": "assets/images/basic/get-dressed.svg"
+    },
+    {
+      "id": "brush-your-teeth",
+      "w": "brush your teeth",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to clean your mouth with a small brush and paste",
+      "e": "Don't forget to [[brush your teeth]].",
+      "img": "assets/images/basic/brush-your-teeth.svg"
+    },
+    {
+      "id": "go-to-work",
+      "w": "go to work",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to travel to your job",
+      "e": "I [[go to work]] by bus.",
+      "img": "assets/images/basic/go-to-work.svg"
+    },
+    {
+      "id": "go-to-bed",
+      "w": "go to bed",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to get under the covers at night",
+      "e": "We [[go to bed]] at eleven.",
+      "img": "assets/images/basic/go-to-bed.svg"
+    },
+    {
+      "id": "sleep",
+      "w": "sleep",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to rest with your eyes closed, not awake",
+      "e": "I [[sleep]] eight hours.",
+      "img": "assets/images/basic/sleep.svg"
+    },
+    {
+      "id": "eat",
+      "w": "eat",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to put food in your mouth and swallow it",
+      "e": "We [[eat]] at two.",
+      "img": "assets/images/basic/eat.svg"
+    },
+    {
+      "id": "drink",
+      "w": "drink",
+      "t": "actions",
+      "g": "Every day",
+      "d": "to swallow a liquid",
+      "e": "You should [[drink]] more water.",
+      "img": "assets/images/basic/drink.svg"
+    },
+    {
+      "id": "tidy-up",
+      "w": "tidy up",
+      "t": "actions",
+      "g": "At home",
+      "d": "to put things in their correct places",
+      "e": "Please [[tidy up]] your room.",
+      "img": "assets/images/basic/tidy-up.svg"
+    },
+    {
+      "id": "do-the-washing-up",
+      "w": "do the washing-up",
+      "t": "actions",
+      "g": "At home",
+      "d": "to clean plates and cups after a meal",
+      "e": "I'll [[do the washing-up]].",
+      "img": "assets/images/basic/do-the-washing-up.svg"
+    },
+    {
+      "id": "do-the-shopping",
+      "w": "do the shopping",
+      "t": "actions",
+      "g": "At home",
+      "d": "to buy food and other things you need",
+      "e": "We [[do the shopping]] on Saturdays.",
+      "img": "assets/images/basic/do-the-shopping.svg"
+    },
+    {
+      "id": "make-the-bed",
+      "w": "make the bed",
+      "t": "actions",
+      "g": "At home",
+      "d": "to arrange the sheets and covers neatly",
+      "e": "I [[make the bed]] before I leave.",
+      "img": "assets/images/basic/make-the-bed.svg"
+    },
+    {
+      "id": "take-out-the-rubbish",
+      "w": "take out the rubbish",
+      "t": "actions",
+      "g": "At home",
+      "d": "to carry the waste outside",
+      "e": "Can you [[take out the rubbish]]?",
+      "img": "assets/images/basic/take-out-the-rubbish.svg"
+    },
+    {
+      "id": "mountain",
+      "w": "mountain",
+      "t": "nature",
+      "g": "Land",
+      "d": "a very high piece of land",
+      "e": "We climbed the [[mountain]].",
+      "img": "assets/images/basic/mountain.svg"
+    },
+    {
+      "id": "hill",
+      "w": "hill",
+      "t": "nature",
+      "g": "Land",
+      "d": "a raised area of land, lower than a peak",
+      "e": "The house is on a [[hill]].",
+      "img": "assets/images/basic/hill.svg"
+    },
+    {
+      "id": "forest",
+      "w": "forest",
+      "t": "nature",
+      "g": "Land",
+      "d": "a large area covered with trees",
+      "e": "We walked in the [[forest]].",
+      "img": "assets/images/basic/forest.svg"
+    },
+    {
+      "id": "field",
+      "w": "field",
+      "t": "nature",
+      "g": "Land",
+      "d": "an area of land used for crops or animals",
+      "e": "Cows were in the [[field]].",
+      "img": "assets/images/basic/field.svg"
+    },
+    {
+      "id": "island",
+      "w": "island",
+      "t": "nature",
+      "g": "Land",
+      "d": "land with water all around it",
+      "e": "They live on a small [[island]].",
+      "img": "assets/images/basic/island.svg"
+    },
+    {
+      "id": "countryside",
+      "w": "countryside",
+      "t": "nature",
+      "g": "Land",
+      "d": "land outside towns, with farms and woods",
+      "e": "I love the [[countryside]].",
+      "img": "assets/images/basic/countryside.svg"
+    },
+    {
+      "id": "river",
+      "w": "river",
+      "t": "nature",
+      "g": "Water and sky",
+      "d": "a long line of water that flows to the sea",
+      "e": "A [[river]] runs through the town.",
+      "img": "assets/images/basic/river.svg"
+    },
+    {
+      "id": "lake",
+      "w": "lake",
+      "t": "nature",
+      "g": "Water and sky",
+      "d": "a large area of water with land around it",
+      "e": "We swam in the [[lake]].",
+      "img": "assets/images/basic/lake.svg"
+    },
+    {
+      "id": "sea",
+      "w": "sea",
+      "t": "nature",
+      "g": "Water and sky",
+      "d": "the salt water that covers much of the Earth",
+      "e": "The [[sea]] is calm today.",
+      "img": "assets/images/basic/sea.svg"
+    },
+    {
+      "id": "sky",
+      "w": "sky",
+      "t": "nature",
+      "g": "Water and sky",
+      "d": "the space above you where clouds are",
+      "e": "The [[sky]] is clear.",
+      "img": "assets/images/basic/sky.svg"
+    },
+    {
+      "id": "moon",
+      "w": "moon",
+      "t": "nature",
+      "g": "Water and sky",
+      "d": "what shines in the sky at night and goes around the Earth",
+      "e": "The [[moon]] is full tonight.",
+      "img": "assets/images/basic/moon.svg"
+    },
+    {
+      "id": "star",
+      "w": "star",
+      "t": "nature",
+      "g": "Water and sky",
+      "d": "a small point of light in the night sky",
+      "e": "I saw a bright [[star]].",
+      "img": "assets/images/basic/star.svg"
+    },
+    {
+      "id": "cloud",
+      "w": "cloud",
+      "t": "nature",
+      "g": "Water and sky",
+      "d": "a white or grey mass in the sky",
+      "e": "There isn't a [[cloud]] today.",
+      "img": "assets/images/basic/cloud.svg"
+    },
+    {
+      "id": "tree",
+      "w": "tree",
+      "t": "nature",
+      "g": "Plants",
+      "d": "a tall plant with a wooden trunk",
+      "e": "There's a [[tree]] in our garden.",
+      "img": "assets/images/basic/tree.svg"
+    },
+    {
+      "id": "flower",
+      "w": "flower",
+      "t": "nature",
+      "g": "Plants",
+      "d": "the coloured part of a plant",
+      "e": "He gave her a [[flower]].",
+      "img": "assets/images/basic/flower.svg"
+    },
+    {
+      "id": "grass",
+      "w": "grass",
+      "t": "nature",
+      "g": "Plants",
+      "d": "the short green plant that covers lawns",
+      "e": "Don't walk on the [[grass]].",
+      "img": "assets/images/basic/grass.svg"
+    },
+    {
+      "id": "leaf",
+      "w": "leaf",
+      "t": "nature",
+      "g": "Plants",
+      "d": "one of the flat green parts of a plant",
+      "e": "A [[leaf]] fell on my head.",
+      "img": "assets/images/basic/leaf.svg"
+    },
+    {
+      "id": "computer",
+      "w": "computer",
+      "t": "technology",
+      "g": "Devices",
+      "d": "an electronic machine for working with information",
+      "e": "I work on a [[computer]] all day.",
+      "img": "assets/images/basic/computer.svg"
+    },
+    {
+      "id": "laptop",
+      "w": "laptop",
+      "t": "technology",
+      "g": "Devices",
+      "d": "a small computer that you can carry",
+      "e": "She took her [[laptop]] to the library.",
+      "img": "assets/images/basic/laptop.svg"
+    },
+    {
+      "id": "mobile-phone",
+      "w": "mobile phone",
+      "t": "technology",
+      "g": "Devices",
+      "d": "a telephone that you carry with you",
+      "e": "Turn off your [[mobile phone]].",
+      "img": "assets/images/basic/mobile-phone.svg"
+    },
+    {
+      "id": "keyboard",
+      "w": "keyboard",
+      "t": "technology",
+      "g": "Devices",
+      "d": "the set of keys that you type on",
+      "e": "The [[keyboard]] is dirty.",
+      "img": "assets/images/basic/keyboard.svg"
+    },
+    {
+      "id": "screen",
+      "w": "screen",
+      "t": "technology",
+      "g": "Devices",
+      "d": "the flat surface that shows pictures on a device",
+      "e": "My phone [[screen]] is broken.",
+      "img": "assets/images/basic/screen.svg"
+    },
+    {
+      "id": "camera",
+      "w": "camera",
+      "t": "technology",
+      "g": "Devices",
+      "d": "a device that takes pictures",
+      "e": "He bought a new [[camera]].",
+      "img": "assets/images/basic/camera.svg"
+    },
+    {
+      "id": "headphones",
+      "w": "headphones",
+      "t": "technology",
+      "g": "Devices",
+      "d": "what you put on your ears to listen privately",
+      "e": "I use [[headphones]] on the train.",
+      "img": "assets/images/basic/headphones.svg"
+    },
+    {
+      "id": "internet",
+      "w": "internet",
+      "t": "technology",
+      "g": "Online",
+      "d": "the network that connects computers around the world",
+      "e": "The [[internet]] is slow today.",
+      "img": "assets/images/basic/internet.svg"
+    },
+    {
+      "id": "email",
+      "w": "email",
+      "t": "technology",
+      "g": "Online",
+      "d": "a message sent from one computer to another",
+      "e": "Send me an [[email]].",
+      "img": "assets/images/basic/email.svg"
+    },
+    {
+      "id": "website",
+      "w": "website",
+      "t": "technology",
+      "g": "Online",
+      "d": "a set of pages on the internet",
+      "e": "Visit our [[website]].",
+      "img": "assets/images/basic/website.svg"
+    },
+    {
+      "id": "password",
+      "w": "password",
+      "t": "technology",
+      "g": "Online",
+      "d": "a secret set of letters that lets you enter an account",
+      "e": "I forgot my [[password]].",
+      "img": "assets/images/basic/password.svg"
+    },
+    {
+      "id": "message",
+      "w": "message",
+      "t": "technology",
+      "g": "Online",
+      "d": "a short piece of information that you send to someone",
+      "e": "I got your [[message]].",
+      "img": "assets/images/basic/message.svg"
+    },
+    {
+      "id": "shop",
+      "w": "shop",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "a place where you buy things",
+      "e": "The [[shop]] closes at eight.",
+      "img": "assets/images/basic/shop.svg"
+    },
+    {
+      "id": "price",
+      "w": "price",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "the amount of money that something costs",
+      "e": "What's the [[price]] of this coat?",
+      "img": "assets/images/basic/price.svg"
+    },
+    {
+      "id": "money",
+      "w": "money",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "coins and notes",
+      "e": "I haven't got any [[money]].",
+      "img": "assets/images/basic/money.svg"
+    },
+    {
+      "id": "cash",
+      "w": "cash",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "coins and notes, not a card",
+      "e": "Can I pay in [[cash]]?",
+      "img": "assets/images/basic/cash.svg"
+    },
+    {
+      "id": "credit-card",
+      "w": "credit card",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "a plastic card that lets you buy now and pay later",
+      "e": "I paid by [[credit card]].",
+      "img": "assets/images/basic/credit-card.svg"
+    },
+    {
+      "id": "receipt",
+      "w": "receipt",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "a paper that shows what you paid",
+      "e": "Keep your [[receipt]].",
+      "img": "assets/images/basic/receipt.svg"
+    },
+    {
+      "id": "sale",
+      "w": "sale",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "a time when a shop lowers its prices",
+      "e": "I got these boots in the [[sale]].",
+      "img": "assets/images/basic/sale.svg"
+    },
+    {
+      "id": "size",
+      "w": "size",
+      "t": "shopping",
+      "g": "In the shop",
+      "d": "how big or small clothes are",
+      "e": "What [[size]] do you take?",
+      "img": "assets/images/basic/size.svg"
+    },
+    {
+      "id": "bag",
+      "w": "bag",
+      "t": "shopping",
+      "g": "Bags and money",
+      "d": "a soft container for carrying things",
+      "e": "Do you need a [[bag]]?",
+      "img": "assets/images/basic/bag.svg"
+    },
+    {
+      "id": "wallet",
+      "w": "wallet",
+      "t": "shopping",
+      "g": "Bags and money",
+      "d": "a small flat case for notes and cards",
+      "e": "He left his [[wallet]] at home.",
+      "img": "assets/images/basic/wallet.svg"
+    },
+    {
+      "id": "purse",
+      "w": "purse",
+      "t": "shopping",
+      "g": "Bags and money",
+      "d": "a small bag for coins and cards",
+      "e": "Her [[purse]] was in her handbag.",
+      "img": "assets/images/basic/purse.svg"
+    },
+    {
+      "id": "suitcase",
+      "w": "suitcase",
+      "t": "shopping",
+      "g": "Bags and money",
+      "d": "a large case for your clothes when you go away",
+      "e": "I packed my [[suitcase]].",
+      "img": "assets/images/basic/suitcase.svg"
+    },
+    {
+      "id": "umbrella",
+      "w": "umbrella",
+      "t": "shopping",
+      "g": "Bags and money",
+      "d": "something you hold over you to stay dry",
+      "e": "Take an [[umbrella]].",
+      "img": "assets/images/basic/umbrella.svg"
+    },
+    {
+      "id": "sunglasses",
+      "w": "sunglasses",
+      "t": "shopping",
+      "g": "Bags and money",
+      "d": "dark lenses that protect your eyes from bright light",
+      "e": "I need my [[sunglasses]].",
+      "img": "assets/images/basic/sunglasses.svg"
+    },
+    {
+      "id": "student",
+      "w": "student",
+      "t": "school",
+      "g": "People and places",
+      "d": "a person who is learning at a school or college",
+      "e": "I'm a [[student]].",
+      "img": "assets/images/basic/student.svg"
+    },
+    {
+      "id": "classroom",
+      "w": "classroom",
+      "t": "school",
+      "g": "People and places",
+      "d": "a room where lessons happen",
+      "e": "The [[classroom]] has thirty desks.",
+      "img": "assets/images/basic/classroom.svg"
+    },
+    {
+      "id": "classmate",
+      "w": "classmate",
+      "t": "school",
+      "g": "People and places",
+      "d": "a person who is in your group at school",
+      "e": "My [[classmate]] helped me.",
+      "img": "assets/images/basic/classmate.svg"
+    },
+    {
+      "id": "lesson",
+      "w": "lesson",
+      "t": "school",
+      "g": "People and places",
+      "d": "a period of time when someone teaches you",
+      "e": "The English [[lesson]] starts at nine.",
+      "img": "assets/images/basic/lesson.svg"
+    },
+    {
+      "id": "homework",
+      "w": "homework",
+      "t": "school",
+      "g": "People and places",
+      "d": "school tasks that you do at home",
+      "e": "I've finished my [[homework]].",
+      "img": "assets/images/basic/homework.svg"
+    },
+    {
+      "id": "exam",
+      "w": "exam",
+      "t": "school",
+      "g": "People and places",
+      "d": "an official test of what you know",
+      "e": "She passed the [[exam]].",
+      "img": "assets/images/basic/exam.svg"
+    },
+    {
+      "id": "book",
+      "w": "book",
+      "t": "school",
+      "g": "Things",
+      "d": "pages joined in a cover, for reading",
+      "e": "Open your [[book]] at page five.",
+      "img": "assets/images/basic/book.svg"
+    },
+    {
+      "id": "notebook",
+      "w": "notebook",
+      "t": "school",
+      "g": "Things",
+      "d": "a small pad of paper for writing in",
+      "e": "Write it in your [[notebook]].",
+      "img": "assets/images/basic/notebook.svg"
+    },
+    {
+      "id": "pen",
+      "w": "pen",
+      "t": "school",
+      "g": "Things",
+      "d": "a thing for writing with ink",
+      "e": "Can I borrow your [[pen]]?",
+      "img": "assets/images/basic/pen.svg"
+    },
+    {
+      "id": "pencil",
+      "w": "pencil",
+      "t": "school",
+      "g": "Things",
+      "d": "a thin wooden writing tool whose marks you can rub out",
+      "e": "Draw it in [[pencil]].",
+      "img": "assets/images/basic/pencil.svg"
+    },
+    {
+      "id": "rubber",
+      "w": "rubber",
+      "t": "school",
+      "g": "Things",
+      "d": "a small thing that removes marks from paper",
+      "e": "I need a [[rubber]].",
+      "img": "assets/images/basic/rubber.svg"
+    },
+    {
+      "id": "ruler",
+      "w": "ruler",
+      "t": "school",
+      "g": "Things",
+      "d": "a straight tool for measuring",
+      "e": "Use a [[ruler]] to draw the line.",
+      "img": "assets/images/basic/ruler.svg"
+    },
+    {
+      "id": "dictionary",
+      "w": "dictionary",
+      "t": "school",
+      "g": "Things",
+      "d": "a work that explains the meanings of words",
+      "e": "Look it up in a [[dictionary]].",
+      "img": "assets/images/basic/dictionary.svg"
+    },
+    {
+      "id": "backpack",
+      "w": "backpack",
+      "t": "school",
+      "g": "Things",
+      "d": "a bag that you carry on your back",
+      "e": "My [[backpack]] is heavy.",
+      "img": "assets/images/basic/backpack.svg"
+    },
+    {
+      "id": "maths",
+      "w": "maths",
+      "t": "school",
+      "g": "Subjects",
+      "d": "the subject of numbers",
+      "e": "I'm good at [[maths]].",
+      "img": "assets/images/basic/maths.svg"
+    },
+    {
+      "id": "history",
+      "w": "history",
+      "t": "school",
+      "g": "Subjects",
+      "d": "the subject about the past",
+      "e": "We study Roman [[history]].",
+      "img": "assets/images/basic/history.svg"
+    },
+    {
+      "id": "science",
+      "w": "science",
+      "t": "school",
+      "g": "Subjects",
+      "d": "the subject that includes biology, physics and chemistry",
+      "e": "[[Science]] is my favourite subject.",
+      "img": "assets/images/basic/science.svg"
+    },
+    {
+      "id": "geography",
+      "w": "geography",
+      "t": "school",
+      "g": "Subjects",
+      "d": "the subject about the countries and features of the Earth",
+      "e": "We drew maps in [[geography]].",
+      "img": "assets/images/basic/geography.svg"
+    },
+    {
+      "id": "art",
+      "w": "art",
+      "t": "school",
+      "g": "Subjects",
+      "d": "the subject where you draw and paint",
+      "e": "We have [[art]] on Friday.",
+      "img": "assets/images/basic/art.svg"
+    },
+    {
+      "id": "headache",
+      "w": "headache",
+      "t": "health",
+      "g": "Problems",
+      "d": "a pain in your head",
+      "e": "I've got a [[headache]].",
+      "img": "assets/images/basic/headache.svg"
+    },
+    {
+      "id": "toothache",
+      "w": "toothache",
+      "t": "health",
+      "g": "Problems",
+      "d": "a pain in your tooth",
+      "e": "He has bad [[toothache]].",
+      "img": "assets/images/basic/toothache.svg"
+    },
+    {
+      "id": "stomach-ache",
+      "w": "stomach ache",
+      "t": "health",
+      "g": "Problems",
+      "d": "a pain in your tummy",
+      "e": "The sweets gave her a [[stomach ache]].",
+      "img": "assets/images/basic/stomach-ache.svg"
+    },
+    {
+      "id": "cold-health",
+      "w": "cold",
+      "t": "health",
+      "g": "Problems",
+      "d": "a common illness that makes you sneeze",
+      "e": "I think I've got a [[cold]].",
+      "img": "assets/images/basic/cold-health.svg"
+    },
+    {
+      "id": "cough",
+      "w": "cough",
+      "t": "health",
+      "g": "Problems",
+      "d": "a sudden noisy push of air from your throat when you are ill",
+      "e": "He has a bad [[cough]].",
+      "img": "assets/images/basic/cough.svg"
+    },
+    {
+      "id": "fever",
+      "w": "fever",
+      "t": "health",
+      "g": "Problems",
+      "d": "a body temperature that is too high",
+      "e": "The baby has a [[fever]].",
+      "img": "assets/images/basic/fever.svg"
+    },
+    {
+      "id": "flu",
+      "w": "flu",
+      "t": "health",
+      "g": "Problems",
+      "d": "an illness like a very bad cold, with a high temperature",
+      "e": "She is in bed with [[flu]].",
+      "img": "assets/images/basic/flu.svg"
+    },
+    {
+      "id": "ill",
+      "w": "ill",
+      "t": "health",
+      "g": "Problems",
+      "d": "not well",
+      "e": "He was [[ill]] last week.",
+      "img": "assets/images/basic/ill.svg"
+    },
+    {
+      "id": "medicine",
+      "w": "medicine",
+      "t": "health",
+      "g": "Getting better",
+      "d": "something you take to treat an illness",
+      "e": "Take this [[medicine]] twice a day.",
+      "img": "assets/images/basic/medicine.svg"
+    },
+    {
+      "id": "pill",
+      "w": "pill",
+      "t": "health",
+      "g": "Getting better",
+      "d": "a small solid piece of medicine that you swallow",
+      "e": "Take one [[pill]] after meals.",
+      "img": "assets/images/basic/pill.svg"
+    },
+    {
+      "id": "dentist",
+      "w": "dentist",
+      "t": "health",
+      "g": "Getting better",
+      "d": "a person who looks after your teeth",
+      "e": "I'm going to the [[dentist]].",
+      "img": "assets/images/basic/dentist.svg"
+    },
+    {
+      "id": "ambulance",
+      "w": "ambulance",
+      "t": "health",
+      "g": "Getting better",
+      "d": "a vehicle that takes people to hospital",
+      "e": "Call an [[ambulance]]!",
+      "img": "assets/images/basic/ambulance.svg"
+    },
+    {
+      "id": "exercise",
+      "w": "exercise",
+      "t": "health",
+      "g": "Getting better",
+      "d": "activity that keeps your body healthy",
+      "e": "Daily [[exercise]] is good for you.",
+      "img": "assets/images/basic/exercise.svg"
+    },
+    {
+      "id": "head",
+      "w": "head",
+      "t": "body",
+      "g": "Head",
+      "d": "the top part of the body, above the neck",
+      "e": "He hit his [[head]] on the door.",
+      "img": "assets/images/basic/head.svg"
+    },
+    {
+      "id": "face",
+      "w": "face",
+      "t": "body",
+      "g": "Head",
+      "d": "the front of your head",
+      "e": "Wash your [[face]].",
+      "img": "assets/images/basic/face.svg"
+    },
+    {
+      "id": "eye",
+      "w": "eye",
+      "t": "body",
+      "g": "Head",
+      "d": "what you see with",
+      "e": "I have something in my [[eye]].",
+      "img": "assets/images/basic/eye.svg"
+    },
+    {
+      "id": "ear",
+      "w": "ear",
+      "t": "body",
+      "g": "Head",
+      "d": "what you hear with",
+      "e": "She whispered in my [[ear]].",
+      "img": "assets/images/basic/ear.svg"
+    },
+    {
+      "id": "nose",
+      "w": "nose",
+      "t": "body",
+      "g": "Head",
+      "d": "what you smell with",
+      "e": "My [[nose]] is cold.",
+      "img": "assets/images/basic/nose.svg"
+    },
+    {
+      "id": "mouth",
+      "w": "mouth",
+      "t": "body",
+      "g": "Head",
+      "d": "what you use to eat and speak",
+      "e": "Open your [[mouth]], please.",
+      "img": "assets/images/basic/mouth.svg"
+    },
+    {
+      "id": "tooth",
+      "w": "tooth",
+      "t": "body",
+      "g": "Head",
+      "d": "one of the hard white things you bite with",
+      "e": "The dentist took out a [[tooth]].",
+      "img": "assets/images/basic/tooth.svg"
+    },
+    {
+      "id": "neck",
+      "w": "neck",
+      "t": "body",
+      "g": "Head",
+      "d": "the part between your head and shoulders",
+      "e": "She wore a scarf round her [[neck]].",
+      "img": "assets/images/basic/neck.svg"
+    },
+    {
+      "id": "shoulder",
+      "w": "shoulder",
+      "t": "body",
+      "g": "Body",
+      "d": "the part where your arm joins your body",
+      "e": "He carried the bag on his [[shoulder]].",
+      "img": "assets/images/basic/shoulder.svg"
+    },
+    {
+      "id": "arm",
+      "w": "arm",
+      "t": "body",
+      "g": "Body",
+      "d": "the long part of the body from which the hand hangs",
+      "e": "She broke her [[arm]].",
+      "img": "assets/images/basic/arm.svg"
+    },
+    {
+      "id": "hand",
+      "w": "hand",
+      "t": "body",
+      "g": "Body",
+      "d": "what you hold things with, at the end of your arm",
+      "e": "Raise your [[hand]].",
+      "img": "assets/images/basic/hand.svg"
+    },
+    {
+      "id": "finger",
+      "w": "finger",
+      "t": "body",
+      "g": "Body",
+      "d": "one of the five long parts at the end of your hand",
+      "e": "I cut my [[finger]].",
+      "img": "assets/images/basic/finger.svg"
+    },
+    {
+      "id": "back",
+      "w": "back",
+      "t": "body",
+      "g": "Body",
+      "d": "the rear part of your body, from the neck down",
+      "e": "My [[back]] hurts.",
+      "img": "assets/images/basic/back.svg"
+    },
+    {
+      "id": "stomach",
+      "w": "stomach",
+      "t": "body",
+      "g": "Body",
+      "d": "where food goes after you eat it",
+      "e": "My [[stomach]] is full.",
+      "img": "assets/images/basic/stomach.svg"
+    },
+    {
+      "id": "leg",
+      "w": "leg",
+      "t": "body",
+      "g": "Body",
+      "d": "one of the two long parts you stand on",
+      "e": "He hurt his [[leg]] playing football.",
+      "img": "assets/images/basic/leg.svg"
+    },
+    {
+      "id": "knee",
+      "w": "knee",
+      "t": "body",
+      "g": "Body",
+      "d": "the joint in the middle of your leg",
+      "e": "She fell and cut her [[knee]].",
+      "img": "assets/images/basic/knee.svg"
+    },
+    {
+      "id": "foot",
+      "w": "foot",
+      "t": "body",
+      "g": "Body",
+      "d": "what you stand on, at the end of your leg",
+      "e": "My left [[foot]] is sore.",
+      "img": "assets/images/basic/foot.svg"
+    },
+    {
+      "id": "happy",
+      "w": "happy",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "feeling pleased and cheerful",
+      "e": "I'm [[happy]] to see you.",
+      "img": "assets/images/basic/happy.svg"
+    },
+    {
+      "id": "sad",
+      "w": "sad",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "feeling unhappy",
+      "e": "The film made me [[sad]].",
+      "img": "assets/images/basic/sad.svg"
+    },
+    {
+      "id": "angry",
+      "w": "angry",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "feeling very annoyed",
+      "e": "My dad was [[angry]] about the broken window.",
+      "img": "assets/images/basic/angry.svg"
+    },
+    {
+      "id": "sleepy",
+      "w": "sleepy",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "ready to go to sleep",
+      "e": "I always feel [[sleepy]] after lunch.",
+      "img": "assets/images/basic/sleepy.svg"
+    },
+    {
+      "id": "tired",
+      "w": "tired",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "needing to rest",
+      "e": "She was [[tired]] after work.",
+      "img": "assets/images/basic/tired.svg"
+    },
+    {
+      "id": "hungry",
+      "w": "hungry",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "needing food",
+      "e": "I'm [[hungry]]; let's eat.",
+      "img": "assets/images/basic/hungry.svg"
+    },
+    {
+      "id": "thirsty",
+      "w": "thirsty",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "needing a drink",
+      "e": "Running makes me [[thirsty]].",
+      "img": "assets/images/basic/thirsty.svg"
+    },
+    {
+      "id": "bored",
+      "w": "bored",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "not interested, with nothing to do",
+      "e": "The children were [[bored]] in the car.",
+      "img": "assets/images/basic/bored.svg"
+    },
+    {
+      "id": "excited",
+      "w": "excited",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "very happy about something that will happen",
+      "e": "We're [[excited]] about the trip.",
+      "img": "assets/images/basic/excited.svg"
+    },
+    {
+      "id": "worried",
+      "w": "worried",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "thinking about problems or bad things that may happen",
+      "e": "He is [[worried]] about money.",
+      "img": "assets/images/basic/worried.svg"
+    },
+    {
+      "id": "scared",
+      "w": "scared",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "feeling fear",
+      "e": "My sister is [[scared]] of spiders.",
+      "img": "assets/images/basic/scared.svg"
+    },
+    {
+      "id": "surprised",
+      "w": "surprised",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "feeling that something unexpected happened",
+      "e": "I was [[surprised]] to win.",
+      "img": "assets/images/basic/surprised.svg"
+    },
+    {
+      "id": "embarrassed",
+      "w": "embarrassed",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "feeling shy or silly in front of people",
+      "e": "I felt [[embarrassed]] when I fell.",
+      "img": "assets/images/basic/embarrassed.svg"
+    },
+    {
+      "id": "proud",
+      "w": "proud",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "very pleased about something good that you or your family did",
+      "e": "They are [[proud]] of their son.",
+      "img": "assets/images/basic/proud.svg"
+    },
+    {
+      "id": "jealous",
+      "w": "jealous",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "unhappy because you want what another person has",
+      "e": "He was [[jealous]] of her new bike.",
+      "img": "assets/images/basic/jealous.svg"
+    },
+    {
+      "id": "lonely",
+      "w": "lonely",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "unhappy because you are without company",
+      "e": "She felt [[lonely]] in the new city.",
+      "img": "assets/images/basic/lonely.svg"
+    },
+    {
+      "id": "busy",
+      "w": "busy",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "with a lot of things to do",
+      "e": "I'm very [[busy]] this week.",
+      "img": "assets/images/basic/busy.svg"
+    },
+    {
+      "id": "calm",
+      "w": "calm",
+      "t": "feelings",
+      "g": "Feelings",
+      "d": "not nervous or angry",
+      "e": "Try to stay [[calm]].",
+      "img": "assets/images/basic/calm.svg"
+    },
+    {
+      "id": "interesting",
+      "w": "interesting",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "that makes you want to know more",
+      "e": "It's a very [[interesting]] book.",
+      "img": "assets/images/basic/interesting.svg"
+    },
+    {
+      "id": "boring",
+      "w": "boring",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "not at all interesting",
+      "e": "The lesson was [[boring]].",
+      "img": "assets/images/basic/boring.svg"
+    },
+    {
+      "id": "exciting",
+      "w": "exciting",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "that makes you feel very happy and full of energy",
+      "e": "The match was really [[exciting]].",
+      "img": "assets/images/basic/exciting.svg"
+    },
+    {
+      "id": "easy",
+      "w": "easy",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "not difficult",
+      "e": "The first question is [[easy]].",
+      "img": "assets/images/basic/easy.svg"
+    },
+    {
+      "id": "difficult",
+      "w": "difficult",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "not simple to do or understand",
+      "e": "Chinese is [[difficult]] for me.",
+      "img": "assets/images/basic/difficult.svg"
+    },
+    {
+      "id": "beautiful",
+      "w": "beautiful",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "very pleasant to look at",
+      "e": "What a [[beautiful]] view!",
+      "img": "assets/images/basic/beautiful.svg"
+    },
+    {
+      "id": "ugly",
+      "w": "ugly",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "not pleasant to look at",
+      "e": "That's an [[ugly]] building.",
+      "img": "assets/images/basic/ugly.svg"
+    },
+    {
+      "id": "clean",
+      "w": "clean",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "with no dirt",
+      "e": "The kitchen is very [[clean]].",
+      "img": "assets/images/basic/clean.svg"
+    },
+    {
+      "id": "dirty",
+      "w": "dirty",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "not washed; covered in marks or mud",
+      "e": "Your shoes are [[dirty]].",
+      "img": "assets/images/basic/dirty.svg"
+    },
+    {
+      "id": "cheap",
+      "w": "cheap",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "that does not cost much",
+      "e": "These tickets are [[cheap]].",
+      "img": "assets/images/basic/cheap.svg"
+    },
+    {
+      "id": "expensive",
+      "w": "expensive",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "that costs a lot of money",
+      "e": "The hotel was too [[expensive]].",
+      "img": "assets/images/basic/expensive.svg"
+    },
+    {
+      "id": "noisy",
+      "w": "noisy",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "making a lot of sound",
+      "e": "Our street is very [[noisy]].",
+      "img": "assets/images/basic/noisy.svg"
+    },
+    {
+      "id": "crowded",
+      "w": "crowded",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "full of people",
+      "e": "The bus was [[crowded]].",
+      "img": "assets/images/basic/crowded.svg"
+    },
+    {
+      "id": "empty",
+      "w": "empty",
+      "t": "feelings",
+      "g": "Describing things",
+      "d": "with nothing or nobody inside",
+      "e": "The fridge is [[empty]].",
+      "img": "assets/images/basic/empty.svg"
+    },
     {
       "id": "t-shirt",
       "w": "T-shirt",
@@ -395,7 +1734,6 @@
       "d": "trousers made of strong blue cotton",
       "e": "I feel comfortable in [[jeans]] and a T-shirt.",
       "img": "assets/images/basic/jeans.svg",
-      "fill": "assets/images/basic/jeans-fill.svg",
       "similar": ["trousers"]
     },
     {
@@ -415,6 +1753,42 @@
       "d": "loose clothes that you wear in bed",
       "e": "The children are already in their [[pyjamas]].",
       "img": "assets/images/basic/pyjamas.svg"
+    },
+    {
+      "id": "tracksuit",
+      "w": "tracksuit",
+      "t": "clothes",
+      "g": "Clothes",
+      "d": "a loose top and trousers that you wear to do sport or relax",
+      "e": "He goes running in a grey [[tracksuit]].",
+      "img": "assets/images/basic/tracksuit.svg"
+    },
+    {
+      "id": "leggings",
+      "w": "leggings",
+      "t": "clothes",
+      "g": "Clothes",
+      "d": "very tight, soft trousers that stretch",
+      "e": "She wears [[leggings]] for her yoga class.",
+      "img": "assets/images/basic/leggings.svg"
+    },
+    {
+      "id": "swimsuit",
+      "w": "swimsuit",
+      "t": "clothes",
+      "g": "Clothes",
+      "d": "what you wear when you go in the water at a beach or pool",
+      "e": "Don't forget your [[swimsuit]] for the pool.",
+      "img": "assets/images/basic/swimsuit.svg"
+    },
+    {
+      "id": "underwear",
+      "w": "underwear",
+      "t": "clothes",
+      "g": "Clothes",
+      "d": "clothes that you wear next to your skin, below your other clothes",
+      "e": "Pack clean [[underwear]] for three days.",
+      "img": "assets/images/basic/underwear.svg"
     },
     {
       "id": "trainers",
@@ -451,6 +1825,33 @@
       "d": "soft things that you wear on your feet inside your shoes",
       "e": "I can never find two [[socks]] of the same colour.",
       "img": "assets/images/basic/socks.svg"
+    },
+    {
+      "id": "shoes",
+      "w": "shoes",
+      "t": "clothes",
+      "g": "Shoes",
+      "d": "what you wear on your feet when you go out",
+      "e": "These new [[shoes]] hurt my feet.",
+      "img": "assets/images/basic/shoes.svg"
+    },
+    {
+      "id": "high-heels",
+      "w": "high heels",
+      "t": "clothes",
+      "g": "Shoes",
+      "d": "women's footwear that lifts the back of the foot",
+      "e": "She can't walk far in [[high heels]].",
+      "img": "assets/images/basic/high-heels.svg"
+    },
+    {
+      "id": "slippers",
+      "w": "slippers",
+      "t": "clothes",
+      "g": "Shoes",
+      "d": "soft, comfortable footwear that you only wear at home",
+      "e": "I put on my [[slippers]] when I get home.",
+      "img": "assets/images/basic/slippers.svg"
     },
     {
       "id": "hat",
@@ -536,6 +1937,168 @@
       "img": "assets/images/basic/necklace.svg"
     },
     {
+      "id": "black",
+      "w": "black",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the darkest colour, like the sky at night without stars",
+      "e": "He always wears [[black]] jeans.",
+      "img": "assets/images/basic/black.svg"
+    },
+    {
+      "id": "white",
+      "w": "white",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour of snow or milk",
+      "e": "She wore a [[white]] shirt to the interview.",
+      "img": "assets/images/basic/white.svg"
+    },
+    {
+      "id": "grey",
+      "w": "grey",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour between the darkest and the lightest, like ash",
+      "e": "The sky is [[grey]] today.",
+      "img": "assets/images/basic/grey.svg"
+    },
+    {
+      "id": "blue",
+      "w": "blue",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour of a clear sky",
+      "e": "My favourite colour is [[blue]].",
+      "img": "assets/images/basic/blue.svg"
+    },
+    {
+      "id": "light-blue",
+      "w": "light blue",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "a pale shade of the colour of the sky",
+      "e": "He bought a [[light blue]] shirt.",
+      "img": "assets/images/basic/light-blue.svg"
+    },
+    {
+      "id": "dark-blue",
+      "w": "dark blue",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "a deep shade like the sea at night",
+      "e": "Our uniform is [[dark blue]].",
+      "img": "assets/images/basic/dark-blue.svg"
+    },
+    {
+      "id": "green",
+      "w": "green",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour of grass",
+      "e": "She has a [[green]] coat.",
+      "img": "assets/images/basic/green.svg"
+    },
+    {
+      "id": "red",
+      "w": "red",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour of blood or a ripe tomato",
+      "e": "Stop when the light is [[red]].",
+      "img": "assets/images/basic/red.svg"
+    },
+    {
+      "id": "pink",
+      "w": "pink",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "a pale colour that you get when you mix a warm bright colour with white",
+      "e": "The baby is wearing a [[pink]] hat.",
+      "img": "assets/images/basic/pink.svg"
+    },
+    {
+      "id": "purple",
+      "w": "purple",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour that you get when you mix blue and red",
+      "e": "He painted the door [[purple]].",
+      "img": "assets/images/basic/purple.svg"
+    },
+    {
+      "id": "yellow",
+      "w": "yellow",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour of a lemon or the sun",
+      "e": "I bought a [[yellow]] raincoat.",
+      "img": "assets/images/basic/yellow.svg"
+    },
+    {
+      "id": "orange-colour",
+      "w": "orange",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour that you get when you mix yellow and red",
+      "e": "The workers wear [[orange]] jackets.",
+      "img": "assets/images/basic/orange-colour.svg"
+    },
+    {
+      "id": "brown",
+      "w": "brown",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "the colour of wood or chocolate",
+      "e": "He wears [[brown]] leather boots.",
+      "img": "assets/images/basic/brown.svg"
+    },
+    {
+      "id": "beige",
+      "w": "beige",
+      "t": "clothes",
+      "g": "Colours",
+      "d": "a very pale sand colour",
+      "e": "She chose [[beige]] trousers.",
+      "img": "assets/images/basic/beige.svg"
+    },
+    {
+      "id": "striped",
+      "w": "striped",
+      "t": "clothes",
+      "g": "Patterns",
+      "d": "with long lines of different colours",
+      "e": "He's wearing a [[striped]] T-shirt.",
+      "img": "assets/images/basic/striped.svg"
+    },
+    {
+      "id": "checked",
+      "w": "checked",
+      "t": "clothes",
+      "g": "Patterns",
+      "d": "with a pattern of squares",
+      "e": "I like your [[checked]] shirt.",
+      "img": "assets/images/basic/checked.svg"
+    },
+    {
+      "id": "plain",
+      "w": "plain",
+      "t": "clothes",
+      "g": "Patterns",
+      "d": "in one colour, with no pattern",
+      "e": "She prefers [[plain]] clothes.",
+      "img": "assets/images/basic/plain.svg"
+    },
+    {
+      "id": "floral",
+      "w": "floral",
+      "t": "clothes",
+      "g": "Patterns",
+      "d": "with a pattern of flowers",
+      "e": "She wore a [[floral]] dress to the party.",
+      "img": "assets/images/basic/floral.svg"
+    },
+    {
       "id": "tall",
       "w": "tall",
       "t": "appearance",
@@ -612,6 +2175,42 @@
       "similar": ["well-built"]
     },
     {
+      "id": "skinny",
+      "w": "skinny",
+      "t": "appearance",
+      "g": "Height and build",
+      "d": "too thin, in a way that may not look healthy",
+      "e": "He was a [[skinny]] boy with long legs.",
+      "img": "assets/images/basic/skinny.svg"
+    },
+    {
+      "id": "fat",
+      "w": "fat",
+      "t": "appearance",
+      "g": "Height and build",
+      "d": "with too much weight on the body; this word can be rude about people",
+      "e": "Our cat is getting [[fat]].",
+      "img": "assets/images/basic/fat.svg"
+    },
+    {
+      "id": "fit",
+      "w": "fit",
+      "t": "appearance",
+      "g": "Height and build",
+      "d": "healthy and strong because you exercise",
+      "e": "I swim every day to keep [[fit]].",
+      "img": "assets/images/basic/fit.svg"
+    },
+    {
+      "id": "athletic",
+      "w": "athletic",
+      "t": "appearance",
+      "g": "Height and build",
+      "d": "strong, healthy and good at sport",
+      "e": "She has an [[athletic]] body.",
+      "img": "assets/images/basic/athletic.svg"
+    },
+    {
       "id": "curly-hair",
       "w": "curly hair",
       "t": "appearance",
@@ -627,8 +2226,7 @@
       "g": "Hair",
       "d": "hair with no curves at all",
       "e": "She has long, [[straight hair]].",
-      "img": "assets/images/basic/straight-hair.svg",
-      "fill": "assets/images/basic/straight-hair-fill.svg"
+      "img": "assets/images/basic/straight-hair.svg"
     },
     {
       "id": "wavy-hair",
@@ -637,8 +2235,7 @@
       "g": "Hair",
       "d": "hair that has soft curves",
       "e": "He has [[wavy hair]] that touches his shoulders.",
-      "img": "assets/images/basic/wavy-hair.svg",
-      "fill": "assets/images/basic/wavy-hair-fill.svg"
+      "img": "assets/images/basic/wavy-hair.svg"
     },
     {
       "id": "blonde",
@@ -647,8 +2244,7 @@
       "g": "Hair",
       "d": "with yellow or very light hair",
       "e": "Both of her children are [[blonde]].",
-      "img": "assets/images/basic/blonde.svg",
-      "fill": "assets/images/basic/blonde-fill.svg"
+      "img": "assets/images/basic/blonde.svg"
     },
     {
       "id": "bald",
@@ -696,14 +2292,67 @@
       "img": "assets/images/basic/fringe.svg"
     },
     {
+      "id": "long-hair",
+      "w": "long hair",
+      "t": "appearance",
+      "g": "Hair",
+      "d": "hair that reaches below the shoulders",
+      "e": "The girl with [[long hair]] is my sister.",
+      "img": "assets/images/basic/long-hair.svg"
+    },
+    {
+      "id": "short-hair",
+      "w": "short hair",
+      "t": "appearance",
+      "g": "Hair",
+      "d": "hair that is cut close to the head",
+      "e": "He has [[short hair]] now.",
+      "img": "assets/images/basic/short-hair.svg"
+    },
+    {
+      "id": "brown-hair",
+      "w": "brown hair",
+      "t": "appearance",
+      "g": "Hair",
+      "d": "hair of the colour of wood",
+      "e": "My mother has [[brown hair]].",
+      "img": "assets/images/basic/brown-hair.svg"
+    },
+    {
+      "id": "black-hair",
+      "w": "black hair",
+      "t": "appearance",
+      "g": "Hair",
+      "d": "hair of the darkest colour",
+      "e": "He has thick [[black hair]].",
+      "img": "assets/images/basic/black-hair.svg"
+    },
+    {
+      "id": "red-hair",
+      "w": "red hair",
+      "t": "appearance",
+      "g": "Hair",
+      "d": "hair of an orange or copper colour",
+      "e": "All her family have [[red hair]].",
+      "img": "assets/images/basic/red-hair.svg"
+    },
+    {
+      "id": "grey-hair",
+      "w": "grey hair",
+      "t": "appearance",
+      "g": "Hair",
+      "d": "hair that has lost its colour with age",
+      "e": "My uncle already has [[grey hair]].",
+      "img": "assets/images/basic/grey-hair.svg"
+    },
+    {
       "id": "freckles",
       "w": "freckles",
       "t": "appearance",
       "g": "Face",
       "d": "small brown spots on the skin, often on the face",
       "e": "In summer my [[freckles]] get darker.",
-      "img": "assets/images/basic/freckles.svg",
-      "fill": "assets/images/basic/freckles-fill.svg"
+      "img": "assets/images/basic/freckles.svg"
     },
     {
       "id": "glasses",
@@ -730,8 +2379,7 @@
       "g": "Face",
       "d": "with light skin that has little colour",
       "e": "You look [[pale]]. Are you feeling OK?",
-      "img": "assets/images/basic/pale.svg",
-      "fill": "assets/images/basic/pale-fill.svg"
+      "img": "assets/images/basic/pale.svg"
     },
     {
       "id": "tanned",
@@ -740,8 +2388,7 @@
       "g": "Face",
       "d": "with skin that is darker after time in the sun",
       "e": "He came back from his holiday very [[tanned]].",
-      "img": "assets/images/basic/tanned.svg",
-      "fill": "assets/images/basic/tanned-fill.svg"
+      "img": "assets/images/basic/tanned.svg"
     },
     {
       "id": "round-face",
@@ -751,6 +2398,69 @@
       "d": "a face shaped like a circle",
       "e": "She has a [[round face]] and big brown eyes.",
       "img": "assets/images/basic/round-face.svg"
+    },
+    {
+      "id": "blue-eyes",
+      "w": "blue eyes",
+      "t": "appearance",
+      "g": "Face",
+      "d": "eyes of the colour of the sky",
+      "e": "The baby has [[blue eyes]].",
+      "img": "assets/images/basic/blue-eyes.svg"
+    },
+    {
+      "id": "green-eyes",
+      "w": "green eyes",
+      "t": "appearance",
+      "g": "Face",
+      "d": "eyes of the colour of grass",
+      "e": "She has beautiful [[green eyes]].",
+      "img": "assets/images/basic/green-eyes.svg"
+    },
+    {
+      "id": "brown-eyes",
+      "w": "brown eyes",
+      "t": "appearance",
+      "g": "Face",
+      "d": "eyes of the colour of chocolate",
+      "e": "My father and I have [[brown eyes]].",
+      "img": "assets/images/basic/brown-eyes.svg"
+    },
+    {
+      "id": "dark-eyes",
+      "w": "dark eyes",
+      "t": "appearance",
+      "g": "Face",
+      "d": "eyes that look almost black",
+      "e": "He looked at me with his [[dark eyes]].",
+      "img": "assets/images/basic/dark-eyes.svg"
+    },
+    {
+      "id": "big-eyes",
+      "w": "big eyes",
+      "t": "appearance",
+      "g": "Face",
+      "d": "eyes that are large in the face",
+      "e": "The puppy has [[big eyes]].",
+      "img": "assets/images/basic/big-eyes.svg"
+    },
+    {
+      "id": "small-eyes",
+      "w": "small eyes",
+      "t": "appearance",
+      "g": "Face",
+      "d": "eyes that are little in the face",
+      "e": "He has [[small eyes]] behind his glasses.",
+      "img": "assets/images/basic/small-eyes.svg"
+    },
+    {
+      "id": "oval-face",
+      "w": "oval face",
+      "t": "appearance",
+      "g": "Face",
+      "d": "a head shape at the front that is like an egg",
+      "e": "She has an [[oval face]].",
+      "img": "assets/images/basic/oval-face.svg"
     },
     {
       "id": "friendly",
@@ -770,7 +2480,6 @@
       "d": "caring about other people",
       "e": "It was [[kind]] of you to help me.",
       "img": "assets/images/basic/kind.svg",
-      "fill": "assets/images/basic/kind-fill.svg",
       "similar": ["friendly", "helpful", "generous"]
     },
     {
@@ -818,8 +2527,7 @@
       "g": "Good qualities",
       "d": "able to learn and understand things quickly",
       "e": "She's [[clever]], so maths is easy for her.",
-      "img": "assets/images/basic/clever.svg",
-      "fill": "assets/images/basic/clever-fill.svg"
+      "img": "assets/images/basic/clever.svg"
     },
     {
       "id": "creative",
@@ -828,8 +2536,7 @@
       "g": "Good qualities",
       "d": "good at making new and original things",
       "e": "My sister is very [[creative]]: she paints and writes songs.",
-      "img": "assets/images/basic/creative.svg",
-      "fill": "assets/images/basic/creative-fill.svg"
+      "img": "assets/images/basic/creative.svg"
     },
     {
       "id": "honest",
@@ -905,7 +2612,6 @@
       "d": "happy to help people",
       "e": "The hotel staff were very [[helpful]].",
       "img": "assets/images/basic/helpful.svg",
-      "fill": "assets/images/basic/helpful-fill.svg",
       "similar": ["kind", "friendly"]
     },
     {
@@ -924,8 +2630,52 @@
       "g": "Good qualities",
       "d": "wanting very much to be successful",
       "e": "He's [[ambitious]] and wants to run his own company.",
-      "img": "assets/images/basic/ambitious.svg",
-      "fill": "assets/images/basic/ambitious-fill.svg"
+      "img": "assets/images/basic/ambitious.svg"
+    },
+    {
+      "id": "intelligent",
+      "w": "intelligent",
+      "t": "personality",
+      "g": "Good qualities",
+      "d": "able to learn and understand things well",
+      "e": "He asked an [[intelligent]] question.",
+      "img": "assets/images/basic/intelligent.svg"
+    },
+    {
+      "id": "optimistic",
+      "w": "optimistic",
+      "t": "personality",
+      "g": "Good qualities",
+      "d": "expecting that good things will happen",
+      "e": "I'm [[optimistic]] about the exam.",
+      "img": "assets/images/basic/optimistic.svg"
+    },
+    {
+      "id": "independent",
+      "w": "independent",
+      "t": "personality",
+      "g": "Good qualities",
+      "d": "able to do things without help from other people",
+      "e": "My daughter is very [[independent]].",
+      "img": "assets/images/basic/independent.svg"
+    },
+    {
+      "id": "relaxed",
+      "w": "relaxed",
+      "t": "personality",
+      "g": "Good qualities",
+      "d": "calm and not worried",
+      "e": "Our teacher is friendly and [[relaxed]].",
+      "img": "assets/images/basic/relaxed.svg"
+    },
+    {
+      "id": "romantic",
+      "w": "romantic",
+      "t": "personality",
+      "g": "Good qualities",
+      "d": "showing feelings of love in a special way",
+      "e": "He planned a [[romantic]] dinner.",
+      "img": "assets/images/basic/romantic.svg"
     },
     {
       "id": "serious",
@@ -1003,6 +2753,33 @@
       "img": "assets/images/basic/rude.svg"
     },
     {
+      "id": "nervous",
+      "w": "nervous",
+      "t": "personality",
+      "g": "Other qualities",
+      "d": "worried or a little afraid",
+      "e": "I feel [[nervous]] before a test.",
+      "img": "assets/images/basic/nervous.svg"
+    },
+    {
+      "id": "pessimistic",
+      "w": "pessimistic",
+      "t": "personality",
+      "g": "Other qualities",
+      "d": "expecting that bad things will happen",
+      "e": "Don't be so [[pessimistic]] about the match.",
+      "img": "assets/images/basic/pessimistic.svg"
+    },
+    {
+      "id": "sensitive",
+      "w": "sensitive",
+      "t": "personality",
+      "g": "Other qualities",
+      "d": "easily hurt or upset, or quick to understand feelings",
+      "e": "She is [[sensitive]] about her work.",
+      "img": "assets/images/basic/sensitive.svg"
+    },
+    {
       "id": "town-hall",
       "w": "town hall",
       "t": "city",
@@ -1027,8 +2804,7 @@
       "g": "Services",
       "d": "the building where firefighters and their trucks wait",
       "e": "There is a [[fire station]] at the end of my street.",
-      "img": "assets/images/basic/fire-station.svg",
-      "fill": "assets/images/basic/fire-station-fill.svg"
+      "img": "assets/images/basic/fire-station.svg"
     },
     {
       "id": "hospital",
@@ -1038,7 +2814,6 @@
       "d": "a large building where doctors and nurses look after ill people",
       "e": "She works as a nurse at the [[hospital]].",
       "img": "assets/images/basic/hospital.svg",
-      "fill": "assets/images/basic/hospital-fill.svg",
       "similar": ["health-centre"]
     },
     {
@@ -1079,14 +2854,58 @@
       "img": "assets/images/basic/tourist-information-office.svg"
     },
     {
+      "id": "city-centre",
+      "w": "city centre",
+      "t": "city",
+      "g": "Services",
+      "d": "the main, central part of a large town",
+      "e": "The shops in the [[city centre]] open late.",
+      "img": "assets/images/basic/city-centre.svg"
+    },
+    {
+      "id": "school",
+      "w": "school",
+      "t": "city",
+      "g": "Services",
+      "d": "a place where children go to learn",
+      "e": "My [[school]] is near the park.",
+      "img": "assets/images/basic/school.svg"
+    },
+    {
+      "id": "university",
+      "w": "university",
+      "t": "city",
+      "g": "Services",
+      "d": "a place where adults study for a degree",
+      "e": "She studies law at [[university]].",
+      "img": "assets/images/basic/university.svg"
+    },
+    {
+      "id": "church",
+      "w": "church",
+      "t": "city",
+      "g": "Services",
+      "d": "a building where Christians go to pray",
+      "e": "The [[church]] has a tall tower.",
+      "img": "assets/images/basic/church.svg"
+    },
+    {
+      "id": "mosque",
+      "w": "mosque",
+      "t": "city",
+      "g": "Services",
+      "d": "a building where Muslims go to pray",
+      "e": "The [[mosque]] is next to the market.",
+      "img": "assets/images/basic/mosque.svg"
+    },
+    {
       "id": "chemists",
       "w": "chemist's",
       "t": "city",
       "g": "Shops",
       "d": "a shop where you can buy medicine",
       "e": "Can you get some aspirin at the [[chemist's]]?",
-      "img": "assets/images/basic/chemists.svg",
-      "fill": "assets/images/basic/chemists-fill.svg"
+      "img": "assets/images/basic/chemists.svg"
     },
     {
       "id": "shopping-centre",
@@ -1185,8 +3004,7 @@
       "g": "Free time",
       "d": "a large public area with grass and trees",
       "e": "We often have a picnic in the [[park]].",
-      "img": "assets/images/basic/park.svg",
-      "fill": "assets/images/basic/park-fill.svg"
+      "img": "assets/images/basic/park.svg"
     },
     {
       "id": "square",
@@ -1213,8 +3031,79 @@
       "g": "Free time",
       "d": "a place built for people to swim in",
       "e": "The [[swimming pool]] at the sports centre is very clean.",
-      "img": "assets/images/basic/swimming-pool.svg",
-      "fill": "assets/images/basic/swimming-pool-fill.svg"
+      "img": "assets/images/basic/swimming-pool.svg"
+    },
+    {
+      "id": "hotel",
+      "w": "hotel",
+      "t": "city",
+      "g": "Free time",
+      "d": "a building where you pay to sleep and often eat",
+      "e": "We stayed in a [[hotel]] by the sea.",
+      "img": "assets/images/basic/hotel.svg"
+    },
+    {
+      "id": "hostel",
+      "w": "hostel",
+      "t": "city",
+      "g": "Free time",
+      "d": "a cheap place to stay where you often share a room",
+      "e": "Students can sleep at the youth [[hostel]].",
+      "img": "assets/images/basic/hostel.svg"
+    },
+    {
+      "id": "restaurant",
+      "w": "restaurant",
+      "t": "city",
+      "g": "Free time",
+      "d": "a place where you pay to sit and eat a meal",
+      "e": "There's a good Italian [[restaurant]] here.",
+      "img": "assets/images/basic/restaurant.svg"
+    },
+    {
+      "id": "cafe",
+      "w": "café",
+      "t": "city",
+      "g": "Free time",
+      "d": "a small place that serves hot drinks and light food",
+      "e": "Let's meet at the [[café]] on the corner.",
+      "img": "assets/images/basic/cafe.svg"
+    },
+    {
+      "id": "bar",
+      "w": "bar",
+      "t": "city",
+      "g": "Free time",
+      "d": "a place with a long counter where people buy drinks",
+      "e": "We had a drink at a [[bar]].",
+      "img": "assets/images/basic/bar.svg"
+    },
+    {
+      "id": "pub",
+      "w": "pub",
+      "t": "city",
+      "g": "Free time",
+      "d": "a traditional British place to have a drink with friends",
+      "e": "The village [[pub]] serves lunch.",
+      "img": "assets/images/basic/pub.svg"
+    },
+    {
+      "id": "gym",
+      "w": "gym",
+      "t": "city",
+      "g": "Free time",
+      "d": "a place with machines where people exercise",
+      "e": "I go to the [[gym]] twice a week.",
+      "img": "assets/images/basic/gym.svg"
+    },
+    {
+      "id": "beach",
+      "w": "beach",
+      "t": "city",
+      "g": "Free time",
+      "d": "an area of sand or stones next to the sea",
+      "e": "We spent the day on the [[beach]].",
+      "img": "assets/images/basic/beach.svg"
     },
     {
       "id": "petrol-station",
@@ -1223,8 +3112,7 @@
       "g": "Transport",
       "d": "a place where you buy fuel for your car",
       "e": "We stopped at a [[petrol station]] on the motorway.",
-      "img": "assets/images/basic/petrol-station.svg",
-      "fill": "assets/images/basic/petrol-station-fill.svg"
+      "img": "assets/images/basic/petrol-station.svg"
     },
     {
       "id": "train-station",
@@ -1252,6 +3140,24 @@
       "d": "a place where planes arrive and leave",
       "e": "We have to be at the [[airport]] two hours before the flight.",
       "img": "assets/images/basic/airport.svg"
+    },
+    {
+      "id": "bus-station",
+      "w": "bus station",
+      "t": "city",
+      "g": "Transport",
+      "d": "the place where many coach and city routes start and finish",
+      "e": "The [[bus station]] is behind the market.",
+      "img": "assets/images/basic/bus-station.svg"
+    },
+    {
+      "id": "underground-station",
+      "w": "underground station",
+      "t": "city",
+      "g": "Transport",
+      "d": "the place where you get on a train that runs below the city",
+      "e": "Is there an [[underground station]] near here?",
+      "img": "assets/images/basic/underground-station.svg"
     },
     {
       "id": "go-straight-on",
@@ -1353,14 +3259,58 @@
       "img": "assets/images/basic/lost.svg"
     },
     {
+      "id": "go-along",
+      "w": "go along",
+      "t": "directions",
+      "g": "Directions",
+      "d": "to walk or drive following a road",
+      "e": "[[Go along]] this street for two minutes.",
+      "img": "assets/images/basic/go-along.svg"
+    },
+    {
+      "id": "go-across",
+      "w": "go across",
+      "t": "directions",
+      "g": "Directions",
+      "d": "to move from one side of something to the other",
+      "e": "[[Go across]] the square.",
+      "img": "assets/images/basic/go-across.svg"
+    },
+    {
+      "id": "go-through",
+      "w": "go through",
+      "t": "directions",
+      "g": "Directions",
+      "d": "to enter at one side and leave at the other",
+      "e": "[[Go through]] the park to the museum.",
+      "img": "assets/images/basic/go-through.svg"
+    },
+    {
+      "id": "on-the-left",
+      "w": "on the left",
+      "t": "directions",
+      "g": "Directions",
+      "d": "on the side where your heart is",
+      "e": "The bank is [[on the left]].",
+      "img": "assets/images/basic/on-the-left.svg"
+    },
+    {
+      "id": "on-the-right",
+      "w": "on the right",
+      "t": "directions",
+      "g": "Directions",
+      "d": "on the side opposite to your heart",
+      "e": "The chemist's is [[on the right]].",
+      "img": "assets/images/basic/on-the-right.svg"
+    },
+    {
       "id": "traffic-lights",
       "w": "traffic lights",
       "t": "directions",
       "g": "In the street",
       "d": "red, yellow and green lights that control the traffic",
       "e": "Turn right at the [[traffic lights]].",
-      "img": "assets/images/basic/traffic-lights.svg",
-      "fill": "assets/images/basic/traffic-lights-fill.svg"
+      "img": "assets/images/basic/traffic-lights.svg"
     },
     {
       "id": "roundabout",
@@ -1396,8 +3346,7 @@
       "g": "In the street",
       "d": "black and white lines on a road where people can cross",
       "e": "Always cross at the [[zebra crossing]].",
-      "img": "assets/images/basic/zebra-crossing.svg",
-      "fill": "assets/images/basic/zebra-crossing-fill.svg"
+      "img": "assets/images/basic/zebra-crossing.svg"
     },
     {
       "id": "pavement",
@@ -1578,6 +3527,42 @@
       "img": "assets/images/basic/around.svg"
     },
     {
+      "id": "across-from",
+      "w": "across from",
+      "t": "position",
+      "g": "Where things are",
+      "d": "on the other side of a street or room, facing",
+      "e": "The library is [[across from]] the school.",
+      "img": "assets/images/basic/across-from.svg"
+    },
+    {
+      "id": "close-to",
+      "w": "close to",
+      "t": "position",
+      "g": "Where things are",
+      "d": "not far away from",
+      "e": "My house is [[close to]] the station.",
+      "img": "assets/images/basic/close-to.svg"
+    },
+    {
+      "id": "at",
+      "w": "at",
+      "t": "position",
+      "g": "Where things are",
+      "d": "used for a point or an exact place",
+      "e": "I'm waiting [[at]] the bus stop.",
+      "img": "assets/images/basic/at.svg"
+    },
+    {
+      "id": "over",
+      "w": "over",
+      "t": "position",
+      "g": "Where things are",
+      "d": "higher than something, often covering it or moving across it",
+      "e": "The plane flew [[over]] the city.",
+      "img": "assets/images/basic/over.svg"
+    },
+    {
       "id": "on-top-of",
       "w": "on top of",
       "t": "position",
@@ -1693,8 +3678,7 @@
       "g": "Rooms",
       "d": "land next to a house where you grow flowers or grass",
       "e": "The children are playing in the [[garden]].",
-      "img": "assets/images/basic/garden.svg",
-      "fill": "assets/images/basic/garden-fill.svg"
+      "img": "assets/images/basic/garden.svg"
     },
     {
       "id": "balcony",
@@ -1722,6 +3706,60 @@
       "d": "a room under the roof of a house",
       "e": "There's an old box of toys in the [[attic]].",
       "img": "assets/images/basic/attic.svg"
+    },
+    {
+      "id": "house",
+      "w": "house",
+      "t": "house",
+      "g": "Rooms",
+      "d": "a building that a family lives in, usually with more than one floor",
+      "e": "They live in a [[house]] with a garden.",
+      "img": "assets/images/basic/house.svg"
+    },
+    {
+      "id": "toilet",
+      "w": "toilet",
+      "t": "house",
+      "g": "Rooms",
+      "d": "a small room, or the seat in it, that you use instead of a bathroom",
+      "e": "Excuse me, where's the [[toilet]]?",
+      "img": "assets/images/basic/toilet.svg"
+    },
+    {
+      "id": "corridor",
+      "w": "corridor",
+      "t": "house",
+      "g": "Rooms",
+      "d": "a long narrow passage with doors",
+      "e": "My room is at the end of the [[corridor]].",
+      "img": "assets/images/basic/corridor.svg"
+    },
+    {
+      "id": "terrace",
+      "w": "terrace",
+      "t": "house",
+      "g": "Rooms",
+      "d": "a flat outdoor area where you can sit",
+      "e": "We have breakfast on the [[terrace]].",
+      "img": "assets/images/basic/terrace.svg"
+    },
+    {
+      "id": "laundry-room",
+      "w": "laundry room",
+      "t": "house",
+      "g": "Rooms",
+      "d": "the place at home where you wash and dry clothes",
+      "e": "The washing machine is in the [[laundry room]].",
+      "img": "assets/images/basic/laundry-room.svg"
+    },
+    {
+      "id": "study",
+      "w": "study",
+      "t": "house",
+      "g": "Rooms",
+      "d": "a quiet room at home for reading and working",
+      "e": "Dad is working in his [[study]].",
+      "img": "assets/images/basic/study.svg"
     },
     {
       "id": "stairs",
@@ -1812,6 +3850,42 @@
       "d": "a small metal object that opens a lock",
       "e": "I can't find my [[key]].",
       "img": "assets/images/basic/key.svg"
+    },
+    {
+      "id": "gate",
+      "w": "gate",
+      "t": "house",
+      "g": "Parts of a house",
+      "d": "a door in a fence or outside wall",
+      "e": "Please shut the garden [[gate]].",
+      "img": "assets/images/basic/gate.svg"
+    },
+    {
+      "id": "fireplace",
+      "w": "fireplace",
+      "t": "house",
+      "g": "Parts of a house",
+      "d": "the open space in a wall where you can burn wood",
+      "e": "We sat in front of the [[fireplace]].",
+      "img": "assets/images/basic/fireplace.svg"
+    },
+    {
+      "id": "chimney",
+      "w": "chimney",
+      "t": "house",
+      "g": "Parts of a house",
+      "d": "a pipe on a roof that takes smoke away",
+      "e": "Smoke is coming out of the [[chimney]].",
+      "img": "assets/images/basic/chimney.svg"
+    },
+    {
+      "id": "lock",
+      "w": "lock",
+      "t": "house",
+      "g": "Parts of a house",
+      "d": "the part of a door that you open and close with a key",
+      "e": "The [[lock]] on the front door is broken.",
+      "img": "assets/images/basic/lock.svg"
     },
     {
       "id": "bed",
@@ -1944,6 +4018,51 @@
       "img": "assets/images/basic/blanket.svg"
     },
     {
+      "id": "chair",
+      "w": "chair",
+      "t": "furniture",
+      "g": "Bedroom and living room",
+      "d": "a seat for one person, with a back",
+      "e": "Pull up a [[chair]] and sit down.",
+      "img": "assets/images/basic/chair.svg"
+    },
+    {
+      "id": "table",
+      "w": "table",
+      "t": "furniture",
+      "g": "Bedroom and living room",
+      "d": "a piece of furniture with a flat top and legs",
+      "e": "Dinner is on the [[table]].",
+      "img": "assets/images/basic/table.svg"
+    },
+    {
+      "id": "bookcase",
+      "w": "bookcase",
+      "t": "furniture",
+      "g": "Bedroom and living room",
+      "d": "a tall piece of furniture with shelves for reading material",
+      "e": "The [[bookcase]] is full of novels.",
+      "img": "assets/images/basic/bookcase.svg"
+    },
+    {
+      "id": "tv",
+      "w": "TV",
+      "t": "furniture",
+      "g": "Bedroom and living room",
+      "d": "a screen on which you watch programmes",
+      "e": "We watch [[TV]] after dinner.",
+      "img": "assets/images/basic/tv.svg"
+    },
+    {
+      "id": "duvet",
+      "w": "duvet",
+      "t": "furniture",
+      "g": "Bedroom and living room",
+      "d": "a thick, soft cover for sleeping that is filled with feathers or similar",
+      "e": "In winter I need a warm [[duvet]].",
+      "img": "assets/images/basic/duvet.svg"
+    },
+    {
       "id": "fridge",
       "w": "fridge",
       "t": "furniture",
@@ -2064,8 +4183,7 @@
       "g": "Parts of the day",
       "d": "the part of the day from when the sun comes up until twelve o'clock",
       "e": "I go running in the [[morning]].",
-      "img": "assets/images/basic/morning.svg",
-      "fill": "assets/images/basic/morning-fill.svg"
+      "img": "assets/images/basic/morning.svg"
     },
     {
       "id": "afternoon",
@@ -2074,8 +4192,7 @@
       "g": "Parts of the day",
       "d": "the part of the day from twelve o'clock until about six",
       "e": "We have English classes in the [[afternoon]].",
-      "img": "assets/images/basic/afternoon.svg",
-      "fill": "assets/images/basic/afternoon-fill.svg"
+      "img": "assets/images/basic/afternoon.svg"
     },
     {
       "id": "evening",
@@ -2084,8 +4201,7 @@
       "g": "Parts of the day",
       "d": "the part of the day from about six o'clock until you go to bed",
       "e": "What are you doing this [[evening]]?",
-      "img": "assets/images/basic/evening.svg",
-      "fill": "assets/images/basic/evening-fill.svg"
+      "img": "assets/images/basic/evening.svg"
     },
     {
       "id": "night",
@@ -2094,8 +4210,7 @@
       "g": "Parts of the day",
       "d": "the time when it is dark and most people sleep",
       "e": "I can't sleep at [[night]] when it's hot.",
-      "img": "assets/images/basic/night.svg",
-      "fill": "assets/images/basic/night-fill.svg"
+      "img": "assets/images/basic/night.svg"
     },
     {
       "id": "midday",
@@ -2104,8 +4219,7 @@
       "g": "Parts of the day",
       "d": "twelve o'clock in the day",
       "e": "We have lunch at [[midday]].",
-      "img": "assets/images/basic/midday.svg",
-      "fill": "assets/images/basic/midday-fill.svg"
+      "img": "assets/images/basic/midday.svg"
     },
     {
       "id": "midnight",
@@ -2114,8 +4228,7 @@
       "g": "Parts of the day",
       "d": "twelve o'clock at night",
       "e": "The party finished at [[midnight]].",
-      "img": "assets/images/basic/midnight.svg",
-      "fill": "assets/images/basic/midnight-fill.svg"
+      "img": "assets/images/basic/midnight.svg"
     },
     {
       "id": "sunrise",
@@ -2124,8 +4237,7 @@
       "g": "Parts of the day",
       "d": "the time when the sun comes up",
       "e": "We got up early to watch the [[sunrise]].",
-      "img": "assets/images/basic/sunrise.svg",
-      "fill": "assets/images/basic/sunrise-fill.svg"
+      "img": "assets/images/basic/sunrise.svg"
     },
     {
       "id": "sunset",
@@ -2134,8 +4246,43 @@
       "g": "Parts of the day",
       "d": "the time when the sun goes down",
       "e": "The beach is beautiful at [[sunset]].",
-      "img": "assets/images/basic/sunset.svg",
-      "fill": "assets/images/basic/sunset-fill.svg"
+      "img": "assets/images/basic/sunset.svg"
+    },
+    {
+      "id": "early-morning",
+      "w": "early morning",
+      "t": "time",
+      "g": "Parts of the day",
+      "d": "the first hours of the day",
+      "e": "I like running in the [[early morning]].",
+      "img": "assets/images/basic/early-morning.svg"
+    },
+    {
+      "id": "mid-morning",
+      "w": "mid-morning",
+      "t": "time",
+      "g": "Parts of the day",
+      "d": "the time around ten or eleven",
+      "e": "We have a coffee break [[mid-morning]].",
+      "img": "assets/images/basic/mid-morning.svg"
+    },
+    {
+      "id": "dawn",
+      "w": "dawn",
+      "t": "time",
+      "g": "Parts of the day",
+      "d": "the moment when the first light appears in the sky",
+      "e": "The fishermen leave at [[dawn]].",
+      "img": "assets/images/basic/dawn.svg"
+    },
+    {
+      "id": "dusk",
+      "w": "dusk",
+      "t": "time",
+      "g": "Parts of the day",
+      "d": "the time when it is getting dark",
+      "e": "Bats come out at [[dusk]].",
+      "img": "assets/images/basic/dusk.svg"
     },
     {
       "id": "oclock",
@@ -2216,8 +4363,7 @@
       "g": "Time words",
       "d": "after the usual or planned time",
       "e": "Sorry I'm [[late]]. The bus didn't come.",
-      "img": "assets/images/basic/late.svg",
-      "fill": "assets/images/basic/late-fill.svg"
+      "img": "assets/images/basic/late.svg"
     },
     {
       "id": "on-time",
@@ -2226,8 +4372,7 @@
       "g": "Time words",
       "d": "at the planned time, not early or late",
       "e": "The plane landed [[on time]].",
-      "img": "assets/images/basic/on-time.svg",
-      "fill": "assets/images/basic/on-time-fill.svg"
+      "img": "assets/images/basic/on-time.svg"
     },
     {
       "id": "daily-routine",
@@ -2236,8 +4381,7 @@
       "g": "Time words",
       "d": "the things that you do every day, usually in the same order",
       "e": "My [[daily routine]] starts with a shower.",
-      "img": "assets/images/basic/daily-routine.svg",
-      "fill": "assets/images/basic/daily-routine-fill.svg"
+      "img": "assets/images/basic/daily-routine.svg"
     },
     {
       "id": "alarm-clock",
@@ -2255,8 +4399,7 @@
       "g": "Pets",
       "d": "an animal that people keep as a pet and that barks",
       "e": "Our [[dog]] waits for me at the door.",
-      "img": "assets/images/basic/dog.svg",
-      "fill": "assets/images/basic/dog-fill.svg"
+      "img": "assets/images/basic/dog.svg"
     },
     {
       "id": "cat",
@@ -2283,8 +4426,7 @@
       "g": "Pets",
       "d": "a very small furry pet that lives in a cage",
       "e": "Our [[hamster]] runs on its wheel all night.",
-      "img": "assets/images/basic/hamster.svg",
-      "fill": "assets/images/basic/hamster-fill.svg"
+      "img": "assets/images/basic/hamster.svg"
     },
     {
       "id": "parrot",
@@ -2293,8 +4435,7 @@
       "g": "Pets",
       "d": "a colourful bird that can copy words",
       "e": "My aunt's [[parrot]] can say hello.",
-      "img": "assets/images/basic/parrot.svg",
-      "fill": "assets/images/basic/parrot-fill.svg"
+      "img": "assets/images/basic/parrot.svg"
     },
     {
       "id": "goldfish",
@@ -2303,8 +4444,7 @@
       "g": "Pets",
       "d": "a small orange fish that people keep at home",
       "e": "We keep a [[goldfish]] in a bowl in the kitchen.",
-      "img": "assets/images/basic/goldfish.svg",
-      "fill": "assets/images/basic/goldfish-fill.svg"
+      "img": "assets/images/basic/goldfish.svg"
     },
     {
       "id": "tortoise",
@@ -2313,8 +4453,43 @@
       "g": "Pets",
       "d": "a slow animal with a hard shell that lives on land",
       "e": "Our [[tortoise]] is older than me!",
-      "img": "assets/images/basic/tortoise.svg",
-      "fill": "assets/images/basic/tortoise-fill.svg"
+      "img": "assets/images/basic/tortoise.svg"
+    },
+    {
+      "id": "guinea-pig",
+      "w": "guinea pig",
+      "t": "animals",
+      "g": "Pets",
+      "d": "a small, round pet with no tail",
+      "e": "Our [[guinea pig]] loves carrots.",
+      "img": "assets/images/basic/guinea-pig.svg"
+    },
+    {
+      "id": "turtle",
+      "w": "turtle",
+      "t": "animals",
+      "g": "Pets",
+      "d": "a reptile with a hard shell that swims",
+      "e": "The [[turtle]] swam to the surface.",
+      "img": "assets/images/basic/turtle.svg"
+    },
+    {
+      "id": "fish",
+      "w": "fish",
+      "t": "animals",
+      "g": "Pets",
+      "d": "an animal that lives and breathes in water",
+      "e": "He keeps a [[fish]] in a glass tank.",
+      "img": "assets/images/basic/fish.svg"
+    },
+    {
+      "id": "canary",
+      "w": "canary",
+      "t": "animals",
+      "g": "Pets",
+      "d": "a small yellow bird that sings",
+      "e": "My grandma has a [[canary]] that sings all day.",
+      "img": "assets/images/basic/canary.svg"
     },
     {
       "id": "cow",
@@ -2323,8 +4498,7 @@
       "g": "Farm animals",
       "d": "a large female farm animal that gives milk",
       "e": "The [[cow]] was eating grass in the field.",
-      "img": "assets/images/basic/cow.svg",
-      "fill": "assets/images/basic/cow-fill.svg"
+      "img": "assets/images/basic/cow.svg"
     },
     {
       "id": "pig",
@@ -2333,8 +4507,7 @@
       "g": "Farm animals",
       "d": "a pink or black farm animal with a short tail",
       "e": "The [[pig]] was rolling in the mud.",
-      "img": "assets/images/basic/pig.svg",
-      "fill": "assets/images/basic/pig-fill.svg"
+      "img": "assets/images/basic/pig.svg"
     },
     {
       "id": "horse",
@@ -2344,7 +4517,6 @@
       "d": "a large animal that people ride",
       "e": "She rides her [[horse]] every weekend.",
       "img": "assets/images/basic/horse.svg",
-      "fill": "assets/images/basic/horse-fill.svg",
       "similar": ["donkey"]
     },
     {
@@ -2354,8 +4526,7 @@
       "g": "Farm animals",
       "d": "a farm animal with thick wool",
       "e": "There are hundreds of [[sheep]] on the hills.",
-      "img": "assets/images/basic/sheep.svg",
-      "fill": "assets/images/basic/sheep-fill.svg"
+      "img": "assets/images/basic/sheep.svg"
     },
     {
       "id": "goat",
@@ -2364,8 +4535,7 @@
       "g": "Farm animals",
       "d": "a farm animal with horns that can climb very well",
       "e": "The [[goat]] climbed onto the wall.",
-      "img": "assets/images/basic/goat.svg",
-      "fill": "assets/images/basic/goat-fill.svg"
+      "img": "assets/images/basic/goat.svg"
     },
     {
       "id": "chicken",
@@ -2374,8 +4544,7 @@
       "g": "Farm animals",
       "d": "a farm bird that people keep for its eggs and meat",
       "e": "Our [[chicken]] lays an egg every day.",
-      "img": "assets/images/basic/chicken.svg",
-      "fill": "assets/images/basic/chicken-fill.svg"
+      "img": "assets/images/basic/chicken.svg"
     },
     {
       "id": "duck",
@@ -2384,8 +4553,7 @@
       "g": "Farm animals",
       "d": "a bird with short legs that swims on water",
       "e": "A [[duck]] was swimming on the lake.",
-      "img": "assets/images/basic/duck.svg",
-      "fill": "assets/images/basic/duck-fill.svg"
+      "img": "assets/images/basic/duck.svg"
     },
     {
       "id": "donkey",
@@ -2395,8 +4563,34 @@
       "d": "an animal like a small horse with long ears",
       "e": "The [[donkey]] carried the bags up the hill.",
       "img": "assets/images/basic/donkey.svg",
-      "fill": "assets/images/basic/donkey-fill.svg",
       "similar": ["horse"]
+    },
+    {
+      "id": "bull",
+      "w": "bull",
+      "t": "animals",
+      "g": "Farm animals",
+      "d": "the male of cattle",
+      "e": "There's a [[bull]] in that field.",
+      "img": "assets/images/basic/bull.svg"
+    },
+    {
+      "id": "rooster",
+      "w": "rooster",
+      "t": "animals",
+      "g": "Farm animals",
+      "d": "a male bird that wakes the farm early with its call",
+      "e": "The [[rooster]] crows at sunrise.",
+      "img": "assets/images/basic/rooster.svg"
+    },
+    {
+      "id": "turkey-bird",
+      "w": "turkey",
+      "t": "animals",
+      "g": "Farm animals",
+      "d": "a large farm bird, often eaten at Christmas",
+      "e": "The farmer keeps one [[turkey]].",
+      "img": "assets/images/basic/turkey-bird.svg"
     },
     {
       "id": "lion",
@@ -2406,7 +4600,6 @@
       "d": "a large wild cat; the male has a lot of hair round its head",
       "e": "The [[lion]] was sleeping under a tree.",
       "img": "assets/images/basic/lion.svg",
-      "fill": "assets/images/basic/lion-fill.svg",
       "similar": ["tiger"]
     },
     {
@@ -2417,7 +4610,6 @@
       "d": "a large wild cat with orange fur and black stripes",
       "e": "A [[tiger]] can swim very well.",
       "img": "assets/images/basic/tiger.svg",
-      "fill": "assets/images/basic/tiger-fill.svg",
       "similar": ["lion"]
     },
     {
@@ -2427,8 +4619,7 @@
       "g": "Wild animals",
       "d": "a very large grey animal with a long nose",
       "e": "The [[elephant]] lifted the branch with its trunk.",
-      "img": "assets/images/basic/elephant.svg",
-      "fill": "assets/images/basic/elephant-fill.svg"
+      "img": "assets/images/basic/elephant.svg"
     },
     {
       "id": "giraffe",
@@ -2437,8 +4628,7 @@
       "g": "Wild animals",
       "d": "a tall animal with a very long neck",
       "e": "A [[giraffe]] can eat leaves from tall trees.",
-      "img": "assets/images/basic/giraffe.svg",
-      "fill": "assets/images/basic/giraffe-fill.svg"
+      "img": "assets/images/basic/giraffe.svg"
     },
     {
       "id": "monkey",
@@ -2447,8 +4637,7 @@
       "g": "Wild animals",
       "d": "an animal with a long tail that climbs trees",
       "e": "The [[monkey]] took my banana!",
-      "img": "assets/images/basic/monkey.svg",
-      "fill": "assets/images/basic/monkey-fill.svg"
+      "img": "assets/images/basic/monkey.svg"
     },
     {
       "id": "bear",
@@ -2457,8 +4646,7 @@
       "g": "Wild animals",
       "d": "a large, heavy animal with thick fur",
       "e": "A brown [[bear]] can run very fast.",
-      "img": "assets/images/basic/bear.svg",
-      "fill": "assets/images/basic/bear-fill.svg"
+      "img": "assets/images/basic/bear.svg"
     },
     {
       "id": "wolf",
@@ -2476,8 +4664,7 @@
       "g": "Wild animals",
       "d": "a long animal with no legs",
       "e": "I'm afraid of every [[snake]], even the small ones.",
-      "img": "assets/images/basic/snake.svg",
-      "fill": "assets/images/basic/snake-fill.svg"
+      "img": "assets/images/basic/snake.svg"
     },
     {
       "id": "eagle",
@@ -2496,7 +4683,6 @@
       "d": "an intelligent sea animal that swims in groups",
       "e": "We saw a [[dolphin]] from the boat.",
       "img": "assets/images/basic/dolphin.svg",
-      "fill": "assets/images/basic/dolphin-fill.svg",
       "similar": ["whale"]
     },
     {
@@ -2507,7 +4693,6 @@
       "d": "a very large animal that lives in the sea",
       "e": "The blue [[whale]] is the biggest animal on Earth.",
       "img": "assets/images/basic/whale.svg",
-      "fill": "assets/images/basic/whale-fill.svg",
       "similar": ["dolphin"]
     },
     {
@@ -2517,8 +4702,79 @@
       "g": "Wild animals",
       "d": "a large fish with sharp teeth",
       "e": "The beach was closed because someone saw a [[shark]].",
-      "img": "assets/images/basic/shark.svg",
-      "fill": "assets/images/basic/shark-fill.svg"
+      "img": "assets/images/basic/shark.svg"
+    },
+    {
+      "id": "gorilla",
+      "w": "gorilla",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "the largest ape, with black fur",
+      "e": "The [[gorilla]] is eating leaves.",
+      "img": "assets/images/basic/gorilla.svg"
+    },
+    {
+      "id": "fox",
+      "w": "fox",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "a wild animal like a small dog, with a thick tail",
+      "e": "A [[fox]] ran across the road.",
+      "img": "assets/images/basic/fox.svg"
+    },
+    {
+      "id": "deer",
+      "w": "deer",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "a fast wild animal; the male often has antlers",
+      "e": "We saw a [[deer]] in the forest.",
+      "img": "assets/images/basic/deer.svg"
+    },
+    {
+      "id": "zebra",
+      "w": "zebra",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "an African animal like a horse with black and white lines",
+      "e": "The [[zebra]] drank from the river.",
+      "img": "assets/images/basic/zebra.svg"
+    },
+    {
+      "id": "hippopotamus",
+      "w": "hippopotamus",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "a very large African animal that spends the day in rivers",
+      "e": "A [[hippopotamus]] can run fast.",
+      "img": "assets/images/basic/hippopotamus.svg"
+    },
+    {
+      "id": "rhinoceros",
+      "w": "rhinoceros",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "a very large animal with thick skin and a horn on its nose",
+      "e": "The [[rhinoceros]] is in danger of dying out.",
+      "img": "assets/images/basic/rhinoceros.svg"
+    },
+    {
+      "id": "crocodile",
+      "w": "crocodile",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "a long reptile with a big mouth and sharp teeth",
+      "e": "A [[crocodile]] was lying in the sun.",
+      "img": "assets/images/basic/crocodile.svg"
+    },
+    {
+      "id": "owl",
+      "w": "owl",
+      "t": "animals",
+      "g": "Wild animals",
+      "d": "a bird with large eyes that hunts at night",
+      "e": "I heard an [[owl]] last night.",
+      "img": "assets/images/basic/owl.svg"
     },
     {
       "id": "spanish",
@@ -2527,8 +4783,7 @@
       "g": "Europe",
       "d": "from Spain",
       "e": "My best friend is [[Spanish]]; she's from Seville.",
-      "img": "assets/images/basic/spanish.svg",
-      "fill": "assets/images/basic/spanish-fill.svg"
+      "img": "assets/images/basic/spanish.svg"
     },
     {
       "id": "british",
@@ -2538,7 +4793,6 @@
       "d": "from the United Kingdom",
       "e": "London is the [[British]] capital.",
       "img": "assets/images/basic/british.svg",
-      "fill": "assets/images/basic/british-fill.svg",
       "similar": ["english", "scottish", "welsh"]
     },
     {
@@ -2549,7 +4803,6 @@
       "d": "from England",
       "e": "Shakespeare was an [[English]] writer.",
       "img": "assets/images/basic/english.svg",
-      "fill": "assets/images/basic/english-fill.svg",
       "similar": ["british"]
     },
     {
@@ -2559,8 +4812,7 @@
       "g": "Europe",
       "d": "from Ireland",
       "e": "We listened to [[Irish]] music in a pub in Dublin.",
-      "img": "assets/images/basic/irish.svg",
-      "fill": "assets/images/basic/irish-fill.svg"
+      "img": "assets/images/basic/irish.svg"
     },
     {
       "id": "scottish",
@@ -2570,7 +4822,6 @@
       "d": "from Scotland",
       "e": "Edinburgh is a beautiful [[Scottish]] city.",
       "img": "assets/images/basic/scottish.svg",
-      "fill": "assets/images/basic/scottish-fill.svg",
       "similar": ["british"]
     },
     {
@@ -2581,7 +4832,6 @@
       "d": "from Wales",
       "e": "My teacher is [[Welsh]] and speaks two languages.",
       "img": "assets/images/basic/welsh.svg",
-      "fill": "assets/images/basic/welsh-fill.svg",
       "similar": ["british"]
     },
     {
@@ -2591,8 +4841,7 @@
       "g": "Europe",
       "d": "from France",
       "e": "I love [[French]] bread.",
-      "img": "assets/images/basic/french.svg",
-      "fill": "assets/images/basic/french-fill.svg"
+      "img": "assets/images/basic/french.svg"
     },
     {
       "id": "german",
@@ -2601,8 +4850,7 @@
       "g": "Europe",
       "d": "from Germany",
       "e": "Our car is [[German]].",
-      "img": "assets/images/basic/german.svg",
-      "fill": "assets/images/basic/german-fill.svg"
+      "img": "assets/images/basic/german.svg"
     },
     {
       "id": "italian",
@@ -2611,8 +4859,7 @@
       "g": "Europe",
       "d": "from Italy",
       "e": "Let's have dinner at the [[Italian]] restaurant.",
-      "img": "assets/images/basic/italian.svg",
-      "fill": "assets/images/basic/italian-fill.svg"
+      "img": "assets/images/basic/italian.svg"
     },
     {
       "id": "portuguese",
@@ -2621,8 +4868,7 @@
       "g": "Europe",
       "d": "from Portugal",
       "e": "Lisbon is the [[Portuguese]] capital.",
-      "img": "assets/images/basic/portuguese.svg",
-      "fill": "assets/images/basic/portuguese-fill.svg"
+      "img": "assets/images/basic/portuguese.svg"
     },
     {
       "id": "dutch",
@@ -2631,8 +4877,7 @@
       "g": "Europe",
       "d": "from the Netherlands",
       "e": "Many [[Dutch]] people cycle to work.",
-      "img": "assets/images/basic/dutch.svg",
-      "fill": "assets/images/basic/dutch-fill.svg"
+      "img": "assets/images/basic/dutch.svg"
     },
     {
       "id": "swiss",
@@ -2641,8 +4886,7 @@
       "g": "Europe",
       "d": "from Switzerland",
       "e": "[[Swiss]] chocolate is famous all over the world.",
-      "img": "assets/images/basic/swiss.svg",
-      "fill": "assets/images/basic/swiss-fill.svg"
+      "img": "assets/images/basic/swiss.svg"
     },
     {
       "id": "greek",
@@ -2651,8 +4895,7 @@
       "g": "Europe",
       "d": "from Greece",
       "e": "We stayed on a small [[Greek]] island.",
-      "img": "assets/images/basic/greek.svg",
-      "fill": "assets/images/basic/greek-fill.svg"
+      "img": "assets/images/basic/greek.svg"
     },
     {
       "id": "swedish",
@@ -2661,8 +4904,7 @@
       "g": "Europe",
       "d": "from Sweden",
       "e": "She bought a [[Swedish]] sofa for her flat.",
-      "img": "assets/images/basic/swedish.svg",
-      "fill": "assets/images/basic/swedish-fill.svg"
+      "img": "assets/images/basic/swedish.svg"
     },
     {
       "id": "polish",
@@ -2671,8 +4913,52 @@
       "g": "Europe",
       "d": "from Poland",
       "e": "My neighbour is [[Polish]] and cooks great soup.",
-      "img": "assets/images/basic/polish.svg",
-      "fill": "assets/images/basic/polish-fill.svg"
+      "img": "assets/images/basic/polish.svg"
+    },
+    {
+      "id": "belgian",
+      "w": "Belgian",
+      "t": "countries",
+      "g": "Europe",
+      "d": "from the country whose capital is Brussels",
+      "e": "My neighbour is [[Belgian]].",
+      "img": "assets/images/basic/belgian.svg"
+    },
+    {
+      "id": "russian",
+      "w": "Russian",
+      "t": "countries",
+      "g": "Europe",
+      "d": "from the country whose capital is Moscow",
+      "e": "She is reading a [[Russian]] novel.",
+      "img": "assets/images/basic/russian.svg"
+    },
+    {
+      "id": "norwegian",
+      "w": "Norwegian",
+      "t": "countries",
+      "g": "Europe",
+      "d": "from the country whose capital is Oslo",
+      "e": "Our guide was [[Norwegian]].",
+      "img": "assets/images/basic/norwegian.svg"
+    },
+    {
+      "id": "danish",
+      "w": "Danish",
+      "t": "countries",
+      "g": "Europe",
+      "d": "from the country whose capital is Copenhagen",
+      "e": "They sell [[Danish]] furniture.",
+      "img": "assets/images/basic/danish.svg"
+    },
+    {
+      "id": "austrian",
+      "w": "Austrian",
+      "t": "countries",
+      "g": "Europe",
+      "d": "from the country whose capital is Vienna",
+      "e": "He is an [[Austrian]] skier.",
+      "img": "assets/images/basic/austrian.svg"
     },
     {
       "id": "american",
@@ -2681,8 +4967,7 @@
       "g": "The Americas",
       "d": "from the United States",
       "e": "New York is a big [[American]] city.",
-      "img": "assets/images/basic/american.svg",
-      "fill": "assets/images/basic/american-fill.svg"
+      "img": "assets/images/basic/american.svg"
     },
     {
       "id": "canadian",
@@ -2691,8 +4976,7 @@
       "g": "The Americas",
       "d": "from Canada",
       "e": "The [[Canadian]] team won the hockey match.",
-      "img": "assets/images/basic/canadian.svg",
-      "fill": "assets/images/basic/canadian-fill.svg"
+      "img": "assets/images/basic/canadian.svg"
     },
     {
       "id": "mexican",
@@ -2701,8 +4985,7 @@
       "g": "The Americas",
       "d": "from Mexico",
       "e": "I love spicy [[Mexican]] food.",
-      "img": "assets/images/basic/mexican.svg",
-      "fill": "assets/images/basic/mexican-fill.svg"
+      "img": "assets/images/basic/mexican.svg"
     },
     {
       "id": "brazilian",
@@ -2711,8 +4994,7 @@
       "g": "The Americas",
       "d": "from Brazil",
       "e": "[[Brazilian]] footballers are famous.",
-      "img": "assets/images/basic/brazilian.svg",
-      "fill": "assets/images/basic/brazilian-fill.svg"
+      "img": "assets/images/basic/brazilian.svg"
     },
     {
       "id": "argentinian",
@@ -2721,8 +5003,16 @@
       "g": "The Americas",
       "d": "from Argentina",
       "e": "We met an [[Argentinian]] couple on holiday.",
-      "img": "assets/images/basic/argentinian.svg",
-      "fill": "assets/images/basic/argentinian-fill.svg"
+      "img": "assets/images/basic/argentinian.svg"
+    },
+    {
+      "id": "colombian",
+      "w": "Colombian",
+      "t": "countries",
+      "g": "The Americas",
+      "d": "from the country whose capital is Bogotá",
+      "e": "We drank [[Colombian]] coffee.",
+      "img": "assets/images/basic/colombian.svg"
     },
     {
       "id": "chinese",
@@ -2731,8 +5021,7 @@
       "g": "Asia, Africa and Oceania",
       "d": "from China",
       "e": "[[Chinese]] is a difficult language to learn.",
-      "img": "assets/images/basic/chinese.svg",
-      "fill": "assets/images/basic/chinese-fill.svg"
+      "img": "assets/images/basic/chinese.svg"
     },
     {
       "id": "japanese",
@@ -2741,8 +5030,7 @@
       "g": "Asia, Africa and Oceania",
       "d": "from Japan",
       "e": "I'd like to try real [[Japanese]] food in Tokyo.",
-      "img": "assets/images/basic/japanese.svg",
-      "fill": "assets/images/basic/japanese-fill.svg"
+      "img": "assets/images/basic/japanese.svg"
     },
     {
       "id": "indian",
@@ -2751,8 +5039,7 @@
       "g": "Asia, Africa and Oceania",
       "d": "from India",
       "e": "There's a good [[Indian]] restaurant near my flat.",
-      "img": "assets/images/basic/indian.svg",
-      "fill": "assets/images/basic/indian-fill.svg"
+      "img": "assets/images/basic/indian.svg"
     },
     {
       "id": "turkish",
@@ -2761,8 +5048,7 @@
       "g": "Asia, Africa and Oceania",
       "d": "from Turkey",
       "e": "We drank [[Turkish]] coffee in Istanbul.",
-      "img": "assets/images/basic/turkish.svg",
-      "fill": "assets/images/basic/turkish-fill.svg"
+      "img": "assets/images/basic/turkish.svg"
     },
     {
       "id": "moroccan",
@@ -2771,8 +5057,7 @@
       "g": "Asia, Africa and Oceania",
       "d": "from Morocco",
       "e": "My [[Moroccan]] friend taught me to cook couscous.",
-      "img": "assets/images/basic/moroccan.svg",
-      "fill": "assets/images/basic/moroccan-fill.svg"
+      "img": "assets/images/basic/moroccan.svg"
     },
     {
       "id": "egyptian",
@@ -2781,8 +5066,7 @@
       "g": "Asia, Africa and Oceania",
       "d": "from Egypt",
       "e": "The [[Egyptian]] pyramids are very old.",
-      "img": "assets/images/basic/egyptian.svg",
-      "fill": "assets/images/basic/egyptian-fill.svg"
+      "img": "assets/images/basic/egyptian.svg"
     },
     {
       "id": "australian",
@@ -2791,8 +5075,502 @@
       "g": "Asia, Africa and Oceania",
       "d": "from Australia",
       "e": "Sydney is the biggest [[Australian]] city.",
-      "img": "assets/images/basic/australian.svg",
-      "fill": "assets/images/basic/australian-fill.svg"
+      "img": "assets/images/basic/australian.svg"
+    },
+    {
+      "id": "south-korean",
+      "w": "South Korean",
+      "t": "countries",
+      "g": "Asia, Africa and Oceania",
+      "d": "from the country whose capital is Seoul",
+      "e": "I have a [[South Korean]] classmate.",
+      "img": "assets/images/basic/south-korean.svg"
+    },
+    {
+      "id": "spain",
+      "w": "Spain",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Madrid",
+      "e": "I'm from [[Spain]].",
+      "img": "assets/images/basic/spain.svg"
+    },
+    {
+      "id": "united-kingdom",
+      "w": "United Kingdom",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the state made of four nations, with London as its capital",
+      "e": "She works in the [[United Kingdom]].",
+      "img": "assets/images/basic/united-kingdom.svg"
+    },
+    {
+      "id": "england",
+      "w": "England",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the largest nation of Great Britain",
+      "e": "Manchester is in [[England]].",
+      "img": "assets/images/basic/england.svg"
+    },
+    {
+      "id": "scotland",
+      "w": "Scotland",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the nation north of England, with Edinburgh as its capital",
+      "e": "We walked in the mountains of [[Scotland]].",
+      "img": "assets/images/basic/scotland.svg"
+    },
+    {
+      "id": "wales",
+      "w": "Wales",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the nation west of England, with Cardiff as its capital",
+      "e": "He grew up in [[Wales]].",
+      "img": "assets/images/basic/wales.svg"
+    },
+    {
+      "id": "ireland",
+      "w": "Ireland",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the island country whose capital is Dublin",
+      "e": "They moved to [[Ireland]].",
+      "img": "assets/images/basic/ireland.svg"
+    },
+    {
+      "id": "united-states",
+      "w": "United States",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the large North American country whose capital is Washington",
+      "e": "My cousin studies in the [[United States]].",
+      "img": "assets/images/basic/united-states.svg"
+    },
+    {
+      "id": "france",
+      "w": "France",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Paris",
+      "e": "We drove through [[France]].",
+      "img": "assets/images/basic/france.svg"
+    },
+    {
+      "id": "germany",
+      "w": "Germany",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Berlin",
+      "e": "She has a job in [[Germany]].",
+      "img": "assets/images/basic/germany.svg"
+    },
+    {
+      "id": "italy",
+      "w": "Italy",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Rome",
+      "e": "I would love to visit [[Italy]].",
+      "img": "assets/images/basic/italy.svg"
+    },
+    {
+      "id": "portugal",
+      "w": "Portugal",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Lisbon",
+      "e": "[[Portugal]] is next to Spain.",
+      "img": "assets/images/basic/portugal.svg"
+    },
+    {
+      "id": "netherlands",
+      "w": "The Netherlands",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the flat country whose capital is Amsterdam",
+      "e": "[[The Netherlands]] has many bicycles.",
+      "img": "assets/images/basic/netherlands.svg"
+    },
+    {
+      "id": "belgium",
+      "w": "Belgium",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Brussels",
+      "e": "[[Belgium]] is famous for chocolate.",
+      "img": "assets/images/basic/belgium.svg"
+    },
+    {
+      "id": "switzerland",
+      "w": "Switzerland",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the mountain country whose capital city is Bern",
+      "e": "They ski in [[Switzerland]].",
+      "img": "assets/images/basic/switzerland.svg"
+    },
+    {
+      "id": "greece",
+      "w": "Greece",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Athens",
+      "e": "We visited islands in [[Greece]].",
+      "img": "assets/images/basic/greece.svg"
+    },
+    {
+      "id": "turkey-country",
+      "w": "Turkey",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country where you find Istanbul and Ankara",
+      "e": "He has been to [[Turkey]] twice.",
+      "img": "assets/images/basic/turkey-country.svg"
+    },
+    {
+      "id": "russia",
+      "w": "Russia",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the largest country in the world",
+      "e": "Moscow is in [[Russia]].",
+      "img": "assets/images/basic/russia.svg"
+    },
+    {
+      "id": "sweden",
+      "w": "Sweden",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Stockholm",
+      "e": "It is cold in [[Sweden]] in winter.",
+      "img": "assets/images/basic/sweden.svg"
+    },
+    {
+      "id": "norway",
+      "w": "Norway",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Oslo",
+      "e": "[[Norway]] has beautiful fjords.",
+      "img": "assets/images/basic/norway.svg"
+    },
+    {
+      "id": "denmark",
+      "w": "Denmark",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Copenhagen",
+      "e": "My friend lives in [[Denmark]].",
+      "img": "assets/images/basic/denmark.svg"
+    },
+    {
+      "id": "poland",
+      "w": "Poland",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Warsaw",
+      "e": "Kraków is a city in [[Poland]].",
+      "img": "assets/images/basic/poland.svg"
+    },
+    {
+      "id": "austria",
+      "w": "Austria",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Vienna",
+      "e": "We went to [[Austria]] for the music.",
+      "img": "assets/images/basic/austria.svg"
+    },
+    {
+      "id": "china",
+      "w": "China",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the Asian country whose capital is Beijing",
+      "e": "I want to travel around [[China]].",
+      "img": "assets/images/basic/china.svg"
+    },
+    {
+      "id": "japan",
+      "w": "Japan",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the island country whose capital is Tokyo",
+      "e": "I have never been to [[Japan]].",
+      "img": "assets/images/basic/japan.svg"
+    },
+    {
+      "id": "south-korea",
+      "w": "South Korea",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Seoul",
+      "e": "The band comes from [[South Korea]].",
+      "img": "assets/images/basic/south-korea.svg"
+    },
+    {
+      "id": "india",
+      "w": "India",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the Asian country whose capital is New Delhi",
+      "e": "The Taj Mahal is in [[India]].",
+      "img": "assets/images/basic/india.svg"
+    },
+    {
+      "id": "australia",
+      "w": "Australia",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Canberra",
+      "e": "Kangaroos live in [[Australia]].",
+      "img": "assets/images/basic/australia.svg"
+    },
+    {
+      "id": "canada",
+      "w": "Canada",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the large country north of the USA",
+      "e": "My aunt lives in [[Canada]].",
+      "img": "assets/images/basic/canada.svg"
+    },
+    {
+      "id": "mexico",
+      "w": "Mexico",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country just south of the USA",
+      "e": "The food in [[Mexico]] is spicy.",
+      "img": "assets/images/basic/mexico.svg"
+    },
+    {
+      "id": "brazil",
+      "w": "Brazil",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the largest country in South America",
+      "e": "[[Brazil]] is famous for football.",
+      "img": "assets/images/basic/brazil.svg"
+    },
+    {
+      "id": "argentina",
+      "w": "Argentina",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Buenos Aires",
+      "e": "Tango comes from [[Argentina]].",
+      "img": "assets/images/basic/argentina.svg"
+    },
+    {
+      "id": "colombia",
+      "w": "Colombia",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country whose capital is Bogotá",
+      "e": "She was born in [[Colombia]].",
+      "img": "assets/images/basic/colombia.svg"
+    },
+    {
+      "id": "morocco",
+      "w": "Morocco",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the North African country whose capital is Rabat",
+      "e": "We bought a carpet in [[Morocco]].",
+      "img": "assets/images/basic/morocco.svg"
+    },
+    {
+      "id": "egypt",
+      "w": "Egypt",
+      "t": "countries",
+      "g": "Countries",
+      "d": "the country of the pyramids",
+      "e": "The Nile flows through [[Egypt]].",
+      "img": "assets/images/basic/egypt.svg"
+    },
+    {
+      "id": "london",
+      "w": "London",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of the United Kingdom",
+      "e": "I'd like to visit [[London]].",
+      "img": "assets/images/basic/london.svg"
+    },
+    {
+      "id": "paris",
+      "w": "Paris",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of France",
+      "e": "The Eiffel Tower is in [[Paris]].",
+      "img": "assets/images/basic/paris.svg"
+    },
+    {
+      "id": "rome",
+      "w": "Rome",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Italy",
+      "e": "My favourite city is [[Rome]].",
+      "img": "assets/images/basic/rome.svg"
+    },
+    {
+      "id": "berlin",
+      "w": "Berlin",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Germany",
+      "e": "We saw the old wall in [[Berlin]].",
+      "img": "assets/images/basic/berlin.svg"
+    },
+    {
+      "id": "madrid",
+      "w": "Madrid",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Spain",
+      "e": "I took a train to [[Madrid]].",
+      "img": "assets/images/basic/madrid.svg"
+    },
+    {
+      "id": "barcelona",
+      "w": "Barcelona",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the Spanish city where you can see the Sagrada Família",
+      "e": "[[Barcelona]] has a lovely beach.",
+      "img": "assets/images/basic/barcelona.svg"
+    },
+    {
+      "id": "malaga",
+      "w": "Málaga",
+      "t": "countries",
+      "g": "Cities",
+      "d": "a coastal city in the south of Spain where Picasso was born",
+      "e": "I live in [[Málaga]].",
+      "img": "assets/images/basic/malaga.svg"
+    },
+    {
+      "id": "seville",
+      "w": "Seville",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the largest city in Andalusia",
+      "e": "It is very hot in [[Seville]] in August.",
+      "img": "assets/images/basic/seville.svg"
+    },
+    {
+      "id": "lisbon",
+      "w": "Lisbon",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Portugal",
+      "e": "[[Lisbon]] has old yellow trams.",
+      "img": "assets/images/basic/lisbon.svg"
+    },
+    {
+      "id": "new-york",
+      "w": "New York",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the American city where you can see the Statue of Liberty",
+      "e": "She dreams of living in [[New York]].",
+      "img": "assets/images/basic/new-york.svg"
+    },
+    {
+      "id": "los-angeles",
+      "w": "Los Angeles",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the big Californian city where Hollywood is",
+      "e": "Many films are made in [[Los Angeles]].",
+      "img": "assets/images/basic/los-angeles.svg"
+    },
+    {
+      "id": "tokyo",
+      "w": "Tokyo",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Japan",
+      "e": "[[Tokyo]] is a very busy city.",
+      "img": "assets/images/basic/tokyo.svg"
+    },
+    {
+      "id": "beijing",
+      "w": "Beijing",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of China",
+      "e": "The Forbidden City is in [[Beijing]].",
+      "img": "assets/images/basic/beijing.svg"
+    },
+    {
+      "id": "sydney",
+      "w": "Sydney",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the Australian city with a famous opera house",
+      "e": "We flew to [[Sydney]].",
+      "img": "assets/images/basic/sydney.svg"
+    },
+    {
+      "id": "dublin",
+      "w": "Dublin",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Ireland",
+      "e": "He studied English in [[Dublin]].",
+      "img": "assets/images/basic/dublin.svg"
+    },
+    {
+      "id": "amsterdam",
+      "w": "Amsterdam",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of the Netherlands",
+      "e": "[[Amsterdam]] has many canals.",
+      "img": "assets/images/basic/amsterdam.svg"
+    },
+    {
+      "id": "athens",
+      "w": "Athens",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Greece",
+      "e": "The Parthenon is in [[Athens]].",
+      "img": "assets/images/basic/athens.svg"
+    },
+    {
+      "id": "istanbul",
+      "w": "Istanbul",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the Turkish city that is in both Europe and Asia",
+      "e": "We crossed the water in [[Istanbul]].",
+      "img": "assets/images/basic/istanbul.svg"
+    },
+    {
+      "id": "prague",
+      "w": "Prague",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of the Czech Republic",
+      "e": "[[Prague]] has a famous old bridge.",
+      "img": "assets/images/basic/prague.svg"
+    },
+    {
+      "id": "vienna",
+      "w": "Vienna",
+      "t": "countries",
+      "g": "Cities",
+      "d": "the capital of Austria",
+      "e": "We heard a concert in [[Vienna]].",
+      "img": "assets/images/basic/vienna.svg"
     },
     {
       "id": "apple",
@@ -2801,8 +5579,7 @@
       "g": "Fruit",
       "d": "a round fruit with red, green or yellow skin",
       "e": "I eat an [[apple]] every morning.",
-      "img": "assets/images/basic/apple.svg",
-      "fill": "assets/images/basic/apple-fill.svg"
+      "img": "assets/images/basic/apple.svg"
     },
     {
       "id": "banana",
@@ -2811,8 +5588,7 @@
       "g": "Fruit",
       "d": "a long, curved fruit with yellow skin",
       "e": "Take a [[banana]] for the journey.",
-      "img": "assets/images/basic/banana.svg",
-      "fill": "assets/images/basic/banana-fill.svg"
+      "img": "assets/images/basic/banana.svg"
     },
     {
       "id": "orange",
@@ -2821,8 +5597,7 @@
       "g": "Fruit",
       "d": "a round fruit with a thick skin that you peel; you can make juice from it",
       "e": "I squeeze an [[orange]] for breakfast.",
-      "img": "assets/images/basic/orange.svg",
-      "fill": "assets/images/basic/orange-fill.svg"
+      "img": "assets/images/basic/orange.svg"
     },
     {
       "id": "strawberry",
@@ -2831,8 +5606,7 @@
       "g": "Fruit",
       "d": "a small, red, soft fruit with tiny seeds on the outside",
       "e": "This [[strawberry]] is very sweet.",
-      "img": "assets/images/basic/strawberry.svg",
-      "fill": "assets/images/basic/strawberry-fill.svg"
+      "img": "assets/images/basic/strawberry.svg"
     },
     {
       "id": "grapes",
@@ -2841,8 +5615,7 @@
       "g": "Fruit",
       "d": "small, round green or purple fruit that grow in bunches",
       "e": "We bought some [[grapes]] for the picnic.",
-      "img": "assets/images/basic/grapes.svg",
-      "fill": "assets/images/basic/grapes-fill.svg"
+      "img": "assets/images/basic/grapes.svg"
     },
     {
       "id": "watermelon",
@@ -2851,8 +5624,7 @@
       "g": "Fruit",
       "d": "a big fruit with green skin and red inside",
       "e": "Nothing is better than cold [[watermelon]] in summer.",
-      "img": "assets/images/basic/watermelon.svg",
-      "fill": "assets/images/basic/watermelon-fill.svg"
+      "img": "assets/images/basic/watermelon.svg"
     },
     {
       "id": "pear",
@@ -2861,8 +5633,7 @@
       "g": "Fruit",
       "d": "a sweet green or yellow fruit, narrow at the top",
       "e": "This [[pear]] is not ripe yet.",
-      "img": "assets/images/basic/pear.svg",
-      "fill": "assets/images/basic/pear-fill.svg"
+      "img": "assets/images/basic/pear.svg"
     },
     {
       "id": "peach",
@@ -2871,8 +5642,7 @@
       "g": "Fruit",
       "d": "a soft, round fruit with a furry skin and a big stone",
       "e": "She ate a juicy [[peach]].",
-      "img": "assets/images/basic/peach.svg",
-      "fill": "assets/images/basic/peach-fill.svg"
+      "img": "assets/images/basic/peach.svg"
     },
     {
       "id": "pineapple",
@@ -2881,8 +5651,7 @@
       "g": "Fruit",
       "d": "a large tropical fruit with rough skin and sharp leaves on top",
       "e": "We put [[pineapple]] in the fruit salad.",
-      "img": "assets/images/basic/pineapple.svg",
-      "fill": "assets/images/basic/pineapple-fill.svg"
+      "img": "assets/images/basic/pineapple.svg"
     },
     {
       "id": "lemon",
@@ -2891,8 +5660,25 @@
       "g": "Fruit",
       "d": "a sour yellow fruit",
       "e": "I like tea with [[lemon]].",
-      "img": "assets/images/basic/lemon.svg",
-      "fill": "assets/images/basic/lemon-fill.svg"
+      "img": "assets/images/basic/lemon.svg"
+    },
+    {
+      "id": "cherry",
+      "w": "cherry",
+      "t": "food",
+      "g": "Fruit",
+      "d": "a small, round, dark red fruit with a stone",
+      "e": "She put a [[cherry]] on the cake.",
+      "img": "assets/images/basic/cherry.svg"
+    },
+    {
+      "id": "mango",
+      "w": "mango",
+      "t": "food",
+      "g": "Fruit",
+      "d": "a sweet tropical fruit with a large flat stone",
+      "e": "This [[mango]] is very juicy.",
+      "img": "assets/images/basic/mango.svg"
     },
     {
       "id": "potato",
@@ -2901,8 +5687,7 @@
       "g": "Vegetables",
       "d": "a vegetable that grows under the ground; you can make chips from it",
       "e": "Can you peel this [[potato]]?",
-      "img": "assets/images/basic/potato.svg",
-      "fill": "assets/images/basic/potato-fill.svg"
+      "img": "assets/images/basic/potato.svg"
     },
     {
       "id": "tomato",
@@ -2911,8 +5696,7 @@
       "g": "Vegetables",
       "d": "a soft, red fruit that we use as a vegetable in salads",
       "e": "I put a [[tomato]] in my sandwich.",
-      "img": "assets/images/basic/tomato.svg",
-      "fill": "assets/images/basic/tomato-fill.svg"
+      "img": "assets/images/basic/tomato.svg"
     },
     {
       "id": "onion",
@@ -2921,8 +5705,7 @@
       "g": "Vegetables",
       "d": "a round vegetable with a strong smell that can make you cry",
       "e": "Cutting an [[onion]] always makes me cry.",
-      "img": "assets/images/basic/onion.svg",
-      "fill": "assets/images/basic/onion-fill.svg"
+      "img": "assets/images/basic/onion.svg"
     },
     {
       "id": "carrot",
@@ -2931,8 +5714,7 @@
       "g": "Vegetables",
       "d": "a long, orange vegetable",
       "e": "Give the rabbit a [[carrot]].",
-      "img": "assets/images/basic/carrot.svg",
-      "fill": "assets/images/basic/carrot-fill.svg"
+      "img": "assets/images/basic/carrot.svg"
     },
     {
       "id": "lettuce",
@@ -2941,8 +5723,7 @@
       "g": "Vegetables",
       "d": "a vegetable with large green leaves that you eat in salads",
       "e": "Wash the [[lettuce]] before you make the salad.",
-      "img": "assets/images/basic/lettuce.svg",
-      "fill": "assets/images/basic/lettuce-fill.svg"
+      "img": "assets/images/basic/lettuce.svg"
     },
     {
       "id": "cucumber",
@@ -2951,8 +5732,7 @@
       "g": "Vegetables",
       "d": "a long, green vegetable that you usually eat raw",
       "e": "I put some [[cucumber]] in the salad.",
-      "img": "assets/images/basic/cucumber.svg",
-      "fill": "assets/images/basic/cucumber-fill.svg"
+      "img": "assets/images/basic/cucumber.svg"
     },
     {
       "id": "pepper",
@@ -2961,8 +5741,7 @@
       "g": "Vegetables",
       "d": "a hollow red, green or yellow vegetable",
       "e": "Cut the red [[pepper]] into small pieces.",
-      "img": "assets/images/basic/pepper.svg",
-      "fill": "assets/images/basic/pepper-fill.svg"
+      "img": "assets/images/basic/pepper.svg"
     },
     {
       "id": "garlic",
@@ -2980,8 +5759,43 @@
       "g": "Vegetables",
       "d": "a soft food with a round top that grows in dark, wet places",
       "e": "There's a [[mushroom]] on my pizza.",
-      "img": "assets/images/basic/mushroom.svg",
-      "fill": "assets/images/basic/mushroom-fill.svg"
+      "img": "assets/images/basic/mushroom.svg"
+    },
+    {
+      "id": "broccoli",
+      "w": "broccoli",
+      "t": "food",
+      "g": "Vegetables",
+      "d": "a green vegetable that looks like a small tree",
+      "e": "Steam the [[broccoli]] for five minutes.",
+      "img": "assets/images/basic/broccoli.svg"
+    },
+    {
+      "id": "spinach",
+      "w": "spinach",
+      "t": "food",
+      "g": "Vegetables",
+      "d": "a vegetable with soft dark green leaves",
+      "e": "I add [[spinach]] to my omelette.",
+      "img": "assets/images/basic/spinach.svg"
+    },
+    {
+      "id": "courgette",
+      "w": "courgette",
+      "t": "food",
+      "g": "Vegetables",
+      "d": "a long green vegetable, like a small marrow",
+      "e": "Slice the [[courgette]] thinly.",
+      "img": "assets/images/basic/courgette.svg"
+    },
+    {
+      "id": "aubergine",
+      "w": "aubergine",
+      "t": "food",
+      "g": "Vegetables",
+      "d": "a purple vegetable with white flesh",
+      "e": "We grilled an [[aubergine]].",
+      "img": "assets/images/basic/aubergine.svg"
     },
     {
       "id": "beef",
@@ -2990,8 +5804,7 @@
       "g": "Meat and fish",
       "d": "meat from a cow",
       "e": "We had roast [[beef]] for Sunday lunch.",
-      "img": "assets/images/basic/beef.svg",
-      "fill": "assets/images/basic/beef-fill.svg"
+      "img": "assets/images/basic/beef.svg"
     },
     {
       "id": "pork",
@@ -3001,7 +5814,6 @@
       "d": "meat from a pig",
       "e": "I don't eat [[pork]].",
       "img": "assets/images/basic/pork.svg",
-      "fill": "assets/images/basic/pork-fill.svg",
       "similar": ["ham", "sausage"]
     },
     {
@@ -3011,8 +5823,7 @@
       "g": "Meat and fish",
       "d": "meat from a young sheep",
       "e": "My grandmother cooks [[lamb]] with potatoes.",
-      "img": "assets/images/basic/lamb.svg",
-      "fill": "assets/images/basic/lamb-fill.svg"
+      "img": "assets/images/basic/lamb.svg"
     },
     {
       "id": "ham",
@@ -3022,7 +5833,6 @@
       "d": "meat from the leg of a pig, with salt or smoke to keep it",
       "e": "I'd like a [[ham]] and cheese sandwich.",
       "img": "assets/images/basic/ham.svg",
-      "fill": "assets/images/basic/ham-fill.svg",
       "similar": ["pork"]
     },
     {
@@ -3033,7 +5843,6 @@
       "d": "meat cut into very small pieces inside a long, thin skin",
       "e": "He had a [[sausage]] with chips.",
       "img": "assets/images/basic/sausage.svg",
-      "fill": "assets/images/basic/sausage-fill.svg",
       "similar": ["pork"]
     },
     {
@@ -3043,8 +5852,7 @@
       "g": "Meat and fish",
       "d": "a large fish with pink meat",
       "e": "Grilled [[salmon]] is my favourite dish.",
-      "img": "assets/images/basic/salmon.svg",
-      "fill": "assets/images/basic/salmon-fill.svg"
+      "img": "assets/images/basic/salmon.svg"
     },
     {
       "id": "tuna",
@@ -3053,8 +5861,7 @@
       "g": "Meat and fish",
       "d": "a large sea fish that you often buy in tins",
       "e": "I made a salad with [[tuna]] and eggs.",
-      "img": "assets/images/basic/tuna.svg",
-      "fill": "assets/images/basic/tuna-fill.svg"
+      "img": "assets/images/basic/tuna.svg"
     },
     {
       "id": "prawns",
@@ -3063,8 +5870,52 @@
       "g": "Meat and fish",
       "d": "small pink sea animals that you cook and eat",
       "e": "We had [[prawns]] at the beach restaurant.",
-      "img": "assets/images/basic/prawns.svg",
-      "fill": "assets/images/basic/prawns-fill.svg"
+      "img": "assets/images/basic/prawns.svg"
+    },
+    {
+      "id": "chicken-meat",
+      "w": "chicken",
+      "t": "food",
+      "g": "Meat and fish",
+      "d": "the meat of a common farm bird",
+      "e": "I'd like the [[chicken]], please.",
+      "img": "assets/images/basic/chicken-meat.svg"
+    },
+    {
+      "id": "turkey-meat",
+      "w": "turkey",
+      "t": "food",
+      "g": "Meat and fish",
+      "d": "the meat of a large bird, popular at Christmas",
+      "e": "We had [[turkey]] sandwiches.",
+      "img": "assets/images/basic/turkey-meat.svg"
+    },
+    {
+      "id": "bacon",
+      "w": "bacon",
+      "t": "food",
+      "g": "Meat and fish",
+      "d": "thin slices of salted pig meat, usually fried",
+      "e": "He had eggs and [[bacon]].",
+      "img": "assets/images/basic/bacon.svg"
+    },
+    {
+      "id": "fish-food",
+      "w": "fish",
+      "t": "food",
+      "g": "Meat and fish",
+      "d": "an animal from the water that you eat",
+      "e": "We eat [[fish]] on Fridays.",
+      "img": "assets/images/basic/fish-food.svg"
+    },
+    {
+      "id": "seafood",
+      "w": "seafood",
+      "t": "food",
+      "g": "Meat and fish",
+      "d": "animals from the sea with shells, and other food from the sea",
+      "e": "This restaurant is famous for [[seafood]].",
+      "img": "assets/images/basic/seafood.svg"
     },
     {
       "id": "bread",
@@ -3073,8 +5924,7 @@
       "g": "Other food",
       "d": "a basic food made from flour and baked in an oven",
       "e": "I buy fresh [[bread]] every morning.",
-      "img": "assets/images/basic/bread.svg",
-      "fill": "assets/images/basic/bread-fill.svg"
+      "img": "assets/images/basic/bread.svg"
     },
     {
       "id": "rice",
@@ -3083,8 +5933,7 @@
       "g": "Other food",
       "d": "small white or brown grains that you cook in water",
       "e": "Paella is made with [[rice]].",
-      "img": "assets/images/basic/rice.svg",
-      "fill": "assets/images/basic/rice-fill.svg"
+      "img": "assets/images/basic/rice.svg"
     },
     {
       "id": "cheese",
@@ -3093,8 +5942,7 @@
       "g": "Other food",
       "d": "a food made from milk, often yellow",
       "e": "This [[cheese]] comes from a farm in the mountains.",
-      "img": "assets/images/basic/cheese.svg",
-      "fill": "assets/images/basic/cheese-fill.svg"
+      "img": "assets/images/basic/cheese.svg"
     },
     {
       "id": "eggs",
@@ -3103,8 +5951,7 @@
       "g": "Other food",
       "d": "round things that chickens lay and that we cook",
       "e": "I had two [[eggs]] for breakfast.",
-      "img": "assets/images/basic/eggs.svg",
-      "fill": "assets/images/basic/eggs-fill.svg"
+      "img": "assets/images/basic/eggs.svg"
     },
     {
       "id": "butter",
@@ -3113,8 +5960,7 @@
       "g": "Other food",
       "d": "a soft yellow food made from cream that you put on bread",
       "e": "Can you pass me the [[butter]]?",
-      "img": "assets/images/basic/butter.svg",
-      "fill": "assets/images/basic/butter-fill.svg"
+      "img": "assets/images/basic/butter.svg"
     },
     {
       "id": "yoghurt",
@@ -3123,8 +5969,7 @@
       "g": "Other food",
       "d": "a thick, slightly sour food made from milk",
       "e": "I have a [[yoghurt]] with fruit after lunch.",
-      "img": "assets/images/basic/yoghurt.svg",
-      "fill": "assets/images/basic/yoghurt-fill.svg"
+      "img": "assets/images/basic/yoghurt.svg"
     },
     {
       "id": "biscuits",
@@ -3134,7 +5979,6 @@
       "d": "small, hard, sweet things that you often eat with tea",
       "e": "Would you like some [[biscuits]] with your tea?",
       "img": "assets/images/basic/biscuits.svg",
-      "fill": "assets/images/basic/biscuits-fill.svg",
       "similar": ["cake"]
     },
     {
@@ -3145,8 +5989,97 @@
       "d": "a sweet food made with flour, eggs and sugar",
       "e": "My mum made a chocolate [[cake]] for my birthday.",
       "img": "assets/images/basic/cake.svg",
-      "fill": "assets/images/basic/cake-fill.svg",
       "similar": ["biscuits"]
+    },
+    {
+      "id": "pasta",
+      "w": "pasta",
+      "t": "food",
+      "g": "Other food",
+      "d": "an Italian food made from flour and water, such as spaghetti",
+      "e": "We often have [[pasta]] for dinner.",
+      "img": "assets/images/basic/pasta.svg"
+    },
+    {
+      "id": "soup",
+      "w": "soup",
+      "t": "food",
+      "g": "Other food",
+      "d": "a hot liquid food that you eat with a spoon",
+      "e": "Tomato [[soup]] is my favourite.",
+      "img": "assets/images/basic/soup.svg"
+    },
+    {
+      "id": "salad",
+      "w": "salad",
+      "t": "food",
+      "g": "Other food",
+      "d": "a cold mix of vegetables",
+      "e": "I had a green [[salad]].",
+      "img": "assets/images/basic/salad.svg"
+    },
+    {
+      "id": "sandwich",
+      "w": "sandwich",
+      "t": "food",
+      "g": "Other food",
+      "d": "two slices of bread with food between them",
+      "e": "I took a cheese [[sandwich]] to work.",
+      "img": "assets/images/basic/sandwich.svg"
+    },
+    {
+      "id": "pizza",
+      "w": "pizza",
+      "t": "food",
+      "g": "Other food",
+      "d": "a flat round Italian food with tomato and cheese on top",
+      "e": "We ordered a [[pizza]].",
+      "img": "assets/images/basic/pizza.svg"
+    },
+    {
+      "id": "burger",
+      "w": "burger",
+      "t": "food",
+      "g": "Other food",
+      "d": "a flat round piece of meat in a bread roll",
+      "e": "He ate a [[burger]] and drank a cola.",
+      "img": "assets/images/basic/burger.svg"
+    },
+    {
+      "id": "chips",
+      "w": "chips",
+      "t": "food",
+      "g": "Other food",
+      "d": "long thin pieces of potato fried in oil",
+      "e": "Fish and [[chips]] is a British dish.",
+      "img": "assets/images/basic/chips.svg"
+    },
+    {
+      "id": "chocolate",
+      "w": "chocolate",
+      "t": "food",
+      "g": "Other food",
+      "d": "a sweet brown food made from cocoa",
+      "e": "I gave her a box of [[chocolate]].",
+      "img": "assets/images/basic/chocolate.svg"
+    },
+    {
+      "id": "ice-cream",
+      "w": "ice cream",
+      "t": "food",
+      "g": "Other food",
+      "d": "a frozen sweet food made from milk or cream",
+      "e": "Would you like an [[ice cream]]?",
+      "img": "assets/images/basic/ice-cream.svg"
+    },
+    {
+      "id": "cereal",
+      "w": "cereal",
+      "t": "food",
+      "g": "Other food",
+      "d": "a breakfast food made from grain, eaten with milk",
+      "e": "I have [[cereal]] every morning.",
+      "img": "assets/images/basic/cereal.svg"
     },
     {
       "id": "breakfast",
@@ -3182,8 +6115,7 @@
       "g": "Meals",
       "d": "a small amount of food between meals",
       "e": "I have a [[snack]] at eleven, usually some fruit.",
-      "img": "assets/images/basic/snack.svg",
-      "fill": "assets/images/basic/snack-fill.svg"
+      "img": "assets/images/basic/snack.svg"
     },
     {
       "id": "dessert",
@@ -3192,8 +6124,7 @@
       "g": "Meals",
       "d": "sweet food that you eat at the end of a meal",
       "e": "We had ice cream for [[dessert]].",
-      "img": "assets/images/basic/dessert.svg",
-      "fill": "assets/images/basic/dessert-fill.svg"
+      "img": "assets/images/basic/dessert.svg"
     },
     {
       "id": "still-water",
@@ -3202,8 +6133,7 @@
       "g": "Drinks",
       "d": "water without bubbles",
       "e": "Could I have a bottle of [[still water]], please?",
-      "img": "assets/images/basic/still-water.svg",
-      "fill": "assets/images/basic/still-water-fill.svg"
+      "img": "assets/images/basic/still-water.svg"
     },
     {
       "id": "sparkling-water",
@@ -3212,8 +6142,7 @@
       "g": "Drinks",
       "d": "water with bubbles",
       "e": "I prefer [[sparkling water]] with lemon.",
-      "img": "assets/images/basic/sparkling-water.svg",
-      "fill": "assets/images/basic/sparkling-water-fill.svg"
+      "img": "assets/images/basic/sparkling-water.svg"
     },
     {
       "id": "orange-juice",
@@ -3222,8 +6151,7 @@
       "g": "Drinks",
       "d": "a drink made from oranges",
       "e": "A glass of [[orange juice]], please.",
-      "img": "assets/images/basic/orange-juice.svg",
-      "fill": "assets/images/basic/orange-juice-fill.svg"
+      "img": "assets/images/basic/orange-juice.svg"
     },
     {
       "id": "lemonade",
@@ -3233,7 +6161,6 @@
       "d": "a sweet drink made with lemons",
       "e": "The children drank [[lemonade]] at the party.",
       "img": "assets/images/basic/lemonade.svg",
-      "fill": "assets/images/basic/lemonade-fill.svg",
       "similar": ["soft-drink"]
     },
     {
@@ -3244,7 +6171,6 @@
       "d": "a cold, sweet drink with no alcohol",
       "e": "Do you want a [[soft drink]] or some water?",
       "img": "assets/images/basic/soft-drink.svg",
-      "fill": "assets/images/basic/soft-drink-fill.svg",
       "similar": ["lemonade"]
     },
     {
@@ -3254,8 +6180,7 @@
       "g": "Drinks",
       "d": "a hot drink made with milk and chocolate",
       "e": "On cold days I make a [[hot chocolate]].",
-      "img": "assets/images/basic/hot-chocolate.svg",
-      "fill": "assets/images/basic/hot-chocolate-fill.svg"
+      "img": "assets/images/basic/hot-chocolate.svg"
     },
     {
       "id": "tea",
@@ -3273,8 +6198,61 @@
       "g": "Drinks",
       "d": "a hot drink made from roasted beans",
       "e": "I can't start the day without a [[coffee]].",
-      "img": "assets/images/basic/coffee.svg",
-      "fill": "assets/images/basic/coffee-fill.svg"
+      "img": "assets/images/basic/coffee.svg"
+    },
+    {
+      "id": "water",
+      "w": "water",
+      "t": "meals",
+      "g": "Drinks",
+      "d": "the clear liquid that falls as rain",
+      "e": "Can I have some [[water]], please?",
+      "img": "assets/images/basic/water.svg"
+    },
+    {
+      "id": "milk",
+      "w": "milk",
+      "t": "meals",
+      "g": "Drinks",
+      "d": "the white drink that comes from cows",
+      "e": "Do you take [[milk]] in your coffee?",
+      "img": "assets/images/basic/milk.svg"
+    },
+    {
+      "id": "apple-juice",
+      "w": "apple juice",
+      "t": "meals",
+      "g": "Drinks",
+      "d": "the drink made from a common round fruit",
+      "e": "The children had [[apple juice]].",
+      "img": "assets/images/basic/apple-juice.svg"
+    },
+    {
+      "id": "fizzy-drink",
+      "w": "fizzy drink",
+      "t": "meals",
+      "g": "Drinks",
+      "d": "a sweet drink with bubbles",
+      "e": "Would you like a [[fizzy drink]]?",
+      "img": "assets/images/basic/fizzy-drink.svg"
+    },
+    {
+      "id": "beer",
+      "w": "beer",
+      "t": "meals",
+      "g": "Drinks",
+      "d": "an alcoholic drink made from grain",
+      "e": "He ordered a small [[beer]].",
+      "img": "assets/images/basic/beer.svg"
+    },
+    {
+      "id": "wine",
+      "w": "wine",
+      "t": "meals",
+      "g": "Drinks",
+      "d": "an alcoholic drink made from grapes",
+      "e": "They opened a bottle of [[wine]].",
+      "img": "assets/images/basic/wine.svg"
     },
     {
       "id": "delicious",
@@ -3284,7 +6262,6 @@
       "d": "tasting very good",
       "e": "This soup is [[delicious]]!",
       "img": "assets/images/basic/delicious.svg",
-      "fill": "assets/images/basic/delicious-fill.svg",
       "similar": ["tasty"]
     },
     {
@@ -3295,7 +6272,6 @@
       "d": "with a good, strong flavour",
       "e": "The tomatoes from the market are very [[tasty]].",
       "img": "assets/images/basic/tasty.svg",
-      "fill": "assets/images/basic/tasty-fill.svg",
       "similar": ["delicious"]
     },
     {
@@ -3305,8 +6281,7 @@
       "g": "How food tastes",
       "d": "with a taste like sugar",
       "e": "This cake is too [[sweet]] for me.",
-      "img": "assets/images/basic/sweet.svg",
-      "fill": "assets/images/basic/sweet-fill.svg"
+      "img": "assets/images/basic/sweet.svg"
     },
     {
       "id": "salty",
@@ -3315,8 +6290,7 @@
       "g": "How food tastes",
       "d": "with a lot of salt",
       "e": "The chips are a bit [[salty]].",
-      "img": "assets/images/basic/salty.svg",
-      "fill": "assets/images/basic/salty-fill.svg"
+      "img": "assets/images/basic/salty.svg"
     },
     {
       "id": "spicy",
@@ -3325,8 +6299,7 @@
       "g": "How food tastes",
       "d": "with a hot, strong taste that burns your mouth",
       "e": "I love [[spicy]] curry.",
-      "img": "assets/images/basic/spicy.svg",
-      "fill": "assets/images/basic/spicy-fill.svg"
+      "img": "assets/images/basic/spicy.svg"
     },
     {
       "id": "sour",
@@ -3336,7 +6309,6 @@
       "d": "with a sharp taste like a lemon",
       "e": "This yoghurt tastes [[sour]].",
       "img": "assets/images/basic/sour.svg",
-      "fill": "assets/images/basic/sour-fill.svg",
       "similar": ["bitter"]
     },
     {
@@ -3347,7 +6319,6 @@
       "d": "with a strong, unpleasant taste like very dark coffee",
       "e": "Black coffee is too [[bitter]] for me.",
       "img": "assets/images/basic/bitter.svg",
-      "fill": "assets/images/basic/bitter-fill.svg",
       "similar": ["sour"]
     },
     {
@@ -3357,8 +6328,7 @@
       "g": "How food tastes",
       "d": "picked or made recently",
       "e": "We buy [[fresh]] fish at the market.",
-      "img": "assets/images/basic/fresh.svg",
-      "fill": "assets/images/basic/fresh-fill.svg"
+      "img": "assets/images/basic/fresh.svg"
     },
     {
       "id": "healthy",
@@ -3367,8 +6337,7 @@
       "g": "How food tastes",
       "d": "good for your body",
       "e": "A [[healthy]] breakfast gives you energy.",
-      "img": "assets/images/basic/healthy.svg",
-      "fill": "assets/images/basic/healthy-fill.svg"
+      "img": "assets/images/basic/healthy.svg"
     },
     {
       "id": "fried",
@@ -3377,8 +6346,7 @@
       "g": "How food tastes",
       "d": "cooked in hot oil",
       "e": "I don't eat a lot of [[fried]] food.",
-      "img": "assets/images/basic/fried.svg",
-      "fill": "assets/images/basic/fried-fill.svg"
+      "img": "assets/images/basic/fried.svg"
     },
     {
       "id": "grilled",
@@ -3387,8 +6355,7 @@
       "g": "How food tastes",
       "d": "cooked over or under strong heat",
       "e": "I'll have the [[grilled]] chicken, please.",
-      "img": "assets/images/basic/grilled.svg",
-      "fill": "assets/images/basic/grilled-fill.svg"
+      "img": "assets/images/basic/grilled.svg"
     },
     {
       "id": "raw",
@@ -3397,8 +6364,34 @@
       "g": "How food tastes",
       "d": "not cooked",
       "e": "Sushi often has [[raw]] fish.",
-      "img": "assets/images/basic/raw.svg",
-      "fill": "assets/images/basic/raw-fill.svg"
+      "img": "assets/images/basic/raw.svg"
+    },
+    {
+      "id": "unhealthy",
+      "w": "unhealthy",
+      "t": "meals",
+      "g": "How food tastes",
+      "d": "bad for your body",
+      "e": "Too much salt is [[unhealthy]].",
+      "img": "assets/images/basic/unhealthy.svg"
+    },
+    {
+      "id": "boiled",
+      "w": "boiled",
+      "t": "meals",
+      "g": "How food tastes",
+      "d": "cooked in very hot water",
+      "e": "I had a [[boiled]] egg.",
+      "img": "assets/images/basic/boiled.svg"
+    },
+    {
+      "id": "baked",
+      "w": "baked",
+      "t": "meals",
+      "g": "How food tastes",
+      "d": "cooked with dry heat inside an oven",
+      "e": "I love [[baked]] potatoes.",
+      "img": "assets/images/basic/baked.svg"
     },
     {
       "id": "parents",
@@ -3483,6 +6476,51 @@
       "d": "a person with no brothers or sisters",
       "e": "I'm an [[only child]], so I was often alone.",
       "img": "assets/images/basic/only-child.svg"
+    },
+    {
+      "id": "mother",
+      "w": "mother",
+      "t": "family",
+      "g": "Close family",
+      "d": "your female parent",
+      "e": "My [[mother]] is a nurse.",
+      "img": "assets/images/basic/mother.svg"
+    },
+    {
+      "id": "father",
+      "w": "father",
+      "t": "family",
+      "g": "Close family",
+      "d": "your male parent",
+      "e": "His [[father]] drives a taxi.",
+      "img": "assets/images/basic/father.svg"
+    },
+    {
+      "id": "sibling",
+      "w": "sibling",
+      "t": "family",
+      "g": "Close family",
+      "d": "a brother or a sister",
+      "e": "Do you have a [[sibling]]?",
+      "img": "assets/images/basic/sibling.svg"
+    },
+    {
+      "id": "boyfriend",
+      "w": "boyfriend",
+      "t": "family",
+      "g": "Close family",
+      "d": "a man or boy that you have a romantic relationship with",
+      "e": "Her [[boyfriend]] is from Italy.",
+      "img": "assets/images/basic/boyfriend.svg"
+    },
+    {
+      "id": "girlfriend",
+      "w": "girlfriend",
+      "t": "family",
+      "g": "Close family",
+      "d": "a woman or girl that you have a romantic relationship with",
+      "e": "His [[girlfriend]] studies art.",
+      "img": "assets/images/basic/girlfriend.svg"
     },
     {
       "id": "grandparents",
@@ -3593,6 +6631,51 @@
       "img": "assets/images/basic/relatives.svg"
     },
     {
+      "id": "grandmother",
+      "w": "grandmother",
+      "t": "family",
+      "g": "Other relatives",
+      "d": "the mum of your mum or dad",
+      "e": "My [[grandmother]] bakes bread.",
+      "img": "assets/images/basic/grandmother.svg"
+    },
+    {
+      "id": "grandfather",
+      "w": "grandfather",
+      "t": "family",
+      "g": "Other relatives",
+      "d": "the dad of your mum or dad",
+      "e": "My [[grandfather]] likes fishing.",
+      "img": "assets/images/basic/grandfather.svg"
+    },
+    {
+      "id": "father-in-law",
+      "w": "father-in-law",
+      "t": "family",
+      "g": "Other relatives",
+      "d": "the male parent of your husband or wife",
+      "e": "My [[father-in-law]] is retired.",
+      "img": "assets/images/basic/father-in-law.svg"
+    },
+    {
+      "id": "sister-in-law",
+      "w": "sister-in-law",
+      "t": "family",
+      "g": "Other relatives",
+      "d": "the sister of your husband or wife, or your brother's wife",
+      "e": "My [[sister-in-law]] lives abroad.",
+      "img": "assets/images/basic/sister-in-law.svg"
+    },
+    {
+      "id": "stepmother",
+      "w": "stepmother",
+      "t": "family",
+      "g": "Other relatives",
+      "d": "your dad's new wife, who is not your parent by birth",
+      "e": "He gets on well with his [[stepmother]].",
+      "img": "assets/images/basic/stepmother.svg"
+    },
+    {
       "id": "waiter",
       "w": "waiter",
       "t": "work",
@@ -3701,6 +6784,60 @@
       "img": "assets/images/basic/civil-servant.svg"
     },
     {
+      "id": "waitress",
+      "w": "waitress",
+      "t": "work",
+      "g": "Jobs",
+      "d": "a woman who serves food at tables",
+      "e": "The [[waitress]] brought the menu.",
+      "img": "assets/images/basic/waitress.svg"
+    },
+    {
+      "id": "politician",
+      "w": "politician",
+      "t": "work",
+      "g": "Jobs",
+      "d": "a person who works in government or wants to be elected",
+      "e": "The [[politician]] gave a speech.",
+      "img": "assets/images/basic/politician.svg"
+    },
+    {
+      "id": "employee",
+      "w": "employee",
+      "t": "work",
+      "g": "Jobs",
+      "d": "a person who is paid to work for someone",
+      "e": "Every [[employee]] has a card.",
+      "img": "assets/images/basic/employee.svg"
+    },
+    {
+      "id": "employer",
+      "w": "employer",
+      "t": "work",
+      "g": "Jobs",
+      "d": "a person or company that pays people to work",
+      "e": "My [[employer]] offers free training.",
+      "img": "assets/images/basic/employer.svg"
+    },
+    {
+      "id": "co-worker",
+      "w": "co-worker",
+      "t": "work",
+      "g": "Jobs",
+      "d": "a person who does the same kind of work with you in one place",
+      "e": "A [[co-worker]] helped me finish.",
+      "img": "assets/images/basic/co-worker.svg"
+    },
+    {
+      "id": "client",
+      "w": "client",
+      "t": "work",
+      "g": "Jobs",
+      "d": "a person who pays for a professional service",
+      "e": "The lawyer is meeting a [[client]].",
+      "img": "assets/images/basic/client.svg"
+    },
+    {
       "id": "boss",
       "w": "boss",
       "t": "work",
@@ -3745,8 +6882,7 @@
       "g": "At work",
       "d": "the money that you get every month for your job",
       "e": "She got a higher [[salary]] in her new job.",
-      "img": "assets/images/basic/salary.svg",
-      "fill": "assets/images/basic/salary-fill.svg"
+      "img": "assets/images/basic/salary.svg"
     },
     {
       "id": "part-time",
@@ -3821,6 +6957,141 @@
       "img": "assets/images/basic/self-employed.svg"
     },
     {
+      "id": "job",
+      "w": "job",
+      "t": "work",
+      "g": "At work",
+      "d": "a position that you are paid to do",
+      "e": "She has a new [[job]].",
+      "img": "assets/images/basic/job.svg"
+    },
+    {
+      "id": "work",
+      "w": "work",
+      "t": "work",
+      "g": "At work",
+      "d": "activity that you do to earn a living or reach a result",
+      "e": "I have a lot of [[work]] today.",
+      "img": "assets/images/basic/work.svg"
+    },
+    {
+      "id": "temporary-job",
+      "w": "temporary job",
+      "t": "work",
+      "g": "At work",
+      "d": "employment for a limited time",
+      "e": "He found a [[temporary job]] for the summer.",
+      "img": "assets/images/basic/temporary-job.svg"
+    },
+    {
+      "id": "permanent-job",
+      "w": "permanent job",
+      "t": "work",
+      "g": "At work",
+      "d": "employment with no end date",
+      "e": "She wants a [[permanent job]].",
+      "img": "assets/images/basic/permanent-job.svg"
+    },
+    {
+      "id": "wage",
+      "w": "wage",
+      "t": "work",
+      "g": "At work",
+      "d": "money paid for work, often every week",
+      "e": "The [[wage]] is paid on Fridays.",
+      "img": "assets/images/basic/wage.svg"
+    },
+    {
+      "id": "working-hours",
+      "w": "working hours",
+      "t": "work",
+      "g": "At work",
+      "d": "the times of day when you are at your post",
+      "e": "My [[working hours]] are nine to five.",
+      "img": "assets/images/basic/working-hours.svg"
+    },
+    {
+      "id": "workplace",
+      "w": "workplace",
+      "t": "work",
+      "g": "At work",
+      "d": "the building or area where you do your tasks for pay",
+      "e": "Smoking is not allowed in the [[workplace]].",
+      "img": "assets/images/basic/workplace.svg"
+    },
+    {
+      "id": "office",
+      "w": "office",
+      "t": "work",
+      "g": "At work",
+      "d": "a room or building where people use desks and computers",
+      "e": "I work in an [[office]].",
+      "img": "assets/images/basic/office.svg"
+    },
+    {
+      "id": "meeting",
+      "w": "meeting",
+      "t": "work",
+      "g": "At work",
+      "d": "an occasion when people come together to discuss things",
+      "e": "We have a [[meeting]] at ten.",
+      "img": "assets/images/basic/meeting.svg"
+    },
+    {
+      "id": "experience",
+      "w": "experience",
+      "t": "work",
+      "g": "At work",
+      "d": "knowledge that you get by doing something",
+      "e": "Do you have any [[experience]] in sales?",
+      "img": "assets/images/basic/experience.svg"
+    },
+    {
+      "id": "skills",
+      "w": "skills",
+      "t": "work",
+      "g": "At work",
+      "d": "the things that you can do well",
+      "e": "You need good computer [[skills]].",
+      "img": "assets/images/basic/skills.svg"
+    },
+    {
+      "id": "holiday",
+      "w": "holiday",
+      "t": "work",
+      "g": "At work",
+      "d": "a period when you do not go to work or school",
+      "e": "I'm on [[holiday]] next week.",
+      "img": "assets/images/basic/holiday.svg"
+    },
+    {
+      "id": "earn-money",
+      "w": "earn money",
+      "t": "work",
+      "g": "At work",
+      "d": "to get cash by working",
+      "e": "Students work in summer to [[earn money]].",
+      "img": "assets/images/basic/earn-money.svg"
+    },
+    {
+      "id": "look-for-a-job",
+      "w": "look for a job",
+      "t": "work",
+      "g": "At work",
+      "d": "to try to find employment",
+      "e": "I'm going to [[look for a job]] in London.",
+      "img": "assets/images/basic/look-for-a-job.svg"
+    },
+    {
+      "id": "apply-for-a-job",
+      "w": "apply for a job",
+      "t": "work",
+      "g": "At work",
+      "d": "to send a formal request to be employed",
+      "e": "You can [[apply for a job]] online.",
+      "img": "assets/images/basic/apply-for-a-job.svg"
+    },
+    {
       "id": "menu",
       "w": "menu",
       "t": "bookings",
@@ -3873,6 +7144,51 @@
       "d": "not eating meat or fish",
       "e": "Do you have a [[vegetarian]] menu?",
       "img": "assets/images/basic/vegetarian.svg"
+    },
+    {
+      "id": "vegan",
+      "w": "vegan",
+      "t": "bookings",
+      "g": "At a restaurant",
+      "d": "a person who eats nothing that comes from animals",
+      "e": "My friend is a [[vegan]].",
+      "img": "assets/images/basic/vegan.svg"
+    },
+    {
+      "id": "allergies",
+      "w": "allergies",
+      "t": "bookings",
+      "g": "At a restaurant",
+      "d": "conditions that make you ill when you eat or touch certain things",
+      "e": "Do you have any [[allergies]]?",
+      "img": "assets/images/basic/allergies.svg"
+    },
+    {
+      "id": "special-offer",
+      "w": "special offer",
+      "t": "bookings",
+      "g": "At a restaurant",
+      "d": "a lower price for a short time",
+      "e": "There's a [[special offer]] on lunch.",
+      "img": "assets/images/basic/special-offer.svg"
+    },
+    {
+      "id": "outdoor-seating",
+      "w": "outdoor seating",
+      "t": "bookings",
+      "g": "At a restaurant",
+      "d": "places to sit in the open air",
+      "e": "The café has [[outdoor seating]].",
+      "img": "assets/images/basic/outdoor-seating.svg"
+    },
+    {
+      "id": "indoor-seating",
+      "w": "indoor seating",
+      "t": "bookings",
+      "g": "At a restaurant",
+      "d": "places to sit inside a building",
+      "e": "There is [[indoor seating]] upstairs.",
+      "img": "assets/images/basic/indoor-seating.svg"
     },
     {
       "id": "reception",
@@ -3956,6 +7272,69 @@
       "img": "assets/images/basic/air-conditioning.svg"
     },
     {
+      "id": "accommodation",
+      "w": "accommodation",
+      "t": "bookings",
+      "g": "At a hotel",
+      "d": "a place to stay or live",
+      "e": "The price includes [[accommodation]].",
+      "img": "assets/images/basic/accommodation.svg"
+    },
+    {
+      "id": "room-key",
+      "w": "room key",
+      "t": "bookings",
+      "g": "At a hotel",
+      "d": "what opens the door of your hotel bedroom",
+      "e": "Here is your [[room key]].",
+      "img": "assets/images/basic/room-key.svg"
+    },
+    {
+      "id": "private-bathroom",
+      "w": "private bathroom",
+      "t": "bookings",
+      "g": "At a hotel",
+      "d": "a place to wash that only you use",
+      "e": "All rooms have a [[private bathroom]].",
+      "img": "assets/images/basic/private-bathroom.svg"
+    },
+    {
+      "id": "shared-bathroom",
+      "w": "shared bathroom",
+      "t": "bookings",
+      "g": "At a hotel",
+      "d": "a place to wash that other guests also use",
+      "e": "The hostel has a [[shared bathroom]].",
+      "img": "assets/images/basic/shared-bathroom.svg"
+    },
+    {
+      "id": "wi-fi",
+      "w": "Wi-Fi",
+      "t": "bookings",
+      "g": "At a hotel",
+      "d": "a wireless internet connection",
+      "e": "Is there free [[Wi-Fi]]?",
+      "img": "assets/images/basic/wi-fi.svg"
+    },
+    {
+      "id": "heating",
+      "w": "heating",
+      "t": "bookings",
+      "g": "At a hotel",
+      "d": "the system that makes a building warm",
+      "e": "The [[heating]] doesn't work.",
+      "img": "assets/images/basic/heating.svg"
+    },
+    {
+      "id": "passport",
+      "w": "passport",
+      "t": "bookings",
+      "g": "At a hotel",
+      "d": "the official document that you need to travel abroad",
+      "e": "May I see your [[passport]]?",
+      "img": "assets/images/basic/passport.svg"
+    },
+    {
       "id": "booking",
       "w": "booking",
       "t": "bookings",
@@ -4019,6 +7398,114 @@
       "d": "part of the price that you pay first to keep a booking",
       "e": "We paid a [[deposit]] of fifty euros.",
       "img": "assets/images/basic/deposit.svg"
+    },
+    {
+      "id": "cancellation",
+      "w": "cancellation",
+      "t": "bookings",
+      "g": "Booking things",
+      "d": "a decision that a plan will not happen",
+      "e": "[[Cancellation]] is free until Friday.",
+      "img": "assets/images/basic/cancellation.svg"
+    },
+    {
+      "id": "book-a-ticket",
+      "w": "book a ticket",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to arrange in advance to have a seat for a show or journey",
+      "e": "You can [[book a ticket]] on the website.",
+      "img": "assets/images/basic/book-a-ticket.svg"
+    },
+    {
+      "id": "buy-a-ticket",
+      "w": "buy a ticket",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to pay for the paper or code that lets you travel or enter",
+      "e": "You must [[buy a ticket]] before you get on.",
+      "img": "assets/images/basic/buy-a-ticket.svg"
+    },
+    {
+      "id": "make-an-appointment",
+      "w": "make an appointment",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to arrange a time to see a doctor or other professional",
+      "e": "I need to [[make an appointment]] with the dentist.",
+      "img": "assets/images/basic/make-an-appointment.svg"
+    },
+    {
+      "id": "book-a-flight",
+      "w": "book a flight",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to arrange your journey by plane",
+      "e": "We should [[book a flight]] early.",
+      "img": "assets/images/basic/book-a-flight.svg"
+    },
+    {
+      "id": "book-a-taxi",
+      "w": "book a taxi",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to arrange for a car with a driver to collect you",
+      "e": "Can you [[book a taxi]] for six o'clock?",
+      "img": "assets/images/basic/book-a-taxi.svg"
+    },
+    {
+      "id": "rent-a-car",
+      "w": "rent a car",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to pay to use a vehicle for a time",
+      "e": "We plan to [[rent a car]] in Italy.",
+      "img": "assets/images/basic/rent-a-car.svg"
+    },
+    {
+      "id": "reserve-a-seat",
+      "w": "reserve a seat",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to ask for a place to be kept for you",
+      "e": "It's wise to [[reserve a seat]] on the train.",
+      "img": "assets/images/basic/reserve-a-seat.svg"
+    },
+    {
+      "id": "cancel-a-booking",
+      "w": "cancel a booking",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to say that you no longer want what you reserved",
+      "e": "I'd like to [[cancel a booking]].",
+      "img": "assets/images/basic/cancel-a-booking.svg"
+    },
+    {
+      "id": "change-a-reservation",
+      "w": "change a reservation",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to move what you booked to another time or type",
+      "e": "Is it possible to [[change a reservation]]?",
+      "img": "assets/images/basic/change-a-reservation.svg"
+    },
+    {
+      "id": "pay-in-advance",
+      "w": "pay in advance",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to give the money before you receive the service",
+      "e": "Guests must [[pay in advance]].",
+      "img": "assets/images/basic/pay-in-advance.svg"
+    },
+    {
+      "id": "pay-on-arrival",
+      "w": "pay on arrival",
+      "t": "bookings",
+      "g": "Booking phrases",
+      "d": "to give the money when you get there",
+      "e": "You can [[pay on arrival]].",
+      "img": "assets/images/basic/pay-on-arrival.svg"
     },
     {
       "id": "reading",
@@ -4108,8 +7595,7 @@
       "g": "Activities",
       "d": "looking after the plants in a garden",
       "e": "My mum loves [[gardening]] and grows tomatoes.",
-      "img": "assets/images/basic/gardening.svg",
-      "fill": "assets/images/basic/gardening-fill.svg"
+      "img": "assets/images/basic/gardening.svg"
     },
     {
       "id": "volunteering",
@@ -4118,8 +7604,133 @@
       "g": "Activities",
       "d": "working for free to help other people",
       "e": "[[Volunteering]] at the animal centre makes me feel useful.",
-      "img": "assets/images/basic/volunteering.svg",
-      "fill": "assets/images/basic/volunteering-fill.svg"
+      "img": "assets/images/basic/volunteering.svg"
+    },
+    {
+      "id": "writing",
+      "w": "writing",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "putting words on paper or a screen for pleasure",
+      "e": "I enjoy [[writing]] short stories.",
+      "img": "assets/images/basic/writing.svg"
+    },
+    {
+      "id": "watching-series",
+      "w": "watching series",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "following TV stories in many episodes",
+      "e": "I love [[watching series]] at night.",
+      "img": "assets/images/basic/watching-series.svg"
+    },
+    {
+      "id": "going-shopping",
+      "w": "going shopping",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "visiting stores to buy things",
+      "e": "She likes [[going shopping]] with her mum.",
+      "img": "assets/images/basic/going-shopping.svg"
+    },
+    {
+      "id": "going-out-with-friends",
+      "w": "going out with friends",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "spending time away from home with people you like",
+      "e": "I enjoy [[going out with friends]].",
+      "img": "assets/images/basic/going-out-with-friends.svg"
+    },
+    {
+      "id": "travelling",
+      "w": "travelling",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "going to other places and countries",
+      "e": "My passion is [[travelling]].",
+      "img": "assets/images/basic/travelling.svg"
+    },
+    {
+      "id": "baking",
+      "w": "baking",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "making bread and cakes in the oven",
+      "e": "[[Baking]] helps me relax.",
+      "img": "assets/images/basic/baking.svg"
+    },
+    {
+      "id": "painting",
+      "w": "painting",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "making pictures with a brush and colours",
+      "e": "He started [[painting]] last year.",
+      "img": "assets/images/basic/painting.svg"
+    },
+    {
+      "id": "singing",
+      "w": "singing",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "making music with your voice",
+      "e": "She loves [[singing]] in a choir.",
+      "img": "assets/images/basic/singing.svg"
+    },
+    {
+      "id": "going-to-the-cinema",
+      "w": "going to the cinema",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "visiting a place to watch films on a big screen",
+      "e": "We enjoy [[going to the cinema]].",
+      "img": "assets/images/basic/going-to-the-cinema.svg"
+    },
+    {
+      "id": "going-to-concerts",
+      "w": "going to concerts",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "attending live music events",
+      "e": "I spend my money on [[going to concerts]].",
+      "img": "assets/images/basic/going-to-concerts.svg"
+    },
+    {
+      "id": "going-to-museums",
+      "w": "going to museums",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "visiting places that show art or history",
+      "e": "They like [[going to museums]].",
+      "img": "assets/images/basic/going-to-museums.svg"
+    },
+    {
+      "id": "camping",
+      "w": "camping",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "sleeping in a tent on holiday",
+      "e": "We go [[camping]] every summer.",
+      "img": "assets/images/basic/camping.svg"
+    },
+    {
+      "id": "collecting-things",
+      "w": "collecting things",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "keeping many objects of one type as a pastime",
+      "e": "My brother likes [[collecting things]].",
+      "img": "assets/images/basic/collecting-things.svg"
+    },
+    {
+      "id": "learning-languages",
+      "w": "learning languages",
+      "t": "hobbies",
+      "g": "Activities",
+      "d": "studying how people in other countries speak",
+      "e": "[[Learning languages]] is great fun.",
+      "img": "assets/images/basic/learning-languages.svg"
     },
     {
       "id": "swimming",
@@ -4176,6 +7787,69 @@
       "d": "a board game for two players with kings, queens and other pieces",
       "e": "My grandfather taught me to play [[chess]].",
       "img": "assets/images/basic/chess.svg"
+    },
+    {
+      "id": "walking",
+      "w": "walking",
+      "t": "hobbies",
+      "g": "Sport",
+      "d": "moving on foot for exercise or pleasure",
+      "e": "I go [[walking]] after dinner.",
+      "img": "assets/images/basic/walking.svg"
+    },
+    {
+      "id": "playing-football",
+      "w": "playing football",
+      "t": "hobbies",
+      "g": "Sport",
+      "d": "taking part in a game where you kick a ball into a goal",
+      "e": "I like [[playing football]] on Sundays.",
+      "img": "assets/images/basic/playing-football.svg"
+    },
+    {
+      "id": "playing-basketball",
+      "w": "playing basketball",
+      "t": "hobbies",
+      "g": "Sport",
+      "d": "taking part in a game where you throw a ball into a high net",
+      "e": "He is good at [[playing basketball]].",
+      "img": "assets/images/basic/playing-basketball.svg"
+    },
+    {
+      "id": "playing-tennis",
+      "w": "playing tennis",
+      "t": "hobbies",
+      "g": "Sport",
+      "d": "taking part in a game with rackets, a ball and a net",
+      "e": "We enjoy [[playing tennis]].",
+      "img": "assets/images/basic/playing-tennis.svg"
+    },
+    {
+      "id": "playing-chess",
+      "w": "playing chess",
+      "t": "hobbies",
+      "g": "Sport",
+      "d": "taking part in a board game with a king and a queen",
+      "e": "[[Playing chess]] makes you think.",
+      "img": "assets/images/basic/playing-chess.svg"
+    },
+    {
+      "id": "fishing",
+      "w": "fishing",
+      "t": "hobbies",
+      "g": "Sport",
+      "d": "trying to catch animals from a river or the sea",
+      "e": "My uncle goes [[fishing]] at weekends.",
+      "img": "assets/images/basic/fishing.svg"
+    },
+    {
+      "id": "surfing",
+      "w": "surfing",
+      "t": "hobbies",
+      "g": "Sport",
+      "d": "riding sea waves on a board",
+      "e": "[[Surfing]] is popular here.",
+      "img": "assets/images/basic/surfing.svg"
     },
     {
       "id": "always",
@@ -4252,14 +7926,67 @@
       "img": "assets/images/basic/twice-a-week.svg"
     },
     {
+      "id": "normally",
+      "w": "normally",
+      "t": "hobbies",
+      "g": "How often",
+      "d": "on most occasions; as a rule",
+      "e": "I [[normally]] get up at seven.",
+      "img": "assets/images/basic/normally.svg"
+    },
+    {
+      "id": "frequently",
+      "w": "frequently",
+      "t": "hobbies",
+      "g": "How often",
+      "d": "many times, with short gaps",
+      "e": "He [[frequently]] travels for work.",
+      "img": "assets/images/basic/frequently.svg"
+    },
+    {
+      "id": "occasionally",
+      "w": "occasionally",
+      "t": "hobbies",
+      "g": "How often",
+      "d": "from time to time, but not much",
+      "e": "We [[occasionally]] eat out.",
+      "img": "assets/images/basic/occasionally.svg"
+    },
+    {
+      "id": "rarely",
+      "w": "rarely",
+      "t": "hobbies",
+      "g": "How often",
+      "d": "not often at all",
+      "e": "She [[rarely]] watches TV.",
+      "img": "assets/images/basic/rarely.svg"
+    },
+    {
+      "id": "every-day",
+      "w": "every day",
+      "t": "hobbies",
+      "g": "How often",
+      "d": "on each day without a break",
+      "e": "I study English [[every day]].",
+      "img": "assets/images/basic/every-day.svg"
+    },
+    {
+      "id": "three-times-a-week",
+      "w": "three times a week",
+      "t": "hobbies",
+      "g": "How often",
+      "d": "on three days in each seven",
+      "e": "I train [[three times a week]].",
+      "img": "assets/images/basic/three-times-a-week.svg"
+    },
+    {
       "id": "birthday",
       "w": "birthday",
       "t": "celebrations",
       "g": "Special days",
       "d": "the day each year when you remember the day you were born",
       "e": "My [[birthday]] is in May.",
-      "img": "assets/images/basic/birthday.svg",
-      "fill": "assets/images/basic/birthday-fill.svg"
+      "img": "assets/images/basic/birthday.svg"
     },
     {
       "id": "wedding",
@@ -4277,8 +8004,7 @@
       "g": "Special days",
       "d": "the same date as an important event in an earlier year",
       "e": "My parents celebrate their [[anniversary]] with a special dinner.",
-      "img": "assets/images/basic/anniversary.svg",
-      "fill": "assets/images/basic/anniversary-fill.svg"
+      "img": "assets/images/basic/anniversary.svg"
     },
     {
       "id": "christmas",
@@ -4287,8 +8013,7 @@
       "g": "Special days",
       "d": "a Christian holiday on 25 December",
       "e": "We have a big family lunch at [[Christmas]].",
-      "img": "assets/images/basic/christmas.svg",
-      "fill": "assets/images/basic/christmas-fill.svg"
+      "img": "assets/images/basic/christmas.svg"
     },
     {
       "id": "new-years-eve",
@@ -4306,8 +8031,7 @@
       "g": "Special days",
       "d": "a Christian holiday in spring",
       "e": "There are processions in my town at [[Easter]].",
-      "img": "assets/images/basic/easter.svg",
-      "fill": "assets/images/basic/easter-fill.svg"
+      "img": "assets/images/basic/easter.svg"
     },
     {
       "id": "valentines-day",
@@ -4316,8 +8040,7 @@
       "g": "Special days",
       "d": "14 February, a day for people in love",
       "e": "He gave her flowers on [[Valentine's Day]].",
-      "img": "assets/images/basic/valentines-day.svg",
-      "fill": "assets/images/basic/valentines-day-fill.svg"
+      "img": "assets/images/basic/valentines-day.svg"
     },
     {
       "id": "carnival",
@@ -4349,6 +8072,42 @@
       "similar": ["carnival"]
     },
     {
+      "id": "new-years-day",
+      "w": "New Year's Day",
+      "t": "celebrations",
+      "g": "Special days",
+      "d": "the first day of January",
+      "e": "Shops are closed on [[New Year's Day]].",
+      "img": "assets/images/basic/new-years-day.svg"
+    },
+    {
+      "id": "halloween",
+      "w": "Halloween",
+      "t": "celebrations",
+      "g": "Special days",
+      "d": "the night of 31 October, when people dress up to look frightening",
+      "e": "Children wear masks at [[Halloween]].",
+      "img": "assets/images/basic/halloween.svg"
+    },
+    {
+      "id": "mothers-day",
+      "w": "Mother's Day",
+      "t": "celebrations",
+      "g": "Special days",
+      "d": "a day to thank your female parent",
+      "e": "I send flowers on [[Mother's Day]].",
+      "img": "assets/images/basic/mothers-day.svg"
+    },
+    {
+      "id": "fathers-day",
+      "w": "Father's Day",
+      "t": "celebrations",
+      "g": "Special days",
+      "d": "a day to thank your male parent",
+      "e": "We cooked lunch for Dad on [[Father's Day]].",
+      "img": "assets/images/basic/fathers-day.svg"
+    },
+    {
       "id": "party",
       "w": "party",
       "t": "celebrations",
@@ -4364,8 +8123,7 @@
       "g": "Parties",
       "d": "things that explode in the sky with bright colours",
       "e": "The [[fireworks]] started at midnight.",
-      "img": "assets/images/basic/fireworks.svg",
-      "fill": "assets/images/basic/fireworks-fill.svg"
+      "img": "assets/images/basic/fireworks.svg"
     },
     {
       "id": "present",
@@ -4374,8 +8132,7 @@
       "g": "Parties",
       "d": "something that you give to someone on a special day",
       "e": "I bought my sister a [[present]] for her birthday.",
-      "img": "assets/images/basic/present.svg",
-      "fill": "assets/images/basic/present-fill.svg"
+      "img": "assets/images/basic/present.svg"
     },
     {
       "id": "candles",
@@ -4384,8 +8141,7 @@
       "g": "Parties",
       "d": "sticks of wax that give light when they burn",
       "e": "She blew out all the [[candles]] on her cake.",
-      "img": "assets/images/basic/candles.svg",
-      "fill": "assets/images/basic/candles-fill.svg"
+      "img": "assets/images/basic/candles.svg"
     },
     {
       "id": "invitation",
@@ -4443,14 +8199,40 @@
       "img": "assets/images/basic/celebrate.svg"
     },
     {
+      "id": "birthday-party",
+      "w": "birthday party",
+      "t": "celebrations",
+      "g": "Parties",
+      "d": "a social event for the day you were born, each year",
+      "e": "I'm having a [[birthday party]] on Saturday.",
+      "img": "assets/images/basic/birthday-party.svg"
+    },
+    {
+      "id": "family-gathering",
+      "w": "family gathering",
+      "t": "celebrations",
+      "g": "Parties",
+      "d": "an occasion when relatives meet",
+      "e": "We have a big [[family gathering]] in August.",
+      "img": "assets/images/basic/family-gathering.svg"
+    },
+    {
+      "id": "celebration",
+      "w": "celebration",
+      "t": "celebrations",
+      "g": "Parties",
+      "d": "a happy event for a special reason",
+      "e": "There was a [[celebration]] after the match.",
+      "img": "assets/images/basic/celebration.svg"
+    },
+    {
       "id": "sunny",
       "w": "sunny",
       "t": "weather",
       "g": "Weather",
       "d": "with a lot of sun",
       "e": "It's [[sunny]], so let's go to the beach.",
-      "img": "assets/images/basic/sunny.svg",
-      "fill": "assets/images/basic/sunny-fill.svg"
+      "img": "assets/images/basic/sunny.svg"
     },
     {
       "id": "cloudy",
@@ -4459,8 +8241,7 @@
       "g": "Weather",
       "d": "with a lot of clouds in the sky",
       "e": "It was [[cloudy]] all day, but it didn't rain.",
-      "img": "assets/images/basic/cloudy.svg",
-      "fill": "assets/images/basic/cloudy-fill.svg"
+      "img": "assets/images/basic/cloudy.svg"
     },
     {
       "id": "rainy",
@@ -4470,7 +8251,6 @@
       "d": "with a lot of rain",
       "e": "I hate [[rainy]] days.",
       "img": "assets/images/basic/rainy.svg",
-      "fill": "assets/images/basic/rainy-fill.svg",
       "similar": ["stormy"]
     },
     {
@@ -4489,8 +8269,7 @@
       "g": "Weather",
       "d": "with thick cloud near the ground, so you can't see far",
       "e": "Drive slowly: it's [[foggy]] this morning.",
-      "img": "assets/images/basic/foggy.svg",
-      "fill": "assets/images/basic/foggy-fill.svg"
+      "img": "assets/images/basic/foggy.svg"
     },
     {
       "id": "stormy",
@@ -4500,7 +8279,6 @@
       "d": "with strong wind, rain and often thunder",
       "e": "The sea was [[stormy]], so the ferry didn't leave.",
       "img": "assets/images/basic/stormy.svg",
-      "fill": "assets/images/basic/stormy-fill.svg",
       "similar": ["rainy", "windy"]
     },
     {
@@ -4510,8 +8288,7 @@
       "g": "Weather",
       "d": "with a lot of snow",
       "e": "We spent a [[snowy]] week in the mountains.",
-      "img": "assets/images/basic/snowy.svg",
-      "fill": "assets/images/basic/snowy-fill.svg"
+      "img": "assets/images/basic/snowy.svg"
     },
     {
       "id": "thunder",
@@ -4520,8 +8297,7 @@
       "g": "Weather",
       "d": "the loud noise that comes after lightning in a storm",
       "e": "The [[thunder]] woke me up in the night.",
-      "img": "assets/images/basic/thunder.svg",
-      "fill": "assets/images/basic/thunder-fill.svg"
+      "img": "assets/images/basic/thunder.svg"
     },
     {
       "id": "lightning",
@@ -4530,8 +8306,7 @@
       "g": "Weather",
       "d": "a flash of bright light in the sky during a storm",
       "e": "We saw [[lightning]] over the sea.",
-      "img": "assets/images/basic/lightning.svg",
-      "fill": "assets/images/basic/lightning-fill.svg"
+      "img": "assets/images/basic/lightning.svg"
     },
     {
       "id": "forecast",
@@ -4540,8 +8315,52 @@
       "g": "Weather",
       "d": "what experts say the weather will be like",
       "e": "The [[forecast]] says it will rain tomorrow.",
-      "img": "assets/images/basic/forecast.svg",
-      "fill": "assets/images/basic/forecast-fill.svg"
+      "img": "assets/images/basic/forecast.svg"
+    },
+    {
+      "id": "partly-cloudy",
+      "w": "partly cloudy",
+      "t": "weather",
+      "g": "Weather",
+      "d": "with some sun and some grey sky",
+      "e": "Tomorrow will be [[partly cloudy]].",
+      "img": "assets/images/basic/partly-cloudy.svg"
+    },
+    {
+      "id": "rain",
+      "w": "rain",
+      "t": "weather",
+      "g": "Weather",
+      "d": "water that falls from the sky in drops",
+      "e": "The [[rain]] stopped at noon.",
+      "img": "assets/images/basic/rain.svg"
+    },
+    {
+      "id": "snow",
+      "w": "snow",
+      "t": "weather",
+      "g": "Weather",
+      "d": "soft white frozen water that falls in winter",
+      "e": "The [[snow]] covered the road.",
+      "img": "assets/images/basic/snow.svg"
+    },
+    {
+      "id": "wind",
+      "w": "wind",
+      "t": "weather",
+      "g": "Weather",
+      "d": "moving air",
+      "e": "The [[wind]] blew my hat off.",
+      "img": "assets/images/basic/wind.svg"
+    },
+    {
+      "id": "storm",
+      "w": "storm",
+      "t": "weather",
+      "g": "Weather",
+      "d": "very bad weather with strong gusts and heavy water from the sky",
+      "e": "A [[storm]] is coming.",
+      "img": "assets/images/basic/storm.svg"
     },
     {
       "id": "hot",
@@ -4550,8 +8369,7 @@
       "g": "Temperature",
       "d": "with a high temperature",
       "e": "It's too [[hot]] to go out at midday.",
-      "img": "assets/images/basic/hot.svg",
-      "fill": "assets/images/basic/hot-fill.svg"
+      "img": "assets/images/basic/hot.svg"
     },
     {
       "id": "warm",
@@ -4561,7 +8379,6 @@
       "d": "a little hot in a nice way",
       "e": "It's [[warm]] enough to sit outside.",
       "img": "assets/images/basic/warm.svg",
-      "fill": "assets/images/basic/warm-fill.svg",
       "similar": ["mild"]
     },
     {
@@ -4572,7 +8389,6 @@
       "d": "not very cold and not very hot",
       "e": "Winters here are [[mild]].",
       "img": "assets/images/basic/mild.svg",
-      "fill": "assets/images/basic/mild-fill.svg",
       "similar": ["warm", "cool"]
     },
     {
@@ -4583,7 +8399,6 @@
       "d": "a little cold in a nice way",
       "e": "The evenings are [[cool]] in September.",
       "img": "assets/images/basic/cool.svg",
-      "fill": "assets/images/basic/cool-fill.svg",
       "similar": ["mild"]
     },
     {
@@ -4594,7 +8409,6 @@
       "d": "with a low temperature",
       "e": "Take a coat: it's [[cold]] outside.",
       "img": "assets/images/basic/cold.svg",
-      "fill": "assets/images/basic/cold-fill.svg",
       "similar": ["freezing"]
     },
     {
@@ -4605,7 +8419,6 @@
       "d": "very, very cold",
       "e": "It's [[freezing]]! Close the window.",
       "img": "assets/images/basic/freezing.svg",
-      "fill": "assets/images/basic/freezing-fill.svg",
       "similar": ["cold"]
     },
     {
@@ -4615,8 +8428,7 @@
       "g": "Temperature",
       "d": "with a lot of water in the air",
       "e": "The air in Bangkok is hot and [[humid]].",
-      "img": "assets/images/basic/humid.svg",
-      "fill": "assets/images/basic/humid-fill.svg"
+      "img": "assets/images/basic/humid.svg"
     },
     {
       "id": "temperature",
@@ -4625,8 +8437,16 @@
       "g": "Temperature",
       "d": "how hot or cold something is",
       "e": "The [[temperature]] will be 30 degrees tomorrow.",
-      "img": "assets/images/basic/temperature.svg",
-      "fill": "assets/images/basic/temperature-fill.svg"
+      "img": "assets/images/basic/temperature.svg"
+    },
+    {
+      "id": "dry",
+      "w": "dry",
+      "t": "weather",
+      "g": "Temperature",
+      "d": "with no water; with very little wet weather",
+      "e": "The summer here is hot and [[dry]].",
+      "img": "assets/images/basic/dry.svg"
     },
     {
       "id": "spring",
@@ -4635,8 +8455,7 @@
       "g": "Seasons",
       "d": "the season after winter, when plants start to grow",
       "e": "The trees are green again in [[spring]].",
-      "img": "assets/images/basic/spring.svg",
-      "fill": "assets/images/basic/spring-fill.svg"
+      "img": "assets/images/basic/spring.svg"
     },
     {
       "id": "summer",
@@ -4645,8 +8464,7 @@
       "g": "Seasons",
       "d": "the hottest season of the year",
       "e": "We go to the beach every [[summer]].",
-      "img": "assets/images/basic/summer.svg",
-      "fill": "assets/images/basic/summer-fill.svg"
+      "img": "assets/images/basic/summer.svg"
     },
     {
       "id": "autumn",
@@ -4655,8 +8473,7 @@
       "g": "Seasons",
       "d": "the season after summer, when leaves fall from the trees",
       "e": "The leaves turn brown in [[autumn]].",
-      "img": "assets/images/basic/autumn.svg",
-      "fill": "assets/images/basic/autumn-fill.svg"
+      "img": "assets/images/basic/autumn.svg"
     },
     {
       "id": "winter",
@@ -4665,8 +8482,7 @@
       "g": "Seasons",
       "d": "the coldest season of the year",
       "e": "It sometimes snows here in [[winter]].",
-      "img": "assets/images/basic/winter.svg",
-      "fill": "assets/images/basic/winter-fill.svg"
+      "img": "assets/images/basic/winter.svg"
     },
     {
       "id": "car",
@@ -4724,8 +8540,7 @@
       "g": "Vehicles",
       "d": "a car with a driver that you pay to take you somewhere",
       "e": "We took a [[taxi]] from the airport.",
-      "img": "assets/images/basic/taxi.svg",
-      "fill": "assets/images/basic/taxi-fill.svg"
+      "img": "assets/images/basic/taxi.svg"
     },
     {
       "id": "motorbike",
@@ -4764,6 +8579,24 @@
       "d": "a boat that carries people and cars across water",
       "e": "We took the [[ferry]] to the island.",
       "img": "assets/images/basic/ferry.svg"
+    },
+    {
+      "id": "ship",
+      "w": "ship",
+      "t": "transport",
+      "g": "Vehicles",
+      "d": "a very large vessel that crosses the sea",
+      "e": "The [[ship]] sailed to Africa.",
+      "img": "assets/images/basic/ship.svg"
+    },
+    {
+      "id": "boat",
+      "w": "boat",
+      "t": "transport",
+      "g": "Vehicles",
+      "d": "a small vehicle that moves on water",
+      "e": "We took a [[boat]] around the lake.",
+      "img": "assets/images/basic/boat.svg"
     },
     {
       "id": "driving-licence",
@@ -4858,6 +8691,15 @@
       "e": "There's a [[delay]] of thirty minutes because of the fog.",
       "img": "assets/images/basic/delay.svg",
       "similar": ["traffic-jam"]
+    },
+    {
+      "id": "travel",
+      "w": "travel",
+      "t": "transport",
+      "g": "Travelling",
+      "d": "to go from one place to another, often far away",
+      "e": "I love to [[travel]] by train.",
+      "img": "assets/images/basic/travel.svg"
     }
   ]
 }

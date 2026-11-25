@@ -194,24 +194,15 @@ test('basic vocabulary pictures must be existing SVG files', () => {
   assert.ok(errors.some((e) => e.includes('must be assets/images/basic/<name>.svg')));
 });
 
-test('a colour layer needs a line drawing and a -fill.svg file', () => {
+test('pictures are single full-colour files: the old "fill" layer is rejected', () => {
   const words = fourWords();
-  words[0] = { ...words[0], fill: 'assets/images/basic/dress-fill.svg' };
-  words[1] = {
-    ...words[1],
-    img: 'assets/images/basic/skirt.svg',
-    fill: 'assets/images/basic/skirt.svg',
-  };
-  words[2] = {
-    ...words[2],
+  words[0] = {
+    ...words[0],
     img: 'assets/images/basic/hat.svg',
     fill: 'assets/images/basic/hat-fill.svg',
   };
-  const exists = (p) => !p.endsWith('-fill.svg');
-  const errors = checkBasicVocabulary(basicFile(words), new Set(['bag']), exists);
-  assert.ok(errors.some((e) => e.includes('"fill" needs an "img"')));
-  assert.ok(errors.some((e) => e.includes('<name>-fill.svg')));
-  assert.ok(errors.some((e) => e.includes('"assets/images/basic/hat-fill.svg" does not exist')));
+  const errors = checkBasicVocabulary(basicFile(words), new Set(['bag']), () => true);
+  assert.ok(errors.some((e) => e.includes('"fill" is not used')));
 });
 
 test('basic vocabulary needs four words per topic', () => {
