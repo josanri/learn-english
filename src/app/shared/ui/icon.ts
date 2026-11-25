@@ -73,6 +73,10 @@ const ICONS = {
   columns: '<path d="M3 9l9-5 9 5z"/><path d="M5.5 9v9M10 9v9M14 9v9M18.5 9v9M3 21h18M4 18h16"/>',
   shapes:
     '<path d="M12 2.5l4.5 7.5h-9z"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1"/><circle cx="17.25" cy="17.25" r="3.75"/>',
+  pin: '<path d="M12 18.5s-6-4.6-6-9a6 6 0 1 1 12 0c0 4.4-6 9-6 9z"/><circle cx="12" cy="9.5" r="2.2"/><path d="M5 21h14"/>',
+  sofa: '<path d="M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M3 13a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1h8v-1a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M5 18v2M19 18v2"/>',
+  body: '<circle cx="12" cy="4.5" r="2.2"/><path d="M5 9.5c2.2.8 4.6 1.2 7 1.2s4.8-.4 7-1.2"/><path d="M9.5 10.5v5l-1 6M14.5 10.5v5l1 6M9.5 15h5"/>',
+  bell: '<path d="M10 5h4M12 5v2"/><path d="M5 16a7 7 0 0 1 14 0"/><path d="M3 16h18M4 19.5h16"/>',
 } as const;
 
 export type IconName = keyof typeof ICONS;
